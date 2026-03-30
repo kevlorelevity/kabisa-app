@@ -1,0 +1,87 @@
+{
+  "id": "chai-kiosk",
+  "title": "Ordering Chai at a Kiosk",
+  "category": "food-drink",
+  "difficulty": "beginner",
+  "culturalNote": "Chai (tea) in Kenya is almost always boiled with milk and sugar — strong and sweet. Roadside kiosks (vibanda) are everywhere, serving chai alongside mandazi (fried doughnuts) or mkate (bread). Ordering is quick and informal.",
+  "vocabulary": [
+    {
+      "swahili": "Niletee chai",
+      "english": "Bring me tea",
+      "exampleContext": "Direct request to the server at a kiosk",
+      "sanifu": "Niletee chai tafadhali",
+      "sanifuNote": "Kenyans commonly drop 'tafadhali' (please) in casual orders — it's implied, not rude"
+    },
+    {
+      "swahili": "Chai moja",
+      "english": "One tea",
+      "exampleContext": "The most common order — 'moja' is 'one'",
+      "sanifu": "Chai moja tafadhali",
+      "sanifuNote": "Same drop of 'tafadhali'; the counting word 'moja' is identical in both registers"
+    },
+    {
+      "swahili": "Sukari kidogo",
+      "english": "A little sugar",
+      "exampleContext": "Added when you don't want the default very-sweet chai",
+      "sanifu": "Sukari kidogo tafadhali",
+      "sanifuNote": "'Sukari kidogo' is identical in both registers; Kenyan chai is traditionally very sweet so this signals a preference"
+    },
+    {
+      "swahili": "Bila sukari",
+      "english": "Without sugar",
+      "exampleContext": "If you want unsweetened chai — this will surprise the server",
+      "sanifu": "Bila sukari",
+      "sanifuNote": "Identical — 'bila' (without) is standard Swahili used in both registers"
+    },
+    {
+      "swahili": "Mandazi ngapi?",
+      "english": "How many mandazi?",
+      "exampleContext": "Mandazi are fried dough snacks, served with chai",
+      "sanifu": "Mandazi ngapi unataka?",
+      "sanifuNote": "Kenyans drop the verb clause 'unataka' (you want) — context makes it understood"
+    },
+    {
+      "swahili": "Niambie bei",
+      "english": "Tell me the price",
+      "exampleContext": "Used when prices aren't posted",
+      "sanifu": "Niambie bei tafadhali",
+      "sanifuNote": "Direct form, same structure — dropping 'tafadhali' is standard in quick transactions"
+    },
+    {
+      "swahili": "Hii ni nzuri sana",
+      "english": "This is very good",
+      "exampleContext": "A polite compliment to the server — appreciated and common",
+      "sanifu": "Hii ni nzuri sana",
+      "sanifuNote": "Identical in both registers — a universal compliment"
+    }
+  ],
+  "exchange": [
+    { "speaker": "Mteja", "swahili": "Chai moja na mandazi mbili.", "english": "One tea and two mandazi." },
+    { "speaker": "Mama ntilie", "swahili": "Sukari ngapi?", "english": "How much sugar?" },
+    { "speaker": "Mteja", "swahili": "Sukari kidogo, tafadhali.", "english": "A little sugar, please." },
+    { "speaker": "Mama ntilie", "swahili": "Sawa. Kaa kidogo.", "english": "Okay. Wait a moment." },
+    { "speaker": "Mteja", "swahili": "Bei ngapi yote?", "english": "How much for everything?" },
+    { "speaker": "Mama ntilie", "swahili": "Thelathini bob.", "english": "Thirty shillings." }
+  ],
+  "exercises": [
+    {
+      "type": "fill-blank",
+      "prompt": "_____ chai. (Bring me tea)",
+      "answer": "Niletee"
+    },
+    {
+      "type": "match",
+      "pairs": [
+        { "swahili": "Bila sukari", "english": "Without sugar" },
+        { "swahili": "Sukari kidogo", "english": "A little sugar" },
+        { "swahili": "Chai moja", "english": "One tea" },
+        { "swahili": "Niambie bei", "english": "Tell me the price" }
+      ]
+    },
+    {
+      "type": "translate",
+      "prompt": "How would you order one tea with a little sugar?",
+      "answer": "Chai moja, sukari kidogo"
+    }
+  ]
+}
