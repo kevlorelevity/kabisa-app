@@ -1,0 +1,94 @@
+{
+  "id": "matatu-nairobi",
+  "title": "Taking a Matatu",
+  "category": "transport",
+  "difficulty": "beginner",
+  "culturalNote": "Matatus are privately-owned minibuses that are the primary form of public transport in Nairobi. Routes are numbered but not always signed — locals know them. You pay the kondakta (conductor) in cash, and shout or gesture when you want to alight.",
+  "vocabulary": [
+    {
+      "swahili": "Nashuka hapa",
+      "english": "I'm getting off here",
+      "exampleContext": "Said to the conductor when you're approaching your stop",
+      "sanifu": "Nitashuka hapa",
+      "sanifuNote": "Kenyan speakers use the present continuous prefix 'na-' where sanifu uses the future tense prefix 'nita-'"
+    },
+    {
+      "swahili": "Kondakta",
+      "english": "Conductor",
+      "exampleContext": "The person who collects fares and calls out the route",
+      "sanifu": "Msaidizi wa basi",
+      "sanifuNote": "'Kondakta' is a Kenyan borrowing from English 'conductor'; sanifu uses a descriptive phrase"
+    },
+    {
+      "swahili": "Stage",
+      "english": "Bus stop / terminus",
+      "exampleContext": "'Tao stage' means the town centre stop",
+      "sanifu": "Kituo cha basi",
+      "sanifuNote": "'Stage' is a Kenyan English borrowing used universally; sanifu uses the formal Swahili term"
+    },
+    {
+      "swahili": "Naenda tao",
+      "english": "I'm going to town",
+      "exampleContext": "Said when asked your destination",
+      "sanifu": "Ninaenda mjini",
+      "sanifuNote": "'Tao' is Kenyan slang for 'town' (from Sheng); 'mjini' is the sanifu word for 'in/to town'"
+    },
+    {
+      "swahili": "Bei ngapi?",
+      "english": "How much is it?",
+      "exampleContext": "Ask the conductor before or after boarding",
+      "sanifu": "Ni shilingi ngapi?",
+      "sanifuNote": "Both are understood; 'Bei ngapi?' is the faster, more common Kenyan form"
+    },
+    {
+      "swahili": "Simama!",
+      "english": "Stop!",
+      "exampleContext": "Used urgently if the conductor misses your stop",
+      "sanifu": "Simama!",
+      "sanifuNote": "Same in both — 'simama' is standard Swahili for 'stop/stand'"
+    },
+    {
+      "swahili": "Naenda Westie",
+      "english": "I'm going to Westlands",
+      "exampleContext": "Using the Nairobi neighbourhood nickname; conductors call routes by these names",
+      "sanifu": "Ninaenda Westlands",
+      "sanifuNote": "Kenyan speech drops the '-na-' infix and abbreviates neighbourhood names freely"
+    },
+    {
+      "swahili": "Beba",
+      "english": "Pick me up / Take me",
+      "exampleContext": "Waved at a passing matatu to flag it down",
+      "sanifu": "Niokote",
+      "sanifuNote": "'Beba' literally means 'carry'; Kenyans use it informally to flag matatus; sanifu uses the more formal imperative form"
+    }
+  ],
+  "exchange": [
+    { "speaker": "Abiria", "swahili": "Naenda tao, bei ngapi?", "english": "I'm going to town, how much?" },
+    { "speaker": "Kondakta", "swahili": "Ishirini.", "english": "Twenty (shillings)." },
+    { "speaker": "Abiria", "swahili": "Sawa.", "english": "Okay." },
+    { "speaker": "Kondakta", "swahili": "Ingia haraka!", "english": "Get in quickly!" },
+    { "speaker": "Abiria", "swahili": "Nashuka hapa — stage ya tao.", "english": "I'm getting off here — the town stop." },
+    { "speaker": "Kondakta", "swahili": "Sawa, shuka.", "english": "Okay, get off." }
+  ],
+  "exercises": [
+    {
+      "type": "fill-blank",
+      "prompt": "_____ hapa. (I'm getting off here)",
+      "answer": "Nashuka"
+    },
+    {
+      "type": "match",
+      "pairs": [
+        { "swahili": "Stage", "english": "Bus stop" },
+        { "swahili": "Kondakta", "english": "Conductor" },
+        { "swahili": "Bei ngapi?", "english": "How much?" },
+        { "swahili": "Simama!", "english": "Stop!" }
+      ]
+    },
+    {
+      "type": "translate",
+      "prompt": "How would you tell the conductor you are going to town?",
+      "answer": "Naenda tao"
+    }
+  ]
+}
