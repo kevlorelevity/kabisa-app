@@ -68,8 +68,8 @@ export function ReviewView() {
   const current = resolveCard(sessionKeys[currentIndex]);
 
   if (!current) {
-    // Skip orphaned card (module deleted)
-    handleRate('forgot');
+    // Skip orphaned card without writing to SRS
+    setCurrentIndex((i) => i + 1);
     return null;
   }
 
@@ -83,7 +83,7 @@ export function ReviewView() {
           Exit
         </Link>
       </div>
-      <Flashcard entry={current.entry} onRate={handleRate} />
+      <Flashcard key={current.key} entry={current.entry} onRate={handleRate} />
     </div>
   );
 }
