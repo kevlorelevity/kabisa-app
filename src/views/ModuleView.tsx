@@ -13,7 +13,7 @@ import type { Exercise } from '../types';
 
 const DIFFICULTY_LABELS = {
   beginner: 'Beginner',
-  intermediate: 'Intermediate',
+  medium: 'Medium',
   advanced: 'Advanced',
 };
 
@@ -47,9 +47,10 @@ export function ModuleView() {
   }
 
   function addToReview() {
-    module!.vocabulary.forEach((_, i) => {
-      const cardKey = `${module!.id}:${i}`;
-      setSRSCard(cardKey, initialCardState());
+    // SRS keys are the vocab entry's stable UUID. See storage.ts +
+    // /docs/schema.md for the SRS card key contract.
+    module!.vocabulary.forEach((entry) => {
+      setSRSCard(entry.id, initialCardState());
     });
     updateProgress({
       status: 'reviewed',

@@ -26,17 +26,23 @@ export function Flashcard({ entry, onRate }: FlashcardProps) {
           <>
             <p className="text-xl text-gray-700 font-medium">{entry.english}</p>
             <p className="text-xs text-gray-400 mt-2 italic">{entry.exampleContext}</p>
-            <button
-              onClick={(e) => { e.stopPropagation(); setShowSanifu((v) => !v); }}
-              className="mt-3 text-xs text-green-700 hover:text-green-900"
-            >
-              {showSanifu ? 'Sanifu ↑' : 'Sanifu →'}
-            </button>
-            {showSanifu && (
+            {entry.sanifu && (
+              <button
+                onClick={(e) => { e.stopPropagation(); setShowSanifu((v) => !v); }}
+                className="mt-3 text-xs text-green-700 hover:text-green-900"
+              >
+                {showSanifu ? 'Sanifu ↑' : 'Sanifu →'}
+              </button>
+            )}
+            {showSanifu && entry.sanifu && (
               <div className="mt-2 text-xs text-gray-500 max-w-xs">
                 <span className="font-medium text-gray-700">{entry.sanifu}</span>
-                <span className="mx-1">·</span>
-                {entry.sanifuNote}
+                {entry.sanifuNote && (
+                  <>
+                    <span className="mx-1">·</span>
+                    {entry.sanifuNote}
+                  </>
+                )}
               </div>
             )}
           </>

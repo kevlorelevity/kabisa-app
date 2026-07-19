@@ -8,9 +8,11 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "NODE_OPTIONS=--no-experimental-webstorage vitest run"
+    "test": "NODE_OPTIONS=--no-experimental-webstorage vitest run",
+    "db:seed": "node --env-file=.env.local db/seed/seed.mjs"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router-dom": "^7.13.2"

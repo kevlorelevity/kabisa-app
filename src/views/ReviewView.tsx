@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useModules } from '../hooks/useModules';
 import { useSRS } from '../hooks/useSRS';
@@ -13,15 +13,24 @@ interface DueCard {
 export function ReviewView() {
   const modules = useModules();
   const { dueKeys, schedule } = useSRS();
-  const [sessionKeys, setSessionKeys] = useState<string[]>(() => [...dueKeys]);
+  // Snapshot due keys at session start so rescheduled cards don't re-appear.
+  const [sessionKeys] = useState<string[]>(() => [...dueKeys]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [sessionDone, setSessionDone] = useState(false);
 
-  // Resolve card keys to vocab entries
+  // Build vocab-id → entry index once per render of the modules list.
+  const vocabIndex = useMemo(() => {
+    const map = new Map<string, VocabEntry>();
+    for (const mod of modules) {
+      for (const entry of mod.vocabulary) {
+        map.set(entry.id, entry);
+      }
+    }
+    return map;
+  }, [modules]);
+
   function resolveCard(key: string): DueCard | null {
-    const [moduleId, indexStr] = key.split(':');
-    const mod = modules.find((m) => m.id === moduleId);
-    const entry = mod?.vocabulary[parseInt(indexStr)];
+    const entry = vocabIndex.get(key);
     if (!entry) return null;
     return { key, entry };
   }

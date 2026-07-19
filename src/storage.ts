@@ -1,7 +1,8 @@
-import type { ModuleProgress, CardState } from './types';
+import type { ModuleProgress, CardState, Module } from './types';
 
 const PROGRESS_KEY = 'ksa_progress';
 const SRS_KEY = 'ksa_srs';
+const MIGRATION_KEY = 'ksa_srs_migrated_v1';
 
 function readJSON<T>(key: string): T | null {
   try {
@@ -40,4 +41,41 @@ export function setSRSCard(cardKey: string, state: CardState): void {
   const all = getAllSRSCards();
   all[cardKey] = state;
   writeJSON(SRS_KEY, all);
+}
+
+/**
+ * One-time migration from the legacy SRS key format
+ * (`${moduleId}:${vocabIndex}`) to stable vocab UUIDs. Runs idempotently:
+ * a `MIGRATION_KEY` flag in localStorage prevents repeat runs.
+ *
+ * Unresolvable legacy keys are dropped. The prototype had no real users
+ * at the time of the cutover, so this is acceptable — documented in the
+ * implementation plan.
+ */
+export function migrateLegacySRSKeys(modules: Module[]): void {
+  if (localStorage.getItem(MIGRATION_KEY)) return;
+
+  const cards = getAllSRSCards();
+  const migrated: Record<string, CardState> = {};
+
+  for (const [key, state] of Object.entries(cards)) {
+    // Already a UUID (8-4-4-4-12 hex) — keep as-is.
+    if (/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(key)) {
+      migrated[key] = state;
+      continue;
+    }
+
+    // Legacy format: `${moduleId}:${vocabIndex}` — resolve through module data.
+    const [moduleId, indexStr] = key.split(':');
+    const idx = parseInt(indexStr, 10);
+    const mod = modules.find((m) => m.id === moduleId);
+    const entry = mod?.vocabulary[idx];
+    if (entry?.id) {
+      migrated[entry.id] = state;
+    }
+    // else: drop the entry silently.
+  }
+
+  writeJSON(SRS_KEY, migrated);
+  localStorage.setItem(MIGRATION_KEY, '1');
 }

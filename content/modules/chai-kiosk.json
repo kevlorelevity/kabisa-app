@@ -1,75 +1,122 @@
 {
   "id": "chai-kiosk",
+  "uuid": "1e8dd975-ca8c-430d-9184-d7364d034330",
   "title": "Ordering Chai at a Kiosk",
   "category": "food-drink",
   "difficulty": "beginner",
   "culturalNote": "Chai (tea) in Kenya is almost always boiled with milk and sugar — strong and sweet. Roadside kiosks (vibanda) are everywhere, serving chai alongside mandazi (fried doughnuts) or mkate (bread). Ordering is quick and informal.",
   "vocabulary": [
     {
+      "id": "0e9e129e-08d1-4f25-9313-f5a28d58f80f",
       "swahili": "Niletee chai",
       "english": "Bring me tea",
       "exampleContext": "Direct request to the server at a kiosk",
       "sanifu": "Niletee chai tafadhali",
-      "sanifuNote": "Kenyans commonly drop 'tafadhali' (please) in casual orders — it's implied, not rude"
+      "sanifuNote": "Kenyans commonly drop 'tafadhali' (please) in casual orders — it's implied, not rude",
+      "partOfSpeech": "phrase"
     },
     {
+      "id": "cec55e08-f031-4312-bc46-0518d01c654b",
       "swahili": "Chai moja",
       "english": "One tea",
       "exampleContext": "The most common order — 'moja' is 'one'",
       "sanifu": "Chai moja tafadhali",
-      "sanifuNote": "Same drop of 'tafadhali'; the counting word 'moja' is identical in both registers"
+      "sanifuNote": "Same drop of 'tafadhali'; the counting word 'moja' is identical in both registers",
+      "partOfSpeech": "phrase",
+      "nounClass": "n_n"
     },
     {
+      "id": "d992250c-b88b-414d-a28b-86b4ed5b3f42",
       "swahili": "Sukari kidogo",
       "english": "A little sugar",
       "exampleContext": "Added when you don't want the default very-sweet chai",
       "sanifu": "Sukari kidogo tafadhali",
-      "sanifuNote": "'Sukari kidogo' is identical in both registers; Kenyan chai is traditionally very sweet so this signals a preference"
+      "sanifuNote": "'Sukari kidogo' is identical in both registers; Kenyan chai is traditionally very sweet so this signals a preference",
+      "partOfSpeech": "phrase",
+      "nounClass": "n_n"
     },
     {
+      "id": "5f0cfc6f-7108-4900-b7a3-f21a4dec08c1",
       "swahili": "Bila sukari",
       "english": "Without sugar",
       "exampleContext": "If you want unsweetened chai — this will surprise the server",
-      "sanifu": "Bila sukari",
-      "sanifuNote": "Identical — 'bila' (without) is standard Swahili used in both registers"
+      "partOfSpeech": "phrase",
+      "nounClass": "n_n"
     },
     {
+      "id": "37ff33bf-b271-45cb-9f4c-9f3c127cfaa7",
       "swahili": "Mandazi ngapi?",
       "english": "How many mandazi?",
       "exampleContext": "Mandazi are fried dough snacks, served with chai",
       "sanifu": "Mandazi ngapi unataka?",
-      "sanifuNote": "Kenyans drop the verb clause 'unataka' (you want) — context makes it understood"
+      "sanifuNote": "Kenyans drop the verb clause 'unataka' (you want) — context makes it understood",
+      "partOfSpeech": "phrase",
+      "nounClass": "n_n"
     },
     {
+      "id": "285a94a4-1212-4804-a73e-98aed11a69c1",
       "swahili": "Niambie bei",
       "english": "Tell me the price",
       "exampleContext": "Used when prices aren't posted",
       "sanifu": "Niambie bei tafadhali",
-      "sanifuNote": "Direct form, same structure — dropping 'tafadhali' is standard in quick transactions"
+      "sanifuNote": "Direct form, same structure — dropping 'tafadhali' is standard in quick transactions",
+      "partOfSpeech": "phrase"
     },
     {
+      "id": "c79f241e-86e0-47a7-b0de-5f5e96d9cd70",
       "swahili": "Hii ni nzuri sana",
       "english": "This is very good",
       "exampleContext": "A polite compliment to the server — appreciated and common",
-      "sanifu": "Hii ni nzuri sana",
-      "sanifuNote": "Identical in both registers — a universal compliment"
+      "partOfSpeech": "phrase"
     }
   ],
   "exchange": [
-    { "speaker": "Mteja", "swahili": "Chai moja na mandazi mbili.", "english": "One tea and two mandazi." },
-    { "speaker": "Mama ntilie", "swahili": "Sukari ngapi?", "english": "How much sugar?" },
-    { "speaker": "Mteja", "swahili": "Sukari kidogo, tafadhali.", "english": "A little sugar, please." },
-    { "speaker": "Mama ntilie", "swahili": "Sawa. Kaa kidogo.", "english": "Okay. Wait a moment." },
-    { "speaker": "Mteja", "swahili": "Bei ngapi yote?", "english": "How much for everything?" },
-    { "speaker": "Mama ntilie", "swahili": "Thelathini bob.", "english": "Thirty shillings." }
+    {
+      "id": "e9a7dcfd-1ea2-4508-bdd4-6fb310933a0e",
+      "speaker": "Mteja",
+      "swahili": "Chai moja na mandazi mbili.",
+      "english": "One tea and two mandazi."
+    },
+    {
+      "id": "d09cca3b-6c66-40f9-82ab-7a8052c61067",
+      "speaker": "Mama ntilie",
+      "swahili": "Sukari ngapi?",
+      "english": "How much sugar?"
+    },
+    {
+      "id": "c4dbae52-1fe2-4145-9301-89ce8ce5dc00",
+      "speaker": "Mteja",
+      "swahili": "Sukari kidogo, tafadhali.",
+      "english": "A little sugar, please."
+    },
+    {
+      "id": "ef92de61-1dbe-4b57-8c94-f6b91eac1900",
+      "speaker": "Mama ntilie",
+      "swahili": "Sawa. Kaa kidogo.",
+      "english": "Okay. Wait a moment."
+    },
+    {
+      "id": "332cf92a-04a3-4a22-8991-9f6dc31c2623",
+      "speaker": "Mteja",
+      "swahili": "Bei ngapi yote?",
+      "english": "How much for everything?"
+    },
+    {
+      "id": "09585af4-e76e-4728-9ac9-b788a9313056",
+      "speaker": "Mama ntilie",
+      "swahili": "Thelathini bob.",
+      "english": "Thirty shillings."
+    }
   ],
   "exercises": [
     {
+      "id": "f25543e0-d0ef-4c66-b7ca-62ec3063d4ad",
       "type": "fill-blank",
       "prompt": "_____ chai. (Bring me tea)",
       "answer": "Niletee"
     },
     {
+      "id": "b84be4e9-e519-474a-a89c-18f4364943b7",
       "type": "match",
       "pairs": [
         { "swahili": "Bila sukari", "english": "Without sugar" },
@@ -79,6 +126,7 @@
       ]
     },
     {
+      "id": "469af937-00da-4edf-a3db-7a97d5e95ec6",
       "type": "translate",
       "prompt": "How would you order one tea with a little sugar?",
       "answer": "Chai moja, sukari kidogo"

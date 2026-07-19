@@ -5,6 +5,7 @@ import { ExerciseFillBlank } from './ExerciseFillBlank';
 import type { FillBlankExercise } from '../types';
 
 const exercise: FillBlankExercise = {
+  id: 'test-fill-blank-1',
   type: 'fill-blank',
   prompt: "_____ hapa. (I'm getting off here)",
   answer: 'Nashuka',

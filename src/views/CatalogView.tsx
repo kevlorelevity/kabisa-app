@@ -17,7 +17,7 @@ const CATEGORIES: Array<{ value: Category | 'all'; label: string }> = [
 const DIFFICULTIES: Array<{ value: Difficulty | 'all'; label: string }> = [
   { value: 'all', label: 'All levels' },
   { value: 'beginner', label: 'Beginner' },
-  { value: 'intermediate', label: 'Intermediate' },
+  { value: 'medium', label: 'Medium' },
   { value: 'advanced', label: 'Advanced' },
 ];
 

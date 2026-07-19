@@ -5,11 +5,14 @@ import { VocabEntry } from './VocabEntry';
 import type { VocabEntry as VocabEntryType } from '../types';
 
 const entry: VocabEntryType = {
+  id: 'test-vocab-1',
   swahili: 'Nashuka hapa',
   english: "I'm getting off here",
   exampleContext: 'Said to the conductor when approaching your stop',
-  sanifu: 'Nitashuka hapa',
-  sanifuNote: "Kenyan speakers use 'na-' where sanifu uses 'nita-'",
+  sanifu: 'Ninashuka hapa',
+  sanifuNote: "Kenyans commonly use the 'Na-' shortform where sanifu uses 'Nina-'",
+  partOfSpeech: 'phrase',
+  tense: 'present',
 };
 
 describe('VocabEntry', () => {
@@ -27,15 +30,15 @@ describe('VocabEntry', () => {
   it('shows sanifu content when toggle is clicked', async () => {
     render(<VocabEntry entry={entry} />);
     await userEvent.click(screen.getByText('Sanifu →'));
-    expect(screen.getByText('Nitashuka hapa')).toBeInTheDocument();
-    expect(screen.getByText(entry.sanifuNote)).toBeInTheDocument();
+    expect(screen.getByText('Ninashuka hapa')).toBeInTheDocument();
+    expect(screen.getByText(entry.sanifuNote!)).toBeInTheDocument();
   });
 
   it('hides sanifu content when toggle is clicked again', async () => {
     render(<VocabEntry entry={entry} />);
     await userEvent.click(screen.getByText('Sanifu →'));
     await userEvent.click(screen.getByText('Sanifu ↑'));
-    expect(screen.queryByText('Nitashuka hapa')).not.toBeInTheDocument();
+    expect(screen.queryByText('Ninashuka hapa')).not.toBeInTheDocument();
   });
 
   it('shows the exampleContext', () => {

@@ -1,82 +1,136 @@
 {
   "id": "matatu-nairobi",
+  "uuid": "eb09d73c-7767-4d09-bd43-ba0632b56a48",
   "title": "Taking a Matatu",
   "category": "transport",
   "difficulty": "beginner",
   "culturalNote": "Matatus are privately-owned minibuses that are the primary form of public transport in Nairobi. Routes are numbered but not always signed — locals know them. You pay the kondakta (conductor) in cash, and shout or gesture when you want to alight.",
   "vocabulary": [
     {
+      "id": "e76a9142-22c7-4613-b5bb-0d04ef663b47",
       "swahili": "Nashuka hapa",
       "english": "I'm getting off here",
       "exampleContext": "Said to the conductor when you're approaching your stop",
-      "sanifu": "Nitashuka hapa",
-      "sanifuNote": "Kenyan speakers use the present continuous prefix 'na-' where sanifu uses the future tense prefix 'nita-'"
+      "sanifu": "Ninashuka hapa",
+      "sanifuNote": "Kenyan speakers commonly use the 'Na-' shortform for first-person present where sanifu uses the full 'Nina-' prefix",
+      "partOfSpeech": "phrase",
+      "tense": "present"
     },
     {
+      "id": "dde057be-0cb4-4648-90cb-d0a367a66e87",
       "swahili": "Kondakta",
       "english": "Conductor",
       "exampleContext": "The person who collects fares and calls out the route",
       "sanifu": "Msaidizi wa basi",
-      "sanifuNote": "'Kondakta' is a Kenyan borrowing from English 'conductor'; sanifu uses a descriptive phrase"
+      "sanifuNote": "'Kondakta' is a Kenyan borrowing from English 'conductor'; sanifu uses a descriptive phrase",
+      "partOfSpeech": "noun",
+      "nounClass": "m_wa"
     },
     {
+      "id": "d73159a9-3b2f-4bc4-a7c5-aa2edd30ecdb",
       "swahili": "Stage",
       "english": "Bus stop / terminus",
       "exampleContext": "'Tao stage' means the town centre stop",
       "sanifu": "Kituo cha basi",
-      "sanifuNote": "'Stage' is a Kenyan English borrowing used universally; sanifu uses the formal Swahili term"
+      "sanifuNote": "'Stage' is a Kenyan English borrowing used universally; sanifu uses the formal Swahili term",
+      "partOfSpeech": "noun",
+      "nounClass": "n_n"
     },
     {
+      "id": "5d7dea78-bad3-4750-9588-95907cc4c2ad",
       "swahili": "Naenda tao",
       "english": "I'm going to town",
       "exampleContext": "Said when asked your destination",
       "sanifu": "Ninaenda mjini",
-      "sanifuNote": "'Tao' is Kenyan slang for 'town' (from Sheng); 'mjini' is the sanifu word for 'in/to town'"
+      "sanifuNote": "Two deviations: the 'Na-' shortform for first-person present, plus 'tao' as Sheng for 'town' instead of the sanifu 'mjini'",
+      "partOfSpeech": "phrase",
+      "tense": "present"
     },
     {
+      "id": "fd61ecc6-7ccf-4ebf-b854-372ff535e251",
       "swahili": "Bei ngapi?",
       "english": "How much is it?",
       "exampleContext": "Ask the conductor before or after boarding",
       "sanifu": "Ni shilingi ngapi?",
-      "sanifuNote": "Both are understood; 'Bei ngapi?' is the faster, more common Kenyan form"
+      "sanifuNote": "Both are understood; 'Bei ngapi?' is the faster, more common Kenyan form",
+      "partOfSpeech": "phrase",
+      "nounClass": "n_n"
     },
     {
+      "id": "b18fa59d-bdfb-4c46-9eba-9efa203e31c4",
       "swahili": "Simama!",
       "english": "Stop!",
       "exampleContext": "Used urgently if the conductor misses your stop",
-      "sanifu": "Simama!",
-      "sanifuNote": "Same in both — 'simama' is standard Swahili for 'stop/stand'"
+      "partOfSpeech": "phrase"
     },
     {
+      "id": "8878ba07-4f9e-45ff-a7dc-0fc2a75720bb",
       "swahili": "Naenda Westie",
       "english": "I'm going to Westlands",
       "exampleContext": "Using the Nairobi neighbourhood nickname; conductors call routes by these names",
       "sanifu": "Ninaenda Westlands",
-      "sanifuNote": "Kenyan speech drops the '-na-' infix and abbreviates neighbourhood names freely"
+      "sanifuNote": "Same 'Na-' shortform; Kenyan speech also abbreviates neighbourhood names freely",
+      "partOfSpeech": "phrase",
+      "tense": "present"
     },
     {
+      "id": "e4077bdd-da1c-403c-a9b7-c3673c6b934a",
       "swahili": "Beba",
       "english": "Pick me up / Take me",
       "exampleContext": "Waved at a passing matatu to flag it down",
       "sanifu": "Niokote",
-      "sanifuNote": "'Beba' literally means 'carry'; Kenyans use it informally to flag matatus; sanifu uses the more formal imperative form"
+      "sanifuNote": "'Beba' literally means 'carry'; Kenyans use it informally to flag matatus; sanifu uses the more formal imperative form",
+      "partOfSpeech": "verb",
+      "tense": "present"
     }
   ],
   "exchange": [
-    { "speaker": "Abiria", "swahili": "Naenda tao, bei ngapi?", "english": "I'm going to town, how much?" },
-    { "speaker": "Kondakta", "swahili": "Ishirini.", "english": "Twenty (shillings)." },
-    { "speaker": "Abiria", "swahili": "Sawa.", "english": "Okay." },
-    { "speaker": "Kondakta", "swahili": "Ingia haraka!", "english": "Get in quickly!" },
-    { "speaker": "Abiria", "swahili": "Nashuka hapa — stage ya tao.", "english": "I'm getting off here — the town stop." },
-    { "speaker": "Kondakta", "swahili": "Sawa, shuka.", "english": "Okay, get off." }
+    {
+      "id": "2094e369-1784-4b89-926b-17eca650ad0e",
+      "speaker": "Abiria",
+      "swahili": "Naenda tao, bei ngapi?",
+      "english": "I'm going to town, how much?"
+    },
+    {
+      "id": "01f2de46-8e18-4f53-830f-2e1b6b894f36",
+      "speaker": "Kondakta",
+      "swahili": "Ishirini.",
+      "english": "Twenty (shillings)."
+    },
+    {
+      "id": "b88225e3-d600-49d2-ad1a-697eed363dfe",
+      "speaker": "Abiria",
+      "swahili": "Sawa.",
+      "english": "Okay."
+    },
+    {
+      "id": "dedc713c-acaa-4c9f-882d-782f15277fdd",
+      "speaker": "Kondakta",
+      "swahili": "Ingia haraka!",
+      "english": "Get in quickly!"
+    },
+    {
+      "id": "c1787c22-cc9a-4ec5-a9d4-4eb0a99164c1",
+      "speaker": "Abiria",
+      "swahili": "Nashuka hapa — stage ya tao.",
+      "english": "I'm getting off here — the town stop."
+    },
+    {
+      "id": "6ceb67e3-95f3-42f5-b61f-bd33b3693b86",
+      "speaker": "Kondakta",
+      "swahili": "Sawa, shuka.",
+      "english": "Okay, get off."
+    }
   ],
   "exercises": [
     {
+      "id": "49b41579-c502-43ec-8d34-ddd132907b19",
       "type": "fill-blank",
       "prompt": "_____ hapa. (I'm getting off here)",
       "answer": "Nashuka"
     },
     {
+      "id": "d38309da-7030-4da8-9504-cedd8c208881",
       "type": "match",
       "pairs": [
         { "swahili": "Stage", "english": "Bus stop" },
@@ -86,6 +140,7 @@
       ]
     },
     {
+      "id": "a31e0fc6-cbfd-4400-801f-ddb317ad9779",
       "type": "translate",
       "prompt": "How would you tell the conductor you are going to town?",
       "answer": "Naenda tao"
