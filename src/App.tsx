@@ -7,6 +7,8 @@ import { ReviewView } from './views/ReviewView';
 import { getAllSRSCards, migrateLegacySRSKeys } from './storage';
 import { useModules } from './hooks/useModules';
 import { isDue } from './srs';
+import { AuthProvider } from './hooks/AuthProvider';
+import { SignInGate } from './components/SignInGate';
 
 function AppLayout() {
   const location = useLocation();
@@ -39,8 +41,12 @@ function AppLayout() {
 
 export function App() {
   return (
-    <BrowserRouter>
-      <AppLayout />
-    </BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
+        <SignInGate>
+          <AppLayout />
+        </SignInGate>
+      </BrowserRouter>
+    </AuthProvider>
   );
 }

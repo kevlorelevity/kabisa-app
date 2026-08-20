@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import { useAuth } from '../hooks/useAuth';
 
 interface NavProps {
   dueCount: number;
@@ -6,6 +7,7 @@ interface NavProps {
 
 export function Nav({ dueCount }: NavProps) {
   const { pathname } = useLocation();
+  const { user, signOut } = useAuth();
 
   const linkClass = (path: string) =>
     `px-3 py-1 rounded text-sm font-medium transition-colors ${
@@ -13,6 +15,11 @@ export function Nav({ dueCount }: NavProps) {
         ? 'bg-green-700 text-white'
         : 'text-gray-600 hover:text-green-700'
     }`;
+
+  const displayName =
+    (user?.user_metadata?.given_name as string | undefined) ??
+    user?.email ??
+    null;
 
   return (
     <nav className="border-b border-gray-200 bg-white sticky top-0 z-10">
@@ -32,6 +39,20 @@ export function Nav({ dueCount }: NavProps) {
               </span>
             )}
           </Link>
+          {displayName && (
+            <div className="flex items-center gap-2 pl-2 ml-1 border-l border-gray-200">
+              <span className="text-sm text-gray-600 hidden sm:inline">
+                {displayName}
+              </span>
+              <button
+                type="button"
+                onClick={() => void signOut()}
+                className="text-sm text-gray-500 hover:text-green-700 transition-colors"
+              >
+                Sign out
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </nav>
