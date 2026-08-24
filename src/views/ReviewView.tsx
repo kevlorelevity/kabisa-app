@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useModules } from '../hooks/useModules';
 import { useSRS } from '../hooks/useSRS';
@@ -12,11 +12,24 @@ interface DueCard {
 
 export function ReviewView() {
   const modules = useModules();
-  const { dueKeys, schedule } = useSRS();
-  // Snapshot due keys at session start so rescheduled cards don't re-appear.
-  const [sessionKeys] = useState<string[]>(() => [...dueKeys]);
+  const { dueKeys, schedule, loading } = useSRS();
+  // Snapshot due keys once SRS data has resolved (not on first render) so
+  // rescheduled cards don't re-appear mid-session. Waiting on `loading`
+  // rather than snapshotting eagerly avoids freezing an empty snapshot
+  // before the async Supabase fetch (or, offline, the synchronous read)
+  // has actually resolved.
+  const [sessionKeys, setSessionKeys] = useState<string[] | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [sessionDone, setSessionDone] = useState(false);
+
+  useEffect(() => {
+    if (!loading && sessionKeys === null) {
+      setSessionKeys([...dueKeys]);
+    }
+    // Intentionally omit dueKeys/sessionKeys: this should fire exactly once,
+    // the moment `loading` first becomes false, not on every dueKeys change.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loading]);
 
   // Build vocab-id → entry index once per render of the modules list.
   const vocabIndex = useMemo(() => {
@@ -36,6 +49,7 @@ export function ReviewView() {
   }
 
   function handleRate(rating: Rating) {
+    if (!sessionKeys) return;
     const key = sessionKeys[currentIndex];
     schedule(key, rating);
     const next = currentIndex + 1;
@@ -44,6 +58,17 @@ export function ReviewView() {
     } else {
       setCurrentIndex(next);
     }
+  }
+
+  // Guard against a false "nothing due" flash while SRS cards are still
+  // loading from Supabase — showing that message before the fetch resolves
+  // would wrongly tell a user they have nothing to review.
+  if (loading || sessionKeys === null) {
+    return (
+      <div className="max-w-md mx-auto px-4 py-16 text-center text-gray-500">
+        Loading…
+      </div>
+    );
   }
 
   if (sessionKeys.length === 0) {

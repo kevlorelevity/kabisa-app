@@ -2,13 +2,12 @@ import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useModules } from '../hooks/useModules';
 import { useProgress } from '../hooks/useProgress';
+import { useSRS } from '../hooks/useSRS';
 import { VocabEntry } from '../components/VocabEntry';
 import { ExchangeLine } from '../components/ExchangeLine';
 import { ExerciseFillBlank } from '../components/ExerciseFillBlank';
 import { ExerciseMatch } from '../components/ExerciseMatch';
 import { ExerciseTranslate } from '../components/ExerciseTranslate';
-import { initialCardState } from '../srs';
-import { setSRSCard } from '../storage';
 import type { Exercise } from '../types';
 
 const DIFFICULTY_LABELS = {
@@ -21,7 +20,8 @@ export function ModuleView() {
   const { id } = useParams<{ id: string }>();
   const modules = useModules();
   const module = modules.find((m) => m.id === id);
-  const { progress, updateProgress } = useProgress(id ?? '');
+  const { progress, updateProgress } = useProgress(id ?? '', module?.uuid);
+  const { seedCards } = useSRS();
   const [completedExercises, setCompletedExercises] = useState<Set<number>>(new Set());
 
   if (!module) {
@@ -48,10 +48,10 @@ export function ModuleView() {
 
   function addToReview() {
     // SRS keys are the vocab entry's stable UUID. See storage.ts +
-    // /docs/schema.md for the SRS card key contract.
-    module!.vocabulary.forEach((entry) => {
-      setSRSCard(entry.id, initialCardState());
-    });
+    // /docs/schema.md for the SRS card key contract. Seeding goes through
+    // useSRS() so the shared SRSProvider state (and the nav's due-count
+    // badge) updates immediately, without a route change.
+    seedCards(module!.vocabulary.map((entry) => entry.id));
     updateProgress({
       status: 'reviewed',
       addedToReview: true,

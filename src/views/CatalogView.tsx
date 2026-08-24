@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useModules } from '../hooks/useModules';
+import { useAllModuleProgress } from '../hooks/useAllModuleProgress';
 import { ModuleCard } from '../components/ModuleCard';
-import { getModuleProgress } from '../storage';
 import type { Category, Difficulty, ModuleStatus } from '../types';
 
 const CATEGORIES: Array<{ value: Category | 'all'; label: string }> = [
@@ -23,6 +23,7 @@ const DIFFICULTIES: Array<{ value: Difficulty | 'all'; label: string }> = [
 
 export function CatalogView() {
   const modules = useModules();
+  const { getProgress } = useAllModuleProgress();
   const [category, setCategory] = useState<Category | 'all'>('all');
   const [difficulty, setDifficulty] = useState<Difficulty | 'all'>('all');
 
@@ -68,8 +69,7 @@ export function CatalogView() {
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {filtered.map((m) => {
-            const progress = getModuleProgress(m.id);
-            const status: ModuleStatus = progress?.status ?? 'not-started';
+            const status: ModuleStatus = getProgress(m).status;
             return <ModuleCard key={m.id} module={m} status={status} />;
           })}
         </div>

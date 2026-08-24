@@ -1,29 +1,29 @@
-import { useEffect, useMemo } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Nav } from './components/Nav';
 import { CatalogView } from './views/CatalogView';
 import { ModuleView } from './views/ModuleView';
 import { ReviewView } from './views/ReviewView';
-import { getAllSRSCards, migrateLegacySRSKeys } from './storage';
+import { migrateLegacySRSKeys } from './storage';
 import { useModules } from './hooks/useModules';
-import { isDue } from './srs';
+import { isSupabaseConfigured } from './lib/supabase';
 import { AuthProvider } from './hooks/AuthProvider';
 import { SignInGate } from './components/SignInGate';
+import { SRSProvider } from './hooks/SRSProvider';
+import { useSRS } from './hooks/useSRS';
 
 function AppLayout() {
-  const location = useLocation();
   const modules = useModules();
+  const { dueCount } = useSRS();
 
   // Run the legacy SRS key migration once on first mount. Idempotent.
+  // Only meaningful for the offline/localStorage path — once Supabase owns
+  // SRS state, the legacy ksa_srs keys aren't read for display, so skip the
+  // pointless localStorage write.
   useEffect(() => {
+    if (isSupabaseConfigured()) return;
     migrateLegacySRSKeys(modules);
   }, [modules]);
-
-  // Recompute from localStorage whenever the route changes
-  const dueCount = useMemo(() => {
-    const cards = getAllSRSCards();
-    return Object.values(cards).filter(isDue).length;
-  }, [location.pathname]);
 
   return (
     <>
@@ -44,7 +44,9 @@ export function App() {
     <AuthProvider>
       <BrowserRouter>
         <SignInGate>
-          <AppLayout />
+          <SRSProvider>
+            <AppLayout />
+          </SRSProvider>
         </SignInGate>
       </BrowserRouter>
     </AuthProvider>

@@ -1,24 +1,8 @@
-import { useState, useCallback } from 'react';
-import { getAllSRSCards, setSRSCard } from '../storage';
-import { isDue, scheduleCard } from '../srs';
-import type { Rating } from '../types';
+import { useContext } from 'react';
+import { SRSContext, type SRSContextValue } from './srsContext';
 
-export function useSRS() {
-  const [cards, setCards] = useState(() => getAllSRSCards());
-
-  const dueKeys = Object.entries(cards)
-    .filter(([, state]) => isDue(state))
-    .map(([key]) => key);
-
-  const schedule = useCallback((cardKey: string, rating: Rating) => {
-    setCards((prev) => {
-      const current = prev[cardKey];
-      if (!current) return prev;
-      const next = scheduleCard(current, rating);
-      setSRSCard(cardKey, next);
-      return { ...prev, [cardKey]: next };
-    });
-  }, []);
-
-  return { dueKeys, dueCount: dueKeys.length, schedule };
+export function useSRS(): SRSContextValue {
+  const ctx = useContext(SRSContext);
+  if (!ctx) throw new Error('useSRS must be used within an SRSProvider');
+  return ctx;
 }
