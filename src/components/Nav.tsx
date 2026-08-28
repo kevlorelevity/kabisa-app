@@ -31,6 +31,9 @@ export function Nav({ dueCount }: NavProps) {
           <Link to="/" className={linkClass('/')}>
             Catalog
           </Link>
+          <Link to="/lessons" className={linkClass('/lessons')}>
+            Lessons
+          </Link>
           <Link to="/review" className={`${linkClass('/review')} relative`}>
             Review
             {dueCount > 0 && (

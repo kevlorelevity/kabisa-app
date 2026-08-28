@@ -121,6 +121,55 @@ export interface Module {
   exercises: Exercise[];
 }
 
+// -------- Dialogue / role-play lesson types (Lessons surface) --------
+//
+// A Lesson is a separate content type from Module: an interactive,
+// turn-by-turn role-play. 'auto' turns are shown immediately; 'user' turns
+// present the learner with up to 3 Swahili options (one correct) and only
+// advance once the correct one is picked. Local-JSON only for now (see
+// content/lessons/*.json + useLessons) — not yet backed by Supabase tables.
+
+/** One tappable word or short phrase within a dialogue line, with its English gloss. */
+export interface WordGloss {
+  /** The exact substring of `swahili` this gloss covers. */
+  text: string;
+  /** English explanation shown in the tap-to-explain tooltip. */
+  gloss: string;
+}
+
+export interface DialogueOption {
+  swahili: string;
+  correct: boolean;
+}
+
+export interface DialogueTurn {
+  id: string;
+  /** Display name, e.g. "Mteja" or "Dereva". */
+  speaker: string;
+  /** 'auto' turns render immediately; 'user' turns are answered via MCQ. */
+  role: 'auto' | 'user';
+  swahili: string;
+  english: string;
+  /** Word-by-word breakdown powering the tap-to-explain tooltip. */
+  words: WordGloss[];
+  /** MCQ choices — required when role is 'user', max 3, exactly one correct. */
+  options?: DialogueOption[];
+}
+
+export interface Lesson {
+  id: string;
+  uuid: string;
+  title: string;
+  category: Category;
+  difficulty: Difficulty;
+  culturalNote: string;
+  /** One-line scene-setter shown above the dialogue, e.g. who starts and why. */
+  startingPoint: string;
+  turns: DialogueTurn[];
+  /** Key vocabulary recap shown after the dialogue completes. */
+  vocabulary: VocabEntry[];
+}
+
 /** Grammar lessons are a top-level surface in V1. */
 export interface GrammarLesson {
   id: string;

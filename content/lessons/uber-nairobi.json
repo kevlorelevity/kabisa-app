@@ -1,0 +1,167 @@
+{
+  "id": "uber-nairobi",
+  "uuid": "209805f0-4f83-47e6-a81a-ce97d4f11c3b",
+  "title": "Taking an Uber in Nairobi",
+  "category": "transport",
+  "difficulty": "beginner",
+  "culturalNote": "Ordering a ride and chatting with the driver is one of the most common everyday exchanges a visitor to Nairobi will have. The passenger (mteja) usually opens with a casual greeting, and the driver (dereva) confirms the destination before setting off. This lesson has you play the mteja — pick what you'd say, then see how the dereva responds.",
+  "startingPoint": "The customer (mteja) gets in the car and starts the conversation.",
+  "turns": [
+    {
+      "id": "ef6c870c-d478-4cea-b26e-25d5347c809b",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Niaje boss?",
+      "english": "What's up, boss?",
+      "words": [
+        { "text": "Niaje", "gloss": "From \"ni aje?\" (\"how is it?\"), said fast with the stress on the first syllable. The common, casual way to say \"how are you?\"" },
+        { "text": "boss", "gloss": "An English loanword used as a friendly, informal form of address — like calling someone \"boss\" or \"chief\"." }
+      ],
+      "options": [
+        { "swahili": "Niaje boss?", "correct": true },
+        { "swahili": "Asante sana.", "correct": false },
+        { "swahili": "Unaenda wapi?", "correct": false }
+      ]
+    },
+    {
+      "id": "17ffd795-bd46-47aa-a351-70eb69295754",
+      "speaker": "Dereva",
+      "role": "auto",
+      "swahili": "Poa sana.",
+      "english": "Very cool.",
+      "words": [
+        { "text": "Poa", "gloss": "\"Cool\" — from kupoa, \"to chill / cool down.\" The standard reply to niaje." },
+        { "text": "sana", "gloss": "\"Very.\"" }
+      ]
+    },
+    {
+      "id": "976a55ab-682a-4bce-bd4f-6f15851d0d1e",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Asante.",
+      "english": "Thanks.",
+      "words": [
+        { "text": "Asante", "gloss": "\"Thank you.\"" }
+      ],
+      "options": [
+        { "swahili": "Niaje boss?", "correct": false },
+        { "swahili": "Asante.", "correct": true },
+        { "swahili": "Sawa.", "correct": false }
+      ]
+    },
+    {
+      "id": "88560c53-0d79-4920-9a5b-a38461fbf7d2",
+      "speaker": "Dereva",
+      "role": "auto",
+      "swahili": "Unaenda wapi?",
+      "english": "Where are you going?",
+      "words": [
+        { "text": "Unaenda", "gloss": "\"You are going\" — present tense of kuenda (\"to go\"): u- (you) + -na- (present) + -enda (go)." },
+        { "text": "wapi", "gloss": "\"Where?\"" }
+      ]
+    },
+    {
+      "id": "ed747c60-5229-4b37-a39a-6c7f5b8b4ca9",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Ninaenda Westie, karibu na Mall.",
+      "english": "I'm going to Westie, close by the Mall.",
+      "words": [
+        { "text": "Ninaenda", "gloss": "\"I am going\" — present tense of kuenda: ni- (I) + -na- (present) + -enda (go)." },
+        { "text": "Westie", "gloss": "Casual short form of \"Westlands,\" a Nairobi neighborhood." },
+        { "text": "karibu na", "gloss": "\"Close to / near.\"" },
+        { "text": "Mall", "gloss": "English loanword for a shopping mall — context makes clear which one." }
+      ],
+      "options": [
+        { "swahili": "Ninaenda Westie, karibu na Mall.", "correct": true },
+        { "swahili": "Ninaenda kazi.", "correct": false },
+        { "swahili": "Labda Westlands roundabout.", "correct": false }
+      ]
+    },
+    {
+      "id": "15d72267-fe79-4b3c-bc53-5129c9737e8b",
+      "speaker": "Dereva",
+      "role": "auto",
+      "swahili": "Sawa. Tunaenda upande gani?",
+      "english": "Okay. Which side are we going?",
+      "words": [
+        { "text": "Sawa", "gloss": "\"Okay\" / \"equal\" — used generally to mean \"alright.\"" },
+        { "text": "Tunaenda", "gloss": "\"We are going\" — present tense of kuenda: tu- (we) + -na- (present) + -enda (go)." },
+        { "text": "upande", "gloss": "\"Side\" — a common way to ask about direction." },
+        { "text": "gani", "gloss": "\"Which?\"" }
+      ]
+    },
+    {
+      "id": "de94276e-aa25-4e6d-8232-4ab30bd40854",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Labda Westlands roundabout.",
+      "english": "Maybe Westlands roundabout.",
+      "words": [
+        { "text": "Labda", "gloss": "\"Maybe.\"" },
+        { "text": "Westlands roundabout", "gloss": "A specific landmark in Westlands — giving a precise drop-off point." }
+      ],
+      "options": [
+        { "swahili": "Ninaenda Westie, karibu na Mall.", "correct": false },
+        { "swahili": "Niambie bei.", "correct": false },
+        { "swahili": "Labda Westlands roundabout.", "correct": true }
+      ]
+    },
+    {
+      "id": "ab172db0-7752-4cf5-8cb9-196234716863",
+      "speaker": "Dereva",
+      "role": "auto",
+      "swahili": "Sawa.",
+      "english": "Okay.",
+      "words": [
+        { "text": "Sawa", "gloss": "\"Okay.\"" }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "900abc8f-0bc4-4b52-a87e-c6a658365dd5",
+      "swahili": "Niaje",
+      "english": "How's it going? / What's up?",
+      "exampleContext": "A fast, casual greeting — contraction of \"ni aje?\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "63bc305d-1b1c-455c-a88e-79e5d1fb0c3f",
+      "swahili": "Poa sana",
+      "english": "Very cool",
+      "exampleContext": "The standard reply to niaje",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "97e1d4cc-d2cd-48ea-9fca-96f180e32079",
+      "swahili": "Unaenda wapi?",
+      "english": "Where are you going?",
+      "exampleContext": "What a driver asks to confirm your destination",
+      "partOfSpeech": "phrase",
+      "tense": "present"
+    },
+    {
+      "id": "14dd3140-fcb2-4bda-9220-2f86416efcae",
+      "swahili": "Ninaenda",
+      "english": "I am going",
+      "exampleContext": "Present tense of kuenda (to go) — ni- + -na- + -enda",
+      "partOfSpeech": "verb",
+      "tense": "present"
+    },
+    {
+      "id": "44e958b2-7b19-4ca7-946b-e80ec1613bda",
+      "swahili": "Karibu na",
+      "english": "Close to / near",
+      "exampleContext": "Used to describe a location relative to a landmark",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "ab87c462-4aa6-4038-9238-9f83b766aa5a",
+      "swahili": "Upande gani?",
+      "english": "Which side?",
+      "exampleContext": "Asking for a direction or side of a road/area",
+      "partOfSpeech": "phrase"
+    }
+  ]
+}

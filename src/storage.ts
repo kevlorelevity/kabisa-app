@@ -3,6 +3,7 @@ import type { ModuleProgress, CardState, Module } from './types';
 const PROGRESS_KEY = 'ksa_progress';
 const SRS_KEY = 'ksa_srs';
 const MIGRATION_KEY = 'ksa_srs_migrated_v1';
+const LESSON_PROGRESS_KEY = 'ksa_lesson_progress';
 
 function readJSON<T>(key: string): T | null {
   try {
@@ -78,4 +79,23 @@ export function migrateLegacySRSKeys(modules: Module[]): void {
 
   writeJSON(SRS_KEY, migrated);
   localStorage.setItem(MIGRATION_KEY, '1');
+}
+
+
+// -------- Lesson progress (Lessons surface — local-only for now) --------
+//
+// Lessons aren't seeded into Supabase yet (see useLessons.ts), so their
+// progress can't ride module_progress (its module_id has an FK to the
+// `module` table). Tracked here, keyed by lesson slug, until lessons get
+// their own DB schema.
+
+export function isLessonComplete(lessonId: string): boolean {
+  const all = readJSON<Record<string, boolean>>(LESSON_PROGRESS_KEY) ?? {};
+  return all[lessonId] === true;
+}
+
+export function setLessonComplete(lessonId: string): void {
+  const all = readJSON<Record<string, boolean>>(LESSON_PROGRESS_KEY) ?? {};
+  all[lessonId] = true;
+  writeJSON(LESSON_PROGRESS_KEY, all);
 }

@@ -4,6 +4,8 @@ import { Nav } from './components/Nav';
 import { CatalogView } from './views/CatalogView';
 import { ModuleView } from './views/ModuleView';
 import { ReviewView } from './views/ReviewView';
+import { LessonsView } from './views/LessonsView';
+import { LessonView } from './views/LessonView';
 import { migrateLegacySRSKeys } from './storage';
 import { useModules } from './hooks/useModules';
 import { isSupabaseConfigured } from './lib/supabase';
@@ -32,6 +34,8 @@ function AppLayout() {
         <Routes>
           <Route path="/" element={<CatalogView />} />
           <Route path="/module/:id" element={<ModuleView />} />
+          <Route path="/lessons" element={<LessonsView />} />
+          <Route path="/lesson/:id" element={<LessonView />} />
           <Route path="/review" element={<ReviewView />} />
         </Routes>
       </main>

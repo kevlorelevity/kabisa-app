@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 .vercel
 .env*
+
+# Scratch: files staged for deletion via the device-bridge workaround
+# (device_bash can't rm inside connected folders without a permission grant)
+**/_to_delete/
