@@ -27,25 +27,28 @@
       "id": "17ffd795-bd46-47aa-a351-70eb69295754",
       "speaker": "Dereva",
       "role": "auto",
-      "swahili": "Poa sana.",
-      "english": "Very cool.",
+      "swahili": "Poa sana. Uko aje?",
+      "english": "Very cool. How are you?",
       "words": [
         { "text": "Poa", "gloss": "\"Cool\" — from kupoa, \"to chill / cool down.\" The standard reply to niaje." },
-        { "text": "sana", "gloss": "\"Very.\"" }
+        { "text": "sana", "gloss": "\"Very.\"" },
+        { "text": "Uko aje", "gloss": "\"How are you?\" — u- (you) + -ko (be located/be at) + aje (how). The driver is asking you back, so answer with how you are." }
       ]
     },
     {
       "id": "976a55ab-682a-4bce-bd4f-6f15851d0d1e",
       "speaker": "Mteja",
       "role": "user",
-      "swahili": "Asante.",
-      "english": "Thanks.",
+      "swahili": "Niko poa, asante.",
+      "english": "I'm good, thanks.",
       "words": [
-        { "text": "Asante", "gloss": "\"Thank you.\"" }
+        { "text": "Niko", "gloss": "\"I am (located / doing)\" — ni- (I) + -ko (be at). The reply to uko aje." },
+        { "text": "poa", "gloss": "\"Cool / good.\"" },
+        { "text": "asante", "gloss": "\"Thank you.\"" }
       ],
       "options": [
         { "swahili": "Niaje boss?", "correct": false },
-        { "swahili": "Asante.", "correct": true },
+        { "swahili": "Niko poa, asante.", "correct": true },
         { "swahili": "Sawa.", "correct": false }
       ]
     },
@@ -56,7 +59,19 @@
       "swahili": "Unaenda wapi?",
       "english": "Where are you going?",
       "words": [
-        { "text": "Unaenda", "gloss": "\"You are going\" — present tense of kuenda (\"to go\"): u- (you) + -na- (present) + -enda (go)." },
+        { "text": "Unaenda", "gloss": "\"You are going\" — present tense of kuenda (\"to go\"): u- (you) + -na- (present) + -enda (go).",
+          "conjugation": {
+          "verb": "kuenda (to go)",
+          "tense": "Present (-na-)",
+          "rows": [
+            { "pronoun": "I", "form": "ninaenda" },
+            { "pronoun": "you", "form": "unaenda" },
+            { "pronoun": "he/she", "form": "anaenda" },
+            { "pronoun": "we", "form": "tunaenda" },
+            { "pronoun": "you all", "form": "mnaenda" },
+            { "pronoun": "they", "form": "wanaenda" }
+          ]
+        } },
         { "text": "wapi", "gloss": "\"Where?\"" }
       ]
     },
@@ -67,7 +82,19 @@
       "swahili": "Ninaenda Westie, karibu na Mall.",
       "english": "I'm going to Westie, close by the Mall.",
       "words": [
-        { "text": "Ninaenda", "gloss": "\"I am going\" — present tense of kuenda: ni- (I) + -na- (present) + -enda (go)." },
+        { "text": "Ninaenda", "gloss": "\"I am going\" — present tense of kuenda: ni- (I) + -na- (present) + -enda (go).",
+          "conjugation": {
+          "verb": "kuenda (to go)",
+          "tense": "Present (-na-)",
+          "rows": [
+            { "pronoun": "I", "form": "ninaenda" },
+            { "pronoun": "you", "form": "unaenda" },
+            { "pronoun": "he/she", "form": "anaenda" },
+            { "pronoun": "we", "form": "tunaenda" },
+            { "pronoun": "you all", "form": "mnaenda" },
+            { "pronoun": "they", "form": "wanaenda" }
+          ]
+        } },
         { "text": "Westie", "gloss": "Casual short form of \"Westlands,\" a Nairobi neighborhood." },
         { "text": "karibu na", "gloss": "\"Close to / near.\"" },
         { "text": "Mall", "gloss": "English loanword for a shopping mall — context makes clear which one." }
@@ -86,7 +113,19 @@
       "english": "Okay. Which side are we going?",
       "words": [
         { "text": "Sawa", "gloss": "\"Okay\" / \"equal\" — used generally to mean \"alright.\"" },
-        { "text": "Tunaenda", "gloss": "\"We are going\" — present tense of kuenda: tu- (we) + -na- (present) + -enda (go)." },
+        { "text": "Tunaenda", "gloss": "\"We are going\" — present tense of kuenda: tu- (we) + -na- (present) + -enda (go).",
+          "conjugation": {
+          "verb": "kuenda (to go)",
+          "tense": "Present (-na-)",
+          "rows": [
+            { "pronoun": "I", "form": "ninaenda" },
+            { "pronoun": "you", "form": "unaenda" },
+            { "pronoun": "he/she", "form": "anaenda" },
+            { "pronoun": "we", "form": "tunaenda" },
+            { "pronoun": "you all", "form": "mnaenda" },
+            { "pronoun": "they", "form": "wanaenda" }
+          ]
+        } },
         { "text": "upande", "gloss": "\"Side\" — a common way to ask about direction." },
         { "text": "gani", "gloss": "\"Which?\"" }
       ]
@@ -102,7 +141,7 @@
         { "text": "Westlands roundabout", "gloss": "A specific landmark in Westlands — giving a precise drop-off point." }
       ],
       "options": [
-        { "swahili": "Ninaenda Westie, karibu na Mall.", "correct": false },
+        { "swahili": "Ninatoka Waiyaki Way.", "correct": false },
         { "swahili": "Niambie bei.", "correct": false },
         { "swahili": "Labda Westlands roundabout.", "correct": true }
       ]
@@ -131,6 +170,20 @@
       "swahili": "Poa sana",
       "english": "Very cool",
       "exampleContext": "The standard reply to niaje",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "b6dc0a86-23ba-47b6-b264-be0d85058e74",
+      "swahili": "Uko aje?",
+      "english": "How are you?",
+      "exampleContext": "Asking back after a greeting — reply with Niko poa (I'm good)",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "e1b0d772-edfe-4df4-8ef1-c5d41a6d81d7",
+      "swahili": "Niko poa",
+      "english": "I'm good / I'm cool",
+      "exampleContext": "The standard answer to uko aje",
       "partOfSpeech": "phrase"
     },
     {

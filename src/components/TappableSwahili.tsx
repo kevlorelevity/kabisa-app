@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { WordGloss } from '../types';
+import type { ConjugationTable, WordGloss } from '../types';
 
 interface TappableSwahiliProps {
   swahili: string;
@@ -19,6 +19,7 @@ interface TappableSwahiliProps {
 interface Segment {
   text: string;
   gloss: string | null;
+  conjugation?: ConjugationTable;
 }
 
 /** Splits `swahili` into plain-text and glossed segments, in order. */
@@ -31,7 +32,7 @@ function buildSegments(swahili: string, words: WordGloss[]): Segment[] {
     if (idx > cursor) {
       segments.push({ text: swahili.slice(cursor, idx), gloss: null });
     }
-    segments.push({ text: word.text, gloss: word.gloss });
+    segments.push({ text: word.text, gloss: word.gloss, conjugation: word.conjugation });
     cursor = idx + word.text.length;
   }
   if (cursor < swahili.length) {
@@ -80,14 +81,40 @@ export function TappableSwahili({ swahili, words, enabled, className, variant = 
             {isOpen && (
               <span
                 role="tooltip"
-                className="absolute left-1/2 -translate-x-1/2 top-full mt-1 z-20 w-max max-w-[14rem] rounded-md bg-gray-900 text-white text-xs leading-snug px-2.5 py-1.5 shadow-lg"
+                className={`absolute left-1/2 -translate-x-1/2 top-full mt-1 z-20 w-max rounded-md bg-gray-900 text-white text-xs leading-snug px-2.5 py-1.5 shadow-lg ${
+                  seg.conjugation ? 'max-w-[16rem]' : 'max-w-[14rem]'
+                }`}
               >
                 {seg.gloss}
+                {seg.conjugation && (
+                  <ConjugationGrid table={seg.conjugation} current={seg.text} />
+                )}
               </span>
             )}
           </span>
         );
       })}
+    </span>
+  );
+}
+
+function ConjugationGrid({ table, current }: { table: ConjugationTable; current: string }) {
+  return (
+    <span className="block mt-2 pt-2 border-t border-white/20">
+      <span className="block font-semibold">
+        {table.verb} · {table.tense}
+      </span>
+      <span className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-0.5 mt-1">
+        {table.rows.map((row) => {
+          const active = row.form.toLowerCase() === current.toLowerCase();
+          return (
+            <span key={row.form} className="contents">
+              <span className={active ? 'text-green-300' : 'text-gray-400'}>{row.pronoun}</span>
+              <span className={active ? 'font-bold text-green-300' : ''}>{row.form}</span>
+            </span>
+          );
+        })}
+      </span>
     </span>
   );
 }

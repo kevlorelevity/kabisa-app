@@ -129,12 +129,23 @@ export interface Module {
 // advance once the correct one is picked. Local-JSON only for now (see
 // content/lessons/*.json + useLessons) — not yet backed by Supabase tables.
 
+/** A verb paradigm shown as a table inside a tap-to-explain tooltip. */
+export interface ConjugationTable {
+  /** e.g. "kuenda (to go)". */
+  verb: string;
+  /** e.g. "Present (-na-)". */
+  tense: string;
+  rows: Array<{ pronoun: string; form: string }>;
+}
+
 /** One tappable word or short phrase within a dialogue line, with its English gloss. */
 export interface WordGloss {
   /** The exact substring of `swahili` this gloss covers. */
   text: string;
   /** English explanation shown in the tap-to-explain tooltip. */
   gloss: string;
+  /** Optional conjugation table; the row matching `text` is highlighted. */
+  conjugation?: ConjugationTable;
 }
 
 export interface DialogueOption {

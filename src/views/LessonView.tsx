@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useLesson } from '../hooks/useLessons';
 import { DialoguePlayer } from '../components/DialoguePlayer';
 import { VocabEntry } from '../components/VocabEntry';
+import { LessonFlashcards } from '../components/LessonFlashcards';
 import { setLessonComplete } from '../storage';
 
 const DIFFICULTY_LABELS = {
@@ -76,6 +77,12 @@ export function LessonView() {
                 <VocabEntry key={entry.id} entry={entry} />
               ))}
             </div>
+          </div>
+          <div>
+            <h2 className="text-xs uppercase tracking-wide text-gray-400 font-semibold mb-2">
+              Flashcards
+            </h2>
+            <LessonFlashcards entries={lesson.vocabulary} />
           </div>
         </section>
       )}
