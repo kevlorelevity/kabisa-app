@@ -8,7 +8,9 @@ const lessonFiles = import.meta.glob('../../content/lessons/*.json', {
   eager: true,
 }) as Record<string, { default: Lesson }>;
 
-const lessons: Lesson[] = Object.values(lessonFiles).map((f) => f.default);
+const lessons: Lesson[] = Object.values(lessonFiles)
+  .map((f) => f.default)
+  .sort((a, b) => (a.order ?? Infinity) - (b.order ?? Infinity));
 
 /** Returns all authored lessons. */
 export function useLessons(): Lesson[] {

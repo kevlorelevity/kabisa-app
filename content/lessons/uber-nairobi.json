@@ -4,6 +4,7 @@
   "title": "Taking an Uber in Nairobi",
   "category": "transport",
   "difficulty": "beginner",
+  "order": 1,
   "culturalNote": "Ordering a ride and chatting with the driver is one of the most common everyday exchanges a visitor to Nairobi will have. The passenger (mteja) usually opens with a casual greeting, and the driver (dereva) confirms the destination before setting off. This lesson has you play the mteja — pick what you'd say, then see how the dereva responds.",
   "startingPoint": "The customer (mteja) gets in the car and starts the conversation.",
   "turns": [
@@ -32,7 +33,8 @@
       "words": [
         { "text": "Poa", "gloss": "\"Cool\" — from kupoa, \"to chill / cool down.\" The standard reply to niaje." },
         { "text": "sana", "gloss": "\"Very.\"" },
-        { "text": "Uko aje", "gloss": "\"How are you?\" — u- (you) + -ko (be located/be at) + aje (how). The driver is asking you back, so answer with how you are." }
+        {"text": "Uko", "gloss": "\"You are (at / doing)\" — u- (you) + -ko (be at). Uko aje? = how are you?", "conjugation": {"verb": "-ko (to be at / be doing)", "tense": "Present", "rows": [{"pronoun": "I", "form": "niko"}, {"pronoun": "you", "form": "uko"}, {"pronoun": "he/she", "form": "yuko"}, {"pronoun": "we", "form": "tuko"}, {"pronoun": "you all", "form": "mko"}, {"pronoun": "they", "form": "wako"}]}},
+        {"text": "aje", "gloss": "\"How?\" — Kenyan colloquial. The driver is asking you back, so answer with how you are."}
       ]
     },
     {
@@ -42,7 +44,7 @@
       "swahili": "Niko poa, asante.",
       "english": "I'm good, thanks.",
       "words": [
-        { "text": "Niko", "gloss": "\"I am (located / doing)\" — ni- (I) + -ko (be at). The reply to uko aje." },
+        {"text": "Niko", "gloss": "\"I am (at / doing)\" — ni- (I) + -ko (be at). The reply to uko aje.", "conjugation": {"verb": "-ko (to be at / be doing)", "tense": "Present", "rows": [{"pronoun": "I", "form": "niko"}, {"pronoun": "you", "form": "uko"}, {"pronoun": "he/she", "form": "yuko"}, {"pronoun": "we", "form": "tuko"}, {"pronoun": "you all", "form": "mko"}, {"pronoun": "they", "form": "wako"}]}},
         { "text": "poa", "gloss": "\"Cool / good.\"" },
         { "text": "asante", "gloss": "\"Thank you.\"" }
       ],
@@ -214,6 +216,41 @@
       "swahili": "Upande gani?",
       "english": "Which side?",
       "exampleContext": "Asking for a direction or side of a road/area",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "5532462b-8b91-486a-8a8a-783f44d2f11f",
+      "swahili": "Sawa",
+      "english": "Okay / alright",
+      "exampleContext": "The all-purpose \"okay\" — drivers say it constantly",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "dda1b347-8127-4120-b80a-ec5d45d59452",
+      "swahili": "Labda",
+      "english": "Maybe",
+      "exampleContext": "A soft way to suggest something: Labda Westlands roundabout",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "4359cbae-6982-4e38-92fe-e6903102caea",
+      "swahili": "Asante",
+      "english": "Thank you",
+      "exampleContext": "Asante sana = thank you very much",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "6dce1985-96c1-4bc2-8476-bd8cc77a9e6d",
+      "swahili": "Gani?",
+      "english": "Which?",
+      "exampleContext": "Upande gani? = which side?",
+      "partOfSpeech": "other"
+    },
+    {
+      "id": "c633e3bb-77ac-4593-b173-137fb9b27a06",
+      "swahili": "Bei ni ngapi?",
+      "english": "What's the price?",
+      "exampleContext": "Ngapi = how much / how many",
       "partOfSpeech": "phrase"
     }
   ],
@@ -399,6 +436,123 @@
         {"text": "Asante", "correct": false, "feedback": "asante = thank you."}
       ],
       "explanation": "Niaje = what's up / how's it going (from ni aje?). The casual way to open with the driver."
+    },
+    {
+      "id": "05f2a4b7-52e3-43c0-bad8-9fdd8344c20a",
+      "mode": "translate",
+      "english": "Where are they going?",
+      "before": "",
+      "after": " wapi?",
+      "options": [
+        {"text": "Wanaenda", "correct": true},
+        {"text": "Tunaenda", "correct": false, "feedback": "tunaenda = WE are going."},
+        {"text": "Anaenda", "correct": false, "feedback": "anaenda = HE/SHE is going."}
+      ],
+      "explanation": "Wanaenda = wa- (they) + -na- + -enda."
+    },
+    {
+      "id": "e692be21-1226-4a80-be43-176c449504dc",
+      "mode": "translate",
+      "english": "We are going to Westie, near the Mall.",
+      "before": "",
+      "after": " Westie, karibu na Mall.",
+      "options": [
+        {"text": "Tunaenda", "correct": true},
+        {"text": "Mnaenda", "correct": false, "feedback": "mnaenda = YOU ALL are going."},
+        {"text": "Ninaenda", "correct": false, "feedback": "ninaenda = I am going."}
+      ],
+      "explanation": "Tunaenda = tu- (we) + -na- + -enda. Useful when you're sharing the ride."
+    },
+    {
+      "id": "5caf52b9-0baf-4d48-8d80-4ee8e10789df",
+      "mode": "translate",
+      "english": "Where are you going, boss?",
+      "before": "Unaenda ",
+      "after": " boss?",
+      "options": [
+        {"text": "wapi", "correct": true},
+        {"text": "gani", "correct": false, "feedback": "gani = which? — it needs a noun before it, like upande gani."},
+        {"text": "ngapi", "correct": false, "feedback": "ngapi = how much / how many?"}
+      ],
+      "explanation": "Wapi = where. Adding boss keeps it friendly."
+    },
+    {
+      "id": "e6744c96-0702-4ee1-b7d2-36424b1c1fff",
+      "mode": "complete",
+      "english": "Which side?",
+      "before": "Upande ",
+      "after": "?",
+      "options": [
+        {"text": "gani", "correct": true},
+        {"text": "ngapi", "correct": false, "feedback": "ngapi = how many? — not about direction."},
+        {"text": "sana", "correct": false, "feedback": "sana = very."}
+      ],
+      "explanation": "Upande gani? = which side / which way? Answer with a landmark."
+    },
+    {
+      "id": "731c68d3-5a3f-4b09-81b6-15b33a359c48",
+      "mode": "translate",
+      "english": "We are good.",
+      "before": "",
+      "after": " poa.",
+      "options": [
+        {"text": "Tuko", "correct": true},
+        {"text": "Niko", "correct": false, "feedback": "niko = I am (at)."},
+        {"text": "Uko", "correct": false, "feedback": "uko = YOU are (at)."}
+      ],
+      "explanation": "Tuko = tu- (we) + -ko (be at). Same pattern as niko and uko."
+    },
+    {
+      "id": "11e1e36b-6ab0-48bf-9d2c-3c334c6cc6e3",
+      "mode": "translate",
+      "english": "She is fine.",
+      "before": "",
+      "after": " poa.",
+      "options": [
+        {"text": "Yuko", "correct": true},
+        {"text": "Uko", "correct": false, "feedback": "uko = YOU are (at)."},
+        {"text": "Niko", "correct": false, "feedback": "niko = I am (at)."}
+      ],
+      "explanation": "Yuko = he/she is (at). Note the y- — it's the one irregular form of -ko."
+    },
+    {
+      "id": "27dde3a8-8fc0-4594-8a28-971f4d335276",
+      "mode": "translate",
+      "english": "How are you all?",
+      "before": "",
+      "after": " aje?",
+      "options": [
+        {"text": "Mko", "correct": true},
+        {"text": "Uko", "correct": false, "feedback": "uko = YOU (one person) are. For a group, use mko."},
+        {"text": "Wako", "correct": false, "feedback": "wako = THEY are (at)."}
+      ],
+      "explanation": "Mko aje? = how are you all? — m- (you all) + -ko."
+    },
+    {
+      "id": "65a329bf-5d9e-49bd-8a24-63b9347e0bc5",
+      "mode": "complete",
+      "english": "Thank you very much.",
+      "before": "Asante ",
+      "after": ".",
+      "options": [
+        {"text": "sana", "correct": true},
+        {"text": "poa", "correct": false, "feedback": "poa = cool — you'd say Poa, asante, not asante poa."},
+        {"text": "sawa", "correct": false, "feedback": "sawa = okay."}
+      ],
+      "explanation": "Asante sana = thank you very much. Sana (very) always comes after the word it strengthens."
+    },
+    {
+      "id": "2e5b3d26-206d-4d73-8447-71a3ab21349f",
+      "mode": "complete",
+      "english": "Okay, boss.",
+      "before": "",
+      "after": ", boss.",
+      "options": [
+        {"text": "Sawa", "correct": true},
+        {"text": "Ngapi", "correct": false, "feedback": "ngapi = how much?"},
+        {"text": "Gani", "correct": false, "feedback": "gani = which?"}
+      ],
+      "explanation": "Sawa = okay. The most useful word in any matatu or Uber."
     }
   ]
 }

@@ -81,7 +81,11 @@ export function TappableSwahili({ swahili, words, enabled, className, variant = 
             {isOpen && (
               <span
                 role="tooltip"
-                className={`absolute left-1/2 -translate-x-1/2 top-full mt-1 z-20 w-max rounded-md bg-gray-900 text-white text-xs leading-snug px-2.5 py-1.5 shadow-lg ${
+                className={`absolute ${
+                  // Driver bubbles sit on the left edge, learner bubbles on the right:
+                  // grow the popover inward so it never runs off a phone screen.
+                  variant === 'dark' ? 'right-0' : 'left-0'
+                } top-full mt-1 z-20 w-max rounded-md bg-gray-900 text-white text-xs leading-snug px-2.5 py-1.5 shadow-lg ${
                   seg.conjugation ? 'max-w-[16rem]' : 'max-w-[14rem]'
                 }`}
               >

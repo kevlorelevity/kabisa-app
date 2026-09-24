@@ -200,6 +200,8 @@ export interface Lesson {
   title: string;
   category: Category;
   difficulty: Difficulty;
+  /** Position in the lessons list (lower first). Lessons without it sort last. */
+  order?: number;
   culturalNote: string;
   /** One-line scene-setter shown above the dialogue, e.g. who starts and why. */
   startingPoint: string;
