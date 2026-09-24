@@ -5,6 +5,7 @@ import { CatalogView } from './views/CatalogView';
 import { ModuleView } from './views/ModuleView';
 import { ReviewView } from './views/ReviewView';
 import { LessonsView } from './views/LessonsView';
+import { PracticeView } from './views/PracticeView';
 import { LessonView } from './views/LessonView';
 import { migrateLegacySRSKeys } from './storage';
 import { useModules } from './hooks/useModules';
@@ -36,6 +37,7 @@ function AppLayout() {
           <Route path="/module/:id" element={<ModuleView />} />
           <Route path="/lessons" element={<LessonsView />} />
           <Route path="/lesson/:id" element={<LessonView />} />
+          <Route path="/lesson/:id/practice" element={<PracticeView />} />
           <Route path="/review" element={<ReviewView />} />
         </Routes>
       </main>

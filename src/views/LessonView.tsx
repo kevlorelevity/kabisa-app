@@ -43,9 +43,19 @@ export function LessonView() {
           ← Lessons
         </Link>
         <h1 className="text-2xl font-bold text-gray-900 mt-2">{lesson.title}</h1>
-        <span className="text-xs text-gray-500 capitalize">
-          {DIFFICULTY_LABELS[lesson.difficulty]}
-        </span>
+        <div className="flex items-center gap-3">
+          <span className="text-xs text-gray-500 capitalize">
+            {DIFFICULTY_LABELS[lesson.difficulty]}
+          </span>
+          {lesson.practice?.length ? (
+            <Link
+              to={`/lesson/${lesson.id}/practice`}
+              className="text-xs text-green-700 hover:underline"
+            >
+              Skip to practice →
+            </Link>
+          ) : null}
+        </div>
       </div>
 
       <section>
@@ -68,6 +78,17 @@ export function LessonView() {
       {complete && (
         <section className="pb-16 space-y-4">
           <p className="text-sm text-gray-500">✓ Lesson complete.</p>
+          {lesson.practice?.length ? (
+            <Link
+              to={`/lesson/${lesson.id}/practice`}
+              className="block rounded-xl border border-green-200 bg-green-50 p-4 hover:border-green-400 transition-colors"
+            >
+              <p className="font-semibold text-green-800">Practice session →</p>
+              <p className="text-sm text-green-700/80 mt-0.5">
+                {lesson.practice.length} quick fill-the-gap lines using the words and verb forms from this ride.
+              </p>
+            </Link>
+          ) : null}
           <div>
             <h2 className="text-xs uppercase tracking-wide text-gray-400 font-semibold mb-2">
               Key vocabulary ({lesson.vocabulary.length} terms)

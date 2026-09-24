@@ -216,5 +216,189 @@
       "exampleContext": "Asking for a direction or side of a road/area",
       "partOfSpeech": "phrase"
     }
+  ],
+  "practice": [
+    {
+      "id": "2237066c-4c88-4249-9887-6236aceb120f",
+      "mode": "translate",
+      "english": "I am going to Westlands.",
+      "before": "",
+      "after": " Westlands.",
+      "options": [
+        {"text": "Ninaenda", "correct": true},
+        {"text": "Unaenda", "correct": false, "feedback": "unaenda = YOU are going (u- = you)."},
+        {"text": "Anaenda", "correct": false, "feedback": "anaenda = HE/SHE is going (a- = he/she)."}
+      ],
+      "explanation": "Ninaenda = ni- (I) + -na- (present, \"am …ing\") + -enda (go). No word for \"to\" is needed before a place."
+    },
+    {
+      "id": "8fe61370-2eba-4cd4-9b93-2ba8abfed951",
+      "mode": "complete",
+      "english": "Where are you going?",
+      "before": "Unaenda ",
+      "after": "?",
+      "options": [
+        {"text": "wapi", "correct": true},
+        {"text": "vipi", "correct": false, "feedback": "vipi = how? — close, but the driver wants a place."},
+        {"text": "ngapi", "correct": false, "feedback": "ngapi = how many / how much? — that's for prices."}
+      ],
+      "explanation": "Wapi = where. Unaenda wapi? is the driver's standard question — expect it every ride."
+    },
+    {
+      "id": "4c7e6769-9874-4c49-8c58-4ffd7b769fe9",
+      "mode": "translate",
+      "english": "We are going to the Mall.",
+      "before": "",
+      "after": " Mall.",
+      "options": [
+        {"text": "Tunaenda", "correct": true},
+        {"text": "Ninaenda", "correct": false, "feedback": "ninaenda = I am going (ni- = I)."},
+        {"text": "Wanaenda", "correct": false, "feedback": "wanaenda = THEY are going (wa- = they)."}
+      ],
+      "explanation": "Tunaenda = tu- (we) + -na- + -enda. The driver used it too: Tunaenda upande gani?"
+    },
+    {
+      "id": "b12601ae-816e-4132-834a-242b533c0332",
+      "mode": "translate",
+      "english": "She is going to Westie.",
+      "before": "",
+      "after": " Westie.",
+      "options": [
+        {"text": "Anaenda", "correct": true},
+        {"text": "Unaenda", "correct": false, "feedback": "unaenda = YOU are going (u- = you)."},
+        {"text": "Ninaenda", "correct": false, "feedback": "ninaenda = I am going (ni- = I)."}
+      ],
+      "explanation": "Anaenda = a- (he/she) + -na- + -enda. Swahili doesn't mark he vs she — anaenda covers both."
+    },
+    {
+      "id": "529ded8c-6190-456d-881d-f6ce9f5eec5a",
+      "mode": "translate",
+      "english": "Where are you all going?",
+      "before": "",
+      "after": " wapi?",
+      "options": [
+        {"text": "Mnaenda", "correct": true},
+        {"text": "Unaenda", "correct": false, "feedback": "unaenda = YOU (one person) are going. For a group, use m-."},
+        {"text": "Wanaenda", "correct": false, "feedback": "wanaenda = THEY are going (wa- = they)."}
+      ],
+      "explanation": "Mnaenda = m- (you all) + -na- + -enda. Handy when you're riding with friends."
+    },
+    {
+      "id": "cc2f6c70-89fc-40fb-8aff-a021d22dbfd8",
+      "mode": "translate",
+      "english": "They are going to Kilimani.",
+      "before": "",
+      "after": " Kilimani.",
+      "options": [
+        {"text": "Wanaenda", "correct": true},
+        {"text": "Mnaenda", "correct": false, "feedback": "mnaenda = YOU ALL are going (m- = you all)."},
+        {"text": "Tunaenda", "correct": false, "feedback": "tunaenda = WE are going (tu- = we)."}
+      ],
+      "explanation": "Wanaenda = wa- (they) + -na- + -enda."
+    },
+    {
+      "id": "e3eefa6f-a950-4027-8864-9d9b3a2c1483",
+      "mode": "translate",
+      "english": "Are you going to Westlands?",
+      "before": "",
+      "after": " Westlands?",
+      "options": [
+        {"text": "Unaenda", "correct": true},
+        {"text": "Ninaenda", "correct": false, "feedback": "ninaenda = I am going (ni- = I)."},
+        {"text": "Anaenda", "correct": false, "feedback": "anaenda = HE/SHE is going (a- = he/she)."}
+      ],
+      "explanation": "Unaenda = u- (you) + -na- + -enda. A yes/no question uses the same words as a statement — just raise your voice at the end."
+    },
+    {
+      "id": "487a378c-1179-4074-b84f-beaad1fbaa75",
+      "mode": "complete",
+      "english": "Very cool. How are you?",
+      "before": "Poa sana. Uko ",
+      "after": "?",
+      "options": [
+        {"text": "aje", "correct": true},
+        {"text": "sawa", "correct": false, "feedback": "sawa = okay — not a question word."},
+        {"text": "ngapi", "correct": false, "feedback": "ngapi = how many / how much?"}
+      ],
+      "explanation": "Uko aje? = how are you? (u- you + -ko be at + aje how). It's the driver asking you back after Niaje."
+    },
+    {
+      "id": "70063e3a-2cb4-40b5-9323-4d4b1cba4dee",
+      "mode": "complete",
+      "english": "I'm good, thanks.",
+      "before": "Niko ",
+      "after": ", asante.",
+      "options": [
+        {"text": "poa", "correct": true},
+        {"text": "wapi", "correct": false, "feedback": "wapi = where? — Niko wapi? would mean \"where am I?\""},
+        {"text": "sana", "correct": false, "feedback": "sana = very — it needs something before it, like poa sana."}
+      ],
+      "explanation": "Niko poa = I'm good (ni- I + -ko be at + poa cool). The standard answer to Uko aje?"
+    },
+    {
+      "id": "0c8612fb-5c9a-40f8-b449-30550c127be7",
+      "mode": "complete",
+      "english": "Okay. Which side are we going?",
+      "before": "Sawa. Tunaenda upande ",
+      "after": "?",
+      "options": [
+        {"text": "gani", "correct": true},
+        {"text": "ngapi", "correct": false, "feedback": "ngapi = how many? — \"how many sides\" isn't what he's asking."},
+        {"text": "vipi", "correct": false, "feedback": "vipi = how? — close, but here it's \"which side\"."}
+      ],
+      "explanation": "Gani = which? Upande gani? = which side / which way? — the driver checking your route."
+    },
+    {
+      "id": "b09cc1cd-f9ea-41c9-831e-11c51b016317",
+      "mode": "translate",
+      "english": "I'm going to Westie, close to the Mall.",
+      "before": "Ninaenda Westie, ",
+      "after": " Mall.",
+      "options": [
+        {"text": "karibu na", "correct": true},
+        {"text": "labda", "correct": false, "feedback": "labda = maybe."},
+        {"text": "asante", "correct": false, "feedback": "asante = thank you."}
+      ],
+      "explanation": "Karibu na = close to / near. Giving a landmark is how most Nairobi drop-offs get explained."
+    },
+    {
+      "id": "d3813dba-0b12-414e-b8ea-d6c4a6dc6492",
+      "mode": "translate",
+      "english": "Maybe Westlands roundabout.",
+      "before": "",
+      "after": " Westlands roundabout.",
+      "options": [
+        {"text": "Labda", "correct": true},
+        {"text": "Sawa", "correct": false, "feedback": "sawa = okay."},
+        {"text": "Poa", "correct": false, "feedback": "poa = cool / good."}
+      ],
+      "explanation": "Labda = maybe. A soft way to suggest a drop-off point."
+    },
+    {
+      "id": "a5dbe7bc-138a-430c-b696-502de252bf82",
+      "mode": "complete",
+      "english": "How much is the fare?",
+      "before": "Bei ni ",
+      "after": "?",
+      "options": [
+        {"text": "ngapi", "correct": true},
+        {"text": "wapi", "correct": false, "feedback": "wapi = where?"},
+        {"text": "sana", "correct": false, "feedback": "sana = very."}
+      ],
+      "explanation": "Ngapi = how much / how many? Bei ni ngapi? = what's the price? New word — you'll use it constantly."
+    },
+    {
+      "id": "47b8851c-215a-4ff6-98e8-eaeef4dd65f0",
+      "mode": "complete",
+      "english": "Hey boss, what's up?",
+      "before": "",
+      "after": " boss?",
+      "options": [
+        {"text": "Niaje", "correct": true},
+        {"text": "Sawa", "correct": false, "feedback": "sawa = okay — that's a reply, not a greeting."},
+        {"text": "Asante", "correct": false, "feedback": "asante = thank you."}
+      ],
+      "explanation": "Niaje = what's up / how's it going (from ni aje?). The casual way to open with the driver."
+    }
   ]
 }

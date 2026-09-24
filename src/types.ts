@@ -167,6 +167,33 @@ export interface DialogueTurn {
   options?: DialogueOption[];
 }
 
+/** One chip in a practice fill-in-the-blank. */
+export interface PracticeOption {
+  text: string;
+  correct: boolean;
+  /** Shown when this (wrong) chip is picked, e.g. "unaenda = YOU are going". */
+  feedback?: string;
+}
+
+/**
+ * A practice-session fragment: a Swahili sentence with one gap.
+ * - 'translate': the English line is the prompt; learner fills the Swahili gap.
+ * - 'complete': Swahili only; the English is revealed once answered.
+ */
+export interface PracticeItem {
+  id: string;
+  mode: 'translate' | 'complete';
+  english: string;
+  /** Swahili text before the gap (may be empty). */
+  before: string;
+  /** Swahili text after the gap (may be empty). */
+  after: string;
+  /** 2–4 chips, exactly one correct. Shuffled at render time. */
+  options: PracticeOption[];
+  /** Short note shown after the correct pick. */
+  explanation: string;
+}
+
 export interface Lesson {
   id: string;
   uuid: string;
@@ -179,6 +206,8 @@ export interface Lesson {
   turns: DialogueTurn[];
   /** Key vocabulary recap shown after the dialogue completes. */
   vocabulary: VocabEntry[];
+  /** Optional follow-on practice session (fill-the-gap fragments). */
+  practice?: PracticeItem[];
 }
 
 /** Grammar lessons are a top-level surface in V1. */
