@@ -1,11 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 
-interface NavProps {
-  dueCount: number;
-}
-
-export function Nav({ dueCount }: NavProps) {
+export function Nav() {
   const { pathname } = useLocation();
   const { user, signOut } = useAuth();
 
@@ -29,18 +25,7 @@ export function Nav({ dueCount }: NavProps) {
         </Link>
         <div className="flex gap-2 items-center">
           <Link to="/" className={linkClass('/')}>
-            Catalog
-          </Link>
-          <Link to="/lessons" className={linkClass('/lessons')}>
             Lessons
-          </Link>
-          <Link to="/review" className={`${linkClass('/review')} relative`}>
-            Review
-            {dueCount > 0 && (
-              <span className="ml-1 inline-flex items-center justify-center w-5 h-5 rounded-full bg-red-500 text-white text-xs font-bold">
-                {dueCount > 99 ? '99+' : dueCount}
-              </span>
-            )}
           </Link>
           {displayName && (
             <div className="flex items-center gap-2 pl-2 ml-1 border-l border-gray-200">

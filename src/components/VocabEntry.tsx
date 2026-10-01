@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { VocabEntry as VocabEntryType } from '../types';
+import { AudioButton } from './AudioButton';
 
 interface VocabEntryProps {
   entry: VocabEntryType;
@@ -13,6 +14,7 @@ export function VocabEntry({ entry }: VocabEntryProps) {
     <div className="py-3 border-b border-gray-100 last:border-0">
       <div className="flex items-start justify-between gap-4">
         <div>
+          <AudioButton text={entry.swahili} className="align-middle -ml-1.5 mr-0.5" />
           <span className="font-semibold text-gray-900">{entry.swahili}</span>
           <span className="text-gray-500 mx-2">—</span>
           <span className="text-gray-700">{entry.english}</span>

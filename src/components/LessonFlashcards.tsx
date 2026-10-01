@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { VocabEntry } from '../types';
+import { AudioButton } from './AudioButton';
 
 interface LessonFlashcardsProps {
   entries: VocabEntry[];
@@ -40,7 +41,12 @@ export function LessonFlashcards({ entries }: LessonFlashcardsProps) {
           {SIDE_LABELS[side]}
         </p>
         {side === 0 && <p className="text-xl text-gray-700 font-medium">{entry.english}</p>}
-        {side === 1 && <p className="text-2xl font-bold text-gray-900">{entry.swahili}</p>}
+        {side === 1 && (
+          <div className="flex items-center gap-2">
+            <p className="text-2xl font-bold text-gray-900">{entry.swahili}</p>
+            <AudioButton text={entry.swahili} size="md" />
+          </div>
+        )}
         {side === 2 && (
           <div className="space-y-2 max-w-sm">
             <p className="text-sm text-gray-700">{entry.exampleContext}</p>

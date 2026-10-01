@@ -1,10 +1,14 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, type ReactNode } from 'react';
 import type { PracticeItem, PracticeOption } from '../types';
+import type { AttemptResult } from '../lib/lessonScores';
+import { AudioButton } from './AudioButton';
 
 interface PracticeSessionProps {
   items: PracticeItem[];
   /** Called once with the first-try score when the last item is answered. */
-  onFinish?: (firstTryCorrect: number, total: number) => void;
+  onFinish?: (result: AttemptResult) => void;
+  /** Extra content (pass/fail, next steps) shown on the results card. */
+  resultSlot?: ReactNode;
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -16,7 +20,7 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-export function PracticeSession({ items, onFinish }: PracticeSessionProps) {
+export function PracticeSession({ items, onFinish, resultSlot }: PracticeSessionProps) {
   // Bumping `round` reshuffles item order and chip order for "Practice again".
   const [round, setRound] = useState(0);
   const order = useMemo(() => shuffle(items), [items, round]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -24,6 +28,7 @@ export function PracticeSession({ items, onFinish }: PracticeSessionProps) {
   const [wrongPicks, setWrongPicks] = useState<string[]>([]);
   const [solved, setSolved] = useState(false);
   const [firstTry, setFirstTry] = useState(0);
+  const [missed, setMissed] = useState<string[]>([]);
   const [finished, setFinished] = useState(false);
 
   const item = order[index];
@@ -41,6 +46,7 @@ export function PracticeSession({ items, onFinish }: PracticeSessionProps) {
           {firstTry} / {items.length}
         </p>
         <p className="text-sm text-gray-500">right on the first try</p>
+        {resultSlot}
         <button
           onClick={() => {
             setRound((r) => r + 1);
@@ -48,6 +54,7 @@ export function PracticeSession({ items, onFinish }: PracticeSessionProps) {
             setWrongPicks([]);
             setSolved(false);
             setFirstTry(0);
+            setMissed([]);
             setFinished(false);
           }}
           className="mt-2 px-4 py-2 rounded-full bg-green-700 text-white text-sm font-medium hover:bg-green-800"
@@ -65,13 +72,19 @@ export function PracticeSession({ items, onFinish }: PracticeSessionProps) {
       setSolved(true);
     } else {
       setWrongPicks((w) => [...w, opt.text]);
+      setMissed((m) => (m.includes(item.id) ? m : [...m, item.id]));
     }
   }
 
   function next() {
     if (index + 1 >= order.length) {
       setFinished(true);
-      onFinish?.(firstTry, order.length);
+      onFinish?.({
+        firstTryCorrect: firstTry,
+        total: order.length,
+        attemptedIds: order.map((i) => i.id),
+        missedIds: missed,
+      });
       return;
     }
     setIndex((i) => i + 1);
@@ -125,6 +138,12 @@ export function PracticeSession({ items, onFinish }: PracticeSessionProps) {
         </p>
         {item.mode === 'complete' && solved && (
           <p className="text-sm text-gray-500">{item.english}</p>
+        )}
+        {solved && (
+          <div className="flex items-center gap-1 text-sm text-gray-500 -ml-1.5">
+            <AudioButton text={`${item.before}${answer.text}${item.after}`} />
+            <span>Hear the full line</span>
+          </div>
         )}
       </div>
 

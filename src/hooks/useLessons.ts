@@ -21,3 +21,19 @@ export function useLessons(): Lesson[] {
 export function useLesson(id: string): Lesson | undefined {
   return lessons.find((l) => l.id === id);
 }
+
+/** A lesson plus the lessons either side of it in the ordered list. */
+export function useLessonWithNeighbors(id: string): {
+  lessons: Lesson[];
+  lesson: Lesson | undefined;
+  previous: Lesson | undefined;
+  next: Lesson | undefined;
+} {
+  const idx = lessons.findIndex((l) => l.id === id);
+  return {
+    lessons,
+    lesson: idx === -1 ? undefined : lessons[idx],
+    previous: idx > 0 ? lessons[idx - 1] : undefined,
+    next: idx !== -1 ? lessons[idx + 1] : undefined,
+  };
+}

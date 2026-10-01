@@ -1,10 +1,13 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { DialogueTurn } from '../types';
+import type { AttemptResult } from '../lib/lessonScores';
 import { TappableSwahili } from './TappableSwahili';
+import { AudioButton } from './AudioButton';
 
 interface DialoguePlayerProps {
   turns: DialogueTurn[];
-  onComplete: () => void;
+  /** Fires once at the end with the learner's first-try score on their own lines. */
+  onComplete: (result: AttemptResult) => void;
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -20,6 +23,8 @@ export function DialoguePlayer({ turns, onComplete }: DialoguePlayerProps) {
   const [revealedCount, setRevealedCount] = useState(0);
   const [wrongPick, setWrongPick] = useState<string | null>(null);
   const [correctPick, setCorrectPick] = useState<string | null>(null);
+  // User turns where the first pick was wrong — drives the score and the drill.
+  const [missed, setMissed] = useState<string[]>([]);
 
   const done = revealedCount >= turns.length;
   const current = done ? null : turns[revealedCount];
@@ -40,7 +45,14 @@ export function DialoguePlayer({ turns, onComplete }: DialoguePlayerProps) {
   }, [current]);
 
   useEffect(() => {
-    if (done) onComplete();
+    if (!done) return;
+    const userTurns = turns.filter((t) => t.role === 'user').map((t) => t.id);
+    onComplete({
+      firstTryCorrect: userTurns.length - missed.length,
+      total: userTurns.length,
+      attemptedIds: userTurns,
+      missedIds: missed,
+    });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [done]);
 
@@ -55,6 +67,8 @@ export function DialoguePlayer({ turns, onComplete }: DialoguePlayerProps) {
       }, CORRECT_ADVANCE_DELAY_MS);
     } else {
       setWrongPick(swahili);
+      const id = current?.id;
+      if (id) setMissed((m) => (m.includes(id) ? m : [...m, id]));
     }
   }
 
@@ -143,13 +157,16 @@ function TurnBubble({ turn, tappable }: { turn: DialogueTurn; tappable: boolean 
               : 'rounded-bl-sm bg-gray-100 text-gray-900'
           }`}
         >
-          <TappableSwahili
-            swahili={turn.swahili}
-            words={turn.words}
-            enabled={tappable}
-            className="font-medium"
-            variant={isUser ? 'dark' : 'light'}
-          />
+          <div className="flex items-start gap-1.5">
+            <TappableSwahili
+              swahili={turn.swahili}
+              words={turn.words}
+              enabled={tappable}
+              className="font-medium flex-1"
+              variant={isUser ? 'dark' : 'light'}
+            />
+            <AudioButton text={turn.swahili} variant={isUser ? 'dark' : 'light'} className="-mr-2 -my-0.5" />
+          </div>
         </div>
         <p className={`text-xs text-gray-400 mt-1 ${isUser ? 'text-right' : ''}`}>
           {turn.english}
