@@ -1,0 +1,1542 @@
+{
+  "id": "market-mama-mboga",
+  "uuid": "a1a4b2b8-44eb-5e4b-91c0-bbef774cf019",
+  "title": "Mama Mboga's Kibanda",
+  "category": "food-drink",
+  "difficulty": "beginner",
+  "level": 2,
+  "order": 201,
+  "theme": "market",
+  "culturalNote": "Every Nairobi estate has a mama mboga — the \"vegetable lady\" with a wooden stall (kibanda) by the road, selling tomatoes, onions and sukuma wiki in small bundles. Prices are quoted per heap (\"tatu kwa mia\" = three for a hundred) rather than per kilo, and almost everyone pays with M-Pesa. Nouns like nyanya (tomato) are n/n: the same word for one or many, so \"this tomato\" is nyanya hii and \"these tomatoes\" is nyanya hizi.",
+  "startingPoint": "It's evening. You stop at the mama mboga's stall on your way home from work.",
+  "grammarFocus": [
+    "negative-present",
+    "na-have",
+    "demonstratives",
+    "numbers-money"
+  ],
+  "grammar": [
+    "negative-present",
+    "na-have",
+    "demonstratives",
+    "numbers-money",
+    "present-na",
+    "question-words",
+    "noun-classes-mwa-nn",
+    "greetings",
+    "ni-copula",
+    "adjective-agreement",
+    "imperatives",
+    "object-infixes",
+    "possessives",
+    "discourse-particles",
+    "locative-ni"
+  ],
+  "turns": [
+    {
+      "id": "f3e9b6c5-ad6a-56dd-88f8-969d31477bb3",
+      "speaker": "Mama Mboga",
+      "role": "auto",
+      "swahili": "Karibu, customer! Unataka nini leo?",
+      "english": "Welcome, customer! What do you want today?",
+      "words": [
+        {
+          "text": "Karibu",
+          "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "customer",
+          "gloss": "customer (English — sellers call out to you this way)"
+        },
+        {
+          "text": "Unataka",
+          "gloss": "\"You want\" — u- (subject: you) + na- (present) + -taka (want). From kutaka.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kutaka (to want)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninataka"
+              },
+              {
+                "pronoun": "you",
+                "form": "unataka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anataka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunataka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnataka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanataka"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nini",
+          "gloss": "what?",
+          "grammar": [
+            "question-words"
+          ]
+        },
+        {
+          "text": "leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "38f2c791-dc93-518e-ade3-ca7803f7e4d8",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Habari, mama! Nataka nyanya na vitunguu.",
+      "english": "Hello, mama! I want tomatoes and onions.",
+      "words": [
+        {
+          "text": "Habari",
+          "gloss": "news — the base of every formal greeting — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "mama",
+          "gloss": "mother / respectful \"madam\" — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Nataka",
+          "gloss": "\"I want\" — short for ninataka; this is how most Kenyans say it.",
+          "grammar": [
+            "present-na"
+          ]
+        },
+        {
+          "text": "nyanya",
+          "gloss": "grandmother (also: tomato!) — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "vitunguu",
+          "gloss": "onions (ki/vi) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Habari, mama! Nataka nyanya na vitunguu.",
+          "correct": true
+        },
+        {
+          "swahili": "Habari, mama! Unataka nyanya na vitunguu.",
+          "correct": false
+        },
+        {
+          "swahili": "Sina nyanya na vitunguu.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "dcb2f7ca-e14d-55df-b1aa-09aec2450359",
+      "speaker": "Mama Mboga",
+      "role": "auto",
+      "swahili": "Nzuri. Nyanya hizi ni tamu sana.",
+      "english": "Good. These tomatoes are really sweet.",
+      "words": [
+        {
+          "text": "Nzuri",
+          "gloss": "good / fine — the standard answer to habari",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Nyanya",
+          "gloss": "grandmother (also: tomato!) — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "hizi",
+          "gloss": "\"these\" — n/n plural (nyanya hizi = these tomatoes).",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "tamu",
+          "gloss": "\"sweet / delicious\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-tamu (sweet / delicious)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mtamu"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "watamu"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "tamu"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ]
+    },
+    {
+      "id": "d6f28930-7928-5031-95db-cebb9594e942",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Nyanya hizi ni bei gani?",
+      "english": "How much are these tomatoes?",
+      "words": [
+        {
+          "text": "Nyanya",
+          "gloss": "grandmother (also: tomato!) — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "hizi",
+          "gloss": "\"these\" — n/n plural (nyanya hizi = these tomatoes).",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "bei gani",
+          "gloss": "what price? / how much?",
+          "grammar": [
+            "question-words",
+            "numbers-money"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Nyanya hizi ni bei gani?",
+          "correct": true
+        },
+        {
+          "swahili": "Nyanya hii ni wapi?",
+          "correct": false
+        },
+        {
+          "swahili": "Nyanya hizi ni nani?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "33c928f2-6833-596c-b827-68803f922c94",
+      "speaker": "Mama Mboga",
+      "role": "auto",
+      "swahili": "Tatu kwa mia moja.",
+      "english": "Three for a hundred.",
+      "words": [
+        {
+          "text": "Tatu kwa mia moja",
+          "gloss": "\"three for a hundred\" — prices are quoted per heap."
+        }
+      ]
+    },
+    {
+      "id": "e7e300ec-d9b6-50b9-8049-95666bfdb6c5",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Sawa, nipe sita.",
+      "english": "Okay, give me six.",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "nipe",
+          "gloss": "\"Give me!\" — ni- (object: me) + -pe (give, subjunctive -e: polite command). From kupa.",
+          "grammar": [
+            "imperatives",
+            "object-infixes"
+          ]
+        },
+        {
+          "text": "sita",
+          "gloss": "6 (n/n form — used for counting, money, things)",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Sawa, nipe sita.",
+          "correct": true
+        },
+        {
+          "swahili": "Sawa, nipe sitaki.",
+          "correct": false
+        },
+        {
+          "swahili": "Sawa, sina sita.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "e079a766-71b3-562c-b6cf-16982221e814",
+      "speaker": "Mama Mboga",
+      "role": "auto",
+      "swahili": "Na vitunguu? Hizi ni za mia moja.",
+      "english": "And the onions? These are a hundred.",
+      "words": [
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "vitunguu",
+          "gloss": "onions (ki/vi) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Hizi",
+          "gloss": "\"these\" — n/n plural (nyanya hizi = these tomatoes).",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "za",
+          "gloss": "\"of\" — n/n plural agreement (nyumba za Kamau, habari za asubuhi)",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "mia moja",
+          "gloss": "100",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ],
+      "sanifu": "Na vitunguu? Hivi ni vya mia moja."
+    },
+    {
+      "id": "49460ea1-4200-5250-9131-d23296be9d2a",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Sitaki nyingi. Nipe za hamsini tu.",
+      "english": "I don't want many. Just give me fifty bob's worth.",
+      "words": [
+        {
+          "text": "Sitaki",
+          "gloss": "\"I don't want\" — si- (negative subject: not I) + -taki (want, negative ends in -i). From kutaka.",
+          "grammar": [
+            "negative-present"
+          ],
+          "conjugation": {
+            "verb": "kutaka (to want)",
+            "tense": "Present, negative",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "sitaki"
+              },
+              {
+                "pronoun": "you",
+                "form": "hutaki"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "hataki"
+              },
+              {
+                "pronoun": "we",
+                "form": "hatutaki"
+              },
+              {
+                "pronoun": "you all",
+                "form": "hamtaki"
+              },
+              {
+                "pronoun": "they",
+                "form": "hawataki"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nyingi",
+          "gloss": "\"many / a lot\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-ingi (many / a lot)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mwingi"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wengi"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "nyingi"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Nipe",
+          "gloss": "\"Give me!\" — ni- (object: me) + -pe (give, subjunctive -e: polite command). From kupa.",
+          "grammar": [
+            "imperatives",
+            "object-infixes"
+          ]
+        },
+        {
+          "text": "za hamsini",
+          "gloss": "\"(ones) for fifty\" — za agrees with the n/n plural, the all-purpose choice in Kenyan speech.",
+          "sanifu": "Sanifu: vitunguu is ki/vi class, so \"vya hamsini\""
+        },
+        {
+          "text": "tu",
+          "gloss": "just / only"
+        }
+      ],
+      "sanifu": "Sitaki vingi. Nipe vya hamsini tu.",
+      "options": [
+        {
+          "swahili": "Sitaki nyingi. Nipe za hamsini tu.",
+          "correct": true
+        },
+        {
+          "swahili": "Nataka nyingi. Nipe za hamsini tu.",
+          "correct": false
+        },
+        {
+          "swahili": "Hutaki nyingi. Nipe za hamsini tu.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "5e25ad3b-bce7-58fa-bfeb-72497ebe7d19",
+      "speaker": "Mama Mboga",
+      "role": "auto",
+      "swahili": "Haya. Unataka sukuma pia? Ni fresh, inatoka shambani leo.",
+      "english": "Alright. Do you want sukuma too? It's fresh, it comes from the farm today.",
+      "words": [
+        {
+          "text": "Haya",
+          "gloss": "okay then / alright",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Unataka",
+          "gloss": "\"You want\" — u- (subject: you) + na- (present) + -taka (want). From kutaka.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kutaka (to want)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninataka"
+              },
+              {
+                "pronoun": "you",
+                "form": "unataka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anataka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunataka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnataka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanataka"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sukuma",
+          "gloss": "short for sukuma wiki — collard greens / kale — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "pia",
+          "gloss": "also / too"
+        },
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "fresh",
+          "gloss": "\"fresh\" — English loanword used all the time at the market."
+        },
+        {
+          "text": "inatoka",
+          "gloss": "\"It is leaving / come from\" — i- (subject: it (n/n)) + na- (present) + -toka (leave / come from). From kutoka.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kutoka (to leave / come from)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninatoka"
+              },
+              {
+                "pronoun": "you",
+                "form": "unatoka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anatoka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunatoka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnatoka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanatoka"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "inatoka"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zinatoka"
+              }
+            ]
+          }
+        },
+        {
+          "text": "shambani",
+          "gloss": "\"from / at the farm\" — shamba + -ni (place suffix).",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "70b7f960-6643-5d78-90e3-2c752e187327",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Hapana, asante. Leo sitaki sukuma.",
+      "english": "No, thanks. Today I don't want sukuma.",
+      "words": [
+        {
+          "text": "Hapana",
+          "gloss": "no"
+        },
+        {
+          "text": "asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "sitaki",
+          "gloss": "\"I don't want\" — si- (negative subject: not I) + -taki (want, negative ends in -i). From kutaka.",
+          "grammar": [
+            "negative-present"
+          ],
+          "conjugation": {
+            "verb": "kutaka (to want)",
+            "tense": "Present, negative",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "sitaki"
+              },
+              {
+                "pronoun": "you",
+                "form": "hutaki"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "hataki"
+              },
+              {
+                "pronoun": "we",
+                "form": "hatutaki"
+              },
+              {
+                "pronoun": "you all",
+                "form": "hamtaki"
+              },
+              {
+                "pronoun": "they",
+                "form": "hawataki"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sukuma",
+          "gloss": "short for sukuma wiki — collard greens / kale — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Hapana, asante. Leo sitaki sukuma.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, asante. Leo sitaki sukuma.",
+          "correct": false
+        },
+        {
+          "swahili": "Hapana, asante. Leo hataki sukuma.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "2c79cb2c-901f-5602-b886-5ab6a55f5ebb",
+      "speaker": "Mama Mboga",
+      "role": "auto",
+      "swahili": "Sawa. Ni mia mbili na hamsini.",
+      "english": "Okay. It's two hundred and fifty.",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mia mbili",
+          "gloss": "200",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "hamsini",
+          "gloss": "50 (n/n form — used for counting, money, things)",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bd064f43-65f8-5b55-843c-b7df3cb3dd53",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Sina pesa taslimu. Una M-Pesa?",
+      "english": "I don't have cash. Do you have M-Pesa?",
+      "words": [
+        {
+          "text": "Sina",
+          "gloss": "\"I don't have\" — negative of -na.",
+          "grammar": [
+            "na-have",
+            "negative-present"
+          ],
+          "conjugation": {
+            "verb": "-na (have)",
+            "tense": "Present, negative",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "sina"
+              },
+              {
+                "pronoun": "you",
+                "form": "huna"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "hana"
+              },
+              {
+                "pronoun": "we",
+                "form": "hatuna"
+              },
+              {
+                "pronoun": "you all",
+                "form": "hamna"
+              },
+              {
+                "pronoun": "they",
+                "form": "hawana"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "haina"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "hazina"
+              }
+            ]
+          }
+        },
+        {
+          "text": "pesa taslimu",
+          "gloss": "cash"
+        },
+        {
+          "text": "Una",
+          "gloss": "\"You have\" — u- + -na (with). Swahili \"have\" is literally \"be with\".",
+          "grammar": [
+            "na-have"
+          ],
+          "conjugation": {
+            "verb": "-na (have)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nina"
+              },
+              {
+                "pronoun": "you",
+                "form": "una"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ana"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuna"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mna"
+              },
+              {
+                "pronoun": "they",
+                "form": "wana"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "ina"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zina"
+              }
+            ]
+          }
+        },
+        {
+          "text": "M-Pesa",
+          "gloss": "M-Pesa — mobile money — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Sina pesa taslimu. Una M-Pesa?",
+          "correct": true
+        },
+        {
+          "swahili": "Nina pesa taslimu. Una M-Pesa?",
+          "correct": false
+        },
+        {
+          "swahili": "Huna pesa taslimu. Una M-Pesa?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "9bb4d3a1-a785-5fc9-83ad-88845cd5a80c",
+      "speaker": "Mama Mboga",
+      "role": "auto",
+      "swahili": "Ndiyo, till namba ni hii hapa.",
+      "english": "Yes, the till number is right here.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "till namba",
+          "gloss": "\"till number\" — the M-Pesa \"Buy Goods\" number the seller displays."
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "hii hapa",
+          "gloss": "here it is",
+          "grammar": [
+            "demonstratives"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "932f2872-9800-5f24-b2ae-e19433ef22ca",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Poa. Asante sana, mama!",
+      "english": "Cool. Thanks a lot, mama!",
+      "words": [
+        {
+          "text": "Poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Asante sana",
+          "gloss": "thank you very much"
+        },
+        {
+          "text": "mama",
+          "gloss": "mother / respectful \"madam\" — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Poa. Asante sana, mama!",
+          "correct": true
+        },
+        {
+          "swahili": "Pole. Asante sana, mama!",
+          "correct": false
+        },
+        {
+          "swahili": "Poa. Karibu sana, mama!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "eeee8ecc-602d-5fad-aa6a-68aee3f02724",
+      "speaker": "Mama Mboga",
+      "role": "auto",
+      "swahili": "Asante. Karibu tena!",
+      "english": "Thank you. Come again!",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Karibu tena",
+          "gloss": "welcome again / come again"
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "77d57fef-a9e2-505c-bc77-36234e3f9734",
+      "swahili": "Unataka nini?",
+      "english": "What do you want?",
+      "exampleContext": "u- (you) + -na- + -taka (want)",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "cd36a82f-b130-55dd-837b-b63028ea41c1",
+      "swahili": "Nataka…",
+      "english": "I want…",
+      "exampleContext": "Short for ninataka — how most Kenyans say it.",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "4c232dd6-31d4-5c02-be9d-0c3fdf50b9d1",
+      "swahili": "Sitaki…",
+      "english": "I don't want…",
+      "exampleContext": "si- + -tak- + -i: the negative ends in -i.",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "f2e8d283-f207-54a3-9ed8-45cb1bc2fc68",
+      "swahili": "Bei gani?",
+      "english": "How much?",
+      "exampleContext": "Lit. \"what price?\" Also: Ni pesa ngapi?",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "366eab89-86c1-5446-adae-982b7ef1e596",
+      "swahili": "nyanya",
+      "english": "tomato(es)",
+      "exampleContext": "n/n noun: nyanya hii (this one), nyanya hizi (these). Also means grandma!"
+    },
+    {
+      "id": "512c02a6-0dcd-5ae7-a18e-5ef933a5e8cc",
+      "swahili": "vitunguu",
+      "english": "onions",
+      "exampleContext": "Kenyans say \"vitunguu hizi\"",
+      "sanifu": "vitunguu hivi",
+      "sanifuNote": "Sanifu: ki/vi class (kitunguu / vitunguu)"
+    },
+    {
+      "id": "52bac4d4-babc-58f3-ab31-c8cb40f7b792",
+      "swahili": "hizi / hii",
+      "english": "these / this (n/n)",
+      "exampleContext": "nyanya hizi = these tomatoes",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "4d704428-d10a-5814-84d0-88b4cca610e0",
+      "swahili": "Nipe…",
+      "english": "Give me…",
+      "exampleContext": "ni- (me) + -pe (give). Normal at a stall.",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "75bd3878-48ec-5dd1-87af-b3282b640e79",
+      "swahili": "Sina pesa taslimu",
+      "english": "I don't have cash",
+      "exampleContext": "sina = I don't have",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "04436cc4-1a99-5856-8902-043fe18829d1",
+      "swahili": "Una chenji?",
+      "english": "Do you have change?",
+      "exampleContext": "una = you have",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "385ff9f7-e0cb-57ac-973b-f73197975dc4",
+      "swahili": "mia moja",
+      "english": "100",
+      "exampleContext": "mia mbili = 200, mia tano = 500 (\"punch\")",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "76a6503a-53fe-5f2d-bbd5-52915593b92c",
+      "swahili": "hamsini",
+      "english": "50",
+      "exampleContext": "arobaini = 40, sitini = 60"
+    },
+    {
+      "id": "d8c97cac-bdaf-5b4e-b8ab-39ecc42956be",
+      "swahili": "Karibu tena!",
+      "english": "Come again!",
+      "exampleContext": "The seller's goodbye.",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "fb129aeb-c124-55ac-9804-f80c94d4b118",
+      "mode": "translate",
+      "english": "I want tomatoes.",
+      "before": "",
+      "after": " nyanya.",
+      "options": [
+        {
+          "text": "Nataka",
+          "correct": true
+        },
+        {
+          "text": "Unataka",
+          "correct": false,
+          "feedback": "Unataka = You want"
+        },
+        {
+          "text": "Anataka",
+          "correct": false,
+          "feedback": "Anataka = He/she wants"
+        }
+      ],
+      "explanation": "Nataka is the everyday short form of ninataka.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "24b85e5d-1c55-55c5-90fb-99fc09183c10",
+      "mode": "translate",
+      "english": "I don't want onions.",
+      "before": "",
+      "after": " vitunguu.",
+      "options": [
+        {
+          "text": "Sitaki",
+          "correct": true
+        },
+        {
+          "text": "Hutaki",
+          "correct": false,
+          "feedback": "Hutaki = You don't want"
+        },
+        {
+          "text": "Hataki",
+          "correct": false,
+          "feedback": "Hataki = He/she doesn't want"
+        }
+      ],
+      "explanation": "Negative present: si- (not I) + -tak- + -i. The final -a changes to -i.",
+      "grammar": [
+        "negative-present"
+      ]
+    },
+    {
+      "id": "860676f5-6f63-562e-9875-b33e25b82b5d",
+      "mode": "translate",
+      "english": "You don't want sukuma?",
+      "before": "",
+      "after": " sukuma?",
+      "options": [
+        {
+          "text": "Hutaki",
+          "correct": true
+        },
+        {
+          "text": "Sitaki",
+          "correct": false,
+          "feedback": "Sitaki = I don't want"
+        },
+        {
+          "text": "Hataki",
+          "correct": false,
+          "feedback": "Hataki = He/she doesn't want"
+        }
+      ],
+      "explanation": "hu- = not you.",
+      "grammar": [
+        "negative-present"
+      ]
+    },
+    {
+      "id": "16267fdc-b85f-5ef8-9177-685657a41bab",
+      "mode": "translate",
+      "english": "She doesn't want sugar.",
+      "before": "",
+      "after": " sukari.",
+      "options": [
+        {
+          "text": "Hataki",
+          "correct": true
+        },
+        {
+          "text": "Hutaki",
+          "correct": false,
+          "feedback": "Hutaki = You don't want"
+        },
+        {
+          "text": "Hatutaki",
+          "correct": false,
+          "feedback": "Hatutaki = We don't want"
+        }
+      ],
+      "explanation": "ha- = not he/she.",
+      "grammar": [
+        "negative-present"
+      ]
+    },
+    {
+      "id": "82eb5069-9dcc-56c1-aa22-5ce1d4646507",
+      "mode": "translate",
+      "english": "We don't want sukuma today.",
+      "before": "Leo ",
+      "after": " sukuma.",
+      "options": [
+        {
+          "text": "hatutaki",
+          "correct": true
+        },
+        {
+          "text": "sitaki",
+          "correct": false,
+          "feedback": "sitaki = I don't want"
+        },
+        {
+          "text": "hawataki",
+          "correct": false,
+          "feedback": "hawataki = They don't want"
+        }
+      ],
+      "explanation": "hatu- = not we.",
+      "grammar": [
+        "negative-present"
+      ]
+    },
+    {
+      "id": "e042b9f3-9df8-5020-af6c-516a52902dfc",
+      "mode": "translate",
+      "english": "I don't have cash.",
+      "before": "",
+      "after": " pesa taslimu.",
+      "options": [
+        {
+          "text": "Sina",
+          "correct": true
+        },
+        {
+          "text": "Huna",
+          "correct": false,
+          "feedback": "Huna = You don't have"
+        },
+        {
+          "text": "Hana",
+          "correct": false,
+          "feedback": "Hana = He/she doesn't have"
+        }
+      ],
+      "explanation": "sina = I don't have (si- + -na).",
+      "grammar": [
+        "na-have",
+        "negative-present"
+      ]
+    },
+    {
+      "id": "f25ebe48-9643-5a21-b70d-99af4cc495e5",
+      "mode": "translate",
+      "english": "Do you have change?",
+      "before": "",
+      "after": " chenji?",
+      "options": [
+        {
+          "text": "Una",
+          "correct": true
+        },
+        {
+          "text": "Nina",
+          "correct": false,
+          "feedback": "Nina = I have"
+        },
+        {
+          "text": "Ana",
+          "correct": false,
+          "feedback": "Ana = He/she has"
+        }
+      ],
+      "explanation": "una = you have. chenji comes from English \"change\".",
+      "grammar": [
+        "na-have"
+      ]
+    },
+    {
+      "id": "4755720f-a061-5a00-af86-e269dac25e9e",
+      "mode": "translate",
+      "english": "She doesn't have M-Pesa.",
+      "before": "",
+      "after": " M-Pesa.",
+      "options": [
+        {
+          "text": "Hana",
+          "correct": true
+        },
+        {
+          "text": "Sina",
+          "correct": false,
+          "feedback": "Sina = I don't have"
+        },
+        {
+          "text": "Huna",
+          "correct": false,
+          "feedback": "Huna = You don't have"
+        }
+      ],
+      "explanation": "Hana = \"He/she doesn't have\" — negative of -na.",
+      "grammar": [
+        "na-have",
+        "negative-present"
+      ]
+    },
+    {
+      "id": "2740efb0-6f55-5427-a27d-727f241338fd",
+      "mode": "translate",
+      "english": "These tomatoes are sweet.",
+      "before": "Nyanya ",
+      "after": " ni tamu.",
+      "options": [
+        {
+          "text": "hizi",
+          "correct": true
+        },
+        {
+          "text": "hii",
+          "correct": false,
+          "feedback": "hii = this"
+        },
+        {
+          "text": "huyu",
+          "correct": false,
+          "feedback": "huyu = this (person)"
+        }
+      ],
+      "explanation": "nyanya is n/n: hii = this one, hizi = these. Huyu is only for people.",
+      "grammar": [
+        "demonstratives"
+      ]
+    },
+    {
+      "id": "e8dfe2d9-43f3-5ab7-996f-6ab71a8f915c",
+      "mode": "translate",
+      "english": "This tomato is sweet.",
+      "before": "Nyanya ",
+      "after": " ni tamu.",
+      "options": [
+        {
+          "text": "hii",
+          "correct": true
+        },
+        {
+          "text": "hizi",
+          "correct": false,
+          "feedback": "hizi = these"
+        },
+        {
+          "text": "hawa",
+          "correct": false,
+          "feedback": "hawa = these (people)"
+        }
+      ],
+      "explanation": "hii: this — n/n singular (and Kenyans' all-purpose \"this\")",
+      "grammar": [
+        "demonstratives"
+      ]
+    },
+    {
+      "id": "88645e4c-3bab-5b48-9ccf-8131e7624f47",
+      "mode": "translate",
+      "english": "How much? (lit. what price?)",
+      "before": "Bei ",
+      "after": "?",
+      "options": [
+        {
+          "text": "gani",
+          "correct": true
+        },
+        {
+          "text": "wapi",
+          "correct": false,
+          "feedback": "wapi = where?"
+        },
+        {
+          "text": "nani",
+          "correct": false,
+          "feedback": "nani = who?"
+        }
+      ],
+      "explanation": "gani: which? / what kind?",
+      "grammar": [
+        "question-words"
+      ]
+    },
+    {
+      "id": "53dc72f0-552c-5a4c-82a3-7e40ded89f67",
+      "mode": "translate",
+      "english": "Three for a hundred.",
+      "before": "Tatu kwa ",
+      "after": ".",
+      "options": [
+        {
+          "text": "mia moja",
+          "correct": true
+        },
+        {
+          "text": "elfu moja",
+          "correct": false,
+          "feedback": "elfu moja = 1,000"
+        },
+        {
+          "text": "kumi",
+          "correct": false,
+          "feedback": "kumi = 10 (n/n form"
+        }
+      ],
+      "explanation": "mia = hundred, elfu = thousand.",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "1df8d8ef-4855-5a1e-917b-5e46c951ce57",
+      "mode": "translate",
+      "english": "It's two hundred and fifty.",
+      "before": "Ni mia mbili na ",
+      "after": ".",
+      "options": [
+        {
+          "text": "hamsini",
+          "correct": true
+        },
+        {
+          "text": "tano",
+          "correct": false,
+          "feedback": "tano = 5 (n/n form"
+        },
+        {
+          "text": "thelathini",
+          "correct": false,
+          "feedback": "thelathini = 30 (n/n form"
+        }
+      ],
+      "explanation": "hamsini = 50, thelathini = 30. Numbers are built with na: mia mbili na hamsini = 200 + 50.",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "d4247ca4-a297-5d9d-a039-2b3cd5836139",
+      "mode": "translate",
+      "english": "Give me six.",
+      "before": "Nipe ",
+      "after": ".",
+      "options": [
+        {
+          "text": "sita",
+          "correct": true
+        },
+        {
+          "text": "saba",
+          "correct": false,
+          "feedback": "saba = 7 (n/n form"
+        },
+        {
+          "text": "tisa",
+          "correct": false,
+          "feedback": "tisa = 9 (n/n form"
+        }
+      ],
+      "explanation": "sita = 6, saba = 7, tisa = 9.",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "ba87e2c4-9836-52d9-ac00-f4363dc0e2b1",
+      "mode": "complete",
+      "english": "How many do you want? — Four, please.",
+      "before": "Unataka ngapi? — ",
+      "after": ", tafadhali.",
+      "options": [
+        {
+          "text": "Nne",
+          "correct": true
+        },
+        {
+          "text": "Leo",
+          "correct": false,
+          "feedback": "Leo = today"
+        },
+        {
+          "text": "Hapa",
+          "correct": false,
+          "feedback": "Hapa = here"
+        }
+      ],
+      "explanation": "Nne: 4 (n/n form — used for counting, money, things)",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "2dbbfae8-f2a4-55b9-bc6f-2bb61f8673ab",
+      "mode": "translate",
+      "english": "I don't know.",
+      "before": "",
+      "after": ".",
+      "options": [
+        {
+          "text": "Sijui",
+          "correct": true
+        },
+        {
+          "text": "Hujui",
+          "correct": false,
+          "feedback": "Hujui = You don't know"
+        },
+        {
+          "text": "Hajui",
+          "correct": false,
+          "feedback": "Hajui = He/she doesn't know"
+        }
+      ],
+      "explanation": "Sijui = \"I don't know\" — si- (negative subject: not I) + -jui (know, negative ends in -i). From kujua.",
+      "grammar": [
+        "negative-present"
+      ]
+    },
+    {
+      "id": "bb007020-5813-553f-81fe-3b65254d0dce",
+      "mode": "translate",
+      "english": "Is it 500 bob? (slang)",
+      "before": "Ni ",
+      "after": "?",
+      "options": [
+        {
+          "text": "punch",
+          "correct": true
+        },
+        {
+          "text": "thao",
+          "correct": false,
+          "feedback": "thao = thao"
+        },
+        {
+          "text": "chenji",
+          "correct": false,
+          "feedback": "chenji = change (money back)"
+        }
+      ],
+      "explanation": "Market slang: punch = 500, thao = 1,000.",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "a0e845f9-c440-5880-8c75-e7dddae87c83",
+      "mode": "complete",
+      "english": "Thank you. Come again!",
+      "before": "Asante. Karibu ",
+      "after": "!",
+      "options": [
+        {
+          "text": "tena",
+          "correct": true
+        },
+        {
+          "text": "sana",
+          "correct": false,
+          "feedback": "sana = very / a lot"
+        },
+        {
+          "text": "tu",
+          "correct": false,
+          "feedback": "tu = just / only"
+        }
+      ],
+      "explanation": "Karibu tena = \"welcome again\" — the seller's goodbye."
+    }
+  ]
+}

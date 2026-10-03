@@ -1,0 +1,1512 @@
+{
+  "id": "landlord-leak",
+  "uuid": "b3c8e956-6b07-5d2a-bf8e-540264e40711",
+  "title": "The Landlord and the Leaking Roof",
+  "category": "home",
+  "difficulty": "advanced",
+  "level": 8,
+  "order": 802,
+  "theme": "home",
+  "culturalNote": "Most Nairobians rent (kupanga nyumba), and the long rains (March–May) are when roofs, gutters and landlords get tested. Complaints in Kenya are made politely but firmly — and conditionals are your best tool: \"Kama ungalimleta fundi mapema…\" (if you had brought a fundi earlier…). In everyday speech Kenyans use -nge- for both present and past conditions (\"Ungemleta fundi, hii haingetokea\"), while Sanifu keeps -ngali- for the past. Rent is kodi.",
+  "startingPoint": "After a night of heavy rain, your bedroom ceiling is dripping again. You call your landlord, Bwana Otieno.",
+  "grammarFocus": [
+    "conditional-nge",
+    "relatives",
+    "ki-po-ka"
+  ],
+  "grammar": [
+    "conditional-nge",
+    "relatives",
+    "ki-po-ka",
+    "noun-classes-mwa-nn",
+    "locative-ni",
+    "infinitive-ku",
+    "object-infixes",
+    "na-have",
+    "question-words",
+    "present-na",
+    "sanifu-noun-classes",
+    "past-li",
+    "ni-copula",
+    "negative-past",
+    "adjective-agreement",
+    "demonstratives",
+    "ko-location",
+    "future-ta",
+    "subject-prefixes",
+    "possessives",
+    "verb-extensions"
+  ],
+  "turns": [
+    {
+      "id": "5cbb7707-88be-55ab-b055-043ee8acdf92",
+      "speaker": "Mpangaji",
+      "role": "user",
+      "swahili": "Habari, Bwana Otieno. Pole kwa kukusumbua asubuhi.",
+      "english": "Hello, Mr Otieno. Sorry to bother you in the morning.",
+      "words": [
+        {
+          "text": "Habari",
+          "gloss": "news — the base of every formal greeting — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Bwana Otieno",
+          "gloss": "Mr Otieno — bwana = sir / Mr"
+        },
+        {
+          "text": "Pole",
+          "gloss": "sorry (sympathy)"
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "kukusumbua",
+          "gloss": "\"To bother you\" — ku- (infinitive \"to\") + ku- (object: you) + -sumbua (bother). From kusumbua.",
+          "grammar": [
+            "infinitive-ku",
+            "object-infixes"
+          ]
+        },
+        {
+          "text": "asubuhi",
+          "gloss": "morning — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Habari, Bwana Otieno. Pole kwa kukusumbua asubuhi.",
+          "correct": true
+        },
+        {
+          "swahili": "Habari, Bwana Otieno. Pole kwa kunisumbua asubuhi.",
+          "correct": false
+        },
+        {
+          "swahili": "Habari, Bwana Otieno. Asante kwa kukusumbua asubuhi.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "4c324fb1-3293-5f94-9417-89a11b0ec267",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Hakuna shida. Kuna nini?",
+      "english": "No problem. What's up?",
+      "words": [
+        {
+          "text": "Hakuna shida",
+          "gloss": "no problem (lit. \"there's no problem\")",
+          "grammar": [
+            "na-have"
+          ]
+        },
+        {
+          "text": "Kuna",
+          "gloss": "\"There is / there are\" — ku- (place) + -na (have): \"the place has…\"",
+          "grammar": [
+            "na-have"
+          ]
+        },
+        {
+          "text": "nini",
+          "gloss": "what?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "29f6ee7d-32ff-53fd-b5f5-260b335031b9",
+      "speaker": "Mpangaji",
+      "role": "user",
+      "swahili": "Paa inavuja tena. Ilipoanza kunyesha usiku, maji iliingia kwa chumba cha kulala.",
+      "english": "The roof is leaking again. When it started raining at night, water came into the bedroom.",
+      "words": [
+        {
+          "text": "Paa",
+          "gloss": "roof"
+        },
+        {
+          "text": "inavuja",
+          "gloss": "\"It is leaking\" — i- (subject: it (n/n)) + na- (present) + -vuja (leak). From kuvuja.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuvuja (to leak)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninavuja"
+              },
+              {
+                "pronoun": "you",
+                "form": "unavuja"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anavuja"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunavuja"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnavuja"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanavuja"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "inavuja"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zinavuja"
+              }
+            ]
+          }
+        },
+        {
+          "text": "tena",
+          "gloss": "again"
+        },
+        {
+          "text": "Ilipoanza",
+          "gloss": "\"When it started\" — i- + -li- + -po- (when) + -anza",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "kunyesha",
+          "gloss": "\"to rain\""
+        },
+        {
+          "text": "usiku",
+          "gloss": "night (u-class, used like n/n) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "maji",
+          "gloss": "water — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — maji yangu, maji haya (ma- plural of the ji/ma class)"
+        },
+        {
+          "text": "iliingia",
+          "gloss": "\"It got in\" — i- (subject: it (n/n)) + li- (past) + -ingia (get in). From kuingia.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kuingia (to get in)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niliingia"
+              },
+              {
+                "pronoun": "you",
+                "form": "uliingia"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "aliingia"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuliingia"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mliingia"
+              },
+              {
+                "pronoun": "they",
+                "form": "waliingia"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iliingia"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziliingia"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "chumba cha kulala",
+          "gloss": "bedroom",
+          "sanifu": "Kenyans also say \"bedroom\""
+        }
+      ],
+      "sanifu": "Paa linavuja tena. Ilipoanza kunyesha usiku, maji yaliingia chumbani.",
+      "options": [
+        {
+          "swahili": "Paa inavuja tena. Ilipoanza kunyesha usiku, maji iliingia kwa chumba cha kulala.",
+          "correct": true
+        },
+        {
+          "swahili": "Paa inavuja tena. Itakapoanza kunyesha usiku, maji iliingia kwa chumba cha kulala.",
+          "correct": false
+        },
+        {
+          "swahili": "Paa haivuji tena. Ilipoanza kunyesha usiku, maji iliingia kwa chumba cha kulala.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "2f9ccb15-ace1-5ce1-96ad-b107610ff2a9",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Tena? Lakini fundi alikuja mwezi uliopita!",
+      "english": "Again? But the fundi came last month!",
+      "words": [
+        {
+          "text": "Tena",
+          "gloss": "again"
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "fundi",
+          "gloss": "skilled worker / repairman (fundi wa bomba = plumber) — m/wa noun (people & animals; plural mafundi)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "alikuja",
+          "gloss": "\"He/she came\" — a- (subject: he/she) + li- (past) + -ja (come). From kuja.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kuja (to come)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilikuja"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulikuja"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alikuja"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulikuja"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlikuja"
+              },
+              {
+                "pronoun": "they",
+                "form": "walikuja"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mwezi uliopita",
+          "gloss": "last month (lit. \"the month which passed\")",
+          "grammar": [
+            "relatives"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9812f903-b5a4-5e55-85a6-adcf1b44db35",
+      "speaker": "Mpangaji",
+      "role": "user",
+      "swahili": "Ndiyo, lakini fundi ambaye ulimleta hakurekebisha vizuri.",
+      "english": "Yes, but the fundi who you brought didn't fix it properly.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "fundi ambaye",
+          "gloss": "\"the fundi who\"",
+          "grammar": [
+            "relatives"
+          ]
+        },
+        {
+          "text": "ulimleta",
+          "gloss": "\"you brought him\" — u- + -li- + -m- (him) + -leta",
+          "grammar": [
+            "object-infixes"
+          ]
+        },
+        {
+          "text": "hakurekebisha",
+          "gloss": "\"he didn't fix\"",
+          "grammar": [
+            "negative-past"
+          ]
+        },
+        {
+          "text": "vizuri",
+          "gloss": "properly / well"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo, lakini fundi ambaye ulimleta hakurekebisha vizuri.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, lakini fundi ambayo ulimleta hakurekebisha vizuri.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, lakini fundi ambaye ulimleta alirekebisha vizuri.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "2bc5f550-544a-5d92-91f3-a5fe705902ce",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Aaii. Ningalijua, ningalimtafuta fundi mwingine.",
+      "english": "Oh dear. If I had known, I would have looked for another fundi.",
+      "words": [
+        {
+          "text": "Aaii",
+          "gloss": "aaii! (oh dear)"
+        },
+        {
+          "text": "Ningalijua",
+          "gloss": "\"If I had known\" — -ngali- = past conditional (Sanifu)",
+          "grammar": [
+            "conditional-nge"
+          ]
+        },
+        {
+          "text": "ningalimtafuta",
+          "gloss": "\"I would have looked for\"",
+          "grammar": [
+            "conditional-nge"
+          ]
+        },
+        {
+          "text": "fundi",
+          "gloss": "skilled worker / repairman (fundi wa bomba = plumber) — m/wa noun (people & animals; plural mafundi)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "mwingine",
+          "gloss": "another (m/wa)"
+        }
+      ]
+    },
+    {
+      "id": "63c28fc0-00b9-5458-820b-a586694c39bd",
+      "speaker": "Mpangaji",
+      "role": "user",
+      "swahili": "Kama ungemleta fundi mzuri mapema, hii haingetokea.",
+      "english": "If you had brought a good fundi earlier, this wouldn't have happened.",
+      "words": [
+        {
+          "text": "Kama ungemleta",
+          "gloss": "\"If you had brought him\" — Kenyan -nge- for the past.",
+          "sanifu": "Sanifu: Kama ungalimleta #conditional-nge"
+        },
+        {
+          "text": "fundi",
+          "gloss": "skilled worker / repairman (fundi wa bomba = plumber) — m/wa noun (people & animals; plural mafundi)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "mzuri",
+          "gloss": "\"good / nice / beautiful\" — m/wa singular agreement (one person / animal).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-zuri (good / nice / beautiful)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mzuri"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wazuri"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "nzuri"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mapema",
+          "gloss": "early"
+        },
+        {
+          "text": "hii",
+          "gloss": "this — n/n singular (and Kenyans' all-purpose \"this\")",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "haingetokea",
+          "gloss": "\"it wouldn't have happened\" — hai- + -nge- + -tokea",
+          "grammar": [
+            "conditional-nge"
+          ]
+        }
+      ],
+      "sanifu": "Kama ungalimleta fundi mzuri mapema, hii haingalitokea.",
+      "options": [
+        {
+          "swahili": "Kama ungemleta fundi mzuri mapema, hii haingetokea.",
+          "correct": true
+        },
+        {
+          "swahili": "Kama utamleta fundi mzuri mapema, hii haingetokea.",
+          "correct": false
+        },
+        {
+          "swahili": "Kama ungemleta fundi mzuri mapema, hii itatokea.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "ef8f011d-472f-51ed-890d-05508018061f",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Uko sawa. Pole sana. Nitamtuma fundi mwingine leo.",
+      "english": "You're right. I'm very sorry. I'll send another fundi today.",
+      "words": [
+        {
+          "text": "Uko",
+          "gloss": "\"You are (at / doing)\" — u- + -ko (be at a place, or how you're doing). \"Uko poa\" = you are fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Pole sana",
+          "gloss": "so sorry / take heart"
+        },
+        {
+          "text": "Nitamtuma",
+          "gloss": "\"I will send him/her\" — ni- (subject: I) + ta- (future) + m- (object: him/her) + -tuma (send). From kutuma.",
+          "grammar": [
+            "future-ta",
+            "object-infixes"
+          ],
+          "conjugation": {
+            "verb": "kutuma (to send)",
+            "tense": "Future (-ta-) + object -m-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitamtuma"
+              },
+              {
+                "pronoun": "you",
+                "form": "utamtuma"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atamtuma"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutamtuma"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtamtuma"
+              },
+              {
+                "pronoun": "they",
+                "form": "watamtuma"
+              }
+            ]
+          }
+        },
+        {
+          "text": "fundi",
+          "gloss": "skilled worker / repairman (fundi wa bomba = plumber) — m/wa noun (people & animals; plural mafundi)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "mwingine",
+          "gloss": "another (m/wa)"
+        },
+        {
+          "text": "leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3de86a79-32f0-56cf-a989-a28019ab375f",
+      "speaker": "Mpangaji",
+      "role": "user",
+      "swahili": "Asante. Ukimtuma leo, mimi nitakuwa nyumbani mchana.",
+      "english": "Thank you. If you send him today, I'll be at home in the afternoon.",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Ukimtuma",
+          "gloss": "\"If/when you send him/her\" — u- (subject: you) + ki- (if / when · or \"-ing\" after kuwa) + m- (object: him/her) + -tuma (send). From kutuma. After a past kuwa (nilikuwa …) the -ki- form means \"…-ing\".",
+          "grammar": [
+            "ki-po-ka",
+            "object-infixes"
+          ]
+        },
+        {
+          "text": "leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "nitakuwa",
+          "gloss": "\"I will be\" — ni- (subject: I) + ta- (future) + -wa (be). From kuwa.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kuwa (to be)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitakuwa"
+              },
+              {
+                "pronoun": "you",
+                "form": "utakuwa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atakuwa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutakuwa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtakuwa"
+              },
+              {
+                "pronoun": "they",
+                "form": "watakuwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nyumbani",
+          "gloss": "\"at / in / to the house\" — nyumba + -ni (place suffix).",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "mchana",
+          "gloss": "afternoon / daytime — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante. Ukimtuma leo, mimi nitakuwa nyumbani mchana.",
+          "correct": true
+        },
+        {
+          "swahili": "Asante. Ulimtuma leo, mimi nitakuwa nyumbani mchana.",
+          "correct": false
+        },
+        {
+          "swahili": "Asante. Ukimtuma leo, mimi nilikuwa nyumbani mchana.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "985f0633-59b5-53ff-aa38-4e541d7ddf8e",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Sawa. Na kodi ya mwezi huu?",
+      "english": "Okay. And this month's rent?",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "kodi",
+          "gloss": "rent"
+        },
+        {
+          "text": "ya",
+          "gloss": "\"of\" — n/n singular agreement (nyumba ya Kamau); Kenyans use ya with most nouns",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "mwezi",
+          "gloss": "month / moon (plural miezi) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: m/mi class — mwezi huu, miezi miwili"
+        },
+        {
+          "text": "huu",
+          "gloss": "this — m/mi or u (Sanifu: mti huu)",
+          "grammar": [
+            "demonstratives"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "59278498-bd8b-50dd-9bbe-d83a85353e27",
+      "speaker": "Mpangaji",
+      "role": "user",
+      "swahili": "Nikilipa kodi kesho, utarekebisha paa kabisa?",
+      "english": "If I pay the rent tomorrow, will you fix the roof completely?",
+      "words": [
+        {
+          "text": "Nikilipa",
+          "gloss": "\"If / when I pay\"",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "kodi",
+          "gloss": "rent"
+        },
+        {
+          "text": "kesho",
+          "gloss": "tomorrow — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "utarekebisha",
+          "gloss": "\"You will fix\" — u- (subject: you) + ta- (future) + -rekebisha (fix). From kurekebisha.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kurekebisha (to fix)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitarekebisha"
+              },
+              {
+                "pronoun": "you",
+                "form": "utarekebisha"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atarekebisha"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutarekebisha"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtarekebisha"
+              },
+              {
+                "pronoun": "they",
+                "form": "watarekebisha"
+              }
+            ]
+          }
+        },
+        {
+          "text": "paa",
+          "gloss": "roof"
+        },
+        {
+          "text": "kabisa",
+          "gloss": "totally / completely — \"Kabisa!\" = \"Absolutely!\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Nikilipa kodi kesho, utarekebisha paa kabisa?",
+          "correct": true
+        },
+        {
+          "swahili": "Nililipa kodi kesho, utarekebisha paa kabisa?",
+          "correct": false
+        },
+        {
+          "swahili": "Nikilipa kodi kesho, nitarekebisha paa kabisa?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "ba32d442-24ef-5862-8cd4-bbb5fbc0cba5",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Haha! Wewe ni mjanja. Sawa, nakuahidi. Paa itarekebishwa leo.",
+      "english": "Haha! You're clever. Okay, I promise you. The roof will be fixed today.",
+      "words": [
+        {
+          "text": "Haha",
+          "gloss": "haha"
+        },
+        {
+          "text": "Wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mjanja",
+          "gloss": "clever / streetwise (with a wink); plural wajanja"
+        },
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "nakuahidi",
+          "gloss": "\"I am promising you\" — na- (short for nina-: I + present) + ku- (object: you) + -ahidi (promise). From kuahidi.",
+          "grammar": [
+            "present-na",
+            "object-infixes"
+          ],
+          "conjugation": {
+            "verb": "kuahidi (to promise)",
+            "tense": "Present (-na-) + object -ku-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nakuahidi"
+              },
+              {
+                "pronoun": "you",
+                "form": "unakuahidi"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anakuahidi"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunakuahidi"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnakuahidi"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanakuahidi"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Paa",
+          "gloss": "roof"
+        },
+        {
+          "text": "itarekebishwa",
+          "gloss": "\"It will be fixed\" — i- (subject: it (n/n)) + ta- (future) + -rekebishwa (be fixed). From kurekebishwa. Extension: passive (-wa: \"be ...-ed\").",
+          "grammar": [
+            "future-ta",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kurekebishwa (to be fixed)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitarekebishwa"
+              },
+              {
+                "pronoun": "you",
+                "form": "utarekebishwa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atarekebishwa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutarekebishwa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtarekebishwa"
+              },
+              {
+                "pronoun": "they",
+                "form": "watarekebishwa"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "itarekebishwa"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zitarekebishwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "sanifu": "Haha! Wewe ni mjanja. Sawa, nakuahidi. Paa litarekebishwa leo."
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "40e6be3f-d0b3-5f00-8c54-09ddb244a0a0",
+      "swahili": "mwenye nyumba",
+      "english": "landlord",
+      "exampleContext": "Lit. \"owner of the house\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "b0e5c554-e99c-500a-be9d-95c14295a025",
+      "swahili": "kodi",
+      "english": "rent",
+      "exampleContext": "kulipa kodi = to pay rent"
+    },
+    {
+      "id": "2704bca8-5fc1-586d-82ad-72483fe8ca91",
+      "swahili": "Paa inavuja",
+      "english": "The roof is leaking",
+      "exampleContext": "Kenyan agreement.",
+      "partOfSpeech": "phrase",
+      "sanifu": "Paa linavuja",
+      "sanifuNote": "Sanifu: paa is ji/ma class"
+    },
+    {
+      "id": "bf3f029c-e4ee-5e41-a7bb-c62cbc64fee1",
+      "swahili": "Ilipoanza kunyesha…",
+      "english": "When it started raining…",
+      "exampleContext": "-po- = when",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "e7493b1b-efeb-5114-a57e-152e08b6245b",
+      "swahili": "fundi ambaye ulimleta",
+      "english": "the fundi you brought",
+      "exampleContext": "ambaye = who",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "a80204bd-2259-5393-b07d-820f22582b4d",
+      "swahili": "Ningalijua…",
+      "english": "If I had known…",
+      "exampleContext": "-ngali- (Sanifu past conditional)",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "7fc843d9-0ef8-5a74-a453-3b1c59c11269",
+      "swahili": "Ningejua…",
+      "english": "If I had known / If I knew…",
+      "exampleContext": "Kenyans use -nge- for both",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "3065f0df-e403-5e2b-846e-385e2f3ba23c",
+      "swahili": "haingetokea",
+      "english": "it wouldn't have happened |",
+      "exampleContext": ""
+    },
+    {
+      "id": "fe45fa1f-a585-58b6-8c22-7009a19436fb",
+      "swahili": "Ukimtuma leo…",
+      "english": "If you send him today…",
+      "exampleContext": "-ki- = if (real, likely)",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "15cf3196-714e-56d8-b641-ef00c33c1eff",
+      "swahili": "Nikilipa kodi…",
+      "english": "If I pay the rent… |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "b221e2a7-c59d-58be-9dc9-5df9fd21250e",
+      "swahili": "Usiporekebisha…",
+      "english": "If you don't fix…",
+      "exampleContext": "-si-po- = if not",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "b2a67313-8d09-5d69-8d02-6c9c39e40c9f",
+      "swahili": "mjanja",
+      "english": "clever / streetwise",
+      "exampleContext": "Said with a smile"
+    },
+    {
+      "id": "e100a1c8-b1fd-5bd2-b4f9-08e8df6777d0",
+      "swahili": "Nakuahidi",
+      "english": "I promise you",
+      "exampleContext": "kuahidi = to promise"
+    }
+  ],
+  "practice": [
+    {
+      "id": "4685a2d0-7907-5ff1-ad24-93750429b55f",
+      "mode": "translate",
+      "english": "When it started raining…",
+      "before": "",
+      "after": " kunyesha…",
+      "options": [
+        {
+          "text": "Ilipoanza",
+          "correct": true
+        },
+        {
+          "text": "Ikianza",
+          "correct": false,
+          "feedback": "Ikianza = If/when it starts"
+        },
+        {
+          "text": "Itaanza",
+          "correct": false,
+          "feedback": "Itaanza = It will start"
+        }
+      ],
+      "explanation": "-po- = when (a specific time). i- (it) + -li- + -po- + -anza.",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "aafc2394-9e81-52ba-b913-12fb4dc732eb",
+      "mode": "translate",
+      "english": "the fundi who you brought",
+      "before": "fundi ",
+      "after": " ulimleta",
+      "options": [
+        {
+          "text": "ambaye",
+          "correct": true
+        },
+        {
+          "text": "ambayo",
+          "correct": false,
+          "feedback": "ambayo = which / that"
+        },
+        {
+          "text": "ambao",
+          "correct": false,
+          "feedback": "ambao = who"
+        }
+      ],
+      "explanation": "A person → ambaye (one) / ambao (several).",
+      "grammar": [
+        "relatives"
+      ]
+    },
+    {
+      "id": "cc68b1c3-05e6-51c4-bd1b-3acb2f1e1312",
+      "mode": "translate",
+      "english": "the roof which is leaking",
+      "before": "paa ",
+      "after": " inavuja",
+      "options": [
+        {
+          "text": "ambayo",
+          "correct": true
+        },
+        {
+          "text": "ambaye",
+          "correct": false,
+          "feedback": "ambaye = who"
+        },
+        {
+          "text": "ambao",
+          "correct": false,
+          "feedback": "ambao = who"
+        }
+      ],
+      "explanation": "Kenyan n/n: ambayo. Sanifu (ji/ma): paa ambalo linavuja.",
+      "grammar": [
+        "relatives"
+      ]
+    },
+    {
+      "id": "4cb2986f-8ee4-5bbc-8753-e5dc36a8bcc0",
+      "mode": "translate",
+      "english": "He didn't fix it properly.",
+      "before": "",
+      "after": " vizuri.",
+      "options": [
+        {
+          "text": "Hakurekebisha",
+          "correct": true
+        },
+        {
+          "text": "Hajarekebisha",
+          "correct": false,
+          "feedback": "Hajarekebisha = He/she hasn't fixed yet"
+        },
+        {
+          "text": "Harekebishi",
+          "correct": false,
+          "feedback": "Harekebishi = He/she is not fixing"
+        }
+      ],
+      "explanation": "Hakurekebisha = \"he didn't fix\"",
+      "grammar": [
+        "negative-past"
+      ]
+    },
+    {
+      "id": "5697701a-8171-5637-a21d-078590bbceb3",
+      "mode": "translate",
+      "english": "If I had known… (Sanifu)",
+      "before": "",
+      "after": "…",
+      "options": [
+        {
+          "text": "Ningalijua",
+          "correct": true
+        },
+        {
+          "text": "Ningejua",
+          "correct": false,
+          "feedback": "Ningejua = I would know"
+        },
+        {
+          "text": "Nilijua",
+          "correct": false,
+          "feedback": "Nilijua = I knew"
+        }
+      ],
+      "explanation": "-ngali- = past conditional in Sanifu: \"if I had…\".",
+      "grammar": [
+        "conditional-nge"
+      ]
+    },
+    {
+      "id": "71b8b972-7ee4-58ae-a827-154656f6a5bb",
+      "mode": "translate",
+      "english": "If I had known… (everyday Kenyan)",
+      "before": "",
+      "after": "…",
+      "options": [
+        {
+          "text": "Ningejua",
+          "correct": true
+        },
+        {
+          "text": "Ningalijua",
+          "correct": false,
+          "feedback": "Ningalijua = If I had known"
+        },
+        {
+          "text": "Nikijua",
+          "correct": false,
+          "feedback": "Nikijua = If/when I know"
+        }
+      ],
+      "explanation": "Kenyans mostly use -nge- for past conditions too.",
+      "grammar": [
+        "conditional-nge"
+      ]
+    },
+    {
+      "id": "25f703de-9c35-5aa4-b3c1-02c53a5330c9",
+      "mode": "translate",
+      "english": "…I would have looked for another fundi.",
+      "before": "…",
+      "after": " fundi mwingine.",
+      "options": [
+        {
+          "text": "ningalimtafuta",
+          "correct": true
+        },
+        {
+          "text": "nitamtafuta",
+          "correct": false,
+          "feedback": "nitamtafuta = I will look for him/her"
+        },
+        {
+          "text": "nilimtafuta",
+          "correct": false,
+          "feedback": "nilimtafuta = I looked for him/her"
+        }
+      ],
+      "explanation": "ningalimtafuta = \"I would have looked for\"",
+      "grammar": [
+        "conditional-nge"
+      ]
+    },
+    {
+      "id": "b47fde4c-e7ba-547c-914f-ca8e9d5072ee",
+      "mode": "translate",
+      "english": "If you had brought him early, this wouldn't have happened.",
+      "before": "Kama ungemleta mapema, hii ",
+      "after": ".",
+      "options": [
+        {
+          "text": "haingetokea",
+          "correct": true
+        },
+        {
+          "text": "haitatokea",
+          "correct": false,
+          "feedback": "haitatokea = It won't happen"
+        },
+        {
+          "text": "haikutokea",
+          "correct": false,
+          "feedback": "haikutokea = It didn't happen"
+        }
+      ],
+      "explanation": "hai- (it, negative) + -nge- + -tokea.",
+      "grammar": [
+        "conditional-nge"
+      ]
+    },
+    {
+      "id": "3fbc4b10-e077-51dd-8360-18704813e0cf",
+      "mode": "translate",
+      "english": "If you send him today…",
+      "before": "",
+      "after": " leo…",
+      "options": [
+        {
+          "text": "Ukimtuma",
+          "correct": true
+        },
+        {
+          "text": "Ulimtuma",
+          "correct": false,
+          "feedback": "Ulimtuma = You sent him/her"
+        },
+        {
+          "text": "Ungemtuma",
+          "correct": false,
+          "feedback": "Ungemtuma = You would send him/her"
+        }
+      ],
+      "explanation": "-ki- = if / when (likely, real).",
+      "grammar": [
+        "ki-po-ka",
+        "object-infixes"
+      ]
+    },
+    {
+      "id": "d19ebb6e-5fc8-566a-83f1-d6f94c9ca3df",
+      "mode": "translate",
+      "english": "If I pay the rent tomorrow…",
+      "before": "",
+      "after": " kodi kesho…",
+      "options": [
+        {
+          "text": "Nikilipa",
+          "correct": true
+        },
+        {
+          "text": "Nililipa",
+          "correct": false,
+          "feedback": "Nililipa = I paid"
+        },
+        {
+          "text": "Ningelipa",
+          "correct": false,
+          "feedback": "Ningelipa = I would pay"
+        }
+      ],
+      "explanation": "Nikilipa = \"If / when I pay\"",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "8e9bf6d9-8d12-5108-b244-8889df0ae6ff",
+      "mode": "translate",
+      "english": "If you don't fix it…",
+      "before": "",
+      "after": "…",
+      "options": [
+        {
+          "text": "Usiporekebisha",
+          "correct": true
+        },
+        {
+          "text": "Ukirekebisha",
+          "correct": false,
+          "feedback": "Ukirekebisha = If/when you fix"
+        },
+        {
+          "text": "Hukurekebisha",
+          "correct": false,
+          "feedback": "Hukurekebisha = You didn't fix"
+        }
+      ],
+      "explanation": "u- + -si- + -po- = if you don't…",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "35656720-0d59-562b-8146-a5606ba07307",
+      "mode": "translate",
+      "english": "I'll send another fundi.",
+      "before": "",
+      "after": " fundi mwingine.",
+      "options": [
+        {
+          "text": "Nitamtuma",
+          "correct": true
+        },
+        {
+          "text": "Nitamtumia",
+          "correct": false,
+          "feedback": "Nitamtumia = I will use him/her"
+        },
+        {
+          "text": "Utamtuma",
+          "correct": false,
+          "feedback": "Utamtuma = You will send him/her"
+        }
+      ],
+      "explanation": "tuma = send (a person); tumia = send (something) to (someone).",
+      "grammar": [
+        "future-ta",
+        "object-infixes"
+      ]
+    },
+    {
+      "id": "4aa3643f-3bc1-5b56-80a6-6a602253a19a",
+      "mode": "translate",
+      "english": "The roof will be fixed today.",
+      "before": "Paa ",
+      "after": " leo.",
+      "options": [
+        {
+          "text": "itarekebishwa",
+          "correct": true
+        },
+        {
+          "text": "itarekebisha",
+          "correct": false,
+          "feedback": "itarekebisha = It will fix"
+        },
+        {
+          "text": "imerekebisha",
+          "correct": false,
+          "feedback": "imerekebisha = It has fixed"
+        }
+      ],
+      "explanation": "Passive: rekebisha → rekebishwa.",
+      "grammar": [
+        "future-ta",
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "3c4d77e9-8681-5783-908c-63d62f17b34c",
+      "mode": "translate",
+      "english": "Sorry to bother you.",
+      "before": "Pole kwa ",
+      "after": ".",
+      "options": [
+        {
+          "text": "kukusumbua",
+          "correct": true
+        },
+        {
+          "text": "kunisumbua",
+          "correct": false,
+          "feedback": "kunisumbua = To bother me"
+        },
+        {
+          "text": "kumsumbua",
+          "correct": false,
+          "feedback": "kumsumbua = To bother him/her"
+        }
+      ],
+      "explanation": "ku- + -ku- (you) + -sumbua.",
+      "grammar": [
+        "infinitive-ku",
+        "object-infixes"
+      ]
+    },
+    {
+      "id": "1cf5eb96-451d-5f62-b8d1-bbd75706e7d4",
+      "mode": "complete",
+      "english": "You're clever!",
+      "before": "Wewe ni ",
+      "after": "!",
+      "options": [
+        {
+          "text": "mjanja",
+          "correct": true
+        },
+        {
+          "text": "mjinga",
+          "correct": false
+        },
+        {
+          "text": "mzee",
+          "correct": false,
+          "feedback": "mzee = old man / elder (respectful \"sir\")"
+        }
+      ],
+      "explanation": "mjanja = streetwise / clever (with a wink)."
+    }
+  ]
+}

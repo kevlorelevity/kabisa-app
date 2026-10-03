@@ -1,0 +1,1625 @@
+{
+  "id": "hospital-visit",
+  "uuid": "0a733d8e-0a6b-571a-897c-0e9775adc45a",
+  "title": "At the Hospital",
+  "category": "health",
+  "difficulty": "advanced",
+  "level": 8,
+  "order": 803,
+  "theme": "health",
+  "culturalNote": "For anything beyond the chemist, Kenyans head to a hospital or clinic: you register at reception, see a nurse for \"vitals\", then the doctor. Doctors ask about habits (\"huwa unakunywa maji ya kutosha?\" — do you usually drink enough water?) and give if/when instructions with -ki-: \"ukiona homa inapanda, rudi\" (if you see the fever rising, come back). Relatives describe what happened: \"dawa ambayo nilipewa\" (the medicine that I was given).",
+  "startingPoint": "Your stomach has been bad for three days. You're at a clinic in Kilimani, sitting with Dr Achieng.",
+  "grammarFocus": [
+    "ki-po-ka",
+    "relatives",
+    "conditional-nge",
+    "habitual-hu-nga"
+  ],
+  "grammar": [
+    "ki-po-ka",
+    "relatives",
+    "conditional-nge",
+    "habitual-hu-nga",
+    "noun-classes-mwa-nn",
+    "object-infixes",
+    "locative-ni",
+    "past-li",
+    "question-words",
+    "adjective-agreement",
+    "ni-copula",
+    "verb-extensions",
+    "negative-past",
+    "present-na",
+    "negative-present",
+    "sanifu-noun-classes",
+    "na-have",
+    "future-ta",
+    "numbers-money",
+    "time-swahili",
+    "imperatives",
+    "subjunctive"
+  ],
+  "turns": [
+    {
+      "id": "8e19b5c9-1969-5eca-ad98-74b97ef73e84",
+      "speaker": "Mgonjwa",
+      "role": "user",
+      "swahili": "Daktari, tumbo inaniuma kwa siku tatu sasa.",
+      "english": "Doctor, my stomach has been hurting for three days now.",
+      "words": [
+        {
+          "text": "Daktari",
+          "gloss": "doctor — m/wa noun (people & animals; plural madaktari)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "tumbo",
+          "gloss": "stomach / belly"
+        },
+        {
+          "text": "inaniuma",
+          "gloss": "\"it's hurting me\" — i- + -na- + -ni- (me) + -uma",
+          "grammar": [
+            "object-infixes"
+          ]
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "siku tatu",
+          "gloss": "three days"
+        },
+        {
+          "text": "sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        }
+      ],
+      "sanifu": "Daktari, tumbo linaniuma kwa siku tatu sasa.",
+      "options": [
+        {
+          "swahili": "Daktari, tumbo inaniuma kwa siku tatu sasa.",
+          "correct": true
+        },
+        {
+          "swahili": "Daktari, tumbo inakuuma kwa siku tatu sasa.",
+          "correct": false
+        },
+        {
+          "swahili": "Daktari, tumbo inaniuma kwa siku tatu jana.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "7fc9be1f-ec55-5e45-946f-40f8d80390e0",
+      "speaker": "Daktari",
+      "role": "auto",
+      "swahili": "Pole sana. Ilianza lini?",
+      "english": "So sorry. When did it start?",
+      "words": [
+        {
+          "text": "Pole sana",
+          "gloss": "so sorry / take heart"
+        },
+        {
+          "text": "Ilianza",
+          "gloss": "\"It started\" — i- (subject: it (n/n)) + li- (past) + -anza (start). From kuanza.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kuanza (to start)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilianza"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulianza"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alianza"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulianza"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlianza"
+              },
+              {
+                "pronoun": "they",
+                "form": "walianza"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "ilianza"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zilianza"
+              }
+            ]
+          }
+        },
+        {
+          "text": "lini",
+          "gloss": "when?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3658920d-1614-5451-a608-3aa9c6b880ca",
+      "speaker": "Mgonjwa",
+      "role": "user",
+      "swahili": "Nilipokula samaki kibandani Jumatano, nikaanza kuharisha usiku.",
+      "english": "When I ate fish at a kibanda on Wednesday, I started having diarrhoea at night.",
+      "words": [
+        {
+          "text": "Nilipokula",
+          "gloss": "\"When I ate\"",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "samaki",
+          "gloss": "fish — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "kibandani",
+          "gloss": "\"at the kibanda\" — kibanda + -ni",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "Jumatano",
+          "gloss": "Wednesday"
+        },
+        {
+          "text": "nikaanza",
+          "gloss": "\"and then I started\"",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "kuharisha",
+          "gloss": "\"to have diarrhoea\""
+        },
+        {
+          "text": "usiku",
+          "gloss": "night (u-class, used like n/n) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Nilipokula samaki kibandani Jumatano, nikaanza kuharisha usiku.",
+          "correct": true
+        },
+        {
+          "swahili": "Nikila samaki kibandani Jumatano, nikaanza kuharisha usiku.",
+          "correct": false
+        },
+        {
+          "swahili": "Nilipokula samaki kibandani Jumatano, nitaanza kuharisha usiku.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "ac5f3b25-fe69-5dc7-8f22-a0dbfb9544ad",
+      "speaker": "Daktari",
+      "role": "auto",
+      "swahili": "Sawa. Ulikunywa dawa yoyote?",
+      "english": "Okay. Did you take any medicine?",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Ulikunywa",
+          "gloss": "\"You drank\" — u- (subject: you) + li- (past) + -nywa (drink). From kunywa.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kunywa (to drink)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilikunywa"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulikunywa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alikunywa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulikunywa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlikunywa"
+              },
+              {
+                "pronoun": "they",
+                "form": "walikunywa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "dawa",
+          "gloss": "medicine — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "yoyote",
+          "gloss": "any (n/n singular)",
+          "grammar": [
+            "adjective-agreement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "423253a7-2e50-5444-9729-1a8f8b932990",
+      "speaker": "Mgonjwa",
+      "role": "user",
+      "swahili": "Ndiyo, dawa ambayo nilipewa na chemist, lakini haikusaidia.",
+      "english": "Yes, the medicine I was given by the chemist, but it didn't help.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "dawa ambayo",
+          "gloss": "\"the medicine which\"",
+          "grammar": [
+            "relatives"
+          ]
+        },
+        {
+          "text": "nilipewa",
+          "gloss": "\"I was given\"",
+          "grammar": [
+            "verb-extensions"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "chemist",
+          "gloss": "pharmacy"
+        },
+        {
+          "text": "lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "haikusaidia",
+          "gloss": "\"It didn't help\" — hai- (negative subject: not it (n/n)) + ku- (past (negative)) + -saidia (help). From kusaidia.",
+          "grammar": [
+            "negative-past"
+          ],
+          "conjugation": {
+            "verb": "kusaidia (to help)",
+            "tense": "Past, negative (-ku-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "sikusaidia"
+              },
+              {
+                "pronoun": "you",
+                "form": "hukusaidia"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "hakusaidia"
+              },
+              {
+                "pronoun": "we",
+                "form": "hatukusaidia"
+              },
+              {
+                "pronoun": "you all",
+                "form": "hamkusaidia"
+              },
+              {
+                "pronoun": "they",
+                "form": "hawakusaidia"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "haikusaidia"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "hazikusaidia"
+              }
+            ]
+          }
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo, dawa ambayo nilipewa na chemist, lakini haikusaidia.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, dawa ambaye nilipewa na chemist, lakini haikusaidia.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, dawa ambayo nilimpa chemist, lakini haikusaidia.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "b287bc76-252b-5a34-90af-e2d0ada942b6",
+      "speaker": "Daktari",
+      "role": "auto",
+      "swahili": "Huwa unakunywa maji ya kutosha?",
+      "english": "Do you usually drink enough water?",
+      "words": [
+        {
+          "text": "Huwa",
+          "gloss": "\"usually\" — hu- + -wa: sets up a habit",
+          "grammar": [
+            "habitual-hu-nga"
+          ]
+        },
+        {
+          "text": "unakunywa",
+          "gloss": "\"You are drinking\" — u- (subject: you) + na- (present) + -nywa (drink). From kunywa.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kunywa (to drink)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninakunywa"
+              },
+              {
+                "pronoun": "you",
+                "form": "unakunywa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anakunywa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunakunywa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnakunywa"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanakunywa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "maji ya kutosha",
+          "gloss": "enough water"
+        }
+      ]
+    },
+    {
+      "id": "2a677bc1-6558-5347-8f0f-8a9eb53b2f6f",
+      "speaker": "Mgonjwa",
+      "role": "user",
+      "swahili": "Hapana, huwa sinywi maji mengi. Ningejua, ningekuja mapema.",
+      "english": "No, I usually don't drink much water. If I'd known, I would have come earlier.",
+      "words": [
+        {
+          "text": "Hapana",
+          "gloss": "no"
+        },
+        {
+          "text": "huwa",
+          "gloss": "\"usually\" — hu- + -wa: sets up a habit",
+          "grammar": [
+            "habitual-hu-nga"
+          ]
+        },
+        {
+          "text": "sinywi",
+          "gloss": "\"I am not drinking\" — si- (negative subject: not I) + -nywi (drink, negative ends in -i). From kunywa.",
+          "grammar": [
+            "negative-present"
+          ],
+          "conjugation": {
+            "verb": "kunywa (to drink)",
+            "tense": "Present, negative",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "sinywi"
+              },
+              {
+                "pronoun": "you",
+                "form": "hunywi"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "hanywi"
+              },
+              {
+                "pronoun": "we",
+                "form": "hatunywi"
+              },
+              {
+                "pronoun": "you all",
+                "form": "hamnywi"
+              },
+              {
+                "pronoun": "they",
+                "form": "hawanywi"
+              }
+            ]
+          }
+        },
+        {
+          "text": "maji",
+          "gloss": "water — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — maji yangu, maji haya (ma- plural of the ji/ma class)"
+        },
+        {
+          "text": "mengi",
+          "gloss": "\"many / a lot\" — ji/ma agreement (mambo mengi, magari mengi)",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "ji/ma class"
+        },
+        {
+          "text": "Ningejua",
+          "gloss": "\"if I had known\"",
+          "grammar": [
+            "conditional-nge"
+          ]
+        },
+        {
+          "text": "ningekuja",
+          "gloss": "\"I would have come\"",
+          "grammar": [
+            "conditional-nge"
+          ]
+        },
+        {
+          "text": "mapema",
+          "gloss": "early"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Hapana, huwa sinywi maji mengi. Ningejua, ningekuja mapema.",
+          "correct": true
+        },
+        {
+          "swahili": "Hapana, huwa sinywi maji mengi. Nikijua, nitakuja mapema.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, huwa sinywi maji mengi. Ningejua, ningekuja mapema.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "12a240c1-fa57-580b-8fb9-d0fec39b3d88",
+      "speaker": "Daktari",
+      "role": "auto",
+      "swahili": "Hakuna shida. Tutafanya kipimo cha damu kwanza.",
+      "english": "No problem. We'll do a blood test first.",
+      "words": [
+        {
+          "text": "Hakuna shida",
+          "gloss": "no problem (lit. \"there's no problem\")",
+          "grammar": [
+            "na-have"
+          ]
+        },
+        {
+          "text": "Tutafanya",
+          "gloss": "\"We will do\" — tu- (subject: we) + ta- (future) + -fanya (do). From kufanya.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kufanya (to do)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitafanya"
+              },
+              {
+                "pronoun": "you",
+                "form": "utafanya"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atafanya"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutafanya"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtafanya"
+              },
+              {
+                "pronoun": "they",
+                "form": "watafanya"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kipimo",
+          "gloss": "test (medical)",
+          "sanifu": "ki/vi class"
+        },
+        {
+          "text": "cha",
+          "gloss": "\"of\" — ki/vi agreement (kituo cha polisi, chakula cha mchana)",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "ki/vi class"
+        },
+        {
+          "text": "damu",
+          "gloss": "blood"
+        },
+        {
+          "text": "kwanza",
+          "gloss": "first",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7b8980c0-00bd-5e81-a839-2640847a1e05",
+      "speaker": "Mgonjwa",
+      "role": "user",
+      "swahili": "Matokeo yatakuja lini?",
+      "english": "When will the results come?",
+      "words": [
+        {
+          "text": "Matokeo",
+          "gloss": "results"
+        },
+        {
+          "text": "yatakuja",
+          "gloss": "\"they will come\" — ya- agreement (matokeo yatakuja).",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "ji/ma plural agreement (ma- nouns). Kenyans keep it for nouns that start with ma-, but say \"zi-/-nyingi\" for most others."
+        },
+        {
+          "text": "lini",
+          "gloss": "when?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Matokeo yatakuja lini?",
+          "correct": true
+        },
+        {
+          "swahili": "Matokeo yalikuja lini?",
+          "correct": false
+        },
+        {
+          "swahili": "Matokeo yatakuja wapi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "f27703cf-f4fc-5cd0-9dc3-68526142ca2c",
+      "speaker": "Daktari",
+      "role": "auto",
+      "swahili": "Baada ya saa moja. Ukimaliza kipimo, kaa nje. Nesi ambaye atakuita ni Mercy.",
+      "english": "In an hour. When you finish the test, sit outside. The nurse who will call you is Mercy.",
+      "words": [
+        {
+          "text": "Baada ya",
+          "gloss": "after"
+        },
+        {
+          "text": "saa moja",
+          "gloss": "7 o'clock (1st hour of daylight) / one hour",
+          "grammar": [
+            "time-swahili"
+          ]
+        },
+        {
+          "text": "Ukimaliza",
+          "gloss": "\"When you finish\"",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "kipimo",
+          "gloss": "test (medical)",
+          "sanifu": "ki/vi class"
+        },
+        {
+          "text": "kaa",
+          "gloss": "\"Stay!\" — -kaa (stay). From kukaa.",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "nje",
+          "gloss": "outside"
+        },
+        {
+          "text": "Nesi",
+          "gloss": "nurse (from English)"
+        },
+        {
+          "text": "ambaye",
+          "gloss": "who — relative for one person (m/wa)",
+          "grammar": [
+            "relatives"
+          ]
+        },
+        {
+          "text": "atakuita",
+          "gloss": "\"He/she will call you\" — a- (subject: he/she) + ta- (future) + ku- (object: you) + -ita (call). From kuita.",
+          "grammar": [
+            "future-ta",
+            "object-infixes"
+          ],
+          "conjugation": {
+            "verb": "kuita (to call)",
+            "tense": "Future (-ta-) + object -ku-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitakuita"
+              },
+              {
+                "pronoun": "you",
+                "form": "utakuita"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atakuita"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutakuita"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtakuita"
+              },
+              {
+                "pronoun": "they",
+                "form": "watakuita"
+              }
+            ]
+          }
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Mercy",
+          "gloss": "Mercy (name)"
+        }
+      ]
+    },
+    {
+      "id": "aa29b6b0-19a5-544a-8688-480b1ce7a572",
+      "speaker": "Mgonjwa",
+      "role": "user",
+      "swahili": "Sawa. Na nikirudi nyumbani, nile nini?",
+      "english": "Okay. And when I go back home, what should I eat?",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "nikirudi",
+          "gloss": "\"If/when I come back\" — ni- (subject: I) + ki- (if / when · or \"-ing\" after kuwa) + -rudi (come back). From kurudi. After a past kuwa (nilikuwa …) the -ki- form means \"…-ing\".",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "nyumbani",
+          "gloss": "\"at / in / to the house\" — nyumba + -ni (place suffix).",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "nile",
+          "gloss": "\"Let me eat / should I eat?\" — ni- (subject: I) + -le (eat, subjunctive -e). From kula.",
+          "grammar": [
+            "subjunctive"
+          ],
+          "conjugation": {
+            "verb": "kula (to eat)",
+            "tense": "Subjunctive (-e)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nile"
+              },
+              {
+                "pronoun": "you",
+                "form": "ule"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ale"
+              },
+              {
+                "pronoun": "we",
+                "form": "tule"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mle"
+              },
+              {
+                "pronoun": "they",
+                "form": "wale"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nini",
+          "gloss": "what?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Sawa. Na nikirudi nyumbani, nile nini?",
+          "correct": true
+        },
+        {
+          "swahili": "Sawa. Na nilirudi nyumbani, nile nini?",
+          "correct": false
+        },
+        {
+          "swahili": "Sawa. Na nikirudi nyumbani, ule nini?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "f0d37159-feef-54c2-8cc7-61dd3d2675c4",
+      "speaker": "Daktari",
+      "role": "auto",
+      "swahili": "Kula uji, wali na ndizi. Usile chakula chenye mafuta mengi.",
+      "english": "Eat porridge, rice and bananas. Don't eat oily food.",
+      "words": [
+        {
+          "text": "Kula",
+          "gloss": "\"Eat!\" / \"to eat\"",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "uji",
+          "gloss": "porridge — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: u- class — uji wangu"
+        },
+        {
+          "text": "wali",
+          "gloss": "rice (cooked) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "ndizi",
+          "gloss": "banana — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Usile",
+          "gloss": "\"Don't eat\" — u- (subject: you) + si- (not) + -le (eat, subjunctive -e). From kula.",
+          "grammar": [
+            "subjunctive"
+          ],
+          "conjugation": {
+            "verb": "kula (to eat)",
+            "tense": "Subjunctive, negative (-si- … -e)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nisile"
+              },
+              {
+                "pronoun": "you",
+                "form": "usile"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "asile"
+              },
+              {
+                "pronoun": "we",
+                "form": "tusile"
+              },
+              {
+                "pronoun": "you all",
+                "form": "msile"
+              },
+              {
+                "pronoun": "they",
+                "form": "wasile"
+              }
+            ]
+          }
+        },
+        {
+          "text": "chakula chenye mafuta",
+          "gloss": "oily food — ki/vi agreement chenye",
+          "sanifu": "Kenyans also say \"chakula yenye mafuta\""
+        },
+        {
+          "text": "mengi",
+          "gloss": "\"many / a lot\" — ji/ma agreement (mambo mengi, magari mengi)",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "ji/ma class"
+        }
+      ]
+    },
+    {
+      "id": "b173d941-7090-5bf2-b548-427c05e55c36",
+      "speaker": "Mgonjwa",
+      "role": "user",
+      "swahili": "Na kama homa itaanza?",
+      "english": "And if a fever starts?",
+      "words": [
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "kama",
+          "gloss": "like / as / if"
+        },
+        {
+          "text": "homa",
+          "gloss": "fever / flu (Kenyans use it for a bad cold too) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "itaanza",
+          "gloss": "\"It will start\" — i- (subject: it (n/n)) + ta- (future) + -anza (start). From kuanza.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kuanza (to start)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitaanza"
+              },
+              {
+                "pronoun": "you",
+                "form": "utaanza"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ataanza"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutaanza"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtaanza"
+              },
+              {
+                "pronoun": "they",
+                "form": "wataanza"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "itaanza"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zitaanza"
+              }
+            ]
+          }
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Na kama homa itaanza?",
+          "correct": true
+        },
+        {
+          "swahili": "Na kama homa ilianza?",
+          "correct": false
+        },
+        {
+          "swahili": "Na kama homa itaisha?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "7374fb74-60f7-5d36-8a84-2680460116d8",
+      "speaker": "Daktari",
+      "role": "auto",
+      "swahili": "Ukiona homa inapanda, rudi hapa haraka. Pona haraka!",
+      "english": "If you see the fever rising, come back here quickly. Get well soon!",
+      "words": [
+        {
+          "text": "Ukiona",
+          "gloss": "\"If you see\"",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "homa",
+          "gloss": "fever / flu (Kenyans use it for a bad cold too) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "inapanda",
+          "gloss": "\"it's going up\""
+        },
+        {
+          "text": "rudi",
+          "gloss": "\"Come back!\" — -rudi (come back). From kurudi.",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "haraka",
+          "gloss": "quickly / hurry"
+        },
+        {
+          "text": "Pona",
+          "gloss": "\"Get better!\" — -pona (get better). From kupona.",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "haraka",
+          "gloss": "quickly / hurry"
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "8fff5138-717d-5172-b686-2d00b9b4b183",
+      "swahili": "Tumbo inaniuma",
+      "english": "My stomach hurts",
+      "exampleContext": "Kenyan agreement.",
+      "partOfSpeech": "phrase",
+      "sanifu": "Tumbo linaniuma",
+      "sanifuNote": "Sanifu: tumbo is ji/ma"
+    },
+    {
+      "id": "24fcaa27-e567-5ca7-b115-a89f736676b9",
+      "swahili": "Ilianza lini?",
+      "english": "When did it start? |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "3d8a5540-f804-59a3-a553-8b404ec12a36",
+      "swahili": "Nilipokula…",
+      "english": "When I ate…",
+      "exampleContext": "-po- = when",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "4e0eb572-74e1-5f61-9184-c75f88f73f20",
+      "swahili": "nikaanza…",
+      "english": "and then I started…",
+      "exampleContext": "-ka- in a story",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "d76df807-3fa8-5fcd-ad78-5836516148d4",
+      "swahili": "dawa ambayo nilipewa",
+      "english": "the medicine I was given |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "e9d449fd-be9c-5c64-a0b8-ec902145935c",
+      "swahili": "Haikusaidia",
+      "english": "It didn't help |",
+      "exampleContext": ""
+    },
+    {
+      "id": "765e267f-5a03-5726-9dce-e65e9f4b518e",
+      "swahili": "Huwa unakunywa…?",
+      "english": "Do you usually drink…?",
+      "exampleContext": "huwa = usually",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "0f41a764-56f4-50bb-ab56-97315e003c97",
+      "swahili": "Ningejua, ningekuja mapema",
+      "english": "If I'd known, I'd have come earlier |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "9da3a9f6-7658-551d-bd0d-eaea9efbbb38",
+      "swahili": "kipimo cha damu",
+      "english": "blood test |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "d68cc912-0a63-52da-9764-46f87b0aee06",
+      "swahili": "matokeo",
+      "english": "results",
+      "exampleContext": "Matokeo yatakuja lini?"
+    },
+    {
+      "id": "004be11d-3645-5de4-8797-ea42d8062555",
+      "swahili": "Ukimaliza…",
+      "english": "When you finish… |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "635290cf-dc16-566f-8f71-7a93daca9012",
+      "swahili": "Nile nini?",
+      "english": "What should I eat?",
+      "exampleContext": "Subjunctive of kula",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "b424aa30-6646-572b-b5bb-d9f7ed01dc5b",
+      "swahili": "Usile…",
+      "english": "Don't eat… |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "5ad35b55-6270-54e4-96c6-f80a2ca2f2d9",
+      "swahili": "Ukiona homa inapanda, rudi",
+      "english": "If the fever rises, come back |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "158f2a97-33af-5ed3-9dad-742d54d4b0fa",
+      "mode": "translate",
+      "english": "My stomach is hurting me.",
+      "before": "Tumbo ",
+      "after": ".",
+      "options": [
+        {
+          "text": "inaniuma",
+          "correct": true
+        },
+        {
+          "text": "inakuuma",
+          "correct": false,
+          "feedback": "inakuuma = It is biting you"
+        },
+        {
+          "text": "inamuuma",
+          "correct": false
+        }
+      ],
+      "explanation": "-ni- = me: i- + -na- + -ni- + -uma. Sanifu: tumbo linaniuma.",
+      "grammar": [
+        "object-infixes"
+      ]
+    },
+    {
+      "id": "4def2e63-a833-5b05-af75-3d552beaba77",
+      "mode": "translate",
+      "english": "When I ate fish…",
+      "before": "",
+      "after": " samaki…",
+      "options": [
+        {
+          "text": "Nilipokula",
+          "correct": true
+        },
+        {
+          "text": "Nikila",
+          "correct": false,
+          "feedback": "Nikila = If/when I eat"
+        },
+        {
+          "text": "Ningekula",
+          "correct": false,
+          "feedback": "Ningekula = I would eat"
+        }
+      ],
+      "explanation": "-po- = when (a particular time in the past).",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "70ac460b-869e-5f27-b4bc-1ec5a8b9f8d3",
+      "mode": "complete",
+      "english": "…and then I started having diarrhoea.",
+      "before": "…",
+      "after": " kuharisha.",
+      "options": [
+        {
+          "text": "nikaanza",
+          "correct": true
+        },
+        {
+          "text": "ninaanza",
+          "correct": false,
+          "feedback": "ninaanza = I am starting"
+        },
+        {
+          "text": "nitaanza",
+          "correct": false,
+          "feedback": "nitaanza = I will start"
+        }
+      ],
+      "explanation": "-ka- continues a past story.",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "6dd05ff5-be52-50d8-b4d6-0ff603b43ced",
+      "mode": "translate",
+      "english": "the medicine that I was given",
+      "before": "dawa ",
+      "after": " nilipewa",
+      "options": [
+        {
+          "text": "ambayo",
+          "correct": true
+        },
+        {
+          "text": "ambaye",
+          "correct": false,
+          "feedback": "ambaye = who"
+        },
+        {
+          "text": "ambazo",
+          "correct": false,
+          "feedback": "ambazo = which / that"
+        }
+      ],
+      "explanation": "dawa is n/n singular → ambayo.",
+      "grammar": [
+        "relatives"
+      ]
+    },
+    {
+      "id": "37efafb5-5638-5783-94e3-67b5da6dc694",
+      "mode": "translate",
+      "english": "It didn't help.",
+      "before": "",
+      "after": ".",
+      "options": [
+        {
+          "text": "Haikusaidia",
+          "correct": true
+        },
+        {
+          "text": "Haisaidii",
+          "correct": false,
+          "feedback": "Haisaidii = It is not helping"
+        },
+        {
+          "text": "Haitasaidia",
+          "correct": false,
+          "feedback": "Haitasaidia = It won't help"
+        }
+      ],
+      "explanation": "hai- (not it) + -ku- (past) + -saidia.",
+      "grammar": [
+        "negative-past"
+      ]
+    },
+    {
+      "id": "7cc0b231-798c-5fdd-8b38-610920adcfc3",
+      "mode": "translate",
+      "english": "Do you usually drink enough water?",
+      "before": "",
+      "after": " unakunywa maji ya kutosha?",
+      "options": [
+        {
+          "text": "Huwa",
+          "correct": true
+        },
+        {
+          "text": "Hu",
+          "correct": false
+        },
+        {
+          "text": "Hapo",
+          "correct": false,
+          "feedback": "Hapo = there (near you / just mentioned)"
+        }
+      ],
+      "explanation": "huwa + present = \"usually…\" — very common in Kenya.",
+      "grammar": [
+        "habitual-hu-nga"
+      ]
+    },
+    {
+      "id": "a9ba92fd-2f91-56ed-8c03-5651365b0e91",
+      "mode": "translate",
+      "english": "I usually don't drink much water.",
+      "before": "Huwa ",
+      "after": " maji mengi.",
+      "options": [
+        {
+          "text": "sinywi",
+          "correct": true
+        },
+        {
+          "text": "ninakunywa",
+          "correct": false,
+          "feedback": "ninakunywa = I am drinking"
+        },
+        {
+          "text": "sikunywa",
+          "correct": false,
+          "feedback": "sikunywa = I didn't drink"
+        }
+      ],
+      "explanation": "sinywi = \"I am not drinking\" — si- (negative subject: not I) + -nywi (drink, negative ends in -i). From kunywa.",
+      "grammar": [
+        "negative-present"
+      ]
+    },
+    {
+      "id": "b731a372-06a4-506c-920c-c1fe2d758aea",
+      "mode": "translate",
+      "english": "If I'd known, I would have come earlier.",
+      "before": "Ningejua, ",
+      "after": " mapema.",
+      "options": [
+        {
+          "text": "ningekuja",
+          "correct": true
+        },
+        {
+          "text": "nitakuja",
+          "correct": false,
+          "feedback": "nitakuja = I will come"
+        },
+        {
+          "text": "nilikuja",
+          "correct": false,
+          "feedback": "nilikuja = I came"
+        }
+      ],
+      "explanation": "ningekuja = \"I would have come\"",
+      "grammar": [
+        "conditional-nge"
+      ]
+    },
+    {
+      "id": "d92a11e0-1f22-529f-81f2-582a25e1d7b4",
+      "mode": "translate",
+      "english": "When you finish the test…",
+      "before": "",
+      "after": " kipimo…",
+      "options": [
+        {
+          "text": "Ukimaliza",
+          "correct": true
+        },
+        {
+          "text": "Ulimaliza",
+          "correct": false,
+          "feedback": "Ulimaliza = You finished"
+        },
+        {
+          "text": "Ungemaliza",
+          "correct": false,
+          "feedback": "Ungemaliza = You would finish"
+        }
+      ],
+      "explanation": "-ki- = when / if.",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "231d6b7b-e4fa-5a23-9d74-2869242d417b",
+      "mode": "translate",
+      "english": "the nurse who will call you",
+      "before": "nesi ",
+      "after": " atakuita",
+      "options": [
+        {
+          "text": "ambaye",
+          "correct": true
+        },
+        {
+          "text": "ambayo",
+          "correct": false,
+          "feedback": "ambayo = which / that"
+        },
+        {
+          "text": "ambao",
+          "correct": false,
+          "feedback": "ambao = who"
+        }
+      ],
+      "explanation": "ambaye: who — relative for one person (m/wa)",
+      "grammar": [
+        "relatives"
+      ]
+    },
+    {
+      "id": "d218c399-fde1-5f3f-96ac-1bdcb06a4f58",
+      "mode": "translate",
+      "english": "When I get home, what should I eat?",
+      "before": "Nikirudi nyumbani, ",
+      "after": " nini?",
+      "options": [
+        {
+          "text": "nile",
+          "correct": true
+        },
+        {
+          "text": "nitakula",
+          "correct": false,
+          "feedback": "nitakula = I will eat"
+        },
+        {
+          "text": "ninakula",
+          "correct": false,
+          "feedback": "ninakula = I am eating"
+        }
+      ],
+      "explanation": "nile = should I eat (subjunctive of kula — no ku-).",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "43bc1b1e-0898-5808-89dd-2242e4976268",
+      "mode": "translate",
+      "english": "Don't eat oily food.",
+      "before": "",
+      "after": " chakula chenye mafuta.",
+      "options": [
+        {
+          "text": "Usile",
+          "correct": true
+        },
+        {
+          "text": "Usikula",
+          "correct": false
+        },
+        {
+          "text": "Ule",
+          "correct": false,
+          "feedback": "Ule = (please) eat"
+        }
+      ],
+      "explanation": "Negative subjunctive of kula: usile.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "c5148b66-06a9-579c-adf1-a5f5408434d1",
+      "mode": "translate",
+      "english": "If you see the fever rising, come back.",
+      "before": "",
+      "after": " homa inapanda, rudi.",
+      "options": [
+        {
+          "text": "Ukiona",
+          "correct": true
+        },
+        {
+          "text": "Uliona",
+          "correct": false,
+          "feedback": "Uliona = You saw"
+        },
+        {
+          "text": "Ungeona",
+          "correct": false,
+          "feedback": "Ungeona = You would see"
+        }
+      ],
+      "explanation": "Ukiona = \"If you see\"",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "87319c40-1846-508f-ae4a-7c57f42a15d5",
+      "mode": "translate",
+      "english": "When will the results come?",
+      "before": "Matokeo ",
+      "after": " lini?",
+      "options": [
+        {
+          "text": "yatakuja",
+          "correct": true
+        },
+        {
+          "text": "yalikuja",
+          "correct": false
+        },
+        {
+          "text": "yanakuja",
+          "correct": false,
+          "feedback": "yanakuja = they are coming"
+        }
+      ],
+      "explanation": "matokeo is ma- (ji/ma plural) → ya-. A Sanifu agreement Kenyans keep for this word.",
+      "grammar": [
+        "sanifu-noun-classes"
+      ]
+    },
+    {
+      "id": "4bffb387-a25c-5d6f-bb09-48c49d2513b8",
+      "mode": "translate",
+      "english": "We'll do a blood test.",
+      "before": "Tutafanya ",
+      "after": " cha damu.",
+      "options": [
+        {
+          "text": "kipimo",
+          "correct": true
+        },
+        {
+          "text": "kitabu",
+          "correct": false,
+          "feedback": "kitabu = book (plural vitabu)"
+        },
+        {
+          "text": "kiti",
+          "correct": false,
+          "feedback": "kiti = chair / seat (plural viti)"
+        }
+      ],
+      "explanation": "kipimo: test (medical)"
+    },
+    {
+      "id": "e2aef300-bb07-5571-94be-37345a1d9dfa",
+      "mode": "complete",
+      "english": "Get well soon!",
+      "before": "",
+      "after": " haraka!",
+      "options": [
+        {
+          "text": "Pona",
+          "correct": true
+        },
+        {
+          "text": "Pole",
+          "correct": false,
+          "feedback": "Pole = sorry (sympathy)"
+        },
+        {
+          "text": "Poa",
+          "correct": false,
+          "feedback": "Poa = cool / fine"
+        }
+      ],
+      "explanation": "Pona = \"Get better!\" — -pona (get better). From kupona.",
+      "grammar": [
+        "imperatives"
+      ]
+    }
+  ]
+}

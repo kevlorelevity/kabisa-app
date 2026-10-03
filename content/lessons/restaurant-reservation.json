@@ -1,0 +1,1705 @@
+{
+  "id": "restaurant-reservation",
+  "uuid": "aa58d0a5-1454-537a-9eb8-80a9aee234dc",
+  "title": "The Lost Reservation",
+  "category": "food-drink",
+  "difficulty": "medium",
+  "level": 5,
+  "order": 502,
+  "theme": "food",
+  "culturalNote": "Booking a table (kuweka meza / reservation) is common for dinners out in Nairobi. When something goes wrong, Kenyan service staff will smooth it over with \"Pole kwa usumbufu\" (sorry for the trouble) and a bit of patience on both sides. The -me- and -ja- tenses carry this whole scene: \"nimefika\" (I've arrived), \"sijaona jina lako\" (I haven't seen your name yet), \"imeisha\" (it's finished — sold out).",
+  "startingPoint": "You arrive at a restaurant in Westlands for dinner. You booked a table yesterday — or did you?",
+  "grammarFocus": [
+    "perfect-me",
+    "perfect-negative-ja",
+    "comparatives"
+  ],
+  "grammar": [
+    "perfect-me",
+    "perfect-negative-ja",
+    "comparatives",
+    "noun-classes-mwa-nn",
+    "past-li",
+    "subjunctive",
+    "locative-ni",
+    "possessives",
+    "sanifu-noun-classes",
+    "discourse-particles",
+    "demonstratives",
+    "na-have",
+    "ko-location",
+    "ni-copula",
+    "imperatives",
+    "adjective-agreement",
+    "present-na",
+    "future-ta",
+    "infinitive-ku",
+    "object-infixes"
+  ],
+  "turns": [
+    {
+      "id": "f47acaea-df43-5ecc-a714-cf827a31c28c",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Habari! Nimefika. Niliweka meza jana kwa jina Omondi.",
+      "english": "Hello! I've arrived. I reserved a table yesterday under the name Omondi.",
+      "words": [
+        {
+          "text": "Habari",
+          "gloss": "news — the base of every formal greeting — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Nimefika",
+          "gloss": "\"I have arrived\" — ni- (subject: I) + me- (perfect (done / now-state)) + -fika (arrive). From kufika.",
+          "grammar": [
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kufika (to arrive)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimefika"
+              },
+              {
+                "pronoun": "you",
+                "form": "umefika"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amefika"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumefika"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmefika"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamefika"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Niliweka meza",
+          "gloss": "\"I reserved a table\" — lit. \"I put a table\".",
+          "grammar": [
+            "past-li"
+          ]
+        },
+        {
+          "text": "jana",
+          "gloss": "yesterday — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "kwa jina",
+          "gloss": "\"under the name\""
+        },
+        {
+          "text": "Omondi",
+          "gloss": "Omondi (name)"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Habari! Nimefika. Niliweka meza jana kwa jina Omondi.",
+          "correct": true
+        },
+        {
+          "swahili": "Habari! Sijafika. Niliweka meza jana kwa jina Omondi.",
+          "correct": false
+        },
+        {
+          "swahili": "Habari! Nimefika. Nitaweka meza jana kwa jina Omondi.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "aa7f16ec-684d-5678-b03a-330a66ce230c",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Karibu! Ngoja kidogo, niangalie kwenye orodha.",
+      "english": "Welcome! Wait a moment, let me check the list.",
+      "words": [
+        {
+          "text": "Karibu",
+          "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "Ngoja kidogo",
+          "gloss": "\"Wait a moment\""
+        },
+        {
+          "text": "niangalie",
+          "gloss": "\"let me look\" — ni- + -angali- + -e (subjunctive).",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "kwenye",
+          "gloss": "\"at / on / in / to\" — the all-purpose place word (kwenye meza = on the table).",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "orodha",
+          "gloss": "list"
+        }
+      ]
+    },
+    {
+      "id": "4f6c2d89-375f-560c-85bc-ab3b9b301736",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Samahani, sijaona jina lako kwenye orodha.",
+      "english": "Sorry, I haven't seen your name on the list.",
+      "words": [
+        {
+          "text": "Samahani",
+          "gloss": "excuse me / sorry (apology)"
+        },
+        {
+          "text": "sijaona",
+          "gloss": "\"I haven't seen yet\" — si- (negative subject: not I) + ja- (not yet) + -ona (see). From kuona.",
+          "grammar": [
+            "perfect-negative-ja"
+          ],
+          "conjugation": {
+            "verb": "kuona (to see)",
+            "tense": "Not yet (-ja-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "sijaona"
+              },
+              {
+                "pronoun": "you",
+                "form": "hujaona"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "hajaona"
+              },
+              {
+                "pronoun": "we",
+                "form": "hatujaona"
+              },
+              {
+                "pronoun": "you all",
+                "form": "hamjaona"
+              },
+              {
+                "pronoun": "they",
+                "form": "hawajaona"
+              }
+            ]
+          }
+        },
+        {
+          "text": "jina lako",
+          "gloss": "\"your name\" — ji/ma agreement (Sanifu).",
+          "grammar": [
+            "possessives",
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Everyday Kenyan: jina yako"
+        },
+        {
+          "text": "kwenye",
+          "gloss": "\"at / on / in / to\" — the all-purpose place word (kwenye meza = on the table).",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "orodha",
+          "gloss": "list"
+        }
+      ]
+    },
+    {
+      "id": "7816f999-f99c-5189-9f70-156df5295a5b",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Kweli? Nimepata ujumbe kwa simu jana. Hii hapa.",
+      "english": "Really? I got a message on my phone yesterday. Here it is.",
+      "words": [
+        {
+          "text": "Kweli",
+          "gloss": "true / really",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Nimepata",
+          "gloss": "\"I have got\" — ni- (subject: I) + me- (perfect (done / now-state)) + -pata (get). From kupata.",
+          "grammar": [
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kupata (to get)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimepata"
+              },
+              {
+                "pronoun": "you",
+                "form": "umepata"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amepata"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumepata"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmepata"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamepata"
+              }
+            ]
+          }
+        },
+        {
+          "text": "ujumbe",
+          "gloss": "message (plural jumbe) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: u- class — ujumbe wangu"
+        },
+        {
+          "text": "kwa simu",
+          "gloss": "on the phone"
+        },
+        {
+          "text": "jana",
+          "gloss": "yesterday — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Hii hapa",
+          "gloss": "here it is",
+          "grammar": [
+            "demonstratives"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Kweli? Nimepata ujumbe kwa simu jana. Hii hapa.",
+          "correct": true
+        },
+        {
+          "swahili": "Kweli? Sijapata ujumbe kwa simu jana. Hii hapa.",
+          "correct": false
+        },
+        {
+          "swahili": "Kweli? Umepata ujumbe kwa simu jana. Hii hapa.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "c54f1d30-efd4-5f3f-84fd-a10ec7d6fdbb",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Aah, nimeona! Meza imeandikwa kwa jina tofauti. Pole kwa usumbufu.",
+      "english": "Ah, I see! The table was written under a different name. Sorry for the trouble.",
+      "words": [
+        {
+          "text": "Aah",
+          "gloss": "ah!",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "nimeona",
+          "gloss": "\"I have seen\" — ni- (subject: I) + me- (perfect (done / now-state)) + -ona (see). From kuona.",
+          "grammar": [
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kuona (to see)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimeona"
+              },
+              {
+                "pronoun": "you",
+                "form": "umeona"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ameona"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumeona"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmeona"
+              },
+              {
+                "pronoun": "they",
+                "form": "wameona"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Meza",
+          "gloss": "table — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "imeandikwa",
+          "gloss": "\"it has been written\" — i- + -me- + -andikwa (passive).",
+          "grammar": [
+            "perfect-me"
+          ]
+        },
+        {
+          "text": "kwa jina",
+          "gloss": "\"under the name\""
+        },
+        {
+          "text": "tofauti",
+          "gloss": "different"
+        },
+        {
+          "text": "Pole kwa usumbufu",
+          "gloss": "\"Sorry for the trouble\""
+        }
+      ]
+    },
+    {
+      "id": "595582fd-65eb-5487-9803-366b518c458a",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Hakuna shida. Meza iko tayari?",
+      "english": "No problem. Is the table ready?",
+      "words": [
+        {
+          "text": "Hakuna shida",
+          "gloss": "no problem (lit. \"there's no problem\")",
+          "grammar": [
+            "na-have"
+          ]
+        },
+        {
+          "text": "Meza",
+          "gloss": "table — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "tayari",
+          "gloss": "ready / already"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Hakuna shida. Meza iko tayari?",
+          "correct": true
+        },
+        {
+          "swahili": "Hakuna shida. Meza ziko tayari?",
+          "correct": false
+        },
+        {
+          "swahili": "Hakuna shida. Meza yuko tayari?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "114c4945-4e7e-5b66-bb5a-0bc37beb3510",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Ndiyo. Karibu, kaa hapa. Hii ni menyu.",
+      "english": "Yes. Welcome, sit here. Here's the menu.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Karibu",
+          "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "kaa",
+          "gloss": "\"Stay!\" — -kaa (stay). From kukaa.",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "Hii",
+          "gloss": "this — n/n singular (and Kenyans' all-purpose \"this\")",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "menyu",
+          "gloss": "menu"
+        }
+      ]
+    },
+    {
+      "id": "23ab20bd-f684-579c-bf63-175f6b473ea8",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Asante. Samaki ni tamu kuliko kuku hapa?",
+      "english": "Thanks. Is the fish tastier than the chicken here?",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Samaki",
+          "gloss": "fish — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "tamu",
+          "gloss": "\"sweet / delicious\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-tamu (sweet / delicious)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mtamu"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "watamu"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "tamu"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kuliko",
+          "gloss": "than (comparisons)",
+          "grammar": [
+            "comparatives"
+          ]
+        },
+        {
+          "text": "kuku",
+          "gloss": "chicken — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante. Samaki ni tamu kuliko kuku hapa?",
+          "correct": true
+        },
+        {
+          "swahili": "Asante. Samaki ni tamu zaidi kuku hapa?",
+          "correct": false
+        },
+        {
+          "swahili": "Asante. Samaki ni tamu sana kuku hapa?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "d3dba64f-481c-5a7a-bf50-237ae0d2904e",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Wateja wengi wanasema samaki ni bora zaidi. Lakini kuku inachukua muda mfupi.",
+      "english": "Most customers say the fish is the best. But the chicken takes less time.",
+      "words": [
+        {
+          "text": "Wateja",
+          "gloss": "customers — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "wengi",
+          "gloss": "\"many / a lot\" — m/wa plural agreement (people / animals).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-ingi (many / a lot)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mwingi"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wengi"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "nyingi"
+              }
+            ]
+          }
+        },
+        {
+          "text": "wanasema",
+          "gloss": "\"They are saying\" — wa- (subject: they) + na- (present) + -sema (say). From kusema.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kusema (to say)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninasema"
+              },
+              {
+                "pronoun": "you",
+                "form": "unasema"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anasema"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunasema"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnasema"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanasema"
+              }
+            ]
+          }
+        },
+        {
+          "text": "samaki",
+          "gloss": "fish — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "bora",
+          "gloss": "best / better / of good quality",
+          "grammar": [
+            "comparatives"
+          ]
+        },
+        {
+          "text": "zaidi",
+          "gloss": "more"
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "kuku",
+          "gloss": "chicken — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "inachukua",
+          "gloss": "\"it takes\" (time)"
+        },
+        {
+          "text": "muda",
+          "gloss": "time / a while"
+        },
+        {
+          "text": "mfupi",
+          "gloss": "\"short\" — m/wa singular agreement (one person / animal).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-fupi (short)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mfupi"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wafupi"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "fupi"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "e4f546be-a5fa-5dc1-9fdf-1f28a23facaf",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Sijala tangu asubuhi. Lakini nitangoja — nipe samaki wa kuchoma.",
+      "english": "I haven't eaten since morning. But I'll wait — give me the grilled fish.",
+      "words": [
+        {
+          "text": "Sijala",
+          "gloss": "\"I haven't eaten yet\" — si- (negative subject: not I) + ja- (not yet) + -la (eat). From kula.",
+          "grammar": [
+            "perfect-negative-ja"
+          ],
+          "conjugation": {
+            "verb": "kula (to eat)",
+            "tense": "Not yet (-ja-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "sijakula"
+              },
+              {
+                "pronoun": "you",
+                "form": "hujakula"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "hajakula"
+              },
+              {
+                "pronoun": "we",
+                "form": "hatujakula"
+              },
+              {
+                "pronoun": "you all",
+                "form": "hamjakula"
+              },
+              {
+                "pronoun": "they",
+                "form": "hawajakula"
+              }
+            ]
+          }
+        },
+        {
+          "text": "tangu",
+          "gloss": "since"
+        },
+        {
+          "text": "asubuhi",
+          "gloss": "morning — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "nitangoja",
+          "gloss": "\"I will wait\" — ni- (subject: I) + ta- (future) + -ngoja (wait). From kungoja.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kungoja (to wait)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitangoja"
+              },
+              {
+                "pronoun": "you",
+                "form": "utangoja"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atangoja"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutangoja"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtangoja"
+              },
+              {
+                "pronoun": "they",
+                "form": "watangoja"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nipe samaki",
+          "gloss": "\"Give me the fish\""
+        },
+        {
+          "text": "wa",
+          "gloss": "\"of\" — m/wa agreement (mtoto wa Kamau, watu wa Nairobi)",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "kuchoma",
+          "gloss": "\"To roast\" — ku- (infinitive \"to\") + -choma (roast). From kuchoma.",
+          "grammar": [
+            "infinitive-ku"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Sijala tangu asubuhi. Lakini nitangoja — nipe samaki wa kuchoma.",
+          "correct": true
+        },
+        {
+          "swahili": "Nimekula tangu asubuhi. Lakini nitangoja — nipe samaki wa kuchoma.",
+          "correct": false
+        },
+        {
+          "swahili": "Sijala tangu asubuhi. Lakini sitangoja — nipe samaki wa kuchoma.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "c8e82308-2741-595e-9e62-b5cbe280e79b",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Sawa. Na kinywaji?",
+      "english": "Okay. And a drink?",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "kinywaji",
+          "gloss": "a drink — ki/vi noun (plural vinywaji).",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: kinywaji changu, vinywaji"
+        }
+      ]
+    },
+    {
+      "id": "d6884896-47bc-58bc-8067-4862764b1f16",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Juisi ya maembe, tafadhali.",
+      "english": "Mango juice, please.",
+      "words": [
+        {
+          "text": "Juisi ya maembe",
+          "gloss": "mango juice"
+        },
+        {
+          "text": "tafadhali",
+          "gloss": "please"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Juisi ya maembe, tafadhali.",
+          "correct": true
+        },
+        {
+          "swahili": "Juisi ya maembe, asante sana.",
+          "correct": false
+        },
+        {
+          "swahili": "Juisi ya maji, tafadhali.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "881f73c4-b2f9-5e25-9e06-470e2f5613a5",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Samahani, juisi ya maembe imeisha. Unataka ya nanasi badala yake?",
+      "english": "Sorry, the mango juice is finished. Do you want pineapple instead?",
+      "words": [
+        {
+          "text": "Samahani",
+          "gloss": "excuse me / sorry (apology)"
+        },
+        {
+          "text": "juisi ya maembe",
+          "gloss": "mango juice"
+        },
+        {
+          "text": "imeisha",
+          "gloss": "\"It is finished\" — i- (subject: it (n/n)) + me- (perfect (done / now-state)) + -isha (run out). From kuisha.",
+          "grammar": [
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kuisha (to run out)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimeisha"
+              },
+              {
+                "pronoun": "you",
+                "form": "umeisha"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ameisha"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumeisha"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmeisha"
+              },
+              {
+                "pronoun": "they",
+                "form": "wameisha"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "imeisha"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zimeisha"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Unataka",
+          "gloss": "\"You want\" — u- (subject: you) + na- (present) + -taka (want). From kutaka.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kutaka (to want)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninataka"
+              },
+              {
+                "pronoun": "you",
+                "form": "unataka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anataka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunataka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnataka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanataka"
+              }
+            ]
+          }
+        },
+        {
+          "text": "ya nanasi",
+          "gloss": "pineapple (juice)"
+        },
+        {
+          "text": "badala yake",
+          "gloss": "\"instead (of it)\""
+        }
+      ]
+    },
+    {
+      "id": "ccebc9c3-9665-5127-92c4-bad0d47ceeb4",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Imeisha? Haya, sawa. Nipe ya nanasi.",
+      "english": "It's finished? Alright, fine. Give me pineapple.",
+      "words": [
+        {
+          "text": "Imeisha",
+          "gloss": "\"It is finished\" — i- (subject: it (n/n)) + me- (perfect (done / now-state)) + -isha (run out). From kuisha.",
+          "grammar": [
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kuisha (to run out)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimeisha"
+              },
+              {
+                "pronoun": "you",
+                "form": "umeisha"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ameisha"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumeisha"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmeisha"
+              },
+              {
+                "pronoun": "they",
+                "form": "wameisha"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "imeisha"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zimeisha"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Haya",
+          "gloss": "okay then / alright",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Nipe",
+          "gloss": "\"Give me!\" — ni- (object: me) + -pe (give, subjunctive -e: polite command). From kupa.",
+          "grammar": [
+            "imperatives",
+            "object-infixes"
+          ]
+        },
+        {
+          "text": "ya nanasi",
+          "gloss": "pineapple (juice)"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Imeisha? Haya, sawa. Nipe ya nanasi.",
+          "correct": true
+        },
+        {
+          "swahili": "Haijaisha? Haya, sawa. Nipe ya nanasi.",
+          "correct": false
+        },
+        {
+          "swahili": "Imeisha? Haya, sawa. Nimpe ya nanasi.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "2a4fdd8a-8653-5849-88b5-a9fbeed7711a",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Sawa. Chakula chako kitakuja hivi karibuni.",
+      "english": "Okay. Your food will come soon.",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Chakula chako",
+          "gloss": "\"your food\" — ki/vi agreement, as in Sanifu.",
+          "grammar": [
+            "possessives",
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Kenyans often say \"chakula yako\""
+        },
+        {
+          "text": "kitakuja",
+          "gloss": "\"it will come\" — ki/vi agreement (chakula kitakuja).",
+          "grammar": [
+            "sanifu-noun-classes",
+            "future-ta"
+          ],
+          "sanifu": "ki/vi subject prefix ki-; Kenyans often say \"itakuja\""
+        },
+        {
+          "text": "hivi karibuni",
+          "gloss": "soon / recently"
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "5ada7105-3984-5224-9434-669122e5861c",
+      "swahili": "Nimefika",
+      "english": "I've arrived",
+      "exampleContext": "ni- + -me- + -fika"
+    },
+    {
+      "id": "55fbf544-c41a-52d2-9420-2037ef8cfb1f",
+      "swahili": "Niliweka meza",
+      "english": "I reserved a table",
+      "exampleContext": "Lit. \"I put a table\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "a1ada799-0650-5c12-b970-2e0e40302dd4",
+      "swahili": "Sijaona…",
+      "english": "I haven't seen… (yet)",
+      "exampleContext": "si- + -ja- + -ona",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "2390a2d9-015b-5075-9103-2b8421a3d37a",
+      "swahili": "Nimepata ujumbe",
+      "english": "I got a message",
+      "exampleContext": "ujumbe = message",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "4dbe4981-74a2-5256-a9ca-b2961c981ec1",
+      "swahili": "Pole kwa usumbufu",
+      "english": "Sorry for the trouble |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "3dea7844-0886-5d5d-a3a5-a813a41ffaae",
+      "swahili": "imeisha",
+      "english": "it's finished / sold out",
+      "exampleContext": "i- + -me- + -isha"
+    },
+    {
+      "id": "c0d4cf05-0c47-52ef-97e1-d9b84247c341",
+      "swahili": "haijaisha",
+      "english": "it hasn't run out yet",
+      "exampleContext": "hai- + -ja- + -isha"
+    },
+    {
+      "id": "050e6059-bd09-5706-8385-7c88e22d6caa",
+      "swahili": "Sijala",
+      "english": "I haven't eaten (yet)",
+      "exampleContext": "Kenyans also say sijakula"
+    },
+    {
+      "id": "523e34a3-81c9-5345-8cd7-bf211d2a15fc",
+      "swahili": "tamu kuliko",
+      "english": "tastier than",
+      "exampleContext": "kuliko = than",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "db25d4c2-7ced-59d8-bd44-53265f23dd04",
+      "swahili": "bora zaidi",
+      "english": "the very best",
+      "exampleContext": "bora = of good quality",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "e3cfa583-eb99-5096-b05f-ee397b3df6a2",
+      "swahili": "badala yake",
+      "english": "instead (of it) |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "4ed56f98-f8ac-57e2-8657-37091c9488e6",
+      "swahili": "menyu",
+      "english": "menu |",
+      "exampleContext": ""
+    },
+    {
+      "id": "fd905e4c-5dd0-534a-bf62-b7efa755f061",
+      "swahili": "hivi karibuni",
+      "english": "soon |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a6180b41-4aed-5a00-9f1f-d6a7214a2250",
+      "mode": "translate",
+      "english": "I've arrived.",
+      "before": "",
+      "after": ".",
+      "options": [
+        {
+          "text": "Nimefika",
+          "correct": true
+        },
+        {
+          "text": "Nilifika",
+          "correct": false,
+          "feedback": "Nilifika = I arrived"
+        },
+        {
+          "text": "Nitafika",
+          "correct": false,
+          "feedback": "Nitafika = I will arrive"
+        }
+      ],
+      "explanation": "-me- = has / have (just) done.",
+      "grammar": [
+        "perfect-me"
+      ]
+    },
+    {
+      "id": "e1fda4ad-f454-5280-9ff8-4efe13a0bdf8",
+      "mode": "translate",
+      "english": "I haven't seen your name.",
+      "before": "",
+      "after": " jina lako.",
+      "options": [
+        {
+          "text": "Sijaona",
+          "correct": true
+        },
+        {
+          "text": "Nimeona",
+          "correct": false,
+          "feedback": "Nimeona = I have seen"
+        },
+        {
+          "text": "Sikuona",
+          "correct": false,
+          "feedback": "Sikuona = I didn't see"
+        }
+      ],
+      "explanation": "-ja- = not yet: si- + -ja- + -ona.",
+      "grammar": [
+        "perfect-negative-ja"
+      ]
+    },
+    {
+      "id": "57d4e0ea-95ac-5675-af92-7082a668e6e4",
+      "mode": "translate",
+      "english": "I got a message.",
+      "before": "",
+      "after": " ujumbe.",
+      "options": [
+        {
+          "text": "Nimepata",
+          "correct": true
+        },
+        {
+          "text": "Sijapata",
+          "correct": false,
+          "feedback": "Sijapata = I haven't got yet"
+        },
+        {
+          "text": "Umepata",
+          "correct": false,
+          "feedback": "Umepata = You have got"
+        }
+      ],
+      "explanation": "Nimepata = \"I have got\" — ni- (subject: I) + me- (perfect (done / now-state)) + -pata (get). From kupata.",
+      "grammar": [
+        "perfect-me"
+      ]
+    },
+    {
+      "id": "0f398e8e-f112-5490-8b91-6df1e6ee0880",
+      "mode": "translate",
+      "english": "I haven't eaten since morning.",
+      "before": "",
+      "after": " tangu asubuhi.",
+      "options": [
+        {
+          "text": "Sijala",
+          "correct": true
+        },
+        {
+          "text": "Nimekula",
+          "correct": false,
+          "feedback": "Nimekula = I have eaten"
+        },
+        {
+          "text": "Sikula",
+          "correct": false,
+          "feedback": "Sikula = I didn't eat"
+        }
+      ],
+      "explanation": "Negative perfect of kula: sijala (no ku-). Kenyans also say sijakula.",
+      "grammar": [
+        "perfect-negative-ja"
+      ]
+    },
+    {
+      "id": "0b3992fc-6ec0-5016-8c13-bb826227dcde",
+      "mode": "translate",
+      "english": "Have you eaten?",
+      "before": "",
+      "after": "?",
+      "options": [
+        {
+          "text": "Umekula",
+          "correct": true
+        },
+        {
+          "text": "Nimekula",
+          "correct": false,
+          "feedback": "Nimekula = I have eaten"
+        },
+        {
+          "text": "Umekuja",
+          "correct": false,
+          "feedback": "Umekuja = You have come"
+        }
+      ],
+      "explanation": "With -me-, kula keeps its ku-: umekula.",
+      "grammar": [
+        "perfect-me"
+      ]
+    },
+    {
+      "id": "a6432219-6d5e-5442-a19f-2a5e99ae9dfb",
+      "mode": "translate",
+      "english": "The mango juice is finished.",
+      "before": "Juisi ya maembe ",
+      "after": ".",
+      "options": [
+        {
+          "text": "imeisha",
+          "correct": true
+        },
+        {
+          "text": "haijaisha",
+          "correct": false,
+          "feedback": "haijaisha = It is not finished yet"
+        },
+        {
+          "text": "ilikuwa",
+          "correct": false,
+          "feedback": "ilikuwa = It was"
+        }
+      ],
+      "explanation": "imeisha = it has run out / it's finished.",
+      "grammar": [
+        "perfect-me"
+      ]
+    },
+    {
+      "id": "24b89a8e-52f8-5312-ab27-e8eea7bd0940",
+      "mode": "translate",
+      "english": "It's not finished yet.",
+      "before": "Bado ",
+      "after": ".",
+      "options": [
+        {
+          "text": "haijaisha",
+          "correct": true
+        },
+        {
+          "text": "imeisha",
+          "correct": false,
+          "feedback": "imeisha = It is finished"
+        },
+        {
+          "text": "hakuna",
+          "correct": false,
+          "feedback": "hakuna = There isn't / there's no…"
+        }
+      ],
+      "explanation": "hai- (not it, n/n) + -ja- + -isha.",
+      "grammar": [
+        "perfect-negative-ja"
+      ]
+    },
+    {
+      "id": "dcd5826c-5c87-5d03-bfa4-ed80a1c77425",
+      "mode": "translate",
+      "english": "They haven't arrived yet.",
+      "before": "Bado ",
+      "after": ".",
+      "options": [
+        {
+          "text": "hawajafika",
+          "correct": true
+        },
+        {
+          "text": "wamefika",
+          "correct": false,
+          "feedback": "wamefika = They have arrived"
+        },
+        {
+          "text": "hajafika",
+          "correct": false,
+          "feedback": "hajafika = He/she hasn't arrived yet"
+        }
+      ],
+      "explanation": "hawa- (not they) + -ja- + -fika.",
+      "grammar": [
+        "perfect-negative-ja"
+      ]
+    },
+    {
+      "id": "b9e2389c-2303-585f-af8b-98a85535eb01",
+      "mode": "translate",
+      "english": "Is the table ready?",
+      "before": "Meza ",
+      "after": " tayari?",
+      "options": [
+        {
+          "text": "iko",
+          "correct": true
+        },
+        {
+          "text": "ziko",
+          "correct": false,
+          "feedback": "ziko = They (n/n) are (at / doing)"
+        },
+        {
+          "text": "yuko",
+          "correct": false,
+          "feedback": "yuko = He/she is (at / doing)"
+        }
+      ],
+      "explanation": "iko = \"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+      "grammar": [
+        "ko-location"
+      ]
+    },
+    {
+      "id": "872abb68-63ed-5250-8c40-d00bf8b0686f",
+      "mode": "translate",
+      "english": "Is the fish tastier than the chicken?",
+      "before": "Samaki ni tamu ",
+      "after": " kuku?",
+      "options": [
+        {
+          "text": "kuliko",
+          "correct": true
+        },
+        {
+          "text": "zaidi",
+          "correct": false,
+          "feedback": "zaidi = more"
+        },
+        {
+          "text": "sana",
+          "correct": false,
+          "feedback": "sana = very / a lot"
+        }
+      ],
+      "explanation": "kuliko: than (comparisons)",
+      "grammar": [
+        "comparatives"
+      ]
+    },
+    {
+      "id": "26259efe-dd51-57cc-b3bd-7f5547a2f5bf",
+      "mode": "translate",
+      "english": "The fish is the best.",
+      "before": "Samaki ni bora ",
+      "after": ".",
+      "options": [
+        {
+          "text": "zaidi",
+          "correct": true
+        },
+        {
+          "text": "kuliko",
+          "correct": false,
+          "feedback": "kuliko = than (comparisons)"
+        },
+        {
+          "text": "sana",
+          "correct": false,
+          "feedback": "sana = very / a lot"
+        }
+      ],
+      "explanation": "bora zaidi = the very best."
+    },
+    {
+      "id": "a0f924ee-7d77-5684-9f13-5411454ca141",
+      "mode": "complete",
+      "english": "Give me pineapple juice instead.",
+      "before": "Nipe juisi ya nanasi ",
+      "after": ".",
+      "options": [
+        {
+          "text": "badala yake",
+          "correct": true
+        },
+        {
+          "text": "baada ya",
+          "correct": false,
+          "feedback": "baada ya = after"
+        },
+        {
+          "text": "kabla ya",
+          "correct": false,
+          "feedback": "kabla ya = before"
+        }
+      ],
+      "explanation": "badala yake = instead (of it)."
+    },
+    {
+      "id": "fb81fea3-63c1-535b-910b-34c94d6a92e9",
+      "mode": "translate",
+      "english": "The table was written under a different name.",
+      "before": "Meza ",
+      "after": " kwa jina tofauti.",
+      "options": [
+        {
+          "text": "imeandikwa",
+          "correct": true
+        },
+        {
+          "text": "imeandika",
+          "correct": false,
+          "feedback": "imeandika = It has written"
+        },
+        {
+          "text": "inaandika",
+          "correct": false,
+          "feedback": "inaandika = It is writing"
+        }
+      ],
+      "explanation": "-andikwa = be written (passive -w-).",
+      "grammar": [
+        "perfect-me"
+      ]
+    },
+    {
+      "id": "cd3197d6-feaa-5dbe-89b5-944b727cc399",
+      "mode": "translate",
+      "english": "Sorry for the trouble.",
+      "before": "Pole kwa ",
+      "after": ".",
+      "options": [
+        {
+          "text": "usumbufu",
+          "correct": true
+        },
+        {
+          "text": "ujumbe",
+          "correct": false,
+          "feedback": "ujumbe = message (plural jumbe)"
+        },
+        {
+          "text": "uzoefu",
+          "correct": false,
+          "feedback": "uzoefu = experience"
+        }
+      ],
+      "explanation": "usumbufu: inconvenience / trouble"
+    },
+    {
+      "id": "8bac671c-9cfc-5698-ba7c-0bba2604c564",
+      "mode": "translate",
+      "english": "I'll wait.",
+      "before": "",
+      "after": ".",
+      "options": [
+        {
+          "text": "Nitangoja",
+          "correct": true
+        },
+        {
+          "text": "Nitaondoka",
+          "correct": false,
+          "feedback": "Nitaondoka = I will leave"
+        },
+        {
+          "text": "Nimengoja",
+          "correct": false,
+          "feedback": "Nimengoja = I have waited"
+        }
+      ],
+      "explanation": "Nitangoja = \"I will wait\" — ni- (subject: I) + ta- (future) + -ngoja (wait). From kungoja.",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "750dc448-5f80-50dc-a363-421ab6913e2a",
+      "mode": "translate",
+      "english": "Wait a moment.",
+      "before": "",
+      "after": " kidogo.",
+      "options": [
+        {
+          "text": "Ngoja",
+          "correct": true
+        },
+        {
+          "text": "Nenda",
+          "correct": false,
+          "feedback": "Nenda = Go!"
+        },
+        {
+          "text": "Kaa",
+          "correct": false,
+          "feedback": "Kaa = Stay!"
+        }
+      ],
+      "explanation": "Ngoja = \"Wait!\" — -ngoja (wait). From kungoja.",
+      "grammar": [
+        "imperatives"
+      ]
+    }
+  ]
+}

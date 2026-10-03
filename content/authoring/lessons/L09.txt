@@ -1,0 +1,309 @@
+# Level 9 — continuous tenses (nilikuwa nikisubiri, nimekuwa nikifanya), kwamba & reported speech, conjunctions (ingawa, badala ya, hata hivyo, ili), -vyo- (the way)
+
+@lesson restaurant-complaint
+title: Dinner Gone Wrong
+level: 9
+theme: food
+category: food-drink
+culture: Back at a restaurant — but this time things go wrong, and you need to complain clearly without losing your cool. Kenyan complaints are indirect and polite at first, then specific. Continuous tenses carry the story ("tumekuwa tukisubiri kwa saa nzima" — we've been waiting for a whole hour), and "kwamba" reports what was promised ("mliniambia kwamba…" — you told me that…).
+start: You and a friend have been waiting at a restaurant in Kilimani for a long time. You call the waiter over.
+grammar: continuous-tenses, conjunctions-kwamba, vyo-manner
+gl: tumekuwa tukisubiri = "we've been waiting" — perfect of kuwa + -ki- verb #continuous-tenses
+gl: saa nzima = a whole hour
+gl: Mliniambia = "You (all) told me" #object-infixes
+gl: kwamba = "that" — introduces what was said #conjunctions-kwamba
+gl: kingekuja = "it would come" — ki/vi agreement for chakula || Kenyans also say "ingekuja" #conditional-nge
+gl: jikoni = "in the kitchen" #locative-ni
+gl: kulikuwa na = there was
+gl: tatizo = problem || Sanifu: ji/ma class (tatizo / matatizo)
+gl: Ingawa = "Although" #conjunctions-kwamba
+gl: tunaelewa = we understand
+gl: hata hivyo = "even so / however" #conjunctions-kwamba
+gl: badala ya = "instead of" #conjunctions-kwamba
+gl: tuliagiza = we ordered
+gl: kuku wa kukaanga = fried chicken
+gl: mmeleta = "you (all) have brought"
+gl: mbuzi choma = roast goat
+gl: kelele = noise
+gl: meza ile = that table
+gl: wanapiga kelele = "they're making noise"
+gl: nyingine = another (n/n)
+gl: yenye utulivu = "with quiet" — a quieter one
+gl: unavyotaka = "the way you want / as you like" — u- + -na- + -vyo- (how) + -taka #vyo-manner
+gl: bili = bill
+gl: punguzo = discount
+gl: kwa sababu ya = because of #conjunctions-kwamba
+gl: usumbufu = inconvenience
+gl: Tunathamini = "We appreciate"
+gl: uvumilivu = patience
+gl: Afadhali = "Better / it's better" #comparatives
+
+< Mteja: Samahani, tumekuwa tukisubiri kwa saa nzima. | Excuse me, we've been waiting for a whole hour.
+  x: Samahani, tutakuwa tukisubiri kwa saa nzima. ; Samahani, tumekuwa tukisubiri kwa dakika moja.
+> Mhudumu: Pole sana! Chakula chenu kiko karibu tayari. | Very sorry! Your food is almost ready.
+  s: Pole sana! Chakula chenu kiko karibu tayari.
+< Mteja: Mliniambia kwamba chakula kingekuja baada ya dakika ishirini. | You told me that the food would come in twenty minutes.
+  x: Nilikuambia kwamba chakula kingekuja baada ya dakika ishirini. ; Mliniambia ingawa chakula kingekuja baada ya dakika ishirini.
+> Mhudumu: Ni kweli. Kulikuwa na tatizo jikoni — stima ilikatika. | It's true. There was a problem in the kitchen — the power went off.
+< Mteja: Ingawa tunaelewa, hata hivyo tuna njaa sana! | Although we understand, even so we're very hungry!
+  x: Kwa sababu tunaelewa, hata hivyo tuna njaa sana! ; Ingawa hatuelewi, hata hivyo tuna njaa sana!
+> Mhudumu: Chakula kimefika sasa. Hiki hapa! | The food has arrived now. Here it is!
+< Mteja: Aah… Badala ya kuku wa kukaanga tuliyoagiza, mmeleta mbuzi choma. | Ah… Instead of the fried chicken we ordered, you've brought roast goat.
+  x: Aah… Baada ya kuku wa kukaanga tuliyoagiza, mmeleta mbuzi choma. ; Aah… Badala ya kuku wa kukaanga tutakayoagiza, mmeleta mbuzi choma.
+> Mhudumu: Aiii, samahani sana! Nitabadilisha haraka iwezekanavyo. | Oh no, I'm so sorry! I'll change it as fast as possible.
+< Mteja: Sawa. Na pia, watu wa meza ile wamekuwa wakipiga kelele sana. | Okay. And also, the people at that table have been making a lot of noise.
+  x: Sawa. Na pia, watu wa meza ile walikuwa wakipiga kelele kesho. ; Sawa. Na pia, watu wa meza ile wamekuwa wakila kelele sana.
+> Mhudumu: Mnataka kuhamia meza nyingine yenye utulivu? | Would you like to move to another, quieter table?
+< Mteja: Ndiyo, tafadhali. Tutakaa popote unavyotaka. | Yes, please. We'll sit wherever you like.
+  x: Ndiyo, tafadhali. Tutakaa popote ninavyotaka. ; Hapana, tafadhali. Tutakaa popote unavyotaka.
+> Mhudumu: Sawa. Kwa sababu ya usumbufu, mtapata punguzo kwa bili. | Okay. Because of the inconvenience, you'll get a discount on the bill.
+< Mteja: Asante. Afadhali kuchelewa kuliko kukosa kabisa! | Thanks. Better late than never!
+  x: Asante. Afadhali kukosa kuliko kuchelewa kabisa! ; Pole. Afadhali kuchelewa kuliko kukosa kabisa!
+> Mhudumu: Haha, kweli kabisa. Tunathamini uvumilivu wenu. | Haha, absolutely true. We appreciate your patience.
+
+@practice
+t: We've been waiting for a whole hour. | Tumekuwa [tukisubiri|tunasubiri|tulisubiri] kwa saa nzima. || "Have been …-ing" = -me- of kuwa + a -ki- verb: tumekuwa tukisubiri.
+t: I was waiting for my friend. | [Nilikuwa|Nimekuwa|Nitakuwa] nikimsubiri rafiki yangu. || "was …-ing" = nilikuwa + -ki- verb. Kenyans also say nilikuwa namsubiri.
+t: They have been making a lot of noise. | Wamekuwa [wakipiga|wanapiga|walipiga] kelele sana.
+t: I'll be working tomorrow. | Kesho [nitakuwa|nilikuwa|nimekuwa] nikifanya kazi. || "will be …-ing" = nitakuwa + -ki- verb.
+t: You told me that the food would come… | Mliniambia [kwamba|ingawa|badala ya] chakula kingekuja… || kwamba = "that" — reports what was said.
+t: Although we understand… | [Ingawa|Kwamba|Badala ya] tunaelewa… || ingawa = although.
+t: …even so, we're very hungry. | …[hata hivyo|kwa hiyo|kwa sababu] tuna njaa sana. || hata hivyo = even so / however.
+t: Instead of the chicken… | [Badala ya|Baada ya|Kabla ya] kuku… || badala ya = instead of; baada ya = after.
+t: Because of the inconvenience… | [Kwa sababu ya|Badala ya|Ingawa] usumbufu…
+t: We'll sit wherever you like. | Tutakaa popote [unavyotaka|unataka|ulitaka]. || -vyo- = "the way / however": u- + -na- + -vyo- + -taka.
+t: Do the work as best you can. | Fanya kazi [unavyoweza|unaweza|utaweza]. || unavyoweza = the way you can.
+t: as fast as possible | haraka [iwezekanavyo|inawezekana|itawezekana] || A set phrase: lit. "fast, the way it is possible".
+t: The power went off. | Stima [ilikatika|ilikata|itakatika]. || kukatika = to get cut (stative of kukata).
+c: Better late than never! | [Afadhali|Kwamba|Ingawa] kuchelewa kuliko kukosa kabisa! || afadhali… kuliko… = better… than…
+t: There was a problem in the kitchen. | [Kulikuwa na|Kuna|Kutakuwa na] tatizo jikoni.
+t: We appreciate your patience. | Tunathamini [uvumilivu|usumbufu|utulivu] wenu.
+
+@vocab
+Tumekuwa tukisubiri… | We've been waiting… | Perfect of kuwa + -ki- verb
+Nilikuwa nikisubiri | I was waiting | Past of kuwa + -ki- verb
+Mliniambia kwamba… | You told me that… | kwamba = that
+ingawa | although | Ingawa tunaelewa… = Although we understand…
+hata hivyo | even so / however |
+badala ya | instead of | Badala ya kuku… = Instead of chicken…
+kwa sababu ya | because of | kwa sababu = because
+unavyotaka | the way you want / as you like | -vyo- = the way
+haraka iwezekanavyo | as fast as possible |
+Stima ilikatika | The power went off | Very Kenyan sentence
+punguzo | discount |
+Afadhali kuchelewa kuliko kukosa | Better late than never | Also: "Kawia ufike"
+uvumilivu | patience | from kuvumilia (to endure)
+
+@lesson job-interview
+title: The Job Interview
+level: 9
+theme: work
+category: work-admin
+culture: Job interviews in Kenya are usually in English, but switching to Swahili for a question or two is a great way to show respect and build rapport — especially with a Kenyan team. Talking about your experience is where continuous tenses shine: "nimekuwa nikifanya kazi…" (I have been working…), "nilipokuwa nikisoma…" (when I was studying…). Purpose clauses use ili + subjunctive: "ili nijifunze" (so that I learn).
+start: You're interviewing for a manager role at a Nairobi tech company. The HR lead, Mrs Kamau, starts in Swahili.
+grammar: continuous-tenses, conjunctions-kwamba, subjunctive
+gl: Bi. Kamau = Mrs Kamau — Bi. is short for Bibi (Mrs / Ms)
+gl: Bi = Mrs / Ms (short for Bibi)
+gl: utuambie = "(please) tell us" #subjunctive
+gl: kujihusu = "about yourself"
+gl: kuhusu = about
+gl: nimekuwa nikifanya kazi = "I've been working" #continuous-tenses
+gl: kama meneja = as a manager
+gl: kampuni ya teknolojia = a technology company
+gl: Nilipokuwa nikisoma = "When I was studying" — -po- + kuwa + -ki- verb #continuous-tenses
+gl: chuo kikuu = university || ki/vi class
+gl: nilikuwa nikifanya = "I was doing" #continuous-tenses
+gl: kazi ya muda = part-time job
+gl: jioni = in the evenings
+gl: Kwa nini = Why
+gl: ungependa = "would you like" #conditional-nge
+gl: kujiunga na = to join
+gl: timu yetu = our team
+gl: nimesikia kwamba = "I've heard that" #conjunctions-kwamba
+gl: mnasaidiana = "you help each other" #verb-extensions
+gl: ili = "so that" #subjunctive
+gl: nijifunze = "(that) I learn" #subjunctive
+gl: zaidi = more
+gl: changamoto = challenge
+gl: kubwa zaidi = biggest
+gl: wakati mmoja = once / at one point
+gl: mradi = project
+gl: ulikuwa ukichelewa = "was running late" — u- agreement for mradi (m/mi) #continuous-tenses
+gl: tulikaa pamoja = we sat together
+gl: tukapanga = "and we planned" #ki-po-ka
+gl: upya = anew / again
+gl: ukamalizika = "and it got finished" — m/mi agreement u- #ki-po-ka
+gl: kwa wakati = on time
+gl: Unavyoona = "The way you see it / In your view" #vyo-manner
+gl: Ninavyoona = "The way I see it" #vyo-manner
+gl: kiongozi mzuri = a good leader
+gl: anasikiliza = listens
+gl: watu wake = their people
+gl: zaidi kuliko = more than
+gl: anaongea = talks
+gl: Tutakujulisha = "We'll let you know" #verb-extensions
+gl: uamuzi = decision
+gl: wiki ijayo = next week
+gl: Nitasubiri = I'll wait
+gl: kwa hamu = eagerly
+
+> Bi. Kamau: Karibu. Kabla tuanze, ebu utuambie kidogo kujihusu. | Welcome. Before we start, tell us a little about yourself.
+< Mgombea: Asante. Kwa miaka mitano, nimekuwa nikifanya kazi kama meneja kwa kampuni ya teknolojia. | Thank you. For five years, I've been working as a manager at a technology company.
+  x: Asante. Kwa miaka mitano, nitakuwa nikifanya kazi kama meneja kwa kampuni ya teknolojia. ; Asante. Kwa miaka mitano, nimekuwa nikisoma kazi kama meneja kwa kampuni ya teknolojia.
+> Bi. Kamau: Na kabla ya hapo? | And before that?
+< Mgombea: Nilipokuwa nikisoma chuo kikuu, nilikuwa nikifanya kazi ya muda jioni. | When I was studying at university, I was doing a part-time job in the evenings.
+  x: Nitakapokuwa nikisoma chuo kikuu, nilikuwa nikifanya kazi ya muda jioni. ; Nilipokuwa nikisoma chuo kikuu, nimekuwa nikifanya kazi ya muda jioni.
+> Bi. Kamau: Vizuri. Kwa nini ungependa kujiunga na timu yetu? | Good. Why would you like to join our team?
+< Mgombea: Nimesikia kwamba hapa mnasaidiana sana, na ningependa kufanya kazi mahali kama hapa ili nijifunze zaidi. | I've heard that here you help each other a lot, and I'd like to work in a place like this so that I can learn more.
+  x: Nimesikia ingawa hapa mnasaidiana sana, na ningependa kufanya kazi mahali kama hapa ili nijifunze zaidi. ; Nimesikia kwamba hapa mnasaidiana sana, na ningependa kufanya kazi mahali kama hapa ili ninajifunza zaidi.
+> Bi. Kamau: Changamoto kubwa zaidi ulikuwa nayo ni ipi? | What's the biggest challenge you've had?
+< Mgombea: Wakati mmoja, mradi wetu ulikuwa ukichelewa sana. | At one point, our project was running very late.
+  x: Wakati mmoja, mradi wetu utakuwa ukichelewa sana. ; Wakati mmoja, mradi wetu ulikuwa ukiwahi sana.
+> Bi. Kamau: Ulifanya nini? | What did you do?
+< Mgombea: Tulikaa pamoja kama timu, tukapanga kazi upya, na ukamalizika kwa wakati. | We sat down together as a team, re-planned the work, and it got finished on time.
+  x: Tutakaa pamoja kama timu, tukapanga kazi upya, na ukamalizika kwa wakati. ; Tulikaa pamoja kama timu, tunapanga kazi upya, na ukamalizika kwa wakati.
+> Bi. Kamau: Safi. Na unavyoona, kiongozi mzuri ni mtu wa aina gani? | Great. And the way you see it, what kind of person is a good leader?
+< Mgombea: Ninavyoona, kiongozi mzuri anasikiliza watu wake zaidi kuliko anavyoongea. | The way I see it, a good leader listens to their people more than they talk.
+  x: Unavyoona, kiongozi mzuri anasikiliza watu wake zaidi kuliko anavyoongea. ; Ninavyoona, kiongozi mzuri anaongea zaidi kuliko anavyosikiliza.
+> Bi. Kamau: Jibu zuri sana. Tutakujulisha uamuzi wetu wiki ijayo. | A very good answer. We'll let you know our decision next week.
+< Mgombea: Asante sana kwa nafasi hii. Nitasubiri kwa hamu! | Thank you very much for this opportunity. I'll wait eagerly!
+  x: Pole sana kwa nafasi hii. Nitasubiri kwa hamu! ; Asante sana kwa nafasi hii. Nilisubiri kwa hamu!
+
+@practice
+t: I've been working as a manager. | [Nimekuwa|Nilikuwa|Nitakuwa] nikifanya kazi kama meneja. || nimekuwa (I have been) + -ki- verb = have been …-ing.
+t: When I was studying… | [Nilipokuwa|Nikiwa|Nitakapokuwa] nikisoma… || -po- (when) + kuwa + -ki- verb.
+t: …I was doing a part-time job. | …[nilikuwa nikifanya|nimekuwa nikifanya|nitakuwa nikifanya] kazi ya muda.
+t: The project was running late. | Mradi [ulikuwa|ilikuwa|walikuwa] ukichelewa. || mradi is m/mi in Sanifu: u- agreement. Kenyans often say "project ilikuwa ikichelewa".
+t: I've heard that you help each other. | Nimesikia [kwamba|ingawa|badala ya] mnasaidiana.
+t: so that I can learn more | ili [nijifunze|ninajifunza|nilijifunza] zaidi || ili + subjunctive.
+t: Why would you like to join us? | Kwa nini [ungependa|unapenda|utapenda] kujiunga nasi?
+t: Tell us about yourself. (politely) | [Utuambie|Tukuambie|Waambie] kujihusu.
+c: We sat together, and then re-planned the work. | Tulikaa pamoja, [tukapanga|tunapanga|tutapanga] kazi upya.
+t: the way I see it | [ninavyoona|unavyoona|anavyoona] || ni- + -na- + -vyo- + -ona.
+t: more than they talk | zaidi kuliko [anavyoongea|anaongea|aliongea] || -vyo- turns a verb into "the way / how much".
+t: We'll let you know our decision. | [Tutakujulisha|Tutakujua|Utatujulisha] uamuzi wetu. || jua → julisha: make (someone) know.
+t: I'll wait eagerly. | [Nitasubiri|Nilisubiri|Ninasubiri] kwa hamu.
+c: Thank you for this opportunity. | Asante kwa [nafasi|nauli|nyumba] hii. || nafasi = space, chance, opportunity.
+t: A good leader listens. | Kiongozi mzuri [anasikiliza|anasikia|anasikilizwa]. || sikia = hear; sikiliza = listen (to).
+
+@vocab
+Utuambie kujihusu | Tell us about yourself | Subjunctive = polite request
+Nimekuwa nikifanya kazi… | I've been working… |
+Nilipokuwa nikisoma… | When I was studying… |
+chuo kikuu | university | ki/vi class
+kazi ya muda | part-time job | Lit. "work of (some) time"
+Ningependa… | I would like… |
+Nimesikia kwamba… | I've heard that… |
+ili nijifunze | so that I learn | ili + subjunctive
+changamoto | challenge |
+tukapanga upya | and we re-planned | upya = anew
+Ninavyoona… | The way I see it… | -vyo- = the way
+Tutakujulisha | We'll let you know | jua → julisha
+uamuzi | decision | from kuamua (to decide)
+kwa hamu | eagerly | hamu = longing / appetite
+
+@lesson kinyozi-news
+title: Rains, Roads & Politics at the Kinyozi
+level: 9
+theme: news
+category: social
+culture: The kinyozi (barber shop) is Kenya's open-air newsroom: weather, prices, football and politics, all while you get a haircut. Reporting what "they say" uses kwamba and reported speech: "wanasema kwamba barabara itajengwa" (they say that the road will be built). Kenyans love to hedge politely about politics with "sijui", "huenda" (maybe) and "tutaona" (we'll see). The long rains (masika) bring floods; the short rains (vuli) come in October to December.
+start: Saturday. You're in the chair at your local kinyozi. Baraka, the barber, starts chatting.
+grammar: continuous-tenses, conjunctions-kwamba, conditional-nge
+gl: kinyozi = barber / barber shop
+gl: nyoa = shave / cut (hair)
+gl: Kama kawaida = "As usual"
+gl: imekuwa ikinyesha = "it's been raining" — i- (it) + -me- + -kuwa + i- + -ki- + -nyesha #continuous-tenses
+gl: kila siku = every day
+gl: Mafuriko = floods
+gl: yamefika = "have reached" — ya- agreement for mafuriko (ma- plural)
+gl: mtaa wetu = our neighbourhood
+gl: barabara yetu = our road
+gl: imeharibika = has been damaged #perfect-me
+gl: Wanasema kwamba = "They say that" #conjunctions-kwamba
+gl: serikali = the government
+gl: itajengwa = "will be built" #verb-extensions
+gl: upya = anew
+gl: mheshimiwa = the honourable (MP)
+gl: aliahidi = "promised" #past-li
+gl: tangu = since
+gl: uchaguzi = the election
+gl: uliopita = last / past (m/mi agreement for uchaguzi?) — "uchaguzi uliopita" = the last election
+gl: ingekuwa = "it would be" #conditional-nge
+gl: ingejengwa = "it would be built" #conditional-nge
+gl: Huenda = "Maybe / it might be"
+gl: mwaka huu = this year
+gl: Tutaona = "We'll see"
+gl: Siasa = politics
+gl: kama mvua = like the rain
+gl: haitabiriki = "can't be predicted" — hai- + -tabirika (stative: be predictable) #verb-extensions
+gl: Hata hivyo = Even so #conjunctions-kwamba
+gl: bei ya unga = the price of maize flour
+gl: imepanda = has gone up #perfect-me
+gl: unga = maize flour (for ugali)
+gl: tunalalamika = we complain
+gl: hakuna anayesikia = "no one is listening" — a- + -na- + -ye- (who) + -sikia #relatives
+gl: Kweli kabisa = Absolutely true
+gl: Ebu = come on #discourse-particles
+gl: tuongee = "let's talk" #subjunctive
+gl: Gor Mahia = Gor Mahia — the famous football club
+gl: walishinda = they won
+gl: jana = yesterday
+gl: Sasa umeongea = "Now you're talking!"
+gl: kioo = mirror
+gl: Angalia = Look
+gl: Umependeza = "You look sharp!" — -pendeza = look nice (causative of penda) #verb-extensions
+
+> Kinyozi: Karibu, boss! Kama kawaida? | Welcome, boss! The usual?
+< Mteja: Ndiyo, kama kawaida. Aisee, mvua imekuwa ikinyesha kila siku! | Yes, the usual. Man, it's been raining every day!
+  x: Ndiyo, kama kawaida. Aisee, mvua itakuwa ikinyesha kila siku! ; Ndiyo, kama kawaida. Aisee, jua imekuwa ikinyesha kila siku!
+> Kinyozi: Wee! Mafuriko yamefika mtaa wetu. Barabara yetu imeharibika kabisa. | Wow! The floods have reached our neighbourhood. Our road is completely ruined.
+< Mteja: Ndiyo. Wanasema kwamba serikali itaijenga upya mwaka huu. | Yes. They say that the government will rebuild it this year.
+  x: Ndiyo. Wanasema ingawa serikali itaijenga upya mwaka huu. ; Ndiyo. Wanasema kwamba serikali iliijenga upya mwaka huu.
+> Kinyozi: Haha! Mheshimiwa aliahidi hivyo tangu uchaguzi uliopita! | Haha! The MP has promised that since the last election!
+< Mteja: Kama angetimiza ahadi yake, barabara ingekuwa nzuri sasa. | If he had kept his promise, the road would be good by now.
+  x: Kama atatimiza ahadi yake, barabara ingekuwa nzuri sasa. ; Kama angetimiza ahadi yake, barabara itakuwa nzuri sasa.
+> Kinyozi: Kweli kabisa. Huenda itajengwa… tutaona. Siasa ni kama mvua — haitabiriki! | Absolutely true. Maybe it'll be built… we'll see. Politics is like the rain — it can't be predicted!
+< Mteja: Haha! Hata hivyo, bei ya unga imepanda tena. | Haha! Even so, the price of maize flour has gone up again.
+  x: Haha! Kwa hivyo, bei ya unga imepanda tena. ; Haha! Hata hivyo, bei ya unga imeshuka tena.
+> Kinyozi: Ndiyo! Wananchi wamekuwa wakilalamika, lakini hakuna anayesikia. | Yes! Ordinary people have been complaining, but no one is listening.
+< Mteja: Ebu tuongee kuhusu kitu kizuri. Gor Mahia walishinda jana! | Come on, let's talk about something good. Gor Mahia won yesterday!
+  x: Ebu tuongee kuhusu kitu kibaya. Gor Mahia walishinda jana! ; Ebu tuongee kuhusu kitu kizuri. Gor Mahia walishindwa jana!
+> Kinyozi: Sasa umeongea! Mimi ni shabiki wa K'Ogalo tangu nikiwa mtoto. | Now you're talking! I've been a K'Ogalo fan since I was a child.
+< Mteja: Mimi pia! Ningekuwa na muda, ningeenda Kasarani kila wiki. | Me too! If I had time, I'd go to Kasarani every week.
+  x: Mimi pia! Nikiwa na muda, ningeenda Kasarani kila wiki. ; Mimi pia! Ningekuwa na muda, nitaenda Kasarani kila wiki.
+> Kinyozi: Haya, nimemaliza. Angalia kwa kioo — umependeza! | Alright, I'm done. Look in the mirror — you look sharp!
+
+@practice
+t: It's been raining every day. | Mvua [imekuwa ikinyesha|ilikuwa ikinyesha|itakuwa ikinyesha] kila siku. || "has been …-ing" = imekuwa + i- + -ki- + verb.
+t: People have been complaining. | Wananchi [wamekuwa wakilalamika|walikuwa wakilalamika|watakuwa wakilalamika].
+t: They say that the government will rebuild it. | Wanasema [kwamba|ingawa|badala ya] serikali itaijenga upya.
+t: The road will be built. | Barabara [itajengwa|itajenga|imejengwa]. || Passive: jenga → jengwa.
+t: The MP promised that. | Mheshimiwa [aliahidi|anaahidi|ataahidi] hivyo.
+t: If he had kept his promise… | Kama [angetimiza|atatimiza|alitimiza] ahadi yake… || a- + -nge- + -timiza.
+t: …the road would be good by now. | …barabara [ingekuwa|itakuwa|ilikuwa] nzuri sasa.
+t: Maybe it'll be built. | [Huenda|Kwamba|Ingawa] itajengwa. || huenda = maybe / it might be.
+t: It can't be predicted. | [Haitabiriki|Inatabirika|Haikutabiri]. || -ika (stative) = "be …-able"; hai- … -i = it can't.
+t: Even so, the price of flour has gone up. | [Hata hivyo|Kwa hiyo|Kwa sababu], bei ya unga imepanda.
+t: No one is listening. | Hakuna [anayesikia|anasikia|aliyesikia]. || -ye- = who: hakuna anayesikia = there's no one who is listening.
+t: Let's talk about something good. | [Tuongee|Tunaongea|Tuliongea] kuhusu kitu kizuri.
+t: If I had time, I'd go every week. | Ningekuwa na muda, [ningeenda|nitaenda|nilienda] kila wiki.
+t: since I was a child | tangu [nikiwa|nilipokuwa|nitakuwa] mtoto || nikiwa = (while) I was / being. Tangu nikiwa mtoto is the everyday phrase.
+c: You look sharp! | [Umependeza|Umependa|Umepata]! || pendeza = look nice (causative of penda: "make like").
+t: our neighbourhood | mtaa [wetu|yetu|zetu] || mtaa is m/mi: wetu. Kenyans also say "mtaa yetu".
+
+@vocab
+kinyozi | barber / barber shop |
+Kama kawaida | As usual |
+imekuwa ikinyesha | it's been raining |
+mafuriko | floods |
+mtaa wetu | our neighbourhood |
+Wanasema kwamba… | They say that… | Reported speech
+itajengwa | it will be built | jenga → jengwa
+mheshimiwa | the honourable (MP) |
+aliahidi | he promised | ahadi = a promise
+kama angetimiza ahadi… | if he had kept his promise… |
+Huenda… | Maybe… / It might… |
+haitabiriki | it can't be predicted |
+bei ya unga | the price of flour | The price everyone watches
+Umependeza! | You look sharp! |

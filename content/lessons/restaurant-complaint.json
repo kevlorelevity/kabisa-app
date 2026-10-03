@@ -1,0 +1,1523 @@
+{
+  "id": "restaurant-complaint",
+  "uuid": "a9a82e4a-ff2d-592a-98c1-5c0fe5cbd830",
+  "title": "Dinner Gone Wrong",
+  "category": "food-drink",
+  "difficulty": "advanced",
+  "level": 9,
+  "order": 901,
+  "theme": "food",
+  "culturalNote": "Back at a restaurant — but this time things go wrong, and you need to complain clearly without losing your cool. Kenyan complaints are indirect and polite at first, then specific. Continuous tenses carry the story (\"tumekuwa tukisubiri kwa saa nzima\" — we've been waiting for a whole hour), and \"kwamba\" reports what was promised (\"mliniambia kwamba…\" — you told me that…).",
+  "startingPoint": "You and a friend have been waiting at a restaurant in Kilimani for a long time. You call the waiter over.",
+  "grammarFocus": [
+    "continuous-tenses",
+    "conjunctions-kwamba",
+    "vyo-manner"
+  ],
+  "grammar": [
+    "continuous-tenses",
+    "conjunctions-kwamba",
+    "vyo-manner",
+    "locative-ni",
+    "sanifu-noun-classes",
+    "ko-location",
+    "object-infixes",
+    "noun-classes-mwa-nn",
+    "numbers-money",
+    "ni-copula",
+    "past-li",
+    "verb-extensions",
+    "na-have",
+    "perfect-me",
+    "demonstratives",
+    "discourse-particles",
+    "relatives",
+    "future-ta",
+    "possessives",
+    "ki-po-ka",
+    "present-na",
+    "infinitive-ku",
+    "comparatives",
+    "helper-verbs"
+  ],
+  "turns": [
+    {
+      "id": "e081b679-3a66-5973-b1f6-eed02132baa8",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Samahani, tumekuwa tukisubiri kwa saa nzima.",
+      "english": "Excuse me, we've been waiting for a whole hour.",
+      "words": [
+        {
+          "text": "Samahani",
+          "gloss": "excuse me / sorry (apology)"
+        },
+        {
+          "text": "tumekuwa tukisubiri",
+          "gloss": "\"we've been waiting\" — perfect of kuwa + -ki- verb",
+          "grammar": [
+            "continuous-tenses"
+          ]
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "saa nzima",
+          "gloss": "a whole hour"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Samahani, tumekuwa tukisubiri kwa saa nzima.",
+          "correct": true
+        },
+        {
+          "swahili": "Samahani, tutakuwa tukisubiri kwa saa nzima.",
+          "correct": false
+        },
+        {
+          "swahili": "Samahani, tumekuwa tukisubiri kwa dakika moja.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "2d423cf2-1b19-5b35-8086-6ee10a606288",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Pole sana! Chakula chenu kiko karibu tayari.",
+      "english": "Very sorry! Your food is almost ready.",
+      "words": [
+        {
+          "text": "Pole sana",
+          "gloss": "so sorry / take heart"
+        },
+        {
+          "text": "Chakula",
+          "gloss": "food (plural vyakula) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — chakula changu, chakula hiki"
+        },
+        {
+          "text": "chenu",
+          "gloss": "\"your (pl.)\" — ki/vi agreement (Sanifu).",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "ki/vi class (kitabu chenu); Kenyans often just say yenu"
+        },
+        {
+          "text": "kiko",
+          "gloss": "\"it is (at)\" — ki/vi agreement (chakula kiko tayari).",
+          "grammar": [
+            "sanifu-noun-classes",
+            "ko-location"
+          ],
+          "sanifu": "ki/vi subject ki-; Kenyans often say \"iko\""
+        },
+        {
+          "text": "karibu",
+          "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "tayari",
+          "gloss": "ready / already"
+        }
+      ],
+      "sanifu": "Pole sana! Chakula chenu kiko karibu tayari."
+    },
+    {
+      "id": "af17cad4-8db6-5490-9d34-e4e368a10c2f",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Mliniambia kwamba chakula kingekuja baada ya dakika ishirini.",
+      "english": "You told me that the food would come in twenty minutes.",
+      "words": [
+        {
+          "text": "Mliniambia",
+          "gloss": "\"You (all) told me\"",
+          "grammar": [
+            "object-infixes"
+          ]
+        },
+        {
+          "text": "kwamba",
+          "gloss": "\"that\" — introduces what was said",
+          "grammar": [
+            "conjunctions-kwamba"
+          ]
+        },
+        {
+          "text": "chakula",
+          "gloss": "food (plural vyakula) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — chakula changu, chakula hiki"
+        },
+        {
+          "text": "kingekuja",
+          "gloss": "\"it would come\" — ki/vi agreement for chakula",
+          "sanifu": "Kenyans also say \"ingekuja\" #conditional-nge"
+        },
+        {
+          "text": "baada ya",
+          "gloss": "after"
+        },
+        {
+          "text": "dakika",
+          "gloss": "minute — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ishirini",
+          "gloss": "20 (n/n form — used for counting, money, things)",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Mliniambia kwamba chakula kingekuja baada ya dakika ishirini.",
+          "correct": true
+        },
+        {
+          "swahili": "Nilikuambia kwamba chakula kingekuja baada ya dakika ishirini.",
+          "correct": false
+        },
+        {
+          "swahili": "Mliniambia ingawa chakula kingekuja baada ya dakika ishirini.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "b67330eb-2bf7-5e7f-962d-c1fcaa548c4f",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Ni kweli. Kulikuwa na tatizo jikoni — stima ilikatika.",
+      "english": "It's true. There was a problem in the kitchen — the power went off.",
+      "words": [
+        {
+          "text": "Ni kweli",
+          "gloss": "it's true",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Kulikuwa na",
+          "gloss": "there was"
+        },
+        {
+          "text": "tatizo",
+          "gloss": "problem",
+          "sanifu": "Sanifu: ji/ma class (tatizo / matatizo)"
+        },
+        {
+          "text": "jikoni",
+          "gloss": "\"in the kitchen\"",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "stima",
+          "gloss": "electricity / power (everyday Kenyan)"
+        },
+        {
+          "text": "ilikatika",
+          "gloss": "\"It got cut\" — i- (subject: it (n/n)) + li- (past) + -katika (get cut). From kukatika. Extension: stative (-ika/-eka: \"get / be ...-ed\").",
+          "grammar": [
+            "past-li",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kukatika (to get cut)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilikatika"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulikatika"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alikatika"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulikatika"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlikatika"
+              },
+              {
+                "pronoun": "they",
+                "form": "walikatika"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "ilikatika"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zilikatika"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "09f6a912-d670-521b-a2f8-1ae36bbbbe71",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Ingawa tunaelewa, hata hivyo tuna njaa sana!",
+      "english": "Although we understand, even so we're very hungry!",
+      "words": [
+        {
+          "text": "Ingawa",
+          "gloss": "\"Although\"",
+          "grammar": [
+            "conjunctions-kwamba"
+          ]
+        },
+        {
+          "text": "tunaelewa",
+          "gloss": "we understand"
+        },
+        {
+          "text": "hata hivyo",
+          "gloss": "\"even so / however\"",
+          "grammar": [
+            "conjunctions-kwamba"
+          ]
+        },
+        {
+          "text": "tuna",
+          "gloss": "\"We have\" — tu- + -na (with). Swahili \"have\" is literally \"be with\".",
+          "grammar": [
+            "na-have"
+          ],
+          "conjugation": {
+            "verb": "-na (have)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nina"
+              },
+              {
+                "pronoun": "you",
+                "form": "una"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ana"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuna"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mna"
+              },
+              {
+                "pronoun": "they",
+                "form": "wana"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "ina"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zina"
+              }
+            ]
+          }
+        },
+        {
+          "text": "njaa",
+          "gloss": "hunger — tuna njaa = we're hungry"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ingawa tunaelewa, hata hivyo tuna njaa sana!",
+          "correct": true
+        },
+        {
+          "swahili": "Kwa sababu tunaelewa, hata hivyo tuna njaa sana!",
+          "correct": false
+        },
+        {
+          "swahili": "Ingawa hatuelewi, hata hivyo tuna njaa sana!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "770c0bc3-b7f0-50a3-8847-5412a80bf928",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Chakula kimefika sasa. Hiki hapa!",
+      "english": "The food has arrived now. Here it is!",
+      "words": [
+        {
+          "text": "Chakula",
+          "gloss": "food (plural vyakula) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — chakula changu, chakula hiki"
+        },
+        {
+          "text": "kimefika",
+          "gloss": "\"it has arrived\" — ki/vi agreement (chakula kimefika).",
+          "grammar": [
+            "sanifu-noun-classes",
+            "perfect-me"
+          ],
+          "sanifu": "ki/vi subject ki-; Kenyans often say \"imefika\""
+        },
+        {
+          "text": "sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "Hiki",
+          "gloss": "this — ki/vi (Sanifu: kitu hiki)",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        }
+      ]
+    },
+    {
+      "id": "0d9cc31c-bd84-5daf-86f9-0528d5ec1a0b",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Aah… Badala ya kuku wa kukaanga tuliyoagiza, mmeleta mbuzi choma.",
+      "english": "Ah… Instead of the fried chicken we ordered, you've brought roast goat.",
+      "words": [
+        {
+          "text": "Aah",
+          "gloss": "ah!",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Badala ya",
+          "gloss": "\"instead of\"",
+          "grammar": [
+            "conjunctions-kwamba"
+          ]
+        },
+        {
+          "text": "kuku wa kukaanga",
+          "gloss": "fried chicken"
+        },
+        {
+          "text": "tuliyoagiza",
+          "gloss": "\"(the one) which / whom we ordered\" — tu- (subject: we) + li- (past) + yo- (which (n/n singular)) + -agiza (order). From kuagiza.",
+          "grammar": [
+            "relatives"
+          ]
+        },
+        {
+          "text": "mmeleta",
+          "gloss": "\"you (all) have brought\""
+        },
+        {
+          "text": "mbuzi choma",
+          "gloss": "roast goat"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Aah… Badala ya kuku wa kukaanga tuliyoagiza, mmeleta mbuzi choma.",
+          "correct": true
+        },
+        {
+          "swahili": "Aah… Baada ya kuku wa kukaanga tuliyoagiza, mmeleta mbuzi choma.",
+          "correct": false
+        },
+        {
+          "swahili": "Aah… Badala ya kuku wa kukaanga tutakayoagiza, mmeleta mbuzi choma.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "87e2de46-349c-5dea-ab22-a9f333cabcb8",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Aiii, samahani sana! Nitabadilisha haraka iwezekanavyo.",
+      "english": "Oh no, I'm so sorry! I'll change it as fast as possible.",
+      "words": [
+        {
+          "text": "Aiii",
+          "gloss": "aiii! (mock pain — \"you're killing me!\")"
+        },
+        {
+          "text": "samahani",
+          "gloss": "excuse me / sorry (apology)"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Nitabadilisha",
+          "gloss": "\"I will change\" — ni- (subject: I) + ta- (future) + -badilisha (change). From kubadilisha. Extension: causative (-isha/-esha/-za: \"make / cause\").",
+          "grammar": [
+            "future-ta",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kubadilisha (to change)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitabadilisha"
+              },
+              {
+                "pronoun": "you",
+                "form": "utabadilisha"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atabadilisha"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutabadilisha"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtabadilisha"
+              },
+              {
+                "pronoun": "they",
+                "form": "watabadilisha"
+              }
+            ]
+          }
+        },
+        {
+          "text": "haraka",
+          "gloss": "quickly / hurry"
+        },
+        {
+          "text": "iwezekanavyo",
+          "gloss": "as … as possible (lit. \"the way it is possible\")"
+        }
+      ]
+    },
+    {
+      "id": "3694ce8e-3dee-54fc-ac3a-dedb9bb89b81",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Sawa. Na pia, watu wa meza ile wamekuwa wakipiga kelele sana.",
+      "english": "Okay. And also, the people at that table have been making a lot of noise.",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "pia",
+          "gloss": "also / too"
+        },
+        {
+          "text": "watu",
+          "gloss": "people — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "wa",
+          "gloss": "\"of\" — m/wa agreement (mtoto wa Kamau, watu wa Nairobi)",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "meza ile",
+          "gloss": "that table"
+        },
+        {
+          "text": "wamekuwa",
+          "gloss": "\"They have been\" — -wa (be, subject: they) + me- (perfect (done / now-state)) + -wa (be). From kuwa.",
+          "grammar": [
+            "continuous-tenses",
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kuwa (to be)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimekuwa"
+              },
+              {
+                "pronoun": "you",
+                "form": "umekuwa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amekuwa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumekuwa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmekuwa"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamekuwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "wakipiga",
+          "gloss": "\"…hitting\" — wa- (subject: they) + ki- (if / when · or \"-ing\" after kuwa) + -piga (hit). From kupiga. Here, after wamekuwa, -ki- means \"…-ing\": an ongoing action.",
+          "grammar": [
+            "continuous-tenses",
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "kelele",
+          "gloss": "noise"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Sawa. Na pia, watu wa meza ile wamekuwa wakipiga kelele sana.",
+          "correct": true
+        },
+        {
+          "swahili": "Sawa. Na pia, watu wa meza ile walikuwa wakipiga kelele kesho.",
+          "correct": false
+        },
+        {
+          "swahili": "Sawa. Na pia, watu wa meza ile wamekuwa wakila kelele sana.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "a3b24d1d-4c1c-5b7c-b55b-f005e6eade2e",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Mnataka kuhamia meza nyingine yenye utulivu?",
+      "english": "Would you like to move to another, quieter table?",
+      "words": [
+        {
+          "text": "Mnataka",
+          "gloss": "\"You all want\" — m- (subject: you all) + na- (present) + -taka (want). From kutaka.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kutaka (to want)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninataka"
+              },
+              {
+                "pronoun": "you",
+                "form": "unataka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anataka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunataka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnataka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanataka"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kuhamia",
+          "gloss": "\"To move to\" — ku- (infinitive \"to\") + -hamia (move to). From kuhamia. Extension: prepositional (-ia/-ea: \"for / to / at\").",
+          "grammar": [
+            "infinitive-ku",
+            "verb-extensions"
+          ]
+        },
+        {
+          "text": "meza",
+          "gloss": "table — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "nyingine",
+          "gloss": "another (n/n)"
+        },
+        {
+          "text": "yenye utulivu",
+          "gloss": "\"with quiet\" — a quieter one"
+        }
+      ]
+    },
+    {
+      "id": "90602aee-eabb-5614-8b83-de03e4ae8be9",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Ndiyo, tafadhali. Tutakaa popote unavyotaka.",
+      "english": "Yes, please. We'll sit wherever you like.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "tafadhali",
+          "gloss": "please"
+        },
+        {
+          "text": "Tutakaa",
+          "gloss": "\"We will stay\" — tu- (subject: we) + ta- (future) + -kaa (stay). From kukaa.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kukaa (to stay)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitakaa"
+              },
+              {
+                "pronoun": "you",
+                "form": "utakaa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atakaa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutakaa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtakaa"
+              },
+              {
+                "pronoun": "they",
+                "form": "watakaa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "popote",
+          "gloss": "anywhere / (not) anywhere"
+        },
+        {
+          "text": "unavyotaka",
+          "gloss": "\"the way you want / as you like\" — u- + -na- + -vyo- (how) + -taka",
+          "grammar": [
+            "vyo-manner"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo, tafadhali. Tutakaa popote unavyotaka.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, tafadhali. Tutakaa popote ninavyotaka.",
+          "correct": false
+        },
+        {
+          "swahili": "Hapana, tafadhali. Tutakaa popote unavyotaka.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "20156a4e-80ac-5bae-8f5a-f35180ecee36",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Sawa. Kwa sababu ya usumbufu, mtapata punguzo kwa bili.",
+      "english": "Okay. Because of the inconvenience, you'll get a discount on the bill.",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Kwa sababu ya",
+          "gloss": "because of",
+          "grammar": [
+            "conjunctions-kwamba"
+          ]
+        },
+        {
+          "text": "usumbufu",
+          "gloss": "inconvenience"
+        },
+        {
+          "text": "mtapata",
+          "gloss": "\"You all will get\" — m- (subject: you all) + ta- (future) + -pata (get). From kupata.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kupata (to get)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitapata"
+              },
+              {
+                "pronoun": "you",
+                "form": "utapata"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atapata"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutapata"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtapata"
+              },
+              {
+                "pronoun": "they",
+                "form": "watapata"
+              }
+            ]
+          }
+        },
+        {
+          "text": "punguzo",
+          "gloss": "discount"
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "bili",
+          "gloss": "bill"
+        }
+      ]
+    },
+    {
+      "id": "94416b59-7e6e-505e-b049-a4fe34b3f8db",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Asante. Afadhali kuchelewa kuliko kukosa kabisa!",
+      "english": "Thanks. Better late than never!",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Afadhali",
+          "gloss": "\"Better / it's better\"",
+          "grammar": [
+            "comparatives"
+          ]
+        },
+        {
+          "text": "kuchelewa",
+          "gloss": "\"To run late\" — ku- (infinitive \"to\") + -chelewa (run late). From kuchelewa.",
+          "grammar": [
+            "infinitive-ku"
+          ]
+        },
+        {
+          "text": "kuliko",
+          "gloss": "than (comparisons)",
+          "grammar": [
+            "comparatives"
+          ]
+        },
+        {
+          "text": "kukosa",
+          "gloss": "\"To miss\" — ku- (infinitive \"to\") + -kosa (miss). From kukosa.",
+          "grammar": [
+            "infinitive-ku"
+          ]
+        },
+        {
+          "text": "kabisa",
+          "gloss": "totally / completely — \"Kabisa!\" = \"Absolutely!\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante. Afadhali kuchelewa kuliko kukosa kabisa!",
+          "correct": true
+        },
+        {
+          "swahili": "Asante. Afadhali kukosa kuliko kuchelewa kabisa!",
+          "correct": false
+        },
+        {
+          "swahili": "Pole. Afadhali kuchelewa kuliko kukosa kabisa!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "67258da0-b720-569d-85e1-1d83c169854c",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Haha, kweli kabisa. Tunathamini uvumilivu wenu.",
+      "english": "Haha, absolutely true. We appreciate your patience.",
+      "words": [
+        {
+          "text": "Haha",
+          "gloss": "haha"
+        },
+        {
+          "text": "kweli",
+          "gloss": "true / really",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "kabisa",
+          "gloss": "totally / completely — \"Kabisa!\" = \"Absolutely!\""
+        },
+        {
+          "text": "Tunathamini",
+          "gloss": "\"We appreciate\""
+        },
+        {
+          "text": "uvumilivu",
+          "gloss": "patience"
+        },
+        {
+          "text": "wenu",
+          "gloss": "\"your (pl.)\" — m/wa agreement (for people: mtoto wenu, watoto wenu).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (m/wa: people)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "wangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "wako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "wake"
+              },
+              {
+                "pronoun": "our",
+                "form": "wetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "wenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "wao"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "c8a308c2-8923-5422-bc13-abef99bb83b6",
+      "swahili": "Tumekuwa tukisubiri…",
+      "english": "We've been waiting…",
+      "exampleContext": "Perfect of kuwa + -ki- verb",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "042da065-3008-57eb-a985-371cd9e66c58",
+      "swahili": "Nilikuwa nikisubiri",
+      "english": "I was waiting",
+      "exampleContext": "Past of kuwa + -ki- verb",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "762cfa14-2882-5b7a-8fc1-9a57144fc53f",
+      "swahili": "Mliniambia kwamba…",
+      "english": "You told me that…",
+      "exampleContext": "kwamba = that",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "96da3907-9fcf-5869-bf84-d927e6412413",
+      "swahili": "ingawa",
+      "english": "although",
+      "exampleContext": "Ingawa tunaelewa… = Although we understand…"
+    },
+    {
+      "id": "1d6f86a7-f9f0-531b-a90f-e23b7af404d2",
+      "swahili": "hata hivyo",
+      "english": "even so / however |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "622890f7-c095-579b-873a-e8d43763a321",
+      "swahili": "badala ya",
+      "english": "instead of",
+      "exampleContext": "Badala ya kuku… = Instead of chicken…",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "0c62653e-7492-5039-8fa6-ba86e804e485",
+      "swahili": "kwa sababu ya",
+      "english": "because of",
+      "exampleContext": "kwa sababu = because",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "6461f780-81bb-5f15-b23a-4410c8234c19",
+      "swahili": "unavyotaka",
+      "english": "the way you want / as you like",
+      "exampleContext": "-vyo- = the way"
+    },
+    {
+      "id": "388159c9-f102-514b-bfcb-3116e8e37aab",
+      "swahili": "haraka iwezekanavyo",
+      "english": "as fast as possible |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "c862ba9b-3259-5595-a890-eb42943fafc8",
+      "swahili": "Stima ilikatika",
+      "english": "The power went off",
+      "exampleContext": "Very Kenyan sentence",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "fdc493cd-5aa8-5c81-98bd-f46d8597c915",
+      "swahili": "punguzo",
+      "english": "discount |",
+      "exampleContext": ""
+    },
+    {
+      "id": "e0b32092-22ac-5b68-9655-ffec5e0beb67",
+      "swahili": "Afadhali kuchelewa kuliko kukosa",
+      "english": "Better late than never",
+      "exampleContext": "Also: \"Kawia ufike\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "0f5c9f1a-d98d-5021-b802-51ded846dc91",
+      "swahili": "uvumilivu",
+      "english": "patience",
+      "exampleContext": "from kuvumilia (to endure)"
+    }
+  ],
+  "practice": [
+    {
+      "id": "63d4f351-cc23-5769-858a-fa0410de8ad5",
+      "mode": "translate",
+      "english": "We've been waiting for a whole hour.",
+      "before": "Tumekuwa ",
+      "after": " kwa saa nzima.",
+      "options": [
+        {
+          "text": "tukisubiri",
+          "correct": true
+        },
+        {
+          "text": "tunasubiri",
+          "correct": false,
+          "feedback": "tunasubiri = We are waiting"
+        },
+        {
+          "text": "tulisubiri",
+          "correct": false,
+          "feedback": "tulisubiri = We waited"
+        }
+      ],
+      "explanation": "\"Have been …-ing\" = -me- of kuwa + a -ki- verb: tumekuwa tukisubiri.",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "56cff1d1-6f69-5a01-bd40-bf06becd0165",
+      "mode": "translate",
+      "english": "I was waiting for my friend.",
+      "before": "",
+      "after": " nikimsubiri rafiki yangu.",
+      "options": [
+        {
+          "text": "Nilikuwa",
+          "correct": true
+        },
+        {
+          "text": "Nimekuwa",
+          "correct": false,
+          "feedback": "Nimekuwa = I have been"
+        },
+        {
+          "text": "Nitakuwa",
+          "correct": false,
+          "feedback": "Nitakuwa = I will be"
+        }
+      ],
+      "explanation": "\"was …-ing\" = nilikuwa + -ki- verb. Kenyans also say nilikuwa namsubiri.",
+      "grammar": [
+        "past-li"
+      ]
+    },
+    {
+      "id": "a63682c1-97c8-5e3d-a4b9-0574880d6ea4",
+      "mode": "translate",
+      "english": "They have been making a lot of noise.",
+      "before": "Wamekuwa ",
+      "after": " kelele sana.",
+      "options": [
+        {
+          "text": "wakipiga",
+          "correct": true
+        },
+        {
+          "text": "wanapiga",
+          "correct": false,
+          "feedback": "wanapiga = They are hitting"
+        },
+        {
+          "text": "walipiga",
+          "correct": false,
+          "feedback": "walipiga = They hit"
+        }
+      ],
+      "explanation": "wakipiga = \"If/when they hit\" — wa- (subject: they) + ki- (if / when · or \"-ing\" after kuwa) + -piga (hit). From kupiga. After a past kuwa (nilikuwa …) the -ki- form means \"…-ing\".",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "d5c66f10-7af7-57d0-a8af-ff8beb35c24d",
+      "mode": "translate",
+      "english": "I'll be working tomorrow.",
+      "before": "Kesho ",
+      "after": " nikifanya kazi.",
+      "options": [
+        {
+          "text": "nitakuwa",
+          "correct": true
+        },
+        {
+          "text": "nilikuwa",
+          "correct": false,
+          "feedback": "nilikuwa = I was"
+        },
+        {
+          "text": "nimekuwa",
+          "correct": false,
+          "feedback": "nimekuwa = I have been"
+        }
+      ],
+      "explanation": "\"will be …-ing\" = nitakuwa + -ki- verb.",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "c17cef91-c33d-5aed-8e59-c3ac4adc66c6",
+      "mode": "translate",
+      "english": "You told me that the food would come…",
+      "before": "Mliniambia ",
+      "after": " chakula kingekuja…",
+      "options": [
+        {
+          "text": "kwamba",
+          "correct": true
+        },
+        {
+          "text": "ingawa",
+          "correct": false,
+          "feedback": "ingawa = Although"
+        },
+        {
+          "text": "badala ya",
+          "correct": false,
+          "feedback": "badala ya = instead of"
+        }
+      ],
+      "explanation": "kwamba = \"that\" — reports what was said.",
+      "grammar": [
+        "conjunctions-kwamba"
+      ]
+    },
+    {
+      "id": "16202e90-3405-5080-99c5-6dde3eecce8a",
+      "mode": "translate",
+      "english": "Although we understand…",
+      "before": "",
+      "after": " tunaelewa…",
+      "options": [
+        {
+          "text": "Ingawa",
+          "correct": true
+        },
+        {
+          "text": "Kwamba",
+          "correct": false,
+          "feedback": "Kwamba = that"
+        },
+        {
+          "text": "Badala ya",
+          "correct": false,
+          "feedback": "Badala ya = instead of"
+        }
+      ],
+      "explanation": "ingawa = although.",
+      "grammar": [
+        "conjunctions-kwamba"
+      ]
+    },
+    {
+      "id": "310d9a15-caf4-5616-8563-a41d67c48304",
+      "mode": "translate",
+      "english": "…even so, we're very hungry.",
+      "before": "…",
+      "after": " tuna njaa sana.",
+      "options": [
+        {
+          "text": "hata hivyo",
+          "correct": true
+        },
+        {
+          "text": "kwa hiyo",
+          "correct": false,
+          "feedback": "kwa hiyo = so / therefore"
+        },
+        {
+          "text": "kwa sababu",
+          "correct": false,
+          "feedback": "kwa sababu = because"
+        }
+      ],
+      "explanation": "hata hivyo = even so / however.",
+      "grammar": [
+        "conjunctions-kwamba"
+      ]
+    },
+    {
+      "id": "d54e80a4-b729-5f41-a5bb-1c7018ff4b0c",
+      "mode": "translate",
+      "english": "Instead of the chicken…",
+      "before": "",
+      "after": " kuku…",
+      "options": [
+        {
+          "text": "Badala ya",
+          "correct": true
+        },
+        {
+          "text": "Baada ya",
+          "correct": false,
+          "feedback": "Baada ya = after"
+        },
+        {
+          "text": "Kabla ya",
+          "correct": false,
+          "feedback": "Kabla ya = before"
+        }
+      ],
+      "explanation": "badala ya = instead of; baada ya = after.",
+      "grammar": [
+        "conjunctions-kwamba"
+      ]
+    },
+    {
+      "id": "e8018244-0efe-5dc2-afef-3fd827aae062",
+      "mode": "translate",
+      "english": "Because of the inconvenience…",
+      "before": "",
+      "after": " usumbufu…",
+      "options": [
+        {
+          "text": "Kwa sababu ya",
+          "correct": true
+        },
+        {
+          "text": "Badala ya",
+          "correct": false,
+          "feedback": "Badala ya = instead of"
+        },
+        {
+          "text": "Ingawa",
+          "correct": false,
+          "feedback": "Ingawa = Although"
+        }
+      ],
+      "explanation": "Kwa sababu ya: because of",
+      "grammar": [
+        "conjunctions-kwamba"
+      ]
+    },
+    {
+      "id": "188dc94a-3bb2-5bc4-950e-5b3eb1336bbc",
+      "mode": "translate",
+      "english": "We'll sit wherever you like.",
+      "before": "Tutakaa popote ",
+      "after": ".",
+      "options": [
+        {
+          "text": "unavyotaka",
+          "correct": true
+        },
+        {
+          "text": "unataka",
+          "correct": false,
+          "feedback": "unataka = You want"
+        },
+        {
+          "text": "ulitaka",
+          "correct": false,
+          "feedback": "ulitaka = You wanted"
+        }
+      ],
+      "explanation": "-vyo- = \"the way / however\": u- + -na- + -vyo- + -taka.",
+      "grammar": [
+        "vyo-manner"
+      ]
+    },
+    {
+      "id": "4e1da276-e042-5e30-a431-7c0d0e484b3a",
+      "mode": "translate",
+      "english": "Do the work as best you can.",
+      "before": "Fanya kazi ",
+      "after": ".",
+      "options": [
+        {
+          "text": "unavyoweza",
+          "correct": true
+        },
+        {
+          "text": "unaweza",
+          "correct": false,
+          "feedback": "unaweza = You can"
+        },
+        {
+          "text": "utaweza",
+          "correct": false,
+          "feedback": "utaweza = You will be able"
+        }
+      ],
+      "explanation": "unavyoweza = the way you can.",
+      "grammar": [
+        "ki-po-ka",
+        "helper-verbs"
+      ]
+    },
+    {
+      "id": "f1093e5c-3fa2-54bd-b9a1-b4d38c4ffe99",
+      "mode": "translate",
+      "english": "as fast as possible",
+      "before": "haraka ",
+      "after": "",
+      "options": [
+        {
+          "text": "iwezekanavyo",
+          "correct": true
+        },
+        {
+          "text": "inawezekana",
+          "correct": false,
+          "feedback": "inawezekana = It is possible"
+        },
+        {
+          "text": "itawezekana",
+          "correct": false,
+          "feedback": "itawezekana = It will be possible"
+        }
+      ],
+      "explanation": "A set phrase: lit. \"fast, the way it is possible\"."
+    },
+    {
+      "id": "d74eb82e-d0cd-51eb-aa41-462929227c49",
+      "mode": "translate",
+      "english": "The power went off.",
+      "before": "Stima ",
+      "after": ".",
+      "options": [
+        {
+          "text": "ilikatika",
+          "correct": true
+        },
+        {
+          "text": "ilikata",
+          "correct": false,
+          "feedback": "ilikata = It cut"
+        },
+        {
+          "text": "itakatika",
+          "correct": false,
+          "feedback": "itakatika = It will get cut"
+        }
+      ],
+      "explanation": "kukatika = to get cut (stative of kukata).",
+      "grammar": [
+        "past-li",
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "58716cb2-2cd8-5898-aeff-dee9f4a04cfc",
+      "mode": "complete",
+      "english": "Better late than never!",
+      "before": "",
+      "after": " kuchelewa kuliko kukosa kabisa!",
+      "options": [
+        {
+          "text": "Afadhali",
+          "correct": true
+        },
+        {
+          "text": "Kwamba",
+          "correct": false,
+          "feedback": "Kwamba = that"
+        },
+        {
+          "text": "Ingawa",
+          "correct": false,
+          "feedback": "Ingawa = Although"
+        }
+      ],
+      "explanation": "afadhali… kuliko… = better… than…",
+      "grammar": [
+        "comparatives"
+      ]
+    },
+    {
+      "id": "e545ba8a-3fb6-5d46-9d90-6271ad115dac",
+      "mode": "translate",
+      "english": "There was a problem in the kitchen.",
+      "before": "",
+      "after": " tatizo jikoni.",
+      "options": [
+        {
+          "text": "Kulikuwa na",
+          "correct": true
+        },
+        {
+          "text": "Kuna",
+          "correct": false,
+          "feedback": "Kuna = There is / there are"
+        },
+        {
+          "text": "Kutakuwa na",
+          "correct": false,
+          "feedback": "Kutakuwa na = There will be"
+        }
+      ],
+      "explanation": "Kulikuwa na: there was"
+    },
+    {
+      "id": "c280fb99-f205-5e87-8978-43ef3da85fb7",
+      "mode": "translate",
+      "english": "We appreciate your patience.",
+      "before": "Tunathamini ",
+      "after": " wenu.",
+      "options": [
+        {
+          "text": "uvumilivu",
+          "correct": true
+        },
+        {
+          "text": "usumbufu",
+          "correct": false,
+          "feedback": "usumbufu = inconvenience"
+        },
+        {
+          "text": "utulivu",
+          "correct": false,
+          "feedback": "utulivu = calm / quiet"
+        }
+      ],
+      "explanation": "uvumilivu: patience"
+    }
+  ]
+}

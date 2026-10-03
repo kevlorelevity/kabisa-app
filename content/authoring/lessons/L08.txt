@@ -1,0 +1,269 @@
+# Level 8 — conditionals (-nge-, -ngali-, kama), -ki- (if/when), -po- (when), -ka- (and then), relatives (amba-, -ye-/-o-, mwenye), habitual hu- and Kenyan -nga
+
+@lesson market-marikiti-regular
+title: A Regular at Marikiti Market
+level: 8
+theme: market
+category: commerce
+culture: Marikiti is Nairobi's huge wholesale fruit and vegetable market. Become a regular and the sellers start to know you — and the prices get better. Habits are where Kenyan Swahili gets colourful: Sanifu uses hu- ("mimi hununua hapa" = I usually buy here), while Kenyans love adding -nga, borrowed from Luhya: "ninanunuanga hapa", "huwa nanunuanga". Deals are made with -ki- (if): "ukinunua kilo tatu, nitakupunguzia" (if you buy three kilos, I'll knock the price down for you).
+start: Saturday morning at Marikiti. You walk up to the stall of Mama Wanjiru, whom you've bought from before.
+grammar: habitual-hu-nga, ki-po-ka, relatives, conditional-nge
+gl: Marikiti = Marikiti — Nairobi's wholesale fruit & veg market
+gl: Mama Wanjiru = "Wanjiru's mum" — the seller
+gl: Nilipofika = "When I arrived" — ni- + -li- + -po- (when) + -fika #ki-po-ka
+gl: nikakutafuta = "and I looked for you" — ni- + -ka- (and then) + -ku- + -tafuta #ki-po-ka
+gl: hununua = "(you) usually buy" — hu- (habitual) + -nunua #habitual-hu-nga
+gl: Huwa = "usually / tends to be" — hu- + -wa (be): sets up a habit. #habitual-hu-nga
+gl: ninanunuanga = "I usually buy" — Kenyan -nga habitual, from Luhya #habitual-hu-nga
+gl: ambaye = "who" — relative for a person (m/wa singular) #relatives
+gl: ambayo = "which / that" — relative for an n/n singular noun #relatives
+gl: ambazo = "which / that" — relative for n/n plural nouns #relatives
+gl: aliyekuuzia = "who sold you" — a- + -li- + -ye- (who) + -ku- + -uzia #relatives
+gl: Ukinunua = "If you buy" — u- + -ki- (if) + -nunua #ki-po-ka
+gl: nitakupunguzia = "I'll reduce (the price) for you" #verb-extensions
+gl: Ningekuwa na = "If I had / I would have" #conditional-nge
+gl: ningenunua = "I would buy" #conditional-nge
+gl: maembe = mangoes
+gl: kilo tatu = three kilos
+gl: matunda = fruit
+gl: yenye = "which has / with" (n/n) #relatives
+gl: Mwanangu = "my child" — what older sellers call young customers
+gl: wiki ijayo = next week
+gl: ndizi mbivu = ripe bananas
+gl: mbivu = ripe (n/n)
+gl: mbichi = unripe / raw (n/n)
+
+> Mama Wanjiru: Aaah, mteja wangu! Umepotea! | Aaah, my customer! You've disappeared!
+< Mteja: Habari, Mama Wanjiru! Nilipofika jana, nikakutafuta, lakini hukuwepo. | Hello, Mama Wanjiru! When I came yesterday, I looked for you, but you weren't here.
+  x: Habari, Mama Wanjiru! Nitakapofika jana, nikakutafuta, lakini hukuwepo. ; Habari, Mama Wanjiru! Nilipofika jana, nikakutafuta, lakini nilikuwepo hapa.
+> Mama Wanjiru: Aah, jana nilienda shamba. Ulinunua kwa nani? | Ah, yesterday I went to the farm. Who did you buy from?
+< Mteja: Kwa mama ambaye huuza karibu na geti. Lakini mimi huwa ninanunuanga hapa kwako. | From the lady who sells near the gate. But I usually buy here at your place.
+  x: Kwa mama ambao huuza karibu na geti. Lakini mimi huwa ninanunuanga hapa kwako. ; Kwa mama ambaye huuza karibu na geti. Lakini mimi sijawahi kununua hapa kwako.
+> Mama Wanjiru: Asante, mwanangu! Mama aliyekuuzia alikupa bei nzuri? | Thank you, my dear! Did the lady who sold to you give you a good price?
+< Mteja: Hapana! Maembe ambayo nilinunua yalikuwa ghali, na mengine yalikuwa mabichi. | No! The mangoes I bought were expensive, and some were unripe.
+  s: Hapana! Maembe ambayo nilinunua yalikuwa ghali, na mengine yalikuwa mabichi.
+  x: Hapana! Maembe ambayo nitanunua yalikuwa ghali, na mengine yalikuwa mabichi. ; Ndiyo! Maembe ambayo nilinunua yalikuwa ghali, na mengine yalikuwa mabichi.
+> Mama Wanjiru: Pole sana! Ukinunua kwangu, utapata matunda mazuri kila wakati. | So sorry! If you buy from me, you'll always get good fruit.
+< Mteja: Ndiyo maana nimerudi! Leo nataka maembe na ndizi mbivu. | That's why I'm back! Today I want mangoes and ripe bananas.
+  x: Ndiyo maana nimeondoka! Leo nataka maembe na ndizi mbivu. ; Ndiyo maana nimerudi! Leo nataka maembe na ndizi mbichi.
+> Mama Wanjiru: Ukinunua kilo tatu za maembe, nitakupunguzia bei. | If you buy three kilos of mangoes, I'll lower the price for you.
+< Mteja: Ningekuwa na gari leo, ningenunua kilo kumi! Lakini nitachukua tatu. | If I had a car today, I'd buy ten kilos! But I'll take three.
+  x: Nilikuwa na gari leo, ningenunua kilo kumi! Lakini nitachukua tatu. ; Ningekuwa na gari leo, nitanunua kilo kumi! Lakini nitachukua tatu.
+> Mama Wanjiru: Haha! Sawa. Kilo tatu na ndizi — mia saba tu, kwa sababu wewe ni mteja wangu. | Haha! Okay. Three kilos and the bananas — just seven hundred, because you're my customer.
+< Mteja: Asante! Nikija wiki ijayo, utaniwekea maembe yenye sukari zaidi? | Thanks! If I come next week, will you keep me the sweetest mangoes?
+  x: Asante! Nilikuja wiki ijayo, utaniwekea maembe yenye sukari zaidi? ; Asante! Nikija wiki ijayo, nitakuwekea maembe yenye sukari zaidi?
+> Mama Wanjiru: Bila shaka! Ukifika, niulize tu. | Of course! When you arrive, just ask me.
+
+@practice
+t: When I arrived, I looked for you. | [Nilipofika|Nikifika|Ningefika], nikakutafuta. || -po- = when (a specific time): ni- + -li- + -po- + -fika.
+c: I arrived, and then I looked for you. | Nilifika, [nikakutafuta|ninakutafuta|nitakutafuta]. || -ka- links events in a story: "…and then".
+t: I usually buy here. (Sanifu habitual) | Mimi [hununua|ninanunua|nilinunua] hapa. || hu- = habit, and it never changes for the person: mimi hununua, wao hununua.
+t: I usually buy here. (Kenyan) | Mimi [ninanunuanga|ninanunua|nitanunua] hapa. || Kenyans add -nga (from Luhya) for habits: ninanunuanga.
+t: the lady who sells near the gate | mama [ambaye|ambayo|ambazo] huuza karibu na geti || ambaye = who (one person). Ambao = who (several people).
+t: the mangoes which I bought | maembe [ambayo|ambaye|ambao] nilinunua || ambayo for things in the plural of ji/ma — and for n/n singular.
+t: the tomatoes which I bought | nyanya [ambazo|ambaye|ambao] nilinunua || ambazo = which (n/n plural).
+t: the lady who sold to you | mama [aliyekuuzia|alikuuzia|anakuuzia] || -ye- tucked into the verb = who: a- + -li- + -ye- + -ku- + -uzia.
+t: If you buy three kilos… | [Ukinunua|Ulinunua|Ungenunua] kilo tatu… || -ki- = if / when (likely): u- + -ki- + -nunua.
+t: …I'll lower the price for you. | …[nitakupunguzia|nimekupunguzia|ninakupunguza] bei.
+t: If I had a car, I'd buy ten kilos. | Ningekuwa na gari, [ningenunua|nitanunua|nilinunua] kilo kumi. || -nge- in both halves = "if I had… I would…".
+t: If I come next week… | [Nikija|Nilikuja|Ningekuja] wiki ijayo… || ni- + -ki- + kuja (kuja keeps ku-).
+t: When you arrive, just ask me. | [Ukifika|Ulifika|Ungefika], niulize tu.
+t: mangoes with more sugar | maembe [yenye|wenye|mwenye] sukari zaidi || -enye = having / with; agrees with the noun.
+c: That's why I'm back! | Ndiyo [maana|sababu|hivyo] nimerudi! || Ndiyo maana = that's why.
+t: ripe bananas | ndizi [mbivu|mbichi|mbovu] || mbivu = ripe; mbichi = unripe / raw; mbovu = rotten.
+
+@vocab
+Nilipofika… | When I arrived… | -po- = when
+nikakutafuta | and (then) I looked for you | -ka- = and then (in a story)
+Mimi hununua… | I usually buy… | hu- = habitual (Sanifu)
+ninanunuanga | I usually buy | Kenyan -nga habitual (from Luhya)
+ambaye / ambao | who (one person / several) | mama ambaye huuza… = the lady who sells…
+ambayo / ambazo | which (n/n one / several) |
+aliyekuuzia | (the one) who sold to you | -ye- = who, built into the verb
+Ukinunua… | If you buy… | -ki- = if / when
+nitakupunguzia bei | I'll lower the price for you |
+Ningekuwa na… | If I had… | -nge- = would / if
+ningenunua | I would buy |
+yenye | which has / with (n/n) | maembe yenye sukari = mangoes with sugar
+Ndiyo maana… | That's why… |
+mbivu / mbichi | ripe / unripe |
+
+@lesson landlord-leak
+title: The Landlord and the Leaking Roof
+level: 8
+theme: home
+category: home
+culture: Most Nairobians rent (kupanga nyumba), and the long rains (March–May) are when roofs, gutters and landlords get tested. Complaints in Kenya are made politely but firmly — and conditionals are your best tool: "Kama ungalimleta fundi mapema…" (if you had brought a fundi earlier…). In everyday speech Kenyans use -nge- for both present and past conditions ("Ungemleta fundi, hii haingetokea"), while Sanifu keeps -ngali- for the past. Rent is kodi.
+start: After a night of heavy rain, your bedroom ceiling is dripping again. You call your landlord, Bwana Otieno.
+grammar: conditional-nge, relatives, ki-po-ka
+gl: Bwana Otieno = Mr Otieno — bwana = sir / Mr
+gl: mwenye nyumba = landlord — lit. "the owner of the house"
+gl: paa = roof
+gl: chumba cha kulala = bedroom || Kenyans also say "bedroom"
+gl: Ilipoanza = "When it started" — i- + -li- + -po- (when) + -anza #ki-po-ka
+gl: kunyesha = "to rain"
+gl: fundi ambaye = "the fundi who" #relatives
+gl: ulimleta = "you brought him" — u- + -li- + -m- (him) + -leta #object-infixes
+gl: hakurekebisha = "he didn't fix" #negative-past
+gl: vizuri = properly / well
+gl: Kama ungemleta = "If you had brought him" — Kenyan -nge- for the past. || Sanifu: Kama ungalimleta #conditional-nge
+gl: ungemleta = "if you had brought him" — u- + -nge- + -m- + -leta. Kenyans use -nge- for past conditions too. || Sanifu: ungalimleta #conditional-nge
+gl: mapema = early
+gl: haingetokea = "it wouldn't have happened" — hai- + -nge- + -tokea #conditional-nge
+gl: Ningalijua = "If I had known" — -ngali- = past conditional (Sanifu) #conditional-nge
+gl: ningalimtafuta = "I would have looked for" #conditional-nge
+gl: mwingine = another (m/wa)
+gl: Usipolirekebisha = "If you don't fix it" — u- + -si- + -po- + -li- (it, ji/ma) + -rekebisha || Kenyans also say "Usipoirekebisha" #ki-po-ka
+gl: kodi = rent
+gl: Nikilipa = "If / when I pay" #ki-po-ka
+gl: Ukirudi = "When you get back"
+gl: Tuonane = "Let's meet"
+gl: ili = so that #subjunctive
+gl: aone = "(so that) he sees" #subjunctive
+gl: Kesho saa nne = tomorrow at ten
+gl: kitanda = bed
+gl: unyevu = damp / moisture
+
+< Mpangaji: Habari, Bwana Otieno. Pole kwa kukusumbua asubuhi. | Hello, Mr Otieno. Sorry to bother you in the morning.
+  x: Habari, Bwana Otieno. Pole kwa kunisumbua asubuhi. ; Habari, Bwana Otieno. Asante kwa kukusumbua asubuhi.
+> Otieno: Hakuna shida. Kuna nini? | No problem. What's up?
+< Mpangaji: Paa inavuja tena. Ilipoanza kunyesha usiku, maji iliingia kwa chumba cha kulala. | The roof is leaking again. When it started raining at night, water came into the bedroom.
+  s: Paa linavuja tena. Ilipoanza kunyesha usiku, maji yaliingia chumbani.
+  x: Paa inavuja tena. Itakapoanza kunyesha usiku, maji iliingia kwa chumba cha kulala. ; Paa haivuji tena. Ilipoanza kunyesha usiku, maji iliingia kwa chumba cha kulala.
+> Otieno: Tena? Lakini fundi alikuja mwezi uliopita! | Again? But the fundi came last month!
+< Mpangaji: Ndiyo, lakini fundi ambaye ulimleta hakurekebisha vizuri. | Yes, but the fundi who you brought didn't fix it properly.
+  x: Ndiyo, lakini fundi ambayo ulimleta hakurekebisha vizuri. ; Ndiyo, lakini fundi ambaye ulimleta alirekebisha vizuri.
+> Otieno: Aaii. Ningalijua, ningalimtafuta fundi mwingine. | Oh dear. If I had known, I would have looked for another fundi.
+< Mpangaji: Kama ungemleta fundi mzuri mapema, hii haingetokea. | If you had brought a good fundi earlier, this wouldn't have happened.
+  s: Kama ungalimleta fundi mzuri mapema, hii haingalitokea.
+  x: Kama utamleta fundi mzuri mapema, hii haingetokea. ; Kama ungemleta fundi mzuri mapema, hii itatokea.
+> Otieno: Uko sawa. Pole sana. Nitamtuma fundi mwingine leo. | You're right. I'm very sorry. I'll send another fundi today.
+< Mpangaji: Asante. Ukimtuma leo, mimi nitakuwa nyumbani mchana. | Thank you. If you send him today, I'll be at home in the afternoon.
+  x: Asante. Ulimtuma leo, mimi nitakuwa nyumbani mchana. ; Asante. Ukimtuma leo, mimi nilikuwa nyumbani mchana.
+> Otieno: Sawa. Na kodi ya mwezi huu? | Okay. And this month's rent?
+< Mpangaji: Nikilipa kodi kesho, utarekebisha paa kabisa? | If I pay the rent tomorrow, will you fix the roof completely?
+  x: Nililipa kodi kesho, utarekebisha paa kabisa? ; Nikilipa kodi kesho, nitarekebisha paa kabisa?
+> Otieno: Haha! Wewe ni mjanja. Sawa, nakuahidi. Paa itarekebishwa leo. | Haha! You're clever. Okay, I promise you. The roof will be fixed today.
+  s: Haha! Wewe ni mjanja. Sawa, nakuahidi. Paa litarekebishwa leo.
+
+@practice
+t: When it started raining… | [Ilipoanza|Ikianza|Itaanza] kunyesha… || -po- = when (a specific time). i- (it) + -li- + -po- + -anza.
+t: the fundi who you brought | fundi [ambaye|ambayo|ambao] ulimleta || A person → ambaye (one) / ambao (several).
+t: the roof which is leaking | paa [ambayo|ambaye|ambao] inavuja || Kenyan n/n: ambayo. Sanifu (ji/ma): paa ambalo linavuja.
+t: He didn't fix it properly. | [Hakurekebisha|Hajarekebisha|Harekebishi] vizuri.
+t: If I had known… (Sanifu) | [Ningalijua|Ningejua|Nilijua]… || -ngali- = past conditional in Sanifu: "if I had…".
+t: If I had known… (everyday Kenyan) | [Ningejua|Ningalijua|Nikijua]… || Kenyans mostly use -nge- for past conditions too.
+t: …I would have looked for another fundi. | …[ningalimtafuta|nitamtafuta|nilimtafuta] fundi mwingine.
+t: If you had brought him early, this wouldn't have happened. | Kama ungemleta mapema, hii [haingetokea|haitatokea|haikutokea]. || hai- (it, negative) + -nge- + -tokea.
+t: If you send him today… | [Ukimtuma|Ulimtuma|Ungemtuma] leo… || -ki- = if / when (likely, real).
+t: If I pay the rent tomorrow… | [Nikilipa|Nililipa|Ningelipa] kodi kesho…
+t: If you don't fix it… | [Usiporekebisha|Ukirekebisha|Hukurekebisha]… || u- + -si- + -po- = if you don't…
+t: I'll send another fundi. | [Nitamtuma|Nitamtumia|Utamtuma] fundi mwingine. || tuma = send (a person); tumia = send (something) to (someone).
+t: The roof will be fixed today. | Paa [itarekebishwa|itarekebisha|imerekebisha] leo. || Passive: rekebisha → rekebishwa.
+t: Sorry to bother you. | Pole kwa [kukusumbua|kunisumbua|kumsumbua]. || ku- + -ku- (you) + -sumbua.
+c: You're clever! | Wewe ni [mjanja|mjinga|mzee]! || mjanja = streetwise / clever (with a wink).
+
+@vocab
+mwenye nyumba | landlord | Lit. "owner of the house"
+kodi | rent | kulipa kodi = to pay rent
+Paa inavuja | The roof is leaking | Kenyan agreement. | Paa linavuja | Sanifu: paa is ji/ma class
+Ilipoanza kunyesha… | When it started raining… | -po- = when
+fundi ambaye ulimleta | the fundi you brought | ambaye = who
+Ningalijua… | If I had known… | -ngali- (Sanifu past conditional)
+Ningejua… | If I had known / If I knew… | Kenyans use -nge- for both
+haingetokea | it wouldn't have happened |
+Ukimtuma leo… | If you send him today… | -ki- = if (real, likely)
+Nikilipa kodi… | If I pay the rent… |
+Usiporekebisha… | If you don't fix… | -si-po- = if not
+mjanja | clever / streetwise | Said with a smile
+Nakuahidi | I promise you | kuahidi = to promise
+
+@lesson hospital-visit
+title: At the Hospital
+level: 8
+theme: health
+category: health
+culture: For anything beyond the chemist, Kenyans head to a hospital or clinic: you register at reception, see a nurse for "vitals", then the doctor. Doctors ask about habits ("huwa unakunywa maji ya kutosha?" — do you usually drink enough water?) and give if/when instructions with -ki-: "ukiona homa inapanda, rudi" (if you see the fever rising, come back). Relatives describe what happened: "dawa ambayo nilipewa" (the medicine that I was given).
+start: Your stomach has been bad for three days. You're at a clinic in Kilimani, sitting with Dr Achieng.
+grammar: ki-po-ka, relatives, conditional-nge, habitual-hu-nga
+gl: tumbo = stomach / belly
+gl: inaniuma = "it's hurting me" — i- + -na- + -ni- (me) + -uma #object-infixes
+gl: siku tatu = three days
+gl: Nilipokula = "When I ate" #ki-po-ka
+gl: kibandani = "at the kibanda" — kibanda + -ni #locative-ni
+gl: nikaanza = "and then I started" #ki-po-ka
+gl: kuharisha = "to have diarrhoea"
+gl: dawa ambayo = "the medicine which" #relatives
+gl: nilipewa = "I was given" #verb-extensions
+gl: chemist = pharmacy
+gl: Huwa = "usually" — hu- + -wa: sets up a habit #habitual-hu-nga
+gl: maji ya kutosha = enough water
+gl: ningejua = "if I had known" #conditional-nge
+gl: ningekuja = "I would have come" #conditional-nge
+gl: kipimo = test (medical) || ki/vi class
+gl: damu = blood
+gl: matokeo = results
+gl: Ukiona = "If you see" #ki-po-ka
+gl: inapanda = "it's going up"
+gl: Ukimaliza = "When you finish" #ki-po-ka
+gl: daktari ambaye = "the doctor who" #relatives
+gl: atakupigia = "will call you"
+gl: chakula chenye mafuta = oily food — ki/vi agreement chenye || Kenyans also say "chakula yenye mafuta"
+gl: mafuta mengi = a lot of oil
+
+< Mgonjwa: Daktari, tumbo inaniuma kwa siku tatu sasa. | Doctor, my stomach has been hurting for three days now.
+  s: Daktari, tumbo linaniuma kwa siku tatu sasa.
+  x: Daktari, tumbo inakuuma kwa siku tatu sasa. ; Daktari, tumbo inaniuma kwa siku tatu jana.
+> Daktari: Pole sana. Ilianza lini? | So sorry. When did it start?
+< Mgonjwa: Nilipokula samaki kibandani Jumatano, nikaanza kuharisha usiku. | When I ate fish at a kibanda on Wednesday, I started having diarrhoea at night.
+  x: Nikila samaki kibandani Jumatano, nikaanza kuharisha usiku. ; Nilipokula samaki kibandani Jumatano, nitaanza kuharisha usiku.
+> Daktari: Sawa. Ulikunywa dawa yoyote? | Okay. Did you take any medicine?
+< Mgonjwa: Ndiyo, dawa ambayo nilipewa na chemist, lakini haikusaidia. | Yes, the medicine I was given by the chemist, but it didn't help.
+  x: Ndiyo, dawa ambaye nilipewa na chemist, lakini haikusaidia. ; Ndiyo, dawa ambayo nilimpa chemist, lakini haikusaidia.
+> Daktari: Huwa unakunywa maji ya kutosha? | Do you usually drink enough water?
+< Mgonjwa: Hapana, huwa sinywi maji mengi. Ningejua, ningekuja mapema. | No, I usually don't drink much water. If I'd known, I would have come earlier.
+  x: Hapana, huwa sinywi maji mengi. Nikijua, nitakuja mapema. ; Ndiyo, huwa sinywi maji mengi. Ningejua, ningekuja mapema.
+> Daktari: Hakuna shida. Tutafanya kipimo cha damu kwanza. | No problem. We'll do a blood test first.
+< Mgonjwa: Matokeo yatakuja lini? | When will the results come?
+  x: Matokeo yalikuja lini? ; Matokeo yatakuja wapi?
+> Daktari: Baada ya saa moja. Ukimaliza kipimo, kaa nje. Nesi ambaye atakuita ni Mercy. | In an hour. When you finish the test, sit outside. The nurse who will call you is Mercy.
+< Mgonjwa: Sawa. Na nikirudi nyumbani, nile nini? | Okay. And when I go back home, what should I eat?
+  x: Sawa. Na nilirudi nyumbani, nile nini? ; Sawa. Na nikirudi nyumbani, ule nini?
+> Daktari: Kula uji, wali na ndizi. Usile chakula chenye mafuta mengi. | Eat porridge, rice and bananas. Don't eat oily food.
+< Mgonjwa: Na kama homa itaanza? | And if a fever starts?
+  x: Na kama homa ilianza? ; Na kama homa itaisha?
+> Daktari: Ukiona homa inapanda, rudi hapa haraka. Pona haraka! | If you see the fever rising, come back here quickly. Get well soon!
+
+@practice
+t: My stomach is hurting me. | Tumbo [inaniuma|inakuuma|inamuuma]. || -ni- = me: i- + -na- + -ni- + -uma. Sanifu: tumbo linaniuma.
+t: When I ate fish… | [Nilipokula|Nikila|Ningekula] samaki… || -po- = when (a particular time in the past).
+c: …and then I started having diarrhoea. | …[nikaanza|ninaanza|nitaanza] kuharisha. || -ka- continues a past story.
+t: the medicine that I was given | dawa [ambayo|ambaye|ambazo] nilipewa || dawa is n/n singular → ambayo.
+t: It didn't help. | [Haikusaidia|Haisaidii|Haitasaidia]. || hai- (not it) + -ku- (past) + -saidia.
+t: Do you usually drink enough water? | [Huwa|Hu|Hapo] unakunywa maji ya kutosha? || huwa + present = "usually…" — very common in Kenya.
+t: I usually don't drink much water. | Huwa [sinywi|ninakunywa|sikunywa] maji mengi.
+t: If I'd known, I would have come earlier. | Ningejua, [ningekuja|nitakuja|nilikuja] mapema.
+t: When you finish the test… | [Ukimaliza|Ulimaliza|Ungemaliza] kipimo… || -ki- = when / if.
+t: the nurse who will call you | nesi [ambaye|ambayo|ambao] atakuita
+t: When I get home, what should I eat? | Nikirudi nyumbani, [nile|nitakula|ninakula] nini? || nile = should I eat (subjunctive of kula — no ku-).
+t: Don't eat oily food. | [Usile|Usikula|Ule] chakula chenye mafuta. || Negative subjunctive of kula: usile.
+t: If you see the fever rising, come back. | [Ukiona|Uliona|Ungeona] homa inapanda, rudi.
+t: When will the results come? | Matokeo [yatakuja|yalikuja|yanakuja] lini? || matokeo is ma- (ji/ma plural) → ya-. A Sanifu agreement Kenyans keep for this word.
+t: We'll do a blood test. | Tutafanya [kipimo|kitabu|kiti] cha damu.
+c: Get well soon! | [Pona|Pole|Poa] haraka!
+
+@vocab
+Tumbo inaniuma | My stomach hurts | Kenyan agreement. | Tumbo linaniuma | Sanifu: tumbo is ji/ma
+Ilianza lini? | When did it start? |
+Nilipokula… | When I ate… | -po- = when
+nikaanza… | and then I started… | -ka- in a story
+dawa ambayo nilipewa | the medicine I was given |
+Haikusaidia | It didn't help |
+Huwa unakunywa…? | Do you usually drink…? | huwa = usually
+Ningejua, ningekuja mapema | If I'd known, I'd have come earlier |
+kipimo cha damu | blood test |
+matokeo | results | Matokeo yatakuja lini?
+Ukimaliza… | When you finish… |
+Nile nini? | What should I eat? | Subjunctive of kula
+Usile… | Don't eat… |
+Ukiona homa inapanda, rudi | If the fever rises, come back |

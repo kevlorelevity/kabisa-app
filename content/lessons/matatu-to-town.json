@@ -1,0 +1,1573 @@
+{
+  "id": "matatu-to-town",
+  "uuid": "9185b20d-663c-51f5-a788-8032dd41f1ed",
+  "title": "Matatu to Town",
+  "category": "transport",
+  "difficulty": "beginner",
+  "level": 3,
+  "order": 301,
+  "theme": "transport",
+  "culturalNote": "Matatus are Nairobi's privately run minibuses — loud music, graffiti art, and a makanga (conductor) hanging out of the door shouting the route. Fares aren't fixed: they rise at rush hour and when it rains, so it's normal to ask \"Nauli ni ngapi?\" before you get in. You get off by shouting where you want to stop. Imperatives are the plain verb: Panda! (get in), Shuka! (get off), Simama! (stop).",
+  "startingPoint": "You're at the stage in Kilimani. A makanga is shouting for passengers to town.",
+  "grammarFocus": [
+    "future-ta",
+    "imperatives",
+    "numbers-money"
+  ],
+  "grammar": [
+    "future-ta",
+    "imperatives",
+    "numbers-money",
+    "noun-classes-mwa-nn",
+    "demonstratives",
+    "present-na",
+    "ni-copula",
+    "question-words",
+    "object-infixes",
+    "na-have",
+    "subject-prefixes",
+    "possessives",
+    "infinitive-ku",
+    "ko-location",
+    "locative-ni"
+  ],
+  "turns": [
+    {
+      "id": "98cf8a63-8882-5a2a-9606-8f701108feaf",
+      "speaker": "Makanga",
+      "role": "auto",
+      "swahili": "Tao! Tao! Kencom! Panda, boss!",
+      "english": "Town! Town! Kencom! Get in, boss!",
+      "words": [
+        {
+          "text": "Tao",
+          "gloss": "\"Town!\" — the makanga's call: this matatu goes to the CBD."
+        },
+        {
+          "text": "Tao",
+          "gloss": "\"Town!\" — the makanga's call: this matatu goes to the CBD."
+        },
+        {
+          "text": "Kencom",
+          "gloss": "Kencom — the big matatu stop in the CBD"
+        },
+        {
+          "text": "Panda",
+          "gloss": "\"Climb!\" — -panda (climb). From kupanda.",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "boss",
+          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "152c5d32-0203-5ddd-9ac9-462f54d56888",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Matatu hii inaenda Kencom?",
+      "english": "Does this matatu go to Kencom?",
+      "words": [
+        {
+          "text": "Matatu",
+          "gloss": "matatu — Kenya's shared minibus taxi — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "hii",
+          "gloss": "this — n/n singular (and Kenyans' all-purpose \"this\")",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "inaenda",
+          "gloss": "\"It is going\" — i- (subject: it (n/n)) + na- (present) + -enda (go). From kuenda.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuenda (to go)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaenda"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "inaenda"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zinaenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Kencom",
+          "gloss": "Kencom — the big matatu stop in the CBD"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Matatu hii inaenda Kencom?",
+          "correct": true
+        },
+        {
+          "swahili": "Matatu hii anaenda Kencom?",
+          "correct": false
+        },
+        {
+          "swahili": "Matatu hizi inaenda Kencom?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "a5818b96-fb73-5f36-b032-6404c0322dc3",
+      "speaker": "Makanga",
+      "role": "auto",
+      "swahili": "Ndiyo, moja kwa moja. Panda haraka, tunaondoka!",
+      "english": "Yes, straight there. Get in quickly, we're leaving!",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "moja kwa moja",
+          "gloss": "straight on / directly"
+        },
+        {
+          "text": "Panda",
+          "gloss": "\"Climb!\" — -panda (climb). From kupanda.",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "haraka",
+          "gloss": "quickly / hurry"
+        },
+        {
+          "text": "tunaondoka",
+          "gloss": "\"We are leaving\" — tu- (subject: we) + na- (present) + -ondoka (leave). From kuondoka.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuondoka (to leave)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaondoka"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaondoka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaondoka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaondoka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaondoka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaondoka"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b27be693-7687-5631-a5fb-e2845b585767",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Nauli ni ngapi?",
+      "english": "How much is the fare?",
+      "words": [
+        {
+          "text": "Nauli",
+          "gloss": "fare — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "ngapi",
+          "gloss": "how many? / how much?",
+          "grammar": [
+            "question-words",
+            "numbers-money"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Nauli ni ngapi?",
+          "correct": true
+        },
+        {
+          "swahili": "Nauli ni wapi?",
+          "correct": false
+        },
+        {
+          "swahili": "Nauli ni nani?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "ff6dd4b0-e1e5-5825-8ce9-6f24788415c5",
+      "speaker": "Makanga",
+      "role": "auto",
+      "swahili": "Ni mia moja.",
+      "english": "It's a hundred.",
+      "words": [
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mia moja",
+          "gloss": "100",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2da4bd9-7781-5165-ad7d-9af7fa9cc9ba",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Mia moja? Kawaida ni sabini!",
+      "english": "A hundred? Normally it's seventy!",
+      "words": [
+        {
+          "text": "Mia moja",
+          "gloss": "100",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "Kawaida",
+          "gloss": "\"normally / usually\""
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "sabini",
+          "gloss": "70 (n/n form — used for counting, money, things)",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Mia moja? Kawaida ni sabini!",
+          "correct": true
+        },
+        {
+          "swahili": "Mia moja? Kawaida ni sabini tu, asante!",
+          "correct": false
+        },
+        {
+          "swahili": "Mia moja? Sitaki sabini!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "8e9294f3-8947-5550-8a02-9170b10b7d61",
+      "speaker": "Makanga",
+      "role": "auto",
+      "swahili": "Saa hii ni rush hour, boss. Bei inapanda.",
+      "english": "Right now it's rush hour, boss. The price goes up.",
+      "words": [
+        {
+          "text": "Saa",
+          "gloss": "hour / clock / watch / time — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "hii",
+          "gloss": "this — n/n singular (and Kenyans' all-purpose \"this\")",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "rush hour",
+          "gloss": "rush hour (English)"
+        },
+        {
+          "text": "boss",
+          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Bei",
+          "gloss": "price — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "inapanda",
+          "gloss": "\"is going up\" — kupanda = to climb / go up",
+          "grammar": [
+            "present-na"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "be2735e7-d91a-5606-b39d-3b5a1ad60549",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Sawa. Nitalipa mia moja, lakini nipe kiti ya mbele.",
+      "english": "Okay. I'll pay a hundred, but give me the front seat.",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Nitalipa",
+          "gloss": "\"I will pay\" — ni- (subject: I) + ta- (future) + -lipa (pay). From kulipa.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kulipa (to pay)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitalipa"
+              },
+              {
+                "pronoun": "you",
+                "form": "utalipa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atalipa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutalipa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtalipa"
+              },
+              {
+                "pronoun": "they",
+                "form": "watalipa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mia moja",
+          "gloss": "100",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "nipe",
+          "gloss": "\"Give me!\" — ni- (object: me) + -pe (give, subjunctive -e: polite command). From kupa.",
+          "grammar": [
+            "imperatives",
+            "object-infixes"
+          ]
+        },
+        {
+          "text": "kiti ya mbele",
+          "gloss": "\"the front seat\" — Kenyan agreement.",
+          "sanifu": "Sanifu: kiti cha mbele (kiti is ki/vi) #sanifu-noun-classes"
+        }
+      ],
+      "sanifu": "Sawa. Nitalipa mia moja, lakini nipe kiti cha mbele.",
+      "options": [
+        {
+          "swahili": "Sawa. Nitalipa mia moja, lakini nipe kiti ya mbele.",
+          "correct": true
+        },
+        {
+          "swahili": "Sawa. Utalipa mia moja, lakini nipe kiti ya mbele.",
+          "correct": false
+        },
+        {
+          "swahili": "Haya. Nitashuka Kencom. Utaniambia?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "53beae60-4b03-5df8-8a50-30d16f00dac6",
+      "speaker": "Makanga",
+      "role": "auto",
+      "swahili": "Kiti ya mbele iko na mtu. Kaa hapa nyuma, kuna nafasi.",
+      "english": "The front seat is taken. Sit here at the back, there's space.",
+      "words": [
+        {
+          "text": "Kiti ya mbele",
+          "gloss": "\"the front seat\" — Kenyan agreement.",
+          "sanifu": "Sanifu: kiti cha mbele (kiti is ki/vi) #sanifu-noun-classes"
+        },
+        {
+          "text": "iko na mtu",
+          "gloss": "\"is taken\" — lit. \"is with someone\". Kenyan -ko na for \"have\".",
+          "sanifu": "Sanifu: kina mtu #na-have"
+        },
+        {
+          "text": "Kaa",
+          "gloss": "\"Stay!\" — -kaa (stay). From kukaa.",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "nyuma",
+          "gloss": "behind / back"
+        },
+        {
+          "text": "kuna",
+          "gloss": "\"There is / there are\" — ku- (place) + -na (have): \"the place has…\"",
+          "grammar": [
+            "na-have"
+          ]
+        },
+        {
+          "text": "nafasi",
+          "gloss": "space / chance / opening — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "sanifu": "Kiti cha mbele kina mtu. Kaa hapa nyuma, kuna nafasi."
+    },
+    {
+      "id": "d322ed9b-5142-586e-b9cf-0bfe8ae92600",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Haya. Nitashuka Kencom. Utaniambia?",
+      "english": "Alright. I'll get off at Kencom. Will you tell me?",
+      "words": [
+        {
+          "text": "Haya",
+          "gloss": "\"Alright!\""
+        },
+        {
+          "text": "Nitashuka",
+          "gloss": "\"I will get off\" — ni- (subject: I) + ta- (future) + -shuka (get off). From kushuka.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kushuka (to get off)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitashuka"
+              },
+              {
+                "pronoun": "you",
+                "form": "utashuka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atashuka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutashuka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtashuka"
+              },
+              {
+                "pronoun": "they",
+                "form": "watashuka"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Kencom",
+          "gloss": "Kencom — the big matatu stop in the CBD"
+        },
+        {
+          "text": "Utaniambia",
+          "gloss": "\"You will tell me\" — u- (subject: you) + ta- (future) + ni- (object: me) + -ambia (tell). From kuambia.",
+          "grammar": [
+            "future-ta",
+            "object-infixes"
+          ],
+          "conjugation": {
+            "verb": "kuambia (to tell)",
+            "tense": "Future (-ta-) + object -ni-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitaniambia"
+              },
+              {
+                "pronoun": "you",
+                "form": "utaniambia"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ataniambia"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutaniambia"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtaniambia"
+              },
+              {
+                "pronoun": "they",
+                "form": "wataniambia"
+              }
+            ]
+          }
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Haya. Nitashuka Kencom. Utaniambia?",
+          "correct": true
+        },
+        {
+          "swahili": "Haya. Utashuka Kencom. Nitakuambia?",
+          "correct": false
+        },
+        {
+          "swahili": "Haya. Nitashuka Kencom. Nitakuambia?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "03775d19-3a47-5bcf-b7d3-87b955f0a37d",
+      "speaker": "Makanga",
+      "role": "auto",
+      "swahili": "Sawa, nitakuambia.",
+      "english": "Okay, I'll tell you.",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "nitakuambia",
+          "gloss": "\"I will tell you\" — ni- (subject: I) + ta- (future) + ku- (object: you) + -ambia (tell). From kuambia.",
+          "grammar": [
+            "future-ta",
+            "object-infixes"
+          ],
+          "conjugation": {
+            "verb": "kuambia (to tell)",
+            "tense": "Future (-ta-) + object -ku-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitakuambia"
+              },
+              {
+                "pronoun": "you",
+                "form": "utakuambia"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atakuambia"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutakuambia"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtakuambia"
+              },
+              {
+                "pronoun": "they",
+                "form": "watakuambia"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "3e3f5e89-17da-54f1-9118-bbd99c285108",
+      "speaker": "Makanga",
+      "role": "auto",
+      "swahili": "Kencom! Kencom! Nani anashuka?",
+      "english": "Kencom! Kencom! Who's getting off?",
+      "words": [
+        {
+          "text": "Kencom",
+          "gloss": "Kencom — the big matatu stop in the CBD"
+        },
+        {
+          "text": "Kencom",
+          "gloss": "Kencom — the big matatu stop in the CBD"
+        },
+        {
+          "text": "Nani",
+          "gloss": "who?",
+          "grammar": [
+            "question-words"
+          ]
+        },
+        {
+          "text": "anashuka",
+          "gloss": "\"He/she is getting off\" — a- (subject: he/she) + na- (present) + -shuka (get off). From kushuka.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kushuka (to get off)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninashuka"
+              },
+              {
+                "pronoun": "you",
+                "form": "unashuka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anashuka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunashuka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnashuka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanashuka"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "92dbbe84-959e-5e3f-a6f0-a793c43011f4",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Mimi! Simama hapa, nashuka!",
+      "english": "Me! Stop here, I'm getting off!",
+      "words": [
+        {
+          "text": "Mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "Simama",
+          "gloss": "\"Stop!\" — -simama (stop). From kusimama.",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "nashuka",
+          "gloss": "\"I'm getting off\" — short for ninashuka.",
+          "grammar": [
+            "present-na"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Mimi! Simama hapa, nashuka!",
+          "correct": true
+        },
+        {
+          "swahili": "Mimi! Panda hapa, nashuka!",
+          "correct": false
+        },
+        {
+          "swahili": "Mimi! Simama hapa, anashuka!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "92256723-2d73-5a6b-bb5e-d96d1ecc8686",
+      "speaker": "Makanga",
+      "role": "auto",
+      "swahili": "Dereva, simama! Shuka haraka, boss.",
+      "english": "Driver, stop! Get off quickly, boss.",
+      "words": [
+        {
+          "text": "Dereva",
+          "gloss": "driver — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "simama",
+          "gloss": "\"Stop!\" — -simama (stop). From kusimama.",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "Shuka",
+          "gloss": "\"Get off!\" — -shuka (get off). From kushuka.",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "haraka",
+          "gloss": "quickly / hurry"
+        },
+        {
+          "text": "boss",
+          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "46507e1c-7478-5297-bde9-03403a3c26c5",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Asante! Matatu ya kurudi Kilimani iko wapi?",
+      "english": "Thanks! Where's the matatu back to Kilimani?",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Matatu",
+          "gloss": "matatu — Kenya's shared minibus taxi — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ya",
+          "gloss": "\"of\" — n/n singular agreement (nyumba ya Kamau); Kenyans use ya with most nouns",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "kurudi",
+          "gloss": "\"To come back\" — ku- (infinitive \"to\") + -rudi (come back). From kurudi.",
+          "grammar": [
+            "infinitive-ku"
+          ]
+        },
+        {
+          "text": "Kilimani",
+          "gloss": "Kilimani — Nairobi neighbourhood"
+        },
+        {
+          "text": "iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "wapi",
+          "gloss": "where?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante! Matatu ya kurudi Kilimani iko wapi?",
+          "correct": true
+        },
+        {
+          "swahili": "Asante! Matatu ya kurudi Kilimani ziko wapi?",
+          "correct": false
+        },
+        {
+          "swahili": "Asante! Matatu ya kurudi Kilimani yuko wapi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "95adbe60-bb21-5048-b045-2cabba1036de",
+      "speaker": "Makanga",
+      "role": "auto",
+      "swahili": "Iko pale, karibu na benki. Uliza tu!",
+      "english": "It's over there, near the bank. Just ask!",
+      "words": [
+        {
+          "text": "Iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "pale",
+          "gloss": "there (over there)"
+        },
+        {
+          "text": "karibu na",
+          "gloss": "close to / near",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "benki",
+          "gloss": "bank"
+        },
+        {
+          "text": "Uliza",
+          "gloss": "\"Ask!\" — -uliza (ask). From kuuliza.",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "tu",
+          "gloss": "just / only"
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "acdbd2af-dc78-5ea3-8baa-8bc6f60d49b6",
+      "swahili": "Panda!",
+      "english": "Get in! / Get on!",
+      "exampleContext": "kupanda = to climb, to board",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "54e6622f-3674-5c0c-b6d5-04a9a6c1982d",
+      "swahili": "Shuka!",
+      "english": "Get off!",
+      "exampleContext": "Nashuka hapa = I'm getting off here",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "9aa63040-e917-5f40-a1e2-9f0eacf18a22",
+      "swahili": "Simama hapa!",
+      "english": "Stop here!",
+      "exampleContext": "kusimama = to stop / to stand",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "67fe7661-5f12-56f0-8061-1ed6246ce9d6",
+      "swahili": "Nauli ni ngapi?",
+      "english": "How much is the fare?",
+      "exampleContext": "nauli = fare",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "358f187b-86ef-5b7f-8329-7c7aede8b0fd",
+      "swahili": "tao",
+      "english": "town (the CBD)",
+      "exampleContext": "Matatu touts shout \"Tao! Tao!\""
+    },
+    {
+      "id": "5b623887-d245-5508-929f-05d9f8fb695b",
+      "swahili": "makanga",
+      "english": "matatu conductor",
+      "exampleContext": "Collects fares, shouts the route"
+    },
+    {
+      "id": "120ded4a-2e48-55a8-8ca0-a20ea6396d9d",
+      "swahili": "Nitalipa",
+      "english": "I will pay",
+      "exampleContext": "ni- + -ta- (future) + -lipa"
+    },
+    {
+      "id": "7b3d6c53-98ba-506e-9fea-80be0bb26d85",
+      "swahili": "Nitashuka…",
+      "english": "I'll get off at… |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "42550060-cfe1-5c89-88da-6a9a5b982539",
+      "swahili": "Utaniambia?",
+      "english": "Will you tell me?",
+      "exampleContext": "-ni- = me",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "8699b15d-5a0d-5d88-b717-ee1ccd28345c",
+      "swahili": "kiti ya mbele",
+      "english": "the front seat",
+      "exampleContext": "Kenyan agreement.",
+      "partOfSpeech": "phrase",
+      "sanifu": "kiti cha mbele",
+      "sanifuNote": "Sanifu: kiti is ki/vi class"
+    },
+    {
+      "id": "957fdcb4-6ea0-5a85-a067-b527138762d1",
+      "swahili": "Kuna nafasi",
+      "english": "There's space",
+      "exampleContext": "kuna = there is",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "1b2e0881-417e-5289-8c4c-dc1e68e64b02",
+      "swahili": "haraka",
+      "english": "quickly / hurry",
+      "exampleContext": "Shuka haraka = get off quickly"
+    },
+    {
+      "id": "069a99b6-cb9c-56d3-b8a3-08554a1c8333",
+      "swahili": "Uliza tu",
+      "english": "Just ask |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "e8905ec9-cb68-53fd-bde4-b90bcb72ccc4",
+      "mode": "translate",
+      "english": "I'll pay a hundred.",
+      "before": "",
+      "after": " mia moja.",
+      "options": [
+        {
+          "text": "Nitalipa",
+          "correct": true
+        },
+        {
+          "text": "Utalipa",
+          "correct": false,
+          "feedback": "Utalipa = You will pay"
+        },
+        {
+          "text": "Tutalipa",
+          "correct": false,
+          "feedback": "Tutalipa = We will pay"
+        }
+      ],
+      "explanation": "Future: ni- (I) + -ta- (future) + -lipa (pay).",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "c090bd86-20d7-5229-9cf1-83745a59d095",
+      "mode": "translate",
+      "english": "I'll get off at Kencom.",
+      "before": "",
+      "after": " Kencom.",
+      "options": [
+        {
+          "text": "Nitashuka",
+          "correct": true
+        },
+        {
+          "text": "Utashuka",
+          "correct": false,
+          "feedback": "Utashuka = You will get off"
+        },
+        {
+          "text": "Atashuka",
+          "correct": false,
+          "feedback": "Atashuka = He/she will get off"
+        }
+      ],
+      "explanation": "Nitashuka = \"I will get off\" — ni- (subject: I) + ta- (future) + -shuka (get off). From kushuka.",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "10c4c534-dcda-5dc5-8b98-85648c3000e1",
+      "mode": "translate",
+      "english": "We will leave now.",
+      "before": "",
+      "after": " sasa.",
+      "options": [
+        {
+          "text": "Tutaondoka",
+          "correct": true
+        },
+        {
+          "text": "Wataondoka",
+          "correct": false,
+          "feedback": "Wataondoka = They will leave"
+        },
+        {
+          "text": "Nitaondoka",
+          "correct": false,
+          "feedback": "Nitaondoka = I will leave"
+        }
+      ],
+      "explanation": "tu- (we) + -ta- + -ondoka.",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "877f2965-97d3-5c31-9374-fd91044b71a6",
+      "mode": "translate",
+      "english": "Will you tell me?",
+      "before": "",
+      "after": "?",
+      "options": [
+        {
+          "text": "Utaniambia",
+          "correct": true
+        },
+        {
+          "text": "Nitakuambia",
+          "correct": false,
+          "feedback": "Nitakuambia = I will tell you"
+        },
+        {
+          "text": "Ataniambia",
+          "correct": false,
+          "feedback": "Ataniambia = He/she will tell me"
+        }
+      ],
+      "explanation": "u- (you) + -ta- + -ni- (me) + -ambia (tell).",
+      "grammar": [
+        "future-ta",
+        "object-infixes"
+      ]
+    },
+    {
+      "id": "75dbc9f0-0fc0-5082-abd2-91d3e3cddf54",
+      "mode": "complete",
+      "english": "Okay, I'll tell you.",
+      "before": "Sawa, ",
+      "after": ".",
+      "options": [
+        {
+          "text": "nitakuambia",
+          "correct": true
+        },
+        {
+          "text": "utaniambia",
+          "correct": false,
+          "feedback": "utaniambia = You will tell me"
+        },
+        {
+          "text": "nitamwambia",
+          "correct": false,
+          "feedback": "nitamwambia = I will tell him/her"
+        }
+      ],
+      "explanation": "-ku- = you, -mw- = him/her.",
+      "grammar": [
+        "future-ta",
+        "object-infixes"
+      ]
+    },
+    {
+      "id": "65f02df2-391a-55bb-8d80-cd33d7d2ea5b",
+      "mode": "translate",
+      "english": "Get in!",
+      "before": "",
+      "after": "!",
+      "options": [
+        {
+          "text": "Panda",
+          "correct": true
+        },
+        {
+          "text": "Shuka",
+          "correct": false,
+          "feedback": "Shuka = Get off!"
+        },
+        {
+          "text": "Simama",
+          "correct": false,
+          "feedback": "Simama = Stop!"
+        }
+      ],
+      "explanation": "The imperative is just the verb stem: panda (get in / climb).",
+      "grammar": [
+        "imperatives"
+      ]
+    },
+    {
+      "id": "7b0ead77-71b4-5ab9-9a26-33f65fc2b4e9",
+      "mode": "translate",
+      "english": "Get off quickly!",
+      "before": "",
+      "after": " haraka!",
+      "options": [
+        {
+          "text": "Shuka",
+          "correct": true
+        },
+        {
+          "text": "Panda",
+          "correct": false,
+          "feedback": "Panda = Climb!"
+        },
+        {
+          "text": "Kaa",
+          "correct": false,
+          "feedback": "Kaa = Stay!"
+        }
+      ],
+      "explanation": "Shuka = \"Get off!\" — -shuka (get off). From kushuka.",
+      "grammar": [
+        "imperatives"
+      ]
+    },
+    {
+      "id": "19b6d626-7585-5e0e-aa6a-4451d2d114f6",
+      "mode": "translate",
+      "english": "Stop here!",
+      "before": "",
+      "after": " hapa!",
+      "options": [
+        {
+          "text": "Simama",
+          "correct": true
+        },
+        {
+          "text": "Shuka",
+          "correct": false,
+          "feedback": "Shuka = Get off!"
+        },
+        {
+          "text": "Ondoka",
+          "correct": false,
+          "feedback": "Ondoka = Leave!"
+        }
+      ],
+      "explanation": "Simama = \"Stop!\" — -simama (stop). From kusimama.",
+      "grammar": [
+        "imperatives"
+      ]
+    },
+    {
+      "id": "8e305007-cf97-52ff-98ab-d8c68c9ff43d",
+      "mode": "translate",
+      "english": "Sit at the back.",
+      "before": "Kaa hapa ",
+      "after": ".",
+      "options": [
+        {
+          "text": "nyuma",
+          "correct": true
+        },
+        {
+          "text": "mbele",
+          "correct": false,
+          "feedback": "mbele = ahead / in front"
+        },
+        {
+          "text": "juu",
+          "correct": false,
+          "feedback": "juu = up / on top"
+        }
+      ],
+      "explanation": "nyuma = behind / at the back; mbele = in front."
+    },
+    {
+      "id": "7c16cce4-6a19-52c2-b443-7a201d94cd7f",
+      "mode": "translate",
+      "english": "Get in, you all!",
+      "before": "",
+      "after": "!",
+      "options": [
+        {
+          "text": "Pandeni",
+          "correct": true
+        },
+        {
+          "text": "Panda",
+          "correct": false,
+          "feedback": "Panda = Climb!"
+        },
+        {
+          "text": "Shukeni",
+          "correct": false,
+          "feedback": "Shukeni = Get off! (you all)"
+        }
+      ],
+      "explanation": "Talking to several people, add -eni: panda → pandeni.",
+      "grammar": [
+        "imperatives"
+      ]
+    },
+    {
+      "id": "5c222219-5077-58d0-82f2-650bace0e2d8",
+      "mode": "translate",
+      "english": "Just ask!",
+      "before": "",
+      "after": " tu!",
+      "options": [
+        {
+          "text": "Uliza",
+          "correct": true
+        },
+        {
+          "text": "Jibu",
+          "correct": false,
+          "feedback": "Jibu = answer (plural majibu)"
+        },
+        {
+          "text": "Lipa",
+          "correct": false,
+          "feedback": "Lipa = Pay!"
+        }
+      ],
+      "explanation": "Uliza = \"Ask!\" — -uliza (ask). From kuuliza.",
+      "grammar": [
+        "imperatives"
+      ]
+    },
+    {
+      "id": "4ec5d9c2-6b21-5ff3-80a2-9fc0f3660d72",
+      "mode": "translate",
+      "english": "Does this matatu go to Kencom?",
+      "before": "Matatu hii ",
+      "after": " Kencom?",
+      "options": [
+        {
+          "text": "inaenda",
+          "correct": true
+        },
+        {
+          "text": "unaenda",
+          "correct": false,
+          "feedback": "unaenda = You are going"
+        },
+        {
+          "text": "anaenda",
+          "correct": false,
+          "feedback": "anaenda = He/she is going"
+        }
+      ],
+      "explanation": "matatu is n/n, so its verb takes i-.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "46d4f745-d51e-5655-b568-fee08e94429f",
+      "mode": "translate",
+      "english": "The price goes up.",
+      "before": "Bei ",
+      "after": ".",
+      "options": [
+        {
+          "text": "inapanda",
+          "correct": true
+        },
+        {
+          "text": "inashuka",
+          "correct": false,
+          "feedback": "inashuka = It is getting off"
+        },
+        {
+          "text": "zinapanda",
+          "correct": false,
+          "feedback": "zinapanda = They are climbing"
+        }
+      ],
+      "explanation": "inapanda = goes up; inashuka = goes down.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "9ffaeef3-ac24-5f62-b52e-86dfc3da95e1",
+      "mode": "translate",
+      "english": "Who is getting off?",
+      "before": "Nani ",
+      "after": "?",
+      "options": [
+        {
+          "text": "anashuka",
+          "correct": true
+        },
+        {
+          "text": "wanashuka",
+          "correct": false,
+          "feedback": "wanashuka = They are getting off"
+        },
+        {
+          "text": "unashuka",
+          "correct": false,
+          "feedback": "unashuka = You are getting off"
+        }
+      ],
+      "explanation": "nani takes the he/she form.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "15098c59-452c-5615-bb56-3dc1c75f8ea2",
+      "mode": "translate",
+      "english": "Tomorrow I'll come back.",
+      "before": "Kesho ",
+      "after": ".",
+      "options": [
+        {
+          "text": "nitarudi",
+          "correct": true
+        },
+        {
+          "text": "utarudi",
+          "correct": false,
+          "feedback": "utarudi = You will come back"
+        },
+        {
+          "text": "ninarudi",
+          "correct": false,
+          "feedback": "ninarudi = I am coming back"
+        }
+      ],
+      "explanation": "nitarudi = \"I will come back\" — ni- (subject: I) + ta- (future) + -rudi (come back). From kurudi.",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "8ef6102f-a52d-5712-9db2-cc4de1dd522d",
+      "mode": "complete",
+      "english": "There's space.",
+      "before": "Kuna ",
+      "after": ".",
+      "options": [
+        {
+          "text": "nafasi",
+          "correct": true
+        },
+        {
+          "text": "nauli",
+          "correct": false,
+          "feedback": "nauli = fare"
+        },
+        {
+          "text": "kona",
+          "correct": false,
+          "feedback": "kona = corner / bend"
+        }
+      ],
+      "explanation": "kuna = there is.",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "23544671-c514-5338-b8fc-92480a900a1a",
+      "mode": "translate",
+      "english": "Drive slowly!",
+      "before": "Endesha ",
+      "after": "!",
+      "options": [
+        {
+          "text": "polepole",
+          "correct": true
+        },
+        {
+          "text": "haraka",
+          "correct": false,
+          "feedback": "haraka = quickly / hurry"
+        },
+        {
+          "text": "moja kwa moja",
+          "correct": false,
+          "feedback": "moja kwa moja = straight on / directly"
+        }
+      ],
+      "explanation": "polepole: slowly / gently"
+    }
+  ]
+}

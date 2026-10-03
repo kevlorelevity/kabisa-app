@@ -140,6 +140,7 @@ export function DialoguePlayer({ turns, onComplete }: DialoguePlayerProps) {
 
 function TurnBubble({ turn, tappable }: { turn: DialogueTurn; tappable: boolean }) {
   const isUser = turn.role === 'user';
+  const [showSanifu, setShowSanifu] = useState(false);
   return (
     <div className={`flex ${isUser ? 'justify-end' : 'justify-start'}`}>
       <div className="max-w-[80%]">
@@ -170,7 +171,21 @@ function TurnBubble({ turn, tappable }: { turn: DialogueTurn; tappable: boolean 
         </div>
         <p className={`text-xs text-gray-400 mt-1 ${isUser ? 'text-right' : ''}`}>
           {turn.english}
+          {turn.sanifu && (
+            <button
+              type="button"
+              onClick={() => setShowSanifu((v) => !v)}
+              className="ml-2 text-sky-700 hover:underline"
+            >
+              {showSanifu ? 'Sanifu ↑' : 'Sanifu →'}
+            </button>
+          )}
         </p>
+        {showSanifu && turn.sanifu && (
+          <p className={`text-xs text-sky-800 mt-0.5 ${isUser ? 'text-right' : ''}`}>
+            <span className="font-semibold">Sanifu:</span> {turn.sanifu}
+          </p>
+        )}
       </div>
     </div>
   );

@@ -1,0 +1,73 @@
+# Level 1 — Jambo Tourist. (Uber Parts 1 & 2 are the hand-authored lessons 1 and 2 of this level.)
+
+@lesson neighbours-greetings
+title: Mambo, Neighbour! Greetings at the Gate
+level: 1
+index: 3
+theme: greetings
+category: social
+culture: Kenyans greet before anything else — skipping the greeting and jumping straight to business comes across as rude. Who you greet decides how you greet: an older woman like your neighbour gets the polite "Habari ya asubuhi?" (and "mama" as a sign of respect), while her teenage son gets a casual "Mambo?" or "Niaje?". Women are often called by their first child's name — "Mama Njeri" is "Njeri's mum". You are John again, newly moved into a flat in Kilimani.
+start: It's 7:30 on your first morning in the new flat. Mama Njeri from next door greets you at the gate.
+grammar: greetings, ko-location, present-na
+gl: Mama Njeri = "Njeri's mum" — Kenyan women are often called by their first child's name. Mama alone is a respectful way to address any older woman.
+gl: namba tano = number five
+gl: kazi njema = "have a good day at work" (lit. "good work")
+gl: kazini = "at / to work" — kazi + -ni (place suffix). #locative-ni
+
+> Mama Njeri: Habari ya asubuhi? | Good morning? (lit. "News of the morning?")
+< Mgeni: Nzuri sana, mama. Habari yako? | Very good, ma'am. How are you?
+  x: Poa sana, boss! Niaje? ; Niko Kilimani.
+> Mama Njeri: Salama. Wewe ni mgeni hapa? | Fine. Are you new here?
+< Mgeni: Ndiyo. Ninaishi hapa, nyumba namba tano. | Yes. I live here, house number five.
+> Mama Njeri: Karibu sana! Jina yako ni nani? | You're very welcome! What's your name?
+  s: Karibu sana! Jina lako ni nani?
+< Mgeni: Jina yangu ni John. Na wewe? | My name is John. And you?
+  s: Jina langu ni John. Na wewe?
+> Mama Njeri: Mimi ni Mama Njeri. Huyu ni Baraka, mtoto wangu. | I'm Mama Njeri. This is Baraka, my son.
+> Baraka: Mambo? | What's up?
+< Mgeni: Poa sana! Uko aje? | Very cool! How are you?
+  x: Nzuri sana, mama. Habari yako? ; Poa sana! Niko aje?
+> Baraka: Niko fiti. Unatoka wapi? | I'm good. Where are you from?
+< Mgeni: Ninatoka Uganda, lakini ninafanya kazi hapa Nairobi. | I'm from Uganda, but I work here in Nairobi.
+> Baraka: Aah, poa. Unaenda kazini sasa? | Ah, cool. Are you going to work now?
+< Mgeni: Ndiyo, ninaenda kazini sasa hivi. | Yes, I'm going to work right now.
+> Mama Njeri: Sawa. Kazi njema! | Okay. Have a good day at work!
+< Mgeni: Asante, mama. Tuonane baadaye! | Thank you, ma'am. See you later!
+  x: Karibu sana, mama! ; Asante, mama. Habari ya asubuhi?
+> Baraka: Poa. Kwa heri! | Cool. Bye!
+
+@practice
+t: I'm fine. (casual) | [Niko|Uko|Yuko] poa.
+t: How are you? (to a friend) | [Uko|Niko|Tuko] aje?
+t: We're good. | [Tuko|Niko|Wako] poa.
+t: He/she is here. | [Yuko|Niko|Uko] hapa.
+t: They're fine. | [Wako|Tuko|Uko] salama.
+c: Good morning? — Very good. | Habari ya asubuhi? — [Nzuri|Mambo|Kwa heri] sana. || Every "Habari …?" greeting is answered with Nzuri (good) — even on a bad day.
+c: What's up? — Cool! | Mambo? — [Poa|Asante|Kwa heri]! || Mambo? / Niaje? / Vipi? are answered with Poa (cool) or Fiti (fine).
+t: Where are you from? | [Unatoka|Ninatoka|Anatoka] wapi?
+t: I'm from Uganda. | [Ninatoka|Unatoka|Tunatoka] Uganda.
+t: I live in Kilimani. | [Ninaishi|Unaishi|Wanaishi] Kilimani.
+t: My name is John. | [Jina yangu|Jina yako|Habari yako] ni John. || Jina yangu = my name. You'll hear "jina langu" in Sanifu (jina is a ji/ma noun) — both are understood everywhere.
+t: What's your name? | Jina yako ni [nani|wapi|gani]? || Literally "your name is WHO?" — Swahili asks for names with nani (who).
+t: This is my child. | Huyu ni mtoto [wangu|wako|wake]. || wangu = my (m/wa agreement, used for people).
+t: Are you new here? | Wewe ni [mgeni|mwenyeji|dereva] hapa? || mgeni = guest, stranger, newcomer. Mwenyeji is the opposite: a local.
+t: I'm going to work. | [Ninaenda|Unaenda|Anaenda] kazini.
+t: Are you going to work now? | [Unaenda|Ninaenda|Tunaenda] kazini sasa?
+t: Good evening? | Habari ya [jioni|asubuhi|mchana]? || jioni = evening (roughly 4pm–7pm).
+c: Thank you, ma'am. See you later! | Asante, mama. [Tuonane|Mambo|Karibu] baadaye!
+
+@vocab
+Habari ya asubuhi? | Good morning? | Lit. "news of the morning?" — answer Nzuri. You'll also hear "Habari asubuhi?"
+Nzuri | Good / fine | The standard reply to every "Habari…?" greeting.
+Mambo? | What's up? | Casual — answer Poa. Lit. "matters?"
+Uko aje? | How are you? | Casual Kenyan. Answer: Niko poa / Niko fiti.
+Niko fiti | I'm fine | fiti comes from English "fit".
+Wewe ni mgeni hapa? | Are you new here? | mgeni = guest / newcomer / stranger
+Ninaishi… | I live… | From kuishi (to live). Ninaishi Kilimani.
+Jina yangu ni… | My name is… | Everyday Kenyan form. | Jina langu ni… | Sanifu: jina is ji/ma class, so langu.
+Unatoka wapi? | Where are you from? | Also: where are you coming from (just now)?
+Ninafanya kazi… | I work… | Lit. "I am doing work". Ninafanya kazi Safaricom.
+kazini | at / to work | kazi + -ni (the place suffix)
+Kazi njema! | Have a good day at work! | Lit. "good work!"
+Tuonane baadaye | See you later | Lit. "let's see each other later"
+Kwa heri | Goodbye | To several people: Kwaherini.

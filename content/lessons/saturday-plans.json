@@ -1,0 +1,1520 @@
+{
+  "id": "saturday-plans",
+  "uuid": "17b748ae-2983-579f-b090-a52f7fc6d56e",
+  "title": "Plans for Saturday (and Swahili Time)",
+  "category": "time",
+  "difficulty": "beginner",
+  "level": 3,
+  "order": 303,
+  "theme": "friends",
+  "culturalNote": "Swahili time starts at sunrise, not midnight. 7 a.m. is saa moja (\"the first hour\"), 8 a.m. is saa mbili, noon is saa sita, and 6 p.m. is saa kumi na mbili. The trick: add or subtract six from the clock time. Kenyans switch between Swahili time and English time (\"seven\") all day — when it matters, check which one someone means! A day trip to Lake Naivasha (90 km away) is a classic weekend plan.",
+  "startingPoint": "Your friend Otieno calls you on Wednesday evening.",
+  "grammarFocus": [
+    "future-ta",
+    "time-swahili",
+    "helper-verbs",
+    "locative-ni"
+  ],
+  "grammar": [
+    "future-ta",
+    "time-swahili",
+    "helper-verbs",
+    "locative-ni",
+    "question-words",
+    "negative-present",
+    "perfect-negative-ja",
+    "ni-copula",
+    "noun-classes-mwa-nn",
+    "subjunctive",
+    "na-have",
+    "discourse-particles",
+    "possessives",
+    "imperatives",
+    "sanifu-noun-classes",
+    "greetings",
+    "numbers-money"
+  ],
+  "turns": [
+    {
+      "id": "98a30b46-28f0-5047-ba37-02b3290b816d",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Sema, John! Utafanya nini Jumamosi?",
+      "english": "Hey, John! What will you do on Saturday?",
+      "words": [
+        {
+          "text": "Sema",
+          "gloss": "\"Talk to me!\" — casual phone hello (lit. \"say!\")"
+        },
+        {
+          "text": "John",
+          "gloss": "John (name)"
+        },
+        {
+          "text": "Utafanya",
+          "gloss": "\"You will do\" — u- (subject: you) + ta- (future) + -fanya (do). From kufanya.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kufanya (to do)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitafanya"
+              },
+              {
+                "pronoun": "you",
+                "form": "utafanya"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atafanya"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutafanya"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtafanya"
+              },
+              {
+                "pronoun": "they",
+                "form": "watafanya"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nini",
+          "gloss": "what?",
+          "grammar": [
+            "question-words"
+          ]
+        },
+        {
+          "text": "Jumamosi",
+          "gloss": "Saturday"
+        }
+      ]
+    },
+    {
+      "id": "5f253940-d5d7-583c-afca-c246790f4299",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Sijui bado. Kwa nini?",
+      "english": "I don't know yet. Why?",
+      "words": [
+        {
+          "text": "Sijui",
+          "gloss": "\"I don't know\" — si- (negative subject: not I) + -jui (know, negative ends in -i). From kujua.",
+          "grammar": [
+            "negative-present"
+          ],
+          "conjugation": {
+            "verb": "kujua (to know)",
+            "tense": "Present, negative",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "sijui"
+              },
+              {
+                "pronoun": "you",
+                "form": "hujui"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "hajui"
+              },
+              {
+                "pronoun": "we",
+                "form": "hatujui"
+              },
+              {
+                "pronoun": "you all",
+                "form": "hamjui"
+              },
+              {
+                "pronoun": "they",
+                "form": "hawajui"
+              }
+            ]
+          }
+        },
+        {
+          "text": "bado",
+          "gloss": "still / not yet",
+          "grammar": [
+            "perfect-negative-ja"
+          ]
+        },
+        {
+          "text": "Kwa nini",
+          "gloss": "why?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Sijui bado. Kwa nini?",
+          "correct": true
+        },
+        {
+          "swahili": "Najua bado. Kwa nini?",
+          "correct": false
+        },
+        {
+          "swahili": "Sijui bado. Kwa wapi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "9f0ec14e-9146-5d93-8819-c56d0c5e1b1e",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Tutaenda Naivasha na marafiki. Utakuja?",
+      "english": "We're going to Naivasha with friends. Will you come?",
+      "words": [
+        {
+          "text": "Tutaenda",
+          "gloss": "\"We will go\" — tu- (subject: we) + ta- (future) + -enda (go). From kuenda.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kuenda (to go)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "utaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ataenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wataenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Naivasha",
+          "gloss": "Naivasha"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "marafiki",
+          "gloss": "friends (plural of rafiki)"
+        },
+        {
+          "text": "Utakuja",
+          "gloss": "\"You will come\" — u- (subject: you) + ta- (future) + -ja (come). From kuja.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kuja (to come)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitakuja"
+              },
+              {
+                "pronoun": "you",
+                "form": "utakuja"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atakuja"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutakuja"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtakuja"
+              },
+              {
+                "pronoun": "they",
+                "form": "watakuja"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "c59395e8-dd90-5de0-a347-f7ba96a82637",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ndiyo, nitakuja! Mtaondoka saa ngapi?",
+      "english": "Yes, I'll come! What time will you leave?",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "nitakuja",
+          "gloss": "\"I will come\" — ni- (subject: I) + ta- (future) + -ja (come). From kuja.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kuja (to come)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitakuja"
+              },
+              {
+                "pronoun": "you",
+                "form": "utakuja"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atakuja"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutakuja"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtakuja"
+              },
+              {
+                "pronoun": "they",
+                "form": "watakuja"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Mtaondoka",
+          "gloss": "\"You all will leave\" — m- (subject: you all) + ta- (future) + -ondoka (leave). From kuondoka.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kuondoka (to leave)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitaondoka"
+              },
+              {
+                "pronoun": "you",
+                "form": "utaondoka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ataondoka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutaondoka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtaondoka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wataondoka"
+              }
+            ]
+          }
+        },
+        {
+          "text": "saa ngapi",
+          "gloss": "what time?",
+          "grammar": [
+            "time-swahili",
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo, nitakuja! Mtaondoka saa ngapi?",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, utakuja! Mtaondoka saa ngapi?",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, nitakuja! Mtaondoka saa gani?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "bdcac9c1-1bc0-57ff-bd1c-cb425bd23ea7",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Saa moja asubuhi. Lazima tuondoke mapema, kuna foleni.",
+      "english": "At seven in the morning. We have to leave early, there's traffic.",
+      "words": [
+        {
+          "text": "Saa moja",
+          "gloss": "7 o'clock (1st hour of daylight) / one hour",
+          "grammar": [
+            "time-swahili"
+          ]
+        },
+        {
+          "text": "asubuhi",
+          "gloss": "morning — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Lazima",
+          "gloss": "must / it's necessary",
+          "grammar": [
+            "helper-verbs"
+          ]
+        },
+        {
+          "text": "tuondoke",
+          "gloss": "\"(that) we leave\" — subjunctive after lazima: tu- + -ondok- + -e.",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "mapema",
+          "gloss": "early"
+        },
+        {
+          "text": "kuna",
+          "gloss": "\"There is / there are\" — ku- (place) + -na (have): \"the place has…\"",
+          "grammar": [
+            "na-have"
+          ]
+        },
+        {
+          "text": "foleni",
+          "gloss": "queue / traffic jam (from French \"file\") — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "07a3c79d-ffa3-5832-9df7-784baa5445dc",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Saa moja? Mapema sana! Saa moja ni seven, sivyo?",
+      "english": "Saa moja? Very early! Saa moja is seven, right?",
+      "words": [
+        {
+          "text": "Saa moja",
+          "gloss": "7 o'clock (1st hour of daylight) / one hour",
+          "grammar": [
+            "time-swahili"
+          ]
+        },
+        {
+          "text": "Mapema",
+          "gloss": "early"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Saa moja",
+          "gloss": "7 o'clock (1st hour of daylight) / one hour",
+          "grammar": [
+            "time-swahili"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "seven",
+          "gloss": "\"seven\" — English time. Kenyans mix English and Swahili time all the time."
+        },
+        {
+          "text": "sivyo",
+          "gloss": "isn't it? / right? (question tag)",
+          "grammar": [
+            "discourse-particles"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Saa moja? Mapema sana! Saa moja ni seven, sivyo?",
+          "correct": true
+        },
+        {
+          "swahili": "Saa moja? Mapema sana! Saa moja ni one, sivyo?",
+          "correct": false
+        },
+        {
+          "swahili": "Saa moja? Mapema sana! Saa moja ni six, sivyo?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "806078d7-5ff1-544c-b193-61b39b4f6178",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Ndiyo, seven. Tutapita kwako saa kumi na mbili na nusu.",
+      "english": "Yes, seven. We'll pass by your place at six thirty.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "seven",
+          "gloss": "\"seven\" — English time. Kenyans mix English and Swahili time all the time."
+        },
+        {
+          "text": "Tutapita",
+          "gloss": "\"We will pass\" — tu- (subject: we) + ta- (future) + -pita (pass). From kupita.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kupita (to pass)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitapita"
+              },
+              {
+                "pronoun": "you",
+                "form": "utapita"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atapita"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutapita"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtapita"
+              },
+              {
+                "pronoun": "they",
+                "form": "watapita"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kwako",
+          "gloss": "\"your place / to you\" — contracted possessive.",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "saa kumi na mbili",
+          "gloss": "6 o'clock",
+          "grammar": [
+            "time-swahili"
+          ]
+        },
+        {
+          "text": "na nusu",
+          "gloss": "and a half / half past",
+          "grammar": [
+            "time-swahili"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7e570740-8b5c-55e5-99fc-38a136a09b6a",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Sawa. Nitakuwa tayari. Nitaleta nini?",
+      "english": "Okay. I'll be ready. What should I bring?",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Nitakuwa",
+          "gloss": "\"I will be\" — ni- (subject: I) + ta- (future) + -wa (be). From kuwa.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kuwa (to be)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitakuwa"
+              },
+              {
+                "pronoun": "you",
+                "form": "utakuwa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atakuwa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutakuwa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtakuwa"
+              },
+              {
+                "pronoun": "they",
+                "form": "watakuwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "tayari",
+          "gloss": "ready / already"
+        },
+        {
+          "text": "Nitaleta",
+          "gloss": "\"I will bring\" — ni- (subject: I) + ta- (future) + -leta (bring). From kuleta.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kuleta (to bring)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitaleta"
+              },
+              {
+                "pronoun": "you",
+                "form": "utaleta"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ataleta"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutaleta"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtaleta"
+              },
+              {
+                "pronoun": "they",
+                "form": "wataleta"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nini",
+          "gloss": "what?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Sawa. Nitakuwa tayari. Nitaleta nini?",
+          "correct": true
+        },
+        {
+          "swahili": "Sawa. Utakuwa tayari. Nitaleta nini?",
+          "correct": false
+        },
+        {
+          "swahili": "Sawa. Nitakuwa tayari. Nitaleta wapi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "d48c0f31-d012-5f45-95ee-8d6a9411a88d",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Lete maji na kofia. Jua ni kali sana huko.",
+      "english": "Bring water and a hat. The sun is really strong there.",
+      "words": [
+        {
+          "text": "Lete",
+          "gloss": "\"Bring!\" — imperative of kuleta (also heard: leta).",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "maji",
+          "gloss": "water — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — maji yangu, maji haya (ma- plural of the ji/ma class)"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "kofia",
+          "gloss": "hat / cap — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Jua",
+          "gloss": "sun — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "kali",
+          "gloss": "\"fierce / strong / sharp\" — jua ni kali = the sun is strong"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "huko",
+          "gloss": "\"there\" — that place (Naivasha)"
+        }
+      ]
+    },
+    {
+      "id": "493f8ce8-f213-5da1-88bd-3b21c2b56397",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Poa. Na chakula?",
+      "english": "Cool. And food?",
+      "words": [
+        {
+          "text": "Poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "chakula",
+          "gloss": "food (plural vyakula) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — chakula changu, chakula hiki"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Poa. Na chakula?",
+          "correct": true
+        },
+        {
+          "swahili": "Poa. Na chakula wapi?",
+          "correct": false
+        },
+        {
+          "swahili": "Pole. Na chakula?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "f44fda4f-27af-5f81-b266-34b8a9a11b62",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Tutakula nyama choma pale ziwani.",
+      "english": "We'll eat nyama choma there at the lake.",
+      "words": [
+        {
+          "text": "Tutakula",
+          "gloss": "\"We will eat\" — tu- (subject: we) + ta- (future) + -la (eat). From kula.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kula (to eat)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitakula"
+              },
+              {
+                "pronoun": "you",
+                "form": "utakula"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atakula"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutakula"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtakula"
+              },
+              {
+                "pronoun": "they",
+                "form": "watakula"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nyama choma",
+          "gloss": "grilled meat — a Kenyan institution — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "pale",
+          "gloss": "there (over there)"
+        },
+        {
+          "text": "ziwani",
+          "gloss": "\"at the lake\" — ziwa + -ni (place suffix).",
+          "grammar": [
+            "locative-ni"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "309c2e66-f671-58a6-b8a4-7d15efff2007",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Safi sana! Tutaonana Jumamosi.",
+      "english": "Excellent! See you on Saturday.",
+      "words": [
+        {
+          "text": "Safi sana",
+          "gloss": "\"Excellent!\" — lit. \"very clean\""
+        },
+        {
+          "text": "Tutaonana",
+          "gloss": "we'll see each other / see you",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Jumamosi",
+          "gloss": "Saturday"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Safi sana! Tutaonana Jumamosi.",
+          "correct": true
+        },
+        {
+          "swahili": "Safi sana! Tutaonana Jumapili.",
+          "correct": false
+        },
+        {
+          "swahili": "Safi sana! Tulionana Jumamosi.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "322a6f66-5dbf-51c7-a030-f68cd157d85f",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Poa. Usisahau, saa kumi na mbili na nusu!",
+      "english": "Cool. Don't forget — six thirty!",
+      "words": [
+        {
+          "text": "Poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Usisahau",
+          "gloss": "\"Don't forget\" — u- (subject: you) + si- (not) + -sahau (forget, subjunctive -e). From kusahau.",
+          "grammar": [
+            "subjunctive"
+          ],
+          "conjugation": {
+            "verb": "kusahau (to forget)",
+            "tense": "Subjunctive, negative (-si- … -e)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nisisahau"
+              },
+              {
+                "pronoun": "you",
+                "form": "usisahau"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "asisahau"
+              },
+              {
+                "pronoun": "we",
+                "form": "tusisahau"
+              },
+              {
+                "pronoun": "you all",
+                "form": "msisahau"
+              },
+              {
+                "pronoun": "they",
+                "form": "wasisahau"
+              }
+            ]
+          }
+        },
+        {
+          "text": "saa kumi na mbili",
+          "gloss": "6 o'clock",
+          "grammar": [
+            "time-swahili"
+          ]
+        },
+        {
+          "text": "na nusu",
+          "gloss": "and a half / half past",
+          "grammar": [
+            "time-swahili"
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "66c2c75d-c5cf-5e05-b2f1-bcfc59ae8bc8",
+      "swahili": "Utafanya nini?",
+      "english": "What will you do?",
+      "exampleContext": "u- + -ta- (future) + -fanya",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "091a8005-9e1e-5e16-af2c-826199ab16ce",
+      "swahili": "Nitakuja",
+      "english": "I'll come",
+      "exampleContext": "kuja keeps ku- in the future"
+    },
+    {
+      "id": "d7c80bc9-7a3a-53cb-b50d-97ea313a4e1e",
+      "swahili": "Saa ngapi?",
+      "english": "What time?",
+      "exampleContext": "Lit. \"how many hours?\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "47de7abf-e2d5-5773-b3a9-56c61ac6443a",
+      "swahili": "saa moja asubuhi",
+      "english": "7 a.m.",
+      "exampleContext": "Swahili time counts from sunrise: 7 a.m. = the 1st hour",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "0a14d0b7-dc5b-5634-a4cc-4d25cc2c526e",
+      "swahili": "saa kumi na mbili",
+      "english": "6 o'clock",
+      "exampleContext": "The 12th hour: 6 a.m. or 6 p.m.",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "c282eaf7-39e0-5514-9f8f-72ae77597142",
+      "swahili": "na nusu",
+      "english": "half past",
+      "exampleContext": "saa mbili na nusu = 8:30",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "56a28637-a31d-50fc-a4be-3d40eae94386",
+      "swahili": "na robo",
+      "english": "quarter past",
+      "exampleContext": "saa tatu na robo = 9:15",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "946aa1d9-1ad6-5140-8e5b-214b567c85c9",
+      "swahili": "Lazima tuondoke",
+      "english": "We have to leave",
+      "exampleContext": "lazima + subjunctive",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "44eef0bb-ca67-5322-ac5b-7451e6c41ca6",
+      "swahili": "mapema",
+      "english": "early |",
+      "exampleContext": ""
+    },
+    {
+      "id": "450a5f53-4932-5036-a271-4c233c3f4c19",
+      "swahili": "kwako / kwangu",
+      "english": "your place / my place |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "98303219-1b36-5e7f-8902-707de039411a",
+      "swahili": "tayari",
+      "english": "ready / already",
+      "exampleContext": "Nitakuwa tayari = I'll be ready"
+    },
+    {
+      "id": "71bb5383-a2cb-5f5e-bbaf-32ca0e346f7a",
+      "swahili": "Jua ni kali",
+      "english": "The sun is strong",
+      "exampleContext": "kali = fierce / sharp / strong",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "c0924a7f-7db1-5151-b849-6d3b763c3526",
+      "swahili": "Tutaonana",
+      "english": "See you",
+      "exampleContext": "Lit. \"we'll see each other\""
+    },
+    {
+      "id": "02250c75-378f-5669-acb1-2288d8a2a59c",
+      "swahili": "Usisahau!",
+      "english": "Don't forget!",
+      "exampleContext": "u- + -si- (not) + -sahau",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "45090263-8cb3-5fae-a9c8-ae3ba1be3f84",
+      "mode": "translate",
+      "english": "What will you do on Saturday?",
+      "before": "",
+      "after": " nini Jumamosi?",
+      "options": [
+        {
+          "text": "Utafanya",
+          "correct": true
+        },
+        {
+          "text": "Nitafanya",
+          "correct": false,
+          "feedback": "Nitafanya = I will do"
+        },
+        {
+          "text": "Atafanya",
+          "correct": false,
+          "feedback": "Atafanya = He/she will do"
+        }
+      ],
+      "explanation": "Utafanya = \"You will do\" — u- (subject: you) + ta- (future) + -fanya (do). From kufanya.",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "d200d5aa-8ee3-53e8-9948-f9cfd0bb583e",
+      "mode": "translate",
+      "english": "I will come.",
+      "before": "",
+      "after": ".",
+      "options": [
+        {
+          "text": "Nitakuja",
+          "correct": true
+        },
+        {
+          "text": "Utakuja",
+          "correct": false,
+          "feedback": "Utakuja = You will come"
+        },
+        {
+          "text": "Watakuja",
+          "correct": false,
+          "feedback": "Watakuja = They will come"
+        }
+      ],
+      "explanation": "kuja keeps ku- in the future: nitakuja.",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "5ad74706-c10a-5cb4-80cf-cb6964f8ef5f",
+      "mode": "translate",
+      "english": "We will go to Naivasha.",
+      "before": "",
+      "after": " Naivasha.",
+      "options": [
+        {
+          "text": "Tutaenda",
+          "correct": true
+        },
+        {
+          "text": "Mtaenda",
+          "correct": false,
+          "feedback": "Mtaenda = You all will go"
+        },
+        {
+          "text": "Wataenda",
+          "correct": false,
+          "feedback": "Wataenda = They will go"
+        }
+      ],
+      "explanation": "Tutaenda = \"We will go\" — tu- (subject: we) + ta- (future) + -enda (go). From kuenda.",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "8622330e-8df6-576d-9683-dfbf870ff808",
+      "mode": "translate",
+      "english": "What time will you (all) leave?",
+      "before": "",
+      "after": " saa ngapi?",
+      "options": [
+        {
+          "text": "Mtaondoka",
+          "correct": true
+        },
+        {
+          "text": "Tutaondoka",
+          "correct": false,
+          "feedback": "Tutaondoka = We will leave"
+        },
+        {
+          "text": "Wataondoka",
+          "correct": false,
+          "feedback": "Wataondoka = They will leave"
+        }
+      ],
+      "explanation": "m- = you all.",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "45b1be0f-31af-5dca-bbff-33e33355d0f3",
+      "mode": "translate",
+      "english": "What time?",
+      "before": "Saa ",
+      "after": "?",
+      "options": [
+        {
+          "text": "ngapi",
+          "correct": true
+        },
+        {
+          "text": "gani",
+          "correct": false,
+          "feedback": "gani = which? / what kind?"
+        },
+        {
+          "text": "wapi",
+          "correct": false,
+          "feedback": "wapi = where?"
+        }
+      ],
+      "explanation": "Saa ngapi? = \"how many hours?\" = what time?",
+      "grammar": [
+        "question-words",
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "0772c71c-5161-5215-8d6b-57c51792f999",
+      "mode": "complete",
+      "english": "7:00 a.m.",
+      "before": "Saa ",
+      "after": " asubuhi.",
+      "options": [
+        {
+          "text": "moja",
+          "correct": true
+        },
+        {
+          "text": "saba",
+          "correct": false,
+          "feedback": "saba = 7 (n/n form"
+        },
+        {
+          "text": "kumi",
+          "correct": false,
+          "feedback": "kumi = 10 (n/n form"
+        }
+      ],
+      "explanation": "Swahili hours start at sunrise: 7 a.m. is the first hour, saa moja.",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "b64b457b-46a5-572a-a7de-7e3d43e8007d",
+      "mode": "complete",
+      "english": "1:00 p.m.",
+      "before": "Saa ",
+      "after": " mchana.",
+      "options": [
+        {
+          "text": "saba",
+          "correct": true
+        },
+        {
+          "text": "moja",
+          "correct": false,
+          "feedback": "moja = 1 (n/n form"
+        },
+        {
+          "text": "nne",
+          "correct": false,
+          "feedback": "nne = 4 (n/n form"
+        }
+      ],
+      "explanation": "1 p.m. = 7th hour since sunrise: saa saba.",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "1a69551e-31e4-5f66-9ce5-13bfef02489f",
+      "mode": "complete",
+      "english": "10:00 a.m.",
+      "before": "Saa ",
+      "after": " asubuhi.",
+      "options": [
+        {
+          "text": "nne",
+          "correct": true
+        },
+        {
+          "text": "kumi",
+          "correct": false,
+          "feedback": "kumi = 10 (n/n form"
+        },
+        {
+          "text": "mbili",
+          "correct": false,
+          "feedback": "mbili = 2 (n/n form"
+        }
+      ],
+      "explanation": "Subtract six: 10 − 6 = 4 → saa nne.",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "fb6416e6-fdf6-5de3-868f-a4f1d35f6648",
+      "mode": "complete",
+      "english": "6:30 a.m.",
+      "before": "Saa kumi na mbili na ",
+      "after": " asubuhi.",
+      "options": [
+        {
+          "text": "nusu",
+          "correct": true
+        },
+        {
+          "text": "robo",
+          "correct": false,
+          "feedback": "robo = quarter"
+        },
+        {
+          "text": "kamili",
+          "correct": false,
+          "feedback": "kamili = exactly / sharp"
+        }
+      ],
+      "explanation": "na nusu = and a half; na robo = and a quarter; kamili = exactly.",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "e4a094e0-88cc-5bf9-8429-985a4276afa8",
+      "mode": "complete",
+      "english": "8:15 a.m.",
+      "before": "Saa mbili na ",
+      "after": " asubuhi.",
+      "options": [
+        {
+          "text": "robo",
+          "correct": true
+        },
+        {
+          "text": "nusu",
+          "correct": false,
+          "feedback": "nusu = half"
+        },
+        {
+          "text": "kamili",
+          "correct": false,
+          "feedback": "kamili = exactly / sharp"
+        }
+      ],
+      "explanation": "robo: quarter — n/n noun (same word for one & many)",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "6bddee48-7781-5275-ab28-f34e1fa0a385",
+      "mode": "translate",
+      "english": "We have to leave early.",
+      "before": "Lazima ",
+      "after": " mapema.",
+      "options": [
+        {
+          "text": "tuondoke",
+          "correct": true
+        },
+        {
+          "text": "tunaondoka",
+          "correct": false,
+          "feedback": "tunaondoka = We are leaving"
+        },
+        {
+          "text": "tutaondoka",
+          "correct": false,
+          "feedback": "tutaondoka = We will leave"
+        }
+      ],
+      "explanation": "After lazima (must), use the subjunctive: tu- + -ondok- + -e.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "42e1e03c-3c06-52d0-b6c1-471868b5ee19",
+      "mode": "translate",
+      "english": "I'll be ready.",
+      "before": "",
+      "after": " tayari.",
+      "options": [
+        {
+          "text": "Nitakuwa",
+          "correct": true
+        },
+        {
+          "text": "Utakuwa",
+          "correct": false,
+          "feedback": "Utakuwa = You will be"
+        },
+        {
+          "text": "Tutakuwa",
+          "correct": false,
+          "feedback": "Tutakuwa = We will be"
+        }
+      ],
+      "explanation": "Future of kuwa (to be): nitakuwa.",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "379b7a8f-397c-5caa-aa20-55a594263654",
+      "mode": "translate",
+      "english": "Bring water.",
+      "before": "",
+      "after": " maji.",
+      "options": [
+        {
+          "text": "Lete",
+          "correct": true
+        },
+        {
+          "text": "Kunywa",
+          "correct": false,
+          "feedback": "Kunywa = Drink!"
+        },
+        {
+          "text": "Uza",
+          "correct": false,
+          "feedback": "Uza = Sell!"
+        }
+      ],
+      "explanation": "Lete = \"Bring!\" — imperative of kuleta (also heard: leta).",
+      "grammar": [
+        "imperatives"
+      ]
+    },
+    {
+      "id": "f0c3c61b-b0c2-587f-8062-2b1af7bae82a",
+      "mode": "translate",
+      "english": "The sun is very strong.",
+      "before": "Jua ni ",
+      "after": " sana.",
+      "options": [
+        {
+          "text": "kali",
+          "correct": true
+        },
+        {
+          "text": "baridi",
+          "correct": false,
+          "feedback": "baridi = cold"
+        },
+        {
+          "text": "ndogo",
+          "correct": false,
+          "feedback": "ndogo = small / young"
+        }
+      ],
+      "explanation": "kali = \"fierce / strong / sharp\" — jua ni kali = the sun is strong"
+    },
+    {
+      "id": "bf798a36-850b-5c54-9ce0-b92e4efbebb1",
+      "mode": "translate",
+      "english": "We'll pass by your place.",
+      "before": "Tutapita ",
+      "after": ".",
+      "options": [
+        {
+          "text": "kwako",
+          "correct": true
+        },
+        {
+          "text": "kwangu",
+          "correct": false,
+          "feedback": "kwangu = my place / to me"
+        },
+        {
+          "text": "kwake",
+          "correct": false,
+          "feedback": "kwake = his/her place"
+        }
+      ],
+      "explanation": "kwako = your place; kwangu = my place; kwake = his/her place.",
+      "grammar": [
+        "possessives"
+      ]
+    },
+    {
+      "id": "059a226c-a913-53b5-a288-12fa55a629d7",
+      "mode": "translate",
+      "english": "Come to my place.",
+      "before": "Njoo ",
+      "after": ".",
+      "options": [
+        {
+          "text": "kwangu",
+          "correct": true
+        },
+        {
+          "text": "kwako",
+          "correct": false,
+          "feedback": "kwako = your place / to you"
+        },
+        {
+          "text": "kwao",
+          "correct": false,
+          "feedback": "kwao = their place"
+        }
+      ],
+      "explanation": "Njoo = come! (irregular imperative of kuja).",
+      "grammar": [
+        "possessives"
+      ]
+    },
+    {
+      "id": "6a760813-fded-55ad-a58c-4cf4bb62c536",
+      "mode": "translate",
+      "english": "See you on Saturday.",
+      "before": "",
+      "after": " Jumamosi.",
+      "options": [
+        {
+          "text": "Tutaonana",
+          "correct": true
+        },
+        {
+          "text": "Tutakula",
+          "correct": false,
+          "feedback": "Tutakula = We will eat"
+        },
+        {
+          "text": "Tutaenda",
+          "correct": false,
+          "feedback": "Tutaenda = We will go"
+        }
+      ],
+      "explanation": "Tutaonana: we'll see each other / see you",
+      "grammar": [
+        "greetings"
+      ]
+    }
+  ]
+}

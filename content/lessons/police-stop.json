@@ -1,0 +1,1444 @@
+{
+  "id": "police-stop",
+  "uuid": "ee60d302-977b-5c88-ac30-fe2353a4b695",
+  "title": "Pulled Over: A Traffic Police Stop",
+  "category": "work-admin",
+  "difficulty": "medium",
+  "level": 7,
+  "order": 701,
+  "theme": "police",
+  "culturalNote": "Traffic police stops are routine on Kenyan roads: the officer (address them as \"afande\") checks your licence, insurance sticker and the car's lights and tyres. Stay calm, polite and patient. You may hear a hint about \"kitu kidogo\" (something small) — a bribe; the safe, legal answer is to politely accept the official process (a fine or court date) and never offer money. Verb extensions run through every line: simamisha (make stop), nimesimamishwa (I've been stopped), umefanyiwa ukaguzi (you've had an inspection done on you).",
+  "startingPoint": "A traffic officer waves you to the side of the road near Westlands. You're driving.",
+  "grammarFocus": [
+    "verb-extensions",
+    "discourse-particles",
+    "past-li"
+  ],
+  "grammar": [
+    "verb-extensions",
+    "discourse-particles",
+    "past-li",
+    "noun-classes-mwa-nn",
+    "possessives",
+    "sanifu-noun-classes",
+    "polite-requests",
+    "infinitive-ku",
+    "negative-present",
+    "continuous-tenses",
+    "demonstratives",
+    "perfect-me",
+    "ni-copula",
+    "helper-verbs",
+    "future-ta",
+    "present-na",
+    "object-infixes",
+    "imperatives",
+    "subjunctive"
+  ],
+  "turns": [
+    {
+      "id": "34c90e77-0460-53b7-b7ca-d4eef144ac55",
+      "speaker": "Polisi",
+      "role": "auto",
+      "swahili": "Habari za mchana. Simamisha gari pembeni, tafadhali.",
+      "english": "Good afternoon. Pull the car over to the side, please.",
+      "words": [
+        {
+          "text": "Habari",
+          "gloss": "news — the base of every formal greeting — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "za",
+          "gloss": "\"of\" — n/n plural agreement (nyumba za Kamau, habari za asubuhi)",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "mchana",
+          "gloss": "afternoon / daytime — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Simamisha",
+          "gloss": "\"Pull over / stop (the car)!\" — simama (stop) + -isha (make): causative.",
+          "grammar": [
+            "verb-extensions"
+          ]
+        },
+        {
+          "text": "gari",
+          "gloss": "car / vehicle (plural magari) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — gari langu, gari hili, magari mawili"
+        },
+        {
+          "text": "pembeni",
+          "gloss": "at the side"
+        },
+        {
+          "text": "tafadhali",
+          "gloss": "please"
+        }
+      ]
+    },
+    {
+      "id": "25ceef4a-d64f-5c5c-ba6d-7cbf7069bc35",
+      "speaker": "Dereva",
+      "role": "user",
+      "swahili": "Habari, afande. Nimesimamisha.",
+      "english": "Hello, officer. I've stopped.",
+      "words": [
+        {
+          "text": "Habari",
+          "gloss": "news — the base of every formal greeting — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "afande",
+          "gloss": "\"officer\" — respectful address for police"
+        },
+        {
+          "text": "Nimesimamisha",
+          "gloss": "\"I've stopped (the car)\" — causative of kusimama",
+          "grammar": [
+            "verb-extensions"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Habari, afande. Nimesimamisha.",
+          "correct": true
+        },
+        {
+          "swahili": "Habari, afande. Umesimamisha.",
+          "correct": false
+        },
+        {
+          "swahili": "Habari, afande. Nimesimama gari.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "4698cf2e-0d8c-55a7-b957-f5292e5a7c26",
+      "speaker": "Polisi",
+      "role": "auto",
+      "swahili": "Naomba leseni yako ya kuendesha na bima.",
+      "english": "May I have your driving licence and insurance.",
+      "words": [
+        {
+          "text": "Naomba",
+          "gloss": "\"May I see / I'd like\" — polite request",
+          "grammar": [
+            "polite-requests"
+          ]
+        },
+        {
+          "text": "leseni",
+          "gloss": "licence — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "yako",
+          "gloss": "\"your\" — n/n singular agreement (nyumba yako). In Kenyan speech also used for family words and most things (jina yako, gari yako).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (n/n singular)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "yangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "yako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "yake"
+              },
+              {
+                "pronoun": "our",
+                "form": "yetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "yenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "yao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "ya",
+          "gloss": "\"of\" — n/n singular agreement (nyumba ya Kamau); Kenyans use ya with most nouns",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "kuendesha",
+          "gloss": "\"To drive\" — ku- (infinitive \"to\") + -endesha (drive). From kuendesha. Extension: causative (-isha/-esha/-za: \"make / cause\").",
+          "grammar": [
+            "infinitive-ku",
+            "verb-extensions"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "bima",
+          "gloss": "insurance — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2dd61db-fc2e-50d6-beb2-83add13df672",
+      "speaker": "Dereva",
+      "role": "user",
+      "swahili": "Hizi hapa, afande.",
+      "english": "Here they are, officer.",
+      "words": [
+        {
+          "text": "Hizi hapa",
+          "gloss": "\"Here they are\""
+        },
+        {
+          "text": "afande",
+          "gloss": "\"officer\" — respectful address for police"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Hizi hapa, afande.",
+          "correct": true
+        },
+        {
+          "swahili": "Hii hapa, afande.",
+          "correct": false
+        },
+        {
+          "swahili": "Hawa hapa, afande.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "e4feb851-5865-5591-8388-d7a4d1d2da7a",
+      "speaker": "Polisi",
+      "role": "auto",
+      "swahili": "Asante. Unajua kwa nini nimekusimamisha?",
+      "english": "Thank you. Do you know why I've stopped you?",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Unajua",
+          "gloss": "\"do you know\""
+        },
+        {
+          "text": "kwa nini",
+          "gloss": "why"
+        },
+        {
+          "text": "nimekusimamisha",
+          "gloss": "\"I've stopped you\" — ni- + -me- + -ku- (you) + -simamisha",
+          "grammar": [
+            "verb-extensions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0c753af7-1b5c-5925-bbea-a85661c81d2a",
+      "speaker": "Dereva",
+      "role": "user",
+      "swahili": "Hapana, afande. Sijui.",
+      "english": "No, officer. I don't know.",
+      "words": [
+        {
+          "text": "Hapana",
+          "gloss": "no"
+        },
+        {
+          "text": "afande",
+          "gloss": "\"officer\" — respectful address for police"
+        },
+        {
+          "text": "Sijui",
+          "gloss": "\"I don't know\" — si- (negative subject: not I) + -jui (know, negative ends in -i). From kujua.",
+          "grammar": [
+            "negative-present"
+          ],
+          "conjugation": {
+            "verb": "kujua (to know)",
+            "tense": "Present, negative",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "sijui"
+              },
+              {
+                "pronoun": "you",
+                "form": "hujui"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "hajui"
+              },
+              {
+                "pronoun": "we",
+                "form": "hatujui"
+              },
+              {
+                "pronoun": "you all",
+                "form": "hamjui"
+              },
+              {
+                "pronoun": "they",
+                "form": "hawajui"
+              }
+            ]
+          }
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Hapana, afande. Sijui.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, afande. Sijui.",
+          "correct": false
+        },
+        {
+          "swahili": "Hapana, afande. Najua.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "8093653d-c7dd-5c42-b382-895dce148797",
+      "speaker": "Polisi",
+      "role": "auto",
+      "swahili": "Ulipita hapa kwa kasi sana.",
+      "english": "You went past here very fast.",
+      "words": [
+        {
+          "text": "Ulipita",
+          "gloss": "\"You passed\" — u- (subject: you) + li- (past) + -pita (pass). From kupita.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kupita (to pass)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilipita"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulipita"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alipita"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulipita"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlipita"
+              },
+              {
+                "pronoun": "they",
+                "form": "walipita"
+              }
+            ]
+          }
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "kwa kasi",
+          "gloss": "fast / at speed"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ]
+    },
+    {
+      "id": "144a3a11-61c6-5ae7-bd35-d4580cb4e976",
+      "speaker": "Dereva",
+      "role": "user",
+      "swahili": "Pole, afande. Sikujua nilikuwa naenda kwa kasi.",
+      "english": "Sorry, officer. I didn't know I was going fast.",
+      "words": [
+        {
+          "text": "Pole",
+          "gloss": "sorry (sympathy)"
+        },
+        {
+          "text": "afande",
+          "gloss": "\"officer\" — respectful address for police"
+        },
+        {
+          "text": "Sikujua",
+          "gloss": "\"I didn't know\""
+        },
+        {
+          "text": "nilikuwa naenda",
+          "gloss": "\"I was going\" — past continuous: nilikuwa + present.",
+          "grammar": [
+            "continuous-tenses"
+          ]
+        },
+        {
+          "text": "kwa kasi",
+          "gloss": "fast / at speed"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Pole, afande. Sikujua nilikuwa naenda kwa kasi.",
+          "correct": true
+        },
+        {
+          "swahili": "Pole, afande. Sijui nilikuwa naenda kwa kasi.",
+          "correct": false
+        },
+        {
+          "swahili": "Asante, afande. Sikujua nilikuwa naenda kwa kasi.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "748317b3-7459-5804-ba03-d19b6b2528aa",
+      "speaker": "Polisi",
+      "role": "auto",
+      "swahili": "Hmm. Na gari hii imefanyiwa ukaguzi?",
+      "english": "Hmm. And has this car been inspected?",
+      "words": [
+        {
+          "text": "Hmm",
+          "gloss": "hmm…"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "gari hii",
+          "gloss": "\"this car\" — Kenyan n/n demonstrative",
+          "grammar": [
+            "demonstratives",
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: gari hili"
+        },
+        {
+          "text": "imefanyiwa",
+          "gloss": "\"It has undergone\" — i- (subject: it (n/n)) + me- (perfect (done / now-state)) + -fanyiwa (undergo). From kufanyiwa. Extension: passive (-wa: \"be ...-ed\").",
+          "grammar": [
+            "perfect-me",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kufanyiwa (to undergo)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimefanyiwa"
+              },
+              {
+                "pronoun": "you",
+                "form": "umefanyiwa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amefanyiwa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumefanyiwa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmefanyiwa"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamefanyiwa"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "imefanyiwa"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zimefanyiwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "ukaguzi",
+          "gloss": "inspection"
+        }
+      ],
+      "sanifu": "Hmm. Na gari hili limefanyiwa ukaguzi?"
+    },
+    {
+      "id": "06b9ef41-0f6b-5450-9df7-fd04f26ea90b",
+      "speaker": "Dereva",
+      "role": "user",
+      "swahili": "Ndiyo, ilifanyiwa ukaguzi mwezi uliopita.",
+      "english": "Yes, it was inspected last month.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "ilifanyiwa",
+          "gloss": "\"It underwent\" — i- (subject: it (n/n)) + li- (past) + -fanyiwa (undergo). From kufanyiwa. Extension: passive (-wa: \"be ...-ed\").",
+          "grammar": [
+            "past-li",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kufanyiwa (to undergo)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilifanyiwa"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulifanyiwa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alifanyiwa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulifanyiwa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlifanyiwa"
+              },
+              {
+                "pronoun": "they",
+                "form": "walifanyiwa"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "ilifanyiwa"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zilifanyiwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "ukaguzi",
+          "gloss": "inspection"
+        },
+        {
+          "text": "mwezi uliopita",
+          "gloss": "last month"
+        }
+      ],
+      "sanifu": "Ndiyo, lilifanyiwa ukaguzi mwezi uliopita.",
+      "options": [
+        {
+          "swahili": "Ndiyo, ilifanyiwa ukaguzi mwezi uliopita.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, itafanyiwa ukaguzi mwezi uliopita.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, ilifanya ukaguzi mwezi uliopita.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "9f588b14-51a3-5654-be18-4e216d98e713",
+      "speaker": "Polisi",
+      "role": "auto",
+      "swahili": "Kwa hivyo… unaweza kujitetea?",
+      "english": "So… can you defend yourself?",
+      "words": [
+        {
+          "text": "Kwa hivyo",
+          "gloss": "\"So…\"",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "unaweza kujitetea",
+          "gloss": "\"Can you defend yourself?\" — a well-known hint at a bribe.",
+          "grammar": [
+            "helper-verbs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9b18dd2a-e611-5e1e-aaf9-96229dfd4a7d",
+      "speaker": "Dereva",
+      "role": "user",
+      "swahili": "Kama ni faini, nitalipa faini rasmi, na nitapewa risiti.",
+      "english": "If it's a fine, I'll pay the official fine, and I'll be given a receipt.",
+      "words": [
+        {
+          "text": "Kama",
+          "gloss": "like / as / if"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "faini",
+          "gloss": "fine (penalty)"
+        },
+        {
+          "text": "nitalipa",
+          "gloss": "\"I will pay\" — ni- (subject: I) + ta- (future) + -lipa (pay). From kulipa.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kulipa (to pay)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitalipa"
+              },
+              {
+                "pronoun": "you",
+                "form": "utalipa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atalipa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutalipa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtalipa"
+              },
+              {
+                "pronoun": "they",
+                "form": "watalipa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "faini",
+          "gloss": "fine (penalty)"
+        },
+        {
+          "text": "rasmi",
+          "gloss": "official"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "nitapewa",
+          "gloss": "\"I will be given\" — ni- (subject: I) + ta- (future) + -pewa (be given). From kupewa. Extension: passive (-wa: \"be ...-ed\").",
+          "grammar": [
+            "future-ta",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kupewa (to be given)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitapewa"
+              },
+              {
+                "pronoun": "you",
+                "form": "utapewa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atapewa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutapewa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtapewa"
+              },
+              {
+                "pronoun": "they",
+                "form": "watapewa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "risiti",
+          "gloss": "receipt"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Kama ni faini, nitalipa faini rasmi, na nitapewa risiti.",
+          "correct": true
+        },
+        {
+          "swahili": "Kama ni faini, nitalipa faini rasmi, na nitampa risiti.",
+          "correct": false
+        },
+        {
+          "swahili": "Kama ni faini, nilipa faini rasmi, na nitapewa risiti.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "6fb51111-03e1-5efb-88fa-64998f24349c",
+      "speaker": "Polisi",
+      "role": "auto",
+      "swahili": "Kumbe unajua sheria! Basi, leo nakuachilia.",
+      "english": "Oh, so you know the law! Well then, today I'll let you go.",
+      "words": [
+        {
+          "text": "Kumbe",
+          "gloss": "\"oh! so…\" — surprise",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "unajua",
+          "gloss": "\"do you know\""
+        },
+        {
+          "text": "sheria",
+          "gloss": "law / rule — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Basi",
+          "gloss": "\"Well then / okay\"",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "nakuachilia",
+          "gloss": "\"I am letting you go\" — na- (short for nina-: I + present) + ku- (object: you) + -achilia (let go). From kuachilia. Extension: prepositional (-ia/-ea: \"for / to / at\").",
+          "grammar": [
+            "present-na",
+            "object-infixes",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kuachilia (to let go)",
+            "tense": "Present (-na-) + object -ku-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nakuachilia"
+              },
+              {
+                "pronoun": "you",
+                "form": "unakuachilia"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anakuachilia"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunakuachilia"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnakuachilia"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanakuachilia"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "1f2423a2-e7cd-5ee4-86fe-59f56376520e",
+      "speaker": "Dereva",
+      "role": "user",
+      "swahili": "Asante sana, afande. Nitazingatia sheria za barabarani.",
+      "english": "Thank you very much, officer. I'll stick to the rules of the road.",
+      "words": [
+        {
+          "text": "Asante sana",
+          "gloss": "thank you very much"
+        },
+        {
+          "text": "afande",
+          "gloss": "\"officer\" — respectful address for police"
+        },
+        {
+          "text": "Nitazingatia",
+          "gloss": "\"I'll stick to / observe\""
+        },
+        {
+          "text": "sheria za barabarani",
+          "gloss": "the rules of the road"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante sana, afande. Nitazingatia sheria za barabarani.",
+          "correct": true
+        },
+        {
+          "swahili": "Asante sana, afande. Nilizingatia sheria za barabarani.",
+          "correct": false
+        },
+        {
+          "swahili": "Asante sana, afande. Utazingatia sheria za barabarani.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "6aacceab-a9c1-51f5-a248-6b340de8b3bb",
+      "speaker": "Polisi",
+      "role": "auto",
+      "swahili": "Endesha kwa uangalifu. Na ufunge mkanda!",
+      "english": "Drive carefully. And fasten your seatbelt!",
+      "words": [
+        {
+          "text": "Endesha",
+          "gloss": "\"Drive!\"",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "kwa uangalifu",
+          "gloss": "carefully"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "ufunge",
+          "gloss": "\"(please) close\" — u- (subject: you) + -funge (close, subjunctive -e). From kufunga.",
+          "grammar": [
+            "subjunctive"
+          ],
+          "conjugation": {
+            "verb": "kufunga (to close)",
+            "tense": "Subjunctive (-e)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nifunge"
+              },
+              {
+                "pronoun": "you",
+                "form": "ufunge"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "afunge"
+              },
+              {
+                "pronoun": "we",
+                "form": "tufunge"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mfunge"
+              },
+              {
+                "pronoun": "they",
+                "form": "wafunge"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mkanda",
+          "gloss": "seatbelt"
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "bb9f2155-b796-5a3d-9f81-d1d07b551986",
+      "swahili": "Simamisha gari!",
+      "english": "Pull over!",
+      "exampleContext": "simama + -isha (causative: make stop)",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "66e0e1d2-3559-54d8-aec5-0911f589e05e",
+      "swahili": "afande",
+      "english": "officer",
+      "exampleContext": "Respectful address for police"
+    },
+    {
+      "id": "f668a233-ae44-5e9b-b72a-1acaab681cf8",
+      "swahili": "leseni ya kuendesha",
+      "english": "driving licence",
+      "exampleContext": "kuendesha = to drive (causative of kuenda!)",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "92fd8f4d-3627-51cd-9908-26adefea2051",
+      "swahili": "bima",
+      "english": "insurance |",
+      "exampleContext": ""
+    },
+    {
+      "id": "e3e3dc79-f715-5b72-9eaa-71dfa61e35b7",
+      "swahili": "Nimekusimamisha",
+      "english": "I've stopped you |",
+      "exampleContext": ""
+    },
+    {
+      "id": "4a05026a-b079-517a-94c7-b029f9415ba9",
+      "swahili": "kwa kasi",
+      "english": "fast / at speed |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "16f61ef2-4ab3-59b7-97cf-2747ef14cf48",
+      "swahili": "Sikujua",
+      "english": "I didn't know |",
+      "exampleContext": ""
+    },
+    {
+      "id": "47a0e1a6-f744-59d1-acf1-b64d1d4061f3",
+      "swahili": "ukaguzi",
+      "english": "inspection",
+      "exampleContext": "kukagua = to inspect"
+    },
+    {
+      "id": "a2ff54bb-c690-5148-a9f5-58396180e0d9",
+      "swahili": "Imefanyiwa ukaguzi",
+      "english": "It's been inspected",
+      "exampleContext": "fanya + -i- (for) + -w- (passive)",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "51756a08-cc1a-5af3-bade-01e81a408c89",
+      "swahili": "Nitapewa risiti",
+      "english": "I'll be given a receipt",
+      "exampleContext": "kupewa = to be given",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "3f9f7af6-06ad-535c-9f57-bf135c5c42c5",
+      "swahili": "kitu kidogo",
+      "english": "\"something small\" — a bribe",
+      "exampleContext": "Unaweza kujitetea? is a common hint",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "38ea1b24-977e-5ec7-a62d-f1da0c26a66f",
+      "swahili": "Kumbe!",
+      "english": "Oh, so…!",
+      "exampleContext": "Surprise: what you assumed wasn't true",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "14f06e5c-9e2c-5185-b5c7-8a85a7977722",
+      "swahili": "Nitazingatia sheria",
+      "english": "I'll obey the law |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "5c97b7fe-1d12-5faf-bbf7-74053e7adc4e",
+      "swahili": "Ufunge mkanda",
+      "english": "Fasten your seatbelt |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a5aa7e10-154e-5711-ae29-6a37cf6b1e9e",
+      "mode": "translate",
+      "english": "Pull the car over.",
+      "before": "",
+      "after": " gari.",
+      "options": [
+        {
+          "text": "Simamisha",
+          "correct": true
+        },
+        {
+          "text": "Simama",
+          "correct": false,
+          "feedback": "Simama = Stop!"
+        },
+        {
+          "text": "Simamia",
+          "correct": false,
+          "feedback": "Simamia = Be in charge of!"
+        }
+      ],
+      "explanation": "simama = stop (yourself); simamisha = make (something) stop. -isha is the causative \"make / cause\".",
+      "grammar": [
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "eaf6630e-42ad-5441-a2d6-82f63c52a9a1",
+      "mode": "translate",
+      "english": "I've stopped (the car).",
+      "before": "",
+      "after": ".",
+      "options": [
+        {
+          "text": "Nimesimamisha",
+          "correct": true
+        },
+        {
+          "text": "Nimesimama",
+          "correct": false,
+          "feedback": "Nimesimama = I am standing"
+        },
+        {
+          "text": "Nimesimamishwa",
+          "correct": false,
+          "feedback": "Nimesimamishwa = I have been stopped"
+        }
+      ],
+      "explanation": "Nimesimamishwa = I've BEEN stopped (passive).",
+      "grammar": [
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "0a532472-eaa8-5c16-84af-c110ca792f89",
+      "mode": "translate",
+      "english": "I've been stopped by the police.",
+      "before": "",
+      "after": " na polisi.",
+      "options": [
+        {
+          "text": "Nimesimamishwa",
+          "correct": true
+        },
+        {
+          "text": "Nimesimamisha",
+          "correct": false,
+          "feedback": "Nimesimamisha = I've stopped (the car)"
+        },
+        {
+          "text": "Nimesimama",
+          "correct": false,
+          "feedback": "Nimesimama = I am standing"
+        }
+      ],
+      "explanation": "passive -w-: simamisha → simamishwa. \"na\" = by.",
+      "grammar": [
+        "perfect-me",
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "c750166e-dc1a-5fd2-af68-211299367b4f",
+      "mode": "translate",
+      "english": "Do you know why I've stopped you?",
+      "before": "Unajua kwa nini ",
+      "after": "?",
+      "options": [
+        {
+          "text": "nimekusimamisha",
+          "correct": true
+        },
+        {
+          "text": "nimesimamishwa",
+          "correct": false,
+          "feedback": "nimesimamishwa = I have been stopped"
+        },
+        {
+          "text": "umenisimamisha",
+          "correct": false,
+          "feedback": "umenisimamisha = You have stopped me"
+        }
+      ],
+      "explanation": "nimekusimamisha = \"I've stopped you\" — ni- + -me- + -ku- (you) + -simamisha",
+      "grammar": [
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "90b30c7e-435b-5e3e-981b-e27fccd5529d",
+      "mode": "translate",
+      "english": "The car was inspected last month.",
+      "before": "Gari ",
+      "after": " ukaguzi mwezi uliopita.",
+      "options": [
+        {
+          "text": "ilifanyiwa",
+          "correct": true
+        },
+        {
+          "text": "ilifanya",
+          "correct": false,
+          "feedback": "ilifanya = It did"
+        },
+        {
+          "text": "itafanyiwa",
+          "correct": false,
+          "feedback": "itafanyiwa = It will undergo"
+        }
+      ],
+      "explanation": "fanya → fanyia (do for) → fanyiwa (have done for you).",
+      "grammar": [
+        "past-li",
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "9a829c18-4c79-52a3-be86-6efaedd2e334",
+      "mode": "translate",
+      "english": "I'll be given a receipt.",
+      "before": "",
+      "after": " risiti.",
+      "options": [
+        {
+          "text": "Nitapewa",
+          "correct": true
+        },
+        {
+          "text": "Nitapa",
+          "correct": false
+        },
+        {
+          "text": "Nitampa",
+          "correct": false,
+          "feedback": "Nitampa = I will give him/her"
+        }
+      ],
+      "explanation": "kupa = to give; kupewa = to be given.",
+      "grammar": [
+        "future-ta",
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "c508d513-f6e4-5d77-811d-feb79d736841",
+      "mode": "translate",
+      "english": "I didn't know.",
+      "before": "",
+      "after": ".",
+      "options": [
+        {
+          "text": "Sikujua",
+          "correct": true
+        },
+        {
+          "text": "Sijui",
+          "correct": false,
+          "feedback": "Sijui = I don't know"
+        },
+        {
+          "text": "Sitajua",
+          "correct": false,
+          "feedback": "Sitajua = I won't know"
+        }
+      ],
+      "explanation": "Sikujua = \"I didn't know\""
+    },
+    {
+      "id": "747c45a2-b181-589b-b044-199f02141c0a",
+      "mode": "translate",
+      "english": "I was going fast.",
+      "before": "",
+      "after": " kwa kasi.",
+      "options": [
+        {
+          "text": "Nilikuwa naenda",
+          "correct": true
+        },
+        {
+          "text": "Ninaenda",
+          "correct": false,
+          "feedback": "Ninaenda = I am going"
+        },
+        {
+          "text": "Nitakuwa naenda",
+          "correct": false,
+          "feedback": "Nitakuwa naenda = I will be + I am going"
+        }
+      ],
+      "explanation": "nilikuwa (I was) + a present verb = was …-ing.",
+      "grammar": [
+        "continuous-tenses"
+      ]
+    },
+    {
+      "id": "6dd91b7d-5ab7-5f0a-bf07-cd2c119a6d4d",
+      "mode": "translate",
+      "english": "Drive carefully.",
+      "before": "Endesha kwa ",
+      "after": ".",
+      "options": [
+        {
+          "text": "uangalifu",
+          "correct": true
+        },
+        {
+          "text": "kasi",
+          "correct": false,
+          "feedback": "kasi = speed"
+        },
+        {
+          "text": "haraka",
+          "correct": false,
+          "feedback": "haraka = quickly / hurry"
+        }
+      ],
+      "explanation": "uangalifu: care / carefulness — Kenyans give it n/n agreement",
+      "grammar": [
+        "sanifu-noun-classes"
+      ]
+    },
+    {
+      "id": "439a026d-7292-5594-9aad-71bf1bee241d",
+      "mode": "translate",
+      "english": "Fasten your seatbelt.",
+      "before": "",
+      "after": " mkanda.",
+      "options": [
+        {
+          "text": "Ufunge",
+          "correct": true
+        },
+        {
+          "text": "Ufungue",
+          "correct": false,
+          "feedback": "Ufungue = (please) open"
+        },
+        {
+          "text": "Uvue",
+          "correct": false,
+          "feedback": "Uvue = (please) take off"
+        }
+      ],
+      "explanation": "funga = close / fasten; fungua = open (the -u- reverses it!).",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "abb4add4-f193-5290-8441-f839e00d4882",
+      "mode": "complete",
+      "english": "Oh, so you know the law!",
+      "before": "",
+      "after": " unajua sheria!",
+      "options": [
+        {
+          "text": "Kumbe",
+          "correct": true
+        },
+        {
+          "text": "Basi",
+          "correct": false,
+          "feedback": "Basi = Well then / okay"
+        },
+        {
+          "text": "Yaani",
+          "correct": false,
+          "feedback": "Yaani = I mean / that is to say"
+        }
+      ],
+      "explanation": "kumbe = surprise: \"oh, so it turns out…\".",
+      "grammar": [
+        "discourse-particles"
+      ]
+    },
+    {
+      "id": "c96d12f8-9ad6-5063-93c9-a2293bda3d70",
+      "mode": "complete",
+      "english": "Well then, today I'll let you go.",
+      "before": "",
+      "after": ", leo nakuachilia.",
+      "options": [
+        {
+          "text": "Basi",
+          "correct": true
+        },
+        {
+          "text": "Kumbe",
+          "correct": false,
+          "feedback": "Kumbe = oh! so…"
+        },
+        {
+          "text": "Sivyo",
+          "correct": false,
+          "feedback": "Sivyo = isn't it? / right? (question tag)"
+        }
+      ],
+      "explanation": "basi = \"well then / so / okay\".",
+      "grammar": [
+        "discourse-particles"
+      ]
+    },
+    {
+      "id": "54064a7a-fb0d-58dd-ad9f-32dea6b329d9",
+      "mode": "translate",
+      "english": "Here they are. (documents)",
+      "before": "",
+      "after": ".",
+      "options": [
+        {
+          "text": "Hizi hapa",
+          "correct": true
+        },
+        {
+          "text": "Hii hapa",
+          "correct": false,
+          "feedback": "Hii hapa = here it is"
+        },
+        {
+          "text": "Huyu hapa",
+          "correct": false,
+          "feedback": "Huyu hapa = this (person) + here"
+        }
+      ],
+      "explanation": "Leseni na bima = two things: hizi."
+    },
+    {
+      "id": "b20acf79-41e1-5390-bbd8-745b587ca02e",
+      "mode": "translate",
+      "english": "I'll stick to the rules of the road.",
+      "before": "",
+      "after": " sheria za barabarani.",
+      "options": [
+        {
+          "text": "Nitazingatia",
+          "correct": true
+        },
+        {
+          "text": "Nilizingatia",
+          "correct": false,
+          "feedback": "Nilizingatia = I sticked to"
+        },
+        {
+          "text": "Utazingatia",
+          "correct": false,
+          "feedback": "Utazingatia = You will stick to"
+        }
+      ],
+      "explanation": "Nitazingatia = \"I'll stick to / observe\""
+    },
+    {
+      "id": "0f9d4e22-cfdd-5697-bde4-eaf7a395527e",
+      "mode": "translate",
+      "english": "The police officer is checking the tyres.",
+      "before": "Polisi ",
+      "after": " matairi.",
+      "options": [
+        {
+          "text": "anakagua",
+          "correct": true
+        },
+        {
+          "text": "anakaguliwa",
+          "correct": false,
+          "feedback": "anakaguliwa = He/she is inspected"
+        },
+        {
+          "text": "wanakagua",
+          "correct": false,
+          "feedback": "wanakagua = They are inspecting"
+        }
+      ],
+      "explanation": "kukagua = to inspect; kukaguliwa = to be inspected.",
+      "grammar": [
+        "present-na"
+      ]
+    }
+  ]
+}

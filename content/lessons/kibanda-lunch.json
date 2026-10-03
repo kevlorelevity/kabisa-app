@@ -1,0 +1,1718 @@
+{
+  "id": "kibanda-lunch",
+  "uuid": "f69e4cbe-5a64-55a2-9599-39ac6f115d59",
+  "title": "Lunch at the Kibanda",
+  "category": "food-drink",
+  "difficulty": "beginner",
+  "level": 3,
+  "order": 302,
+  "theme": "food",
+  "culturalNote": "A kibanda (or \"kibanda cha chakula\") is a roadside food stall: plastic chairs, a hot plate, and the best-value lunch in Nairobi — chapati, beans (maharagwe), ugali with meat or sukuma. Tea comes already sweetened unless you say otherwise. To order, Kenyans usually say \"Niletee…\" (bring me…) or the softer \"Naweza kupata…?\" (can I get…?). \"Karibu chakula\" is the polite thing to say when food arrives — lit. \"welcome to the food\".",
+  "startingPoint": "Lunchtime. You sit down at a kibanda near the office.",
+  "grammarFocus": [
+    "future-ta",
+    "imperatives",
+    "helper-verbs"
+  ],
+  "grammar": [
+    "future-ta",
+    "imperatives",
+    "helper-verbs",
+    "question-words",
+    "present-na",
+    "noun-classes-mwa-nn",
+    "na-have",
+    "infinitive-ku",
+    "numbers-money",
+    "ni-copula",
+    "object-infixes",
+    "verb-extensions",
+    "negative-present",
+    "adjective-agreement",
+    "discourse-particles",
+    "demonstratives",
+    "locative-ni",
+    "ko-location",
+    "sanifu-noun-classes"
+  ],
+  "turns": [
+    {
+      "id": "4f3f87bb-28ed-5597-a9bf-7d489ac66e3f",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Karibu! Kaa hapa. Utakula nini?",
+      "english": "Welcome! Sit here. What will you eat?",
+      "words": [
+        {
+          "text": "Karibu",
+          "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "Kaa",
+          "gloss": "\"Stay!\" — -kaa (stay). From kukaa.",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "Utakula",
+          "gloss": "\"You will eat\" — u- (subject: you) + ta- (future) + -la (eat). From kula.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kula (to eat)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitakula"
+              },
+              {
+                "pronoun": "you",
+                "form": "utakula"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atakula"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutakula"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtakula"
+              },
+              {
+                "pronoun": "they",
+                "form": "watakula"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nini",
+          "gloss": "what?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "38b3ab9d-fc75-540b-9754-30f245129c14",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Asante. Mnapika nini leo?",
+      "english": "Thanks. What are you cooking today?",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Mnapika",
+          "gloss": "\"you (all) are cooking\" — m- (you all) + -na- + -pika. Asking the staff as a group.",
+          "grammar": [
+            "present-na"
+          ]
+        },
+        {
+          "text": "nini",
+          "gloss": "what?",
+          "grammar": [
+            "question-words"
+          ]
+        },
+        {
+          "text": "leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante. Mnapika nini leo?",
+          "correct": true
+        },
+        {
+          "swahili": "Asante. Ninapika nini leo?",
+          "correct": false
+        },
+        {
+          "swahili": "Asante. Mnapika wapi leo?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "49165993-5a4d-597f-9f8c-3a310a0982a7",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Tuna chapati, maharagwe, ugali na nyama, na sukuma.",
+      "english": "We have chapati, beans, ugali with meat, and sukuma.",
+      "words": [
+        {
+          "text": "Tuna",
+          "gloss": "\"We have\" — tu- + -na (with). Swahili \"have\" is literally \"be with\".",
+          "grammar": [
+            "na-have"
+          ],
+          "conjugation": {
+            "verb": "-na (have)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nina"
+              },
+              {
+                "pronoun": "you",
+                "form": "una"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ana"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuna"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mna"
+              },
+              {
+                "pronoun": "they",
+                "form": "wana"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "ina"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zina"
+              }
+            ]
+          }
+        },
+        {
+          "text": "chapati",
+          "gloss": "chapati — Kenyan flatbread — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "maharagwe",
+          "gloss": "beans — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ugali",
+          "gloss": "ugali — stiff maize-meal staple (u-class in Sanifu, used like n/n) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "nyama",
+          "gloss": "meat — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "sukuma",
+          "gloss": "short for sukuma wiki — collard greens / kale — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b119ce93-a724-5792-afe7-8531d3b55f93",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Naweza kupata chapati mbili na maharagwe?",
+      "english": "Can I get two chapatis and beans?",
+      "words": [
+        {
+          "text": "Naweza",
+          "gloss": "\"I can\" — na- (short for nina-: I + present) + -weza (can). From kuweza.",
+          "grammar": [
+            "present-na",
+            "helper-verbs"
+          ],
+          "conjugation": {
+            "verb": "kuweza (to can)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "naweza"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaweza"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaweza"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaweza"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaweza"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaweza"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kupata",
+          "gloss": "\"To get\" — ku- (infinitive \"to\") + -pata (get). From kupata.",
+          "grammar": [
+            "infinitive-ku"
+          ]
+        },
+        {
+          "text": "chapati",
+          "gloss": "chapati — Kenyan flatbread — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "mbili",
+          "gloss": "2 (n/n form — used for counting, money, things)",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "maharagwe",
+          "gloss": "beans — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Naweza kupata chapati mbili na maharagwe?",
+          "correct": true
+        },
+        {
+          "swahili": "Unaweza kupata chapati mbili na maharagwe?",
+          "correct": false
+        },
+        {
+          "swahili": "Naweza kupata chapati wawili na maharagwe?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "89c120bd-d37e-54d2-b3cf-c39ca82fbde5",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Ndiyo. Utakunywa chai au soda?",
+      "english": "Yes. Will you drink tea or soda?",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Utakunywa",
+          "gloss": "\"You will drink\" — u- (subject: you) + ta- (future) + -nywa (drink). From kunywa.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kunywa (to drink)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitakunywa"
+              },
+              {
+                "pronoun": "you",
+                "form": "utakunywa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atakunywa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutakunywa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtakunywa"
+              },
+              {
+                "pronoun": "they",
+                "form": "watakunywa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "chai",
+          "gloss": "tea (also slang for a small bribe) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "au",
+          "gloss": "or"
+        },
+        {
+          "text": "soda",
+          "gloss": "soda — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "944ff072-e764-5be7-8d26-e70ea87af2af",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Niletee chai, tafadhali. Lakini sitaki sukari nyingi.",
+      "english": "Bring me tea, please. But I don't want a lot of sugar.",
+      "words": [
+        {
+          "text": "Niletee",
+          "gloss": "\"Bring me (something)!\" — ni- (object: me) + -letee (bring (something), subjunctive -e: polite command). From kuletea. Extension: prepositional (-ia/-ea: \"for / to / at\").",
+          "grammar": [
+            "imperatives",
+            "object-infixes",
+            "verb-extensions"
+          ]
+        },
+        {
+          "text": "chai",
+          "gloss": "tea (also slang for a small bribe) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "tafadhali",
+          "gloss": "please"
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "sitaki",
+          "gloss": "\"I don't want\" — si- (negative subject: not I) + -taki (want, negative ends in -i). From kutaka.",
+          "grammar": [
+            "negative-present"
+          ],
+          "conjugation": {
+            "verb": "kutaka (to want)",
+            "tense": "Present, negative",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "sitaki"
+              },
+              {
+                "pronoun": "you",
+                "form": "hutaki"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "hataki"
+              },
+              {
+                "pronoun": "we",
+                "form": "hatutaki"
+              },
+              {
+                "pronoun": "you all",
+                "form": "hamtaki"
+              },
+              {
+                "pronoun": "they",
+                "form": "hawataki"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sukari",
+          "gloss": "sugar — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "nyingi",
+          "gloss": "\"many / a lot\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-ingi (many / a lot)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mwingi"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wengi"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "nyingi"
+              }
+            ]
+          }
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Niletee chai, tafadhali. Lakini sitaki sukari nyingi.",
+          "correct": true
+        },
+        {
+          "swahili": "Mletee chai, tafadhali. Lakini sitaki sukari nyingi.",
+          "correct": false
+        },
+        {
+          "swahili": "Niletee chai, tafadhali. Lakini nataka sukari nyingi.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "128c4720-0be5-50fc-b001-bc4cc1ae84d1",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Chai hapa inakuja na sukari tayari.",
+      "english": "Tea here comes with sugar already.",
+      "words": [
+        {
+          "text": "Chai",
+          "gloss": "tea (also slang for a small bribe) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "inakuja",
+          "gloss": "\"It is coming\" — i- (subject: it (n/n)) + na- (present) + -ja (come). From kuja.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuja (to come)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninakuja"
+              },
+              {
+                "pronoun": "you",
+                "form": "unakuja"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anakuja"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunakuja"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnakuja"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanakuja"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "inakuja"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zinakuja"
+              }
+            ]
+          }
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "sukari",
+          "gloss": "sugar — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "tayari",
+          "gloss": "ready / already"
+        }
+      ]
+    },
+    {
+      "id": "55b9073a-ce00-5a5d-bc44-da51e2a24668",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Aah, sawa. Lete tu.",
+      "english": "Ah, okay. Just bring it.",
+      "words": [
+        {
+          "text": "Aah",
+          "gloss": "ah!",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Lete",
+          "gloss": "\"Bring!\" — imperative of kuleta (also heard: leta).",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "tu",
+          "gloss": "just / only"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Aah, sawa. Lete tu.",
+          "correct": true
+        },
+        {
+          "swahili": "Aah, sawa. Kula tu.",
+          "correct": false
+        },
+        {
+          "swahili": "Aah, sawa. Lipa tu.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "dea7cff5-6032-57b0-8767-a6bf9face895",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Haya. Chakula itakuja baada ya dakika tano.",
+      "english": "Alright. The food will come in five minutes.",
+      "words": [
+        {
+          "text": "Haya",
+          "gloss": "okay then / alright",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Chakula itakuja",
+          "gloss": "\"The food will come\" — Kenyan n/n agreement on chakula.",
+          "sanifu": "Sanifu: Chakula kitakuja (ki/vi) #future-ta"
+        },
+        {
+          "text": "baada ya",
+          "gloss": "after"
+        },
+        {
+          "text": "dakika",
+          "gloss": "minute — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "tano",
+          "gloss": "5 (n/n form — used for counting, money, things)",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ],
+      "sanifu": "Haya. Chakula kitakuja baada ya dakika tano."
+    },
+    {
+      "id": "2bdb5fe8-8d9c-50a2-ba4b-61bcc663c4bc",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Hii hapa. Karibu chakula!",
+      "english": "Here it is. Enjoy your meal!",
+      "words": [
+        {
+          "text": "Hii hapa",
+          "gloss": "here it is",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "Karibu chakula",
+          "gloss": "\"Enjoy your meal\" — lit. \"welcome to the food\""
+        }
+      ]
+    },
+    {
+      "id": "5b13a24e-addb-5811-b808-b8ce792f1022",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Asante! Inanukia vizuri sana.",
+      "english": "Thanks! It smells really good.",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Inanukia",
+          "gloss": "\"It smells good\" — i- (subject: it (n/n)) + na- (present) + -nukia (smell good). From kunukia.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kunukia (to smell good)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninanukia"
+              },
+              {
+                "pronoun": "you",
+                "form": "unanukia"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ananukia"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunanukia"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnanukia"
+              },
+              {
+                "pronoun": "they",
+                "form": "wananukia"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "inanukia"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zinanukia"
+              }
+            ]
+          }
+        },
+        {
+          "text": "vizuri",
+          "gloss": "well / nicely"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante! Inanukia vizuri sana.",
+          "correct": true
+        },
+        {
+          "swahili": "Asante! Ninanukia vizuri sana.",
+          "correct": false
+        },
+        {
+          "swahili": "Asante! Inanukia vibaya sana.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "749973d0-c991-5aa6-b490-dd5b942f98a3",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Utahitaji kitu ingine?",
+      "english": "Will you need anything else?",
+      "words": [
+        {
+          "text": "Utahitaji",
+          "gloss": "\"You will need\" — u- (subject: you) + ta- (future) + -hitaji (need). From kuhitaji.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kuhitaji (to need)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitahitaji"
+              },
+              {
+                "pronoun": "you",
+                "form": "utahitaji"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atahitaji"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutahitaji"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtahitaji"
+              },
+              {
+                "pronoun": "they",
+                "form": "watahitaji"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kitu ingine",
+          "gloss": "\"anything else\" — Kenyan all-purpose ingine.",
+          "sanifu": "Sanifu: kitu kingine (ki/vi class) #sanifu-noun-classes"
+        }
+      ],
+      "sanifu": "Utahitaji kitu kingine?"
+    },
+    {
+      "id": "d50105e8-d1be-503c-8fd0-1f06f3955e31",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Hapana, asante. Nitalipa sasa. Ni pesa ngapi?",
+      "english": "No, thanks. I'll pay now. How much is it?",
+      "words": [
+        {
+          "text": "Hapana",
+          "gloss": "no"
+        },
+        {
+          "text": "asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Nitalipa",
+          "gloss": "\"I will pay\" — ni- (subject: I) + ta- (future) + -lipa (pay). From kulipa.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kulipa (to pay)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitalipa"
+              },
+              {
+                "pronoun": "you",
+                "form": "utalipa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atalipa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutalipa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtalipa"
+              },
+              {
+                "pronoun": "they",
+                "form": "watalipa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "pesa ngapi",
+          "gloss": "how much money?",
+          "grammar": [
+            "question-words",
+            "numbers-money"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Hapana, asante. Nitalipa sasa. Ni pesa ngapi?",
+          "correct": true
+        },
+        {
+          "swahili": "Hapana, asante. Utalipa sasa. Ni pesa ngapi?",
+          "correct": false
+        },
+        {
+          "swahili": "Hapana, asante. Nitalipa sasa. Ni pesa wapi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "5f5df787-5a89-5028-8780-cae4c309d805",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Ni mia mbili na hamsini. Lipa kwa M-Pesa, till iko kwa ukuta.",
+      "english": "It's 250. Pay with M-Pesa — the till number is on the wall.",
+      "words": [
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mia mbili",
+          "gloss": "200",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "hamsini",
+          "gloss": "50 (n/n form — used for counting, money, things)",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "Lipa",
+          "gloss": "\"Pay!\" — -lipa (pay). From kulipa.",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "M-Pesa",
+          "gloss": "M-Pesa — mobile money — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "till",
+          "gloss": "till number — the M-Pesa \"Buy Goods\" number — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kwa ukuta",
+          "gloss": "\"on the wall\" — Kenyan use of kwa.",
+          "sanifu": "Sanifu: ukutani #locative-ni"
+        }
+      ]
+    },
+    {
+      "id": "cb264c00-b78a-58d8-bc4e-fad7c563bcb5",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Sawa. Chakula ni tamu sana! Nitarudi kesho.",
+      "english": "Okay. The food is really tasty! I'll come back tomorrow.",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Chakula",
+          "gloss": "food (plural vyakula) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — chakula changu, chakula hiki"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "tamu",
+          "gloss": "\"sweet / delicious\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-tamu (sweet / delicious)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mtamu"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "watamu"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "tamu"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Nitarudi",
+          "gloss": "\"I will come back\" — ni- (subject: I) + ta- (future) + -rudi (come back). From kurudi.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kurudi (to come back)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitarudi"
+              },
+              {
+                "pronoun": "you",
+                "form": "utarudi"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atarudi"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutarudi"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtarudi"
+              },
+              {
+                "pronoun": "they",
+                "form": "watarudi"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kesho",
+          "gloss": "tomorrow — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Sawa. Chakula ni tamu sana! Nitarudi kesho.",
+          "correct": true
+        },
+        {
+          "swahili": "Sawa. Chakula ni tamu sana! Nilirudi kesho.",
+          "correct": false
+        },
+        {
+          "swahili": "Sawa. Chakula ni tamu sana! Utarudi kesho.",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "a63bb2ec-dbc4-50c8-b000-25be9aa7eedc",
+      "swahili": "Utakula nini?",
+      "english": "What will you eat?",
+      "exampleContext": "u- + -ta- + kula (kula keeps its ku-)",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "d64d22d0-b0b7-51bb-b820-ae654398608a",
+      "swahili": "Naweza kupata…?",
+      "english": "Can I get…?",
+      "exampleContext": "Polite ordering. naweza = I can",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "d61d2731-4d20-5b47-8dee-5d591f763398",
+      "swahili": "Niletee…",
+      "english": "Bring me…",
+      "exampleContext": "ni- (me) + -letee (bring for)",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "0e91afd0-733f-516f-b124-3335e83c0af1",
+      "swahili": "Lete tu",
+      "english": "Just bring it",
+      "exampleContext": "lete = bring!",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "a01ad64b-8fa5-5dd7-a4fc-87f9cd554ec5",
+      "swahili": "maharagwe",
+      "english": "beans",
+      "exampleContext": "Chapati na maharagwe = a classic kibanda lunch"
+    },
+    {
+      "id": "878fb618-d21c-5998-97fe-fad17ef85a5b",
+      "swahili": "chapati",
+      "english": "chapati",
+      "exampleContext": "Kenyan flatbread; n/n: chapati mbili"
+    },
+    {
+      "id": "51866799-0a06-5308-a15f-96e4c7465007",
+      "swahili": "Karibu chakula!",
+      "english": "Enjoy your meal!",
+      "exampleContext": "Lit. \"welcome to the food\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "5430ab26-e941-5f23-9f3f-6a35e867fe8d",
+      "swahili": "Inanukia vizuri",
+      "english": "It smells good |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "ff2d9b97-3c0d-5d45-9d2e-366ec77cf8fc",
+      "swahili": "kitu ingine",
+      "english": "anything else",
+      "exampleContext": "Kenyan.",
+      "partOfSpeech": "phrase",
+      "sanifu": "kitu kingine",
+      "sanifuNote": "Sanifu: kitu is ki/vi class"
+    },
+    {
+      "id": "59ac3c09-fd85-5654-ba9f-2fc3c21acc6e",
+      "swahili": "Ni pesa ngapi?",
+      "english": "How much is it? |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "37b4da29-4dd6-519b-ad62-ce31debc42d7",
+      "swahili": "baada ya dakika tano",
+      "english": "in five minutes",
+      "exampleContext": "Lit. \"after five minutes\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "a88964e3-2b69-59b8-9bb3-4c6cb38a4a72",
+      "swahili": "tamu",
+      "english": "tasty / sweet",
+      "exampleContext": "Chakula ni tamu = the food is tasty"
+    },
+    {
+      "id": "d008b2fa-48ae-500a-9f7b-6eb375429ba0",
+      "swahili": "Nitarudi kesho",
+      "english": "I'll come back tomorrow |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "02fb7130-0681-5175-bbbe-0a23f73c3bcb",
+      "mode": "translate",
+      "english": "What will you eat?",
+      "before": "",
+      "after": " nini?",
+      "options": [
+        {
+          "text": "Utakula",
+          "correct": true
+        },
+        {
+          "text": "Nitakula",
+          "correct": false,
+          "feedback": "Nitakula = I will eat"
+        },
+        {
+          "text": "Atakula",
+          "correct": false,
+          "feedback": "Atakula = He/she will eat"
+        }
+      ],
+      "explanation": "kula keeps its ku- in the future: u- + -ta- + -kula.",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "8f54f7c4-19c7-550d-a4dc-87eea498a80c",
+      "mode": "translate",
+      "english": "I will drink tea.",
+      "before": "",
+      "after": " chai.",
+      "options": [
+        {
+          "text": "Nitakunywa",
+          "correct": true
+        },
+        {
+          "text": "Utakunywa",
+          "correct": false,
+          "feedback": "Utakunywa = You will drink"
+        },
+        {
+          "text": "Tutakunywa",
+          "correct": false,
+          "feedback": "Tutakunywa = We will drink"
+        }
+      ],
+      "explanation": "kunywa also keeps ku-: nitakunywa.",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "a3e3b7f0-5c22-5645-b66d-17b4edd1db0f",
+      "mode": "translate",
+      "english": "Can I get beans?",
+      "before": "",
+      "after": " kupata maharagwe?",
+      "options": [
+        {
+          "text": "Naweza",
+          "correct": true
+        },
+        {
+          "text": "Unaweza",
+          "correct": false,
+          "feedback": "Unaweza = You can"
+        },
+        {
+          "text": "Anaweza",
+          "correct": false,
+          "feedback": "Anaweza = He/she can"
+        }
+      ],
+      "explanation": "naweza = I can (short for ninaweza) + an infinitive: kupata (to get).",
+      "grammar": [
+        "present-na",
+        "helper-verbs"
+      ]
+    },
+    {
+      "id": "1585e050-7d60-53e6-8521-10d45369583c",
+      "mode": "translate",
+      "english": "Can you help me?",
+      "before": "",
+      "after": " kunisaidia?",
+      "options": [
+        {
+          "text": "Unaweza",
+          "correct": true
+        },
+        {
+          "text": "Naweza",
+          "correct": false,
+          "feedback": "Naweza = I can"
+        },
+        {
+          "text": "Wanaweza",
+          "correct": false,
+          "feedback": "Wanaweza = They can"
+        }
+      ],
+      "explanation": "-weza (can) is followed by a ku- verb.",
+      "grammar": [
+        "present-na",
+        "helper-verbs"
+      ]
+    },
+    {
+      "id": "e8a098ce-92bc-5ed9-9f25-f221acbbd55d",
+      "mode": "translate",
+      "english": "Bring me tea, please.",
+      "before": "",
+      "after": " chai, tafadhali.",
+      "options": [
+        {
+          "text": "Niletee",
+          "correct": true
+        },
+        {
+          "text": "Mletee",
+          "correct": false,
+          "feedback": "Mletee = Bring him/her (something)!"
+        },
+        {
+          "text": "Waletee",
+          "correct": false,
+          "feedback": "Waletee = Bring them / you all (something)!"
+        }
+      ],
+      "explanation": "Niletee = bring ME: ni- (me) + -letee (bring for). Mletee = bring him/her; waletee = bring them.",
+      "grammar": [
+        "imperatives",
+        "object-infixes",
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "9a2bb285-6581-585c-b2f6-7625b12cf10e",
+      "mode": "translate",
+      "english": "Just bring it.",
+      "before": "",
+      "after": " tu.",
+      "options": [
+        {
+          "text": "Lete",
+          "correct": true
+        },
+        {
+          "text": "Kula",
+          "correct": false,
+          "feedback": "Kula = Eat!"
+        },
+        {
+          "text": "Lipa",
+          "correct": false,
+          "feedback": "Lipa = Pay!"
+        }
+      ],
+      "explanation": "Lete = \"Bring!\" — imperative of kuleta (also heard: leta).",
+      "grammar": [
+        "imperatives"
+      ]
+    },
+    {
+      "id": "7610b8b7-a60e-506d-ba1d-96b4ab639b89",
+      "mode": "translate",
+      "english": "Pay with M-Pesa.",
+      "before": "",
+      "after": " kwa M-Pesa.",
+      "options": [
+        {
+          "text": "Lipa",
+          "correct": true
+        },
+        {
+          "text": "Lete",
+          "correct": false,
+          "feedback": "Lete = Bring!"
+        },
+        {
+          "text": "Pika",
+          "correct": false,
+          "feedback": "Pika = Cook!"
+        }
+      ],
+      "explanation": "Lipa = \"Pay!\" — -lipa (pay). From kulipa.",
+      "grammar": [
+        "imperatives"
+      ]
+    },
+    {
+      "id": "60e0979f-c514-5995-a9c5-6d6af557a946",
+      "mode": "translate",
+      "english": "Sit here.",
+      "before": "",
+      "after": " hapa.",
+      "options": [
+        {
+          "text": "Kaa",
+          "correct": true
+        },
+        {
+          "text": "Kula",
+          "correct": false,
+          "feedback": "Kula = Eat!"
+        },
+        {
+          "text": "Kunywa",
+          "correct": false,
+          "feedback": "Kunywa = Drink!"
+        }
+      ],
+      "explanation": "Kaa = \"Stay!\" — -kaa (stay). From kukaa.",
+      "grammar": [
+        "imperatives"
+      ]
+    },
+    {
+      "id": "612b266c-a8b7-50f2-b1c6-6b6c3c98ab8b",
+      "mode": "translate",
+      "english": "I don't want a lot of sugar.",
+      "before": "Sitaki sukari ",
+      "after": ".",
+      "options": [
+        {
+          "text": "nyingi",
+          "correct": true
+        },
+        {
+          "text": "wengi",
+          "correct": false,
+          "feedback": "wengi = many / a lot"
+        },
+        {
+          "text": "mengi",
+          "correct": false,
+          "feedback": "mengi = many / a lot"
+        }
+      ],
+      "explanation": "nyingi = a lot (n/n). Wengi is for people.",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "fc484518-5c44-59e8-a42e-20625381f5b4",
+      "mode": "translate",
+      "english": "The food will come in five minutes.",
+      "before": "Chakula ",
+      "after": " baada ya dakika tano.",
+      "options": [
+        {
+          "text": "itakuja",
+          "correct": true
+        },
+        {
+          "text": "inakuja",
+          "correct": false,
+          "feedback": "inakuja = It is coming"
+        },
+        {
+          "text": "itarudi",
+          "correct": false,
+          "feedback": "itarudi = It will come back"
+        }
+      ],
+      "explanation": "Kenyans say chakula itakuja; Sanifu: chakula kitakuja.",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "87230284-7195-5f93-967c-b0a8ea5e08a5",
+      "mode": "translate",
+      "english": "It smells really good.",
+      "before": "",
+      "after": " vizuri sana.",
+      "options": [
+        {
+          "text": "Inanukia",
+          "correct": true
+        },
+        {
+          "text": "Ninanukia",
+          "correct": false,
+          "feedback": "Ninanukia = I smell good"
+        },
+        {
+          "text": "Unanukia",
+          "correct": false,
+          "feedback": "Unanukia = You smell good"
+        }
+      ],
+      "explanation": "Inanukia = \"It smells good\" — i- (subject: it (n/n)) + na- (present) + -nukia (smell good). From kunukia.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "4281a93d-164d-5865-bbac-5e30bfe64af9",
+      "mode": "translate",
+      "english": "Will you need anything else?",
+      "before": "",
+      "after": " kitu ingine?",
+      "options": [
+        {
+          "text": "Utahitaji",
+          "correct": true
+        },
+        {
+          "text": "Nitahitaji",
+          "correct": false,
+          "feedback": "Nitahitaji = I will need"
+        },
+        {
+          "text": "Watahitaji",
+          "correct": false,
+          "feedback": "Watahitaji = They will need"
+        }
+      ],
+      "explanation": "Utahitaji = \"You will need\" — u- (subject: you) + ta- (future) + -hitaji (need). From kuhitaji.",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "a5559058-69a1-5a78-a2d8-29b8477d73bb",
+      "mode": "translate",
+      "english": "I'll pay now.",
+      "before": "",
+      "after": " sasa.",
+      "options": [
+        {
+          "text": "Nitalipa",
+          "correct": true
+        },
+        {
+          "text": "Utalipa",
+          "correct": false,
+          "feedback": "Utalipa = You will pay"
+        },
+        {
+          "text": "Tutalipa",
+          "correct": false,
+          "feedback": "Tutalipa = We will pay"
+        }
+      ],
+      "explanation": "Nitalipa = \"I will pay\" — ni- (subject: I) + ta- (future) + -lipa (pay). From kulipa.",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "170bf37d-dbd9-55f5-b571-24ecdd6ed594",
+      "mode": "translate",
+      "english": "We have chapati.",
+      "before": "",
+      "after": " chapati.",
+      "options": [
+        {
+          "text": "Tuna",
+          "correct": true
+        },
+        {
+          "text": "Mna",
+          "correct": false,
+          "feedback": "Mna = You all have"
+        },
+        {
+          "text": "Wana",
+          "correct": false,
+          "feedback": "Wana = They have"
+        }
+      ],
+      "explanation": "Tuna = \"We have\" — tu- + -na (with). Swahili \"have\" is literally \"be with\".",
+      "grammar": [
+        "na-have"
+      ]
+    },
+    {
+      "id": "bb2249ce-9f91-5e0f-91b0-a3c73e194055",
+      "mode": "translate",
+      "english": "I'll come back tomorrow.",
+      "before": "",
+      "after": " kesho.",
+      "options": [
+        {
+          "text": "Nitarudi",
+          "correct": true
+        },
+        {
+          "text": "Nitaondoka",
+          "correct": false,
+          "feedback": "Nitaondoka = I will leave"
+        },
+        {
+          "text": "Nitashuka",
+          "correct": false,
+          "feedback": "Nitashuka = I will get off"
+        }
+      ],
+      "explanation": "Nitarudi = \"I will come back\" — ni- (subject: I) + ta- (future) + -rudi (come back). From kurudi.",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "ae5082e5-8a7d-56a2-99fd-b4889f5596e4",
+      "mode": "translate",
+      "english": "tea or soda?",
+      "before": "chai ",
+      "after": " soda?",
+      "options": [
+        {
+          "text": "au",
+          "correct": true
+        },
+        {
+          "text": "na",
+          "correct": false,
+          "feedback": "na = and / with"
+        },
+        {
+          "text": "lakini",
+          "correct": false,
+          "feedback": "lakini = but"
+        }
+      ],
+      "explanation": "au = or, na = and, lakini = but."
+    },
+    {
+      "id": "3e2b521d-91ce-5573-b3eb-6f6c82a52d0d",
+      "mode": "translate",
+      "english": "two chapatis",
+      "before": "chapati ",
+      "after": "",
+      "options": [
+        {
+          "text": "mbili",
+          "correct": true
+        },
+        {
+          "text": "wawili",
+          "correct": false,
+          "feedback": "wawili = two (m/wa: watu wawili)"
+        },
+        {
+          "text": "pili",
+          "correct": false,
+          "feedback": "pili = second"
+        }
+      ],
+      "explanation": "chapati is n/n: mbili. (Wawili is for people; pili means \"second\".)",
+      "grammar": [
+        "numbers-money"
+      ]
+    }
+  ]
+}

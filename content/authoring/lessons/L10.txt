@@ -1,0 +1,307 @@
+# Level 10 — idioms & proverbs (methali), Kenyan expressions, everything combined
+
+@lesson uber-nairobi-5
+title: Taking an Uber, Part 5: The Long Ride Home
+level: 10
+theme: uber
+category: transport
+culture: The last ride with Kamau — and by now you can banter like a local. Kenyan conversation is seasoned with methali (proverbs) and idioms. "Haraka haraka haina baraka" (hurry hurry has no blessing) when someone's rushing; "Kawia ufike" (delay, but arrive) when you're late; "Umeniwacha kwa mataa" (you left me at the traffic lights) when someone stood you up. Using one at the right moment earns instant respect — and a laugh.
+start: Friday night, 10 p.m. You're heading home from a party in Westlands. Kamau picks you up — late, again.
+grammar: idioms-proverbs, conditional-nge, continuous-tenses, discourse-particles
+gl: Umeniwacha kwa mataa = "You left me hanging!" — lit. "you left me at the traffic lights": when someone doesn't show up or leaves you stranded. #idioms-proverbs
+gl: mataa = traffic lights (Kenyan) — lit. "the lights"
+gl: Kawia ufike = "Better late than never" — lit. "delay, but arrive". A proverb. #idioms-proverbs
+gl: kawia = "delay!" — imperative of kukawia
+gl: ufike = "(so that) you arrive" #subjunctive
+gl: foleni ya Westlands = the Westlands jam
+gl: Haraka haraka haina baraka = "Hurry hurry has no blessing" — rushing brings mistakes. #idioms-proverbs
+gl: baraka = blessing
+gl: umenivunja mbavu = "you've cracked me up" — lit. "you've broken my ribs" #idioms-proverbs
+gl: mbavu = ribs
+gl: kutia chumvi = "to exaggerate" — lit. "to add salt" #idioms-proverbs
+gl: unatia chumvi = "you're exaggerating" — lit. "you're adding salt" #idioms-proverbs
+gl: Mambo ni mengi, muda ni mchache = "So much to do, so little time" — a famous Kenyan saying. #idioms-proverbs
+gl: mchache = little / few (m/mi agreement with muda)
+gl: wakati umetupa kisogo = "time's up" — lit. "time has turned the back of its head (on us)" #idioms-proverbs
+gl: kisogo = the back of the head
+gl: Polepole ndio mwendo = "Slow and steady is the way" — lit. "slowly is the (right) pace" #idioms-proverbs
+gl: mwendo = pace / speed
+gl: Nipe nikupe = "You scratch my back, I'll scratch yours" — lit. "give me, I'll give you" #idioms-proverbs
+gl: nikupe = "(so that) I give you" #subjunctive
+gl: Mvumilivu hula mbivu = "The patient one eats ripe fruit" — good things come to those who wait. #idioms-proverbs
+gl: mvumilivu = a patient person
+gl: hula = "(always) eats" — hu- habitual of kula #habitual-hu-nga
+gl: kumbe = "oh, so…!" #discourse-particles
+gl: rafiki wa kweli = a true friend
+gl: Ningekuwa najua = "If I had known" — Kenyan colloquial conditional #conditional-nge
+gl: ningekuambia = I would have told you #conditional-nge
+gl: tumefika = "we've arrived"
+gl: Lala salama = "Sleep well"
+gl: Usiku mwema = "Good night"
+gl: sherehe = party
+gl: mwenye = "who" — Kenyan relative (mtu mwenye…) #relatives
+gl: nimekuwa nikikungoja = "I've been waiting for you" #continuous-tenses
+
+< Mteja: Kamau! Umeniwacha kwa mataa! Nimekuwa nikikungoja kwa dakika arobaini! | Kamau! You left me hanging! I've been waiting for you for forty minutes!
+  x: Kamau! Umeniwacha kwa mataa! Nitakuwa nikikungoja kwa dakika arobaini! ; Kamau! Nimekuwacha kwa mataa! Nimekuwa nikikungoja kwa dakika arobaini!
+> Dereva: Pole sana, boss! Foleni ya Westlands ni mbaya. Lakini, kawia ufike, sivyo? | So sorry, boss! The Westlands jam is terrible. But better late than never, right?
+< Mteja: Haha! Sawa, kawia ufike. Lakini sasa usiendeshe kwa kasi — haraka haraka haina baraka. | Haha! Fine, better late than never. But now don't drive fast — hurry hurry has no blessing.
+  x: Haha! Sawa, kawia ufike. Lakini sasa endesha kwa kasi — haraka haraka haina baraka. ; Haha! Sawa, kawia ufike. Lakini sasa usiendeshe kwa kasi — polepole haina baraka.
+> Dereva: Wee! Kumbe sasa unaongea kama Mkenya halisi! Umenivunja mbavu! | Whoa! Oh, so now you talk like a real Kenyan! You've cracked me up!
+< Mteja: Unatia chumvi! Bado ninajifunza. Lakini mambo ni mengi, muda ni mchache. | You're exaggerating! I'm still learning. But so much to do, so little time.
+  x: Unatia sukari! Bado ninajifunza. Lakini mambo ni mengi, muda ni mchache. ; Unatia chumvi! Bado ninajifunza. Lakini mambo ni machache, muda ni mwingi.
+> Dereva: Ukweli! Sherehe ilikuwaje? | True! How was the party?
+< Mteja: Ilikuwa poa, lakini saa nne wakati ulitupa kisogo — kila mtu alikuwa amechoka. | It was cool, but at ten time was up — everyone was tired.
+  x: Ilikuwa poa, lakini saa nne wakati ulitupa mkono — kila mtu alikuwa amechoka. ; Itakuwa poa, lakini saa nne wakati ulitupa kisogo — kila mtu alikuwa amechoka.
+> Dereva: Haha! Na wiki ijayo, unaenda Mombasa? Ningekuwa najua mapema, ningekupeleka mimi! | Haha! And next week, are you going to Mombasa? If I'd known earlier, I would have driven you myself!
+< Mteja: Ni safari ndefu! Lakini polepole ndio mwendo. Nikikuhitaji, nitakupigia. | It's a long trip! But slow and steady is the way. If I need you, I'll call you.
+  x: Ni safari fupi! Lakini polepole ndio mwendo. Nikikuhitaji, nitakupigia. ; Ni safari ndefu! Lakini polepole ndio mwendo. Ningekuhitaji, nilikupigia.
+> Dereva: Poa. Wewe ni mteja wangu wa kwanza kila wakati. Nipe nikupe! | Cool. You're always my number-one customer. You scratch my back, I'll scratch yours!
+< Mteja: Kabisa! Tangu siku ya kwanza ulipokuwa ukiniuliza "unaenda wapi?", umekuwa rafiki wa kweli. | Absolutely! Since the first day, when you were asking me "where are you going?", you've been a true friend.
+  x: Kabisa! Tangu siku ya kwanza utakapokuwa ukiniuliza "unaenda wapi?", umekuwa rafiki wa kweli. ; Kabisa! Tangu siku ya kwanza ulipokuwa ukiniuliza "unaenda wapi?", umekuwa adui wa kweli.
+> Dereva: Asante, boss. Mvumilivu hula mbivu — ulinivumilia kila nilipochelewa! Tumefika. | Thanks, boss. Good things come to the patient — you put up with me every time I was late! We've arrived.
+< Mteja: Haha! Asante, Kamau. Usiku mwema, na lala salama! | Haha! Thanks, Kamau. Good night, and sleep well!
+  x: Haha! Asante, Kamau. Habari ya asubuhi, na lala salama! ; Haha! Pole, Kamau. Usiku mwema, na lala salama!
+> Dereva: Na wewe pia. Tutaonana! | You too. See you!
+
+@practice
+c: You left me hanging! (lit. "at the traffic lights") | Umeniwacha kwa [mataa|maji|mwendo]! || Kenyan idiom for being stood up or left stranded.
+c: Better late than never. | Kawia [ufike|ufika|umefika]. || A methali (proverb): "delay, but arrive". ufike = subjunctive.
+c: Hurry hurry has no blessing. | Haraka haraka haina [baraka|haraka|shida]. || Said to anyone rushing (or driving too fast).
+c: Slow and steady is the way. | Polepole ndio [mwendo|baraka|mbavu].
+c: You're exaggerating! (lit. "adding salt") | Unatia [chumvi|sukari|pilipili]! || kutia chumvi = to exaggerate.
+c: You've cracked me up! (lit. "broken my ribs") | Umenivunja [mbavu|mguu|moyo]!
+c: So much to do, so little time. | Mambo ni mengi, muda ni [mchache|mwingi|mrefu]. || A favourite Kenyan saying.
+c: Time's up. (lit. "time has shown us the back of its head") | Wakati umetupa [kisogo|mkono|mgongo].
+c: You scratch my back, I'll scratch yours. | Nipe [nikupe|unipe|nimpe]! || Lit. "give me, (so that) I give you".
+c: Good things come to those who wait. | Mvumilivu hula [mbivu|mbichi|mbovu]. || Lit. "the patient one eats ripe (fruit)".
+t: I've been waiting for you for forty minutes! | [Nimekuwa|Nilikuwa|Nitakuwa] nikikungoja kwa dakika arobaini!
+t: If I'd known earlier, I would have taken you myself! | Ningekuwa najua mapema, [ningekupeleka|nitakupeleka|nilikupeleka] mimi!
+t: If I need you, I'll call you. | [Nikikuhitaji|Nilikuhitaji|Ningekuhitaji], nitakupigia.
+t: Don't drive fast. | [Usiendeshe|Endesha|Hauendeshi] kwa kasi.
+t: Oh, so now you talk like a real Kenyan! | [Kumbe|Basi|Yaani] sasa unaongea kama Mkenya halisi!
+t: when you were asking me… | [ulipokuwa|ukiwa|utakapokuwa] ukiniuliza… || -po- (when) + kuwa + -ki- verb.
+c: Good night, and sleep well! | Usiku mwema, na lala [salama|sana|haraka]!
+
+@vocab
+Umeniwacha kwa mataa | You left me hanging | Kenyan idiom: lit. "you left me at the lights"
+Kawia ufike | Better late than never | Methali: "delay, but arrive"
+Haraka haraka haina baraka | Hurry hurry has no blessing | Said to anyone rushing
+Polepole ndio mwendo | Slow and steady is the way |
+kutia chumvi | to exaggerate | Lit. "to add salt"
+kuvunja mbavu | to crack someone up | Lit. "to break ribs"
+Mambo ni mengi, muda ni mchache | So much to do, so little time |
+Wakati umetupa kisogo | Time's up | Lit. "time has turned the back of its head on us"
+Nipe nikupe | You scratch my back… | Lit. "give me, I'll give you"
+Mvumilivu hula mbivu | Good things come to the patient | Lit. "the patient one eats ripe fruit"
+Mkenya halisi | a real Kenyan | halisi = genuine
+rafiki wa kweli | a true friend |
+Usiku mwema | Good night | Lala salama = sleep well
+
+@lesson harambee-speech
+title: Mgeni Rasmi: Your Harambee Speech
+level: 10
+theme: community
+category: social
+culture: "Harambee!" (let's all pull together) is Kenya's national motto and a living tradition: communities raise money together for school fees, medical bills, weddings and funerals. A respected guest — the mgeni rasmi (guest of honour) — gives a short speech, and good speeches are stitched together with methali: "Kidole kimoja hakivunji chawa" (one finger can't crush a louse), "Haba na haba hujaza kibaba" (little by little fills the measure). Today, that guest is you.
+start: Your neighbour Mama Njeri is raising school fees for her daughter. The MC invites you, the mgeni rasmi, to speak.
+grammar: idioms-proverbs, relatives, subjunctive, conjunctions-kwamba
+gl: Mgeni rasmi = guest of honour — lit. "official guest"
+gl: rasmi = official
+gl: Harambee = "Let's all pull together!" — Kenya's motto and fundraising tradition
+gl: mabibi na mabwana = ladies and gentlemen
+gl: mabibi = ladies
+gl: mabwana = gentlemen
+gl: Ninashukuru = "I'm grateful" #present-na
+gl: kunialika = "for inviting me" #infinitive-ku
+gl: siku ya leo = today / this day
+gl: karo = school fees
+gl: amepita = "has passed"
+gl: mtihani = exam
+gl: shule ya upili = secondary school
+gl: Kidole kimoja hakivunji chawa = "One finger can't crush a louse" — we need each other. #idioms-proverbs
+gl: kidole kimoja = one finger
+gl: hakivunji = "doesn't crush" — ki/vi agreement
+gl: chawa = louse
+gl: Umoja ni nguvu = "Unity is strength" #idioms-proverbs
+gl: utengano ni udhaifu = "division is weakness" #idioms-proverbs
+gl: Haba na haba hujaza kibaba = "Little by little fills the measure" — every small gift counts. #idioms-proverbs
+gl: haba = a little
+gl: hujaza = "(always) fills" #habitual-hu-nga
+gl: kibaba = a small measuring tin
+gl: Mtaka cha mvunguni sharti ainame = "Whoever wants what's under the bed must bend down" — success takes effort. #idioms-proverbs
+gl: mtaka = one who wants
+gl: cha mvunguni = what's under the bed
+gl: sharti = must
+gl: ainame = "(that) he bends down" #subjunctive
+gl: Mgeni njoo, mwenyeji apone = "Guest, come — so the host may prosper" — guests bring blessings. #idioms-proverbs
+gl: apone = "(so that) he heals / prospers" #subjunctive
+gl: Usipoziba ufa utajenga ukuta = "If you don't fill the crack, you'll build a wall" — a stitch in time saves nine. #idioms-proverbs
+gl: ufa = crack
+gl: Ninachangia = "I'm contributing" #verb-extensions
+gl: shilingi elfu kumi = ten thousand shillings
+gl: Mungu awabariki = "May God bless you all" #subjunctive
+gl: awabariki = "(may) he bless you all" #subjunctive
+gl: Njeri = Njeri (name)
+gl: yeyote = anyone / any
+gl: tumchangie = "let's contribute for her" #subjunctive
+gl: aweze = "(so that) she can" #subjunctive
+gl: kusoma = to study
+gl: asante sana kwa wote = thank you all very much
+
+> MC: Sasa, mabibi na mabwana, tumkaribishe mgeni rasmi wetu! | Now, ladies and gentlemen, let's welcome our guest of honour!
+< Mgeni Rasmi: Harambee! Asanteni sana. Ninashukuru kwa kunialika siku ya leo. | Harambee! Thank you all very much. I'm grateful for being invited today.
+  x: Harambee! Asanteni sana. Unashukuru kwa kunialika siku ya leo. ; Harambee! Asanteni sana. Ninashukuru kwa kukualika siku ya leo.
+> MC: Karibu! Tunakusikiliza. | Welcome! We're listening.
+< Mgeni Rasmi: Njeri ni msichana ambaye amepita mtihani vizuri sana, na sasa anaenda shule ya upili. | Njeri is a girl who has passed her exam very well, and now she's going to secondary school.
+  x: Njeri ni msichana ambayo amepita mtihani vizuri sana, na sasa anaenda shule ya upili. ; Njeri ni msichana ambaye amefeli mtihani vizuri sana, na sasa anaenda shule ya upili.
+> Mama Njeri: Asante! Ndiyo, tunajivunia sana. | Thank you! Yes, we're very proud.
+< Mgeni Rasmi: Lakini karo ni nyingi. Na tunajua kwamba kidole kimoja hakivunji chawa. | But the fees are a lot. And we know that one finger can't crush a louse.
+  x: Lakini karo ni nyingi. Na tunajua ingawa kidole kimoja hakivunji chawa. ; Lakini karo ni chache. Na tunajua kwamba kidole kimoja hakivunji chawa.
+> MC: Kweli kabisa! | Absolutely true!
+< Mgeni Rasmi: Umoja ni nguvu, utengano ni udhaifu. Kila mtu achangie kile anachoweza. | Unity is strength, division is weakness. Let everyone contribute what they can.
+  x: Umoja ni udhaifu, utengano ni nguvu. Kila mtu achangie kile anachoweza. ; Umoja ni nguvu, utengano ni udhaifu. Kila mtu anachangia kile anachoweza.
+> MC: Hata shilingi mia moja? | Even a hundred shillings?
+< Mgeni Rasmi: Ndiyo! Haba na haba hujaza kibaba. Hakuna mchango mdogo. | Yes! Little by little fills the measure. There's no such thing as a small contribution.
+  x: Ndiyo! Haba na haba hujaza ndoo. Hakuna mchango mdogo. ; Hapana! Haba na haba hujaza kibaba. Hakuna mchango mdogo.
+> Mama Njeri: Na Njeri amesoma kwa bidii sana. | And Njeri has studied very hard.
+< Mgeni Rasmi: Ndiyo, kwa sababu mtaka cha mvunguni sharti ainame! Sasa ni zamu yetu kumsaidia. | Yes, because whoever wants what's under the bed must bend down! Now it's our turn to help her.
+  x: Ndiyo, ingawa mtaka cha mvunguni sharti ainame! Sasa ni zamu yetu kumsaidia. ; Ndiyo, kwa sababu mtaka cha mvunguni sharti ainame! Sasa ni zamu yetu kunisaidia.
+> MC: Na wewe, mgeni rasmi? | And you, guest of honour?
+< Mgeni Rasmi: Mimi ninachangia shilingi elfu kumi. Tumchangie Njeri ili aweze kusoma. Mungu awabariki! | I'm contributing ten thousand shillings. Let's contribute for Njeri so that she can study. May God bless you all!
+  x: Mimi ninachangia shilingi elfu kumi. Tumchangie Njeri ili anaweza kusoma. Mungu awabariki! ; Mimi nilichangia shilingi elfu kumi. Tumchangie Njeri ili aweze kusoma. Mungu awabariki!
+> MC: Harambee! Mgeni njoo, mwenyeji apone! | Harambee! Guest, come — so the host may prosper!
+
+@practice
+c: One finger can't crush a louse. | Kidole kimoja [hakivunji|kinavunja|hakivunjiki] chawa. || We need each other. Ki/vi agreement: kidole → hakivunji.
+c: Unity is strength, division is weakness. | Umoja ni [nguvu|udhaifu|haraka], utengano ni udhaifu.
+c: Little by little fills the measure. | Haba na haba [hujaza|hujazi|walijaza] kibaba. || hu- = always / as a rule — proverbs love the habitual.
+c: Whoever wants what's under the bed must bend down. | Mtaka cha mvunguni sharti [ainame|anainama|ameinama]. || sharti (must) + subjunctive: a- + -inam- + -e.
+c: If you don't fill the crack, you'll build a wall. | [Usipoziba|Ukiziba|Ulipoziba] ufa utajenga ukuta. || u- + -si- + -po- = if you don't…
+c: Guest, come — so the host may prosper. | Mgeni njoo, mwenyeji [apone|anapona|alipona]. || apone = subjunctive: "so that he may heal / prosper".
+t: Njeri is a girl who has passed her exam. | Njeri ni msichana [ambaye|ambayo|ambao] amepita mtihani.
+t: We know that one finger can't crush a louse. | Tunajua [kwamba|ingawa|badala ya] kidole kimoja hakivunji chawa.
+t: Let everyone contribute what they can. | Kila mtu [achangie|anachangia|alichangia] kile anachoweza. || Subjunctive = "let (him/her)…".
+t: I'm contributing ten thousand. | [Ninachangia|Unachangia|Tunachangia] shilingi elfu kumi.
+t: so that she can study | ili [aweze|anaweza|ataweza] kusoma || ili + subjunctive.
+t: Let's contribute for Njeri. | [Tumchangie|Tunamchangia|Mmchangie] Njeri. || tu- + -m- (her) + -changi- + -e.
+t: May God bless you all! | Mungu [awabariki|anawabariki|atawabariki]! || A blessing uses the subjunctive.
+t: I'm grateful for being invited. | Ninashukuru kwa [kunialika|kukualika|kumwalika]. || kunialika = to invite me.
+t: There's no such thing as a small contribution. | Hakuna mchango [mdogo|ndogo|wadogo]. || mchango is m/mi: mdogo.
+
+@vocab
+Harambee! | Let's all pull together! | Kenya's motto and fundraising tradition
+mgeni rasmi | guest of honour |
+mabibi na mabwana | ladies and gentlemen |
+Ninashukuru kwa kunialika | I'm grateful for the invitation |
+karo | school fees |
+Kidole kimoja hakivunji chawa | One finger can't crush a louse | We need each other
+Umoja ni nguvu, utengano ni udhaifu | Unity is strength, division is weakness |
+Haba na haba hujaza kibaba | Little by little fills the measure | Every small gift counts
+Mtaka cha mvunguni sharti ainame | Who wants what's under the bed must bend down | Success takes effort
+Usipoziba ufa utajenga ukuta | Fix the crack or build a wall | A stitch in time saves nine
+Mgeni njoo, mwenyeji apone | Guests bring blessings | Lit. "guest, come, so the host may prosper"
+Kila mtu achangie… | Let everyone contribute… | Subjunctive = let…
+Mungu awabariki | May God bless you all |
+
+@lesson football-banter
+title: Mashemeji Derby: Banter at the Local
+level: 10
+theme: sports
+category: social
+culture: Gor Mahia vs AFC Leopards — the "Mashemeji Derby" (the brothers-in-law derby) — is Kenya's biggest football rivalry. The nickname comes from the many marriages between Luo and Luhya families, the clubs' traditional fan bases. Watching at a local bar or kibanda is a festival of trash talk, proverbs and idioms: "Akose achekwe!" (of course he'll score — he'd never live it down), "Maji yakimwagika hayazoleki" (spilled water can't be gathered — what's done is done), "Asiyekubali kushindwa si mshindani" (a sore loser is no real competitor).
+start: Sunday afternoon at a sports bar in Nairobi. You support Gor Mahia; your friend Wafula is a die-hard AFC Leopards fan.
+grammar: idioms-proverbs, relatives, conditional-nge, discourse-particles
+gl: Mashemeji = "the brothers-in-law" — nickname of the Gor–AFC derby
+gl: shemeji = brother/sister-in-law
+gl: Ingwe = AFC Leopards (lit. "leopard" in Luhya)
+gl: K'Ogalo = Gor Mahia's nickname
+gl: tutawanyorosha = "we'll flatten / thrash you" — banter #object-infixes
+gl: mtaona = "you (all) will see"
+gl: mshambuliaji = striker / attacker
+gl: mpya = new
+gl: Akose achekwe = "Of course he'll score — if he misses, he'll be laughed at!" #idioms-proverbs
+gl: akose = "(if) he misses" #subjunctive
+gl: achekwe = "(he'd) be laughed at" — cheka → chekwa (passive) #verb-extensions
+gl: goli = goal
+gl: atafunga = "he'll score" — kufunga goli = to score (lit. "to close a goal") #future-ta
+gl: Hajafunga = "He hasn't scored" — ha- + -ja- + -funga #perfect-negative-ja
+gl: wamefunga = "they've scored" #perfect-me
+gl: Goooli = "Goooal!"
+gl: refa = referee
+gl: kipofu = blind (person) || ki/vi noun used for people
+gl: Fimbo ya mbali haiui nyoka = "A distant stick doesn't kill a snake" — use what's at hand; complaining from afar won't help. #idioms-proverbs
+gl: fimbo = stick
+gl: haiui = "doesn't kill"
+gl: nyoka = snake
+gl: Maji yakimwagika hayazoleki = "Spilled water can't be gathered" — what's done is done. #idioms-proverbs
+gl: yakimwagika = "if it (water) is spilled" — ya- + -ki- + -mwagika
+gl: hayazoleki = "can't be scooped up" — stative of kuzoa
+gl: Asiyekubali kushindwa si mshindani = "Whoever doesn't accept defeat is no competitor" — be a good loser. #idioms-proverbs
+gl: asiyekubali = "the one who doesn't accept" — a- + -si- + -ye- + -kubali #relatives
+gl: kushindwa = to be defeated
+gl: mshindani = competitor
+gl: mbili kwa moja = two–one
+gl: Ningalijua = "If I'd known" #conditional-nge
+gl: ningalibaki = "I'd have stayed" #conditional-nge
+gl: Mchezo = the match
+gl: haujaisha = "isn't over yet" — m/mi agreement for mchezo #perfect-negative-ja
+gl: dakika za ziada = extra time
+gl: bia = beer
+gl: anayeshindwa = "the one who loses" #relatives
+gl: atanunua = will buy
+
+> Wafula: Leo ni leo! Ingwe watawanyorosha K'Ogalo! | Today's the day! Ingwe will flatten K'Ogalo!
+< Wewe: Wee, ndoto tu! Mtaona — mshambuliaji wetu mpya ni moto sana. | Ha, dream on! You'll see — our new striker is red hot.
+  x: Wee, ndoto tu! Tutaona — mshambuliaji wetu mpya ni moto sana. ; Wee, ndoto tu! Mtaona — mshambuliaji wetu mpya ni baridi sana.
+> Wafula: Yule? Hajafunga hata goli moja msimu huu! | Him? He hasn't scored even one goal this season!
+< Wewe: Leo atafunga. Akose achekwe! | Today he'll score. He'd never live it down if he missed!
+  x: Leo atafunga. Akose afurahi! ; Jana atafunga. Akose achekwe!
+> Wafula: Goooli! Ingwe wamefunga! Unaona? | Goooal! Ingwe have scored! You see?
+< Wewe: Aiii! Refa ni kipofu — huyo mchezaji alikuwa offside! | Aiii! The referee is blind — that player was offside!
+  x: Aiii! Refa ni mzuri — huyo mchezaji alikuwa offside! ; Aiii! Refa ni kipofu — hawa mchezaji alikuwa offside!
+> Wafula: Haha! Kulalamika hapa ni bure. Fimbo ya mbali haiui nyoka! | Haha! Complaining from here is pointless. A distant stick doesn't kill a snake!
+< Wewe: Sawa, sawa. Maji yakimwagika hayazoleki. Lakini mchezo haujaisha bado! | Fine, fine. What's done is done. But the game isn't over yet!
+  x: Sawa, sawa. Maji yakimwagika yanazoleka. Lakini mchezo haujaisha bado! ; Sawa, sawa. Maji yakimwagika hayazoleki. Lakini mchezo umeisha bado!
+> Wafula: Dakika tano tu zimebaki, shemeji! | Only five minutes left, in-law!
+< Wewe: Goooli! Tumesawazisha! Na sasa… goli la pili! Mbili kwa moja! | Goooal! We've equalised! And now… a second goal! Two–one!
+  s: Goli! Tumesawazisha! Na sasa… goli la pili! Mbili kwa moja!
+  x: Goooli! Tumeshindwa! Na sasa… goli la pili! Mbili kwa moja! ; Goooli! Tumesawazisha! Na sasa… goli la kwanza! Mbili kwa moja!
+> Wafula: Ningalijua, ningalibaki nyumbani! Refa amewasaidia! | If I'd known, I'd have stayed home! The ref helped you!
+< Wewe: Haha! Asiyekubali kushindwa si mshindani, shemeji! | Haha! Whoever doesn't accept defeat is no real competitor, in-law!
+  x: Haha! Anayekubali kushindwa si mshindani, shemeji! ; Haha! Asiyekubali kushinda si mshindani, shemeji!
+> Wafula: Haya basi. Tulisema anayeshindwa atanunua bia… Wewe chagua! | Alright then. We said the loser buys the beer… You choose!
+< Wewe: Tusker baridi, tafadhali! Na wiki ijayo, tutaonana tena kwa mechi nyingine! | A cold Tusker, please! And next week, we'll meet again for another match!
+  x: Tusker moto, tafadhali! Na wiki ijayo, tutaonana tena kwa mechi nyingine! ; Tusker baridi, tafadhali! Na wiki iliyopita, tutaonana tena kwa mechi nyingine!
+
+@practice
+c: Of course he'll score — he'd never live it down! | Akose [achekwe|acheke|anacheka]! || Lit. "let him miss, (and) be laughed at". cheka → chekwa (passive).
+c: A distant stick doesn't kill a snake. | Fimbo ya mbali [haiui|inaua|haikuua] nyoka. || Complaining from afar won't solve anything.
+c: Spilled water can't be gathered. | Maji yakimwagika [hayazoleki|yanazoleka|hayakuzolewa]. || What's done is done.
+c: Whoever doesn't accept defeat is no competitor. | [Asiyekubali|Anayekubali|Aliyekubali] kushindwa si mshindani. || -si- + -ye- = "who doesn't".
+t: He hasn't scored even one goal this season. | [Hajafunga|Amefunga|Hakufunga] hata goli moja msimu huu. || ha- + -ja- = hasn't (yet).
+t: Today he'll score. | Leo [atafunga|alifunga|amefunga]. || kufunga goli = to score a goal (lit. "to close a goal").
+t: The game isn't over yet! | Mchezo [haujaisha|umeisha|haukuisha] bado! || mchezo (m/mi) → u- agreement: haujaisha.
+t: Only five minutes are left. | Dakika tano tu [zimebaki|imebaki|wamebaki]. || dakika (n/n plural) → zi-.
+t: We've equalised! | [Tumesawazisha|Tumeshindwa|Tumesawa]! || sawa (equal) → sawazisha (make equal).
+t: If I'd known, I'd have stayed home! | Ningalijua, [ningalibaki|nitabaki|nilibaki] nyumbani!
+t: The referee helped you (all)! | Refa [amewasaidia|amekusaidia|amemsaidia]! || -wa- = them / you all.
+t: the one who loses buys the beer | [anayeshindwa|aliyeshindwa|atakayeshindwa] atanunua bia || -ye- = who.
+t: You'll see! | [Mtaona|Tutaona|Wataona]! || m- = you all.
+c: Dream on! (lit. "just a dream") | [Ndoto|Ndovu|Ndugu] tu! || ndoto = dream.
+c: the "brothers-in-law" derby | Mashemeji [Derby|Mechi|Goli] || shemeji = brother/sister-in-law.
+
+@vocab
+Mashemeji Derby | Gor Mahia vs AFC Leopards | Lit. "the brothers-in-law derby"
+shemeji | brother/sister-in-law | Also a friendly nickname for a rival fan
+Akose achekwe! | Of course he'll do it! | Lit. "let him miss and be laughed at"
+Fimbo ya mbali haiui nyoka | A distant stick doesn't kill a snake | Use what's at hand
+Maji yakimwagika hayazoleki | Spilled water can't be gathered | What's done is done
+Asiyekubali kushindwa si mshindani | A sore loser is no competitor |
+kufunga goli | to score a goal | Lit. "to close a goal"
+Hajafunga | He hasn't scored |
+Mchezo haujaisha | The game isn't over |
+Tumesawazisha! | We've equalised! | sawa → sawazisha
+refa | referee |
+Ndoto tu! | Dream on! |
+anayeshindwa | the one who loses | -ye- = who

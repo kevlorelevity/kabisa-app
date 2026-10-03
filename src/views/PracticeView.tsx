@@ -3,6 +3,8 @@ import { useParams, Link } from 'react-router-dom';
 import { useLessonWithNeighbors } from '../hooks/useLessons';
 import { PracticeSession } from '../components/PracticeSession';
 import { DrillPrompt, LessonGateStatus, LockedLesson } from '../components/LessonGate';
+import { LevelUpModal } from '../components/LevelUp';
+import { claimLevelUp } from '../lib/levels';
 import {
   PASS_THRESHOLD,
   getLessonScores,
@@ -19,6 +21,7 @@ export function PracticeView() {
   const { lessons, lesson, previous, next } = useLessonWithNeighbors(id ?? '');
   const [rec, setRec] = useState(() => getLessonScores(id ?? ''));
   const [result, setResult] = useState<AttemptResult | null>(null);
+  const [levelUp, setLevelUp] = useState<number | null>(null);
 
   if (!lesson || !lesson.practice?.length) {
     return (
@@ -38,6 +41,7 @@ export function PracticeView() {
   function handleFinish(r: AttemptResult) {
     setRec(recordPracticeAttempt(lesson!.id, r));
     setResult(r);
+    setLevelUp(claimLevelUp(lessons, lesson!.level));
   }
 
   const ratio = result ? result.firstTryCorrect / result.total : 0;
@@ -72,13 +76,14 @@ export function PracticeView() {
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-8 space-y-6 pb-16">
+      {levelUp !== null && <LevelUpModal level={levelUp} lessons={lessons} onClose={() => setLevelUp(null)} />}
       <div>
         <Link to={`/lesson/${lesson.id}`} className="text-sm text-gray-400 hover:text-gray-600">
           ← {lesson.title}
         </Link>
         <h1 className="text-2xl font-bold text-gray-900 mt-2">Practice session</h1>
         <p className="text-sm text-gray-500 mt-1">
-          Short lines from the ride. Pick the word that fills the gap — tap a chip to answer. Your first-try score
+          Short lines from the conversation. Pick the word that fills the gap — tap a chip to answer. Your first-try score
           counts toward unlocking the next lesson.
         </p>
         <div className="mt-4">

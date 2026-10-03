@@ -4,9 +4,30 @@
   "title": "Taking an Uber in Nairobi",
   "category": "transport",
   "difficulty": "beginner",
-  "order": 1,
+  "level": 1,
+  "order": 101,
+  "theme": "uber",
   "culturalNote": "Ordering a ride and chatting with the driver is one of the most common everyday exchanges a visitor to Nairobi will have. The passenger (mteja) usually opens with a casual greeting, and the driver (dereva) confirms the destination before setting off. This lesson has you play the mteja — pick what you'd say, then see how the dereva responds.",
   "startingPoint": "The customer (mteja) gets in the car and starts the conversation.",
+  "grammarFocus": [
+    "kenyan-vs-sanifu",
+    "present-na",
+    "subject-prefixes",
+    "ko-location",
+    "question-words"
+  ],
+  "grammar": [
+    "kenyan-vs-sanifu",
+    "present-na",
+    "subject-prefixes",
+    "ko-location",
+    "question-words",
+    "greetings",
+    "noun-classes-mwa-nn",
+    "locative-ni",
+    "sanifu-noun-classes",
+    "numbers-money"
+  ],
   "turns": [
     {
       "id": "ef6c870c-d478-4cea-b26e-25d5347c809b",
@@ -15,13 +36,34 @@
       "swahili": "Niaje boss?",
       "english": "What's up, boss?",
       "words": [
-        { "text": "Niaje", "gloss": "From \"ni aje?\" (\"how is it?\"), said fast with the stress on the first syllable. The common, casual way to say \"how are you?\"" },
-        { "text": "boss", "gloss": "An English loanword used as a friendly, informal form of address — like calling someone \"boss\" or \"chief\"." }
+        {
+          "text": "Niaje",
+          "gloss": "From \"ni aje?\" (\"how is it?\"), said fast with the stress on the first syllable. The common, casual way to say \"how are you?\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "boss",
+          "gloss": "An English loanword used as a friendly, informal form of address — like calling someone \"boss\" or \"chief\".",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
       ],
       "options": [
-        { "swahili": "Niaje boss?", "correct": true },
-        { "swahili": "Asante sana.", "correct": false },
-        { "swahili": "Unaenda wapi?", "correct": false }
+        {
+          "swahili": "Niaje boss?",
+          "correct": true
+        },
+        {
+          "swahili": "Asante sana.",
+          "correct": false
+        },
+        {
+          "swahili": "Unaenda wapi?",
+          "correct": false
+        }
       ]
     },
     {
@@ -31,10 +73,62 @@
       "swahili": "Poa sana. Uko aje?",
       "english": "Very cool. How are you?",
       "words": [
-        { "text": "Poa", "gloss": "\"Cool\" — from kupoa, \"to chill / cool down.\" The standard reply to niaje." },
-        { "text": "sana", "gloss": "\"Very.\"" },
-        {"text": "Uko", "gloss": "\"You are (at / doing)\" — u- (you) + -ko (be at). Uko aje? = how are you?", "conjugation": {"verb": "-ko (to be at / be doing)", "tense": "Present", "rows": [{"pronoun": "I", "form": "niko"}, {"pronoun": "you", "form": "uko"}, {"pronoun": "he/she", "form": "yuko"}, {"pronoun": "we", "form": "tuko"}, {"pronoun": "you all", "form": "mko"}, {"pronoun": "they", "form": "wako"}]}},
-        {"text": "aje", "gloss": "\"How?\" — Kenyan colloquial. The driver is asking you back, so answer with how you are."}
+        {
+          "text": "Poa",
+          "gloss": "\"Cool\" — from kupoa, \"to chill / cool down.\" The standard reply to niaje.",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "sana",
+          "gloss": "\"Very.\""
+        },
+        {
+          "text": "Uko",
+          "gloss": "\"You are (at / doing)\" — u- (you) + -ko (be at). Uko aje? = how are you?",
+          "conjugation": {
+            "verb": "-ko (to be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              }
+            ]
+          },
+          "grammar": [
+            "ko-location"
+          ]
+        },
+        {
+          "text": "aje",
+          "gloss": "\"How?\" — Kenyan colloquial. The driver is asking you back, so answer with how you are.",
+          "grammar": [
+            "question-words",
+            "greetings"
+          ]
+        }
       ]
     },
     {
@@ -44,14 +138,68 @@
       "swahili": "Niko poa, asante.",
       "english": "I'm good, thanks.",
       "words": [
-        {"text": "Niko", "gloss": "\"I am (at / doing)\" — ni- (I) + -ko (be at). The reply to uko aje.", "conjugation": {"verb": "-ko (to be at / be doing)", "tense": "Present", "rows": [{"pronoun": "I", "form": "niko"}, {"pronoun": "you", "form": "uko"}, {"pronoun": "he/she", "form": "yuko"}, {"pronoun": "we", "form": "tuko"}, {"pronoun": "you all", "form": "mko"}, {"pronoun": "they", "form": "wako"}]}},
-        { "text": "poa", "gloss": "\"Cool / good.\"" },
-        { "text": "asante", "gloss": "\"Thank you.\"" }
+        {
+          "text": "Niko",
+          "gloss": "\"I am (at / doing)\" — ni- (I) + -ko (be at). The reply to uko aje.",
+          "conjugation": {
+            "verb": "-ko (to be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              }
+            ]
+          },
+          "grammar": [
+            "ko-location"
+          ]
+        },
+        {
+          "text": "poa",
+          "gloss": "\"Cool / good.\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "asante",
+          "gloss": "\"Thank you.\""
+        }
       ],
       "options": [
-        { "swahili": "Niaje boss?", "correct": false },
-        { "swahili": "Niko poa, asante.", "correct": true },
-        { "swahili": "Sawa.", "correct": false }
+        {
+          "swahili": "Niaje boss?",
+          "correct": false
+        },
+        {
+          "swahili": "Niko poa, asante.",
+          "correct": true
+        },
+        {
+          "swahili": "Sawa.",
+          "correct": false
+        }
       ]
     },
     {
@@ -61,20 +209,50 @@
       "swahili": "Unaenda wapi?",
       "english": "Where are you going?",
       "words": [
-        { "text": "Unaenda", "gloss": "\"You are going\" — present tense of kuenda (\"to go\"): u- (you) + -na- (present) + -enda (go).",
+        {
+          "text": "Unaenda",
+          "gloss": "\"You are going\" — present tense of kuenda (\"to go\"): u- (you) + -na- (present) + -enda (go).",
           "conjugation": {
-          "verb": "kuenda (to go)",
-          "tense": "Present (-na-)",
-          "rows": [
-            { "pronoun": "I", "form": "ninaenda" },
-            { "pronoun": "you", "form": "unaenda" },
-            { "pronoun": "he/she", "form": "anaenda" },
-            { "pronoun": "we", "form": "tunaenda" },
-            { "pronoun": "you all", "form": "mnaenda" },
-            { "pronoun": "they", "form": "wanaenda" }
+            "verb": "kuenda (to go)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaenda"
+              }
+            ]
+          },
+          "grammar": [
+            "present-na"
           ]
-        } },
-        { "text": "wapi", "gloss": "\"Where?\"" }
+        },
+        {
+          "text": "wapi",
+          "gloss": "\"Where?\"",
+          "grammar": [
+            "question-words"
+          ]
+        }
       ]
     },
     {
@@ -84,27 +262,72 @@
       "swahili": "Ninaenda Westie, karibu na Mall.",
       "english": "I'm going to Westie, close by the Mall.",
       "words": [
-        { "text": "Ninaenda", "gloss": "\"I am going\" — present tense of kuenda: ni- (I) + -na- (present) + -enda (go).",
+        {
+          "text": "Ninaenda",
+          "gloss": "\"I am going\" — present tense of kuenda: ni- (I) + -na- (present) + -enda (go).",
           "conjugation": {
-          "verb": "kuenda (to go)",
-          "tense": "Present (-na-)",
-          "rows": [
-            { "pronoun": "I", "form": "ninaenda" },
-            { "pronoun": "you", "form": "unaenda" },
-            { "pronoun": "he/she", "form": "anaenda" },
-            { "pronoun": "we", "form": "tunaenda" },
-            { "pronoun": "you all", "form": "mnaenda" },
-            { "pronoun": "they", "form": "wanaenda" }
+            "verb": "kuenda (to go)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaenda"
+              }
+            ]
+          },
+          "grammar": [
+            "present-na"
           ]
-        } },
-        { "text": "Westie", "gloss": "Casual short form of \"Westlands,\" a Nairobi neighborhood." },
-        { "text": "karibu na", "gloss": "\"Close to / near.\"" },
-        { "text": "Mall", "gloss": "English loanword for a shopping mall — context makes clear which one." }
+        },
+        {
+          "text": "Westie",
+          "gloss": "Casual short form of \"Westlands,\" a Nairobi neighborhood."
+        },
+        {
+          "text": "karibu na",
+          "gloss": "\"Close to / near.\"",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "Mall",
+          "gloss": "English loanword for a shopping mall — context makes clear which one."
+        }
       ],
       "options": [
-        { "swahili": "Ninaenda Westie, karibu na Mall.", "correct": true },
-        { "swahili": "Ninaenda kazi.", "correct": false },
-        { "swahili": "Labda Westlands roundabout.", "correct": false }
+        {
+          "swahili": "Ninaenda Westie, karibu na Mall.",
+          "correct": true
+        },
+        {
+          "swahili": "Ninaenda kazi.",
+          "correct": false
+        },
+        {
+          "swahili": "Labda Westlands roundabout.",
+          "correct": false
+        }
       ]
     },
     {
@@ -114,22 +337,62 @@
       "swahili": "Sawa. Tunaenda upande gani?",
       "english": "Okay. Which side are we going?",
       "words": [
-        { "text": "Sawa", "gloss": "\"Okay\" / \"equal\" — used generally to mean \"alright.\"" },
-        { "text": "Tunaenda", "gloss": "\"We are going\" — present tense of kuenda: tu- (we) + -na- (present) + -enda (go).",
+        {
+          "text": "Sawa",
+          "gloss": "\"Okay\" / \"equal\" — used generally to mean \"alright.\""
+        },
+        {
+          "text": "Tunaenda",
+          "gloss": "\"We are going\" — present tense of kuenda: tu- (we) + -na- (present) + -enda (go).",
           "conjugation": {
-          "verb": "kuenda (to go)",
-          "tense": "Present (-na-)",
-          "rows": [
-            { "pronoun": "I", "form": "ninaenda" },
-            { "pronoun": "you", "form": "unaenda" },
-            { "pronoun": "he/she", "form": "anaenda" },
-            { "pronoun": "we", "form": "tunaenda" },
-            { "pronoun": "you all", "form": "mnaenda" },
-            { "pronoun": "they", "form": "wanaenda" }
+            "verb": "kuenda (to go)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaenda"
+              }
+            ]
+          },
+          "grammar": [
+            "present-na"
           ]
-        } },
-        { "text": "upande", "gloss": "\"Side\" — a common way to ask about direction." },
-        { "text": "gani", "gloss": "\"Which?\"" }
+        },
+        {
+          "text": "upande",
+          "gloss": "\"Side\" — a common way to ask about direction.",
+          "sanifu": "Sanifu: u/n class — upande huu, pande",
+          "grammar": [
+            "sanifu-noun-classes"
+          ]
+        },
+        {
+          "text": "gani",
+          "gloss": "\"Which?\"",
+          "grammar": [
+            "question-words"
+          ]
+        }
       ]
     },
     {
@@ -139,13 +402,28 @@
       "swahili": "Labda Westlands roundabout.",
       "english": "Maybe Westlands roundabout.",
       "words": [
-        { "text": "Labda", "gloss": "\"Maybe.\"" },
-        { "text": "Westlands roundabout", "gloss": "A specific landmark in Westlands — giving a precise drop-off point." }
+        {
+          "text": "Labda",
+          "gloss": "\"Maybe.\""
+        },
+        {
+          "text": "Westlands roundabout",
+          "gloss": "A specific landmark in Westlands — giving a precise drop-off point."
+        }
       ],
       "options": [
-        { "swahili": "Ninatoka Waiyaki Way.", "correct": false },
-        { "swahili": "Niambie bei.", "correct": false },
-        { "swahili": "Labda Westlands roundabout.", "correct": true }
+        {
+          "swahili": "Ninatoka Waiyaki Way.",
+          "correct": false
+        },
+        {
+          "swahili": "Niambie bei.",
+          "correct": false
+        },
+        {
+          "swahili": "Labda Westlands roundabout.",
+          "correct": true
+        }
       ]
     },
     {
@@ -155,7 +433,10 @@
       "swahili": "Sawa.",
       "english": "Okay.",
       "words": [
-        { "text": "Sawa", "gloss": "\"Okay.\"" }
+        {
+          "text": "Sawa",
+          "gloss": "\"Okay.\""
+        }
       ]
     }
   ],
@@ -262,11 +543,25 @@
       "before": "",
       "after": " Westlands.",
       "options": [
-        {"text": "Ninaenda", "correct": true},
-        {"text": "Unaenda", "correct": false, "feedback": "unaenda = YOU are going (u- = you)."},
-        {"text": "Anaenda", "correct": false, "feedback": "anaenda = HE/SHE is going (a- = he/she)."}
+        {
+          "text": "Ninaenda",
+          "correct": true
+        },
+        {
+          "text": "Unaenda",
+          "correct": false,
+          "feedback": "unaenda = YOU are going (u- = you)."
+        },
+        {
+          "text": "Anaenda",
+          "correct": false,
+          "feedback": "anaenda = HE/SHE is going (a- = he/she)."
+        }
       ],
-      "explanation": "Ninaenda = ni- (I) + -na- (present, \"am …ing\") + -enda (go). No word for \"to\" is needed before a place."
+      "explanation": "Ninaenda = ni- (I) + -na- (present, \"am …ing\") + -enda (go). No word for \"to\" is needed before a place.",
+      "grammar": [
+        "present-na"
+      ]
     },
     {
       "id": "8fe61370-2eba-4cd4-9b93-2ba8abfed951",
@@ -275,11 +570,25 @@
       "before": "Unaenda ",
       "after": "?",
       "options": [
-        {"text": "wapi", "correct": true},
-        {"text": "vipi", "correct": false, "feedback": "vipi = how? — close, but the driver wants a place."},
-        {"text": "ngapi", "correct": false, "feedback": "ngapi = how many / how much? — that's for prices."}
+        {
+          "text": "wapi",
+          "correct": true
+        },
+        {
+          "text": "vipi",
+          "correct": false,
+          "feedback": "vipi = how? — close, but the driver wants a place."
+        },
+        {
+          "text": "ngapi",
+          "correct": false,
+          "feedback": "ngapi = how many / how much? — that's for prices."
+        }
       ],
-      "explanation": "Wapi = where. Unaenda wapi? is the driver's standard question — expect it every ride."
+      "explanation": "Wapi = where. Unaenda wapi? is the driver's standard question — expect it every ride.",
+      "grammar": [
+        "question-words"
+      ]
     },
     {
       "id": "4c7e6769-9874-4c49-8c58-4ffd7b769fe9",
@@ -288,11 +597,25 @@
       "before": "",
       "after": " Mall.",
       "options": [
-        {"text": "Tunaenda", "correct": true},
-        {"text": "Ninaenda", "correct": false, "feedback": "ninaenda = I am going (ni- = I)."},
-        {"text": "Wanaenda", "correct": false, "feedback": "wanaenda = THEY are going (wa- = they)."}
+        {
+          "text": "Tunaenda",
+          "correct": true
+        },
+        {
+          "text": "Ninaenda",
+          "correct": false,
+          "feedback": "ninaenda = I am going (ni- = I)."
+        },
+        {
+          "text": "Wanaenda",
+          "correct": false,
+          "feedback": "wanaenda = THEY are going (wa- = they)."
+        }
       ],
-      "explanation": "Tunaenda = tu- (we) + -na- + -enda. The driver used it too: Tunaenda upande gani?"
+      "explanation": "Tunaenda = tu- (we) + -na- + -enda. The driver used it too: Tunaenda upande gani?",
+      "grammar": [
+        "present-na"
+      ]
     },
     {
       "id": "b12601ae-816e-4132-834a-242b533c0332",
@@ -301,11 +624,25 @@
       "before": "",
       "after": " Westie.",
       "options": [
-        {"text": "Anaenda", "correct": true},
-        {"text": "Unaenda", "correct": false, "feedback": "unaenda = YOU are going (u- = you)."},
-        {"text": "Ninaenda", "correct": false, "feedback": "ninaenda = I am going (ni- = I)."}
+        {
+          "text": "Anaenda",
+          "correct": true
+        },
+        {
+          "text": "Unaenda",
+          "correct": false,
+          "feedback": "unaenda = YOU are going (u- = you)."
+        },
+        {
+          "text": "Ninaenda",
+          "correct": false,
+          "feedback": "ninaenda = I am going (ni- = I)."
+        }
       ],
-      "explanation": "Anaenda = a- (he/she) + -na- + -enda. Swahili doesn't mark he vs she — anaenda covers both."
+      "explanation": "Anaenda = a- (he/she) + -na- + -enda. Swahili doesn't mark he vs she — anaenda covers both.",
+      "grammar": [
+        "present-na"
+      ]
     },
     {
       "id": "529ded8c-6190-456d-881d-f6ce9f5eec5a",
@@ -314,11 +651,25 @@
       "before": "",
       "after": " wapi?",
       "options": [
-        {"text": "Mnaenda", "correct": true},
-        {"text": "Unaenda", "correct": false, "feedback": "unaenda = YOU (one person) are going. For a group, use m-."},
-        {"text": "Wanaenda", "correct": false, "feedback": "wanaenda = THEY are going (wa- = they)."}
+        {
+          "text": "Mnaenda",
+          "correct": true
+        },
+        {
+          "text": "Unaenda",
+          "correct": false,
+          "feedback": "unaenda = YOU (one person) are going. For a group, use m-."
+        },
+        {
+          "text": "Wanaenda",
+          "correct": false,
+          "feedback": "wanaenda = THEY are going (wa- = they)."
+        }
       ],
-      "explanation": "Mnaenda = m- (you all) + -na- + -enda. Handy when you're riding with friends."
+      "explanation": "Mnaenda = m- (you all) + -na- + -enda. Handy when you're riding with friends.",
+      "grammar": [
+        "present-na"
+      ]
     },
     {
       "id": "cc2f6c70-89fc-40fb-8aff-a021d22dbfd8",
@@ -327,11 +678,25 @@
       "before": "",
       "after": " Kilimani.",
       "options": [
-        {"text": "Wanaenda", "correct": true},
-        {"text": "Mnaenda", "correct": false, "feedback": "mnaenda = YOU ALL are going (m- = you all)."},
-        {"text": "Tunaenda", "correct": false, "feedback": "tunaenda = WE are going (tu- = we)."}
+        {
+          "text": "Wanaenda",
+          "correct": true
+        },
+        {
+          "text": "Mnaenda",
+          "correct": false,
+          "feedback": "mnaenda = YOU ALL are going (m- = you all)."
+        },
+        {
+          "text": "Tunaenda",
+          "correct": false,
+          "feedback": "tunaenda = WE are going (tu- = we)."
+        }
       ],
-      "explanation": "Wanaenda = wa- (they) + -na- + -enda."
+      "explanation": "Wanaenda = wa- (they) + -na- + -enda.",
+      "grammar": [
+        "present-na"
+      ]
     },
     {
       "id": "e3eefa6f-a950-4027-8864-9d9b3a2c1483",
@@ -340,11 +705,25 @@
       "before": "",
       "after": " Westlands?",
       "options": [
-        {"text": "Unaenda", "correct": true},
-        {"text": "Ninaenda", "correct": false, "feedback": "ninaenda = I am going (ni- = I)."},
-        {"text": "Anaenda", "correct": false, "feedback": "anaenda = HE/SHE is going (a- = he/she)."}
+        {
+          "text": "Unaenda",
+          "correct": true
+        },
+        {
+          "text": "Ninaenda",
+          "correct": false,
+          "feedback": "ninaenda = I am going (ni- = I)."
+        },
+        {
+          "text": "Anaenda",
+          "correct": false,
+          "feedback": "anaenda = HE/SHE is going (a- = he/she)."
+        }
       ],
-      "explanation": "Unaenda = u- (you) + -na- + -enda. A yes/no question uses the same words as a statement — just raise your voice at the end."
+      "explanation": "Unaenda = u- (you) + -na- + -enda. A yes/no question uses the same words as a statement — just raise your voice at the end.",
+      "grammar": [
+        "present-na"
+      ]
     },
     {
       "id": "487a378c-1179-4074-b84f-beaad1fbaa75",
@@ -353,11 +732,26 @@
       "before": "Poa sana. Uko ",
       "after": "?",
       "options": [
-        {"text": "aje", "correct": true},
-        {"text": "sawa", "correct": false, "feedback": "sawa = okay — not a question word."},
-        {"text": "ngapi", "correct": false, "feedback": "ngapi = how many / how much?"}
+        {
+          "text": "aje",
+          "correct": true
+        },
+        {
+          "text": "sawa",
+          "correct": false,
+          "feedback": "sawa = okay — not a question word."
+        },
+        {
+          "text": "ngapi",
+          "correct": false,
+          "feedback": "ngapi = how many / how much?"
+        }
       ],
-      "explanation": "Uko aje? = how are you? (u- you + -ko be at + aje how). It's the driver asking you back after Niaje."
+      "explanation": "Uko aje? = how are you? (u- you + -ko be at + aje how). It's the driver asking you back after Niaje.",
+      "grammar": [
+        "question-words",
+        "greetings"
+      ]
     },
     {
       "id": "70063e3a-2cb4-40b5-9323-4d4b1cba4dee",
@@ -366,11 +760,25 @@
       "before": "Niko ",
       "after": ", asante.",
       "options": [
-        {"text": "poa", "correct": true},
-        {"text": "wapi", "correct": false, "feedback": "wapi = where? — Niko wapi? would mean \"where am I?\""},
-        {"text": "sana", "correct": false, "feedback": "sana = very — it needs something before it, like poa sana."}
+        {
+          "text": "poa",
+          "correct": true
+        },
+        {
+          "text": "wapi",
+          "correct": false,
+          "feedback": "wapi = where? — Niko wapi? would mean \"where am I?\""
+        },
+        {
+          "text": "sana",
+          "correct": false,
+          "feedback": "sana = very — it needs something before it, like poa sana."
+        }
       ],
-      "explanation": "Niko poa = I'm good (ni- I + -ko be at + poa cool). The standard answer to Uko aje?"
+      "explanation": "Niko poa = I'm good (ni- I + -ko be at + poa cool). The standard answer to Uko aje?",
+      "grammar": [
+        "greetings"
+      ]
     },
     {
       "id": "0c8612fb-5c9a-40f8-b449-30550c127be7",
@@ -379,11 +787,25 @@
       "before": "Sawa. Tunaenda upande ",
       "after": "?",
       "options": [
-        {"text": "gani", "correct": true},
-        {"text": "ngapi", "correct": false, "feedback": "ngapi = how many? — \"how many sides\" isn't what he's asking."},
-        {"text": "vipi", "correct": false, "feedback": "vipi = how? — close, but here it's \"which side\"."}
+        {
+          "text": "gani",
+          "correct": true
+        },
+        {
+          "text": "ngapi",
+          "correct": false,
+          "feedback": "ngapi = how many? — \"how many sides\" isn't what he's asking."
+        },
+        {
+          "text": "vipi",
+          "correct": false,
+          "feedback": "vipi = how? — close, but here it's \"which side\"."
+        }
       ],
-      "explanation": "Gani = which? Upande gani? = which side / which way? — the driver checking your route."
+      "explanation": "Gani = which? Upande gani? = which side / which way? — the driver checking your route.",
+      "grammar": [
+        "question-words"
+      ]
     },
     {
       "id": "b09cc1cd-f9ea-41c9-831e-11c51b016317",
@@ -392,9 +814,20 @@
       "before": "Ninaenda Westie, ",
       "after": " Mall.",
       "options": [
-        {"text": "karibu na", "correct": true},
-        {"text": "labda", "correct": false, "feedback": "labda = maybe."},
-        {"text": "asante", "correct": false, "feedback": "asante = thank you."}
+        {
+          "text": "karibu na",
+          "correct": true
+        },
+        {
+          "text": "labda",
+          "correct": false,
+          "feedback": "labda = maybe."
+        },
+        {
+          "text": "asante",
+          "correct": false,
+          "feedback": "asante = thank you."
+        }
       ],
       "explanation": "Karibu na = close to / near. Giving a landmark is how most Nairobi drop-offs get explained."
     },
@@ -405,9 +838,20 @@
       "before": "",
       "after": " Westlands roundabout.",
       "options": [
-        {"text": "Labda", "correct": true},
-        {"text": "Sawa", "correct": false, "feedback": "sawa = okay."},
-        {"text": "Poa", "correct": false, "feedback": "poa = cool / good."}
+        {
+          "text": "Labda",
+          "correct": true
+        },
+        {
+          "text": "Sawa",
+          "correct": false,
+          "feedback": "sawa = okay."
+        },
+        {
+          "text": "Poa",
+          "correct": false,
+          "feedback": "poa = cool / good."
+        }
       ],
       "explanation": "Labda = maybe. A soft way to suggest a drop-off point."
     },
@@ -418,11 +862,26 @@
       "before": "Bei ni ",
       "after": "?",
       "options": [
-        {"text": "ngapi", "correct": true},
-        {"text": "wapi", "correct": false, "feedback": "wapi = where?"},
-        {"text": "sana", "correct": false, "feedback": "sana = very."}
+        {
+          "text": "ngapi",
+          "correct": true
+        },
+        {
+          "text": "wapi",
+          "correct": false,
+          "feedback": "wapi = where?"
+        },
+        {
+          "text": "sana",
+          "correct": false,
+          "feedback": "sana = very."
+        }
       ],
-      "explanation": "Ngapi = how much / how many? Bei ni ngapi? = what's the price? New word — you'll use it constantly."
+      "explanation": "Ngapi = how much / how many? Bei ni ngapi? = what's the price? New word — you'll use it constantly.",
+      "grammar": [
+        "question-words",
+        "numbers-money"
+      ]
     },
     {
       "id": "47b8851c-215a-4ff6-98e8-eaeef4dd65f0",
@@ -431,11 +890,25 @@
       "before": "",
       "after": " boss?",
       "options": [
-        {"text": "Niaje", "correct": true},
-        {"text": "Sawa", "correct": false, "feedback": "sawa = okay — that's a reply, not a greeting."},
-        {"text": "Asante", "correct": false, "feedback": "asante = thank you."}
+        {
+          "text": "Niaje",
+          "correct": true
+        },
+        {
+          "text": "Sawa",
+          "correct": false,
+          "feedback": "sawa = okay — that's a reply, not a greeting."
+        },
+        {
+          "text": "Asante",
+          "correct": false,
+          "feedback": "asante = thank you."
+        }
       ],
-      "explanation": "Niaje = what's up / how's it going (from ni aje?). The casual way to open with the driver."
+      "explanation": "Niaje = what's up / how's it going (from ni aje?). The casual way to open with the driver.",
+      "grammar": [
+        "greetings"
+      ]
     },
     {
       "id": "05f2a4b7-52e3-43c0-bad8-9fdd8344c20a",
@@ -444,11 +917,25 @@
       "before": "",
       "after": " wapi?",
       "options": [
-        {"text": "Wanaenda", "correct": true},
-        {"text": "Tunaenda", "correct": false, "feedback": "tunaenda = WE are going."},
-        {"text": "Anaenda", "correct": false, "feedback": "anaenda = HE/SHE is going."}
+        {
+          "text": "Wanaenda",
+          "correct": true
+        },
+        {
+          "text": "Tunaenda",
+          "correct": false,
+          "feedback": "tunaenda = WE are going."
+        },
+        {
+          "text": "Anaenda",
+          "correct": false,
+          "feedback": "anaenda = HE/SHE is going."
+        }
       ],
-      "explanation": "Wanaenda = wa- (they) + -na- + -enda."
+      "explanation": "Wanaenda = wa- (they) + -na- + -enda.",
+      "grammar": [
+        "present-na"
+      ]
     },
     {
       "id": "e692be21-1226-4a80-be43-176c449504dc",
@@ -457,11 +944,25 @@
       "before": "",
       "after": " Westie, karibu na Mall.",
       "options": [
-        {"text": "Tunaenda", "correct": true},
-        {"text": "Mnaenda", "correct": false, "feedback": "mnaenda = YOU ALL are going."},
-        {"text": "Ninaenda", "correct": false, "feedback": "ninaenda = I am going."}
+        {
+          "text": "Tunaenda",
+          "correct": true
+        },
+        {
+          "text": "Mnaenda",
+          "correct": false,
+          "feedback": "mnaenda = YOU ALL are going."
+        },
+        {
+          "text": "Ninaenda",
+          "correct": false,
+          "feedback": "ninaenda = I am going."
+        }
       ],
-      "explanation": "Tunaenda = tu- (we) + -na- + -enda. Useful when you're sharing the ride."
+      "explanation": "Tunaenda = tu- (we) + -na- + -enda. Useful when you're sharing the ride.",
+      "grammar": [
+        "present-na"
+      ]
     },
     {
       "id": "5caf52b9-0baf-4d48-8d80-4ee8e10789df",
@@ -470,11 +971,25 @@
       "before": "Unaenda ",
       "after": " boss?",
       "options": [
-        {"text": "wapi", "correct": true},
-        {"text": "gani", "correct": false, "feedback": "gani = which? — it needs a noun before it, like upande gani."},
-        {"text": "ngapi", "correct": false, "feedback": "ngapi = how much / how many?"}
+        {
+          "text": "wapi",
+          "correct": true
+        },
+        {
+          "text": "gani",
+          "correct": false,
+          "feedback": "gani = which? — it needs a noun before it, like upande gani."
+        },
+        {
+          "text": "ngapi",
+          "correct": false,
+          "feedback": "ngapi = how much / how many?"
+        }
       ],
-      "explanation": "Wapi = where. Adding boss keeps it friendly."
+      "explanation": "Wapi = where. Adding boss keeps it friendly.",
+      "grammar": [
+        "question-words"
+      ]
     },
     {
       "id": "e6744c96-0702-4ee1-b7d2-36424b1c1fff",
@@ -483,11 +998,25 @@
       "before": "Upande ",
       "after": "?",
       "options": [
-        {"text": "gani", "correct": true},
-        {"text": "ngapi", "correct": false, "feedback": "ngapi = how many? — not about direction."},
-        {"text": "sana", "correct": false, "feedback": "sana = very."}
+        {
+          "text": "gani",
+          "correct": true
+        },
+        {
+          "text": "ngapi",
+          "correct": false,
+          "feedback": "ngapi = how many? — not about direction."
+        },
+        {
+          "text": "sana",
+          "correct": false,
+          "feedback": "sana = very."
+        }
       ],
-      "explanation": "Upande gani? = which side / which way? Answer with a landmark."
+      "explanation": "Upande gani? = which side / which way? Answer with a landmark.",
+      "grammar": [
+        "question-words"
+      ]
     },
     {
       "id": "731c68d3-5a3f-4b09-81b6-15b33a359c48",
@@ -496,11 +1025,25 @@
       "before": "",
       "after": " poa.",
       "options": [
-        {"text": "Tuko", "correct": true},
-        {"text": "Niko", "correct": false, "feedback": "niko = I am (at)."},
-        {"text": "Uko", "correct": false, "feedback": "uko = YOU are (at)."}
+        {
+          "text": "Tuko",
+          "correct": true
+        },
+        {
+          "text": "Niko",
+          "correct": false,
+          "feedback": "niko = I am (at)."
+        },
+        {
+          "text": "Uko",
+          "correct": false,
+          "feedback": "uko = YOU are (at)."
+        }
       ],
-      "explanation": "Tuko = tu- (we) + -ko (be at). Same pattern as niko and uko."
+      "explanation": "Tuko = tu- (we) + -ko (be at). Same pattern as niko and uko.",
+      "grammar": [
+        "ko-location"
+      ]
     },
     {
       "id": "11e1e36b-6ab0-48bf-9d2c-3c334c6cc6e3",
@@ -509,11 +1052,25 @@
       "before": "",
       "after": " poa.",
       "options": [
-        {"text": "Yuko", "correct": true},
-        {"text": "Uko", "correct": false, "feedback": "uko = YOU are (at)."},
-        {"text": "Niko", "correct": false, "feedback": "niko = I am (at)."}
+        {
+          "text": "Yuko",
+          "correct": true
+        },
+        {
+          "text": "Uko",
+          "correct": false,
+          "feedback": "uko = YOU are (at)."
+        },
+        {
+          "text": "Niko",
+          "correct": false,
+          "feedback": "niko = I am (at)."
+        }
       ],
-      "explanation": "Yuko = he/she is (at). Note the y- — it's the one irregular form of -ko."
+      "explanation": "Yuko = he/she is (at). Note the y- — it's the one irregular form of -ko.",
+      "grammar": [
+        "ko-location"
+      ]
     },
     {
       "id": "27dde3a8-8fc0-4594-8a28-971f4d335276",
@@ -522,11 +1079,25 @@
       "before": "",
       "after": " aje?",
       "options": [
-        {"text": "Mko", "correct": true},
-        {"text": "Uko", "correct": false, "feedback": "uko = YOU (one person) are. For a group, use mko."},
-        {"text": "Wako", "correct": false, "feedback": "wako = THEY are (at)."}
+        {
+          "text": "Mko",
+          "correct": true
+        },
+        {
+          "text": "Uko",
+          "correct": false,
+          "feedback": "uko = YOU (one person) are. For a group, use mko."
+        },
+        {
+          "text": "Wako",
+          "correct": false,
+          "feedback": "wako = THEY are (at)."
+        }
       ],
-      "explanation": "Mko aje? = how are you all? — m- (you all) + -ko."
+      "explanation": "Mko aje? = how are you all? — m- (you all) + -ko.",
+      "grammar": [
+        "ko-location"
+      ]
     },
     {
       "id": "65a329bf-5d9e-49bd-8a24-63b9347e0bc5",
@@ -535,9 +1106,20 @@
       "before": "Asante ",
       "after": ".",
       "options": [
-        {"text": "sana", "correct": true},
-        {"text": "poa", "correct": false, "feedback": "poa = cool — you'd say Poa, asante, not asante poa."},
-        {"text": "sawa", "correct": false, "feedback": "sawa = okay."}
+        {
+          "text": "sana",
+          "correct": true
+        },
+        {
+          "text": "poa",
+          "correct": false,
+          "feedback": "poa = cool — you'd say Poa, asante, not asante poa."
+        },
+        {
+          "text": "sawa",
+          "correct": false,
+          "feedback": "sawa = okay."
+        }
       ],
       "explanation": "Asante sana = thank you very much. Sana (very) always comes after the word it strengthens."
     },
@@ -548,9 +1130,20 @@
       "before": "",
       "after": ", boss.",
       "options": [
-        {"text": "Sawa", "correct": true},
-        {"text": "Ngapi", "correct": false, "feedback": "ngapi = how much?"},
-        {"text": "Gani", "correct": false, "feedback": "gani = which?"}
+        {
+          "text": "Sawa",
+          "correct": true
+        },
+        {
+          "text": "Ngapi",
+          "correct": false,
+          "feedback": "ngapi = how much?"
+        },
+        {
+          "text": "Gani",
+          "correct": false,
+          "feedback": "gani = which?"
+        }
       ],
       "explanation": "Sawa = okay. The most useful word in any matatu or Uber."
     }

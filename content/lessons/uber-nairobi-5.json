@@ -1,0 +1,1851 @@
+{
+  "id": "uber-nairobi-5",
+  "uuid": "7395af13-ab01-59db-b5eb-003a70891524",
+  "title": "Taking an Uber, Part 5: The Long Ride Home",
+  "category": "transport",
+  "difficulty": "advanced",
+  "level": 10,
+  "order": 1001,
+  "theme": "uber",
+  "culturalNote": "The last ride with Kamau — and by now you can banter like a local. Kenyan conversation is seasoned with methali (proverbs) and idioms. \"Haraka haraka haina baraka\" (hurry hurry has no blessing) when someone's rushing; \"Kawia ufike\" (delay, but arrive) when you're late; \"Umeniwacha kwa mataa\" (you left me at the traffic lights) when someone stood you up. Using one at the right moment earns instant respect — and a laugh.",
+  "startingPoint": "Friday night, 10 p.m. You're heading home from a party in Westlands. Kamau picks you up — late, again.",
+  "grammarFocus": [
+    "idioms-proverbs",
+    "conditional-nge",
+    "continuous-tenses",
+    "discourse-particles"
+  ],
+  "grammar": [
+    "idioms-proverbs",
+    "conditional-nge",
+    "continuous-tenses",
+    "discourse-particles",
+    "locative-ni",
+    "noun-classes-mwa-nn",
+    "numbers-money",
+    "ni-copula",
+    "adjective-agreement",
+    "subjunctive",
+    "verb-extensions",
+    "present-na",
+    "perfect-negative-ja",
+    "greetings",
+    "sanifu-noun-classes",
+    "past-li",
+    "question-words",
+    "time-swahili",
+    "perfect-me",
+    "object-infixes",
+    "subject-prefixes",
+    "ki-po-ka",
+    "future-ta",
+    "possessives"
+  ],
+  "turns": [
+    {
+      "id": "5b386170-87c3-5c60-9e3d-766add3c6bf6",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Kamau! Umeniwacha kwa mataa! Nimekuwa nikikungoja kwa dakika arobaini!",
+      "english": "Kamau! You left me hanging! I've been waiting for you for forty minutes!",
+      "words": [
+        {
+          "text": "Kamau",
+          "gloss": "Kamau (name)"
+        },
+        {
+          "text": "Umeniwacha kwa mataa",
+          "gloss": "\"You left me hanging!\" — lit. \"you left me at the traffic lights\": when someone doesn't show up or leaves you stranded.",
+          "grammar": [
+            "idioms-proverbs"
+          ]
+        },
+        {
+          "text": "Nimekuwa nikikungoja",
+          "gloss": "\"I've been waiting for you\"",
+          "grammar": [
+            "continuous-tenses"
+          ]
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "dakika",
+          "gloss": "minute — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "arobaini",
+          "gloss": "40 (n/n form — used for counting, money, things)",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Kamau! Umeniwacha kwa mataa! Nimekuwa nikikungoja kwa dakika arobaini!",
+          "correct": true
+        },
+        {
+          "swahili": "Kamau! Umeniwacha kwa mataa! Nitakuwa nikikungoja kwa dakika arobaini!",
+          "correct": false
+        },
+        {
+          "swahili": "Kamau! Nimekuwacha kwa mataa! Nimekuwa nikikungoja kwa dakika arobaini!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "d87be8e6-b3f7-5adb-b164-51018d387d1f",
+      "speaker": "Dereva",
+      "role": "auto",
+      "swahili": "Pole sana, boss! Foleni ya Westlands ni mbaya. Lakini, kawia ufike, sivyo?",
+      "english": "So sorry, boss! The Westlands jam is terrible. But better late than never, right?",
+      "words": [
+        {
+          "text": "Pole sana",
+          "gloss": "so sorry / take heart"
+        },
+        {
+          "text": "boss",
+          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Foleni ya Westlands",
+          "gloss": "the Westlands jam"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mbaya",
+          "gloss": "\"bad\" — m/wa singular agreement (one person / animal).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-baya (bad)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mbaya"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wabaya"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "mbaya"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "kawia ufike",
+          "gloss": "\"Better late than never\" — lit. \"delay, but arrive\". A proverb.",
+          "grammar": [
+            "idioms-proverbs"
+          ]
+        },
+        {
+          "text": "sivyo",
+          "gloss": "isn't it? / right? (question tag)",
+          "grammar": [
+            "discourse-particles"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9ba8ce9b-aee8-5ba4-8f7c-68da6daa0fec",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Haha! Sawa, kawia ufike. Lakini sasa usiendeshe kwa kasi — haraka haraka haina baraka.",
+      "english": "Haha! Fine, better late than never. But now don't drive fast — hurry hurry has no blessing.",
+      "words": [
+        {
+          "text": "Haha",
+          "gloss": "haha"
+        },
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "kawia ufike",
+          "gloss": "\"Better late than never\" — lit. \"delay, but arrive\". A proverb.",
+          "grammar": [
+            "idioms-proverbs"
+          ]
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "usiendeshe",
+          "gloss": "\"Don't drive\" — u- (subject: you) + si- (not) + -endeshe (drive, subjunctive -e). From kuendesha. Extension: causative (-isha/-esha/-za: \"make / cause\").",
+          "grammar": [
+            "subjunctive",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kuendesha (to drive)",
+            "tense": "Subjunctive, negative (-si- … -e)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nisiendeshe"
+              },
+              {
+                "pronoun": "you",
+                "form": "usiendeshe"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "asiendeshe"
+              },
+              {
+                "pronoun": "we",
+                "form": "tusiendeshe"
+              },
+              {
+                "pronoun": "you all",
+                "form": "msiendeshe"
+              },
+              {
+                "pronoun": "they",
+                "form": "wasiendeshe"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kwa kasi",
+          "gloss": "fast / at speed"
+        },
+        {
+          "text": "haraka haraka haina baraka",
+          "gloss": "\"Hurry hurry has no blessing\" — rushing brings mistakes.",
+          "grammar": [
+            "idioms-proverbs"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Haha! Sawa, kawia ufike. Lakini sasa usiendeshe kwa kasi — haraka haraka haina baraka.",
+          "correct": true
+        },
+        {
+          "swahili": "Haha! Sawa, kawia ufike. Lakini sasa endesha kwa kasi — haraka haraka haina baraka.",
+          "correct": false
+        },
+        {
+          "swahili": "Haha! Sawa, kawia ufike. Lakini sasa usiendeshe kwa kasi — polepole haina baraka.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "9a7dc1a3-9139-538b-9628-67693e3f55a2",
+      "speaker": "Dereva",
+      "role": "auto",
+      "swahili": "Wee! Kumbe sasa unaongea kama Mkenya halisi! Umenivunja mbavu!",
+      "english": "Whoa! Oh, so now you talk like a real Kenyan! You've cracked me up!",
+      "words": [
+        {
+          "text": "Wee",
+          "gloss": "hey you! (surprise / emphasis)",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Kumbe",
+          "gloss": "\"oh, so…!\"",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "unaongea",
+          "gloss": "\"You are talking\" — u- (subject: you) + na- (present) + -ongea (talk). From kuongea.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuongea (to talk)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaongea"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaongea"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaongea"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaongea"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaongea"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaongea"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kama",
+          "gloss": "like / as / if"
+        },
+        {
+          "text": "Mkenya",
+          "gloss": "a Kenyan — m/wa noun (people & animals; plural Wakenya)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "halisi",
+          "gloss": "genuine / real"
+        },
+        {
+          "text": "Umenivunja mbavu",
+          "gloss": "\"you've cracked me up\" — lit. \"you've broken my ribs\"",
+          "grammar": [
+            "idioms-proverbs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "66add84c-a1bb-54cf-8537-29bd32953bd2",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Unatia chumvi! Bado ninajifunza. Lakini mambo ni mengi, muda ni mchache.",
+      "english": "You're exaggerating! I'm still learning. But so much to do, so little time.",
+      "words": [
+        {
+          "text": "Unatia chumvi",
+          "gloss": "\"you're exaggerating\" — lit. \"you're adding salt\"",
+          "grammar": [
+            "idioms-proverbs"
+          ]
+        },
+        {
+          "text": "Bado",
+          "gloss": "still / not yet",
+          "grammar": [
+            "perfect-negative-ja"
+          ]
+        },
+        {
+          "text": "ninajifunza",
+          "gloss": "\"I am learning\" — ni- (subject: I) + na- (present) + -jifunza (learn). From kujifunza. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kujifunza (to learn)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninajifunza"
+              },
+              {
+                "pronoun": "you",
+                "form": "unajifunza"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anajifunza"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunajifunza"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnajifunza"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanajifunza"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "mambo",
+          "gloss": "things / matters / issues — plural of jambo. \"Mambo?\" = \"What's up?\" (lit. \"matters?\")",
+          "grammar": [
+            "greetings"
+          ],
+          "sanifu": "Sanifu: ji/ma class (jambo/mambo) — mambo yangu"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mengi",
+          "gloss": "\"many / a lot\" — ji/ma agreement (mambo mengi, magari mengi)",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "ji/ma class"
+        },
+        {
+          "text": "muda",
+          "gloss": "time / a while"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mchache",
+          "gloss": "little / few (m/mi agreement with muda)"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Unatia chumvi! Bado ninajifunza. Lakini mambo ni mengi, muda ni mchache.",
+          "correct": true
+        },
+        {
+          "swahili": "Unatia sukari! Bado ninajifunza. Lakini mambo ni mengi, muda ni mchache.",
+          "correct": false
+        },
+        {
+          "swahili": "Unatia chumvi! Bado ninajifunza. Lakini mambo ni machache, muda ni mwingi.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "c22e6151-e4fd-5bf5-a2bd-398963feb45f",
+      "speaker": "Dereva",
+      "role": "auto",
+      "swahili": "Ukweli! Sherehe ilikuwaje?",
+      "english": "True! How was the party?",
+      "words": [
+        {
+          "text": "Ukweli",
+          "gloss": "truth — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: u- class — ukweli wenyewe"
+        },
+        {
+          "text": "Sherehe",
+          "gloss": "party"
+        },
+        {
+          "text": "ilikuwaje",
+          "gloss": "\"How was it?\" — i- (subject: it (n/n)) + li- (past) + -wa (be) + -je (how?). From kuwa.",
+          "grammar": [
+            "past-li",
+            "question-words"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2da94faa-ef78-5150-ac41-e93d12bf7a88",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Ilikuwa poa, lakini saa nne wakati ulitupa kisogo — kila mtu alikuwa amechoka.",
+      "english": "It was cool, but at ten time was up — everyone was tired.",
+      "words": [
+        {
+          "text": "Ilikuwa",
+          "gloss": "\"It was\" — i- (subject: it (n/n)) + li- (past) + -wa (be). From kuwa.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kuwa (to be)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilikuwa"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulikuwa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alikuwa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulikuwa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlikuwa"
+              },
+              {
+                "pronoun": "they",
+                "form": "walikuwa"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "ilikuwa"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zilikuwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "saa nne",
+          "gloss": "10 o'clock",
+          "grammar": [
+            "time-swahili"
+          ]
+        },
+        {
+          "text": "wakati ulitupa kisogo",
+          "gloss": "\"time was up\" — lit. \"time turned the back of its head (on us)\"",
+          "grammar": [
+            "idioms-proverbs"
+          ]
+        },
+        {
+          "text": "kila mtu",
+          "gloss": "everyone"
+        },
+        {
+          "text": "alikuwa",
+          "gloss": "\"He/she was\" — a- (subject: he/she) + li- (past) + -wa (be). From kuwa.",
+          "grammar": [
+            "continuous-tenses",
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kuwa (to be)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilikuwa"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulikuwa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alikuwa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulikuwa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlikuwa"
+              },
+              {
+                "pronoun": "they",
+                "form": "walikuwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "amechoka",
+          "gloss": "\"He/she is tired\" — a- (subject: he/she) + me- (perfect (done / now-state)) + -choka (get tired). From kuchoka.",
+          "grammar": [
+            "continuous-tenses",
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kuchoka (to get tired)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimechoka"
+              },
+              {
+                "pronoun": "you",
+                "form": "umechoka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amechoka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumechoka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmechoka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamechoka"
+              }
+            ]
+          }
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ilikuwa poa, lakini saa nne wakati ulitupa kisogo — kila mtu alikuwa amechoka.",
+          "correct": true
+        },
+        {
+          "swahili": "Ilikuwa poa, lakini saa nne wakati ulitupa mkono — kila mtu alikuwa amechoka.",
+          "correct": false
+        },
+        {
+          "swahili": "Itakuwa poa, lakini saa nne wakati ulitupa kisogo — kila mtu alikuwa amechoka.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "c33662f6-be7d-5d51-bf72-14f7a523ebf4",
+      "speaker": "Dereva",
+      "role": "auto",
+      "swahili": "Haha! Na wiki ijayo, unaenda Mombasa? Ningekuwa najua mapema, ningekupeleka mimi!",
+      "english": "Haha! And next week, are you going to Mombasa? If I'd known earlier, I would have driven you myself!",
+      "words": [
+        {
+          "text": "Haha",
+          "gloss": "haha"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "wiki ijayo",
+          "gloss": "next week"
+        },
+        {
+          "text": "unaenda",
+          "gloss": "\"You are going\" — u- (subject: you) + na- (present) + -enda (go). From kuenda.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuenda (to go)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Mombasa",
+          "gloss": "Mombasa — the coastal city"
+        },
+        {
+          "text": "Ningekuwa najua",
+          "gloss": "\"If I had known\" — Kenyan colloquial conditional",
+          "grammar": [
+            "conditional-nge"
+          ]
+        },
+        {
+          "text": "mapema",
+          "gloss": "early"
+        },
+        {
+          "text": "ningekupeleka",
+          "gloss": "\"I would take you (somewhere)\" — ni- (subject: I) + nge- (\"would\") + ku- (object: you) + -peleka (take (somewhere)). From kupeleka.",
+          "grammar": [
+            "conditional-nge",
+            "object-infixes"
+          ],
+          "conjugation": {
+            "verb": "kupeleka (to take (somewhere))",
+            "tense": "Conditional (-nge-) + object -ku-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ningekupeleka"
+              },
+              {
+                "pronoun": "you",
+                "form": "ungekupeleka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "angekupeleka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tungekupeleka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mngekupeleka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wangekupeleka"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a6314c06-8858-5934-980e-51f422b303aa",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Ni safari ndefu! Lakini polepole ndio mwendo. Nikikuhitaji, nitakupigia.",
+      "english": "It's a long trip! But slow and steady is the way. If I need you, I'll call you.",
+      "words": [
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "safari",
+          "gloss": "journey / trip — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ndefu",
+          "gloss": "\"tall / long\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-refu (tall / long)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mrefu"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "warefu"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "ndefu"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "polepole ndio mwendo",
+          "gloss": "\"Slow and steady is the way\" — lit. \"slowly is the (right) pace\"",
+          "grammar": [
+            "idioms-proverbs"
+          ]
+        },
+        {
+          "text": "Nikikuhitaji",
+          "gloss": "\"If/when I need you\" — ni- (subject: I) + ki- (if / when · or \"-ing\" after kuwa) + ku- (object: you) + -hitaji (need). From kuhitaji. After a past kuwa (nilikuwa …) the -ki- form means \"…-ing\".",
+          "grammar": [
+            "ki-po-ka",
+            "object-infixes"
+          ]
+        },
+        {
+          "text": "nitakupigia",
+          "gloss": "\"I will call you\" — ni- (subject: I) + ta- (future) + ku- (object: you) + -pigia (call). From kupigia. Extension: prepositional (-ia/-ea: \"for / to / at\").",
+          "grammar": [
+            "future-ta",
+            "object-infixes",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kupigia (to call)",
+            "tense": "Future (-ta-) + object -ku-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitakupigia"
+              },
+              {
+                "pronoun": "you",
+                "form": "utakupigia"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atakupigia"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutakupigia"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtakupigia"
+              },
+              {
+                "pronoun": "they",
+                "form": "watakupigia"
+              }
+            ]
+          }
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ni safari ndefu! Lakini polepole ndio mwendo. Nikikuhitaji, nitakupigia.",
+          "correct": true
+        },
+        {
+          "swahili": "Ni safari fupi! Lakini polepole ndio mwendo. Nikikuhitaji, nitakupigia.",
+          "correct": false
+        },
+        {
+          "swahili": "Ni safari ndefu! Lakini polepole ndio mwendo. Ningekuhitaji, nilikupigia.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "152ca9a6-1efb-57ad-9437-ac0abc138854",
+      "speaker": "Dereva",
+      "role": "auto",
+      "swahili": "Poa. Wewe ni mteja wangu wa kwanza kila wakati. Nipe nikupe!",
+      "english": "Cool. You're always my number-one customer. You scratch my back, I'll scratch yours!",
+      "words": [
+        {
+          "text": "Poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mteja",
+          "gloss": "customer / client — m/wa noun (people & animals; plural wateja)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "wangu",
+          "gloss": "\"my\" — m/wa agreement (for people: mtoto wangu, watoto wangu).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (m/wa: people)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "wangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "wako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "wake"
+              },
+              {
+                "pronoun": "our",
+                "form": "wetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "wenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "wao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "wa kwanza",
+          "gloss": "the first (m/wa)",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "kila",
+          "gloss": "every / each"
+        },
+        {
+          "text": "wakati",
+          "gloss": "time / when / while"
+        },
+        {
+          "text": "Nipe nikupe",
+          "gloss": "\"You scratch my back, I'll scratch yours\" — lit. \"give me, I'll give you\"",
+          "grammar": [
+            "idioms-proverbs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0541c20c-bc6a-508f-9b9b-492fc3499099",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Kabisa! Tangu siku ya kwanza ulipokuwa ukiniuliza \"unaenda wapi?\", umekuwa rafiki wa kweli.",
+      "english": "Absolutely! Since the first day, when you were asking me \"where are you going?\", you've been a true friend.",
+      "words": [
+        {
+          "text": "Kabisa",
+          "gloss": "totally / completely — \"Kabisa!\" = \"Absolutely!\""
+        },
+        {
+          "text": "Tangu",
+          "gloss": "since"
+        },
+        {
+          "text": "siku",
+          "gloss": "day — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ya kwanza",
+          "gloss": "the first (n/n)",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "ulipokuwa",
+          "gloss": "\"When you were\" — u- (subject: you) + li- (past) + po- (when / where) + -wa (be). From kuwa.",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "ukiniuliza",
+          "gloss": "\"If/when you ask me\" — u- (subject: you) + ki- (if / when · or \"-ing\" after kuwa) + ni- (object: me) + -uliza (ask). From kuuliza. After a past kuwa (nilikuwa …) the -ki- form means \"…-ing\".",
+          "grammar": [
+            "ki-po-ka",
+            "object-infixes"
+          ]
+        },
+        {
+          "text": "unaenda",
+          "gloss": "\"You are going\" — u- (subject: you) + na- (present) + -enda (go). From kuenda.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuenda (to go)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "wapi",
+          "gloss": "where?",
+          "grammar": [
+            "question-words"
+          ]
+        },
+        {
+          "text": "umekuwa",
+          "gloss": "\"You have been\" — u- (subject: you) + me- (perfect (done / now-state)) + -wa (be). From kuwa.",
+          "grammar": [
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kuwa (to be)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimekuwa"
+              },
+              {
+                "pronoun": "you",
+                "form": "umekuwa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amekuwa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumekuwa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmekuwa"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamekuwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "rafiki wa kweli",
+          "gloss": "a true friend"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Kabisa! Tangu siku ya kwanza ulipokuwa ukiniuliza \"unaenda wapi?\", umekuwa rafiki wa kweli.",
+          "correct": true
+        },
+        {
+          "swahili": "Kabisa! Tangu siku ya kwanza utakapokuwa ukiniuliza \"unaenda wapi?\", umekuwa rafiki wa kweli.",
+          "correct": false
+        },
+        {
+          "swahili": "Kabisa! Tangu siku ya kwanza ulipokuwa ukiniuliza \"unaenda wapi?\", umekuwa adui wa kweli.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "e1854087-44e4-57ca-9ad6-2af27ba1c8c5",
+      "speaker": "Dereva",
+      "role": "auto",
+      "swahili": "Asante, boss. Mvumilivu hula mbivu — ulinivumilia kila nilipochelewa! Tumefika.",
+      "english": "Thanks, boss. Good things come to the patient — you put up with me every time I was late! We've arrived.",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "boss",
+          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Mvumilivu hula mbivu",
+          "gloss": "\"The patient one eats ripe fruit\" — good things come to those who wait.",
+          "grammar": [
+            "idioms-proverbs"
+          ]
+        },
+        {
+          "text": "ulinivumilia",
+          "gloss": "\"You put up with me\" — u- (subject: you) + li- (past) + ni- (object: me) + -vumilia (put up with). From kuvumilia.",
+          "grammar": [
+            "past-li",
+            "object-infixes"
+          ],
+          "conjugation": {
+            "verb": "kuvumilia (to put up with)",
+            "tense": "Past (-li-) + object -ni-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilinivumilia"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulinivumilia"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alinivumilia"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulinivumilia"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlinivumilia"
+              },
+              {
+                "pronoun": "they",
+                "form": "walinivumilia"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kila",
+          "gloss": "every / each"
+        },
+        {
+          "text": "nilipochelewa",
+          "gloss": "\"When I ran late\" — ni- (subject: I) + li- (past) + po- (when / where) + -chelewa (run late). From kuchelewa.",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "Tumefika",
+          "gloss": "\"we've arrived\""
+        }
+      ]
+    },
+    {
+      "id": "fce4a1ad-8965-5bdf-adf6-761626b4b6d6",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Haha! Asante, Kamau. Usiku mwema, na lala salama!",
+      "english": "Haha! Thanks, Kamau. Good night, and sleep well!",
+      "words": [
+        {
+          "text": "Haha",
+          "gloss": "haha"
+        },
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Kamau",
+          "gloss": "Kamau (name)"
+        },
+        {
+          "text": "Usiku mwema",
+          "gloss": "\"Good night\""
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "lala salama",
+          "gloss": "\"Sleep well\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Haha! Asante, Kamau. Usiku mwema, na lala salama!",
+          "correct": true
+        },
+        {
+          "swahili": "Haha! Asante, Kamau. Habari ya asubuhi, na lala salama!",
+          "correct": false
+        },
+        {
+          "swahili": "Haha! Pole, Kamau. Usiku mwema, na lala salama!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "7a69ce1e-0919-50b9-9fa4-cc1b52cd8971",
+      "speaker": "Dereva",
+      "role": "auto",
+      "swahili": "Na wewe pia. Tutaonana!",
+      "english": "You too. See you!",
+      "words": [
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "pia",
+          "gloss": "also / too"
+        },
+        {
+          "text": "Tutaonana",
+          "gloss": "we'll see each other / see you",
+          "grammar": [
+            "greetings"
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "0ceb11cd-88e7-5cfc-bd71-b98682716744",
+      "swahili": "Umeniwacha kwa mataa",
+      "english": "You left me hanging",
+      "exampleContext": "Kenyan idiom: lit. \"you left me at the lights\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "d2ef8bc9-8d9f-53e8-bf25-402aa8c16cd3",
+      "swahili": "Kawia ufike",
+      "english": "Better late than never",
+      "exampleContext": "Methali: \"delay, but arrive\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "ea27f5cf-fa94-53ce-9342-7d9499a690d7",
+      "swahili": "Haraka haraka haina baraka",
+      "english": "Hurry hurry has no blessing",
+      "exampleContext": "Said to anyone rushing",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "af583b71-7897-51bd-ad41-0faee2d9df81",
+      "swahili": "Polepole ndio mwendo",
+      "english": "Slow and steady is the way |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "12e99bf7-cd4d-5249-8d03-89b119afb93f",
+      "swahili": "kutia chumvi",
+      "english": "to exaggerate",
+      "exampleContext": "Lit. \"to add salt\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "013eaa36-4031-5e62-9d82-2ec7183089ed",
+      "swahili": "kuvunja mbavu",
+      "english": "to crack someone up",
+      "exampleContext": "Lit. \"to break ribs\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "345dc149-f055-55c8-8037-2fa517cace1e",
+      "swahili": "Mambo ni mengi, muda ni mchache",
+      "english": "So much to do, so little time |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "b8e6197a-f422-5650-97e1-0e801ffea1d9",
+      "swahili": "Wakati umetupa kisogo",
+      "english": "Time's up",
+      "exampleContext": "Lit. \"time has turned the back of its head on us\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "ce922868-a108-5560-ac1f-2505a3096e1b",
+      "swahili": "Nipe nikupe",
+      "english": "You scratch my back…",
+      "exampleContext": "Lit. \"give me, I'll give you\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "e1cbae0e-7616-5da5-b02d-c9f4041d749c",
+      "swahili": "Mvumilivu hula mbivu",
+      "english": "Good things come to the patient",
+      "exampleContext": "Lit. \"the patient one eats ripe fruit\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "3fe7bda9-4e17-5fc7-93e2-b311bacf4d83",
+      "swahili": "Mkenya halisi",
+      "english": "a real Kenyan",
+      "exampleContext": "halisi = genuine",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "929ac952-9c18-5b71-a957-35a6a0aed829",
+      "swahili": "rafiki wa kweli",
+      "english": "a true friend |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "9c38353c-92fc-524d-bdb4-32b81806f4e2",
+      "swahili": "Usiku mwema",
+      "english": "Good night",
+      "exampleContext": "Lala salama = sleep well",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a5eefd14-8e6a-598e-a21c-39541ddf9db7",
+      "mode": "complete",
+      "english": "You left me hanging! (lit. \"at the traffic lights\")",
+      "before": "Umeniwacha kwa ",
+      "after": "!",
+      "options": [
+        {
+          "text": "mataa",
+          "correct": true
+        },
+        {
+          "text": "maji",
+          "correct": false,
+          "feedback": "maji = water"
+        },
+        {
+          "text": "mwendo",
+          "correct": false,
+          "feedback": "mwendo = pace / speed"
+        }
+      ],
+      "explanation": "Kenyan idiom for being stood up or left stranded."
+    },
+    {
+      "id": "57af4f92-5ea7-5122-a529-3541513bd085",
+      "mode": "complete",
+      "english": "Better late than never.",
+      "before": "Kawia ",
+      "after": ".",
+      "options": [
+        {
+          "text": "ufike",
+          "correct": true
+        },
+        {
+          "text": "ufika",
+          "correct": false
+        },
+        {
+          "text": "umefika",
+          "correct": false,
+          "feedback": "umefika = You have arrived"
+        }
+      ],
+      "explanation": "A methali (proverb): \"delay, but arrive\". ufike = subjunctive.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "7bcc18b9-d028-53f3-869d-47b43eb705dd",
+      "mode": "complete",
+      "english": "Hurry hurry has no blessing.",
+      "before": "Haraka haraka haina ",
+      "after": ".",
+      "options": [
+        {
+          "text": "baraka",
+          "correct": true
+        },
+        {
+          "text": "haraka",
+          "correct": false,
+          "feedback": "haraka = quickly / hurry"
+        },
+        {
+          "text": "shida",
+          "correct": false,
+          "feedback": "shida = problem / trouble"
+        }
+      ],
+      "explanation": "Said to anyone rushing (or driving too fast)."
+    },
+    {
+      "id": "c360e527-ddec-5e40-ada6-f0ebae1dd97c",
+      "mode": "complete",
+      "english": "Slow and steady is the way.",
+      "before": "Polepole ndio ",
+      "after": ".",
+      "options": [
+        {
+          "text": "mwendo",
+          "correct": true
+        },
+        {
+          "text": "baraka",
+          "correct": false,
+          "feedback": "baraka = blessing"
+        },
+        {
+          "text": "mbavu",
+          "correct": false,
+          "feedback": "mbavu = ribs"
+        }
+      ],
+      "explanation": "mwendo: pace / speed"
+    },
+    {
+      "id": "9ec8f8b3-605f-5ae7-b72b-daac814cf1f9",
+      "mode": "complete",
+      "english": "You're exaggerating! (lit. \"adding salt\")",
+      "before": "Unatia ",
+      "after": "!",
+      "options": [
+        {
+          "text": "chumvi",
+          "correct": true
+        },
+        {
+          "text": "sukari",
+          "correct": false,
+          "feedback": "sukari = sugar"
+        },
+        {
+          "text": "pilipili",
+          "correct": false,
+          "feedback": "pilipili = chilli pepper"
+        }
+      ],
+      "explanation": "kutia chumvi = to exaggerate.",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "d4ca1d27-4e63-5b2d-bc29-9160a6b6f563",
+      "mode": "complete",
+      "english": "You've cracked me up! (lit. \"broken my ribs\")",
+      "before": "Umenivunja ",
+      "after": "!",
+      "options": [
+        {
+          "text": "mbavu",
+          "correct": true
+        },
+        {
+          "text": "mguu",
+          "correct": false,
+          "feedback": "mguu = leg / foot (plural miguu)"
+        },
+        {
+          "text": "moyo",
+          "correct": false
+        }
+      ],
+      "explanation": "mbavu: ribs"
+    },
+    {
+      "id": "f3b79d92-7dcd-5088-b855-14709ed6228e",
+      "mode": "complete",
+      "english": "So much to do, so little time.",
+      "before": "Mambo ni mengi, muda ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "mchache",
+          "correct": true
+        },
+        {
+          "text": "mwingi",
+          "correct": false,
+          "feedback": "mwingi = many / a lot"
+        },
+        {
+          "text": "mrefu",
+          "correct": false,
+          "feedback": "mrefu = tall / long"
+        }
+      ],
+      "explanation": "A favourite Kenyan saying."
+    },
+    {
+      "id": "d58266d0-9718-524e-a2d5-3ca2cede5458",
+      "mode": "complete",
+      "english": "Time's up. (lit. \"time has shown us the back of its head\")",
+      "before": "Wakati umetupa ",
+      "after": ".",
+      "options": [
+        {
+          "text": "kisogo",
+          "correct": true
+        },
+        {
+          "text": "mkono",
+          "correct": false,
+          "feedback": "mkono = hand / arm (plural mikono)"
+        },
+        {
+          "text": "mgongo",
+          "correct": false,
+          "feedback": "mgongo = back (plural migongo)"
+        }
+      ],
+      "explanation": "kisogo: the back of the head"
+    },
+    {
+      "id": "d7cf9ce5-52d9-5b00-b4fb-9c1d0c69d727",
+      "mode": "complete",
+      "english": "You scratch my back, I'll scratch yours.",
+      "before": "Nipe ",
+      "after": "!",
+      "options": [
+        {
+          "text": "nikupe",
+          "correct": true
+        },
+        {
+          "text": "unipe",
+          "correct": false,
+          "feedback": "unipe = (please) give me"
+        },
+        {
+          "text": "nimpe",
+          "correct": false,
+          "feedback": "nimpe = Let me give him/her / should I give him/her?"
+        }
+      ],
+      "explanation": "Lit. \"give me, (so that) I give you\".",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "b6ffd8eb-74a4-5e77-acea-29f1cd2209ac",
+      "mode": "complete",
+      "english": "Good things come to those who wait.",
+      "before": "Mvumilivu hula ",
+      "after": ".",
+      "options": [
+        {
+          "text": "mbivu",
+          "correct": true
+        },
+        {
+          "text": "mbichi",
+          "correct": false
+        },
+        {
+          "text": "mbovu",
+          "correct": false,
+          "feedback": "mbovu = rotten / broken / bad"
+        }
+      ],
+      "explanation": "Lit. \"the patient one eats ripe (fruit)\"."
+    },
+    {
+      "id": "a6724a7a-6304-5508-a32b-2c84418dc5f9",
+      "mode": "translate",
+      "english": "I've been waiting for you for forty minutes!",
+      "before": "",
+      "after": " nikikungoja kwa dakika arobaini!",
+      "options": [
+        {
+          "text": "Nimekuwa",
+          "correct": true
+        },
+        {
+          "text": "Nilikuwa",
+          "correct": false,
+          "feedback": "Nilikuwa = I was"
+        },
+        {
+          "text": "Nitakuwa",
+          "correct": false,
+          "feedback": "Nitakuwa = I will be"
+        }
+      ],
+      "explanation": "Nimekuwa = \"I have been\" — ni- (subject: I) + me- (perfect (done / now-state)) + -wa (be). From kuwa.",
+      "grammar": [
+        "perfect-me"
+      ]
+    },
+    {
+      "id": "d9dd443c-e394-5538-a0ca-83e399830397",
+      "mode": "translate",
+      "english": "If I'd known earlier, I would have taken you myself!",
+      "before": "Ningekuwa najua mapema, ",
+      "after": " mimi!",
+      "options": [
+        {
+          "text": "ningekupeleka",
+          "correct": true
+        },
+        {
+          "text": "nitakupeleka",
+          "correct": false,
+          "feedback": "nitakupeleka = I will take you (somewhere)"
+        },
+        {
+          "text": "nilikupeleka",
+          "correct": false,
+          "feedback": "nilikupeleka = I took you (somewhere)"
+        }
+      ],
+      "explanation": "ningekupeleka = \"I would take you (somewhere)\" — ni- (subject: I) + nge- (\"would\") + ku- (object: you) + -peleka (take (somewhere)). From kupeleka.",
+      "grammar": [
+        "conditional-nge",
+        "object-infixes"
+      ]
+    },
+    {
+      "id": "24e41a5b-1de4-5510-a1dc-afccd5e028c1",
+      "mode": "translate",
+      "english": "If I need you, I'll call you.",
+      "before": "",
+      "after": ", nitakupigia.",
+      "options": [
+        {
+          "text": "Nikikuhitaji",
+          "correct": true
+        },
+        {
+          "text": "Nilikuhitaji",
+          "correct": false,
+          "feedback": "Nilikuhitaji = I needed you"
+        },
+        {
+          "text": "Ningekuhitaji",
+          "correct": false,
+          "feedback": "Ningekuhitaji = I would need you"
+        }
+      ],
+      "explanation": "Nikikuhitaji = \"If/when I need you\" — ni- (subject: I) + ki- (if / when · or \"-ing\" after kuwa) + ku- (object: you) + -hitaji (need). From kuhitaji. After a past kuwa (nilikuwa …) the -ki- form means \"…-ing\".",
+      "grammar": [
+        "ki-po-ka",
+        "object-infixes"
+      ]
+    },
+    {
+      "id": "4d64efa3-fe46-5e9e-8ea7-a87e5ab6f39b",
+      "mode": "translate",
+      "english": "Don't drive fast.",
+      "before": "",
+      "after": " kwa kasi.",
+      "options": [
+        {
+          "text": "Usiendeshe",
+          "correct": true
+        },
+        {
+          "text": "Endesha",
+          "correct": false,
+          "feedback": "Endesha = Drive!"
+        },
+        {
+          "text": "Hauendeshi",
+          "correct": false,
+          "feedback": "Hauendeshi = He/she is not driving it"
+        }
+      ],
+      "explanation": "Usiendeshe = \"Don't drive\" — u- (subject: you) + si- (not) + -endeshe (drive, subjunctive -e). From kuendesha. Extension: causative (-isha/-esha/-za: \"make / cause\").",
+      "grammar": [
+        "subjunctive",
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "2863053a-dad2-5e26-be89-f80097ffa6c7",
+      "mode": "translate",
+      "english": "Oh, so now you talk like a real Kenyan!",
+      "before": "",
+      "after": " sasa unaongea kama Mkenya halisi!",
+      "options": [
+        {
+          "text": "Kumbe",
+          "correct": true
+        },
+        {
+          "text": "Basi",
+          "correct": false,
+          "feedback": "Basi = so / well then / okay, that's it"
+        },
+        {
+          "text": "Yaani",
+          "correct": false,
+          "feedback": "Yaani = I mean / that is to say"
+        }
+      ],
+      "explanation": "Kumbe = \"oh, so…!\"",
+      "grammar": [
+        "discourse-particles"
+      ]
+    },
+    {
+      "id": "ada4ff5e-d2c3-5791-8531-171c1160ba4f",
+      "mode": "translate",
+      "english": "when you were asking me…",
+      "before": "",
+      "after": " ukiniuliza…",
+      "options": [
+        {
+          "text": "ulipokuwa",
+          "correct": true
+        },
+        {
+          "text": "ukiwa",
+          "correct": false,
+          "feedback": "ukiwa = If/when you are"
+        },
+        {
+          "text": "utakapokuwa",
+          "correct": false,
+          "feedback": "utakapokuwa = When you are"
+        }
+      ],
+      "explanation": "-po- (when) + kuwa + -ki- verb.",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "d347d5df-fa24-56d8-9a36-f7c54fbeae5d",
+      "mode": "complete",
+      "english": "Good night, and sleep well!",
+      "before": "Usiku mwema, na lala ",
+      "after": "!",
+      "options": [
+        {
+          "text": "salama",
+          "correct": true
+        },
+        {
+          "text": "sana",
+          "correct": false,
+          "feedback": "sana = very / a lot"
+        },
+        {
+          "text": "haraka",
+          "correct": false,
+          "feedback": "haraka = quickly / hurry"
+        }
+      ],
+      "explanation": "salama: fine / safe / peaceful",
+      "grammar": [
+        "greetings"
+      ]
+    }
+  ]
+}

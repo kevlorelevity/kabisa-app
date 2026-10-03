@@ -1,0 +1,1553 @@
+{
+  "id": "neighbours-greetings",
+  "uuid": "e2ae822c-fcf4-5506-8e2c-1ce5e968a89d",
+  "title": "Mambo, Neighbour! Greetings at the Gate",
+  "category": "social",
+  "difficulty": "beginner",
+  "level": 1,
+  "order": 103,
+  "theme": "greetings",
+  "culturalNote": "Kenyans greet before anything else — skipping the greeting and jumping straight to business comes across as rude. Who you greet decides how you greet: an older woman like your neighbour gets the polite \"Habari ya asubuhi?\" (and \"mama\" as a sign of respect), while her teenage son gets a casual \"Mambo?\" or \"Niaje?\". Women are often called by their first child's name — \"Mama Njeri\" is \"Njeri's mum\". You are John again, newly moved into a flat in Kilimani.",
+  "startingPoint": "It's 7:30 on your first morning in the new flat. Mama Njeri from next door greets you at the gate.",
+  "grammarFocus": [
+    "greetings",
+    "ko-location",
+    "present-na"
+  ],
+  "grammar": [
+    "greetings",
+    "ko-location",
+    "present-na",
+    "noun-classes-mwa-nn",
+    "possessives",
+    "subject-prefixes",
+    "ni-copula",
+    "sanifu-noun-classes",
+    "question-words",
+    "demonstratives",
+    "discourse-particles",
+    "locative-ni",
+    "subjunctive"
+  ],
+  "turns": [
+    {
+      "id": "47e37ab2-0358-5e6a-8b56-751f66d5ab46",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Habari ya asubuhi?",
+      "english": "Good morning? (lit. \"News of the morning?\")",
+      "words": [
+        {
+          "text": "Habari ya asubuhi",
+          "gloss": "good morning (lit. \"news of the morning?\")",
+          "grammar": [
+            "greetings"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ca9f7bfd-7c05-528f-a4d7-a15d1eb3468c",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Nzuri sana, mama. Habari yako?",
+      "english": "Very good, ma'am. How are you?",
+      "words": [
+        {
+          "text": "Nzuri sana",
+          "gloss": "very good",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "mama",
+          "gloss": "mother / respectful \"madam\" — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Habari yako",
+          "gloss": "how are you? (lit. \"your news?\")",
+          "grammar": [
+            "greetings",
+            "possessives"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Nzuri sana, mama. Habari yako?",
+          "correct": true
+        },
+        {
+          "swahili": "Poa sana, boss! Niaje?",
+          "correct": false
+        },
+        {
+          "swahili": "Niko Kilimani.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "b16af511-2de6-5483-93eb-3fb5dee40cf8",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Salama. Wewe ni mgeni hapa?",
+      "english": "Fine. Are you new here?",
+      "words": [
+        {
+          "text": "Salama",
+          "gloss": "fine / safe / peaceful",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mgeni",
+          "gloss": "guest / stranger / newcomer — m/wa noun (people & animals; plural wageni)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        }
+      ]
+    },
+    {
+      "id": "d63acecf-261c-5c0d-a672-565d969e675f",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Ndiyo. Ninaishi hapa, nyumba namba tano.",
+      "english": "Yes. I live here, house number five.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Ninaishi",
+          "gloss": "\"I live\" — ni- (subject: I) + na- (present) + -ishi (live). From kuishi. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuishi (to live)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaishi"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaishi"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaishi"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaishi"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaishi"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaishi"
+              }
+            ]
+          }
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "nyumba",
+          "gloss": "house / houses — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "namba tano",
+          "gloss": "number five"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo. Ninaishi hapa, nyumba namba tano.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo. Unaishi hapa, nyumba namba tano.",
+          "correct": false
+        },
+        {
+          "swahili": "Jina yangu ni John. Na wewe?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "0776c50c-b2f8-5503-953c-c45ecf0b6298",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Karibu sana! Jina yako ni nani?",
+      "english": "You're very welcome! What's your name?",
+      "words": [
+        {
+          "text": "Karibu",
+          "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Jina yako",
+          "gloss": "\"your name\"",
+          "grammar": [
+            "possessives",
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: jina lako (ji/ma class)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "nani",
+          "gloss": "who?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ],
+      "sanifu": "Karibu sana! Jina lako ni nani?"
+    },
+    {
+      "id": "04ad907d-d859-58e0-a4dc-be25292777bb",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Jina yangu ni John. Na wewe?",
+      "english": "My name is John. And you?",
+      "words": [
+        {
+          "text": "Jina yangu",
+          "gloss": "\"my name\" — Kenyan: n/n agreement yangu",
+          "grammar": [
+            "possessives",
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: jina langu (jina is ji/ma class)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "John",
+          "gloss": "John (name)"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        }
+      ],
+      "sanifu": "Jina langu ni John. Na wewe?",
+      "options": [
+        {
+          "swahili": "Jina yangu ni John. Na wewe?",
+          "correct": true
+        },
+        {
+          "swahili": "Jina yako ni John. Na wewe?",
+          "correct": false
+        },
+        {
+          "swahili": "Poa sana! Uko aje?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "bc89fb08-6969-5692-acc5-5ce28a827de6",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Mimi ni Mama Njeri. Huyu ni Baraka, mtoto wangu.",
+      "english": "I'm Mama Njeri. This is Baraka, my son.",
+      "words": [
+        {
+          "text": "Mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Mama Njeri",
+          "gloss": "\"Njeri's mum\" — Kenyan women are often called by their first child's name. Mama alone is a respectful way to address any older woman."
+        },
+        {
+          "text": "Huyu",
+          "gloss": "this (person) — m/wa singular",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Baraka",
+          "gloss": "Baraka (name)"
+        },
+        {
+          "text": "mtoto",
+          "gloss": "child — m/wa noun (people & animals; plural watoto)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "wangu",
+          "gloss": "\"my\" — m/wa agreement (for people: mtoto wangu, watoto wangu).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (m/wa: people)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "wangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "wako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "wake"
+              },
+              {
+                "pronoun": "our",
+                "form": "wetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "wenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "wao"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "f2c77f2d-bc11-51b0-b7cd-a5cab7b5b74a",
+      "speaker": "Baraka",
+      "role": "auto",
+      "swahili": "Mambo?",
+      "english": "What's up?",
+      "words": [
+        {
+          "text": "Mambo",
+          "gloss": "things / matters / issues — plural of jambo. \"Mambo?\" = \"What's up?\" (lit. \"matters?\")",
+          "grammar": [
+            "greetings"
+          ],
+          "sanifu": "Sanifu: ji/ma class (jambo/mambo) — mambo yangu"
+        }
+      ]
+    },
+    {
+      "id": "b0f73562-913e-52bf-95b5-6b11b2e572fb",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Poa sana! Uko aje?",
+      "english": "Very cool! How are you?",
+      "words": [
+        {
+          "text": "Poa sana",
+          "gloss": "very cool / really good",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Uko",
+          "gloss": "\"You are (at / doing)\" — u- + -ko (be at a place, or how you're doing). \"Uko poa\" = you are fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "aje",
+          "gloss": "how? (Kenyan) — \"Uko aje?\" = how are you?",
+          "grammar": [
+            "question-words",
+            "greetings"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Poa sana! Uko aje?",
+          "correct": true
+        },
+        {
+          "swahili": "Nzuri sana, mama. Habari yako?",
+          "correct": false
+        },
+        {
+          "swahili": "Poa sana! Niko aje?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "b9496a37-383f-58e3-a2fd-cbc86f1e15ee",
+      "speaker": "Baraka",
+      "role": "auto",
+      "swahili": "Niko fiti. Unatoka wapi?",
+      "english": "I'm good. Where are you from?",
+      "words": [
+        {
+          "text": "Niko",
+          "gloss": "\"I am (at / doing)\" — ni- + -ko (be at a place, or how you're doing). \"Niko poa\" = I am fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "fiti",
+          "gloss": "fine (from English \"fit\")",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Unatoka",
+          "gloss": "\"You are leaving / come from\" — u- (subject: you) + na- (present) + -toka (leave / come from). From kutoka.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kutoka (to leave / come from)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninatoka"
+              },
+              {
+                "pronoun": "you",
+                "form": "unatoka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anatoka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunatoka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnatoka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanatoka"
+              }
+            ]
+          }
+        },
+        {
+          "text": "wapi",
+          "gloss": "where?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5ed4223c-2358-5cfb-9956-5bd56e85b547",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Ninatoka Uganda, lakini ninafanya kazi hapa Nairobi.",
+      "english": "I'm from Uganda, but I work here in Nairobi.",
+      "words": [
+        {
+          "text": "Ninatoka",
+          "gloss": "\"I am leaving / come from\" — ni- (subject: I) + na- (present) + -toka (leave / come from). From kutoka. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kutoka (to leave / come from)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninatoka"
+              },
+              {
+                "pronoun": "you",
+                "form": "unatoka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anatoka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunatoka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnatoka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanatoka"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Uganda",
+          "gloss": "Uganda"
+        },
+        {
+          "text": "lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "ninafanya",
+          "gloss": "\"I am doing\" — ni- (subject: I) + na- (present) + -fanya (do). From kufanya. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kufanya (to do)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninafanya"
+              },
+              {
+                "pronoun": "you",
+                "form": "unafanya"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anafanya"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunafanya"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnafanya"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanafanya"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kazi",
+          "gloss": "work / job — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "Nairobi",
+          "gloss": "Nairobi"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ninatoka Uganda, lakini ninafanya kazi hapa Nairobi.",
+          "correct": true
+        },
+        {
+          "swahili": "Unatoka Uganda, lakini ninafanya kazi hapa Nairobi.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, ninaenda kazini sasa hivi.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "c983e0f0-e5e5-59d7-8cfa-cc17462890c5",
+      "speaker": "Baraka",
+      "role": "auto",
+      "swahili": "Aah, poa. Unaenda kazini sasa?",
+      "english": "Ah, cool. Are you going to work now?",
+      "words": [
+        {
+          "text": "Aah",
+          "gloss": "ah!",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Unaenda",
+          "gloss": "\"You are going\" — u- (subject: you) + na- (present) + -enda (go). From kuenda.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuenda (to go)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kazini",
+          "gloss": "\"at / to work\" — kazi + -ni (place suffix).",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        }
+      ]
+    },
+    {
+      "id": "3a609de9-7edb-59e1-ac53-5243528dedd4",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Ndiyo, ninaenda kazini sasa hivi.",
+      "english": "Yes, I'm going to work right now.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "ninaenda",
+          "gloss": "\"I am going\" — ni- (subject: I) + na- (present) + -enda (go). From kuenda. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuenda (to go)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kazini",
+          "gloss": "\"at / to work\" — kazi + -ni (place suffix).",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "sasa hivi",
+          "gloss": "right now / just now"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo, ninaenda kazini sasa hivi.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, unaenda kazini sasa hivi.",
+          "correct": false
+        },
+        {
+          "swahili": "Asante, mama. Tuonane baadaye!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "38a136c8-fce8-5f84-9eb0-a0b03e731b3f",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Sawa. Kazi njema!",
+      "english": "Okay. Have a good day at work!",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Kazi njema",
+          "gloss": "\"have a good day at work\" (lit. \"good work\")"
+        }
+      ]
+    },
+    {
+      "id": "32734668-893e-5422-ad5b-129e7038822f",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Asante, mama. Tuonane baadaye!",
+      "english": "Thank you, ma'am. See you later!",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "mama",
+          "gloss": "mother / respectful \"madam\" — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Tuonane",
+          "gloss": "see you (lit. \"let's see each other\")",
+          "grammar": [
+            "greetings",
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "baadaye",
+          "gloss": "later"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante, mama. Tuonane baadaye!",
+          "correct": true
+        },
+        {
+          "swahili": "Karibu sana, mama!",
+          "correct": false
+        },
+        {
+          "swahili": "Asante, mama. Habari ya asubuhi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "7abce121-f4a7-580c-ab33-02139a1778fd",
+      "speaker": "Baraka",
+      "role": "auto",
+      "swahili": "Poa. Kwa heri!",
+      "english": "Cool. Bye!",
+      "words": [
+        {
+          "text": "Poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Kwa heri",
+          "gloss": "goodbye",
+          "grammar": [
+            "greetings"
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "05f8bb5a-9aa9-573a-a398-f68314a3dd0e",
+      "swahili": "Habari ya asubuhi?",
+      "english": "Good morning?",
+      "exampleContext": "Lit. \"news of the morning?\" — answer Nzuri. You'll also hear \"Habari asubuhi?\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "46d42403-7f07-5789-aa97-9fab402d602a",
+      "swahili": "Nzuri",
+      "english": "Good / fine",
+      "exampleContext": "The standard reply to every \"Habari…?\" greeting."
+    },
+    {
+      "id": "fdbe1b27-4ac1-5c81-b064-66b7a93f4c41",
+      "swahili": "Mambo?",
+      "english": "What's up?",
+      "exampleContext": "Casual — answer Poa. Lit. \"matters?\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "c14f3e65-a7da-5d21-b26d-52661d7f245c",
+      "swahili": "Uko aje?",
+      "english": "How are you?",
+      "exampleContext": "Casual Kenyan. Answer: Niko poa / Niko fiti.",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "a7fca044-88e9-5330-95ea-7d8c4db43d75",
+      "swahili": "Niko fiti",
+      "english": "I'm fine",
+      "exampleContext": "fiti comes from English \"fit\".",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "ca3dd0eb-9e32-5206-8165-d518315f99f8",
+      "swahili": "Wewe ni mgeni hapa?",
+      "english": "Are you new here?",
+      "exampleContext": "mgeni = guest / newcomer / stranger",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "162c8dc3-11b2-526c-aa23-9eb8e40f80a9",
+      "swahili": "Ninaishi…",
+      "english": "I live…",
+      "exampleContext": "From kuishi (to live). Ninaishi Kilimani.",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "37a385f8-d5c0-56b5-8b67-e4023a1cf9fa",
+      "swahili": "Jina yangu ni…",
+      "english": "My name is…",
+      "exampleContext": "Everyday Kenyan form.",
+      "partOfSpeech": "phrase",
+      "sanifu": "Jina langu ni…",
+      "sanifuNote": "Sanifu: jina is ji/ma class, so langu."
+    },
+    {
+      "id": "d37f385a-bd4e-5cc9-9bda-cfb75be6f581",
+      "swahili": "Unatoka wapi?",
+      "english": "Where are you from?",
+      "exampleContext": "Also: where are you coming from (just now)?",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "8aaf2488-18bb-5725-8d71-07d468fcec84",
+      "swahili": "Ninafanya kazi…",
+      "english": "I work…",
+      "exampleContext": "Lit. \"I am doing work\". Ninafanya kazi Safaricom.",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "b8fb9f9b-035f-5234-9944-a157f50d29cc",
+      "swahili": "kazini",
+      "english": "at / to work",
+      "exampleContext": "kazi + -ni (the place suffix)"
+    },
+    {
+      "id": "e3e15b7d-d7cb-5cb7-bede-5bcd9c7c4608",
+      "swahili": "Kazi njema!",
+      "english": "Have a good day at work!",
+      "exampleContext": "Lit. \"good work!\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "8dae621a-8512-579b-bb37-3142fb1fdf00",
+      "swahili": "Tuonane baadaye",
+      "english": "See you later",
+      "exampleContext": "Lit. \"let's see each other later\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "72bfd6de-1397-59ed-8203-0e016717acd4",
+      "swahili": "Kwa heri",
+      "english": "Goodbye",
+      "exampleContext": "To several people: Kwaherini.",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "59046522-f7c5-5939-99a0-baa9cd10ec6d",
+      "mode": "translate",
+      "english": "I'm fine. (casual)",
+      "before": "",
+      "after": " poa.",
+      "options": [
+        {
+          "text": "Niko",
+          "correct": true
+        },
+        {
+          "text": "Uko",
+          "correct": false,
+          "feedback": "Uko = You are (at / doing)"
+        },
+        {
+          "text": "Yuko",
+          "correct": false,
+          "feedback": "Yuko = He/she is (at / doing)"
+        }
+      ],
+      "explanation": "Niko = \"I am (at / doing)\" — ni- + -ko (be at a place, or how you're doing). \"Niko poa\" = I am fine.",
+      "grammar": [
+        "ko-location"
+      ]
+    },
+    {
+      "id": "5daf10fc-bede-5014-91ed-f564f49e0ad8",
+      "mode": "translate",
+      "english": "How are you? (to a friend)",
+      "before": "",
+      "after": " aje?",
+      "options": [
+        {
+          "text": "Uko",
+          "correct": true
+        },
+        {
+          "text": "Niko",
+          "correct": false,
+          "feedback": "Niko = I am (at / doing)"
+        },
+        {
+          "text": "Tuko",
+          "correct": false,
+          "feedback": "Tuko = We are (at / doing)"
+        }
+      ],
+      "explanation": "Uko = \"You are (at / doing)\" — u- + -ko (be at a place, or how you're doing). \"Uko poa\" = you are fine.",
+      "grammar": [
+        "ko-location"
+      ]
+    },
+    {
+      "id": "600837a7-f23d-52ef-8b87-12a89a2283d1",
+      "mode": "translate",
+      "english": "We're good.",
+      "before": "",
+      "after": " poa.",
+      "options": [
+        {
+          "text": "Tuko",
+          "correct": true
+        },
+        {
+          "text": "Niko",
+          "correct": false,
+          "feedback": "Niko = I am (at / doing)"
+        },
+        {
+          "text": "Wako",
+          "correct": false,
+          "feedback": "Wako = They are (at / doing)"
+        }
+      ],
+      "explanation": "Tuko = \"We are (at / doing)\" — tu- + -ko (be at a place, or how you're doing). \"Tuko poa\" = we are fine.",
+      "grammar": [
+        "ko-location"
+      ]
+    },
+    {
+      "id": "843390ee-6b13-50c1-b2e9-b14fdff8b35e",
+      "mode": "translate",
+      "english": "He/she is here.",
+      "before": "",
+      "after": " hapa.",
+      "options": [
+        {
+          "text": "Yuko",
+          "correct": true
+        },
+        {
+          "text": "Niko",
+          "correct": false,
+          "feedback": "Niko = I am (at / doing)"
+        },
+        {
+          "text": "Uko",
+          "correct": false,
+          "feedback": "Uko = You are (at / doing)"
+        }
+      ],
+      "explanation": "Yuko = \"He/she is (at / doing)\" — yu- + -ko (be at a place, or how you're doing). \"Yuko poa\" = he/she is fine.",
+      "grammar": [
+        "ko-location"
+      ]
+    },
+    {
+      "id": "7720f107-859f-5fcb-a191-633f44fea3f9",
+      "mode": "translate",
+      "english": "They're fine.",
+      "before": "",
+      "after": " salama.",
+      "options": [
+        {
+          "text": "Wako",
+          "correct": true
+        },
+        {
+          "text": "Tuko",
+          "correct": false,
+          "feedback": "Tuko = We are (at / doing)"
+        },
+        {
+          "text": "Uko",
+          "correct": false,
+          "feedback": "Uko = You are (at / doing)"
+        }
+      ],
+      "explanation": "Wako = \"They are (at / doing)\" — wa- + -ko (be at a place, or how you're doing). \"Wako poa\" = they are fine.",
+      "grammar": [
+        "ko-location"
+      ]
+    },
+    {
+      "id": "64abe39c-6bcb-58ea-9ff6-02fcdf6152ad",
+      "mode": "complete",
+      "english": "Good morning? — Very good.",
+      "before": "Habari ya asubuhi? — ",
+      "after": " sana.",
+      "options": [
+        {
+          "text": "Nzuri",
+          "correct": true
+        },
+        {
+          "text": "Mambo",
+          "correct": false,
+          "feedback": "Mambo = things / matters / issues"
+        },
+        {
+          "text": "Kwa heri",
+          "correct": false,
+          "feedback": "Kwa heri = goodbye"
+        }
+      ],
+      "explanation": "Every \"Habari …?\" greeting is answered with Nzuri (good) — even on a bad day.",
+      "grammar": [
+        "greetings"
+      ]
+    },
+    {
+      "id": "24268f8c-1fe1-5ea6-86ab-a533a5ad9ea2",
+      "mode": "complete",
+      "english": "What's up? — Cool!",
+      "before": "Mambo? — ",
+      "after": "!",
+      "options": [
+        {
+          "text": "Poa",
+          "correct": true
+        },
+        {
+          "text": "Asante",
+          "correct": false,
+          "feedback": "Asante = thank you"
+        },
+        {
+          "text": "Kwa heri",
+          "correct": false,
+          "feedback": "Kwa heri = goodbye"
+        }
+      ],
+      "explanation": "Mambo? / Niaje? / Vipi? are answered with Poa (cool) or Fiti (fine).",
+      "grammar": [
+        "greetings"
+      ]
+    },
+    {
+      "id": "01b71cae-a85f-5a51-b1ab-d88f1afb7b6b",
+      "mode": "translate",
+      "english": "Where are you from?",
+      "before": "",
+      "after": " wapi?",
+      "options": [
+        {
+          "text": "Unatoka",
+          "correct": true
+        },
+        {
+          "text": "Ninatoka",
+          "correct": false,
+          "feedback": "Ninatoka = I am leaving / come from"
+        },
+        {
+          "text": "Anatoka",
+          "correct": false,
+          "feedback": "Anatoka = He/she is leaving / come from"
+        }
+      ],
+      "explanation": "Unatoka = \"You are leaving / come from\" — u- (subject: you) + na- (present) + -toka (leave / come from). From kutoka.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "f3ada204-db78-5ae5-b59d-bd167ac97948",
+      "mode": "translate",
+      "english": "I'm from Uganda.",
+      "before": "",
+      "after": " Uganda.",
+      "options": [
+        {
+          "text": "Ninatoka",
+          "correct": true
+        },
+        {
+          "text": "Unatoka",
+          "correct": false,
+          "feedback": "Unatoka = You are leaving / come from"
+        },
+        {
+          "text": "Tunatoka",
+          "correct": false,
+          "feedback": "Tunatoka = We are leaving / come from"
+        }
+      ],
+      "explanation": "Ninatoka = \"I am leaving / come from\" — ni- (subject: I) + na- (present) + -toka (leave / come from). From kutoka. Colloquially often shortened: ni-na- → na-.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "12f05fae-1f26-5440-9f63-5172f368da2f",
+      "mode": "translate",
+      "english": "I live in Kilimani.",
+      "before": "",
+      "after": " Kilimani.",
+      "options": [
+        {
+          "text": "Ninaishi",
+          "correct": true
+        },
+        {
+          "text": "Unaishi",
+          "correct": false,
+          "feedback": "Unaishi = You live"
+        },
+        {
+          "text": "Wanaishi",
+          "correct": false,
+          "feedback": "Wanaishi = They live"
+        }
+      ],
+      "explanation": "Ninaishi = \"I live\" — ni- (subject: I) + na- (present) + -ishi (live). From kuishi. Colloquially often shortened: ni-na- → na-.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "ba0f7eae-1e4a-5cc3-8339-a71aa0ff25c2",
+      "mode": "translate",
+      "english": "My name is John.",
+      "before": "",
+      "after": " ni John.",
+      "options": [
+        {
+          "text": "Jina yangu",
+          "correct": true
+        },
+        {
+          "text": "Jina yako",
+          "correct": false,
+          "feedback": "Jina yako = your name"
+        },
+        {
+          "text": "Habari yako",
+          "correct": false,
+          "feedback": "Habari yako = how are you? (lit"
+        }
+      ],
+      "explanation": "Jina yangu = my name. You'll hear \"jina langu\" in Sanifu (jina is a ji/ma noun) — both are understood everywhere.",
+      "grammar": [
+        "possessives",
+        "sanifu-noun-classes"
+      ]
+    },
+    {
+      "id": "908f1780-2132-5d6d-92dc-63f30e239612",
+      "mode": "translate",
+      "english": "What's your name?",
+      "before": "Jina yako ni ",
+      "after": "?",
+      "options": [
+        {
+          "text": "nani",
+          "correct": true
+        },
+        {
+          "text": "wapi",
+          "correct": false,
+          "feedback": "wapi = where?"
+        },
+        {
+          "text": "gani",
+          "correct": false,
+          "feedback": "gani = which? / what kind?"
+        }
+      ],
+      "explanation": "Literally \"your name is WHO?\" — Swahili asks for names with nani (who).",
+      "grammar": [
+        "question-words"
+      ]
+    },
+    {
+      "id": "b3bfd9de-7fce-55ef-8cc7-a834a73fceba",
+      "mode": "translate",
+      "english": "This is my child.",
+      "before": "Huyu ni mtoto ",
+      "after": ".",
+      "options": [
+        {
+          "text": "wangu",
+          "correct": true
+        },
+        {
+          "text": "wako",
+          "correct": false,
+          "feedback": "wako = They are (at / doing)"
+        },
+        {
+          "text": "wake",
+          "correct": false,
+          "feedback": "wake = his/her"
+        }
+      ],
+      "explanation": "wangu = my (m/wa agreement, used for people).",
+      "grammar": [
+        "possessives"
+      ]
+    },
+    {
+      "id": "f92fa0b8-f3aa-516a-9307-29d89f973594",
+      "mode": "translate",
+      "english": "Are you new here?",
+      "before": "Wewe ni ",
+      "after": " hapa?",
+      "options": [
+        {
+          "text": "mgeni",
+          "correct": true
+        },
+        {
+          "text": "mwenyeji",
+          "correct": false,
+          "feedback": "mwenyeji = local / host"
+        },
+        {
+          "text": "dereva",
+          "correct": false,
+          "feedback": "dereva = driver"
+        }
+      ],
+      "explanation": "mgeni = guest, stranger, newcomer. Mwenyeji is the opposite: a local.",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "bff06caf-bcc6-59fc-92d6-dc595dc05861",
+      "mode": "translate",
+      "english": "I'm going to work.",
+      "before": "",
+      "after": " kazini.",
+      "options": [
+        {
+          "text": "Ninaenda",
+          "correct": true
+        },
+        {
+          "text": "Unaenda",
+          "correct": false,
+          "feedback": "Unaenda = You are going"
+        },
+        {
+          "text": "Anaenda",
+          "correct": false,
+          "feedback": "Anaenda = He/she is going"
+        }
+      ],
+      "explanation": "Ninaenda = \"I am going\" — ni- (subject: I) + na- (present) + -enda (go). From kuenda. Colloquially often shortened: ni-na- → na-.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "14c42f5f-6aaa-5e7b-be7d-2225422bf93c",
+      "mode": "translate",
+      "english": "Are you going to work now?",
+      "before": "",
+      "after": " kazini sasa?",
+      "options": [
+        {
+          "text": "Unaenda",
+          "correct": true
+        },
+        {
+          "text": "Ninaenda",
+          "correct": false,
+          "feedback": "Ninaenda = I am going"
+        },
+        {
+          "text": "Tunaenda",
+          "correct": false,
+          "feedback": "Tunaenda = We are going"
+        }
+      ],
+      "explanation": "Unaenda = \"You are going\" — u- (subject: you) + na- (present) + -enda (go). From kuenda.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "86fddcbb-c9a3-53f1-88ca-05cfdaa6697a",
+      "mode": "translate",
+      "english": "Good evening?",
+      "before": "Habari ya ",
+      "after": "?",
+      "options": [
+        {
+          "text": "jioni",
+          "correct": true
+        },
+        {
+          "text": "asubuhi",
+          "correct": false,
+          "feedback": "asubuhi = morning"
+        },
+        {
+          "text": "mchana",
+          "correct": false,
+          "feedback": "mchana = afternoon / daytime"
+        }
+      ],
+      "explanation": "jioni = evening (roughly 4pm–7pm).",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "d193e970-e91b-5468-9cfc-43d2c6e15390",
+      "mode": "complete",
+      "english": "Thank you, ma'am. See you later!",
+      "before": "Asante, mama. ",
+      "after": " baadaye!",
+      "options": [
+        {
+          "text": "Tuonane",
+          "correct": true
+        },
+        {
+          "text": "Mambo",
+          "correct": false,
+          "feedback": "Mambo = things / matters / issues"
+        },
+        {
+          "text": "Karibu",
+          "correct": false,
+          "feedback": "Karibu = near / welcome / almost"
+        }
+      ],
+      "explanation": "Tuonane: see you (lit. \"let's see each other\")",
+      "grammar": [
+        "greetings",
+        "subjunctive"
+      ]
+    }
+  ]
+}

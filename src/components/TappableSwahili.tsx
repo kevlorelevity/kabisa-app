@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { ConjugationTable, WordGloss } from '../types';
+import { GrammarChips } from './GrammarChips';
 
 interface TappableSwahiliProps {
   swahili: string;
@@ -20,6 +21,8 @@ interface Segment {
   text: string;
   gloss: string | null;
   conjugation?: ConjugationTable;
+  grammar?: string[];
+  sanifu?: string;
 }
 
 /** Splits `swahili` into plain-text and glossed segments, in order. */
@@ -32,7 +35,13 @@ function buildSegments(swahili: string, words: WordGloss[]): Segment[] {
     if (idx > cursor) {
       segments.push({ text: swahili.slice(cursor, idx), gloss: null });
     }
-    segments.push({ text: word.text, gloss: word.gloss, conjugation: word.conjugation });
+    segments.push({
+      text: word.text,
+      gloss: word.gloss,
+      conjugation: word.conjugation,
+      grammar: word.grammar,
+      sanifu: word.sanifu,
+    });
     cursor = idx + word.text.length;
   }
   if (cursor < swahili.length) {
@@ -85,14 +94,30 @@ export function TappableSwahili({ swahili, words, enabled, className, variant = 
                   // Driver bubbles sit on the left edge, learner bubbles on the right:
                   // grow the popover inward so it never runs off a phone screen.
                   variant === 'dark' ? 'right-0' : 'left-0'
-                } top-full mt-1 z-20 w-max rounded-md bg-gray-900 text-white text-xs leading-snug px-2.5 py-1.5 shadow-lg ${
-                  seg.conjugation ? 'max-w-[16rem]' : 'max-w-[14rem]'
+                } top-full mt-1 z-20 w-max rounded-md bg-gray-900 text-white text-xs leading-snug px-2.5 py-1.5 shadow-lg text-left font-normal ${
+                  seg.conjugation || seg.grammar?.length ? 'max-w-[16rem]' : 'max-w-[14rem]'
                 }`}
               >
                 {seg.gloss}
+                {seg.sanifu && (
+                  <span className="block mt-1.5 text-sky-200">
+                    <span className="font-semibold">Sanifu · </span>
+                    {seg.sanifu}
+                  </span>
+                )}
                 {seg.conjugation && (
                   <ConjugationGrid table={seg.conjugation} current={seg.text} />
                 )}
+                {seg.grammar?.length ? (
+                  <span className="block mt-2 pt-2 border-t border-white/20">
+                    <GrammarChips
+                      slugs={seg.grammar.slice(0, 3)}
+                      size="xs"
+                      variant="dark"
+                      onOpen={() => setOpenIndex(null)}
+                    />
+                  </span>
+                ) : null}
               </span>
             )}
           </span>

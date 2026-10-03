@@ -1,0 +1,1547 @@
+{
+  "id": "football-banter",
+  "uuid": "61d64aaf-ce5b-5fa7-b06b-8e91429fd156",
+  "title": "Mashemeji Derby: Banter at the Local",
+  "category": "social",
+  "difficulty": "advanced",
+  "level": 10,
+  "order": 1003,
+  "theme": "sports",
+  "culturalNote": "Gor Mahia vs AFC Leopards — the \"Mashemeji Derby\" (the brothers-in-law derby) — is Kenya's biggest football rivalry. The nickname comes from the many marriages between Luo and Luhya families, the clubs' traditional fan bases. Watching at a local bar or kibanda is a festival of trash talk, proverbs and idioms: \"Akose achekwe!\" (of course he'll score — he'd never live it down), \"Maji yakimwagika hayazoleki\" (spilled water can't be gathered — what's done is done), \"Asiyekubali kushindwa si mshindani\" (a sore loser is no real competitor).",
+  "startingPoint": "Sunday afternoon at a sports bar in Nairobi. You support Gor Mahia; your friend Wafula is a die-hard AFC Leopards fan.",
+  "grammarFocus": [
+    "idioms-proverbs",
+    "relatives",
+    "conditional-nge",
+    "discourse-particles"
+  ],
+  "grammar": [
+    "idioms-proverbs",
+    "relatives",
+    "conditional-nge",
+    "discourse-particles",
+    "noun-classes-mwa-nn",
+    "ni-copula",
+    "future-ta",
+    "object-infixes",
+    "verb-extensions",
+    "possessives",
+    "sanifu-noun-classes",
+    "demonstratives",
+    "perfect-negative-ja",
+    "conjunctions-kwamba",
+    "numbers-money",
+    "perfect-me",
+    "present-na",
+    "past-li",
+    "infinitive-ku",
+    "locative-ni",
+    "subject-prefixes",
+    "imperatives",
+    "greetings",
+    "adjective-agreement"
+  ],
+  "turns": [
+    {
+      "id": "a7519874-5371-5dda-82f8-0abcd07ae4a2",
+      "speaker": "Wafula",
+      "role": "auto",
+      "swahili": "Leo ni leo! Ingwe watawanyorosha K'Ogalo!",
+      "english": "Today's the day! Ingwe will flatten K'Ogalo!",
+      "words": [
+        {
+          "text": "Leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Ingwe",
+          "gloss": "AFC Leopards (lit. \"leopard\" in Luhya)"
+        },
+        {
+          "text": "watawanyorosha",
+          "gloss": "\"They will thrash (lit. straighten out) them / you all\" — wa- (subject: they) + ta- (future) + wa- (object: them / you all) + -nyorosha (thrash (lit. straighten out)). From kunyorosha. Extension: causative (-isha/-esha/-za: \"make / cause\").",
+          "grammar": [
+            "future-ta",
+            "object-infixes",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kunyorosha (to thrash (lit. straighten out))",
+            "tense": "Future (-ta-) + object -wa-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitawanyorosha"
+              },
+              {
+                "pronoun": "you",
+                "form": "utawanyorosha"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atawanyorosha"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutawanyorosha"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtawanyorosha"
+              },
+              {
+                "pronoun": "they",
+                "form": "watawanyorosha"
+              }
+            ]
+          }
+        },
+        {
+          "text": "K'Ogalo",
+          "gloss": "Gor Mahia's nickname"
+        }
+      ]
+    },
+    {
+      "id": "47953912-ce34-5ba1-8104-9ee7c2ec3a45",
+      "speaker": "Wewe",
+      "role": "user",
+      "swahili": "Wee, ndoto tu! Mtaona — mshambuliaji wetu mpya ni moto sana.",
+      "english": "Ha, dream on! You'll see — our new striker is red hot.",
+      "words": [
+        {
+          "text": "Wee",
+          "gloss": "hey you! (surprise / emphasis)",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "ndoto",
+          "gloss": "dream — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "tu",
+          "gloss": "just / only"
+        },
+        {
+          "text": "Mtaona",
+          "gloss": "\"you (all) will see\""
+        },
+        {
+          "text": "mshambuliaji",
+          "gloss": "striker / attacker"
+        },
+        {
+          "text": "wetu",
+          "gloss": "\"our\" — m/wa agreement (for people: mtoto wetu, watoto wetu).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (m/wa: people)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "wangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "wako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "wake"
+              },
+              {
+                "pronoun": "our",
+                "form": "wetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "wenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "wao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mpya",
+          "gloss": "new"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "moto",
+          "gloss": "fire / hot — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: m/mi class — moto mkubwa"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Wee, ndoto tu! Mtaona — mshambuliaji wetu mpya ni moto sana.",
+          "correct": true
+        },
+        {
+          "swahili": "Wee, ndoto tu! Tutaona — mshambuliaji wetu mpya ni moto sana.",
+          "correct": false
+        },
+        {
+          "swahili": "Wee, ndoto tu! Mtaona — mshambuliaji wetu mpya ni baridi sana.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "a0f6c54d-4cb5-599e-b200-e4e1011dd0ca",
+      "speaker": "Wafula",
+      "role": "auto",
+      "swahili": "Yule? Hajafunga hata goli moja msimu huu!",
+      "english": "Him? He hasn't scored even one goal this season!",
+      "words": [
+        {
+          "text": "Yule",
+          "gloss": "that (person) over there",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "Hajafunga",
+          "gloss": "\"He hasn't scored\" — ha- + -ja- + -funga",
+          "grammar": [
+            "perfect-negative-ja"
+          ]
+        },
+        {
+          "text": "hata",
+          "gloss": "even / (not) at all",
+          "grammar": [
+            "conjunctions-kwamba"
+          ]
+        },
+        {
+          "text": "goli",
+          "gloss": "goal"
+        },
+        {
+          "text": "moja",
+          "gloss": "1 (n/n form — used for counting, money, things)",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "msimu",
+          "gloss": "season (m/mi)"
+        },
+        {
+          "text": "huu",
+          "gloss": "this — m/mi or u (Sanifu: mti huu)",
+          "grammar": [
+            "demonstratives"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b1e33e34-5179-58eb-bd42-769fbf6d8102",
+      "speaker": "Wewe",
+      "role": "user",
+      "swahili": "Leo atafunga. Akose achekwe!",
+      "english": "Today he'll score. He'd never live it down if he missed!",
+      "words": [
+        {
+          "text": "Leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "atafunga",
+          "gloss": "\"he'll score\" — kufunga goli = to score (lit. \"to close a goal\")",
+          "grammar": [
+            "future-ta"
+          ]
+        },
+        {
+          "text": "Akose achekwe",
+          "gloss": "\"Of course he'll score — if he misses, he'll be laughed at!\"",
+          "grammar": [
+            "idioms-proverbs"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Leo atafunga. Akose achekwe!",
+          "correct": true
+        },
+        {
+          "swahili": "Leo atafunga. Akose afurahi!",
+          "correct": false
+        },
+        {
+          "swahili": "Jana atafunga. Akose achekwe!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "cb9b54ee-4d5f-5e88-acb3-1f593e9abb1c",
+      "speaker": "Wafula",
+      "role": "auto",
+      "swahili": "Goooli! Ingwe wamefunga! Unaona?",
+      "english": "Goooal! Ingwe have scored! You see?",
+      "words": [
+        {
+          "text": "Goooli",
+          "gloss": "\"Goooal!\""
+        },
+        {
+          "text": "Ingwe",
+          "gloss": "AFC Leopards (lit. \"leopard\" in Luhya)"
+        },
+        {
+          "text": "wamefunga",
+          "gloss": "\"they've scored\"",
+          "grammar": [
+            "perfect-me"
+          ]
+        },
+        {
+          "text": "Unaona",
+          "gloss": "\"You see\" — u- (subject: you) + na- (present) + -ona (see). From kuona.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuona (to see)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaona"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaona"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaona"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaona"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaona"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaona"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "1c5b33f8-facd-5dc6-ad42-aebb06c35e3e",
+      "speaker": "Wewe",
+      "role": "user",
+      "swahili": "Aiii! Refa ni kipofu — huyo mchezaji alikuwa offside!",
+      "english": "Aiii! The referee is blind — that player was offside!",
+      "words": [
+        {
+          "text": "Aiii",
+          "gloss": "aiii! (mock pain — \"you're killing me!\")"
+        },
+        {
+          "text": "Refa",
+          "gloss": "referee"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "kipofu",
+          "gloss": "blind (person)",
+          "sanifu": "ki/vi noun used for people"
+        },
+        {
+          "text": "huyo",
+          "gloss": "that (person) just mentioned",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "mchezaji",
+          "gloss": "player (m/wa; plural wachezaji)"
+        },
+        {
+          "text": "alikuwa",
+          "gloss": "\"He/she was\" — a- (subject: he/she) + li- (past) + -wa (be). From kuwa.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kuwa (to be)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilikuwa"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulikuwa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alikuwa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulikuwa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlikuwa"
+              },
+              {
+                "pronoun": "they",
+                "form": "walikuwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "offside",
+          "gloss": "offside (English)"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Aiii! Refa ni kipofu — huyo mchezaji alikuwa offside!",
+          "correct": true
+        },
+        {
+          "swahili": "Aiii! Refa ni mzuri — huyo mchezaji alikuwa offside!",
+          "correct": false
+        },
+        {
+          "swahili": "Aiii! Refa ni kipofu — hawa mchezaji alikuwa offside!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "5610a6e9-ff7c-562e-8a13-8d179647e7ad",
+      "speaker": "Wafula",
+      "role": "auto",
+      "swahili": "Haha! Kulalamika hapa ni bure. Fimbo ya mbali haiui nyoka!",
+      "english": "Haha! Complaining from here is pointless. A distant stick doesn't kill a snake!",
+      "words": [
+        {
+          "text": "Haha",
+          "gloss": "haha"
+        },
+        {
+          "text": "Kulalamika",
+          "gloss": "\"To complain\" — ku- (infinitive \"to\") + -lalamika (complain). From kulalamika.",
+          "grammar": [
+            "infinitive-ku"
+          ]
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "bure",
+          "gloss": "free / for nothing"
+        },
+        {
+          "text": "Fimbo",
+          "gloss": "stick"
+        },
+        {
+          "text": "ya",
+          "gloss": "\"of\" — n/n singular agreement (nyumba ya Kamau); Kenyans use ya with most nouns",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "mbali",
+          "gloss": "far"
+        },
+        {
+          "text": "haiui",
+          "gloss": "\"doesn't kill\""
+        },
+        {
+          "text": "nyoka",
+          "gloss": "snake"
+        }
+      ]
+    },
+    {
+      "id": "f5e74aaa-e651-5a51-8d37-3987b1acef22",
+      "speaker": "Wewe",
+      "role": "user",
+      "swahili": "Sawa, sawa. Maji yakimwagika hayazoleki. Lakini mchezo haujaisha bado!",
+      "english": "Fine, fine. What's done is done. But the game isn't over yet!",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Maji yakimwagika hayazoleki",
+          "gloss": "\"Spilled water can't be gathered\" — what's done is done.",
+          "grammar": [
+            "idioms-proverbs"
+          ]
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "mchezo",
+          "gloss": "the match"
+        },
+        {
+          "text": "haujaisha",
+          "gloss": "\"isn't over yet\" — m/mi agreement for mchezo",
+          "grammar": [
+            "perfect-negative-ja"
+          ]
+        },
+        {
+          "text": "bado",
+          "gloss": "still / not yet",
+          "grammar": [
+            "perfect-negative-ja"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Sawa, sawa. Maji yakimwagika hayazoleki. Lakini mchezo haujaisha bado!",
+          "correct": true
+        },
+        {
+          "swahili": "Sawa, sawa. Maji yakimwagika yanazoleka. Lakini mchezo haujaisha bado!",
+          "correct": false
+        },
+        {
+          "swahili": "Sawa, sawa. Maji yakimwagika hayazoleki. Lakini mchezo umeisha bado!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "15e67cd8-fd85-5f41-a773-244927394b8a",
+      "speaker": "Wafula",
+      "role": "auto",
+      "swahili": "Dakika tano tu zimebaki, shemeji!",
+      "english": "Only five minutes left, in-law!",
+      "words": [
+        {
+          "text": "Dakika",
+          "gloss": "minute — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "tano",
+          "gloss": "5 (n/n form — used for counting, money, things)",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "tu",
+          "gloss": "just / only"
+        },
+        {
+          "text": "zimebaki",
+          "gloss": "\"They are left\" — zi- (subject: they (n/n)) + me- (perfect (done / now-state)) + -baki (remain). From kubaki.",
+          "grammar": [
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kubaki (to remain)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimebaki"
+              },
+              {
+                "pronoun": "you",
+                "form": "umebaki"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amebaki"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumebaki"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmebaki"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamebaki"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "imebaki"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zimebaki"
+              }
+            ]
+          }
+        },
+        {
+          "text": "shemeji",
+          "gloss": "brother/sister-in-law"
+        }
+      ]
+    },
+    {
+      "id": "85de9fdd-40a0-5348-8179-bb5be8f5995f",
+      "speaker": "Wewe",
+      "role": "user",
+      "swahili": "Goooli! Tumesawazisha! Na sasa… goli la pili! Mbili kwa moja!",
+      "english": "Goooal! We've equalised! And now… a second goal! Two–one!",
+      "words": [
+        {
+          "text": "Goooli",
+          "gloss": "\"Goooal!\""
+        },
+        {
+          "text": "Tumesawazisha",
+          "gloss": "\"We have equalised\" — tu- (subject: we) + me- (perfect (done / now-state)) + -sawazisha (equalise). From kusawazisha. Extension: causative (-isha/-esha/-za: \"make / cause\").",
+          "grammar": [
+            "perfect-me",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kusawazisha (to equalise)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimesawazisha"
+              },
+              {
+                "pronoun": "you",
+                "form": "umesawazisha"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amesawazisha"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumesawazisha"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmesawazisha"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamesawazisha"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "goli",
+          "gloss": "goal"
+        },
+        {
+          "text": "la",
+          "gloss": "\"of\" — ji/ma agreement (gari la Kamau)",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "ji/ma class"
+        },
+        {
+          "text": "pili",
+          "gloss": "second"
+        },
+        {
+          "text": "Mbili kwa moja",
+          "gloss": "two–one"
+        }
+      ],
+      "sanifu": "Goli! Tumesawazisha! Na sasa… goli la pili! Mbili kwa moja!",
+      "options": [
+        {
+          "swahili": "Goooli! Tumesawazisha! Na sasa… goli la pili! Mbili kwa moja!",
+          "correct": true
+        },
+        {
+          "swahili": "Goooli! Tumeshindwa! Na sasa… goli la pili! Mbili kwa moja!",
+          "correct": false
+        },
+        {
+          "swahili": "Goooli! Tumesawazisha! Na sasa… goli la kwanza! Mbili kwa moja!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "8136a66b-f1d0-5cc1-9a9d-cb053b1a754c",
+      "speaker": "Wafula",
+      "role": "auto",
+      "swahili": "Ningalijua, ningalibaki nyumbani! Refa amewasaidia!",
+      "english": "If I'd known, I'd have stayed home! The ref helped you!",
+      "words": [
+        {
+          "text": "Ningalijua",
+          "gloss": "\"If I'd known\"",
+          "grammar": [
+            "conditional-nge"
+          ]
+        },
+        {
+          "text": "ningalibaki",
+          "gloss": "\"I'd have stayed\"",
+          "grammar": [
+            "conditional-nge"
+          ]
+        },
+        {
+          "text": "nyumbani",
+          "gloss": "\"at / in / to the house\" — nyumba + -ni (place suffix).",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "Refa",
+          "gloss": "referee"
+        },
+        {
+          "text": "amewasaidia",
+          "gloss": "\"He/she has helped them / you all\" — a- (subject: he/she) + me- (perfect (done / now-state)) + wa- (object: them / you all) + -saidia (help). From kusaidia.",
+          "grammar": [
+            "perfect-me",
+            "object-infixes"
+          ],
+          "conjugation": {
+            "verb": "kusaidia (to help)",
+            "tense": "Perfect (-me-) + object -wa-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimewasaidia"
+              },
+              {
+                "pronoun": "you",
+                "form": "umewasaidia"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amewasaidia"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumewasaidia"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmewasaidia"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamewasaidia"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "88609e06-abcc-54e9-856f-688b279c12e8",
+      "speaker": "Wewe",
+      "role": "user",
+      "swahili": "Haha! Asiyekubali kushindwa si mshindani, shemeji!",
+      "english": "Haha! Whoever doesn't accept defeat is no real competitor, in-law!",
+      "words": [
+        {
+          "text": "Haha",
+          "gloss": "haha"
+        },
+        {
+          "text": "Asiyekubali kushindwa si mshindani",
+          "gloss": "\"Whoever doesn't accept defeat is no competitor\" — be a good loser.",
+          "grammar": [
+            "idioms-proverbs"
+          ]
+        },
+        {
+          "text": "shemeji",
+          "gloss": "brother/sister-in-law"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Haha! Asiyekubali kushindwa si mshindani, shemeji!",
+          "correct": true
+        },
+        {
+          "swahili": "Haha! Anayekubali kushindwa si mshindani, shemeji!",
+          "correct": false
+        },
+        {
+          "swahili": "Haha! Asiyekubali kushinda si mshindani, shemeji!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "d922f790-a452-5e62-85b7-1b2aa5bc75c1",
+      "speaker": "Wafula",
+      "role": "auto",
+      "swahili": "Haya basi. Tulisema anayeshindwa atanunua bia… Wewe chagua!",
+      "english": "Alright then. We said the loser buys the beer… You choose!",
+      "words": [
+        {
+          "text": "Haya",
+          "gloss": "okay then / alright",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "basi",
+          "gloss": "so / well then / okay, that's it",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Tulisema",
+          "gloss": "\"We said\" — tu- (subject: we) + li- (past) + -sema (say). From kusema.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kusema (to say)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilisema"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulisema"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alisema"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulisema"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlisema"
+              },
+              {
+                "pronoun": "they",
+                "form": "walisema"
+              }
+            ]
+          }
+        },
+        {
+          "text": "anayeshindwa",
+          "gloss": "\"the one who loses\"",
+          "grammar": [
+            "relatives"
+          ]
+        },
+        {
+          "text": "atanunua",
+          "gloss": "will buy"
+        },
+        {
+          "text": "bia",
+          "gloss": "beer"
+        },
+        {
+          "text": "Wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "chagua",
+          "gloss": "\"Choose!\" — -chagua (choose). From kuchagua.",
+          "grammar": [
+            "imperatives"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "114648a0-1b49-5001-adcd-a4d7c1d7cb17",
+      "speaker": "Wewe",
+      "role": "user",
+      "swahili": "Tusker baridi, tafadhali! Na wiki ijayo, tutaonana tena kwa mechi nyingine!",
+      "english": "A cold Tusker, please! And next week, we'll meet again for another match!",
+      "words": [
+        {
+          "text": "Tusker",
+          "gloss": "Tusker — Kenya's best-known beer"
+        },
+        {
+          "text": "baridi",
+          "gloss": "cold — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "tafadhali",
+          "gloss": "please"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "wiki ijayo",
+          "gloss": "next week"
+        },
+        {
+          "text": "tutaonana",
+          "gloss": "we'll see each other / see you",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "tena",
+          "gloss": "again"
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "mechi",
+          "gloss": "match (football) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "nyingine",
+          "gloss": "\"other / another\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-ingine (other / another)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mwingine"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wengine"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "nyingine"
+              }
+            ]
+          }
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Tusker baridi, tafadhali! Na wiki ijayo, tutaonana tena kwa mechi nyingine!",
+          "correct": true
+        },
+        {
+          "swahili": "Tusker moto, tafadhali! Na wiki ijayo, tutaonana tena kwa mechi nyingine!",
+          "correct": false
+        },
+        {
+          "swahili": "Tusker baridi, tafadhali! Na wiki iliyopita, tutaonana tena kwa mechi nyingine!",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "b2ced5e2-d622-56fa-a763-fd7045c55b09",
+      "swahili": "Mashemeji Derby",
+      "english": "Gor Mahia vs AFC Leopards",
+      "exampleContext": "Lit. \"the brothers-in-law derby\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "4ce798da-eaa4-5259-bdf2-2bd1dc2f29fd",
+      "swahili": "shemeji",
+      "english": "brother/sister-in-law",
+      "exampleContext": "Also a friendly nickname for a rival fan"
+    },
+    {
+      "id": "07ecd71f-6571-5b4b-9874-d6bfdff1230c",
+      "swahili": "Akose achekwe!",
+      "english": "Of course he'll do it!",
+      "exampleContext": "Lit. \"let him miss and be laughed at\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "b411f252-3bc9-5c22-b3d2-d2111c68f0a9",
+      "swahili": "Fimbo ya mbali haiui nyoka",
+      "english": "A distant stick doesn't kill a snake",
+      "exampleContext": "Use what's at hand",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "644d3751-accb-514e-b8c1-8c294d4de873",
+      "swahili": "Maji yakimwagika hayazoleki",
+      "english": "Spilled water can't be gathered",
+      "exampleContext": "What's done is done",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "5b848965-fbcd-5e2c-a545-729378a4652d",
+      "swahili": "Asiyekubali kushindwa si mshindani",
+      "english": "A sore loser is no competitor |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "36c1778b-292f-5417-9c45-c5a4d963c844",
+      "swahili": "kufunga goli",
+      "english": "to score a goal",
+      "exampleContext": "Lit. \"to close a goal\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "194ed4bf-7bc2-5a23-8ccd-65c72c475830",
+      "swahili": "Hajafunga",
+      "english": "He hasn't scored |",
+      "exampleContext": ""
+    },
+    {
+      "id": "45e78814-92f3-5b47-b654-51a05aa3e243",
+      "swahili": "Mchezo haujaisha",
+      "english": "The game isn't over |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "c0677e64-133e-5866-afc9-8b8165ae7f3b",
+      "swahili": "Tumesawazisha!",
+      "english": "We've equalised!",
+      "exampleContext": "sawa → sawazisha",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "8d122695-c399-5084-a834-c83c6b627317",
+      "swahili": "refa",
+      "english": "referee |",
+      "exampleContext": ""
+    },
+    {
+      "id": "16220675-942f-5039-ac0a-1281b300c001",
+      "swahili": "Ndoto tu!",
+      "english": "Dream on! |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "8b67f6cc-f1a7-5fb9-8d8f-885860d3a290",
+      "swahili": "anayeshindwa",
+      "english": "the one who loses",
+      "exampleContext": "-ye- = who"
+    }
+  ],
+  "practice": [
+    {
+      "id": "079c455e-1db7-54fb-a0db-137b8928e6b4",
+      "mode": "complete",
+      "english": "Of course he'll score — he'd never live it down!",
+      "before": "Akose ",
+      "after": "!",
+      "options": [
+        {
+          "text": "achekwe",
+          "correct": true
+        },
+        {
+          "text": "acheke",
+          "correct": false,
+          "feedback": "acheke = He/she should laugh"
+        },
+        {
+          "text": "anacheka",
+          "correct": false,
+          "feedback": "anacheka = He/she is laughing"
+        }
+      ],
+      "explanation": "Lit. \"let him miss, (and) be laughed at\". cheka → chekwa (passive).",
+      "grammar": [
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "cf9ccb43-6ba5-588e-b92e-000fca1172af",
+      "mode": "complete",
+      "english": "A distant stick doesn't kill a snake.",
+      "before": "Fimbo ya mbali ",
+      "after": " nyoka.",
+      "options": [
+        {
+          "text": "haiui",
+          "correct": true
+        },
+        {
+          "text": "inaua",
+          "correct": false
+        },
+        {
+          "text": "haikuua",
+          "correct": false
+        }
+      ],
+      "explanation": "Complaining from afar won't solve anything."
+    },
+    {
+      "id": "71f67c74-bf1f-56f1-abff-474d85c69814",
+      "mode": "complete",
+      "english": "Spilled water can't be gathered.",
+      "before": "Maji yakimwagika ",
+      "after": ".",
+      "options": [
+        {
+          "text": "hayazoleki",
+          "correct": true
+        },
+        {
+          "text": "yanazoleka",
+          "correct": false
+        },
+        {
+          "text": "hayakuzolewa",
+          "correct": false
+        }
+      ],
+      "explanation": "What's done is done."
+    },
+    {
+      "id": "bed9470c-9c59-5e18-a4e9-447e99f6a607",
+      "mode": "complete",
+      "english": "Whoever doesn't accept defeat is no competitor.",
+      "before": "",
+      "after": " kushindwa si mshindani.",
+      "options": [
+        {
+          "text": "Asiyekubali",
+          "correct": true
+        },
+        {
+          "text": "Anayekubali",
+          "correct": false,
+          "feedback": "Anayekubali = (the one) who agrees"
+        },
+        {
+          "text": "Aliyekubali",
+          "correct": false,
+          "feedback": "Aliyekubali = (the one) who agreed"
+        }
+      ],
+      "explanation": "-si- + -ye- = \"who doesn't\".",
+      "grammar": [
+        "relatives"
+      ]
+    },
+    {
+      "id": "51510173-3225-593a-bd03-6f147f863ec8",
+      "mode": "translate",
+      "english": "He hasn't scored even one goal this season.",
+      "before": "",
+      "after": " hata goli moja msimu huu.",
+      "options": [
+        {
+          "text": "Hajafunga",
+          "correct": true
+        },
+        {
+          "text": "Amefunga",
+          "correct": false,
+          "feedback": "Amefunga = He/she has closed"
+        },
+        {
+          "text": "Hakufunga",
+          "correct": false,
+          "feedback": "Hakufunga = He/she didn't close"
+        }
+      ],
+      "explanation": "ha- + -ja- = hasn't (yet).",
+      "grammar": [
+        "perfect-negative-ja"
+      ]
+    },
+    {
+      "id": "967fd800-05b2-5e7f-bd6d-940e98d97f28",
+      "mode": "translate",
+      "english": "Today he'll score.",
+      "before": "Leo ",
+      "after": ".",
+      "options": [
+        {
+          "text": "atafunga",
+          "correct": true
+        },
+        {
+          "text": "alifunga",
+          "correct": false,
+          "feedback": "alifunga = He/she closed"
+        },
+        {
+          "text": "amefunga",
+          "correct": false,
+          "feedback": "amefunga = He/she has closed"
+        }
+      ],
+      "explanation": "kufunga goli = to score a goal (lit. \"to close a goal\").",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "9f85f248-b1d4-577d-aa16-9c0d071aca8e",
+      "mode": "translate",
+      "english": "The game isn't over yet!",
+      "before": "Mchezo ",
+      "after": " bado!",
+      "options": [
+        {
+          "text": "haujaisha",
+          "correct": true
+        },
+        {
+          "text": "umeisha",
+          "correct": false,
+          "feedback": "umeisha = You are finished"
+        },
+        {
+          "text": "haukuisha",
+          "correct": false
+        }
+      ],
+      "explanation": "mchezo (m/mi) → u- agreement: haujaisha.",
+      "grammar": [
+        "perfect-negative-ja"
+      ]
+    },
+    {
+      "id": "cfc590df-a994-51fc-8b0c-31e4d39df94d",
+      "mode": "translate",
+      "english": "Only five minutes are left.",
+      "before": "Dakika tano tu ",
+      "after": ".",
+      "options": [
+        {
+          "text": "zimebaki",
+          "correct": true
+        },
+        {
+          "text": "imebaki",
+          "correct": false,
+          "feedback": "imebaki = It is left"
+        },
+        {
+          "text": "wamebaki",
+          "correct": false,
+          "feedback": "wamebaki = They are left"
+        }
+      ],
+      "explanation": "dakika (n/n plural) → zi-.",
+      "grammar": [
+        "perfect-me"
+      ]
+    },
+    {
+      "id": "bbb2617e-77c0-500c-88cc-da064995dd27",
+      "mode": "translate",
+      "english": "We've equalised!",
+      "before": "",
+      "after": "!",
+      "options": [
+        {
+          "text": "Tumesawazisha",
+          "correct": true
+        },
+        {
+          "text": "Tumeshindwa",
+          "correct": false,
+          "feedback": "Tumeshindwa = We have failed"
+        },
+        {
+          "text": "Tumesawa",
+          "correct": false
+        }
+      ],
+      "explanation": "sawa (equal) → sawazisha (make equal).",
+      "grammar": [
+        "perfect-me",
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "4995e0b3-9651-51f1-b6b7-c945f1270b93",
+      "mode": "translate",
+      "english": "If I'd known, I'd have stayed home!",
+      "before": "Ningalijua, ",
+      "after": " nyumbani!",
+      "options": [
+        {
+          "text": "ningalibaki",
+          "correct": true
+        },
+        {
+          "text": "nitabaki",
+          "correct": false,
+          "feedback": "nitabaki = I will remain"
+        },
+        {
+          "text": "nilibaki",
+          "correct": false,
+          "feedback": "nilibaki = I remained"
+        }
+      ],
+      "explanation": "ningalibaki = \"I'd have stayed\"",
+      "grammar": [
+        "conditional-nge"
+      ]
+    },
+    {
+      "id": "8d37149c-9efb-5254-88e3-adf76a1707a7",
+      "mode": "translate",
+      "english": "The referee helped you (all)!",
+      "before": "Refa ",
+      "after": "!",
+      "options": [
+        {
+          "text": "amewasaidia",
+          "correct": true
+        },
+        {
+          "text": "amekusaidia",
+          "correct": false,
+          "feedback": "amekusaidia = He/she has helped you"
+        },
+        {
+          "text": "amemsaidia",
+          "correct": false,
+          "feedback": "amemsaidia = He/she has helped him/her"
+        }
+      ],
+      "explanation": "-wa- = them / you all.",
+      "grammar": [
+        "perfect-me",
+        "object-infixes"
+      ]
+    },
+    {
+      "id": "03bb14cc-3587-5c2f-8280-8698d13bc52a",
+      "mode": "translate",
+      "english": "the one who loses buys the beer",
+      "before": "",
+      "after": " atanunua bia",
+      "options": [
+        {
+          "text": "anayeshindwa",
+          "correct": true
+        },
+        {
+          "text": "aliyeshindwa",
+          "correct": false,
+          "feedback": "aliyeshindwa = (the one) who failed"
+        },
+        {
+          "text": "atakayeshindwa",
+          "correct": false,
+          "feedback": "atakayeshindwa = (the one) who will fail"
+        }
+      ],
+      "explanation": "-ye- = who.",
+      "grammar": [
+        "relatives"
+      ]
+    },
+    {
+      "id": "c5c9646e-a511-5716-955d-1dd973720b67",
+      "mode": "translate",
+      "english": "You'll see!",
+      "before": "",
+      "after": "!",
+      "options": [
+        {
+          "text": "Mtaona",
+          "correct": true
+        },
+        {
+          "text": "Tutaona",
+          "correct": false,
+          "feedback": "Tutaona = We will see"
+        },
+        {
+          "text": "Wataona",
+          "correct": false,
+          "feedback": "Wataona = They will see"
+        }
+      ],
+      "explanation": "m- = you all."
+    },
+    {
+      "id": "4cf8134c-893a-5d4c-9f9e-7a8c99ba0002",
+      "mode": "complete",
+      "english": "Dream on! (lit. \"just a dream\")",
+      "before": "",
+      "after": " tu!",
+      "options": [
+        {
+          "text": "Ndoto",
+          "correct": true
+        },
+        {
+          "text": "Ndovu",
+          "correct": false,
+          "feedback": "Ndovu = elephant"
+        },
+        {
+          "text": "Ndugu",
+          "correct": false,
+          "feedback": "Ndugu = sibling / brother"
+        }
+      ],
+      "explanation": "ndoto = dream.",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "c3536b9e-7327-5dd4-858d-874ffcd41cc6",
+      "mode": "complete",
+      "english": "the \"brothers-in-law\" derby",
+      "before": "Mashemeji ",
+      "after": "",
+      "options": [
+        {
+          "text": "Derby",
+          "correct": true
+        },
+        {
+          "text": "Mechi",
+          "correct": false,
+          "feedback": "Mechi = match (football)"
+        },
+        {
+          "text": "Goli",
+          "correct": false,
+          "feedback": "Goli = goal"
+        }
+      ],
+      "explanation": "shemeji = brother/sister-in-law."
+    }
+  ]
+}

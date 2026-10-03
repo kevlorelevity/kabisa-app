@@ -1,0 +1,232 @@
+# Level 4 — past -li-, negative past -ku-, object infixes (-ni- -ku- -m(w)- -wa-), days & time words
+
+@lesson uber-nairobi-3
+title: Taking an Uber, Part 3: Stuck in the Jam
+level: 4
+theme: uber
+category: transport
+culture: The Uber is back — and so is Kamau, your driver from Parts 1 and 2. Monday-morning traffic on Waiyaki Way is legendary, and drivers know every shortcut (njia ya mkato) through the leafy back roads of Lavington. Small talk in a jam is normal and expected. This time the conversation is about what already happened: the weekend, the accident, the missed call. That's the past tense -li-, and its negative -ku-.
+start: Monday, 7:20 a.m. You order an Uber to the office — and Kamau pulls up again.
+grammar: past-li, negative-past, object-infixes
+gl: njia ya mkato = "a shortcut" — lit. "a way of cutting" (from kukata).
+gl: Lavington = Lavington — leafy Nairobi suburb with back roads
+gl: gari mbili = "two cars" — Kenyan n/n agreement. || Sanifu: magari mawili (ji/ma class) #sanifu-noun-classes
+gl: ziliharibika = "were damaged / broke down" — zi- (they, n/n) + -li- (past) + -haribika. Kenyan n/n agreement for gari. || Sanifu: yaliharibika (magari, ji/ma) #past-li
+gl: hakuna mtu = "nobody" — lit. "there is no person"
+gl: kwa Waiyaki Way = "on Waiyaki Way" — Kenyan use of kwa. || Sanifu: kwenye barabara ya Waiyaki #locative-ni
+gl: wikendi yote = "the whole weekend"
+gl: ilizima = "(it) switched off / died" — i- (it, n/n) + -li- (past) + -zima. #past-li
+gl: kasoro = "minus / to" — saa mbili kasoro dakika tano = 7:55 #time-swahili
+
+> Dereva: Aah, John! Ni wewe tena! Habari ya wikendi? | Ah, John! It's you again! How was the weekend?
+< Mteja: Kamau! Nzuri sana. Nilienda Naivasha na marafiki. | Kamau! Very good. I went to Naivasha with friends.
+  x: Kamau! Nzuri sana. Nitaenda Naivasha na marafiki. ; Kamau! Nzuri sana. Ulienda Naivasha na marafiki.
+> Dereva: Safi! Mlifanya nini huko? | Great! What did you do there?
+< Mteja: Tuliona viboko, na tulikula nyama choma. | We saw hippos, and we ate nyama choma.
+  x: Tutaona viboko, na tutakula nyama choma. ; Tuliona viboko, na tulila nyama choma.
+> Dereva: Wee! Mimi sikuenda popote. Nilifanya kazi wikendi yote. | Wow! I didn't go anywhere. I worked the whole weekend.
+< Mteja: Pole sana. Leo kuna foleni mbaya sana! | So sorry. Today there's a really bad jam!
+  x: Asante sana. Leo kuna foleni mbaya sana! ; Pole sana. Leo kuna foleni nzuri sana!
+> Dereva: Ndiyo. Kulikuwa na ajali kwa Waiyaki Way asubuhi. | Yes. There was an accident on Waiyaki Way this morning.
+< Mteja: Kweli? Sikuona habari. Watu waliumia? | Really? I didn't see the news. Did people get hurt?
+  x: Kweli? Sioni habari. Watu waliumia? ; Kweli? Sikuona habari. Watu wanaumia?
+> Dereva: Hapana, hakuna mtu aliumia. Lakini gari mbili ziliharibika. | No, nobody got hurt. But two cars were damaged.
+  s: Hapana, hakuna mtu aliumia. Lakini magari mawili yaliharibika.
+< Mteja: Tutachelewa? Nilimwambia boss nitafika saa mbili. | Will we be late? I told the boss I'd arrive at eight.
+  x: Tutachelewa? Nilikuambia boss nitafika saa mbili. ; Tutachelewa? Nilimwambia boss nilifika saa mbili.
+> Dereva: Usijali. Nitapita njia ya mkato, kupitia Lavington. | Don't worry. I'll take a shortcut, through Lavington.
+< Mteja: Poa! Jana nilikupigia simu, lakini hukuchukua. | Cool! Yesterday I called you, but you didn't pick up.
+  x: Poa! Jana ulinipigia simu, lakini hukuchukua. ; Poa! Jana nilikupigia simu, lakini sikuchukua.
+> Dereva: Aah, pole! Simu yangu ilizima — betri iliisha. | Ah, sorry! My phone died — the battery ran out.
+< Mteja: Hakuna shida. Nitakupigia tena kesho asubuhi. | No problem. I'll call you again tomorrow morning.
+  x: Hakuna shida. Nilikupigia tena kesho asubuhi. ; Hakuna shida. Nitampigia tena kesho asubuhi.
+> Dereva: Sawa. Na hii ndiyo ofisi yako. Saa mbili kasoro dakika tano! | Okay. And this is your office. Five to eight!
+
+@practice
+t: I went to Naivasha. | [Nilienda|Ninaenda|Nitaenda] Naivasha. || Past: ni- (I) + -li- (past) + -enda (go).
+t: What did you (all) do there? | [Mlifanya|Tulifanya|Walifanya] nini huko? || m- = you all.
+t: We saw hippos. | [Tuliona|Tunaona|Mliona] viboko.
+t: We ate nyama choma. | [Tulikula|Tulila|Tunakula] nyama choma. || kula keeps its ku- after -li-: tulikula.
+t: He worked the whole weekend. | [Alifanya|Anafanya|Atafanya] kazi wikendi yote.
+t: I didn't go anywhere. | [Sikuenda|Siendi|Sitaenda] popote. || Negative past: si- (not I) + -ku- (past) + -enda. The verb keeps its -a.
+t: I didn't see the news. | [Sikuona|Sioni|Sitaona] habari. || sioni = I don't see (now); sikuona = I didn't see.
+t: You didn't pick up. | [Hukuchukua|Sikuchukua|Hakuchukua]. || hu- (not you) + -ku- (past) + -chukua.
+t: She didn't come. | [Hakuja|Hukuja|Sikuja]. || ha- (not he/she) + -ku- + -ja.
+t: There was an accident. | [Kulikuwa na|Kuna|Kutakuwa na] ajali. || kuna = there is; kulikuwa na = there was.
+t: Nobody got hurt. | Hakuna mtu [aliumia|aliumiza|anaumia]. || kuumia = to get hurt; kuumiza = to hurt (someone).
+t: I told him / her. | [Nilimwambia|Nilikuambia|Niliwaambia]. || Object infixes sit right before the verb: -mw- him/her, -ku- you, -wa- them.
+t: I called you yesterday. | Jana [nilikupigia|nilimpigia|ulinipigia] simu. || ni- + -li- + -ku- (you) + -pigia simu (call).
+t: He called me. | [Alinipigia|Nilimpigia|Alikupigia] simu. || -ni- = me.
+t: I'll call you again. | [Nitakupigia|Nitampigia|Utanipigia] tena.
+t: The battery ran out. | Betri [iliisha|inaisha|itaisha]. || i- (it, n/n) + -li- + -isha (end, run out).
+c: Five to eight | Saa mbili [kasoro|na|kamili] dakika tano. || kasoro = minus: 8 o'clock (saa mbili) minus five minutes.
+
+@vocab
+Nilienda… | I went… | ni- + -li- (past) + -enda
+Mlifanya nini? | What did you (all) do? | m- = you all
+Tuliona… | We saw… |
+Sikuenda | I didn't go | si- + -ku- (past negative) + -enda
+Sikuona | I didn't see |
+Kulikuwa na ajali | There was an accident |
+foleni | traffic jam / queue | Also "jam"
+Nilimwambia | I told him/her | -mw- = him/her
+Nilikupigia simu | I called you | -ku- = you; kupigia simu = to phone someone
+Hukuchukua | You didn't pick up | hu- (not you) + -ku- (past)
+njia ya mkato | shortcut | from kukata (to cut)
+kasoro | minus / to (time) | saa mbili kasoro dakika tano = 7:55
+Betri iliisha | The battery ran out |
+
+@lesson chemist-sick
+title: Feeling Sick: At the Chemist
+level: 4
+theme: health
+category: health
+culture: For everyday illnesses, Kenyans go to the chemist (pharmacy) first — the pharmacist asks about your symptoms, and you walk out with medicine and clear instructions. "Pole!" (sorry) is the first thing anyone says when you're unwell — it expresses sympathy, not an apology. Body-part nouns are a lovely place to see the Kenyan n/n habit: "kichwa inauma" (my head hurts) is everyday speech, while Sanifu says "kichwa kinauma" because kichwa is ki/vi.
+start: You've felt awful since yesterday. You walk into a chemist near your flat.
+grammar: past-li, negative-past, object-infixes
+gl: chemist = pharmacy — Kenyans say "chemist" for the shop
+gl: Kichwa inauma = "My head hurts" — Kenyan n/n agreement. || Sanifu: Kichwa kinauma (kichwa is ki/vi) #sanifu-noun-classes
+gl: inauma = "it hurts" — i- (it) + -na- + -uma (bite, hurt). #present-na
+gl: kidogo = "a little"
+gl: Kukohoa = "coughing"
+gl: tangu = "since"
+gl: mara tatu kwa siku = "three times a day"
+gl: baada ya kula = "after eating"
+gl: maji mengi = "a lot of water" — ji/ma agreement (maji is ji/ma). Kenyans also say "maji mingi".
+gl: ukipata = "if you get" — u- + -ki- (if) + -pata. You'll meet -ki- properly at Level 8. #ki-po-ka
+gl: Dawa hii = "this medicine"
+gl: vidonge = tablets (plural of kidonge)
+gl: homa = "fever / flu" — Kenyans also use it for a bad cold
+
+< Mteja: Habari, daktari. Sijisikii vizuri. | Hello, doctor. I don't feel well.
+  x: Habari, daktari. Najisikia vizuri sana. ; Habari, daktari. Hujisikii vizuri.
+> Daktari: Pole sana. Ulianza kuumwa lini? | So sorry. When did you start feeling sick?
+< Mteja: Nilianza jana usiku. Kichwa inauma sana. | I started last night. My head hurts a lot.
+  s: Nilianza jana usiku. Kichwa kinauma sana.
+  x: Nitaanza jana usiku. Kichwa inauma sana. ; Nilianza jana usiku. Kichwa inaumwa sana.
+> Daktari: Una homa? Ulikohoa? | Do you have a fever? Did you cough?
+< Mteja: Ndiyo, nina homa kidogo. Sikulala vizuri. | Yes, I have a little fever. I didn't sleep well.
+  x: Ndiyo, nina homa kidogo. Silali vizuri. ; Ndiyo, sina homa kidogo. Sikulala vizuri.
+> Daktari: Ulikula nini jana? | What did you eat yesterday?
+< Mteja: Nilikula chapati tu. Sikula chakula kingi. | I only ate chapati. I didn't eat much food.
+  s: Nilikula chapati tu. Sikula chakula kingi.
+  x: Ninakula chapati tu. Sikula chakula kingi. ; Nilikula chapati tu. Sili chakula kingi.
+> Daktari: Sawa. Nitakupa dawa ya homa. | Okay. I'll give you medicine for the fever.
+< Mteja: Asante. Ninakunywa dawa hii namna gani? | Thanks. How do I take this medicine?
+  x: Asante. Unakunywa dawa hii namna gani? ; Asante. Ninakula dawa hii wapi?
+> Daktari: Kunywa vidonge viwili, mara tatu kwa siku, baada ya kula. | Take two tablets, three times a day, after eating.
+< Mteja: Mara tatu kwa siku. Sawa, nimeelewa. | Three times a day. Okay, I've understood.
+  x: Mara mbili kwa siku. Sawa, nimeelewa. ; Mara tatu kwa wiki. Sawa, nimeelewa.
+> Daktari: Na kunywa maji mengi. Ukipata shida, rudi kesho. | And drink a lot of water. If you have trouble, come back tomorrow.
+< Mteja: Sawa. Ni pesa ngapi? | Okay. How much is it?
+  x: Sawa. Ni pesa wapi? ; Sawa. Ni pesa nani?
+> Daktari: Ni mia nne. Pona haraka! | It's four hundred. Get well soon!
+
+@practice
+t: I started last night. | [Nilianza|Ninaanza|Nitaanza] jana usiku.
+t: When did you start? | [Ulianza|Nilianza|Alianza] lini? || lini = when?
+t: I didn't sleep well. | [Sikulala|Silali|Sitalala] vizuri. || si- + -ku- (past negative) + -lala.
+t: I didn't eat much. | [Sikula|Sili|Sitakula] sana. || Sanifu sikula; many Kenyans say sikukula.
+t: What did you eat yesterday? | [Ulikula|Unakula|Utakula] nini jana?
+t: Did you cough? | [Ulikohoa|Unakohoa|Utakohoa]?
+t: My head hurts. | Kichwa [inauma|ninauma|unauma]. || Kenyan: kichwa inauma. Sanifu: kichwa kinauma.
+t: I have a little fever. | [Nina|Sina|Una] homa kidogo.
+t: I'll give you medicine. | [Nitakupa|Nitampa|Utanipa] dawa. || ni- + -ta- + -ku- (you) + -pa (give).
+t: Give me medicine. | [Nipe|Mpe|Wape] dawa. || Nipe = give me; mpe = give him/her; wape = give them.
+t: two tablets | vidonge [viwili|mbili|wawili] || ki/vi nouns take vi- numbers: viwili. (A Sanifu detail Kenyans mostly keep.)
+t: three times a day | mara [tatu|tano|saba] kwa siku || mara = times.
+t: after eating | [baada ya|kabla ya|karibu na] kula || baada ya = after; kabla ya = before.
+t: Drink a lot of water. | [Kunywa|Kula|Lete] maji mengi.
+t: Come back tomorrow. | [Rudi|Ondoka|Panda] kesho.
+c: Get well soon! | [Pona|Pole|Poa] haraka! || pona = heal / get well. Pole = sorry; poa = cool.
+t: I don't feel well. | [Sijisikii|Najisikia|Hajisikii] vizuri. || A fixed phrase: si- + -ji- (myself) + -sikii (feel, negative).
+
+@vocab
+Sijisikii vizuri | I don't feel well | Lit. "I don't feel myself well"
+Pole sana | I'm so sorry | Sympathy, not an apology
+Ulianza lini? | When did you start? | lini = when?
+Kichwa inauma | My head hurts | Everyday Kenyan. | Kichwa kinauma | Sanifu: kichwa is ki/vi class
+homa | fever / flu | Una homa? = do you have a fever?
+Sikulala vizuri | I didn't sleep well | si- + -ku- + -lala
+Ulikula nini? | What did you eat? |
+Nitakupa dawa | I'll give you medicine | -ku- = you
+mara tatu kwa siku | three times a day |
+baada ya kula | after eating | kabla ya kula = before eating
+vidonge | tablets | ki/vi: kidonge kimoja, vidonge viwili
+Pona haraka! | Get well soon! | kupona = to heal
+chemist | pharmacy | Kenyans say "chemist"
+
+@lesson weekend-story
+title: How Was Your Weekend?
+level: 4
+theme: friends
+category: social
+culture: Monday morning at a Kenyan office starts with "Wikendi ilikuwaje?" (how was the weekend?) — and a story. Telling what happened is all past tense: -li- for what you did, -ku- for what you didn't. Object infixes let you say who it happened to without extra words: nilimwona (I saw him/her), alinipigia (she called me), tuliwaona (we saw them).
+start: Monday, 9 a.m. Your colleague Wanjiku is making tea in the office kitchen.
+grammar: past-li, negative-past, object-infixes
+gl: Wikendi ilikuwaje = "How was the weekend?" — i- (it) + -li- + -kuwa (be) + -je (how?). #past-li
+gl: ilikuwaje = "how was it?" — i- (it) + -li- (past) + -kuwa (be) + -je (how?) #past-li
+gl: ilikuwa = "it was" — i- (it) + -li- (past) + -kuwa (be). #past-li
+gl: dadangu = "my sister" — dada + -angu, contracted. #possessives
+gl: harusi = wedding
+gl: hotel = hotel
+gl: Mombasa = Mombasa — the coastal city
+gl: shughuli nyingi = "lots of things to do / busy"
+gl: tukacheza = "and then we played" — tu- + -ka- (and then) + -cheza. #ki-po-ka
+gl: mpira = football
+gl: Kwa nini = why?
+gl: alinipigia = "she called me" — a- + -li- + -ni- (me) + -pigia. #object-infixes
+
+> Wanjiku: Habari ya asubuhi, John! Wikendi ilikuwaje? | Good morning, John! How was the weekend?
+< John: Ilikuwa nzuri sana! Nilienda harusi ya rafiki yangu. | It was really good! I went to my friend's wedding.
+  x: Itakuwa nzuri sana! Nilienda harusi ya rafiki yangu. ; Ilikuwa nzuri sana! Nitaenda harusi ya rafiki yangu.
+> Wanjiku: Wee! Harusi ilikuwa wapi? | Wow! Where was the wedding?
+< John: Ilikuwa Karen. Watu wengi walikuja, na tulicheza muziki mpaka usiku. | It was in Karen. Lots of people came, and we danced until night.
+  x: Ilikuwa Karen. Watu wengi walikuja, na tunacheza muziki mpaka usiku. ; Ilikuwa Karen. Watu wengi hawakuja, na tulicheza muziki mpaka usiku.
+> Wanjiku: Safi sana! Ulimwona Baraka huko? | Great! Did you see Baraka there?
+< John: Hapana, sikumwona. Hakuja. | No, I didn't see him. He didn't come.
+  x: Hapana, sikukuona. Hakuja. ; Ndiyo, sikumwona. Hakuja.
+> Wanjiku: Aah, nakumbuka! Alinipigia simu Jumamosi. Alienda Mombasa. | Ah, I remember! He called me on Saturday. He went to Mombasa.
+< John: Kweli? Alienda kufanya nini? | Really? What did he go to do?
+  x: Kweli? Ulienda kufanya nini? ; Kweli? Atakwenda kufanya nini?
+> Wanjiku: Kazi tu. Na wewe, ulipumzika Jumapili? | Just work. And you, did you rest on Sunday?
+< John: Hapana! Nilifua nguo, nikapika, halafu nilicheza mpira na majirani. | No! I did laundry, cooked, then played football with the neighbours.
+  x: Hapana! Ninafua nguo, nikapika, halafu nilicheza mpira na majirani. ; Ndiyo! Nilifua nguo, nikapika, halafu nilicheza mpira na majirani.
+> Wanjiku: Pole! Wikendi yako ilikuwa na shughuli nyingi. | Aww! Your weekend was busy.
+< John: Ndiyo. Na wewe, ulifanya nini? | Yes. And you, what did you do?
+  x: Ndiyo. Na wewe, utafanya nini? ; Ndiyo. Na wewe, nilifanya nini?
+> Wanjiku: Mimi? Nililala tu! Sikutoka nyumbani hata kidogo. | Me? I just slept! I didn't leave the house at all.
+
+@practice
+t: How was the weekend? | Wikendi [ilikuwaje|itakuwaje|inakuwaje]? || -li- for past + -je for "how?".
+t: It was very good. | [Ilikuwa|Itakuwa|Iko] nzuri sana. || ilikuwa = it was (n/n subject).
+t: I went to a wedding. | [Nilienda|Ninaenda|Nitaenda] harusi.
+t: Many people came. | Watu wengi [walikuja|wanakuja|watakuja].
+t: We danced until night. | [Tulicheza|Tunacheza|Mlicheza] muziki mpaka usiku. || kucheza muziki = to dance (lit. "play music").
+t: Did you see Baraka? | [Ulimwona|Nilimwona|Alimwona] Baraka? || -mw- = him/her: u- + -li- + -mw- + -ona.
+t: No, I didn't see him. | Hapana, [sikumwona|sikukuona|sikuwaona]. || -mw- him, -ku- you, -wa- them.
+t: We saw them. | [Tuliwaona|Tulimwona|Walituona]. || -wa- = them.
+t: He didn't come. | [Hakuja|Hawakuja|Hukuja]. || ha- (not he) + -ku- + -ja.
+t: They didn't come. | [Hawakuja|Hakuja|Hatukuja].
+t: She called me. | [Alinipigia|Nilimpigia|Alikupigia] simu.
+t: He went to Mombasa. | [Alienda|Anaenda|Ataenda] Mombasa.
+t: Did you rest? | [Ulipumzika|Unapumzika|Utapumzika]?
+t: I didn't leave the house. | [Sikutoka|Sitoki|Sitatoka] nyumbani.
+t: I just slept! | [Nililala|Ninalala|Nitalala] tu!
+c: I did laundry, and then cooked. | Nilifua nguo, [nikapika|ninapika|nitapika]. || In a story, -ka- strings past events together: "…and then I cooked".
+t: What did you do? | [Ulifanya|Unafanya|Utafanya] nini?
+
+@vocab
+Wikendi ilikuwaje? | How was the weekend? | -je = how?
+Ilikuwa nzuri | It was good | i- (it) + -li- + -kuwa
+Nilienda… | I went… |
+Watu wengi walikuja | Lots of people came |
+Ulimwona…? | Did you see…? (him/her) | -mw- = him/her
+Sikumwona | I didn't see him/her | si- + -ku- + -mw- + -ona
+Hakuja | He/she didn't come | ha- + -ku- + -ja
+Alinipigia simu | She called me | -ni- = me
+Tuliwaona | We saw them | -wa- = them
+Nilifua nguo | I did laundry | kufua = to wash clothes
+Nililala tu | I just slept |
+Sikutoka nyumbani | I didn't leave the house |
+shughuli nyingi | lots to do / busy |

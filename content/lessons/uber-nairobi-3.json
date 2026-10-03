@@ -1,0 +1,1981 @@
+{
+  "id": "uber-nairobi-3",
+  "uuid": "4d65343f-4535-5827-bd3a-0f06929301d3",
+  "title": "Taking an Uber, Part 3: Stuck in the Jam",
+  "category": "transport",
+  "difficulty": "medium",
+  "level": 4,
+  "order": 401,
+  "theme": "uber",
+  "culturalNote": "The Uber is back — and so is Kamau, your driver from Parts 1 and 2. Monday-morning traffic on Waiyaki Way is legendary, and drivers know every shortcut (njia ya mkato) through the leafy back roads of Lavington. Small talk in a jam is normal and expected. This time the conversation is about what already happened: the weekend, the accident, the missed call. That's the past tense -li-, and its negative -ku-.",
+  "startingPoint": "Monday, 7:20 a.m. You order an Uber to the office — and Kamau pulls up again.",
+  "grammarFocus": [
+    "past-li",
+    "negative-past",
+    "object-infixes"
+  ],
+  "grammar": [
+    "past-li",
+    "negative-past",
+    "object-infixes",
+    "discourse-particles",
+    "ni-copula",
+    "subject-prefixes",
+    "noun-classes-mwa-nn",
+    "possessives",
+    "greetings",
+    "question-words",
+    "na-have",
+    "adjective-agreement",
+    "future-ta",
+    "time-swahili",
+    "subjunctive",
+    "infinitive-ku",
+    "verb-extensions",
+    "demonstratives",
+    "numbers-money"
+  ],
+  "turns": [
+    {
+      "id": "d102b967-f23f-5f48-9d2b-d8b525be35bf",
+      "speaker": "Dereva",
+      "role": "auto",
+      "swahili": "Aah, John! Ni wewe tena! Habari ya wikendi?",
+      "english": "Ah, John! It's you again! How was the weekend?",
+      "words": [
+        {
+          "text": "Aah",
+          "gloss": "ah!",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "John",
+          "gloss": "John (name)"
+        },
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "tena",
+          "gloss": "again"
+        },
+        {
+          "text": "Habari",
+          "gloss": "news — the base of every formal greeting — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ya",
+          "gloss": "\"of\" — n/n singular agreement (nyumba ya Kamau); Kenyans use ya with most nouns",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "wikendi",
+          "gloss": "weekend"
+        }
+      ]
+    },
+    {
+      "id": "09f5c27f-f853-5c1b-aad1-c2d4bcf27869",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Kamau! Nzuri sana. Nilienda Naivasha na marafiki.",
+      "english": "Kamau! Very good. I went to Naivasha with friends.",
+      "words": [
+        {
+          "text": "Kamau",
+          "gloss": "Kamau (name)"
+        },
+        {
+          "text": "Nzuri sana",
+          "gloss": "very good",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Nilienda",
+          "gloss": "\"I went\" — ni- (subject: I) + li- (past) + -enda (go). From kuenda.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kuenda (to go)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilienda"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulienda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alienda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulienda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlienda"
+              },
+              {
+                "pronoun": "they",
+                "form": "walienda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Naivasha",
+          "gloss": "Naivasha"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "marafiki",
+          "gloss": "friends (plural of rafiki)"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Kamau! Nzuri sana. Nilienda Naivasha na marafiki.",
+          "correct": true
+        },
+        {
+          "swahili": "Kamau! Nzuri sana. Nitaenda Naivasha na marafiki.",
+          "correct": false
+        },
+        {
+          "swahili": "Kamau! Nzuri sana. Ulienda Naivasha na marafiki.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "e842083b-a7fd-5154-b057-4ad68887194c",
+      "speaker": "Dereva",
+      "role": "auto",
+      "swahili": "Safi! Mlifanya nini huko?",
+      "english": "Great! What did you do there?",
+      "words": [
+        {
+          "text": "Safi",
+          "gloss": "clean / great / sorted"
+        },
+        {
+          "text": "Mlifanya",
+          "gloss": "\"You all did\" — m- (subject: you all) + li- (past) + -fanya (do). From kufanya.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kufanya (to do)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilifanya"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulifanya"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alifanya"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulifanya"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlifanya"
+              },
+              {
+                "pronoun": "they",
+                "form": "walifanya"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nini",
+          "gloss": "what?",
+          "grammar": [
+            "question-words"
+          ]
+        },
+        {
+          "text": "huko",
+          "gloss": "there (far / that place)"
+        }
+      ]
+    },
+    {
+      "id": "58693701-6e95-554c-9922-f6a021559d5e",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Tuliona viboko, na tulikula nyama choma.",
+      "english": "We saw hippos, and we ate nyama choma.",
+      "words": [
+        {
+          "text": "Tuliona",
+          "gloss": "\"We saw\" — tu- (subject: we) + li- (past) + -ona (see). From kuona.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kuona (to see)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niliona"
+              },
+              {
+                "pronoun": "you",
+                "form": "uliona"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "aliona"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuliona"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mliona"
+              },
+              {
+                "pronoun": "they",
+                "form": "waliona"
+              }
+            ]
+          }
+        },
+        {
+          "text": "viboko",
+          "gloss": "hippos (plural of kiboko)"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "tulikula",
+          "gloss": "\"We ate\" — tu- (subject: we) + li- (past) + -la (eat). From kula.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kula (to eat)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilikula"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulikula"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alikula"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulikula"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlikula"
+              },
+              {
+                "pronoun": "they",
+                "form": "walikula"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nyama choma",
+          "gloss": "grilled meat — a Kenyan institution — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Tuliona viboko, na tulikula nyama choma.",
+          "correct": true
+        },
+        {
+          "swahili": "Tutaona viboko, na tutakula nyama choma.",
+          "correct": false
+        },
+        {
+          "swahili": "Tuliona viboko, na tulila nyama choma.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "a8fbe231-6406-5cb1-a129-0f1fc8e8bb17",
+      "speaker": "Dereva",
+      "role": "auto",
+      "swahili": "Wee! Mimi sikuenda popote. Nilifanya kazi wikendi yote.",
+      "english": "Wow! I didn't go anywhere. I worked the whole weekend.",
+      "words": [
+        {
+          "text": "Wee",
+          "gloss": "hey you! (surprise / emphasis)",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "sikuenda",
+          "gloss": "\"I didn't go\" — si- (negative subject: not I) + ku- (past (negative)) + -enda (go). From kuenda.",
+          "grammar": [
+            "negative-past"
+          ],
+          "conjugation": {
+            "verb": "kuenda (to go)",
+            "tense": "Past, negative (-ku-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "sikuenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "hukuenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "hakuenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "hatukuenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "hamkuenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "hawakuenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "popote",
+          "gloss": "anywhere / (not) anywhere"
+        },
+        {
+          "text": "Nilifanya",
+          "gloss": "\"I did\" — ni- (subject: I) + li- (past) + -fanya (do). From kufanya.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kufanya (to do)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilifanya"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulifanya"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alifanya"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulifanya"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlifanya"
+              },
+              {
+                "pronoun": "they",
+                "form": "walifanya"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kazi",
+          "gloss": "work / job — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "wikendi yote",
+          "gloss": "\"the whole weekend\""
+        }
+      ]
+    },
+    {
+      "id": "2809026c-5582-55a3-8d09-8afee662d20f",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Pole sana. Leo kuna foleni mbaya sana!",
+      "english": "So sorry. Today there's a really bad jam!",
+      "words": [
+        {
+          "text": "Pole sana",
+          "gloss": "so sorry / take heart"
+        },
+        {
+          "text": "Leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "kuna",
+          "gloss": "\"There is / there are\" — ku- (place) + -na (have): \"the place has…\"",
+          "grammar": [
+            "na-have"
+          ]
+        },
+        {
+          "text": "foleni",
+          "gloss": "queue / traffic jam (from French \"file\") — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "mbaya",
+          "gloss": "\"bad\" — m/wa singular agreement (one person / animal).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-baya (bad)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mbaya"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wabaya"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "mbaya"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Pole sana. Leo kuna foleni mbaya sana!",
+          "correct": true
+        },
+        {
+          "swahili": "Asante sana. Leo kuna foleni mbaya sana!",
+          "correct": false
+        },
+        {
+          "swahili": "Pole sana. Leo kuna foleni nzuri sana!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "37e44b24-28bc-505d-add4-ace02f2a198e",
+      "speaker": "Dereva",
+      "role": "auto",
+      "swahili": "Ndiyo. Kulikuwa na ajali kwa Waiyaki Way asubuhi.",
+      "english": "Yes. There was an accident on Waiyaki Way this morning.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Kulikuwa na",
+          "gloss": "\"There was / there were\"",
+          "grammar": [
+            "na-have",
+            "past-li"
+          ]
+        },
+        {
+          "text": "ajali",
+          "gloss": "accident — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "kwa Waiyaki Way",
+          "gloss": "\"on Waiyaki Way\" — Kenyan use of kwa.",
+          "sanifu": "Sanifu: kwenye barabara ya Waiyaki #locative-ni"
+        },
+        {
+          "text": "asubuhi",
+          "gloss": "morning — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4b7809c9-0e6e-5dd2-a119-fd951ae4b64a",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Kweli? Sikuona habari. Watu waliumia?",
+      "english": "Really? I didn't see the news. Did people get hurt?",
+      "words": [
+        {
+          "text": "Kweli",
+          "gloss": "true / really",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Sikuona",
+          "gloss": "\"I didn't see\" — si- (negative subject: not I) + ku- (past (negative)) + -ona (see). From kuona.",
+          "grammar": [
+            "negative-past"
+          ],
+          "conjugation": {
+            "verb": "kuona (to see)",
+            "tense": "Past, negative (-ku-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "sikuona"
+              },
+              {
+                "pronoun": "you",
+                "form": "hukuona"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "hakuona"
+              },
+              {
+                "pronoun": "we",
+                "form": "hatukuona"
+              },
+              {
+                "pronoun": "you all",
+                "form": "hamkuona"
+              },
+              {
+                "pronoun": "they",
+                "form": "hawakuona"
+              }
+            ]
+          }
+        },
+        {
+          "text": "habari",
+          "gloss": "news — the base of every formal greeting — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Watu",
+          "gloss": "people — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "waliumia",
+          "gloss": "\"They got hurt\" — wa- (subject: they) + li- (past) + -umia (get hurt). From kuumia.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kuumia (to get hurt)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niliumia"
+              },
+              {
+                "pronoun": "you",
+                "form": "uliumia"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "aliumia"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuliumia"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mliumia"
+              },
+              {
+                "pronoun": "they",
+                "form": "waliumia"
+              }
+            ]
+          }
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Kweli? Sikuona habari. Watu waliumia?",
+          "correct": true
+        },
+        {
+          "swahili": "Kweli? Sioni habari. Watu waliumia?",
+          "correct": false
+        },
+        {
+          "swahili": "Kweli? Sikuona habari. Watu wanaumia?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "520cbe3b-f2d7-5368-ad5c-6cc01444e62c",
+      "speaker": "Dereva",
+      "role": "auto",
+      "swahili": "Hapana, hakuna mtu aliumia. Lakini gari mbili ziliharibika.",
+      "english": "No, nobody got hurt. But two cars were damaged.",
+      "words": [
+        {
+          "text": "Hapana",
+          "gloss": "no"
+        },
+        {
+          "text": "hakuna mtu",
+          "gloss": "\"nobody\" — lit. \"there is no person\""
+        },
+        {
+          "text": "aliumia",
+          "gloss": "\"He/she got hurt\" — a- (subject: he/she) + li- (past) + -umia (get hurt). From kuumia.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kuumia (to get hurt)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niliumia"
+              },
+              {
+                "pronoun": "you",
+                "form": "uliumia"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "aliumia"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuliumia"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mliumia"
+              },
+              {
+                "pronoun": "they",
+                "form": "waliumia"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "gari mbili",
+          "gloss": "\"two cars\" — Kenyan n/n agreement.",
+          "sanifu": "Sanifu: magari mawili (ji/ma class) #sanifu-noun-classes"
+        },
+        {
+          "text": "ziliharibika",
+          "gloss": "\"were damaged / broke down\" — zi- (they, n/n) + -li- (past) + -haribika. Kenyan n/n agreement for gari.",
+          "sanifu": "Sanifu: yaliharibika (magari, ji/ma) #past-li"
+        }
+      ],
+      "sanifu": "Hapana, hakuna mtu aliumia. Lakini magari mawili yaliharibika."
+    },
+    {
+      "id": "6b320411-cbd2-5762-9727-b1814b0c1147",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Tutachelewa? Nilimwambia boss nitafika saa mbili.",
+      "english": "Will we be late? I told the boss I'd arrive at eight.",
+      "words": [
+        {
+          "text": "Tutachelewa",
+          "gloss": "\"We will run late\" — tu- (subject: we) + ta- (future) + -chelewa (run late). From kuchelewa.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kuchelewa (to run late)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitachelewa"
+              },
+              {
+                "pronoun": "you",
+                "form": "utachelewa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atachelewa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutachelewa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtachelewa"
+              },
+              {
+                "pronoun": "they",
+                "form": "watachelewa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Nilimwambia",
+          "gloss": "\"I told him/her\" — ni- (subject: I) + li- (past) + mw- (object: him/her) + -ambia (tell). From kuambia.",
+          "grammar": [
+            "past-li",
+            "object-infixes"
+          ],
+          "conjugation": {
+            "verb": "kuambia (to tell)",
+            "tense": "Past (-li-) + object -mw-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilimwambia"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulimwambia"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alimwambia"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulimwambia"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlimwambia"
+              },
+              {
+                "pronoun": "they",
+                "form": "walimwambia"
+              }
+            ]
+          }
+        },
+        {
+          "text": "boss",
+          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "nitafika",
+          "gloss": "\"I will arrive\" — ni- (subject: I) + ta- (future) + -fika (arrive). From kufika.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kufika (to arrive)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitafika"
+              },
+              {
+                "pronoun": "you",
+                "form": "utafika"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atafika"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutafika"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtafika"
+              },
+              {
+                "pronoun": "they",
+                "form": "watafika"
+              }
+            ]
+          }
+        },
+        {
+          "text": "saa mbili",
+          "gloss": "8 o'clock",
+          "grammar": [
+            "time-swahili"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Tutachelewa? Nilimwambia boss nitafika saa mbili.",
+          "correct": true
+        },
+        {
+          "swahili": "Tutachelewa? Nilikuambia boss nitafika saa mbili.",
+          "correct": false
+        },
+        {
+          "swahili": "Tutachelewa? Nilimwambia boss nilifika saa mbili.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "8018b840-275c-5d1b-ae3e-46ca36bf5a07",
+      "speaker": "Dereva",
+      "role": "auto",
+      "swahili": "Usijali. Nitapita njia ya mkato, kupitia Lavington.",
+      "english": "Don't worry. I'll take a shortcut, through Lavington.",
+      "words": [
+        {
+          "text": "Usijali",
+          "gloss": "\"Don't worry\" — u- + -si- + -jali (care, mind)",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "Nitapita",
+          "gloss": "\"I will pass\" — ni- (subject: I) + ta- (future) + -pita (pass). From kupita.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kupita (to pass)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitapita"
+              },
+              {
+                "pronoun": "you",
+                "form": "utapita"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atapita"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutapita"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtapita"
+              },
+              {
+                "pronoun": "they",
+                "form": "watapita"
+              }
+            ]
+          }
+        },
+        {
+          "text": "njia ya mkato",
+          "gloss": "\"a shortcut\" — lit. \"a way of cutting\" (from kukata)."
+        },
+        {
+          "text": "kupitia",
+          "gloss": "\"To pass by / go through\" — ku- (infinitive \"to\") + -pitia (pass by / go through). From kupitia. Extension: prepositional (-ia/-ea: \"for / to / at\").",
+          "grammar": [
+            "infinitive-ku",
+            "verb-extensions"
+          ]
+        },
+        {
+          "text": "Lavington",
+          "gloss": "Lavington — leafy Nairobi suburb with back roads"
+        }
+      ]
+    },
+    {
+      "id": "288bd589-4f4f-5303-8166-6379f5c1ae37",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Poa! Jana nilikupigia simu, lakini hukuchukua.",
+      "english": "Cool! Yesterday I called you, but you didn't pick up.",
+      "words": [
+        {
+          "text": "Poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Jana",
+          "gloss": "yesterday — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "nilikupigia",
+          "gloss": "\"I called you\" — ni- (subject: I) + li- (past) + ku- (object: you) + -pigia (call). From kupigia. Extension: prepositional (-ia/-ea: \"for / to / at\").",
+          "grammar": [
+            "past-li",
+            "object-infixes",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kupigia (to call)",
+            "tense": "Past (-li-) + object -ku-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilikupigia"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulikupigia"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alikupigia"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulikupigia"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlikupigia"
+              },
+              {
+                "pronoun": "they",
+                "form": "walikupigia"
+              }
+            ]
+          }
+        },
+        {
+          "text": "simu",
+          "gloss": "phone / call — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "hukuchukua",
+          "gloss": "\"You didn't take\" — hu- (negative subject: not you) + ku- (past (negative)) + -chukua (take). From kuchukua.",
+          "grammar": [
+            "negative-past"
+          ],
+          "conjugation": {
+            "verb": "kuchukua (to take)",
+            "tense": "Past, negative (-ku-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "sikuchukua"
+              },
+              {
+                "pronoun": "you",
+                "form": "hukuchukua"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "hakuchukua"
+              },
+              {
+                "pronoun": "we",
+                "form": "hatukuchukua"
+              },
+              {
+                "pronoun": "you all",
+                "form": "hamkuchukua"
+              },
+              {
+                "pronoun": "they",
+                "form": "hawakuchukua"
+              }
+            ]
+          }
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Poa! Jana nilikupigia simu, lakini hukuchukua.",
+          "correct": true
+        },
+        {
+          "swahili": "Poa! Jana ulinipigia simu, lakini hukuchukua.",
+          "correct": false
+        },
+        {
+          "swahili": "Poa! Jana nilikupigia simu, lakini sikuchukua.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "9b323580-0fea-5063-b19e-36b1216a0ab9",
+      "speaker": "Dereva",
+      "role": "auto",
+      "swahili": "Aah, pole! Simu yangu ilizima — betri iliisha.",
+      "english": "Ah, sorry! My phone died — the battery ran out.",
+      "words": [
+        {
+          "text": "Aah",
+          "gloss": "ah!",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "pole",
+          "gloss": "sorry (sympathy)"
+        },
+        {
+          "text": "Simu",
+          "gloss": "phone / call — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "yangu",
+          "gloss": "\"my\" — n/n singular agreement (nyumba yangu). In Kenyan speech also used for family words and most things (jina yangu, gari yangu).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (n/n singular)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "yangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "yako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "yake"
+              },
+              {
+                "pronoun": "our",
+                "form": "yetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "yenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "yao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "ilizima",
+          "gloss": "\"(it) switched off / died\" — i- (it, n/n) + -li- (past) + -zima.",
+          "grammar": [
+            "past-li"
+          ]
+        },
+        {
+          "text": "betri",
+          "gloss": "battery — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "iliisha",
+          "gloss": "\"It ran out\" — i- (subject: it (n/n)) + li- (past) + -isha (run out). From kuisha.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kuisha (to run out)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niliisha"
+              },
+              {
+                "pronoun": "you",
+                "form": "uliisha"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "aliisha"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuliisha"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mliisha"
+              },
+              {
+                "pronoun": "they",
+                "form": "waliisha"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iliisha"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziliisha"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b4541ecf-9da6-568c-8c4f-b6ca956b14cb",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Hakuna shida. Nitakupigia tena kesho asubuhi.",
+      "english": "No problem. I'll call you again tomorrow morning.",
+      "words": [
+        {
+          "text": "Hakuna shida",
+          "gloss": "no problem (lit. \"there's no problem\")",
+          "grammar": [
+            "na-have"
+          ]
+        },
+        {
+          "text": "Nitakupigia",
+          "gloss": "\"I will call you\" — ni- (subject: I) + ta- (future) + ku- (object: you) + -pigia (call). From kupigia. Extension: prepositional (-ia/-ea: \"for / to / at\").",
+          "grammar": [
+            "future-ta",
+            "object-infixes",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kupigia (to call)",
+            "tense": "Future (-ta-) + object -ku-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitakupigia"
+              },
+              {
+                "pronoun": "you",
+                "form": "utakupigia"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atakupigia"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutakupigia"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtakupigia"
+              },
+              {
+                "pronoun": "they",
+                "form": "watakupigia"
+              }
+            ]
+          }
+        },
+        {
+          "text": "tena",
+          "gloss": "again"
+        },
+        {
+          "text": "kesho",
+          "gloss": "tomorrow — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "asubuhi",
+          "gloss": "morning — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Hakuna shida. Nitakupigia tena kesho asubuhi.",
+          "correct": true
+        },
+        {
+          "swahili": "Hakuna shida. Nilikupigia tena kesho asubuhi.",
+          "correct": false
+        },
+        {
+          "swahili": "Hakuna shida. Nitampigia tena kesho asubuhi.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "3d1e5794-bab4-50e9-bebf-4ae1273a8e66",
+      "speaker": "Dereva",
+      "role": "auto",
+      "swahili": "Sawa. Na hii ndiyo ofisi yako. Saa mbili kasoro dakika tano!",
+      "english": "Okay. And this is your office. Five to eight!",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "hii",
+          "gloss": "this — n/n singular (and Kenyans' all-purpose \"this\")",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "ofisi",
+          "gloss": "office — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "yako",
+          "gloss": "\"your\" — n/n singular agreement (nyumba yako). In Kenyan speech also used for family words and most things (jina yako, gari yako).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (n/n singular)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "yangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "yako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "yake"
+              },
+              {
+                "pronoun": "our",
+                "form": "yetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "yenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "yao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Saa mbili",
+          "gloss": "8 o'clock",
+          "grammar": [
+            "time-swahili"
+          ]
+        },
+        {
+          "text": "kasoro",
+          "gloss": "\"minus / to\" — saa mbili kasoro dakika tano = 7:55",
+          "grammar": [
+            "time-swahili"
+          ]
+        },
+        {
+          "text": "dakika",
+          "gloss": "minute — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "tano",
+          "gloss": "5 (n/n form — used for counting, money, things)",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "8a698a7b-6b73-57c2-a82d-60c9c69901ff",
+      "swahili": "Nilienda…",
+      "english": "I went…",
+      "exampleContext": "ni- + -li- (past) + -enda",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "298bff6d-329a-5441-8f51-2c5214fc6e43",
+      "swahili": "Mlifanya nini?",
+      "english": "What did you (all) do?",
+      "exampleContext": "m- = you all",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "ecb50d9c-0187-58e5-beea-e671e27560f5",
+      "swahili": "Tuliona…",
+      "english": "We saw… |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "266e0721-9c75-5632-ae73-ea48942d1225",
+      "swahili": "Sikuenda",
+      "english": "I didn't go",
+      "exampleContext": "si- + -ku- (past negative) + -enda"
+    },
+    {
+      "id": "99c708e4-4761-570a-89c1-bed7cb43941c",
+      "swahili": "Sikuona",
+      "english": "I didn't see |",
+      "exampleContext": ""
+    },
+    {
+      "id": "08112ce4-5b2a-50e1-9f3c-3cc38c7b3647",
+      "swahili": "Kulikuwa na ajali",
+      "english": "There was an accident |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "5e35f26d-c6f7-542d-9b76-20976d72bd31",
+      "swahili": "foleni",
+      "english": "traffic jam / queue",
+      "exampleContext": "Also \"jam\""
+    },
+    {
+      "id": "3e8c0bb2-ad23-5692-b5e3-4a33fe93bb6a",
+      "swahili": "Nilimwambia",
+      "english": "I told him/her",
+      "exampleContext": "-mw- = him/her"
+    },
+    {
+      "id": "1e1f57a0-f7b4-5698-b7f1-dc34d021a4b9",
+      "swahili": "Nilikupigia simu",
+      "english": "I called you",
+      "exampleContext": "-ku- = you; kupigia simu = to phone someone",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "fc834f52-e6d8-59f4-a382-0f8073e2df6b",
+      "swahili": "Hukuchukua",
+      "english": "You didn't pick up",
+      "exampleContext": "hu- (not you) + -ku- (past)"
+    },
+    {
+      "id": "066750c9-d70d-5fc8-98c6-f99522fbb8a6",
+      "swahili": "njia ya mkato",
+      "english": "shortcut",
+      "exampleContext": "from kukata (to cut)",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "2c3707ff-c987-5649-a783-825a233dd27e",
+      "swahili": "kasoro",
+      "english": "minus / to (time)",
+      "exampleContext": "saa mbili kasoro dakika tano = 7:55"
+    },
+    {
+      "id": "e704214e-ca58-5d06-8fc5-03c7330a8b99",
+      "swahili": "Betri iliisha",
+      "english": "The battery ran out |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a70c5ae9-6a39-5c11-8b58-49a05b75e63a",
+      "mode": "translate",
+      "english": "I went to Naivasha.",
+      "before": "",
+      "after": " Naivasha.",
+      "options": [
+        {
+          "text": "Nilienda",
+          "correct": true
+        },
+        {
+          "text": "Ninaenda",
+          "correct": false,
+          "feedback": "Ninaenda = I am going"
+        },
+        {
+          "text": "Nitaenda",
+          "correct": false,
+          "feedback": "Nitaenda = I will go"
+        }
+      ],
+      "explanation": "Past: ni- (I) + -li- (past) + -enda (go).",
+      "grammar": [
+        "past-li"
+      ]
+    },
+    {
+      "id": "da29ef04-e8ee-528b-9d7a-4c4491759cd5",
+      "mode": "translate",
+      "english": "What did you (all) do there?",
+      "before": "",
+      "after": " nini huko?",
+      "options": [
+        {
+          "text": "Mlifanya",
+          "correct": true
+        },
+        {
+          "text": "Tulifanya",
+          "correct": false,
+          "feedback": "Tulifanya = We did"
+        },
+        {
+          "text": "Walifanya",
+          "correct": false,
+          "feedback": "Walifanya = They did"
+        }
+      ],
+      "explanation": "m- = you all.",
+      "grammar": [
+        "past-li"
+      ]
+    },
+    {
+      "id": "e8923595-4ea0-57b6-a215-a6a5e59ea3b9",
+      "mode": "translate",
+      "english": "We saw hippos.",
+      "before": "",
+      "after": " viboko.",
+      "options": [
+        {
+          "text": "Tuliona",
+          "correct": true
+        },
+        {
+          "text": "Tunaona",
+          "correct": false,
+          "feedback": "Tunaona = We see"
+        },
+        {
+          "text": "Mliona",
+          "correct": false,
+          "feedback": "Mliona = You all saw"
+        }
+      ],
+      "explanation": "Tuliona = \"We saw\" — tu- (subject: we) + li- (past) + -ona (see). From kuona.",
+      "grammar": [
+        "past-li"
+      ]
+    },
+    {
+      "id": "6c590fe8-b363-53ce-9228-d08eb8c48cbb",
+      "mode": "translate",
+      "english": "We ate nyama choma.",
+      "before": "",
+      "after": " nyama choma.",
+      "options": [
+        {
+          "text": "Tulikula",
+          "correct": true
+        },
+        {
+          "text": "Tulila",
+          "correct": false
+        },
+        {
+          "text": "Tunakula",
+          "correct": false,
+          "feedback": "Tunakula = We are eating"
+        }
+      ],
+      "explanation": "kula keeps its ku- after -li-: tulikula.",
+      "grammar": [
+        "past-li"
+      ]
+    },
+    {
+      "id": "2ccb56a6-6d4c-5d81-8632-32b813b13fc0",
+      "mode": "translate",
+      "english": "He worked the whole weekend.",
+      "before": "",
+      "after": " kazi wikendi yote.",
+      "options": [
+        {
+          "text": "Alifanya",
+          "correct": true
+        },
+        {
+          "text": "Anafanya",
+          "correct": false,
+          "feedback": "Anafanya = He/she is doing"
+        },
+        {
+          "text": "Atafanya",
+          "correct": false,
+          "feedback": "Atafanya = He/she will do"
+        }
+      ],
+      "explanation": "Alifanya = \"He/she did\" — a- (subject: he/she) + li- (past) + -fanya (do). From kufanya.",
+      "grammar": [
+        "past-li"
+      ]
+    },
+    {
+      "id": "62cac698-c2dc-5a69-be99-334a50c0147f",
+      "mode": "translate",
+      "english": "I didn't go anywhere.",
+      "before": "",
+      "after": " popote.",
+      "options": [
+        {
+          "text": "Sikuenda",
+          "correct": true
+        },
+        {
+          "text": "Siendi",
+          "correct": false,
+          "feedback": "Siendi = I am not going"
+        },
+        {
+          "text": "Sitaenda",
+          "correct": false,
+          "feedback": "Sitaenda = I won't go"
+        }
+      ],
+      "explanation": "Negative past: si- (not I) + -ku- (past) + -enda. The verb keeps its -a.",
+      "grammar": [
+        "negative-past"
+      ]
+    },
+    {
+      "id": "5916d44a-860e-5f96-a7b8-102f86aca47a",
+      "mode": "translate",
+      "english": "I didn't see the news.",
+      "before": "",
+      "after": " habari.",
+      "options": [
+        {
+          "text": "Sikuona",
+          "correct": true
+        },
+        {
+          "text": "Sioni",
+          "correct": false,
+          "feedback": "Sioni = I don't see"
+        },
+        {
+          "text": "Sitaona",
+          "correct": false,
+          "feedback": "Sitaona = I won't see"
+        }
+      ],
+      "explanation": "sioni = I don't see (now); sikuona = I didn't see.",
+      "grammar": [
+        "negative-past"
+      ]
+    },
+    {
+      "id": "2fadd5ec-ef38-5eef-a337-3154054bf484",
+      "mode": "translate",
+      "english": "You didn't pick up.",
+      "before": "",
+      "after": ".",
+      "options": [
+        {
+          "text": "Hukuchukua",
+          "correct": true
+        },
+        {
+          "text": "Sikuchukua",
+          "correct": false,
+          "feedback": "Sikuchukua = I didn't take"
+        },
+        {
+          "text": "Hakuchukua",
+          "correct": false,
+          "feedback": "Hakuchukua = He/she didn't take"
+        }
+      ],
+      "explanation": "hu- (not you) + -ku- (past) + -chukua.",
+      "grammar": [
+        "negative-past"
+      ]
+    },
+    {
+      "id": "480e9c76-1d24-5e9f-837d-f6815377f634",
+      "mode": "translate",
+      "english": "She didn't come.",
+      "before": "",
+      "after": ".",
+      "options": [
+        {
+          "text": "Hakuja",
+          "correct": true
+        },
+        {
+          "text": "Hukuja",
+          "correct": false,
+          "feedback": "Hukuja = Usually come (habit, any person)"
+        },
+        {
+          "text": "Sikuja",
+          "correct": false,
+          "feedback": "Sikuja = I didn't come"
+        }
+      ],
+      "explanation": "ha- (not he/she) + -ku- + -ja.",
+      "grammar": [
+        "negative-past"
+      ]
+    },
+    {
+      "id": "482c9e78-f1e6-520d-a2fd-6d7e4e4931e4",
+      "mode": "translate",
+      "english": "There was an accident.",
+      "before": "",
+      "after": " ajali.",
+      "options": [
+        {
+          "text": "Kulikuwa na",
+          "correct": true
+        },
+        {
+          "text": "Kuna",
+          "correct": false,
+          "feedback": "Kuna = There is / there are"
+        },
+        {
+          "text": "Kutakuwa na",
+          "correct": false,
+          "feedback": "Kutakuwa na = There will be"
+        }
+      ],
+      "explanation": "kuna = there is; kulikuwa na = there was.",
+      "grammar": [
+        "na-have",
+        "past-li"
+      ]
+    },
+    {
+      "id": "988634dd-996e-5e57-a495-ffb06ab921bd",
+      "mode": "translate",
+      "english": "Nobody got hurt.",
+      "before": "Hakuna mtu ",
+      "after": ".",
+      "options": [
+        {
+          "text": "aliumia",
+          "correct": true
+        },
+        {
+          "text": "aliumiza",
+          "correct": false,
+          "feedback": "aliumiza = He/she hurted"
+        },
+        {
+          "text": "anaumia",
+          "correct": false,
+          "feedback": "anaumia = He/she is getting hurt"
+        }
+      ],
+      "explanation": "kuumia = to get hurt; kuumiza = to hurt (someone).",
+      "grammar": [
+        "past-li"
+      ]
+    },
+    {
+      "id": "0901cd59-0dc6-5b71-a35b-e5adecea50b7",
+      "mode": "translate",
+      "english": "I told him / her.",
+      "before": "",
+      "after": ".",
+      "options": [
+        {
+          "text": "Nilimwambia",
+          "correct": true
+        },
+        {
+          "text": "Nilikuambia",
+          "correct": false,
+          "feedback": "Nilikuambia = I told you"
+        },
+        {
+          "text": "Niliwaambia",
+          "correct": false,
+          "feedback": "Niliwaambia = I told them / you all"
+        }
+      ],
+      "explanation": "Object infixes sit right before the verb: -mw- him/her, -ku- you, -wa- them.",
+      "grammar": [
+        "past-li",
+        "object-infixes"
+      ]
+    },
+    {
+      "id": "07b0c17c-3d37-51ea-a6cd-1bab96983a8f",
+      "mode": "translate",
+      "english": "I called you yesterday.",
+      "before": "Jana ",
+      "after": " simu.",
+      "options": [
+        {
+          "text": "nilikupigia",
+          "correct": true
+        },
+        {
+          "text": "nilimpigia",
+          "correct": false,
+          "feedback": "nilimpigia = I called him/her"
+        },
+        {
+          "text": "ulinipigia",
+          "correct": false,
+          "feedback": "ulinipigia = You called me"
+        }
+      ],
+      "explanation": "ni- + -li- + -ku- (you) + -pigia simu (call).",
+      "grammar": [
+        "past-li",
+        "object-infixes",
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "beb394ec-7021-5684-8165-53785875c3a2",
+      "mode": "translate",
+      "english": "He called me.",
+      "before": "",
+      "after": " simu.",
+      "options": [
+        {
+          "text": "Alinipigia",
+          "correct": true
+        },
+        {
+          "text": "Nilimpigia",
+          "correct": false,
+          "feedback": "Nilimpigia = I called him/her"
+        },
+        {
+          "text": "Alikupigia",
+          "correct": false,
+          "feedback": "Alikupigia = He/she called you"
+        }
+      ],
+      "explanation": "-ni- = me.",
+      "grammar": [
+        "past-li",
+        "object-infixes",
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "89ae8995-9521-5311-a742-98e9259878bf",
+      "mode": "translate",
+      "english": "I'll call you again.",
+      "before": "",
+      "after": " tena.",
+      "options": [
+        {
+          "text": "Nitakupigia",
+          "correct": true
+        },
+        {
+          "text": "Nitampigia",
+          "correct": false,
+          "feedback": "Nitampigia = I will call him/her"
+        },
+        {
+          "text": "Utanipigia",
+          "correct": false,
+          "feedback": "Utanipigia = You will call me"
+        }
+      ],
+      "explanation": "Nitakupigia = \"I will call you\" — ni- (subject: I) + ta- (future) + ku- (object: you) + -pigia (call). From kupigia. Extension: prepositional (-ia/-ea: \"for / to / at\").",
+      "grammar": [
+        "future-ta",
+        "object-infixes",
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "27e33dad-d4b2-5f37-9418-c7310f6f9453",
+      "mode": "translate",
+      "english": "The battery ran out.",
+      "before": "Betri ",
+      "after": ".",
+      "options": [
+        {
+          "text": "iliisha",
+          "correct": true
+        },
+        {
+          "text": "inaisha",
+          "correct": false,
+          "feedback": "inaisha = It is running out"
+        },
+        {
+          "text": "itaisha",
+          "correct": false,
+          "feedback": "itaisha = It will run out"
+        }
+      ],
+      "explanation": "i- (it, n/n) + -li- + -isha (end, run out).",
+      "grammar": [
+        "past-li"
+      ]
+    },
+    {
+      "id": "faf1990d-960b-572c-b25a-0eb5e3ddc7c7",
+      "mode": "complete",
+      "english": "Five to eight",
+      "before": "Saa mbili ",
+      "after": " dakika tano.",
+      "options": [
+        {
+          "text": "kasoro",
+          "correct": true
+        },
+        {
+          "text": "na",
+          "correct": false,
+          "feedback": "na = and / with"
+        },
+        {
+          "text": "kamili",
+          "correct": false,
+          "feedback": "kamili = exactly / sharp"
+        }
+      ],
+      "explanation": "kasoro = minus: 8 o'clock (saa mbili) minus five minutes.",
+      "grammar": [
+        "time-swahili"
+      ]
+    }
+  ]
+}

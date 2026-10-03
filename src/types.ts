@@ -146,6 +146,10 @@ export interface WordGloss {
   gloss: string;
   /** Optional conjugation table; the row matching `text` is highlighted. */
   conjugation?: ConjugationTable;
+  /** Grammar explainer slugs (content/grammar/topics.json) this word illustrates. */
+  grammar?: string[];
+  /** Sanifu look-up: the standard form / noun class when Kenyan usage differs. */
+  sanifu?: string;
 }
 
 export interface DialogueOption {
@@ -165,6 +169,8 @@ export interface DialogueTurn {
   words: WordGloss[];
   /** MCQ choices — required when role is 'user', max 3, exactly one correct. */
   options?: DialogueOption[];
+  /** The whole line in Sanifu, when it differs from the Kenyan line. */
+  sanifu?: string;
 }
 
 /** One chip in a practice fill-in-the-blank. */
@@ -192,6 +198,8 @@ export interface PracticeItem {
   options: PracticeOption[];
   /** Short note shown after the correct pick. */
   explanation: string;
+  /** Grammar explainer slugs for the tested form. */
+  grammar?: string[];
 }
 
 export interface Lesson {
@@ -202,6 +210,14 @@ export interface Lesson {
   difficulty: Difficulty;
   /** Position in the lessons list (lower first). Lessons without it sort last. */
   order?: number;
+  /** Gamification level 1–10 (content/levels.json). */
+  level: number;
+  /** Recurring scenario theme, e.g. 'uber' — themes come back at higher levels. */
+  theme?: string;
+  /** Grammar explainer slugs this lesson is built to teach. */
+  grammarFocus?: string[];
+  /** Every grammar explainer slug that appears in the lesson (focus first). */
+  grammar?: string[];
   culturalNote: string;
   /** One-line scene-setter shown above the dialogue, e.g. who starts and why. */
   startingPoint: string;
@@ -212,7 +228,39 @@ export interface Lesson {
   practice?: PracticeItem[];
 }
 
-/** Grammar lessons are a top-level surface in V1. */
+// -------- Grammar explainers (content/grammar/topics.json) --------
+
+export type GrammarBlock =
+  | { type: 'p'; text: string }
+  | { type: 'list'; items: string[] }
+  | { type: 'table'; caption?: string; headers: string[]; rows: string[][] }
+  | { type: 'tip'; text: string }
+  | { type: 'sanifu'; text: string };
+
+/** A grammar explainer: opened as a modal from tooltips, lessons and the /grammar library. */
+export interface GrammarTopic {
+  slug: string;
+  /** The level where the lessons start teaching it. */
+  level: number;
+  title: string;
+  swahiliTitle?: string;
+  summary: string;
+  blocks: GrammarBlock[];
+  examples: Array<{ swahili: string; english: string; note?: string }>;
+  related: string[];
+  tags: string[];
+}
+
+/** Gamification level (content/levels.json). */
+export interface LevelInfo {
+  level: number;
+  name: string;
+  emoji: string;
+  tagline: string;
+  focus: string;
+}
+
+/** Grammar lessons are a top-level surface in V1 (DB shape — not used by the explainer modal). */
 export interface GrammarLesson {
   id: string;
   /** URL slug, e.g. 'subject-prefixes-present'. */

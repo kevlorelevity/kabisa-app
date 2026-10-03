@@ -1,0 +1,1597 @@
+{
+  "id": "harambee-speech",
+  "uuid": "e3da9348-212e-58bd-abd6-509d50ef058d",
+  "title": "Mgeni Rasmi: Your Harambee Speech",
+  "category": "social",
+  "difficulty": "advanced",
+  "level": 10,
+  "order": 1002,
+  "theme": "community",
+  "culturalNote": "\"Harambee!\" (let's all pull together) is Kenya's national motto and a living tradition: communities raise money together for school fees, medical bills, weddings and funerals. A respected guest — the mgeni rasmi (guest of honour) — gives a short speech, and good speeches are stitched together with methali: \"Kidole kimoja hakivunji chawa\" (one finger can't crush a louse), \"Haba na haba hujaza kibaba\" (little by little fills the measure). Today, that guest is you.",
+  "startingPoint": "Your neighbour Mama Njeri is raising school fees for her daughter. The MC invites you, the mgeni rasmi, to speak.",
+  "grammarFocus": [
+    "idioms-proverbs",
+    "relatives",
+    "subjunctive",
+    "conjunctions-kwamba"
+  ],
+  "grammar": [
+    "idioms-proverbs",
+    "relatives",
+    "subjunctive",
+    "conjunctions-kwamba",
+    "object-infixes",
+    "verb-extensions",
+    "possessives",
+    "present-na",
+    "locative-ni",
+    "infinitive-ku",
+    "ni-copula",
+    "noun-classes-mwa-nn",
+    "adjective-agreement",
+    "discourse-particles",
+    "demonstratives",
+    "sanifu-noun-classes",
+    "numbers-money",
+    "habitual-hu-nga",
+    "na-have",
+    "negative-present",
+    "perfect-me",
+    "subject-prefixes",
+    "imperatives",
+    "ki-po-ka"
+  ],
+  "turns": [
+    {
+      "id": "15d88233-cc82-52d6-b780-f4be0cdf49c6",
+      "speaker": "MC",
+      "role": "auto",
+      "swahili": "Sasa, mabibi na mabwana, tumkaribishe mgeni rasmi wetu!",
+      "english": "Now, ladies and gentlemen, let's welcome our guest of honour!",
+      "words": [
+        {
+          "text": "Sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "mabibi na mabwana",
+          "gloss": "ladies and gentlemen"
+        },
+        {
+          "text": "tumkaribishe",
+          "gloss": "\"Let's welcome him/her\" — tu- (subject: we) + m- (object: him/her) + -karibishe (welcome, subjunctive -e). From kukaribisha. Extension: causative (-isha/-esha/-za: \"make / cause\").",
+          "grammar": [
+            "subjunctive",
+            "object-infixes",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kukaribisha (to welcome)",
+            "tense": "Subjunctive (-e) + object -m-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimkaribishe"
+              },
+              {
+                "pronoun": "you",
+                "form": "umkaribishe"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amkaribishe"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumkaribishe"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmkaribishe"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamkaribishe"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mgeni rasmi",
+          "gloss": "guest of honour — lit. \"official guest\""
+        },
+        {
+          "text": "wetu",
+          "gloss": "\"our\" — m/wa agreement (for people: mtoto wetu, watoto wetu).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (m/wa: people)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "wangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "wako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "wake"
+              },
+              {
+                "pronoun": "our",
+                "form": "wetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "wenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "wao"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b79f63f7-9e8a-506c-9235-9c5882e6fc9c",
+      "speaker": "Mgeni Rasmi",
+      "role": "user",
+      "swahili": "Harambee! Asanteni sana. Ninashukuru kwa kunialika siku ya leo.",
+      "english": "Harambee! Thank you all very much. I'm grateful for being invited today.",
+      "words": [
+        {
+          "text": "Harambee",
+          "gloss": "\"Let's all pull together!\" — Kenya's motto and fundraising tradition"
+        },
+        {
+          "text": "Asanteni",
+          "gloss": "thank you (to several people)"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Ninashukuru",
+          "gloss": "\"I'm grateful\"",
+          "grammar": [
+            "present-na"
+          ]
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "kunialika",
+          "gloss": "\"for inviting me\"",
+          "grammar": [
+            "infinitive-ku"
+          ]
+        },
+        {
+          "text": "siku ya leo",
+          "gloss": "today / this day"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Harambee! Asanteni sana. Ninashukuru kwa kunialika siku ya leo.",
+          "correct": true
+        },
+        {
+          "swahili": "Harambee! Asanteni sana. Unashukuru kwa kunialika siku ya leo.",
+          "correct": false
+        },
+        {
+          "swahili": "Harambee! Asanteni sana. Ninashukuru kwa kukualika siku ya leo.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "b4f15045-8a17-5115-ad51-ec449c62a680",
+      "speaker": "MC",
+      "role": "auto",
+      "swahili": "Karibu! Tunakusikiliza.",
+      "english": "Welcome! We're listening.",
+      "words": [
+        {
+          "text": "Karibu",
+          "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "Tunakusikiliza",
+          "gloss": "\"We are listening to you\" — tu- (subject: we) + na- (present) + ku- (object: you) + -sikiliza (listen to). From kusikiliza. Extension: causative (-isha/-esha/-za: \"make / cause\").",
+          "grammar": [
+            "present-na",
+            "object-infixes",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kusikiliza (to listen to)",
+            "tense": "Present (-na-) + object -ku-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninakusikiliza"
+              },
+              {
+                "pronoun": "you",
+                "form": "unakusikiliza"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anakusikiliza"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunakusikiliza"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnakusikiliza"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanakusikiliza"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "eb7125bb-2b13-5927-9c03-c662b5500847",
+      "speaker": "Mgeni Rasmi",
+      "role": "user",
+      "swahili": "Njeri ni msichana ambaye amepita mtihani vizuri sana, na sasa anaenda shule ya upili.",
+      "english": "Njeri is a girl who has passed her exam very well, and now she's going to secondary school.",
+      "words": [
+        {
+          "text": "Njeri",
+          "gloss": "Njeri (name)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "msichana",
+          "gloss": "girl — m/wa noun (people & animals; plural wasichana)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ambaye",
+          "gloss": "who — relative for one person (m/wa)",
+          "grammar": [
+            "relatives"
+          ]
+        },
+        {
+          "text": "amepita",
+          "gloss": "\"has passed\""
+        },
+        {
+          "text": "mtihani",
+          "gloss": "exam"
+        },
+        {
+          "text": "vizuri",
+          "gloss": "well / nicely"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "anaenda",
+          "gloss": "\"He/she is going\" — a- (subject: he/she) + na- (present) + -enda (go). From kuenda.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuenda (to go)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "shule ya upili",
+          "gloss": "secondary school"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Njeri ni msichana ambaye amepita mtihani vizuri sana, na sasa anaenda shule ya upili.",
+          "correct": true
+        },
+        {
+          "swahili": "Njeri ni msichana ambayo amepita mtihani vizuri sana, na sasa anaenda shule ya upili.",
+          "correct": false
+        },
+        {
+          "swahili": "Njeri ni msichana ambaye amefeli mtihani vizuri sana, na sasa anaenda shule ya upili.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "8ba88e52-925d-53d1-8ed2-ee3cf140f402",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Asante! Ndiyo, tunajivunia sana.",
+      "english": "Thank you! Yes, we're very proud.",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "tunajivunia",
+          "gloss": "\"We are proud of\" — tu- (subject: we) + na- (present) + -jivunia (be proud of). From kujivunia. Extension: prepositional (-ia/-ea: \"for / to / at\").",
+          "grammar": [
+            "present-na",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kujivunia (to be proud of)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninajivunia"
+              },
+              {
+                "pronoun": "you",
+                "form": "unajivunia"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anajivunia"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunajivunia"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnajivunia"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanajivunia"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ]
+    },
+    {
+      "id": "171a9181-aa87-5926-ab27-9f10488efae0",
+      "speaker": "Mgeni Rasmi",
+      "role": "user",
+      "swahili": "Lakini karo ni nyingi. Na tunajua kwamba kidole kimoja hakivunji chawa.",
+      "english": "But the fees are a lot. And we know that one finger can't crush a louse.",
+      "words": [
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "karo",
+          "gloss": "school fees"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "nyingi",
+          "gloss": "\"many / a lot\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-ingi (many / a lot)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mwingi"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wengi"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "nyingi"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "tunajua",
+          "gloss": "\"We know\" — tu- (subject: we) + na- (present) + -jua (know). From kujua.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kujua (to know)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninajua"
+              },
+              {
+                "pronoun": "you",
+                "form": "unajua"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anajua"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunajua"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnajua"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanajua"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kwamba",
+          "gloss": "that (as in \"he said that…\")",
+          "grammar": [
+            "conjunctions-kwamba"
+          ]
+        },
+        {
+          "text": "kidole kimoja hakivunji chawa",
+          "gloss": "\"One finger can't crush a louse\" — we need each other.",
+          "grammar": [
+            "idioms-proverbs"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Lakini karo ni nyingi. Na tunajua kwamba kidole kimoja hakivunji chawa.",
+          "correct": true
+        },
+        {
+          "swahili": "Lakini karo ni nyingi. Na tunajua ingawa kidole kimoja hakivunji chawa.",
+          "correct": false
+        },
+        {
+          "swahili": "Lakini karo ni chache. Na tunajua kwamba kidole kimoja hakivunji chawa.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "1c2fac95-6b5e-5a3e-8350-0a374ee1df7e",
+      "speaker": "MC",
+      "role": "auto",
+      "swahili": "Kweli kabisa!",
+      "english": "Absolutely true!",
+      "words": [
+        {
+          "text": "Kweli",
+          "gloss": "true / really",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "kabisa",
+          "gloss": "totally / completely — \"Kabisa!\" = \"Absolutely!\""
+        }
+      ]
+    },
+    {
+      "id": "561d035d-8767-5d1e-beb5-33add1225981",
+      "speaker": "Mgeni Rasmi",
+      "role": "user",
+      "swahili": "Umoja ni nguvu, utengano ni udhaifu. Kila mtu achangie kile anachoweza.",
+      "english": "Unity is strength, division is weakness. Let everyone contribute what they can.",
+      "words": [
+        {
+          "text": "Umoja ni nguvu",
+          "gloss": "\"Unity is strength\"",
+          "grammar": [
+            "idioms-proverbs"
+          ]
+        },
+        {
+          "text": "utengano ni udhaifu",
+          "gloss": "\"division is weakness\"",
+          "grammar": [
+            "idioms-proverbs"
+          ]
+        },
+        {
+          "text": "Kila mtu",
+          "gloss": "everyone"
+        },
+        {
+          "text": "achangie",
+          "gloss": "\"He/she should contribute to\" — a- (subject: he/she) + -changie (contribute to, subjunctive -e). From kuchangia. Extension: prepositional (-ia/-ea: \"for / to / at\").",
+          "grammar": [
+            "subjunctive",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kuchangia (to contribute to)",
+            "tense": "Subjunctive (-e)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nichangie"
+              },
+              {
+                "pronoun": "you",
+                "form": "uchangie"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "achangie"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuchangie"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mchangie"
+              },
+              {
+                "pronoun": "they",
+                "form": "wachangie"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kile",
+          "gloss": "\"that (thing)\" — ki/vi demonstrative; also \"what\" in \"kile anachoweza\" (what he can).",
+          "grammar": [
+            "demonstratives",
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "ki/vi class"
+        },
+        {
+          "text": "anachoweza",
+          "gloss": "\"what he/she can\" — a- + -na- + -cho- (which, ki/vi) + -weza.",
+          "grammar": [
+            "relatives"
+          ],
+          "sanifu": "ki/vi relative -cho-"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Umoja ni nguvu, utengano ni udhaifu. Kila mtu achangie kile anachoweza.",
+          "correct": true
+        },
+        {
+          "swahili": "Umoja ni udhaifu, utengano ni nguvu. Kila mtu achangie kile anachoweza.",
+          "correct": false
+        },
+        {
+          "swahili": "Umoja ni nguvu, utengano ni udhaifu. Kila mtu anachangia kile anachoweza.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "c7225996-874a-57c1-a6af-df17886edaed",
+      "speaker": "MC",
+      "role": "auto",
+      "swahili": "Hata shilingi mia moja?",
+      "english": "Even a hundred shillings?",
+      "words": [
+        {
+          "text": "Hata",
+          "gloss": "even / (not) at all",
+          "grammar": [
+            "conjunctions-kwamba"
+          ]
+        },
+        {
+          "text": "shilingi",
+          "gloss": "shilling(s) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "mia moja",
+          "gloss": "100",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8ed30018-724b-54fd-aefb-ea3b515f06c3",
+      "speaker": "Mgeni Rasmi",
+      "role": "user",
+      "swahili": "Ndiyo! Haba na haba hujaza kibaba. Hakuna mchango mdogo.",
+      "english": "Yes! Little by little fills the measure. There's no such thing as a small contribution.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Haba",
+          "gloss": "a little"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "haba",
+          "gloss": "a little"
+        },
+        {
+          "text": "hujaza",
+          "gloss": "\"(always) fills\"",
+          "grammar": [
+            "habitual-hu-nga"
+          ]
+        },
+        {
+          "text": "kibaba",
+          "gloss": "a small measuring tin"
+        },
+        {
+          "text": "Hakuna",
+          "gloss": "\"There isn't / there's no…\"",
+          "grammar": [
+            "na-have",
+            "negative-present"
+          ]
+        },
+        {
+          "text": "mchango",
+          "gloss": "contribution (m/mi; plural michango)"
+        },
+        {
+          "text": "mdogo",
+          "gloss": "\"small / young\" — m/wa singular agreement (one person / animal).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-dogo (small / young)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mdogo"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wadogo"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "ndogo"
+              }
+            ]
+          }
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo! Haba na haba hujaza kibaba. Hakuna mchango mdogo.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo! Haba na haba hujaza ndoo. Hakuna mchango mdogo.",
+          "correct": false
+        },
+        {
+          "swahili": "Hapana! Haba na haba hujaza kibaba. Hakuna mchango mdogo.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "6f3e00ad-3f11-5c95-8088-6928ac63896a",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Na Njeri amesoma kwa bidii sana.",
+      "english": "And Njeri has studied very hard.",
+      "words": [
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "Njeri",
+          "gloss": "Njeri (name)"
+        },
+        {
+          "text": "amesoma",
+          "gloss": "\"He/she has read\" — a- (subject: he/she) + me- (perfect (done / now-state)) + -soma (read). From kusoma.",
+          "grammar": [
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kusoma (to read)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimesoma"
+              },
+              {
+                "pronoun": "you",
+                "form": "umesoma"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amesoma"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumesoma"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmesoma"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamesoma"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kwa bidii",
+          "gloss": "hard / diligently"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ]
+    },
+    {
+      "id": "895f62b5-5a5c-5ad0-900d-826d0cdbd16a",
+      "speaker": "Mgeni Rasmi",
+      "role": "user",
+      "swahili": "Ndiyo, kwa sababu mtaka cha mvunguni sharti ainame! Sasa ni zamu yetu kumsaidia.",
+      "english": "Yes, because whoever wants what's under the bed must bend down! Now it's our turn to help her.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "kwa sababu",
+          "gloss": "because",
+          "grammar": [
+            "conjunctions-kwamba"
+          ]
+        },
+        {
+          "text": "mtaka",
+          "gloss": "one who wants"
+        },
+        {
+          "text": "cha mvunguni",
+          "gloss": "what's under the bed"
+        },
+        {
+          "text": "sharti",
+          "gloss": "must"
+        },
+        {
+          "text": "ainame",
+          "gloss": "\"(that) he bends down\"",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "Sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "zamu",
+          "gloss": "turn — ni zamu yako = it's your turn"
+        },
+        {
+          "text": "yetu",
+          "gloss": "\"our\" — n/n singular agreement (nyumba yetu). In Kenyan speech also used for family words and most things (jina yetu, gari yetu).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (n/n singular)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "yangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "yako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "yake"
+              },
+              {
+                "pronoun": "our",
+                "form": "yetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "yenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "yao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kumsaidia",
+          "gloss": "\"To help him/her\" — ku- (infinitive \"to\") + m- (object: him/her) + -saidia (help). From kusaidia.",
+          "grammar": [
+            "infinitive-ku",
+            "object-infixes"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo, kwa sababu mtaka cha mvunguni sharti ainame! Sasa ni zamu yetu kumsaidia.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, ingawa mtaka cha mvunguni sharti ainame! Sasa ni zamu yetu kumsaidia.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, kwa sababu mtaka cha mvunguni sharti ainame! Sasa ni zamu yetu kunisaidia.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "5c0e099b-2c58-5a96-9020-8c460b9f3c9d",
+      "speaker": "MC",
+      "role": "auto",
+      "swahili": "Na wewe, mgeni rasmi?",
+      "english": "And you, guest of honour?",
+      "words": [
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "mgeni rasmi",
+          "gloss": "guest of honour — lit. \"official guest\""
+        }
+      ]
+    },
+    {
+      "id": "6d075e5f-5bc6-5e7d-8f95-1816b3317e52",
+      "speaker": "Mgeni Rasmi",
+      "role": "user",
+      "swahili": "Mimi ninachangia shilingi elfu kumi. Tumchangie Njeri ili aweze kusoma. Mungu awabariki!",
+      "english": "I'm contributing ten thousand shillings. Let's contribute for Njeri so that she can study. May God bless you all!",
+      "words": [
+        {
+          "text": "Mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ninachangia",
+          "gloss": "\"I'm contributing\"",
+          "grammar": [
+            "verb-extensions"
+          ]
+        },
+        {
+          "text": "shilingi elfu kumi",
+          "gloss": "ten thousand shillings"
+        },
+        {
+          "text": "Tumchangie",
+          "gloss": "\"let's contribute for her\"",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "Njeri",
+          "gloss": "Njeri (name)"
+        },
+        {
+          "text": "ili",
+          "gloss": "so that (followed by subjunctive)",
+          "grammar": [
+            "subjunctive",
+            "conjunctions-kwamba"
+          ]
+        },
+        {
+          "text": "aweze",
+          "gloss": "\"(so that) she can\"",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "kusoma",
+          "gloss": "to study"
+        },
+        {
+          "text": "Mungu awabariki",
+          "gloss": "\"May God bless you all\"",
+          "grammar": [
+            "subjunctive"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Mimi ninachangia shilingi elfu kumi. Tumchangie Njeri ili aweze kusoma. Mungu awabariki!",
+          "correct": true
+        },
+        {
+          "swahili": "Mimi ninachangia shilingi elfu kumi. Tumchangie Njeri ili anaweza kusoma. Mungu awabariki!",
+          "correct": false
+        },
+        {
+          "swahili": "Mimi nilichangia shilingi elfu kumi. Tumchangie Njeri ili aweze kusoma. Mungu awabariki!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "35cb29bb-4d15-5e20-86df-9f0dd749be1e",
+      "speaker": "MC",
+      "role": "auto",
+      "swahili": "Harambee! Mgeni njoo, mwenyeji apone!",
+      "english": "Harambee! Guest, come — so the host may prosper!",
+      "words": [
+        {
+          "text": "Harambee",
+          "gloss": "\"Let's all pull together!\" — Kenya's motto and fundraising tradition"
+        },
+        {
+          "text": "Mgeni",
+          "gloss": "guest / stranger / newcomer — m/wa noun (people & animals; plural wageni)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "njoo",
+          "gloss": "\"Come!\" — irregular imperative of kuja.",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "mwenyeji",
+          "gloss": "local / host — m/wa noun (people & animals; plural wenyeji)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "apone",
+          "gloss": "\"(so that) he heals / prospers\"",
+          "grammar": [
+            "subjunctive"
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "36c5428c-f84c-5284-9374-bc8ef61f3bb6",
+      "swahili": "Harambee!",
+      "english": "Let's all pull together!",
+      "exampleContext": "Kenya's motto and fundraising tradition",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "222a20ef-e1d2-5202-8c62-feda92a309ad",
+      "swahili": "mgeni rasmi",
+      "english": "guest of honour |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "9fa63973-b28c-5b59-80d4-b6acc0432d37",
+      "swahili": "mabibi na mabwana",
+      "english": "ladies and gentlemen |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "cc62626b-eb79-591d-8bd4-bafe89a07767",
+      "swahili": "Ninashukuru kwa kunialika",
+      "english": "I'm grateful for the invitation |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "5b1ce223-4366-5838-b756-220bf126430f",
+      "swahili": "karo",
+      "english": "school fees |",
+      "exampleContext": ""
+    },
+    {
+      "id": "083e52a0-9e75-5cba-bd7c-1887c32f0a69",
+      "swahili": "Kidole kimoja hakivunji chawa",
+      "english": "One finger can't crush a louse",
+      "exampleContext": "We need each other",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "889a18f8-3032-54ea-a29e-e5e392f713bb",
+      "swahili": "Umoja ni nguvu, utengano ni udhaifu",
+      "english": "Unity is strength, division is weakness |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "5527d119-cc27-532e-92f1-9a5fdbbb596e",
+      "swahili": "Haba na haba hujaza kibaba",
+      "english": "Little by little fills the measure",
+      "exampleContext": "Every small gift counts",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "65894a05-7a0c-5daa-a358-708d97506a93",
+      "swahili": "Mtaka cha mvunguni sharti ainame",
+      "english": "Who wants what's under the bed must bend down",
+      "exampleContext": "Success takes effort",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "35383bed-d26f-59a9-b363-2ace002399e6",
+      "swahili": "Usipoziba ufa utajenga ukuta",
+      "english": "Fix the crack or build a wall",
+      "exampleContext": "A stitch in time saves nine",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "bc85d3ad-1039-5de0-a6ae-52a8bff272cb",
+      "swahili": "Mgeni njoo, mwenyeji apone",
+      "english": "Guests bring blessings",
+      "exampleContext": "Lit. \"guest, come, so the host may prosper\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "6c92ba11-9a6f-511d-a38e-3eb7b0b7fa9c",
+      "swahili": "Kila mtu achangie…",
+      "english": "Let everyone contribute…",
+      "exampleContext": "Subjunctive = let…",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "aec1f210-1571-50a5-aa7c-a955b2cd9816",
+      "swahili": "Mungu awabariki",
+      "english": "May God bless you all |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "bafe991d-8b79-584f-89f6-b0898a4e5965",
+      "mode": "complete",
+      "english": "One finger can't crush a louse.",
+      "before": "Kidole kimoja ",
+      "after": " chawa.",
+      "options": [
+        {
+          "text": "hakivunji",
+          "correct": true
+        },
+        {
+          "text": "kinavunja",
+          "correct": false
+        },
+        {
+          "text": "hakivunjiki",
+          "correct": false
+        }
+      ],
+      "explanation": "We need each other. Ki/vi agreement: kidole → hakivunji."
+    },
+    {
+      "id": "068ed837-1999-5b1a-9018-a0afbed92a5c",
+      "mode": "complete",
+      "english": "Unity is strength, division is weakness.",
+      "before": "Umoja ni ",
+      "after": ", utengano ni udhaifu.",
+      "options": [
+        {
+          "text": "nguvu",
+          "correct": true
+        },
+        {
+          "text": "udhaifu",
+          "correct": false
+        },
+        {
+          "text": "haraka",
+          "correct": false,
+          "feedback": "haraka = quickly / hurry"
+        }
+      ],
+      "explanation": "nguvu: strength / power — n/n noun (same word for one & many)",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "9421cc8a-1316-5ec5-b9ce-2152302372e7",
+      "mode": "complete",
+      "english": "Little by little fills the measure.",
+      "before": "Haba na haba ",
+      "after": " kibaba.",
+      "options": [
+        {
+          "text": "hujaza",
+          "correct": true
+        },
+        {
+          "text": "hujazi",
+          "correct": false,
+          "feedback": "hujazi = You are not filling"
+        },
+        {
+          "text": "walijaza",
+          "correct": false,
+          "feedback": "walijaza = They filled"
+        }
+      ],
+      "explanation": "hu- = always / as a rule — proverbs love the habitual.",
+      "grammar": [
+        "habitual-hu-nga"
+      ]
+    },
+    {
+      "id": "1f4b3cfe-e4a4-5d73-8b18-3f500dbb0451",
+      "mode": "complete",
+      "english": "Whoever wants what's under the bed must bend down.",
+      "before": "Mtaka cha mvunguni sharti ",
+      "after": ".",
+      "options": [
+        {
+          "text": "ainame",
+          "correct": true
+        },
+        {
+          "text": "anainama",
+          "correct": false
+        },
+        {
+          "text": "ameinama",
+          "correct": false
+        }
+      ],
+      "explanation": "sharti (must) + subjunctive: a- + -inam- + -e.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "0fda6d03-2728-5029-a8bd-e42c04e31a0a",
+      "mode": "complete",
+      "english": "If you don't fill the crack, you'll build a wall.",
+      "before": "",
+      "after": " ufa utajenga ukuta.",
+      "options": [
+        {
+          "text": "Usipoziba",
+          "correct": true
+        },
+        {
+          "text": "Ukiziba",
+          "correct": false,
+          "feedback": "Ukiziba = If/when you block"
+        },
+        {
+          "text": "Ulipoziba",
+          "correct": false,
+          "feedback": "Ulipoziba = When you blocked"
+        }
+      ],
+      "explanation": "u- + -si- + -po- = if you don't…",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "ed59674c-28bc-5a83-801a-2348d4768320",
+      "mode": "complete",
+      "english": "Guest, come — so the host may prosper.",
+      "before": "Mgeni njoo, mwenyeji ",
+      "after": ".",
+      "options": [
+        {
+          "text": "apone",
+          "correct": true
+        },
+        {
+          "text": "anapona",
+          "correct": false,
+          "feedback": "anapona = He/she is getting better"
+        },
+        {
+          "text": "alipona",
+          "correct": false,
+          "feedback": "alipona = He/she got better"
+        }
+      ],
+      "explanation": "apone = subjunctive: \"so that he may heal / prosper\".",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "f1c6492e-82b0-5a6c-a2f0-6ae23f75bd4a",
+      "mode": "translate",
+      "english": "Njeri is a girl who has passed her exam.",
+      "before": "Njeri ni msichana ",
+      "after": " amepita mtihani.",
+      "options": [
+        {
+          "text": "ambaye",
+          "correct": true
+        },
+        {
+          "text": "ambayo",
+          "correct": false,
+          "feedback": "ambayo = which / that"
+        },
+        {
+          "text": "ambao",
+          "correct": false,
+          "feedback": "ambao = who"
+        }
+      ],
+      "explanation": "ambaye: who — relative for one person (m/wa)",
+      "grammar": [
+        "relatives"
+      ]
+    },
+    {
+      "id": "08275324-52aa-514b-8027-f744d60e1def",
+      "mode": "translate",
+      "english": "We know that one finger can't crush a louse.",
+      "before": "Tunajua ",
+      "after": " kidole kimoja hakivunji chawa.",
+      "options": [
+        {
+          "text": "kwamba",
+          "correct": true
+        },
+        {
+          "text": "ingawa",
+          "correct": false,
+          "feedback": "ingawa = although"
+        },
+        {
+          "text": "badala ya",
+          "correct": false,
+          "feedback": "badala ya = instead of"
+        }
+      ],
+      "explanation": "kwamba: that (as in \"he said that…\")",
+      "grammar": [
+        "conjunctions-kwamba"
+      ]
+    },
+    {
+      "id": "5c721d60-4a68-5986-b6e2-0a476e1082c4",
+      "mode": "translate",
+      "english": "Let everyone contribute what they can.",
+      "before": "Kila mtu ",
+      "after": " kile anachoweza.",
+      "options": [
+        {
+          "text": "achangie",
+          "correct": true
+        },
+        {
+          "text": "anachangia",
+          "correct": false,
+          "feedback": "anachangia = He/she is contributing to"
+        },
+        {
+          "text": "alichangia",
+          "correct": false,
+          "feedback": "alichangia = He/she contributed to"
+        }
+      ],
+      "explanation": "Subjunctive = \"let (him/her)…\".",
+      "grammar": [
+        "subjunctive",
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "e2ddcfcd-3086-5a36-85ca-0c398fb91513",
+      "mode": "translate",
+      "english": "I'm contributing ten thousand.",
+      "before": "",
+      "after": " shilingi elfu kumi.",
+      "options": [
+        {
+          "text": "Ninachangia",
+          "correct": true
+        },
+        {
+          "text": "Unachangia",
+          "correct": false,
+          "feedback": "Unachangia = You are contributing to"
+        },
+        {
+          "text": "Tunachangia",
+          "correct": false,
+          "feedback": "Tunachangia = We are contributing to"
+        }
+      ],
+      "explanation": "Ninachangia = \"I'm contributing\"",
+      "grammar": [
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "f267bb70-23c4-5812-bb75-faa5680d8a76",
+      "mode": "translate",
+      "english": "so that she can study",
+      "before": "ili ",
+      "after": " kusoma",
+      "options": [
+        {
+          "text": "aweze",
+          "correct": true
+        },
+        {
+          "text": "anaweza",
+          "correct": false,
+          "feedback": "anaweza = He/she can"
+        },
+        {
+          "text": "ataweza",
+          "correct": false,
+          "feedback": "ataweza = He/she will be able"
+        }
+      ],
+      "explanation": "ili + subjunctive.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "6b205ef5-d328-54a9-ad25-2e97a0bd3ffa",
+      "mode": "translate",
+      "english": "Let's contribute for Njeri.",
+      "before": "",
+      "after": " Njeri.",
+      "options": [
+        {
+          "text": "Tumchangie",
+          "correct": true
+        },
+        {
+          "text": "Tunamchangia",
+          "correct": false,
+          "feedback": "Tunamchangia = We are contributing to him/her"
+        },
+        {
+          "text": "Mmchangie",
+          "correct": false,
+          "feedback": "Mmchangie = You all should contribute to him/her"
+        }
+      ],
+      "explanation": "tu- + -m- (her) + -changi- + -e.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "2308345d-b973-5794-83f0-2dbf6bf63959",
+      "mode": "translate",
+      "english": "May God bless you all!",
+      "before": "Mungu ",
+      "after": "!",
+      "options": [
+        {
+          "text": "awabariki",
+          "correct": true
+        },
+        {
+          "text": "anawabariki",
+          "correct": false,
+          "feedback": "anawabariki = He/she is blessing them / you all"
+        },
+        {
+          "text": "atawabariki",
+          "correct": false,
+          "feedback": "atawabariki = He/she will bless them / you all"
+        }
+      ],
+      "explanation": "A blessing uses the subjunctive.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "885f8beb-a835-574b-9e1b-568619ba0750",
+      "mode": "translate",
+      "english": "I'm grateful for being invited.",
+      "before": "Ninashukuru kwa ",
+      "after": ".",
+      "options": [
+        {
+          "text": "kunialika",
+          "correct": true
+        },
+        {
+          "text": "kukualika",
+          "correct": false,
+          "feedback": "kukualika = To invite you"
+        },
+        {
+          "text": "kumwalika",
+          "correct": false,
+          "feedback": "kumwalika = To invite him/her"
+        }
+      ],
+      "explanation": "kunialika = to invite me.",
+      "grammar": [
+        "infinitive-ku"
+      ]
+    },
+    {
+      "id": "d1727c95-dfb2-5f86-8766-4c73a469bf7c",
+      "mode": "translate",
+      "english": "There's no such thing as a small contribution.",
+      "before": "Hakuna mchango ",
+      "after": ".",
+      "options": [
+        {
+          "text": "mdogo",
+          "correct": true
+        },
+        {
+          "text": "ndogo",
+          "correct": false,
+          "feedback": "ndogo = small / young"
+        },
+        {
+          "text": "wadogo",
+          "correct": false,
+          "feedback": "wadogo = small / young"
+        }
+      ],
+      "explanation": "mchango is m/mi: mdogo.",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    }
+  ]
+}

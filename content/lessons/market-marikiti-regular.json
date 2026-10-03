@@ -1,0 +1,1795 @@
+{
+  "id": "market-marikiti-regular",
+  "uuid": "7e13f3a4-843e-5eb6-9563-f44d994d800d",
+  "title": "A Regular at Marikiti Market",
+  "category": "commerce",
+  "difficulty": "advanced",
+  "level": 8,
+  "order": 801,
+  "theme": "market",
+  "culturalNote": "Marikiti is Nairobi's huge wholesale fruit and vegetable market. Become a regular and the sellers start to know you — and the prices get better. Habits are where Kenyan Swahili gets colourful: Sanifu uses hu- (\"mimi hununua hapa\" = I usually buy here), while Kenyans love adding -nga, borrowed from Luhya: \"ninanunuanga hapa\", \"huwa nanunuanga\". Deals are made with -ki- (if): \"ukinunua kilo tatu, nitakupunguzia\" (if you buy three kilos, I'll knock the price down for you).",
+  "startingPoint": "Saturday morning at Marikiti. You walk up to the stall of Mama Wanjiru, whom you've bought from before.",
+  "grammarFocus": [
+    "habitual-hu-nga",
+    "ki-po-ka",
+    "relatives",
+    "conditional-nge"
+  ],
+  "grammar": [
+    "habitual-hu-nga",
+    "ki-po-ka",
+    "relatives",
+    "conditional-nge",
+    "noun-classes-mwa-nn",
+    "possessives",
+    "perfect-me",
+    "ko-location",
+    "discourse-particles",
+    "past-li",
+    "sanifu-noun-classes",
+    "locative-ni",
+    "question-words",
+    "subject-prefixes",
+    "object-infixes",
+    "greetings",
+    "adjective-agreement",
+    "future-ta",
+    "present-na",
+    "verb-extensions",
+    "numbers-money",
+    "conjunctions-kwamba",
+    "ni-copula",
+    "subjunctive"
+  ],
+  "turns": [
+    {
+      "id": "f5c411ed-df39-5e69-83d3-f3969eca18cd",
+      "speaker": "Mama Wanjiru",
+      "role": "auto",
+      "swahili": "Aaah, mteja wangu! Umepotea!",
+      "english": "Aaah, my customer! You've disappeared!",
+      "words": [
+        {
+          "text": "Aaah",
+          "gloss": "aaah! (delighted surprise)"
+        },
+        {
+          "text": "mteja",
+          "gloss": "customer / client — m/wa noun (people & animals; plural wateja)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "wangu",
+          "gloss": "\"my\" — m/wa agreement (for people: mtoto wangu, watoto wangu).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (m/wa: people)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "wangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "wako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "wake"
+              },
+              {
+                "pronoun": "our",
+                "form": "wetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "wenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "wao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Umepotea",
+          "gloss": "\"You are lost\" — u- (subject: you) + me- (perfect (done / now-state)) + -potea (get lost). From kupotea.",
+          "grammar": [
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kupotea (to get lost)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimepotea"
+              },
+              {
+                "pronoun": "you",
+                "form": "umepotea"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amepotea"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumepotea"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmepotea"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamepotea"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "f7719b9e-2c1a-547f-96c2-9a10eb84ec82",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Habari, Mama Wanjiru! Nilipofika jana, nikakutafuta, lakini hukuwepo.",
+      "english": "Hello, Mama Wanjiru! When I came yesterday, I looked for you, but you weren't here.",
+      "words": [
+        {
+          "text": "Habari",
+          "gloss": "news — the base of every formal greeting — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Mama Wanjiru",
+          "gloss": "\"Wanjiru's mum\" — the seller"
+        },
+        {
+          "text": "Nilipofika",
+          "gloss": "\"When I arrived\" — ni- + -li- + -po- (when) + -fika",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "jana",
+          "gloss": "yesterday — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "nikakutafuta",
+          "gloss": "\"and I looked for you\" — ni- + -ka- (and then) + -ku- + -tafuta",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "hukuwepo",
+          "gloss": "\"you weren't there\" — hu- + -ku- + -wepo (be present)",
+          "grammar": [
+            "ko-location"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Habari, Mama Wanjiru! Nilipofika jana, nikakutafuta, lakini hukuwepo.",
+          "correct": true
+        },
+        {
+          "swahili": "Habari, Mama Wanjiru! Nitakapofika jana, nikakutafuta, lakini hukuwepo.",
+          "correct": false
+        },
+        {
+          "swahili": "Habari, Mama Wanjiru! Nilipofika jana, nikakutafuta, lakini nilikuwepo hapa.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "b1b8c068-b162-56a4-8474-d409af94ef3e",
+      "speaker": "Mama Wanjiru",
+      "role": "auto",
+      "swahili": "Aah, jana nilienda shamba. Ulinunua kwa nani?",
+      "english": "Ah, yesterday I went to the farm. Who did you buy from?",
+      "words": [
+        {
+          "text": "Aah",
+          "gloss": "ah!",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "jana",
+          "gloss": "yesterday — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "nilienda",
+          "gloss": "\"I went\" — ni- (subject: I) + li- (past) + -enda (go). From kuenda.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kuenda (to go)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilienda"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulienda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alienda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulienda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlienda"
+              },
+              {
+                "pronoun": "they",
+                "form": "walienda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "shamba",
+          "gloss": "farm / garden (plural mashamba) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — shamba langu, mashamba"
+        },
+        {
+          "text": "Ulinunua",
+          "gloss": "\"You bought\" — u- (subject: you) + li- (past) + -nunua (buy). From kununua.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kununua (to buy)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilinunua"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulinunua"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alinunua"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulinunua"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlinunua"
+              },
+              {
+                "pronoun": "they",
+                "form": "walinunua"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "nani",
+          "gloss": "who?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5c1627ae-771b-5f82-b54d-d3125122823a",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Kwa mama ambaye huuza karibu na geti. Lakini mimi huwa ninanunuanga hapa kwako.",
+      "english": "From the lady who sells near the gate. But I usually buy here at your place.",
+      "words": [
+        {
+          "text": "Kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "mama",
+          "gloss": "mother / respectful \"madam\" — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ambaye",
+          "gloss": "\"who\" — relative for a person (m/wa singular)",
+          "grammar": [
+            "relatives"
+          ]
+        },
+        {
+          "text": "huuza",
+          "gloss": "\"Usually sell (habit, any person)\" — hu- (habitual: usually / regularly) + -uza (sell). From kuuza.",
+          "grammar": [
+            "habitual-hu-nga"
+          ]
+        },
+        {
+          "text": "karibu na",
+          "gloss": "close to / near",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "geti",
+          "gloss": "gate (Kenyan; Sanifu lango)"
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "huwa",
+          "gloss": "\"usually / tends to be\" — hu- + -wa (be): sets up a habit.",
+          "grammar": [
+            "habitual-hu-nga"
+          ]
+        },
+        {
+          "text": "ninanunuanga",
+          "gloss": "\"I usually buy\" — Kenyan -nga habitual, from Luhya",
+          "grammar": [
+            "habitual-hu-nga"
+          ]
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "kwako",
+          "gloss": "\"your place / to you\" — contracted possessive.",
+          "grammar": [
+            "possessives"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Kwa mama ambaye huuza karibu na geti. Lakini mimi huwa ninanunuanga hapa kwako.",
+          "correct": true
+        },
+        {
+          "swahili": "Kwa mama ambao huuza karibu na geti. Lakini mimi huwa ninanunuanga hapa kwako.",
+          "correct": false
+        },
+        {
+          "swahili": "Kwa mama ambaye huuza karibu na geti. Lakini mimi sijawahi kununua hapa kwako.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "53995223-4afe-5cf6-b643-6a05857f72c6",
+      "speaker": "Mama Wanjiru",
+      "role": "auto",
+      "swahili": "Asante, mwanangu! Mama aliyekuuzia alikupa bei nzuri?",
+      "english": "Thank you, my dear! Did the lady who sold to you give you a good price?",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "mwanangu",
+          "gloss": "\"my child\" — what older sellers call young customers"
+        },
+        {
+          "text": "Mama",
+          "gloss": "mother / respectful \"madam\" — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "aliyekuuzia",
+          "gloss": "\"who sold you\" — a- + -li- + -ye- (who) + -ku- + -uzia",
+          "grammar": [
+            "relatives"
+          ]
+        },
+        {
+          "text": "alikupa",
+          "gloss": "\"He/she gave you\" — a- (subject: he/she) + li- (past) + ku- (object: you) + -pa (give). From kupa.",
+          "grammar": [
+            "past-li",
+            "object-infixes"
+          ],
+          "conjugation": {
+            "verb": "kupa (to give)",
+            "tense": "Past (-li-) + object -ku-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilikupa"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulikupa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alikupa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulikupa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlikupa"
+              },
+              {
+                "pronoun": "they",
+                "form": "walikupa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "bei",
+          "gloss": "price — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "nzuri",
+          "gloss": "good / fine — the standard answer to habari",
+          "grammar": [
+            "greetings"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0997573b-f834-50fd-805d-28e375ffc500",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Hapana! Maembe ambayo nilinunua yalikuwa ghali, na mengine yalikuwa mabichi.",
+      "english": "No! The mangoes I bought were expensive, and some were unripe.",
+      "words": [
+        {
+          "text": "Hapana",
+          "gloss": "no"
+        },
+        {
+          "text": "Maembe",
+          "gloss": "mangoes"
+        },
+        {
+          "text": "ambayo",
+          "gloss": "\"which / that\" — relative for an n/n singular noun",
+          "grammar": [
+            "relatives"
+          ]
+        },
+        {
+          "text": "nilinunua",
+          "gloss": "\"I bought\" — ni- (subject: I) + li- (past) + -nunua (buy). From kununua.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kununua (to buy)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilinunua"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulinunua"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alinunua"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulinunua"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlinunua"
+              },
+              {
+                "pronoun": "they",
+                "form": "walinunua"
+              }
+            ]
+          }
+        },
+        {
+          "text": "yalikuwa",
+          "gloss": "\"they were\" — ya- agreement for ma- plurals (maembe, matokeo).",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "ji/ma plural agreement (ma- nouns). Kenyans keep it for nouns that start with ma-, but say \"zi-/-nyingi\" for most others."
+        },
+        {
+          "text": "ghali",
+          "gloss": "\"expensive\" — m/wa singular agreement (one person / animal).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-ghali (expensive)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "ghali"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "ghali"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "ghali"
+              }
+            ]
+          }
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "mengine",
+          "gloss": "\"others / some\" — ma- plural agreement (maembe mengine).",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "ji/ma plural agreement (ma- nouns). Kenyans keep it for nouns that start with ma-, but say \"zi-/-nyingi\" for most others."
+        },
+        {
+          "text": "yalikuwa",
+          "gloss": "\"they were\" — ya- agreement for ma- plurals (maembe, matokeo).",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "ji/ma plural agreement (ma- nouns). Kenyans keep it for nouns that start with ma-, but say \"zi-/-nyingi\" for most others."
+        },
+        {
+          "text": "mabichi",
+          "gloss": "\"unripe / raw\" — ma- plural agreement (maembe mabichi).",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "ji/ma plural agreement (ma- nouns). Kenyans keep it for nouns that start with ma-, but say \"zi-/-nyingi\" for most others."
+        }
+      ],
+      "sanifu": "Hapana! Maembe ambayo nilinunua yalikuwa ghali, na mengine yalikuwa mabichi.",
+      "options": [
+        {
+          "swahili": "Hapana! Maembe ambayo nilinunua yalikuwa ghali, na mengine yalikuwa mabichi.",
+          "correct": true
+        },
+        {
+          "swahili": "Hapana! Maembe ambayo nitanunua yalikuwa ghali, na mengine yalikuwa mabichi.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo! Maembe ambayo nilinunua yalikuwa ghali, na mengine yalikuwa mabichi.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "fad9e880-822c-5b8e-b43b-5b337a810d97",
+      "speaker": "Mama Wanjiru",
+      "role": "auto",
+      "swahili": "Pole sana! Ukinunua kwangu, utapata matunda mazuri kila wakati.",
+      "english": "So sorry! If you buy from me, you'll always get good fruit.",
+      "words": [
+        {
+          "text": "Pole sana",
+          "gloss": "so sorry / take heart"
+        },
+        {
+          "text": "Ukinunua",
+          "gloss": "\"If you buy\" — u- + -ki- (if) + -nunua",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "kwangu",
+          "gloss": "\"my place / to me\" — contracted possessive.",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "utapata",
+          "gloss": "\"You will get\" — u- (subject: you) + ta- (future) + -pata (get). From kupata.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kupata (to get)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitapata"
+              },
+              {
+                "pronoun": "you",
+                "form": "utapata"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atapata"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutapata"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtapata"
+              },
+              {
+                "pronoun": "they",
+                "form": "watapata"
+              }
+            ]
+          }
+        },
+        {
+          "text": "matunda",
+          "gloss": "fruit"
+        },
+        {
+          "text": "mazuri",
+          "gloss": "\"good\" — ma- plural agreement (matunda mazuri).",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "ji/ma plural agreement (ma- nouns). Kenyans keep it for nouns that start with ma-, but say \"zi-/-nyingi\" for most others."
+        },
+        {
+          "text": "kila",
+          "gloss": "every / each"
+        },
+        {
+          "text": "wakati",
+          "gloss": "time / when / while"
+        }
+      ]
+    },
+    {
+      "id": "bc1395f6-bfda-570a-b01f-28dfec5884a9",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Ndiyo maana nimerudi! Leo nataka maembe na ndizi mbivu.",
+      "english": "That's why I'm back! Today I want mangoes and ripe bananas.",
+      "words": [
+        {
+          "text": "Ndiyo maana",
+          "gloss": "that's why"
+        },
+        {
+          "text": "nimerudi",
+          "gloss": "\"I have come back\" — ni- (subject: I) + me- (perfect (done / now-state)) + -rudi (come back). From kurudi.",
+          "grammar": [
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kurudi (to come back)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimerudi"
+              },
+              {
+                "pronoun": "you",
+                "form": "umerudi"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amerudi"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumerudi"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmerudi"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamerudi"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "nataka",
+          "gloss": "\"I want\" — na- (short for nina-: I + present) + -taka (want). From kutaka.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kutaka (to want)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nataka"
+              },
+              {
+                "pronoun": "you",
+                "form": "unataka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anataka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunataka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnataka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanataka"
+              }
+            ]
+          }
+        },
+        {
+          "text": "maembe",
+          "gloss": "mangoes"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "ndizi mbivu",
+          "gloss": "ripe bananas"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo maana nimerudi! Leo nataka maembe na ndizi mbivu.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo maana nimeondoka! Leo nataka maembe na ndizi mbivu.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo maana nimerudi! Leo nataka maembe na ndizi mbichi.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "1423c2aa-4b7e-523f-8ba3-7e22963f804a",
+      "speaker": "Mama Wanjiru",
+      "role": "auto",
+      "swahili": "Ukinunua kilo tatu za maembe, nitakupunguzia bei.",
+      "english": "If you buy three kilos of mangoes, I'll lower the price for you.",
+      "words": [
+        {
+          "text": "Ukinunua",
+          "gloss": "\"If you buy\" — u- + -ki- (if) + -nunua",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "kilo tatu",
+          "gloss": "three kilos"
+        },
+        {
+          "text": "za",
+          "gloss": "\"of\" — n/n plural agreement (nyumba za Kamau, habari za asubuhi)",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "maembe",
+          "gloss": "mangoes"
+        },
+        {
+          "text": "nitakupunguzia",
+          "gloss": "\"I'll reduce (the price) for you\"",
+          "grammar": [
+            "verb-extensions"
+          ]
+        },
+        {
+          "text": "bei",
+          "gloss": "price — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "75d80c4c-2ef6-5007-8357-7e2b91ba94f1",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Ningekuwa na gari leo, ningenunua kilo kumi! Lakini nitachukua tatu.",
+      "english": "If I had a car today, I'd buy ten kilos! But I'll take three.",
+      "words": [
+        {
+          "text": "Ningekuwa na",
+          "gloss": "\"If I had / I would have\"",
+          "grammar": [
+            "conditional-nge"
+          ]
+        },
+        {
+          "text": "gari",
+          "gloss": "car / vehicle (plural magari) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — gari langu, gari hili, magari mawili"
+        },
+        {
+          "text": "leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ningenunua",
+          "gloss": "\"I would buy\"",
+          "grammar": [
+            "conditional-nge"
+          ]
+        },
+        {
+          "text": "kilo",
+          "gloss": "kilo",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "kumi",
+          "gloss": "10 (n/n form — used for counting, money, things)",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "nitachukua",
+          "gloss": "\"I will take\" — ni- (subject: I) + ta- (future) + -chukua (take). From kuchukua.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kuchukua (to take)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitachukua"
+              },
+              {
+                "pronoun": "you",
+                "form": "utachukua"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atachukua"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutachukua"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtachukua"
+              },
+              {
+                "pronoun": "they",
+                "form": "watachukua"
+              }
+            ]
+          }
+        },
+        {
+          "text": "tatu",
+          "gloss": "3 (n/n form — used for counting, money, things)",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ningekuwa na gari leo, ningenunua kilo kumi! Lakini nitachukua tatu.",
+          "correct": true
+        },
+        {
+          "swahili": "Nilikuwa na gari leo, ningenunua kilo kumi! Lakini nitachukua tatu.",
+          "correct": false
+        },
+        {
+          "swahili": "Ningekuwa na gari leo, nitanunua kilo kumi! Lakini nitachukua tatu.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "a9260c8a-44f5-5e2f-a582-7275be52655d",
+      "speaker": "Mama Wanjiru",
+      "role": "auto",
+      "swahili": "Haha! Sawa. Kilo tatu na ndizi — mia saba tu, kwa sababu wewe ni mteja wangu.",
+      "english": "Haha! Okay. Three kilos and the bananas — just seven hundred, because you're my customer.",
+      "words": [
+        {
+          "text": "Haha",
+          "gloss": "haha"
+        },
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Kilo tatu",
+          "gloss": "three kilos"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "ndizi",
+          "gloss": "banana — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "mia saba",
+          "gloss": "700",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "tu",
+          "gloss": "just / only"
+        },
+        {
+          "text": "kwa sababu",
+          "gloss": "because",
+          "grammar": [
+            "conjunctions-kwamba"
+          ]
+        },
+        {
+          "text": "wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mteja",
+          "gloss": "customer / client — m/wa noun (people & animals; plural wateja)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "wangu",
+          "gloss": "\"my\" — m/wa agreement (for people: mtoto wangu, watoto wangu).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (m/wa: people)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "wangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "wako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "wake"
+              },
+              {
+                "pronoun": "our",
+                "form": "wetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "wenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "wao"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "058f5a7d-7034-5057-9c4b-c136c2c207e4",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Asante! Nikija wiki ijayo, utaniwekea maembe yenye sukari zaidi?",
+      "english": "Thanks! If I come next week, will you keep me the sweetest mangoes?",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Nikija",
+          "gloss": "\"If/when I come\" — ni- (subject: I) + ki- (if / when · or \"-ing\" after kuwa) + -ja (come). From kuja. After a past kuwa (nilikuwa …) the -ki- form means \"…-ing\".",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "wiki ijayo",
+          "gloss": "next week"
+        },
+        {
+          "text": "utaniwekea",
+          "gloss": "\"You will keep (something) for me\" — u- (subject: you) + ta- (future) + ni- (object: me) + -wekea (keep (something) for). From kuwekea. Extension: prepositional (-ia/-ea: \"for / to / at\").",
+          "grammar": [
+            "future-ta",
+            "object-infixes",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kuwekea (to keep (something) for)",
+            "tense": "Future (-ta-) + object -ni-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitaniwekea"
+              },
+              {
+                "pronoun": "you",
+                "form": "utaniwekea"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ataniwekea"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutaniwekea"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtaniwekea"
+              },
+              {
+                "pronoun": "they",
+                "form": "wataniwekea"
+              }
+            ]
+          }
+        },
+        {
+          "text": "maembe",
+          "gloss": "mangoes"
+        },
+        {
+          "text": "yenye",
+          "gloss": "\"which has / with\" (n/n)",
+          "grammar": [
+            "relatives"
+          ]
+        },
+        {
+          "text": "sukari",
+          "gloss": "sugar — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "zaidi",
+          "gloss": "more"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante! Nikija wiki ijayo, utaniwekea maembe yenye sukari zaidi?",
+          "correct": true
+        },
+        {
+          "swahili": "Asante! Nilikuja wiki ijayo, utaniwekea maembe yenye sukari zaidi?",
+          "correct": false
+        },
+        {
+          "swahili": "Asante! Nikija wiki ijayo, nitakuwekea maembe yenye sukari zaidi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "2f6d4f43-9c5c-5c74-9c23-6c15790280a7",
+      "speaker": "Mama Wanjiru",
+      "role": "auto",
+      "swahili": "Bila shaka! Ukifika, niulize tu.",
+      "english": "Of course! When you arrive, just ask me.",
+      "words": [
+        {
+          "text": "Bila shaka",
+          "gloss": "without a doubt / of course"
+        },
+        {
+          "text": "Ukifika",
+          "gloss": "\"If/when you arrive\" — u- (subject: you) + ki- (if / when · or \"-ing\" after kuwa) + -fika (arrive). From kufika. After a past kuwa (nilikuwa …) the -ki- form means \"…-ing\".",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "niulize",
+          "gloss": "\"Let me ask / should I ask?\" — ni- (subject: I) + -ulize (ask, subjunctive -e). From kuuliza.",
+          "grammar": [
+            "subjunctive"
+          ],
+          "conjugation": {
+            "verb": "kuuliza (to ask)",
+            "tense": "Subjunctive (-e)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niulize"
+              },
+              {
+                "pronoun": "you",
+                "form": "uulize"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "aulize"
+              },
+              {
+                "pronoun": "we",
+                "form": "twulize"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mwulize"
+              },
+              {
+                "pronoun": "they",
+                "form": "waulize"
+              }
+            ]
+          }
+        },
+        {
+          "text": "tu",
+          "gloss": "just / only"
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "a4811649-20d9-57c0-83ad-fb9b6b62ea47",
+      "swahili": "Nilipofika…",
+      "english": "When I arrived…",
+      "exampleContext": "-po- = when",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "ffd1024a-e76f-533f-aecd-dee5189bfe08",
+      "swahili": "nikakutafuta",
+      "english": "and (then) I looked for you",
+      "exampleContext": "-ka- = and then (in a story)"
+    },
+    {
+      "id": "dbb7625a-8d78-5cd0-825f-df339e02b629",
+      "swahili": "Mimi hununua…",
+      "english": "I usually buy…",
+      "exampleContext": "hu- = habitual (Sanifu)",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "9ae5df7d-23d0-503e-858d-22d218672998",
+      "swahili": "ninanunuanga",
+      "english": "I usually buy",
+      "exampleContext": "Kenyan -nga habitual (from Luhya)"
+    },
+    {
+      "id": "32ead9c4-902c-55b6-9664-455617bf9805",
+      "swahili": "ambaye / ambao",
+      "english": "who (one person / several)",
+      "exampleContext": "mama ambaye huuza… = the lady who sells…",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "d8f8fc0b-717d-56ee-9a2b-9bb0e3075ab8",
+      "swahili": "ambayo / ambazo",
+      "english": "which (n/n one / several) |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "a9635bcd-992d-5759-8fc4-7eb464e6cc97",
+      "swahili": "aliyekuuzia",
+      "english": "(the one) who sold to you",
+      "exampleContext": "-ye- = who, built into the verb"
+    },
+    {
+      "id": "2bdfe9fd-61a4-5fea-bf88-1cc0a4e1491f",
+      "swahili": "Ukinunua…",
+      "english": "If you buy…",
+      "exampleContext": "-ki- = if / when",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "3f9c760d-246c-556e-9851-3d5e2fd8d8fd",
+      "swahili": "nitakupunguzia bei",
+      "english": "I'll lower the price for you |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "0567d879-dc32-5567-9e2f-1022bb887da3",
+      "swahili": "Ningekuwa na…",
+      "english": "If I had…",
+      "exampleContext": "-nge- = would / if",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "0d4640d7-9cbf-5df4-b387-ba4551d8421a",
+      "swahili": "ningenunua",
+      "english": "I would buy |",
+      "exampleContext": ""
+    },
+    {
+      "id": "270997bc-41b9-509e-8c6f-66fabb11a92b",
+      "swahili": "yenye",
+      "english": "which has / with (n/n)",
+      "exampleContext": "maembe yenye sukari = mangoes with sugar"
+    },
+    {
+      "id": "f7d039df-9ddf-5c37-a945-1c6a2590f343",
+      "swahili": "Ndiyo maana…",
+      "english": "That's why… |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "cb14b988-a5ac-5bed-a307-f8ad5b8ac219",
+      "swahili": "mbivu / mbichi",
+      "english": "ripe / unripe |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "45d73f3a-a1ba-5040-8016-68bb5263a43f",
+      "mode": "translate",
+      "english": "When I arrived, I looked for you.",
+      "before": "",
+      "after": ", nikakutafuta.",
+      "options": [
+        {
+          "text": "Nilipofika",
+          "correct": true
+        },
+        {
+          "text": "Nikifika",
+          "correct": false,
+          "feedback": "Nikifika = If/when I arrive"
+        },
+        {
+          "text": "Ningefika",
+          "correct": false,
+          "feedback": "Ningefika = I would arrive"
+        }
+      ],
+      "explanation": "-po- = when (a specific time): ni- + -li- + -po- + -fika.",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "b815724d-4211-56b9-a6e3-f8ade93f83ba",
+      "mode": "complete",
+      "english": "I arrived, and then I looked for you.",
+      "before": "Nilifika, ",
+      "after": ".",
+      "options": [
+        {
+          "text": "nikakutafuta",
+          "correct": true
+        },
+        {
+          "text": "ninakutafuta",
+          "correct": false,
+          "feedback": "ninakutafuta = I am looking for you"
+        },
+        {
+          "text": "nitakutafuta",
+          "correct": false,
+          "feedback": "nitakutafuta = I will look for you"
+        }
+      ],
+      "explanation": "-ka- links events in a story: \"…and then\".",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "bb37abfd-9bd9-5ef6-8c17-8cb15780352d",
+      "mode": "translate",
+      "english": "I usually buy here. (Sanifu habitual)",
+      "before": "Mimi ",
+      "after": " hapa.",
+      "options": [
+        {
+          "text": "hununua",
+          "correct": true
+        },
+        {
+          "text": "ninanunua",
+          "correct": false,
+          "feedback": "ninanunua = I am buying"
+        },
+        {
+          "text": "nilinunua",
+          "correct": false,
+          "feedback": "nilinunua = I bought"
+        }
+      ],
+      "explanation": "hu- = habit, and it never changes for the person: mimi hununua, wao hununua.",
+      "grammar": [
+        "habitual-hu-nga"
+      ]
+    },
+    {
+      "id": "842e2259-9bcd-5a82-aff7-ad10d02161d3",
+      "mode": "translate",
+      "english": "I usually buy here. (Kenyan)",
+      "before": "Mimi ",
+      "after": " hapa.",
+      "options": [
+        {
+          "text": "ninanunuanga",
+          "correct": true
+        },
+        {
+          "text": "ninanunua",
+          "correct": false,
+          "feedback": "ninanunua = I am buying"
+        },
+        {
+          "text": "nitanunua",
+          "correct": false,
+          "feedback": "nitanunua = I will buy"
+        }
+      ],
+      "explanation": "Kenyans add -nga (from Luhya) for habits: ninanunuanga.",
+      "grammar": [
+        "habitual-hu-nga"
+      ]
+    },
+    {
+      "id": "438ac21b-bd73-5b13-915f-b383812d81df",
+      "mode": "translate",
+      "english": "the lady who sells near the gate",
+      "before": "mama ",
+      "after": " huuza karibu na geti",
+      "options": [
+        {
+          "text": "ambaye",
+          "correct": true
+        },
+        {
+          "text": "ambayo",
+          "correct": false,
+          "feedback": "ambayo = which / that"
+        },
+        {
+          "text": "ambazo",
+          "correct": false,
+          "feedback": "ambazo = which / that"
+        }
+      ],
+      "explanation": "ambaye = who (one person). Ambao = who (several people).",
+      "grammar": [
+        "relatives"
+      ]
+    },
+    {
+      "id": "d3447246-587a-5cae-8793-21d52f6672ef",
+      "mode": "translate",
+      "english": "the mangoes which I bought",
+      "before": "maembe ",
+      "after": " nilinunua",
+      "options": [
+        {
+          "text": "ambayo",
+          "correct": true
+        },
+        {
+          "text": "ambaye",
+          "correct": false,
+          "feedback": "ambaye = who"
+        },
+        {
+          "text": "ambao",
+          "correct": false,
+          "feedback": "ambao = who"
+        }
+      ],
+      "explanation": "ambayo for things in the plural of ji/ma — and for n/n singular.",
+      "grammar": [
+        "relatives"
+      ]
+    },
+    {
+      "id": "aa57e86d-3a00-5df1-87c6-4d0f54216855",
+      "mode": "translate",
+      "english": "the tomatoes which I bought",
+      "before": "nyanya ",
+      "after": " nilinunua",
+      "options": [
+        {
+          "text": "ambazo",
+          "correct": true
+        },
+        {
+          "text": "ambaye",
+          "correct": false,
+          "feedback": "ambaye = who"
+        },
+        {
+          "text": "ambao",
+          "correct": false,
+          "feedback": "ambao = who"
+        }
+      ],
+      "explanation": "ambazo = which (n/n plural).",
+      "grammar": [
+        "relatives"
+      ]
+    },
+    {
+      "id": "0db3ba6e-487d-5958-aadb-7fb9316f9351",
+      "mode": "translate",
+      "english": "the lady who sold to you",
+      "before": "mama ",
+      "after": "",
+      "options": [
+        {
+          "text": "aliyekuuzia",
+          "correct": true
+        },
+        {
+          "text": "alikuuzia",
+          "correct": false,
+          "feedback": "alikuuzia = He/she sold (something) to you"
+        },
+        {
+          "text": "anakuuzia",
+          "correct": false,
+          "feedback": "anakuuzia = He/she is selling (something) to you"
+        }
+      ],
+      "explanation": "-ye- tucked into the verb = who: a- + -li- + -ye- + -ku- + -uzia.",
+      "grammar": [
+        "relatives"
+      ]
+    },
+    {
+      "id": "595d65a2-0dbd-581f-b2d1-a8d983230fde",
+      "mode": "translate",
+      "english": "If you buy three kilos…",
+      "before": "",
+      "after": " kilo tatu…",
+      "options": [
+        {
+          "text": "Ukinunua",
+          "correct": true
+        },
+        {
+          "text": "Ulinunua",
+          "correct": false,
+          "feedback": "Ulinunua = You bought"
+        },
+        {
+          "text": "Ungenunua",
+          "correct": false,
+          "feedback": "Ungenunua = You would buy"
+        }
+      ],
+      "explanation": "-ki- = if / when (likely): u- + -ki- + -nunua.",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "d8942b99-c9a8-5652-8cdb-c51dbfe3449a",
+      "mode": "translate",
+      "english": "…I'll lower the price for you.",
+      "before": "…",
+      "after": " bei.",
+      "options": [
+        {
+          "text": "nitakupunguzia",
+          "correct": true
+        },
+        {
+          "text": "nimekupunguzia",
+          "correct": false
+        },
+        {
+          "text": "ninakupunguza",
+          "correct": false,
+          "feedback": "ninakupunguza = I am reducing you"
+        }
+      ],
+      "explanation": "nitakupunguzia = \"I'll reduce (the price) for you\"",
+      "grammar": [
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "49404abd-20b6-553b-a1a0-02ea549ce121",
+      "mode": "translate",
+      "english": "If I had a car, I'd buy ten kilos.",
+      "before": "Ningekuwa na gari, ",
+      "after": " kilo kumi.",
+      "options": [
+        {
+          "text": "ningenunua",
+          "correct": true
+        },
+        {
+          "text": "nitanunua",
+          "correct": false,
+          "feedback": "nitanunua = I will buy"
+        },
+        {
+          "text": "nilinunua",
+          "correct": false,
+          "feedback": "nilinunua = I bought"
+        }
+      ],
+      "explanation": "-nge- in both halves = \"if I had… I would…\".",
+      "grammar": [
+        "conditional-nge"
+      ]
+    },
+    {
+      "id": "d9243aa4-8df4-5d59-b543-8d7707f87d46",
+      "mode": "translate",
+      "english": "If I come next week…",
+      "before": "",
+      "after": " wiki ijayo…",
+      "options": [
+        {
+          "text": "Nikija",
+          "correct": true
+        },
+        {
+          "text": "Nilikuja",
+          "correct": false,
+          "feedback": "Nilikuja = I came"
+        },
+        {
+          "text": "Ningekuja",
+          "correct": false,
+          "feedback": "Ningekuja = I would come"
+        }
+      ],
+      "explanation": "ni- + -ki- + kuja (kuja keeps ku-).",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "061c2a94-a0f1-5756-a1c7-5323d954a9b8",
+      "mode": "translate",
+      "english": "When you arrive, just ask me.",
+      "before": "",
+      "after": ", niulize tu.",
+      "options": [
+        {
+          "text": "Ukifika",
+          "correct": true
+        },
+        {
+          "text": "Ulifika",
+          "correct": false,
+          "feedback": "Ulifika = You arrived"
+        },
+        {
+          "text": "Ungefika",
+          "correct": false,
+          "feedback": "Ungefika = You would arrive"
+        }
+      ],
+      "explanation": "Ukifika = \"If/when you arrive\" — u- (subject: you) + ki- (if / when · or \"-ing\" after kuwa) + -fika (arrive). From kufika. After a past kuwa (nilikuwa …) the -ki- form means \"…-ing\".",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "7a9dcf4b-8e72-5812-a241-8833d7cd0603",
+      "mode": "translate",
+      "english": "mangoes with more sugar",
+      "before": "maembe ",
+      "after": " sukari zaidi",
+      "options": [
+        {
+          "text": "yenye",
+          "correct": true
+        },
+        {
+          "text": "wenye",
+          "correct": false,
+          "feedback": "wenye = those with / who have"
+        },
+        {
+          "text": "mwenye",
+          "correct": false,
+          "feedback": "mwenye = the one with / who has"
+        }
+      ],
+      "explanation": "-enye = having / with; agrees with the noun.",
+      "grammar": [
+        "relatives"
+      ]
+    },
+    {
+      "id": "e31712c3-0d7e-5081-a7d2-1c20a4b09cf0",
+      "mode": "complete",
+      "english": "That's why I'm back!",
+      "before": "Ndiyo ",
+      "after": " nimerudi!",
+      "options": [
+        {
+          "text": "maana",
+          "correct": true
+        },
+        {
+          "text": "sababu",
+          "correct": false
+        },
+        {
+          "text": "hivyo",
+          "correct": false,
+          "feedback": "hivyo = like that / so"
+        }
+      ],
+      "explanation": "Ndiyo maana = that's why."
+    },
+    {
+      "id": "fb70ef4c-e637-5937-b9cc-8f157fbef126",
+      "mode": "translate",
+      "english": "ripe bananas",
+      "before": "ndizi ",
+      "after": "",
+      "options": [
+        {
+          "text": "mbivu",
+          "correct": true
+        },
+        {
+          "text": "mbichi",
+          "correct": false,
+          "feedback": "mbichi = unripe / raw (n/n)"
+        },
+        {
+          "text": "mbovu",
+          "correct": false,
+          "feedback": "mbovu = rotten / broken / bad"
+        }
+      ],
+      "explanation": "mbivu = ripe; mbichi = unripe / raw; mbovu = rotten."
+    }
+  ]
+}

@@ -6,6 +6,9 @@ import { VocabEntry } from '../components/VocabEntry';
 import { LessonFlashcards } from '../components/LessonFlashcards';
 import { DrillPrompt, LessonGateStatus, LockedLesson } from '../components/LessonGate';
 import { setLessonComplete } from '../storage';
+import { GrammarChips } from '../components/GrammarChips';
+import { LevelUpModal } from '../components/LevelUp';
+import { THEME_LABELS, claimLevelUp, levelInfo, themeVisit } from '../lib/levels';
 import {
   PASS_THRESHOLD,
   getLessonScores,
@@ -16,12 +19,6 @@ import {
   type AttemptResult,
 } from '../lib/lessonScores';
 
-const DIFFICULTY_LABELS = {
-  beginner: 'Beginner',
-  medium: 'Medium',
-  advanced: 'Advanced',
-};
-
 export function LessonView() {
   const { id } = useParams<{ id: string }>();
   const { lessons, lesson, previous, next } = useLessonWithNeighbors(id ?? '');
@@ -30,6 +27,8 @@ export function LessonView() {
   const [rec, setRec] = useState(() => getLessonScores(id ?? ''));
   // Bumping this remounts DialoguePlayer for a fresh attempt.
   const [attempt, setAttempt] = useState(0);
+  const [levelUp, setLevelUp] = useState<number | null>(null);
+  const [showAllGrammar, setShowAllGrammar] = useState(false);
 
   if (!lesson) {
     return (
@@ -50,6 +49,7 @@ export function LessonView() {
     setLessonComplete(lesson!.id);
     setRec(recordDialogueAttempt(lesson!.id, r));
     setResult(r);
+    setLevelUp(claimLevelUp(lessons, lesson!.level));
   }
 
   function replay() {
@@ -61,18 +61,30 @@ export function LessonView() {
   const ratio = result ? (result.total ? result.firstTryCorrect / result.total : 1) : 0;
   const passedThisRun = result ? ratio >= PASS_THRESHOLD : false;
   const lessonPassed = isLessonPassed(lesson, rec);
+  const lvl = levelInfo(lesson.level);
+  const theme = lesson.theme ? THEME_LABELS[lesson.theme] : undefined;
+  const visit = themeVisit(lessons, lesson);
+  const focus = lesson.grammarFocus ?? [];
+  const otherGrammar = (lesson.grammar ?? []).filter((g) => !focus.includes(g));
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-8 space-y-8">
+      {levelUp !== null && <LevelUpModal level={levelUp} lessons={lessons} onClose={() => setLevelUp(null)} />}
       <div>
         <Link to="/" className="text-sm text-gray-400 hover:text-gray-600">
           ← Lessons
         </Link>
         <h1 className="text-2xl font-bold text-gray-900 mt-2">{lesson.title}</h1>
-        <div className="flex items-center gap-3">
-          <span className="text-xs text-gray-500 capitalize">
-            {DIFFICULTY_LABELS[lesson.difficulty]}
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+          <span className="text-xs text-gray-500">
+            {lvl.emoji} Level {lesson.level} · {lvl.name}
           </span>
+          {theme && (
+            <span className="text-xs text-gray-500">
+              {theme.emoji} {theme.label}
+              {visit > 1 ? ` · visit ${visit} — richer Swahili this time` : ''}
+            </span>
+          )}
           {lesson.practice?.length ? (
             <Link
               to={`/lesson/${lesson.id}/practice`}
@@ -93,8 +105,34 @@ export function LessonView() {
         </h2>
         <p className="text-gray-700 leading-relaxed">{lesson.culturalNote}</p>
         <p className="text-gray-500 text-sm italic mt-2">{lesson.startingPoint}</p>
-        <p className="text-gray-400 text-xs mt-2">Tap 🔊 on any line to hear it spoken.</p>
+        <p className="text-gray-400 text-xs mt-2">
+          Tap 🔊 on any line to hear it spoken. Tap an underlined word for its meaning, Sanifu form and grammar.
+        </p>
       </section>
+
+      {(focus.length > 0 || otherGrammar.length > 0) && (
+        <section>
+          <h2 className="text-xs uppercase tracking-wide text-gray-400 font-semibold mb-2">
+            Grammar in this lesson
+          </h2>
+          <GrammarChips slugs={focus.length ? focus : otherGrammar.slice(0, 4)} emphasize={focus} />
+          {focus.length > 0 && otherGrammar.length > 0 && (
+            <div className="mt-2">
+              {showAllGrammar ? (
+                <GrammarChips slugs={otherGrammar} size="xs" />
+              ) : (
+                <button
+                  type="button"
+                  onClick={() => setShowAllGrammar(true)}
+                  className="text-xs text-green-700 hover:underline"
+                >
+                  + {otherGrammar.length} more structures you'll meet
+                </button>
+              )}
+            </div>
+          )}
+        </section>
+      )}
 
       <section>
         <h2 className="text-xs uppercase tracking-wide text-gray-400 font-semibold mb-4">
@@ -139,7 +177,7 @@ export function LessonView() {
             >
               <p className="font-semibold text-green-800">Practice session →</p>
               <p className="text-sm text-green-700/80 mt-0.5">
-                {lesson.practice.length} quick fill-the-gap lines using the words and verb forms from this ride.
+                {lesson.practice.length} quick fill-the-gap lines using the words and verb forms from this conversation.
               </p>
             </Link>
           ) : null}

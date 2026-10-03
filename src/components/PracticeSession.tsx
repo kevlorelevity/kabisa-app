@@ -2,6 +2,7 @@ import { useMemo, useState, type ReactNode } from 'react';
 import type { PracticeItem, PracticeOption } from '../types';
 import type { AttemptResult } from '../lib/lessonScores';
 import { AudioButton } from './AudioButton';
+import { GrammarChips } from './GrammarChips';
 
 interface PracticeSessionProps {
   items: PracticeItem[];
@@ -180,9 +181,10 @@ export function PracticeSession({ items, onFinish, resultSlot }: PracticeSession
 
       {solved && (
         <div className="space-y-3">
-          <p className="text-sm text-gray-700 bg-green-50 border border-green-100 rounded-lg px-4 py-3">
-            {item.explanation}
-          </p>
+          <div className="text-sm text-gray-700 bg-green-50 border border-green-100 rounded-lg px-4 py-3 space-y-2">
+            <p>{item.explanation}</p>
+            {item.grammar?.length ? <GrammarChips slugs={item.grammar.slice(0, 3)} size="xs" /> : null}
+          </div>
           <button
             onClick={next}
             className="px-4 py-2 rounded-full bg-green-700 text-white text-sm font-medium hover:bg-green-800"

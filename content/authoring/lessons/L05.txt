@@ -1,0 +1,240 @@
+# Level 5 — perfect -me-, not-yet -ja- (bado), -wahi (ever / never), adjective agreement, comparatives (kuliko, zaidi, bora)
+
+@lesson market-maasai-bargain
+title: Bargaining at the Maasai Market
+level: 5
+theme: market
+category: commerce
+culture: The Maasai Market moves around Nairobi through the week — rows of baskets (vikapu), beaded jewellery, kikoi cloths and carvings. The first price is for tourists; bargaining is expected and friendly. The rhythm: show interest, compare ("this one is nicer than that one"), name a price, and settle with "Tumepatana!" (we've agreed). The -me- tense is everywhere in a deal: "nimeona" (I've seen), "umepunguza" (you've lowered it), "nimeamua" (I've decided).
+start: Saturday afternoon at the Maasai Market. A seller waves you over to her baskets.
+grammar: perfect-me, perfect-negative-ja, comparatives, adjective-agreement
+gl: kikapu = "basket" — ki/vi noun (plural vikapu). Kenyans say "kikapu hii". || Sanifu: kikapu hiki (ki/vi) #sanifu-noun-classes
+gl: kikapu hii = "this basket" — Kenyan n/n demonstrative. || Sanifu: kikapu hiki #sanifu-noun-classes
+gl: kikapu ile = "that basket" — Kenyan. || Sanifu: kikapu kile #sanifu-noun-classes
+gl: vikapu = baskets (plural of kikapu)
+gl: elfu mbili = "two thousand"
+gl: elfu moja = "one thousand"
+gl: mia tano = "five hundred"
+gl: elfu moja mia tano = "one thousand five hundred" — mia (hundreds) follows elfu (thousands) directly.
+gl: Wee = "Hey! / Wow!" — surprise #discourse-particles
+gl: bei ya mzungu = "the foreigner price" — said with a smile when the first price is too high.
+gl: mkono = "by hand / hand" — kwa mkono = by hand
+gl: Tumepatana = "We've agreed (on a price)!" — tu- + -me- + -patana (agree, reciprocal). #perfect-me
+gl: shanga = beads
+
+> Muuzaji: Karibu, sister! Angalia vikapu hivi. Ni vizuri sana. | Welcome, sister! Look at these baskets. They're very good.
+  s: Karibu, dada! Angalia vikapu hivi. Ni vizuri sana.
+< Mteja: Asante. Nimeona kikapu hii. Ni bei gani? | Thanks. I've seen this basket. How much is it?
+  s: Asante. Nimeona kikapu hiki. Ni bei gani?
+  x: Asante. Nitaona kikapu hii. Ni bei gani? ; Asante. Sijaona kikapu hii. Ni bei gani?
+> Muuzaji: Hii ni elfu mbili tu. Imetengenezwa kwa mkono. | This one is just two thousand. It's been made by hand.
+< Mteja: Wee! Elfu mbili? Hiyo ni bei ya mzungu! | Wow! Two thousand? That's the foreigner price!
+  x: Wee! Elfu mbili? Hiyo ni bei nzuri sana! ; Asante! Elfu mbili? Hiyo ni bei ya mzungu!
+> Muuzaji: Hapana! Kikapu hii ni kubwa kuliko ile, na ni nzuri zaidi. | No! This basket is bigger than that one, and it's nicer.
+  s: Hapana! Kikapu hiki ni kikubwa kuliko kile, na ni kizuri zaidi.
+< Mteja: Ni kweli, lakini sijawahi kulipa elfu mbili kwa kikapu. | That's true, but I've never paid two thousand for a basket.
+  x: Ni kweli, lakini nimewahi kulipa elfu mbili kwa kikapu. ; Ni kweli, lakini sijawahi kulipa elfu mbili kwa nyumba.
+> Muuzaji: Sawa. Kwa wewe, elfu moja mia tano. | Okay. For you, one thousand five hundred.
+< Mteja: Bado ni ghali. Nitalipa elfu moja. | It's still expensive. I'll pay one thousand.
+  x: Bado ni rahisi. Nitalipa elfu moja. ; Bado ni ghali. Nililipa elfu moja.
+> Muuzaji: Aiii, umepunguza sana! Bei ya mwisho, elfu moja mia mbili. | Aiii, you've cut it a lot! Final price, one thousand two hundred.
+< Mteja: Sawa. Na kama nitanunua vikapu viwili? | Okay. And if I buy two baskets?
+  x: Sawa. Na kama nitanunua vikapu wawili? ; Sawa. Na kama nilinunua vikapu viwili?
+> Muuzaji: Viwili? Basi, elfu mbili kwa vyote. Hiyo ni bei nzuri kuliko zote! | Two? Then two thousand for both. That's the best price of all!
+< Mteja: Tumepatana! Nimeamua — nitachukua hii nyekundu na ile ya kijani. | Deal! I've decided — I'll take this red one and that green one.
+  x: Hatujapatana! Nimeamua — nitachukua hii nyekundu na ile ya kijani. ; Tumepatana! Sijaamua — nitachukua hii nyekundu na ile ya kijani.
+> Muuzaji: Asante sana, sister! Umechagua vizuri. Karibu tena! | Thank you so much, sister! You've chosen well. Come again!
+
+@practice
+t: I've seen this basket. | [Nimeona|Niliona|Nitaona] kikapu hii. || -me- = has / have done: ni- + -me- + -ona.
+t: You've lowered it a lot! | [Umepunguza|Nimepunguza|Amepunguza] sana!
+t: I've decided. | [Nimeamua|Sijaamua|Nitaamua].
+t: I haven't decided yet. | [Sijaamua|Nimeamua|Sikuamua] bado. || -ja- = not yet: si- + -ja- + -amua. Often with bado.
+t: We've agreed! | [Tumepatana|Hatujapatana|Tutapatana]! || Tumepatana — the word that closes a deal.
+t: You've chosen well. | [Umechagua|Nimechagua|Wamechagua] vizuri.
+t: I've never paid two thousand. | [Sijawahi|Nimewahi|Hujawahi] kulipa elfu mbili. || sijawahi + ku-verb = I have never (done).
+t: Have you ever been to the Maasai Market? | [Umewahi|Sijawahi|Nimewahi] kuenda Maasai Market? || umewahi + ku-verb = have you ever…?
+t: This basket is bigger than that one. | Kikapu hii ni kubwa [kuliko|zaidi|sana] ile. || A kuliko B = (more) than B.
+t: It's nicer. | Ni nzuri [zaidi|kuliko|kabisa]. || zaidi = more: nzuri zaidi = nicer.
+t: the best price of all | bei nzuri kuliko [zote|wote|yote] || zote = all (n/n plural). Wote is for people.
+t: It's still expensive. | [Bado|Tena|Sasa] ni ghali. || bado = still (and "not yet" with -ja-).
+t: the final price | bei ya [mwisho|kwanza|pili]
+t: two baskets | vikapu [viwili|mbili|wawili] || ki/vi nouns take vi- numbers.
+t: this red one | hii [nyekundu|mwekundu|wekundu] || n/n agreement: nyekundu. (Mwekundu is m/wa.)
+t: It's very good. (a basket) | Ni [nzuri|mzuri|wazuri] sana. || Kenyans use the n/n form for things: nzuri.
+t: She is very good. (a person) | Yeye ni [mzuri|nzuri|wazuri] sana. || People take m/wa: mzuri (one), wazuri (several).
+
+@vocab
+Nimeona… | I've seen… | ni- + -me- (perfect) + -ona
+Umepunguza! | You've lowered (the price)! | from kupunguza = to reduce
+Bei ya mwisho | The final price | Lit. "the last price"
+ghali | expensive | rahisi = cheap / easy
+kuliko | than | Hii ni kubwa kuliko ile = this is bigger than that one
+zaidi | more | nzuri zaidi = nicer
+Sijawahi… | I've never… | sijawahi kulipa = I've never paid
+Umewahi…? | Have you ever…? | umewahi kuona simba? = have you ever seen a lion?
+Bado ni ghali | It's still expensive | bado = still
+Nimeamua | I've decided | Sijaamua = I haven't decided yet
+Tumepatana! | Deal! | Lit. "we've agreed"
+kikapu / vikapu | basket / baskets | Kenyans: kikapu hii. | kikapu hiki | Sanifu: ki/vi class
+nyekundu | red (n/n) | rangi nyekundu = red colour
+
+@lesson restaurant-reservation
+title: The Lost Reservation
+level: 5
+theme: food
+category: food-drink
+culture: Booking a table (kuweka meza / reservation) is common for dinners out in Nairobi. When something goes wrong, Kenyan service staff will smooth it over with "Pole kwa usumbufu" (sorry for the trouble) and a bit of patience on both sides. The -me- and -ja- tenses carry this whole scene: "nimefika" (I've arrived), "sijaona jina lako" (I haven't seen your name yet), "imeisha" (it's finished — sold out).
+start: You arrive at a restaurant in Westlands for dinner. You booked a table yesterday — or did you?
+grammar: perfect-me, perfect-negative-ja, comparatives
+gl: Niliweka meza = "I reserved a table" — lit. "I put a table". #past-li
+gl: kwa jina = "under the name"
+gl: orodha = list
+gl: Ngoja kidogo = "Wait a moment"
+gl: niangalie = "let me look" — ni- + -angali- + -e (subjunctive). #subjunctive
+gl: usumbufu = inconvenience / trouble
+gl: Pole kwa usumbufu = "Sorry for the trouble"
+gl: tofauti = different
+gl: kosa = mistake
+gl: imeandikwa = "it has been written" — i- + -me- + -andikwa (passive). #perfect-me
+gl: menyu = menu
+gl: kuku wa kukaanga = fried chicken
+gl: samaki wa kuchoma = grilled fish
+gl: inachukua = "it takes" (time)
+gl: Nipe samaki = "Give me the fish"
+gl: juisi ya maembe = mango juice
+gl: ya nanasi = pineapple (juice)
+gl: badala yake = "instead (of it)"
+
+< Mgeni: Habari! Nimefika. Niliweka meza jana kwa jina Omondi. | Hello! I've arrived. I reserved a table yesterday under the name Omondi.
+  x: Habari! Sijafika. Niliweka meza jana kwa jina Omondi. ; Habari! Nimefika. Nitaweka meza jana kwa jina Omondi.
+> Mhudumu: Karibu! Ngoja kidogo, niangalie kwenye orodha. | Welcome! Wait a moment, let me check the list.
+> Mhudumu: Samahani, sijaona jina lako kwenye orodha. | Sorry, I haven't seen your name on the list.
+< Mgeni: Kweli? Nimepata ujumbe kwa simu jana. Hii hapa. | Really? I got a message on my phone yesterday. Here it is.
+  x: Kweli? Sijapata ujumbe kwa simu jana. Hii hapa. ; Kweli? Umepata ujumbe kwa simu jana. Hii hapa.
+> Mhudumu: Aah, nimeona! Meza imeandikwa kwa jina tofauti. Pole kwa usumbufu. | Ah, I see! The table was written under a different name. Sorry for the trouble.
+< Mgeni: Hakuna shida. Meza iko tayari? | No problem. Is the table ready?
+  x: Hakuna shida. Meza ziko tayari? ; Hakuna shida. Meza yuko tayari?
+> Mhudumu: Ndiyo. Karibu, kaa hapa. Hii ni menyu. | Yes. Welcome, sit here. Here's the menu.
+< Mgeni: Asante. Samaki ni tamu kuliko kuku hapa? | Thanks. Is the fish tastier than the chicken here?
+  x: Asante. Samaki ni tamu zaidi kuku hapa? ; Asante. Samaki ni tamu sana kuku hapa?
+> Mhudumu: Wateja wengi wanasema samaki ni bora zaidi. Lakini kuku inachukua muda mfupi. | Most customers say the fish is the best. But the chicken takes less time.
+< Mgeni: Sijala tangu asubuhi. Lakini nitangoja — nipe samaki wa kuchoma. | I haven't eaten since morning. But I'll wait — give me the grilled fish.
+  x: Nimekula tangu asubuhi. Lakini nitangoja — nipe samaki wa kuchoma. ; Sijala tangu asubuhi. Lakini sitangoja — nipe samaki wa kuchoma.
+> Mhudumu: Sawa. Na kinywaji? | Okay. And a drink?
+< Mgeni: Juisi ya maembe, tafadhali. | Mango juice, please.
+  x: Juisi ya maembe, asante sana. ; Juisi ya maji, tafadhali.
+> Mhudumu: Samahani, juisi ya maembe imeisha. Unataka ya nanasi badala yake? | Sorry, the mango juice is finished. Do you want pineapple instead?
+< Mgeni: Imeisha? Haya, sawa. Nipe ya nanasi. | It's finished? Alright, fine. Give me pineapple.
+  x: Haijaisha? Haya, sawa. Nipe ya nanasi. ; Imeisha? Haya, sawa. Nimpe ya nanasi.
+> Mhudumu: Sawa. Chakula chako kitakuja hivi karibuni. | Okay. Your food will come soon.
+
+@practice
+t: I've arrived. | [Nimefika|Nilifika|Nitafika]. || -me- = has / have (just) done.
+t: I haven't seen your name. | [Sijaona|Nimeona|Sikuona] jina lako. || -ja- = not yet: si- + -ja- + -ona.
+t: I got a message. | [Nimepata|Sijapata|Umepata] ujumbe.
+t: I haven't eaten since morning. | [Sijala|Nimekula|Sikula] tangu asubuhi. || Negative perfect of kula: sijala (no ku-). Kenyans also say sijakula.
+t: Have you eaten? | [Umekula|Nimekula|Umekuja]? || With -me-, kula keeps its ku-: umekula.
+t: The mango juice is finished. | Juisi ya maembe [imeisha|haijaisha|ilikuwa]. || imeisha = it has run out / it's finished.
+t: It's not finished yet. | Bado [haijaisha|imeisha|hakuna]. || hai- (not it, n/n) + -ja- + -isha.
+t: They haven't arrived yet. | Bado [hawajafika|wamefika|hajafika]. || hawa- (not they) + -ja- + -fika.
+t: Is the table ready? | Meza [iko|ziko|yuko] tayari?
+t: Is the fish tastier than the chicken? | Samaki ni tamu [kuliko|zaidi|sana] kuku?
+t: The fish is the best. | Samaki ni bora [zaidi|kuliko|sana]. || bora zaidi = the very best.
+c: Give me pineapple juice instead. | Nipe juisi ya nanasi [badala yake|baada ya|kabla ya]. || badala yake = instead (of it).
+t: The table was written under a different name. | Meza [imeandikwa|imeandika|inaandika] kwa jina tofauti. || -andikwa = be written (passive -w-).
+t: Sorry for the trouble. | Pole kwa [usumbufu|ujumbe|uzoefu].
+t: I'll wait. | [Nitangoja|Nitaondoka|Nimengoja].
+t: Wait a moment. | [Ngoja|Nenda|Kaa] kidogo.
+
+@vocab
+Nimefika | I've arrived | ni- + -me- + -fika
+Niliweka meza | I reserved a table | Lit. "I put a table"
+Sijaona… | I haven't seen… (yet) | si- + -ja- + -ona
+Nimepata ujumbe | I got a message | ujumbe = message
+Pole kwa usumbufu | Sorry for the trouble |
+imeisha | it's finished / sold out | i- + -me- + -isha
+haijaisha | it hasn't run out yet | hai- + -ja- + -isha
+Sijala | I haven't eaten (yet) | Kenyans also say sijakula
+tamu kuliko | tastier than | kuliko = than
+bora zaidi | the very best | bora = of good quality
+badala yake | instead (of it) |
+menyu | menu |
+hivi karibuni | soon |
+
+@lesson new-colleague
+title: The New Colleague
+level: 5
+theme: people
+category: people
+culture: Describing people is where Swahili agreement really shows: adjectives take the class of the person, so "tall" is mrefu for one person and warefu for several — while for things Kenyans reach for the n/n form (ndefu, nzuri). It's also where Kenyan small talk lives: who's new, who has arrived, who has ever worked where. "-wahi" turns any verb into "ever / never": amewahi kufanya kazi Kampala? (has she ever worked in Kampala?).
+start: Your team is getting a new member today. Your colleague Juma stops by your desk.
+grammar: adjective-agreement, perfect-me, perfect-negative-ja, wahi-ever-never, comparatives
+gl: mfanyakazi mpya = "a new worker / employee" — m/wa agreement #adjective-agreement
+gl: Faith = Faith (name)
+gl: anaonekana = "she seems / she looks" — a- + -na- + -onekana. #present-na
+gl: mkarimu = "generous / kind" — m/wa singular #adjective-agreement
+gl: mpole = "calm / gentle" — m/wa singular #adjective-agreement
+gl: mrefu = "tall" — m/wa singular #adjective-agreement
+gl: mfupi = "short" — m/wa singular #adjective-agreement
+gl: wafanyakazi = workers / staff
+gl: uzoefu = experience
+gl: idara = department
+gl: ofisi hii = this office
+gl: zaidi ya = "more than"
+gl: miaka mitano = "five years" — m/mi agreement (miaka is m/mi in Sanifu) #sanifu-noun-classes
+
+> Juma: John, umemwona mfanyakazi mpya? | John, have you seen the new colleague?
+< John: Bado sijamwona. Amefika? | I haven't seen her yet. Has she arrived?
+  x: Bado nimemwona. Amefika? ; Bado sijamwona. Nimefika?
+> Juma: Ndiyo, amefika sasa hivi. Anaitwa Faith. | Yes, she's just arrived. She's called Faith.
+< John: Faith ni mtu wa aina gani? | What kind of person is Faith?
+  x: Faith ni kitu wa aina gani? ; Faith ni mtu wa aina wapi?
+> Juma: Anaonekana mkarimu na mpole. Ni mrefu kuliko mimi! | She seems kind and calm. She's taller than me!
+< John: Wee! Wewe ni mrefu sana, Juma! | Wow! You're very tall, Juma!
+  x: Wee! Wewe ni ndefu sana, Juma! ; Wee! Wewe ni warefu sana, Juma!
+> Juma: Haha, ndiyo. Na amewahi kufanya kazi Kampala. | Haha, yes. And she has worked in Kampala before.
+< John: Kweli? Mimi pia nimewahi kuishi Kampala! | Really? I've lived in Kampala too!
+  x: Kweli? Mimi pia sijawahi kuishi Kampala! ; Kweli? Mimi pia nimewahi kuishi Kampala jana!
+> Juma: Basi mtaelewana! Ana uzoefu wa zaidi ya miaka mitano. | Then you'll get along! She has more than five years of experience.
+< John: Safi. Wafanyakazi wengi hapa ni wapya, sivyo? | Great. A lot of the staff here are new, aren't they?
+  x: Safi. Wafanyakazi wengi hapa ni mpya, sivyo? ; Safi. Wafanyakazi mengi hapa ni wapya, sivyo?
+> Juma: Ndiyo. Idara yetu imekua sana mwaka huu. | Yes. Our department has grown a lot this year.
+  s: Ndiyo. Idara yetu imekua sana mwaka huu.
+< John: Nitaenda kumsalimia sasa. Yuko wapi? | I'll go and greet her now. Where is she?
+  x: Nitaenda kukusalimia sasa. Yuko wapi? ; Nitaenda kumsalimia sasa. Iko wapi?
+> Juma: Yuko pale, karibu na dirisha. Yule mwenye nguo nyeupe. | She's over there, by the window. The one in white clothes.
+
+@practice
+t: Have you seen the new colleague? | [Umemwona|Nimemwona|Amemwona] mfanyakazi mpya? || u- + -me- + -mw- (him/her) + -ona.
+t: I haven't seen her yet. | Bado [sijamwona|nimemwona|sikumwona]. || bado + -ja- = not yet.
+t: She has just arrived. | [Amefika|Hajafika|Alifika] sasa hivi.
+t: She hasn't arrived yet. | Bado [hajafika|amefika|hakufika]. || ha- (not she) + -ja- + -fika.
+t: She is tall. | Yeye ni [mrefu|warefu|ndefu]. || One person: mrefu. People: warefu. Things (n/n): ndefu.
+t: They are tall. | Wao ni [warefu|mrefu|ndefu].
+t: The road is long. | Barabara ni [ndefu|mrefu|warefu]. || barabara is n/n: ndefu.
+t: She is taller than me. | Ni mrefu [kuliko|zaidi|kama] mimi.
+t: She seems kind. | Anaonekana [mkarimu|wakarimu|karimu]. || mkarimu (m/wa singular).
+t: new workers | wafanyakazi [wapya|mpya|wazee] || m/wa plural: wapya.
+t: a new house | nyumba [mpya|wapya|mipya] || n/n: mpya.
+t: She has worked in Kampala before. | [Amewahi|Hajawahi|Atawahi] kufanya kazi Kampala. || amewahi + ku-verb = has (ever) done.
+t: I've never lived in Kampala. | [Sijawahi|Nimewahi|Hajawahi] kuishi Kampala.
+t: Our department has grown a lot. | Idara yetu [imekua|imekuwa|inakua] sana. || kukua = to grow; kuwa = to be. One letter apart!
+t: You'll get along. | [Mtaelewana|Tutaelewana|Wataelewana]. || -ana = each other: kuelewana = to understand each other.
+t: many workers | wafanyakazi [wengi|nyingi|mengi] || People take wengi.
+t: the one in white clothes | yule mwenye nguo [nyeupe|mweupe|weupe] || nguo is n/n: nyeupe.
+
+@vocab
+Umemwona…? | Have you seen (him/her)? | u- + -me- + -mw- + -ona
+Bado sijamwona | I haven't seen her yet | bado + -ja-
+Amefika | She has arrived | Hajafika = she hasn't arrived yet
+mfanyakazi mpya | new colleague | Plural: wafanyakazi wapya
+mrefu / warefu | tall (one person / several) | Things: ndefu
+mfupi / wafupi | short (one person / several) | Things: fupi
+mkarimu | generous / kind | Wakenya ni wakarimu = Kenyans are hospitable
+mpole | calm / gentle |
+kuliko mimi | than me | Ni mrefu kuliko mimi = she's taller than me
+Amewahi… | She has (ever)… | amewahi kufanya kazi Kampala
+Sijawahi… | I've never… | sijawahi kuishi Kampala
+uzoefu | experience |
+mwenye… | the one with / who has… | yule mwenye nguo nyeupe = the one in white

@@ -1,0 +1,1726 @@
+{
+  "id": "new-colleague",
+  "uuid": "9410d496-68e3-51af-9966-30991d26f8ad",
+  "title": "The New Colleague",
+  "category": "people",
+  "difficulty": "medium",
+  "level": 5,
+  "order": 503,
+  "theme": "people",
+  "culturalNote": "Describing people is where Swahili agreement really shows: adjectives take the class of the person, so \"tall\" is mrefu for one person and warefu for several — while for things Kenyans reach for the n/n form (ndefu, nzuri). It's also where Kenyan small talk lives: who's new, who has arrived, who has ever worked where. \"-wahi\" turns any verb into \"ever / never\": amewahi kufanya kazi Kampala? (has she ever worked in Kampala?).",
+  "startingPoint": "Your team is getting a new member today. Your colleague Juma stops by your desk.",
+  "grammarFocus": [
+    "adjective-agreement",
+    "perfect-me",
+    "perfect-negative-ja",
+    "wahi-ever-never",
+    "comparatives"
+  ],
+  "grammar": [
+    "adjective-agreement",
+    "perfect-me",
+    "perfect-negative-ja",
+    "wahi-ever-never",
+    "comparatives",
+    "object-infixes",
+    "ni-copula",
+    "present-na",
+    "verb-extensions",
+    "noun-classes-mwa-nn",
+    "possessives",
+    "subject-prefixes",
+    "discourse-particles",
+    "infinitive-ku",
+    "future-ta",
+    "na-have",
+    "sanifu-noun-classes",
+    "demonstratives",
+    "ko-location",
+    "question-words",
+    "locative-ni",
+    "relatives"
+  ],
+  "turns": [
+    {
+      "id": "911bf29c-c013-51e1-91ae-440a09c9539c",
+      "speaker": "Juma",
+      "role": "auto",
+      "swahili": "John, umemwona mfanyakazi mpya?",
+      "english": "John, have you seen the new colleague?",
+      "words": [
+        {
+          "text": "John",
+          "gloss": "John (name)"
+        },
+        {
+          "text": "umemwona",
+          "gloss": "\"You have seen him/her\" — u- (subject: you) + me- (perfect (done / now-state)) + mw- (object: him/her) + -ona (see). From kuona.",
+          "grammar": [
+            "perfect-me",
+            "object-infixes"
+          ],
+          "conjugation": {
+            "verb": "kuona (to see)",
+            "tense": "Perfect (-me-) + object -mw-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimemwona"
+              },
+              {
+                "pronoun": "you",
+                "form": "umemwona"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amemwona"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumemwona"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmemwona"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamemwona"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mfanyakazi mpya",
+          "gloss": "\"a new worker / employee\" — m/wa agreement",
+          "grammar": [
+            "adjective-agreement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3773d872-a4ce-531c-822c-044324f871ee",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Bado sijamwona. Amefika?",
+      "english": "I haven't seen her yet. Has she arrived?",
+      "words": [
+        {
+          "text": "Bado",
+          "gloss": "still / not yet",
+          "grammar": [
+            "perfect-negative-ja"
+          ]
+        },
+        {
+          "text": "sijamwona",
+          "gloss": "\"I haven't seen him/her yet\" — si- (negative subject: not I) + ja- (not yet) + mw- (object: him/her) + -ona (see). From kuona.",
+          "grammar": [
+            "perfect-negative-ja",
+            "object-infixes"
+          ],
+          "conjugation": {
+            "verb": "kuona (to see)",
+            "tense": "Not yet (-ja-) + object -mw-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "sijamwona"
+              },
+              {
+                "pronoun": "you",
+                "form": "hujamwona"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "hajamwona"
+              },
+              {
+                "pronoun": "we",
+                "form": "hatujamwona"
+              },
+              {
+                "pronoun": "you all",
+                "form": "hamjamwona"
+              },
+              {
+                "pronoun": "they",
+                "form": "hawajamwona"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Amefika",
+          "gloss": "\"He/she has arrived\" — a- (subject: he/she) + me- (perfect (done / now-state)) + -fika (arrive). From kufika.",
+          "grammar": [
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kufika (to arrive)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimefika"
+              },
+              {
+                "pronoun": "you",
+                "form": "umefika"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amefika"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumefika"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmefika"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamefika"
+              }
+            ]
+          }
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Bado sijamwona. Amefika?",
+          "correct": true
+        },
+        {
+          "swahili": "Bado nimemwona. Amefika?",
+          "correct": false
+        },
+        {
+          "swahili": "Bado sijamwona. Nimefika?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "da47da79-fd09-5aee-9340-c0810ef86985",
+      "speaker": "Juma",
+      "role": "auto",
+      "swahili": "Ndiyo, amefika sasa hivi. Anaitwa Faith.",
+      "english": "Yes, she's just arrived. She's called Faith.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "amefika",
+          "gloss": "\"He/she has arrived\" — a- (subject: he/she) + me- (perfect (done / now-state)) + -fika (arrive). From kufika.",
+          "grammar": [
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kufika (to arrive)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimefika"
+              },
+              {
+                "pronoun": "you",
+                "form": "umefika"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amefika"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumefika"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmefika"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamefika"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sasa hivi",
+          "gloss": "right now / just now"
+        },
+        {
+          "text": "Anaitwa",
+          "gloss": "\"He/she is called\" — a- (subject: he/she) + na- (present) + -itwa (be called). From kuitwa. Extension: passive (-wa: \"be ...-ed\").",
+          "grammar": [
+            "present-na",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kuitwa (to be called)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaitwa"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaitwa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaitwa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaitwa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaitwa"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaitwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Faith",
+          "gloss": "Faith (name)"
+        }
+      ]
+    },
+    {
+      "id": "2be5e40b-333c-55b4-bb29-e20a03e835e7",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Faith ni mtu wa aina gani?",
+      "english": "What kind of person is Faith?",
+      "words": [
+        {
+          "text": "Faith",
+          "gloss": "Faith (name)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mtu",
+          "gloss": "person — m/wa noun (people & animals; plural watu)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "wa",
+          "gloss": "\"of\" — m/wa agreement (mtoto wa Kamau, watu wa Nairobi)",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "aina gani",
+          "gloss": "what kind?"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Faith ni mtu wa aina gani?",
+          "correct": true
+        },
+        {
+          "swahili": "Faith ni kitu wa aina gani?",
+          "correct": false
+        },
+        {
+          "swahili": "Faith ni mtu wa aina wapi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "3e380f8f-102f-5686-9a20-1479d45929b2",
+      "speaker": "Juma",
+      "role": "auto",
+      "swahili": "Anaonekana mkarimu na mpole. Ni mrefu kuliko mimi!",
+      "english": "She seems kind and calm. She's taller than me!",
+      "words": [
+        {
+          "text": "Anaonekana",
+          "gloss": "\"she seems / she looks\" — a- + -na- + -onekana.",
+          "grammar": [
+            "present-na"
+          ]
+        },
+        {
+          "text": "mkarimu",
+          "gloss": "\"generous / kind\" — m/wa singular",
+          "grammar": [
+            "adjective-agreement"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "mpole",
+          "gloss": "\"calm / gentle\" — m/wa singular",
+          "grammar": [
+            "adjective-agreement"
+          ]
+        },
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mrefu",
+          "gloss": "\"tall\" — m/wa singular",
+          "grammar": [
+            "adjective-agreement"
+          ]
+        },
+        {
+          "text": "kuliko",
+          "gloss": "than (comparisons)",
+          "grammar": [
+            "comparatives"
+          ]
+        },
+        {
+          "text": "mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c039f6c2-7da4-5375-929d-714d95563421",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Wee! Wewe ni mrefu sana, Juma!",
+      "english": "Wow! You're very tall, Juma!",
+      "words": [
+        {
+          "text": "Wee",
+          "gloss": "hey you! (surprise / emphasis)",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mrefu",
+          "gloss": "\"tall\" — m/wa singular",
+          "grammar": [
+            "adjective-agreement"
+          ]
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Juma",
+          "gloss": "Juma (name)"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Wee! Wewe ni mrefu sana, Juma!",
+          "correct": true
+        },
+        {
+          "swahili": "Wee! Wewe ni ndefu sana, Juma!",
+          "correct": false
+        },
+        {
+          "swahili": "Wee! Wewe ni warefu sana, Juma!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "f16eae91-8a8c-5493-be0a-f2bc8383be03",
+      "speaker": "Juma",
+      "role": "auto",
+      "swahili": "Haha, ndiyo. Na amewahi kufanya kazi Kampala.",
+      "english": "Haha, yes. And she has worked in Kampala before.",
+      "words": [
+        {
+          "text": "Haha",
+          "gloss": "haha"
+        },
+        {
+          "text": "ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "amewahi",
+          "gloss": "\"He/she has (before)…\"",
+          "grammar": [
+            "wahi-ever-never"
+          ]
+        },
+        {
+          "text": "kufanya",
+          "gloss": "\"To do\" — ku- (infinitive \"to\") + -fanya (do). From kufanya.",
+          "grammar": [
+            "infinitive-ku"
+          ]
+        },
+        {
+          "text": "kazi",
+          "gloss": "work / job — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Kampala",
+          "gloss": "Kampala — capital of Uganda"
+        }
+      ]
+    },
+    {
+      "id": "62c580b2-f981-5314-bb7d-ed41754073ee",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Kweli? Mimi pia nimewahi kuishi Kampala!",
+      "english": "Really? I've lived in Kampala too!",
+      "words": [
+        {
+          "text": "Kweli",
+          "gloss": "true / really",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "pia",
+          "gloss": "also / too"
+        },
+        {
+          "text": "nimewahi",
+          "gloss": "\"I have (once / before)…\" — or, alone: \"I made it on time\"",
+          "grammar": [
+            "wahi-ever-never"
+          ]
+        },
+        {
+          "text": "kuishi",
+          "gloss": "\"To live\" — ku- (infinitive \"to\") + -ishi (live). From kuishi.",
+          "grammar": [
+            "infinitive-ku"
+          ]
+        },
+        {
+          "text": "Kampala",
+          "gloss": "Kampala — capital of Uganda"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Kweli? Mimi pia nimewahi kuishi Kampala!",
+          "correct": true
+        },
+        {
+          "swahili": "Kweli? Mimi pia sijawahi kuishi Kampala!",
+          "correct": false
+        },
+        {
+          "swahili": "Kweli? Mimi pia nimewahi kuishi Kampala jana!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "4d8d66ee-6d79-532f-9aa4-d95145b63ea2",
+      "speaker": "Juma",
+      "role": "auto",
+      "swahili": "Basi mtaelewana! Ana uzoefu wa zaidi ya miaka mitano.",
+      "english": "Then you'll get along! She has more than five years of experience.",
+      "words": [
+        {
+          "text": "Basi",
+          "gloss": "so / well then / okay, that's it",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "mtaelewana",
+          "gloss": "\"You all will understand each other\" — m- (subject: you all) + ta- (future) + -elewana (understand each other). From kuelewana. Extension: reciprocal (-ana: \"each other\").",
+          "grammar": [
+            "future-ta",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kuelewana (to understand each other)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitaelewana"
+              },
+              {
+                "pronoun": "you",
+                "form": "utaelewana"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ataelewana"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutaelewana"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtaelewana"
+              },
+              {
+                "pronoun": "they",
+                "form": "wataelewana"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Ana",
+          "gloss": "\"He/she has\" — a- + -na (with). Swahili \"have\" is literally \"be with\".",
+          "grammar": [
+            "na-have"
+          ],
+          "conjugation": {
+            "verb": "-na (have)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nina"
+              },
+              {
+                "pronoun": "you",
+                "form": "una"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ana"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuna"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mna"
+              },
+              {
+                "pronoun": "they",
+                "form": "wana"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "ina"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zina"
+              }
+            ]
+          }
+        },
+        {
+          "text": "uzoefu",
+          "gloss": "experience"
+        },
+        {
+          "text": "wa",
+          "gloss": "\"of\" — m/wa agreement (mtoto wa Kamau, watu wa Nairobi)",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "zaidi ya",
+          "gloss": "\"more than\""
+        },
+        {
+          "text": "miaka mitano",
+          "gloss": "\"five years\" — m/mi agreement (miaka is m/mi in Sanifu)",
+          "grammar": [
+            "sanifu-noun-classes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "156d488a-aab6-59dc-a9a9-0393ddd2c1ba",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Safi. Wafanyakazi wengi hapa ni wapya, sivyo?",
+      "english": "Great. A lot of the staff here are new, aren't they?",
+      "words": [
+        {
+          "text": "Safi",
+          "gloss": "clean / great / sorted"
+        },
+        {
+          "text": "Wafanyakazi",
+          "gloss": "workers / staff"
+        },
+        {
+          "text": "wengi",
+          "gloss": "\"many / a lot\" — m/wa plural agreement (people / animals).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-ingi (many / a lot)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mwingi"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wengi"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "nyingi"
+              }
+            ]
+          }
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "wapya",
+          "gloss": "\"new\" — m/wa plural agreement (people / animals).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-pya (new)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mpya"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wapya"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "mpya"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sivyo",
+          "gloss": "isn't it? / right? (question tag)",
+          "grammar": [
+            "discourse-particles"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Safi. Wafanyakazi wengi hapa ni wapya, sivyo?",
+          "correct": true
+        },
+        {
+          "swahili": "Safi. Wafanyakazi wengi hapa ni mpya, sivyo?",
+          "correct": false
+        },
+        {
+          "swahili": "Safi. Wafanyakazi mengi hapa ni wapya, sivyo?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "667e52c2-474f-5724-afee-5f9188706093",
+      "speaker": "Juma",
+      "role": "auto",
+      "swahili": "Ndiyo. Idara yetu imekua sana mwaka huu.",
+      "english": "Yes. Our department has grown a lot this year.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Idara",
+          "gloss": "department"
+        },
+        {
+          "text": "yetu",
+          "gloss": "\"our\" — n/n singular agreement (nyumba yetu). In Kenyan speech also used for family words and most things (jina yetu, gari yetu).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (n/n singular)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "yangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "yako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "yake"
+              },
+              {
+                "pronoun": "our",
+                "form": "yetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "yenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "yao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "imekua",
+          "gloss": "\"It has grown\" — i- (subject: it (n/n)) + me- (perfect (done / now-state)) + -kua (grow). From kukua.",
+          "grammar": [
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kukua (to grow)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimekua"
+              },
+              {
+                "pronoun": "you",
+                "form": "umekua"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amekua"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumekua"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmekua"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamekua"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "imekua"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zimekua"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "mwaka",
+          "gloss": "year (plural miaka) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: m/mi class — mwaka huu, miaka miwili"
+        },
+        {
+          "text": "huu",
+          "gloss": "this — m/mi or u (Sanifu: mti huu)",
+          "grammar": [
+            "demonstratives"
+          ]
+        }
+      ],
+      "sanifu": "Ndiyo. Idara yetu imekua sana mwaka huu."
+    },
+    {
+      "id": "f5f7725c-932c-542b-8283-8dc2aa6666ea",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Nitaenda kumsalimia sasa. Yuko wapi?",
+      "english": "I'll go and greet her now. Where is she?",
+      "words": [
+        {
+          "text": "Nitaenda",
+          "gloss": "\"I will go\" — ni- (subject: I) + ta- (future) + -enda (go). From kuenda.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kuenda (to go)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "utaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ataenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wataenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kumsalimia",
+          "gloss": "\"To greet him/her\" — ku- (infinitive \"to\") + m- (object: him/her) + -salimia (greet). From kusalimia. Extension: prepositional (-ia/-ea: \"for / to / at\").",
+          "grammar": [
+            "infinitive-ku",
+            "object-infixes",
+            "verb-extensions"
+          ]
+        },
+        {
+          "text": "sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "Yuko",
+          "gloss": "\"He/she is (at / doing)\" — yu- + -ko (be at a place, or how you're doing). \"Yuko poa\" = he/she is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "wapi",
+          "gloss": "where?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Nitaenda kumsalimia sasa. Yuko wapi?",
+          "correct": true
+        },
+        {
+          "swahili": "Nitaenda kukusalimia sasa. Yuko wapi?",
+          "correct": false
+        },
+        {
+          "swahili": "Nitaenda kumsalimia sasa. Iko wapi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "fcf44a54-a8bb-5c48-a7e7-4f5d11690e52",
+      "speaker": "Juma",
+      "role": "auto",
+      "swahili": "Yuko pale, karibu na dirisha. Yule mwenye nguo nyeupe.",
+      "english": "She's over there, by the window. The one in white clothes.",
+      "words": [
+        {
+          "text": "Yuko",
+          "gloss": "\"He/she is (at / doing)\" — yu- + -ko (be at a place, or how you're doing). \"Yuko poa\" = he/she is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "pale",
+          "gloss": "there (over there)"
+        },
+        {
+          "text": "karibu na",
+          "gloss": "close to / near",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "dirisha",
+          "gloss": "window (plural madirisha) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — dirisha hili, madirisha"
+        },
+        {
+          "text": "Yule",
+          "gloss": "that (person) over there",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "mwenye",
+          "gloss": "\"the one with / who has\" — m/wa singular (mtu mwenye kofia = the person with a hat). Kenyans also use it as \"who\".",
+          "grammar": [
+            "relatives"
+          ]
+        },
+        {
+          "text": "nguo",
+          "gloss": "clothes / a piece of clothing — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "nyeupe",
+          "gloss": "\"white\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-eupe (white)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mweupe"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "weupe"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "nyeupe"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "847d9ade-7773-5a68-9b02-725a149bbf9e",
+      "swahili": "Umemwona…?",
+      "english": "Have you seen (him/her)?",
+      "exampleContext": "u- + -me- + -mw- + -ona",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "a80554d2-3515-56fb-a958-2c5a9447b73b",
+      "swahili": "Bado sijamwona",
+      "english": "I haven't seen her yet",
+      "exampleContext": "bado + -ja-",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "86a866be-6ebb-525b-8914-ecfb4cfe4261",
+      "swahili": "Amefika",
+      "english": "She has arrived",
+      "exampleContext": "Hajafika = she hasn't arrived yet"
+    },
+    {
+      "id": "6d4a39ba-4449-5a02-8701-48096e900673",
+      "swahili": "mfanyakazi mpya",
+      "english": "new colleague",
+      "exampleContext": "Plural: wafanyakazi wapya",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "a51d4e19-ae6b-5f7a-965b-4c833253843d",
+      "swahili": "mrefu / warefu",
+      "english": "tall (one person / several)",
+      "exampleContext": "Things: ndefu",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "8295c166-7cb5-519a-bd06-60e71af4b616",
+      "swahili": "mfupi / wafupi",
+      "english": "short (one person / several)",
+      "exampleContext": "Things: fupi",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "2e6f9910-835c-5456-a53f-99c3e4664046",
+      "swahili": "mkarimu",
+      "english": "generous / kind",
+      "exampleContext": "Wakenya ni wakarimu = Kenyans are hospitable"
+    },
+    {
+      "id": "b702b6ea-ec11-5bf1-b337-76bb7c65b2f2",
+      "swahili": "mpole",
+      "english": "calm / gentle |",
+      "exampleContext": ""
+    },
+    {
+      "id": "67513189-e054-5697-aa17-580b6076b1b3",
+      "swahili": "kuliko mimi",
+      "english": "than me",
+      "exampleContext": "Ni mrefu kuliko mimi = she's taller than me",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "1e31e65d-3613-5538-9e8e-433ed85baa3e",
+      "swahili": "Amewahi…",
+      "english": "She has (ever)…",
+      "exampleContext": "amewahi kufanya kazi Kampala",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "1a5f65bf-9528-57db-8fb6-e537a039d817",
+      "swahili": "Sijawahi…",
+      "english": "I've never…",
+      "exampleContext": "sijawahi kuishi Kampala",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "3657d79a-e82c-5c64-920a-54651a5ccd0b",
+      "swahili": "uzoefu",
+      "english": "experience |",
+      "exampleContext": ""
+    },
+    {
+      "id": "259754cd-58fd-5e9c-b963-013fc5587f3e",
+      "swahili": "mwenye…",
+      "english": "the one with / who has…",
+      "exampleContext": "yule mwenye nguo nyeupe = the one in white",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "2bff4d4d-c540-5f8b-a5bb-b308aa1eb86c",
+      "mode": "translate",
+      "english": "Have you seen the new colleague?",
+      "before": "",
+      "after": " mfanyakazi mpya?",
+      "options": [
+        {
+          "text": "Umemwona",
+          "correct": true
+        },
+        {
+          "text": "Nimemwona",
+          "correct": false,
+          "feedback": "Nimemwona = I have seen him/her"
+        },
+        {
+          "text": "Amemwona",
+          "correct": false,
+          "feedback": "Amemwona = He/she has seen him/her"
+        }
+      ],
+      "explanation": "u- + -me- + -mw- (him/her) + -ona.",
+      "grammar": [
+        "perfect-me",
+        "object-infixes"
+      ]
+    },
+    {
+      "id": "33060eb0-1d26-570b-b67a-5678b052cda0",
+      "mode": "translate",
+      "english": "I haven't seen her yet.",
+      "before": "Bado ",
+      "after": ".",
+      "options": [
+        {
+          "text": "sijamwona",
+          "correct": true
+        },
+        {
+          "text": "nimemwona",
+          "correct": false,
+          "feedback": "nimemwona = I have seen him/her"
+        },
+        {
+          "text": "sikumwona",
+          "correct": false,
+          "feedback": "sikumwona = I didn't see him/her"
+        }
+      ],
+      "explanation": "bado + -ja- = not yet.",
+      "grammar": [
+        "perfect-negative-ja",
+        "object-infixes"
+      ]
+    },
+    {
+      "id": "c49d2bb8-c00d-587b-97ad-cd8ddbfe30e8",
+      "mode": "translate",
+      "english": "She has just arrived.",
+      "before": "",
+      "after": " sasa hivi.",
+      "options": [
+        {
+          "text": "Amefika",
+          "correct": true
+        },
+        {
+          "text": "Hajafika",
+          "correct": false,
+          "feedback": "Hajafika = He/she hasn't arrived yet"
+        },
+        {
+          "text": "Alifika",
+          "correct": false,
+          "feedback": "Alifika = He/she arrived"
+        }
+      ],
+      "explanation": "Amefika = \"He/she has arrived\" — a- (subject: he/she) + me- (perfect (done / now-state)) + -fika (arrive). From kufika.",
+      "grammar": [
+        "perfect-me"
+      ]
+    },
+    {
+      "id": "4b222a4b-2fdc-59c2-9814-8008c969f561",
+      "mode": "translate",
+      "english": "She hasn't arrived yet.",
+      "before": "Bado ",
+      "after": ".",
+      "options": [
+        {
+          "text": "hajafika",
+          "correct": true
+        },
+        {
+          "text": "amefika",
+          "correct": false,
+          "feedback": "amefika = He/she has arrived"
+        },
+        {
+          "text": "hakufika",
+          "correct": false,
+          "feedback": "hakufika = He/she didn't arrive"
+        }
+      ],
+      "explanation": "ha- (not she) + -ja- + -fika.",
+      "grammar": [
+        "perfect-negative-ja"
+      ]
+    },
+    {
+      "id": "c369f803-ff1f-5e01-aec0-4147a3899c70",
+      "mode": "translate",
+      "english": "She is tall.",
+      "before": "Yeye ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "mrefu",
+          "correct": true
+        },
+        {
+          "text": "warefu",
+          "correct": false,
+          "feedback": "warefu = tall / long"
+        },
+        {
+          "text": "ndefu",
+          "correct": false,
+          "feedback": "ndefu = tall / long"
+        }
+      ],
+      "explanation": "One person: mrefu. People: warefu. Things (n/n): ndefu.",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "34b4ccb4-bfd8-5b29-92cf-1ade12db4195",
+      "mode": "translate",
+      "english": "They are tall.",
+      "before": "Wao ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "warefu",
+          "correct": true
+        },
+        {
+          "text": "mrefu",
+          "correct": false,
+          "feedback": "mrefu = tall"
+        },
+        {
+          "text": "ndefu",
+          "correct": false,
+          "feedback": "ndefu = tall / long"
+        }
+      ],
+      "explanation": "warefu = \"tall / long\" — m/wa plural agreement (people / animals).",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "10bc23bf-0bdf-5b83-82b8-7302d9596756",
+      "mode": "translate",
+      "english": "The road is long.",
+      "before": "Barabara ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "ndefu",
+          "correct": true
+        },
+        {
+          "text": "mrefu",
+          "correct": false,
+          "feedback": "mrefu = tall"
+        },
+        {
+          "text": "warefu",
+          "correct": false,
+          "feedback": "warefu = tall / long"
+        }
+      ],
+      "explanation": "barabara is n/n: ndefu.",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "4f7fc3a5-d6c2-5bca-b7f0-65baae7f21fd",
+      "mode": "translate",
+      "english": "She is taller than me.",
+      "before": "Ni mrefu ",
+      "after": " mimi.",
+      "options": [
+        {
+          "text": "kuliko",
+          "correct": true
+        },
+        {
+          "text": "zaidi",
+          "correct": false,
+          "feedback": "zaidi = more"
+        },
+        {
+          "text": "kama",
+          "correct": false,
+          "feedback": "kama = like / as / if"
+        }
+      ],
+      "explanation": "kuliko: than (comparisons)",
+      "grammar": [
+        "comparatives"
+      ]
+    },
+    {
+      "id": "50fb173f-3e2a-516c-9a20-1c790b90b74a",
+      "mode": "translate",
+      "english": "She seems kind.",
+      "before": "Anaonekana ",
+      "after": ".",
+      "options": [
+        {
+          "text": "mkarimu",
+          "correct": true
+        },
+        {
+          "text": "wakarimu",
+          "correct": false,
+          "feedback": "wakarimu = generous / hospitable"
+        },
+        {
+          "text": "karimu",
+          "correct": false,
+          "feedback": "karimu = generous / hospitable"
+        }
+      ],
+      "explanation": "mkarimu (m/wa singular).",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "ab7b3812-beb6-5efe-99dc-2f9e81801509",
+      "mode": "translate",
+      "english": "new workers",
+      "before": "wafanyakazi ",
+      "after": "",
+      "options": [
+        {
+          "text": "wapya",
+          "correct": true
+        },
+        {
+          "text": "mpya",
+          "correct": false,
+          "feedback": "mpya = new"
+        },
+        {
+          "text": "wazee",
+          "correct": false,
+          "feedback": "wazee = elders / old people"
+        }
+      ],
+      "explanation": "m/wa plural: wapya.",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "9d2407c9-8d32-5df5-aa81-cbb7965267f7",
+      "mode": "translate",
+      "english": "a new house",
+      "before": "nyumba ",
+      "after": "",
+      "options": [
+        {
+          "text": "mpya",
+          "correct": true
+        },
+        {
+          "text": "wapya",
+          "correct": false,
+          "feedback": "wapya = new"
+        },
+        {
+          "text": "mipya",
+          "correct": false
+        }
+      ],
+      "explanation": "n/n: mpya.",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "fb07a9ce-ee4a-562e-882b-ddd086c9a5af",
+      "mode": "translate",
+      "english": "She has worked in Kampala before.",
+      "before": "",
+      "after": " kufanya kazi Kampala.",
+      "options": [
+        {
+          "text": "Amewahi",
+          "correct": true
+        },
+        {
+          "text": "Hajawahi",
+          "correct": false,
+          "feedback": "Hajawahi = He/she has never…"
+        },
+        {
+          "text": "Atawahi",
+          "correct": false,
+          "feedback": "Atawahi = He/she will make it in time"
+        }
+      ],
+      "explanation": "amewahi + ku-verb = has (ever) done.",
+      "grammar": [
+        "wahi-ever-never"
+      ]
+    },
+    {
+      "id": "c38d3221-e18a-52cf-8583-b1811412f89a",
+      "mode": "translate",
+      "english": "I've never lived in Kampala.",
+      "before": "",
+      "after": " kuishi Kampala.",
+      "options": [
+        {
+          "text": "Sijawahi",
+          "correct": true
+        },
+        {
+          "text": "Nimewahi",
+          "correct": false,
+          "feedback": "Nimewahi = I have (once / before)…"
+        },
+        {
+          "text": "Hajawahi",
+          "correct": false,
+          "feedback": "Hajawahi = He/she has never…"
+        }
+      ],
+      "explanation": "Sijawahi = \"I have never…\" — si- + -ja- + -wahi: with a ku- verb, -wahi means \"ever\"",
+      "grammar": [
+        "wahi-ever-never"
+      ]
+    },
+    {
+      "id": "5e27d46c-6388-54b7-be65-ac79ce989891",
+      "mode": "translate",
+      "english": "Our department has grown a lot.",
+      "before": "Idara yetu ",
+      "after": " sana.",
+      "options": [
+        {
+          "text": "imekua",
+          "correct": true
+        },
+        {
+          "text": "imekuwa",
+          "correct": false,
+          "feedback": "imekuwa = It has been"
+        },
+        {
+          "text": "inakua",
+          "correct": false,
+          "feedback": "inakua = It is growing"
+        }
+      ],
+      "explanation": "kukua = to grow; kuwa = to be. One letter apart!",
+      "grammar": [
+        "perfect-me"
+      ]
+    },
+    {
+      "id": "aa8b5bcf-c86f-5b12-a44c-973796b8eba7",
+      "mode": "translate",
+      "english": "You'll get along.",
+      "before": "",
+      "after": ".",
+      "options": [
+        {
+          "text": "Mtaelewana",
+          "correct": true
+        },
+        {
+          "text": "Tutaelewana",
+          "correct": false,
+          "feedback": "Tutaelewana = We will understand each other"
+        },
+        {
+          "text": "Wataelewana",
+          "correct": false,
+          "feedback": "Wataelewana = They will understand each other"
+        }
+      ],
+      "explanation": "-ana = each other: kuelewana = to understand each other.",
+      "grammar": [
+        "future-ta",
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "37c81ca3-eb96-5fac-be81-64fc55fbd8ba",
+      "mode": "translate",
+      "english": "many workers",
+      "before": "wafanyakazi ",
+      "after": "",
+      "options": [
+        {
+          "text": "wengi",
+          "correct": true
+        },
+        {
+          "text": "nyingi",
+          "correct": false,
+          "feedback": "nyingi = many / a lot"
+        },
+        {
+          "text": "mengi",
+          "correct": false,
+          "feedback": "mengi = many / a lot"
+        }
+      ],
+      "explanation": "People take wengi.",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "a65738b3-a03d-577a-8028-c26be7b342b6",
+      "mode": "translate",
+      "english": "the one in white clothes",
+      "before": "yule mwenye nguo ",
+      "after": "",
+      "options": [
+        {
+          "text": "nyeupe",
+          "correct": true
+        },
+        {
+          "text": "mweupe",
+          "correct": false,
+          "feedback": "mweupe = white"
+        },
+        {
+          "text": "weupe",
+          "correct": false,
+          "feedback": "weupe = white"
+        }
+      ],
+      "explanation": "nguo is n/n: nyeupe.",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    }
+  ]
+}

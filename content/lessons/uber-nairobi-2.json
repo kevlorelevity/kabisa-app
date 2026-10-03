@@ -4,9 +4,30 @@
   "title": "Taking an Uber in Nairobi — Part 2",
   "category": "transport",
   "difficulty": "beginner",
-  "order": 2,
+  "level": 1,
+  "order": 102,
+  "theme": "uber",
   "culturalNote": "Nairobi drivers love a chat. Once the destination is sorted, expect small talk: your name, where you're from, what you do. Answering in Swahili — even a few words — goes a long way. The ride ends the way most do: agree the price, say kwa heri. You're the mteja again; this time the conversation goes further.",
   "startingPoint": "Picking up where Part 1 left off — the driver asks which side of Westlands you want.",
+  "grammarFocus": [
+    "present-na",
+    "possessives",
+    "ni-copula",
+    "question-words"
+  ],
+  "grammar": [
+    "present-na",
+    "possessives",
+    "ni-copula",
+    "question-words",
+    "sanifu-noun-classes",
+    "noun-classes-mwa-nn",
+    "subject-prefixes",
+    "ko-location",
+    "greetings",
+    "numbers-money",
+    "comparatives"
+  ],
   "turns": [
     {
       "id": "ca7ee347-5277-4c6a-ac9e-fe5b2e8bbaef",
@@ -15,7 +36,10 @@
       "swahili": "Sawa. Tunaenda upande gani?",
       "english": "Okay. Which side are we going?",
       "words": [
-        {"text": "Sawa", "gloss": "\"Okay.\""},
+        {
+          "text": "Sawa",
+          "gloss": "\"Okay.\""
+        },
         {
           "text": "Tunaenda",
           "gloss": "\"We are going\" — tu- (we) + -na- (present) + -enda (go).",
@@ -23,17 +47,51 @@
             "verb": "kuenda (to go)",
             "tense": "Present (-na-)",
             "rows": [
-              {"pronoun": "I", "form": "ninaenda"},
-              {"pronoun": "you", "form": "unaenda"},
-              {"pronoun": "he/she", "form": "anaenda"},
-              {"pronoun": "we", "form": "tunaenda"},
-              {"pronoun": "you all", "form": "mnaenda"},
-              {"pronoun": "they", "form": "wanaenda"}
+              {
+                "pronoun": "I",
+                "form": "ninaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaenda"
+              }
             ]
-          }
+          },
+          "grammar": [
+            "present-na"
+          ]
         },
-        {"text": "upande", "gloss": "\"Side\" — a common way to ask about direction."},
-        {"text": "gani", "gloss": "\"Which?\""}
+        {
+          "text": "upande",
+          "gloss": "\"Side\" — a common way to ask about direction.",
+          "sanifu": "Sanifu: u/n class — upande huu, pande",
+          "grammar": [
+            "sanifu-noun-classes"
+          ]
+        },
+        {
+          "text": "gani",
+          "gloss": "\"Which?\"",
+          "grammar": [
+            "question-words"
+          ]
+        }
       ]
     },
     {
@@ -43,8 +101,14 @@
       "swahili": "Labda Westlands roundabout.",
       "english": "Maybe Westlands roundabout.",
       "words": [
-        {"text": "Labda", "gloss": "\"Maybe.\""},
-        {"text": "Westlands roundabout", "gloss": "A landmark in Westlands — a precise drop-off point."}
+        {
+          "text": "Labda",
+          "gloss": "\"Maybe.\""
+        },
+        {
+          "text": "Westlands roundabout",
+          "gloss": "A landmark in Westlands — a precise drop-off point."
+        }
       ],
       "options": [
         {
@@ -68,7 +132,10 @@
       "swahili": "Sawa.",
       "english": "Okay.",
       "words": [
-        {"text": "Sawa", "gloss": "\"Okay.\""}
+        {
+          "text": "Sawa",
+          "gloss": "\"Okay.\""
+        }
       ]
     },
     {
@@ -78,7 +145,14 @@
       "swahili": "Jina yako ni nani boss?",
       "english": "What's your name, boss?",
       "words": [
-        {"text": "Jina", "gloss": "\"Name.\""},
+        {
+          "text": "Jina",
+          "gloss": "\"Name.\"",
+          "sanifu": "Sanifu: ji/ma class — jina langu, jina lako",
+          "grammar": [
+            "sanifu-noun-classes"
+          ]
+        },
         {
           "text": "yako",
           "gloss": "\"Your.\" Kenyan colloquial — standard Swahili (Sanifu) says jina lako.",
@@ -86,18 +160,57 @@
             "verb": "jina ___ (whose name)",
             "tense": "Possessive (Kenyan y- form)",
             "rows": [
-              {"pronoun": "my", "form": "yangu"},
-              {"pronoun": "your", "form": "yako"},
-              {"pronoun": "his/her", "form": "yake"},
-              {"pronoun": "our", "form": "yetu"},
-              {"pronoun": "your (all)", "form": "yenu"},
-              {"pronoun": "their", "form": "yao"}
+              {
+                "pronoun": "my",
+                "form": "yangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "yako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "yake"
+              },
+              {
+                "pronoun": "our",
+                "form": "yetu"
+              },
+              {
+                "pronoun": "your (all)",
+                "form": "yenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "yao"
+              }
             ]
-          }
+          },
+          "grammar": [
+            "possessives"
+          ]
         },
-        {"text": "ni", "gloss": "\"Is.\""},
-        {"text": "nani", "gloss": "\"Who?\" — Swahili asks \"your name is who?\""},
-        {"text": "boss", "gloss": "Friendly, informal form of address."}
+        {
+          "text": "ni",
+          "gloss": "\"Is.\"",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "nani",
+          "gloss": "\"Who?\" — Swahili asks \"your name is who?\"",
+          "grammar": [
+            "question-words"
+          ]
+        },
+        {
+          "text": "boss",
+          "gloss": "Friendly, informal form of address.",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
       ],
       "options": [
         {
@@ -121,7 +234,14 @@
       "swahili": "Jina yangu ni Kamau. Na wewe?",
       "english": "My name is Kamau. And you?",
       "words": [
-        {"text": "Jina", "gloss": "\"Name.\""},
+        {
+          "text": "Jina",
+          "gloss": "\"Name.\"",
+          "sanifu": "Sanifu: ji/ma class — jina langu, jina lako",
+          "grammar": [
+            "sanifu-noun-classes"
+          ]
+        },
         {
           "text": "yangu",
           "gloss": "\"My.\" Sanifu: jina langu.",
@@ -129,18 +249,51 @@
             "verb": "jina ___ (whose name)",
             "tense": "Possessive (Kenyan y- form)",
             "rows": [
-              {"pronoun": "my", "form": "yangu"},
-              {"pronoun": "your", "form": "yako"},
-              {"pronoun": "his/her", "form": "yake"},
-              {"pronoun": "our", "form": "yetu"},
-              {"pronoun": "your (all)", "form": "yenu"},
-              {"pronoun": "their", "form": "yao"}
+              {
+                "pronoun": "my",
+                "form": "yangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "yako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "yake"
+              },
+              {
+                "pronoun": "our",
+                "form": "yetu"
+              },
+              {
+                "pronoun": "your (all)",
+                "form": "yenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "yao"
+              }
             ]
-          }
+          },
+          "grammar": [
+            "possessives"
+          ]
         },
-        {"text": "ni", "gloss": "\"Is.\""},
-        {"text": "Kamau", "gloss": "A very common Kenyan (Kikuyu) name."},
-        {"text": "Na wewe", "gloss": "\"And you?\" — na (and) + wewe (you). Bounces the question back."}
+        {
+          "text": "ni",
+          "gloss": "\"Is.\"",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Kamau",
+          "gloss": "A very common Kenyan (Kikuyu) name."
+        },
+        {
+          "text": "Na wewe",
+          "gloss": "\"And you?\" — na (and) + wewe (you). Bounces the question back."
+        }
       ]
     },
     {
@@ -150,8 +303,20 @@
       "swahili": "Mimi ni John.",
       "english": "I'm John.",
       "words": [
-        {"text": "Mimi", "gloss": "\"I / me.\""},
-        {"text": "ni", "gloss": "\"Am / is.\" Mimi ni John = I am John."}
+        {
+          "text": "Mimi",
+          "gloss": "\"I / me.\"",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "\"Am / is.\" Mimi ni John = I am John.",
+          "grammar": [
+            "ni-copula"
+          ]
+        }
       ],
       "options": [
         {
@@ -182,16 +347,43 @@
             "verb": "kutoka (to come from)",
             "tense": "Present (-na-)",
             "rows": [
-              {"pronoun": "I", "form": "ninatoka"},
-              {"pronoun": "you", "form": "unatoka"},
-              {"pronoun": "he/she", "form": "anatoka"},
-              {"pronoun": "we", "form": "tunatoka"},
-              {"pronoun": "you all", "form": "mnatoka"},
-              {"pronoun": "they", "form": "wanatoka"}
+              {
+                "pronoun": "I",
+                "form": "ninatoka"
+              },
+              {
+                "pronoun": "you",
+                "form": "unatoka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anatoka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunatoka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnatoka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanatoka"
+              }
             ]
-          }
+          },
+          "grammar": [
+            "present-na"
+          ]
         },
-        {"text": "wapi", "gloss": "\"Where?\""}
+        {
+          "text": "wapi",
+          "gloss": "\"Where?\"",
+          "grammar": [
+            "question-words"
+          ]
+        }
       ]
     },
     {
@@ -208,17 +400,44 @@
             "verb": "kutoka (to come from)",
             "tense": "Present (-na-)",
             "rows": [
-              {"pronoun": "I", "form": "ninatoka"},
-              {"pronoun": "you", "form": "unatoka"},
-              {"pronoun": "he/she", "form": "anatoka"},
-              {"pronoun": "we", "form": "tunatoka"},
-              {"pronoun": "you all", "form": "mnatoka"},
-              {"pronoun": "they", "form": "wanatoka"}
+              {
+                "pronoun": "I",
+                "form": "ninatoka"
+              },
+              {
+                "pronoun": "you",
+                "form": "unatoka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anatoka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunatoka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnatoka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanatoka"
+              }
             ]
-          }
+          },
+          "grammar": [
+            "present-na"
+          ]
         },
-        {"text": "Uganda", "gloss": "Kenya's western neighbour."},
-        {"text": "asante", "gloss": "\"Thank you.\""}
+        {
+          "text": "Uganda",
+          "gloss": "Kenya's western neighbour."
+        },
+        {
+          "text": "asante",
+          "gloss": "\"Thank you.\""
+        }
       ],
       "options": [
         {
@@ -242,8 +461,14 @@
       "swahili": "Karibu Kenya. Unafanya kazi hapa Nairobi?",
       "english": "Welcome to Kenya. Do you work here in Nairobi?",
       "words": [
-        {"text": "Karibu", "gloss": "\"Welcome.\" Same word as karibu (near) — context tells you which."},
-        {"text": "Kenya", "gloss": "Kenya."},
+        {
+          "text": "Karibu",
+          "gloss": "\"Welcome.\" Same word as karibu (near) — context tells you which."
+        },
+        {
+          "text": "Kenya",
+          "gloss": "Kenya."
+        },
         {
           "text": "Unafanya",
           "gloss": "\"You do\" — u- (you) + -na- + -fanya (do/make). Unafanya kazi = you work.",
@@ -251,18 +476,51 @@
             "verb": "kufanya (to do / make)",
             "tense": "Present (-na-)",
             "rows": [
-              {"pronoun": "I", "form": "ninafanya"},
-              {"pronoun": "you", "form": "unafanya"},
-              {"pronoun": "he/she", "form": "anafanya"},
-              {"pronoun": "we", "form": "tunafanya"},
-              {"pronoun": "you all", "form": "mnafanya"},
-              {"pronoun": "they", "form": "wanafanya"}
+              {
+                "pronoun": "I",
+                "form": "ninafanya"
+              },
+              {
+                "pronoun": "you",
+                "form": "unafanya"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anafanya"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunafanya"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnafanya"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanafanya"
+              }
             ]
-          }
+          },
+          "grammar": [
+            "present-na"
+          ]
         },
-        {"text": "kazi", "gloss": "\"Work / job.\""},
-        {"text": "hapa", "gloss": "\"Here.\""},
-        {"text": "Nairobi", "gloss": "Nairobi."}
+        {
+          "text": "kazi",
+          "gloss": "\"Work / job.\"",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "hapa",
+          "gloss": "\"Here.\""
+        },
+        {
+          "text": "Nairobi",
+          "gloss": "Nairobi."
+        }
       ]
     },
     {
@@ -272,7 +530,13 @@
       "swahili": "Ndiyo, ninafanya kazi Safaricom.",
       "english": "Yes, I work at Safaricom.",
       "words": [
-        {"text": "Ndiyo", "gloss": "\"Yes.\""},
+        {
+          "text": "Ndiyo",
+          "gloss": "\"Yes.\"",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
         {
           "text": "ninafanya",
           "gloss": "\"I do\" — ni- (I) + -na- + -fanya. Ninafanya kazi = I work.",
@@ -280,17 +544,47 @@
             "verb": "kufanya (to do / make)",
             "tense": "Present (-na-)",
             "rows": [
-              {"pronoun": "I", "form": "ninafanya"},
-              {"pronoun": "you", "form": "unafanya"},
-              {"pronoun": "he/she", "form": "anafanya"},
-              {"pronoun": "we", "form": "tunafanya"},
-              {"pronoun": "you all", "form": "mnafanya"},
-              {"pronoun": "they", "form": "wanafanya"}
+              {
+                "pronoun": "I",
+                "form": "ninafanya"
+              },
+              {
+                "pronoun": "you",
+                "form": "unafanya"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anafanya"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunafanya"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnafanya"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanafanya"
+              }
             ]
-          }
+          },
+          "grammar": [
+            "present-na"
+          ]
         },
-        {"text": "kazi", "gloss": "\"Work.\""},
-        {"text": "Safaricom", "gloss": "Kenya's biggest mobile network (home of M-Pesa). No word for \"at\" needed."}
+        {
+          "text": "kazi",
+          "gloss": "\"Work.\"",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Safaricom",
+          "gloss": "Kenya's biggest mobile network (home of M-Pesa). No word for \"at\" needed."
+        }
       ],
       "options": [
         {
@@ -314,7 +608,10 @@
       "swahili": "Sawa, tuko karibu Sarit sasa.",
       "english": "Okay, we're close to Sarit now.",
       "words": [
-        {"text": "Sawa", "gloss": "\"Okay.\""},
+        {
+          "text": "Sawa",
+          "gloss": "\"Okay.\""
+        },
         {
           "text": "tuko",
           "gloss": "\"We are (at)\" — tu- (we) + -ko (be at).",
@@ -322,18 +619,48 @@
             "verb": "-ko (to be at / be doing)",
             "tense": "Present",
             "rows": [
-              {"pronoun": "I", "form": "niko"},
-              {"pronoun": "you", "form": "uko"},
-              {"pronoun": "he/she", "form": "yuko"},
-              {"pronoun": "we", "form": "tuko"},
-              {"pronoun": "you all", "form": "mko"},
-              {"pronoun": "they", "form": "wako"}
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              }
             ]
-          }
+          },
+          "grammar": [
+            "ko-location"
+          ]
         },
-        {"text": "karibu", "gloss": "\"Near / close.\" Here it means near, not welcome. Sanifu adds na: karibu na Sarit."},
-        {"text": "Sarit", "gloss": "Sarit Centre — the big mall in Westlands."},
-        {"text": "sasa", "gloss": "\"Now.\""}
+        {
+          "text": "karibu",
+          "gloss": "\"Near / close.\" Here it means near, not welcome. Sanifu adds na: karibu na Sarit."
+        },
+        {
+          "text": "Sarit",
+          "gloss": "Sarit Centre — the big mall in Westlands."
+        },
+        {
+          "text": "sasa",
+          "gloss": "\"Now.\""
+        }
       ]
     },
     {
@@ -343,7 +670,13 @@
       "swahili": "Poa.",
       "english": "Cool.",
       "words": [
-        {"text": "Poa", "gloss": "\"Cool / good.\" A relaxed okay."}
+        {
+          "text": "Poa",
+          "gloss": "\"Cool / good.\" A relaxed okay.",
+          "grammar": [
+            "greetings"
+          ]
+        }
       ],
       "options": [
         {
@@ -367,9 +700,28 @@
       "swahili": "Ni pesa ngapi?",
       "english": "How much is it?",
       "words": [
-        {"text": "Ni", "gloss": "\"It is.\""},
-        {"text": "pesa", "gloss": "\"Money.\""},
-        {"text": "ngapi", "gloss": "\"How much / how many?\""}
+        {
+          "text": "Ni",
+          "gloss": "\"It is.\"",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "pesa",
+          "gloss": "\"Money.\"",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ngapi",
+          "gloss": "\"How much / how many?\"",
+          "grammar": [
+            "question-words",
+            "numbers-money"
+          ]
+        }
       ],
       "options": [
         {
@@ -393,9 +745,24 @@
       "swahili": "Ni mia tano tu.",
       "english": "It's only five hundred.",
       "words": [
-        {"text": "Ni", "gloss": "\"It is.\""},
-        {"text": "mia tano", "gloss": "\"Five hundred\" — mia (hundred) + tano (five). Shillings are understood."},
-        {"text": "tu", "gloss": "\"Only / just.\""}
+        {
+          "text": "Ni",
+          "gloss": "\"It is.\"",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mia tano",
+          "gloss": "\"Five hundred\" — mia (hundred) + tano (five). Shillings are understood.",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "tu",
+          "gloss": "\"Only / just.\""
+        }
       ]
     },
     {
@@ -405,8 +772,17 @@
       "swahili": "Sawa. Kwa heri.",
       "english": "Okay. Goodbye.",
       "words": [
-        {"text": "Sawa", "gloss": "\"Okay.\""},
-        {"text": "Kwa heri", "gloss": "\"Goodbye\" — literally \"with good fortune\"."}
+        {
+          "text": "Sawa",
+          "gloss": "\"Okay.\""
+        },
+        {
+          "text": "Kwa heri",
+          "gloss": "\"Goodbye\" — literally \"with good fortune\".",
+          "grammar": [
+            "greetings"
+          ]
+        }
       ],
       "options": [
         {
@@ -430,7 +806,13 @@
       "swahili": "Kwa heri.",
       "english": "Goodbye.",
       "words": [
-        {"text": "Kwa heri", "gloss": "\"Goodbye.\""}
+        {
+          "text": "Kwa heri",
+          "gloss": "\"Goodbye.\"",
+          "grammar": [
+            "greetings"
+          ]
+        }
       ]
     }
   ],
@@ -579,11 +961,25 @@
       "before": "",
       "after": " wapi?",
       "options": [
-        {"text": "Unatoka", "correct": true},
-        {"text": "Ninatoka", "correct": false, "feedback": "ninatoka = I am from / coming from."},
-        {"text": "Unaenda", "correct": false, "feedback": "unaenda = you are GOING — he's asking where you're FROM."}
+        {
+          "text": "Unatoka",
+          "correct": true
+        },
+        {
+          "text": "Ninatoka",
+          "correct": false,
+          "feedback": "ninatoka = I am from / coming from."
+        },
+        {
+          "text": "Unaenda",
+          "correct": false,
+          "feedback": "unaenda = you are GOING — he's asking where you're FROM."
+        }
       ],
-      "explanation": "Unatoka = u- (you) + -na- + -toka (come from). Unatoka wapi? is the driver's favourite small-talk question."
+      "explanation": "Unatoka = u- (you) + -na- + -toka (come from). Unatoka wapi? is the driver's favourite small-talk question.",
+      "grammar": [
+        "present-na"
+      ]
     },
     {
       "id": "8c7bcc3e-2f30-430f-8307-4d12570fd362",
@@ -592,11 +988,25 @@
       "before": "",
       "after": " Uganda.",
       "options": [
-        {"text": "Ninatoka", "correct": true},
-        {"text": "Unatoka", "correct": false, "feedback": "unatoka = YOU are from / coming from."},
-        {"text": "Ninaenda", "correct": false, "feedback": "ninaenda = I am GOING (to Uganda) — not where you're from."}
+        {
+          "text": "Ninatoka",
+          "correct": true
+        },
+        {
+          "text": "Unatoka",
+          "correct": false,
+          "feedback": "unatoka = YOU are from / coming from."
+        },
+        {
+          "text": "Ninaenda",
+          "correct": false,
+          "feedback": "ninaenda = I am GOING (to Uganda) — not where you're from."
+        }
       ],
-      "explanation": "Ninatoka = ni- (I) + -na- + -toka. Swap in your own country."
+      "explanation": "Ninatoka = ni- (I) + -na- + -toka. Swap in your own country.",
+      "grammar": [
+        "present-na"
+      ]
     },
     {
       "id": "4a51605b-a327-48cd-b169-9711b7f64846",
@@ -605,11 +1015,25 @@
       "before": "",
       "after": " Kenya.",
       "options": [
-        {"text": "Tunatoka", "correct": true},
-        {"text": "Wanatoka", "correct": false, "feedback": "wanatoka = THEY are from / coming from."},
-        {"text": "Ninatoka", "correct": false, "feedback": "ninatoka = I am from / coming from."}
+        {
+          "text": "Tunatoka",
+          "correct": true
+        },
+        {
+          "text": "Wanatoka",
+          "correct": false,
+          "feedback": "wanatoka = THEY are from / coming from."
+        },
+        {
+          "text": "Ninatoka",
+          "correct": false,
+          "feedback": "ninatoka = I am from / coming from."
+        }
       ],
-      "explanation": "Tunatoka = tu- (we) + -na- + -toka."
+      "explanation": "Tunatoka = tu- (we) + -na- + -toka.",
+      "grammar": [
+        "present-na"
+      ]
     },
     {
       "id": "65bb5e35-d9ec-4ddd-8403-c2e2768b9d3a",
@@ -618,11 +1042,25 @@
       "before": "",
       "after": " Tanzania.",
       "options": [
-        {"text": "Anatoka", "correct": true},
-        {"text": "Unatoka", "correct": false, "feedback": "unatoka = YOU are from / coming from."},
-        {"text": "Wanatoka", "correct": false, "feedback": "wanatoka = THEY are from / coming from."}
+        {
+          "text": "Anatoka",
+          "correct": true
+        },
+        {
+          "text": "Unatoka",
+          "correct": false,
+          "feedback": "unatoka = YOU are from / coming from."
+        },
+        {
+          "text": "Wanatoka",
+          "correct": false,
+          "feedback": "wanatoka = THEY are from / coming from."
+        }
       ],
-      "explanation": "Anatoka = a- (he/she) + -na- + -toka."
+      "explanation": "Anatoka = a- (he/she) + -na- + -toka.",
+      "grammar": [
+        "present-na"
+      ]
     },
     {
       "id": "256a395c-cfd5-453d-9457-a689a035d552",
@@ -631,11 +1069,25 @@
       "before": "",
       "after": " wapi?",
       "options": [
-        {"text": "Mnatoka", "correct": true},
-        {"text": "Unatoka", "correct": false, "feedback": "unatoka = YOU (one person). For a group, use m-."},
-        {"text": "Wanatoka", "correct": false, "feedback": "wanatoka = THEY are from / coming from."}
+        {
+          "text": "Mnatoka",
+          "correct": true
+        },
+        {
+          "text": "Unatoka",
+          "correct": false,
+          "feedback": "unatoka = YOU (one person). For a group, use m-."
+        },
+        {
+          "text": "Wanatoka",
+          "correct": false,
+          "feedback": "wanatoka = THEY are from / coming from."
+        }
       ],
-      "explanation": "Mnatoka = m- (you all) + -na- + -toka."
+      "explanation": "Mnatoka = m- (you all) + -na- + -toka.",
+      "grammar": [
+        "present-na"
+      ]
     },
     {
       "id": "7794971f-838f-41d7-b900-15ec11992ab2",
@@ -644,11 +1096,25 @@
       "before": "",
       "after": " Nairobi.",
       "options": [
-        {"text": "Wanatoka", "correct": true},
-        {"text": "Mnatoka", "correct": false, "feedback": "mnatoka = YOU ALL are from / coming from."},
-        {"text": "Tunatoka", "correct": false, "feedback": "tunatoka = WE are from / coming from."}
+        {
+          "text": "Wanatoka",
+          "correct": true
+        },
+        {
+          "text": "Mnatoka",
+          "correct": false,
+          "feedback": "mnatoka = YOU ALL are from / coming from."
+        },
+        {
+          "text": "Tunatoka",
+          "correct": false,
+          "feedback": "tunatoka = WE are from / coming from."
+        }
       ],
-      "explanation": "Wanatoka = wa- (they) + -na- + -toka."
+      "explanation": "Wanatoka = wa- (they) + -na- + -toka.",
+      "grammar": [
+        "present-na"
+      ]
     },
     {
       "id": "a9d1765f-a862-4b6f-bba9-2be4ed292d32",
@@ -657,11 +1123,25 @@
       "before": "",
       "after": " kazi hapa Nairobi?",
       "options": [
-        {"text": "Unafanya", "correct": true},
-        {"text": "Ninafanya", "correct": false, "feedback": "ninafanya = I am doing / working."},
-        {"text": "Anafanya", "correct": false, "feedback": "anafanya = HE/SHE is doing / working."}
+        {
+          "text": "Unafanya",
+          "correct": true
+        },
+        {
+          "text": "Ninafanya",
+          "correct": false,
+          "feedback": "ninafanya = I am doing / working."
+        },
+        {
+          "text": "Anafanya",
+          "correct": false,
+          "feedback": "anafanya = HE/SHE is doing / working."
+        }
       ],
-      "explanation": "Unafanya kazi = you work (literally \"you do work\"). Same u- prefix as unaenda and unatoka."
+      "explanation": "Unafanya kazi = you work (literally \"you do work\"). Same u- prefix as unaenda and unatoka.",
+      "grammar": [
+        "present-na"
+      ]
     },
     {
       "id": "a282e502-f1b6-486b-b10a-af9658ef9118",
@@ -670,11 +1150,25 @@
       "before": "",
       "after": " kazi Safaricom.",
       "options": [
-        {"text": "Ninafanya", "correct": true},
-        {"text": "Unafanya", "correct": false, "feedback": "unafanya = YOU are doing / working."},
-        {"text": "Ninatoka", "correct": false, "feedback": "ninatoka = I come FROM — you need -fanya (do) for work."}
+        {
+          "text": "Ninafanya",
+          "correct": true
+        },
+        {
+          "text": "Unafanya",
+          "correct": false,
+          "feedback": "unafanya = YOU are doing / working."
+        },
+        {
+          "text": "Ninatoka",
+          "correct": false,
+          "feedback": "ninatoka = I come FROM — you need -fanya (do) for work."
+        }
       ],
-      "explanation": "Ninafanya kazi = I work. No word for \"at\" — just name the company."
+      "explanation": "Ninafanya kazi = I work. No word for \"at\" — just name the company.",
+      "grammar": [
+        "present-na"
+      ]
     },
     {
       "id": "7ff6a59f-597a-4660-a193-f8b8a78e81fd",
@@ -683,11 +1177,25 @@
       "before": "",
       "after": " kazi Westlands.",
       "options": [
-        {"text": "Tunafanya", "correct": true},
-        {"text": "Wanafanya", "correct": false, "feedback": "wanafanya = THEY are doing / working."},
-        {"text": "Mnafanya", "correct": false, "feedback": "mnafanya = YOU ALL are doing / working."}
+        {
+          "text": "Tunafanya",
+          "correct": true
+        },
+        {
+          "text": "Wanafanya",
+          "correct": false,
+          "feedback": "wanafanya = THEY are doing / working."
+        },
+        {
+          "text": "Mnafanya",
+          "correct": false,
+          "feedback": "mnafanya = YOU ALL are doing / working."
+        }
       ],
-      "explanation": "Tunafanya = tu- (we) + -na- + -fanya."
+      "explanation": "Tunafanya = tu- (we) + -na- + -fanya.",
+      "grammar": [
+        "present-na"
+      ]
     },
     {
       "id": "c9999731-ead1-4ee8-8aa4-15ac64d8be27",
@@ -696,11 +1204,25 @@
       "before": "",
       "after": " kazi hapa.",
       "options": [
-        {"text": "Anafanya", "correct": true},
-        {"text": "Unafanya", "correct": false, "feedback": "unafanya = YOU are doing / working."},
-        {"text": "Ninafanya", "correct": false, "feedback": "ninafanya = I am doing / working."}
+        {
+          "text": "Anafanya",
+          "correct": true
+        },
+        {
+          "text": "Unafanya",
+          "correct": false,
+          "feedback": "unafanya = YOU are doing / working."
+        },
+        {
+          "text": "Ninafanya",
+          "correct": false,
+          "feedback": "ninafanya = I am doing / working."
+        }
       ],
-      "explanation": "Anafanya = a- (he/she) + -na- + -fanya. Hapa = here."
+      "explanation": "Anafanya = a- (he/she) + -na- + -fanya. Hapa = here.",
+      "grammar": [
+        "present-na"
+      ]
     },
     {
       "id": "931e96eb-c9f7-49b9-8188-d86b881cc9f3",
@@ -709,11 +1231,25 @@
       "before": "",
       "after": " kazi Sarit.",
       "options": [
-        {"text": "Wanafanya", "correct": true},
-        {"text": "Anafanya", "correct": false, "feedback": "anafanya = HE/SHE is doing / working."},
-        {"text": "Tunafanya", "correct": false, "feedback": "tunafanya = WE are doing / working."}
+        {
+          "text": "Wanafanya",
+          "correct": true
+        },
+        {
+          "text": "Anafanya",
+          "correct": false,
+          "feedback": "anafanya = HE/SHE is doing / working."
+        },
+        {
+          "text": "Tunafanya",
+          "correct": false,
+          "feedback": "tunafanya = WE are doing / working."
+        }
       ],
-      "explanation": "Wanafanya = wa- (they) + -na- + -fanya."
+      "explanation": "Wanafanya = wa- (they) + -na- + -fanya.",
+      "grammar": [
+        "present-na"
+      ]
     },
     {
       "id": "66fabe0c-cf52-4192-a6cd-8ed04625024b",
@@ -722,11 +1258,25 @@
       "before": "Ninafanya ",
       "after": " Safaricom.",
       "options": [
-        {"text": "kazi", "correct": true},
-        {"text": "pesa", "correct": false, "feedback": "pesa = money."},
-        {"text": "jina", "correct": false, "feedback": "jina = name."}
+        {
+          "text": "kazi",
+          "correct": true
+        },
+        {
+          "text": "pesa",
+          "correct": false,
+          "feedback": "pesa = money."
+        },
+        {
+          "text": "jina",
+          "correct": false,
+          "feedback": "jina = name."
+        }
       ],
-      "explanation": "Kazi = work / job. Kufanya kazi = to work."
+      "explanation": "Kazi = work / job. Kufanya kazi = to work.",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
     },
     {
       "id": "72e7f466-f2c1-4f49-a96a-689714b88aea",
@@ -735,11 +1285,25 @@
       "before": "Jina ",
       "after": " ni nani?",
       "options": [
-        {"text": "yako", "correct": true},
-        {"text": "yangu", "correct": false, "feedback": "yangu = MY."},
-        {"text": "yake", "correct": false, "feedback": "yake = HIS / HER."}
+        {
+          "text": "yako",
+          "correct": true
+        },
+        {
+          "text": "yangu",
+          "correct": false,
+          "feedback": "yangu = MY."
+        },
+        {
+          "text": "yake",
+          "correct": false,
+          "feedback": "yake = HIS / HER."
+        }
       ],
-      "explanation": "Yako = your. Standard Swahili says jina lako, but yako is what you'll hear in Nairobi."
+      "explanation": "Yako = your. Standard Swahili says jina lako, but yako is what you'll hear in Nairobi.",
+      "grammar": [
+        "possessives"
+      ]
     },
     {
       "id": "b58b4627-820e-4e72-a91c-276f14778555",
@@ -748,11 +1312,25 @@
       "before": "Jina ",
       "after": " ni Kamau.",
       "options": [
-        {"text": "yangu", "correct": true},
-        {"text": "yako", "correct": false, "feedback": "yako = YOUR."},
-        {"text": "yake", "correct": false, "feedback": "yake = HIS / HER."}
+        {
+          "text": "yangu",
+          "correct": true
+        },
+        {
+          "text": "yako",
+          "correct": false,
+          "feedback": "yako = YOUR."
+        },
+        {
+          "text": "yake",
+          "correct": false,
+          "feedback": "yake = HIS / HER."
+        }
       ],
-      "explanation": "Yangu = my (Sanifu: langu)."
+      "explanation": "Yangu = my (Sanifu: langu).",
+      "grammar": [
+        "possessives"
+      ]
     },
     {
       "id": "5f3d9610-0ba5-4261-a3c9-cf7882e1b928",
@@ -761,11 +1339,25 @@
       "before": "Jina ",
       "after": " ni nani?",
       "options": [
-        {"text": "yake", "correct": true},
-        {"text": "yako", "correct": false, "feedback": "yako = YOUR."},
-        {"text": "yangu", "correct": false, "feedback": "yangu = MY."}
+        {
+          "text": "yake",
+          "correct": true
+        },
+        {
+          "text": "yako",
+          "correct": false,
+          "feedback": "yako = YOUR."
+        },
+        {
+          "text": "yangu",
+          "correct": false,
+          "feedback": "yangu = MY."
+        }
       ],
-      "explanation": "Yake = his or her — Swahili doesn't split them."
+      "explanation": "Yake = his or her — Swahili doesn't split them.",
+      "grammar": [
+        "possessives"
+      ]
     },
     {
       "id": "17f6db12-4a52-4733-8557-836de16a6af4",
@@ -774,11 +1366,25 @@
       "before": "Jina yako ni ",
       "after": "?",
       "options": [
-        {"text": "nani", "correct": true},
-        {"text": "wapi", "correct": false, "feedback": "wapi = where?"},
-        {"text": "ngapi", "correct": false, "feedback": "ngapi = how much?"}
+        {
+          "text": "nani",
+          "correct": true
+        },
+        {
+          "text": "wapi",
+          "correct": false,
+          "feedback": "wapi = where?"
+        },
+        {
+          "text": "ngapi",
+          "correct": false,
+          "feedback": "ngapi = how much?"
+        }
       ],
-      "explanation": "Nani = who. Swahili literally asks \"your name is who?\""
+      "explanation": "Nani = who. Swahili literally asks \"your name is who?\"",
+      "grammar": [
+        "question-words"
+      ]
     },
     {
       "id": "cbf2ea7a-a272-470a-b17e-fb6afea79f43",
@@ -787,11 +1393,25 @@
       "before": "Jina yangu ni Kamau. Na ",
       "after": "?",
       "options": [
-        {"text": "wewe", "correct": true},
-        {"text": "mimi", "correct": false, "feedback": "mimi = me — he's asking about YOU."},
-        {"text": "sana", "correct": false, "feedback": "sana = very."}
+        {
+          "text": "wewe",
+          "correct": true
+        },
+        {
+          "text": "mimi",
+          "correct": false,
+          "feedback": "mimi = me — he's asking about YOU."
+        },
+        {
+          "text": "sana",
+          "correct": false,
+          "feedback": "sana = very."
+        }
       ],
-      "explanation": "Na wewe? = and you? Works after any question."
+      "explanation": "Na wewe? = and you? Works after any question.",
+      "grammar": [
+        "subject-prefixes"
+      ]
     },
     {
       "id": "cdaeeb35-9b3f-4676-8495-fdfbd073ce43",
@@ -800,11 +1420,25 @@
       "before": "",
       "after": " ni John.",
       "options": [
-        {"text": "Mimi", "correct": true},
-        {"text": "Wewe", "correct": false, "feedback": "wewe = you."},
-        {"text": "Sasa", "correct": false, "feedback": "sasa = now."}
+        {
+          "text": "Mimi",
+          "correct": true
+        },
+        {
+          "text": "Wewe",
+          "correct": false,
+          "feedback": "wewe = you."
+        },
+        {
+          "text": "Sasa",
+          "correct": false,
+          "feedback": "sasa = now."
+        }
       ],
-      "explanation": "Mimi ni… = I am… Put your own name in."
+      "explanation": "Mimi ni… = I am… Put your own name in.",
+      "grammar": [
+        "subject-prefixes"
+      ]
     },
     {
       "id": "b40165b6-81bd-43bc-b108-fe0b813004bb",
@@ -813,11 +1447,25 @@
       "before": "",
       "after": " karibu Sarit sasa.",
       "options": [
-        {"text": "Tuko", "correct": true},
-        {"text": "Niko", "correct": false, "feedback": "niko = I am (at)."},
-        {"text": "Wako", "correct": false, "feedback": "wako = THEY are (at)."}
+        {
+          "text": "Tuko",
+          "correct": true
+        },
+        {
+          "text": "Niko",
+          "correct": false,
+          "feedback": "niko = I am (at)."
+        },
+        {
+          "text": "Wako",
+          "correct": false,
+          "feedback": "wako = THEY are (at)."
+        }
       ],
-      "explanation": "Tuko = tu- (we) + -ko (be at). The driver's way of saying \"almost there\"."
+      "explanation": "Tuko = tu- (we) + -ko (be at). The driver's way of saying \"almost there\".",
+      "grammar": [
+        "ko-location"
+      ]
     },
     {
       "id": "f7425a10-adc5-4c33-9f12-3e70d33b1e42",
@@ -826,11 +1474,25 @@
       "before": "",
       "after": " karibu na roundabout.",
       "options": [
-        {"text": "Niko", "correct": true},
-        {"text": "Uko", "correct": false, "feedback": "uko = YOU are (at)."},
-        {"text": "Tuko", "correct": false, "feedback": "tuko = WE are (at)."}
+        {
+          "text": "Niko",
+          "correct": true
+        },
+        {
+          "text": "Uko",
+          "correct": false,
+          "feedback": "uko = YOU are (at)."
+        },
+        {
+          "text": "Tuko",
+          "correct": false,
+          "feedback": "tuko = WE are (at)."
+        }
       ],
-      "explanation": "Niko = I am (at). Handy when your driver calls to find you."
+      "explanation": "Niko = I am (at). Handy when your driver calls to find you.",
+      "grammar": [
+        "ko-location"
+      ]
     },
     {
       "id": "69d48c0f-6a1c-4e48-88ca-dc32b78c214a",
@@ -839,11 +1501,25 @@
       "before": "",
       "after": " wapi?",
       "options": [
-        {"text": "Uko", "correct": true},
-        {"text": "Niko", "correct": false, "feedback": "niko = I am (at)."},
-        {"text": "Yuko", "correct": false, "feedback": "yuko = HE/SHE is (at)."}
+        {
+          "text": "Uko",
+          "correct": true
+        },
+        {
+          "text": "Niko",
+          "correct": false,
+          "feedback": "niko = I am (at)."
+        },
+        {
+          "text": "Yuko",
+          "correct": false,
+          "feedback": "yuko = HE/SHE is (at)."
+        }
       ],
-      "explanation": "Uko wapi? = where are you? — the first thing a driver asks on the phone."
+      "explanation": "Uko wapi? = where are you? — the first thing a driver asks on the phone.",
+      "grammar": [
+        "ko-location"
+      ]
     },
     {
       "id": "38001f4e-1041-4b64-b9b1-99b19f33338a",
@@ -852,9 +1528,20 @@
       "before": "Tuko karibu Sarit ",
       "after": ".",
       "options": [
-        {"text": "sasa", "correct": true},
-        {"text": "sana", "correct": false, "feedback": "sana = very."},
-        {"text": "nani", "correct": false, "feedback": "nani = who?"}
+        {
+          "text": "sasa",
+          "correct": true
+        },
+        {
+          "text": "sana",
+          "correct": false,
+          "feedback": "sana = very."
+        },
+        {
+          "text": "nani",
+          "correct": false,
+          "feedback": "nani = who?"
+        }
       ],
       "explanation": "Sasa = now. (Also a casual greeting: Sasa? = what's up?)"
     },
@@ -865,11 +1552,26 @@
       "before": "Ni pesa ",
       "after": "?",
       "options": [
-        {"text": "ngapi", "correct": true},
-        {"text": "wapi", "correct": false, "feedback": "wapi = where?"},
-        {"text": "nani", "correct": false, "feedback": "nani = who?"}
+        {
+          "text": "ngapi",
+          "correct": true
+        },
+        {
+          "text": "wapi",
+          "correct": false,
+          "feedback": "wapi = where?"
+        },
+        {
+          "text": "nani",
+          "correct": false,
+          "feedback": "nani = who?"
+        }
       ],
-      "explanation": "Ni pesa ngapi? = how much (money) is it? Ask before you get out."
+      "explanation": "Ni pesa ngapi? = how much (money) is it? Ask before you get out.",
+      "grammar": [
+        "question-words",
+        "numbers-money"
+      ]
     },
     {
       "id": "80708990-60ba-4b5a-a07a-ae807724e41b",
@@ -878,11 +1580,25 @@
       "before": "Ni mia ",
       "after": " tu.",
       "options": [
-        {"text": "tano", "correct": true},
-        {"text": "tatu", "correct": false, "feedback": "tatu = three → mia tatu = 300."},
-        {"text": "mbili", "correct": false, "feedback": "mbili = two → mia mbili = 200."}
+        {
+          "text": "tano",
+          "correct": true
+        },
+        {
+          "text": "tatu",
+          "correct": false,
+          "feedback": "tatu = three → mia tatu = 300."
+        },
+        {
+          "text": "mbili",
+          "correct": false,
+          "feedback": "mbili = two → mia mbili = 200."
+        }
       ],
-      "explanation": "Mia tano = 500: mia (hundred) + tano (five)."
+      "explanation": "Mia tano = 500: mia (hundred) + tano (five).",
+      "grammar": [
+        "numbers-money"
+      ]
     },
     {
       "id": "16736dc6-08b7-4606-9526-ae02318da30d",
@@ -891,11 +1607,25 @@
       "before": "Ni mia ",
       "after": " tu.",
       "options": [
-        {"text": "mbili", "correct": true},
-        {"text": "tano", "correct": false, "feedback": "tano = five → mia tano = 500."},
-        {"text": "tatu", "correct": false, "feedback": "tatu = three → mia tatu = 300."}
+        {
+          "text": "mbili",
+          "correct": true
+        },
+        {
+          "text": "tano",
+          "correct": false,
+          "feedback": "tano = five → mia tano = 500."
+        },
+        {
+          "text": "tatu",
+          "correct": false,
+          "feedback": "tatu = three → mia tatu = 300."
+        }
       ],
-      "explanation": "Mia mbili = 200: mia (hundred) + mbili (two)."
+      "explanation": "Mia mbili = 200: mia (hundred) + mbili (two).",
+      "grammar": [
+        "numbers-money"
+      ]
     },
     {
       "id": "2bbd719c-3cb4-49eb-9966-7d5827d8d294",
@@ -904,9 +1634,20 @@
       "before": "Ni mia tano ",
       "after": ".",
       "options": [
-        {"text": "tu", "correct": true},
-        {"text": "sana", "correct": false, "feedback": "sana = very."},
-        {"text": "nani", "correct": false, "feedback": "nani = who?"}
+        {
+          "text": "tu",
+          "correct": true
+        },
+        {
+          "text": "sana",
+          "correct": false,
+          "feedback": "sana = very."
+        },
+        {
+          "text": "nani",
+          "correct": false,
+          "feedback": "nani = who?"
+        }
       ],
       "explanation": "Tu = only / just. It goes after the thing it limits."
     },
@@ -917,9 +1658,20 @@
       "before": "",
       "after": " Kenya.",
       "options": [
-        {"text": "Karibu", "correct": true},
-        {"text": "Kwa heri", "correct": false, "feedback": "kwa heri = goodbye."},
-        {"text": "Asante", "correct": false, "feedback": "asante = thank you."}
+        {
+          "text": "Karibu",
+          "correct": true
+        },
+        {
+          "text": "Kwa heri",
+          "correct": false,
+          "feedback": "kwa heri = goodbye."
+        },
+        {
+          "text": "Asante",
+          "correct": false,
+          "feedback": "asante = thank you."
+        }
       ],
       "explanation": "Karibu = welcome. You'll hear it everywhere — shops, homes, cars."
     },
@@ -930,11 +1682,25 @@
       "before": "Kwa ",
       "after": ".",
       "options": [
-        {"text": "heri", "correct": true},
-        {"text": "hapa", "correct": false, "feedback": "hapa = here."},
-        {"text": "sasa", "correct": false, "feedback": "sasa = now."}
+        {
+          "text": "heri",
+          "correct": true
+        },
+        {
+          "text": "hapa",
+          "correct": false,
+          "feedback": "hapa = here."
+        },
+        {
+          "text": "sasa",
+          "correct": false,
+          "feedback": "sasa = now."
+        }
       ],
-      "explanation": "Kwa heri = goodbye (literally \"with good fortune\")."
+      "explanation": "Kwa heri = goodbye (literally \"with good fortune\").",
+      "grammar": [
+        "comparatives"
+      ]
     },
     {
       "id": "654ee1fd-05cd-44ca-801e-33e8e4aa55d4",
@@ -943,11 +1709,25 @@
       "before": "",
       "after": ", ninafanya kazi Safaricom.",
       "options": [
-        {"text": "Ndiyo", "correct": true},
-        {"text": "Hapana", "correct": false, "feedback": "hapana = no."},
-        {"text": "Labda", "correct": false, "feedback": "labda = maybe."}
+        {
+          "text": "Ndiyo",
+          "correct": true
+        },
+        {
+          "text": "Hapana",
+          "correct": false,
+          "feedback": "hapana = no."
+        },
+        {
+          "text": "Labda",
+          "correct": false,
+          "feedback": "labda = maybe."
+        }
       ],
-      "explanation": "Ndiyo = yes. Hapana = no."
+      "explanation": "Ndiyo = yes. Hapana = no.",
+      "grammar": [
+        "ni-copula"
+      ]
     },
     {
       "id": "909a8282-a396-4a94-8ee4-1482e54d2156",
@@ -956,9 +1736,20 @@
       "before": "Karibu Kenya. Unafanya kazi ",
       "after": " Nairobi?",
       "options": [
-        {"text": "hapa", "correct": true},
-        {"text": "wapi", "correct": false, "feedback": "wapi = where? — kazi wapi Nairobi doesn't work."},
-        {"text": "tu", "correct": false, "feedback": "tu = only."}
+        {
+          "text": "hapa",
+          "correct": true
+        },
+        {
+          "text": "wapi",
+          "correct": false,
+          "feedback": "wapi = where? — kazi wapi Nairobi doesn't work."
+        },
+        {
+          "text": "tu",
+          "correct": false,
+          "feedback": "tu = only."
+        }
       ],
       "explanation": "Hapa = here. Hapa Nairobi = here in Nairobi."
     }

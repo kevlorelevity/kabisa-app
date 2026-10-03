@@ -4,6 +4,8 @@ import { LessonsView } from './views/LessonsView';
 import { PracticeView } from './views/PracticeView';
 import { LessonView } from './views/LessonView';
 import { DrillView } from './views/DrillView';
+import { GrammarView } from './views/GrammarView';
+import { GrammarProvider } from './components/GrammarProvider';
 import { AuthProvider } from './hooks/AuthProvider';
 import { SignInGate } from './components/SignInGate';
 
@@ -18,6 +20,8 @@ function AppLayout() {
           <Route path="/lesson/:id" element={<LessonView />} />
           <Route path="/lesson/:id/practice" element={<PracticeView />} />
           <Route path="/lesson/:id/drill" element={<DrillView />} />
+          <Route path="/grammar" element={<GrammarView />} />
+          <Route path="/grammar/:slug" element={<GrammarView />} />
           {/* Retired surfaces (old module catalog, SRS review) — send old links home. */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
@@ -31,7 +35,9 @@ export function App() {
     <AuthProvider>
       <BrowserRouter>
         <SignInGate>
-          <AppLayout />
+          <GrammarProvider>
+            <AppLayout />
+          </GrammarProvider>
         </SignInGate>
       </BrowserRouter>
     </AuthProvider>

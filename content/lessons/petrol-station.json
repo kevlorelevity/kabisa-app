@@ -1,0 +1,1522 @@
+{
+  "id": "petrol-station",
+  "uuid": "59c31e74-5cbe-5e74-b7bf-3e028c3e9041",
+  "title": "Fill It Up: At the Petrol Station",
+  "category": "transport",
+  "difficulty": "medium",
+  "level": 6,
+  "order": 601,
+  "theme": "car",
+  "culturalNote": "Kenyan petrol stations are full-service: an attendant fills the tank, checks the tyres, and washes the windscreen while you stay in the car. You ask for fuel by amount, not litres (\"weka ya elfu tatu\" = put in three thousand's worth). Polite requests use the subjunctive: \"uweke\" (would you put), \"uangalie\" (would you check), \"nikulipe\" (shall I pay you). \"Naomba\" (I'd like / may I have) is the classic polite opener.",
+  "startingPoint": "You pull into a petrol station on Ngong Road. An attendant walks up to your window.",
+  "grammarFocus": [
+    "subjunctive",
+    "polite-requests",
+    "object-infixes"
+  ],
+  "grammar": [
+    "subjunctive",
+    "polite-requests",
+    "object-infixes",
+    "noun-classes-mwa-nn",
+    "possessives",
+    "question-words",
+    "numbers-money",
+    "locative-ni",
+    "na-have",
+    "discourse-particles",
+    "ko-location",
+    "negative-present",
+    "infinitive-ku",
+    "future-ta",
+    "ni-copula",
+    "adjective-agreement",
+    "past-li",
+    "helper-verbs",
+    "greetings",
+    "verb-extensions"
+  ],
+  "turns": [
+    {
+      "id": "8d39c8ec-25b2-5cb5-9cc4-ccb5d985755c",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Karibu, boss! Weka ya ngapi?",
+      "english": "Welcome, boss! How much shall I put in?",
+      "words": [
+        {
+          "text": "Karibu",
+          "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "boss",
+          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Weka",
+          "gloss": "\"Put (in)!\" — imperative of kuweka"
+        },
+        {
+          "text": "ya",
+          "gloss": "\"of\" — n/n singular agreement (nyumba ya Kamau); Kenyans use ya with most nouns",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "ngapi",
+          "gloss": "how many? / how much?",
+          "grammar": [
+            "question-words",
+            "numbers-money"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d52201e1-b712-5522-86f7-961a14479321",
+      "speaker": "Dereva",
+      "role": "user",
+      "swahili": "Naomba uweke ya elfu tatu, tafadhali.",
+      "english": "Please put in three thousand's worth.",
+      "words": [
+        {
+          "text": "Naomba",
+          "gloss": "\"May I have / I'd like\" — the politest everyday opener. Lit. \"I ask for\".",
+          "grammar": [
+            "polite-requests"
+          ]
+        },
+        {
+          "text": "uweke",
+          "gloss": "\"(could you) put\" — u- + -wek- + -e: subjunctive = polite request.",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "ya elfu tatu",
+          "gloss": "\"(fuel) for three thousand\""
+        },
+        {
+          "text": "tafadhali",
+          "gloss": "please"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Naomba uweke ya elfu tatu, tafadhali.",
+          "correct": true
+        },
+        {
+          "swahili": "Naomba niweke ya elfu tatu, tafadhali.",
+          "correct": false
+        },
+        {
+          "swahili": "Naomba uweke ya elfu tatu, asante sana.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "629c6928-29a9-5f07-a7eb-d35288848d32",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Sawa. Petroli au dizeli?",
+      "english": "Okay. Petrol or diesel?",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Petroli",
+          "gloss": "petrol — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "au",
+          "gloss": "or"
+        },
+        {
+          "text": "dizeli",
+          "gloss": "diesel — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "25a5583e-3013-5f72-b03e-2c7638954a54",
+      "speaker": "Dereva",
+      "role": "user",
+      "swahili": "Petroli. Na uangalie upepo kwa matairi pia.",
+      "english": "Petrol. And check the air in the tyres too.",
+      "words": [
+        {
+          "text": "Petroli",
+          "gloss": "petrol — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "uangalie",
+          "gloss": "\"(could you) check\" — u- + -angali- + -e",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "upepo",
+          "gloss": "\"air\" (lit. \"wind\") — tyres are pumped with upepo"
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "matairi",
+          "gloss": "tyres (plural of tairi)"
+        },
+        {
+          "text": "pia",
+          "gloss": "also / too"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Petroli. Na uangalie upepo kwa matairi pia.",
+          "correct": true
+        },
+        {
+          "swahili": "Petroli. Na niangalie upepo kwa matairi pia.",
+          "correct": false
+        },
+        {
+          "swahili": "Petroli. Na uangalia upepo kwa matairi pia.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "ce56837b-e457-53fc-b45f-83ee98d6c5cc",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Hakuna shida. Usiwashe injini, tafadhali.",
+      "english": "No problem. Please don't start the engine.",
+      "words": [
+        {
+          "text": "Hakuna shida",
+          "gloss": "no problem (lit. \"there's no problem\")",
+          "grammar": [
+            "na-have"
+          ]
+        },
+        {
+          "text": "Usiwashe",
+          "gloss": "\"Don't switch on\" — u- + -si- + -wash- + -e: negative command",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "injini",
+          "gloss": "engine"
+        },
+        {
+          "text": "tafadhali",
+          "gloss": "please"
+        }
+      ]
+    },
+    {
+      "id": "d1790a5b-9666-51bb-b814-5aeeacb4e51a",
+      "speaker": "Dereva",
+      "role": "user",
+      "swahili": "Sawa. Na tairi ya nyuma — ebu nione. Iko sawa?",
+      "english": "Okay. And the back tyre — let me see. Is it okay?",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "tairi",
+          "gloss": "tyre (plural matairi)"
+        },
+        {
+          "text": "ya nyuma",
+          "gloss": "\"the back one\""
+        },
+        {
+          "text": "ebu",
+          "gloss": "\"Let me…\" / \"Come on, let's…\" — softens a request",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "nione",
+          "gloss": "\"(let me) see\" — ni- + -on- + -e",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "Iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Sawa. Na tairi ya nyuma — ebu nione. Iko sawa?",
+          "correct": true
+        },
+        {
+          "swahili": "Sawa. Na tairi ya nyuma — ebu uone. Iko sawa?",
+          "correct": false
+        },
+        {
+          "swahili": "Sawa. Na tairi ya nyuma — ebu nione. Yuko sawa?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "8c828631-b587-5ea6-b4af-3064df82049d",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Haina upepo wa kutosha. Nitaongeza.",
+      "english": "It doesn't have enough air. I'll add some.",
+      "words": [
+        {
+          "text": "Haina",
+          "gloss": "\"It (n/n) doesn't have\" — negative of -na.",
+          "grammar": [
+            "na-have",
+            "negative-present"
+          ],
+          "conjugation": {
+            "verb": "-na (have)",
+            "tense": "Present, negative",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "sina"
+              },
+              {
+                "pronoun": "you",
+                "form": "huna"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "hana"
+              },
+              {
+                "pronoun": "we",
+                "form": "hatuna"
+              },
+              {
+                "pronoun": "you all",
+                "form": "hamna"
+              },
+              {
+                "pronoun": "they",
+                "form": "hawana"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "haina"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "hazina"
+              }
+            ]
+          }
+        },
+        {
+          "text": "upepo",
+          "gloss": "\"air\" (lit. \"wind\") — tyres are pumped with upepo"
+        },
+        {
+          "text": "wa",
+          "gloss": "\"of\" — m/wa agreement (mtoto wa Kamau, watu wa Nairobi)",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "kutosha",
+          "gloss": "\"To be enough\" — ku- (infinitive \"to\") + -tosha (be enough). From kutosha.",
+          "grammar": [
+            "infinitive-ku"
+          ]
+        },
+        {
+          "text": "Nitaongeza",
+          "gloss": "\"I will add\" — ni- (subject: I) + ta- (future) + -ongeza (add). From kuongeza.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kuongeza (to add)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitaongeza"
+              },
+              {
+                "pronoun": "you",
+                "form": "utaongeza"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ataongeza"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutaongeza"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtaongeza"
+              },
+              {
+                "pronoun": "they",
+                "form": "wataongeza"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "0dffaab5-97e9-5182-8c6e-a664cadede73",
+      "speaker": "Dereva",
+      "role": "user",
+      "swahili": "Asante. Ufute kioo pia, ili nione barabara vizuri.",
+      "english": "Thanks. Wipe the windscreen too, so that I can see the road well.",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Ufute",
+          "gloss": "\"(please) wipe\" — u- (subject: you) + -fute (wipe, subjunctive -e). From kufuta.",
+          "grammar": [
+            "subjunctive"
+          ],
+          "conjugation": {
+            "verb": "kufuta (to wipe)",
+            "tense": "Subjunctive (-e)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nifute"
+              },
+              {
+                "pronoun": "you",
+                "form": "ufute"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "afute"
+              },
+              {
+                "pronoun": "we",
+                "form": "tufute"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mfute"
+              },
+              {
+                "pronoun": "they",
+                "form": "wafute"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kioo",
+          "gloss": "windscreen / glass / mirror"
+        },
+        {
+          "text": "pia",
+          "gloss": "also / too"
+        },
+        {
+          "text": "ili",
+          "gloss": "\"so that\" — always followed by the subjunctive",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "nione",
+          "gloss": "\"(let me) see\" — ni- + -on- + -e",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "barabara",
+          "gloss": "road — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "vizuri",
+          "gloss": "well / nicely"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante. Ufute kioo pia, ili nione barabara vizuri.",
+          "correct": true
+        },
+        {
+          "swahili": "Asante. Ufute kioo pia, ili unaona barabara vizuri.",
+          "correct": false
+        },
+        {
+          "swahili": "Asante. Nifute kioo pia, ili nione barabara vizuri.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "14f9edae-39ec-5cd5-8910-2508fb1b8910",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Sawa sawa. Kioo ni chafu sana!",
+      "english": "Sure thing. The windscreen is really dirty!",
+      "words": [
+        {
+          "text": "Sawa sawa",
+          "gloss": "alright, alright / perfectly fine"
+        },
+        {
+          "text": "Kioo",
+          "gloss": "windscreen / glass / mirror"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "chafu",
+          "gloss": "\"dirty\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-chafu (dirty)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mchafu"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wachafu"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "chafu"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ]
+    },
+    {
+      "id": "37ee9862-416f-590f-901a-e85aa2afd825",
+      "speaker": "Dereva",
+      "role": "user",
+      "swahili": "Ndiyo, mvua ilinyesha jana. Nikulipe kwa M-Pesa au kadi?",
+      "english": "Yes, it rained yesterday. Shall I pay you by M-Pesa or card?",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mvua",
+          "gloss": "rain — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ilinyesha",
+          "gloss": "\"It rained\" — i- (subject: it (n/n)) + li- (past) + -nyesha (rain). From kunyesha.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kunyesha (to rain)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilinyesha"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulinyesha"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alinyesha"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulinyesha"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlinyesha"
+              },
+              {
+                "pronoun": "they",
+                "form": "walinyesha"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "ilinyesha"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zilinyesha"
+              }
+            ]
+          }
+        },
+        {
+          "text": "jana",
+          "gloss": "yesterday — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Nikulipe",
+          "gloss": "\"shall I pay you?\" — ni- + -ku- (you) + -lip- + -e",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "M-Pesa",
+          "gloss": "M-Pesa — mobile money — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "au",
+          "gloss": "or"
+        },
+        {
+          "text": "kadi",
+          "gloss": "card"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo, mvua ilinyesha jana. Nikulipe kwa M-Pesa au kadi?",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, mvua ilinyesha jana. Unilipe kwa M-Pesa au kadi?",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, mvua inanyesha jana. Nikulipe kwa M-Pesa au kadi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "58a379bc-0d4f-589f-85ad-340bb1b91540",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Yoyote. Lakini lazima uchukue risiti kwa ofisi.",
+      "english": "Either. But you must get the receipt at the office.",
+      "words": [
+        {
+          "text": "Yoyote",
+          "gloss": "any (n/n singular)",
+          "grammar": [
+            "adjective-agreement"
+          ]
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "lazima",
+          "gloss": "must / it's necessary",
+          "grammar": [
+            "helper-verbs"
+          ]
+        },
+        {
+          "text": "uchukue",
+          "gloss": "\"(please) take\" — u- (subject: you) + -chukue (take, subjunctive -e). From kuchukua.",
+          "grammar": [
+            "subjunctive"
+          ],
+          "conjugation": {
+            "verb": "kuchukua (to take)",
+            "tense": "Subjunctive (-e)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nichukue"
+              },
+              {
+                "pronoun": "you",
+                "form": "uchukue"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "achukue"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuchukue"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mchukue"
+              },
+              {
+                "pronoun": "they",
+                "form": "wachukue"
+              }
+            ]
+          }
+        },
+        {
+          "text": "risiti",
+          "gloss": "receipt"
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "ofisi",
+          "gloss": "office — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acc9a455-8b1a-5d5e-acae-d707206c49bc",
+      "speaker": "Dereva",
+      "role": "user",
+      "swahili": "Sawa. Ebu nilipe kwa M-Pesa, ni rahisi.",
+      "english": "Okay. Let me pay with M-Pesa, it's easier.",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Ebu",
+          "gloss": "\"Let me…\" / \"Come on, let's…\" — softens a request",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "nilipe",
+          "gloss": "\"Let me pay / should I pay?\" — ni- (subject: I) + -lipe (pay, subjunctive -e). From kulipa.",
+          "grammar": [
+            "subjunctive"
+          ],
+          "conjugation": {
+            "verb": "kulipa (to pay)",
+            "tense": "Subjunctive (-e)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilipe"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulipe"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alipe"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulipe"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlipe"
+              },
+              {
+                "pronoun": "they",
+                "form": "walipe"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "M-Pesa",
+          "gloss": "M-Pesa — mobile money — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "rahisi",
+          "gloss": "\"easy / cheap\" — m/wa singular agreement (one person / animal).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-rahisi (easy / cheap)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "rahisi"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "rahisi"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "rahisi"
+              }
+            ]
+          }
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Sawa. Ebu nilipe kwa M-Pesa, ni rahisi.",
+          "correct": true
+        },
+        {
+          "swahili": "Sawa. Ebu ulipe kwa M-Pesa, ni rahisi.",
+          "correct": false
+        },
+        {
+          "swahili": "Sawa. Ebu nilipa kwa M-Pesa, ni rahisi.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "ec626c79-2e2b-5652-86d2-fa63721604de",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Poa. Usijali, nitakuletea risiti. Safari njema!",
+      "english": "Cool. Don't worry, I'll bring you the receipt. Safe travels!",
+      "words": [
+        {
+          "text": "Poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Usijali",
+          "gloss": "\"Don't worry\" — u- + -si- + -jali",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "nitakuletea",
+          "gloss": "\"I will bring you (something)\" — ni- (subject: I) + ta- (future) + ku- (object: you) + -letea (bring (something)). From kuletea. Extension: prepositional (-ia/-ea: \"for / to / at\").",
+          "grammar": [
+            "future-ta",
+            "object-infixes",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kuletea (to bring (something))",
+            "tense": "Future (-ta-) + object -ku-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitakuletea"
+              },
+              {
+                "pronoun": "you",
+                "form": "utakuletea"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atakuletea"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutakuletea"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtakuletea"
+              },
+              {
+                "pronoun": "they",
+                "form": "watakuletea"
+              }
+            ]
+          }
+        },
+        {
+          "text": "risiti",
+          "gloss": "receipt"
+        },
+        {
+          "text": "Safari njema",
+          "gloss": "have a good trip"
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "d398ca5f-83e4-5b1f-b280-fc3fefc4008f",
+      "swahili": "Naomba…",
+      "english": "May I have… / I'd like…",
+      "exampleContext": "The politest everyday opener",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "0eaebff9-f47e-568f-95eb-2d82318aa617",
+      "swahili": "Naomba uweke…",
+      "english": "Please put in…",
+      "exampleContext": "u- + -wek- + -e (subjunctive)",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "6ee1fab7-41e1-5d6a-a80a-9838827f2d57",
+      "swahili": "Uangalie…",
+      "english": "Could you check…",
+      "exampleContext": "Subjunctive = polite request",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "a201763b-0f5d-5964-970e-a81daf2f4fc8",
+      "swahili": "Ebu nione",
+      "english": "Let me see",
+      "exampleContext": "ebu softens it",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "1e20bfbd-e16c-54dd-a1d6-00c9eaa880bc",
+      "swahili": "Nikulipe?",
+      "english": "Shall I pay you?",
+      "exampleContext": "ni- + -ku- + -lip- + -e",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "0e9900e4-279c-5c4a-a774-74c33adc4810",
+      "swahili": "ili nione",
+      "english": "so that I can see",
+      "exampleContext": "ili + subjunctive",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "3f9719d0-6425-5ef3-af6d-17ff33e256ab",
+      "swahili": "Lazima uchukue…",
+      "english": "You must take…",
+      "exampleContext": "lazima + subjunctive",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "445e340f-236c-5ea8-a9b1-4b7c5419d25a",
+      "swahili": "Inabidi twende",
+      "english": "We have to go",
+      "exampleContext": "inabidi = it's necessary",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "c592d483-2397-5a7a-a6e2-b163eda00e0c",
+      "swahili": "Usiwashe injini",
+      "english": "Don't start the engine",
+      "exampleContext": "Negative command: u- + -si- + … + -e",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "0b5021eb-84c2-5fca-95de-7c42a7b2b2cb",
+      "swahili": "Usijali",
+      "english": "Don't worry |",
+      "exampleContext": ""
+    },
+    {
+      "id": "dbb63d40-b544-5f69-9bc6-6ee3212e75c2",
+      "swahili": "upepo",
+      "english": "air (in tyres) / wind |",
+      "exampleContext": ""
+    },
+    {
+      "id": "2f13404d-8985-5144-8954-1fea437d4abf",
+      "swahili": "kioo",
+      "english": "windscreen / mirror / glass |",
+      "exampleContext": ""
+    },
+    {
+      "id": "796de9fd-de3a-511e-9118-e8e0007a3c0d",
+      "swahili": "risiti",
+      "english": "receipt |",
+      "exampleContext": ""
+    }
+  ],
+  "practice": [
+    {
+      "id": "e97cd1e1-9c02-5394-ad8e-265e640a65a2",
+      "mode": "translate",
+      "english": "Please put in three thousand.",
+      "before": "Naomba ",
+      "after": " ya elfu tatu.",
+      "options": [
+        {
+          "text": "uweke",
+          "correct": true
+        },
+        {
+          "text": "niweke",
+          "correct": false,
+          "feedback": "niweke = Let me put / should I put?"
+        },
+        {
+          "text": "aweke",
+          "correct": false,
+          "feedback": "aweke = He/she should put"
+        }
+      ],
+      "explanation": "Polite request = subjunctive: u- + -wek- + -e. The final -a becomes -e.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "e3c5c235-ba67-5f9c-b031-3cfc2216a79e",
+      "mode": "translate",
+      "english": "Check the tyres too. (politely)",
+      "before": "",
+      "after": " matairi pia.",
+      "options": [
+        {
+          "text": "Uangalie",
+          "correct": true
+        },
+        {
+          "text": "Niangalie",
+          "correct": false,
+          "feedback": "Niangalie = Let me look at / should I look at?"
+        },
+        {
+          "text": "Waangalie",
+          "correct": false,
+          "feedback": "Waangalie = They should look at"
+        }
+      ],
+      "explanation": "u- (you) + -angali- + -e.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "4d402cff-74ff-5c9f-9a20-b6d15357e86e",
+      "mode": "translate",
+      "english": "Let me see.",
+      "before": "Ebu ",
+      "after": ".",
+      "options": [
+        {
+          "text": "nione",
+          "correct": true
+        },
+        {
+          "text": "uone",
+          "correct": false,
+          "feedback": "uone = (please) see"
+        },
+        {
+          "text": "aone",
+          "correct": false,
+          "feedback": "aone = He/she should see"
+        }
+      ],
+      "explanation": "ni- + -on- + -e: \"let me see\".",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "dfbbf478-d592-5f27-a42e-afa0ddb91d59",
+      "mode": "translate",
+      "english": "Shall I pay you?",
+      "before": "",
+      "after": "?",
+      "options": [
+        {
+          "text": "Nikulipe",
+          "correct": true
+        },
+        {
+          "text": "Unilipe",
+          "correct": false,
+          "feedback": "Unilipe = (please) pay me"
+        },
+        {
+          "text": "Nimlipe",
+          "correct": false,
+          "feedback": "Nimlipe = Let me pay him/her / should I pay him/her?"
+        }
+      ],
+      "explanation": "ni- (I) + -ku- (you) + -lip- + -e: \"shall I pay you?\"",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "f0d3780c-7816-5cb9-a62c-27db114013be",
+      "mode": "translate",
+      "english": "Wipe the windscreen. (politely)",
+      "before": "",
+      "after": " kioo.",
+      "options": [
+        {
+          "text": "Ufute",
+          "correct": true
+        },
+        {
+          "text": "Nifute",
+          "correct": false,
+          "feedback": "Nifute = Let me wipe / should I wipe?"
+        },
+        {
+          "text": "Afute",
+          "correct": false,
+          "feedback": "Afute = He/she should wipe"
+        }
+      ],
+      "explanation": "Ufute = \"(please) wipe\" — u- (subject: you) + -fute (wipe, subjunctive -e). From kufuta.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "f794b52b-4795-56eb-a692-fe39d5e34c0c",
+      "mode": "translate",
+      "english": "so that I can see the road",
+      "before": "ili ",
+      "after": " barabara",
+      "options": [
+        {
+          "text": "nione",
+          "correct": true
+        },
+        {
+          "text": "ninaona",
+          "correct": false,
+          "feedback": "ninaona = I see"
+        },
+        {
+          "text": "nitaona",
+          "correct": false,
+          "feedback": "nitaona = I will see"
+        }
+      ],
+      "explanation": "ili (so that) is always followed by the subjunctive.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "cf948459-823b-5f42-8483-3b26994c0899",
+      "mode": "translate",
+      "english": "so that we clean it",
+      "before": "ili ",
+      "after": "",
+      "options": [
+        {
+          "text": "tusafishe",
+          "correct": true
+        },
+        {
+          "text": "tunasafisha",
+          "correct": false,
+          "feedback": "tunasafisha = We are cleaning"
+        },
+        {
+          "text": "tulisafisha",
+          "correct": false,
+          "feedback": "tulisafisha = We cleaned"
+        }
+      ],
+      "explanation": "tusafishe = \"(so that) we clean\" — tu- + -safish- + -e",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "eff07183-10c7-503e-a341-5b39fe75ec31",
+      "mode": "translate",
+      "english": "You must get the receipt.",
+      "before": "Lazima ",
+      "after": " risiti.",
+      "options": [
+        {
+          "text": "uchukue",
+          "correct": true
+        },
+        {
+          "text": "unachukua",
+          "correct": false,
+          "feedback": "unachukua = You are taking"
+        },
+        {
+          "text": "utachukua",
+          "correct": false,
+          "feedback": "utachukua = You will take"
+        }
+      ],
+      "explanation": "lazima (must) + subjunctive.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "b4f0fc6f-3e73-551d-a417-41a58321b9d4",
+      "mode": "translate",
+      "english": "It's necessary that we go.",
+      "before": "Inabidi ",
+      "after": ".",
+      "options": [
+        {
+          "text": "twende",
+          "correct": true
+        },
+        {
+          "text": "tunaenda",
+          "correct": false,
+          "feedback": "tunaenda = We are going"
+        },
+        {
+          "text": "tutaenda",
+          "correct": false,
+          "feedback": "tutaenda = We will go"
+        }
+      ],
+      "explanation": "inabidi = it's necessary; also + subjunctive. tu- + -ende → twende.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "ee8d4d9d-29e1-5058-8fe1-4729f7b53aca",
+      "mode": "translate",
+      "english": "Don't start the engine.",
+      "before": "",
+      "after": " injini.",
+      "options": [
+        {
+          "text": "Usiwashe",
+          "correct": true
+        },
+        {
+          "text": "Uwashe",
+          "correct": false,
+          "feedback": "Uwashe = (please) switch on"
+        },
+        {
+          "text": "Nisiwashe",
+          "correct": false,
+          "feedback": "Nisiwashe = Let me not switch on / should I not switch on?"
+        }
+      ],
+      "explanation": "Negative command: u- + -si- + -wash- + -e.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "a55497e6-3485-5742-8d79-9d124f059544",
+      "mode": "translate",
+      "english": "Don't worry.",
+      "before": "",
+      "after": ".",
+      "options": [
+        {
+          "text": "Usijali",
+          "correct": true
+        },
+        {
+          "text": "Ujali",
+          "correct": false,
+          "feedback": "Ujali = (please) care"
+        },
+        {
+          "text": "Sijali",
+          "correct": false,
+          "feedback": "Sijali = I don't care"
+        }
+      ],
+      "explanation": "sijali = I don't care.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "414f92ce-7232-59e2-bcd8-00d9846cbabc",
+      "mode": "translate",
+      "english": "Don't go!",
+      "before": "",
+      "after": "!",
+      "options": [
+        {
+          "text": "Usiende",
+          "correct": true
+        },
+        {
+          "text": "Uende",
+          "correct": false,
+          "feedback": "Uende = (please) go"
+        },
+        {
+          "text": "Siendi",
+          "correct": false,
+          "feedback": "Siendi = I am not going"
+        }
+      ],
+      "explanation": "Usiende = \"Don't go\" — u- (subject: you) + si- (not) + -ende (go, subjunctive -e). From kuenda.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "1a31b5f1-b4b1-5b49-a6ba-32bc93fa96e8",
+      "mode": "translate",
+      "english": "Don't (you all) go!",
+      "before": "",
+      "after": "!",
+      "options": [
+        {
+          "text": "Msiende",
+          "correct": true
+        },
+        {
+          "text": "Usiende",
+          "correct": false,
+          "feedback": "Usiende = Don't go"
+        },
+        {
+          "text": "Tusiende",
+          "correct": false,
+          "feedback": "Tusiende = Let's not go"
+        }
+      ],
+      "explanation": "m- = you all.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "0c3b7e9b-926f-56db-b1f9-e5456055af1d",
+      "mode": "translate",
+      "english": "Let's go!",
+      "before": "",
+      "after": "!",
+      "options": [
+        {
+          "text": "Twende",
+          "correct": true
+        },
+        {
+          "text": "Tuende",
+          "correct": false,
+          "feedback": "Tuende = Let's go"
+        },
+        {
+          "text": "Tunaenda",
+          "correct": false,
+          "feedback": "Tunaenda = We are going"
+        }
+      ],
+      "explanation": "Both twende and tuende exist; twende is what everyone says.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "ca62c395-4416-5ae5-b9b7-2cc302a00ad6",
+      "mode": "translate",
+      "english": "It doesn't have enough air.",
+      "before": "",
+      "after": " upepo wa kutosha.",
+      "options": [
+        {
+          "text": "Haina",
+          "correct": true
+        },
+        {
+          "text": "Hana",
+          "correct": false,
+          "feedback": "Hana = He/she doesn't have"
+        },
+        {
+          "text": "Sina",
+          "correct": false,
+          "feedback": "Sina = I don't have"
+        }
+      ],
+      "explanation": "haina = it (n/n) doesn't have.",
+      "grammar": [
+        "na-have",
+        "negative-present"
+      ]
+    },
+    {
+      "id": "4f18d5e1-370c-5820-a93e-d7e23bd98bc0",
+      "mode": "translate",
+      "english": "I'll bring you the receipt.",
+      "before": "",
+      "after": " risiti.",
+      "options": [
+        {
+          "text": "Nitakuletea",
+          "correct": true
+        },
+        {
+          "text": "Utaniletea",
+          "correct": false,
+          "feedback": "Utaniletea = You will bring me (something)"
+        },
+        {
+          "text": "Nitamletea",
+          "correct": false,
+          "feedback": "Nitamletea = I will bring him/her (something)"
+        }
+      ],
+      "explanation": "-ku- + -letea = bring for you.",
+      "grammar": [
+        "future-ta",
+        "object-infixes",
+        "verb-extensions"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import type { Lesson } from '../types';
 import { PASS_THRESHOLD, pct } from '../lib/lessonScores';
+import { THEME_LABELS, maxLessonXp } from '../lib/levels';
 
 const CATEGORY_LABELS: Record<string, string> = {
   transport: 'Transport',
@@ -9,12 +10,12 @@ const CATEGORY_LABELS: Record<string, string> = {
   health: 'Health',
   'work-admin': 'Work & Admin',
   social: 'Social',
-};
-
-const DIFFICULTY_COLORS: Record<string, string> = {
-  beginner: 'bg-green-100 text-green-800',
-  medium: 'bg-yellow-100 text-yellow-800',
-  advanced: 'bg-red-100 text-red-800',
+  home: 'Home',
+  people: 'People',
+  time: 'Time',
+  weather: 'Weather',
+  directions: 'Directions',
+  numbers: 'Numbers',
 };
 
 interface LessonCardProps {
@@ -24,9 +25,14 @@ interface LessonCardProps {
   locked: boolean;
   /** Title of the lesson that must be passed first (for the locked message). */
   previousTitle?: string;
+  /** XP earned so far on this lesson. */
+  xp?: number;
+  /** 1 for a theme's first appearance, 2+ when it comes back at a higher level. */
+  themeVisit?: number;
 }
 
-export function LessonCard({ lesson, passed, locked, previousTitle }: LessonCardProps) {
+export function LessonCard({ lesson, passed, locked, previousTitle, xp = 0, themeVisit = 1 }: LessonCardProps) {
+  const theme = lesson.theme ? THEME_LABELS[lesson.theme] : undefined;
   const body = (
     <>
       <div className="flex items-start justify-between gap-2 mb-2">
@@ -38,19 +44,27 @@ export function LessonCard({ lesson, passed, locked, previousTitle }: LessonCard
         )}
         {locked && (
           <span className="text-xs text-gray-400 whitespace-nowrap shrink-0" aria-label="Locked">
-            🔒 Locked
+            🔒
           </span>
         )}
       </div>
-      <div className="flex gap-2 flex-wrap">
-        <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-600">
-          {CATEGORY_LABELS[lesson.category] ?? lesson.category}
-        </span>
-        <span
-          className={`text-xs px-2 py-0.5 rounded-full capitalize ${DIFFICULTY_COLORS[lesson.difficulty]}`}
-        >
-          {lesson.difficulty}
-        </span>
+      <div className="flex gap-1.5 flex-wrap">
+        {theme && (
+          <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-600">
+            {theme.emoji} {theme.label}
+            {themeVisit > 1 && <span className="text-gray-400"> · visit {themeVisit}</span>}
+          </span>
+        )}
+        {!theme && (
+          <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-600">
+            {CATEGORY_LABELS[lesson.category] ?? lesson.category}
+          </span>
+        )}
+        {!locked && xp > 0 && (
+          <span className="text-xs px-2 py-0.5 rounded-full bg-amber-50 text-amber-800">
+            ⚡ {xp}/{maxLessonXp()} XP
+          </span>
+        )}
       </div>
       {locked && (
         <p className="text-xs text-gray-400 mt-3">
@@ -71,7 +85,9 @@ export function LessonCard({ lesson, passed, locked, previousTitle }: LessonCard
   return (
     <Link
       to={`/lesson/${lesson.id}`}
-      className="block border border-gray-200 rounded-lg p-4 hover:border-green-400 hover:shadow-sm transition-all bg-white"
+      className={`block border rounded-lg p-4 hover:border-green-400 hover:shadow-sm transition-all bg-white ${
+        passed ? 'border-green-200' : 'border-gray-200'
+      }`}
     >
       {body}
     </Link>

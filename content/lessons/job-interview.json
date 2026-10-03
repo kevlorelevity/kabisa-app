@@ -1,0 +1,1443 @@
+{
+  "id": "job-interview",
+  "uuid": "02b354dc-5c40-5434-ba39-dd6a60509495",
+  "title": "The Job Interview",
+  "category": "work-admin",
+  "difficulty": "advanced",
+  "level": 9,
+  "order": 902,
+  "theme": "work",
+  "culturalNote": "Job interviews in Kenya are usually in English, but switching to Swahili for a question or two is a great way to show respect and build rapport — especially with a Kenyan team. Talking about your experience is where continuous tenses shine: \"nimekuwa nikifanya kazi…\" (I have been working…), \"nilipokuwa nikisoma…\" (when I was studying…). Purpose clauses use ili + subjunctive: \"ili nijifunze\" (so that I learn).",
+  "startingPoint": "You're interviewing for a manager role at a Nairobi tech company. The HR lead, Mrs Kamau, starts in Swahili.",
+  "grammarFocus": [
+    "continuous-tenses",
+    "conjunctions-kwamba",
+    "subjunctive"
+  ],
+  "grammar": [
+    "continuous-tenses",
+    "conjunctions-kwamba",
+    "subjunctive",
+    "discourse-particles",
+    "polite-requests",
+    "sanifu-noun-classes",
+    "locative-ni",
+    "conditional-nge",
+    "verb-extensions",
+    "infinitive-ku",
+    "noun-classes-mwa-nn",
+    "past-li",
+    "ni-copula",
+    "possessives",
+    "question-words",
+    "ki-po-ka",
+    "vyo-manner",
+    "demonstratives",
+    "perfect-me"
+  ],
+  "turns": [
+    {
+      "id": "6a0a1fcd-4a25-5af2-8803-3ee25651be9c",
+      "speaker": "Bi. Kamau",
+      "role": "auto",
+      "swahili": "Karibu. Kabla tuanze, ebu utuambie kidogo kujihusu.",
+      "english": "Welcome. Before we start, tell us a little about yourself.",
+      "words": [
+        {
+          "text": "Karibu",
+          "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "Kabla",
+          "gloss": "before"
+        },
+        {
+          "text": "tuanze",
+          "gloss": "\"Let's start\" — tu- (subject: we) + -anze (start, subjunctive -e). From kuanza.",
+          "grammar": [
+            "subjunctive"
+          ],
+          "conjugation": {
+            "verb": "kuanza (to start)",
+            "tense": "Subjunctive (-e)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nianze"
+              },
+              {
+                "pronoun": "you",
+                "form": "uanze"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "aanze"
+              },
+              {
+                "pronoun": "we",
+                "form": "twanze"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mwanze"
+              },
+              {
+                "pronoun": "they",
+                "form": "waanze"
+              }
+            ]
+          }
+        },
+        {
+          "text": "ebu",
+          "gloss": "come on / let's — softens a request",
+          "grammar": [
+            "discourse-particles",
+            "polite-requests"
+          ]
+        },
+        {
+          "text": "utuambie",
+          "gloss": "\"(please) tell us\"",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "kidogo",
+          "gloss": "a little / a bit — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — kidogo (adverb, no agreement)"
+        },
+        {
+          "text": "kujihusu",
+          "gloss": "\"about yourself\""
+        }
+      ]
+    },
+    {
+      "id": "5cabefe5-7769-5c21-a7ed-9c8d6aa62ce7",
+      "speaker": "Mgombea",
+      "role": "user",
+      "swahili": "Asante. Kwa miaka mitano, nimekuwa nikifanya kazi kama meneja kwa kampuni ya teknolojia.",
+      "english": "Thank you. For five years, I've been working as a manager at a technology company.",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "miaka",
+          "gloss": "years — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: m/mi class — miaka mitatu"
+        },
+        {
+          "text": "mitano",
+          "gloss": "\"five\" — m/mi agreement (miaka mitano).",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "m/mi class numbers: mmoja, miwili, mitatu, mitano"
+        },
+        {
+          "text": "nimekuwa nikifanya kazi",
+          "gloss": "\"I've been working\"",
+          "grammar": [
+            "continuous-tenses"
+          ]
+        },
+        {
+          "text": "kama meneja",
+          "gloss": "as a manager"
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "kampuni ya teknolojia",
+          "gloss": "a technology company"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante. Kwa miaka mitano, nimekuwa nikifanya kazi kama meneja kwa kampuni ya teknolojia.",
+          "correct": true
+        },
+        {
+          "swahili": "Asante. Kwa miaka mitano, nitakuwa nikifanya kazi kama meneja kwa kampuni ya teknolojia.",
+          "correct": false
+        },
+        {
+          "swahili": "Asante. Kwa miaka mitano, nimekuwa nikisoma kazi kama meneja kwa kampuni ya teknolojia.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "9b4b88cf-fcd7-53b0-9de2-065df3e1424f",
+      "speaker": "Bi. Kamau",
+      "role": "auto",
+      "swahili": "Na kabla ya hapo?",
+      "english": "And before that?",
+      "words": [
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "kabla ya",
+          "gloss": "before"
+        },
+        {
+          "text": "hapo",
+          "gloss": "there (near you / just mentioned)"
+        }
+      ]
+    },
+    {
+      "id": "474d1d19-2a3f-50e8-97a9-0ab71135f007",
+      "speaker": "Mgombea",
+      "role": "user",
+      "swahili": "Nilipokuwa nikisoma chuo kikuu, nilikuwa nikifanya kazi ya muda jioni.",
+      "english": "When I was studying at university, I was doing a part-time job in the evenings.",
+      "words": [
+        {
+          "text": "Nilipokuwa nikisoma",
+          "gloss": "\"When I was studying\" — -po- + kuwa + -ki- verb",
+          "grammar": [
+            "continuous-tenses"
+          ]
+        },
+        {
+          "text": "chuo kikuu",
+          "gloss": "university",
+          "sanifu": "ki/vi class"
+        },
+        {
+          "text": "nilikuwa nikifanya",
+          "gloss": "\"I was doing\"",
+          "grammar": [
+            "continuous-tenses"
+          ]
+        },
+        {
+          "text": "kazi ya muda",
+          "gloss": "part-time job"
+        },
+        {
+          "text": "jioni",
+          "gloss": "in the evenings"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Nilipokuwa nikisoma chuo kikuu, nilikuwa nikifanya kazi ya muda jioni.",
+          "correct": true
+        },
+        {
+          "swahili": "Nitakapokuwa nikisoma chuo kikuu, nilikuwa nikifanya kazi ya muda jioni.",
+          "correct": false
+        },
+        {
+          "swahili": "Nilipokuwa nikisoma chuo kikuu, nimekuwa nikifanya kazi ya muda jioni.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "9357ec28-c986-50b0-aa64-985b23dbfc2c",
+      "speaker": "Bi. Kamau",
+      "role": "auto",
+      "swahili": "Vizuri. Kwa nini ungependa kujiunga na timu yetu?",
+      "english": "Good. Why would you like to join our team?",
+      "words": [
+        {
+          "text": "Vizuri",
+          "gloss": "well / nicely"
+        },
+        {
+          "text": "Kwa nini",
+          "gloss": "Why"
+        },
+        {
+          "text": "ungependa",
+          "gloss": "\"would you like\"",
+          "grammar": [
+            "conditional-nge"
+          ]
+        },
+        {
+          "text": "kujiunga na",
+          "gloss": "to join"
+        },
+        {
+          "text": "timu yetu",
+          "gloss": "our team"
+        }
+      ]
+    },
+    {
+      "id": "a6be0744-c2f3-5861-91c6-168f406ce4d7",
+      "speaker": "Mgombea",
+      "role": "user",
+      "swahili": "Nimesikia kwamba hapa mnasaidiana sana, na ningependa kufanya kazi mahali kama hapa ili nijifunze zaidi.",
+      "english": "I've heard that here you help each other a lot, and I'd like to work in a place like this so that I can learn more.",
+      "words": [
+        {
+          "text": "Nimesikia kwamba",
+          "gloss": "\"I've heard that\"",
+          "grammar": [
+            "conjunctions-kwamba"
+          ]
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "mnasaidiana",
+          "gloss": "\"you help each other\"",
+          "grammar": [
+            "verb-extensions"
+          ]
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "ningependa",
+          "gloss": "\"I would like\" — ni- (subject: I) + nge- (\"would\") + -penda (like). From kupenda.",
+          "grammar": [
+            "conditional-nge"
+          ],
+          "conjugation": {
+            "verb": "kupenda (to like)",
+            "tense": "Conditional (-nge-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ningependa"
+              },
+              {
+                "pronoun": "you",
+                "form": "ungependa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "angependa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tungependa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mngependa"
+              },
+              {
+                "pronoun": "they",
+                "form": "wangependa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kufanya",
+          "gloss": "\"To do\" — ku- (infinitive \"to\") + -fanya (do). From kufanya.",
+          "grammar": [
+            "infinitive-ku"
+          ]
+        },
+        {
+          "text": "kazi",
+          "gloss": "work / job — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "mahali",
+          "gloss": "place — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: pa/ku/mu class — mahali hapa / pale (pa-class: mahali pazuri)"
+        },
+        {
+          "text": "kama",
+          "gloss": "like / as / if"
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "ili",
+          "gloss": "\"so that\"",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "nijifunze",
+          "gloss": "\"(that) I learn\"",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "zaidi",
+          "gloss": "more"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Nimesikia kwamba hapa mnasaidiana sana, na ningependa kufanya kazi mahali kama hapa ili nijifunze zaidi.",
+          "correct": true
+        },
+        {
+          "swahili": "Nimesikia ingawa hapa mnasaidiana sana, na ningependa kufanya kazi mahali kama hapa ili nijifunze zaidi.",
+          "correct": false
+        },
+        {
+          "swahili": "Nimesikia kwamba hapa mnasaidiana sana, na ningependa kufanya kazi mahali kama hapa ili ninajifunza zaidi.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "37336d28-a616-57e3-b298-215f9a9d3a21",
+      "speaker": "Bi. Kamau",
+      "role": "auto",
+      "swahili": "Changamoto kubwa zaidi ulikuwa nayo ni ipi?",
+      "english": "What's the biggest challenge you've had?",
+      "words": [
+        {
+          "text": "Changamoto",
+          "gloss": "challenge"
+        },
+        {
+          "text": "kubwa zaidi",
+          "gloss": "biggest"
+        },
+        {
+          "text": "ulikuwa",
+          "gloss": "\"You were\" — u- (subject: you) + li- (past) + -wa (be). From kuwa.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kuwa (to be)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilikuwa"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulikuwa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alikuwa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulikuwa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlikuwa"
+              },
+              {
+                "pronoun": "they",
+                "form": "walikuwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nayo",
+          "gloss": "with it (n/n) — \"niko nayo\" = I have it with me"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "ipi",
+          "gloss": "which one? (n/n)"
+        }
+      ]
+    },
+    {
+      "id": "fc1d4c78-8962-5b08-9e5e-ad10f740cc5e",
+      "speaker": "Mgombea",
+      "role": "user",
+      "swahili": "Wakati mmoja, mradi wetu ulikuwa ukichelewa sana.",
+      "english": "At one point, our project was running very late.",
+      "words": [
+        {
+          "text": "Wakati mmoja",
+          "gloss": "once / at one point"
+        },
+        {
+          "text": "mradi",
+          "gloss": "project"
+        },
+        {
+          "text": "wetu",
+          "gloss": "\"our\" — m/wa agreement (for people: mtoto wetu, watoto wetu).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (m/wa: people)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "wangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "wako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "wake"
+              },
+              {
+                "pronoun": "our",
+                "form": "wetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "wenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "wao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "ulikuwa ukichelewa",
+          "gloss": "\"was running late\" — u- agreement for mradi (m/mi)",
+          "grammar": [
+            "continuous-tenses"
+          ]
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Wakati mmoja, mradi wetu ulikuwa ukichelewa sana.",
+          "correct": true
+        },
+        {
+          "swahili": "Wakati mmoja, mradi wetu utakuwa ukichelewa sana.",
+          "correct": false
+        },
+        {
+          "swahili": "Wakati mmoja, mradi wetu ulikuwa ukiwahi sana.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "2cf54a31-d433-5031-ba08-81052bb60b08",
+      "speaker": "Bi. Kamau",
+      "role": "auto",
+      "swahili": "Ulifanya nini?",
+      "english": "What did you do?",
+      "words": [
+        {
+          "text": "Ulifanya",
+          "gloss": "\"You did\" — u- (subject: you) + li- (past) + -fanya (do). From kufanya.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kufanya (to do)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilifanya"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulifanya"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alifanya"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulifanya"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlifanya"
+              },
+              {
+                "pronoun": "they",
+                "form": "walifanya"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nini",
+          "gloss": "what?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "54f87b65-e1ed-5a55-9f1e-f3a63554f06d",
+      "speaker": "Mgombea",
+      "role": "user",
+      "swahili": "Tulikaa pamoja kama timu, tukapanga kazi upya, na ukamalizika kwa wakati.",
+      "english": "We sat down together as a team, re-planned the work, and it got finished on time.",
+      "words": [
+        {
+          "text": "Tulikaa pamoja",
+          "gloss": "we sat together"
+        },
+        {
+          "text": "kama",
+          "gloss": "like / as / if"
+        },
+        {
+          "text": "timu",
+          "gloss": "team — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "tukapanga",
+          "gloss": "\"and we planned\"",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "kazi",
+          "gloss": "work / job — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "upya",
+          "gloss": "anew / again"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "ukamalizika",
+          "gloss": "\"and it got finished\" — m/mi agreement u-",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "kwa wakati",
+          "gloss": "on time"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Tulikaa pamoja kama timu, tukapanga kazi upya, na ukamalizika kwa wakati.",
+          "correct": true
+        },
+        {
+          "swahili": "Tutakaa pamoja kama timu, tukapanga kazi upya, na ukamalizika kwa wakati.",
+          "correct": false
+        },
+        {
+          "swahili": "Tulikaa pamoja kama timu, tunapanga kazi upya, na ukamalizika kwa wakati.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "48451f39-25cc-5bf6-b076-12c424d0342a",
+      "speaker": "Bi. Kamau",
+      "role": "auto",
+      "swahili": "Safi. Na unavyoona, kiongozi mzuri ni mtu wa aina gani?",
+      "english": "Great. And the way you see it, what kind of person is a good leader?",
+      "words": [
+        {
+          "text": "Safi",
+          "gloss": "clean / great / sorted"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "unavyoona",
+          "gloss": "\"The way you see it / In your view\"",
+          "grammar": [
+            "vyo-manner"
+          ]
+        },
+        {
+          "text": "kiongozi mzuri",
+          "gloss": "a good leader"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mtu",
+          "gloss": "person — m/wa noun (people & animals; plural watu)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "wa",
+          "gloss": "\"of\" — m/wa agreement (mtoto wa Kamau, watu wa Nairobi)",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "aina gani",
+          "gloss": "what kind?"
+        }
+      ]
+    },
+    {
+      "id": "4bd86fe7-42d8-5e9f-bc1d-757158064523",
+      "speaker": "Mgombea",
+      "role": "user",
+      "swahili": "Ninavyoona, kiongozi mzuri anasikiliza watu wake zaidi kuliko anavyoongea.",
+      "english": "The way I see it, a good leader listens to their people more than they talk.",
+      "words": [
+        {
+          "text": "Ninavyoona",
+          "gloss": "\"The way I see it\"",
+          "grammar": [
+            "vyo-manner"
+          ]
+        },
+        {
+          "text": "kiongozi mzuri",
+          "gloss": "a good leader"
+        },
+        {
+          "text": "anasikiliza",
+          "gloss": "listens"
+        },
+        {
+          "text": "watu wake",
+          "gloss": "their people"
+        },
+        {
+          "text": "zaidi kuliko",
+          "gloss": "more than"
+        },
+        {
+          "text": "anavyoongea",
+          "gloss": "\"How he/she talks\" — a- (subject: he/she) + na- (present) + vyo- (how / the way) + -ongea (talk). From kuongea.",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ninavyoona, kiongozi mzuri anasikiliza watu wake zaidi kuliko anavyoongea.",
+          "correct": true
+        },
+        {
+          "swahili": "Unavyoona, kiongozi mzuri anasikiliza watu wake zaidi kuliko anavyoongea.",
+          "correct": false
+        },
+        {
+          "swahili": "Ninavyoona, kiongozi mzuri anaongea zaidi kuliko anavyosikiliza.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "55e09d42-2b52-5a7f-b421-d6323cfd6ad1",
+      "speaker": "Bi. Kamau",
+      "role": "auto",
+      "swahili": "Jibu zuri sana. Tutakujulisha uamuzi wetu wiki ijayo.",
+      "english": "A very good answer. We'll let you know our decision next week.",
+      "words": [
+        {
+          "text": "Jibu",
+          "gloss": "answer (plural majibu) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — jibu lako, majibu"
+        },
+        {
+          "text": "zuri",
+          "gloss": "\"good\" — ji/ma singular agreement (jibu zuri, wazo zuri).",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "ji/ma class"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Tutakujulisha",
+          "gloss": "\"We'll let you know\"",
+          "grammar": [
+            "verb-extensions"
+          ]
+        },
+        {
+          "text": "uamuzi",
+          "gloss": "decision"
+        },
+        {
+          "text": "wetu",
+          "gloss": "\"our\" — m/wa agreement (for people: mtoto wetu, watoto wetu).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (m/wa: people)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "wangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "wako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "wake"
+              },
+              {
+                "pronoun": "our",
+                "form": "wetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "wenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "wao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "wiki ijayo",
+          "gloss": "next week"
+        }
+      ]
+    },
+    {
+      "id": "c705c1e9-0139-531d-85bd-53340eb028e6",
+      "speaker": "Mgombea",
+      "role": "user",
+      "swahili": "Asante sana kwa nafasi hii. Nitasubiri kwa hamu!",
+      "english": "Thank you very much for this opportunity. I'll wait eagerly!",
+      "words": [
+        {
+          "text": "Asante sana",
+          "gloss": "thank you very much"
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "nafasi",
+          "gloss": "space / chance / opening — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "hii",
+          "gloss": "this — n/n singular (and Kenyans' all-purpose \"this\")",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "Nitasubiri",
+          "gloss": "I'll wait"
+        },
+        {
+          "text": "kwa hamu",
+          "gloss": "eagerly"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante sana kwa nafasi hii. Nitasubiri kwa hamu!",
+          "correct": true
+        },
+        {
+          "swahili": "Pole sana kwa nafasi hii. Nitasubiri kwa hamu!",
+          "correct": false
+        },
+        {
+          "swahili": "Asante sana kwa nafasi hii. Nilisubiri kwa hamu!",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "10f22bd0-3e07-5b20-a42c-f70964457801",
+      "swahili": "Utuambie kujihusu",
+      "english": "Tell us about yourself",
+      "exampleContext": "Subjunctive = polite request",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "743c663b-b869-5293-a757-f6c14af29cdf",
+      "swahili": "Nimekuwa nikifanya kazi…",
+      "english": "I've been working… |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "201d10a3-196a-5caa-aab9-70bfcff88ab5",
+      "swahili": "Nilipokuwa nikisoma…",
+      "english": "When I was studying… |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "9421e562-14cd-53d5-9bcd-03d608635496",
+      "swahili": "chuo kikuu",
+      "english": "university",
+      "exampleContext": "ki/vi class",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "0da72e85-de04-5690-8e5f-c987198b7607",
+      "swahili": "kazi ya muda",
+      "english": "part-time job",
+      "exampleContext": "Lit. \"work of (some) time\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "50b68e2f-c2e7-5ed4-893b-806b0bd9951f",
+      "swahili": "Ningependa…",
+      "english": "I would like… |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "cfab6f2a-5307-50fe-9ca1-ea3cee142f4c",
+      "swahili": "Nimesikia kwamba…",
+      "english": "I've heard that… |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "3be0a03b-6a3a-53ac-89bc-6e8a9f234e6e",
+      "swahili": "ili nijifunze",
+      "english": "so that I learn",
+      "exampleContext": "ili + subjunctive",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "286648ee-8818-5f5d-9677-f90f0a570a11",
+      "swahili": "changamoto",
+      "english": "challenge |",
+      "exampleContext": ""
+    },
+    {
+      "id": "979ad93c-7cf3-5a14-8df1-a42f83889123",
+      "swahili": "tukapanga upya",
+      "english": "and we re-planned",
+      "exampleContext": "upya = anew",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "ed402f42-fd3d-5576-ab04-cf1db77f9ecd",
+      "swahili": "Ninavyoona…",
+      "english": "The way I see it…",
+      "exampleContext": "-vyo- = the way",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "4bc0c86b-0ad8-5e49-93a9-02acf8e14fbe",
+      "swahili": "Tutakujulisha",
+      "english": "We'll let you know",
+      "exampleContext": "jua → julisha"
+    },
+    {
+      "id": "21b04903-baa4-5d0f-9dfa-06ce6d445547",
+      "swahili": "uamuzi",
+      "english": "decision",
+      "exampleContext": "from kuamua (to decide)"
+    },
+    {
+      "id": "44f01b30-51b3-5332-aa11-000aeb64b895",
+      "swahili": "kwa hamu",
+      "english": "eagerly",
+      "exampleContext": "hamu = longing / appetite",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "067523e4-f52c-5efd-99c8-ad47ce99be5c",
+      "mode": "translate",
+      "english": "I've been working as a manager.",
+      "before": "",
+      "after": " nikifanya kazi kama meneja.",
+      "options": [
+        {
+          "text": "Nimekuwa",
+          "correct": true
+        },
+        {
+          "text": "Nilikuwa",
+          "correct": false,
+          "feedback": "Nilikuwa = I was"
+        },
+        {
+          "text": "Nitakuwa",
+          "correct": false,
+          "feedback": "Nitakuwa = I will be"
+        }
+      ],
+      "explanation": "nimekuwa (I have been) + -ki- verb = have been …-ing.",
+      "grammar": [
+        "perfect-me"
+      ]
+    },
+    {
+      "id": "1ad3a484-f8a4-59d6-b895-6e931123a7e4",
+      "mode": "translate",
+      "english": "When I was studying…",
+      "before": "",
+      "after": " nikisoma…",
+      "options": [
+        {
+          "text": "Nilipokuwa",
+          "correct": true
+        },
+        {
+          "text": "Nikiwa",
+          "correct": false,
+          "feedback": "Nikiwa = (while) I am / being"
+        },
+        {
+          "text": "Nitakapokuwa",
+          "correct": false,
+          "feedback": "Nitakapokuwa = When I am"
+        }
+      ],
+      "explanation": "-po- (when) + kuwa + -ki- verb.",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "adfc3456-9654-570d-8577-3679224a5f60",
+      "mode": "translate",
+      "english": "…I was doing a part-time job.",
+      "before": "…",
+      "after": " kazi ya muda.",
+      "options": [
+        {
+          "text": "nilikuwa nikifanya",
+          "correct": true
+        },
+        {
+          "text": "nimekuwa nikifanya",
+          "correct": false,
+          "feedback": "nimekuwa nikifanya = I have been + If/when I do"
+        },
+        {
+          "text": "nitakuwa nikifanya",
+          "correct": false,
+          "feedback": "nitakuwa nikifanya = I will be + If/when I do"
+        }
+      ],
+      "explanation": "nilikuwa nikifanya = \"I was doing\"",
+      "grammar": [
+        "continuous-tenses"
+      ]
+    },
+    {
+      "id": "a80902ba-3c59-5040-986c-46d1b5c00068",
+      "mode": "translate",
+      "english": "The project was running late.",
+      "before": "Mradi ",
+      "after": " ukichelewa.",
+      "options": [
+        {
+          "text": "ulikuwa",
+          "correct": true
+        },
+        {
+          "text": "ilikuwa",
+          "correct": false,
+          "feedback": "ilikuwa = It was"
+        },
+        {
+          "text": "walikuwa",
+          "correct": false,
+          "feedback": "walikuwa = They were"
+        }
+      ],
+      "explanation": "mradi is m/mi in Sanifu: u- agreement. Kenyans often say \"project ilikuwa ikichelewa\".",
+      "grammar": [
+        "past-li"
+      ]
+    },
+    {
+      "id": "ed3fd253-7e12-5b56-85d9-ab3a3ddbed64",
+      "mode": "translate",
+      "english": "I've heard that you help each other.",
+      "before": "Nimesikia ",
+      "after": " mnasaidiana.",
+      "options": [
+        {
+          "text": "kwamba",
+          "correct": true
+        },
+        {
+          "text": "ingawa",
+          "correct": false,
+          "feedback": "ingawa = although"
+        },
+        {
+          "text": "badala ya",
+          "correct": false,
+          "feedback": "badala ya = instead of"
+        }
+      ],
+      "explanation": "kwamba: that (as in \"he said that…\")",
+      "grammar": [
+        "conjunctions-kwamba"
+      ]
+    },
+    {
+      "id": "64d05223-cb8d-5995-b417-114912a80b05",
+      "mode": "translate",
+      "english": "so that I can learn more",
+      "before": "ili ",
+      "after": " zaidi",
+      "options": [
+        {
+          "text": "nijifunze",
+          "correct": true
+        },
+        {
+          "text": "ninajifunza",
+          "correct": false,
+          "feedback": "ninajifunza = I am learning"
+        },
+        {
+          "text": "nilijifunza",
+          "correct": false,
+          "feedback": "nilijifunza = I learned"
+        }
+      ],
+      "explanation": "ili + subjunctive.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "7abe1808-7875-54b3-95f9-17ad31b69e95",
+      "mode": "translate",
+      "english": "Why would you like to join us?",
+      "before": "Kwa nini ",
+      "after": " kujiunga nasi?",
+      "options": [
+        {
+          "text": "ungependa",
+          "correct": true
+        },
+        {
+          "text": "unapenda",
+          "correct": false,
+          "feedback": "unapenda = You like"
+        },
+        {
+          "text": "utapenda",
+          "correct": false,
+          "feedback": "utapenda = You will like"
+        }
+      ],
+      "explanation": "ungependa = \"would you like\"",
+      "grammar": [
+        "conditional-nge"
+      ]
+    },
+    {
+      "id": "c297e72b-f444-5ea0-9d1a-ab2cfab5f047",
+      "mode": "translate",
+      "english": "Tell us about yourself. (politely)",
+      "before": "",
+      "after": " kujihusu.",
+      "options": [
+        {
+          "text": "Utuambie",
+          "correct": true
+        },
+        {
+          "text": "Tukuambie",
+          "correct": false,
+          "feedback": "Tukuambie = Let's tell you"
+        },
+        {
+          "text": "Waambie",
+          "correct": false,
+          "feedback": "Waambie = Tell them / you all!"
+        }
+      ],
+      "explanation": "Utuambie = \"(please) tell us\"",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "1587419e-0115-53da-aac2-debce4b9906c",
+      "mode": "complete",
+      "english": "We sat together, and then re-planned the work.",
+      "before": "Tulikaa pamoja, ",
+      "after": " kazi upya.",
+      "options": [
+        {
+          "text": "tukapanga",
+          "correct": true
+        },
+        {
+          "text": "tunapanga",
+          "correct": false,
+          "feedback": "tunapanga = We are arranging"
+        },
+        {
+          "text": "tutapanga",
+          "correct": false,
+          "feedback": "tutapanga = We will arrange"
+        }
+      ],
+      "explanation": "tukapanga = \"and we planned\"",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "4e0b13eb-7c8c-5ebb-9ce9-24ee598bedc6",
+      "mode": "translate",
+      "english": "the way I see it",
+      "before": "",
+      "after": "",
+      "options": [
+        {
+          "text": "ninavyoona",
+          "correct": true
+        },
+        {
+          "text": "unavyoona",
+          "correct": false,
+          "feedback": "unavyoona = The way you see it / In your view"
+        },
+        {
+          "text": "anavyoona",
+          "correct": false,
+          "feedback": "anavyoona = How he/she sees"
+        }
+      ],
+      "explanation": "ni- + -na- + -vyo- + -ona.",
+      "grammar": [
+        "vyo-manner"
+      ]
+    },
+    {
+      "id": "1e10c4e4-8d8c-5fd8-bd24-83e9ede31705",
+      "mode": "translate",
+      "english": "more than they talk",
+      "before": "zaidi kuliko ",
+      "after": "",
+      "options": [
+        {
+          "text": "anavyoongea",
+          "correct": true
+        },
+        {
+          "text": "anaongea",
+          "correct": false,
+          "feedback": "anaongea = talks"
+        },
+        {
+          "text": "aliongea",
+          "correct": false,
+          "feedback": "aliongea = He/she talked"
+        }
+      ],
+      "explanation": "-vyo- turns a verb into \"the way / how much\".",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "3939fa66-cac2-5d26-bfc8-8839956d548b",
+      "mode": "translate",
+      "english": "We'll let you know our decision.",
+      "before": "",
+      "after": " uamuzi wetu.",
+      "options": [
+        {
+          "text": "Tutakujulisha",
+          "correct": true
+        },
+        {
+          "text": "Tutakujua",
+          "correct": false,
+          "feedback": "Tutakujua = We will know you"
+        },
+        {
+          "text": "Utatujulisha",
+          "correct": false,
+          "feedback": "Utatujulisha = You will let us know"
+        }
+      ],
+      "explanation": "jua → julisha: make (someone) know.",
+      "grammar": [
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "77303723-dfdd-5485-bd67-4915d0fab35e",
+      "mode": "translate",
+      "english": "I'll wait eagerly.",
+      "before": "",
+      "after": " kwa hamu.",
+      "options": [
+        {
+          "text": "Nitasubiri",
+          "correct": true
+        },
+        {
+          "text": "Nilisubiri",
+          "correct": false,
+          "feedback": "Nilisubiri = I waited"
+        },
+        {
+          "text": "Ninasubiri",
+          "correct": false,
+          "feedback": "Ninasubiri = I am waiting"
+        }
+      ],
+      "explanation": "Nitasubiri: I'll wait"
+    },
+    {
+      "id": "b737ec0b-1657-5c94-93aa-f30221c46ac2",
+      "mode": "complete",
+      "english": "Thank you for this opportunity.",
+      "before": "Asante kwa ",
+      "after": " hii.",
+      "options": [
+        {
+          "text": "nafasi",
+          "correct": true
+        },
+        {
+          "text": "nauli",
+          "correct": false,
+          "feedback": "nauli = fare"
+        },
+        {
+          "text": "nyumba",
+          "correct": false,
+          "feedback": "nyumba = house / houses"
+        }
+      ],
+      "explanation": "nafasi = space, chance, opportunity.",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "5c803f5f-afef-5f6f-8984-7645e84ce8d4",
+      "mode": "translate",
+      "english": "A good leader listens.",
+      "before": "Kiongozi mzuri ",
+      "after": ".",
+      "options": [
+        {
+          "text": "anasikiliza",
+          "correct": true
+        },
+        {
+          "text": "anasikia",
+          "correct": false,
+          "feedback": "anasikia = He/she hears"
+        },
+        {
+          "text": "anasikilizwa",
+          "correct": false,
+          "feedback": "anasikilizwa = He/she is listened to"
+        }
+      ],
+      "explanation": "sikia = hear; sikiliza = listen (to)."
+    }
+  ]
+}

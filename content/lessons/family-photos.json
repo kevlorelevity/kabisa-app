@@ -1,0 +1,1791 @@
+{
+  "id": "family-photos",
+  "uuid": "54c750e2-e6aa-54ec-9eaa-e99e98865b34",
+  "title": "Who's in the Photo? Talking Family",
+  "category": "people",
+  "difficulty": "beginner",
+  "level": 2,
+  "order": 202,
+  "theme": "people",
+  "culturalNote": "Kenyans ask about family early and warmly — \"Una familia?\" isn't nosy, it's friendly. Family words are flexible: dada and kaka (sister, brother) are also how you politely address any young woman or man, and cousins are often just called brothers and sisters. People (m/wa nouns) take their own agreement: mtoto mmoja (one child), watoto wawili (two children), mke wangu (my wife) — but everyday family words like mama, dada, nyanya take yangu: mama yangu, dada yangu.",
+  "startingPoint": "Lunch break at the office. Your colleague Achieng spots the photo on your phone's lock screen.",
+  "grammarFocus": [
+    "na-have",
+    "possessives",
+    "demonstratives",
+    "negative-present"
+  ],
+  "grammar": [
+    "na-have",
+    "possessives",
+    "demonstratives",
+    "negative-present",
+    "noun-classes-mwa-nn",
+    "ni-copula",
+    "numbers-money",
+    "discourse-particles",
+    "greetings",
+    "adjective-agreement",
+    "ko-location",
+    "present-na",
+    "object-infixes",
+    "subject-prefixes"
+  ],
+  "turns": [
+    {
+      "id": "46e069c1-d4b2-5972-b09b-89b94713035d",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "John, una familia?",
+      "english": "John, do you have a family?",
+      "words": [
+        {
+          "text": "John",
+          "gloss": "John (name)"
+        },
+        {
+          "text": "una",
+          "gloss": "\"You have\" — u- + -na (with). Swahili \"have\" is literally \"be with\".",
+          "grammar": [
+            "na-have"
+          ],
+          "conjugation": {
+            "verb": "-na (have)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nina"
+              },
+              {
+                "pronoun": "you",
+                "form": "una"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ana"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuna"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mna"
+              },
+              {
+                "pronoun": "they",
+                "form": "wana"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "ina"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zina"
+              }
+            ]
+          }
+        },
+        {
+          "text": "familia",
+          "gloss": "family — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "26a59a34-907d-510d-9fd5-a588712b4e10",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ndiyo. Nina mke na watoto wawili.",
+      "english": "Yes. I have a wife and two children.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Nina",
+          "gloss": "\"I have\" — ni- + -na (with). Swahili \"have\" is literally \"be with\".",
+          "grammar": [
+            "na-have"
+          ],
+          "conjugation": {
+            "verb": "-na (have)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nina"
+              },
+              {
+                "pronoun": "you",
+                "form": "una"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ana"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuna"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mna"
+              },
+              {
+                "pronoun": "they",
+                "form": "wana"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "ina"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zina"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mke",
+          "gloss": "wife — m/wa noun (people & animals; plural wake)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "watoto",
+          "gloss": "children — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "wawili",
+          "gloss": "two (m/wa: watu wawili)",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo. Nina mke na watoto wawili.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo. Nina mke na watoto mbili.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo. Sina mke na watoto wawili.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "1c171f94-c6fe-5c5b-948c-3add67ba7095",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Aah, poa! Una picha yao?",
+      "english": "Ah, cool! Do you have a photo of them?",
+      "words": [
+        {
+          "text": "Aah",
+          "gloss": "ah!",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Una",
+          "gloss": "\"You have\" — u- + -na (with). Swahili \"have\" is literally \"be with\".",
+          "grammar": [
+            "na-have"
+          ],
+          "conjugation": {
+            "verb": "-na (have)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nina"
+              },
+              {
+                "pronoun": "you",
+                "form": "una"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ana"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuna"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mna"
+              },
+              {
+                "pronoun": "they",
+                "form": "wana"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "ina"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zina"
+              }
+            ]
+          }
+        },
+        {
+          "text": "picha",
+          "gloss": "photo / picture — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "yao",
+          "gloss": "\"their\" — n/n singular agreement (nyumba yao). In Kenyan speech also used for family words and most things (jina yao, gari yao).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (n/n singular)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "yangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "yako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "yake"
+              },
+              {
+                "pronoun": "our",
+                "form": "yetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "yenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "yao"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "9adb7524-a7a1-55c6-a4c6-e92542d79307",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ndiyo, hii hapa. Huyu ni mke wangu, Sarah.",
+      "english": "Yes, here it is. This is my wife, Sarah.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "hii hapa",
+          "gloss": "here it is",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "Huyu",
+          "gloss": "this (person) — m/wa singular",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mke",
+          "gloss": "wife — m/wa noun (people & animals; plural wake)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "wangu",
+          "gloss": "\"my\" — m/wa agreement (for people: mtoto wangu, watoto wangu).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (m/wa: people)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "wangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "wako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "wake"
+              },
+              {
+                "pronoun": "our",
+                "form": "wetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "wenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "wao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Sarah",
+          "gloss": "Sarah (name)"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo, hii hapa. Huyu ni mke wangu, Sarah.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, hii hapa. Huyu ni mke yangu, Sarah.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, hii hapa. Hawa ni mke wangu, Sarah.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "b4f3c285-a0b6-5372-ad48-cdfc4b580767",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Ni mrembo sana! Na hawa ni watoto wako?",
+      "english": "She's very beautiful! And are these your children?",
+      "words": [
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mrembo",
+          "gloss": "\"beautiful (person)\" — m/wa agreement. Plural: warembo.",
+          "grammar": [
+            "adjective-agreement"
+          ]
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "hawa",
+          "gloss": "these (people) — m/wa plural",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "watoto",
+          "gloss": "children — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "wako",
+          "gloss": "\"They are (at / doing)\" — wa- + -ko (be at a place, or how you're doing). \"Wako poa\" = they are fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bbc71777-59e6-51f0-9cff-e4494e488d80",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ndiyo. Huyu ni David, na yule mdogo ni Grace.",
+      "english": "Yes. This is David, and the little one is Grace.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Huyu",
+          "gloss": "this (person) — m/wa singular",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "David",
+          "gloss": "David (name)"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "yule",
+          "gloss": "that (person) over there",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "mdogo",
+          "gloss": "\"small / young\" — m/wa singular agreement (one person / animal).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-dogo (small / young)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mdogo"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wadogo"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "ndogo"
+              }
+            ]
+          }
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Grace",
+          "gloss": "Grace (name)"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo. Huyu ni David, na yule mdogo ni Grace.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo. Hii ni David, na ile mdogo ni Grace.",
+          "correct": false
+        },
+        {
+          "swahili": "Hapana. Huyu ni David, na yule mdogo ni Grace.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "e98c784f-2f38-5c3b-9236-e3f98c0299f5",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Wanaishi hapa Nairobi?",
+      "english": "Do they live here in Nairobi?",
+      "words": [
+        {
+          "text": "Wanaishi",
+          "gloss": "\"They live\" — wa- (subject: they) + na- (present) + -ishi (live). From kuishi.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuishi (to live)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaishi"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaishi"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaishi"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaishi"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaishi"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaishi"
+              }
+            ]
+          }
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "Nairobi",
+          "gloss": "Nairobi"
+        }
+      ]
+    },
+    {
+      "id": "8758870b-7c43-534f-8fb0-b2c33c1e3ec5",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Hapana, hawaishi Nairobi. Wako Kampala na nyanya yao.",
+      "english": "No, they don't live in Nairobi. They're in Kampala with their grandmother.",
+      "words": [
+        {
+          "text": "Hapana",
+          "gloss": "no"
+        },
+        {
+          "text": "hawaishi",
+          "gloss": "\"They don't live\" — hawa- (negative subject: not they) + -ishi (live, negative ends in -i). From kuishi.",
+          "grammar": [
+            "negative-present"
+          ],
+          "conjugation": {
+            "verb": "kuishi (to live)",
+            "tense": "Present, negative",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "siishi"
+              },
+              {
+                "pronoun": "you",
+                "form": "huishi"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "haishi"
+              },
+              {
+                "pronoun": "we",
+                "form": "hatuishi"
+              },
+              {
+                "pronoun": "you all",
+                "form": "hamuishi"
+              },
+              {
+                "pronoun": "they",
+                "form": "hawaishi"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Nairobi",
+          "gloss": "Nairobi"
+        },
+        {
+          "text": "Wako",
+          "gloss": "\"They are (at / doing)\" — wa- + -ko (be at a place, or how you're doing). \"Wako poa\" = they are fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Kampala",
+          "gloss": "Kampala — capital of Uganda"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "nyanya",
+          "gloss": "grandmother (also: tomato!) — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "yao",
+          "gloss": "\"their\" — n/n singular agreement (nyumba yao). In Kenyan speech also used for family words and most things (jina yao, gari yao).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (n/n singular)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "yangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "yako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "yake"
+              },
+              {
+                "pronoun": "our",
+                "form": "yetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "yenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "yao"
+              }
+            ]
+          }
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Hapana, hawaishi Nairobi. Wako Kampala na nyanya yao.",
+          "correct": true
+        },
+        {
+          "swahili": "Hapana, hawaishi Nairobi. Tuko Kampala na nyanya yao.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, wanaishi Nairobi. Wako Kampala na nyanya yao.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "5f3432f0-64cd-521c-a89c-524bcb6d3c6e",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Pole! Unawakumbuka sana?",
+      "english": "Aww! Do you miss them a lot?",
+      "words": [
+        {
+          "text": "Pole",
+          "gloss": "sorry (sympathy)"
+        },
+        {
+          "text": "Unawakumbuka",
+          "gloss": "\"Do you miss them?\" — lit. \"do you remember them?\": u- + -na- + -wa- (them) + -kumbuka.",
+          "grammar": [
+            "object-infixes"
+          ]
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ]
+    },
+    {
+      "id": "9a868e10-609d-5635-89bb-87b5bc1d054f",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ndiyo, sana. Na wewe, una watoto?",
+      "english": "Yes, a lot. And you, do you have children?",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "una",
+          "gloss": "\"You have\" — u- + -na (with). Swahili \"have\" is literally \"be with\".",
+          "grammar": [
+            "na-have"
+          ],
+          "conjugation": {
+            "verb": "-na (have)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nina"
+              },
+              {
+                "pronoun": "you",
+                "form": "una"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ana"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuna"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mna"
+              },
+              {
+                "pronoun": "they",
+                "form": "wana"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "ina"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zina"
+              }
+            ]
+          }
+        },
+        {
+          "text": "watoto",
+          "gloss": "children — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo, sana. Na wewe, una watoto?",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, sana. Na wewe, nina watoto?",
+          "correct": false
+        },
+        {
+          "swahili": "Hapana, sana. Na wewe, una watoto?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "c42f5860-01df-5d9a-9609-3caf1bd5b64d",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Sina watoto, lakini nina dada watatu na kaka mmoja.",
+      "english": "I don't have children, but I have three sisters and one brother.",
+      "words": [
+        {
+          "text": "Sina",
+          "gloss": "\"I don't have\" — negative of -na.",
+          "grammar": [
+            "na-have",
+            "negative-present"
+          ],
+          "conjugation": {
+            "verb": "-na (have)",
+            "tense": "Present, negative",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "sina"
+              },
+              {
+                "pronoun": "you",
+                "form": "huna"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "hana"
+              },
+              {
+                "pronoun": "we",
+                "form": "hatuna"
+              },
+              {
+                "pronoun": "you all",
+                "form": "hamna"
+              },
+              {
+                "pronoun": "they",
+                "form": "hawana"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "haina"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "hazina"
+              }
+            ]
+          }
+        },
+        {
+          "text": "watoto",
+          "gloss": "children — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "nina",
+          "gloss": "\"I have\" — ni- + -na (with). Swahili \"have\" is literally \"be with\".",
+          "grammar": [
+            "na-have"
+          ],
+          "conjugation": {
+            "verb": "-na (have)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nina"
+              },
+              {
+                "pronoun": "you",
+                "form": "una"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ana"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuna"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mna"
+              },
+              {
+                "pronoun": "they",
+                "form": "wana"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "ina"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zina"
+              }
+            ]
+          }
+        },
+        {
+          "text": "dada",
+          "gloss": "sister / polite \"miss\" — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "watatu",
+          "gloss": "three (m/wa)",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "kaka",
+          "gloss": "brother / polite \"bro\" — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "mmoja",
+          "gloss": "one (m/wa: mtu mmoja)",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e9ec675d-659a-5d74-ae12-87006793a17a",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Wee! Familia yako ni kubwa!",
+      "english": "Wow! Your family is big!",
+      "words": [
+        {
+          "text": "Wee",
+          "gloss": "\"wow!\" — surprise.",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Familia",
+          "gloss": "family — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "yako",
+          "gloss": "\"your\" — n/n singular agreement (nyumba yako). In Kenyan speech also used for family words and most things (jina yako, gari yako).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (n/n singular)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "yangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "yako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "yake"
+              },
+              {
+                "pronoun": "our",
+                "form": "yetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "yenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "yao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "kubwa",
+          "gloss": "\"big\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-kubwa (big)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mkubwa"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wakubwa"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "kubwa"
+              }
+            ]
+          }
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Wee! Familia yako ni kubwa!",
+          "correct": true
+        },
+        {
+          "swahili": "Wee! Familia wako ni kubwa!",
+          "correct": false
+        },
+        {
+          "swahili": "Wee! Familia yako ni ndogo!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "9a86f224-5940-5aa4-9db1-eec6c88aa521",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Ndiyo! Na wote ni wacheshi sana.",
+      "english": "Yes! And they're all very funny.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "wote",
+          "gloss": "all (m/wa agreement: watu wote)",
+          "grammar": [
+            "adjective-agreement"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "wacheshi",
+          "gloss": "\"funny (people)\" — m/wa plural of mcheshi.",
+          "grammar": [
+            "adjective-agreement"
+          ]
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "e2bd6c7e-997e-5ce8-80e3-7552adb41983",
+      "swahili": "Una familia?",
+      "english": "Do you have a family?",
+      "exampleContext": "una = you have",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "65972652-66b1-58bb-9685-c17594340603",
+      "swahili": "Nina…",
+      "english": "I have…",
+      "exampleContext": "Lit. \"I am with…\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "b81f0ee8-9eae-535e-ac57-2b4079021538",
+      "swahili": "Sina…",
+      "english": "I don't have…",
+      "exampleContext": "si- + -na",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "7a1b95ce-d8bd-5b68-b40c-093de93affef",
+      "swahili": "mke wangu",
+      "english": "my wife",
+      "exampleContext": "In Nairobi you'll also hear \"bibi yangu\".",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "9e33b401-55f9-5a76-ae28-0793899614c0",
+      "swahili": "watoto wawili",
+      "english": "two children",
+      "exampleContext": "People take wa- numbers: mmoja, wawili, watatu, wanne",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "295eb1b9-24ba-52f3-9739-cd5f24ca0b2b",
+      "swahili": "Huyu ni…",
+      "english": "This is… (a person)",
+      "exampleContext": "Plural: Hawa ni…",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "f12fbc75-a70d-5ca5-bc59-be3c2535b1b6",
+      "swahili": "yule",
+      "english": "that person (over there)",
+      "exampleContext": "Plural: wale"
+    },
+    {
+      "id": "a07407d7-c736-5fcb-8623-49b4b942939b",
+      "swahili": "nyanya yao",
+      "english": "their grandmother",
+      "exampleContext": "Family words take yangu / yako / yao.",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "2a05ac8b-4091-5cf5-b1d0-08658e29ed42",
+      "swahili": "Hawaishi…",
+      "english": "They don't live…",
+      "exampleContext": "hawa- (not they) + -ish- + -i",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "2f27b76c-bceb-5ba2-97ed-758233f637da",
+      "swahili": "Nawakumbuka",
+      "english": "I miss them",
+      "exampleContext": "Lit. \"I remember them\""
+    },
+    {
+      "id": "70d2c71e-9fa7-5681-85c2-0cb0f8993a26",
+      "swahili": "dada / kaka",
+      "english": "sister / brother",
+      "exampleContext": "Also a polite way to address any young woman or man",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "7ba49499-a514-57b1-85e4-582fff6dea77",
+      "swahili": "Familia yako ni kubwa!",
+      "english": "Your family is big!",
+      "exampleContext": "n/n agreement: yako, kubwa",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "23414cbd-11a3-5b10-81e3-692561993550",
+      "swahili": "mcheshi / wacheshi",
+      "english": "funny (person / people)",
+      "exampleContext": "wote ni wacheshi = they're all funny",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "1e933de4-1df0-5e04-983e-af24f0284bf1",
+      "mode": "translate",
+      "english": "I have two children.",
+      "before": "Nina watoto ",
+      "after": ".",
+      "options": [
+        {
+          "text": "wawili",
+          "correct": true
+        },
+        {
+          "text": "mbili",
+          "correct": false,
+          "feedback": "mbili = 2 (n/n form"
+        },
+        {
+          "text": "wanne",
+          "correct": false,
+          "feedback": "wanne = four (m/wa)"
+        }
+      ],
+      "explanation": "People (m/wa) take wa- numbers: mtoto mmoja, watoto wawili, watatu, wanne. Things use the plain form: nyumba mbili.",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "0125cb1b-3f87-56f4-9a69-4e6986643712",
+      "mode": "translate",
+      "english": "I have two houses.",
+      "before": "Nina nyumba ",
+      "after": ".",
+      "options": [
+        {
+          "text": "mbili",
+          "correct": true
+        },
+        {
+          "text": "wawili",
+          "correct": false,
+          "feedback": "wawili = two (m/wa: watu wawili)"
+        },
+        {
+          "text": "mmoja",
+          "correct": false,
+          "feedback": "mmoja = one (m/wa: mtu mmoja)"
+        }
+      ],
+      "explanation": "nyumba is n/n, so the plain number: mbili.",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "ca123948-7c1a-5f2e-86b0-c45462f4ea08",
+      "mode": "translate",
+      "english": "one brother",
+      "before": "kaka ",
+      "after": "",
+      "options": [
+        {
+          "text": "mmoja",
+          "correct": true
+        },
+        {
+          "text": "moja",
+          "correct": false,
+          "feedback": "moja = 1 (n/n form"
+        },
+        {
+          "text": "wawili",
+          "correct": false,
+          "feedback": "wawili = two (m/wa: watu wawili)"
+        }
+      ],
+      "explanation": "People: mmoja (one), wawili (two).",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "f6591dc3-d7b2-5560-aa06-70ee73feb439",
+      "mode": "translate",
+      "english": "three sisters",
+      "before": "dada ",
+      "after": "",
+      "options": [
+        {
+          "text": "watatu",
+          "correct": true
+        },
+        {
+          "text": "tatu",
+          "correct": false,
+          "feedback": "tatu = 3 (n/n form"
+        },
+        {
+          "text": "wanne",
+          "correct": false,
+          "feedback": "wanne = four (m/wa)"
+        }
+      ],
+      "explanation": "watatu = three (people). wanne = four (people).",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "03342989-a3a0-5d35-8d93-6974461c6c31",
+      "mode": "translate",
+      "english": "This is my wife.",
+      "before": "Huyu ni mke ",
+      "after": ".",
+      "options": [
+        {
+          "text": "wangu",
+          "correct": true
+        },
+        {
+          "text": "yangu",
+          "correct": false,
+          "feedback": "yangu = my"
+        },
+        {
+          "text": "zangu",
+          "correct": false,
+          "feedback": "zangu = my"
+        }
+      ],
+      "explanation": "mke is m/wa, so wangu.",
+      "grammar": [
+        "possessives"
+      ]
+    },
+    {
+      "id": "2d26e7b9-30b7-5bb6-9182-de97d99226fd",
+      "mode": "translate",
+      "english": "These are my children.",
+      "before": "",
+      "after": " ni watoto wangu.",
+      "options": [
+        {
+          "text": "Hawa",
+          "correct": true
+        },
+        {
+          "text": "Huyu",
+          "correct": false,
+          "feedback": "Huyu = this (person)"
+        },
+        {
+          "text": "Hizi",
+          "correct": false,
+          "feedback": "Hizi = these"
+        }
+      ],
+      "explanation": "hawa = these (people). Huyu = this person; hizi = these things.",
+      "grammar": [
+        "demonstratives"
+      ]
+    },
+    {
+      "id": "c7ace73a-16d3-52d7-bb70-d40d1d0c1ceb",
+      "mode": "translate",
+      "english": "That one (person) over there is little.",
+      "before": "",
+      "after": " ni mdogo.",
+      "options": [
+        {
+          "text": "Yule",
+          "correct": true
+        },
+        {
+          "text": "Huyu",
+          "correct": false,
+          "feedback": "Huyu = this (person)"
+        },
+        {
+          "text": "Hawa",
+          "correct": false,
+          "feedback": "Hawa = these (people)"
+        }
+      ],
+      "explanation": "yule = that person over there.",
+      "grammar": [
+        "demonstratives"
+      ]
+    },
+    {
+      "id": "8b738a7b-f33d-5065-8092-b54703b2c39d",
+      "mode": "translate",
+      "english": "Your family is big.",
+      "before": "Familia ",
+      "after": " ni kubwa.",
+      "options": [
+        {
+          "text": "yako",
+          "correct": true
+        },
+        {
+          "text": "wako",
+          "correct": false,
+          "feedback": "wako = They are (at / doing)"
+        },
+        {
+          "text": "zako",
+          "correct": false,
+          "feedback": "zako = your"
+        }
+      ],
+      "explanation": "familia is n/n singular, so yako.",
+      "grammar": [
+        "possessives"
+      ]
+    },
+    {
+      "id": "bc4a6fd4-0649-5c0a-a817-50c5787a323c",
+      "mode": "translate",
+      "english": "their grandmother",
+      "before": "nyanya ",
+      "after": "",
+      "options": [
+        {
+          "text": "yao",
+          "correct": true
+        },
+        {
+          "text": "wao",
+          "correct": false,
+          "feedback": "wao = they / them"
+        },
+        {
+          "text": "zao",
+          "correct": false,
+          "feedback": "zao = their"
+        }
+      ],
+      "explanation": "Family words (mama, baba, dada, nyanya) take the n/n form: mama yangu, nyanya yao.",
+      "grammar": [
+        "possessives"
+      ]
+    },
+    {
+      "id": "f7b0fc72-ff98-5762-b97c-ee8ac601e8b7",
+      "mode": "translate",
+      "english": "my sister",
+      "before": "dada ",
+      "after": "",
+      "options": [
+        {
+          "text": "yangu",
+          "correct": true
+        },
+        {
+          "text": "wangu",
+          "correct": false,
+          "feedback": "wangu = my"
+        },
+        {
+          "text": "zangu",
+          "correct": false,
+          "feedback": "zangu = my"
+        }
+      ],
+      "explanation": "yangu = \"my\" — n/n singular agreement (nyumba yangu). In Kenyan speech also used for family words and most things (jina yangu, gari yangu).",
+      "grammar": [
+        "possessives"
+      ]
+    },
+    {
+      "id": "032f092a-71c5-516f-b78f-bc866b58bf21",
+      "mode": "complete",
+      "english": "Is this your child?",
+      "before": "Huyu ni mtoto ",
+      "after": "?",
+      "options": [
+        {
+          "text": "wako",
+          "correct": true
+        },
+        {
+          "text": "yako",
+          "correct": false,
+          "feedback": "yako = your"
+        },
+        {
+          "text": "zako",
+          "correct": false,
+          "feedback": "zako = your"
+        }
+      ],
+      "explanation": "mtoto is m/wa: mtoto wako.",
+      "grammar": [
+        "ko-location"
+      ]
+    },
+    {
+      "id": "3d6dbe29-4ef6-57c1-bee0-23070d9d7abb",
+      "mode": "translate",
+      "english": "They don't live in Nairobi.",
+      "before": "",
+      "after": " Nairobi.",
+      "options": [
+        {
+          "text": "Hawaishi",
+          "correct": true
+        },
+        {
+          "text": "Haishi",
+          "correct": false,
+          "feedback": "Haishi = He/she doesn't live"
+        },
+        {
+          "text": "Siishi",
+          "correct": false,
+          "feedback": "Siishi = I don't live"
+        }
+      ],
+      "explanation": "hawa- (not they) + -ishi.",
+      "grammar": [
+        "negative-present"
+      ]
+    },
+    {
+      "id": "ac10f68e-45b3-5e97-b28a-31f46563b3ba",
+      "mode": "translate",
+      "english": "I don't have children.",
+      "before": "",
+      "after": " watoto.",
+      "options": [
+        {
+          "text": "Sina",
+          "correct": true
+        },
+        {
+          "text": "Hana",
+          "correct": false,
+          "feedback": "Hana = He/she doesn't have"
+        },
+        {
+          "text": "Hatuna",
+          "correct": false,
+          "feedback": "Hatuna = We don't have"
+        }
+      ],
+      "explanation": "Sina = \"I don't have\" — negative of -na.",
+      "grammar": [
+        "na-have",
+        "negative-present"
+      ]
+    },
+    {
+      "id": "840d35a1-511c-5626-b965-c2dd6a8322fe",
+      "mode": "translate",
+      "english": "Do you have a photo?",
+      "before": "",
+      "after": " picha?",
+      "options": [
+        {
+          "text": "Una",
+          "correct": true
+        },
+        {
+          "text": "Nina",
+          "correct": false,
+          "feedback": "Nina = I have"
+        },
+        {
+          "text": "Wana",
+          "correct": false,
+          "feedback": "Wana = They have"
+        }
+      ],
+      "explanation": "Una = \"You have\" — u- + -na (with). Swahili \"have\" is literally \"be with\".",
+      "grammar": [
+        "na-have"
+      ]
+    },
+    {
+      "id": "73a94f83-efd4-59a1-af43-d33dda33974a",
+      "mode": "translate",
+      "english": "She is very beautiful.",
+      "before": "Ni ",
+      "after": " sana.",
+      "options": [
+        {
+          "text": "mrembo",
+          "correct": true
+        },
+        {
+          "text": "warembo",
+          "correct": false,
+          "feedback": "warembo = beautiful"
+        },
+        {
+          "text": "wazuri",
+          "correct": false,
+          "feedback": "wazuri = good / nice / beautiful"
+        }
+      ],
+      "explanation": "One person: mrembo. Several: warembo.",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "6268c8d4-47c7-5607-a4c0-b4bb5edee660",
+      "mode": "translate",
+      "english": "They are all very funny.",
+      "before": "Wote ni ",
+      "after": " sana.",
+      "options": [
+        {
+          "text": "wacheshi",
+          "correct": true
+        },
+        {
+          "text": "mcheshi",
+          "correct": false,
+          "feedback": "mcheshi = funny"
+        },
+        {
+          "text": "wazee",
+          "correct": false,
+          "feedback": "wazee = elders / old people"
+        }
+      ],
+      "explanation": "wacheshi = funny (people, plural).",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "e563f791-ada4-58b7-b877-d6a5a9e137d0",
+      "mode": "translate",
+      "english": "We don't know.",
+      "before": "",
+      "after": ".",
+      "options": [
+        {
+          "text": "Hatujui",
+          "correct": true
+        },
+        {
+          "text": "Sijui",
+          "correct": false,
+          "feedback": "Sijui = I don't know"
+        },
+        {
+          "text": "Hawajui",
+          "correct": false,
+          "feedback": "Hawajui = They don't know"
+        }
+      ],
+      "explanation": "hatu- = not we.",
+      "grammar": [
+        "negative-present"
+      ]
+    }
+  ]
+}

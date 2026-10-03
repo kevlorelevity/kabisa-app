@@ -1,0 +1,1688 @@
+{
+  "id": "fundi-at-home",
+  "uuid": "d610267b-7ddb-507c-8bea-06750fdf84a1",
+  "title": "Instructions for the Fundi",
+  "category": "home",
+  "difficulty": "medium",
+  "level": 6,
+  "order": 603,
+  "theme": "home",
+  "culturalNote": "In Kenya you don't call \"a plumber\" or \"an electrician\" — you call a fundi: fundi wa maji (plumber), fundi wa stima (electrician), fundi wa mbao (carpenter). Agreeing on the price before work starts is essential (\"tuongee bei kwanza\"). Giving instructions politely uses the subjunctive: \"urekebishe\" (please fix), \"usiguse\" (don't touch), \"uniambie\" (tell me). The everyday Kenyan word for electricity is stima; Sanifu prefers umeme.",
+  "startingPoint": "Water is dripping from the bathroom ceiling. A fundi arrives at your flat.",
+  "grammarFocus": [
+    "subjunctive",
+    "polite-requests",
+    "perfect-me",
+    "object-infixes"
+  ],
+  "grammar": [
+    "subjunctive",
+    "polite-requests",
+    "perfect-me",
+    "object-infixes",
+    "noun-classes-mwa-nn",
+    "subject-prefixes",
+    "ni-copula",
+    "ko-location",
+    "question-words",
+    "locative-ni",
+    "present-na",
+    "sanifu-noun-classes",
+    "discourse-particles",
+    "helper-verbs",
+    "verb-extensions",
+    "numbers-money",
+    "adjective-agreement",
+    "possessives",
+    "conjunctions-kwamba",
+    "na-have",
+    "future-ta",
+    "time-swahili",
+    "greetings",
+    "ki-po-ka"
+  ],
+  "turns": [
+    {
+      "id": "35e19d98-cd40-530d-a20c-97c4327b8b04",
+      "speaker": "Fundi",
+      "role": "auto",
+      "swahili": "Habari, boss. Mimi ni fundi wa maji. Shida iko wapi?",
+      "english": "Hello, boss. I'm the plumber. Where's the problem?",
+      "words": [
+        {
+          "text": "Habari",
+          "gloss": "news — the base of every formal greeting — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "boss",
+          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "fundi wa maji",
+          "gloss": "plumber — lit. \"craftsman of water\""
+        },
+        {
+          "text": "Shida",
+          "gloss": "problem / trouble — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "wapi",
+          "gloss": "where?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8b8f3a23-845e-51ea-8759-2b1b4a223a85",
+      "speaker": "Wewe",
+      "role": "user",
+      "swahili": "Karibu. Iko kwa bafu. Bomba inavuja, na maji inatoka kwa dari.",
+      "english": "Welcome. It's in the bathroom. A pipe is leaking, and water is coming out of the ceiling.",
+      "words": [
+        {
+          "text": "Karibu",
+          "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "Iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "bafu",
+          "gloss": "bathroom"
+        },
+        {
+          "text": "Bomba",
+          "gloss": "pipe / tap"
+        },
+        {
+          "text": "inavuja",
+          "gloss": "\"it's leaking\" — i- + -na- + -vuja",
+          "grammar": [
+            "present-na"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "maji",
+          "gloss": "water — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — maji yangu, maji haya (ma- plural of the ji/ma class)"
+        },
+        {
+          "text": "inatoka",
+          "gloss": "\"It is leaving / come from\" — i- (subject: it (n/n)) + na- (present) + -toka (leave / come from). From kutoka.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kutoka (to leave / come from)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninatoka"
+              },
+              {
+                "pronoun": "you",
+                "form": "unatoka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anatoka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunatoka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnatoka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanatoka"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "inatoka"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zinatoka"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "dari",
+          "gloss": "ceiling"
+        }
+      ],
+      "sanifu": "Karibu. Iko bafuni. Bomba linavuja, na maji yanatoka darini.",
+      "options": [
+        {
+          "swahili": "Karibu. Iko kwa bafu. Bomba inavuja, na maji inatoka kwa dari.",
+          "correct": true
+        },
+        {
+          "swahili": "Karibu. Iko kwa bafu. Bomba inavuja, na maji inaingia kwa dari.",
+          "correct": false
+        },
+        {
+          "swahili": "Karibu. Iko kwa bafu. Bomba haivuji, na maji inatoka kwa dari.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "d163d881-e107-50c2-aba8-f7d0ba23caa2",
+      "speaker": "Fundi",
+      "role": "auto",
+      "swahili": "Ebu nione. Aah, bomba imevunjika. Inabidi niibadilishe.",
+      "english": "Let me see. Ah, the pipe is broken. I'll have to replace it.",
+      "words": [
+        {
+          "text": "Ebu",
+          "gloss": "come on / let's — softens a request",
+          "grammar": [
+            "discourse-particles",
+            "polite-requests"
+          ]
+        },
+        {
+          "text": "nione",
+          "gloss": "\"Let me see / should I see?\" — ni- (subject: I) + -one (see, subjunctive -e). From kuona.",
+          "grammar": [
+            "subjunctive"
+          ],
+          "conjugation": {
+            "verb": "kuona (to see)",
+            "tense": "Subjunctive (-e)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nione"
+              },
+              {
+                "pronoun": "you",
+                "form": "uone"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "aone"
+              },
+              {
+                "pronoun": "we",
+                "form": "twone"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mwone"
+              },
+              {
+                "pronoun": "they",
+                "form": "waone"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Aah",
+          "gloss": "ah!",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "bomba",
+          "gloss": "pipe / tap"
+        },
+        {
+          "text": "imevunjika",
+          "gloss": "\"it's broken\" — i- + -me- + -vunjika (stative)",
+          "grammar": [
+            "perfect-me"
+          ]
+        },
+        {
+          "text": "Inabidi",
+          "gloss": "\"It is necessary\" — i- (subject: it (n/n)) + na- (present) + -bidi (be necessary). From kubidi.",
+          "grammar": [
+            "present-na",
+            "helper-verbs"
+          ],
+          "conjugation": {
+            "verb": "kubidi (to be necessary)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninabidi"
+              },
+              {
+                "pronoun": "you",
+                "form": "unabidi"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anabidi"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunabidi"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnabidi"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanabidi"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "inabidi"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zinabidi"
+              }
+            ]
+          }
+        },
+        {
+          "text": "niibadilishe",
+          "gloss": "\"Let me change it / should I change it?\" — ni- (subject: I) + i- (object: it) + -badilishe (change, subjunctive -e). From kubadilisha. Extension: causative (-isha/-esha/-za: \"make / cause\").",
+          "grammar": [
+            "subjunctive",
+            "object-infixes",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kubadilisha (to change)",
+            "tense": "Subjunctive (-e) + object -i-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niibadilishe"
+              },
+              {
+                "pronoun": "you",
+                "form": "uibadilishe"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "aibadilishe"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuibadilishe"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mibadilishe"
+              },
+              {
+                "pronoun": "they",
+                "form": "waibadilishe"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "70ae410c-1af2-59e9-a796-f58eafb4fbb0",
+      "speaker": "Wewe",
+      "role": "user",
+      "swahili": "Sawa. Lakini tuongee bei kwanza.",
+      "english": "Okay. But let's talk about the price first.",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "tuongee",
+          "gloss": "\"let's talk\" — tu- + -onge- + -e",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "bei kwanza",
+          "gloss": "\"the price first\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Sawa. Lakini tuongee bei kwanza.",
+          "correct": true
+        },
+        {
+          "swahili": "Sawa. Lakini tunaongea bei kwanza.",
+          "correct": false
+        },
+        {
+          "swahili": "Sawa. Lakini tuongee bei baadaye.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "14d62600-51d6-5a77-82bf-bf1843f45706",
+      "speaker": "Fundi",
+      "role": "auto",
+      "swahili": "Kazi ni elfu moja na mia tano, pamoja na bomba mpya.",
+      "english": "The job is one thousand five hundred, including the new pipe.",
+      "words": [
+        {
+          "text": "Kazi",
+          "gloss": "work / job — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "elfu moja",
+          "gloss": "1,000 — a.k.a. \"thao\"",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "mia tano",
+          "gloss": "500 — a.k.a. \"punch\"",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "pamoja na",
+          "gloss": "together with"
+        },
+        {
+          "text": "bomba",
+          "gloss": "pipe / tap"
+        },
+        {
+          "text": "mpya",
+          "gloss": "\"new\" — m/wa singular agreement (one person / animal).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-pya (new)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mpya"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wapya"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "mpya"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "c850f876-3e01-55d2-9b97-ffd4b0dc4132",
+      "speaker": "Wewe",
+      "role": "user",
+      "swahili": "Ni ghali kidogo. Tuseme elfu moja na mia mbili?",
+      "english": "It's a bit expensive. Let's say one thousand two hundred?",
+      "words": [
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "ghali",
+          "gloss": "\"expensive\" — m/wa singular agreement (one person / animal).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-ghali (expensive)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "ghali"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "ghali"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "ghali"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kidogo",
+          "gloss": "a little / a bit — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — kidogo (adverb, no agreement)"
+        },
+        {
+          "text": "Tuseme",
+          "gloss": "\"Let's say\" — tu- + -sem- + -e",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "elfu moja",
+          "gloss": "1,000 — a.k.a. \"thao\"",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "mia mbili",
+          "gloss": "200",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ni ghali kidogo. Tuseme elfu moja na mia mbili?",
+          "correct": true
+        },
+        {
+          "swahili": "Ni rahisi kidogo. Tuseme elfu moja na mia mbili?",
+          "correct": false
+        },
+        {
+          "swahili": "Ni ghali kidogo. Tunasema elfu moja na mia mbili?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "7448895c-c81f-57f1-ac95-c3e78c7f75b8",
+      "speaker": "Fundi",
+      "role": "auto",
+      "swahili": "Sawa, boss. Lakini usiguse stima ya bafu wakati ninafanya kazi.",
+      "english": "Okay, boss. But don't touch the bathroom electricity while I'm working.",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "boss",
+          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "usiguse",
+          "gloss": "\"don't touch\" — u- + -si- + -gus- + -e",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "stima",
+          "gloss": "electricity — everyday Kenyan word",
+          "sanifu": "Sanifu: umeme"
+        },
+        {
+          "text": "ya",
+          "gloss": "\"of\" — n/n singular agreement (nyumba ya Kamau); Kenyans use ya with most nouns",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "bafu",
+          "gloss": "bathroom"
+        },
+        {
+          "text": "wakati",
+          "gloss": "time / when / while"
+        },
+        {
+          "text": "ninafanya",
+          "gloss": "\"I am doing\" — ni- (subject: I) + na- (present) + -fanya (do). From kufanya. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kufanya (to do)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninafanya"
+              },
+              {
+                "pronoun": "you",
+                "form": "unafanya"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anafanya"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunafanya"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnafanya"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanafanya"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kazi",
+          "gloss": "work / job — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "afbed7f4-0080-5f94-94e4-d9215f4a2a03",
+      "speaker": "Wewe",
+      "role": "user",
+      "swahili": "Nizime stima yote?",
+      "english": "Shall I switch off all the electricity?",
+      "words": [
+        {
+          "text": "Nizime",
+          "gloss": "\"(shall) I switch off\" — ni- + -zim- + -e",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "stima",
+          "gloss": "electricity — everyday Kenyan word",
+          "sanifu": "Sanifu: umeme"
+        },
+        {
+          "text": "yote",
+          "gloss": "all (n/n singular agreement)",
+          "grammar": [
+            "adjective-agreement"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Nizime stima yote?",
+          "correct": true
+        },
+        {
+          "swahili": "Uzime stima yote?",
+          "correct": false
+        },
+        {
+          "swahili": "Nizima stima yote?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "a790fa54-d36e-5059-bf01-aedc0840bff9",
+      "speaker": "Fundi",
+      "role": "auto",
+      "swahili": "Ndiyo, uzime, ili tusiwe na shida.",
+      "english": "Yes, switch it off, so that we don't have any trouble.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "uzime",
+          "gloss": "\"(please) switch off\" — u- (subject: you) + -zime (switch off, subjunctive -e). From kuzima.",
+          "grammar": [
+            "subjunctive"
+          ],
+          "conjugation": {
+            "verb": "kuzima (to switch off)",
+            "tense": "Subjunctive (-e)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nizime"
+              },
+              {
+                "pronoun": "you",
+                "form": "uzime"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "azime"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuzime"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mzime"
+              },
+              {
+                "pronoun": "they",
+                "form": "wazime"
+              }
+            ]
+          }
+        },
+        {
+          "text": "ili",
+          "gloss": "so that (followed by subjunctive)",
+          "grammar": [
+            "subjunctive",
+            "conjunctions-kwamba"
+          ]
+        },
+        {
+          "text": "tusiwe",
+          "gloss": "\"Let's not be\" — tu- (subject: we) + si- (not) + -we (be, subjunctive -e). From kuwa.",
+          "grammar": [
+            "subjunctive"
+          ],
+          "conjugation": {
+            "verb": "kuwa (to be)",
+            "tense": "Subjunctive, negative (-si- … -e)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nisiwe"
+              },
+              {
+                "pronoun": "you",
+                "form": "usiwe"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "asiwe"
+              },
+              {
+                "pronoun": "we",
+                "form": "tusiwe"
+              },
+              {
+                "pronoun": "you all",
+                "form": "msiwe"
+              },
+              {
+                "pronoun": "they",
+                "form": "wasiwe"
+              }
+            ]
+          }
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "shida",
+          "gloss": "problem / trouble — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fcfa3240-3b6e-5d74-ac61-d04beec128f1",
+      "speaker": "Wewe",
+      "role": "user",
+      "swahili": "Sawa. Na tafadhali ufunike sakafu, isichafuke.",
+      "english": "Okay. And please cover the floor so it doesn't get dirty.",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "tafadhali",
+          "gloss": "please"
+        },
+        {
+          "text": "ufunike",
+          "gloss": "\"(please) cover\" — u- (subject: you) + -funike (cover, subjunctive -e). From kufunika.",
+          "grammar": [
+            "subjunctive"
+          ],
+          "conjugation": {
+            "verb": "kufunika (to cover)",
+            "tense": "Subjunctive (-e)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nifunike"
+              },
+              {
+                "pronoun": "you",
+                "form": "ufunike"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "afunike"
+              },
+              {
+                "pronoun": "we",
+                "form": "tufunike"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mfunike"
+              },
+              {
+                "pronoun": "they",
+                "form": "wafunike"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sakafu",
+          "gloss": "floor"
+        },
+        {
+          "text": "isichafuke",
+          "gloss": "\"so that it doesn't get dirty\" — i- + -si- + -chafuk- + -e",
+          "grammar": [
+            "subjunctive"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Sawa. Na tafadhali ufunike sakafu, isichafuke.",
+          "correct": true
+        },
+        {
+          "swahili": "Sawa. Na tafadhali nifunike sakafu, isichafuke.",
+          "correct": false
+        },
+        {
+          "swahili": "Sawa. Na tafadhali ufunike sakafu, ichafuke.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "96f4d80f-aca4-50be-8ca9-37047d9ac409",
+      "speaker": "Fundi",
+      "role": "auto",
+      "swahili": "Hakuna shida. Nitamaliza baada ya saa moja.",
+      "english": "No problem. I'll finish in an hour.",
+      "words": [
+        {
+          "text": "Hakuna shida",
+          "gloss": "no problem (lit. \"there's no problem\")",
+          "grammar": [
+            "na-have"
+          ]
+        },
+        {
+          "text": "Nitamaliza",
+          "gloss": "\"I will finish\" — ni- (subject: I) + ta- (future) + -maliza (finish). From kumaliza.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kumaliza (to finish)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitamaliza"
+              },
+              {
+                "pronoun": "you",
+                "form": "utamaliza"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atamaliza"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutamaliza"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtamaliza"
+              },
+              {
+                "pronoun": "they",
+                "form": "watamaliza"
+              }
+            ]
+          }
+        },
+        {
+          "text": "baada ya",
+          "gloss": "after"
+        },
+        {
+          "text": "saa moja",
+          "gloss": "7 o'clock (1st hour of daylight) / one hour",
+          "grammar": [
+            "time-swahili"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "28a4a301-0bc5-56b9-9e80-bec9d92c0cf7",
+      "speaker": "Wewe",
+      "role": "user",
+      "swahili": "Poa. Ukimaliza, uniambie. Nikupe chai?",
+      "english": "Cool. When you finish, tell me. Shall I give you some tea?",
+      "words": [
+        {
+          "text": "Poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Ukimaliza",
+          "gloss": "\"If/when you finish\" — u- (subject: you) + ki- (if / when · or \"-ing\" after kuwa) + -maliza (finish). From kumaliza. After a past kuwa (nilikuwa …) the -ki- form means \"…-ing\".",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "uniambie",
+          "gloss": "\"(please) tell me\" — u- + -ni- + -ambi- + -e",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "Nikupe",
+          "gloss": "\"Shall I give you\" — ni- + -ku- + -p- + -e",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "chai",
+          "gloss": "tea (also slang for a small bribe) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Poa. Ukimaliza, uniambie. Nikupe chai?",
+          "correct": true
+        },
+        {
+          "swahili": "Poa. Ukimaliza, nikuambie. Nikupe chai?",
+          "correct": false
+        },
+        {
+          "swahili": "Poa. Ukimaliza, uniambie. Unipe chai?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "fbd5baaa-c581-5dcc-b73a-bcf9cacefae6",
+      "speaker": "Fundi",
+      "role": "auto",
+      "swahili": "Asante sana, boss. Chai ni sawa kabisa!",
+      "english": "Thank you very much, boss. Tea is just perfect!",
+      "words": [
+        {
+          "text": "Asante sana",
+          "gloss": "thank you very much"
+        },
+        {
+          "text": "boss",
+          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Chai",
+          "gloss": "tea (also slang for a small bribe) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "kabisa",
+          "gloss": "totally / completely — \"Kabisa!\" = \"Absolutely!\""
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "344631a8-470d-514c-a327-de7c529cd5b1",
+      "swahili": "fundi wa maji",
+      "english": "plumber",
+      "exampleContext": "fundi wa stima = electrician; fundi wa mbao = carpenter",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "86447eaa-275e-59eb-835a-6188342bbcb7",
+      "swahili": "Shida iko wapi?",
+      "english": "Where's the problem? |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "19164640-a73c-5ab0-9e42-4f38aa595da7",
+      "swahili": "inavuja",
+      "english": "it's leaking",
+      "exampleContext": "kuvuja = to leak"
+    },
+    {
+      "id": "fc41d327-60db-5802-9e01-5486172c773f",
+      "swahili": "imevunjika",
+      "english": "it's broken",
+      "exampleContext": "kuvunjika = to get broken"
+    },
+    {
+      "id": "1ab7cf0c-3317-56ff-ba77-a5b1fcf5379c",
+      "swahili": "Tuongee bei kwanza",
+      "english": "Let's talk price first",
+      "exampleContext": "Always agree before work starts",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "6e223d05-a333-5e65-a4b7-e48e9c9fee1a",
+      "swahili": "Tuseme…",
+      "english": "Let's say…",
+      "exampleContext": "Bargaining opener",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "6715dce5-ba8c-5858-8b19-e5f68376fc04",
+      "swahili": "Usiguse!",
+      "english": "Don't touch!",
+      "exampleContext": "u- + -si- + -gus- + -e",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "9385f3ae-9566-5461-b66a-f7fe87d456a2",
+      "swahili": "stima",
+      "english": "electricity / power",
+      "exampleContext": "Everyday Kenyan.",
+      "sanifu": "umeme",
+      "sanifuNote": "Sanifu word for electricity"
+    },
+    {
+      "id": "08492484-cd95-517a-b61f-f6afa950a089",
+      "swahili": "Nizime?",
+      "english": "Shall I switch off? |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "6a61f947-3da1-53af-96b0-bbcbea56f8bb",
+      "swahili": "ili tusiwe na shida",
+      "english": "so we don't have trouble |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "fd87e673-6671-5fc3-ba66-ec2f27db9b33",
+      "swahili": "isichafuke",
+      "english": "so it doesn't get dirty |",
+      "exampleContext": ""
+    },
+    {
+      "id": "615ac61b-8fcf-552a-823e-383b00ac7434",
+      "swahili": "Uniambie",
+      "english": "Tell me (please) |",
+      "exampleContext": ""
+    },
+    {
+      "id": "a77a534a-ca1c-574d-b1a6-0ba42bae0dc2",
+      "swahili": "Nikupe chai?",
+      "english": "Shall I give you tea?",
+      "exampleContext": "Offering tea to a fundi is good manners",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "58433aba-1c44-53df-a91b-34c325c4830f",
+      "mode": "translate",
+      "english": "The pipe is leaking.",
+      "before": "Bomba ",
+      "after": ".",
+      "options": [
+        {
+          "text": "inavuja",
+          "correct": true
+        },
+        {
+          "text": "imevuja",
+          "correct": false,
+          "feedback": "imevuja = It has leaked"
+        },
+        {
+          "text": "haivuji",
+          "correct": false,
+          "feedback": "haivuji = It is not leaking"
+        }
+      ],
+      "explanation": "Kenyan n/n agreement on bomba. Sanifu: bomba linavuja.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "8d4a64d0-470e-50c9-9017-362dec2a0802",
+      "mode": "translate",
+      "english": "The pipe is broken.",
+      "before": "Bomba ",
+      "after": ".",
+      "options": [
+        {
+          "text": "imevunjika",
+          "correct": true
+        },
+        {
+          "text": "inavunja",
+          "correct": false,
+          "feedback": "inavunja = It is breaking"
+        },
+        {
+          "text": "itavunjika",
+          "correct": false,
+          "feedback": "itavunjika = It will get broken"
+        }
+      ],
+      "explanation": "-me- + -vunjika (stative: get broken) = it is broken.",
+      "grammar": [
+        "perfect-me"
+      ]
+    },
+    {
+      "id": "bd7f1d7f-75cb-56a2-a7c3-bb3b561ee8eb",
+      "mode": "translate",
+      "english": "Let's talk about the price first.",
+      "before": "",
+      "after": " bei kwanza.",
+      "options": [
+        {
+          "text": "Tuongee",
+          "correct": true
+        },
+        {
+          "text": "Tunaongea",
+          "correct": false,
+          "feedback": "Tunaongea = We are talking"
+        },
+        {
+          "text": "Tuliongea",
+          "correct": false,
+          "feedback": "Tuliongea = We talked"
+        }
+      ],
+      "explanation": "Tuongee = \"let's talk\" — tu- + -onge- + -e",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "7111c70c-a0aa-50b2-a9d3-60302e88e4f0",
+      "mode": "translate",
+      "english": "Let's say 1,200?",
+      "before": "",
+      "after": " elfu moja na mia mbili?",
+      "options": [
+        {
+          "text": "Tuseme",
+          "correct": true
+        },
+        {
+          "text": "Tunasema",
+          "correct": false,
+          "feedback": "Tunasema = We are saying"
+        },
+        {
+          "text": "Tutasema",
+          "correct": false,
+          "feedback": "Tutasema = We will say"
+        }
+      ],
+      "explanation": "Tuseme = \"Let's say\" — tu- + -sem- + -e",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "0b5cc3ed-61b4-5b7d-9b59-206b0ea246af",
+      "mode": "translate",
+      "english": "Don't touch the electricity.",
+      "before": "",
+      "after": " stima.",
+      "options": [
+        {
+          "text": "Usiguse",
+          "correct": true
+        },
+        {
+          "text": "Uguse",
+          "correct": false,
+          "feedback": "Uguse = (please) touch"
+        },
+        {
+          "text": "Siguse",
+          "correct": false
+        }
+      ],
+      "explanation": "Usiguse = \"don't touch\" — u- + -si- + -gus- + -e",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "6a8f8570-4c5e-5be7-a369-7f296786b879",
+      "mode": "translate",
+      "english": "Shall I switch off all the power?",
+      "before": "",
+      "after": " stima yote?",
+      "options": [
+        {
+          "text": "Nizime",
+          "correct": true
+        },
+        {
+          "text": "Uzime",
+          "correct": false,
+          "feedback": "Uzime = (please) switch off"
+        },
+        {
+          "text": "Azime",
+          "correct": false,
+          "feedback": "Azime = He/she should switch off"
+        }
+      ],
+      "explanation": "Nizime = \"(shall) I switch off\" — ni- + -zim- + -e",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "184c11cd-cf4b-5e7a-a782-c9f4b671164e",
+      "mode": "translate",
+      "english": "Switch it off. (politely)",
+      "before": "",
+      "after": ".",
+      "options": [
+        {
+          "text": "Uzime",
+          "correct": true
+        },
+        {
+          "text": "Nizime",
+          "correct": false,
+          "feedback": "Nizime = (shall) I switch off"
+        },
+        {
+          "text": "Wazime",
+          "correct": false,
+          "feedback": "Wazime = They should switch off"
+        }
+      ],
+      "explanation": "Uzime = \"(please) switch off\" — u- (subject: you) + -zime (switch off, subjunctive -e). From kuzima.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "44355b63-ff3c-5d9f-8f37-fb43f42e42ed",
+      "mode": "translate",
+      "english": "so that we don't have trouble",
+      "before": "ili ",
+      "after": " na shida",
+      "options": [
+        {
+          "text": "tusiwe",
+          "correct": true
+        },
+        {
+          "text": "tuwe",
+          "correct": false,
+          "feedback": "tuwe = Let's be"
+        },
+        {
+          "text": "hatuna",
+          "correct": false,
+          "feedback": "hatuna = We don't have"
+        }
+      ],
+      "explanation": "Negative subjunctive of kuwa: tusiwe = (so that) we aren't.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "062ff677-4468-52b6-aeae-b40802fc6535",
+      "mode": "translate",
+      "english": "Please cover the floor.",
+      "before": "Tafadhali ",
+      "after": " sakafu.",
+      "options": [
+        {
+          "text": "ufunike",
+          "correct": true
+        },
+        {
+          "text": "nifunike",
+          "correct": false,
+          "feedback": "nifunike = Let me cover / should I cover?"
+        },
+        {
+          "text": "afunike",
+          "correct": false,
+          "feedback": "afunike = He/she should cover"
+        }
+      ],
+      "explanation": "ufunike = \"(please) cover\" — u- (subject: you) + -funike (cover, subjunctive -e). From kufunika.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "3364fd30-f261-574c-86f9-bc625fc18489",
+      "mode": "translate",
+      "english": "so that it doesn't get dirty",
+      "before": "",
+      "after": "",
+      "options": [
+        {
+          "text": "isichafuke",
+          "correct": true
+        },
+        {
+          "text": "ichafuke",
+          "correct": false,
+          "feedback": "ichafuke = It should get dirty"
+        },
+        {
+          "text": "haichafuki",
+          "correct": false,
+          "feedback": "haichafuki = It is not getting dirty"
+        }
+      ],
+      "explanation": "i- (it) + -si- + -chafuk- + -e.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "3cfc700d-fff4-5092-afa4-22705311c4d5",
+      "mode": "translate",
+      "english": "Tell me. (politely)",
+      "before": "",
+      "after": ".",
+      "options": [
+        {
+          "text": "Uniambie",
+          "correct": true
+        },
+        {
+          "text": "Nikuambie",
+          "correct": false,
+          "feedback": "Nikuambie = Let me tell you / should I tell you?"
+        },
+        {
+          "text": "Umwambie",
+          "correct": false,
+          "feedback": "Umwambie = (please) tell him/her"
+        }
+      ],
+      "explanation": "u- + -ni- (me) + -ambi- + -e.",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "763605d7-47be-5020-b2d3-8397db6f7381",
+      "mode": "translate",
+      "english": "Shall I give you tea?",
+      "before": "",
+      "after": " chai?",
+      "options": [
+        {
+          "text": "Nikupe",
+          "correct": true
+        },
+        {
+          "text": "Unipe",
+          "correct": false,
+          "feedback": "Unipe = (please) give me"
+        },
+        {
+          "text": "Nimpe",
+          "correct": false,
+          "feedback": "Nimpe = Let me give him/her / should I give him/her?"
+        }
+      ],
+      "explanation": "Nikupe = \"Shall I give you\" — ni- + -ku- + -p- + -e",
+      "grammar": [
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "2964250e-dddc-511e-b58b-7ce365de33d0",
+      "mode": "translate",
+      "english": "I'll have to replace it.",
+      "before": "Inabidi ",
+      "after": ".",
+      "options": [
+        {
+          "text": "niibadilishe",
+          "correct": true
+        },
+        {
+          "text": "ninaibadilisha",
+          "correct": false,
+          "feedback": "ninaibadilisha = I am changing it"
+        },
+        {
+          "text": "nitaibadilisha",
+          "correct": false,
+          "feedback": "nitaibadilisha = I will change it"
+        }
+      ],
+      "explanation": "ni- + -i- (it) + -badilish- + -e.",
+      "grammar": [
+        "subjunctive",
+        "object-infixes",
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "779819fd-ab06-5dfb-b2b7-14486cc219de",
+      "mode": "translate",
+      "english": "I'll finish in an hour.",
+      "before": "",
+      "after": " baada ya saa moja.",
+      "options": [
+        {
+          "text": "Nitamaliza",
+          "correct": true
+        },
+        {
+          "text": "Nilimaliza",
+          "correct": false,
+          "feedback": "Nilimaliza = I finished"
+        },
+        {
+          "text": "Ninamaliza",
+          "correct": false,
+          "feedback": "Ninamaliza = I am finishing"
+        }
+      ],
+      "explanation": "saa moja here = one hour (not 7 o'clock!).",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "7ccd3b3a-a525-50f7-92ee-76246f6fc8be",
+      "mode": "translate",
+      "english": "It's a bit expensive.",
+      "before": "Ni ghali ",
+      "after": ".",
+      "options": [
+        {
+          "text": "kidogo",
+          "correct": true
+        },
+        {
+          "text": "sana",
+          "correct": false,
+          "feedback": "sana = very / a lot"
+        },
+        {
+          "text": "kabisa",
+          "correct": false,
+          "feedback": "kabisa = totally / completely"
+        }
+      ],
+      "explanation": "kidogo: a little / a bit — Kenyans give it n/n agreement",
+      "grammar": [
+        "sanifu-noun-classes"
+      ]
+    },
+    {
+      "id": "bea9ea70-2023-56bb-9ec1-385be78b6183",
+      "mode": "complete",
+      "english": "plumber",
+      "before": "fundi wa ",
+      "after": "",
+      "options": [
+        {
+          "text": "maji",
+          "correct": true
+        },
+        {
+          "text": "stima",
+          "correct": false,
+          "feedback": "stima = electricity"
+        },
+        {
+          "text": "mbao",
+          "correct": false,
+          "feedback": "mbao = wood / timber"
+        }
+      ],
+      "explanation": "fundi wa stima = electrician; fundi wa mbao = carpenter.",
+      "grammar": [
+        "sanifu-noun-classes"
+      ]
+    }
+  ]
+}

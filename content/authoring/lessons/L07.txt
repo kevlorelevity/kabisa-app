@@ -1,0 +1,271 @@
+# Level 7 — verb extensions: prepositional (-ia/-ea), passive (-wa), causative (-isha/-esha), reciprocal (-ana), stative (-ika); discourse particles (kumbe, basi, yaani, si…?)
+
+@lesson police-stop
+title: Pulled Over: A Traffic Police Stop
+level: 7
+theme: police
+category: work-admin
+culture: Traffic police stops are routine on Kenyan roads: the officer (address them as "afande") checks your licence, insurance sticker and the car's lights and tyres. Stay calm, polite and patient. You may hear a hint about "kitu kidogo" (something small) — a bribe; the safe, legal answer is to politely accept the official process (a fine or court date) and never offer money. Verb extensions run through every line: simamisha (make stop), nimesimamishwa (I've been stopped), umefanyiwa ukaguzi (you've had an inspection done on you).
+start: A traffic officer waves you to the side of the road near Westlands. You're driving.
+grammar: verb-extensions, discourse-particles, past-li
+gl: Simamisha = "Pull over / stop (the car)!" — simama (stop) + -isha (make): causative. #verb-extensions
+gl: pembeni = at the side
+gl: afande = "officer" — respectful address for police
+gl: nimesimamisha = "I've stopped (the car)" — causative of kusimama #verb-extensions
+gl: Naomba = "May I see / I'd like" — polite request #polite-requests
+gl: leseni ya kuendesha = driving licence
+gl: Hizi hapa = "Here they are"
+gl: unajua = "do you know"
+gl: kwa nini = why
+gl: nimekusimamisha = "I've stopped you" — ni- + -me- + -ku- (you) + -simamisha #verb-extensions
+gl: kwa kasi = fast / at speed
+gl: Sikujua = "I didn't know"
+gl: nilikuwa naenda = "I was going" — past continuous: nilikuwa + present. #continuous-tenses
+gl: ukaguzi = inspection
+gl: Umefanyiwa = "Have you had … done (on your car)?" — fanya + -i- (for) + -w- (passive): "has been done for you". #verb-extensions
+gl: nilifanyiwa = "I had it done" #verb-extensions
+gl: mwezi uliopita = last month
+gl: Kwa hivyo = "So…" #discourse-particles
+gl: Unaweza kujitetea = "Can you defend yourself?" — a well-known hint at a bribe. #helper-verbs
+gl: faini = fine (penalty)
+gl: rasmi = official
+gl: risiti = receipt
+gl: kumbe = "oh! so…" — surprise #discourse-particles
+gl: Basi = "Well then / okay" #discourse-particles
+gl: Endesha = "Drive!" #imperatives
+gl: kwa uangalifu = carefully
+gl: Nitazingatia = "I'll stick to / observe"
+gl: sheria za barabarani = the rules of the road
+gl: mkanda = seatbelt
+
+> Polisi: Habari za mchana. Simamisha gari pembeni, tafadhali. | Good afternoon. Pull the car over to the side, please.
+< Dereva: Habari, afande. Nimesimamisha. | Hello, officer. I've stopped.
+  x: Habari, afande. Umesimamisha. ; Habari, afande. Nimesimama gari.
+> Polisi: Naomba leseni yako ya kuendesha na bima. | May I have your driving licence and insurance.
+< Dereva: Hizi hapa, afande. | Here they are, officer.
+  x: Hii hapa, afande. ; Hawa hapa, afande.
+> Polisi: Asante. Unajua kwa nini nimekusimamisha? | Thank you. Do you know why I've stopped you?
+< Dereva: Hapana, afande. Sijui. | No, officer. I don't know.
+  x: Ndiyo, afande. Sijui. ; Hapana, afande. Najua.
+> Polisi: Ulipita hapa kwa kasi sana. | You went past here very fast.
+< Dereva: Pole, afande. Sikujua nilikuwa naenda kwa kasi. | Sorry, officer. I didn't know I was going fast.
+  x: Pole, afande. Sijui nilikuwa naenda kwa kasi. ; Asante, afande. Sikujua nilikuwa naenda kwa kasi.
+> Polisi: Hmm. Na gari hii imefanyiwa ukaguzi? | Hmm. And has this car been inspected?
+  s: Hmm. Na gari hili limefanyiwa ukaguzi?
+< Dereva: Ndiyo, ilifanyiwa ukaguzi mwezi uliopita. | Yes, it was inspected last month.
+  s: Ndiyo, lilifanyiwa ukaguzi mwezi uliopita.
+  x: Ndiyo, itafanyiwa ukaguzi mwezi uliopita. ; Ndiyo, ilifanya ukaguzi mwezi uliopita.
+> Polisi: Kwa hivyo… unaweza kujitetea? | So… can you defend yourself?
+< Dereva: Kama ni faini, nitalipa faini rasmi, na nitapewa risiti. | If it's a fine, I'll pay the official fine, and I'll be given a receipt.
+  x: Kama ni faini, nitalipa faini rasmi, na nitampa risiti. ; Kama ni faini, nilipa faini rasmi, na nitapewa risiti.
+> Polisi: Kumbe unajua sheria! Basi, leo nakuachilia. | Oh, so you know the law! Well then, today I'll let you go.
+< Dereva: Asante sana, afande. Nitazingatia sheria za barabarani. | Thank you very much, officer. I'll stick to the rules of the road.
+  x: Asante sana, afande. Nilizingatia sheria za barabarani. ; Asante sana, afande. Utazingatia sheria za barabarani.
+> Polisi: Endesha kwa uangalifu. Na ufunge mkanda! | Drive carefully. And fasten your seatbelt!
+
+@practice
+t: Pull the car over. | [Simamisha|Simama|Simamia] gari. || simama = stop (yourself); simamisha = make (something) stop. -isha is the causative "make / cause".
+t: I've stopped (the car). | [Nimesimamisha|Nimesimama|Nimesimamishwa]. || Nimesimamishwa = I've BEEN stopped (passive).
+t: I've been stopped by the police. | [Nimesimamishwa|Nimesimamisha|Nimesimama] na polisi. || passive -w-: simamisha → simamishwa. "na" = by.
+t: Do you know why I've stopped you? | Unajua kwa nini [nimekusimamisha|nimesimamishwa|umenisimamisha]?
+t: The car was inspected last month. | Gari [ilifanyiwa|ilifanya|itafanyiwa] ukaguzi mwezi uliopita. || fanya → fanyia (do for) → fanyiwa (have done for you).
+t: I'll be given a receipt. | [Nitapewa|Nitapa|Nitampa] risiti. || kupa = to give; kupewa = to be given.
+t: I didn't know. | [Sikujua|Sijui|Sitajua].
+t: I was going fast. | [Nilikuwa naenda|Ninaenda|Nitakuwa naenda] kwa kasi. || nilikuwa (I was) + a present verb = was …-ing.
+t: Drive carefully. | Endesha kwa [uangalifu|kasi|haraka].
+t: Fasten your seatbelt. | [Ufunge|Ufungue|Uvue] mkanda. || funga = close / fasten; fungua = open (the -u- reverses it!).
+c: Oh, so you know the law! | [Kumbe|Basi|Yaani] unajua sheria! || kumbe = surprise: "oh, so it turns out…".
+c: Well then, today I'll let you go. | [Basi|Kumbe|Sivyo], leo nakuachilia. || basi = "well then / so / okay".
+t: Here they are. (documents) | [Hizi hapa|Hii hapa|Huyu hapa]. || Leseni na bima = two things: hizi.
+t: I'll stick to the rules of the road. | [Nitazingatia|Nilizingatia|Utazingatia] sheria za barabarani.
+t: The police officer is checking the tyres. | Polisi [anakagua|anakaguliwa|wanakagua] matairi. || kukagua = to inspect; kukaguliwa = to be inspected.
+
+@vocab
+Simamisha gari! | Pull over! | simama + -isha (causative: make stop)
+afande | officer | Respectful address for police
+leseni ya kuendesha | driving licence | kuendesha = to drive (causative of kuenda!)
+bima | insurance |
+Nimekusimamisha | I've stopped you |
+kwa kasi | fast / at speed |
+Sikujua | I didn't know |
+ukaguzi | inspection | kukagua = to inspect
+Imefanyiwa ukaguzi | It's been inspected | fanya + -i- (for) + -w- (passive)
+Nitapewa risiti | I'll be given a receipt | kupewa = to be given
+kitu kidogo | "something small" — a bribe | Unaweza kujitetea? is a common hint
+Kumbe! | Oh, so…! | Surprise: what you assumed wasn't true
+Nitazingatia sheria | I'll obey the law |
+Ufunge mkanda | Fasten your seatbelt |
+
+@lesson uber-nairobi-4
+title: Taking an Uber, Part 4: The Forgotten Bag
+level: 7
+theme: uber
+category: transport
+culture: Kamau again! This time you left your laptop bag in his car. Nairobi's Uber drivers often keep regular customers' numbers and do favours — returning lost items, waiting, running small errands. The prepositional extension (-ia/-ea) is how you talk about favours: "nimekuletea" (I've brought it to you), "nikuwekee" (shall I keep it for you), "ulinisubiria" (you waited for me).
+start: Evening. You realise your laptop bag is missing — you must have left it in Kamau's car this morning. You call him.
+grammar: verb-extensions, discourse-particles, object-infixes
+gl: begi = bag — Kenyan word || Sanifu: mfuko
+gl: kompyuta = computer / laptop
+gl: Nimeisahau = "I've forgotten it" — ni- + -me- + -i- (it) + -sahau #object-infixes
+gl: kumbe = "oh! so…" #discourse-particles
+gl: ndiyo yako = "it's yours, then"
+gl: Niliiona = "I saw it" — ni- + -li- + -i- (it) + -ona #object-infixes
+gl: nikakuwekea = "and I kept it for you" — ni- + -ka- + -ku- + -wekea (keep for) #verb-extensions
+gl: nikuletee = "shall I bring it to you" — ni- + -ku- + -letee #verb-extensions
+gl: uniletee = "(please) bring me" #verb-extensions
+gl: Nitakulipia = "I'll pay for you" — prepositional: lipa → lipia (pay for) #verb-extensions
+gl: mafuta = fuel
+gl: yaani = "I mean / that is" #discourse-particles
+gl: Si = "Why don't…?" — si + subjunctive makes a friendly suggestion #discourse-particles
+gl: tukutane = "we meet" — tu- + -kutan- + -e #subjunctive
+gl: geti = gate || Sanifu: lango
+gl: kampuni = company
+gl: niko na = "I have (it with me)" || Sanifu: ninayo #na-have
+gl: ulinisubiria = "you waited for me" — subiri + -ia (for) #verb-extensions
+gl: tumeelewana = "we've understood each other / we're agreed" — elewa + -ana (each other) #verb-extensions
+gl: ilipatikana = "it was found" — pata + -ik- (stative) + -an-: be found / available #verb-extensions
+gl: Mungu ni mwema = "God is good" — common expression of relief
+gl: mwema = good (m/wa)
+gl: dakika kumi = ten minutes
+
+< Mteja: Kamau, habari? Nadhani nimesahau begi yangu kwa gari yako asubuhi. | Kamau, how are you? I think I forgot my bag in your car this morning.
+  s: Kamau, habari? Nadhani nimesahau mfuko wangu katika gari lako asubuhi.
+  x: Kamau, habari? Nadhani umesahau begi yangu kwa gari yako asubuhi. ; Kamau, habari? Nadhani nimesahau begi yako kwa gari yangu asubuhi.
+> Dereva: Begi nyeusi, na kompyuta ndani? Kumbe ni yako! Niliiona, nikakuwekea. | A black bag, with a laptop inside? Oh, so it's yours! I saw it and kept it for you.
+< Mteja: Mungu ni mwema! Asante sana kwa kuniwekea. | Thank God! Thanks so much for keeping it for me.
+  x: Mungu ni mwema! Asante sana kwa kukuwekea. ; Mungu ni mwema! Pole sana kwa kuniwekea.
+> Dereva: Hakuna shida. Nikuletee sasa? | No problem. Shall I bring it to you now?
+< Mteja: Ndiyo, tafadhali uniletee. Nitakulipia mafuta. | Yes, please bring it to me. I'll pay for your fuel.
+  x: Ndiyo, tafadhali nikuletee. Nitakulipia mafuta. ; Ndiyo, tafadhali uniletee. Utanilipia mafuta.
+> Dereva: Aah, si lazima. Yaani, wewe ni mteja wangu! Uko wapi? | Ah, it's not necessary. I mean, you're my customer! Where are you?
+< Mteja: Niko kazini, Westlands. Si tukutane kwa geti ya kampuni? | I'm at work, Westlands. Why don't we meet at the company gate?
+  s: Niko kazini, Westlands. Si tukutane kwenye lango la kampuni?
+  x: Niko kazini, Westlands. Si tunakutana kwa geti ya kampuni? ; Niko kazini, Westlands. Si mkutane kwa geti ya kampuni?
+> Dereva: Sawa. Nitafika baada ya dakika kumi. | Okay. I'll be there in ten minutes.
+> Dereva: Niko kwa geti. Nimekuletea begi yako. | I'm at the gate. I've brought you your bag.
+< Mteja: Asante sana! Na asubuhi ulinisubiria pia. Wewe ni mtu mzuri sana! | Thanks a lot! And this morning you waited for me too. You're a really good person!
+  x: Asante sana! Na asubuhi nilikusubiria pia. Wewe ni mtu mzuri sana! ; Asante sana! Na asubuhi ulinisubiria pia. Wewe ni mtu mbaya sana!
+> Dereva: Haha, kawaida tu. Sasa tumeelewana — ukinihitaji, nipigie. | Haha, it's nothing. Now we're agreed — if you need me, call me.
+< Mteja: Poa kabisa. Na kesho asubuhi, unaweza kunipeleka kazini? | Totally cool. And tomorrow morning, can you take me to work?
+  x: Poa kabisa. Na kesho asubuhi, naweza kukupeleka kazini? ; Poa kabisa. Na jana asubuhi, unaweza kunipeleka kazini?
+> Dereva: Bila shaka! Saa mbili kamili. Usichelewe! | Of course! Eight o'clock sharp. Don't be late!
+
+@practice
+t: I saw it and kept it for you. | Niliiona, [nikakuwekea|nikakuweka|nikaniwekea]. || weka (put / keep) + -e- = wekea: keep FOR someone. -ku- = (for) you.
+t: Thanks for keeping it for me. | Asante kwa [kuniwekea|kukuwekea|kuniweka]. || The prepositional -ea adds "for": kuniwekea = to keep (it) for me.
+t: Shall I bring it to you? | [Nikuletee|Uniletee|Nimletee]? || leta (bring) + -e- = letea: bring to / for someone.
+t: Please bring it to me. | Tafadhali [uniletee|nikuletee|umletee].
+t: I've brought you your bag. | [Nimekuletea|Umeniletea|Nimemletea] begi yako.
+t: I'll pay for your fuel. | [Nitakulipia|Nitakulipa|Utanilipia] mafuta. || lipa = pay; lipia = pay for (on behalf of). Nitakulipa would mean "I'll pay you".
+t: You waited for me. | [Ulinisubiria|Nilikusubiria|Ulisubiri]. || subiri (wait) + -ia = wait for someone.
+t: We're agreed. | [Tumeelewana|Tumeelewa|Mmeelewana]. || elewa (understand) + -ana = understand each other.
+t: Let's meet at the gate. | [Tukutane|Tunakutana|Mkutane] kwa geti. || kutana = meet (each other) — reciprocal -ana built in.
+c: Why don't we meet at the gate? | [Si|Ni|Basi] tukutane kwa geti? || Si + subjunctive = a friendly "why don't we…?".
+c: I mean, you're my customer! | [Yaani|Kumbe|Sivyo], wewe ni mteja wangu! || yaani = "I mean / that is to say".
+c: Oh, so it's yours! | [Kumbe|Yaani|Basi] ni yako! || kumbe = surprise: it turns out…
+t: Can you take me to work? | Unaweza [kunipeleka|kukupeleka|kumpeleka] kazini? || peleka = take (somewhere).
+t: The bag was found. | Begi [ilipatikana|ilipata|inapata]. || pata (get) + -ika- (stative) + -ana = be found / be available.
+t: Don't be late! | [Usichelewe|Uchelewe|Sichelewi]!
+
+@vocab
+Nimesahau begi yangu | I forgot my bag | Kenyan begi. | Nimesahau mfuko wangu | Sanifu word: mfuko (m/mi class)
+Nikakuwekea | And I kept it for you | weka → wekea: keep for
+Nikuletee? | Shall I bring it to you? | leta → letea: bring to / for
+Nitakulipia… | I'll pay for… (on your behalf) | lipa → lipia
+Ulinisubiria | You waited for me | subiri → subiria
+Tumeelewana | We're agreed | elewa → elewana: understand each other
+Tukutane… | Let's meet… | kutana = meet (each other)
+Si tukutane…? | Why don't we meet…? | si + subjunctive = friendly suggestion
+Kumbe! | Oh, so…! | Surprise
+Yaani… | I mean… | Rephrasing
+ilipatikana | it was found | pata → patikana: be found / available
+Mungu ni mwema! | Thank God! | Lit. "God is good"
+Usichelewe! | Don't be late! |
+
+@lesson office-meeting
+title: The Monday Meeting Mix-up
+level: 7
+theme: work
+category: work-admin
+culture: Kenyan offices run on WhatsApp groups, tea breaks, and meetings that move. Passive verbs are how office news travels: "mkutano umeahirishwa" (the meeting has been postponed), "ripoti iliandikwa na Faith" (the report was written by Faith), "tuliambiwa" (we were told). Reciprocals describe teamwork: tunasaidiana (we help each other), tujadiliane (let's discuss it together).
+start: You arrive at the conference room at 9 a.m. for the weekly meeting. It's empty. Wanjiku walks past.
+grammar: verb-extensions, discourse-particles, subjunctive
+gl: mkutano = meeting (m/mi class in Sanifu)
+gl: umeahirishwa = "has been postponed" — ahirisha + -w- (passive). Sanifu agreement with mkutano (m/mi). #verb-extensions
+gl: uliahirishwa = "was postponed" #verb-extensions
+gl: kumbe = "oh, so…!" #discourse-particles
+gl: Hukuambiwa = "Weren't you told?" — hu- + -ku- + -ambiwa (be told) #verb-extensions
+gl: tuliambiwa = "we were told" #verb-extensions
+gl: kwenye group = "in the (WhatsApp) group"
+gl: group = group (WhatsApp) — English loanword
+gl: ujumbe = message
+gl: ulitumwa = "was sent" #verb-extensions
+gl: Yaani = "I mean / in other words" #discourse-particles
+gl: ripoti = report
+gl: imeandikwa = "has been written" #verb-extensions
+gl: iliandikwa = "was written" #verb-extensions
+gl: Nitakutumia = "I'll send you" — tuma + -ia (to) #verb-extensions
+gl: barua pepe = email
+gl: tujadiliane = "let's discuss it together" — jadili + -ana #verb-extensions
+gl: tunasaidiana = "we help each other" — saidia + -ana #verb-extensions
+gl: Usinichelewesha = "Don't make me late" — chelewa + -esha (make) #verb-extensions
+gl: nikujulishe = "(so that) I let you know" — jua → julisha (make know) #verb-extensions
+gl: Basi = "Well then" #discourse-particles
+gl: tukanywe = "let's go and drink" — tu- + -ka- + -nyw- + -e (go and…) #subjunctive
+gl: Jumatano = Wednesday
+gl: saa tatu = nine o'clock
+gl: meneja = manager
+
+< John: Wanjiku, mkutano uko wapi? Hakuna mtu hapa! | Wanjiku, where's the meeting? There's nobody here!
+  x: Wanjiku, mkutano iko wapi? Kuna watu wengi hapa! ; Wanjiku, mkutano uko lini? Hakuna mtu hapa!
+> Wanjiku: Kumbe hujui? Mkutano umeahirishwa mpaka Jumatano. | Oh, you don't know? The meeting has been postponed to Wednesday.
+< John: Kweli? Sikuambiwa! Nani aliuahirisha? | Really? I wasn't told! Who postponed it?
+  x: Kweli? Sikuambia! Nani aliuahirisha? ; Kweli? Nimeambiwa! Nani aliuahirisha?
+> Wanjiku: Meneja. Ujumbe ulitumwa kwenye group jana usiku. | The manager. A message was sent in the group last night.
+< John: Aah, sikuuona. Simu yangu ilikuwa imezima. | Ah, I didn't see it. My phone was off.
+  x: Aah, niliuona. Simu yangu ilikuwa imezima. ; Aah, sikuuona. Simu yangu itakuwa imezima.
+> Wanjiku: Pole. Yaani, una saa nzima ya bure sasa! | Sorry. In other words, you have a whole free hour now!
+< John: Haha, ndiyo. Ripoti ya mwezi imeandikwa? | Haha, yes. Has the monthly report been written?
+  x: Haha, ndiyo. Ripoti ya mwezi imeandika? ; Haha, ndiyo. Ripoti ya mwezi itaandikwa jana?
+> Wanjiku: Ndiyo, iliandikwa na Faith. Nitakutumia kwa barua pepe. | Yes, it was written by Faith. I'll send it to you by email.
+< John: Asante. Tujadiliane kabla ya Jumatano? | Thanks. Shall we discuss it together before Wednesday?
+  x: Asante. Tunajadiliana kabla ya Jumatano? ; Asante. Tujadiliane baada ya Jumatano?
+> Wanjiku: Sawa. Kwa timu hii tunasaidiana kila wakati. | Sure. In this team we always help each other.
+< John: Poa. Usinichelewesha tu — nina kazi nyingi! | Cool. Just don't make me late — I have a lot of work!
+  x: Poa. Usikuchelewesha tu — nina kazi nyingi! ; Poa. Usinichelewe tu — nina kazi nyingi!
+> Wanjiku: Haha! Nitakupigia simu ili nikujulishe saa. | Haha! I'll call you to let you know the time.
+< John: Basi. Sasa, si tukanywe chai? | Okay then. Now, why don't we go and have some tea?
+  x: Basi. Sasa, si tunakunywa chai? ; Basi. Sasa, ni tukanywe chai?
+> Wanjiku: Twende! Chai ni muhimu kuliko mkutano! | Let's go! Tea is more important than meetings!
+
+@practice
+t: The meeting has been postponed. | Mkutano [umeahirishwa|umeahirisha|utaahirisha]. || Passive: add -w- before the final -a: ahirisha → ahirishwa.
+t: Who postponed it? | Nani [aliuahirisha|aliahirishwa|ataahirisha]? || Active: someone postponed it (-u- = it, for mkutano).
+t: I wasn't told! | [Sikuambiwa|Sikuambia|Hukuambiwa]! || ambia (tell) → ambiwa (be told).
+t: Weren't you told? | [Hukuambiwa|Sikuambiwa|Hakuambiwa]?
+t: A message was sent. | Ujumbe [ulitumwa|ulituma|utatumwa]. || tuma (send) → tumwa (be sent).
+t: It was written by Faith. | [Iliandikwa|Iliandika|Itaandikwa] na Faith. || After a passive, "na" = by.
+t: I'll send it to you by email. | [Nitakutumia|Nitakutuma|Utanitumia] kwa barua pepe. || tuma = send (a person on an errand); tumia = send TO someone. Nitakutuma = I'll send YOU (somewhere)!
+t: Let's discuss it together. | [Tujadiliane|Tujadili|Tunajadiliana]. || jadili + -ana = discuss with each other.
+t: We help each other. | [Tunasaidiana|Tunasaidia|Tunasaidiwa]. || saidia + -ana = help each other. Tunasaidiwa = we are helped.
+t: Don't make me late. | [Usinichelewesha|Usichelewe|Usikuchelewesha]. || chelewa (be late) + -esha (make) = make someone late.
+t: so that I let you know | ili [nikujulishe|nikujue|unijulishe] || jua (know) + -lisha = make know, inform.
+c: Oh, you don't know? | [Kumbe|Basi|Yaani] hujui? || kumbe = surprise.
+c: In other words, you have a free hour. | [Yaani|Kumbe|Sivyo], una saa nzima ya bure.
+c: Why don't we go and have tea? | Si [tukanywe|tunakunywa|tulikunywa] chai? || si + subjunctive; -ka- here means "go and…".
+t: Tea is more important than meetings. | Chai ni muhimu [kuliko|sana|zaidi] mkutano.
+
+@vocab
+Mkutano umeahirishwa | The meeting has been postponed | ahirisha → ahirishwa (passive)
+Sikuambiwa! | I wasn't told! | ambia → ambiwa
+Ujumbe ulitumwa | A message was sent | tuma → tumwa
+iliandikwa na… | it was written by… | na = by, after a passive
+Nitakutumia | I'll send (it) to you | tuma → tumia (send to)
+Tujadiliane | Let's discuss together | jadili → jadiliana
+Tunasaidiana | We help each other | saidia → saidiana
+Usinichelewesha | Don't make me late | chelewa → chelewesha
+nikujulishe | so I let you know | jua → julisha (inform)
+Kumbe! | Oh, so…! |
+Yaani | I mean / in other words |
+Si tukanywe chai? | Why don't we go have tea? |
+barua pepe | email | Lit. "wind letter"

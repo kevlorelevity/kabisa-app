@@ -1,0 +1,1609 @@
+{
+  "id": "market-maasai-bargain",
+  "uuid": "51e2250d-0abe-52a2-8a69-2a4bd2990b67",
+  "title": "Bargaining at the Maasai Market",
+  "category": "commerce",
+  "difficulty": "medium",
+  "level": 5,
+  "order": 501,
+  "theme": "market",
+  "culturalNote": "The Maasai Market moves around Nairobi through the week — rows of baskets (vikapu), beaded jewellery, kikoi cloths and carvings. The first price is for tourists; bargaining is expected and friendly. The rhythm: show interest, compare (\"this one is nicer than that one\"), name a price, and settle with \"Tumepatana!\" (we've agreed). The -me- tense is everywhere in a deal: \"nimeona\" (I've seen), \"umepunguza\" (you've lowered it), \"nimeamua\" (I've decided).",
+  "startingPoint": "Saturday afternoon at the Maasai Market. A seller waves you over to her baskets.",
+  "grammarFocus": [
+    "perfect-me",
+    "perfect-negative-ja",
+    "comparatives",
+    "adjective-agreement"
+  ],
+  "grammar": [
+    "perfect-me",
+    "perfect-negative-ja",
+    "comparatives",
+    "adjective-agreement",
+    "imperatives",
+    "discourse-particles",
+    "ni-copula",
+    "question-words",
+    "numbers-money",
+    "demonstratives",
+    "verb-extensions",
+    "locative-ni",
+    "greetings",
+    "wahi-ever-never",
+    "infinitive-ku",
+    "subject-prefixes",
+    "future-ta",
+    "sanifu-noun-classes",
+    "noun-classes-mwa-nn",
+    "possessives"
+  ],
+  "turns": [
+    {
+      "id": "d982c02f-289b-5fed-b4c3-f78c12c8558a",
+      "speaker": "Muuzaji",
+      "role": "auto",
+      "swahili": "Karibu, sister! Angalia vikapu hivi. Ni vizuri sana.",
+      "english": "Welcome, sister! Look at these baskets. They're very good.",
+      "words": [
+        {
+          "text": "Karibu",
+          "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "sister",
+          "gloss": "sister — sellers' friendly English address for a woman"
+        },
+        {
+          "text": "Angalia",
+          "gloss": "\"Look at!\" — -angalia (look at). From kuangalia.",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "vikapu",
+          "gloss": "baskets (plural of kikapu)"
+        },
+        {
+          "text": "hivi",
+          "gloss": "like this / about (with numbers)",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "vizuri",
+          "gloss": "well / nicely"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ],
+      "sanifu": "Karibu, dada! Angalia vikapu hivi. Ni vizuri sana."
+    },
+    {
+      "id": "ddfd5cc6-e033-5c34-accd-101d3d9d0610",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Asante. Nimeona kikapu hii. Ni bei gani?",
+      "english": "Thanks. I've seen this basket. How much is it?",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Nimeona",
+          "gloss": "\"I have seen\" — ni- (subject: I) + me- (perfect (done / now-state)) + -ona (see). From kuona.",
+          "grammar": [
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kuona (to see)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimeona"
+              },
+              {
+                "pronoun": "you",
+                "form": "umeona"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ameona"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumeona"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmeona"
+              },
+              {
+                "pronoun": "they",
+                "form": "wameona"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kikapu hii",
+          "gloss": "\"this basket\" — Kenyan n/n demonstrative.",
+          "sanifu": "Sanifu: kikapu hiki #sanifu-noun-classes"
+        },
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "bei gani",
+          "gloss": "what price? / how much?",
+          "grammar": [
+            "question-words",
+            "numbers-money"
+          ]
+        }
+      ],
+      "sanifu": "Asante. Nimeona kikapu hiki. Ni bei gani?",
+      "options": [
+        {
+          "swahili": "Asante. Nimeona kikapu hii. Ni bei gani?",
+          "correct": true
+        },
+        {
+          "swahili": "Asante. Nitaona kikapu hii. Ni bei gani?",
+          "correct": false
+        },
+        {
+          "swahili": "Asante. Sijaona kikapu hii. Ni bei gani?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "65b87d1c-96c9-5e74-ab23-575791993de6",
+      "speaker": "Muuzaji",
+      "role": "auto",
+      "swahili": "Hii ni elfu mbili tu. Imetengenezwa kwa mkono.",
+      "english": "This one is just two thousand. It's been made by hand.",
+      "words": [
+        {
+          "text": "Hii",
+          "gloss": "this — n/n singular (and Kenyans' all-purpose \"this\")",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "elfu mbili",
+          "gloss": "\"two thousand\""
+        },
+        {
+          "text": "tu",
+          "gloss": "just / only"
+        },
+        {
+          "text": "Imetengenezwa",
+          "gloss": "\"It has been made\" — i- (subject: it (n/n)) + me- (perfect (done / now-state)) + -tengenezwa (be made). From kutengenezwa. Extension: passive (-wa: \"be ...-ed\").",
+          "grammar": [
+            "perfect-me",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kutengenezwa (to be made)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimetengenezwa"
+              },
+              {
+                "pronoun": "you",
+                "form": "umetengenezwa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ametengenezwa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumetengenezwa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmetengenezwa"
+              },
+              {
+                "pronoun": "they",
+                "form": "wametengenezwa"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "imetengenezwa"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zimetengenezwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "mkono",
+          "gloss": "\"by hand / hand\" — kwa mkono = by hand"
+        }
+      ]
+    },
+    {
+      "id": "353fe593-8352-5d17-ae57-06ddf1c49e2e",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Wee! Elfu mbili? Hiyo ni bei ya mzungu!",
+      "english": "Wow! Two thousand? That's the foreigner price!",
+      "words": [
+        {
+          "text": "Wee",
+          "gloss": "\"Hey! / Wow!\" — surprise",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Elfu mbili",
+          "gloss": "\"two thousand\""
+        },
+        {
+          "text": "Hiyo",
+          "gloss": "that (near you / just mentioned) — n/n singular",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "bei ya mzungu",
+          "gloss": "\"the foreigner price\" — said with a smile when the first price is too high."
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Wee! Elfu mbili? Hiyo ni bei ya mzungu!",
+          "correct": true
+        },
+        {
+          "swahili": "Wee! Elfu mbili? Hiyo ni bei nzuri sana!",
+          "correct": false
+        },
+        {
+          "swahili": "Asante! Elfu mbili? Hiyo ni bei ya mzungu!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "114b8c80-c222-577d-9d0a-ac91e0f11331",
+      "speaker": "Muuzaji",
+      "role": "auto",
+      "swahili": "Hapana! Kikapu hii ni kubwa kuliko ile, na ni nzuri zaidi.",
+      "english": "No! This basket is bigger than that one, and it's nicer.",
+      "words": [
+        {
+          "text": "Hapana",
+          "gloss": "no"
+        },
+        {
+          "text": "Kikapu hii",
+          "gloss": "\"this basket\" — Kenyan n/n demonstrative.",
+          "sanifu": "Sanifu: kikapu hiki #sanifu-noun-classes"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "kubwa",
+          "gloss": "\"big\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-kubwa (big)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mkubwa"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wakubwa"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "kubwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kuliko",
+          "gloss": "than (comparisons)",
+          "grammar": [
+            "comparatives"
+          ]
+        },
+        {
+          "text": "ile",
+          "gloss": "that (over there) — n/n singular",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "nzuri",
+          "gloss": "good / fine — the standard answer to habari",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "zaidi",
+          "gloss": "more"
+        }
+      ],
+      "sanifu": "Hapana! Kikapu hiki ni kikubwa kuliko kile, na ni kizuri zaidi."
+    },
+    {
+      "id": "b44cf2d2-fc56-52c3-ae2e-98d7989368a4",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Ni kweli, lakini sijawahi kulipa elfu mbili kwa kikapu.",
+      "english": "That's true, but I've never paid two thousand for a basket.",
+      "words": [
+        {
+          "text": "Ni kweli",
+          "gloss": "it's true",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "sijawahi",
+          "gloss": "\"I have never…\" — si- + -ja- + -wahi: with a ku- verb, -wahi means \"ever\"",
+          "grammar": [
+            "wahi-ever-never"
+          ]
+        },
+        {
+          "text": "kulipa",
+          "gloss": "\"To pay\" — ku- (infinitive \"to\") + -lipa (pay). From kulipa.",
+          "grammar": [
+            "infinitive-ku"
+          ]
+        },
+        {
+          "text": "elfu mbili",
+          "gloss": "\"two thousand\""
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "kikapu",
+          "gloss": "\"basket\" — ki/vi noun (plural vikapu). Kenyans say \"kikapu hii\".",
+          "sanifu": "Sanifu: kikapu hiki (ki/vi) #sanifu-noun-classes"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ni kweli, lakini sijawahi kulipa elfu mbili kwa kikapu.",
+          "correct": true
+        },
+        {
+          "swahili": "Ni kweli, lakini nimewahi kulipa elfu mbili kwa kikapu.",
+          "correct": false
+        },
+        {
+          "swahili": "Ni kweli, lakini sijawahi kulipa elfu mbili kwa nyumba.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "efb53e8c-0936-50a9-95fd-893fe5acd887",
+      "speaker": "Muuzaji",
+      "role": "auto",
+      "swahili": "Sawa. Kwa wewe, elfu moja mia tano.",
+      "english": "Okay. For you, one thousand five hundred.",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "elfu moja mia tano",
+          "gloss": "\"one thousand five hundred\" — mia (hundreds) follows elfu (thousands) directly."
+        }
+      ]
+    },
+    {
+      "id": "5a6b3b92-1d9b-5911-8882-92566905b947",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Bado ni ghali. Nitalipa elfu moja.",
+      "english": "It's still expensive. I'll pay one thousand.",
+      "words": [
+        {
+          "text": "Bado",
+          "gloss": "still / not yet",
+          "grammar": [
+            "perfect-negative-ja"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "ghali",
+          "gloss": "\"expensive\" — m/wa singular agreement (one person / animal).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-ghali (expensive)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "ghali"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "ghali"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "ghali"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Nitalipa",
+          "gloss": "\"I will pay\" — ni- (subject: I) + ta- (future) + -lipa (pay). From kulipa.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kulipa (to pay)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitalipa"
+              },
+              {
+                "pronoun": "you",
+                "form": "utalipa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atalipa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutalipa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtalipa"
+              },
+              {
+                "pronoun": "they",
+                "form": "watalipa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "elfu moja",
+          "gloss": "\"one thousand\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Bado ni ghali. Nitalipa elfu moja.",
+          "correct": true
+        },
+        {
+          "swahili": "Bado ni rahisi. Nitalipa elfu moja.",
+          "correct": false
+        },
+        {
+          "swahili": "Bado ni ghali. Nililipa elfu moja.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "a0de4599-85e1-5fcf-ab5d-0ffab5758fdf",
+      "speaker": "Muuzaji",
+      "role": "auto",
+      "swahili": "Aiii, umepunguza sana! Bei ya mwisho, elfu moja mia mbili.",
+      "english": "Aiii, you've cut it a lot! Final price, one thousand two hundred.",
+      "words": [
+        {
+          "text": "Aiii",
+          "gloss": "aiii! (mock pain — \"you're killing me!\")"
+        },
+        {
+          "text": "umepunguza",
+          "gloss": "\"You have reduced\" — u- (subject: you) + me- (perfect (done / now-state)) + -punguza (reduce). From kupunguza.",
+          "grammar": [
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kupunguza (to reduce)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimepunguza"
+              },
+              {
+                "pronoun": "you",
+                "form": "umepunguza"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amepunguza"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumepunguza"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmepunguza"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamepunguza"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Bei ya mwisho",
+          "gloss": "final price (the \"last\" price)"
+        },
+        {
+          "text": "elfu moja",
+          "gloss": "\"one thousand\""
+        },
+        {
+          "text": "mia mbili",
+          "gloss": "200",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e9c27682-20d1-5748-b7d9-4ace594247b7",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Sawa. Na kama nitanunua vikapu viwili?",
+      "english": "Okay. And if I buy two baskets?",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "kama",
+          "gloss": "like / as / if"
+        },
+        {
+          "text": "nitanunua",
+          "gloss": "\"I will buy\" — ni- (subject: I) + ta- (future) + -nunua (buy). From kununua.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kununua (to buy)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitanunua"
+              },
+              {
+                "pronoun": "you",
+                "form": "utanunua"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atanunua"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutanunua"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtanunua"
+              },
+              {
+                "pronoun": "they",
+                "form": "watanunua"
+              }
+            ]
+          }
+        },
+        {
+          "text": "vikapu",
+          "gloss": "baskets (plural of kikapu)"
+        },
+        {
+          "text": "viwili",
+          "gloss": "\"two\" — ki/vi agreement (vidonge viwili, viti viwili).",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "ki/vi class numbers: kimoja, viwili, vitatu"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Sawa. Na kama nitanunua vikapu viwili?",
+          "correct": true
+        },
+        {
+          "swahili": "Sawa. Na kama nitanunua vikapu wawili?",
+          "correct": false
+        },
+        {
+          "swahili": "Sawa. Na kama nilinunua vikapu viwili?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "810643dc-8351-5c58-af7a-04f800e88f4e",
+      "speaker": "Muuzaji",
+      "role": "auto",
+      "swahili": "Viwili? Basi, elfu mbili kwa vyote. Hiyo ni bei nzuri kuliko zote!",
+      "english": "Two? Then two thousand for both. That's the best price of all!",
+      "words": [
+        {
+          "text": "Viwili",
+          "gloss": "\"two\" — ki/vi agreement (vidonge viwili, viti viwili).",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "ki/vi class numbers: kimoja, viwili, vitatu"
+        },
+        {
+          "text": "Basi",
+          "gloss": "so / well then / okay, that's it",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "elfu mbili",
+          "gloss": "\"two thousand\""
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "vyote",
+          "gloss": "\"all (of them)\" — ki/vi agreement (vikapu vyote).",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "ki/vi class; Kenyans often say \"zote\""
+        },
+        {
+          "text": "Hiyo",
+          "gloss": "that (near you / just mentioned) — n/n singular",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "bei",
+          "gloss": "price — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "nzuri",
+          "gloss": "good / fine — the standard answer to habari",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "kuliko",
+          "gloss": "than (comparisons)",
+          "grammar": [
+            "comparatives"
+          ]
+        },
+        {
+          "text": "zote",
+          "gloss": "all (n/n plural agreement)",
+          "grammar": [
+            "adjective-agreement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f8827e5f-f5ed-5e59-a350-4c93386fcd70",
+      "speaker": "Mteja",
+      "role": "user",
+      "swahili": "Tumepatana! Nimeamua — nitachukua hii nyekundu na ile ya kijani.",
+      "english": "Deal! I've decided — I'll take this red one and that green one.",
+      "words": [
+        {
+          "text": "Tumepatana",
+          "gloss": "\"We've agreed (on a price)!\" — tu- + -me- + -patana (agree, reciprocal).",
+          "grammar": [
+            "perfect-me"
+          ]
+        },
+        {
+          "text": "Nimeamua",
+          "gloss": "\"I have decided\" — ni- (subject: I) + me- (perfect (done / now-state)) + -amua (decide). From kuamua.",
+          "grammar": [
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kuamua (to decide)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimeamua"
+              },
+              {
+                "pronoun": "you",
+                "form": "umeamua"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ameamua"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumeamua"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmeamua"
+              },
+              {
+                "pronoun": "they",
+                "form": "wameamua"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nitachukua",
+          "gloss": "\"I will take\" — ni- (subject: I) + ta- (future) + -chukua (take). From kuchukua.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kuchukua (to take)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitachukua"
+              },
+              {
+                "pronoun": "you",
+                "form": "utachukua"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atachukua"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutachukua"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtachukua"
+              },
+              {
+                "pronoun": "they",
+                "form": "watachukua"
+              }
+            ]
+          }
+        },
+        {
+          "text": "hii",
+          "gloss": "this — n/n singular (and Kenyans' all-purpose \"this\")",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "nyekundu",
+          "gloss": "\"red\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-ekundu (red)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mwekundu"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wekundu"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "nyekundu"
+              }
+            ]
+          }
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "ile",
+          "gloss": "that (over there) — n/n singular",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "ya",
+          "gloss": "\"of\" — n/n singular agreement (nyumba ya Kamau); Kenyans use ya with most nouns",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "kijani",
+          "gloss": "green"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Tumepatana! Nimeamua — nitachukua hii nyekundu na ile ya kijani.",
+          "correct": true
+        },
+        {
+          "swahili": "Hatujapatana! Nimeamua — nitachukua hii nyekundu na ile ya kijani.",
+          "correct": false
+        },
+        {
+          "swahili": "Tumepatana! Sijaamua — nitachukua hii nyekundu na ile ya kijani.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "92393bcc-caa4-50f8-a7cc-874186a5c6ea",
+      "speaker": "Muuzaji",
+      "role": "auto",
+      "swahili": "Asante sana, sister! Umechagua vizuri. Karibu tena!",
+      "english": "Thank you so much, sister! You've chosen well. Come again!",
+      "words": [
+        {
+          "text": "Asante sana",
+          "gloss": "thank you very much"
+        },
+        {
+          "text": "sister",
+          "gloss": "sister — sellers' friendly English address for a woman"
+        },
+        {
+          "text": "Umechagua",
+          "gloss": "\"You have chosen\" — u- (subject: you) + me- (perfect (done / now-state)) + -chagua (choose). From kuchagua.",
+          "grammar": [
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kuchagua (to choose)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimechagua"
+              },
+              {
+                "pronoun": "you",
+                "form": "umechagua"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amechagua"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumechagua"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmechagua"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamechagua"
+              }
+            ]
+          }
+        },
+        {
+          "text": "vizuri",
+          "gloss": "well / nicely"
+        },
+        {
+          "text": "Karibu tena",
+          "gloss": "welcome again / come again"
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "9b834576-4be9-525e-8c95-a5301ffd30f3",
+      "swahili": "Nimeona…",
+      "english": "I've seen…",
+      "exampleContext": "ni- + -me- (perfect) + -ona",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "bc31fa90-9fa0-5145-acd4-f3dab5a1ab08",
+      "swahili": "Umepunguza!",
+      "english": "You've lowered (the price)!",
+      "exampleContext": "from kupunguza = to reduce",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "dfc0244c-d7b2-5f49-9200-158c7755d347",
+      "swahili": "Bei ya mwisho",
+      "english": "The final price",
+      "exampleContext": "Lit. \"the last price\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "4fce7573-7e2b-5b13-bead-9cfe2c6dc44d",
+      "swahili": "ghali",
+      "english": "expensive",
+      "exampleContext": "rahisi = cheap / easy"
+    },
+    {
+      "id": "60cd98c3-82bf-5050-8fcc-6c88f11041fa",
+      "swahili": "kuliko",
+      "english": "than",
+      "exampleContext": "Hii ni kubwa kuliko ile = this is bigger than that one"
+    },
+    {
+      "id": "6051283c-3e5f-5d13-88ff-f6bafb8566f8",
+      "swahili": "zaidi",
+      "english": "more",
+      "exampleContext": "nzuri zaidi = nicer"
+    },
+    {
+      "id": "53144cec-72aa-5fd6-88b8-7e55dcb716fe",
+      "swahili": "Sijawahi…",
+      "english": "I've never…",
+      "exampleContext": "sijawahi kulipa = I've never paid",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "be1d8f1e-62ed-5617-b304-47e45702bca8",
+      "swahili": "Umewahi…?",
+      "english": "Have you ever…?",
+      "exampleContext": "umewahi kuona simba? = have you ever seen a lion?",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "0a26df5c-1795-5dd7-b0fe-4bb362807882",
+      "swahili": "Bado ni ghali",
+      "english": "It's still expensive",
+      "exampleContext": "bado = still",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "9179f37f-4d04-5921-9fce-7c3ee10d1cea",
+      "swahili": "Nimeamua",
+      "english": "I've decided",
+      "exampleContext": "Sijaamua = I haven't decided yet"
+    },
+    {
+      "id": "68104f48-ec01-5b3b-8bcc-92ed7c848d23",
+      "swahili": "Tumepatana!",
+      "english": "Deal!",
+      "exampleContext": "Lit. \"we've agreed\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "3f677395-64bf-5b47-b601-9bd5279b1d73",
+      "swahili": "kikapu / vikapu",
+      "english": "basket / baskets",
+      "exampleContext": "Kenyans: kikapu hii.",
+      "partOfSpeech": "phrase",
+      "sanifu": "kikapu hiki",
+      "sanifuNote": "Sanifu: ki/vi class"
+    },
+    {
+      "id": "64e5b515-e321-53b7-9800-79557622d6da",
+      "swahili": "nyekundu",
+      "english": "red (n/n)",
+      "exampleContext": "rangi nyekundu = red colour"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a9a2ef9e-c44b-5e8d-bb6b-188bf57cdd96",
+      "mode": "translate",
+      "english": "I've seen this basket.",
+      "before": "",
+      "after": " kikapu hii.",
+      "options": [
+        {
+          "text": "Nimeona",
+          "correct": true
+        },
+        {
+          "text": "Niliona",
+          "correct": false,
+          "feedback": "Niliona = I saw"
+        },
+        {
+          "text": "Nitaona",
+          "correct": false,
+          "feedback": "Nitaona = I will see"
+        }
+      ],
+      "explanation": "-me- = has / have done: ni- + -me- + -ona.",
+      "grammar": [
+        "perfect-me"
+      ]
+    },
+    {
+      "id": "72b48026-fa5d-527f-9da0-bc1ecf32cc4e",
+      "mode": "translate",
+      "english": "You've lowered it a lot!",
+      "before": "",
+      "after": " sana!",
+      "options": [
+        {
+          "text": "Umepunguza",
+          "correct": true
+        },
+        {
+          "text": "Nimepunguza",
+          "correct": false,
+          "feedback": "Nimepunguza = I have reduced"
+        },
+        {
+          "text": "Amepunguza",
+          "correct": false,
+          "feedback": "Amepunguza = He/she has reduced"
+        }
+      ],
+      "explanation": "Umepunguza = \"You have reduced\" — u- (subject: you) + me- (perfect (done / now-state)) + -punguza (reduce). From kupunguza.",
+      "grammar": [
+        "perfect-me"
+      ]
+    },
+    {
+      "id": "6adf19c3-156e-51d6-821c-078bed774ab6",
+      "mode": "translate",
+      "english": "I've decided.",
+      "before": "",
+      "after": ".",
+      "options": [
+        {
+          "text": "Nimeamua",
+          "correct": true
+        },
+        {
+          "text": "Sijaamua",
+          "correct": false,
+          "feedback": "Sijaamua = I haven't decided yet"
+        },
+        {
+          "text": "Nitaamua",
+          "correct": false,
+          "feedback": "Nitaamua = I will decide"
+        }
+      ],
+      "explanation": "Nimeamua = \"I have decided\" — ni- (subject: I) + me- (perfect (done / now-state)) + -amua (decide). From kuamua.",
+      "grammar": [
+        "perfect-me"
+      ]
+    },
+    {
+      "id": "cab5fb58-e80c-5490-9961-5d83c2308381",
+      "mode": "translate",
+      "english": "I haven't decided yet.",
+      "before": "",
+      "after": " bado.",
+      "options": [
+        {
+          "text": "Sijaamua",
+          "correct": true
+        },
+        {
+          "text": "Nimeamua",
+          "correct": false,
+          "feedback": "Nimeamua = I have decided"
+        },
+        {
+          "text": "Sikuamua",
+          "correct": false,
+          "feedback": "Sikuamua = I didn't decide"
+        }
+      ],
+      "explanation": "-ja- = not yet: si- + -ja- + -amua. Often with bado.",
+      "grammar": [
+        "perfect-negative-ja"
+      ]
+    },
+    {
+      "id": "6dbdf00d-eb5b-5a23-8922-ba5c60d6d3c0",
+      "mode": "translate",
+      "english": "We've agreed!",
+      "before": "",
+      "after": "!",
+      "options": [
+        {
+          "text": "Tumepatana",
+          "correct": true
+        },
+        {
+          "text": "Hatujapatana",
+          "correct": false,
+          "feedback": "Hatujapatana = We haven't agreed (on a price) yet"
+        },
+        {
+          "text": "Tutapatana",
+          "correct": false,
+          "feedback": "Tutapatana = We will agree (on a price)"
+        }
+      ],
+      "explanation": "Tumepatana — the word that closes a deal.",
+      "grammar": [
+        "perfect-me"
+      ]
+    },
+    {
+      "id": "75782eaa-2a75-537d-a0dc-3e2e73c7ffef",
+      "mode": "translate",
+      "english": "You've chosen well.",
+      "before": "",
+      "after": " vizuri.",
+      "options": [
+        {
+          "text": "Umechagua",
+          "correct": true
+        },
+        {
+          "text": "Nimechagua",
+          "correct": false,
+          "feedback": "Nimechagua = I have chosen"
+        },
+        {
+          "text": "Wamechagua",
+          "correct": false,
+          "feedback": "Wamechagua = They have chosen"
+        }
+      ],
+      "explanation": "Umechagua = \"You have chosen\" — u- (subject: you) + me- (perfect (done / now-state)) + -chagua (choose). From kuchagua.",
+      "grammar": [
+        "perfect-me"
+      ]
+    },
+    {
+      "id": "f89bf71c-1e79-513e-bdba-8232dd55c060",
+      "mode": "translate",
+      "english": "I've never paid two thousand.",
+      "before": "",
+      "after": " kulipa elfu mbili.",
+      "options": [
+        {
+          "text": "Sijawahi",
+          "correct": true
+        },
+        {
+          "text": "Nimewahi",
+          "correct": false,
+          "feedback": "Nimewahi = I have (once / before)…"
+        },
+        {
+          "text": "Hujawahi",
+          "correct": false,
+          "feedback": "Hujawahi = You have never…"
+        }
+      ],
+      "explanation": "sijawahi + ku-verb = I have never (done).",
+      "grammar": [
+        "wahi-ever-never"
+      ]
+    },
+    {
+      "id": "46b265d9-2bd9-563c-ac4a-7fe5428d90d4",
+      "mode": "translate",
+      "english": "Have you ever been to the Maasai Market?",
+      "before": "",
+      "after": " kuenda Maasai Market?",
+      "options": [
+        {
+          "text": "Umewahi",
+          "correct": true
+        },
+        {
+          "text": "Sijawahi",
+          "correct": false,
+          "feedback": "Sijawahi = I have never…"
+        },
+        {
+          "text": "Nimewahi",
+          "correct": false,
+          "feedback": "Nimewahi = I have (once / before)…"
+        }
+      ],
+      "explanation": "umewahi + ku-verb = have you ever…?",
+      "grammar": [
+        "wahi-ever-never"
+      ]
+    },
+    {
+      "id": "9c0f4196-9c08-5601-97b7-e1c8b5a157de",
+      "mode": "translate",
+      "english": "This basket is bigger than that one.",
+      "before": "Kikapu hii ni kubwa ",
+      "after": " ile.",
+      "options": [
+        {
+          "text": "kuliko",
+          "correct": true
+        },
+        {
+          "text": "zaidi",
+          "correct": false,
+          "feedback": "zaidi = more"
+        },
+        {
+          "text": "sana",
+          "correct": false,
+          "feedback": "sana = very / a lot"
+        }
+      ],
+      "explanation": "A kuliko B = (more) than B.",
+      "grammar": [
+        "comparatives"
+      ]
+    },
+    {
+      "id": "3d0048e7-a775-58ed-920c-289709a3e1dc",
+      "mode": "translate",
+      "english": "It's nicer.",
+      "before": "Ni nzuri ",
+      "after": ".",
+      "options": [
+        {
+          "text": "zaidi",
+          "correct": true
+        },
+        {
+          "text": "kuliko",
+          "correct": false,
+          "feedback": "kuliko = than (comparisons)"
+        },
+        {
+          "text": "kabisa",
+          "correct": false,
+          "feedback": "kabisa = totally / completely"
+        }
+      ],
+      "explanation": "zaidi = more: nzuri zaidi = nicer."
+    },
+    {
+      "id": "73c925eb-df3f-5a1d-b5c0-7a098318cefb",
+      "mode": "translate",
+      "english": "the best price of all",
+      "before": "bei nzuri kuliko ",
+      "after": "",
+      "options": [
+        {
+          "text": "zote",
+          "correct": true
+        },
+        {
+          "text": "wote",
+          "correct": false,
+          "feedback": "wote = all (m/wa agreement: watu wote)"
+        },
+        {
+          "text": "yote",
+          "correct": false,
+          "feedback": "yote = all (n/n singular agreement)"
+        }
+      ],
+      "explanation": "zote = all (n/n plural). Wote is for people.",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "e89caf51-ac28-5362-8c93-6f23d634a31d",
+      "mode": "translate",
+      "english": "It's still expensive.",
+      "before": "",
+      "after": " ni ghali.",
+      "options": [
+        {
+          "text": "Bado",
+          "correct": true
+        },
+        {
+          "text": "Tena",
+          "correct": false,
+          "feedback": "Tena = again"
+        },
+        {
+          "text": "Sasa",
+          "correct": false,
+          "feedback": "Sasa = now"
+        }
+      ],
+      "explanation": "bado = still (and \"not yet\" with -ja-).",
+      "grammar": [
+        "perfect-negative-ja"
+      ]
+    },
+    {
+      "id": "4aa306d7-a298-5b62-9ded-02a1d5a88142",
+      "mode": "translate",
+      "english": "the final price",
+      "before": "bei ya ",
+      "after": "",
+      "options": [
+        {
+          "text": "mwisho",
+          "correct": true
+        },
+        {
+          "text": "kwanza",
+          "correct": false,
+          "feedback": "kwanza = first"
+        },
+        {
+          "text": "pili",
+          "correct": false,
+          "feedback": "pili = second"
+        }
+      ],
+      "explanation": "mwisho: end — Kenyans give it n/n agreement",
+      "grammar": [
+        "sanifu-noun-classes"
+      ]
+    },
+    {
+      "id": "227d4dca-139f-56f6-a0fb-850b30ee797c",
+      "mode": "translate",
+      "english": "two baskets",
+      "before": "vikapu ",
+      "after": "",
+      "options": [
+        {
+          "text": "viwili",
+          "correct": true
+        },
+        {
+          "text": "mbili",
+          "correct": false,
+          "feedback": "mbili = 2 (n/n form"
+        },
+        {
+          "text": "wawili",
+          "correct": false,
+          "feedback": "wawili = two (m/wa: watu wawili)"
+        }
+      ],
+      "explanation": "ki/vi nouns take vi- numbers.",
+      "grammar": [
+        "sanifu-noun-classes"
+      ]
+    },
+    {
+      "id": "6637cc7d-4743-56c9-85b4-7dca48fba464",
+      "mode": "translate",
+      "english": "this red one",
+      "before": "hii ",
+      "after": "",
+      "options": [
+        {
+          "text": "nyekundu",
+          "correct": true
+        },
+        {
+          "text": "mwekundu",
+          "correct": false,
+          "feedback": "mwekundu = red"
+        },
+        {
+          "text": "wekundu",
+          "correct": false,
+          "feedback": "wekundu = red"
+        }
+      ],
+      "explanation": "n/n agreement: nyekundu. (Mwekundu is m/wa.)",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "956a3e45-404a-5fb7-940f-386e56aa7b85",
+      "mode": "translate",
+      "english": "It's very good. (a basket)",
+      "before": "Ni ",
+      "after": " sana.",
+      "options": [
+        {
+          "text": "nzuri",
+          "correct": true
+        },
+        {
+          "text": "mzuri",
+          "correct": false,
+          "feedback": "mzuri = good / nice / beautiful"
+        },
+        {
+          "text": "wazuri",
+          "correct": false,
+          "feedback": "wazuri = good / nice / beautiful"
+        }
+      ],
+      "explanation": "Kenyans use the n/n form for things: nzuri.",
+      "grammar": [
+        "greetings"
+      ]
+    },
+    {
+      "id": "25d75b7d-e56a-5566-8ef3-ca2d511eea85",
+      "mode": "translate",
+      "english": "She is very good. (a person)",
+      "before": "Yeye ni ",
+      "after": " sana.",
+      "options": [
+        {
+          "text": "mzuri",
+          "correct": true
+        },
+        {
+          "text": "nzuri",
+          "correct": false,
+          "feedback": "nzuri = good / fine"
+        },
+        {
+          "text": "wazuri",
+          "correct": false,
+          "feedback": "wazuri = good / nice / beautiful"
+        }
+      ],
+      "explanation": "People take m/wa: mzuri (one), wazuri (several).",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    }
+  ]
+}
