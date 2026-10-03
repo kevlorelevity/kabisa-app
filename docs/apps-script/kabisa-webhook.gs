@@ -77,6 +77,12 @@ function emailFeedback_(fb) {
     '<br>Browser: ' + esc_(fb.user_agent || '—') + '<br>Sent: ' + esc_(fb.created_at) + '</p>';
   var opts = { htmlBody: html, name: 'Kabisa Feedback' };
   if (fb.email) opts.replyTo = fb.email;
+  // The script sends as its owner (kevin@splotch.ink). Gmail never shows you a
+  // copy of your own message coming back through a group you're in, so the
+  // owner would never see it via feedback@kabisa.app. Cc the owner directly;
+  // other group members (e.g. Wanyonyi) still get it through the group.
+  var owner = Session.getEffectiveUser().getEmail();
+  if (owner) opts.cc = owner;
   MailApp.sendEmail(FEEDBACK_TO, subject, fb.message + '\n\n— ' + who + '\nPage: ' + (fb.page || '—'), opts);
 }
 
