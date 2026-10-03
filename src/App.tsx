@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Nav } from './components/Nav';
+import { UpdateBanner } from './components/UpdateBanner';
 import { LessonsView } from './views/LessonsView';
 import { PracticeView } from './views/PracticeView';
 import { LessonView } from './views/LessonView';
@@ -23,6 +24,7 @@ function AppLayout() {
   }, []);
   return (
     <>
+      <UpdateBanner />
       <Nav />
       <main>
         <Routes>
