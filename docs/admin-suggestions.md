@@ -28,6 +28,19 @@ Vercel env var (Production): `KABISA_WEBHOOK_URL` = the web app's `/exec` URL.
 
 Until then suggestions are stored in Supabase only (the modal says so).
 
+## Live edits (edit in place)
+If the admin changes the text in the "New text" box, the change goes live for everyone as soon as it's saved —
+no deploy. It's stored in `public.content_override` (scope = lesson / grammar topic / level, find → replace on
+the raw script, before the learner's name and country are swapped in) and applied by `src/lib/contentOverrides.ts`
+when the app loads. The suggestion row is marked `applied` and the sheet row shows status `applied`.
+The "what should change and why" box is optional.
+
+To undo a live edit: `update public.content_override set active = false where id = '…';`
+To make edits permanent in the JSON later, Claude folds active overrides into `content/` and deactivates them.
+
+Not yet covered by live edits: the audio allow-list in `api/tts.ts` only knows the bundled lines (TTS is not
+configured in production right now anyway).
+
 ## Later: applying suggestions
 Planned flow: Claude reads rows with status `new` from `content_suggestion`, proposes concrete edits
 to `content/authoring/lessons/*.txt` / `grammar.py` (or the Uber JSON), Kevin approves, Claude applies,

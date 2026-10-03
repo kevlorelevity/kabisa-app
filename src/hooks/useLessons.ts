@@ -2,6 +2,9 @@ import { useMemo } from 'react';
 import type { Lesson } from '../types';
 import { personalizeLesson } from '../lib/personalize';
 import { useProfile } from './profileContext';
+import { registerContentScopes, useOverridesVersion } from '../lib/contentOverrides';
+import { getGrammarTopic } from './useGrammar';
+import { LEVELS } from '../lib/levels';
 
 // Lessons are local-JSON only for now — this content isn't seeded into
 // Supabase yet (no dialogue_turn/mc_option tables exist). Unlike
@@ -15,6 +18,13 @@ const lessons: Lesson[] = Object.values(lessonFiles)
   .map((f) => f.default)
   .sort((a, b) => (a.order ?? Infinity) - (b.order ?? Infinity));
 
+// Live edits (lib/contentOverrides) patch these objects in place.
+registerContentScopes({
+  lesson: (id) => lessons.find((l) => l.id === id),
+  grammar: (slug) => getGrammarTopic(slug),
+  level: (n) => LEVELS.find((l) => String(l.level) === n),
+});
+
 /** All lessons, unpersonalised (the scripts' default "John from Uganda"). */
 export function getRawLessons(): Lesson[] {
   return lessons;
@@ -23,7 +33,12 @@ export function getRawLessons(): Lesson[] {
 /** Returns all authored lessons, with the learner cast as the first person. */
 export function useLessons(): Lesson[] {
   const { persona } = useProfile();
-  return useMemo(() => lessons.map((l) => personalizeLesson(l, persona)), [persona]);
+  const v = useOverridesVersion();
+  // Copy before personalising so in-place live edits always produce new objects.
+  return useMemo(
+    () => lessons.map((l) => personalizeLesson(v ? structuredClone(l) : l, persona)),
+    [persona, v],
+  );
 }
 
 /** Returns a single lesson by its slug, or undefined if not found. */

@@ -6,6 +6,7 @@ import { useGrammarFavorites } from '../lib/grammarFavorites';
 import { levelInfo } from '../lib/levels';
 import { AudioButton } from './AudioButton';
 import { RichText } from './RichText';
+import { useOverridesVersion } from '../lib/contentOverrides';
 import { EditPencil } from './EditPencil';
 
 interface GrammarModalProps {
@@ -105,6 +106,7 @@ function Block({ block }: { block: GrammarBlock }) {
 
 /** The grammar explainer dialog. Rendered by GrammarProvider. */
 export function GrammarModal({ topic, canGoBack, onBack, onNavigate, onClose }: GrammarModalProps) {
+  useOverridesVersion(); // re-render on admin live edits
   const closeRef = useRef<HTMLButtonElement>(null);
   const bodyRef = useRef<HTMLDivElement>(null);
   const lvl = levelInfo(topic.level);

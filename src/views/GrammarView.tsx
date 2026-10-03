@@ -5,6 +5,7 @@ import { useGrammarFavorites } from '../lib/grammarFavorites';
 import { LEVELS } from '../lib/levels';
 import { useGrammarModal } from '../components/grammarContext';
 import { FavoriteStar } from '../components/GrammarModal';
+import { useOverridesVersion } from '../lib/contentOverrides';
 import type { GrammarTopic } from '../types';
 
 type Filter = 'all' | 'favorites';
@@ -22,6 +23,7 @@ function matches(t: GrammarTopic, q: string): boolean {
 
 /** The central list of every grammar explainer, with search and favourites. */
 export function GrammarView() {
+  useOverridesVersion(); // re-render on admin live edits
   const { slug } = useParams<{ slug?: string }>();
   const { openGrammar } = useGrammarModal();
   const { favorites } = useGrammarFavorites();

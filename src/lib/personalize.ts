@@ -40,6 +40,11 @@ function isDefault(p: Persona): boolean {
   );
 }
 
+/** Swaps John/Uganda/Kampala in one string (Swahili or English country name). */
+export function personalizeText(s: string, p: Persona, swahili: boolean): string {
+  return replaceIn(s, p, swahili);
+}
+
 function replaceIn(s: string, p: Persona, swahili: boolean): string {
   return s
     .replace(/Kampala — capital of Uganda/g, `${p.city} — a city in ${p.countryEn}`)

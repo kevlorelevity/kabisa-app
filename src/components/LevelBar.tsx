@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLessons } from '../hooks/useLessons';
 import { SCORES_CHANGED_EVENT } from '../lib/lessonScores';
+import { useOverridesVersion } from '../lib/contentOverrides';
 import { MAX_LEVEL, courseComplete, currentLevel, levelInfo, levelXp, totalXp } from '../lib/levels';
 
 /** Re-render whenever lesson scores change (they live in localStorage). */
@@ -23,6 +24,7 @@ function useScoresVersion(): number {
 export function LevelBar() {
   const lessons = useLessons();
   useScoresVersion();
+  useOverridesVersion(); // re-render on admin live edits
   if (lessons.length === 0) return null;
 
   const lvl = currentLevel(lessons);

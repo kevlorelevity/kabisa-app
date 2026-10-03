@@ -1,5 +1,6 @@
 import { getSupabase } from './supabase';
 import type { SuggestTarget } from '../components/adminContext';
+import type { ContentOverride } from './contentOverrides';
 
 export type SuggestionKind = 'phrasing' | 'translation' | 'grammar' | 'layout' | 'other';
 
@@ -22,26 +23,43 @@ export async function loadIsAdmin(userId: string | null): Promise<boolean> {
 
 export interface SuggestionInput extends SuggestTarget {
   kind: SuggestionKind;
-  suggestion: string;
+  /** "What should change and why" — optional when the text is edited in place. */
+  suggestion?: string;
+  /** A live edit to apply on top of the bundled content (see lib/contentOverrides). */
+  override?: Omit<ContentOverride, 'id'>;
   proposedText?: string;
   page: string;
   reviewerName?: string;
 }
 
-export async function submitSuggestion(input: SuggestionInput): Promise<{ ok: boolean; synced: boolean }> {
+export interface SubmitResult {
+  ok: boolean;
+  synced: boolean;
+  /** The edit is live for everyone (an override row was stored). */
+  applied: boolean;
+  overrideId?: string;
+  error?: string;
+}
+
+export async function submitSuggestion(input: SuggestionInput): Promise<SubmitResult> {
   const supa = getSupabase();
   const token = supa ? (await supa.auth.getSession()).data.session?.access_token : undefined;
-  if (!token) return { ok: false, synced: false };
+  if (!token) return { ok: false, synced: false, applied: false, error: 'not_signed_in' };
   try {
     const res = await fetch('/api/suggestion', {
       method: 'POST',
       headers: { 'content-type': 'application/json', authorization: `Bearer ${token}` },
       body: JSON.stringify(input),
     });
-    if (!res.ok) return { ok: false, synced: false };
-    const body = (await res.json()) as { synced?: boolean };
-    return { ok: true, synced: Boolean(body.synced) };
-  } catch {
-    return { ok: false, synced: false };
+    const body = (await res.json().catch(() => ({}))) as {
+      synced?: boolean;
+      applied?: boolean;
+      overrideId?: string;
+      error?: string;
+    };
+    if (!res.ok) return { ok: false, synced: false, applied: false, error: body.error ?? `http_${res.status}` };
+    return { ok: true, synced: Boolean(body.synced), applied: Boolean(body.applied), overrideId: body.overrideId };
+  } catch (e) {
+    return { ok: false, synced: false, applied: false, error: e instanceof Error ? e.message : 'network_error' };
   }
 }

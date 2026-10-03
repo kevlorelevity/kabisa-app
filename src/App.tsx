@@ -13,8 +13,14 @@ import { FeedbackButton } from './components/FeedbackButton';
 import { AdminProvider } from './components/AdminProvider';
 import { AuthProvider } from './hooks/AuthProvider';
 import { SignInGate } from './components/SignInGate';
+import { useEffect } from 'react';
+import { loadOverrides } from './lib/contentOverrides';
 
 function AppLayout() {
+  // Admin live edits (content_override) on top of the bundled lesson JSON.
+  useEffect(() => {
+    void loadOverrides();
+  }, []);
   return (
     <>
       <Nav />

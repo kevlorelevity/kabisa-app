@@ -1,4 +1,4 @@
-import { useMemo, useState, type ReactNode } from 'react';
+import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import type { PracticeItem, PracticeOption } from '../types';
 import type { AttemptResult } from '../lib/lessonScores';
 import { AudioButton } from './AudioButton';
@@ -35,6 +35,20 @@ export function PracticeSession({ items, onFinish, resultSlot }: PracticeSession
 
   const item = order[index];
   const chips = useMemo(() => (item ? shuffle(item.options) : []), [item]);
+  const endRef = useRef<HTMLDivElement>(null);
+
+  // Phones: the chips / Next button sit in a tray pinned to the bottom of the
+  // screen; move the floating Feedback button out of its way while it's there.
+  useEffect(() => {
+    if (finished || items.length === 0) return;
+    document.body.classList.add('ksa-answer-tray');
+    return () => document.body.classList.remove('ksa-answer-tray');
+  }, [finished, items.length]);
+
+  // Bring the explanation (and the next item) into view.
+  useEffect(() => {
+    endRef.current?.scrollIntoView?.({ block: 'nearest', behavior: 'smooth' });
+  }, [solved, index]);
 
   if (items.length === 0) return null;
 
@@ -164,56 +178,67 @@ export function PracticeSession({ items, onFinish, resultSlot }: PracticeSession
         )}
       </div>
 
-      <div className="flex flex-wrap gap-2">
-        {chips.map((opt) => {
-          const isWrong = wrongPicks.includes(opt.text);
-          const isCorrect = solved && opt.correct;
-          return (
-            <button
-              key={opt.text}
-              onClick={() => pick(opt)}
-              disabled={solved || isWrong}
-              className={`px-4 py-2 rounded-full border text-sm font-medium transition-colors disabled:cursor-default ${
-                isCorrect
-                  ? 'border-green-500 bg-green-50 text-green-800'
-                  : isWrong
-                  ? 'border-red-300 bg-red-50 text-red-400 line-through'
-                  : solved
-                  ? 'border-gray-100 bg-white text-gray-300'
-                  : 'border-gray-200 bg-white hover:border-green-400 hover:bg-green-50/50'
-              }`}
-            >
-              {opt.text}
-            </button>
-          );
-        })}
-      </div>
-
-      {!solved && lastWrong && (
-        <p className="text-red-600 text-sm">
-          {lastWrong.feedback ?? 'Not quite.'} Try again.
-        </p>
+      {solved && (
+        <div className="text-sm text-gray-700 bg-green-50 border border-green-100 rounded-lg px-4 py-3 space-y-2">
+          <p>
+            {item.explanation}{' '}
+            <EditPencil
+              target={{ targetType: 'practice.explanation', label: 'Practice · explanation', currentText: item.explanation, itemId: item.id }}
+            />
+          </p>
+          {item.grammar?.length ? <GrammarChips slugs={item.grammar.slice(0, 3)} size="xs" /> : null}
+        </div>
       )}
 
-      {solved && (
-        <div className="space-y-3">
-          <div className="text-sm text-gray-700 bg-green-50 border border-green-100 rounded-lg px-4 py-3 space-y-2">
-            <p>
-              {item.explanation}{' '}
-              <EditPencil
-                target={{ targetType: 'practice.explanation', label: 'Practice · explanation', currentText: item.explanation, itemId: item.id }}
-              />
-            </p>
-            {item.grammar?.length ? <GrammarChips slugs={item.grammar.slice(0, 3)} size="xs" /> : null}
-          </div>
+      <div ref={endRef} aria-hidden="true" />
+
+      <div
+        data-testid="practice-tray"
+        className="sticky bottom-0 z-20 -mx-4 px-4 pt-3 pb-[calc(env(safe-area-inset-bottom)+0.75rem)] bg-white/95 backdrop-blur border-t border-gray-200 shadow-[0_-6px_16px_-10px_rgba(0,0,0,0.25)] sm:static sm:mx-0 sm:px-0 sm:pt-0 sm:pb-0 sm:bg-transparent sm:backdrop-blur-none sm:border-0 sm:shadow-none"
+      >
+        {solved ? (
           <button
             onClick={next}
-            className="px-4 py-2 rounded-full bg-green-700 text-white text-sm font-medium hover:bg-green-800"
+            className="w-full sm:w-auto px-5 py-3 sm:py-2 rounded-full bg-green-700 text-white text-base sm:text-sm font-semibold sm:font-medium hover:bg-green-800"
           >
             {index + 1 >= order.length ? 'See results' : 'Next →'}
           </button>
-        </div>
-      )}
+        ) : (
+          <div className="space-y-2">
+              <div className="flex flex-wrap gap-2">
+                {chips.map((opt) => {
+                  const isWrong = wrongPicks.includes(opt.text);
+                  const isCorrect = solved && opt.correct;
+                  return (
+                    <button
+                      key={opt.text}
+                      onClick={() => pick(opt)}
+                      disabled={solved || isWrong}
+                      className={`px-4 py-2 rounded-full border text-sm font-medium transition-colors disabled:cursor-default ${
+                        isCorrect
+                          ? 'border-green-500 bg-green-50 text-green-800'
+                          : isWrong
+                          ? 'border-red-300 bg-red-50 text-red-400 line-through'
+                          : solved
+                          ? 'border-gray-100 bg-white text-gray-300'
+                          : 'border-gray-200 bg-white hover:border-green-400 hover:bg-green-50/50'
+                      }`}
+                    >
+                      {opt.text}
+                    </button>
+                  );
+                })}
+              </div>
+
+              {!solved && lastWrong && (
+                <p className="text-red-600 text-sm">
+                  {lastWrong.feedback ?? 'Not quite.'} Try again.
+                </p>
+              )}
+
+          </div>
+        )}
+      </div>
     </div>
   );
 }

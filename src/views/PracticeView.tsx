@@ -75,20 +75,31 @@ export function PracticeView() {
   ) : null;
 
   return (
-    <div className="max-w-2xl mx-auto px-4 py-8 space-y-6 pb-16">
+    <div className="max-w-2xl mx-auto px-4 py-5 sm:py-8 space-y-5 sm:space-y-6 pb-16">
       {levelUp !== null && <LevelUpModal level={levelUp} lessons={lessons} onClose={() => setLevelUp(null)} />}
       <div>
         <Link to={`/lesson/${lesson.id}`} className="text-sm text-gray-400 hover:text-gray-600">
           ← {lesson.title}
         </Link>
         <h1 className="text-2xl font-bold text-gray-900 mt-2">Practice session</h1>
-        <p className="text-sm text-gray-500 mt-1">
-          Short lines from the conversation. Pick the word that fills the gap — tap a chip to answer. Your first-try score
-          counts toward unlocking the next lesson.
-        </p>
-        <div className="mt-4">
-          <LessonGateStatus lesson={lesson} next={next} rec={rec} />
-        </div>
+        <details className="group mt-1" data-testid="practice-intro">
+          <summary className="flex cursor-pointer list-none items-center gap-1.5 text-sm text-gray-500 hover:text-gray-700 [&::-webkit-details-marker]:hidden">
+            <span className="inline-block transition-transform group-open:rotate-90" aria-hidden="true">
+              ▸
+            </span>
+            <span>
+              How it works &amp; your scores
+              {rec.practice ? ` · best ${pct(rec.practice.best)}` : ''} · pass at {pct(PASS_THRESHOLD)}
+            </span>
+          </summary>
+          <div className="mt-2 space-y-4">
+            <p className="text-sm text-gray-500">
+              Short lines from the conversation. Pick the word that fills the gap — tap a chip to answer. Your first-try
+              score counts toward unlocking the next lesson.
+            </p>
+            <LessonGateStatus lesson={lesson} next={next} rec={rec} />
+          </div>
+        </details>
       </div>
       <PracticeSession items={lesson.practice} onFinish={handleFinish} resultSlot={resultSlot} />
     </div>

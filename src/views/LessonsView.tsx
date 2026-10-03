@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useLessons } from '../hooks/useLessons';
 import { LessonCard } from '../components/LessonCard';
 import { isLessonPassed, isLessonUnlocked } from '../lib/lessonScores';
+import { useOverridesVersion } from '../lib/contentOverrides';
 import {
   LEVELS,
   MAX_LEVEL,
@@ -77,6 +78,7 @@ function RankCard() {
 }
 
 export function LessonsView() {
+  useOverridesVersion(); // re-render on admin live edits
   const lessons = useLessons();
   const working = currentLevel(lessons);
 

@@ -58,7 +58,20 @@ export async function POST(request: Request): Promise<Response> {
   }
   const suggestion = str(b.suggestion, 4000);
   const targetType = str(b.targetType, 80);
-  if (!suggestion || !targetType) return json(400, { error: 'missing_fields' });
+  const proposedText = str(b.proposedText, 4000);
+  // Either an explanation or new text (edit in place) is required.
+  if ((!suggestion && !proposedText) || !targetType) return json(400, { error: 'missing_fields' });
+  const ov = (b.override && typeof b.override === 'object' ? b.override : null) as Record<string, unknown> | null;
+  const override =
+    ov && ['lesson', 'grammar', 'level'].includes(String(ov.scope_type)) && str(ov.scope_id, 120) && str(ov.find_text, 4000)
+      ? {
+          scope_type: String(ov.scope_type),
+          scope_id: str(ov.scope_id, 120),
+          item_id: str(ov.item_id, 120),
+          find_text: String(ov.find_text).slice(0, 4000),
+          replace_text: typeof ov.replace_text === 'string' ? ov.replace_text.slice(0, 4000) : '',
+        }
+      : null;
 
   const auth = { apikey: anonKey, authorization: `Bearer ${token}` };
   const userRes = await fetch(`${supaUrl}/auth/v1/user`, { headers: auth });
@@ -76,12 +89,12 @@ export async function POST(request: Request): Promise<Response> {
     reviewer_name: str(b.reviewerName, 60) ?? acc.first_name ?? null,
     kind,
     target_type: targetType,
-    target_label: str(b.targetLabel, 300),
+    target_label: str(b.targetLabel, 300) ?? str(b.label, 300),
     lesson_id: str(b.lessonId, 120),
     item_id: str(b.itemId, 120),
     current_text: str(b.currentText, 4000),
     suggestion,
-    proposed_text: str(b.proposedText, 4000),
+    proposed_text: proposedText,
     page: str(b.page, 300),
   };
   const ins = await fetch(`${supaUrl}/rest/v1/content_suggestion`, {
@@ -95,8 +108,30 @@ export async function POST(request: Request): Promise<Response> {
   }
   const saved = ((await ins.json()) as Array<{ id: string; created_at: string }>)[0];
 
+  // Live edit: store the override (admins only, via RLS) and mark the suggestion applied.
+  let applied = false;
+  let overrideId: string | undefined;
+  if (override && saved?.id) {
+    const oRes = await fetch(`${supaUrl}/rest/v1/content_override`, {
+      method: 'POST',
+      headers: { ...auth, 'content-type': 'application/json', prefer: 'return=representation' },
+      body: JSON.stringify({ ...override, created_by: user.id, suggestion_id: saved.id }),
+    });
+    if (oRes.ok) {
+      overrideId = ((await oRes.json()) as Array<{ id: string }>)[0]?.id;
+      applied = Boolean(overrideId);
+      await fetch(`${supaUrl}/rest/v1/content_suggestion?id=eq.${saved.id}`, {
+        method: 'PATCH',
+        headers: { ...auth, 'content-type': 'application/json', prefer: 'return=minimal' },
+        body: JSON.stringify({ status: 'applied' }),
+      });
+    } else {
+      console.error('[suggestion] override insert failed', oRes.status, await oRes.text().catch(() => ''));
+    }
+  }
+
   const hook = process.env.KABISA_WEBHOOK_URL;
-  if (!hook || !saved?.id) return json(200, { stored: true, synced: false, id: saved?.id });
+  if (!hook || !saved?.id) return json(200, { stored: true, synced: false, applied, overrideId, id: saved?.id });
   const ok = await callWebhook(hook, { type: 'suggestion', id: saved.id, accessToken: token, anonKey });
   if (ok) {
     await fetch(`${supaUrl}/rest/v1/content_suggestion?id=eq.${saved.id}`, {
@@ -105,5 +140,5 @@ export async function POST(request: Request): Promise<Response> {
       body: JSON.stringify({ sheet_synced: true }),
     });
   }
-  return json(200, { stored: true, synced: ok, id: saved.id });
+  return json(200, { stored: true, synced: ok, applied, overrideId, id: saved.id });
 }

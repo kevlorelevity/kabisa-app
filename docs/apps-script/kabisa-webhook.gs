@@ -107,9 +107,9 @@ function logFeedback_(fb) {
 function appendSuggestion_(s) {
   var sh = SpreadsheetApp.openById(SHEET_ID).getSheetByName('Suggestions');
   sh.appendRow([
-    new Date(s.created_at), 'new', s.reviewer_name || '', s.reviewer_email || '', s.kind || '',
+    new Date(s.created_at), s.status || 'new', s.reviewer_name || '', s.reviewer_email || '', s.kind || '',
     s.target_label || '', s.lesson_id || '', s.target_type || '', s.item_id || '',
-    s.current_text || '', s.suggestion || '', s.proposed_text || '', s.page || '', s.id, '', '', '',
+    s.current_text || '', s.suggestion || '(edited in place)', s.proposed_text || '', s.page || '', s.id, '', '', '',
   ]);
   sh.getRange(sh.getLastRow(), 1).setNumberFormat('yyyy-mm-dd hh:mm');
 }

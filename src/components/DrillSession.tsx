@@ -252,39 +252,41 @@ function GapCard({
           </div>
         )}
       </div>
-      <div className="flex flex-wrap gap-2">
-        {chips.map((opt) => {
-          const isWrong = wrong.includes(opt);
-          const isRight = solved && opt === variation.answer;
-          return (
-            <button
-              key={opt}
-              onClick={() => pick(opt)}
-              disabled={solved || isWrong}
-              className={`px-4 py-2 rounded-full border text-sm font-medium transition-colors disabled:cursor-default ${
-                isRight
-                  ? 'border-green-500 bg-green-50 text-green-800'
-                  : isWrong
-                  ? 'border-red-300 bg-red-50 text-red-400 line-through'
-                  : solved
-                  ? 'border-gray-100 bg-white text-gray-300'
-                  : 'border-gray-200 bg-white hover:border-green-400 hover:bg-green-50/50'
-              }`}
-            >
-              {opt}
-            </button>
-          );
-        })}
+      <div className="sticky bottom-0 z-20 -mx-4 px-4 pt-3 pb-[calc(env(safe-area-inset-bottom)+0.75rem)] bg-white/95 backdrop-blur border-t border-gray-200 space-y-2 sm:static sm:mx-0 sm:px-0 sm:pt-0 sm:pb-0 sm:bg-transparent sm:backdrop-blur-none sm:border-0">
+        <div className="flex flex-wrap gap-2">
+          {chips.map((opt) => {
+            const isWrong = wrong.includes(opt);
+            const isRight = solved && opt === variation.answer;
+            return (
+              <button
+                key={opt}
+                onClick={() => pick(opt)}
+                disabled={solved || isWrong}
+                className={`px-4 py-2 rounded-full border text-sm font-medium transition-colors disabled:cursor-default ${
+                  isRight
+                    ? 'border-green-500 bg-green-50 text-green-800'
+                    : isWrong
+                    ? 'border-red-300 bg-red-50 text-red-400 line-through'
+                    : solved
+                    ? 'border-gray-100 bg-white text-gray-300'
+                    : 'border-gray-200 bg-white hover:border-green-400 hover:bg-green-50/50'
+                }`}
+              >
+                {opt}
+              </button>
+            );
+          })}
+        </div>
+        {!solved && wrong.length > 0 && <p className="text-red-600 text-sm">Not quite — try again.</p>}
+        {solved && (
+          <button
+            onClick={() => onResult(wrong.length === 0 ? 'correct' : 'wrong')}
+            className="px-4 py-2 rounded-full bg-green-700 text-white text-sm font-medium hover:bg-green-800"
+          >
+            Next →
+          </button>
+        )}
       </div>
-      {!solved && wrong.length > 0 && <p className="text-red-600 text-sm">Not quite — try again.</p>}
-      {solved && (
-        <button
-          onClick={() => onResult(wrong.length === 0 ? 'correct' : 'wrong')}
-          className="px-4 py-2 rounded-full bg-green-700 text-white text-sm font-medium hover:bg-green-800"
-        >
-          Next →
-        </button>
-      )}
     </div>
   );
 }
