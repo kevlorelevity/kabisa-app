@@ -1,7 +1,84 @@
+import { useEffect, useRef, useState } from 'react';
 import { useAuth } from '../hooks/useAuth';
+import { isSupabaseConfigured } from '../lib/supabase';
+import {
+  GOOGLE_CLIENT_ID,
+  gisSupportedHere,
+  loadGoogleIdentity,
+  makeNonce,
+  signInWithGoogleCredential,
+} from '../lib/googleIdentity';
 
+/**
+ * Google's own "Sign in with Google" button (Google Identity Services), so the
+ * account chooser is opened by kabisa.app and never mentions the Supabase host.
+ * Until it's ready — or if Google's script can't load — our redirect button shows.
+ */
 export function SignInButton({ size = 'sm' }: { size?: 'sm' | 'lg' }) {
+  const slotRef = useRef<HTMLDivElement>(null);
+  const [gisReady, setGisReady] = useState(false);
+  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    if (!isSupabaseConfigured() || !gisSupportedHere()) return;
+    let alive = true;
+    (async () => {
+      const [gis, nonce] = await Promise.all([loadGoogleIdentity(), makeNonce()]);
+      if (!alive || !gis || !slotRef.current) return;
+      gis.initialize({
+        client_id: GOOGLE_CLIENT_ID,
+        nonce: nonce.hashed,
+        ux_mode: 'popup',
+        context: 'signin',
+        itp_support: true,
+        use_fedcm_for_button: true,
+        auto_select: false,
+        callback: async ({ credential }) => {
+          setError(false);
+          const ok = await signInWithGoogleCredential(credential, nonce.raw);
+          if (!ok && alive) setError(true);
+        },
+      });
+      gis.renderButton(slotRef.current, {
+        type: 'standard',
+        theme: 'outline',
+        size: 'large',
+        text: 'signin_with',
+        shape: size === 'lg' ? 'pill' : 'rectangular',
+        logo_alignment: 'left',
+        width: size === 'lg' ? 260 : 200,
+      });
+      setGisReady(true);
+    })();
+    return () => {
+      alive = false;
+    };
+  }, [size]);
+
+  return (
+    <div className="flex flex-col items-start gap-2">
+      <div ref={slotRef} className={gisReady ? 'min-h-[44px]' : 'hidden'} />
+      {!gisReady && <RedirectSignInButton size={size} />}
+      {error && (
+        <p className="text-sm text-red-600">
+          Sign-in didn’t go through.{' '}
+          <RedirectSignInButton size="link" />
+        </p>
+      )}
+    </div>
+  );
+}
+
+/** The classic redirect flow — fallback when Google's button can't be used. */
+function RedirectSignInButton({ size }: { size: 'sm' | 'lg' | 'link' }) {
   const { signInWithGoogle } = useAuth();
+  if (size === 'link') {
+    return (
+      <button type="button" onClick={() => void signInWithGoogle()} className="underline hover:text-red-800">
+        Try again
+      </button>
+    );
+  }
 
   return (
     <button

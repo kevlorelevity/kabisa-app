@@ -9,9 +9,12 @@
 
 import type { Session, User } from '@supabase/supabase-js';
 import { getSupabase } from './supabase';
+import { forgetGoogleAccountChoice } from './googleIdentity';
 
 /**
- * Kicks off the Google OAuth redirect. Supabase's client SDK owns the whole
+ * Fallback sign-in: the classic Google OAuth redirect (via the Supabase host).
+ * The landing page prefers Google Identity Services (lib/googleIdentity.ts),
+ * which keeps the whole flow on kabisa.app. Supabase's client SDK owns the
  * dance (redirect to Google, callback, token exchange, session storage) —
  * there's no custom callback route to write. `detectSessionInUrl: true` in
  * `lib/supabase.ts` is what picks the session back up on return.
@@ -38,6 +41,7 @@ export async function signOut(): Promise<void> {
 
   const { error } = await supa.auth.signOut();
   if (error) console.error('[auth] signOut failed:', error);
+  forgetGoogleAccountChoice();
 }
 
 export async function getSession(): Promise<Session | null> {
