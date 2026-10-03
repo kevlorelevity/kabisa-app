@@ -3,15 +3,16 @@
 // Body: { message, page?, context? } with header `Authorization: Bearer <Supabase access token>`.
 // 1. Verifies the signed-in learner with Supabase Auth.
 // 2. Stores the feedback in public.feedback (as that user, through RLS — no service key needed).
-// 3. Emails it to the feedback inbox via Resend, if configured.
+// 3. Hands it to the Kabisa Apps Script webhook, which emails feedback@kabisa.app
+//    and logs it in the review spreadsheet (docs/apps-script/kabisa-webhook.gs).
+//    Optional alternative: Resend, if RESEND_API_KEY is set.
 //
 // Env vars (Vercel → Project → Settings → Environment Variables):
 //   VITE_SUPABASE_URL, VITE_SUPABASE_ANON_KEY  — already set for the frontend
-//   RESEND_API_KEY   — from resend.com (domain kabisa.app verified there)
-//   FEEDBACK_TO      — optional, defaults to feedback@kabisa.app
-//   FEEDBACK_FROM    — optional, defaults to "Kabisa Feedback <feedback@kabisa.app>"
+//   KABISA_WEBHOOK_URL — the Apps Script web-app /exec URL
+//   RESEND_API_KEY, FEEDBACK_TO, FEEDBACK_FROM — only if sending through Resend instead
 //
-// Without RESEND_API_KEY the feedback is still stored; the response says emailed: false.
+// Without either, the feedback is still stored; the response says emailed: false.
 
 const MAX_LEN = 4000;
 
@@ -24,6 +25,27 @@ function json(status: number, body: unknown): Response {
 
 function escapeHtml(s: string): string {
   return s.replace(/[<>&"']/g, (c) => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;', "'": '&#39;' })[c]!);
+}
+
+/** POSTs to the Apps Script web app (which answers via a redirect) and checks for {"ok":true}. */
+async function callWebhook(url: string, payload: Record<string, unknown>): Promise<boolean> {
+  try {
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify(payload),
+      redirect: 'follow',
+    });
+    const text = await res.text();
+    if (!res.ok || !/"ok"\s*:\s*true/.test(text)) {
+      console.error('[webhook] failed', res.status, text.slice(0, 300));
+      return false;
+    }
+    return true;
+  } catch (e) {
+    console.error('[webhook] error', e);
+    return false;
+  }
 }
 
 interface SupaUser {
@@ -68,7 +90,7 @@ export async function POST(request: Request): Promise<Response> {
       apikey: anonKey,
       authorization: `Bearer ${token}`,
       'content-type': 'application/json',
-      prefer: 'return=minimal',
+      prefer: 'return=representation',
     },
     body: JSON.stringify(row),
   });
@@ -77,7 +99,16 @@ export async function POST(request: Request): Promise<Response> {
     return json(502, { error: 'store_failed' });
   }
 
-  // 3. Email it.
+  const saved = ((await ins.json().catch(() => [])) as Array<{ id: string }>)[0];
+
+  // 3a. Email it through the Apps Script webhook (re-reads the row with the user's token).
+  const hook = process.env.KABISA_WEBHOOK_URL;
+  if (hook && saved?.id) {
+    const ok = await callWebhook(hook, { type: 'feedback', id: saved.id, accessToken: token, anonKey });
+    return json(200, { stored: true, emailed: ok });
+  }
+
+  // 3b. …or through Resend.
   const resendKey = process.env.RESEND_API_KEY;
   if (!resendKey) return json(200, { stored: true, emailed: false });
   const to = process.env.FEEDBACK_TO ?? 'feedback@kabisa.app';

@@ -16,12 +16,15 @@ vocab & flashcards, level names, and every grammar-explainer title, paragraph, t
    Columns: timestamp, status (new/approved/applied/rejected), reviewer, email, type, where, lesson,
    element, item id, current text, suggestion, proposed text, page, suggestion id, approved by, commit, notes.
 
-### Connecting the sheet (one-time, ~3 minutes)
-1. Open the sheet → Extensions → Apps Script. Paste `docs/apps-script/suggestions-webhook.gs`, save.
-2. Project Settings → Script properties → add `SECRET` = a long random string.
-3. Deploy → New deployment → type **Web app** → Execute as **Me** → Who has access **Anyone** → Deploy, authorise, copy the URL.
-4. Vercel → kabisa project → Settings → Environment Variables (Production):
-   `SUGGESTIONS_SHEET_WEBHOOK` = the URL, `SUGGESTIONS_SHEET_SECRET` = the same secret. Redeploy.
+### The Kabisa webhook (one Apps Script for suggestions + feedback)
+`docs/apps-script/kabisa-webhook.gs` runs as a standalone Apps Script web app under kevin@splotch.ink
+(project "Kabisa webhook"). The Vercel functions call it with the new row's id plus the caller's own
+Supabase token; the script re-reads the row from Supabase (RLS decides what it may see), so there is
+no shared secret. Suggestions → `Suggestions` tab; feedback → email to feedback@kabisa.app
+(reply-to = learner) + `Feedback` tab.
+
+To redeploy after editing the script: Deploy → Manage deployments → edit → New version.
+Vercel env var (Production): `KABISA_WEBHOOK_URL` = the web app's `/exec` URL.
 
 Until then suggestions are stored in Supabase only (the modal says so).
 
@@ -31,6 +34,6 @@ to `content/authoring/lessons/*.txt` / `grammar.py` (or the Uber JSON), Kevin ap
 recompiles, sets status `applied` + commit id.
 
 ## Learner feedback (💬 button on every page)
-`POST /api/feedback` stores the message in `public.feedback` and emails it via Resend.
-Env vars: `RESEND_API_KEY` (resend.com, with kabisa.app verified), optional `FEEDBACK_TO`
-(default `feedback@kabisa.app`) and `FEEDBACK_FROM`. Without the key, feedback is stored only.
+`POST /api/feedback` stores the message in `public.feedback`, then calls the Kabisa webhook above,
+which emails feedback@kabisa.app (a Google Group; members get every message, reply goes to the learner)
+and logs it in the `Feedback` tab. Resend (`RESEND_API_KEY`) remains as an optional alternative.

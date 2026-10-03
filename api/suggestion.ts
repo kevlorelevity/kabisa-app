@@ -6,8 +6,8 @@
 //
 // Env vars:
 //   VITE_SUPABASE_URL, VITE_SUPABASE_ANON_KEY — already set for the frontend
-//   SUGGESTIONS_SHEET_WEBHOOK  — the Apps Script web-app URL (see docs/admin-suggestions.md)
-//   SUGGESTIONS_SHEET_SECRET   — shared secret, must match SECRET in the Apps Script
+//   KABISA_WEBHOOK_URL — the Apps Script web-app URL (docs/apps-script/kabisa-webhook.gs).
+//     The script re-reads the row with the admin's own token, so no shared secret is needed.
 //
 // Without the webhook the suggestion is still stored; the response says synced: false.
 
@@ -16,6 +16,28 @@ function json(status: number, body: unknown): Response {
     status,
     headers: { 'content-type': 'application/json', 'cache-control': 'no-store' },
   });
+}
+
+// Duplicated from api/feedback.ts on purpose: each Vercel function is compiled on its own (ESM).
+/** POSTs to the Apps Script web app (which answers via a redirect) and checks for {"ok":true}. */
+async function callWebhook(url: string, payload: Record<string, unknown>): Promise<boolean> {
+  try {
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify(payload),
+      redirect: 'follow',
+    });
+    const text = await res.text();
+    if (!res.ok || !/"ok"\s*:\s*true/.test(text)) {
+      console.error('[webhook] failed', res.status, text.slice(0, 300));
+      return false;
+    }
+    return true;
+  } catch (e) {
+    console.error('[webhook] error', e);
+    return false;
+  }
 }
 
 const str = (v: unknown, max: number): string | null => (typeof v === 'string' && v.trim() ? v.trim().slice(0, max) : null);
@@ -73,27 +95,15 @@ export async function POST(request: Request): Promise<Response> {
   }
   const saved = ((await ins.json()) as Array<{ id: string; created_at: string }>)[0];
 
-  const hook = process.env.SUGGESTIONS_SHEET_WEBHOOK;
-  const secret = process.env.SUGGESTIONS_SHEET_SECRET;
-  if (!hook || !secret) return json(200, { stored: true, synced: false, id: saved?.id });
-  try {
-    const res = await fetch(hook, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ secret, id: saved?.id, createdAt: saved?.created_at, ...row }),
-      redirect: 'follow',
+  const hook = process.env.KABISA_WEBHOOK_URL;
+  if (!hook || !saved?.id) return json(200, { stored: true, synced: false, id: saved?.id });
+  const ok = await callWebhook(hook, { type: 'suggestion', id: saved.id, accessToken: token, anonKey });
+  if (ok) {
+    await fetch(`${supaUrl}/rest/v1/content_suggestion?id=eq.${saved.id}`, {
+      method: 'PATCH',
+      headers: { ...auth, 'content-type': 'application/json', prefer: 'return=minimal' },
+      body: JSON.stringify({ sheet_synced: true }),
     });
-    const ok = res.ok && /"ok"\s*:\s*true/.test(await res.text());
-    if (ok && saved?.id) {
-      await fetch(`${supaUrl}/rest/v1/content_suggestion?id=eq.${saved.id}`, {
-        method: 'PATCH',
-        headers: { ...auth, 'content-type': 'application/json', prefer: 'return=minimal' },
-        body: JSON.stringify({ sheet_synced: true }),
-      });
-    }
-    return json(200, { stored: true, synced: ok, id: saved?.id });
-  } catch (e) {
-    console.error('[suggestion] sheet sync failed', e);
-    return json(200, { stored: true, synced: false, id: saved?.id });
   }
+  return json(200, { stored: true, synced: ok, id: saved.id });
 }
