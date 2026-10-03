@@ -61,7 +61,7 @@ export function FeedbackButton() {
   }
 
   return (
-    <div className="fixed bottom-4 right-4 z-40 flex flex-col items-end gap-2">
+    <div className="feedback-fab fixed bottom-4 right-4 z-40 flex flex-col items-end gap-2">
       {open && (
         <div
           role="dialog"
@@ -124,7 +124,7 @@ export function FeedbackButton() {
         aria-expanded={open}
         className="rounded-full border border-gray-200 bg-white/95 px-3.5 py-2 text-sm font-medium text-gray-700 shadow-lg backdrop-blur hover:border-green-400 hover:text-green-800"
       >
-        💬 Feedback
+        💬<span className="fab-label"> Feedback</span>
       </button>
     </div>
   );

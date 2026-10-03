@@ -4,6 +4,7 @@ import { useGrammarFavorites } from '../lib/grammarFavorites';
 import { useProfile } from '../hooks/profileContext';
 import { getCountry } from '../lib/countries';
 import { BetaSticker } from './BetaSticker';
+import { LevelBar } from './LevelBar';
 
 export function Nav() {
   const { pathname } = useLocation();
@@ -29,7 +30,7 @@ export function Nav() {
     <nav className="border-b border-gray-200 bg-white sticky top-0 z-10">
       <div className="max-w-4xl mx-auto px-4 h-14 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 font-bold text-green-800 tracking-tight">
-          Swahili ya Kenya
+          Kabisa
           <BetaSticker />
         </Link>
         <div className="flex gap-2 items-center">
@@ -65,6 +66,7 @@ export function Nav() {
           )}
         </div>
       </div>
+      <LevelBar />
     </nav>
   );
 }

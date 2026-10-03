@@ -52,7 +52,7 @@ function ChatPreview() {
 const FEATURES = [
   {
     icon: '🗣️',
-    title: 'Real Nairobi conversations',
+    title: 'Real Kenyan conversations',
     body: 'Matatus, mama mboga, Uber small talk, the fundi, the kinyozi. You play your part one line at a time.',
   },
   {
@@ -72,12 +72,8 @@ export function Landing() {
   return (
     <div className="min-h-screen bg-[#f6f4ee] text-gray-900">
       <FlagStripe />
-      <header className="mx-auto flex max-w-5xl items-center justify-between px-5 py-5">
-        <div className="flex items-center gap-2.5">
-          <span className="text-lg font-bold tracking-tight text-green-800">Swahili ya Kenya</span>
-          <BetaSticker />
-        </div>
-        <SignInButton />
+      <header className="mx-auto flex max-w-5xl items-center px-5 py-5">
+        <span className="text-xl font-extrabold tracking-tight text-green-800">Kabisa</span>
       </header>
 
       <main className="mx-auto max-w-5xl px-5 pb-16">
@@ -85,13 +81,13 @@ export function Landing() {
           <div>
             <div className="relative inline-block">
               <h1 className="text-4xl font-extrabold leading-[1.1] tracking-tight sm:text-5xl">
-                Speak Swahili the way <span className="text-green-700">Nairobi</span> does.
+                Learn everyday <span className="text-green-700">Kenyan Swahili</span>
               </h1>
               <BetaSticker size="lg" className="absolute -right-4 -top-7 sm:-right-10" />
             </div>
             <p className="mt-5 text-lg leading-relaxed text-gray-600">
-              Not textbook Sanifu — the everyday Kenyan Swahili you’ll actually hear. Learn it by playing real
-              conversations, with the standard form always one tap away.
+              Not textbook Sanifu — the Swahili you’ll actually hear in a matatu, at the market and in the office.
+              Learn it by playing real conversations, with the standard form always one tap away.
             </p>
             <div className="mt-8 flex flex-col items-start gap-3">
               <SignInButton size="lg" />

@@ -46,12 +46,16 @@ function read(): Store {
   }
 }
 
+/** Fired on window whenever scores change, so always-visible UI (the nav's level bar) can refresh. */
+export const SCORES_CHANGED_EVENT = 'ksa:scores-changed';
+
 function write(store: Store): void {
   try {
     localStorage.setItem(KEY, JSON.stringify(store));
   } catch {
     // Storage unavailable (private mode etc.) — progress just won't persist.
   }
+  if (typeof window !== 'undefined') window.dispatchEvent(new Event(SCORES_CHANGED_EVENT));
 }
 
 function empty(): LessonScoreRecord {

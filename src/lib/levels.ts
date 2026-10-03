@@ -1,6 +1,6 @@
 import type { Lesson, LevelInfo } from '../types';
 import levelsJson from '../../content/levels.json';
-import { getLessonScores, isLessonPassed, type LessonScoreRecord } from './lessonScores';
+import { PASS_THRESHOLD, getLessonScores, isLessonPassed, type LessonScoreRecord } from './lessonScores';
 
 // -------- Levels & XP (gamification) --------
 //
@@ -32,6 +32,31 @@ export function lessonXp(lesson: Lesson, rec: LessonScoreRecord = getLessonScore
 
 export function maxLessonXp(): number {
   return XP_DIALOGUE + XP_PRACTICE + XP_PASS_BONUS;
+}
+
+/**
+ * XP a lesson counts towards its level's target: capped at what passing it is
+ * worth (PASS_THRESHOLD of the section XP + the pass bonus). An un-passed lesson
+ * can never reach that cap, so a level's bar is full exactly when every lesson
+ * in it is passed — i.e. when the learner moves up a level.
+ */
+export function lessonPassXp(): number {
+  return Math.round(PASS_THRESHOLD * (XP_DIALOGUE + XP_PRACTICE)) + XP_PASS_BONUS;
+}
+
+export interface LevelXp {
+  level: number;
+  /** XP earned towards this level's target. */
+  earned: number;
+  /** XP needed to clear the level (every lesson passed). */
+  required: number;
+}
+
+export function levelXp(lessons: Lesson[], level: number): LevelXp {
+  const ls = lessonsInLevel(lessons, level);
+  const cap = lessonPassXp();
+  const earned = ls.reduce((sum, l) => sum + Math.min(lessonXp(l), cap), 0);
+  return { level, earned, required: ls.length * cap };
 }
 
 export function totalXp(lessons: Lesson[]): number {

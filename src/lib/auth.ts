@@ -22,7 +22,12 @@ export async function signInWithGoogle(): Promise<void> {
 
   const { error } = await supa.auth.signInWithOAuth({
     provider: 'google',
-    options: { redirectTo: window.location.origin },
+    options: {
+      redirectTo: window.location.origin,
+      // Always show Google's account chooser, so a learner who signed out can
+      // pick a different Google account instead of being signed straight back in.
+      queryParams: { prompt: 'select_account' },
+    },
   });
   if (error) console.error('[auth] signInWithGoogle failed:', error);
 }

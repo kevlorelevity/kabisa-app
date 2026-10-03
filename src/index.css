@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Phones: while a conversation's answer tray is pinned to the bottom, move the
+   floating Feedback button to the top-right (under the nav) so it never covers
+   an answer option. The panel then opens downwards. */
+@media (max-width: 639px) {
+  body.ksa-answer-tray .feedback-fab {
+    top: 6.25rem;
+    bottom: auto;
+    flex-direction: column-reverse;
+  }
+  body.ksa-answer-tray .feedback-fab .fab-label {
+    display: none;
+  }
+}

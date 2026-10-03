@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import type { DialogueTurn } from '../types';
 import type { AttemptResult } from '../lib/lessonScores';
 import { TappableSwahili } from './TappableSwahili';
@@ -74,6 +74,22 @@ export function DialoguePlayer({ turns, onComplete }: DialoguePlayerProps) {
   }
 
   const settled = turns.slice(0, revealedCount);
+  const endRef = useRef<HTMLDivElement>(null);
+  const answering = current?.role === 'user';
+
+  // Keep the newest line and the answer options in view as the chat grows.
+  useEffect(() => {
+    if (revealedCount === 0) return;
+    endRef.current?.scrollIntoView?.({ block: 'nearest', behavior: 'smooth' });
+  }, [revealedCount, answering]);
+
+  // While the answer tray is pinned to the bottom, tell the page so the
+  // floating Feedback button moves out of its way on phones.
+  useEffect(() => {
+    if (!answering) return;
+    document.body.classList.add('ksa-answer-tray');
+    return () => document.body.classList.remove('ksa-answer-tray');
+  }, [answering]);
 
   return (
     <div className="space-y-4">
@@ -96,11 +112,14 @@ export function DialoguePlayer({ turns, onComplete }: DialoguePlayerProps) {
       </div>
 
       {current?.role === 'user' && (
-        <div className="pt-1">
-          <p className="text-xs uppercase tracking-wide text-gray-400 font-semibold mb-2">
+        <div
+          data-testid="answer-tray"
+          className="sticky bottom-0 z-20 -mx-4 px-4 pt-3 pb-[calc(env(safe-area-inset-bottom)+0.75rem)] bg-white/95 backdrop-blur border-t border-gray-200 shadow-[0_-6px_16px_-10px_rgba(0,0,0,0.25)] sm:mx-0 sm:px-0 sm:pt-1 sm:pb-0 sm:bg-transparent sm:backdrop-blur-none sm:border-0 sm:shadow-none sm:static"
+        >
+          <p className="text-xs uppercase tracking-wide text-gray-400 font-semibold mb-1.5 sm:mb-2">
             Your turn as {current.speaker} — what do you say?
           </p>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-1.5 sm:gap-2">
             {shuffledOptions.map((opt) => {
               const isWrong = wrongPick === opt.swahili;
               const isCorrect = correctPick === opt.swahili;
@@ -138,6 +157,8 @@ export function DialoguePlayer({ turns, onComplete }: DialoguePlayerProps) {
           )}
         </div>
       )}
+
+      <div ref={endRef} aria-hidden="true" />
 
       {done && (
         <p className="text-green-700 text-sm font-medium pt-1">

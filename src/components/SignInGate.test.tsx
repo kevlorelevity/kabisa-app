@@ -53,8 +53,12 @@ describe('SignInGate', () => {
       </SignInGate>,
     );
 
-    expect(screen.getAllByText('Sign in with Google').length).toBeGreaterThan(0);
-    expect(screen.getAllByLabelText('Beta').length).toBeGreaterThan(0);
+    // One sign-in CTA and one beta sticker on the landing page.
+    expect(screen.getAllByText('Sign in with Google')).toHaveLength(1);
+    expect(screen.getAllByLabelText('Beta')).toHaveLength(1);
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Learn everyday Kenyan Swahili');
+    expect(screen.getByText('Kabisa')).toBeInTheDocument();
+    expect(screen.queryByText(/Swahili ya Kenya/)).not.toBeInTheDocument();
     expect(screen.queryByText('Catalog content')).not.toBeInTheDocument();
   });
 

@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import type { Lesson } from '../types';
-import { claimLevelUp, currentLevel, lessonXp, levelProgress, themeVisit, totalXp } from './levels';
+import { claimLevelUp, currentLevel, lessonPassXp, lessonXp, levelProgress, levelXp, themeVisit, totalXp } from './levels';
 import { recordDialogueAttempt, recordPracticeAttempt } from './lessonScores';
 
 function lesson(id: string, level: number, theme?: string): Lesson {
@@ -30,6 +30,18 @@ describe('levels', () => {
     pass('a');
     expect(lessonXp(ls[0])).toBe(150);
     expect(levelProgress(ls, 1)).toMatchObject({ passed: 1, total: 2, complete: false });
+  });
+
+  it('fills the level XP bar exactly when every lesson in the level is passed', () => {
+    expect(levelXp(ls, 1)).toEqual({ level: 1, earned: 0, required: 2 * lessonPassXp() });
+    // A near-perfect but un-passed lesson stays below one lesson's share.
+    recordDialogueAttempt('a', { firstTryCorrect: 4, total: 4, attemptedIds: [], missedIds: [] });
+    recordPracticeAttempt('a', { firstTryCorrect: 2, total: 4, attemptedIds: [], missedIds: [] });
+    expect(levelXp(ls, 1).earned).toBeLessThan(lessonPassXp());
+    pass('a');
+    pass('b');
+    const xp = levelXp(ls, 1);
+    expect(xp.earned).toBe(xp.required);
   });
 
   it('moves to the next level and celebrates exactly once', () => {
