@@ -3,6 +3,7 @@ import type { DialogueTurn } from '../types';
 import type { AttemptResult } from '../lib/lessonScores';
 import { TappableSwahili } from './TappableSwahili';
 import { AudioButton } from './AudioButton';
+import { EditPencil } from './EditPencil';
 
 interface DialoguePlayerProps {
   turns: DialogueTurn[];
@@ -104,11 +105,11 @@ export function DialoguePlayer({ turns, onComplete }: DialoguePlayerProps) {
               const isWrong = wrongPick === opt.swahili;
               const isCorrect = correctPick === opt.swahili;
               return (
+                <div key={opt.swahili} className="flex items-center gap-1.5">
                 <button
-                  key={opt.swahili}
                   onClick={() => pick(opt.swahili, opt.correct)}
                   disabled={Boolean(correctPick)}
-                  className={`text-left px-4 py-2.5 rounded-full border text-sm font-medium transition-colors disabled:cursor-default ${
+                  className={`flex-1 text-left px-4 py-2.5 rounded-full border text-sm font-medium transition-colors disabled:cursor-default ${
                     isCorrect
                       ? 'border-green-500 bg-green-50 text-green-800'
                       : isWrong
@@ -118,6 +119,15 @@ export function DialoguePlayer({ turns, onComplete }: DialoguePlayerProps) {
                 >
                   {opt.swahili}
                 </button>
+                <EditPencil
+                  target={{
+                    targetType: opt.correct ? 'turn.option.correct' : 'turn.option.distractor',
+                    label: `${opt.correct ? 'Correct answer' : 'Wrong option'} · ${current.speaker}'s turn`,
+                    currentText: opt.swahili,
+                    itemId: current.id,
+                  }}
+                />
+                </div>
               );
             })}
           </div>
@@ -168,6 +178,10 @@ function TurnBubble({ turn, tappable }: { turn: DialogueTurn; tappable: boolean 
             />
             <AudioButton text={turn.swahili} variant={isUser ? 'dark' : 'light'} className="-mr-2 -my-0.5" />
           </div>
+        </div>
+        <div className={`flex gap-1 mt-1 ${isUser ? 'justify-end' : ''}`}>
+          <EditPencil hint="SW" target={{ targetType: 'turn.swahili', label: `Line · ${turn.speaker}`, currentText: turn.swahili, itemId: turn.id }} />
+          <EditPencil hint="EN" target={{ targetType: 'turn.english', label: `English translation · ${turn.speaker}`, currentText: turn.english, itemId: turn.id }} />
         </div>
         <p className={`text-xs text-gray-400 mt-1 ${isUser ? 'text-right' : ''}`}>
           {turn.english}

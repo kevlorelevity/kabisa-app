@@ -6,6 +6,7 @@ import { useGrammarFavorites } from '../lib/grammarFavorites';
 import { levelInfo } from '../lib/levels';
 import { AudioButton } from './AudioButton';
 import { RichText } from './RichText';
+import { EditPencil } from './EditPencil';
 
 interface GrammarModalProps {
   topic: GrammarTopic;
@@ -150,7 +151,8 @@ export function GrammarModal({ topic, canGoBack, onBack, onNavigate, onClose }: 
               </span>
             </div>
             <h2 id="grammar-modal-title" className="text-lg font-bold text-gray-900 leading-snug mt-0.5">
-              {topic.title}
+              {topic.title}{' '}
+              <EditPencil target={{ targetType: 'grammar.title', label: 'Grammar title', currentText: topic.title, itemId: topic.slug }} />
             </h2>
             {topic.swahiliTitle && <p className="text-sm text-gray-500 italic">{topic.swahiliTitle}</p>}
           </div>
@@ -167,9 +169,29 @@ export function GrammarModal({ topic, canGoBack, onBack, onNavigate, onClose }: 
         </div>
 
         <div ref={bodyRef} className="overflow-y-auto px-5 py-4 space-y-4">
-          <p className="text-gray-900 font-medium">{topic.summary}</p>
+          <p className="text-gray-900 font-medium">
+            {topic.summary}{' '}
+            <EditPencil target={{ targetType: 'grammar.summary', label: 'Grammar summary', currentText: topic.summary, itemId: topic.slug }} />
+          </p>
           {topic.blocks.map((b, i) => (
-            <Block key={i} block={b} />
+            <div key={i} className="relative">
+              <Block block={b} />
+              <div className="mt-1">
+                <EditPencil
+                  target={{
+                    targetType: `grammar.block.${b.type}`,
+                    label: `Grammar ${b.type === 'p' ? 'paragraph' : b.type} #${i + 1}`,
+                    currentText:
+                      b.type === 'table'
+                        ? [b.caption ?? '', b.headers.join(' | '), ...b.rows.map((r) => r.join(' | '))].filter(Boolean).join('\n')
+                        : b.type === 'list'
+                        ? b.items.join('\n')
+                        : b.text,
+                    itemId: `${topic.slug}#${i}`,
+                  }}
+                />
+              </div>
+            </div>
           ))}
 
           {topic.examples.length > 0 && (
@@ -184,6 +206,14 @@ export function GrammarModal({ topic, canGoBack, onBack, onNavigate, onClose }: 
                         <p className="font-semibold text-gray-900">{ex.swahili}</p>
                         <p className="text-sm text-gray-600">{ex.english}</p>
                         {ex.note && <p className="text-xs text-gray-400 mt-0.5">{ex.note}</p>}
+                        <EditPencil
+                          target={{
+                            targetType: 'grammar.example',
+                            label: 'Grammar example',
+                            currentText: `${ex.swahili} — ${ex.english}${ex.note ? ` (${ex.note})` : ''}`,
+                            itemId: `${topic.slug}#ex${i}`,
+                          }}
+                        />
                       </div>
                     </div>
                   </li>

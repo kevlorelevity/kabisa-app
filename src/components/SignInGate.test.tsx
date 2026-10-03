@@ -53,7 +53,8 @@ describe('SignInGate', () => {
       </SignInGate>,
     );
 
-    expect(screen.getByText('Sign in with Google')).toBeInTheDocument();
+    expect(screen.getAllByText('Sign in with Google').length).toBeGreaterThan(0);
+    expect(screen.getAllByLabelText('Beta').length).toBeGreaterThan(0);
     expect(screen.queryByText('Catalog content')).not.toBeInTheDocument();
   });
 

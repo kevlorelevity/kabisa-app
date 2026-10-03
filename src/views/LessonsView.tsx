@@ -1,3 +1,4 @@
+import { EditPencil } from '../components/EditPencil';
 import { Link } from 'react-router-dom';
 import { useLessons } from '../hooks/useLessons';
 import { LessonCard } from '../components/LessonCard';
@@ -110,7 +111,8 @@ export function LessonsView() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <h2 id={`level-${lvl.level}`} className="font-bold text-gray-900 leading-tight">
-                    Level {lvl.level} · {lvl.name}
+                    Level {lvl.level} · {lvl.name}{' '}
+                    <EditPencil target={{ targetType: 'level', label: `Level ${lvl.level} name & focus`, currentText: `${lvl.name} — ${lvl.tagline} — ${lvl.focus}`, itemId: `level-${lvl.level}` }} />
                   </h2>
                   <p className="text-xs text-gray-500 truncate">{lvl.focus}</p>
                 </div>

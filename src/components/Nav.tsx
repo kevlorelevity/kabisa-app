@@ -1,11 +1,16 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 import { useGrammarFavorites } from '../lib/grammarFavorites';
+import { useProfile } from '../hooks/profileContext';
+import { getCountry } from '../lib/countries';
+import { BetaSticker } from './BetaSticker';
 
 export function Nav() {
   const { pathname } = useLocation();
   const { user, signOut } = useAuth();
   const { favorites } = useGrammarFavorites();
+  const { profile } = useProfile();
+  const flag = getCountry(profile?.nationality)?.flag;
 
   const linkClass = (path: string) =>
     `px-3 py-1 rounded text-sm font-medium transition-colors ${
@@ -15,6 +20,7 @@ export function Nav() {
     }`;
 
   const displayName =
+    profile?.displayName ??
     (user?.user_metadata?.given_name as string | undefined) ??
     user?.email ??
     null;
@@ -22,8 +28,9 @@ export function Nav() {
   return (
     <nav className="border-b border-gray-200 bg-white sticky top-0 z-10">
       <div className="max-w-4xl mx-auto px-4 h-14 flex items-center justify-between">
-        <Link to="/" className="font-bold text-green-800 tracking-tight">
+        <Link to="/" className="flex items-center gap-2 font-bold text-green-800 tracking-tight">
           Swahili ya Kenya
+          <BetaSticker />
         </Link>
         <div className="flex gap-2 items-center">
           <Link to="/" className={linkClass('/')}>
@@ -39,9 +46,14 @@ export function Nav() {
           </Link>
           {displayName && (
             <div className="flex items-center gap-2 pl-2 ml-1 border-l border-gray-200">
-              <span className="text-sm text-gray-600 hidden sm:inline">
+              <Link
+                to="/profile"
+                title="Edit your name and country"
+                className="text-sm text-gray-600 hover:text-green-700 hidden sm:inline"
+              >
+                {flag ? `${flag} ` : ''}
                 {displayName}
-              </span>
+              </Link>
               <button
                 type="button"
                 onClick={() => void signOut()}

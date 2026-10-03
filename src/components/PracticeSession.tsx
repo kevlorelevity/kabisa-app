@@ -3,6 +3,7 @@ import type { PracticeItem, PracticeOption } from '../types';
 import type { AttemptResult } from '../lib/lessonScores';
 import { AudioButton } from './AudioButton';
 import { GrammarChips } from './GrammarChips';
+import { EditPencil } from './EditPencil';
 
 interface PracticeSessionProps {
   items: PracticeItem[];
@@ -137,6 +138,21 @@ export function PracticeSession({ items, onFinish, resultSlot }: PracticeSession
           )}
           {item.after}
         </p>
+        <div className="flex gap-1">
+          <EditPencil
+            hint="EN"
+            target={{ targetType: 'practice.english', label: 'Practice · English prompt', currentText: item.english, itemId: item.id }}
+          />
+          <EditPencil
+            hint="SW"
+            target={{
+              targetType: 'practice.sentence',
+              label: 'Practice · Swahili sentence & chips',
+              currentText: `${item.before}[${item.options.map((o) => (o.correct ? `✓${o.text}` : o.text)).join(' | ')}]${item.after}`,
+              itemId: item.id,
+            }}
+          />
+        </div>
         {item.mode === 'complete' && solved && (
           <p className="text-sm text-gray-500">{item.english}</p>
         )}
@@ -182,7 +198,12 @@ export function PracticeSession({ items, onFinish, resultSlot }: PracticeSession
       {solved && (
         <div className="space-y-3">
           <div className="text-sm text-gray-700 bg-green-50 border border-green-100 rounded-lg px-4 py-3 space-y-2">
-            <p>{item.explanation}</p>
+            <p>
+              {item.explanation}{' '}
+              <EditPencil
+                target={{ targetType: 'practice.explanation', label: 'Practice · explanation', currentText: item.explanation, itemId: item.id }}
+              />
+            </p>
             {item.grammar?.length ? <GrammarChips slugs={item.grammar.slice(0, 3)} size="xs" /> : null}
           </div>
           <button

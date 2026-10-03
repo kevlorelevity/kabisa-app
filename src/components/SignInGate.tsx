@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { useAuth } from '../hooks/useAuth';
 import { isSupabaseConfigured } from '../lib/supabase';
-import { SignInButton } from './SignInButton';
+import { Landing } from './Landing';
 
 /**
  * App-wide auth gate. PRD §8.3: "Auth-gated routes. No localStorage fallback
@@ -28,17 +28,7 @@ export function SignInGate({ children }: { children: ReactNode }) {
   }
 
   if (!session) {
-    return (
-      <div className="min-h-screen flex flex-col items-center justify-center gap-6 px-4 text-center">
-        <div>
-          <h1 className="text-2xl font-bold text-green-800">Swahili ya Kenya</h1>
-          <p className="mt-2 text-gray-600">
-            Learn Swahili as it&apos;s actually spoken in Kenya.
-          </p>
-        </div>
-        <SignInButton />
-      </div>
-    );
+    return <Landing />;
   }
 
   return <>{children}</>;

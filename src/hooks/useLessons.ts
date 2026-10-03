@@ -1,4 +1,7 @@
+import { useMemo } from 'react';
 import type { Lesson } from '../types';
+import { personalizeLesson } from '../lib/personalize';
+import { useProfile } from './profileContext';
 
 // Lessons are local-JSON only for now — this content isn't seeded into
 // Supabase yet (no dialogue_turn/mc_option tables exist). Unlike
@@ -12,14 +15,20 @@ const lessons: Lesson[] = Object.values(lessonFiles)
   .map((f) => f.default)
   .sort((a, b) => (a.order ?? Infinity) - (b.order ?? Infinity));
 
-/** Returns all authored lessons. */
-export function useLessons(): Lesson[] {
+/** All lessons, unpersonalised (the scripts' default "John from Uganda"). */
+export function getRawLessons(): Lesson[] {
   return lessons;
+}
+
+/** Returns all authored lessons, with the learner cast as the first person. */
+export function useLessons(): Lesson[] {
+  const { persona } = useProfile();
+  return useMemo(() => lessons.map((l) => personalizeLesson(l, persona)), [persona]);
 }
 
 /** Returns a single lesson by its slug, or undefined if not found. */
 export function useLesson(id: string): Lesson | undefined {
-  return lessons.find((l) => l.id === id);
+  return useLessons().find((l) => l.id === id);
 }
 
 /** A lesson plus the lessons either side of it in the ordered list. */
@@ -29,11 +38,12 @@ export function useLessonWithNeighbors(id: string): {
   previous: Lesson | undefined;
   next: Lesson | undefined;
 } {
-  const idx = lessons.findIndex((l) => l.id === id);
+  const all = useLessons();
+  const idx = all.findIndex((l) => l.id === id);
   return {
-    lessons,
-    lesson: idx === -1 ? undefined : lessons[idx],
-    previous: idx > 0 ? lessons[idx - 1] : undefined,
-    next: idx !== -1 ? lessons[idx + 1] : undefined,
+    lessons: all,
+    lesson: idx === -1 ? undefined : all[idx],
+    previous: idx > 0 ? all[idx - 1] : undefined,
+    next: idx !== -1 ? all[idx + 1] : undefined,
   };
 }

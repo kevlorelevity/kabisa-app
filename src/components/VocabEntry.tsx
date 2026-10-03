@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { VocabEntry as VocabEntryType } from '../types';
 import { AudioButton } from './AudioButton';
+import { EditPencil } from './EditPencil';
 
 interface VocabEntryProps {
   entry: VocabEntryType;
@@ -17,7 +18,15 @@ export function VocabEntry({ entry }: VocabEntryProps) {
           <AudioButton text={entry.swahili} className="align-middle -ml-1.5 mr-0.5" />
           <span className="font-semibold text-gray-900">{entry.swahili}</span>
           <span className="text-gray-500 mx-2">—</span>
-          <span className="text-gray-700">{entry.english}</span>
+          <span className="text-gray-700">{entry.english}</span>{' '}
+          <EditPencil
+            target={{
+              targetType: 'vocab',
+              label: 'Vocabulary / flashcard',
+              currentText: [entry.swahili, entry.english, entry.exampleContext, entry.sanifu, entry.sanifuNote].filter(Boolean).join(' | '),
+              itemId: entry.id,
+            }}
+          />
           <p className="text-xs text-gray-400 mt-0.5 italic">{entry.exampleContext}</p>
         </div>
         {hasSanifu && (

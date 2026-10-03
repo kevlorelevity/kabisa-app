@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { ConjugationTable, WordGloss } from '../types';
 import { GrammarChips } from './GrammarChips';
+import { EditPencil } from './EditPencil';
 
 interface TappableSwahiliProps {
   swahili: string;
@@ -98,7 +99,11 @@ export function TappableSwahili({ swahili, words, enabled, className, variant = 
                   seg.conjugation || seg.grammar?.length ? 'max-w-[16rem]' : 'max-w-[14rem]'
                 }`}
               >
-                {seg.gloss}
+                {seg.gloss}{' '}
+                <EditPencil
+                  tone="dark"
+                  target={{ targetType: 'word.gloss', label: `Word explanation · “${seg.text}”`, currentText: `${seg.text} — ${seg.gloss}` }}
+                />
                 {seg.sanifu && (
                   <span className="block mt-1.5 text-sky-200">
                     <span className="font-semibold">Sanifu · </span>

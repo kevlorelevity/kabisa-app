@@ -6,6 +6,11 @@ import { LessonView } from './views/LessonView';
 import { DrillView } from './views/DrillView';
 import { GrammarView } from './views/GrammarView';
 import { GrammarProvider } from './components/GrammarProvider';
+import { ProfileProvider } from './hooks/ProfileProvider';
+import { OnboardingGate } from './components/OnboardingGate';
+import { ProfileView } from './views/ProfileView';
+import { FeedbackButton } from './components/FeedbackButton';
+import { AdminProvider } from './components/AdminProvider';
 import { AuthProvider } from './hooks/AuthProvider';
 import { SignInGate } from './components/SignInGate';
 
@@ -22,10 +27,12 @@ function AppLayout() {
           <Route path="/lesson/:id/drill" element={<DrillView />} />
           <Route path="/grammar" element={<GrammarView />} />
           <Route path="/grammar/:slug" element={<GrammarView />} />
+          <Route path="/profile" element={<ProfileView />} />
           {/* Retired surfaces (old module catalog, SRS review) — send old links home. */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
+      <FeedbackButton />
     </>
   );
 }
@@ -35,9 +42,15 @@ export function App() {
     <AuthProvider>
       <BrowserRouter>
         <SignInGate>
-          <GrammarProvider>
-            <AppLayout />
-          </GrammarProvider>
+          <ProfileProvider>
+            <OnboardingGate>
+              <AdminProvider>
+                <GrammarProvider>
+                  <AppLayout />
+                </GrammarProvider>
+              </AdminProvider>
+            </OnboardingGate>
+          </ProfileProvider>
         </SignInGate>
       </BrowserRouter>
     </AuthProvider>

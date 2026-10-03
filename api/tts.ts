@@ -59,10 +59,42 @@ function loadCorpus(): string[] {
   return corpus;
 }
 
+// Lessons are personalised at runtime: the scripts' "John", "Uganda" and
+// "Kampala" become the learner's own name, country and home city. In those
+// lines a slot word may stand for 1–3 words of the requested text.
+const SLOTS = new Set(['john', 'uganda', 'kampala']);
+let templates: string[][] | null = null;
+
+function loadTemplates(): string[][] {
+  if (templates) return templates;
+  templates = loadCorpus()
+    .map((line) => line.split(' '))
+    .filter((toks) => toks.some((w) => SLOTS.has(w)));
+  return templates;
+}
+
+/** Does `q` (tokens) occur as a contiguous span of `line`, letting slot words absorb 1–3 tokens? */
+function spanMatches(q: string[], line: string[]): boolean {
+  const from = (qi: number, li: number): boolean => {
+    if (qi === q.length) return true;
+    if (li >= line.length) return false;
+    const w = line[li];
+    if (SLOTS.has(w)) {
+      for (let n = 1; n <= 3 && qi + n <= q.length; n++) if (from(qi + n, li + 1)) return true;
+      return false;
+    }
+    return q[qi] === w && from(qi + 1, li + 1);
+  };
+  for (let start = 0; start < line.length; start++) if (from(0, start)) return true;
+  return false;
+}
+
 function isAllowed(text: string): boolean {
   const t = canon(text);
   if (!t) return false;
-  return loadCorpus().some((line) => line === t || ` ${line} `.includes(` ${t} `));
+  if (loadCorpus().some((line) => line === t || ` ${line} `.includes(` ${t} `))) return true;
+  const q = t.split(' ');
+  return loadTemplates().some((line) => spanMatches(q, line));
 }
 
 function escapeXml(s: string): string {

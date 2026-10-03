@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { VocabEntry } from '../types';
 import { AudioButton } from './AudioButton';
+import { EditPencil } from './EditPencil';
 
 interface LessonFlashcardsProps {
   entries: VocabEntry[];
@@ -59,6 +60,16 @@ export function LessonFlashcards({ entries }: LessonFlashcardsProps) {
           </div>
         )}
         {side < lastSide && <p className="text-xs text-gray-400 mt-3">Tap to reveal</p>}
+        <div className="mt-2">
+          <EditPencil
+            target={{
+              targetType: 'vocab',
+              label: 'Flashcard',
+              currentText: [entry.swahili, entry.english, entry.exampleContext, entry.sanifu, entry.sanifuNote].filter(Boolean).join(' | '),
+              itemId: entry.id,
+            }}
+          />
+        </div>
       </div>
 
       <div className="flex items-center justify-between text-sm">

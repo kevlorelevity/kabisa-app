@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import type { Lesson } from '../types';
 import { PASS_THRESHOLD, pct } from '../lib/lessonScores';
 import { THEME_LABELS, maxLessonXp } from '../lib/levels';
+import { EditPencil } from './EditPencil';
 
 const CATEGORY_LABELS: Record<string, string> = {
   transport: 'Transport',
@@ -37,7 +38,8 @@ export function LessonCard({ lesson, passed, locked, previousTitle, xp = 0, them
     <>
       <div className="flex items-start justify-between gap-2 mb-2">
         <h3 className={`font-semibold text-sm leading-snug ${locked ? 'text-gray-400' : 'text-gray-900'}`}>
-          {lesson.title}
+          {lesson.title}{' '}
+          <EditPencil target={{ targetType: 'lesson.title', label: 'Lesson title', currentText: lesson.title, lessonId: lesson.id }} />
         </h3>
         {passed && (
           <span className="text-xs text-green-700 whitespace-nowrap shrink-0">✓ Passed</span>

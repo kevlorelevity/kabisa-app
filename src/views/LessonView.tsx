@@ -1,3 +1,4 @@
+import { EditPencil } from '../components/EditPencil';
 import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useLessonWithNeighbors } from '../hooks/useLessons';
@@ -74,7 +75,10 @@ export function LessonView() {
         <Link to="/" className="text-sm text-gray-400 hover:text-gray-600">
           ← Lessons
         </Link>
-        <h1 className="text-2xl font-bold text-gray-900 mt-2">{lesson.title}</h1>
+        <h1 className="text-2xl font-bold text-gray-900 mt-2">
+          {lesson.title}{' '}
+          <EditPencil target={{ targetType: 'lesson.title', label: 'Lesson title', currentText: lesson.title, lessonId: lesson.id }} />
+        </h1>
         <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
           <span className="text-xs text-gray-500">
             {lvl.emoji} Level {lesson.level} · {lvl.name}
@@ -103,8 +107,14 @@ export function LessonView() {
         <h2 className="text-xs uppercase tracking-wide text-gray-400 font-semibold mb-2">
           Context
         </h2>
-        <p className="text-gray-700 leading-relaxed">{lesson.culturalNote}</p>
-        <p className="text-gray-500 text-sm italic mt-2">{lesson.startingPoint}</p>
+        <p className="text-gray-700 leading-relaxed">
+          {lesson.culturalNote}{' '}
+          <EditPencil target={{ targetType: 'lesson.culturalNote', label: 'Context paragraph', currentText: lesson.culturalNote, lessonId: lesson.id }} />
+        </p>
+        <p className="text-gray-500 text-sm italic mt-2">
+          {lesson.startingPoint}{' '}
+          <EditPencil target={{ targetType: 'lesson.startingPoint', label: 'Scene setter', currentText: lesson.startingPoint, lessonId: lesson.id }} />
+        </p>
         <p className="text-gray-400 text-xs mt-2">
           Tap 🔊 on any line to hear it spoken. Tap an underlined word for its meaning, Sanifu form and grammar.
         </p>
