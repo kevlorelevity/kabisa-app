@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { useAuth } from '../hooks/useAuth';
 import { isSupabaseConfigured } from '../lib/supabase';
+import { detectInApp } from '../lib/inAppBrowser';
+import { OpenInBrowser } from './OpenInBrowser';
 import {
   GOOGLE_CLIENT_ID,
   gisSupportedHere,
@@ -15,6 +17,12 @@ import {
  * Until it's ready — or if Google's script can't load — our redirect button shows.
  */
 export function SignInButton({ size = 'sm' }: { size?: 'sm' | 'lg' }) {
+  const [inApp] = useState(() => detectInApp());
+  if (inApp.inApp) return <OpenInBrowser info={inApp} />;
+  return <GoogleSignIn size={size} />;
+}
+
+function GoogleSignIn({ size }: { size: 'sm' | 'lg' }) {
   const slotRef = useRef<HTMLDivElement>(null);
   const [gisReady, setGisReady] = useState(false);
   const [error, setError] = useState(false);
@@ -62,7 +70,12 @@ export function SignInButton({ size = 'sm' }: { size?: 'sm' | 'lg' }) {
       {error && (
         <p className="text-sm text-red-600">
           Sign-in didn’t go through.{' '}
-          <RedirectSignInButton size="link" />
+          <RedirectSignInButton size="link" label="Try again" />
+        </p>
+      )}
+      {gisReady && !error && (
+        <p className="text-xs text-gray-400">
+          Trouble signing in? <RedirectSignInButton size="link" label="Try another way" />
         </p>
       )}
     </div>
@@ -70,12 +83,12 @@ export function SignInButton({ size = 'sm' }: { size?: 'sm' | 'lg' }) {
 }
 
 /** The classic redirect flow — fallback when Google's button can't be used. */
-function RedirectSignInButton({ size }: { size: 'sm' | 'lg' | 'link' }) {
+function RedirectSignInButton({ size, label = 'Try again' }: { size: 'sm' | 'lg' | 'link'; label?: string }) {
   const { signInWithGoogle } = useAuth();
   if (size === 'link') {
     return (
-      <button type="button" onClick={() => void signInWithGoogle()} className="underline hover:text-red-800">
-        Try again
+      <button type="button" onClick={() => void signInWithGoogle()} className="underline hover:text-gray-700">
+        {label}
       </button>
     );
   }

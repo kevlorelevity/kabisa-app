@@ -7,7 +7,22 @@
     <title>Kabisa — Kenyan Swahili, the way Nairobi speaks it</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div id="boot" style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f6f4ee;font-family:system-ui,sans-serif;color:#374151;padding:20px;text-align:center">
+        <div>
+          <p style="font-weight:700;font-size:20px;color:#166534;margin:0 0 8px">Kabisa</p>
+          <p id="boot-msg" style="margin:0;font-size:14px">Loading…</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      // If the app hasn't replaced this placeholder after a while, say so instead of a blank page.
+      setTimeout(function () {
+        var m = document.getElementById('boot-msg');
+        if (m) m.innerHTML = 'Kabisa is taking long to load. Check your connection and <a href="" style="color:#166534">reload</a>.<br>If you opened this link inside another app, open it in Chrome or Safari instead.';
+      }, 10000);
+    </script>
+    <noscript>Kabisa needs JavaScript. Please open it in Chrome or Safari.</noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
