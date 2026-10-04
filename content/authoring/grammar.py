@@ -162,11 +162,11 @@ topic('na-have', 2, 'Nina / Sina: Having (and "There Is")', 'Kuwa na',
       [('table', '-na (have)', ['Person', 'Have', 'Don\'t have'],
         [['I', 'nina', 'sina'], ['you', 'una', 'huna'], ['he / she', 'ana', 'hana'], ['we', 'tuna', 'hatuna'], ['you all', 'mna', 'hamna'],
          ['they', 'wana', 'hawana'], ['it (n/n)', 'ina', 'haina'], ['they (n/n)', 'zina', 'hazina']]),
-       ('p', '**Kuna** = there is / there are (lit. "the place has"): *Kuna foleni* — there\'s traffic. **Hakuna** = there isn\'t: *Hakuna shida* — no problem.'),
+       ('p', '**Kuna** = there is / there are (lit. "the place has"): *Kuna magari mingi* — there\'s traffic. **Hakuna** = there isn\'t: *Hakuna shida* — no problem.'),
        ('p', 'In other tenses, use **kuwa na** (to be with): *nilikuwa na* (I had), *nitakuwa na* (I will have), *ningekuwa na* (if I had).'),
        ('tip', 'Kenyans often say **-ko na** instead: *Uko na chenji?* (Do you have change?), *Ako na gari* (She has a car). Sanifu: *Una chenji? Ana gari.*'),
        ('p', '**Haina shida / Hakuna shida / Hamna shida** — all "no problem". You\'ll hear them a hundred times a day.')],
-      [('Nina watoto wawili.', 'I have two children.'), ('Sina pesa taslimu.', 'I don\'t have cash.'), ('Kuna nafasi.', 'There\'s space.'),
+      [('Nina watoto wawili.', 'I have two children.'), ('Sina pesa mkononi.', 'I don\'t have cash.'), ('Kuna nafasi.', 'There\'s space.'),
        ('Kulikuwa na ajali.', 'There was an accident.')],
       related=['ko-location', 'negative-present'], tags=['verbs'])
 
@@ -462,7 +462,7 @@ topic('verb-extensions', 7, 'Verb Extensions: -ia, -wa, -isha, -ana, -ika', 'Mny
        ('p', 'Vowel harmony: stems with **a, i, u** take -ia / -isha; stems with **e, o** take -ea / -esha: *pika → pikia*, *soma → somea*, *chelewa → chelewesha*.'),
        ('tip', 'Watch the meaning shift: **tuma** = send (someone), **tumia** = send to / use. *Nitakutumia* = I\'ll send (it) to you, but *Nitakutuma* = I\'ll send YOU (on an errand)!'),
        ('p', 'Passives often take **na** for "by": *Ripoti iliandikwa na Faith* — The report was written by Faith.')],
-      [('Nimekuletea begi yako.', 'I\'ve brought you your bag.'), ('Mkutano umeahirishwa.', 'The meeting has been postponed.'),
+      [('Nimekuletea mfuko yako.', 'I\'ve brought you your bag.'), ('Mkutano umeahirishwa.', 'The meeting has been postponed.'),
        ('Simamisha gari!', 'Pull over!'), ('Tumeelewana.', 'We understand each other.'), ('Bomba imevunjika.', 'The pipe is broken.')],
       related=['object-infixes', 'perfect-me'], tags=['verbs'])
 
@@ -552,7 +552,7 @@ topic('continuous-tenses', 9, 'Continuous Tenses: Was / Have Been / Will Be …-
 topic('conjunctions-kwamba', 9, 'Linking Ideas: Kwamba, Ingawa, Badala ya…', 'Viunganishi',
       'The connectors that turn sentences into stories, arguments and reported speech.',
       [('table', 'Connectors', ['Word', 'Meaning', 'Example'],
-        [['kwamba', 'that (reported speech)', 'Wanasema kwamba barabara itajengwa.'], ['kwa sababu', 'because', 'Nimechelewa kwa sababu ya foleni.'],
+        [['kwamba', 'that (reported speech)', 'Wanasema kwamba barabara itajengwa.'], ['kwa sababu', 'because', 'Nimechelewa kwa sababu kuna magari mingi.'],
          ['ili', 'so that (+ subjunctive)', 'ili nione vizuri'], ['ingawa', 'although', 'Ingawa tunaelewa, tuna njaa!'],
          ['hata hivyo', 'even so / however', 'Hata hivyo, bei imepanda.'], ['badala ya', 'instead of', 'badala ya kuku'],
          ['lakini / ila', 'but / except', 'Wote walikuja, ila Amani.'], ['halafu / kisha', 'then', 'Moja kwa moja, halafu kushoto.'],

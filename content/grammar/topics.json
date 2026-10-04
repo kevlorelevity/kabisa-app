@@ -978,7 +978,7 @@
       },
       {
         "type": "p",
-        "text": "**Kuna** = there is / there are (lit. \"the place has\"): *Kuna foleni* — there's traffic. **Hakuna** = there isn't: *Hakuna shida* — no problem."
+        "text": "**Kuna** = there is / there are (lit. \"the place has\"): *Kuna magari mingi* — there's traffic. **Hakuna** = there isn't: *Hakuna shida* — no problem."
       },
       {
         "type": "p",
@@ -999,7 +999,7 @@
         "english": "I have two children."
       },
       {
-        "swahili": "Sina pesa taslimu.",
+        "swahili": "Sina pesa mkononi.",
         "english": "I don't have cash."
       },
       {
@@ -3135,7 +3135,7 @@
     ],
     "examples": [
       {
-        "swahili": "Nimekuletea begi yako.",
+        "swahili": "Nimekuletea mfuko yako.",
         "english": "I've brought you your bag."
       },
       {
@@ -3676,7 +3676,7 @@
           [
             "kwa sababu",
             "because",
-            "Nimechelewa kwa sababu ya foleni."
+            "Nimechelewa kwa sababu kuna magari mingi."
           ],
           [
             "ili",
