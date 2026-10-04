@@ -903,8 +903,8 @@
       "id": "c8e82308-2741-595e-9e62-b5cbe280e79b",
       "speaker": "Mhudumu",
       "role": "auto",
-      "swahili": "Sawa. Na kinywaji?",
-      "english": "Okay. And a drink?",
+      "swahili": "Sawa. Na cha kunywa?",
+      "english": "Okay. And something to drink?",
       "words": [
         {
           "text": "Sawa",
@@ -915,12 +915,19 @@
           "gloss": "and / with"
         },
         {
-          "text": "kinywaji",
-          "gloss": "a drink — ki/vi noun (plural vinywaji).",
+          "text": "cha",
+          "gloss": "\"of\" — ki/vi agreement (kituo cha polisi, chakula cha mchana)",
           "grammar": [
             "sanifu-noun-classes"
           ],
-          "sanifu": "Sanifu: kinywaji changu, vinywaji"
+          "sanifu": "ki/vi class"
+        },
+        {
+          "text": "kunywa",
+          "gloss": "\"Drink!\" / \"to drink\"",
+          "grammar": [
+            "imperatives"
+          ]
         }
       ]
     },

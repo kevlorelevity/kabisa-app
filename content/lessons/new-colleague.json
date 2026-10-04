@@ -45,7 +45,7 @@
       "id": "911bf29c-c013-51e1-91ae-440a09c9539c",
       "speaker": "Juma",
       "role": "auto",
-      "swahili": "John, umemwona mfanyakazi mpya?",
+      "swahili": "John, umemwona mfanyikazi mpya?",
       "english": "John, have you seen the new colleague?",
       "words": [
         {
@@ -91,7 +91,7 @@
           }
         },
         {
-          "text": "mfanyakazi mpya",
+          "text": "mfanyikazi mpya",
           "gloss": "\"a new worker / employee\" — m/wa agreement",
           "grammar": [
             "adjective-agreement"
@@ -1194,9 +1194,9 @@
     },
     {
       "id": "6d4a39ba-4449-5a02-8701-48096e900673",
-      "swahili": "mfanyakazi mpya",
+      "swahili": "mfanyikazi mpya",
       "english": "new colleague",
-      "exampleContext": "Plural: wafanyakazi wapya",
+      "exampleContext": "Plural: wafanyikazi wapya",
       "partOfSpeech": "phrase"
     },
     {
@@ -1266,7 +1266,7 @@
       "mode": "translate",
       "english": "Have you seen the new colleague?",
       "before": "",
-      "after": " mfanyakazi mpya?",
+      "after": " mfanyikazi mpya?",
       "options": [
         {
           "text": "Umemwona",

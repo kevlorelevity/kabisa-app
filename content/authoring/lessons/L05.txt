@@ -121,7 +121,7 @@ gl: badala yake = "instead (of it)"
 > Mhudumu: Wateja wengi wanasema samaki ni bora zaidi. Lakini kuku inachukua muda mfupi. | Most customers say the fish is the best. But the chicken takes less time.
 < Mgeni: Sijala tangu asubuhi. Lakini nitangoja — nipe samaki wa kuchoma. | I haven't eaten since morning. But I'll wait — give me the grilled fish.
   x: Nimekula tangu asubuhi. Lakini nitangoja — nipe samaki wa kuchoma. ; Sijala tangu asubuhi. Lakini sitangoja — nipe samaki wa kuchoma.
-> Mhudumu: Sawa. Na kinywaji? | Okay. And a drink?
+> Mhudumu: Sawa. Na cha kunywa? | Okay. And something to drink?
 < Mgeni: Juisi ya maembe, tafadhali. | Mango juice, please.
   x: Juisi ya maembe, asante sana. ; Juisi ya maji, tafadhali.
 > Mhudumu: Samahani, juisi ya maembe imeisha. Unataka ya nanasi badala yake? | Sorry, the mango juice is finished. Do you want pineapple instead?
@@ -170,7 +170,7 @@ category: people
 culture: Describing people is where Swahili agreement really shows: adjectives take the class of the person, so "tall" is mrefu for one person and warefu for several — while for things Kenyans reach for the n/n form (ndefu, nzuri). It's also where Kenyan small talk lives: who's new, who has arrived, who has ever worked where. "-wahi" turns any verb into "ever / never": amewahi kufanya kazi Kampala? (has she ever worked in Kampala?).
 start: Your team is getting a new member today. Your colleague Juma stops by your desk.
 grammar: adjective-agreement, perfect-me, perfect-negative-ja, wahi-ever-never, comparatives
-gl: mfanyakazi mpya = "a new worker / employee" — m/wa agreement #adjective-agreement
+gl: mfanyikazi mpya = "a new worker / employee" — m/wa agreement #adjective-agreement
 gl: Faith = Faith (name)
 gl: anaonekana = "she seems / she looks" — a- + -na- + -onekana. #present-na
 gl: mkarimu = "generous / kind" — m/wa singular #adjective-agreement
@@ -184,7 +184,7 @@ gl: ofisi hii = this office
 gl: zaidi ya = "more than"
 gl: miaka mitano = "five years" — m/mi agreement (miaka is m/mi in Sanifu) #sanifu-noun-classes
 
-> Juma: John, umemwona mfanyakazi mpya? | John, have you seen the new colleague?
+> Juma: John, umemwona mfanyikazi mpya? | John, have you seen the new colleague?
 < John: Bado sijamwona. Amefika? | I haven't seen her yet. Has she arrived?
   x: Bado nimemwona. Amefika? ; Bado sijamwona. Nimefika?
 > Juma: Ndiyo, amefika sasa hivi. Anaitwa Faith. | Yes, she's just arrived. She's called Faith.
@@ -206,7 +206,7 @@ gl: miaka mitano = "five years" — m/mi agreement (miaka is m/mi in Sanifu) #sa
 > Juma: Yuko pale, karibu na dirisha. Yule mwenye nguo nyeupe. | She's over there, by the window. The one in white clothes.
 
 @practice
-t: Have you seen the new colleague? | [Umemwona|Nimemwona|Amemwona] mfanyakazi mpya? || u- + -me- + -mw- (him/her) + -ona.
+t: Have you seen the new colleague? | [Umemwona|Nimemwona|Amemwona] mfanyikazi mpya? || u- + -me- + -mw- (him/her) + -ona.
 t: I haven't seen her yet. | Bado [sijamwona|nimemwona|sikumwona]. || bado + -ja- = not yet.
 t: She has just arrived. | [Amefika|Hajafika|Alifika] sasa hivi.
 t: She hasn't arrived yet. | Bado [hajafika|amefika|hakufika]. || ha- (not she) + -ja- + -fika.
@@ -228,7 +228,7 @@ t: the one in white clothes | yule mwenye nguo [nyeupe|mweupe|weupe] || nguo is 
 Umemwona…? | Have you seen (him/her)? | u- + -me- + -mw- + -ona
 Bado sijamwona | I haven't seen her yet | bado + -ja-
 Amefika | She has arrived | Hajafika = she hasn't arrived yet
-mfanyakazi mpya | new colleague | Plural: wafanyakazi wapya
+mfanyikazi mpya | new colleague | Plural: wafanyikazi wapya
 mrefu / warefu | tall (one person / several) | Things: ndefu
 mfupi / wafupi | short (one person / several) | Things: fupi
 mkarimu | generous / kind | Wakenya ni wakarimu = Kenyans are hospitable

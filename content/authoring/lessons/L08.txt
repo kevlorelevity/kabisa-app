@@ -29,8 +29,7 @@ gl: matunda = fruit
 gl: yenye = "which has / with" (n/n) #relatives
 gl: Mwanangu = "my child" — what older sellers call young customers
 gl: wiki ijayo = next week
-gl: ndizi mbivu = ripe bananas
-gl: mbivu = ripe (n/n)
+gl: ndizi zilizoiva = ripe bananas — lit. "bananas that have ripened" (kuiva = to ripen / be cooked)
 gl: mbichi = unripe / raw (n/n)
 
 > Mama Wanjiru: Aaah, mteja wangu! Umepotea! | Aaah, my customer! You've disappeared!
@@ -44,8 +43,8 @@ gl: mbichi = unripe / raw (n/n)
   s: Hapana! Maembe ambayo nilinunua yalikuwa ghali, na mengine yalikuwa mabichi.
   x: Hapana! Maembe ambayo nitanunua yalikuwa ghali, na mengine yalikuwa mabichi. ; Ndiyo! Maembe ambayo nilinunua yalikuwa ghali, na mengine yalikuwa mabichi.
 > Mama Wanjiru: Pole sana! Ukinunua kwangu, utapata matunda mazuri kila wakati. | So sorry! If you buy from me, you'll always get good fruit.
-< Mteja: Ndiyo maana nimerudi! Leo nataka maembe na ndizi mbivu. | That's why I'm back! Today I want mangoes and ripe bananas.
-  x: Ndiyo maana nimeondoka! Leo nataka maembe na ndizi mbivu. ; Ndiyo maana nimerudi! Leo nataka maembe na ndizi mbichi.
+< Mteja: Ndiyo maana nimerudi! Leo nataka maembe na ndizi zilizoiva. | That's why I'm back! Today I want mangoes and ripe bananas.
+  x: Ndiyo maana nimeondoka! Leo nataka maembe na ndizi zilizoiva. ; Ndiyo maana nimerudi! Leo nataka maembe na ndizi mbichi.
 > Mama Wanjiru: Ukinunua kilo tatu za maembe, nitakupunguzia bei. | If you buy three kilos of mangoes, I'll lower the price for you.
 < Mteja: Ningekuwa na gari leo, ningenunua kilo kumi! Lakini nitachukua tatu. | If I had a car today, I'd buy ten kilos! But I'll take three.
   x: Nilikuwa na gari leo, ningenunua kilo kumi! Lakini nitachukua tatu. ; Ningekuwa na gari leo, nitanunua kilo kumi! Lakini nitachukua tatu.
@@ -70,7 +69,7 @@ t: If I come next week… | [Nikija|Nilikuja|Ningekuja] wiki ijayo… || ni- + -
 t: When you arrive, just ask me. | [Ukifika|Ulifika|Ungefika], niulize tu.
 t: mangoes with more sugar | maembe [yenye|wenye|mwenye] sukari zaidi || -enye = having / with; agrees with the noun.
 c: That's why I'm back! | Ndiyo [maana|sababu|hivyo] nimerudi! || Ndiyo maana = that's why.
-t: ripe bananas | ndizi [mbivu|mbichi|mbovu] || mbivu = ripe; mbichi = unripe / raw; mbovu = rotten.
+t: ripe bananas | ndizi [zilizoiva|mbichi|mbovu] || zilizoiva = ripe (have ripened); mbichi = unripe / raw; mbovu = rotten.
 
 @vocab
 Nilipofika… | When I arrived… | -po- = when
@@ -86,7 +85,7 @@ Ningekuwa na… | If I had… | -nge- = would / if
 ningenunua | I would buy |
 yenye | which has / with (n/n) | maembe yenye sukari = mangoes with sugar
 Ndiyo maana… | That's why… |
-mbivu / mbichi | ripe / unripe |
+zilizoiva / mbichi | ripe / unripe | kuiva = to ripen / be cooked
 
 @lesson landlord-leak
 title: The Landlord and the Leaking Roof
@@ -200,7 +199,7 @@ gl: Huwa = "usually" — hu- + -wa: sets up a habit #habitual-hu-nga
 gl: maji ya kutosha = enough water
 gl: ningejua = "if I had known" #conditional-nge
 gl: ningekuja = "I would have come" #conditional-nge
-gl: kipimo = test (medical) || ki/vi class
+gl: Tutakupima = we'll test you — tu- + -ta- + -ku- + -pima (kupima = to measure / examine)
 gl: damu = blood
 gl: matokeo = results
 gl: Ukiona = "If you see" #ki-po-ka
@@ -223,10 +222,10 @@ gl: mafuta mengi = a lot of oil
 > Daktari: Huwa unakunywa maji ya kutosha? | Do you usually drink enough water?
 < Mgonjwa: Hapana, huwa sinywi maji mengi. Ningejua, ningekuja mapema. | No, I usually don't drink much water. If I'd known, I would have come earlier.
   x: Hapana, huwa sinywi maji mengi. Nikijua, nitakuja mapema. ; Ndiyo, huwa sinywi maji mengi. Ningejua, ningekuja mapema.
-> Daktari: Hakuna shida. Tutafanya kipimo cha damu kwanza. | No problem. We'll do a blood test first.
+> Daktari: Hakuna shida. Tutakupima damu kwanza. | No problem. We'll test your blood first.
 < Mgonjwa: Matokeo yatakuja lini? | When will the results come?
   x: Matokeo yalikuja lini? ; Matokeo yatakuja wapi?
-> Daktari: Baada ya saa moja. Ukimaliza kipimo, kaa nje. Nesi ambaye atakuita ni Mercy. | In an hour. When you finish the test, sit outside. The nurse who will call you is Mercy.
+> Daktari: Baada ya saa moja. Ukimaliza, kaa nje. Mwuguzi ambaye atakuita ni Mercy. | In an hour. When you're done, sit outside. The nurse who will call you is Mercy.
 < Mgonjwa: Sawa. Na nikirudi nyumbani, nile nini? | Okay. And when I go back home, what should I eat?
   x: Sawa. Na nilirudi nyumbani, nile nini? ; Sawa. Na nikirudi nyumbani, ule nini?
 > Daktari: Kula uji, wali na ndizi. Usile chakula chenye mafuta mengi. | Eat porridge, rice and bananas. Don't eat oily food.
@@ -243,13 +242,13 @@ t: It didn't help. | [Haikusaidia|Haisaidii|Haitasaidia]. || hai- (not it) + -ku
 t: Do you usually drink enough water? | [Huwa|Hu|Hapo] unakunywa maji ya kutosha? || huwa + present = "usually…" — very common in Kenya.
 t: I usually don't drink much water. | Huwa [sinywi|ninakunywa|sikunywa] maji mengi.
 t: If I'd known, I would have come earlier. | Ningejua, [ningekuja|nitakuja|nilikuja] mapema.
-t: When you finish the test… | [Ukimaliza|Ulimaliza|Ungemaliza] kipimo… || -ki- = when / if.
-t: the nurse who will call you | nesi [ambaye|ambayo|ambao] atakuita
+t: When you're done, sit outside. | [Ukimaliza|Ulimaliza|Ungemaliza], kaa nje. || -ki- = when / if.
+t: the nurse who will call you | mwuguzi [ambaye|ambayo|ambao] atakuita
 t: When I get home, what should I eat? | Nikirudi nyumbani, [nile|nitakula|ninakula] nini? || nile = should I eat (subjunctive of kula — no ku-).
 t: Don't eat oily food. | [Usile|Usikula|Ule] chakula chenye mafuta. || Negative subjunctive of kula: usile.
 t: If you see the fever rising, come back. | [Ukiona|Uliona|Ungeona] homa inapanda, rudi.
 t: When will the results come? | Matokeo [yatakuja|yalikuja|yanakuja] lini? || matokeo is ma- (ji/ma plural) → ya-. A Sanifu agreement Kenyans keep for this word.
-t: We'll do a blood test. | Tutafanya [kipimo|kitabu|kiti] cha damu.
+t: We'll test your blood. | [Tutakupima|Tulikupima|Tungekupima] damu.
 c: Get well soon! | [Pona|Pole|Poa] haraka!
 
 @vocab
@@ -261,7 +260,7 @@ dawa ambayo nilipewa | the medicine I was given |
 Haikusaidia | It didn't help |
 Huwa unakunywa…? | Do you usually drink…? | huwa = usually
 Ningejua, ningekuja mapema | If I'd known, I'd have come earlier |
-kipimo cha damu | blood test |
+Tutakupima damu | We'll test your blood | kupima = to measure / examine
 matokeo | results | Matokeo yatakuja lini?
 Ukimaliza… | When you finish… |
 Nile nini? | What should I eat? | Subjunctive of kula

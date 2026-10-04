@@ -857,8 +857,8 @@
       "id": "9e15cfae-df9b-5d76-b412-581969c2242c",
       "speaker": "Mwangi",
       "role": "auto",
-      "swahili": "Basi inabidi tumwambie aivute mpaka gereji yake.",
-      "english": "Then we'll have to tell him to tow it to his garage.",
+      "swahili": "Basi inabidi tumwambie aivute mpaka kwa mekanika.",
+      "english": "Then we'll have to tell him to tow it to the mechanic.",
       "words": [
         {
           "text": "Basi",
@@ -967,45 +967,15 @@
           "sanifu": "Sanifu: m/mi class — mpaka wa shamba"
         },
         {
-          "text": "gereji",
-          "gloss": "garage / workshop"
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
         },
         {
-          "text": "yake",
-          "gloss": "\"his/her\" — n/n singular agreement (nyumba yake). In Kenyan speech also used for family words and most things (jina yake, gari yake).",
-          "grammar": [
-            "possessives"
-          ],
-          "conjugation": {
-            "verb": "possessive (n/n singular)",
-            "tense": "my · your · his/her · our · your (pl.) · their",
-            "rows": [
-              {
-                "pronoun": "my",
-                "form": "yangu"
-              },
-              {
-                "pronoun": "your",
-                "form": "yako"
-              },
-              {
-                "pronoun": "his/her",
-                "form": "yake"
-              },
-              {
-                "pronoun": "our",
-                "form": "yetu"
-              },
-              {
-                "pronoun": "your (pl.)",
-                "form": "yenu"
-              },
-              {
-                "pronoun": "their",
-                "form": "yao"
-              }
-            ]
-          }
+          "text": "mekanika",
+          "gloss": "mechanic"
         }
       ]
     },
@@ -1426,9 +1396,9 @@
     },
     {
       "id": "f76c7adb-19b1-55b8-91fe-cc965ca4fe6d",
-      "swahili": "gereji",
-      "english": "garage / workshop |",
-      "exampleContext": ""
+      "swahili": "mekanika",
+      "english": "mechanic",
+      "exampleContext": "Nitapeleka gari kwa mekanika."
     },
     {
       "id": "d24add56-d003-5646-b5c7-5f2c02d2e4e8",

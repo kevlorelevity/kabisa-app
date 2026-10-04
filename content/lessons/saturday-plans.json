@@ -27,10 +27,11 @@
     "noun-classes-mwa-nn",
     "subjunctive",
     "na-have",
+    "sanifu-noun-classes",
+    "adjective-agreement",
     "discourse-particles",
     "possessives",
     "imperatives",
-    "sanifu-noun-classes",
     "greetings",
     "numbers-money"
   ],
@@ -385,7 +386,7 @@
       "id": "bdcac9c1-1bc0-57ff-bd1c-cb425bd23ea7",
       "speaker": "Otieno",
       "role": "auto",
-      "swahili": "Saa moja asubuhi. Lazima tuondoke mapema, kuna foleni.",
+      "swahili": "Saa moja asubuhi. Lazima tuondoke mapema, kuna magari mingi.",
       "english": "At seven in the morning. We have to leave early, there's traffic.",
       "words": [
         {
@@ -428,11 +429,20 @@
           ]
         },
         {
-          "text": "foleni",
-          "gloss": "queue / traffic jam (from French \"file\") — n/n noun (same word for one & many)",
+          "text": "magari",
+          "gloss": "cars — Kenyans give it n/n agreement",
           "grammar": [
-            "noun-classes-mwa-nn"
-          ]
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — magari yangu, magari haya"
+        },
+        {
+          "text": "mingi",
+          "gloss": "\"a lot\" — Kenyan all-purpose form (pesa mingi)",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "sanifu": "Sanifu: nyingi (pesa nyingi)"
         }
       ]
     },

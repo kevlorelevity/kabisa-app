@@ -28,8 +28,8 @@
     "noun-classes-mwa-nn",
     "past-li",
     "ni-copula",
-    "possessives",
     "question-words",
+    "possessives",
     "ki-po-ka",
     "vyo-manner",
     "demonstratives",
@@ -430,7 +430,7 @@
       "id": "37336d28-a616-57e3-b298-215f9a9d3a21",
       "speaker": "Bi. Kamau",
       "role": "auto",
-      "swahili": "Changamoto kubwa zaidi ulikuwa nayo ni ipi?",
+      "swahili": "Changamoto kubwa zaidi ulikuwa nayo ni gani?",
       "english": "What's the biggest challenge you've had?",
       "words": [
         {
@@ -490,8 +490,11 @@
           ]
         },
         {
-          "text": "ipi",
-          "gloss": "which one? (n/n)"
+          "text": "gani",
+          "gloss": "which? / what kind?",
+          "grammar": [
+            "question-words"
+          ]
         }
       ]
     },

@@ -769,7 +769,7 @@
       "id": "95219cc5-02c1-5384-a464-da26b3d7bc95",
       "speaker": "Mgeni",
       "role": "user",
-      "swahili": "Asante sana! Unaongea polepole, naelewa vizuri.",
+      "swahili": "Asante sana! Unaongea pole pole, naelewa vizuri.",
       "english": "Thanks a lot! You speak slowly — I understand well.",
       "words": [
         {
@@ -814,7 +814,7 @@
           }
         },
         {
-          "text": "polepole",
+          "text": "pole pole",
           "gloss": "\"slowly\""
         },
         {
@@ -861,15 +861,15 @@
       ],
       "options": [
         {
-          "swahili": "Asante sana! Unaongea polepole, naelewa vizuri.",
+          "swahili": "Asante sana! Unaongea pole pole, naelewa vizuri.",
           "correct": true
         },
         {
-          "swahili": "Asante sana! Unaongea polepole, sielewi vizuri.",
+          "swahili": "Asante sana! Unaongea pole pole, sielewi vizuri.",
           "correct": false
         },
         {
-          "swahili": "Asante sana! Naongea polepole, unaelewa vizuri.",
+          "swahili": "Asante sana! Naongea pole pole, unaelewa vizuri.",
           "correct": false
         }
       ]

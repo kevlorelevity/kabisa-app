@@ -25,8 +25,8 @@ gl: kasoro = "minus / to" — saa mbili kasoro dakika tano = 7:55 #time-swahili
 < Mteja: Tuliona viboko, na tulikula nyama choma. | We saw hippos, and we ate nyama choma.
   x: Tutaona viboko, na tutakula nyama choma. ; Tuliona viboko, na tulila nyama choma.
 > Dereva: Wee! Mimi sikuenda popote. Nilifanya kazi wikendi yote. | Wow! I didn't go anywhere. I worked the whole weekend.
-< Mteja: Pole sana. Leo kuna foleni mbaya sana! | So sorry. Today there's a really bad jam!
-  x: Asante sana. Leo kuna foleni mbaya sana! ; Pole sana. Leo kuna foleni nzuri sana!
+< Mteja: Pole sana. Leo kuna magari mingi sana! | So sorry. Today there's so much traffic!
+  x: Asante sana. Leo kuna magari mingi sana! ; Pole sana. Leo kuna magari machache sana!
 > Dereva: Ndiyo. Kulikuwa na ajali kwa Waiyaki Way asubuhi. | Yes. There was an accident on Waiyaki Way this morning.
 < Mteja: Kweli? Sikuona habari. Watu waliumia? | Really? I didn't see the news. Did people get hurt?
   x: Kweli? Sioni habari. Watu waliumia? ; Kweli? Sikuona habari. Watu wanaumia?
@@ -37,7 +37,7 @@ gl: kasoro = "minus / to" — saa mbili kasoro dakika tano = 7:55 #time-swahili
 > Dereva: Usijali. Nitapita njia ya mkato, kupitia Lavington. | Don't worry. I'll take a shortcut, through Lavington.
 < Mteja: Poa! Jana nilikupigia simu, lakini hukuchukua. | Cool! Yesterday I called you, but you didn't pick up.
   x: Poa! Jana ulinipigia simu, lakini hukuchukua. ; Poa! Jana nilikupigia simu, lakini sikuchukua.
-> Dereva: Aah, pole! Simu yangu ilizima — betri iliisha. | Ah, sorry! My phone died — the battery ran out.
+> Dereva: Aah, pole! Simu yangu ilizima — batari iliisha. | Ah, sorry! My phone died — the battery ran out.
 < Mteja: Hakuna shida. Nitakupigia tena kesho asubuhi. | No problem. I'll call you again tomorrow morning.
   x: Hakuna shida. Nilikupigia tena kesho asubuhi. ; Hakuna shida. Nitampigia tena kesho asubuhi.
 > Dereva: Sawa. Na hii ndiyo ofisi yako. Saa mbili kasoro dakika tano! | Okay. And this is your office. Five to eight!
@@ -58,7 +58,7 @@ t: I told him / her. | [Nilimwambia|Nilikuambia|Niliwaambia]. || Object infixes 
 t: I called you yesterday. | Jana [nilikupigia|nilimpigia|ulinipigia] simu. || ni- + -li- + -ku- (you) + -pigia simu (call).
 t: He called me. | [Alinipigia|Nilimpigia|Alikupigia] simu. || -ni- = me.
 t: I'll call you again. | [Nitakupigia|Nitampigia|Utanipigia] tena.
-t: The battery ran out. | Betri [iliisha|inaisha|itaisha]. || i- (it, n/n) + -li- + -isha (end, run out).
+t: The battery ran out. | Batari [iliisha|inaisha|itaisha]. || i- (it, n/n) + -li- + -isha (end, run out).
 c: Five to eight | Saa mbili [kasoro|na|kamili] dakika tano. || kasoro = minus: 8 o'clock (saa mbili) minus five minutes.
 
 @vocab
@@ -68,13 +68,13 @@ Tuliona… | We saw… |
 Sikuenda | I didn't go | si- + -ku- (past negative) + -enda
 Sikuona | I didn't see |
 Kulikuwa na ajali | There was an accident |
-foleni | traffic jam / queue | Also "jam"
+kuna magari mingi | there's traffic | lit. "there are many cars" — the everyday Kenyan way to say there's a jam
 Nilimwambia | I told him/her | -mw- = him/her
 Nilikupigia simu | I called you | -ku- = you; kupigia simu = to phone someone
 Hukuchukua | You didn't pick up | hu- (not you) + -ku- (past)
 njia ya mkato | shortcut | from kukata (to cut)
 kasoro | minus / to (time) | saa mbili kasoro dakika tano = 7:55
-Betri iliisha | The battery ran out |
+Batari iliisha | The battery ran out | batari = battery
 
 @lesson chemist-sick
 title: Feeling Sick: At the Chemist
@@ -95,7 +95,7 @@ gl: baada ya kula = "after eating"
 gl: maji mengi = "a lot of water" — ji/ma agreement (maji is ji/ma). Kenyans also say "maji mingi".
 gl: ukipata = "if you get" — u- + -ki- (if) + -pata. You'll meet -ki- properly at Level 8. #ki-po-ka
 gl: Dawa hii = "this medicine"
-gl: vidonge = tablets (plural of kidonge)
+gl: dawa hii = this medicine — n/n: dawa hii, dawa hizi
 gl: homa = "fever / flu" — Kenyans also use it for a bad cold
 
 < Mteja: Habari, daktari. Sijisikii vizuri. | Hello, doctor. I don't feel well.
@@ -114,7 +114,7 @@ gl: homa = "fever / flu" — Kenyans also use it for a bad cold
 > Daktari: Sawa. Nitakupa dawa ya homa. | Okay. I'll give you medicine for the fever.
 < Mteja: Asante. Ninakunywa dawa hii namna gani? | Thanks. How do I take this medicine?
   x: Asante. Unakunywa dawa hii namna gani? ; Asante. Ninakula dawa hii wapi?
-> Daktari: Kunywa vidonge viwili, mara tatu kwa siku, baada ya kula. | Take two tablets, three times a day, after eating.
+> Daktari: Kunywa dawa hii mara tatu kwa siku, baada ya kula. | Take this medicine three times a day, after eating.
 < Mteja: Mara tatu kwa siku. Sawa, nimeelewa. | Three times a day. Okay, I've understood.
   x: Mara mbili kwa siku. Sawa, nimeelewa. ; Mara tatu kwa wiki. Sawa, nimeelewa.
 > Daktari: Na kunywa maji mengi. Ukipata shida, rudi kesho. | And drink a lot of water. If you have trouble, come back tomorrow.
@@ -133,7 +133,7 @@ t: My head hurts. | Kichwa [inauma|ninauma|unauma]. || Kenyan: kichwa inauma. Sa
 t: I have a little fever. | [Nina|Sina|Una] homa kidogo.
 t: I'll give you medicine. | [Nitakupa|Nitampa|Utanipa] dawa. || ni- + -ta- + -ku- (you) + -pa (give).
 t: Give me medicine. | [Nipe|Mpe|Wape] dawa. || Nipe = give me; mpe = give him/her; wape = give them.
-t: two tablets | vidonge [viwili|mbili|wawili] || ki/vi nouns take vi- numbers: viwili. (A Sanifu detail Kenyans mostly keep.)
+t: this medicine | dawa [hii|huyu|hiki] || dawa is n/n: dawa hii (this medicine), dawa hizi (these medicines).
 t: three times a day | mara [tatu|tano|saba] kwa siku || mara = times.
 t: after eating | [baada ya|kabla ya|karibu na] kula || baada ya = after; kabla ya = before.
 t: Drink a lot of water. | [Kunywa|Kula|Lete] maji mengi.
@@ -152,7 +152,7 @@ Ulikula nini? | What did you eat? |
 Nitakupa dawa | I'll give you medicine | -ku- = you
 mara tatu kwa siku | three times a day |
 baada ya kula | after eating | kabla ya kula = before eating
-vidonge | tablets | ki/vi: kidonge kimoja, vidonge viwili
+dawa hii | this medicine | n/n: dawa hii, dawa hizi
 Pona haraka! | Get well soon! | kupona = to heal
 chemist | pharmacy | Kenyans say "chemist"
 

@@ -61,7 +61,7 @@ t: The price goes up. | Bei [inapanda|inashuka|zinapanda]. || inapanda = goes up
 t: Who is getting off? | Nani [anashuka|wanashuka|unashuka]? || nani takes the he/she form.
 t: Tomorrow I'll come back. | Kesho [nitarudi|utarudi|ninarudi].
 c: There's space. | Kuna [nafasi|nauli|kona]. || kuna = there is.
-t: Drive slowly! | Endesha [polepole|haraka|moja kwa moja]!
+t: Drive slowly! | Endesha [pole pole|haraka|moja kwa moja]!
 
 @vocab
 Panda! | Get in! / Get on! | kupanda = to climb, to board
@@ -174,7 +174,7 @@ gl: huko = "there" — that place (Naivasha)
 > Otieno: Tutaenda Naivasha na marafiki. Utakuja? | We're going to Naivasha with friends. Will you come?
 < John: Ndiyo, nitakuja! Mtaondoka saa ngapi? | Yes, I'll come! What time will you leave?
   x: Ndiyo, utakuja! Mtaondoka saa ngapi? ; Ndiyo, nitakuja! Mtaondoka saa gani?
-> Otieno: Saa moja asubuhi. Lazima tuondoke mapema, kuna foleni. | At seven in the morning. We have to leave early, there's traffic.
+> Otieno: Saa moja asubuhi. Lazima tuondoke mapema, kuna magari mingi. | At seven in the morning. We have to leave early, there's traffic.
 < John: Saa moja? Mapema sana! Saa moja ni seven, sivyo? | Saa moja? Very early! Saa moja is seven, right?
   x: Saa moja? Mapema sana! Saa moja ni one, sivyo? ; Saa moja? Mapema sana! Saa moja ni six, sivyo?
 > Otieno: Ndiyo, seven. Tutapita kwako saa kumi na mbili na nusu. | Yes, seven. We'll pass by your place at six thirty.

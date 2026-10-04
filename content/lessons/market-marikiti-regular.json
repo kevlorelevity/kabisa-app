@@ -727,7 +727,7 @@
       "id": "bc1395f6-bfda-570a-b01f-28dfec5884a9",
       "speaker": "Mteja",
       "role": "user",
-      "swahili": "Ndiyo maana nimerudi! Leo nataka maembe na ndizi mbivu.",
+      "swahili": "Ndiyo maana nimerudi! Leo nataka maembe na ndizi zilizoiva.",
       "english": "That's why I'm back! Today I want mangoes and ripe bananas.",
       "words": [
         {
@@ -824,17 +824,17 @@
           "gloss": "and / with"
         },
         {
-          "text": "ndizi mbivu",
-          "gloss": "ripe bananas"
+          "text": "ndizi zilizoiva",
+          "gloss": "ripe bananas — lit. \"bananas that have ripened\" (kuiva = to ripen / be cooked)"
         }
       ],
       "options": [
         {
-          "swahili": "Ndiyo maana nimerudi! Leo nataka maembe na ndizi mbivu.",
+          "swahili": "Ndiyo maana nimerudi! Leo nataka maembe na ndizi zilizoiva.",
           "correct": true
         },
         {
-          "swahili": "Ndiyo maana nimeondoka! Leo nataka maembe na ndizi mbivu.",
+          "swahili": "Ndiyo maana nimeondoka! Leo nataka maembe na ndizi zilizoiva.",
           "correct": false
         },
         {
@@ -1360,9 +1360,9 @@
     },
     {
       "id": "cb14b988-a5ac-5bed-a307-f8ad5b8ac219",
-      "swahili": "mbivu / mbichi",
-      "english": "ripe / unripe |",
-      "exampleContext": "",
+      "swahili": "zilizoiva / mbichi",
+      "english": "ripe / unripe",
+      "exampleContext": "kuiva = to ripen / be cooked",
       "partOfSpeech": "phrase"
     }
   ],
@@ -1775,7 +1775,7 @@
       "after": "",
       "options": [
         {
-          "text": "mbivu",
+          "text": "zilizoiva",
           "correct": true
         },
         {
@@ -1789,7 +1789,10 @@
           "feedback": "mbovu = rotten / broken / bad"
         }
       ],
-      "explanation": "mbivu = ripe; mbichi = unripe / raw; mbovu = rotten."
+      "explanation": "zilizoiva = ripe (have ripened); mbichi = unripe / raw; mbovu = rotten.",
+      "grammar": [
+        "relatives"
+      ]
     }
   ]
 }

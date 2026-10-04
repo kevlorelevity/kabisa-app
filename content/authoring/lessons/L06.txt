@@ -100,7 +100,7 @@ gl: kivuli = shade
 gl: Mwangi = Mwangi (name)
 gl: aje = "(that) he comes" — a- + -j- + -e: subjunctive of kuja #subjunctive
 gl: aivute = "(that) he tows it" — a- + -i- (it) + -vut- + -e #subjunctive
-gl: gereji = garage / workshop
+gl: mekanika = mechanic
 gl: Ninakushukuru = "I'm grateful to you" — ni- + -na- + -ku- + -shukuru #object-infixes
 gl: usinilipe = "don't pay me" — u- + -si- + -ni- (me) + -lip- + -e #subjunctive
 gl: Utanilipa = "You'll pay me" #future-ta
@@ -121,7 +121,7 @@ gl: kesho kutwa = the day after tomorrow
 > Mwangi: Twende kwenye kivuli. Jua ni kali. | Let's go into the shade. The sun is strong.
 < Wewe: Na kama fundi hawezi kuitengeneza hapa? | And if the mechanic can't fix it here?
   x: Na kama fundi anaweza kuitengeneza hapa? ; Na kama fundi hawezi kunitengeneza hapa?
-> Mwangi: Basi inabidi tumwambie aivute mpaka gereji yake. | Then we'll have to tell him to tow it to his garage.
+> Mwangi: Basi inabidi tumwambie aivute mpaka kwa mekanika. | Then we'll have to tell him to tow it to the mechanic.
 < Wewe: Sawa. Naomba umwambie anipigie simu akifika. | Okay. Please tell him to call me when he arrives.
   x: Sawa. Naomba uniambie anipigie simu akifika. ; Sawa. Naomba umwambie nimpigie simu akifika.
 > Mwangi: Hakuna shida. Usijali, Nairobi ni hivi tu. | No problem. Don't worry, that's just Nairobi.
@@ -159,7 +159,7 @@ Twende | Let's go | The most useful subjunctive in Kenya
 kivuli | shade |
 Inabidi… | It's necessary… / We have to… | + subjunctive
 Mwambie anipigie | Tell him to call me | Subjunctive for the second verb
-gereji | garage / workshop |
+mekanika | mechanic | Nitapeleka gari kwa mekanika.
 Usinilipe! | Don't pay me! |
 Leo ni wewe, kesho ni mimi | Today you, tomorrow me | We all need help sometimes
 

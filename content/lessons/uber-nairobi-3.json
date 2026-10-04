@@ -26,6 +26,7 @@
     "greetings",
     "question-words",
     "na-have",
+    "sanifu-noun-classes",
     "adjective-agreement",
     "future-ta",
     "time-swahili",
@@ -464,8 +465,8 @@
       "id": "2809026c-5582-55a3-8d09-8afee662d20f",
       "speaker": "Mteja",
       "role": "user",
-      "swahili": "Pole sana. Leo kuna foleni mbaya sana!",
-      "english": "So sorry. Today there's a really bad jam!",
+      "swahili": "Pole sana. Leo kuna magari mingi sana!",
+      "english": "So sorry. Today there's so much traffic!",
       "words": [
         {
           "text": "Pole sana",
@@ -486,36 +487,20 @@
           ]
         },
         {
-          "text": "foleni",
-          "gloss": "queue / traffic jam (from French \"file\") — n/n noun (same word for one & many)",
+          "text": "magari",
+          "gloss": "cars — Kenyans give it n/n agreement",
           "grammar": [
-            "noun-classes-mwa-nn"
-          ]
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — magari yangu, magari haya"
         },
         {
-          "text": "mbaya",
-          "gloss": "\"bad\" — m/wa singular agreement (one person / animal).",
+          "text": "mingi",
+          "gloss": "\"a lot\" — Kenyan all-purpose form (pesa mingi)",
           "grammar": [
             "adjective-agreement"
           ],
-          "conjugation": {
-            "verb": "-baya (bad)",
-            "tense": "Agreement",
-            "rows": [
-              {
-                "pronoun": "m/wa one",
-                "form": "mbaya"
-              },
-              {
-                "pronoun": "m/wa many",
-                "form": "wabaya"
-              },
-              {
-                "pronoun": "n/n",
-                "form": "mbaya"
-              }
-            ]
-          }
+          "sanifu": "Sanifu: nyingi (pesa nyingi)"
         },
         {
           "text": "sana",
@@ -524,15 +509,15 @@
       ],
       "options": [
         {
-          "swahili": "Pole sana. Leo kuna foleni mbaya sana!",
+          "swahili": "Pole sana. Leo kuna magari mingi sana!",
           "correct": true
         },
         {
-          "swahili": "Asante sana. Leo kuna foleni mbaya sana!",
+          "swahili": "Asante sana. Leo kuna magari mingi sana!",
           "correct": false
         },
         {
-          "swahili": "Pole sana. Leo kuna foleni nzuri sana!",
+          "swahili": "Pole sana. Leo kuna magari machache sana!",
           "correct": false
         }
       ]
@@ -1113,7 +1098,7 @@
       "id": "9b323580-0fea-5063-b19e-36b1216a0ab9",
       "speaker": "Dereva",
       "role": "auto",
-      "swahili": "Aah, pole! Simu yangu ilizima — betri iliisha.",
+      "swahili": "Aah, pole! Simu yangu ilizima — batari iliisha.",
       "english": "Ah, sorry! My phone died — the battery ran out.",
       "words": [
         {
@@ -1179,8 +1164,8 @@
           ]
         },
         {
-          "text": "betri",
-          "gloss": "battery — n/n noun (same word for one & many)",
+          "text": "batari",
+          "gloss": "battery (everyday Kenyan) — n/n noun (same word for one & many)",
           "grammar": [
             "noun-classes-mwa-nn"
           ]
@@ -1466,9 +1451,10 @@
     },
     {
       "id": "5e35f26d-c6f7-542d-9b76-20976d72bd31",
-      "swahili": "foleni",
-      "english": "traffic jam / queue",
-      "exampleContext": "Also \"jam\""
+      "swahili": "kuna magari mingi",
+      "english": "there's traffic",
+      "exampleContext": "lit. \"there are many cars\" — the everyday Kenyan way to say there's a jam",
+      "partOfSpeech": "phrase"
     },
     {
       "id": "3e8c0bb2-ad23-5692-b5e3-4a33fe93bb6a",
@@ -1504,9 +1490,9 @@
     },
     {
       "id": "e704214e-ca58-5d06-8fc5-03c7330a8b99",
-      "swahili": "Betri iliisha",
-      "english": "The battery ran out |",
-      "exampleContext": "",
+      "swahili": "Batari iliisha",
+      "english": "The battery ran out",
+      "exampleContext": "batari = battery",
       "partOfSpeech": "phrase"
     }
   ],
@@ -1927,7 +1913,7 @@
       "id": "27e33dad-d4b2-5f37-9418-c7310f6f9453",
       "mode": "translate",
       "english": "The battery ran out.",
-      "before": "Betri ",
+      "before": "Batari ",
       "after": ".",
       "options": [
         {

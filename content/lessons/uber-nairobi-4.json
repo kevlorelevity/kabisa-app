@@ -22,6 +22,7 @@
     "present-na",
     "perfect-me",
     "possessives",
+    "sanifu-noun-classes",
     "adjective-agreement",
     "ni-copula",
     "locative-ni",
@@ -43,7 +44,7 @@
       "id": "c4989580-d234-54e0-b0fe-e865ac6ad0a6",
       "speaker": "Mteja",
       "role": "user",
-      "swahili": "Kamau, habari? Nadhani nimesahau begi yangu kwa gari yako asubuhi.",
+      "swahili": "Kamau, habari? Nadhani nimesahau mfuko yangu kwa gari yako asubuhi.",
       "english": "Kamau, how are you? I think I forgot my bag in your car this morning.",
       "words": [
         {
@@ -132,46 +133,9 @@
           }
         },
         {
-          "text": "begi",
-          "gloss": "bag — Kenyan word",
-          "sanifu": "Sanifu: mfuko"
-        },
-        {
-          "text": "yangu",
-          "gloss": "\"my\" — n/n singular agreement (nyumba yangu). In Kenyan speech also used for family words and most things (jina yangu, gari yangu).",
-          "grammar": [
-            "possessives"
-          ],
-          "conjugation": {
-            "verb": "possessive (n/n singular)",
-            "tense": "my · your · his/her · our · your (pl.) · their",
-            "rows": [
-              {
-                "pronoun": "my",
-                "form": "yangu"
-              },
-              {
-                "pronoun": "your",
-                "form": "yako"
-              },
-              {
-                "pronoun": "his/her",
-                "form": "yake"
-              },
-              {
-                "pronoun": "our",
-                "form": "yetu"
-              },
-              {
-                "pronoun": "your (pl.)",
-                "form": "yenu"
-              },
-              {
-                "pronoun": "their",
-                "form": "yao"
-              }
-            ]
-          }
+          "text": "mfuko yangu",
+          "gloss": "my bag — everyday Kenyan agreement",
+          "sanifu": "Sanifu: mfuko wangu (m/mi class)"
         },
         {
           "text": "kwa gari",
@@ -225,15 +189,15 @@
       "sanifu": "Kamau, habari? Nadhani nimesahau mfuko wangu katika gari lako asubuhi.",
       "options": [
         {
-          "swahili": "Kamau, habari? Nadhani nimesahau begi yangu kwa gari yako asubuhi.",
+          "swahili": "Kamau, habari? Nadhani nimesahau mfuko yangu kwa gari yako asubuhi.",
           "correct": true
         },
         {
-          "swahili": "Kamau, habari? Nadhani umesahau begi yangu kwa gari yako asubuhi.",
+          "swahili": "Kamau, habari? Nadhani umesahau mfuko yangu kwa gari yako asubuhi.",
           "correct": false
         },
         {
-          "swahili": "Kamau, habari? Nadhani nimesahau begi yako kwa gari yangu asubuhi.",
+          "swahili": "Kamau, habari? Nadhani nimesahau mfuko yako kwa gari yangu asubuhi.",
           "correct": false
         }
       ]
@@ -242,13 +206,16 @@
       "id": "6d2a2cc4-86fd-50e5-81d6-0d8b2ab5502a",
       "speaker": "Dereva",
       "role": "auto",
-      "swahili": "Begi nyeusi, na kompyuta ndani? Kumbe ni yako! Niliiona, nikakuwekea.",
+      "swahili": "Mfuko nyeusi, na kompyuta ndani? Kumbe ni yako! Niliiona, nikakuwekea.",
       "english": "A black bag, with a laptop inside? Oh, so it's yours! I saw it and kept it for you.",
       "words": [
         {
-          "text": "Begi",
-          "gloss": "bag — Kenyan word",
-          "sanifu": "Sanifu: mfuko"
+          "text": "Mfuko",
+          "gloss": "bag (plural mifuko) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: m/mi class — mfuko wangu, mifuko"
         },
         {
           "text": "nyeusi",
@@ -806,7 +773,7 @@
       "id": "7935473e-95bc-5298-a8d1-023fa8b9ac48",
       "speaker": "Dereva",
       "role": "auto",
-      "swahili": "Niko kwa geti. Nimekuletea begi yako.",
+      "swahili": "Niko kwa geti. Nimekuletea mfuko yako.",
       "english": "I'm at the gate. I've brought you your bag.",
       "words": [
         {
@@ -906,9 +873,12 @@
           }
         },
         {
-          "text": "begi",
-          "gloss": "bag — Kenyan word",
-          "sanifu": "Sanifu: mfuko"
+          "text": "mfuko",
+          "gloss": "bag (plural mifuko) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: m/mi class — mfuko wangu, mifuko"
         },
         {
           "text": "yako",
@@ -1270,12 +1240,12 @@
   "vocabulary": [
     {
       "id": "e2914ed7-e229-55f4-a98e-b3fcae720e02",
-      "swahili": "Nimesahau begi yangu",
+      "swahili": "Nimesahau mfuko yangu",
       "english": "I forgot my bag",
-      "exampleContext": "Kenyan begi.",
+      "exampleContext": "Everyday Kenyan agreement",
       "partOfSpeech": "phrase",
       "sanifu": "Nimesahau mfuko wangu",
-      "sanifuNote": "Sanifu word: mfuko (m/mi class)"
+      "sanifuNote": "mfuko is m/mi in Sanifu: mfuko wangu, mifuko yangu"
     },
     {
       "id": "b971dd96-4346-5fea-8d2a-c09c2949dbb9",
@@ -1474,7 +1444,7 @@
       "mode": "translate",
       "english": "I've brought you your bag.",
       "before": "",
-      "after": " begi yako.",
+      "after": " mfuko yako.",
       "options": [
         {
           "text": "Nimekuletea",
@@ -1719,7 +1689,7 @@
       "id": "900d3f42-b680-5996-a7f9-7164bf8ae478",
       "mode": "translate",
       "english": "The bag was found.",
-      "before": "Begi ",
+      "before": "Mfuko ",
       "after": ".",
       "options": [
         {

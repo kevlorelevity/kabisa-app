@@ -108,7 +108,7 @@
       "id": "d87be8e6-b3f7-5adb-b164-51018d387d1f",
       "speaker": "Dereva",
       "role": "auto",
-      "swahili": "Pole sana, boss! Foleni ya Westlands ni mbaya. Lakini, kawia ufike, sivyo?",
+      "swahili": "Pole sana, boss! Msongamano wa magari Westlands ni mbaya. Lakini, kawia ufike, sivyo?",
       "english": "So sorry, boss! The Westlands jam is terrible. But better late than never, right?",
       "words": [
         {
@@ -123,8 +123,12 @@
           ]
         },
         {
-          "text": "Foleni ya Westlands",
-          "gloss": "the Westlands jam"
+          "text": "Msongamano wa magari",
+          "gloss": "traffic congestion — the formal word; everyday Kenyan: kuna magari mingi"
+        },
+        {
+          "text": "Westlands",
+          "gloss": "Westlands — busy Nairobi neighbourhood"
         },
         {
           "text": "ni",
@@ -268,7 +272,7 @@
           "correct": false
         },
         {
-          "swahili": "Haha! Sawa, kawia ufike. Lakini sasa usiendeshe kwa kasi — polepole haina baraka.",
+          "swahili": "Haha! Sawa, kawia ufike. Lakini sasa usiendeshe kwa kasi — pole pole haina baraka.",
           "correct": false
         }
       ]
@@ -799,7 +803,7 @@
       "id": "a6314c06-8858-5934-980e-51f422b303aa",
       "speaker": "Mteja",
       "role": "user",
-      "swahili": "Ni safari ndefu! Lakini polepole ndio mwendo. Nikikuhitaji, nitakupigia.",
+      "swahili": "Ni safari ndefu! Lakini pole pole ndio mwendo. Nikikuhitaji, nitakupigia.",
       "english": "It's a long trip! But slow and steady is the way. If I need you, I'll call you.",
       "words": [
         {
@@ -846,7 +850,7 @@
           "gloss": "but"
         },
         {
-          "text": "polepole ndio mwendo",
+          "text": "pole pole ndio mwendo",
           "gloss": "\"Slow and steady is the way\" — lit. \"slowly is the (right) pace\"",
           "grammar": [
             "idioms-proverbs"
@@ -902,15 +906,15 @@
       ],
       "options": [
         {
-          "swahili": "Ni safari ndefu! Lakini polepole ndio mwendo. Nikikuhitaji, nitakupigia.",
+          "swahili": "Ni safari ndefu! Lakini pole pole ndio mwendo. Nikikuhitaji, nitakupigia.",
           "correct": true
         },
         {
-          "swahili": "Ni safari fupi! Lakini polepole ndio mwendo. Nikikuhitaji, nitakupigia.",
+          "swahili": "Ni safari fupi! Lakini pole pole ndio mwendo. Nikikuhitaji, nitakupigia.",
           "correct": false
         },
         {
-          "swahili": "Ni safari ndefu! Lakini polepole ndio mwendo. Ningekuhitaji, nilikupigia.",
+          "swahili": "Ni safari ndefu! Lakini pole pole ndio mwendo. Ningekuhitaji, nilikupigia.",
           "correct": false
         }
       ]
@@ -1339,7 +1343,7 @@
     },
     {
       "id": "af583b71-7897-51bd-ad41-0faee2d9df81",
-      "swahili": "Polepole ndio mwendo",
+      "swahili": "Pole pole ndio mwendo",
       "english": "Slow and steady is the way |",
       "exampleContext": "",
       "partOfSpeech": "phrase"
@@ -1487,7 +1491,7 @@
       "id": "c360e527-ddec-5e40-ada6-f0ebae1dd97c",
       "mode": "complete",
       "english": "Slow and steady is the way.",
-      "before": "Polepole ndio ",
+      "before": "Pole pole ndio ",
       "after": ".",
       "options": [
         {

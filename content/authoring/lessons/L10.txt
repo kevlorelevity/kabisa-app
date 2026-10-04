@@ -13,7 +13,7 @@ gl: mataa = traffic lights (Kenyan) — lit. "the lights"
 gl: Kawia ufike = "Better late than never" — lit. "delay, but arrive". A proverb. #idioms-proverbs
 gl: kawia = "delay!" — imperative of kukawia
 gl: ufike = "(so that) you arrive" #subjunctive
-gl: foleni ya Westlands = the Westlands jam
+gl: msongamano wa magari = traffic congestion — the formal word; everyday Kenyan: kuna magari mingi
 gl: Haraka haraka haina baraka = "Hurry hurry has no blessing" — rushing brings mistakes. #idioms-proverbs
 gl: baraka = blessing
 gl: umenivunja mbavu = "you've cracked me up" — lit. "you've broken my ribs" #idioms-proverbs
@@ -24,7 +24,7 @@ gl: Mambo ni mengi, muda ni mchache = "So much to do, so little time" — a famo
 gl: mchache = little / few (m/mi agreement with muda)
 gl: wakati umetupa kisogo = "time's up" — lit. "time has turned the back of its head (on us)" #idioms-proverbs
 gl: kisogo = the back of the head
-gl: Polepole ndio mwendo = "Slow and steady is the way" — lit. "slowly is the (right) pace" #idioms-proverbs
+gl: Pole pole ndio mwendo = "Slow and steady is the way" — lit. "slowly is the (right) pace" #idioms-proverbs
 gl: mwendo = pace / speed
 gl: Nipe nikupe = "You scratch my back, I'll scratch yours" — lit. "give me, I'll give you" #idioms-proverbs
 gl: nikupe = "(so that) I give you" #subjunctive
@@ -44,9 +44,9 @@ gl: nimekuwa nikikungoja = "I've been waiting for you" #continuous-tenses
 
 < Mteja: Kamau! Umeniwacha kwa mataa! Nimekuwa nikikungoja kwa dakika arobaini! | Kamau! You left me hanging! I've been waiting for you for forty minutes!
   x: Kamau! Umeniwacha kwa mataa! Nitakuwa nikikungoja kwa dakika arobaini! ; Kamau! Nimekuwacha kwa mataa! Nimekuwa nikikungoja kwa dakika arobaini!
-> Dereva: Pole sana, boss! Foleni ya Westlands ni mbaya. Lakini, kawia ufike, sivyo? | So sorry, boss! The Westlands jam is terrible. But better late than never, right?
+> Dereva: Pole sana, boss! Msongamano wa magari Westlands ni mbaya. Lakini, kawia ufike, sivyo? | So sorry, boss! The Westlands jam is terrible. But better late than never, right?
 < Mteja: Haha! Sawa, kawia ufike. Lakini sasa usiendeshe kwa kasi — haraka haraka haina baraka. | Haha! Fine, better late than never. But now don't drive fast — hurry hurry has no blessing.
-  x: Haha! Sawa, kawia ufike. Lakini sasa endesha kwa kasi — haraka haraka haina baraka. ; Haha! Sawa, kawia ufike. Lakini sasa usiendeshe kwa kasi — polepole haina baraka.
+  x: Haha! Sawa, kawia ufike. Lakini sasa endesha kwa kasi — haraka haraka haina baraka. ; Haha! Sawa, kawia ufike. Lakini sasa usiendeshe kwa kasi — pole pole haina baraka.
 > Dereva: Wee! Kumbe sasa unaongea kama Mkenya halisi! Umenivunja mbavu! | Whoa! Oh, so now you talk like a real Kenyan! You've cracked me up!
 < Mteja: Unatia chumvi! Bado ninajifunza. Lakini mambo ni mengi, muda ni mchache. | You're exaggerating! I'm still learning. But so much to do, so little time.
   x: Unatia sukari! Bado ninajifunza. Lakini mambo ni mengi, muda ni mchache. ; Unatia chumvi! Bado ninajifunza. Lakini mambo ni machache, muda ni mwingi.
@@ -54,8 +54,8 @@ gl: nimekuwa nikikungoja = "I've been waiting for you" #continuous-tenses
 < Mteja: Ilikuwa poa, lakini saa nne wakati ulitupa kisogo — kila mtu alikuwa amechoka. | It was cool, but at ten time was up — everyone was tired.
   x: Ilikuwa poa, lakini saa nne wakati ulitupa mkono — kila mtu alikuwa amechoka. ; Itakuwa poa, lakini saa nne wakati ulitupa kisogo — kila mtu alikuwa amechoka.
 > Dereva: Haha! Na wiki ijayo, unaenda Mombasa? Ningekuwa najua mapema, ningekupeleka mimi! | Haha! And next week, are you going to Mombasa? If I'd known earlier, I would have driven you myself!
-< Mteja: Ni safari ndefu! Lakini polepole ndio mwendo. Nikikuhitaji, nitakupigia. | It's a long trip! But slow and steady is the way. If I need you, I'll call you.
-  x: Ni safari fupi! Lakini polepole ndio mwendo. Nikikuhitaji, nitakupigia. ; Ni safari ndefu! Lakini polepole ndio mwendo. Ningekuhitaji, nilikupigia.
+< Mteja: Ni safari ndefu! Lakini pole pole ndio mwendo. Nikikuhitaji, nitakupigia. | It's a long trip! But slow and steady is the way. If I need you, I'll call you.
+  x: Ni safari fupi! Lakini pole pole ndio mwendo. Nikikuhitaji, nitakupigia. ; Ni safari ndefu! Lakini pole pole ndio mwendo. Ningekuhitaji, nilikupigia.
 > Dereva: Poa. Wewe ni mteja wangu wa kwanza kila wakati. Nipe nikupe! | Cool. You're always my number-one customer. You scratch my back, I'll scratch yours!
 < Mteja: Kabisa! Tangu siku ya kwanza ulipokuwa ukiniuliza "unaenda wapi?", umekuwa rafiki wa kweli. | Absolutely! Since the first day, when you were asking me "where are you going?", you've been a true friend.
   x: Kabisa! Tangu siku ya kwanza utakapokuwa ukiniuliza "unaenda wapi?", umekuwa rafiki wa kweli. ; Kabisa! Tangu siku ya kwanza ulipokuwa ukiniuliza "unaenda wapi?", umekuwa adui wa kweli.
@@ -68,7 +68,7 @@ gl: nimekuwa nikikungoja = "I've been waiting for you" #continuous-tenses
 c: You left me hanging! (lit. "at the traffic lights") | Umeniwacha kwa [mataa|maji|mwendo]! || Kenyan idiom for being stood up or left stranded.
 c: Better late than never. | Kawia [ufike|ufika|umefika]. || A methali (proverb): "delay, but arrive". ufike = subjunctive.
 c: Hurry hurry has no blessing. | Haraka haraka haina [baraka|haraka|shida]. || Said to anyone rushing (or driving too fast).
-c: Slow and steady is the way. | Polepole ndio [mwendo|baraka|mbavu].
+c: Slow and steady is the way. | Pole pole ndio [mwendo|baraka|mbavu].
 c: You're exaggerating! (lit. "adding salt") | Unatia [chumvi|sukari|pilipili]! || kutia chumvi = to exaggerate.
 c: You've cracked me up! (lit. "broken my ribs") | Umenivunja [mbavu|mguu|moyo]!
 c: So much to do, so little time. | Mambo ni mengi, muda ni [mchache|mwingi|mrefu]. || A favourite Kenyan saying.
@@ -87,7 +87,7 @@ c: Good night, and sleep well! | Usiku mwema, na lala [salama|sana|haraka]!
 Umeniwacha kwa mataa | You left me hanging | Kenyan idiom: lit. "you left me at the lights"
 Kawia ufike | Better late than never | Methali: "delay, but arrive"
 Haraka haraka haina baraka | Hurry hurry has no blessing | Said to anyone rushing
-Polepole ndio mwendo | Slow and steady is the way |
+Pole pole ndio mwendo | Slow and steady is the way |
 kutia chumvi | to exaggerate | Lit. "to add salt"
 kuvunja mbavu | to crack someone up | Lit. "to break ribs"
 Mambo ni mengi, muda ni mchache | So much to do, so little time |

@@ -102,7 +102,7 @@ for w, g in [
     ('stage', 'matatu / bus stop ("steji")'), ('steji', 'stop / stage where matatus pick up'), ('pikipiki', 'motorbike'),
     ('bodaboda', 'motorbike taxi'), ('baiskeli', 'bicycle'), ('treni', 'train'), ('teksi', 'taxi'), ('lori', 'truck'),
     ('matatu', 'matatu — Kenya\'s shared minibus taxi'), ('ajali', 'accident'), ('foleni', 'queue / traffic jam (from French "file")'),
-    ('jam', 'traffic jam (English loanword)'), ('trafiki', 'traffic'), ('kasi', 'speed'), ('injini', 'engine'), ('betri', 'battery'),
+    ('jam', 'traffic jam (English loanword)'), ('trafiki', 'traffic'), ('kasi', 'speed'), ('injini', 'engine'), ('betri', 'battery'), ('batari', 'battery (everyday Kenyan)'),
     ('petroli', 'petrol'), ('dizeli', 'diesel'), ('pampu', 'pump'), ('tairi', 'tyre (pl. matairi)'), ('risiti', 'receipt'),
     ('dakika', 'minute'), ('sekunde', 'second'), ('robo', 'quarter'), ('nusu', 'half'), ('asubuhi', 'morning'),
     ('mchana', 'afternoon / daytime'), ('jioni', 'evening'), ('usiku', 'night (u-class, used like n/n)'), ('leo', 'today'),

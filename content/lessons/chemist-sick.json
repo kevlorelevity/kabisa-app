@@ -32,7 +32,8 @@
     "imperatives",
     "perfect-me",
     "ki-po-ka",
-    "numbers-money"
+    "numbers-money",
+    "demonstratives"
   ],
   "turns": [
     {
@@ -785,7 +786,7 @@
         },
         {
           "text": "dawa hii",
-          "gloss": "\"this medicine\""
+          "gloss": "this medicine — n/n: dawa hii, dawa hizi"
         },
         {
           "text": "namna gani",
@@ -814,8 +815,8 @@
       "id": "750296b7-9545-5da4-aa19-09df9375f91c",
       "speaker": "Daktari",
       "role": "auto",
-      "swahili": "Kunywa vidonge viwili, mara tatu kwa siku, baada ya kula.",
-      "english": "Take two tablets, three times a day, after eating.",
+      "swahili": "Kunywa dawa hii mara tatu kwa siku, baada ya kula.",
+      "english": "Take this medicine three times a day, after eating.",
       "words": [
         {
           "text": "Kunywa",
@@ -825,16 +826,8 @@
           ]
         },
         {
-          "text": "vidonge",
-          "gloss": "tablets (plural of kidonge)"
-        },
-        {
-          "text": "viwili",
-          "gloss": "\"two\" — ki/vi agreement (vidonge viwili, viti viwili).",
-          "grammar": [
-            "sanifu-noun-classes"
-          ],
-          "sanifu": "ki/vi class numbers: kimoja, viwili, vitatu"
+          "text": "dawa hii",
+          "gloss": "this medicine — n/n: dawa hii, dawa hizi"
         },
         {
           "text": "mara tatu kwa siku",
@@ -1117,9 +1110,10 @@
     },
     {
       "id": "73888732-82e2-5434-a9ee-c17d9a27c3e5",
-      "swahili": "vidonge",
-      "english": "tablets",
-      "exampleContext": "ki/vi: kidonge kimoja, vidonge viwili"
+      "swahili": "dawa hii",
+      "english": "this medicine",
+      "exampleContext": "n/n: dawa hii, dawa hizi",
+      "partOfSpeech": "phrase"
     },
     {
       "id": "037413e0-d48f-5718-b40a-4c1b6c16bb6b",
@@ -1411,28 +1405,28 @@
     {
       "id": "da4d31e4-0024-50ce-8de0-f2f757934f32",
       "mode": "translate",
-      "english": "two tablets",
-      "before": "vidonge ",
+      "english": "this medicine",
+      "before": "dawa ",
       "after": "",
       "options": [
         {
-          "text": "viwili",
+          "text": "hii",
           "correct": true
         },
         {
-          "text": "mbili",
+          "text": "huyu",
           "correct": false,
-          "feedback": "mbili = 2 (n/n form"
+          "feedback": "huyu = this (person)"
         },
         {
-          "text": "wawili",
+          "text": "hiki",
           "correct": false,
-          "feedback": "wawili = two (m/wa: watu wawili)"
+          "feedback": "hiki = this"
         }
       ],
-      "explanation": "ki/vi nouns take vi- numbers: viwili. (A Sanifu detail Kenyans mostly keep.)",
+      "explanation": "dawa is n/n: dawa hii (this medicine), dawa hizi (these medicines).",
       "grammar": [
-        "sanifu-noun-classes"
+        "demonstratives"
       ]
     },
     {

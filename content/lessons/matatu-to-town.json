@@ -1553,7 +1553,7 @@
       "after": "!",
       "options": [
         {
-          "text": "polepole",
+          "text": "pole pole",
           "correct": true
         },
         {
@@ -1567,7 +1567,7 @@
           "feedback": "moja kwa moja = straight on / directly"
         }
       ],
-      "explanation": "polepole: slowly / gently"
+      "explanation": "pole pole: slowly / gently"
     }
   ]
 }

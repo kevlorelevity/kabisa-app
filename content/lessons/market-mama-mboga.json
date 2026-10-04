@@ -20,9 +20,9 @@
     "na-have",
     "demonstratives",
     "numbers-money",
+    "noun-classes-mwa-nn",
     "present-na",
     "question-words",
-    "noun-classes-mwa-nn",
     "greetings",
     "ni-copula",
     "adjective-agreement",
@@ -37,7 +37,7 @@
       "id": "f3e9b6c5-ad6a-56dd-88f8-969d31477bb3",
       "speaker": "Mama Mboga",
       "role": "auto",
-      "swahili": "Karibu, customer! Unataka nini leo?",
+      "swahili": "Karibu, mteja! Unataka nini leo?",
       "english": "Welcome, customer! What do you want today?",
       "words": [
         {
@@ -45,8 +45,11 @@
           "gloss": "near / welcome / almost"
         },
         {
-          "text": "customer",
-          "gloss": "customer (English — sellers call out to you this way)"
+          "text": "mteja",
+          "gloss": "customer / client — m/wa noun (people & animals; plural wateja)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
         },
         {
           "text": "Unataka",
@@ -746,7 +749,7 @@
       "id": "bd064f43-65f8-5b55-843c-b7df3cb3dd53",
       "speaker": "Mteja",
       "role": "user",
-      "swahili": "Sina pesa taslimu. Una M-Pesa?",
+      "swahili": "Sina pesa mkononi. Una M-Pesa?",
       "english": "I don't have cash. Do you have M-Pesa?",
       "words": [
         {
@@ -796,8 +799,18 @@
           }
         },
         {
-          "text": "pesa taslimu",
-          "gloss": "cash"
+          "text": "pesa",
+          "gloss": "money — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "mkononi",
+          "gloss": "\"at / in / to the hand\" — mkono + -ni (place suffix).",
+          "grammar": [
+            "locative-ni"
+          ]
         },
         {
           "text": "Una",
@@ -854,15 +867,15 @@
       ],
       "options": [
         {
-          "swahili": "Sina pesa taslimu. Una M-Pesa?",
+          "swahili": "Sina pesa mkononi. Una M-Pesa?",
           "correct": true
         },
         {
-          "swahili": "Nina pesa taslimu. Una M-Pesa?",
+          "swahili": "Nina pesa mkononi. Una M-Pesa?",
           "correct": false
         },
         {
-          "swahili": "Huna pesa taslimu. Una M-Pesa?",
+          "swahili": "Huna pesa mkononi. Una M-Pesa?",
           "correct": false
         }
       ]
@@ -1019,16 +1032,16 @@
     },
     {
       "id": "75bd3878-48ec-5dd1-87af-b3282b640e79",
-      "swahili": "Sina pesa taslimu",
+      "swahili": "Sina pesa mkononi",
       "english": "I don't have cash",
-      "exampleContext": "sina = I don't have",
+      "exampleContext": "pesa mkononi = cash, lit. money in the hand",
       "partOfSpeech": "phrase"
     },
     {
       "id": "04436cc4-1a99-5856-8902-043fe18829d1",
-      "swahili": "Una chenji?",
+      "swahili": "Una baki?",
       "english": "Do you have change?",
-      "exampleContext": "una = you have",
+      "exampleContext": "baki = change, what's left over",
       "partOfSpeech": "phrase"
     },
     {
@@ -1193,7 +1206,7 @@
       "mode": "translate",
       "english": "I don't have cash.",
       "before": "",
-      "after": " pesa taslimu.",
+      "after": " pesa mkononi.",
       "options": [
         {
           "text": "Sina",
@@ -1210,7 +1223,7 @@
           "feedback": "Hana = He/she doesn't have"
         }
       ],
-      "explanation": "sina = I don't have (si- + -na).",
+      "explanation": "sina = I don't have (si- + -na). pesa mkononi = cash (lit. money in the hand).",
       "grammar": [
         "na-have",
         "negative-present"
@@ -1221,7 +1234,7 @@
       "mode": "translate",
       "english": "Do you have change?",
       "before": "",
-      "after": " chenji?",
+      "after": " baki?",
       "options": [
         {
           "text": "Una",
@@ -1238,7 +1251,7 @@
           "feedback": "Ana = He/she has"
         }
       ],
-      "explanation": "una = you have. chenji comes from English \"change\".",
+      "explanation": "una = you have. baki = change (lit. what is left over).",
       "grammar": [
         "na-have"
       ]
@@ -1504,9 +1517,9 @@
           "feedback": "thao = thao"
         },
         {
-          "text": "chenji",
+          "text": "baki",
           "correct": false,
-          "feedback": "chenji = change (money back)"
+          "feedback": "baki = Remain!"
         }
       ],
       "explanation": "Market slang: punch = 500, thao = 1,000.",

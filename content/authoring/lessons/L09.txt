@@ -15,7 +15,6 @@ gl: kwamba = "that" — introduces what was said #conjunctions-kwamba
 gl: kingekuja = "it would come" — ki/vi agreement for chakula || Kenyans also say "ingekuja" #conditional-nge
 gl: jikoni = "in the kitchen" #locative-ni
 gl: kulikuwa na = there was
-gl: tatizo = problem || Sanifu: ji/ma class (tatizo / matatizo)
 gl: Ingawa = "Although" #conjunctions-kwamba
 gl: tunaelewa = we understand
 gl: hata hivyo = "even so / however" #conjunctions-kwamba
@@ -31,7 +30,7 @@ gl: nyingine = another (n/n)
 gl: yenye utulivu = "with quiet" — a quieter one
 gl: unavyotaka = "the way you want / as you like" — u- + -na- + -vyo- (how) + -taka #vyo-manner
 gl: bili = bill
-gl: punguzo = discount
+gl: tutawapunguzia bei = we'll reduce the price for you — kupunguza (reduce) + -i- (for)
 gl: kwa sababu ya = because of #conjunctions-kwamba
 gl: usumbufu = inconvenience
 gl: Tunathamini = "We appreciate"
@@ -44,7 +43,7 @@ gl: Afadhali = "Better / it's better" #comparatives
   s: Pole sana! Chakula chenu kiko karibu tayari.
 < Mteja: Mliniambia kwamba chakula kingekuja baada ya dakika ishirini. | You told me that the food would come in twenty minutes.
   x: Nilikuambia kwamba chakula kingekuja baada ya dakika ishirini. ; Mliniambia ingawa chakula kingekuja baada ya dakika ishirini.
-> Mhudumu: Ni kweli. Kulikuwa na tatizo jikoni — stima ilikatika. | It's true. There was a problem in the kitchen — the power went off.
+> Mhudumu: Ni kweli. Kulikuwa na shida jikoni — stima ilikatika. | It's true. There was a problem in the kitchen — the power went off.
 < Mteja: Ingawa tunaelewa, hata hivyo tuna njaa sana! | Although we understand, even so we're very hungry!
   x: Kwa sababu tunaelewa, hata hivyo tuna njaa sana! ; Ingawa hatuelewi, hata hivyo tuna njaa sana!
 > Mhudumu: Chakula kimefika sasa. Hiki hapa! | The food has arrived now. Here it is!
@@ -56,7 +55,7 @@ gl: Afadhali = "Better / it's better" #comparatives
 > Mhudumu: Mnataka kuhamia meza nyingine yenye utulivu? | Would you like to move to another, quieter table?
 < Mteja: Ndiyo, tafadhali. Tutakaa popote unavyotaka. | Yes, please. We'll sit wherever you like.
   x: Ndiyo, tafadhali. Tutakaa popote ninavyotaka. ; Hapana, tafadhali. Tutakaa popote unavyotaka.
-> Mhudumu: Sawa. Kwa sababu ya usumbufu, mtapata punguzo kwa bili. | Okay. Because of the inconvenience, you'll get a discount on the bill.
+> Mhudumu: Sawa. Kwa sababu ya usumbufu, tutawapunguzia bei. | Okay. Because of the inconvenience, we'll give you a discount.
 < Mteja: Asante. Afadhali kuchelewa kuliko kukosa kabisa! | Thanks. Better late than never!
   x: Asante. Afadhali kukosa kuliko kuchelewa kabisa! ; Pole. Afadhali kuchelewa kuliko kukosa kabisa!
 > Mhudumu: Haha, kweli kabisa. Tunathamini uvumilivu wenu. | Haha, absolutely true. We appreciate your patience.
@@ -76,7 +75,7 @@ t: Do the work as best you can. | Fanya kazi [unavyoweza|unaweza|utaweza]. || un
 t: as fast as possible | haraka [iwezekanavyo|inawezekana|itawezekana] || A set phrase: lit. "fast, the way it is possible".
 t: The power went off. | Stima [ilikatika|ilikata|itakatika]. || kukatika = to get cut (stative of kukata).
 c: Better late than never! | [Afadhali|Kwamba|Ingawa] kuchelewa kuliko kukosa kabisa! || afadhali… kuliko… = better… than…
-t: There was a problem in the kitchen. | [Kulikuwa na|Kuna|Kutakuwa na] tatizo jikoni.
+t: There was a problem in the kitchen. | [Kulikuwa na|Kuna|Kutakuwa na] shida jikoni.
 t: We appreciate your patience. | Tunathamini [uvumilivu|usumbufu|utulivu] wenu.
 
 @vocab
@@ -90,7 +89,7 @@ kwa sababu ya | because of | kwa sababu = because
 unavyotaka | the way you want / as you like | -vyo- = the way
 haraka iwezekanavyo | as fast as possible |
 Stima ilikatika | The power went off | Very Kenyan sentence
-punguzo | discount |
+tutawapunguzia bei | we'll give you a discount | kupunguza = to reduce
 Afadhali kuchelewa kuliko kukosa | Better late than never | Also: "Kawia ufike"
 uvumilivu | patience | from kuvumilia (to endure)
 
@@ -156,7 +155,7 @@ gl: kwa hamu = eagerly
 > Bi. Kamau: Vizuri. Kwa nini ungependa kujiunga na timu yetu? | Good. Why would you like to join our team?
 < Mgombea: Nimesikia kwamba hapa mnasaidiana sana, na ningependa kufanya kazi mahali kama hapa ili nijifunze zaidi. | I've heard that here you help each other a lot, and I'd like to work in a place like this so that I can learn more.
   x: Nimesikia ingawa hapa mnasaidiana sana, na ningependa kufanya kazi mahali kama hapa ili nijifunze zaidi. ; Nimesikia kwamba hapa mnasaidiana sana, na ningependa kufanya kazi mahali kama hapa ili ninajifunza zaidi.
-> Bi. Kamau: Changamoto kubwa zaidi ulikuwa nayo ni ipi? | What's the biggest challenge you've had?
+> Bi. Kamau: Changamoto kubwa zaidi ulikuwa nayo ni gani? | What's the biggest challenge you've had?
 < Mgombea: Wakati mmoja, mradi wetu ulikuwa ukichelewa sana. | At one point, our project was running very late.
   x: Wakati mmoja, mradi wetu utakuwa ukichelewa sana. ; Wakati mmoja, mradi wetu ulikuwa ukiwahi sana.
 > Bi. Kamau: Ulifanya nini? | What did you do?

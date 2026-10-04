@@ -16,7 +16,7 @@ gl: fresh = "fresh" — English loanword used all the time at the market.
 gl: shambani = "from / at the farm" — shamba + -ni (place suffix). #locative-ni
 gl: till namba = "till number" — the M-Pesa "Buy Goods" number the seller displays.
 
-> Mama Mboga: Karibu, customer! Unataka nini leo? | Welcome, customer! What do you want today?
+> Mama Mboga: Karibu, mteja! Unataka nini leo? | Welcome, customer! What do you want today?
 < Mteja: Habari, mama! Nataka nyanya na vitunguu. | Hello, mama! I want tomatoes and onions.
   x: Habari, mama! Unataka nyanya na vitunguu. ; Sina nyanya na vitunguu.
 > Mama Mboga: Nzuri. Nyanya hizi ni tamu sana. | Good. These tomatoes are really sweet.
@@ -34,8 +34,8 @@ gl: till namba = "till number" — the M-Pesa "Buy Goods" number the seller disp
 < Mteja: Hapana, asante. Leo sitaki sukuma. | No, thanks. Today I don't want sukuma.
   x: Ndiyo, asante. Leo sitaki sukuma. ; Hapana, asante. Leo hataki sukuma.
 > Mama Mboga: Sawa. Ni mia mbili na hamsini. | Okay. It's two hundred and fifty.
-< Mteja: Sina pesa taslimu. Una M-Pesa? | I don't have cash. Do you have M-Pesa?
-  x: Nina pesa taslimu. Una M-Pesa? ; Huna pesa taslimu. Una M-Pesa?
+< Mteja: Sina pesa mkononi. Una M-Pesa? | I don't have cash. Do you have M-Pesa?
+  x: Nina pesa mkononi. Una M-Pesa? ; Huna pesa mkononi. Una M-Pesa?
 > Mama Mboga: Ndiyo, till namba ni hii hapa. | Yes, the till number is right here.
 < Mteja: Poa. Asante sana, mama! | Cool. Thanks a lot, mama!
   x: Pole. Asante sana, mama! ; Poa. Karibu sana, mama!
@@ -47,8 +47,8 @@ t: I don't want onions. | [Sitaki|Hutaki|Hataki] vitunguu. || Negative present: 
 t: You don't want sukuma? | [Hutaki|Sitaki|Hataki] sukuma? || hu- = not you.
 t: She doesn't want sugar. | [Hataki|Hutaki|Hatutaki] sukari. || ha- = not he/she.
 t: We don't want sukuma today. | Leo [hatutaki|sitaki|hawataki] sukuma. || hatu- = not we.
-t: I don't have cash. | [Sina|Huna|Hana] pesa taslimu. || sina = I don't have (si- + -na).
-t: Do you have change? | [Una|Nina|Ana] chenji? || una = you have. chenji comes from English "change".
+t: I don't have cash. | [Sina|Huna|Hana] pesa mkononi. || sina = I don't have (si- + -na). pesa mkononi = cash (lit. money in the hand).
+t: Do you have change? | [Una|Nina|Ana] baki? || una = you have. baki = change (lit. what is left over).
 t: She doesn't have M-Pesa. | [Hana|Sina|Huna] M-Pesa.
 t: These tomatoes are sweet. | Nyanya [hizi|hii|huyu] ni tamu. || nyanya is n/n: hii = this one, hizi = these. Huyu is only for people.
 t: This tomato is sweet. | Nyanya [hii|hizi|hawa] ni tamu.
@@ -58,7 +58,7 @@ t: It's two hundred and fifty. | Ni mia mbili na [hamsini|tano|thelathini]. || h
 t: Give me six. | Nipe [sita|saba|tisa]. || sita = 6, saba = 7, tisa = 9.
 c: How many do you want? — Four, please. | Unataka ngapi? — [Nne|Leo|Hapa], tafadhali.
 t: I don't know. | [Sijui|Hujui|Hajui].
-t: Is it 500 bob? (slang) | Ni [punch|thao|chenji]? || Market slang: punch = 500, thao = 1,000.
+t: Is it 500 bob? (slang) | Ni [punch|thao|baki]? || Market slang: punch = 500, thao = 1,000.
 c: Thank you. Come again! | Asante. Karibu [tena|sana|tu]! || Karibu tena = "welcome again" — the seller's goodbye.
 
 @vocab
@@ -70,8 +70,8 @@ nyanya | tomato(es) | n/n noun: nyanya hii (this one), nyanya hizi (these). Also
 vitunguu | onions | Kenyans say "vitunguu hizi" | vitunguu hivi | Sanifu: ki/vi class (kitunguu / vitunguu)
 hizi / hii | these / this (n/n) | nyanya hizi = these tomatoes
 Nipe… | Give me… | ni- (me) + -pe (give). Normal at a stall.
-Sina pesa taslimu | I don't have cash | sina = I don't have
-Una chenji? | Do you have change? | una = you have
+Sina pesa mkononi | I don't have cash | pesa mkononi = cash, lit. money in the hand
+Una baki? | Do you have change? | baki = change, what's left over
 mia moja | 100 | mia mbili = 200, mia tano = 500 ("punch")
 hamsini | 50 | arobaini = 40, sitini = 60
 Karibu tena! | Come again! | The seller's goodbye.
@@ -164,7 +164,7 @@ gl: kwa kona = "at the corner" — Kenyan; Sanifu prefers kwenye kona. #locative
 gl: pale pale = "right there" — doubling makes it exact.
 gl: Enda = "Go!" — Kenyan imperative of kuenda. || Sanifu: Nenda! #imperatives
 gl: hata kidogo = "(not) at all" — lit. "even a little"
-gl: polepole = "slowly"
+gl: pole pole = "slowly"
 gl: vizuri = "well / nicely"
 gl: Kiswahili yako = "your Swahili" — Kenyan n/n agreement. || Sanifu: Kiswahili chako (ki/vi class) #possessives
 gl: ya kwanza = "the first" (n/n agreement)
@@ -185,8 +185,8 @@ gl: ya kwanza = "the first" (n/n agreement)
 < Mgeni: Ni dakika ngapi kwa miguu? | How many minutes on foot?
   x: Ni dakika wapi kwa miguu? ; Ni pesa ngapi kwa miguu?
 > Askari: Dakika tano tu. Si mbali hata kidogo. | Just five minutes. Not far at all.
-< Mgeni: Asante sana! Unaongea polepole, naelewa vizuri. | Thanks a lot! You speak slowly — I understand well.
-  x: Asante sana! Unaongea polepole, sielewi vizuri. ; Asante sana! Naongea polepole, unaelewa vizuri.
+< Mgeni: Asante sana! Unaongea pole pole, naelewa vizuri. | Thanks a lot! You speak slowly — I understand well.
+  x: Asante sana! Unaongea pole pole, sielewi vizuri. ; Asante sana! Naongea pole pole, unaelewa vizuri.
 > Askari: Hakuna shida. Kiswahili yako ni nzuri! | No problem. Your Swahili is good!
   s: Hakuna shida. Kiswahili chako ni kizuri!
 < Mgeni: Asante! Siku njema! | Thanks! Have a good day!

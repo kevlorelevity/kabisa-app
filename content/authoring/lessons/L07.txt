@@ -104,7 +104,7 @@ category: transport
 culture: Kamau again! This time you left your laptop bag in his car. Nairobi's Uber drivers often keep regular customers' numbers and do favours — returning lost items, waiting, running small errands. The prepositional extension (-ia/-ea) is how you talk about favours: "nimekuletea" (I've brought it to you), "nikuwekee" (shall I keep it for you), "ulinisubiria" (you waited for me).
 start: Evening. You realise your laptop bag is missing — you must have left it in Kamau's car this morning. You call him.
 grammar: verb-extensions, discourse-particles, object-infixes
-gl: begi = bag — Kenyan word || Sanifu: mfuko
+gl: mfuko yangu = my bag — everyday Kenyan agreement || Sanifu: mfuko wangu (m/mi class)
 gl: kompyuta = computer / laptop
 gl: Nimeisahau = "I've forgotten it" — ni- + -me- + -i- (it) + -sahau #object-infixes
 gl: kumbe = "oh! so…" #discourse-particles
@@ -128,10 +128,10 @@ gl: Mungu ni mwema = "God is good" — common expression of relief
 gl: mwema = good (m/wa)
 gl: dakika kumi = ten minutes
 
-< Mteja: Kamau, habari? Nadhani nimesahau begi yangu kwa gari yako asubuhi. | Kamau, how are you? I think I forgot my bag in your car this morning.
+< Mteja: Kamau, habari? Nadhani nimesahau mfuko yangu kwa gari yako asubuhi. | Kamau, how are you? I think I forgot my bag in your car this morning.
   s: Kamau, habari? Nadhani nimesahau mfuko wangu katika gari lako asubuhi.
-  x: Kamau, habari? Nadhani umesahau begi yangu kwa gari yako asubuhi. ; Kamau, habari? Nadhani nimesahau begi yako kwa gari yangu asubuhi.
-> Dereva: Begi nyeusi, na kompyuta ndani? Kumbe ni yako! Niliiona, nikakuwekea. | A black bag, with a laptop inside? Oh, so it's yours! I saw it and kept it for you.
+  x: Kamau, habari? Nadhani umesahau mfuko yangu kwa gari yako asubuhi. ; Kamau, habari? Nadhani nimesahau mfuko yako kwa gari yangu asubuhi.
+> Dereva: Mfuko nyeusi, na kompyuta ndani? Kumbe ni yako! Niliiona, nikakuwekea. | A black bag, with a laptop inside? Oh, so it's yours! I saw it and kept it for you.
 < Mteja: Mungu ni mwema! Asante sana kwa kuniwekea. | Thank God! Thanks so much for keeping it for me.
   x: Mungu ni mwema! Asante sana kwa kukuwekea. ; Mungu ni mwema! Pole sana kwa kuniwekea.
 > Dereva: Hakuna shida. Nikuletee sasa? | No problem. Shall I bring it to you now?
@@ -142,7 +142,7 @@ gl: dakika kumi = ten minutes
   s: Niko kazini, Westlands. Si tukutane kwenye lango la kampuni?
   x: Niko kazini, Westlands. Si tunakutana kwa geti ya kampuni? ; Niko kazini, Westlands. Si mkutane kwa geti ya kampuni?
 > Dereva: Sawa. Nitafika baada ya dakika kumi. | Okay. I'll be there in ten minutes.
-> Dereva: Niko kwa geti. Nimekuletea begi yako. | I'm at the gate. I've brought you your bag.
+> Dereva: Niko kwa geti. Nimekuletea mfuko yako. | I'm at the gate. I've brought you your bag.
 < Mteja: Asante sana! Na asubuhi ulinisubiria pia. Wewe ni mtu mzuri sana! | Thanks a lot! And this morning you waited for me too. You're a really good person!
   x: Asante sana! Na asubuhi nilikusubiria pia. Wewe ni mtu mzuri sana! ; Asante sana! Na asubuhi ulinisubiria pia. Wewe ni mtu mbaya sana!
 > Dereva: Haha, kawaida tu. Sasa tumeelewana — ukinihitaji, nipigie. | Haha, it's nothing. Now we're agreed — if you need me, call me.
@@ -155,7 +155,7 @@ t: I saw it and kept it for you. | Niliiona, [nikakuwekea|nikakuweka|nikaniwekea
 t: Thanks for keeping it for me. | Asante kwa [kuniwekea|kukuwekea|kuniweka]. || The prepositional -ea adds "for": kuniwekea = to keep (it) for me.
 t: Shall I bring it to you? | [Nikuletee|Uniletee|Nimletee]? || leta (bring) + -e- = letea: bring to / for someone.
 t: Please bring it to me. | Tafadhali [uniletee|nikuletee|umletee].
-t: I've brought you your bag. | [Nimekuletea|Umeniletea|Nimemletea] begi yako.
+t: I've brought you your bag. | [Nimekuletea|Umeniletea|Nimemletea] mfuko yako.
 t: I'll pay for your fuel. | [Nitakulipia|Nitakulipa|Utanilipia] mafuta. || lipa = pay; lipia = pay for (on behalf of). Nitakulipa would mean "I'll pay you".
 t: You waited for me. | [Ulinisubiria|Nilikusubiria|Ulisubiri]. || subiri (wait) + -ia = wait for someone.
 t: We're agreed. | [Tumeelewana|Tumeelewa|Mmeelewana]. || elewa (understand) + -ana = understand each other.
@@ -164,11 +164,11 @@ c: Why don't we meet at the gate? | [Si|Ni|Basi] tukutane kwa geti? || Si + subj
 c: I mean, you're my customer! | [Yaani|Kumbe|Sivyo], wewe ni mteja wangu! || yaani = "I mean / that is to say".
 c: Oh, so it's yours! | [Kumbe|Yaani|Basi] ni yako! || kumbe = surprise: it turns out…
 t: Can you take me to work? | Unaweza [kunipeleka|kukupeleka|kumpeleka] kazini? || peleka = take (somewhere).
-t: The bag was found. | Begi [ilipatikana|ilipata|inapata]. || pata (get) + -ika- (stative) + -ana = be found / be available.
+t: The bag was found. | Mfuko [ilipatikana|ilipata|inapata]. || pata (get) + -ika- (stative) + -ana = be found / be available.
 t: Don't be late! | [Usichelewe|Uchelewe|Sichelewi]!
 
 @vocab
-Nimesahau begi yangu | I forgot my bag | Kenyan begi. | Nimesahau mfuko wangu | Sanifu word: mfuko (m/mi class)
+Nimesahau mfuko yangu | I forgot my bag | Everyday Kenyan agreement | Nimesahau mfuko wangu | mfuko is m/mi in Sanifu: mfuko wangu, mifuko yangu
 Nikakuwekea | And I kept it for you | weka → wekea: keep for
 Nikuletee? | Shall I bring it to you? | leta → letea: bring to / for
 Nitakulipia… | I'll pay for… (on your behalf) | lipa → lipia

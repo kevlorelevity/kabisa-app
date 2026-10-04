@@ -205,7 +205,7 @@
       "id": "b67330eb-2bf7-5e7f-962d-c1fcaa548c4f",
       "speaker": "Mhudumu",
       "role": "auto",
-      "swahili": "Ni kweli. Kulikuwa na tatizo jikoni — stima ilikatika.",
+      "swahili": "Ni kweli. Kulikuwa na shida jikoni — stima ilikatika.",
       "english": "It's true. There was a problem in the kitchen — the power went off.",
       "words": [
         {
@@ -220,9 +220,11 @@
           "gloss": "there was"
         },
         {
-          "text": "tatizo",
-          "gloss": "problem",
-          "sanifu": "Sanifu: ji/ma class (tatizo / matatizo)"
+          "text": "shida",
+          "gloss": "problem / trouble — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
         },
         {
           "text": "jikoni",
@@ -803,8 +805,8 @@
       "id": "20156a4e-80ac-5bae-8f5a-f35180ecee36",
       "speaker": "Mhudumu",
       "role": "auto",
-      "swahili": "Sawa. Kwa sababu ya usumbufu, mtapata punguzo kwa bili.",
-      "english": "Okay. Because of the inconvenience, you'll get a discount on the bill.",
+      "swahili": "Sawa. Kwa sababu ya usumbufu, tutawapunguzia bei.",
+      "english": "Okay. Because of the inconvenience, we'll give you a discount.",
       "words": [
         {
           "text": "Sawa",
@@ -822,56 +824,8 @@
           "gloss": "inconvenience"
         },
         {
-          "text": "mtapata",
-          "gloss": "\"You all will get\" — m- (subject: you all) + ta- (future) + -pata (get). From kupata.",
-          "grammar": [
-            "future-ta"
-          ],
-          "conjugation": {
-            "verb": "kupata (to get)",
-            "tense": "Future (-ta-)",
-            "rows": [
-              {
-                "pronoun": "I",
-                "form": "nitapata"
-              },
-              {
-                "pronoun": "you",
-                "form": "utapata"
-              },
-              {
-                "pronoun": "he/she",
-                "form": "atapata"
-              },
-              {
-                "pronoun": "we",
-                "form": "tutapata"
-              },
-              {
-                "pronoun": "you all",
-                "form": "mtapata"
-              },
-              {
-                "pronoun": "they",
-                "form": "watapata"
-              }
-            ]
-          }
-        },
-        {
-          "text": "punguzo",
-          "gloss": "discount"
-        },
-        {
-          "text": "kwa",
-          "gloss": "by / with / at / for / to (very flexible — see explainer)",
-          "grammar": [
-            "locative-ni"
-          ]
-        },
-        {
-          "text": "bili",
-          "gloss": "bill"
+          "text": "tutawapunguzia bei",
+          "gloss": "we'll reduce the price for you — kupunguza (reduce) + -i- (for)"
         }
       ]
     },
@@ -1075,9 +1029,10 @@
     },
     {
       "id": "fdc493cd-5aa8-5c81-98bd-f46d8597c915",
-      "swahili": "punguzo",
-      "english": "discount |",
-      "exampleContext": ""
+      "swahili": "tutawapunguzia bei",
+      "english": "we'll give you a discount",
+      "exampleContext": "kupunguza = to reduce",
+      "partOfSpeech": "phrase"
     },
     {
       "id": "e0b32092-22ac-5b68-9655-ffec5e0beb67",
@@ -1476,7 +1431,7 @@
       "mode": "translate",
       "english": "There was a problem in the kitchen.",
       "before": "",
-      "after": " tatizo jikoni.",
+      "after": " shida jikoni.",
       "options": [
         {
           "text": "Kulikuwa na",

@@ -33,10 +33,10 @@
     "negative-present",
     "sanifu-noun-classes",
     "na-have",
-    "future-ta",
     "numbers-money",
     "time-swahili",
     "imperatives",
+    "future-ta",
     "subjunctive"
   ],
   "turns": [
@@ -559,8 +559,8 @@
       "id": "12a240c1-fa57-580b-8fb9-d0fec39b3d88",
       "speaker": "Daktari",
       "role": "auto",
-      "swahili": "Hakuna shida. Tutafanya kipimo cha damu kwanza.",
-      "english": "No problem. We'll do a blood test first.",
+      "swahili": "Hakuna shida. Tutakupima damu kwanza.",
+      "english": "No problem. We'll test your blood first.",
       "words": [
         {
           "text": "Hakuna shida",
@@ -570,54 +570,8 @@
           ]
         },
         {
-          "text": "Tutafanya",
-          "gloss": "\"We will do\" — tu- (subject: we) + ta- (future) + -fanya (do). From kufanya.",
-          "grammar": [
-            "future-ta"
-          ],
-          "conjugation": {
-            "verb": "kufanya (to do)",
-            "tense": "Future (-ta-)",
-            "rows": [
-              {
-                "pronoun": "I",
-                "form": "nitafanya"
-              },
-              {
-                "pronoun": "you",
-                "form": "utafanya"
-              },
-              {
-                "pronoun": "he/she",
-                "form": "atafanya"
-              },
-              {
-                "pronoun": "we",
-                "form": "tutafanya"
-              },
-              {
-                "pronoun": "you all",
-                "form": "mtafanya"
-              },
-              {
-                "pronoun": "they",
-                "form": "watafanya"
-              }
-            ]
-          }
-        },
-        {
-          "text": "kipimo",
-          "gloss": "test (medical)",
-          "sanifu": "ki/vi class"
-        },
-        {
-          "text": "cha",
-          "gloss": "\"of\" — ki/vi agreement (kituo cha polisi, chakula cha mchana)",
-          "grammar": [
-            "sanifu-noun-classes"
-          ],
-          "sanifu": "ki/vi class"
+          "text": "Tutakupima",
+          "gloss": "we'll test you — tu- + -ta- + -ku- + -pima (kupima = to measure / examine)"
         },
         {
           "text": "damu",
@@ -678,8 +632,8 @@
       "id": "f27703cf-f4fc-5cd0-9dc3-68526142ca2c",
       "speaker": "Daktari",
       "role": "auto",
-      "swahili": "Baada ya saa moja. Ukimaliza kipimo, kaa nje. Nesi ambaye atakuita ni Mercy.",
-      "english": "In an hour. When you finish the test, sit outside. The nurse who will call you is Mercy.",
+      "swahili": "Baada ya saa moja. Ukimaliza, kaa nje. Mwuguzi ambaye atakuita ni Mercy.",
+      "english": "In an hour. When you're done, sit outside. The nurse who will call you is Mercy.",
       "words": [
         {
           "text": "Baada ya",
@@ -700,11 +654,6 @@
           ]
         },
         {
-          "text": "kipimo",
-          "gloss": "test (medical)",
-          "sanifu": "ki/vi class"
-        },
-        {
           "text": "kaa",
           "gloss": "\"Stay!\" — -kaa (stay). From kukaa.",
           "grammar": [
@@ -716,8 +665,11 @@
           "gloss": "outside"
         },
         {
-          "text": "Nesi",
-          "gloss": "nurse (from English)"
+          "text": "Mwuguzi",
+          "gloss": "nurse — m/wa noun (people & animals; plural wauguzi)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
         },
         {
           "text": "ambaye",
@@ -1155,9 +1107,9 @@
     },
     {
       "id": "9da3a9f6-7658-551d-bd0d-eaea9efbbb38",
-      "swahili": "kipimo cha damu",
-      "english": "blood test |",
-      "exampleContext": "",
+      "swahili": "Tutakupima damu",
+      "english": "We'll test your blood",
+      "exampleContext": "kupima = to measure / examine",
       "partOfSpeech": "phrase"
     },
     {
@@ -1413,9 +1365,9 @@
     {
       "id": "d92a11e0-1f22-529f-81f2-582a25e1d7b4",
       "mode": "translate",
-      "english": "When you finish the test…",
+      "english": "When you're done, sit outside.",
       "before": "",
-      "after": " kipimo…",
+      "after": ", kaa nje.",
       "options": [
         {
           "text": "Ukimaliza",
@@ -1441,7 +1393,7 @@
       "id": "231d6b7b-e4fa-5a23-9d74-2869242d417b",
       "mode": "translate",
       "english": "the nurse who will call you",
-      "before": "nesi ",
+      "before": "mwuguzi ",
       "after": " atakuita",
       "options": [
         {
@@ -1573,26 +1525,26 @@
     {
       "id": "4bffb387-a25c-5d6f-bb09-48c49d2513b8",
       "mode": "translate",
-      "english": "We'll do a blood test.",
-      "before": "Tutafanya ",
-      "after": " cha damu.",
+      "english": "We'll test your blood.",
+      "before": "",
+      "after": " damu.",
       "options": [
         {
-          "text": "kipimo",
+          "text": "Tutakupima",
           "correct": true
         },
         {
-          "text": "kitabu",
+          "text": "Tulikupima",
           "correct": false,
-          "feedback": "kitabu = book (plural vitabu)"
+          "feedback": "Tulikupima = We measured you"
         },
         {
-          "text": "kiti",
+          "text": "Tungekupima",
           "correct": false,
-          "feedback": "kiti = chair / seat (plural viti)"
+          "feedback": "Tungekupima = We would measure you"
         }
       ],
-      "explanation": "kipimo: test (medical)"
+      "explanation": "Tutakupima: we'll test you — tu- + -ta- + -ku- + -pima (kupima = to measure / examine)"
     },
     {
       "id": "e2aef300-bb07-5571-94be-37345a1d9dfa",
