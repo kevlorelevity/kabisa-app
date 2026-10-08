@@ -362,7 +362,19 @@ export function applyPatchTo(lesson: Lesson, p: Pick<ContentPatch, 'scope' | 'it
   if (p.scope === 'item' && p.item_id && v && typeof v === 'object') {
     const ti = lesson.turns.findIndex((t) => t.id === p.item_id);
     if (ti >= 0) {
-      lesson.turns[ti] = v as Lesson['turns'][number];
+      const cur = lesson.turns[ti];
+      const next = v as Lesson['turns'][number] & { wordsFresh?: boolean };
+      // Same line: the lesson's current glosses win (they may have been improved since the
+      // snapshot was taken), plus any word notes / Sanifu the patch added. A re-gloss
+      // (wordsFresh) brings new glosses on purpose, so its words are used as they are.
+      if (!next.wordsFresh && cur.swahili === next.swahili && cur.words?.length) {
+        next.words = cur.words.map((w) => {
+          const pw = next.words?.find((x) => x.text === w.text);
+          return pw ? { ...w, ...(pw.note ? { note: pw.note } : {}), ...(pw.sanifu ? { sanifu: pw.sanifu } : {}) } : w;
+        });
+      }
+      delete next.wordsFresh;
+      lesson.turns[ti] = next;
       return true;
     }
     const pi = (lesson.practice ?? []).findIndex((x) => x.id === p.item_id);

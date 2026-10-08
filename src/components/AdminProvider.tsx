@@ -31,6 +31,7 @@ import { getSupabase } from '../lib/supabase';
 import { AdminContext, type SuggestTarget } from './adminContext';
 import { setRoamAllowed } from '../lib/roam';
 import { reglossInstruction } from '../lib/aiPatch';
+import { personalizeText } from '../lib/personalize';
 import type { Lesson } from '../types';
 
 const KINDS: Array<{ id: SuggestionKind; label: string }> = [
@@ -166,10 +167,38 @@ function SuggestModal({ target, onClose, enqueue, startAi }: { target: SuggestTa
   );
   const others = useMemo(() => (pending && scope ? countPropagation(scope.content, pending) : 0), [pending, scope]);
 
+  // Editing a dialogue line: its English subtitle is edited in the same place.
+  const lineTurn = target.targetType === 'turn.swahili' && aiTarget?.kind === 'turn' ? aiTarget.current : undefined;
+  const shownEnglish = lineTurn ? personalizeText(lineTurn.english, persona, false) : '';
+  const [english, setEnglish] = useState(shownEnglish);
+  const englishChanged = Boolean(lineTurn) && english.trim() !== '' && english.trim() !== shownEnglish.trim();
+  const englishPending = useMemo(
+    () => (englishChanged ? resolveOverride(scope, target.itemId, shownEnglish.trim(), english.trim(), persona) : null),
+    [englishChanged, scope, target.itemId, shownEnglish, english, persona],
+  );
+
   function saveEdit() {
     const override = pending ? { ...pending, propagate: everywhere && others > 0 } : null;
+    const englishOverride = englishPending ? { ...englishPending, propagate: false } : null;
     // Show the new text right away; the server catches up in the background.
     if (override) addOverrides([{ id: `local-${uid()}`, created_at: new Date().toISOString(), ...override }]);
+    if (englishOverride) {
+      addOverrides([{ id: `local-${uid()}`, created_at: new Date().toISOString(), ...englishOverride }]);
+      enqueue(`Edit · English · ${target.label}`, async () => {
+        const res = await submitSuggestion({
+          ...target,
+          targetType: 'turn.english',
+          currentText: shownEnglish,
+          lessonId,
+          kind: 'translation',
+          proposedText: english.trim(),
+          override: englishOverride,
+          page: window.location.href,
+          reviewerName: profile?.displayName,
+        });
+        return { ok: res.ok, error: res.error };
+      });
+    }
     // A dialogue line's Swahili changed: the underlines were re-aligned right away; now have the AI
     // redo the tooltips (and the English, if the meaning changed) for the new wording.
     const lesson = scope?.type === 'lesson' ? (scope.content as Lesson) : undefined;
@@ -181,13 +210,18 @@ function SuggestModal({ target, onClose, enqueue, startAi }: { target: SuggestTa
         kind: 'turn',
         itemId: editedTurn.id,
         targetLabel: `Tooltips · ${target.label}`,
-        instruction: reglossInstruction(override.find_text, override.replace_text),
+        instruction: reglossInstruction(override.find_text, override.replace_text, Boolean(englishOverride)),
         lesson: lessonContext(lesson),
         current: structuredClone(editedTurn),
         regloss: true,
+        keepEnglish: Boolean(englishOverride),
       });
     }
     const reason = why.trim();
+    if (!textChanged && !reason) {
+      onClose();
+      return;
+    }
     enqueue(textChanged ? `Edit · ${target.label}` : `Suggestion · ${target.label}`, async () => {
       const res = await submitSuggestion({
         ...target,
@@ -277,6 +311,15 @@ function SuggestModal({ target, onClose, enqueue, startAi }: { target: SuggestTa
             </span>
             <textarea value={proposed} onChange={(e) => setProposed(e.target.value)} rows={3} autoFocus className={field} />
           </label>
+          {lineTurn && (
+            <label className="block">
+              <span className="text-sm font-semibold text-gray-800">English subtitle</span>
+              <textarea value={english} onChange={(e) => setEnglish(e.target.value)} rows={2} className={field} />
+              {textChanged && !englishChanged && (
+                <span className="block mt-1 text-xs text-gray-400">Leave it as is and the AI updates it if the meaning changed.</span>
+              )}
+            </label>
+          )}
           {pending && others > 0 && (
             <label className="flex items-start gap-2 text-sm text-gray-700">
               <input type="checkbox" checked={everywhere} onChange={(e) => setEverywhere(e.target.checked)} className="mt-0.5 accent-amber-500" />
@@ -314,8 +357,8 @@ function SuggestModal({ target, onClose, enqueue, startAi }: { target: SuggestTa
               </button>
             ))}
           </div>
-          <button onClick={saveEdit} disabled={!textChanged && !why.trim()} className={primary}>
-            {textChanged && scope ? 'Save & publish' : 'Save suggestion'}
+          <button onClick={saveEdit} disabled={!textChanged && !englishChanged && !why.trim()} className={primary}>
+            {(textChanged || englishChanged) && scope ? 'Save & publish' : 'Save suggestion'}
           </button>
         </>
       )}

@@ -216,3 +216,54 @@ describe('AI re-gloss after an admin edit', () => {
     expect(v.words[0]).toMatchObject({ gloss: 'I am taking out', grammar: ['present-na'] });
   });
 });
+
+describe('notes the AI puts on a word inside a line', () => {
+  const turn = () => ({
+    id: 't1',
+    speaker: 'Otieno',
+    role: 'auto',
+    swahili: 'Ninapika chakula cha mchana.',
+    english: 'I am cooking lunch.',
+    words: [
+      { text: 'Ninapika', gloss: 'I am cooking', grammar: ['present-na'] },
+      { text: 'chakula cha mchana', gloss: 'lunch' },
+    ],
+  });
+
+  it('keeps them when the line itself did not change', () => {
+    const r = normalizeResult(
+      'item',
+      'turn',
+      {
+        summary: 'Added a note',
+        turn: {
+          ...turn(),
+          words: [
+            { text: 'Ninapika', gloss: 'cooking' },
+            { text: 'chakula cha mchana', gloss: 'lunch', note: 'Often shortened to “chamcha”, or just “lunch”.' },
+          ],
+        },
+      },
+      turn(),
+      't1',
+    );
+    const v = r.value as ReturnType<typeof turn> & { words: Array<Record<string, unknown>> };
+    expect(v.words[0]).toEqual({ text: 'Ninapika', gloss: 'I am cooking', grammar: ['present-na'] });
+    expect(v.words[1].note).toContain('chamcha');
+  });
+
+  it('a turn snapshot keeps the lesson’s newer glosses and adds its notes', () => {
+    const lesson = { turns: [{ ...turn(), words: [{ text: 'Ninapika', gloss: 'newer gloss' }, { text: 'chakula cha mchana', gloss: 'lunch (midday food)' }] }] } as unknown as Lesson;
+    const snap = { ...turn(), words: [{ text: 'Ninapika', gloss: 'old' }, { text: 'chakula cha mchana', gloss: 'old', note: 'chamcha!' }] };
+    applyPatchTo(lesson, { scope: 'item', item_id: 't1', value: snap });
+    expect(lesson.turns[0].words.map((w) => w.gloss)).toEqual(['newer gloss', 'lunch (midday food)']);
+    expect(lesson.turns[0].words[1].note).toBe('chamcha!');
+  });
+
+  it('a re-gloss brings its own glosses', () => {
+    const lesson = { turns: [turn()] } as unknown as Lesson;
+    applyPatchTo(lesson, { scope: 'item', item_id: 't1', value: { ...turn(), wordsFresh: true, words: [{ text: 'Ninapika', gloss: 'fresh' }] } });
+    expect(lesson.turns[0].words).toEqual([{ text: 'Ninapika', gloss: 'fresh' }]);
+    expect('wordsFresh' in lesson.turns[0]).toBe(false);
+  });
+});

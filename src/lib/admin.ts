@@ -78,6 +78,8 @@ export interface AiEditInput {
   everywhere?: boolean;
   /** Automatic tooltip refresh after an admin edited the line's Swahili (line + choices stay as edited). */
   regloss?: boolean;
+  /** With regloss: the admin set the English in the same edit — the AI must keep it. */
+  keepEnglish?: boolean;
   targetLabel?: string;
   instruction: string;
   /** Lesson context for the AI (title, level, notes, vocabulary). */

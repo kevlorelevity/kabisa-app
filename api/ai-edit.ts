@@ -64,6 +64,7 @@ export async function POST(request: Request): Promise<Response> {
   const wordIndex = typeof b.wordIndex === 'number' ? b.wordIndex : undefined;
   const everywhere = b.everywhere === true;
   const regloss = b.regloss === true && kind === 'turn';
+  const keepEnglish = regloss && b.keepEnglish === true;
   const lesson = b.lesson as AiLessonContext | undefined;
   const instruction = typeof b.instruction === 'string' ? b.instruction.trim().slice(0, 4000) : '';
   const itemId = typeof b.itemId === 'string' ? b.itemId : undefined;
@@ -132,7 +133,7 @@ export async function POST(request: Request): Promise<Response> {
       });
       const body = await ai.json().catch(() => null);
       if (!ai.ok) throw new Error(`AI request failed (${ai.status}): ${JSON.stringify(body).slice(0, 300)}`);
-      const result = normalizeResult(scope, kind, parseClaudeJson(body), b.current, itemId, { regloss });
+      const result = normalizeResult(scope, kind, parseClaudeJson(body), b.current, itemId, { regloss, keepEnglish });
       const summary = result.summary;
       const value = kind === 'word' ? { ...(result.value as object), wordIndex, everywhere } : result.value;
       const pRes = await rest('content_patch', {
