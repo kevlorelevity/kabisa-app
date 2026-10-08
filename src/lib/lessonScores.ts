@@ -1,4 +1,5 @@
 import type { Lesson } from '../types';
+import { isRoaming } from './roam';
 
 // -------- Lesson scores, gating and weak-phrase tracking --------
 //
@@ -133,8 +134,12 @@ export function isLessonPassed(lesson: Lesson, rec = getLessonScores(lesson.id))
   return sectionPassed(rec.dialogue) && practiceOk;
 }
 
-/** The first lesson is always open; every later one needs the previous lesson passed. */
+/**
+ * The first lesson is always open; every later one needs the previous lesson passed.
+ * Admins in Roam mode get every lesson open.
+ */
 export function isLessonUnlocked(lessons: Lesson[], lessonId: string): boolean {
+  if (isRoaming()) return true;
   const idx = lessons.findIndex((l) => l.id === lessonId);
   if (idx <= 0) return true;
   return isLessonPassed(lessons[idx - 1]);

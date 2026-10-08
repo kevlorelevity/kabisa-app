@@ -5,9 +5,11 @@ import { DrillSession } from '../components/DrillSession';
 import { LockedLesson } from '../components/LessonGate';
 import { allLearnerPhrases, collectPhrases, type DrillPhrase } from '../lib/drill';
 import { getLessonScores, isLessonUnlocked, recordDrillMastered } from '../lib/lessonScores';
+import { useRoam } from '../lib/roam';
 
 export function DrillView() {
   const { id } = useParams<{ id: string }>();
+  useRoam(); // re-render when an admin toggles Roam
   const { lessons, lesson, previous } = useLessonWithNeighbors(id ?? '');
   const [started, setStarted] = useState(false);
   const [wholeLesson, setWholeLesson] = useState(false);

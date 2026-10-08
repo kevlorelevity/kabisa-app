@@ -15,9 +15,11 @@ import {
   sectionPassed,
   type AttemptResult,
 } from '../lib/lessonScores';
+import { useRoam } from '../lib/roam';
 
 export function PracticeView() {
   const { id } = useParams<{ id: string }>();
+  useRoam(); // re-render when an admin toggles Roam
   const { lessons, lesson, previous, next } = useLessonWithNeighbors(id ?? '');
   const [rec, setRec] = useState(() => getLessonScores(id ?? ''));
   const [result, setResult] = useState<AttemptResult | null>(null);

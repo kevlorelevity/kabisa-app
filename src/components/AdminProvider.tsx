@@ -5,6 +5,7 @@ import { useProfile } from '../hooks/profileContext';
 import { loadIsAdmin, submitSuggestion, type SuggestionKind } from '../lib/admin';
 import { addOverrides, resolveOverride, scopeContent, type ScopeType } from '../lib/contentOverrides';
 import { AdminContext, type SuggestTarget } from './adminContext';
+import { setRoamAllowed } from '../lib/roam';
 
 const KINDS: Array<{ id: SuggestionKind; label: string }> = [
   { id: 'phrasing', label: 'Phrasing' },
@@ -199,6 +200,9 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
       alive = false;
     };
   }, [userId]);
+
+  const effectiveAdmin = forceAdmin ?? isAdmin;
+  useEffect(() => setRoamAllowed(effectiveAdmin), [effectiveAdmin]);
 
   const openSuggest = useCallback((t: SuggestTarget) => setTarget(t), []);
   const close = useCallback(() => setTarget(null), []);

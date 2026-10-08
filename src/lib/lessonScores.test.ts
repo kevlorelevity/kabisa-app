@@ -77,3 +77,18 @@ describe('weak phrases and struggle detection', () => {
     expect(isStruggling(getLessonScores('one'))).toBe(true);
   });
 });
+
+describe('Roam (admin)', () => {
+  it('opens every lesson only when the account is an admin AND Roam is on', async () => {
+    const { setRoamAllowed, setRoaming } = await import('./roam');
+    expect(isLessonUnlocked([L1, L2], 'two')).toBe(false);
+    setRoaming(true);
+    expect(isLessonUnlocked([L1, L2], 'two')).toBe(false); // not an admin
+    setRoamAllowed(true);
+    expect(isLessonUnlocked([L1, L2], 'two')).toBe(true);
+    expect(isLessonPassed(L1)).toBe(false); // progress itself is untouched
+    setRoaming(false);
+    expect(isLessonUnlocked([L1, L2], 'two')).toBe(false);
+    setRoamAllowed(false);
+  });
+});

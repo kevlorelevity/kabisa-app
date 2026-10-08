@@ -16,6 +16,7 @@ import {
   themeVisit,
   totalXp,
 } from '../lib/levels';
+import { useRoam } from '../lib/roam';
 
 function RankCard() {
   const lessons = useLessons();
@@ -79,6 +80,7 @@ function RankCard() {
 
 export function LessonsView() {
   useOverridesVersion(); // re-render on admin live edits
+  const roaming = useRoam(); // re-render when an admin toggles Roam
   const lessons = useLessons();
   const working = currentLevel(lessons);
 
@@ -99,7 +101,7 @@ export function LessonsView() {
           const ls = lessonsInLevel(lessons, lvl.level);
           if (ls.length === 0) return null;
           const prog = levelProgress(lessons, lvl.level);
-          const ahead = lvl.level > working;
+          const ahead = !roaming && lvl.level > working;
           return (
             <section key={lvl.level} aria-labelledby={`level-${lvl.level}`}>
               <div className={`flex items-center gap-3 mb-3 ${ahead ? 'opacity-60' : ''}`}>
