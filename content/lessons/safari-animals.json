@@ -1,0 +1,1775 @@
+{
+  "id": "safari-animals",
+  "uuid": "fa50c89f-805c-5d1c-b3e9-370b7e2ccf8c",
+  "title": "Game Drive in the Maasai Mara",
+  "category": "social",
+  "difficulty": "medium",
+  "level": 4,
+  "order": 402,
+  "theme": "safari",
+  "culturalNote": "The Maasai Mara is Kenya's most famous game park (mbuga ya wanyama), and \"safari\" is a Swahili word: it simply means \"journey\". Guides speak to each other in Swahili over the radio to share sightings. All animals take the same agreement as people, whatever their noun class: simba watatu (three lions), twiga ni mrefu (the giraffe is tall), tembo ni wakubwa (elephants are big).",
+  "startingPoint": "6:30 a.m. in an open-roof safari van. Your guide, Saitoti, has binoculars round his neck.",
+  "grammarFocus": [
+    "present-na",
+    "ko-location",
+    "adjective-agreement",
+    "numbers-money"
+  ],
+  "grammar": [
+    "present-na",
+    "ko-location",
+    "adjective-agreement",
+    "numbers-money",
+    "greetings",
+    "noun-classes-mwa-nn",
+    "question-words",
+    "locative-ni",
+    "discourse-particles",
+    "ni-copula",
+    "subject-prefixes",
+    "sanifu-noun-classes"
+  ],
+  "turns": [
+    {
+      "id": "def663a9-35d2-5470-bf09-fdcb061e1eed",
+      "speaker": "Saitoti",
+      "role": "auto",
+      "swahili": "Habari ya asubuhi! Karibu Maasai Mara. Leo tunatafuta Big Five!",
+      "english": "Good morning! Welcome to the Maasai Mara. Today we're looking for the Big Five!",
+      "words": [
+        {
+          "text": "Habari ya asubuhi",
+          "gloss": "good morning (lit. \"news of the morning?\")",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Karibu",
+          "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "Maasai Mara",
+          "gloss": "the Maasai Mara game reserve"
+        },
+        {
+          "text": "Leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "tunatafuta",
+          "gloss": "\"we're looking for\" — -tafuta = look for"
+        },
+        {
+          "text": "Big Five",
+          "gloss": "the \"Big Five\": lion, leopard, elephant, buffalo, rhino"
+        }
+      ]
+    },
+    {
+      "id": "1f152a4e-86dd-577e-a9d8-b8c81ef48b0b",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Asante! Simba wako wapi?",
+      "english": "Thanks! Where are the lions?",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Simba",
+          "gloss": "lion(s)"
+        },
+        {
+          "text": "wako",
+          "gloss": "\"They are (at / doing)\" — wa- + -ko (be at a place, or how you're doing). \"Wako poa\" = they are fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "wapi",
+          "gloss": "where?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante! Simba wako wapi?",
+          "correct": true
+        },
+        {
+          "swahili": "Asante! Simba wako lini?",
+          "correct": false
+        },
+        {
+          "swahili": "Asante! Simba tuko wapi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "bfb7c89a-e323-535d-9d70-aaab6e933d9d",
+      "speaker": "Saitoti",
+      "role": "auto",
+      "swahili": "Simba wako karibu na mto, chini ya mti mkubwa. Wanalala sasa.",
+      "english": "The lions are near the river, under a big tree. They're sleeping now.",
+      "words": [
+        {
+          "text": "Simba",
+          "gloss": "lion(s)"
+        },
+        {
+          "text": "wako",
+          "gloss": "\"They are (at / doing)\" — wa- + -ko (be at a place, or how you're doing). \"Wako poa\" = they are fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "karibu na",
+          "gloss": "close to / near",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "mto",
+          "gloss": "river"
+        },
+        {
+          "text": "chini ya",
+          "gloss": "\"under\""
+        },
+        {
+          "text": "mti",
+          "gloss": "tree (plural: miti)"
+        },
+        {
+          "text": "mkubwa",
+          "gloss": "\"big\" — m/wa singular agreement (one person / animal).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-kubwa (big)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mkubwa"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wakubwa"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "kubwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Wanalala",
+          "gloss": "\"They are sleeping\" — wa- (subject: they) + na- (present) + -lala (sleep). From kulala.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kulala (to sleep)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninalala"
+              },
+              {
+                "pronoun": "you",
+                "form": "unalala"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "analala"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunalala"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnalala"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanalala"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        }
+      ]
+    },
+    {
+      "id": "34ebaab8-e69b-543e-89a3-bbe615771135",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Wee! Ninaona simba watatu!",
+      "english": "Wow! I can see three lions!",
+      "words": [
+        {
+          "text": "Wee",
+          "gloss": "hey you! (surprise / emphasis)",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Ninaona",
+          "gloss": "\"I see\" — -ona = see"
+        },
+        {
+          "text": "simba",
+          "gloss": "lion(s)"
+        },
+        {
+          "text": "watatu",
+          "gloss": "three (m/wa)",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Wee! Ninaona simba watatu!",
+          "correct": true
+        },
+        {
+          "swahili": "Wee! Ninakula simba watatu!",
+          "correct": false
+        },
+        {
+          "swahili": "Wee! Ninaona simba watano!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "8f3552fa-c068-5f68-b11e-ca18460684c6",
+      "speaker": "Saitoti",
+      "role": "auto",
+      "swahili": "Ndiyo! Ni simba jike watatu na watoto wao.",
+      "english": "Yes! Three lionesses and their cubs.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "simba jike",
+          "gloss": "lioness (jike = female)"
+        },
+        {
+          "text": "watatu",
+          "gloss": "three (m/wa)",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "watoto",
+          "gloss": "children — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "wao",
+          "gloss": "they / them",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "edc79515-0f7c-5bcb-a48d-bc20b0d46da7",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Watoto ni wadogo sana! Na twiga?",
+      "english": "The cubs are so small! And giraffes?",
+      "words": [
+        {
+          "text": "Watoto",
+          "gloss": "children — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "wadogo",
+          "gloss": "\"small / young\" — m/wa plural agreement (people / animals).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-dogo (small / young)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mdogo"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wadogo"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "ndogo"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "twiga",
+          "gloss": "giraffe(s)"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Watoto ni wadogo sana! Na twiga?",
+          "correct": true
+        },
+        {
+          "swahili": "Watoto ni mdogo sana! Na twiga?",
+          "correct": false
+        },
+        {
+          "swahili": "Watoto ni wadogo sana! Na wapi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "35b7ea5a-56f6-5ae6-ae96-f3fbbefd45fd",
+      "speaker": "Saitoti",
+      "role": "auto",
+      "swahili": "Twiga wako upande wa kushoto. Twiga ni mrefu sana — anakula majani juu ya miti.",
+      "english": "The giraffes are on the left. A giraffe is very tall — it eats leaves high up in the trees.",
+      "words": [
+        {
+          "text": "Twiga",
+          "gloss": "giraffe(s)"
+        },
+        {
+          "text": "wako",
+          "gloss": "\"They are (at / doing)\" — wa- + -ko (be at a place, or how you're doing). \"Wako poa\" = they are fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "upande wa kushoto",
+          "gloss": "on the left-hand side"
+        },
+        {
+          "text": "Twiga",
+          "gloss": "giraffe(s)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mrefu",
+          "gloss": "\"tall / long\" — m/wa singular agreement (one person / animal).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-refu (tall / long)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mrefu"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "warefu"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "ndefu"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "anakula",
+          "gloss": "\"He/she is eating\" — a- (subject: he/she) + na- (present) + -la (eat). From kula.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kula (to eat)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninakula"
+              },
+              {
+                "pronoun": "you",
+                "form": "unakula"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anakula"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunakula"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnakula"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanakula"
+              }
+            ]
+          }
+        },
+        {
+          "text": "majani",
+          "gloss": "leaves"
+        },
+        {
+          "text": "juu ya",
+          "gloss": "\"on top of, above\""
+        },
+        {
+          "text": "miti",
+          "gloss": "trees"
+        }
+      ]
+    },
+    {
+      "id": "40d4ff30-b86c-56fe-8f5f-0ac1e33a7af8",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Na tembo? Tembo wako hapa pia?",
+      "english": "And elephants? Are the elephants here too?",
+      "words": [
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "tembo",
+          "gloss": "elephant(s)"
+        },
+        {
+          "text": "Tembo",
+          "gloss": "elephant(s)"
+        },
+        {
+          "text": "wako",
+          "gloss": "\"They are (at / doing)\" — wa- + -ko (be at a place, or how you're doing). \"Wako poa\" = they are fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "pia",
+          "gloss": "also / too"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Na tembo? Tembo wako hapa pia?",
+          "correct": true
+        },
+        {
+          "swahili": "Na tembo? Tembo uko hapa pia?",
+          "correct": false
+        },
+        {
+          "swahili": "Na tembo? Tembo wako lini pia?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "8ca075b4-6381-5678-a857-6db7117eae84",
+      "speaker": "Saitoti",
+      "role": "auto",
+      "swahili": "Ndiyo, tembo wanakunywa maji mtoni sasa. Wako kumi na wawili!",
+      "english": "Yes, the elephants are drinking water at the river now. There are twelve!",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "tembo",
+          "gloss": "elephant(s)"
+        },
+        {
+          "text": "wanakunywa",
+          "gloss": "\"They are drinking\" — wa- (subject: they) + na- (present) + -nywa (drink). From kunywa.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kunywa (to drink)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninakunywa"
+              },
+              {
+                "pronoun": "you",
+                "form": "unakunywa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anakunywa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunakunywa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnakunywa"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanakunywa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "maji",
+          "gloss": "water — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — maji yangu, maji haya (ma- plural of the ji/ma class)"
+        },
+        {
+          "text": "mtoni",
+          "gloss": "\"at the river\" — mto + -ni.",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "Wako",
+          "gloss": "\"They are (at / doing)\" — wa- + -ko (be at a place, or how you're doing). \"Wako poa\" = they are fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kumi",
+          "gloss": "10 (n/n form — used for counting, money, things)",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "wawili",
+          "gloss": "two (m/wa: watu wawili)",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "66d07124-e632-5c91-8b7a-1e24b48272dd",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Kumi na wawili! Tembo ni wakubwa sana. Ni hatari?",
+      "english": "Twelve! Elephants are huge. Are they dangerous?",
+      "words": [
+        {
+          "text": "Kumi",
+          "gloss": "10 (n/n form — used for counting, money, things)",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "wawili",
+          "gloss": "two (m/wa: watu wawili)",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "Tembo",
+          "gloss": "elephant(s)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "wakubwa",
+          "gloss": "\"big\" — m/wa plural agreement (people / animals).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-kubwa (big)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mkubwa"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wakubwa"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "kubwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "hatari",
+          "gloss": "danger / dangerous"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Kumi na wawili! Tembo ni wakubwa sana. Ni hatari?",
+          "correct": true
+        },
+        {
+          "swahili": "Kumi na wawili! Tembo ni mkubwa sana. Ni hatari?",
+          "correct": false
+        },
+        {
+          "swahili": "Kumi na wawili! Tembo ni wakubwa sana. Ni nani?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "a252e6cf-2f98-5702-a459-a28691833add",
+      "speaker": "Saitoti",
+      "role": "auto",
+      "swahili": "Ndiyo, ni hatari. Na kiboko pia ni hatari sana!",
+      "english": "Yes, they're dangerous. And the hippo is very dangerous too!",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "hatari",
+          "gloss": "danger / dangerous"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "kiboko",
+          "gloss": "hippo",
+          "sanifu": "Sanifu: kiboko / viboko (ki/vi class — but animals agree like people)"
+        },
+        {
+          "text": "pia",
+          "gloss": "also / too"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "hatari",
+          "gloss": "danger / dangerous"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ]
+    },
+    {
+      "id": "1362de1c-95fb-5059-a1b7-82f11e83cdef",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Kiboko yuko wapi? Ninaona ndege tu.",
+      "english": "Where's the hippo? I can only see birds.",
+      "words": [
+        {
+          "text": "Kiboko",
+          "gloss": "hippo",
+          "sanifu": "Sanifu: kiboko / viboko (ki/vi class — but animals agree like people)"
+        },
+        {
+          "text": "yuko",
+          "gloss": "\"He/she is (at / doing)\" — yu- + -ko (be at a place, or how you're doing). \"Yuko poa\" = he/she is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "wapi",
+          "gloss": "where?",
+          "grammar": [
+            "question-words"
+          ]
+        },
+        {
+          "text": "Ninaona",
+          "gloss": "\"I see\" — -ona = see"
+        },
+        {
+          "text": "ndege",
+          "gloss": "bird(s) — also: aeroplane"
+        },
+        {
+          "text": "tu",
+          "gloss": "just / only"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Kiboko yuko wapi? Ninaona ndege tu.",
+          "correct": true
+        },
+        {
+          "swahili": "Kiboko yuko wapi? Ninakula ndege tu.",
+          "correct": false
+        },
+        {
+          "swahili": "Kiboko wako wapi? Ninaona ndege tu.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "0a6d2247-ae1c-53ef-8bd0-2527abcda24f",
+      "speaker": "Saitoti",
+      "role": "auto",
+      "swahili": "Kiboko yuko ndani ya maji — macho tu ni juu!",
+      "english": "The hippo is in the water — only its eyes are on top!",
+      "words": [
+        {
+          "text": "Kiboko",
+          "gloss": "hippo",
+          "sanifu": "Sanifu: kiboko / viboko (ki/vi class — but animals agree like people)"
+        },
+        {
+          "text": "yuko",
+          "gloss": "\"He/she is (at / doing)\" — yu- + -ko (be at a place, or how you're doing). \"Yuko poa\" = he/she is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "ndani ya",
+          "gloss": "\"inside\""
+        },
+        {
+          "text": "maji",
+          "gloss": "water — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — maji yangu, maji haya (ma- plural of the ji/ma class)"
+        },
+        {
+          "text": "macho",
+          "gloss": "eyes (one: jicho)"
+        },
+        {
+          "text": "tu",
+          "gloss": "just / only"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "juu",
+          "gloss": "\"on top, above\""
+        }
+      ]
+    },
+    {
+      "id": "68c375c1-4de6-5e7f-8f64-d74d4f2baee8",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ninaona! Safari ni nzuri sana!",
+      "english": "I see it! The safari is amazing!",
+      "words": [
+        {
+          "text": "Ninaona",
+          "gloss": "\"I see\" — -ona = see"
+        },
+        {
+          "text": "Safari",
+          "gloss": "journey / trip — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "nzuri sana",
+          "gloss": "very good",
+          "grammar": [
+            "greetings"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ninaona! Safari ni nzuri sana!",
+          "correct": true
+        },
+        {
+          "swahili": "Unaona! Safari ni nzuri sana!",
+          "correct": false
+        },
+        {
+          "swahili": "Ninaona! Safari ni chafu sana!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "7e352c92-877b-55c2-b5b3-68c6ba3b74dd",
+      "speaker": "Saitoti",
+      "role": "auto",
+      "swahili": "Asante! Kesho asubuhi tunatafuta chui.",
+      "english": "Thanks! Tomorrow morning we're looking for leopards.",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Kesho",
+          "gloss": "tomorrow — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "asubuhi",
+          "gloss": "morning — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "tunatafuta",
+          "gloss": "\"we're looking for\" — -tafuta = look for"
+        },
+        {
+          "text": "chui",
+          "gloss": "leopard"
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "0b2b49a8-0239-5b48-a58e-56afe8be785f",
+      "swahili": "mbuga ya wanyama",
+      "english": "game park",
+      "exampleContext": "wanyama = animals",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "3cd3daa4-cbdf-5e0d-a3a8-321d147dbd77",
+      "swahili": "simba",
+      "english": "lion(s)",
+      "exampleContext": "simba jike = lioness"
+    },
+    {
+      "id": "59394cfc-99ee-5483-8564-2c0a8a753acb",
+      "swahili": "twiga",
+      "english": "giraffe(s)",
+      "exampleContext": "Twiga ni mrefu."
+    },
+    {
+      "id": "3de69163-e876-5407-b3d2-92e16edb83c2",
+      "swahili": "tembo",
+      "english": "elephant(s)",
+      "exampleContext": "Also: ndovu"
+    },
+    {
+      "id": "f1cea356-14bb-570a-89a3-f11ba03119e8",
+      "swahili": "kiboko",
+      "english": "hippo",
+      "exampleContext": "Animals agree like people: kiboko yuko, viboko wako"
+    },
+    {
+      "id": "04567c8f-3ebf-5a75-8f9c-11fc7c4eccc1",
+      "swahili": "chui",
+      "english": "leopard |",
+      "exampleContext": ""
+    },
+    {
+      "id": "226d8892-d1d8-5e37-afc1-e26fe5b88ebf",
+      "swahili": "pundamilia",
+      "english": "zebra",
+      "exampleContext": "lit. \"striped donkey\""
+    },
+    {
+      "id": "241d0279-ab5d-5fc3-9a99-56d810aab293",
+      "swahili": "nyumbu",
+      "english": "wildebeest |",
+      "exampleContext": ""
+    },
+    {
+      "id": "6baf111c-cb0e-5c7b-8904-ac24ad0ffaa4",
+      "swahili": "ndege",
+      "english": "bird(s)",
+      "exampleContext": "Also: aeroplane"
+    },
+    {
+      "id": "0103e70f-06bd-5655-a904-8de288e7cbeb",
+      "swahili": "mto",
+      "english": "river",
+      "exampleContext": "mtoni = at the river"
+    },
+    {
+      "id": "c815647f-14ab-54ea-ab67-2181d7f69b5c",
+      "swahili": "mti / miti",
+      "english": "tree / trees |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "55e74b2e-16de-5ab9-9b49-f63b3f73ffbd",
+      "swahili": "-ona",
+      "english": "see",
+      "exampleContext": "Ninaona simba!"
+    },
+    {
+      "id": "fca0f5f6-a49c-528a-8ba4-5395f0cc02a7",
+      "swahili": "hatari",
+      "english": "danger / dangerous",
+      "exampleContext": "Ni hatari!"
+    }
+  ],
+  "practice": [
+    {
+      "id": "bb247593-330d-5caa-8d09-a59f885a7960",
+      "mode": "translate",
+      "english": "Where are the lions?",
+      "before": "",
+      "after": " wako wapi?",
+      "options": [
+        {
+          "text": "Simba",
+          "correct": true
+        },
+        {
+          "text": "Twiga",
+          "correct": false,
+          "feedback": "Twiga = giraffe(s)"
+        },
+        {
+          "text": "Tembo",
+          "correct": false,
+          "feedback": "Tembo = elephant(s)"
+        }
+      ],
+      "explanation": "simba = lion, twiga = giraffe, tembo = elephant."
+    },
+    {
+      "id": "e7afafa0-7586-5184-9890-61c32b0c231b",
+      "mode": "translate",
+      "english": "I can see three lions.",
+      "before": "",
+      "after": " simba watatu.",
+      "options": [
+        {
+          "text": "Ninaona",
+          "correct": true
+        },
+        {
+          "text": "Ninakula",
+          "correct": false,
+          "feedback": "Ninakula = I am eating"
+        },
+        {
+          "text": "Ninalala",
+          "correct": false,
+          "feedback": "Ninalala = I am sleeping"
+        }
+      ],
+      "explanation": "-ona = see."
+    },
+    {
+      "id": "4b98876a-396b-5ef1-8a03-1fb4cfc8c6ef",
+      "mode": "translate",
+      "english": "The lions are sleeping.",
+      "before": "Simba ",
+      "after": ".",
+      "options": [
+        {
+          "text": "wanalala",
+          "correct": true
+        },
+        {
+          "text": "wanakula",
+          "correct": false,
+          "feedback": "wanakula = They are eating"
+        },
+        {
+          "text": "wanakunywa",
+          "correct": false,
+          "feedback": "wanakunywa = They are drinking"
+        }
+      ],
+      "explanation": "-lala = sleep.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "51a4f143-1c32-545c-83d9-195b531b60e6",
+      "mode": "translate",
+      "english": "The elephants are drinking water.",
+      "before": "Tembo ",
+      "after": " maji.",
+      "options": [
+        {
+          "text": "wanakunywa",
+          "correct": true
+        },
+        {
+          "text": "wanakula",
+          "correct": false,
+          "feedback": "wanakula = They are eating"
+        },
+        {
+          "text": "wanalala",
+          "correct": false,
+          "feedback": "wanalala = They are sleeping"
+        }
+      ],
+      "explanation": "wanakunywa = \"They are drinking\" — wa- (subject: they) + na- (present) + -nywa (drink). From kunywa.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "620b4149-b927-5f24-a599-f624244b5d73",
+      "mode": "translate",
+      "english": "The giraffe eats leaves.",
+      "before": "Twiga ",
+      "after": " majani.",
+      "options": [
+        {
+          "text": "anakula",
+          "correct": true
+        },
+        {
+          "text": "wanakula",
+          "correct": false,
+          "feedback": "wanakula = They are eating"
+        },
+        {
+          "text": "ninakula",
+          "correct": false,
+          "feedback": "ninakula = I am eating"
+        }
+      ],
+      "explanation": "One giraffe: a-. Several giraffes: wa-.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "4efa0cc7-0a34-5a34-873b-39a5a73ae27d",
+      "mode": "translate",
+      "english": "The cubs are very small.",
+      "before": "Watoto ni ",
+      "after": " sana.",
+      "options": [
+        {
+          "text": "wadogo",
+          "correct": true
+        },
+        {
+          "text": "mdogo",
+          "correct": false,
+          "feedback": "mdogo = small / young"
+        },
+        {
+          "text": "wakubwa",
+          "correct": false,
+          "feedback": "wakubwa = big"
+        }
+      ],
+      "explanation": "One: mdogo. Several: wadogo.",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "bb4cd0d5-aaa2-55e2-9c4d-c2e9d5f46ac8",
+      "mode": "translate",
+      "english": "A giraffe is very tall.",
+      "before": "Twiga ni ",
+      "after": " sana.",
+      "options": [
+        {
+          "text": "mrefu",
+          "correct": true
+        },
+        {
+          "text": "warefu",
+          "correct": false,
+          "feedback": "warefu = tall / long"
+        },
+        {
+          "text": "mfupi",
+          "correct": false,
+          "feedback": "mfupi = short"
+        }
+      ],
+      "explanation": "mrefu = \"tall / long\" — m/wa singular agreement (one person / animal).",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "3d7a2bda-4066-525e-bc18-ebc12fe419a7",
+      "mode": "translate",
+      "english": "Elephants are huge.",
+      "before": "Tembo ni ",
+      "after": " sana.",
+      "options": [
+        {
+          "text": "wakubwa",
+          "correct": true
+        },
+        {
+          "text": "mkubwa",
+          "correct": false,
+          "feedback": "mkubwa = big"
+        },
+        {
+          "text": "wadogo",
+          "correct": false,
+          "feedback": "wadogo = small / young"
+        }
+      ],
+      "explanation": "wakubwa = \"big\" — m/wa plural agreement (people / animals).",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "a9843ac8-5128-5305-bf6f-41f22e76d59e",
+      "mode": "translate",
+      "english": "Is it dangerous?",
+      "before": "Ni ",
+      "after": "?",
+      "options": [
+        {
+          "text": "hatari",
+          "correct": true
+        },
+        {
+          "text": "safi",
+          "correct": false,
+          "feedback": "safi = clean / great / sorted"
+        },
+        {
+          "text": "tamu",
+          "correct": false,
+          "feedback": "tamu = sweet / delicious"
+        }
+      ],
+      "explanation": "hatari = danger / dangerous."
+    },
+    {
+      "id": "fb78ad2a-3e7c-5520-9d15-4094e424dbc0",
+      "mode": "translate",
+      "english": "The hippo is in the water.",
+      "before": "",
+      "after": " yuko ndani ya maji.",
+      "options": [
+        {
+          "text": "Kiboko",
+          "correct": true
+        },
+        {
+          "text": "Simba",
+          "correct": false,
+          "feedback": "Simba = lion(s)"
+        },
+        {
+          "text": "Twiga",
+          "correct": false,
+          "feedback": "Twiga = giraffe(s)"
+        }
+      ],
+      "explanation": "kiboko = hippo."
+    },
+    {
+      "id": "59163732-aa1a-5466-a26a-3c5a0ff27dc0",
+      "mode": "translate",
+      "english": "near the river",
+      "before": "karibu na ",
+      "after": "",
+      "options": [
+        {
+          "text": "mto",
+          "correct": true
+        },
+        {
+          "text": "mti",
+          "correct": false,
+          "feedback": "mti = tree (plural: miti)"
+        },
+        {
+          "text": "mlima",
+          "correct": false,
+          "feedback": "mlima = mountain (plural milima)"
+        }
+      ],
+      "explanation": "mto = river, mti = tree, mlima = mountain."
+    },
+    {
+      "id": "8386ad3e-8a88-5b13-81f6-5858879e70e6",
+      "mode": "translate",
+      "english": "under a big tree",
+      "before": "chini ya ",
+      "after": " mkubwa",
+      "options": [
+        {
+          "text": "mti",
+          "correct": true
+        },
+        {
+          "text": "mto",
+          "correct": false,
+          "feedback": "mto = river"
+        },
+        {
+          "text": "maji",
+          "correct": false,
+          "feedback": "maji = water"
+        }
+      ],
+      "explanation": "chini ya = under."
+    },
+    {
+      "id": "096b056e-8544-53ee-aa25-5883dcae5bbc",
+      "mode": "translate",
+      "english": "twelve elephants",
+      "before": "tembo kumi na ",
+      "after": "",
+      "options": [
+        {
+          "text": "wawili",
+          "correct": true
+        },
+        {
+          "text": "watatu",
+          "correct": false,
+          "feedback": "watatu = three (m/wa)"
+        },
+        {
+          "text": "wanne",
+          "correct": false,
+          "feedback": "wanne = four (m/wa)"
+        }
+      ],
+      "explanation": "Animals count like people: wawili, watatu, wanne.",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "44e0a71f-ce95-55e3-9db5-17b8e0ef39a4",
+      "mode": "translate",
+      "english": "I can only see birds.",
+      "before": "Ninaona ",
+      "after": " tu.",
+      "options": [
+        {
+          "text": "ndege",
+          "correct": true
+        },
+        {
+          "text": "nyoka",
+          "correct": false,
+          "feedback": "nyoka = snake"
+        },
+        {
+          "text": "samaki",
+          "correct": false,
+          "feedback": "samaki = fish"
+        }
+      ],
+      "explanation": "ndege = bird, nyoka = snake, samaki = fish."
+    },
+    {
+      "id": "95f1b42a-7bfe-5b38-98f5-1d9ce7d43d6d",
+      "mode": "translate",
+      "english": "zebras and wildebeest",
+      "before": "",
+      "after": " na nyumbu",
+      "options": [
+        {
+          "text": "pundamilia",
+          "correct": true
+        },
+        {
+          "text": "chui",
+          "correct": false,
+          "feedback": "chui = leopard"
+        },
+        {
+          "text": "mamba",
+          "correct": false
+        }
+      ],
+      "explanation": "pundamilia = zebra, chui = leopard, mamba = crocodile.",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "f36454d4-233f-5f22-8ea6-887ea3513d0e",
+      "mode": "translate",
+      "english": "We're looking for leopards.",
+      "before": "",
+      "after": " chui.",
+      "options": [
+        {
+          "text": "Tunatafuta",
+          "correct": true
+        },
+        {
+          "text": "Tunakula",
+          "correct": false,
+          "feedback": "Tunakula = We are eating"
+        },
+        {
+          "text": "Tunalala",
+          "correct": false,
+          "feedback": "Tunalala = We are sleeping"
+        }
+      ],
+      "explanation": "Tunatafuta = \"we're looking for\" — -tafuta = look for"
+    },
+    {
+      "id": "c1694044-a3bb-5759-8d96-aa56e564408c",
+      "mode": "complete",
+      "english": "What can you see? — A leopard!",
+      "before": "Unaona nini? — ",
+      "after": "!",
+      "options": [
+        {
+          "text": "Chui",
+          "correct": true
+        },
+        {
+          "text": "Mto",
+          "correct": false,
+          "feedback": "Mto = river"
+        },
+        {
+          "text": "Hatari",
+          "correct": false,
+          "feedback": "Hatari = danger / dangerous"
+        }
+      ],
+      "explanation": "Chui: leopard"
+    }
+  ]
+}

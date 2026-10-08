@@ -24,10 +24,8 @@
     "ni-copula",
     "sanifu-noun-classes",
     "question-words",
-    "demonstratives",
     "discourse-particles",
-    "locative-ni",
-    "subjunctive"
+    "locative-ni"
   ],
   "turns": [
     {
@@ -314,8 +312,8 @@
       "id": "bc89fb08-6969-5692-acc5-5ce28a827de6",
       "speaker": "Mama Njeri",
       "role": "auto",
-      "swahili": "Mimi ni Mama Njeri. Huyu ni Baraka, mtoto wangu.",
-      "english": "I'm Mama Njeri. This is Baraka, my son.",
+      "swahili": "Mimi ni Mama Njeri. Na Baraka ni mtoto wangu.",
+      "english": "I'm Mama Njeri. And Baraka is my son.",
       "words": [
         {
           "text": "Mimi",
@@ -336,11 +334,12 @@
           "gloss": "\"Njeri's mum\" — Kenyan women are often called by their first child's name. Mama alone is a respectful way to address any older woman."
         },
         {
-          "text": "Huyu",
-          "gloss": "this (person) — m/wa singular",
-          "grammar": [
-            "demonstratives"
-          ]
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "Baraka",
+          "gloss": "Baraka (name)"
         },
         {
           "text": "ni",
@@ -348,10 +347,6 @@
           "grammar": [
             "ni-copula"
           ]
-        },
-        {
-          "text": "Baraka",
-          "gloss": "Baraka (name)"
         },
         {
           "text": "mtoto",
@@ -909,16 +904,8 @@
           ]
         },
         {
-          "text": "Tuonane",
-          "gloss": "see you (lit. \"let's see each other\")",
-          "grammar": [
-            "greetings",
-            "subjunctive"
-          ]
-        },
-        {
-          "text": "baadaye",
-          "gloss": "later"
+          "text": "Tuonane baadaye",
+          "gloss": "\"see you later\" — a set phrase (lit. \"let's see each other later\")."
         }
       ],
       "options": [
@@ -1389,8 +1376,8 @@
     {
       "id": "b3bfd9de-7fce-55ef-8cc7-a834a73fceba",
       "mode": "translate",
-      "english": "This is my child.",
-      "before": "Huyu ni mtoto ",
+      "english": "Baraka is my child.",
+      "before": "Baraka ni mtoto ",
       "after": ".",
       "options": [
         {
@@ -1408,7 +1395,7 @@
           "feedback": "wake = his/her"
         }
       ],
-      "explanation": "wangu = my (m/wa agreement, used for people).",
+      "explanation": "wangu = my, wako = your, wake = his / her.",
       "grammar": [
         "possessives"
       ]
@@ -1543,11 +1530,7 @@
           "feedback": "Karibu = near / welcome / almost"
         }
       ],
-      "explanation": "Tuonane: see you (lit. \"let's see each other\")",
-      "grammar": [
-        "greetings",
-        "subjunctive"
-      ]
+      "explanation": "Tuonane = \"let's see each other\" — set phrase used in goodbyes."
     }
   ]
 }

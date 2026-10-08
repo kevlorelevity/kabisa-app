@@ -26,6 +26,8 @@ export interface ContentOverride {
   item_id: string | null;
   find_text: string;
   replace_text: string;
+  /** Also apply a Swahili wording change to every lesson (default true). */
+  propagate?: boolean;
 }
 
 /** Separators used when a pencil shows several fields joined together (vocab, tables, examples…). */
@@ -148,6 +150,129 @@ export function resolveOverride(
   return canApply(scope.content, o) ? o : null;
 }
 
+// ---- app-wide propagation of Swahili wording changes ----
+//
+// An admin usually fixes a word in ONE place (a practice chip, a dialogue line,
+// a flashcard). The same wording lives in other places too, so a Swahili change
+// is also applied, as a whole-word replacement, to every lesson's Swahili text
+// (dialogue lines, answer choices, word glosses, practice sentences and chips,
+// vocabulary/flashcards, Sanifu forms) and to explanatory notes. English edits
+// stay where they were made.
+
+/** Fields that hold Swahili. */
+const SW_KEYS = new Set(['swahili', 'sanifu', 'before', 'after', 'text']);
+/** Mixed English notes that quote Swahili words. Only longer spans propagate here. */
+const NOTE_KEYS = new Set(['exampleContext', 'explanation', 'feedback', 'sanifuNote', 'gloss']);
+const WORD = /[\p{L}\p{N}'’-]+/gu;
+
+export interface Span {
+  from: string;
+  to: string;
+}
+
+/** The smallest run of whole words that differs between a and b ("Lete tu." → "Leta tu." gives Lete → Leta). */
+export function changedSpan(a: string, b: string): Span | null {
+  const wa = [...a.matchAll(WORD)];
+  const wb = [...b.matchAll(WORD)];
+  if (!wa.length || !wb.length) return null;
+  let i = 0;
+  while (i < wa.length && i < wb.length && wa[i][0] === wb[i][0]) i++;
+  let ja = wa.length - 1;
+  let jb = wb.length - 1;
+  while (ja >= i && jb >= i && wa[ja][0] === wb[jb][0]) {
+    ja--;
+    jb--;
+  }
+  if (i > ja && i > jb) return null; // only punctuation changed
+  if (i > ja) return null; // pure insertion — nothing to find elsewhere
+  const from = a.slice(wa[i].index, wa[ja].index! + wa[ja][0].length);
+  const to = i > jb ? '' : b.slice(wb[i].index, wb[jb].index! + wb[jb][0].length);
+  if (!from.trim() || !to.trim() || from === to) return null;
+  return { from, to };
+}
+
+function leafKeys(node: unknown, text: string, out: Set<string>, key?: string): Set<string> {
+  if (typeof node === 'string') {
+    if (key && node.includes(text)) out.add(key);
+  } else if (Array.isArray(node)) node.forEach((v) => leafKeys(v, text, out, key));
+  else if (node && typeof node === 'object')
+    for (const [k, v] of Object.entries(node)) if (!SKIP_KEYS.has(k)) leafKeys(v, text, out, k);
+  return out;
+}
+
+/** The Swahili spans an override changes (none for English-only edits). */
+export function swahiliSpans(scope: unknown, o: Pick<ContentOverride, 'find_text' | 'replace_text'>): Span[] {
+  const pairs: Array<[string, string]> = [[o.find_text, o.replace_text]];
+  const a = o.find_text.split(SEGMENT_SPLIT);
+  const b = o.replace_text.split(SEGMENT_SPLIT);
+  if (a.length > 1 && a.length === b.length) {
+    pairs.length = 0;
+    a.forEach((part, i) => part.trim() && part.trim() !== b[i].trim() && pairs.push([part.trim(), b[i].trim()]));
+  }
+  const spans: Span[] = [];
+  for (const [find, rep] of pairs) {
+    const keys = leafKeys(scope, find, new Set());
+    if (![...keys].some((k) => SW_KEYS.has(k))) continue;
+    const span = changedSpan(find, rep);
+    if (span && !spans.some((x) => x.from === span.from)) spans.push(span);
+  }
+  return spans;
+}
+
+const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+const low = (s: string) => s.charAt(0).toLowerCase() + s.slice(1);
+
+function variants(span: Span): Span[] {
+  const v = [span];
+  if (cap(span.from) !== span.from) v.push({ from: cap(span.from), to: cap(span.to) });
+  if (low(span.from) !== span.from) v.push({ from: low(span.from), to: low(span.to) });
+  return v;
+}
+
+/** Whole-word replacement of a span in every Swahili field (and notes, for longer spans). Returns the count. */
+export function propagateSpan(node: unknown, span: Span, count = false): number {
+  const res = variants(span).map((v) => ({
+    re: new RegExp(`(?<![\\p{L}\\p{N}'’-])${esc(v.from)}(?![\\p{L}\\p{N}'’-])`, 'gu'),
+    to: v.to,
+  }));
+  const notesToo = span.from.length >= 4;
+  let n = 0;
+  const walk = (obj: unknown) => {
+    if (!obj || typeof obj !== 'object') return;
+    const entries: Array<[string | number, unknown]> = Array.isArray(obj)
+      ? obj.map((v, i) => [i, v])
+      : Object.entries(obj as Record<string, unknown>);
+    for (const [k, v] of entries) {
+      if (typeof k === 'string' && SKIP_KEYS.has(k)) continue;
+      if (typeof v === 'string' && typeof k === 'string' && (SW_KEYS.has(k) || (notesToo && NOTE_KEYS.has(k)))) {
+        let out = v;
+        for (const r of res) {
+          out = out.replace(r.re, () => {
+            n++;
+            return r.to;
+          });
+        }
+        if (!count && out !== v) (obj as Record<string, unknown>)[k] = out;
+      } else if (v && typeof v === 'object') walk(v);
+    }
+  };
+  walk(node);
+  return n;
+}
+
+/** How many OTHER places a pending edit would also change (for the admin modal). */
+export function countPropagation(scope: unknown, o: Pick<ContentOverride, 'find_text' | 'replace_text'>): number {
+  if (!scopes) return 0;
+  const spans = swahiliSpans(scope, o);
+  if (!spans.length) return 0;
+  const all = scopes.allLessons();
+  let n = 0;
+  for (const span of spans) n += propagateSpan(all, span, true);
+  // The place being edited is counted too; it isn't "another" place.
+  return Math.max(0, n - spans.length);
+}
+
 // ---- runtime store ----
 
 let applied: ContentOverride[] = [];
@@ -157,6 +282,7 @@ let scopes: {
   lesson: (id: string) => Lesson | undefined;
   grammar: (slug: string) => GrammarTopic | undefined;
   level: (n: string) => LevelInfo | undefined;
+  allLessons: () => Lesson[];
 } | null = null;
 
 /** Called once by the content modules so this file doesn't import them (no cycles). */
@@ -172,7 +298,11 @@ export function scopeContent(type: ScopeType, id: string): unknown {
 
 function applyNow(o: ContentOverride): void {
   const target = scopeContent(o.scope_type, o.scope_id);
-  if (target) applyOverrideTo(target, o);
+  if (!target) return;
+  // Spans are read from the scope BEFORE the edit (the old wording must still be there).
+  const spans = o.propagate === false || !scopes ? [] : swahiliSpans(target, o);
+  applyOverrideTo(target, o);
+  if (scopes) for (const span of spans) propagateSpan(scopes.allLessons(), span);
 }
 
 function bump(): void {
@@ -199,7 +329,7 @@ export function loadOverrides(): Promise<void> {
     if (!supa) return;
     const { data, error } = await supa
       .from('content_override')
-      .select('id,created_at,scope_type,scope_id,item_id,find_text,replace_text')
+      .select('id,created_at,scope_type,scope_id,item_id,find_text,replace_text,propagate')
       .eq('active', true)
       .order('created_at', { ascending: true });
     if (error) {

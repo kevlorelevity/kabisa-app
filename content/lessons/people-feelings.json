@@ -1,0 +1,1435 @@
+{
+  "id": "people-feelings",
+  "uuid": "56e231e9-0d56-5405-9a53-491415a17c13",
+  "title": "Happy, Worried, Angry: Moods and Personalities",
+  "category": "people",
+  "difficulty": "medium",
+  "level": 4,
+  "order": 405,
+  "theme": "people",
+  "culturalNote": "Kenyans often describe feelings with \"niko na…\" — literally \"I am with…\": niko na furaha (I'm happy), niko na wasiwasi (I'm worried), niko na hasira (I'm angry). Describing people is just as common, and the words come in singular and plural pairs: mcheshi / wacheshi (a funny person / funny people), mvivu / wavivu (lazy). Calling someone \"mpole\" (gentle, calm) is a big compliment.",
+  "startingPoint": "Friday evening. Otieno flops onto the sofa next to you in your shared flat.",
+  "grammarFocus": [
+    "ko-location",
+    "adjective-agreement",
+    "possessives",
+    "present-na"
+  ],
+  "grammar": [
+    "ko-location",
+    "adjective-agreement",
+    "possessives",
+    "present-na",
+    "greetings",
+    "question-words",
+    "noun-classes-mwa-nn",
+    "sanifu-noun-classes",
+    "ni-copula",
+    "locative-ni",
+    "subject-prefixes",
+    "discourse-particles"
+  ],
+  "turns": [
+    {
+      "id": "1cce3ce3-ed14-50d3-873c-f6a10658e5fe",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Niaje, John! Uko aje leo?",
+      "english": "Hey, John! How are you today?",
+      "words": [
+        {
+          "text": "Niaje",
+          "gloss": "what's up? — from \"ni aje?\" (how is it?), said fast with stress on the first syllable",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "John",
+          "gloss": "John (name)"
+        },
+        {
+          "text": "Uko",
+          "gloss": "\"You are (at / doing)\" — u- + -ko (be at a place, or how you're doing). \"Uko poa\" = you are fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "aje",
+          "gloss": "how? (Kenyan) — \"Uko aje?\" = how are you?",
+          "grammar": [
+            "question-words",
+            "greetings"
+          ]
+        },
+        {
+          "text": "leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4b9dc621-b5be-57af-9346-2a773c930429",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Niko poa, lakini niko na wasiwasi kidogo.",
+      "english": "I'm fine, but I'm a bit worried.",
+      "words": [
+        {
+          "text": "Niko",
+          "gloss": "\"I am (at / doing)\" — ni- + -ko (be at a place, or how you're doing). \"Niko poa\" = I am fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "niko na wasiwasi",
+          "gloss": "\"I'm worried\" — lit. \"I'm with worry\".",
+          "grammar": [
+            "ko-location"
+          ]
+        },
+        {
+          "text": "kidogo",
+          "gloss": "a little / a bit — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — kidogo (adverb, no agreement)"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Niko poa, lakini niko na wasiwasi kidogo.",
+          "correct": true
+        },
+        {
+          "swahili": "Uko poa, lakini uko na wasiwasi kidogo.",
+          "correct": false
+        },
+        {
+          "swahili": "Niko poa, lakini niko na chakula kidogo.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "3b81ae08-88dc-54b7-8b0b-385b0dc808f2",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Wasiwasi? Kwa nini?",
+      "english": "Worried? Why?",
+      "words": [
+        {
+          "text": "Wasiwasi",
+          "gloss": "worry"
+        },
+        {
+          "text": "Kwa nini",
+          "gloss": "why?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "22750e94-94f5-5cb4-8e93-5ea1187efff1",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Bosi mpya ni mkali sana. Kila mtu ofisini ni kimya.",
+      "english": "The new boss is very strict. Everyone at the office is quiet.",
+      "words": [
+        {
+          "text": "Bosi mpya",
+          "gloss": "\"the new boss\""
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mkali",
+          "gloss": "strict / fierce"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Kila mtu",
+          "gloss": "\"everyone\""
+        },
+        {
+          "text": "ofisini",
+          "gloss": "\"at the office\" — ofisi + -ni.",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "kimya",
+          "gloss": "quiet / silence"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Bosi mpya ni mkali sana. Kila mtu ofisini ni kimya.",
+          "correct": true
+        },
+        {
+          "swahili": "Bosi mpya ni mpole sana. Kila mtu ofisini ni kimya.",
+          "correct": false
+        },
+        {
+          "swahili": "Bosi mpya uko mkali sana. Kila mtu ofisini ni kimya.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "35bdb620-031a-5af1-976e-b568be008496",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Pole! Lakini Achieng yuko hapo, sivyo? Yeye ni mchangamfu sana.",
+      "english": "Sorry! But Achieng is there, isn't she? She's really cheerful.",
+      "words": [
+        {
+          "text": "Pole",
+          "gloss": "sorry (sympathy)"
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "Achieng",
+          "gloss": "Achieng (name)"
+        },
+        {
+          "text": "yuko hapo",
+          "gloss": "\"is there\""
+        },
+        {
+          "text": "sivyo",
+          "gloss": "\"isn't it? / right?\""
+        },
+        {
+          "text": "Yeye",
+          "gloss": "he / she / him / her",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mchangamfu",
+          "gloss": "cheerful, lively"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ]
+    },
+    {
+      "id": "443975d2-9740-546e-9343-35a0cbd9331c",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ndiyo! Achieng ni mcheshi na mkarimu. Ninapenda kufanya kazi naye.",
+      "english": "Yes! Achieng is funny and kind. I like working with her.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Achieng",
+          "gloss": "Achieng (name)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mcheshi",
+          "gloss": "funny (person)"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "mkarimu",
+          "gloss": "generous, kind"
+        },
+        {
+          "text": "Ninapenda",
+          "gloss": "\"I like\" — ni- (subject: I) + na- (present) + -penda (like). From kupenda. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kupenda (to like)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninapenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unapenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anapenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunapenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnapenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanapenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kufanya kazi",
+          "gloss": "\"to work\""
+        },
+        {
+          "text": "naye",
+          "gloss": "\"with him / her\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo! Achieng ni mcheshi na mkarimu. Ninapenda kufanya kazi naye.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo! Achieng ni mvivu na mkali. Ninapenda kufanya kazi naye.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo! Achieng ni mcheshi na mkarimu. Unapenda kufanya kazi naye.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "2cef5fb9-6a50-5ee0-a972-d833aa897a90",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Na wewe, uko na furaha kazini?",
+      "english": "And you, are you happy at work?",
+      "words": [
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "uko na furaha",
+          "gloss": "\"are you happy?\"",
+          "grammar": [
+            "ko-location"
+          ]
+        },
+        {
+          "text": "kazini",
+          "gloss": "\"at work\" — kazi + -ni.",
+          "grammar": [
+            "locative-ni"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0f836879-0353-5ac9-bd5a-45eb04d62d93",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ndiyo, niko na furaha. Wanafunzi wangu ni werevu sana.",
+      "english": "Yes, I'm happy. My students are very clever.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "niko na furaha",
+          "gloss": "\"I'm happy\" — lit. \"I'm with happiness\".",
+          "grammar": [
+            "ko-location"
+          ]
+        },
+        {
+          "text": "Wanafunzi",
+          "gloss": "students, pupils (one: mwanafunzi)"
+        },
+        {
+          "text": "wangu",
+          "gloss": "\"my\" — m/wa agreement (for people: mtoto wangu, watoto wangu).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (m/wa: people)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "wangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "wako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "wake"
+              },
+              {
+                "pronoun": "our",
+                "form": "wetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "wenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "wao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "werevu",
+          "gloss": "clever (people) — one: mwerevu"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo, niko na furaha. Wanafunzi wangu ni werevu sana.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, niko na hasira. Wanafunzi wangu ni werevu sana.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, niko na furaha. Wanafunzi wangu ni mwerevu sana.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "31dd5825-8f33-5157-9d0d-492d6826c31e",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Poa! Mimi leo niko na hasira kidogo.",
+      "english": "Good! Me, I'm a bit angry today.",
+      "words": [
+        {
+          "text": "Poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "niko na hasira",
+          "gloss": "\"I'm angry\" — lit. \"I'm with anger\".",
+          "grammar": [
+            "ko-location"
+          ]
+        },
+        {
+          "text": "kidogo",
+          "gloss": "a little / a bit — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — kidogo (adverb, no agreement)"
+        }
+      ]
+    },
+    {
+      "id": "981b86f3-25ab-50db-8ac7-8fa4b82fad9c",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Hasira? Kwa nini, Otieno?",
+      "english": "Angry? Why, Otieno?",
+      "words": [
+        {
+          "text": "Hasira",
+          "gloss": "anger"
+        },
+        {
+          "text": "Kwa nini",
+          "gloss": "why?",
+          "grammar": [
+            "question-words"
+          ]
+        },
+        {
+          "text": "Otieno",
+          "gloss": "Otieno (a Luo name)"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Hasira? Kwa nini, Otieno?",
+          "correct": true
+        },
+        {
+          "swahili": "Furaha? Kwa nini, Otieno?",
+          "correct": false
+        },
+        {
+          "swahili": "Hasira? Kwa nini, mimi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "c05a21b5-2f67-5710-ae03-0954992c0d43",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Fundi wetu ni mvivu! Bomba ya jikoni ni mbovu, na yeye anakuja polepole sana.",
+      "english": "Our repairman is lazy! The kitchen tap is broken, and he's taking forever to come.",
+      "words": [
+        {
+          "text": "Fundi wetu",
+          "gloss": "\"our repairman\""
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mvivu",
+          "gloss": "lazy"
+        },
+        {
+          "text": "Bomba ya jikoni",
+          "gloss": "\"the kitchen tap\"",
+          "sanifu": "Sanifu: bomba la jikoni (ji/ma class)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mbovu",
+          "gloss": "broken"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "yeye",
+          "gloss": "he / she / him / her",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "anakuja",
+          "gloss": "\"He/she is coming\" — a- (subject: he/she) + na- (present) + -ja (come). From kuja.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuja (to come)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninakuja"
+              },
+              {
+                "pronoun": "you",
+                "form": "unakuja"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anakuja"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunakuja"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnakuja"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanakuja"
+              }
+            ]
+          }
+        },
+        {
+          "text": "polepole",
+          "gloss": "slowly"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ],
+      "sanifu": "Fundi wetu ni mvivu! Bomba la jikoni ni bovu, na yeye anakuja polepole sana."
+    },
+    {
+      "id": "46434f0d-74c1-559e-adb9-0e4626ea2cd0",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Pole sana! Lakini wewe ni mpole — hasira yako ni kidogo tu.",
+      "english": "So sorry! But you're a calm guy — your anger is only small.",
+      "words": [
+        {
+          "text": "Pole sana",
+          "gloss": "so sorry / take heart"
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mpole",
+          "gloss": "gentle, calm"
+        },
+        {
+          "text": "hasira",
+          "gloss": "anger"
+        },
+        {
+          "text": "yako",
+          "gloss": "\"your\" — n/n singular agreement (nyumba yako). In Kenyan speech also used for family words and most things (jina yako, gari yako).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (n/n singular)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "yangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "yako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "yake"
+              },
+              {
+                "pronoun": "our",
+                "form": "yetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "yenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "yao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "kidogo",
+          "gloss": "a little / a bit — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — kidogo (adverb, no agreement)"
+        },
+        {
+          "text": "tu",
+          "gloss": "just / only"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Pole sana! Lakini wewe ni mpole — hasira yako ni kidogo tu.",
+          "correct": true
+        },
+        {
+          "swahili": "Pole sana! Lakini mimi ni mpole — hasira yako ni kidogo tu.",
+          "correct": false
+        },
+        {
+          "swahili": "Asante sana! Lakini wewe ni mpole — hasira yako ni kidogo tu.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "d7d12e80-5136-5fc6-a5ab-99b50320a5aa",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Haha, kweli! Na sasa ni Ijumaa — niko na furaha tena!",
+      "english": "Ha, true! And now it's Friday — I'm happy again!",
+      "words": [
+        {
+          "text": "Haha",
+          "gloss": "haha"
+        },
+        {
+          "text": "kweli",
+          "gloss": "true / really",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Ijumaa",
+          "gloss": "Friday"
+        },
+        {
+          "text": "niko na furaha",
+          "gloss": "\"I'm happy\" — lit. \"I'm with happiness\".",
+          "grammar": [
+            "ko-location"
+          ]
+        },
+        {
+          "text": "tena",
+          "gloss": "again"
+        }
+      ]
+    },
+    {
+      "id": "33d9fee7-3ece-5ad1-bf76-c7674eea9c21",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Hata mimi! Ijumaa ni siku nzuri kabisa!",
+      "english": "Me too! Friday is the best day!",
+      "words": [
+        {
+          "text": "Hata mimi",
+          "gloss": "\"me too\" — lit. \"even me\""
+        },
+        {
+          "text": "Ijumaa",
+          "gloss": "Friday"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "siku nzuri kabisa",
+          "gloss": "\"the best day\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Hata mimi! Ijumaa ni siku nzuri kabisa!",
+          "correct": true
+        },
+        {
+          "swahili": "Hata mimi! Ijumaa ni siku mbaya kabisa!",
+          "correct": false
+        },
+        {
+          "swahili": "Hata wewe! Ijumaa ni siku nzuri kabisa!",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "a3d9900b-6a25-59ac-8c78-9b25c2b9ae38",
+      "swahili": "Niko na furaha",
+      "english": "I'm happy",
+      "exampleContext": "lit. \"I'm with happiness\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "c0f9b495-dc61-5b30-b649-fdc35ddfd589",
+      "swahili": "Niko na hasira",
+      "english": "I'm angry",
+      "exampleContext": "hasira = anger",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "44a90530-28fc-57d6-9fa7-bd92225b9cad",
+      "swahili": "Niko na wasiwasi",
+      "english": "I'm worried",
+      "exampleContext": "wasiwasi = worry",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "a9a48bf5-c8a5-50f0-86f3-7ed8015e0f05",
+      "swahili": "mchangamfu",
+      "english": "cheerful, lively |",
+      "exampleContext": ""
+    },
+    {
+      "id": "1b70ef66-d180-52a6-a0b8-5d13a2e2ee58",
+      "swahili": "mcheshi / wacheshi",
+      "english": "funny (person / people) |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "ee425f61-982d-5464-a076-f0ca2e8c6bcb",
+      "swahili": "mkarimu",
+      "english": "kind, generous |",
+      "exampleContext": ""
+    },
+    {
+      "id": "21b42aaf-1f79-5ac3-bae2-6a6278039aa5",
+      "swahili": "mkali",
+      "english": "strict, fierce",
+      "exampleContext": "Also: spicy, sharp"
+    },
+    {
+      "id": "8d583073-9034-539c-aca8-5e54c7010b5c",
+      "swahili": "mpole",
+      "english": "gentle, calm",
+      "exampleContext": "A big compliment"
+    },
+    {
+      "id": "d344192c-324f-5caf-a5ab-8811d4cb11b5",
+      "swahili": "mvivu / wavivu",
+      "english": "lazy (person / people) |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "5cb63aa2-ecbe-58a1-82f5-347d4de2f326",
+      "swahili": "mwerevu / werevu",
+      "english": "clever (person / people) |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "eb76d7e2-68a6-560b-b30f-8f60159613b4",
+      "swahili": "kimya",
+      "english": "quiet, silence |",
+      "exampleContext": ""
+    },
+    {
+      "id": "5f408625-1426-57b4-9f44-cc7726398349",
+      "swahili": "polepole",
+      "english": "slowly |",
+      "exampleContext": ""
+    },
+    {
+      "id": "0bde75e9-cb63-57d5-b067-29690126a9b3",
+      "swahili": "Ijumaa",
+      "english": "Friday",
+      "exampleContext": "The best day!"
+    }
+  ],
+  "practice": [
+    {
+      "id": "57d4d291-2b08-5c65-8264-8b508c162043",
+      "mode": "translate",
+      "english": "I'm a bit worried.",
+      "before": "Niko na ",
+      "after": " kidogo.",
+      "options": [
+        {
+          "text": "wasiwasi",
+          "correct": true
+        },
+        {
+          "text": "furaha",
+          "correct": false,
+          "feedback": "furaha = happiness"
+        },
+        {
+          "text": "njaa",
+          "correct": false,
+          "feedback": "njaa = hunger"
+        }
+      ],
+      "explanation": "wasiwasi = worry, furaha = happiness, njaa = hunger."
+    },
+    {
+      "id": "5f453c36-7785-5c36-8e0d-4de7fa15679d",
+      "mode": "translate",
+      "english": "I'm happy.",
+      "before": "Niko na ",
+      "after": ".",
+      "options": [
+        {
+          "text": "furaha",
+          "correct": true
+        },
+        {
+          "text": "hasira",
+          "correct": false,
+          "feedback": "hasira = anger"
+        },
+        {
+          "text": "homa",
+          "correct": false,
+          "feedback": "homa = fever / flu (Kenyans use it for a bad cold too)"
+        }
+      ],
+      "explanation": "hasira = anger, homa = fever."
+    },
+    {
+      "id": "a6b8e349-e677-5bda-b290-2f5e562f033a",
+      "mode": "translate",
+      "english": "He's angry.",
+      "before": "",
+      "after": " na hasira.",
+      "options": [
+        {
+          "text": "Yuko",
+          "correct": true
+        },
+        {
+          "text": "Niko",
+          "correct": false,
+          "feedback": "Niko = I am (at / doing)"
+        },
+        {
+          "text": "Uko",
+          "correct": false,
+          "feedback": "Uko = You are (at / doing)"
+        }
+      ],
+      "explanation": "yuko = he / she is.",
+      "grammar": [
+        "ko-location"
+      ]
+    },
+    {
+      "id": "60543b51-3da6-5895-b939-3cd1a058432a",
+      "mode": "translate",
+      "english": "We're happy.",
+      "before": "",
+      "after": " na furaha.",
+      "options": [
+        {
+          "text": "Tuko",
+          "correct": true
+        },
+        {
+          "text": "Wako",
+          "correct": false,
+          "feedback": "Wako = They are (at / doing)"
+        },
+        {
+          "text": "Niko",
+          "correct": false,
+          "feedback": "Niko = I am (at / doing)"
+        }
+      ],
+      "explanation": "tuko = we are.",
+      "grammar": [
+        "ko-location"
+      ]
+    },
+    {
+      "id": "43c42348-6373-5111-8ba1-02d760d1a620",
+      "mode": "translate",
+      "english": "The new boss is strict.",
+      "before": "Bosi mpya ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "mkali",
+          "correct": true
+        },
+        {
+          "text": "mpole",
+          "correct": false,
+          "feedback": "mpole = gentle, calm"
+        },
+        {
+          "text": "mcheshi",
+          "correct": false,
+          "feedback": "mcheshi = funny (person)"
+        }
+      ],
+      "explanation": "mkali = strict, mpole = gentle / calm, mcheshi = funny."
+    },
+    {
+      "id": "cf9d1b5a-cbd0-52fc-aa77-fdb514799975",
+      "mode": "translate",
+      "english": "She's very cheerful.",
+      "before": "Yeye ni ",
+      "after": " sana.",
+      "options": [
+        {
+          "text": "mchangamfu",
+          "correct": true
+        },
+        {
+          "text": "mvivu",
+          "correct": false,
+          "feedback": "mvivu = lazy"
+        },
+        {
+          "text": "mkali",
+          "correct": false,
+          "feedback": "mkali = strict / fierce"
+        }
+      ],
+      "explanation": "mchangamfu = cheerful, mvivu = lazy."
+    },
+    {
+      "id": "f3e9651b-ac42-56d5-a7f0-45d87848fdf5",
+      "mode": "translate",
+      "english": "kind / generous",
+      "before": "",
+      "after": "",
+      "options": [
+        {
+          "text": "mkarimu",
+          "correct": true
+        },
+        {
+          "text": "mkali",
+          "correct": false,
+          "feedback": "mkali = strict / fierce"
+        },
+        {
+          "text": "mvivu",
+          "correct": false,
+          "feedback": "mvivu = lazy"
+        }
+      ],
+      "explanation": "mkarimu = kind, generous."
+    },
+    {
+      "id": "fa2e7326-dc76-5a22-b867-f49b9e684793",
+      "mode": "translate",
+      "english": "My students are clever.",
+      "before": "Wanafunzi wangu ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "werevu",
+          "correct": true
+        },
+        {
+          "text": "mwerevu",
+          "correct": false,
+          "feedback": "mwerevu = clever"
+        },
+        {
+          "text": "wavivu",
+          "correct": false,
+          "feedback": "wavivu = lazy"
+        }
+      ],
+      "explanation": "One clever person: mwerevu. Several: werevu."
+    },
+    {
+      "id": "c4449fb7-aff1-5190-8ce6-bd602720d2e7",
+      "mode": "translate",
+      "english": "They're lazy.",
+      "before": "Wao ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "wavivu",
+          "correct": true
+        },
+        {
+          "text": "mvivu",
+          "correct": false,
+          "feedback": "mvivu = lazy"
+        },
+        {
+          "text": "wakarimu",
+          "correct": false,
+          "feedback": "wakarimu = generous / hospitable"
+        }
+      ],
+      "explanation": "One: mvivu. Several: wavivu.",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "478e1f17-f597-50b9-93cb-feb04d2eebd3",
+      "mode": "translate",
+      "english": "He's lazy.",
+      "before": "Yeye ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "mvivu",
+          "correct": true
+        },
+        {
+          "text": "wavivu",
+          "correct": false,
+          "feedback": "wavivu = lazy"
+        },
+        {
+          "text": "mpole",
+          "correct": false,
+          "feedback": "mpole = gentle, calm"
+        }
+      ],
+      "explanation": "mvivu: lazy"
+    },
+    {
+      "id": "04cb0349-69ff-5ad5-b11d-6a9f54d80d0e",
+      "mode": "translate",
+      "english": "They're very funny.",
+      "before": "Wao ni ",
+      "after": " sana.",
+      "options": [
+        {
+          "text": "wacheshi",
+          "correct": true
+        },
+        {
+          "text": "mcheshi",
+          "correct": false,
+          "feedback": "mcheshi = funny (person)"
+        },
+        {
+          "text": "wakali",
+          "correct": false,
+          "feedback": "wakali = fierce / sharp / strict / spicy"
+        }
+      ],
+      "explanation": "One: mcheshi. Several: wacheshi.",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "0ffd4b9c-024e-5af1-9371-86a1aa32d36d",
+      "mode": "translate",
+      "english": "Our repairman is lazy.",
+      "before": "Fundi ",
+      "after": " ni mvivu.",
+      "options": [
+        {
+          "text": "wetu",
+          "correct": true
+        },
+        {
+          "text": "wenu",
+          "correct": false,
+          "feedback": "wenu = your (pl.)"
+        },
+        {
+          "text": "wao",
+          "correct": false,
+          "feedback": "wao = they / them"
+        }
+      ],
+      "explanation": "wetu = our, wenu = your (plural), wao = their.",
+      "grammar": [
+        "possessives"
+      ]
+    },
+    {
+      "id": "381b2d29-fa5b-59c4-8a53-601490084750",
+      "mode": "translate",
+      "english": "The tap is broken.",
+      "before": "Bomba ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "mbovu",
+          "correct": true
+        },
+        {
+          "text": "mpole",
+          "correct": false,
+          "feedback": "mpole = gentle, calm"
+        },
+        {
+          "text": "safi",
+          "correct": false,
+          "feedback": "safi = clean / great / sorted"
+        }
+      ],
+      "explanation": "mbovu = broken."
+    },
+    {
+      "id": "a5d7a78f-4531-5455-b0e5-0d9923ffc123",
+      "mode": "translate",
+      "english": "Everyone is quiet.",
+      "before": "Kila mtu ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "kimya",
+          "correct": true
+        },
+        {
+          "text": "kubwa",
+          "correct": false,
+          "feedback": "kubwa = big"
+        },
+        {
+          "text": "chafu",
+          "correct": false,
+          "feedback": "chafu = dirty"
+        }
+      ],
+      "explanation": "kimya = quiet."
+    },
+    {
+      "id": "e553b963-2733-5435-9d81-5b98fa53a1a5",
+      "mode": "translate",
+      "english": "I like working with her.",
+      "before": "Ninapenda ",
+      "after": " naye.",
+      "options": [
+        {
+          "text": "kufanya kazi",
+          "correct": true
+        },
+        {
+          "text": "kula",
+          "correct": false,
+          "feedback": "kula = Eat!"
+        },
+        {
+          "text": "kulala",
+          "correct": false,
+          "feedback": "kulala = To sleep"
+        }
+      ],
+      "explanation": "kufanya kazi = \"to work\""
+    },
+    {
+      "id": "b5127da1-1a3f-5b71-89cf-8aee21861e79",
+      "mode": "complete",
+      "english": "How are you today? — Happy!",
+      "before": "Uko aje leo? — Niko na ",
+      "after": "!",
+      "options": [
+        {
+          "text": "furaha",
+          "correct": true
+        },
+        {
+          "text": "bomba",
+          "correct": false
+        },
+        {
+          "text": "fundi",
+          "correct": false,
+          "feedback": "fundi = skilled worker / repairman (fundi wa bomba = plumber)"
+        }
+      ],
+      "explanation": "furaha: happiness"
+    }
+  ]
+}

@@ -1,0 +1,1807 @@
+{
+  "id": "directions-village",
+  "uuid": "37d98d5e-dfa5-5c47-9ded-f5ad1b281c46",
+  "title": "Which Way to the Hospital? Directions Upcountry",
+  "category": "directions",
+  "difficulty": "beginner",
+  "level": 3,
+  "order": 301,
+  "theme": "directions",
+  "culturalNote": "Outside the big cities, directions are given by landmarks — the shop, the wooden bridge, the primary school, the small hill — and almost never by street names. Kenyans describe a route in the present tense, step by step: \"unaenda moja kwa moja, halafu unageuka kushoto\" (you go straight, then you turn left). Locals are generous with directions; a greeting first (\"Habari yako, kaka?\") makes all the difference.",
+  "startingPoint": "You're visiting a small town near Nyahururu and need the district hospital. A young man is standing outside a shop.",
+  "grammarFocus": [
+    "ko-location",
+    "present-na",
+    "locative-ni",
+    "question-words"
+  ],
+  "grammar": [
+    "ko-location",
+    "present-na",
+    "locative-ni",
+    "question-words",
+    "greetings",
+    "possessives",
+    "ni-copula",
+    "sanifu-noun-classes",
+    "noun-classes-mwa-nn"
+  ],
+  "turns": [
+    {
+      "id": "266b26d3-083d-5b7b-8f43-f0ffa63be712",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Habari yako, kaka? Samahani, hospitali ya wilaya iko wapi?",
+      "english": "Hello, brother. Excuse me, where is the district hospital?",
+      "words": [
+        {
+          "text": "Habari yako",
+          "gloss": "how are you? (lit. \"your news?\")",
+          "grammar": [
+            "greetings",
+            "possessives"
+          ]
+        },
+        {
+          "text": "kaka",
+          "gloss": "\"brother\" — polite way to address a young man"
+        },
+        {
+          "text": "Samahani",
+          "gloss": "excuse me / sorry (apology)"
+        },
+        {
+          "text": "hospitali ya wilaya",
+          "gloss": "\"the district hospital\""
+        },
+        {
+          "text": "iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "wapi",
+          "gloss": "where?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Habari yako, kaka? Samahani, hospitali ya wilaya iko wapi?",
+          "correct": true
+        },
+        {
+          "swahili": "Habari yako, kaka? Samahani, hospitali ya wilaya iko lini?",
+          "correct": false
+        },
+        {
+          "swahili": "Habari yako, kaka? Samahani, hospitali ya wilaya ni nani?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "eff699c1-f3be-5b69-9b0a-8fbb3f71d38b",
+      "speaker": "Kijana",
+      "role": "auto",
+      "swahili": "Salama! Si mbali. Unaenda mbele kidogo hadi dukani, halafu unageuka kushoto.",
+      "english": "Fine! It's not far. You go on a little to the shop, then you turn left.",
+      "words": [
+        {
+          "text": "Salama",
+          "gloss": "fine / safe / peaceful",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Si mbali",
+          "gloss": "\"it's not far\".",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Unaenda",
+          "gloss": "\"You are going\" — u- (subject: you) + na- (present) + -enda (go). From kuenda.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuenda (to go)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mbele",
+          "gloss": "ahead / in front"
+        },
+        {
+          "text": "kidogo",
+          "gloss": "a little / a bit — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — kidogo (adverb, no agreement)"
+        },
+        {
+          "text": "hadi",
+          "gloss": "\"up to, until\""
+        },
+        {
+          "text": "dukani",
+          "gloss": "\"at the shop\" — duka + -ni.",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "halafu",
+          "gloss": "\"then, after that\""
+        },
+        {
+          "text": "unageuka",
+          "gloss": "\"You are turning\" — u- (subject: you) + na- (present) + -geuka (turn). From kugeuka.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kugeuka (to turn)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninageuka"
+              },
+              {
+                "pronoun": "you",
+                "form": "unageuka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anageuka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunageuka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnageuka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanageuka"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kushoto",
+          "gloss": "left"
+        }
+      ]
+    },
+    {
+      "id": "815f6564-c8bb-5bc3-b1be-9c27477940d4",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Sawa. Dukani ninageuka kushoto. Halafu?",
+      "english": "Okay. At the shop I turn left. Then?",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Dukani",
+          "gloss": "\"at the shop\" — duka + -ni.",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "ninageuka",
+          "gloss": "\"I am turning\" — ni- (subject: I) + na- (present) + -geuka (turn). From kugeuka. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kugeuka (to turn)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninageuka"
+              },
+              {
+                "pronoun": "you",
+                "form": "unageuka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anageuka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunageuka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnageuka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanageuka"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kushoto",
+          "gloss": "left"
+        },
+        {
+          "text": "Halafu",
+          "gloss": "\"then, after that\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Sawa. Dukani ninageuka kushoto. Halafu?",
+          "correct": true
+        },
+        {
+          "swahili": "Sawa. Dukani ninageuka kulia. Halafu?",
+          "correct": false
+        },
+        {
+          "swahili": "Sawa. Dukani unageuka kushoto. Halafu?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "f3f0246c-ca77-53f1-ac4d-46c454dde763",
+      "speaker": "Kijana",
+      "role": "auto",
+      "swahili": "Unateremka barabara hadi daraja ndogo ya mbao. Upande wa kulia, unaona shule ya msingi.",
+      "english": "You go down the road to a small wooden bridge. On the right, you see a primary school.",
+      "words": [
+        {
+          "text": "Unateremka",
+          "gloss": "\"You are going down\" — u- (subject: you) + na- (present) + -teremka (go down). From kuteremka.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuteremka (to go down)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninateremka"
+              },
+              {
+                "pronoun": "you",
+                "form": "unateremka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anateremka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunateremka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnateremka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanateremka"
+              }
+            ]
+          }
+        },
+        {
+          "text": "barabara",
+          "gloss": "road — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "hadi",
+          "gloss": "\"up to, until\""
+        },
+        {
+          "text": "daraja ndogo ya mbao",
+          "gloss": "\"a small wooden bridge\"",
+          "sanifu": "Sanifu: daraja dogo la mbao (ji/ma class)"
+        },
+        {
+          "text": "Upande wa kulia",
+          "gloss": "\"on the right(-hand side)\""
+        },
+        {
+          "text": "unaona",
+          "gloss": "\"You see\" — u- (subject: you) + na- (present) + -ona (see). From kuona.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuona (to see)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaona"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaona"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaona"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaona"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaona"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaona"
+              }
+            ]
+          }
+        },
+        {
+          "text": "shule ya msingi",
+          "gloss": "\"primary school\""
+        }
+      ]
+    },
+    {
+      "id": "07bf62c7-2e32-5fa0-ad04-7241cc0148d0",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Hospitali iko karibu na shule?",
+      "english": "Is the hospital near the school?",
+      "words": [
+        {
+          "text": "Hospitali",
+          "gloss": "hospital — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "karibu na",
+          "gloss": "close to / near",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "shule",
+          "gloss": "school — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Hospitali iko karibu na shule?",
+          "correct": true
+        },
+        {
+          "swahili": "Hospitali iko karibu na shule wapi?",
+          "correct": false
+        },
+        {
+          "swahili": "Hospitali niko karibu na shule?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "ee598c69-8e09-5159-bd49-fa69d1af78df",
+      "speaker": "Kijana",
+      "role": "auto",
+      "swahili": "Iko mbali kidogo. Baada ya shule, unapanda kilima kidogo, na hospitali iko upande wa kushoto.",
+      "english": "It's a bit further. After the school, you climb a small hill, and the hospital is on the left.",
+      "words": [
+        {
+          "text": "Iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mbali",
+          "gloss": "far"
+        },
+        {
+          "text": "kidogo",
+          "gloss": "a little / a bit — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — kidogo (adverb, no agreement)"
+        },
+        {
+          "text": "Baada ya",
+          "gloss": "\"after\""
+        },
+        {
+          "text": "shule",
+          "gloss": "school — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "unapanda",
+          "gloss": "\"You are climbing\" — u- (subject: you) + na- (present) + -panda (climb). From kupanda.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kupanda (to climb)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninapanda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unapanda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anapanda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunapanda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnapanda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanapanda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kilima",
+          "gloss": "hill",
+          "sanifu": "Sanifu: kilima / vilima (ki/vi class)"
+        },
+        {
+          "text": "kidogo",
+          "gloss": "a little / a bit — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — kidogo (adverb, no agreement)"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "hospitali",
+          "gloss": "hospital — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "upande wa kushoto",
+          "gloss": "\"on the left(-hand side)\""
+        }
+      ]
+    },
+    {
+      "id": "0c91a7f4-a75b-50f0-b864-50f49e41c646",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Asante. Na stage ya basi iko wapi?",
+      "english": "Thanks. And where's the bus stop?",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "stage ya basi",
+          "gloss": "\"the bus stop\""
+        },
+        {
+          "text": "iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "wapi",
+          "gloss": "where?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante. Na stage ya basi iko wapi?",
+          "correct": true
+        },
+        {
+          "swahili": "Asante. Na stage ya basi iko nani?",
+          "correct": false
+        },
+        {
+          "swahili": "Asante. Na stage ya basi tuko wapi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "23c93312-2a96-5d6d-af18-d7803296d2e3",
+      "speaker": "Kijana",
+      "role": "auto",
+      "swahili": "Iko sokoni, mbele ya benki. Unarudi nyuma, unaenda moja kwa moja hadi sokoni.",
+      "english": "It's at the market, in front of the bank. You go back, you go straight on to the market.",
+      "words": [
+        {
+          "text": "Iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sokoni",
+          "gloss": "\"at the market\" — soko + -ni.",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "mbele ya",
+          "gloss": "\"in front of\""
+        },
+        {
+          "text": "benki",
+          "gloss": "bank — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Unarudi",
+          "gloss": "\"You are coming back\" — u- (subject: you) + na- (present) + -rudi (come back). From kurudi.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kurudi (to come back)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninarudi"
+              },
+              {
+                "pronoun": "you",
+                "form": "unarudi"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anarudi"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunarudi"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnarudi"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanarudi"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nyuma",
+          "gloss": "behind / back"
+        },
+        {
+          "text": "unaenda",
+          "gloss": "\"You are going\" — u- (subject: you) + na- (present) + -enda (go). From kuenda.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuenda (to go)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "moja kwa moja",
+          "gloss": "straight on / directly"
+        },
+        {
+          "text": "hadi",
+          "gloss": "\"up to, until\""
+        },
+        {
+          "text": "sokoni",
+          "gloss": "\"at the market\" — soko + -ni.",
+          "grammar": [
+            "locative-ni"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3f080a0d-9402-5444-ac80-9f480d8c86ef",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Moja kwa moja hadi sokoni. Na posta je?",
+      "english": "Straight on to the market. And the post office?",
+      "words": [
+        {
+          "text": "Moja kwa moja",
+          "gloss": "straight on / directly"
+        },
+        {
+          "text": "hadi",
+          "gloss": "\"up to, until\""
+        },
+        {
+          "text": "sokoni",
+          "gloss": "\"at the market\" — soko + -ni.",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "posta",
+          "gloss": "post office"
+        },
+        {
+          "text": "je",
+          "gloss": "(question marker) — \"Je, …?\" turns a statement into a yes/no question",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Moja kwa moja hadi sokoni. Na posta je?",
+          "correct": true
+        },
+        {
+          "swahili": "Kushoto hadi sokoni. Na posta je?",
+          "correct": false
+        },
+        {
+          "swahili": "Moja kwa moja hadi shuleni. Na posta je?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "77a74f51-81eb-52f8-bfb0-c8eb621f6ab3",
+      "speaker": "Kijana",
+      "role": "auto",
+      "swahili": "Kutoka sokoni, unafuata barabara kuu, unavuka taa za barabarani, na posta iko pembeni ya jengo ya kaunti.",
+      "english": "From the market, you follow the main road, you cross at the traffic lights, and the post office is beside the county building.",
+      "words": [
+        {
+          "text": "Kutoka",
+          "gloss": "\"from\""
+        },
+        {
+          "text": "sokoni",
+          "gloss": "\"at the market\" — soko + -ni.",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "unafuata",
+          "gloss": "\"You are following\" — u- (subject: you) + na- (present) + -fuata (follow). From kufuata.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kufuata (to follow)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninafuata"
+              },
+              {
+                "pronoun": "you",
+                "form": "unafuata"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anafuata"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunafuata"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnafuata"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanafuata"
+              }
+            ]
+          }
+        },
+        {
+          "text": "barabara kuu",
+          "gloss": "\"the main road\""
+        },
+        {
+          "text": "unavuka",
+          "gloss": "\"You are crossing\" — u- (subject: you) + na- (present) + -vuka (cross). From kuvuka.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuvuka (to cross)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninavuka"
+              },
+              {
+                "pronoun": "you",
+                "form": "unavuka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anavuka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunavuka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnavuka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanavuka"
+              }
+            ]
+          }
+        },
+        {
+          "text": "taa za barabarani",
+          "gloss": "\"traffic lights\" — lit. \"lights of the road\""
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "posta",
+          "gloss": "post office"
+        },
+        {
+          "text": "iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "pembeni ya",
+          "gloss": "\"beside, at the side of\""
+        },
+        {
+          "text": "jengo ya kaunti",
+          "gloss": "\"the county building\"",
+          "sanifu": "Sanifu: jengo la kaunti (ji/ma class)"
+        }
+      ]
+    },
+    {
+      "id": "49431f71-546e-5e43-94da-bbc707454dff",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Asante sana, kaka! Sasa ninajua njia.",
+      "english": "Thanks so much, brother! Now I know the way.",
+      "words": [
+        {
+          "text": "Asante sana",
+          "gloss": "thank you very much"
+        },
+        {
+          "text": "kaka",
+          "gloss": "\"brother\" — polite way to address a young man"
+        },
+        {
+          "text": "Sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "ninajua",
+          "gloss": "\"I know\" — ni- (subject: I) + na- (present) + -jua (know). From kujua. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kujua (to know)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninajua"
+              },
+              {
+                "pronoun": "you",
+                "form": "unajua"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anajua"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunajua"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnajua"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanajua"
+              }
+            ]
+          }
+        },
+        {
+          "text": "njia",
+          "gloss": "way, route"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante sana, kaka! Sasa ninajua njia.",
+          "correct": true
+        },
+        {
+          "swahili": "Asante sana, kaka! Sasa unajua njia.",
+          "correct": false
+        },
+        {
+          "swahili": "Pole sana, kaka! Sasa ninajua njia.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "61af01e8-768d-5a7e-81ec-e284d717e24e",
+      "speaker": "Kijana",
+      "role": "auto",
+      "swahili": "Karibu! Safari njema!",
+      "english": "You're welcome! Have a good trip!",
+      "words": [
+        {
+          "text": "Karibu",
+          "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "Safari njema",
+          "gloss": "\"have a good trip\""
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "db066961-5627-520f-a925-4a3fe7e9e67d",
+      "swahili": "Iko wapi?",
+      "english": "Where is it?",
+      "exampleContext": "Hospitali iko wapi?",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "6ac719ea-1628-50b2-b51f-d182a19cec61",
+      "swahili": "moja kwa moja",
+      "english": "straight on",
+      "exampleContext": "lit. \"one by one\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "09268501-c85d-51a0-b52c-ab4bf23abe92",
+      "swahili": "kushoto / kulia",
+      "english": "left / right",
+      "exampleContext": "upande wa kushoto = on the left",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "c58ecca4-694a-527d-838b-fd10fd20d89a",
+      "swahili": "-geuka",
+      "english": "turn",
+      "exampleContext": "Unageuka kulia."
+    },
+    {
+      "id": "a8cede4b-5837-5748-a369-be0676bcb648",
+      "swahili": "-panda / -teremka",
+      "english": "go up / go down",
+      "exampleContext": "Unapanda kilima.",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "bf77bad9-2bf2-50de-8b27-4b566a4fb8ac",
+      "swahili": "-vuka",
+      "english": "cross",
+      "exampleContext": "Unavuka barabara."
+    },
+    {
+      "id": "16227f39-41db-5c5f-ac5a-1add7274b5b6",
+      "swahili": "-fuata",
+      "english": "follow",
+      "exampleContext": "Unafuata barabara kuu."
+    },
+    {
+      "id": "9b26a41c-d0eb-5d32-bd7c-450eb4c083ab",
+      "swahili": "karibu na / mbali na",
+      "english": "near / far from",
+      "exampleContext": "Si mbali = it's not far.",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "c6084285-9036-54aa-abab-10ed0761dc5b",
+      "swahili": "mbele ya / nyuma ya",
+      "english": "in front of / behind",
+      "exampleContext": "mbele ya benki",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "f023ad1b-9d3a-599d-b1e9-8553f8fb6084",
+      "swahili": "daraja",
+      "english": "bridge",
+      "exampleContext": "Kenyans: daraja ndogo",
+      "sanifu": "daraja dogo",
+      "sanifuNote": "Sanifu: ji/ma class"
+    },
+    {
+      "id": "4ec31a71-1670-58b1-ac2e-fbb074f38330",
+      "swahili": "kilima",
+      "english": "hill",
+      "exampleContext": "Sanifu: ki/vi class (kilima / vilima)"
+    },
+    {
+      "id": "34d75e9b-b3fa-57a8-9b8e-e769a7be3cb3",
+      "swahili": "taa za barabarani",
+      "english": "traffic lights",
+      "exampleContext": "lit. \"lights of the road\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "96e737a3-3c4a-5be5-b3d8-91f3a58b59f7",
+      "swahili": "njia",
+      "english": "way / route",
+      "exampleContext": "Sasa ninajua njia."
+    }
+  ],
+  "practice": [
+    {
+      "id": "7e58dc47-f68b-555b-bcec-140c65a8b743",
+      "mode": "translate",
+      "english": "Where is the hospital?",
+      "before": "",
+      "after": " iko wapi?",
+      "options": [
+        {
+          "text": "Hospitali",
+          "correct": true
+        },
+        {
+          "text": "Shule",
+          "correct": false,
+          "feedback": "Shule = school"
+        },
+        {
+          "text": "Benki",
+          "correct": false,
+          "feedback": "Benki = bank"
+        }
+      ],
+      "explanation": "hospitali = hospital, shule = school, benki = bank.",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "3fc41dc9-7713-552d-9308-1ef7cd6fc9b8",
+      "mode": "translate",
+      "english": "It's not far.",
+      "before": "",
+      "after": " mbali.",
+      "options": [
+        {
+          "text": "Si",
+          "correct": true
+        },
+        {
+          "text": "Ni",
+          "correct": false,
+          "feedback": "Ni = is / am / are"
+        },
+        {
+          "text": "Iko",
+          "correct": false,
+          "feedback": "Iko = It (n/n) is (at / doing)"
+        }
+      ],
+      "explanation": "si = is not, ni = is.",
+      "grammar": [
+        "ni-copula"
+      ]
+    },
+    {
+      "id": "097ede47-0ed5-549e-b146-005e32650037",
+      "mode": "translate",
+      "english": "You go straight on.",
+      "before": "Unaenda ",
+      "after": ".",
+      "options": [
+        {
+          "text": "moja kwa moja",
+          "correct": true
+        },
+        {
+          "text": "kushoto",
+          "correct": false,
+          "feedback": "kushoto = left"
+        },
+        {
+          "text": "nyuma",
+          "correct": false,
+          "feedback": "nyuma = behind / back"
+        }
+      ],
+      "explanation": "moja kwa moja = straight on, kushoto = left, nyuma = back."
+    },
+    {
+      "id": "15c26828-d954-5fea-a32c-e25894721767",
+      "mode": "translate",
+      "english": "You turn left.",
+      "before": "Unageuka ",
+      "after": ".",
+      "options": [
+        {
+          "text": "kushoto",
+          "correct": true
+        },
+        {
+          "text": "kulia",
+          "correct": false,
+          "feedback": "kulia = right (also \"to cry\")"
+        },
+        {
+          "text": "mbele",
+          "correct": false,
+          "feedback": "mbele = ahead / in front"
+        }
+      ],
+      "explanation": "kushoto = left, kulia = right, mbele = ahead."
+    },
+    {
+      "id": "256ce811-d65b-519b-92f1-d05382ddc2b1",
+      "mode": "translate",
+      "english": "At the shop I turn right.",
+      "before": "Dukani ninageuka ",
+      "after": ".",
+      "options": [
+        {
+          "text": "kulia",
+          "correct": true
+        },
+        {
+          "text": "kushoto",
+          "correct": false,
+          "feedback": "kushoto = left"
+        },
+        {
+          "text": "nyuma",
+          "correct": false,
+          "feedback": "nyuma = behind / back"
+        }
+      ],
+      "explanation": "kulia: right (also \"to cry\")"
+    },
+    {
+      "id": "0c2ee5b5-ff4b-5cdb-b213-2555e13b687b",
+      "mode": "translate",
+      "english": "You go down the road.",
+      "before": "",
+      "after": " barabara.",
+      "options": [
+        {
+          "text": "Unateremka",
+          "correct": true
+        },
+        {
+          "text": "Unapanda",
+          "correct": false,
+          "feedback": "Unapanda = You are climbing"
+        },
+        {
+          "text": "Unavuka",
+          "correct": false,
+          "feedback": "Unavuka = You are crossing"
+        }
+      ],
+      "explanation": "-teremka = go down, -panda = go up / climb, -vuka = cross.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "751c13a1-17b4-583e-919e-4c0b7d3eaeeb",
+      "mode": "translate",
+      "english": "You climb a small hill.",
+      "before": "Unapanda ",
+      "after": " kidogo.",
+      "options": [
+        {
+          "text": "kilima",
+          "correct": true
+        },
+        {
+          "text": "daraja",
+          "correct": false,
+          "feedback": "daraja = bridge"
+        },
+        {
+          "text": "soko",
+          "correct": false,
+          "feedback": "soko = market (plural masoko)"
+        }
+      ],
+      "explanation": "kilima = hill, daraja = bridge, soko = market."
+    },
+    {
+      "id": "e7c16d10-7f58-5d14-8907-df705247b33c",
+      "mode": "translate",
+      "english": "You cross the road.",
+      "before": "",
+      "after": " barabara.",
+      "options": [
+        {
+          "text": "Unavuka",
+          "correct": true
+        },
+        {
+          "text": "Unateremka",
+          "correct": false,
+          "feedback": "Unateremka = You are going down"
+        },
+        {
+          "text": "Unageuka",
+          "correct": false,
+          "feedback": "Unageuka = You are turning"
+        }
+      ],
+      "explanation": "Unavuka = \"You are crossing\" — u- (subject: you) + na- (present) + -vuka (cross). From kuvuka.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "4f3602ae-e47e-55b5-84b1-ae24570a1dd6",
+      "mode": "translate",
+      "english": "on the right",
+      "before": "upande wa ",
+      "after": "",
+      "options": [
+        {
+          "text": "kulia",
+          "correct": true
+        },
+        {
+          "text": "kushoto",
+          "correct": false,
+          "feedback": "kushoto = left"
+        },
+        {
+          "text": "mbele",
+          "correct": false,
+          "feedback": "mbele = ahead / in front"
+        }
+      ],
+      "explanation": "kulia: right (also \"to cry\")"
+    },
+    {
+      "id": "ac6da27e-4950-592b-9f73-1bfed7911976",
+      "mode": "translate",
+      "english": "near the school",
+      "before": "",
+      "after": " shule",
+      "options": [
+        {
+          "text": "karibu na",
+          "correct": true
+        },
+        {
+          "text": "mbali na",
+          "correct": false,
+          "feedback": "mbali na = far from"
+        },
+        {
+          "text": "ndani ya",
+          "correct": false,
+          "feedback": "ndani ya = inside (of)"
+        }
+      ],
+      "explanation": "karibu na = near, mbali na = far from, ndani ya = inside.",
+      "grammar": [
+        "locative-ni"
+      ]
+    },
+    {
+      "id": "c8caff9b-91fd-5cc8-b8be-26e2c88b6c1e",
+      "mode": "translate",
+      "english": "in front of the bank",
+      "before": "",
+      "after": " benki",
+      "options": [
+        {
+          "text": "mbele ya",
+          "correct": true
+        },
+        {
+          "text": "nyuma ya",
+          "correct": false,
+          "feedback": "nyuma ya = behind"
+        },
+        {
+          "text": "karibu na",
+          "correct": false,
+          "feedback": "karibu na = close to / near"
+        }
+      ],
+      "explanation": "mbele ya = in front of, nyuma ya = behind."
+    },
+    {
+      "id": "1a4718a8-65f1-551e-917b-485b3adea084",
+      "mode": "translate",
+      "english": "at the market",
+      "before": "",
+      "after": "",
+      "options": [
+        {
+          "text": "sokoni",
+          "correct": true
+        },
+        {
+          "text": "shuleni",
+          "correct": false,
+          "feedback": "shuleni = at school"
+        },
+        {
+          "text": "dukani",
+          "correct": false,
+          "feedback": "dukani = at the shop"
+        }
+      ],
+      "explanation": "soko + -ni = at the market.",
+      "grammar": [
+        "locative-ni"
+      ]
+    },
+    {
+      "id": "55d84d53-3097-52bd-a74f-33c23b318354",
+      "mode": "translate",
+      "english": "You go back.",
+      "before": "Unarudi ",
+      "after": ".",
+      "options": [
+        {
+          "text": "nyuma",
+          "correct": true
+        },
+        {
+          "text": "mbele",
+          "correct": false,
+          "feedback": "mbele = ahead / in front"
+        },
+        {
+          "text": "kushoto",
+          "correct": false,
+          "feedback": "kushoto = left"
+        }
+      ],
+      "explanation": "nyuma: behind / back"
+    },
+    {
+      "id": "f9375f5d-f170-5fe2-a094-3c58498729f0",
+      "mode": "translate",
+      "english": "You follow the main road.",
+      "before": "",
+      "after": " barabara kuu.",
+      "options": [
+        {
+          "text": "Unafuata",
+          "correct": true
+        },
+        {
+          "text": "Unavuka",
+          "correct": false,
+          "feedback": "Unavuka = You are crossing"
+        },
+        {
+          "text": "Unapanda",
+          "correct": false,
+          "feedback": "Unapanda = You are climbing"
+        }
+      ],
+      "explanation": "-fuata = follow.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "35c8e6bd-218e-594a-8d5d-8f5fdce76165",
+      "mode": "translate",
+      "english": "Now I know the way.",
+      "before": "Sasa ",
+      "after": " njia.",
+      "options": [
+        {
+          "text": "ninajua",
+          "correct": true
+        },
+        {
+          "text": "unajua",
+          "correct": false,
+          "feedback": "unajua = You know"
+        },
+        {
+          "text": "anajua",
+          "correct": false,
+          "feedback": "anajua = He/she knows"
+        }
+      ],
+      "explanation": "ninajua = \"I know\" — ni- (subject: I) + na- (present) + -jua (know). From kujua. Colloquially often shortened: ni-na- → na-.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "9f309bca-750f-58ec-bffe-7eb630d73172",
+      "mode": "translate",
+      "english": "They live near the bridge.",
+      "before": "",
+      "after": " karibu na daraja.",
+      "options": [
+        {
+          "text": "Wanaishi",
+          "correct": true
+        },
+        {
+          "text": "Anaishi",
+          "correct": false,
+          "feedback": "Anaishi = He/she lives"
+        },
+        {
+          "text": "Tunaishi",
+          "correct": false,
+          "feedback": "Tunaishi = We live"
+        }
+      ],
+      "explanation": "Wanaishi = \"They live\" — wa- (subject: they) + na- (present) + -ishi (live). From kuishi.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "ad285de7-7089-5c32-8dce-a8390cdf99e0",
+      "mode": "complete",
+      "english": "Where's the bus stop? — At the market.",
+      "before": "Stage ya basi iko wapi? — Iko ",
+      "after": ".",
+      "options": [
+        {
+          "text": "sokoni",
+          "correct": true
+        },
+        {
+          "text": "lini",
+          "correct": false,
+          "feedback": "lini = when?"
+        },
+        {
+          "text": "nani",
+          "correct": false,
+          "feedback": "nani = who?"
+        }
+      ],
+      "explanation": "sokoni = \"at the market\" — soko + -ni.",
+      "grammar": [
+        "locative-ni"
+      ]
+    }
+  ]
+}

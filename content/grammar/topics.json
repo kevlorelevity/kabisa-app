@@ -812,216 +812,8 @@
     ]
   },
   {
-    "slug": "negative-present",
-    "level": 2,
-    "title": "Negative Present: si- … -i",
-    "swahiliTitle": "Ukanushaji: wakati uliopo",
-    "summary": "To say \"I don't…\", swap the subject prefix for its negative, drop -na-, and change the final -a to -i.",
-    "blocks": [
-      {
-        "type": "p",
-        "text": "Three changes turn *ninataka* (I want) into *sitaki* (I don't want):"
-      },
-      {
-        "type": "list",
-        "items": [
-          "Use the **negative subject prefix** (si-, hu-, ha-…)",
-          "Drop **-na-**",
-          "Change the final **-a → -i**"
-        ]
-      },
-      {
-        "type": "table",
-        "caption": "kutaka (to want)",
-        "headers": [
-          "Person",
-          "Positive",
-          "Negative"
-        ],
-        "rows": [
-          [
-            "I",
-            "ninataka",
-            "sitaki"
-          ],
-          [
-            "you",
-            "unataka",
-            "hutaki"
-          ],
-          [
-            "he / she",
-            "anataka",
-            "hataki"
-          ],
-          [
-            "we",
-            "tunataka",
-            "hatutaki"
-          ],
-          [
-            "you all",
-            "mnataka",
-            "hamtaki"
-          ],
-          [
-            "they",
-            "wanataka",
-            "hawataki"
-          ],
-          [
-            "it (n/n)",
-            "inataka",
-            "haitaki"
-          ],
-          [
-            "they (n/n)",
-            "zinataka",
-            "hazitaki"
-          ]
-        ]
-      },
-      {
-        "type": "p",
-        "text": "Verbs that don't end in -a (borrowed from Arabic) keep their ending: *sifikiri* (I don't think), *sijali* (I don't care)."
-      },
-      {
-        "type": "tip",
-        "text": "The three you'll use every day: **Sijui** (I don't know), **Sielewi** (I don't understand), **Sitaki** (I don't want)."
-      }
-    ],
-    "examples": [
-      {
-        "swahili": "Sijui.",
-        "english": "I don't know."
-      },
-      {
-        "swahili": "Sitaki sukuma leo.",
-        "english": "I don't want sukuma today."
-      },
-      {
-        "swahili": "Hawaishi Nairobi.",
-        "english": "They don't live in Nairobi."
-      },
-      {
-        "swahili": "Haifai.",
-        "english": "It's not suitable."
-      }
-    ],
-    "related": [
-      "present-na",
-      "na-have",
-      "negative-past"
-    ],
-    "tags": [
-      "verbs",
-      "negation"
-    ]
-  },
-  {
-    "slug": "na-have",
-    "level": 2,
-    "title": "Nina / Sina: Having (and \"There Is\")",
-    "swahiliTitle": "Kuwa na",
-    "summary": "Swahili \"have\" is literally \"be with\": ni- + -na. Kuna = there is; hakuna = there isn't.",
-    "blocks": [
-      {
-        "type": "table",
-        "caption": "-na (have)",
-        "headers": [
-          "Person",
-          "Have",
-          "Don't have"
-        ],
-        "rows": [
-          [
-            "I",
-            "nina",
-            "sina"
-          ],
-          [
-            "you",
-            "una",
-            "huna"
-          ],
-          [
-            "he / she",
-            "ana",
-            "hana"
-          ],
-          [
-            "we",
-            "tuna",
-            "hatuna"
-          ],
-          [
-            "you all",
-            "mna",
-            "hamna"
-          ],
-          [
-            "they",
-            "wana",
-            "hawana"
-          ],
-          [
-            "it (n/n)",
-            "ina",
-            "haina"
-          ],
-          [
-            "they (n/n)",
-            "zina",
-            "hazina"
-          ]
-        ]
-      },
-      {
-        "type": "p",
-        "text": "**Kuna** = there is / there are (lit. \"the place has\"): *Kuna magari mingi* — there's traffic. **Hakuna** = there isn't: *Hakuna shida* — no problem."
-      },
-      {
-        "type": "p",
-        "text": "In other tenses, use **kuwa na** (to be with): *nilikuwa na* (I had), *nitakuwa na* (I will have), *ningekuwa na* (if I had)."
-      },
-      {
-        "type": "tip",
-        "text": "Kenyans often say **-ko na** instead: *Uko na chenji?* (Do you have change?), *Ako na gari* (She has a car). Sanifu: *Una chenji? Ana gari.*"
-      },
-      {
-        "type": "p",
-        "text": "**Haina shida / Hakuna shida / Hamna shida** — all \"no problem\". You'll hear them a hundred times a day."
-      }
-    ],
-    "examples": [
-      {
-        "swahili": "Nina watoto wawili.",
-        "english": "I have two children."
-      },
-      {
-        "swahili": "Sina pesa mkononi.",
-        "english": "I don't have cash."
-      },
-      {
-        "swahili": "Kuna nafasi.",
-        "english": "There's space."
-      },
-      {
-        "swahili": "Kulikuwa na ajali.",
-        "english": "There was an accident."
-      }
-    ],
-    "related": [
-      "ko-location",
-      "negative-present"
-    ],
-    "tags": [
-      "verbs"
-    ]
-  },
-  {
     "slug": "possessives",
-    "level": 2,
+    "level": 1,
     "title": "Possessives: Wangu, Yangu, Zangu",
     "swahiliTitle": "Vimilikishi",
     "summary": "my, your, his… = -angu, -ako, -ake, -etu, -enu, -ao, with a prefix that agrees with the THING owned.",
@@ -1128,92 +920,8 @@
     ]
   },
   {
-    "slug": "demonstratives",
-    "level": 2,
-    "title": "This & That: Huyu, Hii, Yule, Ile",
-    "swahiliTitle": "Vionyeshi",
-    "summary": "Three distances (here / near you / over there), agreeing with m/wa or n/n.",
-    "blocks": [
-      {
-        "type": "table",
-        "caption": "This / that",
-        "headers": [
-          "",
-          "m/wa one",
-          "m/wa many",
-          "n/n one",
-          "n/n many"
-        ],
-        "rows": [
-          [
-            "this (here)",
-            "huyu",
-            "hawa",
-            "hii",
-            "hizi"
-          ],
-          [
-            "that (near you / just mentioned)",
-            "huyo",
-            "hao",
-            "hiyo",
-            "hizo"
-          ],
-          [
-            "that (over there)",
-            "yule",
-            "wale",
-            "ile",
-            "zile"
-          ]
-        ]
-      },
-      {
-        "type": "p",
-        "text": "They usually come **after** the noun: *mtu huyu* (this person), *nyumba ile* (that house). Before the noun they add emphasis: *huyu mtu* — THIS guy."
-      },
-      {
-        "type": "p",
-        "text": "**Hii hapa / Hizi hapa** = here it is / here they are (handing something over)."
-      },
-      {
-        "type": "tip",
-        "text": "**Hii** is Kenya's all-purpose \"this\": *gari hii, kitabu hii, chakula hii*. Sanifu would say gari hili, kitabu hiki, chakula hiki."
-      },
-      {
-        "type": "sanifu",
-        "text": "Other Sanifu forms: ki/vi **hiki / hivi**, ji/ma **hili / haya**, m/mi **huu / hii**, u **huu**."
-      }
-    ],
-    "examples": [
-      {
-        "swahili": "Huyu ni Baraka.",
-        "english": "This is Baraka."
-      },
-      {
-        "swahili": "Hawa ni watoto wangu.",
-        "english": "These are my children."
-      },
-      {
-        "swahili": "Nyanya hizi ni tamu.",
-        "english": "These tomatoes are sweet."
-      },
-      {
-        "swahili": "Yule mdogo ni Grace.",
-        "english": "That little one is Grace."
-      }
-    ],
-    "related": [
-      "noun-classes-mwa-nn",
-      "possessives"
-    ],
-    "tags": [
-      "nouns"
-    ]
-  },
-  {
     "slug": "numbers-money",
-    "level": 2,
+    "level": 1,
     "title": "Numbers & Money",
     "swahiliTitle": "Hesabu na pesa",
     "summary": "Counting, prices, and Nairobi money slang (bob, punch, thao).",
@@ -1374,7 +1082,7 @@
   },
   {
     "slug": "sanifu-noun-classes",
-    "level": 2,
+    "level": 1,
     "title": "Other Noun Classes (Sanifu Look-up)",
     "swahiliTitle": "Ngeli nyingine",
     "summary": "A reference for the classes Kenyans mostly flatten into n/n: ki/vi, ji/ma, m/mi, u/n and the place classes.",
@@ -1511,311 +1219,157 @@
     ]
   },
   {
-    "slug": "future-ta",
-    "level": 3,
-    "title": "Future Tense -ta-",
-    "swahiliTitle": "Wakati ujao: -ta-",
-    "summary": "Swap -na- for -ta- and you're in the future. Negative: si-ta-, hu-ta-, ha-ta-…",
+    "slug": "locative-ni",
+    "level": 1,
+    "title": "Places: -ni, Kwenye, Kwa",
+    "swahiliTitle": "Mahali: -ni, kwenye, kwa",
+    "summary": "Three ways to say at / in / to a place: the -ni suffix, kwenye, and the very Kenyan kwa.",
     "blocks": [
       {
-        "type": "table",
-        "caption": "kulipa (to pay)",
-        "headers": [
-          "Person",
-          "Future",
-          "Negative future"
-        ],
-        "rows": [
-          [
-            "I",
-            "nitalipa",
-            "sitalipa"
-          ],
-          [
-            "you",
-            "utalipa",
-            "hutalipa"
-          ],
-          [
-            "he / she",
-            "atalipa",
-            "hatalipa"
-          ],
-          [
-            "we",
-            "tutalipa",
-            "hatutalipa"
-          ],
-          [
-            "you all",
-            "mtalipa",
-            "hamtalipa"
-          ],
-          [
-            "they",
-            "watalipa",
-            "hawatalipa"
-          ],
-          [
-            "it (n/n)",
-            "italipa",
-            "haitalipa"
-          ]
-        ]
+        "type": "p",
+        "text": "**-ni** on a noun = at / in / to it: *soko → sokoni* (at the market), *kazi → kazini* (at work), *nyumba → nyumbani* (at home), *jiko → jikoni* (in the kitchen)."
       },
       {
         "type": "p",
-        "text": "The negative future keeps **-ta-** and the final **-a**: *sitaenda* (I won't go)."
+        "text": "**Kwenye** = at / on / in (very flexible): *kwenye meza* (on the table), *kwenye orodha* (on the list), *kwenye kona* (at the corner)."
       },
       {
         "type": "p",
-        "text": "Short verbs keep **ku-**: *nitakula* (I'll eat), *utakuja?* (will you come?), *nitakunywa* (I'll drink)."
+        "text": "**Kwa** = at someone's place, by, with: *kwa Kevin* (at Kevin's), *kwa M-Pesa* (by M-Pesa), *kwa miguu* (on foot). **Kwangu / kwako / kwetu** = my place / your place / our home."
       },
       {
         "type": "tip",
-        "text": "Kenyans often use the plain present for planned future: *Kesho naenda Naivasha* — Tomorrow I'm going to Naivasha."
+        "text": "Kenyans use **kwa** where Sanifu prefers -ni or kwenye: *till iko kwa ukuta* (Sanifu: ukutani), *kwa kona ya kwanza* (Sanifu: kwenye kona ya kwanza)."
       },
       {
         "type": "p",
-        "text": "**Nitakuwa** = I will be: *Nitakuwa tayari* (I'll be ready), *Nitakuwa na pesa* (I'll have money)."
+        "text": "Names of countries and cities never take -ni: *Ninaenda Nairobi*, *Nitaenda Marekani*."
       }
     ],
     "examples": [
       {
-        "swahili": "Nitashuka Kencom.",
-        "english": "I'll get off at Kencom."
+        "swahili": "Ninaenda kazini.",
+        "english": "I'm going to work."
       },
       {
-        "swahili": "Utakula nini?",
-        "english": "What will you eat?"
+        "swahili": "Weka vyombo kwenye sinki.",
+        "english": "Put the dishes in the sink."
       },
       {
-        "swahili": "Tutaonana Jumamosi.",
-        "english": "See you on Saturday."
+        "swahili": "Tutapita kwako.",
+        "english": "We'll pass by your place."
       },
       {
-        "swahili": "Sitachelewa.",
-        "english": "I won't be late."
+        "swahili": "Lipa kwa M-Pesa.",
+        "english": "Pay with M-Pesa."
       }
     ],
     "related": [
-      "present-na",
-      "past-li",
-      "subjunctive"
+      "ko-location",
+      "possessives"
     ],
     "tags": [
-      "verbs",
-      "tenses"
+      "prepositions"
     ]
   },
   {
-    "slug": "imperatives",
-    "level": 3,
-    "title": "Commands: Panda! Shuka! Njoo!",
-    "swahiliTitle": "Amri",
-    "summary": "The bare verb stem is a command. Add -eni for several people. Use usi-…-e for \"don't\".",
+    "slug": "discourse-particles",
+    "level": 1,
+    "title": "Talking Like a Kenyan: Kumbe, Basi, Yaani, Si…?",
+    "swahiliTitle": "Viunganishi vya mazungumzo",
+    "summary": "Small words that make you sound natural: surprise, rephrasing, wrapping up, and gentle suggestions.",
     "blocks": [
       {
         "type": "table",
-        "caption": "Commands",
+        "caption": "Particles",
         "headers": [
-          "Infinitive",
-          "To one person",
-          "To several",
-          "Don't!"
-        ],
-        "rows": [
-          [
-            "kupanda (get in)",
-            "Panda!",
-            "Pandeni!",
-            "Usipande!"
-          ],
-          [
-            "kushuka (get off)",
-            "Shuka!",
-            "Shukeni!",
-            "Usishuke!"
-          ],
-          [
-            "kusimama (stop)",
-            "Simama!",
-            "Simameni!",
-            "Usisimame!"
-          ],
-          [
-            "kungoja (wait)",
-            "Ngoja!",
-            "Ngojeni!",
-            "Usingoje!"
-          ]
-        ]
-      },
-      {
-        "type": "table",
-        "caption": "Irregular ones",
-        "headers": [
-          "Verb",
-          "One",
-          "Several"
-        ],
-        "rows": [
-          [
-            "kuja (come)",
-            "Njoo!",
-            "Njooni!"
-          ],
-          [
-            "kuenda / kwenda (go)",
-            "Enda! (Kenyan) / Nenda! (Sanifu)",
-            "Nendeni!"
-          ],
-          [
-            "kuleta (bring)",
-            "Lete! / Leta!",
-            "Leteni!"
-          ],
-          [
-            "kula (eat)",
-            "Kula!",
-            "Kuleni!"
-          ],
-          [
-            "kunywa (drink)",
-            "Kunywa!",
-            "Kunyweni!"
-          ]
-        ]
-      },
-      {
-        "type": "p",
-        "text": "To include **me / him / them**, use the object prefix and end in **-e**: *Nipe!* (give me), *Niletee chai* (bring me tea), *Mwambie* (tell him)."
-      },
-      {
-        "type": "tip",
-        "text": "A bare command is normal in a matatu or at a stall. For more politeness add **tafadhali** or use the subjunctive: *Uniletee chai, tafadhali* — see \"Polite Requests\"."
-      }
-    ],
-    "examples": [
-      {
-        "swahili": "Panda haraka!",
-        "english": "Get in quickly!"
-      },
-      {
-        "swahili": "Simama hapa, nashuka!",
-        "english": "Stop here, I'm getting off!"
-      },
-      {
-        "swahili": "Niletee chai.",
-        "english": "Bring me tea."
-      },
-      {
-        "swahili": "Usisahau!",
-        "english": "Don't forget!"
-      }
-    ],
-    "related": [
-      "subjunctive",
-      "polite-requests",
-      "object-infixes"
-    ],
-    "tags": [
-      "verbs"
-    ]
-  },
-  {
-    "slug": "helper-verbs",
-    "level": 3,
-    "title": "Helper Verbs: Weza, Taka, Lazima, Inabidi",
-    "swahiliTitle": "Vitenzi visaidizi",
-    "summary": "Can, want to, must, have to — followed by an infinitive (ku-) or a subjunctive.",
-    "blocks": [
-      {
-        "type": "table",
-        "caption": "Pattern",
-        "headers": [
-          "Meaning",
-          "Swahili",
-          "Next verb",
+          "Word",
+          "Use",
           "Example"
         ],
         "rows": [
           [
-            "can",
-            "-weza",
-            "ku- infinitive",
-            "Naweza kupata chai? — Can I get tea?"
+            "Kumbe!",
+            "surprise: \"oh, so…!\" (what you assumed wasn't true)",
+            "Kumbe unajua Kiswahili! — Oh, so you speak Swahili!"
           ],
           [
-            "want to",
-            "-taka",
-            "ku- infinitive",
-            "Nataka kulala. — I want to sleep."
+            "Basi",
+            "well then / so / that's it",
+            "Basi, twende. — Well then, let's go."
           ],
           [
-            "like to",
-            "-penda",
-            "ku- infinitive",
-            "Napenda kusoma. — I like reading."
+            "Yaani",
+            "I mean / in other words",
+            "Yaani, wewe ni mteja wangu!"
           ],
           [
-            "must",
-            "lazima",
-            "subjunctive",
-            "Lazima tuondoke. — We must leave."
+            "Si …?",
+            "why don't…? / isn't it…?",
+            "Si tukutane kesho? — Why don't we meet tomorrow?"
           ],
           [
-            "it's necessary / have to",
-            "inabidi",
-            "subjunctive",
-            "Inabidi niende. — I have to go."
+            "…, sivyo?",
+            "right? / isn't it?",
+            "Saa moja ni seven, sivyo?"
           ],
           [
-            "better",
-            "afadhali / heri",
-            "subjunctive or ku-",
-            "Afadhali uende. — You'd better go."
+            "Ebu / Hebu",
+            "come on / let me",
+            "Ebu nione."
+          ],
+          [
+            "Haya",
+            "alright / okay then",
+            "Haya, sawa."
+          ],
+          [
+            "Aisee",
+            "wow / man!",
+            "Aisee, mvua inanyesha!"
+          ],
+          [
+            "Wee!",
+            "whoa! / hey!",
+            "Wee! Elfu mbili?"
+          ],
+          [
+            "Aiii!",
+            "oh no! / come on!",
+            "Aiii, umepunguza sana!"
           ]
         ]
       },
       {
-        "type": "p",
-        "text": "Negatives: *siwezi* (I can't), *hawezi* (he can't), *sitaki kuenda* (I don't want to go), *si lazima* (it's not necessary)."
-      },
-      {
         "type": "tip",
-        "text": "**Naweza…?** is the easiest polite way to ask for anything: *Naweza kulipa kwa M-Pesa?* — Can I pay with M-Pesa?"
+        "text": "**Kumbe** is one of the most Kenyan words there is. Use it when you discover something unexpected — it shows you're listening."
       }
     ],
     "examples": [
       {
-        "swahili": "Unaweza kunisaidia?",
-        "english": "Can you help me?"
+        "swahili": "Kumbe hujui?",
+        "english": "Oh, you don't know?"
       },
       {
-        "swahili": "Fundi hawezi kuitengeneza.",
-        "english": "The mechanic can't fix it."
+        "swahili": "Basi, leo nakuachilia.",
+        "english": "Well then, today I'll let you go."
       },
       {
-        "swahili": "Lazima uchukue risiti.",
-        "english": "You must take a receipt."
-      },
-      {
-        "swahili": "Inabidi tumwambie.",
-        "english": "We'll have to tell him."
+        "swahili": "Si tukanywe chai?",
+        "english": "Why don't we go have tea?"
       }
     ],
     "related": [
-      "infinitive-ku",
-      "subjunctive"
+      "subjunctive",
+      "greetings"
     ],
     "tags": [
-      "verbs"
+      "phrases"
     ]
   },
   {
     "slug": "infinitive-ku",
-    "level": 3,
+    "level": 2,
     "title": "The Infinitive: ku- and kuto-",
     "swahiliTitle": "Kitenzi-jina",
     "summary": "ku- + stem = \"to …\" (and \"…-ing\" as a noun). kuto- = \"not to\".",
@@ -1857,6 +1411,129 @@
     ],
     "tags": [
       "verbs"
+    ]
+  },
+  {
+    "slug": "adjective-agreement",
+    "level": 2,
+    "title": "Adjectives Agree: Mzuri, Wazuri, Nzuri",
+    "swahiliTitle": "Vivumishi",
+    "summary": "Adjectives come after the noun and take its class prefix: m- / wa- for people, n/n form for things.",
+    "blocks": [
+      {
+        "type": "table",
+        "caption": "Common adjectives",
+        "headers": [
+          "Meaning",
+          "m/wa one",
+          "m/wa many",
+          "n/n"
+        ],
+        "rows": [
+          [
+            "good",
+            "mzuri",
+            "wazuri",
+            "nzuri"
+          ],
+          [
+            "big",
+            "mkubwa",
+            "wakubwa",
+            "kubwa"
+          ],
+          [
+            "small / young",
+            "mdogo",
+            "wadogo",
+            "ndogo"
+          ],
+          [
+            "tall / long",
+            "mrefu",
+            "warefu",
+            "ndefu"
+          ],
+          [
+            "short",
+            "mfupi",
+            "wafupi",
+            "fupi"
+          ],
+          [
+            "new",
+            "mpya",
+            "wapya",
+            "mpya"
+          ],
+          [
+            "many",
+            "—",
+            "wengi",
+            "nyingi"
+          ],
+          [
+            "other",
+            "mwingine",
+            "wengine",
+            "nyingine"
+          ],
+          [
+            "bad",
+            "mbaya",
+            "wabaya",
+            "mbaya"
+          ],
+          [
+            "red",
+            "mwekundu",
+            "wekundu",
+            "nyekundu"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "*Mtu mrefu* (a tall person), *watu warefu* (tall people), *barabara ndefu* (a long road)."
+      },
+      {
+        "type": "p",
+        "text": "Some adjectives never change: **safi** (clean), **rahisi** (cheap/easy), **ghali** (expensive), **tamu** (sweet), **bora** (best)."
+      },
+      {
+        "type": "tip",
+        "text": "For things, Kenyans default to the n/n form: *chakula nzuri*, *kitu nzuri*, *gari kubwa*. Sanifu would say chakula kizuri, kitu kizuri, gari kubwa (ji/ma)."
+      },
+      {
+        "type": "sanifu",
+        "text": "Sanifu: ki/vi **kizuri / vizuri**, ji/ma **zuri / mazuri**, m/mi **mzuri / mizuri**."
+      }
+    ],
+    "examples": [
+      {
+        "swahili": "Ni mrefu kuliko mimi.",
+        "english": "She's taller than me."
+      },
+      {
+        "swahili": "Wafanyakazi wengi ni wapya.",
+        "english": "Many of the staff are new."
+      },
+      {
+        "swahili": "Hii nyekundu.",
+        "english": "This red one."
+      },
+      {
+        "swahili": "Yule mwenye nguo nyeupe.",
+        "english": "The one in white clothes."
+      }
+    ],
+    "related": [
+      "noun-classes-mwa-nn",
+      "comparatives",
+      "sanifu-noun-classes"
+    ],
+    "tags": [
+      "nouns"
     ]
   },
   {
@@ -1985,62 +1662,603 @@
     ]
   },
   {
-    "slug": "locative-ni",
-    "level": 3,
-    "title": "Places: -ni, Kwenye, Kwa",
-    "swahiliTitle": "Mahali: -ni, kwenye, kwa",
-    "summary": "Three ways to say at / in / to a place: the -ni suffix, kwenye, and the very Kenyan kwa.",
+    "slug": "negative-present",
+    "level": 5,
+    "title": "Negative Present: si- … -i",
+    "swahiliTitle": "Ukanushaji: wakati uliopo",
+    "summary": "To say \"I don't…\", swap the subject prefix for its negative, drop -na-, and change the final -a to -i.",
     "blocks": [
       {
         "type": "p",
-        "text": "**-ni** on a noun = at / in / to it: *soko → sokoni* (at the market), *kazi → kazini* (at work), *nyumba → nyumbani* (at home), *jiko → jikoni* (in the kitchen)."
+        "text": "Three changes turn *ninataka* (I want) into *sitaki* (I don't want):"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Use the **negative subject prefix** (si-, hu-, ha-…)",
+          "Drop **-na-**",
+          "Change the final **-a → -i**"
+        ]
+      },
+      {
+        "type": "table",
+        "caption": "kutaka (to want)",
+        "headers": [
+          "Person",
+          "Positive",
+          "Negative"
+        ],
+        "rows": [
+          [
+            "I",
+            "ninataka",
+            "sitaki"
+          ],
+          [
+            "you",
+            "unataka",
+            "hutaki"
+          ],
+          [
+            "he / she",
+            "anataka",
+            "hataki"
+          ],
+          [
+            "we",
+            "tunataka",
+            "hatutaki"
+          ],
+          [
+            "you all",
+            "mnataka",
+            "hamtaki"
+          ],
+          [
+            "they",
+            "wanataka",
+            "hawataki"
+          ],
+          [
+            "it (n/n)",
+            "inataka",
+            "haitaki"
+          ],
+          [
+            "they (n/n)",
+            "zinataka",
+            "hazitaki"
+          ]
+        ]
       },
       {
         "type": "p",
-        "text": "**Kwenye** = at / on / in (very flexible): *kwenye meza* (on the table), *kwenye orodha* (on the list), *kwenye kona* (at the corner)."
-      },
-      {
-        "type": "p",
-        "text": "**Kwa** = at someone's place, by, with: *kwa Kevin* (at Kevin's), *kwa M-Pesa* (by M-Pesa), *kwa miguu* (on foot). **Kwangu / kwako / kwetu** = my place / your place / our home."
+        "text": "Verbs that don't end in -a (borrowed from Arabic) keep their ending: *sifikiri* (I don't think), *sijali* (I don't care)."
       },
       {
         "type": "tip",
-        "text": "Kenyans use **kwa** where Sanifu prefers -ni or kwenye: *till iko kwa ukuta* (Sanifu: ukutani), *kwa kona ya kwanza* (Sanifu: kwenye kona ya kwanza)."
-      },
-      {
-        "type": "p",
-        "text": "Names of countries and cities never take -ni: *Ninaenda Nairobi*, *Nitaenda Marekani*."
+        "text": "The three you'll use every day: **Sijui** (I don't know), **Sielewi** (I don't understand), **Sitaki** (I don't want)."
       }
     ],
     "examples": [
       {
-        "swahili": "Ninaenda kazini.",
-        "english": "I'm going to work."
+        "swahili": "Sijui.",
+        "english": "I don't know."
       },
       {
-        "swahili": "Weka vyombo kwenye sinki.",
-        "english": "Put the dishes in the sink."
+        "swahili": "Sitaki sukuma leo.",
+        "english": "I don't want sukuma today."
       },
       {
-        "swahili": "Tutapita kwako.",
-        "english": "We'll pass by your place."
+        "swahili": "Hawaishi Nairobi.",
+        "english": "They don't live in Nairobi."
       },
       {
-        "swahili": "Lipa kwa M-Pesa.",
-        "english": "Pay with M-Pesa."
+        "swahili": "Haifai.",
+        "english": "It's not suitable."
+      }
+    ],
+    "related": [
+      "present-na",
+      "na-have",
+      "negative-past"
+    ],
+    "tags": [
+      "verbs",
+      "negation"
+    ]
+  },
+  {
+    "slug": "na-have",
+    "level": 5,
+    "title": "Nina / Sina: Having (and \"There Is\")",
+    "swahiliTitle": "Kuwa na",
+    "summary": "Swahili \"have\" is literally \"be with\": ni- + -na. Kuna = there is; hakuna = there isn't.",
+    "blocks": [
+      {
+        "type": "table",
+        "caption": "-na (have)",
+        "headers": [
+          "Person",
+          "Have",
+          "Don't have"
+        ],
+        "rows": [
+          [
+            "I",
+            "nina",
+            "sina"
+          ],
+          [
+            "you",
+            "una",
+            "huna"
+          ],
+          [
+            "he / she",
+            "ana",
+            "hana"
+          ],
+          [
+            "we",
+            "tuna",
+            "hatuna"
+          ],
+          [
+            "you all",
+            "mna",
+            "hamna"
+          ],
+          [
+            "they",
+            "wana",
+            "hawana"
+          ],
+          [
+            "it (n/n)",
+            "ina",
+            "haina"
+          ],
+          [
+            "they (n/n)",
+            "zina",
+            "hazina"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "**Kuna** = there is / there are (lit. \"the place has\"): *Kuna magari mingi* — there's traffic. **Hakuna** = there isn't: *Hakuna shida* — no problem."
+      },
+      {
+        "type": "p",
+        "text": "In other tenses, use **kuwa na** (to be with): *nilikuwa na* (I had), *nitakuwa na* (I will have), *ningekuwa na* (if I had)."
+      },
+      {
+        "type": "tip",
+        "text": "Kenyans often say **-ko na** instead: *Uko na chenji?* (Do you have change?), *Ako na gari* (She has a car). Sanifu: *Una chenji? Ana gari.*"
+      },
+      {
+        "type": "p",
+        "text": "**Haina shida / Hakuna shida / Hamna shida** — all \"no problem\". You'll hear them a hundred times a day."
+      }
+    ],
+    "examples": [
+      {
+        "swahili": "Nina watoto wawili.",
+        "english": "I have two children."
+      },
+      {
+        "swahili": "Sina pesa mkononi.",
+        "english": "I don't have cash."
+      },
+      {
+        "swahili": "Kuna nafasi.",
+        "english": "There's space."
+      },
+      {
+        "swahili": "Kulikuwa na ajali.",
+        "english": "There was an accident."
       }
     ],
     "related": [
       "ko-location",
+      "negative-present"
+    ],
+    "tags": [
+      "verbs"
+    ]
+  },
+  {
+    "slug": "demonstratives",
+    "level": 5,
+    "title": "This & That: Huyu, Hii, Yule, Ile",
+    "swahiliTitle": "Vionyeshi",
+    "summary": "Three distances (here / near you / over there), agreeing with m/wa or n/n.",
+    "blocks": [
+      {
+        "type": "table",
+        "caption": "This / that",
+        "headers": [
+          "",
+          "m/wa one",
+          "m/wa many",
+          "n/n one",
+          "n/n many"
+        ],
+        "rows": [
+          [
+            "this (here)",
+            "huyu",
+            "hawa",
+            "hii",
+            "hizi"
+          ],
+          [
+            "that (near you / just mentioned)",
+            "huyo",
+            "hao",
+            "hiyo",
+            "hizo"
+          ],
+          [
+            "that (over there)",
+            "yule",
+            "wale",
+            "ile",
+            "zile"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "They usually come **after** the noun: *mtu huyu* (this person), *nyumba ile* (that house). Before the noun they add emphasis: *huyu mtu* — THIS guy."
+      },
+      {
+        "type": "p",
+        "text": "**Hii hapa / Hizi hapa** = here it is / here they are (handing something over)."
+      },
+      {
+        "type": "tip",
+        "text": "**Hii** is Kenya's all-purpose \"this\": *gari hii, kitabu hii, chakula hii*. Sanifu would say gari hili, kitabu hiki, chakula hiki."
+      },
+      {
+        "type": "sanifu",
+        "text": "Other Sanifu forms: ki/vi **hiki / hivi**, ji/ma **hili / haya**, m/mi **huu / hii**, u **huu**."
+      }
+    ],
+    "examples": [
+      {
+        "swahili": "Huyu ni Baraka.",
+        "english": "This is Baraka."
+      },
+      {
+        "swahili": "Hawa ni watoto wangu.",
+        "english": "These are my children."
+      },
+      {
+        "swahili": "Nyanya hizi ni tamu.",
+        "english": "These tomatoes are sweet."
+      },
+      {
+        "swahili": "Yule mdogo ni Grace.",
+        "english": "That little one is Grace."
+      }
+    ],
+    "related": [
+      "noun-classes-mwa-nn",
       "possessives"
     ],
     "tags": [
-      "prepositions"
+      "nouns"
+    ]
+  },
+  {
+    "slug": "future-ta",
+    "level": 5,
+    "title": "Future Tense -ta-",
+    "swahiliTitle": "Wakati ujao: -ta-",
+    "summary": "Swap -na- for -ta- and you're in the future. Negative: si-ta-, hu-ta-, ha-ta-…",
+    "blocks": [
+      {
+        "type": "table",
+        "caption": "kulipa (to pay)",
+        "headers": [
+          "Person",
+          "Future",
+          "Negative future"
+        ],
+        "rows": [
+          [
+            "I",
+            "nitalipa",
+            "sitalipa"
+          ],
+          [
+            "you",
+            "utalipa",
+            "hutalipa"
+          ],
+          [
+            "he / she",
+            "atalipa",
+            "hatalipa"
+          ],
+          [
+            "we",
+            "tutalipa",
+            "hatutalipa"
+          ],
+          [
+            "you all",
+            "mtalipa",
+            "hamtalipa"
+          ],
+          [
+            "they",
+            "watalipa",
+            "hawatalipa"
+          ],
+          [
+            "it (n/n)",
+            "italipa",
+            "haitalipa"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "The negative future keeps **-ta-** and the final **-a**: *sitaenda* (I won't go)."
+      },
+      {
+        "type": "p",
+        "text": "Short verbs keep **ku-**: *nitakula* (I'll eat), *utakuja?* (will you come?), *nitakunywa* (I'll drink)."
+      },
+      {
+        "type": "tip",
+        "text": "Kenyans often use the plain present for planned future: *Kesho naenda Naivasha* — Tomorrow I'm going to Naivasha."
+      },
+      {
+        "type": "p",
+        "text": "**Nitakuwa** = I will be: *Nitakuwa tayari* (I'll be ready), *Nitakuwa na pesa* (I'll have money)."
+      }
+    ],
+    "examples": [
+      {
+        "swahili": "Nitashuka Kencom.",
+        "english": "I'll get off at Kencom."
+      },
+      {
+        "swahili": "Utakula nini?",
+        "english": "What will you eat?"
+      },
+      {
+        "swahili": "Tutaonana Jumamosi.",
+        "english": "See you on Saturday."
+      },
+      {
+        "swahili": "Sitachelewa.",
+        "english": "I won't be late."
+      }
+    ],
+    "related": [
+      "present-na",
+      "past-li",
+      "subjunctive"
+    ],
+    "tags": [
+      "verbs",
+      "tenses"
+    ]
+  },
+  {
+    "slug": "imperatives",
+    "level": 5,
+    "title": "Commands: Panda! Shuka! Njoo!",
+    "swahiliTitle": "Amri",
+    "summary": "The bare verb stem is a command. Add -eni for several people. Use usi-…-e for \"don't\".",
+    "blocks": [
+      {
+        "type": "table",
+        "caption": "Commands",
+        "headers": [
+          "Infinitive",
+          "To one person",
+          "To several",
+          "Don't!"
+        ],
+        "rows": [
+          [
+            "kupanda (get in)",
+            "Panda!",
+            "Pandeni!",
+            "Usipande!"
+          ],
+          [
+            "kushuka (get off)",
+            "Shuka!",
+            "Shukeni!",
+            "Usishuke!"
+          ],
+          [
+            "kusimama (stop)",
+            "Simama!",
+            "Simameni!",
+            "Usisimame!"
+          ],
+          [
+            "kungoja (wait)",
+            "Ngoja!",
+            "Ngojeni!",
+            "Usingoje!"
+          ]
+        ]
+      },
+      {
+        "type": "table",
+        "caption": "Irregular ones",
+        "headers": [
+          "Verb",
+          "One",
+          "Several"
+        ],
+        "rows": [
+          [
+            "kuja (come)",
+            "Njoo!",
+            "Njooni!"
+          ],
+          [
+            "kuenda / kwenda (go)",
+            "Enda! (Kenyan) / Nenda! (Sanifu)",
+            "Nendeni!"
+          ],
+          [
+            "kuleta (bring)",
+            "Lete! / Leta!",
+            "Leteni!"
+          ],
+          [
+            "kula (eat)",
+            "Kula!",
+            "Kuleni!"
+          ],
+          [
+            "kunywa (drink)",
+            "Kunywa!",
+            "Kunyweni!"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "To include **me / him / them**, use the object prefix and end in **-e**: *Nipe!* (give me), *Niletee chai* (bring me tea), *Mwambie* (tell him)."
+      },
+      {
+        "type": "tip",
+        "text": "A bare command is normal in a matatu or at a stall. For more politeness add **tafadhali** or use the subjunctive: *Uniletee chai, tafadhali* — see \"Polite Requests\"."
+      }
+    ],
+    "examples": [
+      {
+        "swahili": "Panda haraka!",
+        "english": "Get in quickly!"
+      },
+      {
+        "swahili": "Simama hapa, nashuka!",
+        "english": "Stop here, I'm getting off!"
+      },
+      {
+        "swahili": "Niletee chai.",
+        "english": "Bring me tea."
+      },
+      {
+        "swahili": "Usisahau!",
+        "english": "Don't forget!"
+      }
+    ],
+    "related": [
+      "subjunctive",
+      "polite-requests",
+      "object-infixes"
+    ],
+    "tags": [
+      "verbs"
+    ]
+  },
+  {
+    "slug": "helper-verbs",
+    "level": 5,
+    "title": "Helper Verbs: Weza, Taka, Lazima, Inabidi",
+    "swahiliTitle": "Vitenzi visaidizi",
+    "summary": "Can, want to, must, have to — followed by an infinitive (ku-) or a subjunctive.",
+    "blocks": [
+      {
+        "type": "table",
+        "caption": "Pattern",
+        "headers": [
+          "Meaning",
+          "Swahili",
+          "Next verb",
+          "Example"
+        ],
+        "rows": [
+          [
+            "can",
+            "-weza",
+            "ku- infinitive",
+            "Naweza kupata chai? — Can I get tea?"
+          ],
+          [
+            "want to",
+            "-taka",
+            "ku- infinitive",
+            "Nataka kulala. — I want to sleep."
+          ],
+          [
+            "like to",
+            "-penda",
+            "ku- infinitive",
+            "Napenda kusoma. — I like reading."
+          ],
+          [
+            "must",
+            "lazima",
+            "subjunctive",
+            "Lazima tuondoke. — We must leave."
+          ],
+          [
+            "it's necessary / have to",
+            "inabidi",
+            "subjunctive",
+            "Inabidi niende. — I have to go."
+          ],
+          [
+            "better",
+            "afadhali / heri",
+            "subjunctive or ku-",
+            "Afadhali uende. — You'd better go."
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Negatives: *siwezi* (I can't), *hawezi* (he can't), *sitaki kuenda* (I don't want to go), *si lazima* (it's not necessary)."
+      },
+      {
+        "type": "tip",
+        "text": "**Naweza…?** is the easiest polite way to ask for anything: *Naweza kulipa kwa M-Pesa?* — Can I pay with M-Pesa?"
+      }
+    ],
+    "examples": [
+      {
+        "swahili": "Unaweza kunisaidia?",
+        "english": "Can you help me?"
+      },
+      {
+        "swahili": "Fundi hawezi kuitengeneza.",
+        "english": "The mechanic can't fix it."
+      },
+      {
+        "swahili": "Lazima uchukue risiti.",
+        "english": "You must take a receipt."
+      },
+      {
+        "swahili": "Inabidi tumwambie.",
+        "english": "We'll have to tell him."
+      }
+    ],
+    "related": [
+      "infinitive-ku",
+      "subjunctive"
+    ],
+    "tags": [
+      "verbs"
     ]
   },
   {
     "slug": "past-li",
-    "level": 4,
+    "level": 6,
     "title": "Past Tense -li-",
     "swahiliTitle": "Wakati uliopita: -li-",
     "summary": "Subject + -li- + verb = something that happened. Short verbs keep ku-.",
@@ -2134,7 +2352,7 @@
   },
   {
     "slug": "negative-past",
-    "level": 4,
+    "level": 6,
     "title": "Negative Past: si-ku-",
     "swahiliTitle": "Ukanushaji: wakati uliopita",
     "summary": "Negative subject + -ku- + verb (ending stays -a) = \"didn't\".",
@@ -2228,7 +2446,7 @@
   },
   {
     "slug": "object-infixes",
-    "level": 4,
+    "level": 6,
     "title": "Object Infixes: -ni-, -ku-, -m-, -wa-",
     "swahiliTitle": "Viambishi vya mtendwa",
     "summary": "Me, you, him, them — tucked inside the verb, right before the stem.",
@@ -2332,7 +2550,7 @@
   },
   {
     "slug": "perfect-me",
-    "level": 5,
+    "level": 6,
     "title": "Perfect -me-: Has Done / Is Now",
     "swahiliTitle": "Wakati timilifu: -me-",
     "summary": "-me- = something has happened and still matters now. With some verbs it describes a state: nimechoka = I'm tired.",
@@ -2472,7 +2690,7 @@
   },
   {
     "slug": "perfect-negative-ja",
-    "level": 5,
+    "level": 6,
     "title": "Not Yet: -ja- and Bado",
     "swahiliTitle": "Bado: -ja-",
     "summary": "Negative subject + -ja- + verb = hasn't (yet). Often with bado.",
@@ -2558,7 +2776,7 @@
   },
   {
     "slug": "wahi-ever-never",
-    "level": 5,
+    "level": 6,
     "title": "-wahi: Ever and Never",
     "swahiliTitle": "Kuwahi",
     "summary": "-wahi + infinitive = \"ever\". Sijawahi kuona = I've never seen.",
@@ -2630,131 +2848,8 @@
     ]
   },
   {
-    "slug": "adjective-agreement",
-    "level": 5,
-    "title": "Adjectives Agree: Mzuri, Wazuri, Nzuri",
-    "swahiliTitle": "Vivumishi",
-    "summary": "Adjectives come after the noun and take its class prefix: m- / wa- for people, n/n form for things.",
-    "blocks": [
-      {
-        "type": "table",
-        "caption": "Common adjectives",
-        "headers": [
-          "Meaning",
-          "m/wa one",
-          "m/wa many",
-          "n/n"
-        ],
-        "rows": [
-          [
-            "good",
-            "mzuri",
-            "wazuri",
-            "nzuri"
-          ],
-          [
-            "big",
-            "mkubwa",
-            "wakubwa",
-            "kubwa"
-          ],
-          [
-            "small / young",
-            "mdogo",
-            "wadogo",
-            "ndogo"
-          ],
-          [
-            "tall / long",
-            "mrefu",
-            "warefu",
-            "ndefu"
-          ],
-          [
-            "short",
-            "mfupi",
-            "wafupi",
-            "fupi"
-          ],
-          [
-            "new",
-            "mpya",
-            "wapya",
-            "mpya"
-          ],
-          [
-            "many",
-            "—",
-            "wengi",
-            "nyingi"
-          ],
-          [
-            "other",
-            "mwingine",
-            "wengine",
-            "nyingine"
-          ],
-          [
-            "bad",
-            "mbaya",
-            "wabaya",
-            "mbaya"
-          ],
-          [
-            "red",
-            "mwekundu",
-            "wekundu",
-            "nyekundu"
-          ]
-        ]
-      },
-      {
-        "type": "p",
-        "text": "*Mtu mrefu* (a tall person), *watu warefu* (tall people), *barabara ndefu* (a long road)."
-      },
-      {
-        "type": "p",
-        "text": "Some adjectives never change: **safi** (clean), **rahisi** (cheap/easy), **ghali** (expensive), **tamu** (sweet), **bora** (best)."
-      },
-      {
-        "type": "tip",
-        "text": "For things, Kenyans default to the n/n form: *chakula nzuri*, *kitu nzuri*, *gari kubwa*. Sanifu would say chakula kizuri, kitu kizuri, gari kubwa (ji/ma)."
-      },
-      {
-        "type": "sanifu",
-        "text": "Sanifu: ki/vi **kizuri / vizuri**, ji/ma **zuri / mazuri**, m/mi **mzuri / mizuri**."
-      }
-    ],
-    "examples": [
-      {
-        "swahili": "Ni mrefu kuliko mimi.",
-        "english": "She's taller than me."
-      },
-      {
-        "swahili": "Wafanyakazi wengi ni wapya.",
-        "english": "Many of the staff are new."
-      },
-      {
-        "swahili": "Hii nyekundu.",
-        "english": "This red one."
-      },
-      {
-        "swahili": "Yule mwenye nguo nyeupe.",
-        "english": "The one in white clothes."
-      }
-    ],
-    "related": [
-      "noun-classes-mwa-nn",
-      "comparatives",
-      "sanifu-noun-classes"
-    ],
-    "tags": [
-      "nouns"
-    ]
-  },
-  {
     "slug": "comparatives",
-    "level": 5,
+    "level": 6,
     "title": "Comparing: Kuliko, Zaidi, Bora",
     "swahiliTitle": "Ulinganisho",
     "summary": "There's no \"-er\" or \"-est\" in Swahili: you say \"big than\" (kubwa kuliko) and \"big more\" (kubwa zaidi).",
@@ -2847,7 +2942,7 @@
   },
   {
     "slug": "subjunctive",
-    "level": 6,
+    "level": 7,
     "title": "The Subjunctive: -e for \"Let / Should / So That\"",
     "swahiliTitle": "Hali ya kuamrisha: -e",
     "summary": "Change the final -a to -e (no tense marker) for suggestions, polite requests, wishes and after ili / lazima.",
@@ -2977,7 +3072,7 @@
   },
   {
     "slug": "polite-requests",
-    "level": 6,
+    "level": 7,
     "title": "Polite Requests: Naomba, Uniletee, Ebu",
     "swahiliTitle": "Maombi ya heshima",
     "summary": "From blunt to gracious: Lete → Niletee → Uniletee → Naomba uniletee.",
@@ -3161,101 +3256,6 @@
     ],
     "tags": [
       "verbs"
-    ]
-  },
-  {
-    "slug": "discourse-particles",
-    "level": 7,
-    "title": "Talking Like a Kenyan: Kumbe, Basi, Yaani, Si…?",
-    "swahiliTitle": "Viunganishi vya mazungumzo",
-    "summary": "Small words that make you sound natural: surprise, rephrasing, wrapping up, and gentle suggestions.",
-    "blocks": [
-      {
-        "type": "table",
-        "caption": "Particles",
-        "headers": [
-          "Word",
-          "Use",
-          "Example"
-        ],
-        "rows": [
-          [
-            "Kumbe!",
-            "surprise: \"oh, so…!\" (what you assumed wasn't true)",
-            "Kumbe unajua Kiswahili! — Oh, so you speak Swahili!"
-          ],
-          [
-            "Basi",
-            "well then / so / that's it",
-            "Basi, twende. — Well then, let's go."
-          ],
-          [
-            "Yaani",
-            "I mean / in other words",
-            "Yaani, wewe ni mteja wangu!"
-          ],
-          [
-            "Si …?",
-            "why don't…? / isn't it…?",
-            "Si tukutane kesho? — Why don't we meet tomorrow?"
-          ],
-          [
-            "…, sivyo?",
-            "right? / isn't it?",
-            "Saa moja ni seven, sivyo?"
-          ],
-          [
-            "Ebu / Hebu",
-            "come on / let me",
-            "Ebu nione."
-          ],
-          [
-            "Haya",
-            "alright / okay then",
-            "Haya, sawa."
-          ],
-          [
-            "Aisee",
-            "wow / man!",
-            "Aisee, mvua inanyesha!"
-          ],
-          [
-            "Wee!",
-            "whoa! / hey!",
-            "Wee! Elfu mbili?"
-          ],
-          [
-            "Aiii!",
-            "oh no! / come on!",
-            "Aiii, umepunguza sana!"
-          ]
-        ]
-      },
-      {
-        "type": "tip",
-        "text": "**Kumbe** is one of the most Kenyan words there is. Use it when you discover something unexpected — it shows you're listening."
-      }
-    ],
-    "examples": [
-      {
-        "swahili": "Kumbe hujui?",
-        "english": "Oh, you don't know?"
-      },
-      {
-        "swahili": "Basi, leo nakuachilia.",
-        "english": "Well then, today I'll let you go."
-      },
-      {
-        "swahili": "Si tukanywe chai?",
-        "english": "Why don't we go have tea?"
-      }
-    ],
-    "related": [
-      "subjunctive",
-      "greetings"
-    ],
-    "tags": [
-      "phrases"
     ]
   },
   {

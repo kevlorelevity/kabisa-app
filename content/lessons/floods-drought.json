@@ -1,0 +1,1773 @@
+{
+  "id": "floods-drought",
+  "uuid": "d56aaad6-1a11-589a-ac25-7093a046f32b",
+  "title": "Floods in the West, Drought in the North",
+  "category": "social",
+  "difficulty": "advanced",
+  "level": 9,
+  "order": 904,
+  "theme": "news",
+  "culturalNote": "Kenya's weather news often has two stories at once: floods (mafuriko) in the west, where rivers like the Nzoia burst their banks around Budalang'i, and drought (ukame) in the north, where herders lose their livestock. Kenyans respond with \"harambee\" — pulling together money through churches, chamas and M-Pesa. Conversations like this one are full of \"kwamba\" (that), continuous tenses and \"jinsi … -vyo-\" (the way, as much as).",
+  "startingPoint": "Evening at the kiosk near your flat. Mzee Kipchoge is reading the Daily Nation with a worried face.",
+  "grammarFocus": [
+    "continuous-tenses",
+    "conjunctions-kwamba",
+    "vyo-manner"
+  ],
+  "grammar": [
+    "continuous-tenses",
+    "conjunctions-kwamba",
+    "vyo-manner",
+    "noun-classes-mwa-nn",
+    "perfect-me",
+    "ki-po-ka",
+    "ni-copula",
+    "past-li",
+    "possessives",
+    "sanifu-noun-classes",
+    "question-words",
+    "na-have",
+    "discourse-particles",
+    "verb-extensions",
+    "future-ta",
+    "object-infixes",
+    "conditional-nge",
+    "infinitive-ku",
+    "present-na",
+    "helper-verbs",
+    "greetings",
+    "subject-prefixes"
+  ],
+  "turns": [
+    {
+      "id": "bb19c529-9381-5f28-b30b-99a9742848e6",
+      "speaker": "Mzee Kipchoge",
+      "role": "auto",
+      "swahili": "John, umesikia habari? Mvua imekuwa ikinyesha kwa wiki mbili bila kusimama!",
+      "english": "John, have you heard the news? It's been raining for two weeks without stopping!",
+      "words": [
+        {
+          "text": "John",
+          "gloss": "John (name)"
+        },
+        {
+          "text": "umesikia habari",
+          "gloss": "\"have you heard the news?\""
+        },
+        {
+          "text": "Mvua",
+          "gloss": "rain — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "imekuwa",
+          "gloss": "\"It has been\" — i- (subject: it (n/n)) + me- (perfect (done / now-state)) + -wa (be). From kuwa.",
+          "grammar": [
+            "continuous-tenses",
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kuwa (to be)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimekuwa"
+              },
+              {
+                "pronoun": "you",
+                "form": "umekuwa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amekuwa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumekuwa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmekuwa"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamekuwa"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "imekuwa"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zimekuwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "ikinyesha",
+          "gloss": "\"…raining\" — i- (subject: it (n/n)) + ki- (if / when · or \"-ing\" after kuwa) + -nyesha (rain). From kunyesha. Here, after imekuwa, -ki- means \"…-ing\": an ongoing action.",
+          "grammar": [
+            "continuous-tenses",
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "kwa wiki mbili",
+          "gloss": "\"for two weeks\""
+        },
+        {
+          "text": "bila kusimama",
+          "gloss": "\"without stopping\""
+        }
+      ]
+    },
+    {
+      "id": "f177318c-c9b8-5e79-a92d-8b9ccb0cf3de",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ndiyo, nimesikia kwamba mto Nzoia umefurika huko Budalang'i.",
+      "english": "Yes, I've heard that the Nzoia River has flooded in Budalang'i.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "nimesikia",
+          "gloss": "\"I have heard\" — ni- (subject: I) + me- (perfect (done / now-state)) + -sikia (hear). From kusikia.",
+          "grammar": [
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kusikia (to hear)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimesikia"
+              },
+              {
+                "pronoun": "you",
+                "form": "umesikia"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amesikia"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumesikia"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmesikia"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamesikia"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kwamba",
+          "gloss": "that (as in \"he said that…\")",
+          "grammar": [
+            "conjunctions-kwamba"
+          ]
+        },
+        {
+          "text": "mto Nzoia",
+          "gloss": "the Nzoia River"
+        },
+        {
+          "text": "umefurika",
+          "gloss": "\"has flooded\" — -furika = overflow, flood"
+        },
+        {
+          "text": "huko",
+          "gloss": "\"there\""
+        },
+        {
+          "text": "Budalang'i",
+          "gloss": "Budalang'i, a flood-prone area in western Kenya"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo, nimesikia kwamba mto Nzoia umefurika huko Budalang'i.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, umesikia kwamba mto Nzoia umefurika huko Budalang'i.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, nimesikia kwamba mto Nzoia utafurika jana huko Budalang'i.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "e4bb928f-4572-5b71-8773-f75c38c9f52a",
+      "speaker": "Mzee Kipchoge",
+      "role": "auto",
+      "swahili": "Ni kweli. Watu walikuwa wakilala nje kwa sababu nyumba zao zimejaa maji.",
+      "english": "It's true. People were sleeping outside because their houses are full of water.",
+      "words": [
+        {
+          "text": "Ni kweli",
+          "gloss": "it's true",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Watu",
+          "gloss": "people — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "walikuwa",
+          "gloss": "\"They were\" — -wa (be, subject: they) + li- (past) + -wa (be). From kuwa.",
+          "grammar": [
+            "continuous-tenses",
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kuwa (to be)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilikuwa"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulikuwa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alikuwa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulikuwa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlikuwa"
+              },
+              {
+                "pronoun": "they",
+                "form": "walikuwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "wakilala",
+          "gloss": "\"…sleeping\" — wa- (subject: they) + ki- (if / when · or \"-ing\" after kuwa) + -lala (sleep). From kulala. Here, after walikuwa, -ki- means \"…-ing\": an ongoing action.",
+          "grammar": [
+            "continuous-tenses",
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "nje",
+          "gloss": "outside"
+        },
+        {
+          "text": "kwa sababu",
+          "gloss": "because",
+          "grammar": [
+            "conjunctions-kwamba"
+          ]
+        },
+        {
+          "text": "nyumba",
+          "gloss": "house / houses — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "zao",
+          "gloss": "\"their\" — n/n plural agreement (nyumba zao, nguo zao).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (n/n plural)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "zangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "zako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "zake"
+              },
+              {
+                "pronoun": "our",
+                "form": "zetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "zenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "zao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "zimejaa maji",
+          "gloss": "\"are full of water\""
+        }
+      ]
+    },
+    {
+      "id": "1581343e-d2d4-514f-a963-a5a55bc3e463",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Pole sana kwao. Serikali inawasaidia aje?",
+      "english": "I'm so sorry for them. How is the government helping them?",
+      "words": [
+        {
+          "text": "Pole sana",
+          "gloss": "so sorry / take heart"
+        },
+        {
+          "text": "kwao",
+          "gloss": "\"for them\""
+        },
+        {
+          "text": "Serikali",
+          "gloss": "the government"
+        },
+        {
+          "text": "inawasaidia aje",
+          "gloss": "\"how is it helping them?\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Pole sana kwao. Serikali inawasaidia aje?",
+          "correct": true
+        },
+        {
+          "swahili": "Hongera sana kwao. Serikali inawasaidia aje?",
+          "correct": false
+        },
+        {
+          "swahili": "Pole sana kwao. Serikali iliwasaidia kesho aje?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "e71229a5-53a6-5618-9003-6c1c1bd5406c",
+      "speaker": "Mzee Kipchoge",
+      "role": "auto",
+      "swahili": "Wanagawa chakula na mahema, lakini jinsi ninavyoona, haitoshi.",
+      "english": "They're handing out food and tents, but the way I see it, it's not enough.",
+      "words": [
+        {
+          "text": "Wanagawa",
+          "gloss": "\"they're handing out\" — -gawa = distribute"
+        },
+        {
+          "text": "chakula",
+          "gloss": "food (plural vyakula) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — chakula changu, chakula hiki"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "mahema",
+          "gloss": "tents (one: hema)"
+        },
+        {
+          "text": "lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "jinsi",
+          "gloss": "how / the way"
+        },
+        {
+          "text": "ninavyoona",
+          "gloss": "\"How I see\" — ni- (subject: I) + na- (present) + vyo- (how / the way) + -ona (see). From kuona.",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "haitoshi",
+          "gloss": "\"it isn't enough\""
+        }
+      ]
+    },
+    {
+      "id": "40fdad64-fc06-5482-bc67-9fbe3e15490b",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Na kaskazini je? Nilisoma kwamba kuna ukame mbaya huko.",
+      "english": "And the north? I read that there's a bad drought there.",
+      "words": [
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "kaskazini",
+          "gloss": "the north"
+        },
+        {
+          "text": "je",
+          "gloss": "(question marker) — \"Je, …?\" turns a statement into a yes/no question",
+          "grammar": [
+            "question-words"
+          ]
+        },
+        {
+          "text": "Nilisoma",
+          "gloss": "\"I read\" — ni- (subject: I) + li- (past) + -soma (read). From kusoma.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kusoma (to read)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilisoma"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulisoma"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alisoma"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulisoma"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlisoma"
+              },
+              {
+                "pronoun": "they",
+                "form": "walisoma"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kwamba",
+          "gloss": "that (as in \"he said that…\")",
+          "grammar": [
+            "conjunctions-kwamba"
+          ]
+        },
+        {
+          "text": "kuna",
+          "gloss": "\"There is / there are\" — ku- (place) + -na (have): \"the place has…\"",
+          "grammar": [
+            "na-have"
+          ]
+        },
+        {
+          "text": "ukame mbaya",
+          "gloss": "\"a bad drought\""
+        },
+        {
+          "text": "huko",
+          "gloss": "\"there\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Na kaskazini je? Nilisoma kwamba kuna ukame mbaya huko.",
+          "correct": true
+        },
+        {
+          "swahili": "Na kaskazini je? Nilisoma kwamba kuna ukame mzuri huko.",
+          "correct": false
+        },
+        {
+          "swahili": "Na kaskazini je? Nitasoma jana kwamba kuna ukame mbaya huko.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "d7d797bd-a0ca-5443-81f6-62428f847065",
+      "speaker": "Mzee Kipchoge",
+      "role": "auto",
+      "swahili": "Ndiyo. Kenya ni hivyo — sehemu moja inazama, nyingine inakauka. Wafugaji wamekuwa wakipoteza mifugo yao.",
+      "english": "Yes. That's Kenya — one part is drowning, another is drying up. Herders have been losing their livestock.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Kenya",
+          "gloss": "Kenya"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "hivyo",
+          "gloss": "like that / so",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "sehemu moja",
+          "gloss": "\"one part\""
+        },
+        {
+          "text": "inazama",
+          "gloss": "\"is drowning / sinking\""
+        },
+        {
+          "text": "nyingine",
+          "gloss": "\"another (one)\""
+        },
+        {
+          "text": "inakauka",
+          "gloss": "\"is drying up\""
+        },
+        {
+          "text": "Wafugaji",
+          "gloss": "herders"
+        },
+        {
+          "text": "wamekuwa",
+          "gloss": "\"They have been\" — -wa (be, subject: they) + me- (perfect (done / now-state)) + -wa (be). From kuwa.",
+          "grammar": [
+            "continuous-tenses",
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kuwa (to be)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimekuwa"
+              },
+              {
+                "pronoun": "you",
+                "form": "umekuwa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amekuwa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumekuwa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmekuwa"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamekuwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "wakipoteza",
+          "gloss": "\"…losing\" — wa- (subject: they) + ki- (if / when · or \"-ing\" after kuwa) + -poteza (lose). From kupoteza. Extension: causative (-isha/-esha/-za: \"make / cause\"). Here, after wamekuwa, -ki- means \"…-ing\": an ongoing action.",
+          "grammar": [
+            "continuous-tenses",
+            "ki-po-ka",
+            "verb-extensions"
+          ]
+        },
+        {
+          "text": "mifugo",
+          "gloss": "livestock"
+        },
+        {
+          "text": "yao",
+          "gloss": "\"their\" — n/n singular agreement (nyumba yao). In Kenyan speech also used for family words and most things (jina yao, gari yao).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (n/n singular)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "yangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "yako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "yake"
+              },
+              {
+                "pronoun": "our",
+                "form": "yetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "yenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "yao"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "3179ee0e-9ba6-5ca7-83e5-daa69af31cc1",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Inasikitisha. Nadhani kwamba bei ya chakula itapanda pia.",
+      "english": "That's sad. I think food prices will go up too.",
+      "words": [
+        {
+          "text": "Inasikitisha",
+          "gloss": "\"it's sad\" (lit. \"it saddens\")"
+        },
+        {
+          "text": "Nadhani",
+          "gloss": "\"I think\""
+        },
+        {
+          "text": "kwamba",
+          "gloss": "that (as in \"he said that…\")",
+          "grammar": [
+            "conjunctions-kwamba"
+          ]
+        },
+        {
+          "text": "bei",
+          "gloss": "price — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ya",
+          "gloss": "\"of\" — n/n singular agreement (nyumba ya Kamau); Kenyans use ya with most nouns",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "chakula",
+          "gloss": "food (plural vyakula) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — chakula changu, chakula hiki"
+        },
+        {
+          "text": "itapanda",
+          "gloss": "\"It will climb\" — i- (subject: it (n/n)) + ta- (future) + -panda (climb). From kupanda.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kupanda (to climb)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitapanda"
+              },
+              {
+                "pronoun": "you",
+                "form": "utapanda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atapanda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutapanda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtapanda"
+              },
+              {
+                "pronoun": "they",
+                "form": "watapanda"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "itapanda"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zitapanda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "pia",
+          "gloss": "also / too"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Inasikitisha. Nadhani kwamba bei ya chakula itapanda pia.",
+          "correct": true
+        },
+        {
+          "swahili": "Inafurahisha. Nadhani kwamba bei ya chakula itapanda pia.",
+          "correct": false
+        },
+        {
+          "swahili": "Inasikitisha. Nadhani kwamba bei ya chakula ilipanda kesho pia.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "192f32a0-7c3c-5d2c-8d80-8c2f9e70ddb5",
+      "speaker": "Mzee Kipchoge",
+      "role": "auto",
+      "swahili": "Bila shaka. Mama mboga alikuwa akiniambia jana kwamba bei ya sukuma imepanda mara mbili.",
+      "english": "No doubt. The mama mboga was telling me yesterday that the price of sukuma has doubled.",
+      "words": [
+        {
+          "text": "Bila shaka",
+          "gloss": "\"without doubt\""
+        },
+        {
+          "text": "Mama mboga",
+          "gloss": "the vegetable lady"
+        },
+        {
+          "text": "alikuwa",
+          "gloss": "\"He/she was\" — a- (subject: he/she) + li- (past) + -wa (be). From kuwa.",
+          "grammar": [
+            "continuous-tenses",
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kuwa (to be)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilikuwa"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulikuwa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alikuwa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulikuwa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlikuwa"
+              },
+              {
+                "pronoun": "they",
+                "form": "walikuwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "akiniambia",
+          "gloss": "\"…telling me\" — a- (subject: he/she) + ki- (if / when · or \"-ing\" after kuwa) + ni- (object: me) + -ambia (tell). From kuambia. Here, after alikuwa, -ki- means \"…-ing\": an ongoing action.",
+          "grammar": [
+            "continuous-tenses",
+            "ki-po-ka",
+            "object-infixes"
+          ]
+        },
+        {
+          "text": "jana",
+          "gloss": "yesterday — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "kwamba",
+          "gloss": "that (as in \"he said that…\")",
+          "grammar": [
+            "conjunctions-kwamba"
+          ]
+        },
+        {
+          "text": "bei",
+          "gloss": "price — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ya",
+          "gloss": "\"of\" — n/n singular agreement (nyumba ya Kamau); Kenyans use ya with most nouns",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "sukuma",
+          "gloss": "short for sukuma wiki — collard greens / kale — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "imepanda",
+          "gloss": "\"It has climbed\" — i- (subject: it (n/n)) + me- (perfect (done / now-state)) + -panda (climb). From kupanda.",
+          "grammar": [
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kupanda (to climb)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimepanda"
+              },
+              {
+                "pronoun": "you",
+                "form": "umepanda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amepanda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumepanda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmepanda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamepanda"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "imepanda"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zimepanda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mara mbili",
+          "gloss": "\"twice, double\""
+        }
+      ]
+    },
+    {
+      "id": "b5e34826-b611-52bf-a786-344c34273588",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Wee! Ningependa kusaidia. Ninaweza kuchangia vipi?",
+      "english": "Wow! I'd like to help. How can I contribute?",
+      "words": [
+        {
+          "text": "Wee",
+          "gloss": "hey you! (surprise / emphasis)",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Ningependa",
+          "gloss": "\"I would like\" — ni- (subject: I) + nge- (\"would\") + -penda (like). From kupenda.",
+          "grammar": [
+            "conditional-nge"
+          ],
+          "conjugation": {
+            "verb": "kupenda (to like)",
+            "tense": "Conditional (-nge-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ningependa"
+              },
+              {
+                "pronoun": "you",
+                "form": "ungependa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "angependa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tungependa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mngependa"
+              },
+              {
+                "pronoun": "they",
+                "form": "wangependa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kusaidia",
+          "gloss": "\"To help\" — ku- (infinitive \"to\") + -saidia (help). From kusaidia.",
+          "grammar": [
+            "infinitive-ku"
+          ]
+        },
+        {
+          "text": "Ninaweza",
+          "gloss": "\"I can\" — ni- (subject: I) + na- (present) + -weza (can). From kuweza. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na",
+            "helper-verbs"
+          ],
+          "conjugation": {
+            "verb": "kuweza (to can)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaweza"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaweza"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaweza"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaweza"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaweza"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaweza"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kuchangia",
+          "gloss": "\"to contribute\""
+        },
+        {
+          "text": "vipi",
+          "gloss": "how? — \"Vipi?\" alone = \"How's it?\"",
+          "grammar": [
+            "question-words",
+            "greetings"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Wee! Ningependa kusaidia. Ninaweza kuchangia vipi?",
+          "correct": true
+        },
+        {
+          "swahili": "Wee! Nisingependa kusaidia. Ninaweza kuchangia vipi?",
+          "correct": false
+        },
+        {
+          "swahili": "Wee! Ningependa kusaidia. Ninaweza kuchangia nani?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "405bbcb0-9224-525d-9b46-b1219fac2b2e",
+      "speaker": "Mzee Kipchoge",
+      "role": "auto",
+      "swahili": "Kanisa yetu inachangisha pesa Jumapili. Kila mtu atachangia kadiri anavyoweza.",
+      "english": "Our church is raising money on Sunday. Everyone will give as much as they can.",
+      "words": [
+        {
+          "text": "Kanisa yetu",
+          "gloss": "\"our church\"",
+          "sanifu": "Sanifu: kanisa letu (ji/ma class)"
+        },
+        {
+          "text": "inachangisha pesa",
+          "gloss": "\"is raising money\""
+        },
+        {
+          "text": "Jumapili",
+          "gloss": "Sunday"
+        },
+        {
+          "text": "Kila mtu",
+          "gloss": "everyone"
+        },
+        {
+          "text": "atachangia",
+          "gloss": "\"He/she will contribute to\" — a- (subject: he/she) + ta- (future) + -changia (contribute to). From kuchangia. Extension: prepositional (-ia/-ea: \"for / to / at\").",
+          "grammar": [
+            "future-ta",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kuchangia (to contribute to)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitachangia"
+              },
+              {
+                "pronoun": "you",
+                "form": "utachangia"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atachangia"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutachangia"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtachangia"
+              },
+              {
+                "pronoun": "they",
+                "form": "watachangia"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kadiri anavyoweza",
+          "gloss": "\"as much as he/she can\""
+        }
+      ],
+      "sanifu": "Kanisa letu linachangisha pesa Jumapili. Kila mtu atachangia kadiri anavyoweza."
+    },
+    {
+      "id": "181dbcba-f270-50e0-984d-2e2d141a170d",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Nitakuja Jumapili. Nitachangia jinsi ninavyoweza.",
+      "english": "I'll come on Sunday. I'll give as much as I can.",
+      "words": [
+        {
+          "text": "Nitakuja",
+          "gloss": "\"I will come\" — ni- (subject: I) + ta- (future) + -ja (come). From kuja.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kuja (to come)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitakuja"
+              },
+              {
+                "pronoun": "you",
+                "form": "utakuja"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atakuja"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutakuja"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtakuja"
+              },
+              {
+                "pronoun": "they",
+                "form": "watakuja"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Jumapili",
+          "gloss": "Sunday"
+        },
+        {
+          "text": "Nitachangia",
+          "gloss": "\"I will contribute to\" — ni- (subject: I) + ta- (future) + -changia (contribute to). From kuchangia. Extension: prepositional (-ia/-ea: \"for / to / at\").",
+          "grammar": [
+            "future-ta",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kuchangia (to contribute to)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitachangia"
+              },
+              {
+                "pronoun": "you",
+                "form": "utachangia"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atachangia"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutachangia"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtachangia"
+              },
+              {
+                "pronoun": "they",
+                "form": "watachangia"
+              }
+            ]
+          }
+        },
+        {
+          "text": "jinsi ninavyoweza",
+          "gloss": "\"as much as I can, the way I can\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Nitakuja Jumapili. Nitachangia jinsi ninavyoweza.",
+          "correct": true
+        },
+        {
+          "swahili": "Nilikuja Jumapili ijayo. Nitachangia jinsi ninavyoweza.",
+          "correct": false
+        },
+        {
+          "swahili": "Nitakuja Jumapili. Nitachangia jinsi unavyoweza.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "5e3bb69a-e1c0-5c91-b80c-00a41638a1bb",
+      "speaker": "Mzee Kipchoge",
+      "role": "auto",
+      "swahili": "Asante, John. Wewe ni jirani mwema.",
+      "english": "Thank you, John. You're a good neighbour.",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "John",
+          "gloss": "John (name)"
+        },
+        {
+          "text": "Wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "jirani mwema",
+          "gloss": "\"a good neighbour\""
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "ea708084-2ae1-55df-b35b-06b52716f283",
+      "swahili": "mafuriko",
+      "english": "floods",
+      "exampleContext": "-furika = overflow, flood"
+    },
+    {
+      "id": "ed91fc45-88ce-5e9a-8c08-a31a0fbfa3c1",
+      "swahili": "ukame",
+      "english": "drought |",
+      "exampleContext": ""
+    },
+    {
+      "id": "f0852094-c842-52c6-807e-09412b11c178",
+      "swahili": "-kauka",
+      "english": "dry up |",
+      "exampleContext": ""
+    },
+    {
+      "id": "fd435ba4-96dd-5a09-984a-08c155f28193",
+      "swahili": "mfugaji / wafugaji",
+      "english": "herder / herders |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "fd47cfd3-2e3a-5d60-9dbf-dc9f00ddebcf",
+      "swahili": "mifugo",
+      "english": "livestock |",
+      "exampleContext": ""
+    },
+    {
+      "id": "cdd208cd-ef5e-59c9-87e5-337f4419c0dd",
+      "swahili": "mahema",
+      "english": "tents",
+      "exampleContext": "one: hema"
+    },
+    {
+      "id": "94a9faf5-022c-535c-89ea-de5d5c50d013",
+      "swahili": "serikali",
+      "english": "the government |",
+      "exampleContext": ""
+    },
+    {
+      "id": "bd735db1-db28-5ea6-bbb0-0ed5c5541448",
+      "swahili": "kuchangia",
+      "english": "to contribute",
+      "exampleContext": "kuchangisha pesa = to raise money",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "4b0603d0-422b-5224-ac76-dd3f463dc509",
+      "swahili": "Nimesikia kwamba…",
+      "english": "I've heard that…",
+      "exampleContext": "kwamba = that",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "63b4508a-4461-5a67-9667-658af4fda1a8",
+      "swahili": "Nadhani kwamba…",
+      "english": "I think that… |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "967e0c75-1c11-5a1e-9d8d-d019259493b0",
+      "swahili": "imekuwa ikinyesha",
+      "english": "it has been raining",
+      "exampleContext": "-me- + kuwa + -ki- = has been …-ing",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "49f724ce-d1ce-51e8-b24a-307f4ee8df40",
+      "swahili": "jinsi ninavyoweza",
+      "english": "as much as I can",
+      "exampleContext": "-vyo- = the way, as",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "d5eab12a-9980-5963-9142-3bb0df45bd74",
+      "swahili": "Inasikitisha",
+      "english": "It's sad",
+      "exampleContext": "lit. \"it saddens\""
+    }
+  ],
+  "practice": [
+    {
+      "id": "c3d076f2-d5f4-5c6b-b6e4-c7aa5c9d1fa0",
+      "mode": "translate",
+      "english": "It's been raining for two weeks.",
+      "before": "Mvua ",
+      "after": " kwa wiki mbili.",
+      "options": [
+        {
+          "text": "imekuwa ikinyesha",
+          "correct": true
+        },
+        {
+          "text": "ilikuwa ikinyesha",
+          "correct": false,
+          "feedback": "ilikuwa ikinyesha = It was + If/when it rains"
+        },
+        {
+          "text": "itakuwa ikinyesha",
+          "correct": false,
+          "feedback": "itakuwa ikinyesha = It will be + If/when it rains"
+        }
+      ],
+      "explanation": "imekuwa iki- = has been …-ing.",
+      "grammar": [
+        "ki-po-ka",
+        "perfect-me"
+      ]
+    },
+    {
+      "id": "49ea7eb8-b5ef-5259-a628-e28cb3031130",
+      "mode": "translate",
+      "english": "People were sleeping outside.",
+      "before": "Watu ",
+      "after": " nje.",
+      "options": [
+        {
+          "text": "walikuwa wakilala",
+          "correct": true
+        },
+        {
+          "text": "watakuwa wakilala",
+          "correct": false,
+          "feedback": "watakuwa wakilala = They will be + If/when they sleep"
+        },
+        {
+          "text": "wamekuwa wakilala",
+          "correct": false,
+          "feedback": "wamekuwa wakilala = They have been + If/when they sleep"
+        }
+      ],
+      "explanation": "walikuwa wa- = were …-ing.",
+      "grammar": [
+        "ki-po-ka",
+        "past-li"
+      ]
+    },
+    {
+      "id": "7ea6ebba-9bbd-5d90-babc-a655ff54d1da",
+      "mode": "translate",
+      "english": "Herders have been losing their livestock.",
+      "before": "Wafugaji ",
+      "after": " mifugo yao.",
+      "options": [
+        {
+          "text": "wamekuwa wakipoteza",
+          "correct": true
+        },
+        {
+          "text": "walikuwa wakipoteza",
+          "correct": false,
+          "feedback": "walikuwa wakipoteza = They were + If/when they lose"
+        },
+        {
+          "text": "watakuwa wakipoteza",
+          "correct": false,
+          "feedback": "watakuwa wakipoteza = They will be + If/when they lose"
+        }
+      ],
+      "explanation": "wamekuwa = They have been · wakipoteza = If/when they lose.",
+      "grammar": [
+        "ki-po-ka",
+        "perfect-me",
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "245c3e25-6c68-582d-9cae-e873f77e4d91",
+      "mode": "translate",
+      "english": "I've heard that the river has flooded.",
+      "before": "Nimesikia ",
+      "after": " mto umefurika.",
+      "options": [
+        {
+          "text": "kwamba",
+          "correct": true
+        },
+        {
+          "text": "kama",
+          "correct": false,
+          "feedback": "kama = like / as / if"
+        },
+        {
+          "text": "ili",
+          "correct": false,
+          "feedback": "ili = so that (followed by subjunctive)"
+        }
+      ],
+      "explanation": "kwamba = that, ili = so that.",
+      "grammar": [
+        "conjunctions-kwamba"
+      ]
+    },
+    {
+      "id": "16900b08-0afa-56c0-974b-d35f1f7cda2d",
+      "mode": "translate",
+      "english": "I read that there's a drought.",
+      "before": "Nilisoma kwamba kuna ",
+      "after": " mbaya.",
+      "options": [
+        {
+          "text": "ukame",
+          "correct": true
+        },
+        {
+          "text": "mafuriko",
+          "correct": false
+        },
+        {
+          "text": "mvua",
+          "correct": false,
+          "feedback": "mvua = rain"
+        }
+      ],
+      "explanation": "ukame = drought, mafuriko = floods."
+    },
+    {
+      "id": "ee3ebc97-25e2-54b1-a69b-ad001cb27298",
+      "mode": "translate",
+      "english": "I think that food prices will go up.",
+      "before": "Nadhani kwamba bei ya chakula ",
+      "after": ".",
+      "options": [
+        {
+          "text": "itapanda",
+          "correct": true
+        },
+        {
+          "text": "ilipanda",
+          "correct": false,
+          "feedback": "ilipanda = It climbed"
+        },
+        {
+          "text": "imepanda",
+          "correct": false,
+          "feedback": "imepanda = It has climbed"
+        }
+      ],
+      "explanation": "itapanda = \"It will climb\" — i- (subject: it (n/n)) + ta- (future) + -panda (climb). From kupanda.",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "759692de-6a60-531c-8ce9-288e153e4345",
+      "mode": "translate",
+      "english": "the way I see it",
+      "before": "jinsi ",
+      "after": "",
+      "options": [
+        {
+          "text": "ninavyoona",
+          "correct": true
+        },
+        {
+          "text": "ninaona",
+          "correct": false,
+          "feedback": "ninaona = I see"
+        },
+        {
+          "text": "niliona",
+          "correct": false,
+          "feedback": "niliona = I saw"
+        }
+      ],
+      "explanation": "-vyo- = the way, as.",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "5c9115d9-97c3-5b7b-a097-4488929e02a9",
+      "mode": "translate",
+      "english": "as much as I can",
+      "before": "jinsi ",
+      "after": "",
+      "options": [
+        {
+          "text": "ninavyoweza",
+          "correct": true
+        },
+        {
+          "text": "ninaweza",
+          "correct": false,
+          "feedback": "ninaweza = I can"
+        },
+        {
+          "text": "nitaweza",
+          "correct": false,
+          "feedback": "nitaweza = I will be able"
+        }
+      ],
+      "explanation": "ninavyoweza = \"How I can\" — ni- (subject: I) + na- (present) + vyo- (how / the way) + -weza (can). From kuweza.",
+      "grammar": [
+        "ki-po-ka",
+        "helper-verbs"
+      ]
+    },
+    {
+      "id": "ab51255d-814c-5f7f-87d7-f9fcf8de07ba",
+      "mode": "translate",
+      "english": "How is the government helping them?",
+      "before": "Serikali inawasaidia ",
+      "after": "?",
+      "options": [
+        {
+          "text": "aje",
+          "correct": true
+        },
+        {
+          "text": "lini",
+          "correct": false,
+          "feedback": "lini = when?"
+        },
+        {
+          "text": "nani",
+          "correct": false,
+          "feedback": "nani = who?"
+        }
+      ],
+      "explanation": "aje: how? (Kenyan) — \"Uko aje?\" = how are you?",
+      "grammar": [
+        "question-words",
+        "greetings"
+      ]
+    },
+    {
+      "id": "7940e3d9-5b28-555e-8bab-9e6686fdaa53",
+      "mode": "translate",
+      "english": "tents and food",
+      "before": "",
+      "after": " na chakula",
+      "options": [
+        {
+          "text": "mahema",
+          "correct": true
+        },
+        {
+          "text": "mawe",
+          "correct": false
+        },
+        {
+          "text": "mabomba",
+          "correct": false
+        }
+      ],
+      "explanation": "hema / mahema = tent / tents."
+    },
+    {
+      "id": "c5c3bb80-bb55-51d2-8bac-8cfaa62bf692",
+      "mode": "translate",
+      "english": "The river has flooded.",
+      "before": "Mto ",
+      "after": ".",
+      "options": [
+        {
+          "text": "umefurika",
+          "correct": true
+        },
+        {
+          "text": "umekauka",
+          "correct": false,
+          "feedback": "umekauka = You are dry"
+        },
+        {
+          "text": "umesimama",
+          "correct": false,
+          "feedback": "umesimama = You are standing"
+        }
+      ],
+      "explanation": "-furika = flood, -kauka = dry up."
+    },
+    {
+      "id": "53b0a974-14e7-5ad8-bb57-baee29267ea1",
+      "mode": "translate",
+      "english": "One part is drowning, another is drying up.",
+      "before": "Sehemu moja ",
+      "after": ", nyingine inakauka.",
+      "options": [
+        {
+          "text": "inazama",
+          "correct": true
+        },
+        {
+          "text": "inakauka",
+          "correct": false,
+          "feedback": "inakauka = is drying up"
+        },
+        {
+          "text": "inafurahi",
+          "correct": false,
+          "feedback": "inafurahi = It is happy"
+        }
+      ],
+      "explanation": "-zama = sink, drown."
+    },
+    {
+      "id": "8ec8e4c0-5cd6-5752-a04d-55967e04f3ed",
+      "mode": "translate",
+      "english": "That's sad.",
+      "before": "",
+      "after": ".",
+      "options": [
+        {
+          "text": "Inasikitisha",
+          "correct": true
+        },
+        {
+          "text": "Inafurahisha",
+          "correct": false,
+          "feedback": "Inafurahisha = it's delightful"
+        },
+        {
+          "text": "Inavutia",
+          "correct": false,
+          "feedback": "Inavutia = It is attracting"
+        }
+      ],
+      "explanation": "-sikitisha = sadden, -furahisha = delight, -vutia = interest."
+    },
+    {
+      "id": "8c2e6668-2f46-5d16-80a2-93f379adb9d0",
+      "mode": "translate",
+      "english": "I'd like to help.",
+      "before": "",
+      "after": " kusaidia.",
+      "options": [
+        {
+          "text": "Ningependa",
+          "correct": true
+        },
+        {
+          "text": "Ninapenda",
+          "correct": false,
+          "feedback": "Ninapenda = I like"
+        },
+        {
+          "text": "Nilipenda",
+          "correct": false,
+          "feedback": "Nilipenda = I liked"
+        }
+      ],
+      "explanation": "Ningependa = \"I would like\" — ni- (subject: I) + nge- (\"would\") + -penda (like). From kupenda.",
+      "grammar": [
+        "conditional-nge"
+      ]
+    },
+    {
+      "id": "e9f2e199-59ea-51e2-9aa1-502311626ab6",
+      "mode": "translate",
+      "english": "Everyone will give as much as they can.",
+      "before": "Kila mtu atachangia kadiri ",
+      "after": ".",
+      "options": [
+        {
+          "text": "anavyoweza",
+          "correct": true
+        },
+        {
+          "text": "anaweza",
+          "correct": false,
+          "feedback": "anaweza = He/she can"
+        },
+        {
+          "text": "aliweza",
+          "correct": false,
+          "feedback": "aliweza = He/she could"
+        }
+      ],
+      "explanation": "anavyoweza = \"How he/she can\" — a- (subject: he/she) + na- (present) + vyo- (how / the way) + -weza (can). From kuweza.",
+      "grammar": [
+        "ki-po-ka",
+        "helper-verbs"
+      ]
+    },
+    {
+      "id": "68118bd5-abad-50ea-9276-97fdfe413de6",
+      "mode": "complete",
+      "english": "Have you heard the news? — Yes, I've heard.",
+      "before": "Umesikia habari? — Ndiyo, ",
+      "after": ".",
+      "options": [
+        {
+          "text": "nimesikia",
+          "correct": true
+        },
+        {
+          "text": "nitasikia",
+          "correct": false,
+          "feedback": "nitasikia = I will hear"
+        },
+        {
+          "text": "ninasikia",
+          "correct": false,
+          "feedback": "ninasikia = I hear"
+        }
+      ],
+      "explanation": "nimesikia = \"I have heard\" — ni- (subject: I) + me- (perfect (done / now-state)) + -sikia (hear). From kusikia.",
+      "grammar": [
+        "perfect-me"
+      ]
+    }
+  ]
+}

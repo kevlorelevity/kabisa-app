@@ -1,247 +1,562 @@
-# Level 6 — subjunctive (-e), polite requests (naomba, u-…-e), ili + subjunctive, lazima / inabidi, ebu, negative commands (usi-)
+# Level 6 — past -li-, object infixes, perfect -me-, not yet -ja-, -wahi, comparing.
 
-@lesson petrol-station
-title: Fill It Up: At the Petrol Station
+@lesson uber-nairobi-3
+title: Taking an Uber, Part 3: Stuck in the Jam
 level: 6
-theme: car
+index: 1
+theme: uber
 category: transport
-culture: Kenyan petrol stations are full-service: an attendant fills the tank, checks the tyres, and washes the windscreen while you stay in the car. You ask for fuel by amount, not litres ("weka ya elfu tatu" = put in three thousand's worth). Polite requests use the subjunctive: "uweke" (would you put), "uangalie" (would you check), "nikulipe" (shall I pay you). "Naomba" (I'd like / may I have) is the classic polite opener.
-start: You pull into a petrol station on Ngong Road. An attendant walks up to your window.
-grammar: subjunctive, polite-requests, object-infixes
-gl: Weka = "Put (in)!" — imperative of kuweka
-gl: ya elfu tatu = "(fuel) for three thousand"
-gl: Naomba = "May I have / I'd like" — the politest everyday opener. Lit. "I ask for". #polite-requests
-gl: uweke = "(could you) put" — u- + -wek- + -e: subjunctive = polite request. #subjunctive
-gl: uangalie = "(could you) check" — u- + -angali- + -e #subjunctive
-gl: upepo = "air" (lit. "wind") — tyres are pumped with upepo
-gl: tairi = tyre (plural matairi)
-gl: ya nyuma = "the back one"
-gl: Ebu = "Let me…" / "Come on, let's…" — softens a request #discourse-particles
-gl: nione = "(let me) see" — ni- + -on- + -e #subjunctive
-gl: nikulipe = "shall I pay you?" — ni- + -ku- (you) + -lip- + -e #subjunctive
-gl: Usijali = "Don't worry" — u- + -si- + -jali #subjunctive
-gl: Usiwashe = "Don't switch on" — u- + -si- + -wash- + -e: negative command #subjunctive
-gl: injini = engine
-gl: ili = "so that" — always followed by the subjunctive #subjunctive
-gl: tusafishe = "(so that) we clean" — tu- + -safish- + -e #subjunctive
-gl: kioo = windscreen / glass / mirror
-gl: risiti = receipt
-gl: mafuta = fuel / petrol / oil
+culture: The Uber is back — and so is Kamau, your driver from Parts 1 and 2. Monday-morning traffic on Waiyaki Way is legendary, and drivers know every shortcut (njia ya mkato) through the leafy back roads of Lavington. Small talk in a jam is normal and expected. This time the conversation is about what already happened: the weekend, the accident, the missed call. That's the past tense -li-, and its negative -ku-.
+start: Monday, 7:20 a.m. You order an Uber to the office — and Kamau pulls up again.
+grammar: past-li, negative-past, object-infixes
+gl: njia ya mkato = "a shortcut" — lit. "a way of cutting" (from kukata).
+gl: Lavington = Lavington — leafy Nairobi suburb with back roads
+gl: gari mbili = "two cars" — Kenyan n/n agreement. || Sanifu: magari mawili (ji/ma class) #sanifu-noun-classes
+gl: ziliharibika = "were damaged / broke down" — zi- (they, n/n) + -li- (past) + -haribika. Kenyan n/n agreement for gari. || Sanifu: yaliharibika (magari, ji/ma) #past-li
+gl: hakuna mtu = "nobody" — lit. "there is no person"
+gl: kwa Waiyaki Way = "on Waiyaki Way" — Kenyan use of kwa. || Sanifu: kwenye barabara ya Waiyaki #locative-ni
+gl: wikendi yote = "the whole weekend"
+gl: ilizima = "(it) switched off / died" — i- (it, n/n) + -li- (past) + -zima. #past-li
+gl: kasoro = "minus / to" — saa mbili kasoro dakika tano = 7:55 #time-swahili
 
-> Mhudumu: Karibu, boss! Weka ya ngapi? | Welcome, boss! How much shall I put in?
-< Dereva: Naomba uweke ya elfu tatu, tafadhali. | Please put in three thousand's worth.
-  x: Naomba niweke ya elfu tatu, tafadhali. ; Naomba uweke ya elfu tatu, asante sana.
-> Mhudumu: Sawa. Petroli au dizeli? | Okay. Petrol or diesel?
-< Dereva: Petroli. Na uangalie upepo kwa matairi pia. | Petrol. And check the air in the tyres too.
-  x: Petroli. Na niangalie upepo kwa matairi pia. ; Petroli. Na uangalia upepo kwa matairi pia.
-> Mhudumu: Hakuna shida. Usiwashe injini, tafadhali. | No problem. Please don't start the engine.
-< Dereva: Sawa. Na tairi ya nyuma — ebu nione. Iko sawa? | Okay. And the back tyre — let me see. Is it okay?
-  x: Sawa. Na tairi ya nyuma — ebu uone. Iko sawa? ; Sawa. Na tairi ya nyuma — ebu nione. Yuko sawa?
-> Mhudumu: Haina upepo wa kutosha. Nitaongeza. | It doesn't have enough air. I'll add some.
-< Dereva: Asante. Ufute kioo pia, ili nione barabara vizuri. | Thanks. Wipe the windscreen too, so that I can see the road well.
-  x: Asante. Ufute kioo pia, ili unaona barabara vizuri. ; Asante. Nifute kioo pia, ili nione barabara vizuri.
-> Mhudumu: Sawa sawa. Kioo ni chafu sana! | Sure thing. The windscreen is really dirty!
-< Dereva: Ndiyo, mvua ilinyesha jana. Nikulipe kwa M-Pesa au kadi? | Yes, it rained yesterday. Shall I pay you by M-Pesa or card?
-  x: Ndiyo, mvua ilinyesha jana. Unilipe kwa M-Pesa au kadi? ; Ndiyo, mvua inanyesha jana. Nikulipe kwa M-Pesa au kadi?
-> Mhudumu: Yoyote. Lakini lazima uchukue risiti kwa ofisi. | Either. But you must get the receipt at the office.
-< Dereva: Sawa. Ebu nilipe kwa M-Pesa, ni rahisi. | Okay. Let me pay with M-Pesa, it's easier.
-  x: Sawa. Ebu ulipe kwa M-Pesa, ni rahisi. ; Sawa. Ebu nilipa kwa M-Pesa, ni rahisi.
-> Mhudumu: Poa. Usijali, nitakuletea risiti. Safari njema! | Cool. Don't worry, I'll bring you the receipt. Safe travels!
+> Dereva: Aah, John! Ni wewe tena! Habari ya wikendi? | Ah, John! It's you again! How was the weekend?
+< Mteja: Kamau! Nzuri sana. Nilienda Naivasha na marafiki. | Kamau! Very good. I went to Naivasha with friends.
+  x: Kamau! Nzuri sana. Nitaenda Naivasha na marafiki. ; Kamau! Nzuri sana. Ulienda Naivasha na marafiki.
+> Dereva: Safi! Mlifanya nini huko? | Great! What did you do there?
+< Mteja: Tuliona viboko, na tulikula nyama choma. | We saw hippos, and we ate nyama choma.
+  x: Tutaona viboko, na tutakula nyama choma. ; Tuliona viboko, na tulila nyama choma.
+> Dereva: Wee! Mimi sikuenda popote. Nilifanya kazi wikendi yote. | Wow! I didn't go anywhere. I worked the whole weekend.
+< Mteja: Pole sana. Leo kuna magari mingi sana! | So sorry. Today there's so much traffic!
+  x: Asante sana. Leo kuna magari mingi sana! ; Pole sana. Leo kuna magari machache sana!
+> Dereva: Ndiyo. Kulikuwa na ajali kwa Waiyaki Way asubuhi. | Yes. There was an accident on Waiyaki Way this morning.
+< Mteja: Kweli? Sikuona habari. Watu waliumia? | Really? I didn't see the news. Did people get hurt?
+  x: Kweli? Sioni habari. Watu waliumia? ; Kweli? Sikuona habari. Watu wanaumia?
+> Dereva: Hapana, hakuna mtu aliumia. Lakini gari mbili ziliharibika. | No, nobody got hurt. But two cars were damaged.
+  s: Hapana, hakuna mtu aliumia. Lakini magari mawili yaliharibika.
+< Mteja: Tutachelewa? Nilimwambia boss nitafika saa mbili. | Will we be late? I told the boss I'd arrive at eight.
+  x: Tutachelewa? Nilikuambia boss nitafika saa mbili. ; Tutachelewa? Nilimwambia boss nilifika saa mbili.
+> Dereva: Usijali. Nitapita njia ya mkato, kupitia Lavington. | Don't worry. I'll take a shortcut, through Lavington.
+< Mteja: Poa! Jana nilikupigia simu, lakini hukuchukua. | Cool! Yesterday I called you, but you didn't pick up.
+  x: Poa! Jana ulinipigia simu, lakini hukuchukua. ; Poa! Jana nilikupigia simu, lakini sikuchukua.
+> Dereva: Aah, pole! Simu yangu ilizima — batari iliisha. | Ah, sorry! My phone died — the battery ran out.
+< Mteja: Hakuna shida. Nitakupigia tena kesho asubuhi. | No problem. I'll call you again tomorrow morning.
+  x: Hakuna shida. Nilikupigia tena kesho asubuhi. ; Hakuna shida. Nitampigia tena kesho asubuhi.
+> Dereva: Sawa. Na hii ndiyo ofisi yako. Saa mbili kasoro dakika tano! | Okay. And this is your office. Five to eight!
 
 @practice
-t: Please put in three thousand. | Naomba [uweke|niweke|aweke] ya elfu tatu. || Polite request = subjunctive: u- + -wek- + -e. The final -a becomes -e.
-t: Check the tyres too. (politely) | [Uangalie|Niangalie|Waangalie] matairi pia. || u- (you) + -angali- + -e.
-t: Let me see. | Ebu [nione|uone|aone]. || ni- + -on- + -e: "let me see".
-t: Shall I pay you? | [Nikulipe|Unilipe|Nimlipe]? || ni- (I) + -ku- (you) + -lip- + -e: "shall I pay you?"
-t: Wipe the windscreen. (politely) | [Ufute|Nifute|Afute] kioo.
-t: so that I can see the road | ili [nione|ninaona|nitaona] barabara || ili (so that) is always followed by the subjunctive.
-t: so that we clean it | ili [tusafishe|tunasafisha|tulisafisha]
-t: You must get the receipt. | Lazima [uchukue|unachukua|utachukua] risiti. || lazima (must) + subjunctive.
-t: It's necessary that we go. | Inabidi [twende|tunaenda|tutaenda]. || inabidi = it's necessary; also + subjunctive. tu- + -ende → twende.
-t: Don't start the engine. | [Usiwashe|Uwashe|Nisiwashe] injini. || Negative command: u- + -si- + -wash- + -e.
-t: Don't worry. | [Usijali|Ujali|Sijali]. || sijali = I don't care.
-t: Don't go! | [Usiende|Uende|Siendi]!
-t: Don't (you all) go! | [Msiende|Usiende|Tusiende]! || m- = you all.
-t: Let's go! | [Twende|Tuende|Tunaenda]! || Both twende and tuende exist; twende is what everyone says.
-t: It doesn't have enough air. | [Haina|Hana|Sina] upepo wa kutosha. || haina = it (n/n) doesn't have.
-t: I'll bring you the receipt. | [Nitakuletea|Utaniletea|Nitamletea] risiti. || -ku- + -letea = bring for you.
+t: I went to Naivasha. | [Nilienda|Ninaenda|Nitaenda] Naivasha. || Past: ni- (I) + -li- (past) + -enda (go).
+t: What did you (all) do there? | [Mlifanya|Tulifanya|Walifanya] nini huko? || m- = you all.
+t: We saw hippos. | [Tuliona|Tunaona|Mliona] viboko.
+t: We ate nyama choma. | [Tulikula|Tulila|Tunakula] nyama choma. || kula keeps its ku- after -li-: tulikula.
+t: He worked the whole weekend. | [Alifanya|Anafanya|Atafanya] kazi wikendi yote.
+t: I didn't go anywhere. | [Sikuenda|Siendi|Sitaenda] popote. || Negative past: si- (not I) + -ku- (past) + -enda. The verb keeps its -a.
+t: I didn't see the news. | [Sikuona|Sioni|Sitaona] habari. || sioni = I don't see (now); sikuona = I didn't see.
+t: You didn't pick up. | [Hukuchukua|Sikuchukua|Hakuchukua]. || hu- (not you) + -ku- (past) + -chukua.
+t: She didn't come. | [Hakuja|Hukuja|Sikuja]. || ha- (not he/she) + -ku- + -ja.
+t: There was an accident. | [Kulikuwa na|Kuna|Kutakuwa na] ajali. || kuna = there is; kulikuwa na = there was.
+t: Nobody got hurt. | Hakuna mtu [aliumia|aliumiza|anaumia]. || kuumia = to get hurt; kuumiza = to hurt (someone).
+t: I told him / her. | [Nilimwambia|Nilikuambia|Niliwaambia]. || Object infixes sit right before the verb: -mw- him/her, -ku- you, -wa- them.
+t: I called you yesterday. | Jana [nilikupigia|nilimpigia|ulinipigia] simu. || ni- + -li- + -ku- (you) + -pigia simu (call).
+t: He called me. | [Alinipigia|Nilimpigia|Alikupigia] simu. || -ni- = me.
+t: I'll call you again. | [Nitakupigia|Nitampigia|Utanipigia] tena.
+t: The battery ran out. | Batari [iliisha|inaisha|itaisha]. || i- (it, n/n) + -li- + -isha (end, run out).
+c: Five to eight | Saa mbili [kasoro|na|kamili] dakika tano. || kasoro = minus: 8 o'clock (saa mbili) minus five minutes.
 
 @vocab
-Naomba… | May I have… / I'd like… | The politest everyday opener
-Naomba uweke… | Please put in… | u- + -wek- + -e (subjunctive)
-Uangalie… | Could you check… | Subjunctive = polite request
-Ebu nione | Let me see | ebu softens it
-Nikulipe? | Shall I pay you? | ni- + -ku- + -lip- + -e
-ili nione | so that I can see | ili + subjunctive
-Lazima uchukue… | You must take… | lazima + subjunctive
-Inabidi twende | We have to go | inabidi = it's necessary
-Usiwashe injini | Don't start the engine | Negative command: u- + -si- + … + -e
-Usijali | Don't worry |
-upepo | air (in tyres) / wind |
-kioo | windscreen / mirror / glass |
-risiti | receipt |
+Nilienda… | I went… | ni- + -li- (past) + -enda
+Mlifanya nini? | What did you (all) do? | m- = you all
+Tuliona… | We saw… |
+Sikuenda | I didn't go | si- + -ku- (past negative) + -enda
+Sikuona | I didn't see |
+Kulikuwa na ajali | There was an accident |
+kuna magari mingi | there's traffic | lit. "there are many cars" — the everyday Kenyan way to say there's a jam
+Nilimwambia | I told him/her | -mw- = him/her
+Nilikupigia simu | I called you | -ku- = you; kupigia simu = to phone someone
+Hukuchukua | You didn't pick up | hu- (not you) + -ku- (past)
+njia ya mkato | shortcut | from kukata (to cut)
+kasoro | minus / to (time) | saa mbili kasoro dakika tano = 7:55
+Batari iliisha | The battery ran out | batari = battery
 
-@lesson car-breakdown
-title: Car Trouble on Mombasa Road
+@lesson chemist-sick
+title: Feeling Sick: At the Chemist
 level: 6
-theme: car
-category: transport
-culture: Breaking down is a shared Kenyan experience — strangers stop, someone knows a mechanic (fundi), and a tow truck appears faster than you'd expect. Kenyans treat gari (car) as n/n: "gari yangu imeharibika" (my car has broken down), where Sanifu says "gari langu limeharibika". The subjunctive shows up whenever you ask, suggest or arrange: "nimpigie fundi?" (shall I call a mechanic?), "tungoje hapa" (let's wait here).
-start: Your car stalls on the shoulder of Mombasa Road. A passing motorist, Mwangi, pulls over.
-grammar: subjunctive, polite-requests, perfect-me, helper-verbs
-gl: gari yako = "your car" — Kenyan n/n agreement. || Sanifu: gari lako (ji/ma) #sanifu-noun-classes
-gl: imeharibika = "has broken down" — i- (it, n/n) + -me- + -haribika. Kenyan agreement for gari. || Sanifu: limeharibika #perfect-me
-gl: ghafla = suddenly
-gl: ikazima = "and it stalled" — i- + -ka- (and then) + -zima #ki-po-ka
-gl: Nimpigie = "Shall I call him?" — ni- + -m- (him) + -pigi- + -e #subjunctive
-gl: fundi = mechanic / skilled repairman
-gl: Tusubiri = "Let's wait" — tu- + -subiri (non -a verbs don't change) #subjunctive
-gl: kivuli = shade
-gl: Mwangi = Mwangi (name)
-gl: aje = "(that) he comes" — a- + -j- + -e: subjunctive of kuja #subjunctive
-gl: aivute = "(that) he tows it" — a- + -i- (it) + -vut- + -e #subjunctive
-gl: mekanika = mechanic
-gl: Ninakushukuru = "I'm grateful to you" — ni- + -na- + -ku- + -shukuru #object-infixes
-gl: usinilipe = "don't pay me" — u- + -si- + -ni- (me) + -lip- + -e #subjunctive
-gl: Utanilipa = "You'll pay me" #future-ta
-gl: kwa kunisaidia = "for helping me"
-gl: Mungu akubariki = "God bless you"
-gl: kesho kutwa = the day after tomorrow
+index: 2
+theme: health
+category: health
+culture: For everyday illnesses, Kenyans go to the chemist (pharmacy) first — the pharmacist asks about your symptoms, and you walk out with medicine and clear instructions. "Pole!" (sorry) is the first thing anyone says when you're unwell — it expresses sympathy, not an apology. Body-part nouns are a lovely place to see the Kenyan n/n habit: "kichwa inauma" (my head hurts) is everyday speech, while Sanifu says "kichwa kinauma" because kichwa is ki/vi.
+start: You've felt awful since yesterday. You walk into a chemist near your flat.
+grammar: past-li, negative-past, object-infixes
+gl: chemist = pharmacy — Kenyans say "chemist" for the shop
+gl: Kichwa inauma = "My head hurts" — Kenyan n/n agreement. || Sanifu: Kichwa kinauma (kichwa is ki/vi) #sanifu-noun-classes
+gl: inauma = "it hurts" — i- (it) + -na- + -uma (bite, hurt). #present-na
+gl: kidogo = "a little"
+gl: Kukohoa = "coughing"
+gl: tangu = "since"
+gl: mara tatu kwa siku = "three times a day"
+gl: baada ya kula = "after eating"
+gl: maji mengi = "a lot of water" — ji/ma agreement (maji is ji/ma). Kenyans also say "maji mingi".
+gl: ukipata = "if you get" — u- + -ki- (if) + -pata. You'll meet -ki- properly at Level 8. #ki-po-ka
+gl: Dawa hii = "this medicine"
+gl: dawa hii = this medicine — n/n: dawa hii, dawa hizi
+gl: homa = "fever / flu" — Kenyans also use it for a bad cold
 
-> Mwangi: Pole, boss! Gari yako imeharibika? | Sorry, boss! Has your car broken down?
-  s: Pole, bwana! Gari lako limeharibika?
-< Wewe: Ndiyo. Ilikuwa inaenda vizuri, halafu ghafla ikazima. | Yes. It was going fine, then suddenly it stalled.
-  x: Ndiyo. Itakuwa inaenda vizuri, halafu ghafla ikazima. ; Hapana. Ilikuwa inaenda vizuri, halafu ghafla ikazima.
-> Mwangi: Ebu nione. Hmm, sijui shida ni nini. Nimpigie fundi wangu? | Let me see. Hmm, I don't know what the problem is. Shall I call my mechanic?
-< Wewe: Ndiyo, tafadhali. Mpigie! Sijui fundi yeyote hapa. | Yes, please. Call him! I don't know any mechanic here.
-  x: Ndiyo, tafadhali. Nipigie! Sijui fundi yeyote hapa. ; Ndiyo, tafadhali. Mpigie! Najua fundi yeyote hapa.
-> Mwangi: Sawa. Amesema atakuja baada ya dakika thelathini. | Okay. He says he'll come in thirty minutes.
-< Wewe: Thelathini? Tusubiri hapa, au twende kwenye kivuli? | Thirty? Should we wait here, or go into the shade?
-  x: Thelathini? Tunasubiri hapa, au twende kwenye kivuli? ; Thelathini? Tusubiri hapa, au tuende kwenye maji?
-> Mwangi: Twende kwenye kivuli. Jua ni kali. | Let's go into the shade. The sun is strong.
-< Wewe: Na kama fundi hawezi kuitengeneza hapa? | And if the mechanic can't fix it here?
-  x: Na kama fundi anaweza kuitengeneza hapa? ; Na kama fundi hawezi kunitengeneza hapa?
-> Mwangi: Basi inabidi tumwambie aivute mpaka kwa mekanika. | Then we'll have to tell him to tow it to the mechanic.
-< Wewe: Sawa. Naomba umwambie anipigie simu akifika. | Okay. Please tell him to call me when he arrives.
-  x: Sawa. Naomba uniambie anipigie simu akifika. ; Sawa. Naomba umwambie nimpigie simu akifika.
-> Mwangi: Hakuna shida. Usijali, Nairobi ni hivi tu. | No problem. Don't worry, that's just Nairobi.
-< Wewe: Ninakushukuru sana kwa kunisaidia. Nikulipe kitu? | I'm very grateful to you for helping me. Shall I give you something?
-  x: Ninakushukuru sana kwa kunisaidia. Unilipe kitu? ; Unanishukuru sana kwa kunisaidia. Nikulipe kitu?
-> Mwangi: Hapana, usinilipe! Leo ni wewe, kesho ni mimi. | No, don't pay me! Today it's you, tomorrow it's me.
+< Mteja: Habari, daktari. Sijisikii vizuri. | Hello, doctor. I don't feel well.
+  x: Habari, daktari. Najisikia vizuri sana. ; Habari, daktari. Hujisikii vizuri.
+> Daktari: Pole sana. Ulianza kuumwa lini? | So sorry. When did you start feeling sick?
+< Mteja: Nilianza jana usiku. Kichwa inauma sana. | I started last night. My head hurts a lot.
+  s: Nilianza jana usiku. Kichwa kinauma sana.
+  x: Nitaanza jana usiku. Kichwa inauma sana. ; Nilianza jana usiku. Kichwa inaumwa sana.
+> Daktari: Una homa? Ulikohoa? | Do you have a fever? Did you cough?
+< Mteja: Ndiyo, nina homa kidogo. Sikulala vizuri. | Yes, I have a little fever. I didn't sleep well.
+  x: Ndiyo, nina homa kidogo. Silali vizuri. ; Ndiyo, sina homa kidogo. Sikulala vizuri.
+> Daktari: Ulikula nini jana? | What did you eat yesterday?
+< Mteja: Nilikula chapati tu. Sikula chakula kingi. | I only ate chapati. I didn't eat much food.
+  s: Nilikula chapati tu. Sikula chakula kingi.
+  x: Ninakula chapati tu. Sikula chakula kingi. ; Nilikula chapati tu. Sili chakula kingi.
+> Daktari: Sawa. Nitakupa dawa ya homa. | Okay. I'll give you medicine for the fever.
+< Mteja: Asante. Ninakunywa dawa hii namna gani? | Thanks. How do I take this medicine?
+  x: Asante. Unakunywa dawa hii namna gani? ; Asante. Ninakula dawa hii wapi?
+> Daktari: Kunywa dawa hii mara tatu kwa siku, baada ya kula. | Take this medicine three times a day, after eating.
+< Mteja: Mara tatu kwa siku. Sawa, nimeelewa. | Three times a day. Okay, I've understood.
+  x: Mara mbili kwa siku. Sawa, nimeelewa. ; Mara tatu kwa wiki. Sawa, nimeelewa.
+> Daktari: Na kunywa maji mengi. Ukipata shida, rudi kesho. | And drink a lot of water. If you have trouble, come back tomorrow.
+< Mteja: Sawa. Ni pesa ngapi? | Okay. How much is it?
+  x: Sawa. Ni pesa wapi? ; Sawa. Ni pesa nani?
+> Daktari: Ni mia nne. Pona haraka! | It's four hundred. Get well soon!
 
 @practice
-t: Has your car broken down? | Gari yako [imeharibika|inaharibika|itaharibika]? || Kenyans treat gari as n/n (i-). Sanifu: gari lako limeharibika.
-t: Shall I call my mechanic? | [Nimpigie|Umpigie|Anipigie] fundi wangu? || ni- (I) + -m- (him) + -pigi- + -e.
-t: Call him! | [Mpigie|Nipigie|Wapigie]! || m- (him/her) + -pigie: call him/her.
-t: Call me! | [Nipigie|Mpigie|Tupigie] simu!
-t: Let's wait here. | [Tusubiri|Tunasubiri|Tulisubiri] hapa. || subiri doesn't end in -a, so its subjunctive looks the same: tusubiri.
-t: Let's go into the shade. | [Twende|Tunaenda|Tutaenda] kwenye kivuli.
-t: He'll come in thirty minutes. | [Atakuja|Alikuja|Anakuja] baada ya dakika thelathini.
-t: The mechanic can't fix it. | Fundi [hawezi|siwezi|hatuwezi] kuitengeneza. || ha- (not he) + -wez- + -i. Kuitengeneza = to fix it (-i- = it).
-t: We'll have to tell him. | Inabidi [tumwambie|tunamwambia|tumwambia]. || inabidi + subjunctive: tu- + -mw- + -ambi- + -e.
-t: Tell him to call me. | Mwambie [anipigie|ninampigia|alinipigia] simu. || Second verb in subjunctive: a- + -ni- + -pigi- + -e = (that) he call me.
-t: Please tell him. | Naomba [umwambie|nimwambie|amwambie]. || u- (you) + -mw- (him) + -ambi- + -e.
-t: Don't pay me! | [Usinilipe|Unilipe|Sinilipe]! || u- + -si- + -ni- + -lip- + -e.
-t: Shall I give you something? | [Nikulipe|Unilipe|Nimlipe] kitu?
-t: I'm very grateful to you. | [Ninakushukuru|Unanishukuru|Ninamshukuru] sana.
-t: for helping me | kwa [kunisaidia|kukusaidia|kumsaidia] || kwa + infinitive = "for …-ing".
-t: It suddenly stalled. | Ghafla [ikazima|inazima|itazima]. || -ka- = "and then" in a story.
-c: Today it's you, tomorrow it's me. | Leo ni wewe, [kesho|jana|juzi] ni mimi. || A Kenyan way of saying "we all need help sometimes".
+t: I started last night. | [Nilianza|Ninaanza|Nitaanza] jana usiku.
+t: When did you start? | [Ulianza|Nilianza|Alianza] lini? || lini = when?
+t: I didn't sleep well. | [Sikulala|Silali|Sitalala] vizuri. || si- + -ku- (past negative) + -lala.
+t: I didn't eat much. | [Sikula|Sili|Sitakula] sana. || Sanifu sikula; many Kenyans say sikukula.
+t: What did you eat yesterday? | [Ulikula|Unakula|Utakula] nini jana?
+t: Did you cough? | [Ulikohoa|Unakohoa|Utakohoa]?
+t: My head hurts. | Kichwa [inauma|inawasha|inazunguka]. || -uma = hurt, -washa = itch, -zunguka = spin (dizzy). Kenyan: kichwa inauma. Sanifu: kichwa kinauma.
+t: I have a little fever. | [Nina|Sina|Una] homa kidogo.
+t: I'll give you medicine. | [Nitakupa|Nitampa|Utanipa] dawa. || ni- + -ta- + -ku- (you) + -pa (give).
+t: Give me medicine. | [Nipe|Mpe|Wape] dawa. || Nipe = give me; mpe = give him/her; wape = give them.
+t: this medicine | dawa [hii|hizi|ile] || hii = this, hizi = these, ile = that one.
+t: three times a day | mara [tatu|tano|saba] kwa siku || mara = times.
+t: after eating | [baada ya|kabla ya|karibu na] kula || baada ya = after; kabla ya = before.
+t: Drink a lot of water. | [Kunywa|Kula|Lete] maji mengi.
+t: Come back tomorrow. | [Rudi|Ondoka|Panda] kesho.
+c: Get well soon! | [Pona|Pole|Poa] haraka! || pona = heal / get well. Pole = sorry; poa = cool.
+t: I don't feel well. | [Sijisikii|Najisikia|Hajisikii] vizuri. || A fixed phrase: si- + -ji- (myself) + -sikii (feel, negative).
 
 @vocab
-Gari yangu imeharibika | My car has broken down | Kenyan n/n agreement. | Gari langu limeharibika | Sanifu: gari is ji/ma class
-ghafla | suddenly |
-Nimpigie fundi? | Shall I call a mechanic? | ni- + -m- + -pigi- + -e
-Mpigie! | Call him/her! |
-fundi | mechanic / repairman | fundi wa magari = car mechanic
-Tusubiri | Let's wait | subiri keeps its -i
-Twende | Let's go | The most useful subjunctive in Kenya
-kivuli | shade |
-Inabidi… | It's necessary… / We have to… | + subjunctive
-Mwambie anipigie | Tell him to call me | Subjunctive for the second verb
-mekanika | mechanic | Nitapeleka gari kwa mekanika.
-Usinilipe! | Don't pay me! |
-Leo ni wewe, kesho ni mimi | Today you, tomorrow me | We all need help sometimes
+Sijisikii vizuri | I don't feel well | Lit. "I don't feel myself well"
+Pole sana | I'm so sorry | Sympathy, not an apology
+Ulianza lini? | When did you start? | lini = when?
+Kichwa inauma | My head hurts | Everyday Kenyan. | Kichwa kinauma | Sanifu: kichwa is ki/vi class
+homa | fever / flu | Una homa? = do you have a fever?
+Sikulala vizuri | I didn't sleep well | si- + -ku- + -lala
+Ulikula nini? | What did you eat? |
+Nitakupa dawa | I'll give you medicine | -ku- = you
+mara tatu kwa siku | three times a day |
+baada ya kula | after eating | kabla ya kula = before eating
+dawa hii | this medicine | n/n: dawa hii, dawa hizi
+Pona haraka! | Get well soon! | kupona = to heal
+chemist | pharmacy | Kenyans say "chemist"
 
-@lesson fundi-at-home
-title: Instructions for the Fundi
+@lesson weekend-story
+title: How Was Your Weekend?
 level: 6
-theme: home
-category: home
-culture: In Kenya you don't call "a plumber" or "an electrician" — you call a fundi: fundi wa maji (plumber), fundi wa stima (electrician), fundi wa mbao (carpenter). Agreeing on the price before work starts is essential ("tuongee bei kwanza"). Giving instructions politely uses the subjunctive: "urekebishe" (please fix), "usiguse" (don't touch), "uniambie" (tell me). The everyday Kenyan word for electricity is stima; Sanifu prefers umeme.
-start: Water is dripping from the bathroom ceiling. A fundi arrives at your flat.
-grammar: subjunctive, polite-requests, perfect-me, object-infixes
-gl: fundi wa maji = plumber — lit. "craftsman of water"
-gl: bafu = bathroom
-gl: bomba = pipe / tap
-gl: inavuja = "it's leaking" — i- + -na- + -vuja #present-na
-gl: imevunjika = "it's broken" — i- + -me- + -vunjika (stative) #perfect-me
-gl: tuongee = "let's talk" — tu- + -onge- + -e #subjunctive
-gl: bei kwanza = "the price first"
-gl: urekebishe = "(please) fix" — u- + -rekebish- + -e #subjunctive
-gl: usiguse = "don't touch" — u- + -si- + -gus- + -e #subjunctive
-gl: stima = electricity — everyday Kenyan word || Sanifu: umeme
-gl: nizime = "(shall) I switch off" — ni- + -zim- + -e #subjunctive
-gl: uniambie = "(please) tell me" — u- + -ni- + -ambi- + -e #subjunctive
-gl: sakafu = floor
-gl: isichafuke = "so that it doesn't get dirty" — i- + -si- + -chafuk- + -e #subjunctive
-gl: Nikupe = "Shall I give you" — ni- + -ku- + -p- + -e #subjunctive
-gl: mia nane = 800
-gl: elfu moja na mia tano = 1,500
-gl: Tuseme = "Let's say" — tu- + -sem- + -e #subjunctive
-gl: Kesho asubuhi = tomorrow morning
-gl: vifaa = tools / equipment
+index: 3
+theme: friends
+category: social
+culture: Monday morning at a Kenyan office starts with "Wikendi ilikuwaje?" (how was the weekend?) — and a story. Telling what happened is all past tense: -li- for what you did, -ku- for what you didn't. Object infixes let you say who it happened to without extra words: nilimwona (I saw him/her), alinipigia (she called me), tuliwaona (we saw them).
+start: Monday, 9 a.m. Your colleague Wanjiku is making tea in the office kitchen.
+grammar: past-li, negative-past, object-infixes
+gl: Wikendi ilikuwaje = "How was the weekend?" — i- (it) + -li- + -kuwa (be) + -je (how?). #past-li
+gl: ilikuwaje = "how was it?" — i- (it) + -li- (past) + -kuwa (be) + -je (how?) #past-li
+gl: ilikuwa = "it was" — i- (it) + -li- (past) + -kuwa (be). #past-li
+gl: dadangu = "my sister" — dada + -angu, contracted. #possessives
+gl: harusi = wedding
+gl: hotel = hotel
+gl: Mombasa = Mombasa — the coastal city
+gl: shughuli nyingi = "lots of things to do / busy"
+gl: tukacheza = "and then we played" — tu- + -ka- (and then) + -cheza. #ki-po-ka
+gl: mpira = football
+gl: Kwa nini = why?
+gl: alinipigia = "she called me" — a- + -li- + -ni- (me) + -pigia. #object-infixes
 
-> Fundi: Habari, boss. Mimi ni fundi wa maji. Shida iko wapi? | Hello, boss. I'm the plumber. Where's the problem?
-< Wewe: Karibu. Iko kwa bafu. Bomba inavuja, na maji inatoka kwa dari. | Welcome. It's in the bathroom. A pipe is leaking, and water is coming out of the ceiling.
-  s: Karibu. Iko bafuni. Bomba linavuja, na maji yanatoka darini.
-  x: Karibu. Iko kwa bafu. Bomba inavuja, na maji inaingia kwa dari. ; Karibu. Iko kwa bafu. Bomba haivuji, na maji inatoka kwa dari.
-> Fundi: Ebu nione. Aah, bomba imevunjika. Inabidi niibadilishe. | Let me see. Ah, the pipe is broken. I'll have to replace it.
-< Wewe: Sawa. Lakini tuongee bei kwanza. | Okay. But let's talk about the price first.
-  x: Sawa. Lakini tunaongea bei kwanza. ; Sawa. Lakini tuongee bei baadaye.
-> Fundi: Kazi ni elfu moja na mia tano, pamoja na bomba mpya. | The job is one thousand five hundred, including the new pipe.
-< Wewe: Ni ghali kidogo. Tuseme elfu moja na mia mbili? | It's a bit expensive. Let's say one thousand two hundred?
-  x: Ni rahisi kidogo. Tuseme elfu moja na mia mbili? ; Ni ghali kidogo. Tunasema elfu moja na mia mbili?
-> Fundi: Sawa, boss. Lakini usiguse stima ya bafu wakati ninafanya kazi. | Okay, boss. But don't touch the bathroom electricity while I'm working.
-< Wewe: Nizime stima yote? | Shall I switch off all the electricity?
-  x: Uzime stima yote? ; Nizima stima yote?
-> Fundi: Ndiyo, uzime, ili tusiwe na shida. | Yes, switch it off, so that we don't have any trouble.
-< Wewe: Sawa. Na tafadhali ufunike sakafu, isichafuke. | Okay. And please cover the floor so it doesn't get dirty.
-  x: Sawa. Na tafadhali nifunike sakafu, isichafuke. ; Sawa. Na tafadhali ufunike sakafu, ichafuke.
-> Fundi: Hakuna shida. Nitamaliza baada ya saa moja. | No problem. I'll finish in an hour.
-< Wewe: Poa. Ukimaliza, uniambie. Nikupe chai? | Cool. When you finish, tell me. Shall I give you some tea?
-  x: Poa. Ukimaliza, nikuambie. Nikupe chai? ; Poa. Ukimaliza, uniambie. Unipe chai?
-> Fundi: Asante sana, boss. Chai ni sawa kabisa! | Thank you very much, boss. Tea is just perfect!
+> Wanjiku: Habari ya asubuhi, John! Wikendi ilikuwaje? | Good morning, John! How was the weekend?
+< John: Ilikuwa nzuri sana! Nilienda harusi ya rafiki yangu. | It was really good! I went to my friend's wedding.
+  x: Itakuwa nzuri sana! Nilienda harusi ya rafiki yangu. ; Ilikuwa nzuri sana! Nitaenda harusi ya rafiki yangu.
+> Wanjiku: Wee! Harusi ilikuwa wapi? | Wow! Where was the wedding?
+< John: Ilikuwa Karen. Watu wengi walikuja, na tulicheza muziki mpaka usiku. | It was in Karen. Lots of people came, and we danced until night.
+  x: Ilikuwa Karen. Watu wengi walikuja, na tunacheza muziki mpaka usiku. ; Ilikuwa Karen. Watu wengi hawakuja, na tulicheza muziki mpaka usiku.
+> Wanjiku: Safi sana! Ulimwona Baraka huko? | Great! Did you see Baraka there?
+< John: Hapana, sikumwona. Hakuja. | No, I didn't see him. He didn't come.
+  x: Hapana, sikukuona. Hakuja. ; Ndiyo, sikumwona. Hakuja.
+> Wanjiku: Aah, nakumbuka! Alinipigia simu Jumamosi. Alienda Mombasa. | Ah, I remember! He called me on Saturday. He went to Mombasa.
+< John: Kweli? Alienda kufanya nini? | Really? What did he go to do?
+  x: Kweli? Ulienda kufanya nini? ; Kweli? Atakwenda kufanya nini?
+> Wanjiku: Kazi tu. Na wewe, ulipumzika Jumapili? | Just work. And you, did you rest on Sunday?
+< John: Hapana! Nilifua nguo, nikapika, halafu nilicheza mpira na majirani. | No! I did laundry, cooked, then played football with the neighbours.
+  x: Hapana! Ninafua nguo, nikapika, halafu nilicheza mpira na majirani. ; Ndiyo! Nilifua nguo, nikapika, halafu nilicheza mpira na majirani.
+> Wanjiku: Pole! Wikendi yako ilikuwa na shughuli nyingi. | Aww! Your weekend was busy.
+< John: Ndiyo. Na wewe, ulifanya nini? | Yes. And you, what did you do?
+  x: Ndiyo. Na wewe, utafanya nini? ; Ndiyo. Na wewe, nilifanya nini?
+> Wanjiku: Mimi? Nililala tu! Sikutoka nyumbani hata kidogo. | Me? I just slept! I didn't leave the house at all.
 
 @practice
-t: The pipe is leaking. | Bomba [inavuja|imevuja|haivuji]. || Kenyan n/n agreement on bomba. Sanifu: bomba linavuja.
-t: The pipe is broken. | Bomba [imevunjika|inavunja|itavunjika]. || -me- + -vunjika (stative: get broken) = it is broken.
-t: Let's talk about the price first. | [Tuongee|Tunaongea|Tuliongea] bei kwanza.
-t: Let's say 1,200? | [Tuseme|Tunasema|Tutasema] elfu moja na mia mbili?
-t: Don't touch the electricity. | [Usiguse|Uguse|Siguse] stima.
-t: Shall I switch off all the power? | [Nizime|Uzime|Azime] stima yote?
-t: Switch it off. (politely) | [Uzime|Nizime|Wazime].
-t: so that we don't have trouble | ili [tusiwe|tuwe|hatuna] na shida || Negative subjunctive of kuwa: tusiwe = (so that) we aren't.
-t: Please cover the floor. | Tafadhali [ufunike|nifunike|afunike] sakafu.
-t: so that it doesn't get dirty | [isichafuke|ichafuke|haichafuki] || i- (it) + -si- + -chafuk- + -e.
-t: Tell me. (politely) | [Uniambie|Nikuambie|Umwambie]. || u- + -ni- (me) + -ambi- + -e.
-t: Shall I give you tea? | [Nikupe|Unipe|Nimpe] chai?
-t: I'll have to replace it. | Inabidi [niibadilishe|ninaibadilisha|nitaibadilisha]. || ni- + -i- (it) + -badilish- + -e.
-t: I'll finish in an hour. | [Nitamaliza|Nilimaliza|Ninamaliza] baada ya saa moja. || saa moja here = one hour (not 7 o'clock!).
-t: It's a bit expensive. | Ni ghali [kidogo|sana|kabisa].
-c: plumber | fundi wa [maji|stima|mbao] || fundi wa stima = electrician; fundi wa mbao = carpenter.
+t: How was the weekend? | Wikendi [ilikuwaje|itakuwaje|inakuwaje]? || -li- for past + -je for "how?".
+t: It was very good. | [Ilikuwa|Itakuwa|Iko] nzuri sana. || ilikuwa = it was (n/n subject).
+t: I went to a wedding. | [Nilienda|Ninaenda|Nitaenda] harusi.
+t: Many people came. | Watu wengi [walikuja|wanakuja|watakuja].
+t: We danced until night. | [Tulicheza|Tunacheza|Mlicheza] muziki mpaka usiku. || kucheza muziki = to dance (lit. "play music").
+t: Did you see Baraka? | [Ulimwona|Nilimwona|Alimwona] Baraka? || -mw- = him/her: u- + -li- + -mw- + -ona.
+t: No, I didn't see him. | Hapana, [sikumwona|sikukuona|sikuwaona]. || -mw- him, -ku- you, -wa- them.
+t: We saw them. | [Tuliwaona|Tulimwona|Walituona]. || -wa- = them.
+t: He didn't come. | [Hakuja|Hawakuja|Hukuja]. || ha- (not he) + -ku- + -ja.
+t: They didn't come. | [Hawakuja|Hakuja|Hatukuja].
+t: She called me. | [Alinipigia|Nilimpigia|Alikupigia] simu.
+t: He went to Mombasa. | [Alienda|Anaenda|Ataenda] Mombasa.
+t: Did you rest? | [Ulipumzika|Unapumzika|Utapumzika]?
+t: I didn't leave the house. | [Sikutoka|Sitoki|Sitatoka] nyumbani.
+t: I just slept! | [Nililala|Ninalala|Nitalala] tu!
+c: I did laundry, and then cooked. | Nilifua nguo, [nikapika|ninapika|nitapika]. || In a story, -ka- strings past events together: "…and then I cooked".
+t: What did you do? | [Ulifanya|Unafanya|Utafanya] nini?
 
 @vocab
-fundi wa maji | plumber | fundi wa stima = electrician; fundi wa mbao = carpenter
-Shida iko wapi? | Where's the problem? |
-inavuja | it's leaking | kuvuja = to leak
-imevunjika | it's broken | kuvunjika = to get broken
-Tuongee bei kwanza | Let's talk price first | Always agree before work starts
-Tuseme… | Let's say… | Bargaining opener
-Usiguse! | Don't touch! | u- + -si- + -gus- + -e
-stima | electricity / power | Everyday Kenyan. | umeme | Sanifu word for electricity
-Nizime? | Shall I switch off? |
-ili tusiwe na shida | so we don't have trouble |
-isichafuke | so it doesn't get dirty |
-Uniambie | Tell me (please) |
-Nikupe chai? | Shall I give you tea? | Offering tea to a fundi is good manners
+Wikendi ilikuwaje? | How was the weekend? | -je = how?
+Ilikuwa nzuri | It was good | i- (it) + -li- + -kuwa
+Nilienda… | I went… |
+Watu wengi walikuja | Lots of people came |
+Ulimwona…? | Did you see…? (him/her) | -mw- = him/her
+Sikumwona | I didn't see him/her | si- + -ku- + -mw- + -ona
+Hakuja | He/she didn't come | ha- + -ku- + -ja
+Alinipigia simu | She called me | -ni- = me
+Tuliwaona | We saw them | -wa- = them
+Nilifua nguo | I did laundry | kufua = to wash clothes
+Nililala tu | I just slept |
+Sikutoka nyumbani | I didn't leave the house |
+shughuli nyingi | lots to do / busy |
+
+@lesson market-maasai-bargain
+title: Bargaining at the Maasai Market
+level: 6
+index: 4
+theme: market
+category: commerce
+culture: The Maasai Market moves around Nairobi through the week — rows of baskets (vikapu), beaded jewellery, kikoi cloths and carvings. The first price is for tourists; bargaining is expected and friendly. The rhythm: show interest, compare ("this one is nicer than that one"), name a price, and settle with "Tumepatana!" (we've agreed). The -me- tense is everywhere in a deal: "nimeona" (I've seen), "umepunguza" (you've lowered it), "nimeamua" (I've decided).
+start: Saturday afternoon at the Maasai Market. A seller waves you over to her baskets.
+grammar: perfect-me, perfect-negative-ja, comparatives, adjective-agreement
+gl: kikapu = "basket" — ki/vi noun (plural vikapu). Kenyans say "kikapu hii". || Sanifu: kikapu hiki (ki/vi) #sanifu-noun-classes
+gl: kikapu hii = "this basket" — Kenyan n/n demonstrative. || Sanifu: kikapu hiki #sanifu-noun-classes
+gl: kikapu ile = "that basket" — Kenyan. || Sanifu: kikapu kile #sanifu-noun-classes
+gl: vikapu = baskets (plural of kikapu)
+gl: elfu mbili = "two thousand"
+gl: elfu moja = "one thousand"
+gl: mia tano = "five hundred"
+gl: elfu moja mia tano = "one thousand five hundred" — mia (hundreds) follows elfu (thousands) directly.
+gl: Wee = "Hey! / Wow!" — surprise #discourse-particles
+gl: bei ya mzungu = "the foreigner price" — said with a smile when the first price is too high.
+gl: mkono = "by hand / hand" — kwa mkono = by hand
+gl: Tumepatana = "We've agreed (on a price)!" — tu- + -me- + -patana (agree, reciprocal). #perfect-me
+gl: shanga = beads
+
+> Muuzaji: Karibu, sister! Angalia vikapu hivi. Ni vizuri sana. | Welcome, sister! Look at these baskets. They're very good.
+  s: Karibu, dada! Angalia vikapu hivi. Ni vizuri sana.
+< Mteja: Asante. Nimeona kikapu hii. Ni bei gani? | Thanks. I've seen this basket. How much is it?
+  s: Asante. Nimeona kikapu hiki. Ni bei gani?
+  x: Asante. Nitaona kikapu hii. Ni bei gani? ; Asante. Sijaona kikapu hii. Ni bei gani?
+> Muuzaji: Hii ni elfu mbili tu. Imetengenezwa kwa mkono. | This one is just two thousand. It's been made by hand.
+< Mteja: Wee! Elfu mbili? Hiyo ni bei ya mzungu! | Wow! Two thousand? That's the foreigner price!
+  x: Wee! Elfu mbili? Hiyo ni bei nzuri sana! ; Asante! Elfu mbili? Hiyo ni bei ya mzungu!
+> Muuzaji: Hapana! Kikapu hii ni kubwa kuliko ile, na ni nzuri zaidi. | No! This basket is bigger than that one, and it's nicer.
+  s: Hapana! Kikapu hiki ni kikubwa kuliko kile, na ni kizuri zaidi.
+< Mteja: Ni kweli, lakini sijawahi kulipa elfu mbili kwa kikapu. | That's true, but I've never paid two thousand for a basket.
+  x: Ni kweli, lakini nimewahi kulipa elfu mbili kwa kikapu. ; Ni kweli, lakini sijawahi kulipa elfu mbili kwa nyumba.
+> Muuzaji: Sawa. Kwa wewe, elfu moja mia tano. | Okay. For you, one thousand five hundred.
+< Mteja: Bado ni ghali. Nitalipa elfu moja. | It's still expensive. I'll pay one thousand.
+  x: Bado ni rahisi. Nitalipa elfu moja. ; Bado ni ghali. Nililipa elfu moja.
+> Muuzaji: Aiii, umepunguza sana! Bei ya mwisho, elfu moja mia mbili. | Aiii, you've cut it a lot! Final price, one thousand two hundred.
+< Mteja: Sawa. Na kama nitanunua vikapu viwili? | Okay. And if I buy two baskets?
+  x: Sawa. Na kama nitanunua vikapu vitatu? ; Sawa. Na kama nilinunua vikapu viwili?
+> Muuzaji: Viwili? Basi, elfu mbili kwa vyote. Hiyo ni bei nzuri kuliko zote! | Two? Then two thousand for both. That's the best price of all!
+< Mteja: Tumepatana! Nimeamua — nitachukua hii nyekundu na ile ya kijani. | Deal! I've decided — I'll take this red one and that green one.
+  x: Hatujapatana! Nimeamua — nitachukua hii nyekundu na ile ya kijani. ; Tumepatana! Sijaamua — nitachukua hii nyekundu na ile ya kijani.
+> Muuzaji: Asante sana, sister! Umechagua vizuri. Karibu tena! | Thank you so much, sister! You've chosen well. Come again!
+
+@practice
+t: I've seen this basket. | [Nimeona|Niliona|Nitaona] kikapu hii. || -me- = has / have done: ni- + -me- + -ona.
+t: You've lowered it a lot! | [Umepunguza|Nimepunguza|Amepunguza] sana!
+t: I've decided. | [Nimeamua|Sijaamua|Nitaamua].
+t: I haven't decided yet. | [Sijaamua|Nimeamua|Sikuamua] bado. || -ja- = not yet: si- + -ja- + -amua. Often with bado.
+t: We've agreed! | [Tumepatana|Hatujapatana|Tutapatana]! || Tumepatana — the word that closes a deal.
+t: You've chosen well. | [Umechagua|Nimechagua|Wamechagua] vizuri.
+t: I've never paid two thousand. | [Sijawahi|Nimewahi|Hujawahi] kulipa elfu mbili. || sijawahi + ku-verb = I have never (done).
+t: Have you ever been to the Maasai Market? | [Umewahi|Sijawahi|Nimewahi] kuenda Maasai Market? || umewahi + ku-verb = have you ever…?
+t: This basket is bigger than that one. | Kikapu hii ni kubwa [kuliko|zaidi|sana] ile. || A kuliko B = (more) than B.
+t: It's nicer. | Ni nzuri [zaidi|kuliko|kabisa]. || zaidi = more: nzuri zaidi = nicer.
+t: the best price of all | bei nzuri kuliko [zote|wote|yote] || zote = all (n/n plural). Wote is for people.
+t: It's still expensive. | [Bado|Tena|Sasa] ni ghali. || bado = still (and "not yet" with -ja-).
+t: the final price | bei ya [mwisho|kwanza|pili]
+t: two baskets | vikapu [viwili|vitatu|vinne] || viwili = 2, vitatu = 3, vinne = 4. Kenyans also say vikapu mbili.
+t: this red one | hii [nyekundu|nyeusi|nyeupe] || nyekundu = red, nyeusi = black, nyeupe = white.
+t: It's very good. (a basket) | Ni [nzuri|mbaya|ghali] sana. || nzuri = good, mbaya = bad, ghali = expensive.
+t: She is very good. (a person) | Yeye ni [mzuri|mbaya|mzee] sana. || mzuri = good, mbaya = bad, mzee = old.
+
+@vocab
+Nimeona… | I've seen… | ni- + -me- (perfect) + -ona
+Umepunguza! | You've lowered (the price)! | from kupunguza = to reduce
+Bei ya mwisho | The final price | Lit. "the last price"
+ghali | expensive | rahisi = cheap / easy
+kuliko | than | Hii ni kubwa kuliko ile = this is bigger than that one
+zaidi | more | nzuri zaidi = nicer
+Sijawahi… | I've never… | sijawahi kulipa = I've never paid
+Umewahi…? | Have you ever…? | umewahi kuona simba? = have you ever seen a lion?
+Bado ni ghali | It's still expensive | bado = still
+Nimeamua | I've decided | Sijaamua = I haven't decided yet
+Tumepatana! | Deal! | Lit. "we've agreed"
+kikapu / vikapu | basket / baskets | Kenyans: kikapu hii. | kikapu hiki | Sanifu: ki/vi class
+nyekundu | red (n/n) | rangi nyekundu = red colour
+
+@lesson restaurant-reservation
+title: The Lost Reservation
+level: 6
+index: 5
+theme: food
+category: food-drink
+culture: Booking a table (kuweka meza / reservation) is common for dinners out in Nairobi. When something goes wrong, Kenyan service staff will smooth it over with "Pole kwa usumbufu" (sorry for the trouble) and a bit of patience on both sides. The -me- and -ja- tenses carry this whole scene: "nimefika" (I've arrived), "sijaona jina lako" (I haven't seen your name yet), "imeisha" (it's finished — sold out).
+start: You arrive at a restaurant in Westlands for dinner. You booked a table yesterday — or did you?
+grammar: perfect-me, perfect-negative-ja, comparatives
+gl: Niliweka meza = "I reserved a table" — lit. "I put a table". #past-li
+gl: kwa jina = "under the name"
+gl: orodha = list
+gl: Ngoja kidogo = "Wait a moment"
+gl: niangalie = "let me look" — ni- + -angali- + -e (subjunctive). #subjunctive
+gl: usumbufu = inconvenience / trouble
+gl: Pole kwa usumbufu = "Sorry for the trouble"
+gl: tofauti = different
+gl: kosa = mistake
+gl: imeandikwa = "it has been written" — i- + -me- + -andikwa (passive). #perfect-me
+gl: menyu = menu
+gl: kuku wa kukaanga = fried chicken
+gl: samaki wa kuchoma = grilled fish
+gl: inachukua = "it takes" (time)
+gl: Nipe samaki = "Give me the fish"
+gl: juisi ya maembe = mango juice
+gl: ya nanasi = pineapple (juice)
+gl: badala yake = "instead (of it)"
+
+< Mgeni: Habari! Nimefika. Niliweka meza jana kwa jina Omondi. | Hello! I've arrived. I reserved a table yesterday under the name Omondi.
+  x: Habari! Sijafika. Niliweka meza jana kwa jina Omondi. ; Habari! Nimefika. Nitaweka meza jana kwa jina Omondi.
+> Mhudumu: Karibu! Ngoja kidogo, niangalie kwenye orodha. | Welcome! Wait a moment, let me check the list.
+> Mhudumu: Samahani, sijaona jina lako kwenye orodha. | Sorry, I haven't seen your name on the list.
+< Mgeni: Kweli? Nimepata ujumbe kwa simu jana. Hii hapa. | Really? I got a message on my phone yesterday. Here it is.
+  x: Kweli? Sijapata ujumbe kwa simu jana. Hii hapa. ; Kweli? Umepata ujumbe kwa simu jana. Hii hapa.
+> Mhudumu: Aah, nimeona! Meza imeandikwa kwa jina tofauti. Pole kwa usumbufu. | Ah, I see! The table was written under a different name. Sorry for the trouble.
+< Mgeni: Hakuna shida. Meza iko tayari? | No problem. Is the table ready?
+  x: Hakuna shida. Meza iko wapi? ; Hakuna shida. Meza ilikuwa tayari?
+> Mhudumu: Ndiyo. Karibu, kaa hapa. Hii ni menyu. | Yes. Welcome, sit here. Here's the menu.
+< Mgeni: Asante. Samaki ni tamu kuliko kuku hapa? | Thanks. Is the fish tastier than the chicken here?
+  x: Asante. Samaki ni tamu zaidi kuku hapa? ; Asante. Samaki ni tamu sana kuku hapa?
+> Mhudumu: Wateja wengi wanasema samaki ni bora zaidi. Lakini kuku inachukua muda mfupi. | Most customers say the fish is the best. But the chicken takes less time.
+< Mgeni: Sijala tangu asubuhi. Lakini nitangoja — nipe samaki wa kuchoma. | I haven't eaten since morning. But I'll wait — give me the grilled fish.
+  x: Nimekula tangu asubuhi. Lakini nitangoja — nipe samaki wa kuchoma. ; Sijala tangu asubuhi. Lakini sitangoja — nipe samaki wa kuchoma.
+> Mhudumu: Sawa. Na cha kunywa? | Okay. And something to drink?
+< Mgeni: Juisi ya maembe, tafadhali. | Mango juice, please.
+  x: Juisi ya maembe, asante sana. ; Juisi ya maji, tafadhali.
+> Mhudumu: Samahani, juisi ya maembe imeisha. Unataka ya nanasi badala yake? | Sorry, the mango juice is finished. Do you want pineapple instead?
+< Mgeni: Imeisha? Haya, sawa. Nipe ya nanasi. | It's finished? Alright, fine. Give me pineapple.
+  x: Haijaisha? Haya, sawa. Nipe ya nanasi. ; Imeisha? Haya, sawa. Nimpe ya nanasi.
+> Mhudumu: Sawa. Chakula chako kitakuja hivi karibuni. | Okay. Your food will come soon.
+
+@practice
+t: I've arrived. | [Nimefika|Nilifika|Nitafika]. || -me- = has / have (just) done.
+t: I haven't seen your name. | [Sijaona|Nimeona|Sikuona] jina lako. || -ja- = not yet: si- + -ja- + -ona.
+t: I got a message. | [Nimepata|Sijapata|Umepata] ujumbe.
+t: I haven't eaten since morning. | [Sijala|Nimekula|Sikula] tangu asubuhi. || Negative perfect of kula: sijala (no ku-). Kenyans also say sijakula.
+t: Have you eaten? | [Umekula|Nimekula|Umekuja]? || With -me-, kula keeps its ku-: umekula.
+t: The mango juice is finished. | Juisi ya maembe [imeisha|haijaisha|ilikuwa]. || imeisha = it has run out / it's finished.
+t: It's not finished yet. | Bado [haijaisha|imeisha|hakuna]. || hai- (not it, n/n) + -ja- + -isha.
+t: They haven't arrived yet. | Bado [hawajafika|wamefika|hajafika]. || hawa- (not they) + -ja- + -fika.
+t: Is the table ready? | Meza iko [tayari|mbali|safi]? || tayari = ready, mbali = far, safi = clean.
+t: Is the fish tastier than the chicken? | Samaki ni tamu [kuliko|zaidi|sana] kuku?
+t: The fish is the best. | Samaki ni bora [zaidi|kuliko|sana]. || bora zaidi = the very best.
+c: Give me pineapple juice instead. | Nipe juisi ya nanasi [badala yake|baada ya|kabla ya]. || badala yake = instead (of it).
+t: The table was written under a different name. | Meza [imeandikwa|imeandika|inaandika] kwa jina tofauti. || -andikwa = be written (passive -w-).
+t: Sorry for the trouble. | Pole kwa [usumbufu|ujumbe|uzoefu].
+t: I'll wait. | [Nitangoja|Nitaondoka|Nimengoja].
+t: Wait a moment. | [Ngoja|Nenda|Kaa] kidogo.
+
+@vocab
+Nimefika | I've arrived | ni- + -me- + -fika
+Niliweka meza | I reserved a table | Lit. "I put a table"
+Sijaona… | I haven't seen… (yet) | si- + -ja- + -ona
+Nimepata ujumbe | I got a message | ujumbe = message
+Pole kwa usumbufu | Sorry for the trouble |
+imeisha | it's finished / sold out | i- + -me- + -isha
+haijaisha | it hasn't run out yet | hai- + -ja- + -isha
+Sijala | I haven't eaten (yet) | Kenyans also say sijakula
+tamu kuliko | tastier than | kuliko = than
+bora zaidi | the very best | bora = of good quality
+badala yake | instead (of it) |
+menyu | menu |
+hivi karibuni | soon |
+
+@lesson new-colleague
+title: The New Colleague
+level: 6
+index: 6
+theme: people
+category: people
+culture: Describing people is where Swahili agreement really shows: adjectives take the class of the person, so "tall" is mrefu for one person and warefu for several — while for things Kenyans reach for the n/n form (ndefu, nzuri). It's also where Kenyan small talk lives: who's new, who has arrived, who has ever worked where. "-wahi" turns any verb into "ever / never": amewahi kufanya kazi Kampala? (has she ever worked in Kampala?).
+start: Your team is getting a new member today. Your colleague Juma stops by your desk.
+grammar: adjective-agreement, perfect-me, perfect-negative-ja, wahi-ever-never, comparatives
+gl: mfanyikazi mpya = "a new worker / employee" — m/wa agreement #adjective-agreement
+gl: Faith = Faith (name)
+gl: anaonekana = "she seems / she looks" — a- + -na- + -onekana. #present-na
+gl: mkarimu = "generous / kind" — m/wa singular #adjective-agreement
+gl: mpole = "calm / gentle" — m/wa singular #adjective-agreement
+gl: mrefu = "tall" — m/wa singular #adjective-agreement
+gl: mfupi = "short" — m/wa singular #adjective-agreement
+gl: wafanyakazi = workers / staff
+gl: uzoefu = experience
+gl: idara = department
+gl: ofisi hii = this office
+gl: zaidi ya = "more than"
+gl: miaka mitano = "five years" — m/mi agreement (miaka is m/mi in Sanifu) #sanifu-noun-classes
+
+> Juma: John, umemwona mfanyikazi mpya? | John, have you seen the new colleague?
+< John: Bado sijamwona. Amefika? | I haven't seen her yet. Has she arrived?
+  x: Bado nimemwona. Amefika? ; Bado sijamwona. Nimefika?
+> Juma: Ndiyo, amefika sasa hivi. Anaitwa Faith. | Yes, she's just arrived. She's called Faith.
+< John: Faith ni mtu wa aina gani? | What kind of person is Faith?
+  x: Faith ni kitu wa aina gani? ; Faith ni mtu wa aina wapi?
+> Juma: Anaonekana mkarimu na mpole. Ni mrefu kuliko mimi! | She seems kind and calm. She's taller than me!
+< John: Wee! Wewe ni mrefu sana, Juma! | Wow! You're very tall, Juma!
+  x: Wee! Yeye ni mfupi sana, Juma! ; Wee! Wao ni warefu sana, Juma!
+> Juma: Haha, ndiyo. Na amewahi kufanya kazi Kampala. | Haha, yes. And she has worked in Kampala before.
+< John: Kweli? Mimi pia nimewahi kuishi Kampala! | Really? I've lived in Kampala too!
+  x: Kweli? Mimi pia sijawahi kuishi Kampala! ; Kweli? Mimi pia nimewahi kuishi Kampala jana!
+> Juma: Basi mtaelewana! Ana uzoefu wa zaidi ya miaka mitano. | Then you'll get along! She has more than five years of experience.
+< John: Safi. Wafanyakazi wengi hapa ni wapya, sivyo? | Great. A lot of the staff here are new, aren't they?
+  x: Safi. Wafanyakazi wengi hapa ni wazee, sivyo? ; Safi. Mfanyakazi mmoja hapa ni mpya, sivyo?
+> Juma: Ndiyo. Idara yetu imekua sana mwaka huu. | Yes. Our department has grown a lot this year.
+  s: Ndiyo. Idara yetu imekua sana mwaka huu.
+< John: Nitaenda kumsalimia sasa. Yuko wapi? | I'll go and greet her now. Where is she?
+  x: Nitaenda kukusalimia sasa. Yuko wapi? ; Nilienda kumsalimia jana. Yuko wapi?
+> Juma: Yuko pale, karibu na dirisha. Yule mwenye nguo nyeupe. | She's over there, by the window. The one in white clothes.
+
+@practice
+t: Have you seen the new colleague? | [Umemwona|Nimemwona|Amemwona] mfanyikazi mpya? || u- + -me- + -mw- (him/her) + -ona.
+t: I haven't seen her yet. | Bado [sijamwona|nimemwona|sikumwona]. || bado + -ja- = not yet.
+t: She has just arrived. | [Amefika|Hajafika|Alifika] sasa hivi.
+t: She hasn't arrived yet. | Bado [hajafika|amefika|hakufika]. || ha- (not she) + -ja- + -fika.
+t: She is tall. | Yeye ni [mrefu|mfupi|mnene]. || mrefu = tall, mfupi = short, mnene = big / fat.
+t: They are tall. | Wao ni [warefu|wafupi|wanene]. || Plural people: warefu (tall), wafupi (short), wanene (big).
+t: The road is long. | Barabara ni [ndefu|mrefu|warefu]. || barabara is n/n: ndefu.
+t: She is taller than me. | Ni mrefu [kuliko|zaidi|kama] mimi.
+t: She seems kind. | Anaonekana [mkarimu|mkali|mvivu]. || mkarimu = kind / generous, mkali = strict, mvivu = lazy.
+t: new workers | wafanyakazi [wapya|wazee|wadogo] || wapya = new, wazee = old, wadogo = young / junior.
+t: a new house | nyumba [mpya|kubwa|ndogo] || mpya = new, kubwa = big, ndogo = small.
+t: She has worked in Kampala before. | [Amewahi|Hajawahi|Atawahi] kufanya kazi Kampala. || amewahi + ku-verb = has (ever) done.
+t: I've never lived in Kampala. | [Sijawahi|Nimewahi|Hajawahi] kuishi Kampala.
+t: Our department has grown a lot. | Idara yetu [imekua|imekuwa|inakua] sana. || kukua = to grow; kuwa = to be. One letter apart!
+t: You'll get along. | [Mtaelewana|Tutaelewana|Wataelewana]. || -ana = each other: kuelewana = to understand each other.
+t: many workers | wafanyakazi [wengi|nyingi|mengi] || People take wengi.
+t: the one in white clothes | yule mwenye nguo [nyeupe|nyeusi|nyekundu] || nyeupe = white, nyeusi = black, nyekundu = red.
+
+@vocab
+Umemwona…? | Have you seen (him/her)? | u- + -me- + -mw- + -ona
+Bado sijamwona | I haven't seen her yet | bado + -ja-
+Amefika | She has arrived | Hajafika = she hasn't arrived yet
+mfanyikazi mpya | new colleague | Plural: wafanyikazi wapya
+mrefu / warefu | tall (one person / several) | Things: ndefu
+mfupi / wafupi | short (one person / several) | Things: fupi
+mkarimu | generous / kind | Wakenya ni wakarimu = Kenyans are hospitable
+mpole | calm / gentle |
+kuliko mimi | than me | Ni mrefu kuliko mimi = she's taller than me
+Amewahi… | She has (ever)… | amewahi kufanya kazi Kampala
+Sijawahi… | I've never… | sijawahi kuishi Kampala
+uzoefu | experience |
+mwenye… | the one with / who has… | yule mwenye nguo nyeupe = the one in white
+
+@lesson how-came-to-kenya
+title: So, How Did You Come to Kenya?
+level: 6
+index: 7
+theme: people
+category: social
+culture: Every foreigner in Kenya gets asked the same friendly questions: how did you come, when did you arrive, why Kenya, and have you seen the animals yet? It's the perfect conversation for the past (-li-), the perfect (-me-), "never / ever" (-wahi) and "not yet" (bado … -ja-). Kenyans love it when visitors explore beyond Nairobi — the coast (pwani), the Mara, the lakes — and will happily tell you where to go next.
+start: After the Sunday service, a cheerful woman called Wambui comes over with a cup of tea for you.
+grammar: past-li, perfect-me, wahi-ever-never, perfect-negative-ja, comparatives
+gl: Wambui = Wambui (a Kikuyu name)
+gl: Ulikuja aje = "How did you come?" — Kenyan. || Sanifu: Ulikujaje?
+gl: kwa ndege = "by plane"
+gl: kutoka = "from"
+gl: mwaka jana = "last year"
+gl: mwezi wa tisa = September (lit. "the ninth month")
+gl: kwa sababu gani = "for what reason, why"
+gl: kwa sababu ya kazi = "because of work"
+gl: kujifunza = "to learn"
+gl: kutembelea = "to visit"
+gl: mbuga za wanyama = "game parks"
+gl: Maasai Mara = the Maasai Mara game reserve
+gl: pwani = the coast
+gl: Desemba = December
+gl: muda mrefu = "a long time"
+gl: mwaka mmoja zaidi = "one more year"
+gl: wakarimu = hospitable, generous (people)
+gl: Mkenya = a Kenyan
+
+> Wambui: Habari, John! Ulikuja aje Kenya? | Hi, John! How did you come to Kenya?
+< John: Nilikuja kwa ndege kutoka Uganda. | I came by plane from Uganda.
+  x: Nitakuja kwa ndege kutoka Uganda. ; Ulikuja kwa ndege kutoka Uganda.
+> Wambui: Ulifika lini? | When did you arrive?
+< John: Nilifika mwaka jana, mwezi wa tisa. | I arrived last year, in September.
+  x: Nitafika mwaka jana, mwezi wa tisa. ; Ulifika mwaka jana, mwezi wa tisa.
+> Wambui: Na ulikuja Kenya kwa sababu gani? | And why did you come to Kenya?
+< John: Nilikuja kwa sababu ya kazi. Lakini pia nilitaka kujifunza Kiswahili. | I came for work. But I also wanted to learn Swahili.
+  x: Alikuja kwa sababu ya kazi. Lakini pia alitaka kujifunza Kiswahili. ; Nilikuja kwa sababu ya kazi. Lakini pia nilitaka kusahau Kiswahili.
+> Wambui: Umejifunza vizuri sana! Umewahi kutembelea mbuga za wanyama? | You've learned really well! Have you ever visited the game parks?
+< John: Ndiyo, nimewahi kwenda Maasai Mara. Niliona simba na tembo! | Yes, I've been to the Maasai Mara. I saw lions and elephants!
+  x: Hapana, sijawahi kwenda Maasai Mara. Niliona simba na tembo! ; Ndiyo, nimewahi kwenda Maasai Mara. Nitaona simba na tembo jana!
+> Wambui: Wee! Na pwani? Umewahi kwenda Mombasa? | Wow! And the coast? Have you ever been to Mombasa?
+< John: Bado sijaenda, lakini nitaenda Desemba. | Not yet, but I'll go in December.
+  x: Bado nimeenda, lakini nitaenda Desemba. ; Bado sijaenda, lakini nilienda Desemba.
+> Wambui: Utapenda Mombasa! Ni joto kuliko Nairobi. | You'll love Mombasa! It's hotter than Nairobi.
+< John: Kweli? Na Nairobi ni baridi kuliko Kampala! | Really? And Nairobi is colder than Kampala!
+  x: Kweli? Na Nairobi ni baridi zaidi Kampala! ; Kweli? Na mimi ni baridi kuliko Kampala!
+> Wambui: Haha, ndiyo! Utakaa Kenya muda mrefu? | Ha, yes! Will you stay in Kenya for a long time?
+< John: Ndiyo, nitakaa mwaka mmoja zaidi. Watu ni wakarimu sana! | Yes, I'll stay one more year. People are so welcoming!
+  x: Hapana, nitakaa mwaka mmoja zaidi. Watu ni wakarimu sana! ; Ndiyo, nilikaa mwaka mmoja zaidi. Watu ni wakarimu sana!
+> Wambui: Asante! Karibu sana Kenya — sasa wewe ni Mkenya! | Thank you! You're so welcome in Kenya — now you're a Kenyan!
+
+@practice
+t: I came by plane. | [Nilikuja|Nitakuja|Ninakuja] kwa ndege. || nili- = I did (past), nita- = I will, nina- = I am (now).
+t: When did you arrive? | [Ulifika|Utafika|Unafika] lini?
+t: I arrived last year. | [Nilifika|Nitafika|Ninafika] mwaka jana. || mwaka jana (last year) needs the past: -li-.
+t: She came because of work. | [Alikuja|Nilikuja|Walikuja] kwa sababu ya kazi. || a- = she, ni- = I, wa- = they.
+t: I wanted to learn Swahili. | [Nilitaka|Ninataka|Nitataka] kujifunza Kiswahili.
+t: Have you ever visited the Mara? | [Umewahi|Utawahi|Ulikuwa] kutembelea Maasai Mara? || umewahi = have you ever.
+t: I've never been to the coast. | [Sijawahi|Nimewahi|Nitawahi] kwenda pwani. || sijawahi = I have never.
+t: I haven't gone yet. | Bado [sijaenda|nimeenda|nilienda]. || bado + -ja- = not yet.
+t: I saw lions. | [Niliona|Nitaona|Ninaona] simba.
+t: I'll go in December. | [Nitaenda|Nilienda|Nimeenda] Desemba.
+t: You'll love Mombasa! | [Utapenda|Ulipenda|Umependa] Mombasa!
+t: It's hotter than Nairobi. | Ni joto [kuliko|kama|pamoja na] Nairobi. || kuliko = than, kama = like.
+t: by plane | kwa [ndege|meli|miguu] || ndege = plane, meli = ship, kwa miguu = on foot.
+t: airport | uwanja wa [ndege|mpira|meli] || uwanja wa ndege = airport, uwanja wa mpira = stadium.
+t: passport | [pasipoti|tiketi|viza] || tiketi = ticket, viza = visa.
+t: I'll stay one more year. | [Nitakaa|Nilikaa|Nimekaa] mwaka mmoja zaidi. || -kaa = stay.
+c: How did you come? — By plane. | Ulikuja aje? — Kwa [ndege|lini|nani].
+
+@vocab
+Ulikuja aje? | How did you come? | Sanifu: Ulikujaje?
+kusafiri | to travel |
+kufika | to arrive | Nilifika mwaka jana.
+kwa ndege | by plane | uwanja wa ndege = airport
+pasipoti / viza / tiketi | passport / visa / ticket |
+kutembelea | to visit | Umewahi kutembelea Maasai Mara?
+Umewahi…? | Have you ever…? | Nimewahi… = I have (before); sijawahi… = I have never
+Bado sijaenda | I haven't gone yet |
+mwaka jana | last year | mwaka huu = this year, mwaka ujao = next year
+pwani | the coast |
+kuliko | than | Mombasa ni joto kuliko Nairobi.
+-kaa | stay, live, sit | Nitakaa mwaka mmoja.
+Mkenya / Wakenya | a Kenyan / Kenyans |

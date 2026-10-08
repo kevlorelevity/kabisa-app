@@ -1,8 +1,258 @@
-# Level 7 — verb extensions: prepositional (-ia/-ea), passive (-wa), causative (-isha/-esha), reciprocal (-ana), stative (-ika); discourse particles (kumbe, basi, yaani, si…?)
+# Level 7 — subjunctive & polite requests, verb extensions, Kenyan discourse particles.
+
+@lesson petrol-station
+title: Fill It Up: At the Petrol Station
+level: 7
+index: 1
+theme: car
+category: transport
+culture: Kenyan petrol stations are full-service: an attendant fills the tank, checks the tyres, and washes the windscreen while you stay in the car. You ask for fuel by amount, not litres ("weka ya elfu tatu" = put in three thousand's worth). Polite requests use the subjunctive: "uweke" (would you put), "uangalie" (would you check), "nikulipe" (shall I pay you). "Naomba" (I'd like / may I have) is the classic polite opener.
+start: You pull into a petrol station on Ngong Road. An attendant walks up to your window.
+grammar: subjunctive, polite-requests, object-infixes
+gl: Weka = "Put (in)!" — imperative of kuweka
+gl: ya elfu tatu = "(fuel) for three thousand"
+gl: Naomba = "May I have / I'd like" — the politest everyday opener. Lit. "I ask for". #polite-requests
+gl: uweke = "(could you) put" — u- + -wek- + -e: subjunctive = polite request. #subjunctive
+gl: uangalie = "(could you) check" — u- + -angali- + -e #subjunctive
+gl: upepo = "air" (lit. "wind") — tyres are pumped with upepo
+gl: tairi = tyre (plural matairi)
+gl: ya nyuma = "the back one"
+gl: Ebu = "Let me…" / "Come on, let's…" — softens a request #discourse-particles
+gl: nione = "(let me) see" — ni- + -on- + -e #subjunctive
+gl: nikulipe = "shall I pay you?" — ni- + -ku- (you) + -lip- + -e #subjunctive
+gl: Usijali = "Don't worry" — u- + -si- + -jali #subjunctive
+gl: Usiwashe = "Don't switch on" — u- + -si- + -wash- + -e: negative command #subjunctive
+gl: injini = engine
+gl: ili = "so that" — always followed by the subjunctive #subjunctive
+gl: tusafishe = "(so that) we clean" — tu- + -safish- + -e #subjunctive
+gl: kioo = windscreen / glass / mirror
+gl: risiti = receipt
+gl: mafuta = fuel / petrol / oil
+
+> Mhudumu: Karibu, boss! Weka ya ngapi? | Welcome, boss! How much shall I put in?
+< Dereva: Naomba uweke ya elfu tatu, tafadhali. | Please put in three thousand's worth.
+  x: Naomba niweke ya elfu tatu, tafadhali. ; Naomba uweke ya elfu tatu, asante sana.
+> Mhudumu: Sawa. Petroli au dizeli? | Okay. Petrol or diesel?
+< Dereva: Petroli. Na uangalie upepo kwa matairi pia. | Petrol. And check the air in the tyres too.
+  x: Petroli. Na niangalie upepo kwa matairi pia. ; Petroli. Na uangalia upepo kwa matairi pia.
+> Mhudumu: Hakuna shida. Usiwashe injini, tafadhali. | No problem. Please don't start the engine.
+< Dereva: Sawa. Na tairi ya nyuma — ebu nione. Iko sawa? | Okay. And the back tyre — let me see. Is it okay?
+  x: Sawa. Na tairi ya nyuma — ebu uone. Iko sawa? ; Sawa. Na tairi ya nyuma — ebu nione. Iko wapi?
+> Mhudumu: Haina upepo wa kutosha. Nitaongeza. | It doesn't have enough air. I'll add some.
+< Dereva: Asante. Ufute kioo pia, ili nione barabara vizuri. | Thanks. Wipe the windscreen too, so that I can see the road well.
+  x: Asante. Ufute kioo pia, ili unaona barabara vizuri. ; Asante. Nifute kioo pia, ili nione barabara vizuri.
+> Mhudumu: Sawa sawa. Kioo ni chafu sana! | Sure thing. The windscreen is really dirty!
+< Dereva: Ndiyo, mvua ilinyesha jana. Nikulipe kwa M-Pesa au kadi? | Yes, it rained yesterday. Shall I pay you by M-Pesa or card?
+  x: Ndiyo, mvua ilinyesha jana. Unilipe kwa M-Pesa au kadi? ; Ndiyo, mvua inanyesha jana. Nikulipe kwa M-Pesa au kadi?
+> Mhudumu: Yoyote. Lakini lazima uchukue risiti kwa ofisi. | Either. But you must get the receipt at the office.
+< Dereva: Sawa. Ebu nilipe kwa M-Pesa, ni rahisi. | Okay. Let me pay with M-Pesa, it's easier.
+  x: Sawa. Ebu ulipe kwa M-Pesa, ni rahisi. ; Sawa. Ebu nilipa kwa M-Pesa, ni rahisi.
+> Mhudumu: Poa. Usijali, nitakuletea risiti. Safari njema! | Cool. Don't worry, I'll bring you the receipt. Safe travels!
+
+@practice
+t: Please put in three thousand. | Naomba [uweke|niweke|aweke] ya elfu tatu. || Polite request = subjunctive: u- + -wek- + -e. The final -a becomes -e.
+t: Check the tyres too. (politely) | [Uangalie|Niangalie|Waangalie] matairi pia. || u- (you) + -angali- + -e.
+t: Let me see. | Ebu [nione|uone|aone]. || ni- + -on- + -e: "let me see".
+t: Shall I pay you? | [Nikulipe|Unilipe|Nimlipe]? || ni- (I) + -ku- (you) + -lip- + -e: "shall I pay you?"
+t: Wipe the windscreen. (politely) | [Ufute|Nifute|Afute] kioo.
+t: so that I can see the road | ili [nione|ninaona|nitaona] barabara || ili (so that) is always followed by the subjunctive.
+t: so that we clean it | ili [tusafishe|tunasafisha|tulisafisha]
+t: You must get the receipt. | Lazima [uchukue|unachukua|utachukua] risiti. || lazima (must) + subjunctive.
+t: It's necessary that we go. | Inabidi [twende|tunaenda|tutaenda]. || inabidi = it's necessary; also + subjunctive. tu- + -ende → twende.
+t: Don't start the engine. | [Usiwashe|Uwashe|Nisiwashe] injini. || Negative command: u- + -si- + -wash- + -e.
+t: Don't worry. | [Usijali|Ujali|Sijali]. || sijali = I don't care.
+t: Don't go! | [Usiende|Uende|Siendi]!
+t: Don't (you all) go! | [Msiende|Usiende|Tusiende]! || m- = you all.
+t: Let's go! | [Twende|Tuende|Tunaenda]! || Both twende and tuende exist; twende is what everyone says.
+t: It doesn't have enough air. | [Haina|Hana|Sina] upepo wa kutosha. || haina = it (n/n) doesn't have.
+t: I'll bring you the receipt. | [Nitakuletea|Utaniletea|Nitamletea] risiti. || -ku- + -letea = bring for you.
+
+@vocab
+Naomba… | May I have… / I'd like… | The politest everyday opener
+Naomba uweke… | Please put in… | u- + -wek- + -e (subjunctive)
+Uangalie… | Could you check… | Subjunctive = polite request
+Ebu nione | Let me see | ebu softens it
+Nikulipe? | Shall I pay you? | ni- + -ku- + -lip- + -e
+ili nione | so that I can see | ili + subjunctive
+Lazima uchukue… | You must take… | lazima + subjunctive
+Inabidi twende | We have to go | inabidi = it's necessary
+Usiwashe injini | Don't start the engine | Negative command: u- + -si- + … + -e
+Usijali | Don't worry |
+upepo | air (in tyres) / wind |
+kioo | windscreen / mirror / glass |
+risiti | receipt |
+
+@lesson car-breakdown
+title: Car Trouble on Mombasa Road
+level: 7
+index: 2
+theme: car
+category: transport
+culture: Breaking down is a shared Kenyan experience — strangers stop, someone knows a mechanic (fundi), and a tow truck appears faster than you'd expect. Kenyans treat gari (car) as n/n: "gari yangu imeharibika" (my car has broken down), where Sanifu says "gari langu limeharibika". The subjunctive shows up whenever you ask, suggest or arrange: "nimpigie fundi?" (shall I call a mechanic?), "tungoje hapa" (let's wait here).
+start: Your car stalls on the shoulder of Mombasa Road. A passing motorist, Mwangi, pulls over.
+grammar: subjunctive, polite-requests, perfect-me, helper-verbs
+gl: gari yako = "your car" — Kenyan n/n agreement. || Sanifu: gari lako (ji/ma) #sanifu-noun-classes
+gl: imeharibika = "has broken down" — i- (it, n/n) + -me- + -haribika. Kenyan agreement for gari. || Sanifu: limeharibika #perfect-me
+gl: ghafla = suddenly
+gl: ikazima = "and it stalled" — i- + -ka- (and then) + -zima #ki-po-ka
+gl: Nimpigie = "Shall I call him?" — ni- + -m- (him) + -pigi- + -e #subjunctive
+gl: fundi = mechanic / skilled repairman
+gl: Tungoje = "Let's wait" — tu- + -ngoj- + -e (the final -a becomes -e) #subjunctive
+gl: kivuli = shade
+gl: Mwangi = Mwangi (name)
+gl: aje = "(that) he comes" — a- + -j- + -e: subjunctive of kuja #subjunctive
+gl: aivute = "(that) he tows it" — a- + -i- (it) + -vut- + -e #subjunctive
+gl: mekanika = mechanic
+gl: Ninakushukuru = "I'm grateful to you" — ni- + -na- + -ku- + -shukuru #object-infixes
+gl: usinilipe = "don't pay me" — u- + -si- + -ni- (me) + -lip- + -e #subjunctive
+gl: Utanilipa = "You'll pay me" #future-ta
+gl: kwa kunisaidia = "for helping me"
+gl: Mungu akubariki = "God bless you"
+gl: kesho kutwa = the day after tomorrow
+
+> Mwangi: Pole, boss! Gari yako imeharibika? | Sorry, boss! Has your car broken down?
+  s: Pole, bwana! Gari lako limeharibika?
+< Wewe: Ndiyo. Ilikuwa inaenda vizuri, halafu ghafla ikazima. | Yes. It was going fine, then suddenly it stalled.
+  x: Ndiyo. Itakuwa inaenda vizuri, halafu ghafla ikazima. ; Hapana. Ilikuwa inaenda vizuri, halafu ghafla ikazima.
+> Mwangi: Ebu nione. Hmm, sijui shida ni nini. Nimpigie fundi wangu? | Let me see. Hmm, I don't know what the problem is. Shall I call my mechanic?
+< Wewe: Ndiyo, tafadhali. Mpigie! Sijui fundi yeyote hapa. | Yes, please. Call him! I don't know any mechanic here.
+  x: Ndiyo, tafadhali. Nipigie! Sijui fundi yeyote hapa. ; Ndiyo, tafadhali. Mpigie! Najua fundi yeyote hapa.
+> Mwangi: Sawa. Amesema atakuja baada ya dakika thelathini. | Okay. He says he'll come in thirty minutes.
+< Wewe: Thelathini? Tungoje hapa, au twende kwenye kivuli? | Thirty? Should we wait here, or go into the shade?
+  x: Thelathini? Tunangoja hapa, au twende kwenye kivuli? ; Thelathini? Tungoje hapa, au tuende kwenye maji?
+> Mwangi: Twende kwenye kivuli. Jua ni kali. | Let's go into the shade. The sun is strong.
+< Wewe: Na kama fundi hawezi kuitengeneza hapa? | And if the mechanic can't fix it here?
+  x: Na kama fundi anaweza kuitengeneza hapa? ; Na kama fundi hawezi kunitengeneza hapa?
+> Mwangi: Basi inabidi tumwambie aivute mpaka kwa mekanika. | Then we'll have to tell him to tow it to the mechanic.
+< Wewe: Sawa. Naomba umwambie anipigie simu akifika. | Okay. Please tell him to call me when he arrives.
+  x: Sawa. Naomba uniambie anipigie simu akifika. ; Sawa. Naomba umwambie nimpigie simu akifika.
+> Mwangi: Hakuna shida. Usijali, Nairobi ni hivi tu. | No problem. Don't worry, that's just Nairobi.
+< Wewe: Ninakushukuru sana kwa kunisaidia. Nikulipe kitu? | I'm very grateful to you for helping me. Shall I give you something?
+  x: Ninakushukuru sana kwa kunisaidia. Unilipe kitu? ; Unanishukuru sana kwa kunisaidia. Nikulipe kitu?
+> Mwangi: Hapana, usinilipe! Leo ni wewe, kesho ni mimi. | No, don't pay me! Today it's you, tomorrow it's me.
+
+@practice
+t: Has your car broken down? | Gari yako [imeharibika|inaharibika|itaharibika]? || Kenyans treat gari as n/n (i-). Sanifu: gari lako limeharibika.
+t: Shall I call my mechanic? | [Nimpigie|Umpigie|Anipigie] fundi wangu? || ni- (I) + -m- (him) + -pigi- + -e.
+t: Call him! | [Mpigie|Nipigie|Wapigie]! || m- (him/her) + -pigie: call him/her.
+t: Call me! | [Nipigie|Mpigie|Tupigie] simu!
+t: Let's wait here. | [Tungoje|Tunangoja|Tulingoja] hapa. || ngoja → tungoje: the final -a becomes -e.
+t: Let's go into the shade. | [Twende|Tunaenda|Tutaenda] kwenye kivuli.
+t: He'll come in thirty minutes. | [Atakuja|Alikuja|Anakuja] baada ya dakika thelathini.
+t: The mechanic can't fix it. | Fundi [hawezi|siwezi|hatuwezi] kuitengeneza. || ha- (not he) + -wez- + -i. Kuitengeneza = to fix it (-i- = it).
+t: We'll have to tell him. | Inabidi [tumwambie|tunamwambia|tumwambia]. || inabidi + subjunctive: tu- + -mw- + -ambi- + -e.
+t: Tell him to call me. | Mwambie [anipigie|ninampigia|alinipigia] simu. || Second verb in subjunctive: a- + -ni- + -pigi- + -e = (that) he call me.
+t: Please tell him. | Naomba [umwambie|nimwambie|amwambie]. || u- (you) + -mw- (him) + -ambi- + -e.
+t: Don't pay me! | [Usinilipe|Unilipe|Sinilipe]! || u- + -si- + -ni- + -lip- + -e.
+t: Shall I give you something? | [Nikulipe|Unilipe|Nimlipe] kitu?
+t: I'm very grateful to you. | [Ninakushukuru|Unanishukuru|Ninamshukuru] sana.
+t: for helping me | kwa [kunisaidia|kukusaidia|kumsaidia] || kwa + infinitive = "for …-ing".
+t: It suddenly stalled. | Ghafla [ikazima|inazima|itazima]. || -ka- = "and then" in a story.
+c: Today it's you, tomorrow it's me. | Leo ni wewe, [kesho|jana|juzi] ni mimi. || A Kenyan way of saying "we all need help sometimes".
+
+@vocab
+Gari yangu imeharibika | My car has broken down | Kenyan n/n agreement. | Gari langu limeharibika | Sanifu: gari is ji/ma class
+ghafla | suddenly |
+Nimpigie fundi? | Shall I call a mechanic? | ni- + -m- + -pigi- + -e
+Mpigie! | Call him/her! |
+fundi | mechanic / repairman | fundi wa magari = car mechanic
+Tungoje | Let's wait | ngoja → tungoje: the final -a becomes -e
+Twende | Let's go | The most useful subjunctive in Kenya
+kivuli | shade |
+Inabidi… | It's necessary… / We have to… | + subjunctive
+Mwambie anipigie | Tell him to call me | Subjunctive for the second verb
+mekanika | mechanic | Nitapeleka gari kwa mekanika.
+Usinilipe! | Don't pay me! |
+Leo ni wewe, kesho ni mimi | Today you, tomorrow me | We all need help sometimes
+
+@lesson fundi-at-home
+title: Instructions for the Fundi
+level: 7
+index: 3
+theme: home
+category: home
+culture: In Kenya you don't call "a plumber" or "an electrician" — you call a fundi: fundi wa maji (plumber), fundi wa stima (electrician), fundi wa mbao (carpenter). Agreeing on the price before work starts is essential ("tuongee bei kwanza"). Giving instructions politely uses the subjunctive: "urekebishe" (please fix), "usiguse" (don't touch), "uniambie" (tell me). The everyday Kenyan word for electricity is stima; Sanifu prefers umeme.
+start: Water is dripping from the bathroom ceiling. A fundi arrives at your flat.
+grammar: subjunctive, polite-requests, perfect-me, object-infixes
+gl: fundi wa maji = plumber — lit. "craftsman of water"
+gl: bafu = bathroom
+gl: bomba = pipe / tap
+gl: inavuja = "it's leaking" — i- + -na- + -vuja #present-na
+gl: imevunjika = "it's broken" — i- + -me- + -vunjika (stative) #perfect-me
+gl: tuongee = "let's talk" — tu- + -onge- + -e #subjunctive
+gl: bei kwanza = "the price first"
+gl: urekebishe = "(please) fix" — u- + -rekebish- + -e #subjunctive
+gl: usiguse = "don't touch" — u- + -si- + -gus- + -e #subjunctive
+gl: stima = electricity — everyday Kenyan word || Sanifu: umeme
+gl: nizime = "(shall) I switch off" — ni- + -zim- + -e #subjunctive
+gl: uniambie = "(please) tell me" — u- + -ni- + -ambi- + -e #subjunctive
+gl: sakafu = floor
+gl: isichafuke = "so that it doesn't get dirty" — i- + -si- + -chafuk- + -e #subjunctive
+gl: Nikupe = "Shall I give you" — ni- + -ku- + -p- + -e #subjunctive
+gl: mia nane = 800
+gl: elfu moja na mia tano = 1,500
+gl: Tuseme = "Let's say" — tu- + -sem- + -e #subjunctive
+gl: Kesho asubuhi = tomorrow morning
+gl: vifaa = tools / equipment
+
+> Fundi: Habari, boss. Mimi ni fundi wa maji. Shida iko wapi? | Hello, boss. I'm the plumber. Where's the problem?
+< Wewe: Karibu. Iko kwa bafu. Bomba inavuja, na maji inatoka kwa dari. | Welcome. It's in the bathroom. A pipe is leaking, and water is coming out of the ceiling.
+  s: Karibu. Iko bafuni. Bomba linavuja, na maji yanatoka darini.
+  x: Karibu. Iko kwa bafu. Bomba inavuja, na maji inaingia kwa dari. ; Karibu. Iko kwa bafu. Bomba haivuji, na maji inatoka kwa dari.
+> Fundi: Ebu nione. Aah, bomba imevunjika. Inabidi niibadilishe. | Let me see. Ah, the pipe is broken. I'll have to replace it.
+< Wewe: Sawa. Lakini tuongee bei kwanza. | Okay. But let's talk about the price first.
+  x: Sawa. Lakini tunaongea bei kwanza. ; Sawa. Lakini tuongee bei baadaye.
+> Fundi: Kazi ni elfu moja na mia tano, pamoja na bomba mpya. | The job is one thousand five hundred, including the new pipe.
+< Wewe: Ni ghali kidogo. Tuseme elfu moja na mia mbili? | It's a bit expensive. Let's say one thousand two hundred?
+  x: Ni rahisi kidogo. Tuseme elfu moja na mia mbili? ; Ni ghali kidogo. Tunasema elfu moja na mia mbili?
+> Fundi: Sawa, boss. Lakini usiguse stima ya bafu wakati ninafanya kazi. | Okay, boss. But don't touch the bathroom electricity while I'm working.
+< Wewe: Nizime stima yote? | Shall I switch off all the electricity?
+  x: Uzime stima yote? ; Nizima stima yote?
+> Fundi: Ndiyo, uzime, ili tusiwe na shida. | Yes, switch it off, so that we don't have any trouble.
+< Wewe: Sawa. Na tafadhali ufunike sakafu, isichafuke. | Okay. And please cover the floor so it doesn't get dirty.
+  x: Sawa. Na tafadhali nifunike sakafu, isichafuke. ; Sawa. Na tafadhali ufunike sakafu, ichafuke.
+> Fundi: Hakuna shida. Nitamaliza baada ya saa moja. | No problem. I'll finish in an hour.
+< Wewe: Poa. Ukimaliza, uniambie. Nikupe chai? | Cool. When you finish, tell me. Shall I give you some tea?
+  x: Poa. Ukimaliza, nikuambie. Nikupe chai? ; Poa. Ukimaliza, uniambie. Unipe chai?
+> Fundi: Asante sana, boss. Chai ni sawa kabisa! | Thank you very much, boss. Tea is just perfect!
+
+@practice
+t: The pipe is leaking. | Bomba [inavuja|imevuja|haivuji]. || Kenyan n/n agreement on bomba. Sanifu: bomba linavuja.
+t: The pipe is broken. | Bomba [imevunjika|inavunja|itavunjika]. || -me- + -vunjika (stative: get broken) = it is broken.
+t: Let's talk about the price first. | [Tuongee|Tunaongea|Tuliongea] bei kwanza.
+t: Let's say 1,200? | [Tuseme|Tunasema|Tutasema] elfu moja na mia mbili?
+t: Don't touch the electricity. | [Usiguse|Uguse|Siguse] stima.
+t: Shall I switch off all the power? | [Nizime|Uzime|Azime] stima yote?
+t: Switch it off. (politely) | [Uzime|Nizime|Wazime].
+t: so that we don't have trouble | ili [tusiwe|tuwe|hatuna] na shida || Negative subjunctive of kuwa: tusiwe = (so that) we aren't.
+t: Please cover the floor. | Tafadhali [ufunike|nifunike|afunike] sakafu.
+t: so that it doesn't get dirty | [isichafuke|ichafuke|haichafuki] || i- (it) + -si- + -chafuk- + -e.
+t: Tell me. (politely) | [Uniambie|Nikuambie|Umwambie]. || u- + -ni- (me) + -ambi- + -e.
+t: Shall I give you tea? | [Nikupe|Unipe|Nimpe] chai?
+t: I'll have to replace it. | Inabidi [niibadilishe|ninaibadilisha|nitaibadilisha]. || ni- + -i- (it) + -badilish- + -e.
+t: I'll finish in an hour. | [Nitamaliza|Nilimaliza|Ninamaliza] baada ya saa moja. || saa moja here = one hour (not 7 o'clock!).
+t: It's a bit expensive. | Ni ghali [kidogo|sana|kabisa].
+c: plumber | fundi wa [maji|stima|mbao] || fundi wa stima = electrician; fundi wa mbao = carpenter.
+
+@vocab
+fundi wa maji | plumber | fundi wa stima = electrician; fundi wa mbao = carpenter
+Shida iko wapi? | Where's the problem? |
+inavuja | it's leaking | kuvuja = to leak
+imevunjika | it's broken | kuvunjika = to get broken
+Tuongee bei kwanza | Let's talk price first | Always agree before work starts
+Tuseme… | Let's say… | Bargaining opener
+Usiguse! | Don't touch! | u- + -si- + -gus- + -e
+stima | electricity / power | Everyday Kenyan. | umeme | Sanifu word for electricity
+Nizime? | Shall I switch off? |
+ili tusiwe na shida | so we don't have trouble |
+isichafuke | so it doesn't get dirty |
+Uniambie | Tell me (please) |
+Nikupe chai? | Shall I give you tea? | Offering tea to a fundi is good manners
 
 @lesson police-stop
 title: Pulled Over: A Traffic Police Stop
 level: 7
+index: 4
 theme: police
 category: work-admin
 culture: Traffic police stops are routine on Kenyan roads: the officer (address them as "afande") checks your licence, insurance sticker and the car's lights and tyres. Stay calm, polite and patient. You may hear a hint about "kitu kidogo" (something small) — a bribe; the safe, legal answer is to politely accept the official process (a fine or court date) and never offer money. Verb extensions run through every line: simamisha (make stop), nimesimamishwa (I've been stopped), umefanyiwa ukaguzi (you've had an inspection done on you).
@@ -43,7 +293,7 @@ gl: mkanda = seatbelt
   x: Habari, afande. Umesimamisha. ; Habari, afande. Nimesimama gari.
 > Polisi: Naomba leseni yako ya kuendesha na bima. | May I have your driving licence and insurance.
 < Dereva: Hizi hapa, afande. | Here they are, officer.
-  x: Hii hapa, afande. ; Hawa hapa, afande.
+  x: Hii hapa, afande. ; Sina, afande.
 > Polisi: Asante. Unajua kwa nini nimekusimamisha? | Thank you. Do you know why I've stopped you?
 < Dereva: Hapana, afande. Sijui. | No, officer. I don't know.
   x: Ndiyo, afande. Sijui. ; Hapana, afande. Najua.
@@ -76,7 +326,7 @@ t: Drive carefully. | Endesha kwa [uangalifu|kasi|haraka].
 t: Fasten your seatbelt. | [Ufunge|Ufungue|Uvue] mkanda. || funga = close / fasten; fungua = open (the -u- reverses it!).
 c: Oh, so you know the law! | [Kumbe|Basi|Yaani] unajua sheria! || kumbe = surprise: "oh, so it turns out…".
 c: Well then, today I'll let you go. | [Basi|Kumbe|Sivyo], leo nakuachilia. || basi = "well then / so / okay".
-t: Here they are. (documents) | [Hizi hapa|Hii hapa|Huyu hapa]. || Leseni na bima = two things: hizi.
+t: Here they are. (documents) | [Hizi hapa|Hii hapa|Ziko nyumbani]. || Leseni na bima = two things: hizi (these). Hii = this one. Ziko nyumbani = they're at home.
 t: I'll stick to the rules of the road. | [Nitazingatia|Nilizingatia|Utazingatia] sheria za barabarani.
 t: The police officer is checking the tyres. | Polisi [anakagua|anakaguliwa|wanakagua] matairi. || kukagua = to inspect; kukaguliwa = to be inspected.
 
@@ -99,6 +349,7 @@ Ufunge mkanda | Fasten your seatbelt |
 @lesson uber-nairobi-4
 title: Taking an Uber, Part 4: The Forgotten Bag
 level: 7
+index: 5
 theme: uber
 category: transport
 culture: Kamau again! This time you left your laptop bag in his car. Nairobi's Uber drivers often keep regular customers' numbers and do favours — returning lost items, waiting, running small errands. The prepositional extension (-ia/-ea) is how you talk about favours: "nimekuletea" (I've brought it to you), "nikuwekee" (shall I keep it for you), "ulinisubiria" (you waited for me).
@@ -185,6 +436,7 @@ Usichelewe! | Don't be late! |
 @lesson office-meeting
 title: The Monday Meeting Mix-up
 level: 7
+index: 6
 theme: work
 category: work-admin
 culture: Kenyan offices run on WhatsApp groups, tea breaks, and meetings that move. Passive verbs are how office news travels: "mkutano umeahirishwa" (the meeting has been postponed), "ripoti iliandikwa na Faith" (the report was written by Faith), "tuliambiwa" (we were told). Reciprocals describe teamwork: tunasaidiana (we help each other), tujadiliane (let's discuss it together).

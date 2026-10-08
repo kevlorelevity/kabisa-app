@@ -1,12 +1,12 @@
 [
-  { "level": 1, "name": "Jambo Tourist", "emoji": "🧳", "tagline": "You can say hi — and Kenya says hi back.", "focus": "Greetings, -ko, present tense -na-" },
-  { "level": 2, "name": "Sukuma Sprout", "emoji": "🌱", "tagline": "Small, green and growing fast.", "focus": "Negatives, nina/sina, possessives, numbers & money" },
-  { "level": 3, "name": "Matatu Rookie", "emoji": "🚐", "tagline": "You know exactly when to shout \"Shukisha!\"", "focus": "Future -ta-, commands, helper verbs, Swahili time" },
-  { "level": 4, "name": "Chapati Champion", "emoji": "🫓", "tagline": "Layered, flaky, and on a roll.", "focus": "Past -li-, negative past, object infixes" },
-  { "level": 5, "name": "Boda Boda Navigator", "emoji": "🏍️", "tagline": "Weaving through grammar like it's rush hour.", "focus": "Perfect -me-, not yet -ja-, -wahi, comparing" },
-  { "level": 6, "name": "Mama Mboga's Favourite", "emoji": "🥬", "tagline": "She saves the best tomatoes for you now.", "focus": "Subjunctive, polite requests, ili, lazima" },
-  { "level": 7, "name": "Kibanda Philosopher", "emoji": "☕", "tagline": "Deep thoughts over sweet chai.", "focus": "Verb extensions, kumbe / basi / yaani" },
-  { "level": 8, "name": "Bei Gani Boss", "emoji": "💸", "tagline": "Haggling in conditionals. Sellers fear you.", "focus": "Conditionals, -ki- / -po- / -ka-, relatives, habits" },
-  { "level": 9, "name": "Mzee wa Story", "emoji": "📖", "tagline": "When you start a story, the whole kinyozi listens.", "focus": "Continuous tenses, kwamba, linking ideas, -vyo-" },
-  { "level": 10, "name": "Simba wa Kiswahili", "emoji": "🦁", "tagline": "Kabisa. An absolute legend.", "focus": "Methali, idioms, and everything at once" }
+  {"level": 1, "name": "Jambo Tourist", "emoji": "🧳", "tagline": "You can say hi — and Kenya says hi back.", "focus": "Greetings, introductions, present -na-, -ko, ni / si, my / your"},
+  {"level": 2, "name": "Sukuma Sprout", "emoji": "🌱", "tagline": "Small, green and growing fast.", "focus": "Home, food & family vocabulary — verbs, nouns, describing words, singular & plural, Kenyan interjections"},
+  {"level": 3, "name": "Matatu Rookie", "emoji": "🚐", "tagline": "You know exactly when to shout \"Shukisha!\"", "focus": "Getting around & daily life — directions, weather, days and Swahili time"},
+  {"level": 4, "name": "Chapati Champion", "emoji": "🫓", "tagline": "Layered, flaky, and on a roll.", "focus": "Work, school, the garden & the wild — the level-1 toolkit, fluently"},
+  {"level": 5, "name": "Boda Boda Navigator", "emoji": "🏍️", "tagline": "Weaving through grammar like it's rush hour.", "focus": "Negatives, nina / sina, this & that, commands, future -ta-, helper verbs"},
+  {"level": 6, "name": "Mama Mboga's Favourite", "emoji": "🥬", "tagline": "She saves the best tomatoes for you now.", "focus": "Past -li-, object infixes, perfect -me-, not yet -ja-, -wahi, comparing"},
+  {"level": 7, "name": "Kibanda Philosopher", "emoji": "☕", "tagline": "Deep thoughts over sweet chai.", "focus": "Subjunctive & polite requests (naomba, ebu), verb extensions (-ia, -wa, -isha, -ana)"},
+  {"level": 8, "name": "Bei Gani Boss", "emoji": "💸", "tagline": "Haggling in conditionals. Sellers fear you.", "focus": "Conditionals, -ki- / -po- / -ka-, relatives, habits"},
+  {"level": 9, "name": "Mzee wa Story", "emoji": "📖", "tagline": "When you start a story, the whole kinyozi listens.", "focus": "Continuous tenses, kwamba, linking ideas, -vyo-"},
+  {"level": 10, "name": "Simba wa Kiswahili", "emoji": "🦁", "tagline": "Kabisa. An absolute legend.", "focus": "Methali, idioms, and everything at once"}
 ]

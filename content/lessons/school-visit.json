@@ -1,0 +1,1448 @@
+{
+  "id": "school-visit",
+  "uuid": "ed1f370c-d01b-5ec1-9d9f-5759c7969170",
+  "title": "Back to School: A Visit to Mwalimu Akinyi",
+  "category": "people",
+  "difficulty": "medium",
+  "level": 4,
+  "order": 403,
+  "theme": "school",
+  "culturalNote": "Kenyan schools run from 8 a.m., in uniforms (sare) of bright colours, and every child knows the head teacher as \"mwalimu mkuu\". Pupils sit national exams at the end of primary and secondary school, and parents talk about results constantly. Classes are counted, not named: darasa la nne is \"class four\". Teachers are addressed simply as \"mwalimu\" (teacher) — it's a title of respect.",
+  "startingPoint": "Your friend Akinyi is the head teacher of a primary school in Kibera. She's invited you to visit.",
+  "grammarFocus": [
+    "present-na",
+    "ko-location",
+    "adjective-agreement",
+    "numbers-money"
+  ],
+  "grammar": [
+    "present-na",
+    "ko-location",
+    "adjective-agreement",
+    "numbers-money",
+    "locative-ni",
+    "subject-prefixes",
+    "ni-copula",
+    "noun-classes-mwa-nn",
+    "discourse-particles",
+    "question-words",
+    "sanifu-noun-classes",
+    "possessives",
+    "greetings"
+  ],
+  "turns": [
+    {
+      "id": "c0516e22-38ea-5bc5-a956-13996be842d6",
+      "speaker": "Akinyi",
+      "role": "auto",
+      "swahili": "Karibu shuleni, John! Mimi ni mwalimu mkuu hapa.",
+      "english": "Welcome to the school, John! I'm the head teacher here.",
+      "words": [
+        {
+          "text": "Karibu",
+          "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "shuleni",
+          "gloss": "\"at school\" — shule + -ni.",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "John",
+          "gloss": "John (name)"
+        },
+        {
+          "text": "Mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mwalimu mkuu",
+          "gloss": "\"head teacher\""
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        }
+      ]
+    },
+    {
+      "id": "1c071617-aa60-5009-854d-5d05744df3bd",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Asante, mwalimu. Shule ni kubwa sana! Wanafunzi ni wangapi?",
+      "english": "Thanks, teacher. The school is very big! How many pupils are there?",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "mwalimu",
+          "gloss": "teacher — m/wa noun (people & animals; plural walimu)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Shule",
+          "gloss": "school — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "kubwa",
+          "gloss": "\"big\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-kubwa (big)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mkubwa"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wakubwa"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "kubwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Wanafunzi",
+          "gloss": "students, pupils (one: mwanafunzi)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "wangapi",
+          "gloss": "\"how many (people)\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante, mwalimu. Shule ni kubwa sana! Wanafunzi ni wangapi?",
+          "correct": true
+        },
+        {
+          "swahili": "Asante, mwalimu. Shule ni kubwa sana! Wanafunzi ni wapi?",
+          "correct": false
+        },
+        {
+          "swahili": "Asante, mwalimu. Shule ni kubwa sana! Mwanafunzi ni wangapi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "3b53429a-1098-51e3-87f4-6daec0a87dd5",
+      "speaker": "Akinyi",
+      "role": "auto",
+      "swahili": "Wanafunzi ni mia nne, na walimu ni kumi na watano.",
+      "english": "There are 400 pupils and 15 teachers.",
+      "words": [
+        {
+          "text": "Wanafunzi",
+          "gloss": "students, pupils (one: mwanafunzi)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mia nne",
+          "gloss": "400",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "walimu",
+          "gloss": "teachers (one: mwalimu)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "kumi",
+          "gloss": "10 (n/n form — used for counting, money, things)",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "watano",
+          "gloss": "five (m/wa)",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b37fd92e-257c-5237-9789-5e38da9fa9e7",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Wee! Na wanafunzi wanasoma masomo gani?",
+      "english": "Wow! And what subjects do the pupils study?",
+      "words": [
+        {
+          "text": "Wee",
+          "gloss": "hey you! (surprise / emphasis)",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "wanafunzi",
+          "gloss": "students, pupils (one: mwanafunzi)"
+        },
+        {
+          "text": "wanasoma",
+          "gloss": "\"they study / read\" — -soma = study, read"
+        },
+        {
+          "text": "masomo",
+          "gloss": "subjects (one: somo)"
+        },
+        {
+          "text": "gani",
+          "gloss": "which? / what kind?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Wee! Na wanafunzi wanasoma masomo gani?",
+          "correct": true
+        },
+        {
+          "swahili": "Wee! Na wanafunzi wanakula masomo gani?",
+          "correct": false
+        },
+        {
+          "swahili": "Wee! Na mwanafunzi wanasoma masomo gani?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "a7a7bff4-c3b5-56cf-95df-3ec4023af4c6",
+      "speaker": "Akinyi",
+      "role": "auto",
+      "swahili": "Wanasoma Kiswahili, Kiingereza, hesabu na sayansi.",
+      "english": "They study Swahili, English, maths and science.",
+      "words": [
+        {
+          "text": "Wanasoma",
+          "gloss": "\"they study / read\" — -soma = study, read"
+        },
+        {
+          "text": "Kiswahili",
+          "gloss": "Swahili (the language)"
+        },
+        {
+          "text": "Kiingereza",
+          "gloss": "English (the language)"
+        },
+        {
+          "text": "hesabu",
+          "gloss": "maths"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "sayansi",
+          "gloss": "science"
+        }
+      ]
+    },
+    {
+      "id": "11c371a4-6e07-554c-bbf9-86808e185fa3",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Watoto wako darasani sasa?",
+      "english": "Are the children in class now?",
+      "words": [
+        {
+          "text": "Watoto",
+          "gloss": "children — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "wako",
+          "gloss": "\"They are (at / doing)\" — wa- + -ko (be at a place, or how you're doing). \"Wako poa\" = they are fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "darasani",
+          "gloss": "\"in class\" — darasa + -ni.",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Watoto wako darasani sasa?",
+          "correct": true
+        },
+        {
+          "swahili": "Watoto wako jikoni sasa?",
+          "correct": false
+        },
+        {
+          "swahili": "Watoto wako darasani nani?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "8778bed7-878e-51fa-a388-7d98d8723441",
+      "speaker": "Akinyi",
+      "role": "auto",
+      "swahili": "Ndiyo. Darasa ya nne wanaandika mtihani wa hesabu.",
+      "english": "Yes. Class four are writing a maths test.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Darasa ya nne",
+          "gloss": "\"class four\" — Kenyan.",
+          "sanifu": "Sanifu: darasa la nne (ji/ma class)"
+        },
+        {
+          "text": "wanaandika",
+          "gloss": "\"they're writing\" — -andika = write"
+        },
+        {
+          "text": "mtihani wa hesabu",
+          "gloss": "\"a maths test\""
+        }
+      ],
+      "sanifu": "Ndiyo. Darasa la nne wanaandika mtihani wa hesabu."
+    },
+    {
+      "id": "25c61d27-61ff-5fde-ba64-df44368d1952",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Mtihani ni ngumu?",
+      "english": "Is the test hard?",
+      "words": [
+        {
+          "text": "Mtihani",
+          "gloss": "test / exam"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "ngumu",
+          "gloss": "hard / difficult"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Mtihani ni ngumu?",
+          "correct": true
+        },
+        {
+          "swahili": "Mtihani ni nani?",
+          "correct": false
+        },
+        {
+          "swahili": "Mtihani niko ngumu?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "f686d147-205d-50de-a773-2dd2fe4ab70d",
+      "speaker": "Akinyi",
+      "role": "auto",
+      "swahili": "Kidogo! Lakini wanafunzi wetu ni wajanja sana.",
+      "english": "A bit! But our pupils are very clever.",
+      "words": [
+        {
+          "text": "Kidogo",
+          "gloss": "a little / a bit — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — kidogo (adverb, no agreement)"
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "wanafunzi",
+          "gloss": "students, pupils (one: mwanafunzi)"
+        },
+        {
+          "text": "wetu",
+          "gloss": "\"our\" — m/wa agreement (for people: mtoto wetu, watoto wetu).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (m/wa: people)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "wangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "wako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "wake"
+              },
+              {
+                "pronoun": "our",
+                "form": "wetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "wenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "wao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "wajanja",
+          "gloss": "\"clever, smart (people)\" — one: mjanja"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ]
+    },
+    {
+      "id": "55d1951a-74e5-5fce-a3d5-c0bdaad14786",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Na sare yao ni nzuri — kijani na nyeupe.",
+      "english": "And their uniform is nice — green and white.",
+      "words": [
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "sare",
+          "gloss": "uniform"
+        },
+        {
+          "text": "yao",
+          "gloss": "\"their\" — n/n singular agreement (nyumba yao). In Kenyan speech also used for family words and most things (jina yao, gari yao).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (n/n singular)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "yangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "yako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "yake"
+              },
+              {
+                "pronoun": "our",
+                "form": "yetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "yenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "yao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "nzuri",
+          "gloss": "good / fine — the standard answer to habari",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "kijani",
+          "gloss": "green"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "nyeupe",
+          "gloss": "\"white\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-eupe (white)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mweupe"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "weupe"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "nyeupe"
+              }
+            ]
+          }
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Na sare yao ni nzuri — kijani na nyeupe.",
+          "correct": true
+        },
+        {
+          "swahili": "Na sare yao ni nzuri — kijani na hesabu.",
+          "correct": false
+        },
+        {
+          "swahili": "Na sare yao ni ngumu — kijani na nyeupe.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "0ca973bf-e1b4-5ff8-8a80-709d9298f913",
+      "speaker": "Akinyi",
+      "role": "auto",
+      "swahili": "Asante! Saa nne ni mapumziko — watoto wanacheza mpira nje.",
+      "english": "Thanks! At ten it's break time — the children play football outside.",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Saa nne",
+          "gloss": "10 o'clock"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mapumziko",
+          "gloss": "break, rest time"
+        },
+        {
+          "text": "watoto",
+          "gloss": "children — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "wanacheza",
+          "gloss": "\"They are playing\" — wa- (subject: they) + na- (present) + -cheza (play). From kucheza.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kucheza (to play)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninacheza"
+              },
+              {
+                "pronoun": "you",
+                "form": "unacheza"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anacheza"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunacheza"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnacheza"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanacheza"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mpira",
+          "gloss": "ball / football"
+        },
+        {
+          "text": "nje",
+          "gloss": "outside"
+        }
+      ]
+    },
+    {
+      "id": "6bc58666-b221-52a8-93bb-6f7afa56fb72",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Poa! Na wewe, unafundisha nini?",
+      "english": "Cool! And you, what do you teach?",
+      "words": [
+        {
+          "text": "Poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "unafundisha",
+          "gloss": "\"you teach\" — -fundisha = teach"
+        },
+        {
+          "text": "nini",
+          "gloss": "what?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Poa! Na wewe, unafundisha nini?",
+          "correct": true
+        },
+        {
+          "swahili": "Poa! Na wewe, ninafundisha nini?",
+          "correct": false
+        },
+        {
+          "swahili": "Poa! Na wewe, unafundisha wapi nini?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "30e37487-b9d6-5ae6-9255-3005b53e6b5d",
+      "speaker": "Akinyi",
+      "role": "auto",
+      "swahili": "Mimi ninafundisha Kiingereza. Na wewe unasoma Kiswahili, sivyo?",
+      "english": "I teach English. And you're studying Swahili, right?",
+      "words": [
+        {
+          "text": "Mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ninafundisha",
+          "gloss": "\"I teach\""
+        },
+        {
+          "text": "Kiingereza",
+          "gloss": "English (the language)"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "unasoma",
+          "gloss": "\"You are reading\" — u- (subject: you) + na- (present) + -soma (read). From kusoma.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kusoma (to read)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninasoma"
+              },
+              {
+                "pronoun": "you",
+                "form": "unasoma"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anasoma"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunasoma"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnasoma"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanasoma"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Kiswahili",
+          "gloss": "Swahili (the language)"
+        },
+        {
+          "text": "sivyo",
+          "gloss": "\"isn't it? / right?\""
+        }
+      ]
+    },
+    {
+      "id": "a1d6bb5a-dcf0-5f2a-b8cd-50ebc50c3806",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ndiyo! Mimi ni mwanafunzi pia — mwanafunzi mzee!",
+      "english": "Yes! I'm a student too — an old student!",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mwanafunzi",
+          "gloss": "student, pupil (plural: wanafunzi)"
+        },
+        {
+          "text": "pia",
+          "gloss": "also / too"
+        },
+        {
+          "text": "mwanafunzi",
+          "gloss": "student, pupil (plural: wanafunzi)"
+        },
+        {
+          "text": "mzee",
+          "gloss": "old man / elder (respectful \"sir\") — m/wa noun (people & animals; plural wazee)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo! Mimi ni mwanafunzi pia — mwanafunzi mzee!",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo! Mimi ni wanafunzi pia — mwanafunzi mzee!",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo! Wewe ni mwanafunzi pia — mwanafunzi mzee!",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "15a26d44-5ae6-52be-a477-9d1657631718",
+      "swahili": "shule",
+      "english": "school",
+      "exampleContext": "shuleni = at school"
+    },
+    {
+      "id": "d992564c-3605-5444-808e-07ef4cf5a889",
+      "swahili": "mwalimu mkuu",
+      "english": "head teacher |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "29cd122b-9aff-58cc-b76b-08c99cc9f310",
+      "swahili": "mwanafunzi / wanafunzi",
+      "english": "pupil, student / pupils, students |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "694206d6-00e4-5455-a233-90d4af7659f7",
+      "swahili": "darasa",
+      "english": "class, classroom",
+      "exampleContext": "Kenyans: darasa ya nne",
+      "sanifu": "darasa la nne",
+      "sanifuNote": "Sanifu: ji/ma class"
+    },
+    {
+      "id": "6eac4857-0376-5e64-b14e-be1efdab2f6a",
+      "swahili": "somo / masomo",
+      "english": "subject, lesson / subjects |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "388d58ec-bdb5-5c97-8963-54a613d34d6d",
+      "swahili": "hesabu / sayansi",
+      "english": "maths / science |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "b6ac9b9b-ff66-5f2b-ab1f-c6bab28778b5",
+      "swahili": "-soma",
+      "english": "read, study",
+      "exampleContext": "Wanasoma hesabu."
+    },
+    {
+      "id": "246f82a2-3128-5ffc-9f2e-8d030ed53ccf",
+      "swahili": "-andika",
+      "english": "write",
+      "exampleContext": "Wanaandika mtihani."
+    },
+    {
+      "id": "0896c49d-ab74-562d-8651-59848e1e9285",
+      "swahili": "mtihani",
+      "english": "test, exam |",
+      "exampleContext": ""
+    },
+    {
+      "id": "93522161-fee9-56e5-b7cd-1f15a2f352f6",
+      "swahili": "kitabu / vitabu",
+      "english": "book / books",
+      "exampleContext": "Sanifu: ki/vi class",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "5ea26e0f-593e-50ec-8545-ee5ecdf2e645",
+      "swahili": "kalamu",
+      "english": "pen |",
+      "exampleContext": ""
+    },
+    {
+      "id": "5d02781c-5082-5a6b-a9ad-3f71f3e67a9e",
+      "swahili": "sare",
+      "english": "uniform |",
+      "exampleContext": ""
+    },
+    {
+      "id": "6577e070-e848-5f89-9b94-41e7021851fa",
+      "swahili": "mapumziko",
+      "english": "break time |",
+      "exampleContext": ""
+    }
+  ],
+  "practice": [
+    {
+      "id": "58b94ad5-0537-5ebe-b0a1-139565d90d7f",
+      "mode": "translate",
+      "english": "I'm the head teacher.",
+      "before": "Mimi ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "mwalimu mkuu",
+          "correct": true
+        },
+        {
+          "text": "mwanafunzi",
+          "correct": false,
+          "feedback": "mwanafunzi = student, pupil (plural: wanafunzi)"
+        },
+        {
+          "text": "daktari",
+          "correct": false,
+          "feedback": "daktari = doctor"
+        }
+      ],
+      "explanation": "mwalimu mkuu = head teacher, mwanafunzi = student."
+    },
+    {
+      "id": "4921fc2e-d497-5a91-b266-856188ada93c",
+      "mode": "translate",
+      "english": "How many pupils?",
+      "before": "Wanafunzi ni ",
+      "after": "?",
+      "options": [
+        {
+          "text": "wangapi",
+          "correct": true
+        },
+        {
+          "text": "wapi",
+          "correct": false,
+          "feedback": "wapi = where?"
+        },
+        {
+          "text": "nani",
+          "correct": false,
+          "feedback": "nani = who?"
+        }
+      ],
+      "explanation": "wangapi = how many (people)."
+    },
+    {
+      "id": "9ed6c3e8-983d-54d1-bc86-04ff8f337330",
+      "mode": "translate",
+      "english": "400 pupils",
+      "before": "wanafunzi mia ",
+      "after": "",
+      "options": [
+        {
+          "text": "nne",
+          "correct": true
+        },
+        {
+          "text": "tano",
+          "correct": false,
+          "feedback": "tano = 5 (n/n form"
+        },
+        {
+          "text": "tatu",
+          "correct": false,
+          "feedback": "tatu = 3 (n/n form"
+        }
+      ],
+      "explanation": "nne = 4, tano = 5, tatu = 3.",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "fd4bdf9d-2a71-5750-a854-3b83e4af4274",
+      "mode": "translate",
+      "english": "fifteen teachers",
+      "before": "walimu kumi na ",
+      "after": "",
+      "options": [
+        {
+          "text": "watano",
+          "correct": true
+        },
+        {
+          "text": "watatu",
+          "correct": false,
+          "feedback": "watatu = three (m/wa)"
+        },
+        {
+          "text": "wanne",
+          "correct": false,
+          "feedback": "wanne = four (m/wa)"
+        }
+      ],
+      "explanation": "People: watano (5), watatu (3), wanne (4).",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "afd1e248-3d66-5be9-8250-500707df5f9d",
+      "mode": "translate",
+      "english": "They study maths.",
+      "before": "",
+      "after": " hesabu.",
+      "options": [
+        {
+          "text": "Wanasoma",
+          "correct": true
+        },
+        {
+          "text": "Anasoma",
+          "correct": false,
+          "feedback": "Anasoma = He/she is reading"
+        },
+        {
+          "text": "Tunasoma",
+          "correct": false,
+          "feedback": "Tunasoma = We are reading"
+        }
+      ],
+      "explanation": "-soma = read, study."
+    },
+    {
+      "id": "b3955822-f9d6-58ba-ac93-5692ad1a3ee3",
+      "mode": "translate",
+      "english": "She's writing a test.",
+      "before": "Anaandika ",
+      "after": ".",
+      "options": [
+        {
+          "text": "mtihani",
+          "correct": true
+        },
+        {
+          "text": "mpira",
+          "correct": false,
+          "feedback": "mpira = ball / football"
+        },
+        {
+          "text": "sare",
+          "correct": false,
+          "feedback": "sare = uniform"
+        }
+      ],
+      "explanation": "mtihani = test, mpira = ball, sare = uniform."
+    },
+    {
+      "id": "a1d9de9f-dc83-5eac-a4e2-5bdc9738e07e",
+      "mode": "translate",
+      "english": "I'm reading a book.",
+      "before": "",
+      "after": " kitabu.",
+      "options": [
+        {
+          "text": "Ninasoma",
+          "correct": true
+        },
+        {
+          "text": "Ninaandika",
+          "correct": false,
+          "feedback": "Ninaandika = I am writing"
+        },
+        {
+          "text": "Ninacheza",
+          "correct": false,
+          "feedback": "Ninacheza = I am playing"
+        }
+      ],
+      "explanation": "Ninasoma = \"I am reading\" — ni- (subject: I) + na- (present) + -soma (read). From kusoma. Colloquially often shortened: ni-na- → na-.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "9b89c97a-ae66-5dab-9ae7-f971f781aad7",
+      "mode": "translate",
+      "english": "books (more than one)",
+      "before": "",
+      "after": "",
+      "options": [
+        {
+          "text": "vitabu",
+          "correct": true
+        },
+        {
+          "text": "kitabu",
+          "correct": false,
+          "feedback": "kitabu = book (plural vitabu)"
+        },
+        {
+          "text": "kalamu",
+          "correct": false,
+          "feedback": "kalamu = pen"
+        }
+      ],
+      "explanation": "kitabu = one book, vitabu = books, kalamu = pen."
+    },
+    {
+      "id": "0411cc39-4548-53a8-9488-c643b1cf3f28",
+      "mode": "translate",
+      "english": "a pen",
+      "before": "",
+      "after": "",
+      "options": [
+        {
+          "text": "kalamu",
+          "correct": true
+        },
+        {
+          "text": "kitabu",
+          "correct": false,
+          "feedback": "kitabu = book (plural vitabu)"
+        },
+        {
+          "text": "ubao",
+          "correct": false
+        }
+      ],
+      "explanation": "kalamu = pen, ubao = (black)board.",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "57a98cc3-0fa7-50b6-b154-a31a37cd8018",
+      "mode": "translate",
+      "english": "The pupils are clever.",
+      "before": "Wanafunzi ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "wajanja",
+          "correct": true
+        },
+        {
+          "text": "mjanja",
+          "correct": false,
+          "feedback": "mjanja = clever / streetwise (with a wink); plural wajanja"
+        },
+        {
+          "text": "wavivu",
+          "correct": false,
+          "feedback": "wavivu = lazy"
+        }
+      ],
+      "explanation": "One clever person: mjanja. Several: wajanja."
+    },
+    {
+      "id": "218a6781-2a35-5e15-ad8a-68d98c3e431e",
+      "mode": "translate",
+      "english": "The children are in class.",
+      "before": "Watoto wako ",
+      "after": ".",
+      "options": [
+        {
+          "text": "darasani",
+          "correct": true
+        },
+        {
+          "text": "jikoni",
+          "correct": false,
+          "feedback": "jikoni = at / in / to the stove"
+        },
+        {
+          "text": "sokoni",
+          "correct": false,
+          "feedback": "sokoni = at / in / to the market (plural masoko)"
+        }
+      ],
+      "explanation": "darasa + -ni = in class.",
+      "grammar": [
+        "locative-ni"
+      ]
+    },
+    {
+      "id": "0e3a823d-9e19-5832-8952-c1637b4d3e3e",
+      "mode": "translate",
+      "english": "Is the test hard?",
+      "before": "Mtihani ni ",
+      "after": "?",
+      "options": [
+        {
+          "text": "ngumu",
+          "correct": true
+        },
+        {
+          "text": "rahisi",
+          "correct": false,
+          "feedback": "rahisi = easy / cheap"
+        },
+        {
+          "text": "kubwa",
+          "correct": false,
+          "feedback": "kubwa = big"
+        }
+      ],
+      "explanation": "ngumu = hard, rahisi = easy."
+    },
+    {
+      "id": "217b35c3-3df0-5949-9bbd-060601fb0a0e",
+      "mode": "translate",
+      "english": "The children play football.",
+      "before": "Watoto wanacheza ",
+      "after": ".",
+      "options": [
+        {
+          "text": "mpira",
+          "correct": true
+        },
+        {
+          "text": "mtihani",
+          "correct": false,
+          "feedback": "mtihani = test / exam"
+        },
+        {
+          "text": "kitabu",
+          "correct": false,
+          "feedback": "kitabu = book (plural vitabu)"
+        }
+      ],
+      "explanation": "mpira: ball / football"
+    },
+    {
+      "id": "4a2d2432-9abe-5d20-b29d-2f0cdacdbcf4",
+      "mode": "translate",
+      "english": "What do you teach?",
+      "before": "",
+      "after": " nini?",
+      "options": [
+        {
+          "text": "Unafundisha",
+          "correct": true
+        },
+        {
+          "text": "Unasoma",
+          "correct": false,
+          "feedback": "Unasoma = You are reading"
+        },
+        {
+          "text": "Unaandika",
+          "correct": false,
+          "feedback": "Unaandika = You are writing"
+        }
+      ],
+      "explanation": "Unafundisha = \"you teach\" — -fundisha = teach"
+    },
+    {
+      "id": "5d9d060d-6d71-5d7c-849d-19133af21fd9",
+      "mode": "translate",
+      "english": "subjects",
+      "before": "",
+      "after": "",
+      "options": [
+        {
+          "text": "masomo",
+          "correct": true
+        },
+        {
+          "text": "somo",
+          "correct": false
+        },
+        {
+          "text": "vitabu",
+          "correct": false
+        }
+      ],
+      "explanation": "somo = subject, lesson. masomo = subjects."
+    },
+    {
+      "id": "bc2b6cc3-4ae7-5ccb-9605-a6550af1c61f",
+      "mode": "translate",
+      "english": "one pupil",
+      "before": "",
+      "after": " mmoja",
+      "options": [
+        {
+          "text": "mwanafunzi",
+          "correct": true
+        },
+        {
+          "text": "wanafunzi",
+          "correct": false,
+          "feedback": "wanafunzi = students, pupils (one: mwanafunzi)"
+        },
+        {
+          "text": "mwalimu",
+          "correct": false,
+          "feedback": "mwalimu = teacher"
+        }
+      ],
+      "explanation": "mwanafunzi: student, pupil (plural: wanafunzi)"
+    },
+    {
+      "id": "d96e302d-8fba-59b8-8af2-cbdfbc3c7ee4",
+      "mode": "complete",
+      "english": "What do you study? — Science.",
+      "before": "Unasoma nini? — ",
+      "after": ".",
+      "options": [
+        {
+          "text": "Sayansi",
+          "correct": true
+        },
+        {
+          "text": "Darasa",
+          "correct": false
+        },
+        {
+          "text": "Mapumziko",
+          "correct": false,
+          "feedback": "Mapumziko = break, rest time"
+        }
+      ],
+      "explanation": "Sayansi: science"
+    }
+  ]
+}

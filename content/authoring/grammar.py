@@ -144,7 +144,7 @@ topic('noun-classes-mwa-nn', 1, 'Our Two Noun Classes: m/wa and n/n', 'Ngeli: m/
       related=['sanifu-noun-classes', 'adjective-agreement', 'possessives', 'demonstratives'], tags=['nouns', 'basics'])
 
 # ======================= LEVEL 2 =======================
-topic('negative-present', 2, 'Negative Present: si- … -i', 'Ukanushaji: wakati uliopo',
+topic('negative-present', 5, 'Negative Present: si- … -i', 'Ukanushaji: wakati uliopo',
       'To say "I don\'t…", swap the subject prefix for its negative, drop -na-, and change the final -a to -i.',
       [('p', 'Three changes turn *ninataka* (I want) into *sitaki* (I don\'t want):'),
        ('list', ['Use the **negative subject prefix** (si-, hu-, ha-…)', 'Drop **-na-**', 'Change the final **-a → -i**']),
@@ -157,7 +157,7 @@ topic('negative-present', 2, 'Negative Present: si- … -i', 'Ukanushaji: wakati
        ('Haifai.', 'It\'s not suitable.')],
       related=['present-na', 'na-have', 'negative-past'], tags=['verbs', 'negation'])
 
-topic('na-have', 2, 'Nina / Sina: Having (and "There Is")', 'Kuwa na',
+topic('na-have', 5, 'Nina / Sina: Having (and "There Is")', 'Kuwa na',
       'Swahili "have" is literally "be with": ni- + -na. Kuna = there is; hakuna = there isn\'t.',
       [('table', '-na (have)', ['Person', 'Have', 'Don\'t have'],
         [['I', 'nina', 'sina'], ['you', 'una', 'huna'], ['he / she', 'ana', 'hana'], ['we', 'tuna', 'hatuna'], ['you all', 'mna', 'hamna'],
@@ -170,7 +170,7 @@ topic('na-have', 2, 'Nina / Sina: Having (and "There Is")', 'Kuwa na',
        ('Kulikuwa na ajali.', 'There was an accident.')],
       related=['ko-location', 'negative-present'], tags=['verbs'])
 
-topic('possessives', 2, 'Possessives: Wangu, Yangu, Zangu', 'Vimilikishi',
+topic('possessives', 1, 'Possessives: Wangu, Yangu, Zangu', 'Vimilikishi',
       'my, your, his… = -angu, -ako, -ake, -etu, -enu, -ao, with a prefix that agrees with the THING owned.',
       [('p', 'The ending tells you **who owns** it; the first letter agrees with **what is owned**.'),
        ('table', 'Our two standard sets', ['', 'm/wa (people)', 'n/n one', 'n/n many'],
@@ -185,7 +185,7 @@ topic('possessives', 2, 'Possessives: Wangu, Yangu, Zangu', 'Vimilikishi',
        ('Familia yako ni kubwa!', 'Your family is big!'), ('Njoo kwangu.', 'Come to my place.')],
       related=['noun-classes-mwa-nn', 'sanifu-noun-classes', 'demonstratives'], tags=['nouns'])
 
-topic('demonstratives', 2, 'This & That: Huyu, Hii, Yule, Ile', 'Vionyeshi',
+topic('demonstratives', 5, 'This & That: Huyu, Hii, Yule, Ile', 'Vionyeshi',
       'Three distances (here / near you / over there), agreeing with m/wa or n/n.',
       [('table', 'This / that', ['', 'm/wa one', 'm/wa many', 'n/n one', 'n/n many'],
         [['this (here)', 'huyu', 'hawa', 'hii', 'hizi'], ['that (near you / just mentioned)', 'huyo', 'hao', 'hiyo', 'hizo'],
@@ -198,7 +198,7 @@ topic('demonstratives', 2, 'This & That: Huyu, Hii, Yule, Ile', 'Vionyeshi',
        ('Yule mdogo ni Grace.', 'That little one is Grace.')],
       related=['noun-classes-mwa-nn', 'possessives'], tags=['nouns'])
 
-topic('numbers-money', 2, 'Numbers & Money', 'Hesabu na pesa',
+topic('numbers-money', 1, 'Numbers & Money', 'Hesabu na pesa',
       'Counting, prices, and Nairobi money slang (bob, punch, thao).',
       [('table', '1–10', ['Number', 'Swahili', 'For people (m/wa)'],
         [['1', 'moja', 'mmoja'], ['2', 'mbili', 'wawili'], ['3', 'tatu', 'watatu'], ['4', 'nne', 'wanne'], ['5', 'tano', 'watano'],
@@ -214,7 +214,7 @@ topic('numbers-money', 2, 'Numbers & Money', 'Hesabu na pesa',
        ('Nauli ni ngapi?', 'How much is the fare?')],
       related=['question-words', 'time-swahili'], tags=['vocab'])
 
-topic('sanifu-noun-classes', 2, 'Other Noun Classes (Sanifu Look-up)', 'Ngeli nyingine',
+topic('sanifu-noun-classes', 1, 'Other Noun Classes (Sanifu Look-up)', 'Ngeli nyingine',
       'A reference for the classes Kenyans mostly flatten into n/n: ki/vi, ji/ma, m/mi, u/n and the place classes.',
       [('p', 'Kabisa uses m/wa and n/n everywhere. This page is your **look-up** for when you meet a Sanifu form — on the news, in a book, or from a teacher.'),
        ('table', 'Sanifu agreement at a glance', ['Class', 'Example (one / many)', 'my', 'this', 'verb ("is coming")'],
@@ -235,7 +235,7 @@ topic('sanifu-noun-classes', 2, 'Other Noun Classes (Sanifu Look-up)', 'Ngeli ny
       related=['noun-classes-mwa-nn', 'kenyan-vs-sanifu', 'possessives'], tags=['nouns', 'reference'])
 
 # ======================= LEVEL 3 =======================
-topic('future-ta', 3, 'Future Tense -ta-', 'Wakati ujao: -ta-',
+topic('future-ta', 5, 'Future Tense -ta-', 'Wakati ujao: -ta-',
       'Swap -na- for -ta- and you\'re in the future. Negative: si-ta-, hu-ta-, ha-ta-…',
       [('table', 'kulipa (to pay)', ['Person', 'Future', 'Negative future'],
         [['I', 'nitalipa', 'sitalipa'], ['you', 'utalipa', 'hutalipa'], ['he / she', 'atalipa', 'hatalipa'], ['we', 'tutalipa', 'hatutalipa'],
@@ -248,7 +248,7 @@ topic('future-ta', 3, 'Future Tense -ta-', 'Wakati ujao: -ta-',
        ('Sitachelewa.', 'I won\'t be late.')],
       related=['present-na', 'past-li', 'subjunctive'], tags=['verbs', 'tenses'])
 
-topic('imperatives', 3, 'Commands: Panda! Shuka! Njoo!', 'Amri',
+topic('imperatives', 5, 'Commands: Panda! Shuka! Njoo!', 'Amri',
       'The bare verb stem is a command. Add -eni for several people. Use usi-…-e for "don\'t".',
       [('table', 'Commands', ['Infinitive', 'To one person', 'To several', 'Don\'t!'],
         [['kupanda (get in)', 'Panda!', 'Pandeni!', 'Usipande!'], ['kushuka (get off)', 'Shuka!', 'Shukeni!', 'Usishuke!'],
@@ -262,7 +262,7 @@ topic('imperatives', 3, 'Commands: Panda! Shuka! Njoo!', 'Amri',
        ('Usisahau!', 'Don\'t forget!')],
       related=['subjunctive', 'polite-requests', 'object-infixes'], tags=['verbs'])
 
-topic('helper-verbs', 3, 'Helper Verbs: Weza, Taka, Lazima, Inabidi', 'Vitenzi visaidizi',
+topic('helper-verbs', 5, 'Helper Verbs: Weza, Taka, Lazima, Inabidi', 'Vitenzi visaidizi',
       'Can, want to, must, have to — followed by an infinitive (ku-) or a subjunctive.',
       [('table', 'Pattern', ['Meaning', 'Swahili', 'Next verb', 'Example'],
         [['can', '-weza', 'ku- infinitive', 'Naweza kupata chai? — Can I get tea?'], ['want to', '-taka', 'ku- infinitive', 'Nataka kulala. — I want to sleep.'],
@@ -274,7 +274,7 @@ topic('helper-verbs', 3, 'Helper Verbs: Weza, Taka, Lazima, Inabidi', 'Vitenzi v
        ('Inabidi tumwambie.', 'We\'ll have to tell him.')],
       related=['infinitive-ku', 'subjunctive'], tags=['verbs'])
 
-topic('infinitive-ku', 3, 'The Infinitive: ku- and kuto-', 'Kitenzi-jina',
+topic('infinitive-ku', 2, 'The Infinitive: ku- and kuto-', 'Kitenzi-jina',
       'ku- + stem = "to …" (and "…-ing" as a noun). kuto- = "not to".',
       [('p', 'Dictionary forms start with **ku-**: *kuenda* (to go), *kula* (to eat), *kufanya* (to do). The infinitive also works as a noun: *Kusoma ni muhimu* — Reading is important.'),
        ('p', 'Object prefixes go between ku- and the stem: *kunisaidia* (to help me), *kukuona* (to see you), *kumsalimia* (to greet him).'),
@@ -298,7 +298,7 @@ topic('time-swahili', 3, 'Telling Time: Swahili Hours', 'Saa za Kiswahili',
       [('Tutaondoka saa moja asubuhi.', 'We\'ll leave at 7 a.m.'), ('Saa kumi na mbili na nusu.', '6:30.'), ('Saa mbili kasoro dakika tano.', '7:55.')],
       related=['numbers-money'], tags=['vocab'])
 
-topic('locative-ni', 3, 'Places: -ni, Kwenye, Kwa', 'Mahali: -ni, kwenye, kwa',
+topic('locative-ni', 1, 'Places: -ni, Kwenye, Kwa', 'Mahali: -ni, kwenye, kwa',
       'Three ways to say at / in / to a place: the -ni suffix, kwenye, and the very Kenyan kwa.',
       [('p', '**-ni** on a noun = at / in / to it: *soko → sokoni* (at the market), *kazi → kazini* (at work), *nyumba → nyumbani* (at home), *jiko → jikoni* (in the kitchen).'),
        ('p', '**Kwenye** = at / on / in (very flexible): *kwenye meza* (on the table), *kwenye orodha* (on the list), *kwenye kona* (at the corner).'),
@@ -310,7 +310,7 @@ topic('locative-ni', 3, 'Places: -ni, Kwenye, Kwa', 'Mahali: -ni, kwenye, kwa',
       related=['ko-location', 'possessives'], tags=['prepositions'])
 
 # ======================= LEVEL 4 =======================
-topic('past-li', 4, 'Past Tense -li-', 'Wakati uliopita: -li-',
+topic('past-li', 6, 'Past Tense -li-', 'Wakati uliopita: -li-',
       'Subject + -li- + verb = something that happened. Short verbs keep ku-.',
       [('table', 'kuenda (to go)', ['Person', 'Past', 'English'],
         [['I', 'nilienda', 'I went'], ['you', 'ulienda', 'you went'], ['he / she', 'alienda', 'he/she went'], ['we', 'tulienda', 'we went'],
@@ -322,7 +322,7 @@ topic('past-li', 4, 'Past Tense -li-', 'Wakati uliopita: -li-',
        ('Ilikuwa nzuri sana.', 'It was really good.')],
       related=['negative-past', 'perfect-me', 'ki-po-ka'], tags=['verbs', 'tenses'])
 
-topic('negative-past', 4, 'Negative Past: si-ku-', 'Ukanushaji: wakati uliopita',
+topic('negative-past', 6, 'Negative Past: si-ku-', 'Ukanushaji: wakati uliopita',
       'Negative subject + -ku- + verb (ending stays -a) = "didn\'t".',
       [('table', 'kuona (to see)', ['Person', 'Past', 'Didn\'t'],
         [['I', 'niliona', 'sikuona'], ['you', 'uliona', 'hukuona'], ['he / she', 'aliona', 'hakuona'], ['we', 'tuliona', 'hatukuona'],
@@ -334,7 +334,7 @@ topic('negative-past', 4, 'Negative Past: si-ku-', 'Ukanushaji: wakati uliopita'
        ('Haikusaidia.', 'It didn\'t help.')],
       related=['past-li', 'negative-present', 'perfect-negative-ja'], tags=['verbs', 'negation'])
 
-topic('object-infixes', 4, 'Object Infixes: -ni-, -ku-, -m-, -wa-', 'Viambishi vya mtendwa',
+topic('object-infixes', 6, 'Object Infixes: -ni-, -ku-, -m-, -wa-', 'Viambishi vya mtendwa',
       'Me, you, him, them — tucked inside the verb, right before the stem.',
       [('p', 'Swahili puts the object **inside** the verb: subject + tense + **object** + stem. *Ni-li-**ku**-ona* = I saw **you**.'),
        ('table', 'Object markers', ['Object', 'Infix', 'Example', 'English'],
@@ -349,7 +349,7 @@ topic('object-infixes', 4, 'Object Infixes: -ni-, -ku-, -m-, -wa-', 'Viambishi v
       related=['imperatives', 'verb-extensions'], tags=['verbs'])
 
 # ======================= LEVEL 5 =======================
-topic('perfect-me', 5, 'Perfect -me-: Has Done / Is Now', 'Wakati timilifu: -me-',
+topic('perfect-me', 6, 'Perfect -me-: Has Done / Is Now', 'Wakati timilifu: -me-',
       '-me- = something has happened and still matters now. With some verbs it describes a state: nimechoka = I\'m tired.',
       [('table', 'kufika (to arrive)', ['Person', 'Perfect', 'English'],
         [['I', 'nimefika', 'I have arrived'], ['you', 'umefika', 'you have arrived'], ['he / she', 'amefika', 'he/she has arrived'],
@@ -366,7 +366,7 @@ topic('perfect-me', 5, 'Perfect -me-: Has Done / Is Now', 'Wakati timilifu: -me-
        ('Tumepatana!', 'Deal! (We\'ve agreed!)')],
       related=['perfect-negative-ja', 'past-li', 'wahi-ever-never'], tags=['verbs', 'tenses'])
 
-topic('perfect-negative-ja', 5, 'Not Yet: -ja- and Bado', 'Bado: -ja-',
+topic('perfect-negative-ja', 6, 'Not Yet: -ja- and Bado', 'Bado: -ja-',
       'Negative subject + -ja- + verb = hasn\'t (yet). Often with bado.',
       [('table', 'kufika (to arrive)', ['Person', 'Not yet'],
         [['I', 'sijafika'], ['you', 'hujafika'], ['he / she', 'hajafika'], ['we', 'hatujafika'], ['you all', 'hamjafika'], ['they', 'hawajafika'],
@@ -378,7 +378,7 @@ topic('perfect-negative-ja', 5, 'Not Yet: -ja- and Bado', 'Bado: -ja-',
        ('Sijaamua bado.', 'I haven\'t decided yet.')],
       related=['perfect-me', 'negative-past', 'wahi-ever-never'], tags=['verbs', 'negation'])
 
-topic('wahi-ever-never', 5, '-wahi: Ever and Never', 'Kuwahi',
+topic('wahi-ever-never', 6, '-wahi: Ever and Never', 'Kuwahi',
       '-wahi + infinitive = "ever". Sijawahi kuona = I\'ve never seen.',
       [('p', 'On its own, **kuwahi** means "to be on time / make it": *Leo nimewahi!* — Today I made it on time!'),
        ('p', 'As a helper verb before an infinitive, it means **ever**:'),
@@ -390,7 +390,7 @@ topic('wahi-ever-never', 5, '-wahi: Ever and Never', 'Kuwahi',
       [('Umewahi kuenda Mombasa?', 'Have you ever been to Mombasa?'), ('Sijawahi.', 'Never.'), ('Amewahi kufanya kazi Kampala.', 'She has worked in Kampala before.')],
       related=['perfect-me', 'perfect-negative-ja', 'helper-verbs'], tags=['verbs'])
 
-topic('adjective-agreement', 5, 'Adjectives Agree: Mzuri, Wazuri, Nzuri', 'Vivumishi',
+topic('adjective-agreement', 2, 'Adjectives Agree: Mzuri, Wazuri, Nzuri', 'Vivumishi',
       'Adjectives come after the noun and take its class prefix: m- / wa- for people, n/n form for things.',
       [('table', 'Common adjectives', ['Meaning', 'm/wa one', 'm/wa many', 'n/n'],
         [['good', 'mzuri', 'wazuri', 'nzuri'], ['big', 'mkubwa', 'wakubwa', 'kubwa'], ['small / young', 'mdogo', 'wadogo', 'ndogo'],
@@ -405,7 +405,7 @@ topic('adjective-agreement', 5, 'Adjectives Agree: Mzuri, Wazuri, Nzuri', 'Vivum
        ('Hii nyekundu.', 'This red one.'), ('Yule mwenye nguo nyeupe.', 'The one in white clothes.')],
       related=['noun-classes-mwa-nn', 'comparatives', 'sanifu-noun-classes'], tags=['nouns'])
 
-topic('comparatives', 5, 'Comparing: Kuliko, Zaidi, Bora', 'Ulinganisho',
+topic('comparatives', 6, 'Comparing: Kuliko, Zaidi, Bora', 'Ulinganisho',
       'There\'s no "-er" or "-est" in Swahili: you say "big than" (kubwa kuliko) and "big more" (kubwa zaidi).',
       [('table', 'Comparing', ['Meaning', 'Pattern', 'Example'],
         [['bigger than', 'kubwa kuliko', 'Hii ni kubwa kuliko ile.'], ['nicer / more', '… zaidi', 'Ni nzuri zaidi.'],
@@ -420,7 +420,7 @@ topic('comparatives', 5, 'Comparing: Kuliko, Zaidi, Bora', 'Ulinganisho',
       related=['adjective-agreement'], tags=['nouns'])
 
 # ======================= LEVEL 6 =======================
-topic('subjunctive', 6, 'The Subjunctive: -e for "Let / Should / So That"', 'Hali ya kuamrisha: -e',
+topic('subjunctive', 7, 'The Subjunctive: -e for "Let / Should / So That"', 'Hali ya kuamrisha: -e',
       'Change the final -a to -e (no tense marker) for suggestions, polite requests, wishes and after ili / lazima.',
       [('p', 'Formula: **subject + (object) + stem with final -e**. No -na-, -li- or -ta-.'),
        ('table', 'kuenda → -ende', ['Person', 'Form', 'Meaning'],
@@ -437,7 +437,7 @@ topic('subjunctive', 6, 'The Subjunctive: -e for "Let / Should / So That"', 'Hal
        ('Usinilipe!', 'Don\'t pay me!')],
       related=['polite-requests', 'imperatives', 'helper-verbs'], tags=['verbs', 'moods'])
 
-topic('polite-requests', 6, 'Polite Requests: Naomba, Uniletee, Ebu', 'Maombi ya heshima',
+topic('polite-requests', 7, 'Polite Requests: Naomba, Uniletee, Ebu', 'Maombi ya heshima',
       'From blunt to gracious: Lete → Niletee → Uniletee → Naomba uniletee.',
       [('table', 'The politeness ladder', ['Swahili', 'Feel'],
         [['Lete chai!', 'Bring tea! (blunt command)'], ['Niletee chai.', 'Bring me tea. (normal at a kibanda)'],
@@ -466,7 +466,7 @@ topic('verb-extensions', 7, 'Verb Extensions: -ia, -wa, -isha, -ana, -ika', 'Mny
        ('Simamisha gari!', 'Pull over!'), ('Tumeelewana.', 'We understand each other.'), ('Bomba imevunjika.', 'The pipe is broken.')],
       related=['object-infixes', 'perfect-me'], tags=['verbs'])
 
-topic('discourse-particles', 7, 'Talking Like a Kenyan: Kumbe, Basi, Yaani, Si…?', 'Viunganishi vya mazungumzo',
+topic('discourse-particles', 1, 'Talking Like a Kenyan: Kumbe, Basi, Yaani, Si…?', 'Viunganishi vya mazungumzo',
       'Small words that make you sound natural: surprise, rephrasing, wrapping up, and gentle suggestions.',
       [('table', 'Particles', ['Word', 'Use', 'Example'],
         [['Kumbe!', 'surprise: "oh, so…!" (what you assumed wasn\'t true)', 'Kumbe unajua Kiswahili! — Oh, so you speak Swahili!'],

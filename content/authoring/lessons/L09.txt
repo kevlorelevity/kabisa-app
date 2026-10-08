@@ -1,8 +1,9 @@
-# Level 9 — continuous tenses (nilikuwa nikisubiri, nimekuwa nikifanya), kwamba & reported speech, conjunctions (ingawa, badala ya, hata hivyo, ili), -vyo- (the way)
+# Level 9 — continuous tenses, kwamba & linking ideas, -vyo-.
 
 @lesson restaurant-complaint
 title: Dinner Gone Wrong
 level: 9
+index: 1
 theme: food
 category: food-drink
 culture: Back at a restaurant — but this time things go wrong, and you need to complain clearly without losing your cool. Kenyan complaints are indirect and polite at first, then specific. Continuous tenses carry the story ("tumekuwa tukisubiri kwa saa nzima" — we've been waiting for a whole hour), and "kwamba" reports what was promised ("mliniambia kwamba…" — you told me that…).
@@ -96,6 +97,7 @@ uvumilivu | patience | from kuvumilia (to endure)
 @lesson job-interview
 title: The Job Interview
 level: 9
+index: 2
 theme: work
 category: work-admin
 culture: Job interviews in Kenya are usually in English, but switching to Swahili for a question or two is a great way to show respect and build rapport — especially with a Kenyan team. Talking about your experience is where continuous tenses shine: "nimekuwa nikifanya kazi…" (I have been working…), "nilipokuwa nikisoma…" (when I was studying…). Purpose clauses use ili + subjunctive: "ili nijifunze" (so that I learn).
@@ -172,7 +174,7 @@ gl: kwa hamu = eagerly
 t: I've been working as a manager. | [Nimekuwa|Nilikuwa|Nitakuwa] nikifanya kazi kama meneja. || nimekuwa (I have been) + -ki- verb = have been …-ing.
 t: When I was studying… | [Nilipokuwa|Nikiwa|Nitakapokuwa] nikisoma… || -po- (when) + kuwa + -ki- verb.
 t: …I was doing a part-time job. | …[nilikuwa nikifanya|nimekuwa nikifanya|nitakuwa nikifanya] kazi ya muda.
-t: The project was running late. | Mradi [ulikuwa|ilikuwa|walikuwa] ukichelewa. || mradi is m/mi in Sanifu: u- agreement. Kenyans often say "project ilikuwa ikichelewa".
+t: The project was running late. | Mradi [ulikuwa|utakuwa|umekuwa] ukichelewa. || ulikuwa = was, utakuwa = will be, umekuwa = has been. Kenyans often say "project ilikuwa ikichelewa".
 t: I've heard that you help each other. | Nimesikia [kwamba|ingawa|badala ya] mnasaidiana.
 t: so that I can learn more | ili [nijifunze|ninajifunza|nilijifunza] zaidi || ili + subjunctive.
 t: Why would you like to join us? | Kwa nini [ungependa|unapenda|utapenda] kujiunga nasi?
@@ -204,6 +206,7 @@ kwa hamu | eagerly | hamu = longing / appetite
 @lesson kinyozi-news
 title: Rains, Roads & Politics at the Kinyozi
 level: 9
+index: 3
 theme: news
 category: social
 culture: The kinyozi (barber shop) is Kenya's open-air newsroom: weather, prices, football and politics, all while you get a haircut. Reporting what "they say" uses kwamba and reported speech: "wanasema kwamba barabara itajengwa" (they say that the road will be built). Kenyans love to hedge politely about politics with "sijui", "huenda" (maybe) and "tutaona" (we'll see). The long rains (masika) bring floods; the short rains (vuli) come in October to December.
@@ -289,7 +292,7 @@ t: Let's talk about something good. | [Tuongee|Tunaongea|Tuliongea] kuhusu kitu 
 t: If I had time, I'd go every week. | Ningekuwa na muda, [ningeenda|nitaenda|nilienda] kila wiki.
 t: since I was a child | tangu [nikiwa|nilipokuwa|nitakuwa] mtoto || nikiwa = (while) I was / being. Tangu nikiwa mtoto is the everyday phrase.
 c: You look sharp! | [Umependeza|Umependa|Umepata]! || pendeza = look nice (causative of penda: "make like").
-t: our neighbourhood | mtaa [wetu|yetu|zetu] || mtaa is m/mi: wetu. Kenyans also say "mtaa yetu".
+t: our neighbourhood | mtaa [wetu|wenu|wao] || wetu = our, wenu = your (plural), wao = their. Kenyans also say "mtaa yetu".
 
 @vocab
 kinyozi | barber / barber shop |
@@ -306,3 +309,105 @@ Huenda… | Maybe… / It might… |
 haitabiriki | it can't be predicted |
 bei ya unga | the price of flour | The price everyone watches
 Umependeza! | You look sharp! |
+
+@lesson floods-drought
+title: Floods in the West, Drought in the North
+level: 9
+index: 4
+theme: news
+category: social
+culture: Kenya's weather news often has two stories at once: floods (mafuriko) in the west, where rivers like the Nzoia burst their banks around Budalang'i, and drought (ukame) in the north, where herders lose their livestock. Kenyans respond with "harambee" — pulling together money through churches, chamas and M-Pesa. Conversations like this one are full of "kwamba" (that), continuous tenses and "jinsi … -vyo-" (the way, as much as).
+start: Evening at the kiosk near your flat. Mzee Kipchoge is reading the Daily Nation with a worried face.
+grammar: continuous-tenses, conjunctions-kwamba, vyo-manner
+gl: Mzee Kipchoge = Mr Kipchoge (a Kalenjin name)
+gl: umesikia habari = "have you heard the news?"
+gl: kwa wiki mbili = "for two weeks"
+gl: bila kusimama = "without stopping"
+gl: mto Nzoia = the Nzoia River
+gl: umefurika = "has flooded" — -furika = overflow, flood
+gl: Budalang'i = Budalang'i, a flood-prone area in western Kenya
+gl: huko = "there"
+gl: zimejaa maji = "are full of water"
+gl: kwao = "for them"
+gl: Serikali = the government
+gl: inawasaidia aje = "how is it helping them?"
+gl: Wanagawa = "they're handing out" — -gawa = distribute
+gl: mahema = tents (one: hema)
+gl: haitoshi = "it isn't enough"
+gl: kaskazini = the north
+gl: ukame = drought
+gl: ukame mbaya = "a bad drought"
+gl: ukame mzuri = "a good drought" (!)
+gl: sehemu moja = "one part"
+gl: inazama = "is drowning / sinking"
+gl: nyingine = "another (one)"
+gl: inakauka = "is drying up"
+gl: Wafugaji = herders
+gl: mifugo = livestock
+gl: Inasikitisha = "it's sad" (lit. "it saddens")
+gl: Inafurahisha = "it's delightful" (lit. "it delights")
+gl: Nadhani = "I think"
+gl: Bila shaka = "without doubt"
+gl: mama mboga = the vegetable lady
+gl: mara mbili = "twice, double"
+gl: kuchangia = "to contribute"
+gl: Kanisa yetu = "our church" || Sanifu: kanisa letu (ji/ma class)
+gl: inachangisha pesa = "is raising money"
+gl: kadiri anavyoweza = "as much as he/she can"
+gl: jinsi ninavyoweza = "as much as I can, the way I can"
+gl: jinsi unavyoweza = "as much as you can"
+gl: jirani mwema = "a good neighbour"
+
+> Mzee Kipchoge: John, umesikia habari? Mvua imekuwa ikinyesha kwa wiki mbili bila kusimama! | John, have you heard the news? It's been raining for two weeks without stopping!
+< John: Ndiyo, nimesikia kwamba mto Nzoia umefurika huko Budalang'i. | Yes, I've heard that the Nzoia River has flooded in Budalang'i.
+  x: Ndiyo, umesikia kwamba mto Nzoia umefurika huko Budalang'i. ; Ndiyo, nimesikia kwamba mto Nzoia utafurika jana huko Budalang'i.
+> Mzee Kipchoge: Ni kweli. Watu walikuwa wakilala nje kwa sababu nyumba zao zimejaa maji. | It's true. People were sleeping outside because their houses are full of water.
+< John: Pole sana kwao. Serikali inawasaidia aje? | I'm so sorry for them. How is the government helping them?
+  x: Hongera sana kwao. Serikali inawasaidia aje? ; Pole sana kwao. Serikali iliwasaidia kesho aje?
+> Mzee Kipchoge: Wanagawa chakula na mahema, lakini jinsi ninavyoona, haitoshi. | They're handing out food and tents, but the way I see it, it's not enough.
+< John: Na kaskazini je? Nilisoma kwamba kuna ukame mbaya huko. | And the north? I read that there's a bad drought there.
+  x: Na kaskazini je? Nilisoma kwamba kuna ukame mzuri huko. ; Na kaskazini je? Nitasoma jana kwamba kuna ukame mbaya huko.
+> Mzee Kipchoge: Ndiyo. Kenya ni hivyo — sehemu moja inazama, nyingine inakauka. Wafugaji wamekuwa wakipoteza mifugo yao. | Yes. That's Kenya — one part is drowning, another is drying up. Herders have been losing their livestock.
+< John: Inasikitisha. Nadhani kwamba bei ya chakula itapanda pia. | That's sad. I think food prices will go up too.
+  x: Inafurahisha. Nadhani kwamba bei ya chakula itapanda pia. ; Inasikitisha. Nadhani kwamba bei ya chakula ilipanda kesho pia.
+> Mzee Kipchoge: Bila shaka. Mama mboga alikuwa akiniambia jana kwamba bei ya sukuma imepanda mara mbili. | No doubt. The mama mboga was telling me yesterday that the price of sukuma has doubled.
+< John: Wee! Ningependa kusaidia. Ninaweza kuchangia vipi? | Wow! I'd like to help. How can I contribute?
+  x: Wee! Nisingependa kusaidia. Ninaweza kuchangia vipi? ; Wee! Ningependa kusaidia. Ninaweza kuchangia nani?
+> Mzee Kipchoge: Kanisa yetu inachangisha pesa Jumapili. Kila mtu atachangia kadiri anavyoweza. | Our church is raising money on Sunday. Everyone will give as much as they can.
+  s: Kanisa letu linachangisha pesa Jumapili. Kila mtu atachangia kadiri anavyoweza.
+< John: Nitakuja Jumapili. Nitachangia jinsi ninavyoweza. | I'll come on Sunday. I'll give as much as I can.
+  x: Nilikuja Jumapili ijayo. Nitachangia jinsi ninavyoweza. ; Nitakuja Jumapili. Nitachangia jinsi unavyoweza.
+> Mzee Kipchoge: Asante, John. Wewe ni jirani mwema. | Thank you, John. You're a good neighbour.
+
+@practice
+t: It's been raining for two weeks. | Mvua [imekuwa ikinyesha|ilikuwa ikinyesha|itakuwa ikinyesha] kwa wiki mbili. || imekuwa iki- = has been …-ing.
+t: People were sleeping outside. | Watu [walikuwa wakilala|watakuwa wakilala|wamekuwa wakilala] nje. || walikuwa wa- = were …-ing.
+t: Herders have been losing their livestock. | Wafugaji [wamekuwa wakipoteza|walikuwa wakipoteza|watakuwa wakipoteza] mifugo yao.
+t: I've heard that the river has flooded. | Nimesikia [kwamba|kama|ili] mto umefurika. || kwamba = that, ili = so that.
+t: I read that there's a drought. | Nilisoma kwamba kuna [ukame|mafuriko|mvua] mbaya. || ukame = drought, mafuriko = floods.
+t: I think that food prices will go up. | Nadhani kwamba bei ya chakula [itapanda|ilipanda|imepanda].
+t: the way I see it | jinsi [ninavyoona|ninaona|niliona] || -vyo- = the way, as.
+t: as much as I can | jinsi [ninavyoweza|ninaweza|nitaweza]
+t: How is the government helping them? | Serikali inawasaidia [aje|lini|nani]?
+t: tents and food | [mahema|mawe|mabomba] na chakula || hema / mahema = tent / tents.
+t: The river has flooded. | Mto [umefurika|umekauka|umesimama]. || -furika = flood, -kauka = dry up.
+t: One part is drowning, another is drying up. | Sehemu moja [inazama|inakauka|inafurahi], nyingine inakauka. || -zama = sink, drown.
+t: That's sad. | [Inasikitisha|Inafurahisha|Inavutia]. || -sikitisha = sadden, -furahisha = delight, -vutia = interest.
+t: I'd like to help. | [Ningependa|Ninapenda|Nilipenda] kusaidia.
+t: Everyone will give as much as they can. | Kila mtu atachangia kadiri [anavyoweza|anaweza|aliweza].
+c: Have you heard the news? — Yes, I've heard. | Umesikia habari? — Ndiyo, [nimesikia|nitasikia|ninasikia].
+
+@vocab
+mafuriko | floods | -furika = overflow, flood
+ukame | drought |
+-kauka | dry up |
+mfugaji / wafugaji | herder / herders |
+mifugo | livestock |
+mahema | tents | one: hema
+serikali | the government |
+kuchangia | to contribute | kuchangisha pesa = to raise money
+Nimesikia kwamba… | I've heard that… | kwamba = that
+Nadhani kwamba… | I think that… |
+imekuwa ikinyesha | it has been raining | -me- + kuwa + -ki- = has been …-ing
+jinsi ninavyoweza | as much as I can | -vyo- = the way, as
+Inasikitisha | It's sad | lit. "it saddens"

@@ -475,7 +475,7 @@
           "correct": false
         },
         {
-          "swahili": "Aiii! Refa ni kipofu — hawa mchezaji alikuwa offside!",
+          "swahili": "Aiii! Refa ni kipofu — huyo mchezaji atakuwa offside!",
           "correct": false
         }
       ]
@@ -1344,17 +1344,17 @@
           "correct": true
         },
         {
-          "text": "imebaki",
+          "text": "zimepita",
           "correct": false,
-          "feedback": "imebaki = It is left"
+          "feedback": "zimepita = They have passed"
         },
         {
-          "text": "wamebaki",
+          "text": "zitabaki",
           "correct": false,
-          "feedback": "wamebaki = They are left"
+          "feedback": "zitabaki = They will remain"
         }
       ],
-      "explanation": "dakika (n/n plural) → zi-.",
+      "explanation": "zimebaki = are left, zimepita = have passed, zitabaki = will be left.",
       "grammar": [
         "perfect-me"
       ]

@@ -4,8 +4,8 @@
   "title": "Feeling Sick: At the Chemist",
   "category": "health",
   "difficulty": "medium",
-  "level": 4,
-  "order": 402,
+  "level": 6,
+  "order": 602,
   "theme": "health",
   "culturalNote": "For everyday illnesses, Kenyans go to the chemist (pharmacy) first — the pharmacist asks about your symptoms, and you walk out with medicine and clear instructions. \"Pole!\" (sorry) is the first thing anyone says when you're unwell — it expresses sympathy, not an apology. Body-part nouns are a lovely place to see the Kenyan n/n habit: \"kichwa inauma\" (my head hurts) is everyday speech, while Sanifu says \"kichwa kinauma\" because kichwa is ki/vi.",
   "startingPoint": "You've felt awful since yesterday. You walk into a chemist near your flat.",
@@ -1304,17 +1304,17 @@
           "correct": true
         },
         {
-          "text": "ninauma",
+          "text": "inawasha",
           "correct": false,
-          "feedback": "ninauma = I am biting"
+          "feedback": "inawasha = It is switching on"
         },
         {
-          "text": "unauma",
+          "text": "inazunguka",
           "correct": false,
-          "feedback": "unauma = You are biting"
+          "feedback": "inazunguka = It is going around"
         }
       ],
-      "explanation": "Kenyan: kichwa inauma. Sanifu: kichwa kinauma.",
+      "explanation": "-uma = hurt, -washa = itch, -zunguka = spin (dizzy). Kenyan: kichwa inauma. Sanifu: kichwa kinauma.",
       "grammar": [
         "present-na"
       ]
@@ -1414,17 +1414,17 @@
           "correct": true
         },
         {
-          "text": "huyu",
+          "text": "hizi",
           "correct": false,
-          "feedback": "huyu = this (person)"
+          "feedback": "hizi = these"
         },
         {
-          "text": "hiki",
+          "text": "ile",
           "correct": false,
-          "feedback": "hiki = this"
+          "feedback": "ile = that (over there)"
         }
       ],
-      "explanation": "dawa is n/n: dawa hii (this medicine), dawa hizi (these medicines).",
+      "explanation": "hii = this, hizi = these, ile = that one.",
       "grammar": [
         "demonstratives"
       ]

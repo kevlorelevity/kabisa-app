@@ -1421,17 +1421,17 @@
           "correct": true
         },
         {
-          "text": "yetu",
+          "text": "wenu",
           "correct": false,
-          "feedback": "yetu = our"
+          "feedback": "wenu = your (pl.)"
         },
         {
-          "text": "zetu",
+          "text": "wao",
           "correct": false,
-          "feedback": "zetu = our"
+          "feedback": "wao = they / them"
         }
       ],
-      "explanation": "mtaa is m/mi: wetu. Kenyans also say \"mtaa yetu\".",
+      "explanation": "wetu = our, wenu = your (plural), wao = their. Kenyans also say \"mtaa yetu\".",
       "grammar": [
         "possessives"
       ]

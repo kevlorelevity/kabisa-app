@@ -4,8 +4,8 @@
   "title": "Fill It Up: At the Petrol Station",
   "category": "transport",
   "difficulty": "medium",
-  "level": 6,
-  "order": 601,
+  "level": 7,
+  "order": 701,
   "theme": "car",
   "culturalNote": "Kenyan petrol stations are full-service: an attendant fills the tank, checks the tyres, and washes the windscreen while you stay in the car. You ask for fuel by amount, not litres (\"weka ya elfu tatu\" = put in three thousand's worth). Polite requests use the subjunctive: \"uweke\" (would you put), \"uangalie\" (would you check), \"nikulipe\" (shall I pay you). \"Naomba\" (I'd like / may I have) is the classic polite opener.",
   "startingPoint": "You pull into a petrol station on Ngong Road. An attendant walks up to your window.",
@@ -340,7 +340,7 @@
           "correct": false
         },
         {
-          "swahili": "Sawa. Na tairi ya nyuma — ebu nione. Yuko sawa?",
+          "swahili": "Sawa. Na tairi ya nyuma — ebu nione. Iko wapi?",
           "correct": false
         }
       ]

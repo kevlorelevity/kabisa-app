@@ -70,6 +70,7 @@ export async function POST(request: Request): Promise<Response> {
           item_id: str(ov.item_id, 120),
           find_text: String(ov.find_text).slice(0, 4000),
           replace_text: typeof ov.replace_text === 'string' ? ov.replace_text.slice(0, 4000) : '',
+          propagate: ov.propagate !== false,
         }
       : null;
 

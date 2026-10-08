@@ -1,228 +1,370 @@
-# Level 2 — negation (si- … -i), nina/sina, possessives, demonstratives, numbers & money
+# Level 2 — home, food & family. Level-1 grammar only; vocabulary focus (verbs, nouns, adjectives, singular/plural). Infinitives (ku-) appear as the dictionary form of verbs.
 
-@lesson market-mama-mboga
-title: Mama Mboga's Kibanda
+@lesson home-chores
+title: Saturday Chores: Kazi za Nyumbani
 level: 2
-theme: market
-category: food-drink
-culture: Every Nairobi estate has a mama mboga — the "vegetable lady" with a wooden stall (kibanda) by the road, selling tomatoes, onions and sukuma wiki in small bundles. Prices are quoted per heap ("tatu kwa mia" = three for a hundred) rather than per kilo, and almost everyone pays with M-Pesa. Nouns like nyanya (tomato) are n/n: the same word for one or many, so "this tomato" is nyanya hii and "these tomatoes" is nyanya hizi.
-start: It's evening. You stop at the mama mboga's stall on your way home from work.
-grammar: negative-present, na-have, demonstratives, numbers-money
-gl: Nataka = "I want" — short for ninataka; this is how most Kenyans say it. #present-na
-gl: Hizi = "these" — n/n plural (nyanya hizi = these tomatoes). #demonstratives
-gl: Tatu kwa mia moja = "three for a hundred" — prices are quoted per heap.
-gl: za hamsini = "(ones) for fifty" — za agrees with the n/n plural, the all-purpose choice in Kenyan speech. || Sanifu: vitunguu is ki/vi class, so "vya hamsini"
-gl: fresh = "fresh" — English loanword used all the time at the market.
-gl: shambani = "from / at the farm" — shamba + -ni (place suffix). #locative-ni
-gl: till namba = "till number" — the M-Pesa "Buy Goods" number the seller displays.
+index: 1
+theme: home
+category: home
+culture: Saturday morning is "kazi za nyumbani" time in most Kenyan homes: sweeping, mopping ("kupiga deki" — from the English "deck"), washing clothes by hand in a basin, and hanging them in the sun. Kenyans use different verbs for different kinds of washing: kuosha for dishes, cars and hands, kufua only for clothes. You share a flat in Kilimani with your friend Otieno.
+start: Saturday, 9 a.m. Otieno bangs on your door with a broom in his hand.
+grammar: present-na, infinitive-ku, adjective-agreement, possessives
+gl: Otieno = Otieno (a Luo name)
+gl: kazi za nyumbani = "housework, chores" — lit. "work of the home"
+gl: Jumamosi = Saturday
+gl: vyombo = dishes || Sanifu: chombo / vyombo (ki/vi class)
+gl: kupiga deki = "to mop" — deki from English "deck"
+gl: kabati = cupboard
+gl: ndoo = bucket
+gl: hita = (water) heater
+gl: mbovu = broken / rotten
+gl: hata = even
+gl: Chumba yangu = "my room" — Kenyan agreement. || Sanifu: chumba changu (ki/vi class)
+gl: chafu = dirty
+gl: kitanda = bed || Sanifu: kitanda / vitanda (ki/vi class)
+gl: taka = rubbish
+gl: chakula cha mchana = lunch (lit. "food of midday")
+gl: rahisi = easy / cheap
+gl: tamu = sweet / tasty
+gl: nyingi = many / a lot (n/n plural)
+gl: peke yangu = "on my own, alone"
+gl: Tuko pamoja = "we're together" — we're in this together
 
-> Mama Mboga: Karibu, mteja! Unataka nini leo? | Welcome, customer! What do you want today?
-< Mteja: Habari, mama! Nataka nyanya na vitunguu. | Hello, mama! I want tomatoes and onions.
-  x: Habari, mama! Unataka nyanya na vitunguu. ; Sina nyanya na vitunguu.
-> Mama Mboga: Nzuri. Nyanya hizi ni tamu sana. | Good. These tomatoes are really sweet.
-< Mteja: Nyanya hizi ni bei gani? | How much are these tomatoes?
-  x: Nyanya hii ni wapi? ; Nyanya hizi ni nani?
-> Mama Mboga: Tatu kwa mia moja. | Three for a hundred.
-< Mteja: Sawa, nipe sita. | Okay, give me six.
-  x: Sawa, nipe sitaki. ; Sawa, sina sita.
-> Mama Mboga: Na vitunguu? Hizi ni za mia moja. | And the onions? These are a hundred.
-  s: Na vitunguu? Hivi ni vya mia moja.
-< Mteja: Sitaki nyingi. Nipe za hamsini tu. | I don't want many. Just give me fifty bob's worth.
-  s: Sitaki vingi. Nipe vya hamsini tu.
-  x: Nataka nyingi. Nipe za hamsini tu. ; Hutaki nyingi. Nipe za hamsini tu.
-> Mama Mboga: Haya. Unataka sukuma pia? Ni fresh, inatoka shambani leo. | Alright. Do you want sukuma too? It's fresh, it comes from the farm today.
-< Mteja: Hapana, asante. Leo sitaki sukuma. | No, thanks. Today I don't want sukuma.
-  x: Ndiyo, asante. Leo sitaki sukuma. ; Hapana, asante. Leo hataki sukuma.
-> Mama Mboga: Sawa. Ni mia mbili na hamsini. | Okay. It's two hundred and fifty.
-< Mteja: Sina pesa mkononi. Una M-Pesa? | I don't have cash. Do you have M-Pesa?
-  x: Nina pesa mkononi. Una M-Pesa? ; Huna pesa mkononi. Una M-Pesa?
-> Mama Mboga: Ndiyo, till namba ni hii hapa. | Yes, the till number is right here.
-< Mteja: Poa. Asante sana, mama! | Cool. Thanks a lot, mama!
-  x: Pole. Asante sana, mama! ; Poa. Karibu sana, mama!
-> Mama Mboga: Asante. Karibu tena! | Thank you. Come again!
+> Otieno: Niaje, John! Leo ni Jumamosi — siku ya kazi za nyumbani! | Hey, John! Today is Saturday — chores day!
+< John: Poa, Otieno. Mimi ninaosha vyombo jikoni. | Okay, Otieno. I'm washing the dishes in the kitchen.
+  x: Poa, Otieno. Mimi ninafua vyombo jikoni. ; Poa, Otieno. Wewe ninaosha vyombo jikoni.
+> Otieno: Sawa. Mimi ninafagia sakafu na kupiga deki. | Okay. I'm sweeping the floor and mopping.
+< John: Poa. Sabuni iko wapi? | Cool. Where's the soap?
+  x: Poa. Sabuni iko nani? ; Poa. Sabuni ni ngapi?
+> Otieno: Iko kwa kabati, karibu na ndoo. | It's in the cupboard, next to the bucket.
+  s: Iko kabatini, karibu na ndoo.
+< John: Asante. Maji ni moto au baridi? | Thanks. Is the water hot or cold?
+  x: Asante. Maji ni wapi au baridi? ; Asante. Sabuni ni moto au baridi?
+> Otieno: Maji ni baridi. Stima iko, lakini hita ni mbovu. | The water is cold. There's power, but the heater is broken.
+< John: Sawa, hata maji baridi ni sawa. | Okay, even cold water is fine.
+  x: Sawa, hata maji baridi ni chafu. ; Sawa, hata maji moto ni baridi.
+> Otieno: Na nguo? Nani anafua nguo leo? | And the clothes? Who's washing the clothes today?
+< John: Mimi ninafua nguo zangu, na wewe unafua zako. | I'm washing my clothes, and you're washing yours.
+  x: Mimi ninapika nguo zangu, na wewe unapika zako. ; Mimi unafua nguo zangu, na wewe ninafua zako.
+> Otieno: Haha, poa! Na chumba yako? Ni safi? | Ha, fine! And your room? Is it clean?
+  s: Haha, poa! Na chumba chako? Ni kisafi?
+< John: Hapana, chumba yangu ni chafu sana! Ninatandika kitanda sasa. | No, my room is really dirty! I'm making the bed now.
+  s: Hapana, chumba changu ni kichafu sana! Ninatandika kitanda sasa.
+  x: Hapana, chumba yangu ni safi sana! Ninatandika kitanda sasa. ; Hapana, chumba yangu ni chafu sana! Ninakula kitanda sasa.
+> Otieno: Sawa. Mimi ninatoa taka, halafu ninapika chakula cha mchana. | Okay. I'm taking out the rubbish, then I'm cooking lunch.
+< John: Safi! Unapika nini? | Great! What are you cooking?
+  x: Safi! Ninapika nini? ; Safi! Unapika wapi?
+> Otieno: Ugali na sukuma. Ni rahisi na tamu! | Ugali and sukuma. It's easy and tasty!
+< John: Poa sana. Kazi za nyumbani ni nyingi, lakini tuko pamoja! | Very cool. There's a lot of housework, but we're in it together!
+  x: Poa sana. Kazi za nyumbani ni nyingi, lakini niko pamoja! ; Poa sana. Kazi za nyumbani ni tamu, lakini tuko pamoja!
 
 @practice
-t: I want tomatoes. | [Nataka|Unataka|Anataka] nyanya. || Nataka is the everyday short form of ninataka.
-t: I don't want onions. | [Sitaki|Hutaki|Hataki] vitunguu. || Negative present: si- (not I) + -tak- + -i. The final -a changes to -i.
-t: You don't want sukuma? | [Hutaki|Sitaki|Hataki] sukuma? || hu- = not you.
-t: She doesn't want sugar. | [Hataki|Hutaki|Hatutaki] sukari. || ha- = not he/she.
-t: We don't want sukuma today. | Leo [hatutaki|sitaki|hawataki] sukuma. || hatu- = not we.
-t: I don't have cash. | [Sina|Huna|Hana] pesa mkononi. || sina = I don't have (si- + -na). pesa mkononi = cash (lit. money in the hand).
-t: Do you have change? | [Una|Nina|Ana] baki? || una = you have. baki = change (lit. what is left over).
-t: She doesn't have M-Pesa. | [Hana|Sina|Huna] M-Pesa.
-t: These tomatoes are sweet. | Nyanya [hizi|hii|huyu] ni tamu. || nyanya is n/n: hii = this one, hizi = these. Huyu is only for people.
-t: This tomato is sweet. | Nyanya [hii|hizi|hawa] ni tamu.
-t: How much? (lit. what price?) | Bei [gani|wapi|nani]?
-t: Three for a hundred. | Tatu kwa [mia moja|elfu moja|kumi]. || mia = hundred, elfu = thousand.
-t: It's two hundred and fifty. | Ni mia mbili na [hamsini|tano|thelathini]. || hamsini = 50, thelathini = 30. Numbers are built with na: mia mbili na hamsini = 200 + 50.
-t: Give me six. | Nipe [sita|saba|tisa]. || sita = 6, saba = 7, tisa = 9.
-c: How many do you want? — Four, please. | Unataka ngapi? — [Nne|Leo|Hapa], tafadhali.
-t: I don't know. | [Sijui|Hujui|Hajui].
-t: Is it 500 bob? (slang) | Ni [punch|thao|baki]? || Market slang: punch = 500, thao = 1,000.
-c: Thank you. Come again! | Asante. Karibu [tena|sana|tu]! || Karibu tena = "welcome again" — the seller's goodbye.
+t: I'm washing the dishes. | [Ninaosha|Ninafua|Ninafagia] vyombo. || -osha = wash (dishes, cars, hands), -fua = wash (clothes), -fagia = sweep.
+t: He's sweeping the floor. | [Anafagia|Anaosha|Anapika] sakafu.
+t: We're washing our clothes. | [Tunafua|Tunapika|Tunafagia] nguo zetu.
+t: I'm mopping. | Ninapiga [deki|pasi|simu]. || kupiga deki = to mop, kupiga pasi = to iron, kupiga simu = to phone.
+t: She's ironing the clothes. | Anapiga [pasi|deki|simu] nguo.
+t: Where's the soap? | [Sabuni|Fagio|Ndoo] iko wapi? || sabuni = soap, fagio = broom, ndoo = bucket.
+t: It's in the cupboard. | Iko kwa [kabati|kitanda|sakafu]. || kabati = cupboard, kitanda = bed, sakafu = floor.
+t: The water is cold. | Maji ni [baridi|moto|safi]. || baridi = cold, moto = hot, safi = clean.
+t: My room is dirty. | Chumba yangu ni [chafu|safi|kubwa]. || chafu = dirty, safi = clean, kubwa = big.
+t: I'm making the bed. | [Ninatandika|Ninafagia|Ninaosha] kitanda. || kutandika kitanda = to make the bed.
+t: I'm taking out the rubbish. | Ninatoa [taka|maji|nguo]. || taka = rubbish, maji = water, nguo = clothes.
+t: Who's cooking today? | [Nani|Nini|Wapi] anapika leo?
+t: They're cooking ugali. | [Wanapika|Anapika|Mnapika] ugali. || wa- = they, a- = he / she, m- = you (plural).
+t: my clothes and your clothes | nguo [zangu|zako|zake] na nguo zako || zangu = my, zako = your, zake = his / her.
+t: There's a lot of housework. | Kazi za nyumbani ni [nyingi|safi|baridi]. || nyingi = a lot / many.
+t: to wash clothes | [kufua|kufagia|kupika] nguo || The dictionary form of a verb starts with ku-: kufua = to wash (clothes).
+c: Is the water hot? — No, it's cold. | Maji ni moto? — Hapana, ni [baridi|safi|chafu].
 
 @vocab
-Unataka nini? | What do you want? | u- (you) + -na- + -taka (want)
-Nataka… | I want… | Short for ninataka — how most Kenyans say it.
-Sitaki… | I don't want… | si- + -tak- + -i: the negative ends in -i.
-Bei gani? | How much? | Lit. "what price?" Also: Ni pesa ngapi?
-nyanya | tomato(es) | n/n noun: nyanya hii (this one), nyanya hizi (these). Also means grandma!
-vitunguu | onions | Kenyans say "vitunguu hizi" | vitunguu hivi | Sanifu: ki/vi class (kitunguu / vitunguu)
-hizi / hii | these / this (n/n) | nyanya hizi = these tomatoes
-Nipe… | Give me… | ni- (me) + -pe (give). Normal at a stall.
-Sina pesa mkononi | I don't have cash | pesa mkononi = cash, lit. money in the hand
-Una baki? | Do you have change? | baki = change, what's left over
-mia moja | 100 | mia mbili = 200, mia tano = 500 ("punch")
-hamsini | 50 | arobaini = 40, sitini = 60
-Karibu tena! | Come again! | The seller's goodbye.
+kazi za nyumbani | housework / chores | lit. "work of the home"
+kuosha | to wash (dishes, car, hands) | Ninaosha vyombo.
+kufua | to wash (clothes) | Ninafua nguo.
+kufagia | to sweep | Ninafagia sakafu.
+kupiga deki | to mop | kupiga pasi = to iron
+kutandika kitanda | to make the bed | kitanda = bed
+kutoa taka | to take out the rubbish | taka = rubbish
+vyombo | dishes | Kenyans: vyombo hizi | vyombo hivi | Sanifu: ki/vi class (chombo / vyombo)
+sakafu | floor | n/n noun
+sabuni | soap | n/n noun
+chafu / safi | dirty / clean | Chumba yangu ni chafu.
+baridi / moto | cold / hot | maji baridi = cold water
+nyingi | many / a lot | Kazi ni nyingi.
 
-@lesson family-photos
-title: Who's in the Photo? Talking Family
+@lesson kitchen-ugali
+title: In the Kitchen: Ugali and Sukuma
 level: 2
+index: 2
+theme: kitchen
+category: food-drink
+culture: Ugali — stiff maize porridge eaten with your right hand — is Kenya's national dish, and sukuma wiki (collard greens, lit. "push the week") is its faithful partner because it's cheap enough to stretch the money to the end of the week. Making ugali has its own verb: kusonga, to stir and press the flour into the boiling water with a wooden mwiko. Kenyans say "ninasikia njaa" — lit. "I hear hunger" — for "I'm hungry".
+start: Your neighbour Mama Njeri has invited you into her kitchen to learn the most important Kenyan recipe.
+grammar: infinitive-ku, present-na, adjective-agreement
+gl: Mama Njeri = "Njeri's mum" — your neighbour
+gl: jikoni = "in the kitchen" — jiko (kitchen / stove) + -ni. #locative-ni
+gl: Tunaanza aje? = "How do we start?" — aje = how (Kenyan). || Sanifu: Tunaanzaje?
+gl: Kwanza = "first"
+gl: sufuria = cooking pot (sufuria)
+gl: jiko = stove / cooker
+gl: Vikombe tatu = "three cups" — Kenyan. || Sanifu: vikombe vitatu (ki/vi class)
+gl: inachemka = "is boiling" — -chemka = boil. || Sanifu: maji yanachemka
+gl: unga ya mahindi = "maize flour" || Sanifu: unga wa mahindi
+gl: kidogo kidogo = "little by little"
+gl: unasonga = "you stir (the ugali)" — kusonga is the special verb for making ugali
+gl: mwiko = wooden cooking stick
+gl: kwa nguvu = "hard, with strength"
+gl: ngumu = hard / difficult
+gl: Mkono yangu = "my arm / hand" — Kenyan. || Sanifu: mkono wangu (m/mi class)
+gl: inauma = "it hurts" — Kenyan. || Sanifu: unauma / unaniuma
+gl: tayari = ready
+gl: Macho yangu = "my eyes"
+gl: inawasha = "it stings / itches" — Kenyan. || Sanifu: yanawasha
+gl: kawaida = normal
+gl: unakaanga = "you fry" — -kaanga = fry
+gl: mafuta = (cooking) oil
+gl: Inanukia = "it smells good" — -nukia = give off a (nice) smell
+gl: Ninasikia njaa = "I'm hungry" — lit. "I hear hunger"
+gl: Chumvi = salt
+gl: Unaonaje = "What do you think?" — lit. "how do you see (it)?"
+gl: kwa somo = "for the lesson"
+gl: mpishi = cook / chef
+
+> Mama Njeri: Karibu jikoni, John! Leo unajifunza kupika ugali. | Welcome to the kitchen, John! Today you're learning to cook ugali.
+< John: Asante, mama! Ninapenda ugali sana. Tunaanza aje? | Thanks, mama! I love ugali. How do we start?
+  x: Asante, mama! Ninapenda ugali sana. Tunamaliza aje? ; Asante, mama! Unapenda ugali sana. Tunaanza aje?
+> Mama Njeri: Kwanza, unaweka maji kwa sufuria, halafu unawasha jiko. | First, you put water in the pot, then you light the stove.
+  s: Kwanza, unaweka maji kwenye sufuria, halafu unawasha jiko.
+< John: Sawa. Ninaweka maji ngapi? | Okay. How much water do I put in?
+  x: Sawa. Ninakula maji ngapi? ; Sawa. Ninaweka maji wapi?
+> Mama Njeri: Vikombe tatu. Maji inachemka, halafu unaweka unga kidogo kidogo. | Three cups. The water boils, then you add the flour little by little.
+  s: Vikombe vitatu. Maji yanachemka, halafu unaweka unga kidogo kidogo.
+< John: Ni unga ya mahindi? | Is it maize flour?
+  s: Ni unga wa mahindi?
+  x: Ni maji ya mahindi? ; Ni unga ya wapi?
+> Mama Njeri: Ndiyo, unga ya mahindi. Sasa unasonga — unakoroga na mwiko kwa nguvu! | Yes, maize flour. Now you "songa" — you stir hard with the wooden stick!
+< John: Wee, ni kazi ngumu! Mkono yangu inauma. | Wow, it's hard work! My arm hurts.
+  s: Wee, ni kazi ngumu! Mkono wangu unauma.
+  x: Wee, ni kazi rahisi! Mkono yangu inauma. ; Wee, ni kazi ngumu! Mkono yangu inanukia.
+> Mama Njeri: Haha! Pole. Ugali iko tayari. Na sukuma — unakata vitunguu na nyanya. | Ha! Sorry. The ugali is ready. And for the sukuma — you chop onions and tomatoes.
+< John: Ninakata vitunguu sasa. Macho yangu inawasha! | I'm chopping the onions now. My eyes are stinging!
+  s: Ninakata vitunguu sasa. Macho yangu yanawasha!
+  x: Ninakunywa vitunguu sasa. Macho yangu inawasha! ; Anakata vitunguu sasa. Macho yangu inawasha!
+> Mama Njeri: Ni kawaida! Sasa unakaanga vitunguu kwa mafuta, halafu nyanya na sukuma. | That's normal! Now you fry the onions in oil, then the tomatoes and sukuma.
+< John: Inanukia vizuri sana! Ninasikia njaa. | It smells really good! I'm hungry.
+  x: Inanukia vizuri sana! Ninasikia baridi. ; Inanukia vizuri sana! Unasikia njaa.
+> Mama Njeri: Chumvi kidogo… na chakula iko tayari! Unaonaje? | A little salt… and the food is ready! What do you think?
+< John: Ni tamu sana, mama! Asante sana kwa somo. | It's delicious, mama! Thank you so much for the lesson.
+  x: Ni chafu sana, mama! Asante sana kwa somo. ; Ni tamu sana, mama! Pole sana kwa somo.
+> Mama Njeri: Karibu! Sasa wewe ni mpishi! | You're welcome! Now you're a cook!
+
+@practice
+t: I'm cooking ugali. | [Ninapika|Ninakata|Ninaosha] ugali. || -pika = cook, -kata = cut, -osha = wash.
+t: You put water in the pot. | Unaweka maji kwa [sufuria|kikombe|jiko]. || sufuria = cooking pot, kikombe = cup, jiko = stove.
+t: The water is boiling. | Maji [inachemka|inakaanga|inanukia]. || -chemka = boil, -kaanga = fry, -nukia = smell good. Sanifu: maji yanachemka.
+t: maize flour | unga ya [mahindi|ngano|mchele] || mahindi = maize, ngano = wheat, mchele = (uncooked) rice.
+t: I'm chopping onions. | Ninakata [vitunguu|maji|chumvi]. || vitunguu = onions, maji = water, chumvi = salt.
+t: She's frying the onions. | [Anakaanga|Anachemka|Anakunywa] vitunguu. || -kaanga = fry.
+t: It smells good! | Inanukia [vizuri|vibaya|kidogo]! || vizuri = well / good, vibaya = bad.
+t: It's delicious. | Ni [tamu|chungu|ngumu]. || tamu = sweet / tasty, chungu = bitter, ngumu = hard.
+t: I'm hungry. | Ninasikia [njaa|baridi|kiu]. || njaa = hunger, baridi = cold, kiu = thirst.
+t: I'm thirsty. | Ninasikia [kiu|njaa|joto]. || kiu = thirst, joto = heat.
+t: My arm hurts. | [Mkono|Mguu|Kichwa] yangu inauma. || mkono = arm / hand, mguu = leg / foot, kichwa = head.
+t: My eyes are stinging. | [Macho|Masikio|Mikono] yangu inawasha. || macho = eyes, masikio = ears, mikono = hands.
+t: a little salt | chumvi [kidogo|nyingi|tamu] || kidogo = a little, nyingi = a lot.
+t: three cups | vikombe [tatu|tano|kumi] || Kenyan: vikombe tatu. Sanifu: vikombe vitatu.
+t: Today you're learning to cook. | Leo [unajifunza|unafundisha|unakula] kupika.
+t: It's hard work! | Ni kazi [ngumu|rahisi|tamu]! || ngumu = hard, rahisi = easy.
+c: What do you think? — It's delicious! | Unaonaje? — Ni [tamu|baridi|safi] sana!
+
+@vocab
+jikoni | in the kitchen | jiko = stove / kitchen; + -ni = in
+kupika | to cook | Ninapika ugali.
+sufuria | cooking pot | n/n noun
+unga ya mahindi | maize flour | Everyday Kenyan form. | unga wa mahindi | Sanifu: u- class agreement
+kusonga ugali | to make ugali | The special verb just for ugali: stirring and pressing.
+mwiko | wooden cooking stick |
+kukata | to cut / chop | Ninakata vitunguu.
+kukaanga | to fry | Ninakaanga vitunguu kwa mafuta.
+mafuta | (cooking) oil | Also: fat, fuel
+chumvi | salt | chumvi kidogo = a little salt
+Inanukia vizuri! | It smells good! | -nukia = give off a nice smell
+Ninasikia njaa | I'm hungry | lit. "I hear hunger". Also: ninasikia kiu (thirsty), baridi (cold).
+tamu | sweet / tasty | Chakula ni tamu!
+
+@lesson family-visit
+title: Sunday Lunch with Wanjiru's Family
+level: 2
+index: 3
 theme: people
 category: people
-culture: Kenyans ask about family early and warmly — "Una familia?" isn't nosy, it's friendly. Family words are flexible: dada and kaka (sister, brother) are also how you politely address any young woman or man, and cousins are often just called brothers and sisters. People (m/wa nouns) take their own agreement: mtoto mmoja (one child), watoto wawili (two children), mke wangu (my wife) — but everyday family words like mama, dada, nyanya take yangu: mama yangu, dada yangu.
-start: Lunch break at the office. Your colleague Achieng spots the photo on your phone's lock screen.
-grammar: na-have, possessives, demonstratives, negative-present
-gl: mrembo = "beautiful (person)" — m/wa agreement. Plural: warembo. #adjective-agreement
-gl: Grace = Grace (name)
-gl: David = David (name)
-gl: Sarah = Sarah (name)
-gl: Kampala = Kampala — capital of Uganda
-gl: Nawakumbuka = "I miss them" — lit. "I remember them": na- (I, present) + -wa- (them) + -kumbuka (remember). #object-infixes
-gl: Unawakumbuka = "Do you miss them?" — lit. "do you remember them?": u- + -na- + -wa- (them) + -kumbuka. #object-infixes
-gl: wacheshi = "funny (people)" — m/wa plural of mcheshi. #adjective-agreement
-gl: wee = "wow!" — surprise. #discourse-particles
+culture: Being invited to someone's family home — "kwetu" (our place), often outside the city — is a real honour in Kenya. You greet every person in the room, starting with the elders, and the mother of the house will make sure you eat far more than you planned. Kenyans describe people freely and kindly: tall, short, big, young. Describing words for people come in pairs: mrefu (one tall person), warefu (tall people).
+start: Sunday afternoon in Kiambu. Your friend Wanjiru has brought you home to meet her family.
+grammar: possessives, adjective-agreement, ko-location, present-na
+gl: Wanjiru = Wanjiru (a Kikuyu name)
+gl: nyumbani = "at home" — nyumba + -ni. #locative-ni
+gl: yote = "all, whole" — familia yangu yote = my whole family
+gl: Mama Wanjiru = "Wanjiru's mum"
+gl: Baba Wanjiru = "Wanjiru's dad"
+gl: Ninafurahi = "I'm happy" — -furahi = be happy
+gl: kuwa hapa = "to be here"
+gl: nje = outside
+gl: kwa shamba = "on the farm" || Sanifu: shambani
+gl: Kamau = Kamau (a Kikuyu name)
+gl: kama wewe = "like you"
+gl: Watu wa familia yetu = "the people in our family"
+gl: wanacheza = "they're playing" — -cheza = play
+gl: mbwa = dog
+gl: ya furaha = "happy" — lit. "of happiness"
+gl: mezani = "at the table" — meza + -ni. #locative-ni
+gl: inanukia = "smells good"
 
-> Achieng: John, una familia? | John, do you have a family?
-< John: Ndiyo. Nina mke na watoto wawili. | Yes. I have a wife and two children.
-  x: Ndiyo. Nina mke na watoto mbili. ; Ndiyo. Sina mke na watoto wawili.
-> Achieng: Aah, poa! Una picha yao? | Ah, cool! Do you have a photo of them?
-< John: Ndiyo, hii hapa. Huyu ni mke wangu, Sarah. | Yes, here it is. This is my wife, Sarah.
-  x: Ndiyo, hii hapa. Huyu ni mke yangu, Sarah. ; Ndiyo, hii hapa. Hawa ni mke wangu, Sarah.
-> Achieng: Ni mrembo sana! Na hawa ni watoto wako? | She's very beautiful! And are these your children?
-< John: Ndiyo. Huyu ni David, na yule mdogo ni Grace. | Yes. This is David, and the little one is Grace.
-  x: Ndiyo. Hii ni David, na ile mdogo ni Grace. ; Hapana. Huyu ni David, na yule mdogo ni Grace.
-> Achieng: Wanaishi hapa Nairobi? | Do they live here in Nairobi?
-< John: Hapana, hawaishi Nairobi. Wako Kampala na nyanya yao. | No, they don't live in Nairobi. They're in Kampala with their grandmother.
-  x: Hapana, hawaishi Nairobi. Tuko Kampala na nyanya yao. ; Ndiyo, wanaishi Nairobi. Wako Kampala na nyanya yao.
-> Achieng: Pole! Unawakumbuka sana? | Aww! Do you miss them a lot?
-< John: Ndiyo, sana. Na wewe, una watoto? | Yes, a lot. And you, do you have children?
-  x: Ndiyo, sana. Na wewe, nina watoto? ; Hapana, sana. Na wewe, una watoto?
-> Achieng: Sina watoto, lakini nina dada watatu na kaka mmoja. | I don't have children, but I have three sisters and one brother.
-< John: Wee! Familia yako ni kubwa! | Wow! Your family is big!
-  x: Wee! Familia wako ni kubwa! ; Wee! Familia yako ni ndogo!
-> Achieng: Ndiyo! Na wote ni wacheshi sana. | Yes! And they're all very funny.
+> Wanjiru: John, karibu nyumbani! Familia yangu yote iko hapa. | John, welcome home! My whole family is here.
+< John: Asante, Wanjiru. Nyumba yenu ni nzuri sana! | Thanks, Wanjiru. Your house is very nice!
+  x: Asante, Wanjiru. Nyumba yenu ni chafu sana! ; Asante, Wanjiru. Nyumba yetu ni nzuri sana!
+> Wanjiru: Asante! Mama, John ni rafiki yangu. | Thanks! Mum, John is my friend.
+> Mama Wanjiru: Karibu sana, John! Habari yako? | You're very welcome, John! How are you?
+< John: Nzuri sana, mama. Ninafurahi kuwa hapa. | Very well, ma'am. I'm happy to be here.
+  x: Nzuri sana, mama. Ninafurahi kuwa wapi. ; Nzuri sana, mama. Anafurahi kuwa hapa.
+> Mama Wanjiru: Asante. Baba Wanjiru yuko nje, kwa shamba. | Thank you. Wanjiru's dad is outside, on the farm.
+< John: Sawa. Wanjiru, kaka na dada zako wako wapi? | Okay. Wanjiru, where are your brothers and sisters?
+  x: Sawa. Wanjiru, kaka na dada zangu wako wapi? ; Sawa. Wanjiru, kaka na dada zako wako nani?
+> Wanjiru: Kaka yangu mkubwa, Kamau, anafanya kazi Mombasa. Dada zangu wawili wako jikoni. | My big brother Kamau works in Mombasa. My two sisters are in the kitchen.
+< John: Kamau ni mrefu kama wewe? | Is Kamau tall like you?
+  x: Kamau ni warefu kama wewe? ; Kamau ni mrefu kama jikoni?
+> Wanjiru: Haha, ndiyo! Watu wa familia yetu ni warefu. Lakini dada zangu ni wafupi. | Ha, yes! The people in our family are tall. But my sisters are short.
+< John: Na watoto wako wapi? | And where are the children?
+  x: Na watoto ni mrefu wapi? ; Na watoto uko wapi?
+> Wanjiru: Watoto wa dada yangu wanacheza nje na mbwa. | My sister's children are playing outside with the dog.
+< John: Poa! Familia yako ni kubwa na ni ya furaha! | Cool! Your family is big and happy!
+  x: Poa! Familia yako ni kubwa na ni ya njaa! ; Poa! Familia yangu ni kubwa na ni ya furaha!
+> Mama Wanjiru: Asante, John. Sasa chakula iko tayari — karibu mezani! | Thank you, John. The food is ready now — come to the table!
+< John: Asante sana, mama. Chakula inanukia vizuri! | Thank you very much, ma'am. The food smells good!
+  x: Asante sana, mama. Chakula inanukia vibaya! ; Pole sana, mama. Chakula inanukia vizuri!
 
 @practice
-t: I have two children. | Nina watoto [wawili|mbili|wanne]. || People (m/wa) take wa- numbers: mtoto mmoja, watoto wawili, watatu, wanne. Things use the plain form: nyumba mbili.
-t: I have two houses. | Nina nyumba [mbili|wawili|mmoja]. || nyumba is n/n, so the plain number: mbili.
-t: one brother | kaka [mmoja|moja|wawili] || People: mmoja (one), wawili (two).
-t: three sisters | dada [watatu|tatu|wanne] || watatu = three (people). wanne = four (people).
-t: This is my wife. | Huyu ni mke [wangu|yangu|zangu]. || mke is m/wa, so wangu.
-t: These are my children. | [Hawa|Huyu|Hizi] ni watoto wangu. || hawa = these (people). Huyu = this person; hizi = these things.
-t: That one (person) over there is little. | [Yule|Huyu|Hawa] ni mdogo. || yule = that person over there.
-t: Your family is big. | Familia [yako|wako|zako] ni kubwa. || familia is n/n singular, so yako.
-t: their grandmother | nyanya [yao|wao|zao] || Family words (mama, baba, dada, nyanya) take the n/n form: mama yangu, nyanya yao.
-t: my sister | dada [yangu|wangu|zangu]
-c: Is this your child? | Huyu ni mtoto [wako|yako|zako]? || mtoto is m/wa: mtoto wako.
-t: They don't live in Nairobi. | [Hawaishi|Haishi|Siishi] Nairobi. || hawa- (not they) + -ishi.
-t: I don't have children. | [Sina|Hana|Hatuna] watoto.
-t: Do you have a photo? | [Una|Nina|Wana] picha?
-t: She is very beautiful. | Ni [mrembo|warembo|wazuri] sana. || One person: mrembo. Several: warembo.
-t: They are all very funny. | Wote ni [wacheshi|mcheshi|wazee] sana. || wacheshi = funny (people, plural).
-t: We don't know. | [Hatujui|Sijui|Hawajui]. || hatu- = not we.
+t: my friend | rafiki [yangu|yako|yake] || yangu = my, yako = your, yake = his / her.
+t: Your (plural) house is very nice. | Nyumba [yenu|yetu|yao] ni nzuri sana. || yenu = your (plural), yetu = our, yao = their.
+t: I'm happy to be here. | [Ninafurahi|Ninasikia|Ninacheza] kuwa hapa. || -furahi = be happy.
+t: Dad is outside, on the farm. | Baba yuko nje, kwa [shamba|soko|kanisa]. || shamba = farm, soko = market, kanisa = church.
+t: My big brother works in Mombasa. | Kaka yangu [mkubwa|mdogo|mzee] anafanya kazi Mombasa. || mkubwa = big / older, mdogo = small / younger, mzee = old.
+t: my two sisters | dada zangu [wawili|watatu|wanne] || wawili = two, watatu = three, wanne = four (people).
+t: Kamau is tall. | Kamau ni [mrefu|mfupi|mnene]. || mrefu = tall, mfupi = short, mnene = big / fat.
+t: My sisters are short. | Dada zangu ni [wafupi|mfupi|warefu]. || One person: mfupi. Several people: wafupi.
+t: Grandma is old. | Nyanya ni [mzee|mdogo|mrefu]. || mzee = old (person) — also a respectful word for an elder.
+t: The children are playing outside. | Watoto [wanacheza|anacheza|tunacheza] nje. || wa- = they.
+t: The child is playing. | Mtoto [anacheza|wanacheza|ninacheza]. || a- = he / she.
+t: two dogs | mbwa [wawili|watatu|wanne] || Animals count like people: wawili.
+t: Your family is big. | Familia yako ni [kubwa|ndogo|chafu]. || kubwa = big, ndogo = small.
+t: Where are your brothers? | Kaka zako [wako|uko|tuko] wapi? || wako = they are (at).
+t: The food is ready. | Chakula iko [tayari|mbali|nje]. || tayari = ready, mbali = far, nje = outside.
+c: Come to the table! | Karibu [mezani|jikoni|nje]! || meza + -ni = at the table.
 
 @vocab
-Una familia? | Do you have a family? | una = you have
-Nina… | I have… | Lit. "I am with…"
-Sina… | I don't have… | si- + -na
-mke wangu | my wife | In Nairobi you'll also hear "bibi yangu".
-watoto wawili | two children | People take wa- numbers: mmoja, wawili, watatu, wanne
-Huyu ni… | This is… (a person) | Plural: Hawa ni…
-yule | that person (over there) | Plural: wale
-nyanya yao | their grandmother | Family words take yangu / yako / yao.
-Hawaishi… | They don't live… | hawa- (not they) + -ish- + -i
-Nawakumbuka | I miss them | Lit. "I remember them"
-dada / kaka | sister / brother | Also a polite way to address any young woman or man
-Familia yako ni kubwa! | Your family is big! | n/n agreement: yako, kubwa
-mcheshi / wacheshi | funny (person / people) | wote ni wacheshi = they're all funny
+familia | family | n/n noun
+nyumbani | at home | nyumba + -ni
+kaka / dada | brother / sister | dada zangu = my sisters
+mkubwa / mdogo | big, older / small, younger | kaka yangu mkubwa = my older brother
+mrefu / warefu | tall (one person / people) |
+mfupi / wafupi | short (one person / people) |
+mzee / wazee | old person / elders | Also a respectful "sir".
+-furahi | be happy | Ninafurahi kuwa hapa.
+-cheza | play | Watoto wanacheza nje.
+nje / ndani | outside / inside |
+mbwa | dog | Animals take m/wa agreement: mbwa wawili.
+shamba | farm / garden |
+Karibu mezani! | Come to the table! | meza + -ni
 
-@lesson directions-stage
-title: Where's the Stage? Asking the Way
+@lesson clothes-colours
+title: Shirts, Shoes and Colours at Toi Market
 level: 2
-theme: directions
-category: directions
-culture: Kenyans give directions by landmarks, not street names: the big supermarket, the petrol station, "the tree near the church". The askari (security guard) at any building gate is the best person to ask — they know every shop and matatu stage nearby. "Si mbali" (it's not far) can mean anything from two minutes to twenty, so ask "Ni dakika ngapi?" (how many minutes?).
-start: You're on foot in Kilimani and need the matatu stage to town. You ask the askari at a gate.
-grammar: ko-location, negative-present, demonstratives, question-words
-gl: Stage = "stage" — the matatu stop (Kenyans also write "steji").
-gl: supermarket = supermarket (loanword)
-gl: kuenda = "to go" — Kenyan form of kwenda. #infinitive-ku
-gl: Ya kuenda tao = "The one for going to town?" — ya agrees with the n/n stage. #possessives
-gl: kwa kona = "at the corner" — Kenyan; Sanifu prefers kwenye kona. #locative-ni
-gl: pale pale = "right there" — doubling makes it exact.
-gl: Enda = "Go!" — Kenyan imperative of kuenda. || Sanifu: Nenda! #imperatives
-gl: hata kidogo = "(not) at all" — lit. "even a little"
-gl: pole pole = "slowly"
-gl: vizuri = "well / nicely"
-gl: Kiswahili yako = "your Swahili" — Kenyan n/n agreement. || Sanifu: Kiswahili chako (ki/vi class) #possessives
-gl: ya kwanza = "the first" (n/n agreement)
+index: 4
+theme: market
+category: commerce
+culture: Toi Market and Gikomba are where Nairobi buys its clothes — much of it "mitumba", second-hand clothing sold from huge bales. Sellers call out to every passer-by, the first price is always high, and "bei ya mwisho" (last price) is part of the game, not the end of it. Colour words for things are mostly n/n: shati nyeupe (white shirt), viatu nyeusi (black shoes). Bluu, kijani and njano never change.
+start: Saturday at Toi Market. A seller waves a shirt at you from his stall.
+grammar: adjective-agreement, numbers-money, present-na, ko-location
+gl: Toi = Toi Market, a big clothes market in Nairobi
+gl: Unatafuta = "you're looking for" — -tafuta = look for
+gl: Ninatafuta = "I'm looking for" — -tafuta = look for
+gl: shati = shirt || Sanifu: ji/ma class (shati jeupe)
+gl: suruali = trousers
+gl: viatu = shoes || Sanifu: kiatu / viatu (ki/vi class)
+gl: soksi = socks
+gl: rangi = colour
+gl: bluu = blue
+gl: nyeupe = white (n/n)
+gl: kijani = green
+gl: nyeusi = black (n/n)
+gl: mpya kabisa = "brand new"
+gl: saizi = size
+gl: ya kati = "medium" (lit. "of the middle")
+gl: kwa mimi = "for me" — Kenyan. || Sanifu: kwangu
+gl: Uko na = "do you have" — Kenyan form of "una". #ko-location
+gl: niko na = "I have" — Kenyan form of "nina". #ko-location
+gl: muhimu = important
+gl: tu = only
+gl: Jumla = total
+gl: ghali = expensive
+gl: rahisi = cheap / easy
+gl: je = "what about…?" (question word)
+gl: Aiii = (protest) "Oh come on!"
+gl: bei ya mwisho = "last price"
+gl: Ninalipa = "I'm paying" — -lipa = pay
+gl: kadi = (bank) card
 
-< Mgeni: Samahani, boss. Stage ya matatu iko wapi? | Excuse me, boss. Where's the matatu stage?
-  x: Samahani, boss. Stage ya matatu ziko wapi? ; Samahani, boss. Stage ya matatu yuko wapi?
-> Askari: Ya kuenda tao? | The one for going to town?
-< Mgeni: Ndiyo, naenda tao. | Yes, I'm going to town.
-  x: Ndiyo, anaenda tao. ; Hapana, naenda tao.
-> Askari: Si mbali. Iko karibu na supermarket ile kubwa. | It's not far. It's near that big supermarket.
-< Mgeni: Sijui supermarket hiyo. Iko upande gani? | I don't know that supermarket. Which side is it on?
-  x: Najua supermarket hiyo. Iko upande gani? ; Hajui supermarket hiyo. Iko upande gani?
-> Askari: Enda moja kwa moja, halafu kwa kona ya kwanza, geuka kushoto. | Go straight, then at the first corner, turn left.
-  s: Nenda moja kwa moja, halafu kwenye kona ya kwanza, geuka kushoto.
-< Mgeni: Moja kwa moja, halafu kushoto. Sawa. | Straight, then left. Okay.
-  x: Moja kwa moja, halafu kulia. Sawa. ; Nyuma, halafu kushoto. Sawa.
-> Askari: Ndiyo. Supermarket iko upande wa kulia, na stage iko pale pale. | Yes. The supermarket is on the right, and the stage is right there.
-< Mgeni: Ni dakika ngapi kwa miguu? | How many minutes on foot?
-  x: Ni dakika wapi kwa miguu? ; Ni pesa ngapi kwa miguu?
-> Askari: Dakika tano tu. Si mbali hata kidogo. | Just five minutes. Not far at all.
-< Mgeni: Asante sana! Unaongea pole pole, naelewa vizuri. | Thanks a lot! You speak slowly — I understand well.
-  x: Asante sana! Unaongea pole pole, sielewi vizuri. ; Asante sana! Naongea pole pole, unaelewa vizuri.
-> Askari: Hakuna shida. Kiswahili yako ni nzuri! | No problem. Your Swahili is good!
-  s: Hakuna shida. Kiswahili chako ni kizuri!
-< Mgeni: Asante! Siku njema! | Thanks! Have a good day!
-  x: Asante! Usiku mwema! ; Pole! Siku njema!
-> Askari: Na wewe pia. Safari njema! | You too. Have a good trip!
+> Muuzaji: Karibu, boss! Unatafuta nini leo? | Welcome, boss! What are you looking for today?
+< John: Ninatafuta shati na suruali. | I'm looking for a shirt and trousers.
+  x: Unatafuta shati na suruali. ; Ninauza shati na suruali.
+> Muuzaji: Sawa! Unapenda rangi gani? | Okay! What colour do you like?
+< John: Ninapenda bluu au nyeupe. | I like blue or white.
+  x: Ninapenda saizi au nyeupe. ; Anapenda bluu au nyeupe.
+> Muuzaji: Shati ya bluu iko hapa — ni mpya kabisa! | The blue shirt is here — it's brand new!
+< John: Ni nzuri! Ni saizi gani? | It's nice! What size is it?
+  x: Ni nzuri! Ni saizi wapi? ; Ni nzuri! Ni rangi saizi?
+> Muuzaji: Ni saizi kubwa, XL. Na suruali ni nyeusi, saizi ya kati. | It's a large, XL. And the trousers are black, medium size.
+< John: Shati ni kubwa sana kwa mimi. Uko na saizi ndogo? | The shirt is too big for me. Do you have a smaller size?
+  x: Shati ni kubwa sana kwa mimi. Uko na saizi kubwa? ; Shati ni ndogo sana kwa mimi. Uko na saizi ndogo?
+> Muuzaji: Ndiyo, niko na M hapa. Na viatu? Viatu ni muhimu! | Yes, I have an M here. And shoes? Shoes are important!
+< John: Haha, leo ninanunua shati na suruali tu. Ni pesa ngapi? | Ha, today I'm only buying a shirt and trousers. How much?
+  x: Haha, leo ninauza shati na suruali tu. Ni pesa ngapi? ; Haha, leo ninanunua shati na suruali tu. Ni pesa wapi?
+> Muuzaji: Shati ni mia nane, suruali ni elfu moja. Jumla ni elfu moja, mia nane. | The shirt is 800, the trousers 1,000. Total: 1,800.
+< John: Wee, ni ghali sana! Elfu moja, mia mbili je? | Wow, that's very expensive! What about 1,200?
+  x: Wee, ni rahisi sana! Elfu moja, mia mbili je? ; Wee, ni ghali sana! Elfu tano, mia mbili je?
+> Muuzaji: Aiii, boss! Elfu moja, mia tano. Bei ya mwisho. | Oh come on, boss! 1,500. Last price.
+< John: Sawa, poa. Ninalipa na M-Pesa. | Okay, fine. I'm paying with M-Pesa.
+  x: Sawa, poa. Unalipa na M-Pesa. ; Sawa, poa. Ninauza na M-Pesa.
+> Muuzaji: Asante sana! Bluu ni rangi yako! | Thanks a lot! Blue is your colour!
 
 @practice
-t: Where is the stage? | Stage [iko|ziko|yuko] wapi? || iko = it is (at): i- for an n/n singular subject + -ko (be at).
-t: Where are the matatus? | Matatu [ziko|iko|wako] wapi? || Plural n/n subject → zi-: ziko.
-t: Where is the driver? | Dereva [yuko|iko|ziko] wapi? || People take yuko (he/she is at).
-t: It's not far. | [Si|Ni|Iko] mbali. || si = is not; ni = is.
-t: It's near the supermarket. | Iko [karibu na|mbali na|kati ya] supermarket. || karibu na = near; mbali na = far from.
-t: Turn left. | Geuka [kushoto|kulia|moja kwa moja]. || kushoto = left, kulia = right.
-t: Turn right. | Geuka [kulia|kushoto|nyuma].
-t: Go straight. | Enda [moja kwa moja|kushoto|haraka]. || Sanifu says "Nenda moja kwa moja".
-t: I don't know that supermarket. | [Sijui|Hujui|Hajui] supermarket hiyo.
-t: I don't understand. | [Sielewi|Huelewi|Haelewi]. || si- + -elew- + -i
-t: Do you understand? | [Unaelewa|Ninaelewa|Anaelewa]?
-t: on the right-hand side | upande wa [kulia|kushoto|mbele]
-t: at the first corner | kwa kona ya [kwanza|mwisho|pili] || kwanza = first, pili = second, mwisho = last.
-c: How many minutes? — Just five minutes. | Ni dakika ngapi? — Dakika [tano|tao|tena] tu.
-t: Not far at all. | Si mbali [hata kidogo|sana|tena]. || hata kidogo = (not) at all.
-t: They're not here. | [Hawako|Hayuko|Siko] hapa. || hawako = they are not (here).
-t: I'm going to town. | [Naenda|Anaenda|Wanaenda] tao.
+t: I'm looking for a shirt. | Ninatafuta [shati|suruali|viatu]. || shati = shirt, suruali = trousers, viatu = shoes.
+t: She's looking for shoes. | Anatafuta [viatu|soksi|kofia]. || soksi = socks, kofia = hat / cap.
+t: What colour? | Rangi [gani|wapi|ngapi]? || gani = which / what kind.
+t: a white shirt | shati [nyeupe|nyeusi|nyekundu] || nyeupe = white, nyeusi = black, nyekundu = red.
+t: green trousers | suruali ya [kijani|bluu|njano] || kijani = green, bluu = blue, njano = yellow.
+t: It's too big. | Ni [kubwa|ndogo|ndefu] sana. || kubwa = big, ndogo = small, ndefu = long.
+t: Do you have a small size? | Uko na saizi [ndogo|kubwa|ya kati]? || ya kati = medium.
+t: I have size M. | [Niko|Uko|Yuko] na saizi M. || Kenyan "have": niko na = I have, uko na = you have.
+t: I'm buying a shirt. | [Ninanunua|Ninauza|Ninalipa] shati. || -nunua = buy, -uza = sell, -lipa = pay.
+t: He sells clothes. | [Anauza|Ananunua|Anafua] nguo.
+t: It's very expensive! | Ni [ghali|rahisi|mpya] sana! || ghali = expensive, rahisi = cheap.
+t: 1,500 | elfu moja, mia [tano|tatu|nane] || tano = 5, tatu = 3, nane = 8.
+t: 800 | mia [nane|sita|tisa] || nane = 8, sita = 6, tisa = 9.
+t: We're paying with M-Pesa. | [Tunalipa|Ninalipa|Wanalipa] na M-Pesa. || tu- = we.
+t: new clothes | nguo [mpya|safi|chafu] || mpya = new, safi = clean, chafu = dirty.
+c: What size is it? — Medium. | Ni saizi gani? — Ni saizi ya [kati|bluu|bei].
 
 @vocab
-… iko wapi? | Where is …? | n/n things: iko (one), ziko (several). People: yuko.
-Si mbali | It's not far | si = is not
-karibu na | near / close to | mbali na = far from
-Enda moja kwa moja | Go straight | Everyday Kenyan. | Nenda moja kwa moja | Sanifu imperative of kwenda
-Geuka kushoto | Turn left | kulia = right
-kona ya kwanza | the first corner | ya pili = the second
-upande wa kulia | on the right-hand side | upande wa kushoto = on the left
-pale pale | right there | Doubling makes it exact.
-Sielewi | I don't understand | Naelewa = I understand
-kwa miguu | on foot | Lit. "by legs"
-Hakuna shida | No problem | Lit. "there's no problem"
-Safari njema! | Have a good trip! | Siku njema = have a good day
-tao | town | Kenyan word for the CBD
+nguo | clothes | n/n noun. Also mavazi (more formal).
+shati | shirt | Kenyan: shati nyeupe | shati jeupe | Sanifu: ji/ma class
+suruali | trousers | n/n noun
+viatu | shoes | Kenyans: viatu hizi | viatu hivi | Sanifu: ki/vi class (kiatu / viatu)
+rangi | colour | Rangi gani? = What colour?
+nyeupe / nyeusi / nyekundu | white / black / red | n/n forms
+bluu / kijani / njano | blue / green / yellow | Never change.
+saizi | size | saizi kubwa / ndogo / ya kati
+-tafuta | look for | Ninatafuta shati.
+-nunua / -uza | buy / sell | Ninanunua; anauza.
+ghali / rahisi | expensive / cheap | Ni ghali sana!
+Uko na…? | Do you have…? | Kenyan everyday form of "Una…?"
+bei ya mwisho | last price | The seller's "final" offer

@@ -1,0 +1,1328 @@
+{
+  "id": "feeling-unwell",
+  "uuid": "7b9f6705-d377-5ceb-ab63-2595bf3f5e1d",
+  "title": "Feeling Unwell: Head, Stomach and a Fever",
+  "category": "health",
+  "difficulty": "beginner",
+  "level": 3,
+  "order": 304,
+  "theme": "health",
+  "culturalNote": "\"Pole!\" (sorry) is the first thing any Kenyan says when you're unwell — and they'll say it again and again. Body parts are a great example of singular and plural pairs: mkono / mikono (arm / arms), mguu / miguu (leg / legs), jicho / macho (eye / eyes). In everyday Kenyan speech \"-inauma\" (it hurts) works for every body part: kichwa inauma, tumbo inauma. Clinics are everywhere, and \"kliniki\" is the word people use.",
+  "startingPoint": "10 a.m. at the office. Achieng notices you've had your head on your desk for a while.",
+  "grammarFocus": [
+    "ko-location",
+    "present-na",
+    "time-swahili"
+  ],
+  "grammar": [
+    "ko-location",
+    "present-na",
+    "time-swahili",
+    "ni-copula",
+    "sanifu-noun-classes",
+    "discourse-particles",
+    "noun-classes-mwa-nn",
+    "possessives",
+    "greetings",
+    "adjective-agreement",
+    "numbers-money"
+  ],
+  "turns": [
+    {
+      "id": "bf2b7f34-0409-5ef0-b890-3e79bfd422ad",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "John, uko sawa? Uko mgonjwa?",
+      "english": "John, are you okay? Are you sick?",
+      "words": [
+        {
+          "text": "John",
+          "gloss": "John (name)"
+        },
+        {
+          "text": "uko",
+          "gloss": "\"You are (at / doing)\" — u- + -ko (be at a place, or how you're doing). \"Uko poa\" = you are fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Uko",
+          "gloss": "\"You are (at / doing)\" — u- + -ko (be at a place, or how you're doing). \"Uko poa\" = you are fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mgonjwa",
+          "gloss": "\"sick (person)\" — plural: wagonjwa"
+        }
+      ]
+    },
+    {
+      "id": "edaef168-c901-55a2-bfce-eee07804d670",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ndiyo, niko mgonjwa kidogo. Kichwa inauma sana.",
+      "english": "Yes, I'm a bit sick. My head hurts a lot.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "niko",
+          "gloss": "\"I am (at / doing)\" — ni- + -ko (be at a place, or how you're doing). \"Niko poa\" = I am fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mgonjwa",
+          "gloss": "\"sick (person)\" — plural: wagonjwa"
+        },
+        {
+          "text": "kidogo",
+          "gloss": "a little / a bit — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — kidogo (adverb, no agreement)"
+        },
+        {
+          "text": "Kichwa",
+          "gloss": "head",
+          "sanifu": "Sanifu: kichwa / vichwa (ki/vi class)"
+        },
+        {
+          "text": "inauma",
+          "gloss": "\"hurts\" — Kenyan; Sanifu: kinauma (ki/vi), linauma (ji/ma)"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo, niko mgonjwa kidogo. Kichwa inauma sana.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, uko mgonjwa kidogo. Kichwa inauma sana.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, niko mgonjwa kidogo. Kichwa inakula sana.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "fa6e1501-85f7-52e7-a29b-97d67560aa26",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Pole sana! Na tumbo?",
+      "english": "So sorry! And your stomach?",
+      "words": [
+        {
+          "text": "Pole sana",
+          "gloss": "\"I'm so sorry (you're unwell)\""
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "tumbo",
+          "gloss": "stomach",
+          "sanifu": "Sanifu: tumbo / matumbo (ji/ma class)"
+        }
+      ]
+    },
+    {
+      "id": "8463a57a-60fb-5f83-84fa-1182f0e1dafb",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ndiyo, tumbo pia inauma kidogo.",
+      "english": "Yes, my stomach hurts a little too.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "tumbo",
+          "gloss": "stomach",
+          "sanifu": "Sanifu: tumbo / matumbo (ji/ma class)"
+        },
+        {
+          "text": "pia",
+          "gloss": "also / too"
+        },
+        {
+          "text": "inauma",
+          "gloss": "\"hurts\" — Kenyan; Sanifu: kinauma (ki/vi), linauma (ji/ma)"
+        },
+        {
+          "text": "kidogo",
+          "gloss": "a little / a bit — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — kidogo (adverb, no agreement)"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo, tumbo pia inauma kidogo.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, tumbo pia inanukia kidogo.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, tumbo pia ni mrefu kidogo.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "7f59022c-369f-59f1-b570-79db95650e7a",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Wee! Uko na homa?",
+      "english": "Oh no! Do you have a fever?",
+      "words": [
+        {
+          "text": "Wee",
+          "gloss": "hey you! (surprise / emphasis)",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Uko na homa",
+          "gloss": "\"do you have a fever?\" — Kenyan.",
+          "grammar": [
+            "ko-location"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17af42d8-d043-5712-b919-95312da9ce1c",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Labda… ninasikia baridi na joto.",
+      "english": "Maybe… I feel cold and hot.",
+      "words": [
+        {
+          "text": "Labda",
+          "gloss": "maybe"
+        },
+        {
+          "text": "ninasikia",
+          "gloss": "\"I feel\" — lit. \"I hear\""
+        },
+        {
+          "text": "baridi",
+          "gloss": "cold — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "na joto",
+          "gloss": "\"and hot\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Labda… ninasikia baridi na joto.",
+          "correct": true
+        },
+        {
+          "swahili": "Labda… unasikia baridi na joto.",
+          "correct": false
+        },
+        {
+          "swahili": "Labda… ninasikia njaa na joto.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "37189d13-5b95-5496-a996-6edbf660e08b",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Ni homa! Mwili yako inauma?",
+      "english": "That's a fever! Does your body ache?",
+      "words": [
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "homa",
+          "gloss": "fever"
+        },
+        {
+          "text": "Mwili",
+          "gloss": "body (Sanifu m/mi: mwili wangu; Kenyans: mwili yangu)"
+        },
+        {
+          "text": "yako",
+          "gloss": "\"your\" — n/n singular agreement (nyumba yako). In Kenyan speech also used for family words and most things (jina yako, gari yako).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (n/n singular)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "yangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "yako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "yake"
+              },
+              {
+                "pronoun": "our",
+                "form": "yetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "yenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "yao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "inauma",
+          "gloss": "\"hurts\" — Kenyan; Sanifu: kinauma (ki/vi), linauma (ji/ma)"
+        }
+      ]
+    },
+    {
+      "id": "dced93af-91bc-5a25-8759-63c339bf7c45",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ndiyo, mwili yangu yote inauma.",
+      "english": "Yes, my whole body aches.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mwili yangu",
+          "gloss": "\"my body\" — Kenyan.",
+          "sanifu": "Sanifu: mwili wangu (m/mi class)"
+        },
+        {
+          "text": "yote",
+          "gloss": "\"whole, all\""
+        },
+        {
+          "text": "inauma",
+          "gloss": "\"hurts\" — Kenyan; Sanifu: kinauma (ki/vi), linauma (ji/ma)"
+        }
+      ],
+      "sanifu": "Ndiyo, mwili wangu wote unauma.",
+      "options": [
+        {
+          "swahili": "Ndiyo, mwili yangu yote inauma.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, mwili yako yote inauma.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, mwili yangu yote inacheza.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "1b6ccc65-9ae1-57b2-a133-a1a8750fc576",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Pole. Unakunywa maji mingi?",
+      "english": "Sorry. Are you drinking a lot of water?",
+      "words": [
+        {
+          "text": "Pole",
+          "gloss": "sorry (sympathy)"
+        },
+        {
+          "text": "Unakunywa",
+          "gloss": "\"are you drinking\" — -nywa = drink"
+        },
+        {
+          "text": "maji mingi",
+          "gloss": "\"a lot of water\" — Kenyan.",
+          "sanifu": "Sanifu: maji mengi"
+        }
+      ],
+      "sanifu": "Pole. Unakunywa maji mengi?"
+    },
+    {
+      "id": "d54c4328-3184-52dd-b20a-70da33de6b46",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ndiyo, ninakunywa maji na chai.",
+      "english": "Yes, I'm drinking water and tea.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "ninakunywa",
+          "gloss": "\"I am drinking\" — ni- (subject: I) + na- (present) + -nywa (drink). From kunywa. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kunywa (to drink)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninakunywa"
+              },
+              {
+                "pronoun": "you",
+                "form": "unakunywa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anakunywa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunakunywa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnakunywa"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanakunywa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "maji",
+          "gloss": "water — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — maji yangu, maji haya (ma- plural of the ji/ma class)"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "chai",
+          "gloss": "tea (also slang for a small bribe) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo, ninakunywa maji na chai.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, ninakula maji na chai.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, anakunywa maji na chai.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "2a3c0cea-3dfa-5937-ad5a-f7e88ed0337e",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Poa. Unaenda kliniki leo?",
+      "english": "Good. Are you going to the clinic today?",
+      "words": [
+        {
+          "text": "Poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Unaenda",
+          "gloss": "\"are you going\""
+        },
+        {
+          "text": "kliniki",
+          "gloss": "clinic"
+        },
+        {
+          "text": "leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ba37d885-966e-5091-990e-5afae92d61eb",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ndiyo, ninaenda kliniki saa nane mchana.",
+      "english": "Yes, I'm going to the clinic at 2 p.m.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "ninaenda",
+          "gloss": "\"I am going\" — ni- (subject: I) + na- (present) + -enda (go). From kuenda. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuenda (to go)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kliniki",
+          "gloss": "clinic"
+        },
+        {
+          "text": "saa nane mchana",
+          "gloss": "2 p.m. (lit. \"the 8th hour of the afternoon\")"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo, ninaenda kliniki saa nane mchana.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, ninaenda kliniki saa nane usiku.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, unaenda kliniki saa nane mchana.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "684dd08e-c58d-578c-b928-9e996ee4e765",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Sawa. Kliniki ya Kilimani iko na daktari mzuri.",
+      "english": "Okay. The Kilimani clinic has a good doctor.",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Kliniki",
+          "gloss": "clinic"
+        },
+        {
+          "text": "ya",
+          "gloss": "\"of\" — n/n singular agreement (nyumba ya Kamau); Kenyans use ya with most nouns",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "Kilimani",
+          "gloss": "Kilimani — Nairobi neighbourhood"
+        },
+        {
+          "text": "iko na",
+          "gloss": "\"has\" — Kenyan (lit. \"is with\").",
+          "grammar": [
+            "ko-location"
+          ]
+        },
+        {
+          "text": "daktari",
+          "gloss": "doctor"
+        },
+        {
+          "text": "mzuri",
+          "gloss": "good (person)"
+        }
+      ]
+    },
+    {
+      "id": "40453c2d-a574-5cec-b63f-aff9be24bcaf",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Asante, Achieng. Sasa ninaenda nyumbani kupumzika.",
+      "english": "Thanks, Achieng. I'm going home to rest now.",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Achieng",
+          "gloss": "Achieng (a Luo name)"
+        },
+        {
+          "text": "Sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "ninaenda nyumbani",
+          "gloss": "\"I'm going home\""
+        },
+        {
+          "text": "kupumzika",
+          "gloss": "\"to rest\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante, Achieng. Sasa ninaenda nyumbani kupumzika.",
+          "correct": true
+        },
+        {
+          "swahili": "Asante, Achieng. Sasa ninaenda nyumbani kucheza.",
+          "correct": false
+        },
+        {
+          "swahili": "Asante, Achieng. Sasa unaenda nyumbani kupumzika.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "7e9c235a-3381-5bce-ad65-3d552f397263",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Sawa. Ugua pole, John!",
+      "english": "Okay. Get well soon, John!",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Ugua pole",
+          "gloss": "\"get well soon\" — set phrase (lit. \"be sick gently\")"
+        },
+        {
+          "text": "John",
+          "gloss": "John (name)"
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "77f81c23-bf9a-5813-a852-97baa613cb97",
+      "swahili": "Pole!",
+      "english": "Sorry! (sympathy)",
+      "exampleContext": "Pole sana = I'm so sorry. Answer: Asante.",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "4edcd4eb-7b6f-56f3-b64c-d5d9699a5c34",
+      "swahili": "Niko mgonjwa",
+      "english": "I'm sick",
+      "exampleContext": "mgonjwa / wagonjwa = sick person / people",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "8fb9f9fd-8fae-534f-8482-709e214167e2",
+      "swahili": "-inauma",
+      "english": "it hurts",
+      "exampleContext": "Kichwa inauma. Tumbo inauma."
+    },
+    {
+      "id": "6c01a287-712b-5639-a770-c4b4c3c6dfa7",
+      "swahili": "kichwa",
+      "english": "head",
+      "exampleContext": "Sanifu: ki/vi class (kichwa / vichwa)"
+    },
+    {
+      "id": "94b13e7b-6883-586d-bff1-2b1a1d5be444",
+      "swahili": "tumbo",
+      "english": "stomach",
+      "exampleContext": "Sanifu: ji/ma class"
+    },
+    {
+      "id": "38e4c753-acbf-5b91-bc7f-f6e8d8a5286c",
+      "swahili": "mkono / mikono",
+      "english": "arm, hand / arms, hands |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "715def91-b14b-53fb-baee-b30326dcefc5",
+      "swahili": "mguu / miguu",
+      "english": "leg, foot / legs, feet |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "72bd7da3-7a91-56f7-839d-e0119e9bd153",
+      "swahili": "jicho / macho",
+      "english": "eye / eyes |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "5d548392-49d4-56db-891b-30f8654ea8f0",
+      "swahili": "homa",
+      "english": "fever",
+      "exampleContext": "Uko na homa? = Do you have a fever?"
+    },
+    {
+      "id": "97638b6b-4dcc-581d-8f94-06cbb6f5edce",
+      "swahili": "Ninasikia baridi",
+      "english": "I feel cold",
+      "exampleContext": "-sikia = hear, feel",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "619dc52d-ec55-5d90-889c-c2f5e057cf68",
+      "swahili": "mwili",
+      "english": "body",
+      "exampleContext": "Kenyans: mwili yangu",
+      "sanifu": "mwili wangu",
+      "sanifuNote": "Sanifu: m/mi class"
+    },
+    {
+      "id": "a8461237-efb0-5814-bda4-62d6ad2e1fd2",
+      "swahili": "kliniki",
+      "english": "clinic |",
+      "exampleContext": ""
+    },
+    {
+      "id": "6592f0f5-68a7-5816-a9b7-2b5d7c7fde17",
+      "swahili": "Ugua pole!",
+      "english": "Get well soon!",
+      "exampleContext": "lit. \"be ill gently\"",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "ed67f3ce-e293-5eee-828c-0e44b61aab88",
+      "mode": "translate",
+      "english": "My head hurts.",
+      "before": "",
+      "after": " inauma.",
+      "options": [
+        {
+          "text": "Kichwa",
+          "correct": true
+        },
+        {
+          "text": "Tumbo",
+          "correct": false,
+          "feedback": "Tumbo = stomach"
+        },
+        {
+          "text": "Mguu",
+          "correct": false,
+          "feedback": "Mguu = leg / foot (plural miguu)"
+        }
+      ],
+      "explanation": "kichwa = head, tumbo = stomach, mguu = leg / foot."
+    },
+    {
+      "id": "99ad0d26-b8fb-5705-9315-5729ecc57639",
+      "mode": "translate",
+      "english": "My stomach hurts.",
+      "before": "",
+      "after": " inauma.",
+      "options": [
+        {
+          "text": "Tumbo",
+          "correct": true
+        },
+        {
+          "text": "Kichwa",
+          "correct": false,
+          "feedback": "Kichwa = head"
+        },
+        {
+          "text": "Mkono",
+          "correct": false,
+          "feedback": "Mkono = hand / arm (plural mikono)"
+        }
+      ],
+      "explanation": "mkono = arm / hand."
+    },
+    {
+      "id": "88ef75b1-6606-5598-b1ca-d8bfb9e99653",
+      "mode": "translate",
+      "english": "My leg hurts.",
+      "before": "",
+      "after": " inauma.",
+      "options": [
+        {
+          "text": "Mguu",
+          "correct": true
+        },
+        {
+          "text": "Mkono",
+          "correct": false,
+          "feedback": "Mkono = hand / arm (plural mikono)"
+        },
+        {
+          "text": "Jicho",
+          "correct": false,
+          "feedback": "Jicho = eye (plural: macho)"
+        }
+      ],
+      "explanation": "jicho = eye.",
+      "grammar": [
+        "sanifu-noun-classes"
+      ]
+    },
+    {
+      "id": "969e51fa-41ab-5a37-b08b-efa2df237e58",
+      "mode": "translate",
+      "english": "legs (more than one)",
+      "before": "",
+      "after": "",
+      "options": [
+        {
+          "text": "miguu",
+          "correct": true
+        },
+        {
+          "text": "mguu",
+          "correct": false,
+          "feedback": "mguu = leg / foot (plural miguu)"
+        },
+        {
+          "text": "mikono",
+          "correct": false,
+          "feedback": "mikono = arms / hands (one: mkono)"
+        }
+      ],
+      "explanation": "mguu = one leg, miguu = legs, mikono = arms / hands."
+    },
+    {
+      "id": "5300425d-93c0-54d3-9512-31f83b974e35",
+      "mode": "translate",
+      "english": "eyes",
+      "before": "",
+      "after": "",
+      "options": [
+        {
+          "text": "macho",
+          "correct": true
+        },
+        {
+          "text": "jicho",
+          "correct": false,
+          "feedback": "jicho = eye (plural: macho)"
+        },
+        {
+          "text": "masikio",
+          "correct": false,
+          "feedback": "masikio = ears (one: sikio)"
+        }
+      ],
+      "explanation": "jicho = one eye, macho = eyes, masikio = ears."
+    },
+    {
+      "id": "655a2e06-bb7d-54c0-99a7-08fd6fdfd3b1",
+      "mode": "translate",
+      "english": "arms / hands",
+      "before": "",
+      "after": "",
+      "options": [
+        {
+          "text": "mikono",
+          "correct": true
+        },
+        {
+          "text": "mkono",
+          "correct": false,
+          "feedback": "mkono = hand / arm (plural mikono)"
+        },
+        {
+          "text": "miguu",
+          "correct": false,
+          "feedback": "miguu = legs / feet (one: mguu)"
+        }
+      ],
+      "explanation": "mikono: arms / hands (one: mkono)"
+    },
+    {
+      "id": "58140105-6d75-5457-aa49-7e4210d64ed3",
+      "mode": "translate",
+      "english": "I'm sick.",
+      "before": "",
+      "after": " mgonjwa.",
+      "options": [
+        {
+          "text": "Niko",
+          "correct": true
+        },
+        {
+          "text": "Uko",
+          "correct": false,
+          "feedback": "Uko = You are (at / doing)"
+        },
+        {
+          "text": "Yuko",
+          "correct": false,
+          "feedback": "Yuko = He/she is (at / doing)"
+        }
+      ],
+      "explanation": "Kenyan: niko mgonjwa. Sanifu: mimi ni mgonjwa / ninaumwa.",
+      "grammar": [
+        "ko-location"
+      ]
+    },
+    {
+      "id": "c64e050e-9e6e-5708-aaf9-baff915310d5",
+      "mode": "translate",
+      "english": "She's sick.",
+      "before": "",
+      "after": " mgonjwa.",
+      "options": [
+        {
+          "text": "Yuko",
+          "correct": true
+        },
+        {
+          "text": "Niko",
+          "correct": false,
+          "feedback": "Niko = I am (at / doing)"
+        },
+        {
+          "text": "Wako",
+          "correct": false,
+          "feedback": "Wako = They are (at / doing)"
+        }
+      ],
+      "explanation": "Yuko = \"He/she is (at / doing)\" — yu- + -ko (be at a place, or how you're doing). \"Yuko poa\" = he/she is fine.",
+      "grammar": [
+        "ko-location"
+      ]
+    },
+    {
+      "id": "b872f6ba-23d0-5a85-8d6f-447a967b194d",
+      "mode": "translate",
+      "english": "The sick people are at the clinic.",
+      "before": "",
+      "after": " wako kliniki.",
+      "options": [
+        {
+          "text": "Wagonjwa",
+          "correct": true
+        },
+        {
+          "text": "Mgonjwa",
+          "correct": false,
+          "feedback": "Mgonjwa = sick (person)"
+        },
+        {
+          "text": "Madaktari",
+          "correct": false
+        }
+      ],
+      "explanation": "mgonjwa = one sick person, wagonjwa = sick people.",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "895efdc1-0c00-5262-8603-77f8457cce8b",
+      "mode": "translate",
+      "english": "Do you have a fever?",
+      "before": "Uko na ",
+      "after": "?",
+      "options": [
+        {
+          "text": "homa",
+          "correct": true
+        },
+        {
+          "text": "njaa",
+          "correct": false,
+          "feedback": "njaa = hunger"
+        },
+        {
+          "text": "kiu",
+          "correct": false,
+          "feedback": "kiu = thirst"
+        }
+      ],
+      "explanation": "homa = fever, njaa = hunger, kiu = thirst."
+    },
+    {
+      "id": "533feba7-6448-5c3d-adab-6e389cc08f96",
+      "mode": "translate",
+      "english": "I feel cold.",
+      "before": "",
+      "after": " baridi.",
+      "options": [
+        {
+          "text": "Ninasikia",
+          "correct": true
+        },
+        {
+          "text": "Ninakunywa",
+          "correct": false,
+          "feedback": "Ninakunywa = I am drinking"
+        },
+        {
+          "text": "Ninaenda",
+          "correct": false,
+          "feedback": "Ninaenda = I am going"
+        }
+      ],
+      "explanation": "Ninasikia baridi = I feel cold (lit. \"I hear cold\")."
+    },
+    {
+      "id": "c9de530a-0f80-5abc-9520-728ac1a2e385",
+      "mode": "translate",
+      "english": "I'm drinking water.",
+      "before": "",
+      "after": " maji.",
+      "options": [
+        {
+          "text": "Ninakunywa",
+          "correct": true
+        },
+        {
+          "text": "Ninakula",
+          "correct": false,
+          "feedback": "Ninakula = I am eating"
+        },
+        {
+          "text": "Ninaoga",
+          "correct": false,
+          "feedback": "Ninaoga = I am showering"
+        }
+      ],
+      "explanation": "Ninakunywa = \"I am drinking\" — ni- (subject: I) + na- (present) + -nywa (drink). From kunywa. Colloquially often shortened: ni-na- → na-.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "4a2dcdf2-2cf2-51ed-8b4b-35738852c5ac",
+      "mode": "translate",
+      "english": "I'm going to the clinic at 2 p.m.",
+      "before": "Ninaenda kliniki saa ",
+      "after": " mchana.",
+      "options": [
+        {
+          "text": "nane",
+          "correct": true
+        },
+        {
+          "text": "mbili",
+          "correct": false,
+          "feedback": "mbili = 2 (n/n form"
+        },
+        {
+          "text": "kumi",
+          "correct": false,
+          "feedback": "kumi = 10 (n/n form"
+        }
+      ],
+      "explanation": "2 p.m.: 2 + 6 = 8 → saa nane.",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "ca901216-a07b-5842-8315-e1251186147f",
+      "mode": "translate",
+      "english": "I'm going home to rest.",
+      "before": "Ninaenda nyumbani ",
+      "after": ".",
+      "options": [
+        {
+          "text": "kupumzika",
+          "correct": true
+        },
+        {
+          "text": "kupika",
+          "correct": false,
+          "feedback": "kupika = To cook"
+        },
+        {
+          "text": "kucheza",
+          "correct": false,
+          "feedback": "kucheza = To play"
+        }
+      ],
+      "explanation": "kupumzika = to rest."
+    },
+    {
+      "id": "5774f9dd-2fa8-5cc9-b972-953d16a62dd6",
+      "mode": "translate",
+      "english": "a good doctor",
+      "before": "daktari ",
+      "after": "",
+      "options": [
+        {
+          "text": "mzuri",
+          "correct": true
+        },
+        {
+          "text": "mgonjwa",
+          "correct": false,
+          "feedback": "mgonjwa = sick (person)"
+        },
+        {
+          "text": "mdogo",
+          "correct": false,
+          "feedback": "mdogo = small / young"
+        }
+      ],
+      "explanation": "mzuri = good."
+    },
+    {
+      "id": "38ac707a-9a07-5c1e-97b4-05d383cb36f5",
+      "mode": "complete",
+      "english": "Are you okay? — I'm a bit sick.",
+      "before": "Uko sawa? — Niko ",
+      "after": " kidogo.",
+      "options": [
+        {
+          "text": "mgonjwa",
+          "correct": true
+        },
+        {
+          "text": "mzuri",
+          "correct": false,
+          "feedback": "mzuri = good (person)"
+        },
+        {
+          "text": "mrefu",
+          "correct": false,
+          "feedback": "mrefu = tall / long"
+        }
+      ],
+      "explanation": "mgonjwa = \"sick (person)\" — plural: wagonjwa"
+    },
+    {
+      "id": "0ae26392-a4fc-5618-ada7-7b7cf281f03c",
+      "mode": "translate",
+      "english": "Get well soon!",
+      "before": "Ugua ",
+      "after": "!",
+      "options": [
+        {
+          "text": "pole",
+          "correct": true
+        },
+        {
+          "text": "sana",
+          "correct": false,
+          "feedback": "sana = very / a lot"
+        },
+        {
+          "text": "kidogo",
+          "correct": false,
+          "feedback": "kidogo = a little / a bit"
+        }
+      ],
+      "explanation": "Ugua pole = get well soon (lit. \"be ill gently\")."
+    }
+  ]
+}

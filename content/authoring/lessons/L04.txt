@@ -1,232 +1,474 @@
-# Level 4 — past -li-, negative past -ku-, object infixes (-ni- -ku- -m(w)- -wa-), days & time words
+# Level 4 — work, school & the outdoors. Level-1 grammar only, more vocabulary per line.
 
-@lesson uber-nairobi-3
-title: Taking an Uber, Part 3: Stuck in the Jam
+@lesson garden-workshop
+title: Weeds, Hammers and Nails: Garden and Workshop
 level: 4
-theme: uber
-category: transport
-culture: The Uber is back — and so is Kamau, your driver from Parts 1 and 2. Monday-morning traffic on Waiyaki Way is legendary, and drivers know every shortcut (njia ya mkato) through the leafy back roads of Lavington. Small talk in a jam is normal and expected. This time the conversation is about what already happened: the weekend, the accident, the missed call. That's the past tense -li-, and its negative -ku-.
-start: Monday, 7:20 a.m. You order an Uber to the office — and Kamau pulls up again.
-grammar: past-li, negative-past, object-infixes
-gl: njia ya mkato = "a shortcut" — lit. "a way of cutting" (from kukata).
-gl: Lavington = Lavington — leafy Nairobi suburb with back roads
-gl: gari mbili = "two cars" — Kenyan n/n agreement. || Sanifu: magari mawili (ji/ma class) #sanifu-noun-classes
-gl: ziliharibika = "were damaged / broke down" — zi- (they, n/n) + -li- (past) + -haribika. Kenyan n/n agreement for gari. || Sanifu: yaliharibika (magari, ji/ma) #past-li
-gl: hakuna mtu = "nobody" — lit. "there is no person"
-gl: kwa Waiyaki Way = "on Waiyaki Way" — Kenyan use of kwa. || Sanifu: kwenye barabara ya Waiyaki #locative-ni
-gl: wikendi yote = "the whole weekend"
-gl: ilizima = "(it) switched off / died" — i- (it, n/n) + -li- (past) + -zima. #past-li
-gl: kasoro = "minus / to" — saa mbili kasoro dakika tano = 7:55 #time-swahili
+index: 1
+theme: home
+category: home
+culture: Many Nairobi homes have a small garden — a "bustani" for flowers, or a "shamba" for vegetables like sukuma and spinach — and an older gardener who knows every plant by name. Address an older man respectfully as "mzee". Kupanda means both "to plant" and "to climb / get on" (a matatu); context tells you which. A "fundi" is anyone skilled with their hands, and calling someone "fundi kweli" (a real fundi) is high praise.
+start: Saturday morning. Mzee Ochieng, who looks after the garden of your block, is already at work with a hoe.
+grammar: present-na, ko-location, adjective-agreement, possessives
+gl: Mzee Ochieng = Mr Ochieng — mzee is a respectful address for an older man
+gl: mzee = "sir" — respectful address for an older man
+gl: nyasi = grass
+gl: maua = flowers || Sanifu: ua / maua (ji/ma class)
+gl: mlango = door
+gl: mboga = vegetables
+gl: Udongo = soil
+gl: udongo = soil
+gl: jembe = hoe || Sanifu: jembe / majembe (ji/ma class)
+gl: unang'oa = "you pull out" — -ng'oa = pull out, uproot
+gl: magugu = weeds
+gl: ninamwagilia maji = "I'm watering" — -mwagilia maji = water (plants)
+gl: mingi = "many, a lot" — Kenyan. || Sanifu: mengi
+gl: kila wiki = "every week"
+gl: kiti = chair || Sanifu: kiti / viti (ki/vi class)
+gl: mbovu = broken / rotten
+gl: Mguu yake = "its leg" — Kenyan. || Sanifu: mguu wake
+gl: karakana = workshop
+gl: nyundo = hammer
+gl: misumari = nails (one: msumari)
+gl: msumeno = saw
+gl: mbao = wood, planks
+gl: ninagonga = "I knock / hammer in" — -gonga = knock, hit
+gl: fundi = skilled worker, craftsman
+gl: bustani = garden
 
-> Dereva: Aah, John! Ni wewe tena! Habari ya wikendi? | Ah, John! It's you again! How was the weekend?
-< Mteja: Kamau! Nzuri sana. Nilienda Naivasha na marafiki. | Kamau! Very good. I went to Naivasha with friends.
-  x: Kamau! Nzuri sana. Nitaenda Naivasha na marafiki. ; Kamau! Nzuri sana. Ulienda Naivasha na marafiki.
-> Dereva: Safi! Mlifanya nini huko? | Great! What did you do there?
-< Mteja: Tuliona viboko, na tulikula nyama choma. | We saw hippos, and we ate nyama choma.
-  x: Tutaona viboko, na tutakula nyama choma. ; Tuliona viboko, na tulila nyama choma.
-> Dereva: Wee! Mimi sikuenda popote. Nilifanya kazi wikendi yote. | Wow! I didn't go anywhere. I worked the whole weekend.
-< Mteja: Pole sana. Leo kuna magari mingi sana! | So sorry. Today there's so much traffic!
-  x: Asante sana. Leo kuna magari mingi sana! ; Pole sana. Leo kuna magari machache sana!
-> Dereva: Ndiyo. Kulikuwa na ajali kwa Waiyaki Way asubuhi. | Yes. There was an accident on Waiyaki Way this morning.
-< Mteja: Kweli? Sikuona habari. Watu waliumia? | Really? I didn't see the news. Did people get hurt?
-  x: Kweli? Sioni habari. Watu waliumia? ; Kweli? Sikuona habari. Watu wanaumia?
-> Dereva: Hapana, hakuna mtu aliumia. Lakini gari mbili ziliharibika. | No, nobody got hurt. But two cars were damaged.
-  s: Hapana, hakuna mtu aliumia. Lakini magari mawili yaliharibika.
-< Mteja: Tutachelewa? Nilimwambia boss nitafika saa mbili. | Will we be late? I told the boss I'd arrive at eight.
-  x: Tutachelewa? Nilikuambia boss nitafika saa mbili. ; Tutachelewa? Nilimwambia boss nilifika saa mbili.
-> Dereva: Usijali. Nitapita njia ya mkato, kupitia Lavington. | Don't worry. I'll take a shortcut, through Lavington.
-< Mteja: Poa! Jana nilikupigia simu, lakini hukuchukua. | Cool! Yesterday I called you, but you didn't pick up.
-  x: Poa! Jana ulinipigia simu, lakini hukuchukua. ; Poa! Jana nilikupigia simu, lakini sikuchukua.
-> Dereva: Aah, pole! Simu yangu ilizima — batari iliisha. | Ah, sorry! My phone died — the battery ran out.
-< Mteja: Hakuna shida. Nitakupigia tena kesho asubuhi. | No problem. I'll call you again tomorrow morning.
-  x: Hakuna shida. Nilikupigia tena kesho asubuhi. ; Hakuna shida. Nitampigia tena kesho asubuhi.
-> Dereva: Sawa. Na hii ndiyo ofisi yako. Saa mbili kasoro dakika tano! | Okay. And this is your office. Five to eight!
+> Mzee Ochieng: Habari ya asubuhi, John! Leo ninakata nyasi na ninapanda maua. | Good morning, John! Today I'm cutting the grass and planting flowers.
+< John: Nzuri, mzee! Unapanda maua gani? | Good, sir! Which flowers are you planting?
+  x: Nzuri, mzee! Unakula maua gani? ; Nzuri, mzee! Ninapanda maua gani?
+> Mzee Ochieng: Maua nyekundu na njano, karibu na mlango. | Red and yellow flowers, near the door.
+< John: Safi! Na mboga? Tunapanda sukuma pia? | Great! And vegetables? Are we planting sukuma too?
+  x: Safi! Na mboga? Tunakunywa sukuma pia? ; Safi! Na mboga? Unapanda sukuma wapi?
+> Mzee Ochieng: Ndiyo. Mvua inanyesha sasa, na udongo ni mzuri. | Yes. The rain is falling now, and the soil is good.
+< John: Mimi ninafanya nini? Niko na jembe hapa. | What do I do? I've got a hoe here.
+  x: Mimi ninakula nini? Niko na jembe hapa. ; Mimi ninafanya nini? Uko na jembe hapa.
+> Mzee Ochieng: Wewe unang'oa magugu, na mimi ninamwagilia maji maua. | You pull out the weeds, and I water the flowers.
+< John: Sawa. Magugu ni mingi sana! | Okay. There are so many weeds!
+  s: Sawa. Magugu ni mengi sana!
+  x: Sawa. Magugu ni tamu sana! ; Sawa. Magugu niko mingi sana!
+> Mzee Ochieng: Ndiyo, ni kazi ya kila wiki. Na kiti ya jikoni — iko sawa? | Yes, it's a weekly job. And the kitchen chair — is it okay?
+  s: Ndiyo, ni kazi ya kila wiki. Na kiti cha jikoni — kiko sawa?
+< John: Hapana, kiti ni mbovu. Mguu yake ni mbovu. | No, the chair is broken. Its leg is broken.
+  x: Hapana, kiti ni safi. Mguu yake ni mbovu. ; Hapana, kiti ni mbovu. Mguu yangu ni mbovu.
+> Mzee Ochieng: Sawa, ninaenda karakana. Niko na nyundo na misumari. | Okay, I'm going to the workshop. I've got a hammer and nails.
+< John: Mimi niko na msumeno hapa pia. | I've got a saw here too.
+  x: Mimi niko na mboga hapa pia. ; Wewe uko na msumeno hapa pia.
+> Mzee Ochieng: Poa! Ninakata mbao kidogo na msumeno, halafu ninagonga misumari na nyundo. | Great! I cut a bit of wood with the saw, then I hammer in the nails.
+< John: Wee, wewe ni fundi kweli! | Wow, you're a real fundi!
+  x: Wee, mimi ni fundi kweli! ; Wee, wewe ni magugu kweli!
+> Mzee Ochieng: Haha! Kiti iko sawa sasa. Na bustani ni safi! | Ha! The chair is fine now. And the garden is neat!
+< John: Asante sana, mzee. Kazi ni nzuri sana! | Thank you so much, sir. That's really good work!
+  x: Pole sana, mzee. Kazi ni nzuri sana! ; Asante sana, mzee. Kazi ni chafu sana!
 
 @practice
-t: I went to Naivasha. | [Nilienda|Ninaenda|Nitaenda] Naivasha. || Past: ni- (I) + -li- (past) + -enda (go).
-t: What did you (all) do there? | [Mlifanya|Tulifanya|Walifanya] nini huko? || m- = you all.
-t: We saw hippos. | [Tuliona|Tunaona|Mliona] viboko.
-t: We ate nyama choma. | [Tulikula|Tulila|Tunakula] nyama choma. || kula keeps its ku- after -li-: tulikula.
-t: He worked the whole weekend. | [Alifanya|Anafanya|Atafanya] kazi wikendi yote.
-t: I didn't go anywhere. | [Sikuenda|Siendi|Sitaenda] popote. || Negative past: si- (not I) + -ku- (past) + -enda. The verb keeps its -a.
-t: I didn't see the news. | [Sikuona|Sioni|Sitaona] habari. || sioni = I don't see (now); sikuona = I didn't see.
-t: You didn't pick up. | [Hukuchukua|Sikuchukua|Hakuchukua]. || hu- (not you) + -ku- (past) + -chukua.
-t: She didn't come. | [Hakuja|Hukuja|Sikuja]. || ha- (not he/she) + -ku- + -ja.
-t: There was an accident. | [Kulikuwa na|Kuna|Kutakuwa na] ajali. || kuna = there is; kulikuwa na = there was.
-t: Nobody got hurt. | Hakuna mtu [aliumia|aliumiza|anaumia]. || kuumia = to get hurt; kuumiza = to hurt (someone).
-t: I told him / her. | [Nilimwambia|Nilikuambia|Niliwaambia]. || Object infixes sit right before the verb: -mw- him/her, -ku- you, -wa- them.
-t: I called you yesterday. | Jana [nilikupigia|nilimpigia|ulinipigia] simu. || ni- + -li- + -ku- (you) + -pigia simu (call).
-t: He called me. | [Alinipigia|Nilimpigia|Alikupigia] simu. || -ni- = me.
-t: I'll call you again. | [Nitakupigia|Nitampigia|Utanipigia] tena.
-t: The battery ran out. | Batari [iliisha|inaisha|itaisha]. || i- (it, n/n) + -li- + -isha (end, run out).
-c: Five to eight | Saa mbili [kasoro|na|kamili] dakika tano. || kasoro = minus: 8 o'clock (saa mbili) minus five minutes.
+t: I'm cutting the grass. | Ninakata [nyasi|maua|maji]. || nyasi = grass, maua = flowers, maji = water.
+t: He's planting flowers. | [Anapanda|Anakata|Anagonga] maua. || -panda = plant (also: climb, get on).
+t: We're planting sukuma. | [Tunapanda|Tunakunywa|Tunafua] sukuma.
+t: You pull out the weeds. | Unang'oa [magugu|maua|mboga]. || magugu = weeds, mboga = vegetables.
+t: I'm watering the flowers. | [Ninamwagilia|Ninakata|Ninapika] maua maji. || -mwagilia maji = water (plants).
+t: red and yellow flowers | maua nyekundu na [njano|bluu|nyeusi] || njano = yellow, bluu = blue, nyeusi = black.
+t: The soil is good. | [Udongo|Nyasi|Mbao] ni mzuri. || udongo = soil, mbao = wood.
+t: I've got a hoe. | Niko na [jembe|nyundo|msumeno]. || jembe = hoe, nyundo = hammer, msumeno = saw.
+t: a hammer and nails | nyundo na [misumari|mbao|maua] || msumari = one nail, misumari = nails.
+t: nails (more than one) | [misumari|msumari|nyundo]
+t: The chair is broken. | Kiti ni [mbovu|safi|mpya]. || mbovu = broken, safi = clean, mpya = new.
+t: I'm cutting wood with the saw. | Ninakata mbao na [msumeno|nyundo|jembe].
+t: I'm hammering in the nails. | [Ninagonga|Ninapanda|Ninang'oa] misumari. || -gonga = knock, hit.
+t: You're a real fundi! | Wewe ni [fundi|mgonjwa|mgeni] kweli! || fundi = skilled worker, craftsman.
+t: The garden is neat. | [Bustani|Karakana|Jikoni] ni safi. || bustani = garden, karakana = workshop.
+t: There are lots of weeds. | Magugu ni [mingi|safi|tamu]. || Kenyan: mingi. Sanifu: mengi.
+c: What are you planting? — Flowers. | Unapanda nini? — [Maua|Nyundo|Misumari].
 
 @vocab
-Nilienda… | I went… | ni- + -li- (past) + -enda
-Mlifanya nini? | What did you (all) do? | m- = you all
-Tuliona… | We saw… |
-Sikuenda | I didn't go | si- + -ku- (past negative) + -enda
-Sikuona | I didn't see |
-Kulikuwa na ajali | There was an accident |
-kuna magari mingi | there's traffic | lit. "there are many cars" — the everyday Kenyan way to say there's a jam
-Nilimwambia | I told him/her | -mw- = him/her
-Nilikupigia simu | I called you | -ku- = you; kupigia simu = to phone someone
-Hukuchukua | You didn't pick up | hu- (not you) + -ku- (past)
-njia ya mkato | shortcut | from kukata (to cut)
-kasoro | minus / to (time) | saa mbili kasoro dakika tano = 7:55
-Batari iliisha | The battery ran out | batari = battery
+bustani | garden (flowers) | shamba = (vegetable) garden, farm
+nyasi | grass | Ninakata nyasi.
+maua | flowers | Kenyans: maua nyekundu | maua mekundu | Sanifu: ji/ma class (ua / maua)
+magugu | weeds | kung'oa magugu = to pull out weeds
+kupanda | to plant | Also: to climb, to get on (a matatu)
+kumwagilia maji | to water (plants) |
+jembe | hoe |
+nyundo | hammer |
+msumeno | saw |
+msumari / misumari | nail / nails |
+mbovu | broken / rotten | Kiti ni mbovu.
+fundi | skilled worker, craftsman | Wewe ni fundi kweli! = You're a real pro!
+karakana | workshop |
 
-@lesson chemist-sick
-title: Feeling Sick: At the Chemist
+@lesson safari-animals
+title: Game Drive in the Maasai Mara
 level: 4
-theme: health
-category: health
-culture: For everyday illnesses, Kenyans go to the chemist (pharmacy) first — the pharmacist asks about your symptoms, and you walk out with medicine and clear instructions. "Pole!" (sorry) is the first thing anyone says when you're unwell — it expresses sympathy, not an apology. Body-part nouns are a lovely place to see the Kenyan n/n habit: "kichwa inauma" (my head hurts) is everyday speech, while Sanifu says "kichwa kinauma" because kichwa is ki/vi.
-start: You've felt awful since yesterday. You walk into a chemist near your flat.
-grammar: past-li, negative-past, object-infixes
-gl: chemist = pharmacy — Kenyans say "chemist" for the shop
-gl: Kichwa inauma = "My head hurts" — Kenyan n/n agreement. || Sanifu: Kichwa kinauma (kichwa is ki/vi) #sanifu-noun-classes
-gl: inauma = "it hurts" — i- (it) + -na- + -uma (bite, hurt). #present-na
-gl: kidogo = "a little"
-gl: Kukohoa = "coughing"
-gl: tangu = "since"
-gl: mara tatu kwa siku = "three times a day"
-gl: baada ya kula = "after eating"
-gl: maji mengi = "a lot of water" — ji/ma agreement (maji is ji/ma). Kenyans also say "maji mingi".
-gl: ukipata = "if you get" — u- + -ki- (if) + -pata. You'll meet -ki- properly at Level 8. #ki-po-ka
-gl: Dawa hii = "this medicine"
-gl: dawa hii = this medicine — n/n: dawa hii, dawa hizi
-gl: homa = "fever / flu" — Kenyans also use it for a bad cold
-
-< Mteja: Habari, daktari. Sijisikii vizuri. | Hello, doctor. I don't feel well.
-  x: Habari, daktari. Najisikia vizuri sana. ; Habari, daktari. Hujisikii vizuri.
-> Daktari: Pole sana. Ulianza kuumwa lini? | So sorry. When did you start feeling sick?
-< Mteja: Nilianza jana usiku. Kichwa inauma sana. | I started last night. My head hurts a lot.
-  s: Nilianza jana usiku. Kichwa kinauma sana.
-  x: Nitaanza jana usiku. Kichwa inauma sana. ; Nilianza jana usiku. Kichwa inaumwa sana.
-> Daktari: Una homa? Ulikohoa? | Do you have a fever? Did you cough?
-< Mteja: Ndiyo, nina homa kidogo. Sikulala vizuri. | Yes, I have a little fever. I didn't sleep well.
-  x: Ndiyo, nina homa kidogo. Silali vizuri. ; Ndiyo, sina homa kidogo. Sikulala vizuri.
-> Daktari: Ulikula nini jana? | What did you eat yesterday?
-< Mteja: Nilikula chapati tu. Sikula chakula kingi. | I only ate chapati. I didn't eat much food.
-  s: Nilikula chapati tu. Sikula chakula kingi.
-  x: Ninakula chapati tu. Sikula chakula kingi. ; Nilikula chapati tu. Sili chakula kingi.
-> Daktari: Sawa. Nitakupa dawa ya homa. | Okay. I'll give you medicine for the fever.
-< Mteja: Asante. Ninakunywa dawa hii namna gani? | Thanks. How do I take this medicine?
-  x: Asante. Unakunywa dawa hii namna gani? ; Asante. Ninakula dawa hii wapi?
-> Daktari: Kunywa dawa hii mara tatu kwa siku, baada ya kula. | Take this medicine three times a day, after eating.
-< Mteja: Mara tatu kwa siku. Sawa, nimeelewa. | Three times a day. Okay, I've understood.
-  x: Mara mbili kwa siku. Sawa, nimeelewa. ; Mara tatu kwa wiki. Sawa, nimeelewa.
-> Daktari: Na kunywa maji mengi. Ukipata shida, rudi kesho. | And drink a lot of water. If you have trouble, come back tomorrow.
-< Mteja: Sawa. Ni pesa ngapi? | Okay. How much is it?
-  x: Sawa. Ni pesa wapi? ; Sawa. Ni pesa nani?
-> Daktari: Ni mia nne. Pona haraka! | It's four hundred. Get well soon!
-
-@practice
-t: I started last night. | [Nilianza|Ninaanza|Nitaanza] jana usiku.
-t: When did you start? | [Ulianza|Nilianza|Alianza] lini? || lini = when?
-t: I didn't sleep well. | [Sikulala|Silali|Sitalala] vizuri. || si- + -ku- (past negative) + -lala.
-t: I didn't eat much. | [Sikula|Sili|Sitakula] sana. || Sanifu sikula; many Kenyans say sikukula.
-t: What did you eat yesterday? | [Ulikula|Unakula|Utakula] nini jana?
-t: Did you cough? | [Ulikohoa|Unakohoa|Utakohoa]?
-t: My head hurts. | Kichwa [inauma|ninauma|unauma]. || Kenyan: kichwa inauma. Sanifu: kichwa kinauma.
-t: I have a little fever. | [Nina|Sina|Una] homa kidogo.
-t: I'll give you medicine. | [Nitakupa|Nitampa|Utanipa] dawa. || ni- + -ta- + -ku- (you) + -pa (give).
-t: Give me medicine. | [Nipe|Mpe|Wape] dawa. || Nipe = give me; mpe = give him/her; wape = give them.
-t: this medicine | dawa [hii|huyu|hiki] || dawa is n/n: dawa hii (this medicine), dawa hizi (these medicines).
-t: three times a day | mara [tatu|tano|saba] kwa siku || mara = times.
-t: after eating | [baada ya|kabla ya|karibu na] kula || baada ya = after; kabla ya = before.
-t: Drink a lot of water. | [Kunywa|Kula|Lete] maji mengi.
-t: Come back tomorrow. | [Rudi|Ondoka|Panda] kesho.
-c: Get well soon! | [Pona|Pole|Poa] haraka! || pona = heal / get well. Pole = sorry; poa = cool.
-t: I don't feel well. | [Sijisikii|Najisikia|Hajisikii] vizuri. || A fixed phrase: si- + -ji- (myself) + -sikii (feel, negative).
-
-@vocab
-Sijisikii vizuri | I don't feel well | Lit. "I don't feel myself well"
-Pole sana | I'm so sorry | Sympathy, not an apology
-Ulianza lini? | When did you start? | lini = when?
-Kichwa inauma | My head hurts | Everyday Kenyan. | Kichwa kinauma | Sanifu: kichwa is ki/vi class
-homa | fever / flu | Una homa? = do you have a fever?
-Sikulala vizuri | I didn't sleep well | si- + -ku- + -lala
-Ulikula nini? | What did you eat? |
-Nitakupa dawa | I'll give you medicine | -ku- = you
-mara tatu kwa siku | three times a day |
-baada ya kula | after eating | kabla ya kula = before eating
-dawa hii | this medicine | n/n: dawa hii, dawa hizi
-Pona haraka! | Get well soon! | kupona = to heal
-chemist | pharmacy | Kenyans say "chemist"
-
-@lesson weekend-story
-title: How Was Your Weekend?
-level: 4
-theme: friends
+index: 2
+theme: safari
 category: social
-culture: Monday morning at a Kenyan office starts with "Wikendi ilikuwaje?" (how was the weekend?) — and a story. Telling what happened is all past tense: -li- for what you did, -ku- for what you didn't. Object infixes let you say who it happened to without extra words: nilimwona (I saw him/her), alinipigia (she called me), tuliwaona (we saw them).
-start: Monday, 9 a.m. Your colleague Wanjiku is making tea in the office kitchen.
-grammar: past-li, negative-past, object-infixes
-gl: Wikendi ilikuwaje = "How was the weekend?" — i- (it) + -li- + -kuwa (be) + -je (how?). #past-li
-gl: ilikuwaje = "how was it?" — i- (it) + -li- (past) + -kuwa (be) + -je (how?) #past-li
-gl: ilikuwa = "it was" — i- (it) + -li- (past) + -kuwa (be). #past-li
-gl: dadangu = "my sister" — dada + -angu, contracted. #possessives
-gl: harusi = wedding
-gl: hotel = hotel
-gl: Mombasa = Mombasa — the coastal city
-gl: shughuli nyingi = "lots of things to do / busy"
-gl: tukacheza = "and then we played" — tu- + -ka- (and then) + -cheza. #ki-po-ka
-gl: mpira = football
-gl: Kwa nini = why?
-gl: alinipigia = "she called me" — a- + -li- + -ni- (me) + -pigia. #object-infixes
+culture: The Maasai Mara is Kenya's most famous game park (mbuga ya wanyama), and "safari" is a Swahili word: it simply means "journey". Guides speak to each other in Swahili over the radio to share sightings. All animals take the same agreement as people, whatever their noun class: simba watatu (three lions), twiga ni mrefu (the giraffe is tall), tembo ni wakubwa (elephants are big).
+start: 6:30 a.m. in an open-roof safari van. Your guide, Saitoti, has binoculars round his neck.
+grammar: present-na, ko-location, adjective-agreement, numbers-money
+gl: Saitoti = Saitoti (a Maasai name)
+gl: Maasai Mara = the Maasai Mara game reserve
+gl: Big Five = the "Big Five": lion, leopard, elephant, buffalo, rhino
+gl: tunatafuta = "we're looking for" — -tafuta = look for
+gl: simba = lion(s)
+gl: mto = river
+gl: chini ya = "under"
+gl: mti = tree (plural: miti)
+gl: Ninaona = "I see" — -ona = see
+gl: simba jike = lioness (jike = female)
+gl: twiga = giraffe(s)
+gl: majani = leaves
+gl: juu ya = "on top of, above"
+gl: miti = trees
+gl: tembo = elephant(s)
+gl: mtoni = "at the river" — mto + -ni. #locative-ni
+gl: hatari = danger / dangerous
+gl: kiboko = hippo || Sanifu: kiboko / viboko (ki/vi class — but animals agree like people)
+gl: ndege = bird(s) — also: aeroplane
+gl: ndani ya = "inside"
+gl: juu = "on top, above"
+gl: chui = leopard
 
-> Wanjiku: Habari ya asubuhi, John! Wikendi ilikuwaje? | Good morning, John! How was the weekend?
-< John: Ilikuwa nzuri sana! Nilienda harusi ya rafiki yangu. | It was really good! I went to my friend's wedding.
-  x: Itakuwa nzuri sana! Nilienda harusi ya rafiki yangu. ; Ilikuwa nzuri sana! Nitaenda harusi ya rafiki yangu.
-> Wanjiku: Wee! Harusi ilikuwa wapi? | Wow! Where was the wedding?
-< John: Ilikuwa Karen. Watu wengi walikuja, na tulicheza muziki mpaka usiku. | It was in Karen. Lots of people came, and we danced until night.
-  x: Ilikuwa Karen. Watu wengi walikuja, na tunacheza muziki mpaka usiku. ; Ilikuwa Karen. Watu wengi hawakuja, na tulicheza muziki mpaka usiku.
-> Wanjiku: Safi sana! Ulimwona Baraka huko? | Great! Did you see Baraka there?
-< John: Hapana, sikumwona. Hakuja. | No, I didn't see him. He didn't come.
-  x: Hapana, sikukuona. Hakuja. ; Ndiyo, sikumwona. Hakuja.
-> Wanjiku: Aah, nakumbuka! Alinipigia simu Jumamosi. Alienda Mombasa. | Ah, I remember! He called me on Saturday. He went to Mombasa.
-< John: Kweli? Alienda kufanya nini? | Really? What did he go to do?
-  x: Kweli? Ulienda kufanya nini? ; Kweli? Atakwenda kufanya nini?
-> Wanjiku: Kazi tu. Na wewe, ulipumzika Jumapili? | Just work. And you, did you rest on Sunday?
-< John: Hapana! Nilifua nguo, nikapika, halafu nilicheza mpira na majirani. | No! I did laundry, cooked, then played football with the neighbours.
-  x: Hapana! Ninafua nguo, nikapika, halafu nilicheza mpira na majirani. ; Ndiyo! Nilifua nguo, nikapika, halafu nilicheza mpira na majirani.
-> Wanjiku: Pole! Wikendi yako ilikuwa na shughuli nyingi. | Aww! Your weekend was busy.
-< John: Ndiyo. Na wewe, ulifanya nini? | Yes. And you, what did you do?
-  x: Ndiyo. Na wewe, utafanya nini? ; Ndiyo. Na wewe, nilifanya nini?
-> Wanjiku: Mimi? Nililala tu! Sikutoka nyumbani hata kidogo. | Me? I just slept! I didn't leave the house at all.
+> Saitoti: Habari ya asubuhi! Karibu Maasai Mara. Leo tunatafuta Big Five! | Good morning! Welcome to the Maasai Mara. Today we're looking for the Big Five!
+< John: Asante! Simba wako wapi? | Thanks! Where are the lions?
+  x: Asante! Simba wako lini? ; Asante! Simba tuko wapi?
+> Saitoti: Simba wako karibu na mto, chini ya mti mkubwa. Wanalala sasa. | The lions are near the river, under a big tree. They're sleeping now.
+< John: Wee! Ninaona simba watatu! | Wow! I can see three lions!
+  x: Wee! Ninakula simba watatu! ; Wee! Ninaona simba watano!
+> Saitoti: Ndiyo! Ni simba jike watatu na watoto wao. | Yes! Three lionesses and their cubs.
+< John: Watoto ni wadogo sana! Na twiga? | The cubs are so small! And giraffes?
+  x: Watoto ni mdogo sana! Na twiga? ; Watoto ni wadogo sana! Na wapi?
+> Saitoti: Twiga wako upande wa kushoto. Twiga ni mrefu sana — anakula majani juu ya miti. | The giraffes are on the left. A giraffe is very tall — it eats leaves high up in the trees.
+< John: Na tembo? Tembo wako hapa pia? | And elephants? Are the elephants here too?
+  x: Na tembo? Tembo uko hapa pia? ; Na tembo? Tembo wako lini pia?
+> Saitoti: Ndiyo, tembo wanakunywa maji mtoni sasa. Wako kumi na wawili! | Yes, the elephants are drinking water at the river now. There are twelve!
+< John: Kumi na wawili! Tembo ni wakubwa sana. Ni hatari? | Twelve! Elephants are huge. Are they dangerous?
+  x: Kumi na wawili! Tembo ni mkubwa sana. Ni hatari? ; Kumi na wawili! Tembo ni wakubwa sana. Ni nani?
+> Saitoti: Ndiyo, ni hatari. Na kiboko pia ni hatari sana! | Yes, they're dangerous. And the hippo is very dangerous too!
+< John: Kiboko yuko wapi? Ninaona ndege tu. | Where's the hippo? I can only see birds.
+  x: Kiboko yuko wapi? Ninakula ndege tu. ; Kiboko wako wapi? Ninaona ndege tu.
+> Saitoti: Kiboko yuko ndani ya maji — macho tu ni juu! | The hippo is in the water — only its eyes are on top!
+< John: Ninaona! Safari ni nzuri sana! | I see it! The safari is amazing!
+  x: Unaona! Safari ni nzuri sana! ; Ninaona! Safari ni chafu sana!
+> Saitoti: Asante! Kesho asubuhi tunatafuta chui. | Thanks! Tomorrow morning we're looking for leopards.
 
 @practice
-t: How was the weekend? | Wikendi [ilikuwaje|itakuwaje|inakuwaje]? || -li- for past + -je for "how?".
-t: It was very good. | [Ilikuwa|Itakuwa|Iko] nzuri sana. || ilikuwa = it was (n/n subject).
-t: I went to a wedding. | [Nilienda|Ninaenda|Nitaenda] harusi.
-t: Many people came. | Watu wengi [walikuja|wanakuja|watakuja].
-t: We danced until night. | [Tulicheza|Tunacheza|Mlicheza] muziki mpaka usiku. || kucheza muziki = to dance (lit. "play music").
-t: Did you see Baraka? | [Ulimwona|Nilimwona|Alimwona] Baraka? || -mw- = him/her: u- + -li- + -mw- + -ona.
-t: No, I didn't see him. | Hapana, [sikumwona|sikukuona|sikuwaona]. || -mw- him, -ku- you, -wa- them.
-t: We saw them. | [Tuliwaona|Tulimwona|Walituona]. || -wa- = them.
-t: He didn't come. | [Hakuja|Hawakuja|Hukuja]. || ha- (not he) + -ku- + -ja.
-t: They didn't come. | [Hawakuja|Hakuja|Hatukuja].
-t: She called me. | [Alinipigia|Nilimpigia|Alikupigia] simu.
-t: He went to Mombasa. | [Alienda|Anaenda|Ataenda] Mombasa.
-t: Did you rest? | [Ulipumzika|Unapumzika|Utapumzika]?
-t: I didn't leave the house. | [Sikutoka|Sitoki|Sitatoka] nyumbani.
-t: I just slept! | [Nililala|Ninalala|Nitalala] tu!
-c: I did laundry, and then cooked. | Nilifua nguo, [nikapika|ninapika|nitapika]. || In a story, -ka- strings past events together: "…and then I cooked".
-t: What did you do? | [Ulifanya|Unafanya|Utafanya] nini?
+t: Where are the lions? | [Simba|Twiga|Tembo] wako wapi? || simba = lion, twiga = giraffe, tembo = elephant.
+t: I can see three lions. | [Ninaona|Ninakula|Ninalala] simba watatu. || -ona = see.
+t: The lions are sleeping. | Simba [wanalala|wanakula|wanakunywa]. || -lala = sleep.
+t: The elephants are drinking water. | Tembo [wanakunywa|wanakula|wanalala] maji.
+t: The giraffe eats leaves. | Twiga [anakula|wanakula|ninakula] majani. || One giraffe: a-. Several giraffes: wa-.
+t: The cubs are very small. | Watoto ni [wadogo|mdogo|wakubwa] sana. || One: mdogo. Several: wadogo.
+t: A giraffe is very tall. | Twiga ni [mrefu|warefu|mfupi] sana.
+t: Elephants are huge. | Tembo ni [wakubwa|mkubwa|wadogo] sana.
+t: Is it dangerous? | Ni [hatari|safi|tamu]? || hatari = danger / dangerous.
+t: The hippo is in the water. | [Kiboko|Simba|Twiga] yuko ndani ya maji. || kiboko = hippo.
+t: near the river | karibu na [mto|mti|mlima] || mto = river, mti = tree, mlima = mountain.
+t: under a big tree | chini ya [mti|mto|maji] mkubwa || chini ya = under.
+t: twelve elephants | tembo kumi na [wawili|watatu|wanne] || Animals count like people: wawili, watatu, wanne.
+t: I can only see birds. | Ninaona [ndege|nyoka|samaki] tu. || ndege = bird, nyoka = snake, samaki = fish.
+t: zebras and wildebeest | [pundamilia|chui|mamba] na nyumbu || pundamilia = zebra, chui = leopard, mamba = crocodile.
+t: We're looking for leopards. | [Tunatafuta|Tunakula|Tunalala] chui.
+c: What can you see? — A leopard! | Unaona nini? — [Chui|Mto|Hatari]!
 
 @vocab
-Wikendi ilikuwaje? | How was the weekend? | -je = how?
-Ilikuwa nzuri | It was good | i- (it) + -li- + -kuwa
-Nilienda… | I went… |
-Watu wengi walikuja | Lots of people came |
-Ulimwona…? | Did you see…? (him/her) | -mw- = him/her
-Sikumwona | I didn't see him/her | si- + -ku- + -mw- + -ona
-Hakuja | He/she didn't come | ha- + -ku- + -ja
-Alinipigia simu | She called me | -ni- = me
-Tuliwaona | We saw them | -wa- = them
-Nilifua nguo | I did laundry | kufua = to wash clothes
-Nililala tu | I just slept |
-Sikutoka nyumbani | I didn't leave the house |
-shughuli nyingi | lots to do / busy |
+mbuga ya wanyama | game park | wanyama = animals
+simba | lion(s) | simba jike = lioness
+twiga | giraffe(s) | Twiga ni mrefu.
+tembo | elephant(s) | Also: ndovu
+kiboko | hippo | Animals agree like people: kiboko yuko, viboko wako
+chui | leopard |
+pundamilia | zebra | lit. "striped donkey"
+nyumbu | wildebeest |
+ndege | bird(s) | Also: aeroplane
+mto | river | mtoni = at the river
+mti / miti | tree / trees |
+-ona | see | Ninaona simba!
+hatari | danger / dangerous | Ni hatari!
+
+@lesson school-visit
+title: Back to School: A Visit to Mwalimu Akinyi
+level: 4
+index: 3
+theme: school
+category: people
+culture: Kenyan schools run from 8 a.m., in uniforms (sare) of bright colours, and every child knows the head teacher as "mwalimu mkuu". Pupils sit national exams at the end of primary and secondary school, and parents talk about results constantly. Classes are counted, not named: darasa la nne is "class four". Teachers are addressed simply as "mwalimu" (teacher) — it's a title of respect.
+start: Your friend Akinyi is the head teacher of a primary school in Kibera. She's invited you to visit.
+grammar: present-na, ko-location, adjective-agreement, numbers-money
+gl: Akinyi = Akinyi (a Luo name)
+gl: shuleni = "at school" — shule + -ni. #locative-ni
+gl: mwalimu mkuu = "head teacher"
+gl: wangapi = "how many (people)"
+gl: wanasoma = "they study / read" — -soma = study, read
+gl: masomo = subjects (one: somo)
+gl: hesabu = maths
+gl: sayansi = science
+gl: Kiswahili = Swahili (the language)
+gl: Kiingereza = English (the language)
+gl: darasani = "in class" — darasa + -ni. #locative-ni
+gl: Darasa ya nne = "class four" — Kenyan. || Sanifu: darasa la nne (ji/ma class)
+gl: wanaandika = "they're writing" — -andika = write
+gl: mtihani = test / exam
+gl: mtihani wa hesabu = "a maths test"
+gl: ngumu = hard / difficult
+gl: wajanja = "clever, smart (people)" — one: mjanja
+gl: sare = uniform
+gl: saa nne = 10 o'clock
+gl: mapumziko = break, rest time
+gl: mpira = ball / football
+gl: unafundisha = "you teach" — -fundisha = teach
+gl: ninafundisha = "I teach"
+gl: sivyo = "isn't it? / right?"
+gl: mwanafunzi = student, pupil (plural: wanafunzi)
+
+> Akinyi: Karibu shuleni, John! Mimi ni mwalimu mkuu hapa. | Welcome to the school, John! I'm the head teacher here.
+< John: Asante, mwalimu. Shule ni kubwa sana! Wanafunzi ni wangapi? | Thanks, teacher. The school is very big! How many pupils are there?
+  x: Asante, mwalimu. Shule ni kubwa sana! Wanafunzi ni wapi? ; Asante, mwalimu. Shule ni kubwa sana! Mwanafunzi ni wangapi?
+> Akinyi: Wanafunzi ni mia nne, na walimu ni kumi na watano. | There are 400 pupils and 15 teachers.
+< John: Wee! Na wanafunzi wanasoma masomo gani? | Wow! And what subjects do the pupils study?
+  x: Wee! Na wanafunzi wanakula masomo gani? ; Wee! Na mwanafunzi wanasoma masomo gani?
+> Akinyi: Wanasoma Kiswahili, Kiingereza, hesabu na sayansi. | They study Swahili, English, maths and science.
+< John: Watoto wako darasani sasa? | Are the children in class now?
+  x: Watoto wako jikoni sasa? ; Watoto wako darasani nani?
+> Akinyi: Ndiyo. Darasa ya nne wanaandika mtihani wa hesabu. | Yes. Class four are writing a maths test.
+  s: Ndiyo. Darasa la nne wanaandika mtihani wa hesabu.
+< John: Mtihani ni ngumu? | Is the test hard?
+  x: Mtihani ni nani? ; Mtihani niko ngumu?
+> Akinyi: Kidogo! Lakini wanafunzi wetu ni wajanja sana. | A bit! But our pupils are very clever.
+< John: Na sare yao ni nzuri — kijani na nyeupe. | And their uniform is nice — green and white.
+  x: Na sare yao ni nzuri — kijani na hesabu. ; Na sare yao ni ngumu — kijani na nyeupe.
+> Akinyi: Asante! Saa nne ni mapumziko — watoto wanacheza mpira nje. | Thanks! At ten it's break time — the children play football outside.
+< John: Poa! Na wewe, unafundisha nini? | Cool! And you, what do you teach?
+  x: Poa! Na wewe, ninafundisha nini? ; Poa! Na wewe, unafundisha wapi nini?
+> Akinyi: Mimi ninafundisha Kiingereza. Na wewe unasoma Kiswahili, sivyo? | I teach English. And you're studying Swahili, right?
+< John: Ndiyo! Mimi ni mwanafunzi pia — mwanafunzi mzee! | Yes! I'm a student too — an old student!
+  x: Ndiyo! Mimi ni wanafunzi pia — mwanafunzi mzee! ; Ndiyo! Wewe ni mwanafunzi pia — mwanafunzi mzee!
+
+@practice
+t: I'm the head teacher. | Mimi ni [mwalimu mkuu|mwanafunzi|daktari]. || mwalimu mkuu = head teacher, mwanafunzi = student.
+t: How many pupils? | Wanafunzi ni [wangapi|wapi|nani]? || wangapi = how many (people).
+t: 400 pupils | wanafunzi mia [nne|tano|tatu] || nne = 4, tano = 5, tatu = 3.
+t: fifteen teachers | walimu kumi na [watano|watatu|wanne] || People: watano (5), watatu (3), wanne (4).
+t: They study maths. | [Wanasoma|Anasoma|Tunasoma] hesabu. || -soma = read, study.
+t: She's writing a test. | Anaandika [mtihani|mpira|sare]. || mtihani = test, mpira = ball, sare = uniform.
+t: I'm reading a book. | [Ninasoma|Ninaandika|Ninacheza] kitabu.
+t: books (more than one) | [vitabu|kitabu|kalamu] || kitabu = one book, vitabu = books, kalamu = pen.
+t: a pen | [kalamu|kitabu|ubao] || kalamu = pen, ubao = (black)board.
+t: The pupils are clever. | Wanafunzi ni [wajanja|mjanja|wavivu]. || One clever person: mjanja. Several: wajanja.
+t: The children are in class. | Watoto wako [darasani|jikoni|sokoni]. || darasa + -ni = in class.
+t: Is the test hard? | Mtihani ni [ngumu|rahisi|kubwa]? || ngumu = hard, rahisi = easy.
+t: The children play football. | Watoto wanacheza [mpira|mtihani|kitabu].
+t: What do you teach? | [Unafundisha|Unasoma|Unaandika] nini?
+t: subjects | [masomo|somo|vitabu] || somo = subject, lesson. masomo = subjects.
+t: one pupil | [mwanafunzi|wanafunzi|mwalimu] mmoja
+c: What do you study? — Science. | Unasoma nini? — [Sayansi|Darasa|Mapumziko].
+
+@vocab
+shule | school | shuleni = at school
+mwalimu mkuu | head teacher |
+mwanafunzi / wanafunzi | pupil, student / pupils, students |
+darasa | class, classroom | Kenyans: darasa ya nne | darasa la nne | Sanifu: ji/ma class
+somo / masomo | subject, lesson / subjects |
+hesabu / sayansi | maths / science |
+-soma | read, study | Wanasoma hesabu.
+-andika | write | Wanaandika mtihani.
+mtihani | test, exam |
+kitabu / vitabu | book / books | Sanifu: ki/vi class
+kalamu | pen |
+sare | uniform |
+mapumziko | break time |
+
+@lesson work-business
+title: So, What Do You Do? Talking Business
+level: 4
+index: 4
+theme: work
+category: work-admin
+culture: Kenya runs on small businesses — "biashara" — and almost everyone has one, or a side hustle next to their job. Asking "Biashara iko aje?" (How's business?) is a normal friendly question. Mobile money (M-Pesa) lets customers pay in small amounts, which is how many companies sell solar lamps, phones and fridges to families upcountry. A business person is "mfanyabiashara" — literally "a doer of business".
+start: A networking evening at a hotel in Westlands. A man in a sharp suit holds out his hand.
+grammar: present-na, ko-location, possessives, numbers-money
+gl: Mwangi = Mwangi (a Kikuyu name)
+gl: siku hizi = "these days"
+gl: shuleni = "at a school" — shule + -ni. #locative-ni
+gl: ninafundisha = "I teach" — -fundisha = teach
+gl: niko na = "I have" — Kenyan form of "nina". #ko-location
+gl: Niko na = "I have" — Kenyan form of "nina". #ko-location
+gl: Uko na = "do you have" — Kenyan form of "una". #ko-location
+gl: biashara = business
+gl: taa za sola = "solar lamps"
+gl: wateja = customers (one: mteja)
+gl: Wateja = customers (one: mteja)
+gl: wakulima = farmers (one: mkulima)
+gl: mashambani = "in the countryside, on the farms" — shamba + -ni. #locative-ni
+gl: kidogo kidogo = "little by little"
+gl: Mauzo = sales
+gl: inapanda = "is going up" — -panda = go up
+gl: kila mwezi = "every month"
+gl: wafanyakazi = employees, workers (one: mfanyakazi)
+gl: wauzaji = salespeople (one: muuzaji)
+gl: mafundi = technicians, skilled workers (one: fundi)
+gl: kampuni = company
+gl: Ofisi = office
+gl: Industrial Area = Industrial Area, Nairobi's factory district
+gl: Enterprise Road = Enterprise Road
+gl: kuhusu = "about"
+gl: mfanyabiashara = business person
+gl: Kadi = (business) card
+gl: Biashara njema = "good luck with the business" (lit. "good business")
+
+> Mwangi: Habari, John! Unafanya kazi wapi siku hizi? | Hi, John! Where do you work these days?
+< John: Ninafanya kazi shuleni, Kilimani. Ninafundisha Kiingereza. Na wewe? | I work at a school in Kilimani. I teach English. And you?
+  x: Unafanya kazi shuleni, Kilimani. Unafundisha Kiingereza. Na wewe? ; Ninafanya kazi shuleni, Kilimani. Ninanunua Kiingereza. Na wewe?
+> Mwangi: Mimi niko na biashara yangu — ninauza taa za sola. | I've got my own business — I sell solar lamps.
+< John: Safi! Wateja wako ni nani? | Great! Who are your customers?
+  x: Safi! Wateja wako ni ngapi? ; Safi! Wateja wangu ni nani?
+> Mwangi: Wateja wangu ni wakulima na familia mashambani. Wanalipa kidogo kidogo na M-Pesa. | My customers are farmers and families in the countryside. They pay little by little with M-Pesa.
+< John: Biashara iko aje? Ni nzuri? | How's business? Is it good?
+  x: Biashara iko wapi? Ni nzuri? ; Biashara iko lini? Ni nzuri?
+> Mwangi: Ni nzuri sana! Mauzo inapanda kila mwezi. Lakini kazi ni nyingi. | It's very good! Sales go up every month. But there's a lot of work.
+  s: Ni nzuri sana! Mauzo yanapanda kila mwezi. Lakini kazi ni nyingi.
+< John: Uko na wafanyakazi wangapi? | How many employees do you have?
+  x: Uko na wafanyakazi wapi? ; Niko na wafanyakazi wangapi?
+> Mwangi: Niko na wafanyakazi kumi — wauzaji sita na mafundi wanne. | I have ten employees — six salespeople and four technicians.
+< John: Wee, kampuni yako ni kubwa! Ofisi yako iko wapi? | Wow, your company is big! Where's your office?
+  x: Wee, kampuni yangu ni kubwa! Ofisi yako iko wapi? ; Wee, kampuni yako ni kubwa! Ofisi yako iko nani?
+> Mwangi: Ofisi iko Industrial Area, karibu na Enterprise Road. | The office is in Industrial Area, near Enterprise Road.
+< John: Poa. Mimi ninapenda biashara. Ninasoma kuhusu biashara kila siku! | Cool. I love business. I read about business every day!
+  x: Poa. Mimi ninapenda biashara. Ninalala kuhusu biashara kila siku! ; Poa. Wewe unapenda biashara. Ninasoma kuhusu biashara kila siku!
+> Mwangi: Haha! Wewe ni mwalimu na mfanyabiashara pia! Kadi yangu iko hapa — tuko pamoja! | Ha! You're a teacher and a business person too! Here's my card — let's keep in touch!
+< John: Asante sana, Mwangi. Biashara njema! | Thanks a lot, Mwangi. Good luck with the business!
+  x: Pole sana, Mwangi. Biashara njema! ; Asante sana, Mwangi. Biashara chafu!
+
+@practice
+t: Where do you work? | Unafanya kazi [wapi|nani|ngapi]?
+t: I work at a school. | [Ninafanya|Ninauza|Ninanunua] kazi shuleni. || -fanya kazi = work (lit. do work).
+t: I have my own business. | Niko na [biashara|wateja|kalamu] yangu.
+t: He sells solar lamps. | [Anauza|Ananunua|Analipa] taa za sola. || -uza = sell, -nunua = buy, -lipa = pay.
+t: Who are your customers? | [Wateja|Wafanyakazi|Wakulima] wako ni nani? || wateja = customers, wafanyakazi = employees, wakulima = farmers.
+t: They pay with M-Pesa. | [Wanalipa|Analipa|Tunalipa] na M-Pesa.
+t: Sales are going up. | Mauzo [inapanda|inashuka|inalala]. || -panda = go up, -shuka = go down.
+t: How many employees do you have? | Uko na wafanyakazi [wangapi|wapi|nani]?
+t: ten employees | [wafanyakazi|mfanyakazi|wateja] kumi || mfanyakazi = one employee, wafanyakazi = employees.
+t: six salespeople | [wauzaji|muuzaji|wanunuzi] sita || muuzaji = one seller, wauzaji = sellers, wanunuzi = buyers.
+t: The office is in Industrial Area. | Ofisi [iko|niko|uko] Industrial Area. || iko = it is (at).
+t: I read about business every day. | [Ninasoma|Ninaandika|Ninauza] kuhusu biashara kila siku.
+t: There's a lot of work. | Kazi ni [nyingi|tamu|safi]. || nyingi = a lot.
+t: business person | [mfanyabiashara|mfanyakazi|mkulima] || mfanyabiashara = business person, mkulima = farmer.
+t: every month | kila [mwezi|siku|mwaka]
+t: my company | kampuni [yangu|yako|yake] || yangu = my, yako = your, yake = his / her.
+c: How's business? — Very good! | Biashara iko aje? — Ni [nzuri|nani|wapi] sana!
+
+@vocab
+biashara | business | Biashara iko aje? = How's business?
+kampuni | company |
+ofisi | office | ofisini = at the office
+mfanyakazi / wafanyakazi | employee / employees | lit. "doer of work"
+mfanyabiashara | business person | lit. "doer of business"
+mteja / wateja | customer / customers |
+-uza / -nunua | sell / buy | Ninauza taa za sola.
+mauzo | sales |
+-lipa | pay | Wanalipa na M-Pesa.
+Niko na… | I have… | Kenyan everyday form of "nina…"
+wangapi? | how many (people)? | Uko na wafanyakazi wangapi?
+kuhusu | about | Ninasoma kuhusu biashara.
+Biashara njema! | Good luck with the business! |
+
+@lesson people-feelings
+title: Happy, Worried, Angry: Moods and Personalities
+level: 4
+index: 5
+theme: people
+category: people
+culture: Kenyans often describe feelings with "niko na…" — literally "I am with…": niko na furaha (I'm happy), niko na wasiwasi (I'm worried), niko na hasira (I'm angry). Describing people is just as common, and the words come in singular and plural pairs: mcheshi / wacheshi (a funny person / funny people), mvivu / wavivu (lazy). Calling someone "mpole" (gentle, calm) is a big compliment.
+start: Friday evening. Otieno flops onto the sofa next to you in your shared flat.
+grammar: ko-location, adjective-agreement, possessives, present-na
+gl: Otieno = Otieno (a Luo name)
+gl: niko na wasiwasi = "I'm worried" — lit. "I'm with worry". #ko-location
+gl: wasiwasi = worry
+gl: Wasiwasi = worry
+gl: Bosi mpya = "the new boss"
+gl: mkali = strict / fierce
+gl: Kila mtu = "everyone"
+gl: ofisini = "at the office" — ofisi + -ni. #locative-ni
+gl: kimya = quiet / silence
+gl: yuko hapo = "is there"
+gl: sivyo = "isn't it? / right?"
+gl: mchangamfu = cheerful, lively
+gl: mcheshi = funny (person)
+gl: mkarimu = generous, kind
+gl: kufanya kazi = "to work"
+gl: naye = "with him / her"
+gl: niko na furaha = "I'm happy" — lit. "I'm with happiness". #ko-location
+gl: uko na furaha = "are you happy?" #ko-location
+gl: furaha = happiness
+gl: kazini = "at work" — kazi + -ni. #locative-ni
+gl: werevu = clever (people) — one: mwerevu
+gl: niko na hasira = "I'm angry" — lit. "I'm with anger". #ko-location
+gl: Hasira = anger
+gl: hasira = anger
+gl: Fundi wetu = "our repairman"
+gl: mvivu = lazy
+gl: Bomba ya jikoni = "the kitchen tap" || Sanifu: bomba la jikoni (ji/ma class)
+gl: mbovu = broken
+gl: polepole = slowly
+gl: mpole = gentle, calm
+gl: tena = again
+gl: Ijumaa = Friday
+gl: Hata mimi = "me too" — lit. "even me"
+gl: kabisa = "totally, absolutely"
+gl: siku nzuri kabisa = "the best day"
+
+> Otieno: Niaje, John! Uko aje leo? | Hey, John! How are you today?
+< John: Niko poa, lakini niko na wasiwasi kidogo. | I'm fine, but I'm a bit worried.
+  x: Uko poa, lakini uko na wasiwasi kidogo. ; Niko poa, lakini niko na chakula kidogo.
+> Otieno: Wasiwasi? Kwa nini? | Worried? Why?
+< John: Bosi mpya ni mkali sana. Kila mtu ofisini ni kimya. | The new boss is very strict. Everyone at the office is quiet.
+  x: Bosi mpya ni mpole sana. Kila mtu ofisini ni kimya. ; Bosi mpya uko mkali sana. Kila mtu ofisini ni kimya.
+> Otieno: Pole! Lakini Achieng yuko hapo, sivyo? Yeye ni mchangamfu sana. | Sorry! But Achieng is there, isn't she? She's really cheerful.
+< John: Ndiyo! Achieng ni mcheshi na mkarimu. Ninapenda kufanya kazi naye. | Yes! Achieng is funny and kind. I like working with her.
+  x: Ndiyo! Achieng ni mvivu na mkali. Ninapenda kufanya kazi naye. ; Ndiyo! Achieng ni mcheshi na mkarimu. Unapenda kufanya kazi naye.
+> Otieno: Na wewe, uko na furaha kazini? | And you, are you happy at work?
+< John: Ndiyo, niko na furaha. Wanafunzi wangu ni werevu sana. | Yes, I'm happy. My students are very clever.
+  x: Ndiyo, niko na hasira. Wanafunzi wangu ni werevu sana. ; Ndiyo, niko na furaha. Wanafunzi wangu ni mwerevu sana.
+> Otieno: Poa! Mimi leo niko na hasira kidogo. | Good! Me, I'm a bit angry today.
+< John: Hasira? Kwa nini, Otieno? | Angry? Why, Otieno?
+  x: Furaha? Kwa nini, Otieno? ; Hasira? Kwa nini, mimi?
+> Otieno: Fundi wetu ni mvivu! Bomba ya jikoni ni mbovu, na yeye anakuja polepole sana. | Our repairman is lazy! The kitchen tap is broken, and he's taking forever to come.
+  s: Fundi wetu ni mvivu! Bomba la jikoni ni bovu, na yeye anakuja polepole sana.
+< John: Pole sana! Lakini wewe ni mpole — hasira yako ni kidogo tu. | So sorry! But you're a calm guy — your anger is only small.
+  x: Pole sana! Lakini mimi ni mpole — hasira yako ni kidogo tu. ; Asante sana! Lakini wewe ni mpole — hasira yako ni kidogo tu.
+> Otieno: Haha, kweli! Na sasa ni Ijumaa — niko na furaha tena! | Ha, true! And now it's Friday — I'm happy again!
+< John: Hata mimi! Ijumaa ni siku nzuri kabisa! | Me too! Friday is the best day!
+  x: Hata mimi! Ijumaa ni siku mbaya kabisa! ; Hata wewe! Ijumaa ni siku nzuri kabisa!
+
+@practice
+t: I'm a bit worried. | Niko na [wasiwasi|furaha|njaa] kidogo. || wasiwasi = worry, furaha = happiness, njaa = hunger.
+t: I'm happy. | Niko na [furaha|hasira|homa]. || hasira = anger, homa = fever.
+t: He's angry. | [Yuko|Niko|Uko] na hasira. || yuko = he / she is.
+t: We're happy. | [Tuko|Wako|Niko] na furaha. || tuko = we are.
+t: The new boss is strict. | Bosi mpya ni [mkali|mpole|mcheshi]. || mkali = strict, mpole = gentle / calm, mcheshi = funny.
+t: She's very cheerful. | Yeye ni [mchangamfu|mvivu|mkali] sana. || mchangamfu = cheerful, mvivu = lazy.
+t: kind / generous | [mkarimu|mkali|mvivu] || mkarimu = kind, generous.
+t: My students are clever. | Wanafunzi wangu ni [werevu|mwerevu|wavivu]. || One clever person: mwerevu. Several: werevu.
+t: They're lazy. | Wao ni [wavivu|mvivu|wakarimu]. || One: mvivu. Several: wavivu.
+t: He's lazy. | Yeye ni [mvivu|wavivu|mpole].
+t: They're very funny. | Wao ni [wacheshi|mcheshi|wakali] sana. || One: mcheshi. Several: wacheshi.
+t: Our repairman is lazy. | Fundi [wetu|wenu|wao] ni mvivu. || wetu = our, wenu = your (plural), wao = their.
+t: The tap is broken. | Bomba ni [mbovu|mpole|safi]. || mbovu = broken.
+t: Everyone is quiet. | Kila mtu ni [kimya|kubwa|chafu]. || kimya = quiet.
+t: I like working with her. | Ninapenda [kufanya kazi|kula|kulala] naye.
+c: How are you today? — Happy! | Uko aje leo? — Niko na [furaha|bomba|fundi]!
+
+@vocab
+Niko na furaha | I'm happy | lit. "I'm with happiness"
+Niko na hasira | I'm angry | hasira = anger
+Niko na wasiwasi | I'm worried | wasiwasi = worry
+mchangamfu | cheerful, lively |
+mcheshi / wacheshi | funny (person / people) |
+mkarimu | kind, generous |
+mkali | strict, fierce | Also: spicy, sharp
+mpole | gentle, calm | A big compliment
+mvivu / wavivu | lazy (person / people) |
+mwerevu / werevu | clever (person / people) |
+kimya | quiet, silence |
+polepole | slowly |
+Ijumaa | Friday | The best day!

@@ -1,0 +1,1648 @@
+{
+  "id": "how-came-to-kenya",
+  "uuid": "c78c07d8-c899-5585-bff4-8ebb8dd60f96",
+  "title": "So, How Did You Come to Kenya?",
+  "category": "social",
+  "difficulty": "medium",
+  "level": 6,
+  "order": 607,
+  "theme": "people",
+  "culturalNote": "Every foreigner in Kenya gets asked the same friendly questions: how did you come, when did you arrive, why Kenya, and have you seen the animals yet? It's the perfect conversation for the past (-li-), the perfect (-me-), \"never / ever\" (-wahi) and \"not yet\" (bado … -ja-). Kenyans love it when visitors explore beyond Nairobi — the coast (pwani), the Mara, the lakes — and will happily tell you where to go next.",
+  "startingPoint": "After the Sunday service, a cheerful woman called Wambui comes over with a cup of tea for you.",
+  "grammarFocus": [
+    "past-li",
+    "perfect-me",
+    "wahi-ever-never",
+    "perfect-negative-ja",
+    "comparatives"
+  ],
+  "grammar": [
+    "past-li",
+    "perfect-me",
+    "wahi-ever-never",
+    "perfect-negative-ja",
+    "comparatives",
+    "noun-classes-mwa-nn",
+    "question-words",
+    "sanifu-noun-classes",
+    "ni-copula",
+    "imperatives",
+    "discourse-particles",
+    "future-ta",
+    "subject-prefixes"
+  ],
+  "turns": [
+    {
+      "id": "bec7c581-33da-53e0-b369-cf2ed0db921c",
+      "speaker": "Wambui",
+      "role": "auto",
+      "swahili": "Habari, John! Ulikuja aje Kenya?",
+      "english": "Hi, John! How did you come to Kenya?",
+      "words": [
+        {
+          "text": "Habari",
+          "gloss": "news — the base of every formal greeting — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "John",
+          "gloss": "John (name)"
+        },
+        {
+          "text": "Ulikuja aje",
+          "gloss": "\"How did you come?\" — Kenyan.",
+          "sanifu": "Sanifu: Ulikujaje?"
+        },
+        {
+          "text": "Kenya",
+          "gloss": "Kenya"
+        }
+      ]
+    },
+    {
+      "id": "0d7af26c-18a4-59fc-989a-253cd14f8c80",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Nilikuja kwa ndege kutoka Uganda.",
+      "english": "I came by plane from Uganda.",
+      "words": [
+        {
+          "text": "Nilikuja",
+          "gloss": "\"I came\" — ni- (subject: I) + li- (past) + -ja (come). From kuja.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kuja (to come)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilikuja"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulikuja"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alikuja"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulikuja"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlikuja"
+              },
+              {
+                "pronoun": "they",
+                "form": "walikuja"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kwa ndege",
+          "gloss": "\"by plane\""
+        },
+        {
+          "text": "kutoka",
+          "gloss": "\"from\""
+        },
+        {
+          "text": "Uganda",
+          "gloss": "Uganda"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Nilikuja kwa ndege kutoka Uganda.",
+          "correct": true
+        },
+        {
+          "swahili": "Nitakuja kwa ndege kutoka Uganda.",
+          "correct": false
+        },
+        {
+          "swahili": "Ulikuja kwa ndege kutoka Uganda.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "82cd9cc0-0e46-5f94-8cee-b9646b203107",
+      "speaker": "Wambui",
+      "role": "auto",
+      "swahili": "Ulifika lini?",
+      "english": "When did you arrive?",
+      "words": [
+        {
+          "text": "Ulifika",
+          "gloss": "\"You arrived\" — u- (subject: you) + li- (past) + -fika (arrive). From kufika.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kufika (to arrive)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilifika"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulifika"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alifika"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulifika"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlifika"
+              },
+              {
+                "pronoun": "they",
+                "form": "walifika"
+              }
+            ]
+          }
+        },
+        {
+          "text": "lini",
+          "gloss": "when?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5af8cb3f-51e3-5949-9968-810dc191a45d",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Nilifika mwaka jana, mwezi wa tisa.",
+      "english": "I arrived last year, in September.",
+      "words": [
+        {
+          "text": "Nilifika",
+          "gloss": "\"I arrived\" — ni- (subject: I) + li- (past) + -fika (arrive). From kufika.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kufika (to arrive)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilifika"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulifika"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alifika"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulifika"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlifika"
+              },
+              {
+                "pronoun": "they",
+                "form": "walifika"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mwaka jana",
+          "gloss": "\"last year\""
+        },
+        {
+          "text": "mwezi wa tisa",
+          "gloss": "September (lit. \"the ninth month\")"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Nilifika mwaka jana, mwezi wa tisa.",
+          "correct": true
+        },
+        {
+          "swahili": "Nitafika mwaka jana, mwezi wa tisa.",
+          "correct": false
+        },
+        {
+          "swahili": "Ulifika mwaka jana, mwezi wa tisa.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "94476b4e-b3ec-5f3f-af63-7cbd4650648c",
+      "speaker": "Wambui",
+      "role": "auto",
+      "swahili": "Na ulikuja Kenya kwa sababu gani?",
+      "english": "And why did you come to Kenya?",
+      "words": [
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "ulikuja",
+          "gloss": "\"You came\" — u- (subject: you) + li- (past) + -ja (come). From kuja.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kuja (to come)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilikuja"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulikuja"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alikuja"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulikuja"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlikuja"
+              },
+              {
+                "pronoun": "they",
+                "form": "walikuja"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Kenya",
+          "gloss": "Kenya"
+        },
+        {
+          "text": "kwa sababu gani",
+          "gloss": "\"for what reason, why\""
+        }
+      ]
+    },
+    {
+      "id": "5977067e-bed3-5654-bdd5-4bcfc06d55e1",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Nilikuja kwa sababu ya kazi. Lakini pia nilitaka kujifunza Kiswahili.",
+      "english": "I came for work. But I also wanted to learn Swahili.",
+      "words": [
+        {
+          "text": "Nilikuja",
+          "gloss": "\"I came\" — ni- (subject: I) + li- (past) + -ja (come). From kuja.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kuja (to come)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilikuja"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulikuja"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alikuja"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulikuja"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlikuja"
+              },
+              {
+                "pronoun": "they",
+                "form": "walikuja"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kwa sababu ya kazi",
+          "gloss": "\"because of work\""
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "pia",
+          "gloss": "also / too"
+        },
+        {
+          "text": "nilitaka",
+          "gloss": "\"I wanted\" — ni- (subject: I) + li- (past) + -taka (want). From kutaka.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kutaka (to want)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nilitaka"
+              },
+              {
+                "pronoun": "you",
+                "form": "ulitaka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "alitaka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tulitaka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mlitaka"
+              },
+              {
+                "pronoun": "they",
+                "form": "walitaka"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kujifunza",
+          "gloss": "\"to learn\""
+        },
+        {
+          "text": "Kiswahili",
+          "gloss": "Swahili (the language) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — Kiswahili changu"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Nilikuja kwa sababu ya kazi. Lakini pia nilitaka kujifunza Kiswahili.",
+          "correct": true
+        },
+        {
+          "swahili": "Alikuja kwa sababu ya kazi. Lakini pia alitaka kujifunza Kiswahili.",
+          "correct": false
+        },
+        {
+          "swahili": "Nilikuja kwa sababu ya kazi. Lakini pia nilitaka kusahau Kiswahili.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "18c84afd-a61c-56b8-a4f8-3173729252e6",
+      "speaker": "Wambui",
+      "role": "auto",
+      "swahili": "Umejifunza vizuri sana! Umewahi kutembelea mbuga za wanyama?",
+      "english": "You've learned really well! Have you ever visited the game parks?",
+      "words": [
+        {
+          "text": "Umejifunza",
+          "gloss": "\"You have learned\" — u- (subject: you) + me- (perfect (done / now-state)) + -jifunza (learn). From kujifunza.",
+          "grammar": [
+            "perfect-me"
+          ],
+          "conjugation": {
+            "verb": "kujifunza (to learn)",
+            "tense": "Perfect (-me-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimejifunza"
+              },
+              {
+                "pronoun": "you",
+                "form": "umejifunza"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amejifunza"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumejifunza"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmejifunza"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamejifunza"
+              }
+            ]
+          }
+        },
+        {
+          "text": "vizuri",
+          "gloss": "well / nicely"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Umewahi",
+          "gloss": "\"Have you ever…?\" — u- + -me- + -wahi",
+          "grammar": [
+            "wahi-ever-never"
+          ]
+        },
+        {
+          "text": "kutembelea",
+          "gloss": "\"to visit\""
+        },
+        {
+          "text": "mbuga za wanyama",
+          "gloss": "\"game parks\""
+        }
+      ]
+    },
+    {
+      "id": "9b5e9c0f-c80e-5c74-b282-bc1ced65699a",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ndiyo, nimewahi kwenda Maasai Mara. Niliona simba na tembo!",
+      "english": "Yes, I've been to the Maasai Mara. I saw lions and elephants!",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "nimewahi",
+          "gloss": "\"I have (once / before)…\" — or, alone: \"I made it on time\"",
+          "grammar": [
+            "wahi-ever-never"
+          ]
+        },
+        {
+          "text": "kwenda",
+          "gloss": "\"Go!\" — -enda (go). From kuenda.",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "Maasai Mara",
+          "gloss": "the Maasai Mara game reserve"
+        },
+        {
+          "text": "Niliona",
+          "gloss": "\"I saw\" — ni- (subject: I) + li- (past) + -ona (see). From kuona.",
+          "grammar": [
+            "past-li"
+          ],
+          "conjugation": {
+            "verb": "kuona (to see)",
+            "tense": "Past (-li-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niliona"
+              },
+              {
+                "pronoun": "you",
+                "form": "uliona"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "aliona"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuliona"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mliona"
+              },
+              {
+                "pronoun": "they",
+                "form": "waliona"
+              }
+            ]
+          }
+        },
+        {
+          "text": "simba",
+          "gloss": "lion — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "tembo",
+          "gloss": "elephant — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo, nimewahi kwenda Maasai Mara. Niliona simba na tembo!",
+          "correct": true
+        },
+        {
+          "swahili": "Hapana, sijawahi kwenda Maasai Mara. Niliona simba na tembo!",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, nimewahi kwenda Maasai Mara. Nitaona simba na tembo jana!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "09635ef9-142a-5e17-9f2e-c8e153a30d51",
+      "speaker": "Wambui",
+      "role": "auto",
+      "swahili": "Wee! Na pwani? Umewahi kwenda Mombasa?",
+      "english": "Wow! And the coast? Have you ever been to Mombasa?",
+      "words": [
+        {
+          "text": "Wee",
+          "gloss": "hey you! (surprise / emphasis)",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "pwani",
+          "gloss": "the coast"
+        },
+        {
+          "text": "Umewahi",
+          "gloss": "\"Have you ever…?\" — u- + -me- + -wahi",
+          "grammar": [
+            "wahi-ever-never"
+          ]
+        },
+        {
+          "text": "kwenda",
+          "gloss": "\"Go!\" — -enda (go). From kuenda.",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "Mombasa",
+          "gloss": "Mombasa — the coastal city"
+        }
+      ]
+    },
+    {
+      "id": "1180559b-4fa8-5afe-b67c-69f79e45e552",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Bado sijaenda, lakini nitaenda Desemba.",
+      "english": "Not yet, but I'll go in December.",
+      "words": [
+        {
+          "text": "Bado",
+          "gloss": "still / not yet",
+          "grammar": [
+            "perfect-negative-ja"
+          ]
+        },
+        {
+          "text": "sijaenda",
+          "gloss": "\"I haven't gone yet\" — si- (negative subject: not I) + ja- (not yet) + -enda (go). From kuenda.",
+          "grammar": [
+            "perfect-negative-ja"
+          ],
+          "conjugation": {
+            "verb": "kuenda (to go)",
+            "tense": "Not yet (-ja-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "sijaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "hujaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "hajaenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "hatujaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "hamjaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "hawajaenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "nitaenda",
+          "gloss": "\"I will go\" — ni- (subject: I) + ta- (future) + -enda (go). From kuenda.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kuenda (to go)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "utaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ataenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wataenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Desemba",
+          "gloss": "December"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Bado sijaenda, lakini nitaenda Desemba.",
+          "correct": true
+        },
+        {
+          "swahili": "Bado nimeenda, lakini nitaenda Desemba.",
+          "correct": false
+        },
+        {
+          "swahili": "Bado sijaenda, lakini nilienda Desemba.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "c40ce2a9-794e-5417-886f-3aa7a641b306",
+      "speaker": "Wambui",
+      "role": "auto",
+      "swahili": "Utapenda Mombasa! Ni joto kuliko Nairobi.",
+      "english": "You'll love Mombasa! It's hotter than Nairobi.",
+      "words": [
+        {
+          "text": "Utapenda",
+          "gloss": "\"You will like\" — u- (subject: you) + ta- (future) + -penda (like). From kupenda.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kupenda (to like)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitapenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "utapenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atapenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutapenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtapenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "watapenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Mombasa",
+          "gloss": "Mombasa — the coastal city"
+        },
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "joto",
+          "gloss": "heat / warmth — ni joto = it's warm"
+        },
+        {
+          "text": "kuliko",
+          "gloss": "than (comparisons)",
+          "grammar": [
+            "comparatives"
+          ]
+        },
+        {
+          "text": "Nairobi",
+          "gloss": "Nairobi"
+        }
+      ]
+    },
+    {
+      "id": "a3733308-cf89-50e1-a3be-f85a8fed63a1",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Kweli? Na Nairobi ni baridi kuliko Kampala!",
+      "english": "Really? And Nairobi is colder than Kampala!",
+      "words": [
+        {
+          "text": "Kweli",
+          "gloss": "true / really",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "Nairobi",
+          "gloss": "Nairobi"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "baridi",
+          "gloss": "cold — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "kuliko",
+          "gloss": "than (comparisons)",
+          "grammar": [
+            "comparatives"
+          ]
+        },
+        {
+          "text": "Kampala",
+          "gloss": "Kampala — capital of Uganda"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Kweli? Na Nairobi ni baridi kuliko Kampala!",
+          "correct": true
+        },
+        {
+          "swahili": "Kweli? Na Nairobi ni baridi zaidi Kampala!",
+          "correct": false
+        },
+        {
+          "swahili": "Kweli? Na mimi ni baridi kuliko Kampala!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "375b605c-b75a-57d3-818d-84eddb691aff",
+      "speaker": "Wambui",
+      "role": "auto",
+      "swahili": "Haha, ndiyo! Utakaa Kenya muda mrefu?",
+      "english": "Ha, yes! Will you stay in Kenya for a long time?",
+      "words": [
+        {
+          "text": "Haha",
+          "gloss": "haha"
+        },
+        {
+          "text": "ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Utakaa",
+          "gloss": "\"You will stay\" — u- (subject: you) + ta- (future) + -kaa (stay). From kukaa.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kukaa (to stay)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitakaa"
+              },
+              {
+                "pronoun": "you",
+                "form": "utakaa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atakaa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutakaa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtakaa"
+              },
+              {
+                "pronoun": "they",
+                "form": "watakaa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Kenya",
+          "gloss": "Kenya"
+        },
+        {
+          "text": "muda mrefu",
+          "gloss": "\"a long time\""
+        }
+      ]
+    },
+    {
+      "id": "5e74f0ff-0aec-5123-b627-8d21739711db",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ndiyo, nitakaa mwaka mmoja zaidi. Watu ni wakarimu sana!",
+      "english": "Yes, I'll stay one more year. People are so welcoming!",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "nitakaa",
+          "gloss": "\"I will stay\" — ni- (subject: I) + ta- (future) + -kaa (stay). From kukaa.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kukaa (to stay)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitakaa"
+              },
+              {
+                "pronoun": "you",
+                "form": "utakaa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atakaa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutakaa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtakaa"
+              },
+              {
+                "pronoun": "they",
+                "form": "watakaa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mwaka mmoja zaidi",
+          "gloss": "\"one more year\""
+        },
+        {
+          "text": "Watu",
+          "gloss": "people — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "wakarimu",
+          "gloss": "hospitable, generous (people)"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo, nitakaa mwaka mmoja zaidi. Watu ni wakarimu sana!",
+          "correct": true
+        },
+        {
+          "swahili": "Hapana, nitakaa mwaka mmoja zaidi. Watu ni wakarimu sana!",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, nilikaa mwaka mmoja zaidi. Watu ni wakarimu sana!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "20657379-71f8-5bb0-b098-1b3b420ae0d5",
+      "speaker": "Wambui",
+      "role": "auto",
+      "swahili": "Asante! Karibu sana Kenya — sasa wewe ni Mkenya!",
+      "english": "Thank you! You're so welcome in Kenya — now you're a Kenyan!",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Karibu",
+          "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Kenya",
+          "gloss": "Kenya"
+        },
+        {
+          "text": "sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Mkenya",
+          "gloss": "a Kenyan"
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "2822e50e-b317-580e-abda-1be2217e12af",
+      "swahili": "Ulikuja aje?",
+      "english": "How did you come?",
+      "exampleContext": "Sanifu: Ulikujaje?",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "a7ded469-6e81-5417-b3b1-14b7a7d2eda2",
+      "swahili": "kusafiri",
+      "english": "to travel |",
+      "exampleContext": "",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "87ee755f-7a2f-5790-b669-18c360907af1",
+      "swahili": "kufika",
+      "english": "to arrive",
+      "exampleContext": "Nilifika mwaka jana.",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "33cebe16-6af6-5ed8-b96e-05f6e89e498e",
+      "swahili": "kwa ndege",
+      "english": "by plane",
+      "exampleContext": "uwanja wa ndege = airport",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "126646e1-9ffd-521c-81e3-f8b2b0c9a240",
+      "swahili": "pasipoti / viza / tiketi",
+      "english": "passport / visa / ticket |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "e7503e9e-52bf-539c-85ba-03e7219d9d0b",
+      "swahili": "kutembelea",
+      "english": "to visit",
+      "exampleContext": "Umewahi kutembelea Maasai Mara?",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "47828d7d-ae57-527a-b0d9-e814ae0b4d2b",
+      "swahili": "Umewahi…?",
+      "english": "Have you ever…?",
+      "exampleContext": "Nimewahi… = I have (before); sijawahi… = I have never",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "4a82c509-c17a-57f1-86b9-8235944d2ba4",
+      "swahili": "Bado sijaenda",
+      "english": "I haven't gone yet |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "7ccd09ae-2318-591f-918f-5b4168bc37ba",
+      "swahili": "mwaka jana",
+      "english": "last year",
+      "exampleContext": "mwaka huu = this year, mwaka ujao = next year",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "4a34504a-76fd-583c-a7ff-742648e822f5",
+      "swahili": "pwani",
+      "english": "the coast |",
+      "exampleContext": ""
+    },
+    {
+      "id": "713f391e-dfb9-5f12-b2e4-b2c4c07b4d8d",
+      "swahili": "kuliko",
+      "english": "than",
+      "exampleContext": "Mombasa ni joto kuliko Nairobi."
+    },
+    {
+      "id": "7d36aee4-6e7d-5425-93be-70e55b3e6a7d",
+      "swahili": "-kaa",
+      "english": "stay, live, sit",
+      "exampleContext": "Nitakaa mwaka mmoja."
+    },
+    {
+      "id": "34a91e36-cb8f-5d33-97b4-56c73330a7a2",
+      "swahili": "Mkenya / Wakenya",
+      "english": "a Kenyan / Kenyans |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "66c511a9-17d4-5477-b7b9-978556564e80",
+      "mode": "translate",
+      "english": "I came by plane.",
+      "before": "",
+      "after": " kwa ndege.",
+      "options": [
+        {
+          "text": "Nilikuja",
+          "correct": true
+        },
+        {
+          "text": "Nitakuja",
+          "correct": false,
+          "feedback": "Nitakuja = I will come"
+        },
+        {
+          "text": "Ninakuja",
+          "correct": false,
+          "feedback": "Ninakuja = I am coming"
+        }
+      ],
+      "explanation": "nili- = I did (past), nita- = I will, nina- = I am (now).",
+      "grammar": [
+        "past-li"
+      ]
+    },
+    {
+      "id": "ada1d327-5076-5c59-a4b2-6fafb27d754e",
+      "mode": "translate",
+      "english": "When did you arrive?",
+      "before": "",
+      "after": " lini?",
+      "options": [
+        {
+          "text": "Ulifika",
+          "correct": true
+        },
+        {
+          "text": "Utafika",
+          "correct": false,
+          "feedback": "Utafika = You will arrive"
+        },
+        {
+          "text": "Unafika",
+          "correct": false,
+          "feedback": "Unafika = You are arriving"
+        }
+      ],
+      "explanation": "Ulifika = \"You arrived\" — u- (subject: you) + li- (past) + -fika (arrive). From kufika.",
+      "grammar": [
+        "past-li"
+      ]
+    },
+    {
+      "id": "3ef6eec6-8042-51a7-80cf-ed287b87bb79",
+      "mode": "translate",
+      "english": "I arrived last year.",
+      "before": "",
+      "after": " mwaka jana.",
+      "options": [
+        {
+          "text": "Nilifika",
+          "correct": true
+        },
+        {
+          "text": "Nitafika",
+          "correct": false,
+          "feedback": "Nitafika = I will arrive"
+        },
+        {
+          "text": "Ninafika",
+          "correct": false,
+          "feedback": "Ninafika = I am arriving"
+        }
+      ],
+      "explanation": "mwaka jana (last year) needs the past: -li-.",
+      "grammar": [
+        "past-li"
+      ]
+    },
+    {
+      "id": "d51d87d9-b802-5ba5-bc14-d050597439fa",
+      "mode": "translate",
+      "english": "She came because of work.",
+      "before": "",
+      "after": " kwa sababu ya kazi.",
+      "options": [
+        {
+          "text": "Alikuja",
+          "correct": true
+        },
+        {
+          "text": "Nilikuja",
+          "correct": false,
+          "feedback": "Nilikuja = I came"
+        },
+        {
+          "text": "Walikuja",
+          "correct": false,
+          "feedback": "Walikuja = They came"
+        }
+      ],
+      "explanation": "a- = she, ni- = I, wa- = they.",
+      "grammar": [
+        "past-li"
+      ]
+    },
+    {
+      "id": "3a200d9a-9653-53bc-b4ca-6463a18eced9",
+      "mode": "translate",
+      "english": "I wanted to learn Swahili.",
+      "before": "",
+      "after": " kujifunza Kiswahili.",
+      "options": [
+        {
+          "text": "Nilitaka",
+          "correct": true
+        },
+        {
+          "text": "Ninataka",
+          "correct": false,
+          "feedback": "Ninataka = I want"
+        },
+        {
+          "text": "Nitataka",
+          "correct": false,
+          "feedback": "Nitataka = I will want"
+        }
+      ],
+      "explanation": "Nilitaka = \"I wanted\" — ni- (subject: I) + li- (past) + -taka (want). From kutaka.",
+      "grammar": [
+        "past-li"
+      ]
+    },
+    {
+      "id": "94299143-ff48-5e1b-a380-9fcc309f1a5f",
+      "mode": "translate",
+      "english": "Have you ever visited the Mara?",
+      "before": "",
+      "after": " kutembelea Maasai Mara?",
+      "options": [
+        {
+          "text": "Umewahi",
+          "correct": true
+        },
+        {
+          "text": "Utawahi",
+          "correct": false,
+          "feedback": "Utawahi = You will make it in time"
+        },
+        {
+          "text": "Ulikuwa",
+          "correct": false,
+          "feedback": "Ulikuwa = You were"
+        }
+      ],
+      "explanation": "umewahi = have you ever.",
+      "grammar": [
+        "wahi-ever-never"
+      ]
+    },
+    {
+      "id": "bc2e8edd-6a2c-52ef-8800-344df409f588",
+      "mode": "translate",
+      "english": "I've never been to the coast.",
+      "before": "",
+      "after": " kwenda pwani.",
+      "options": [
+        {
+          "text": "Sijawahi",
+          "correct": true
+        },
+        {
+          "text": "Nimewahi",
+          "correct": false,
+          "feedback": "Nimewahi = I have (once / before)…"
+        },
+        {
+          "text": "Nitawahi",
+          "correct": false,
+          "feedback": "Nitawahi = I will make it in time"
+        }
+      ],
+      "explanation": "sijawahi = I have never.",
+      "grammar": [
+        "wahi-ever-never"
+      ]
+    },
+    {
+      "id": "f94d10ae-dec2-5af7-94d7-e24db3c2d966",
+      "mode": "translate",
+      "english": "I haven't gone yet.",
+      "before": "Bado ",
+      "after": ".",
+      "options": [
+        {
+          "text": "sijaenda",
+          "correct": true
+        },
+        {
+          "text": "nimeenda",
+          "correct": false,
+          "feedback": "nimeenda = I have gone"
+        },
+        {
+          "text": "nilienda",
+          "correct": false,
+          "feedback": "nilienda = I went"
+        }
+      ],
+      "explanation": "bado + -ja- = not yet.",
+      "grammar": [
+        "perfect-negative-ja"
+      ]
+    },
+    {
+      "id": "5b4ee330-8ac1-5060-b6d1-27f6fd246c5c",
+      "mode": "translate",
+      "english": "I saw lions.",
+      "before": "",
+      "after": " simba.",
+      "options": [
+        {
+          "text": "Niliona",
+          "correct": true
+        },
+        {
+          "text": "Nitaona",
+          "correct": false,
+          "feedback": "Nitaona = I will see"
+        },
+        {
+          "text": "Ninaona",
+          "correct": false,
+          "feedback": "Ninaona = I see"
+        }
+      ],
+      "explanation": "Niliona = \"I saw\" — ni- (subject: I) + li- (past) + -ona (see). From kuona.",
+      "grammar": [
+        "past-li"
+      ]
+    },
+    {
+      "id": "24aaa172-633e-5f1b-a355-16440d80e1cc",
+      "mode": "translate",
+      "english": "I'll go in December.",
+      "before": "",
+      "after": " Desemba.",
+      "options": [
+        {
+          "text": "Nitaenda",
+          "correct": true
+        },
+        {
+          "text": "Nilienda",
+          "correct": false,
+          "feedback": "Nilienda = I went"
+        },
+        {
+          "text": "Nimeenda",
+          "correct": false,
+          "feedback": "Nimeenda = I have gone"
+        }
+      ],
+      "explanation": "Nitaenda = \"I will go\" — ni- (subject: I) + ta- (future) + -enda (go). From kuenda.",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "3ba51cfa-6ad8-57e2-8492-31dfdb349a63",
+      "mode": "translate",
+      "english": "You'll love Mombasa!",
+      "before": "",
+      "after": " Mombasa!",
+      "options": [
+        {
+          "text": "Utapenda",
+          "correct": true
+        },
+        {
+          "text": "Ulipenda",
+          "correct": false,
+          "feedback": "Ulipenda = You liked"
+        },
+        {
+          "text": "Umependa",
+          "correct": false,
+          "feedback": "Umependa = You have liked"
+        }
+      ],
+      "explanation": "Utapenda = \"You will like\" — u- (subject: you) + ta- (future) + -penda (like). From kupenda.",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "963b95ef-b3e9-5a35-9658-46e3841668af",
+      "mode": "translate",
+      "english": "It's hotter than Nairobi.",
+      "before": "Ni joto ",
+      "after": " Nairobi.",
+      "options": [
+        {
+          "text": "kuliko",
+          "correct": true
+        },
+        {
+          "text": "kama",
+          "correct": false,
+          "feedback": "kama = like / as / if"
+        },
+        {
+          "text": "pamoja na",
+          "correct": false,
+          "feedback": "pamoja na = together with"
+        }
+      ],
+      "explanation": "kuliko = than, kama = like.",
+      "grammar": [
+        "comparatives"
+      ]
+    },
+    {
+      "id": "b87ada90-2afa-5d3e-8a7f-8e4595749877",
+      "mode": "translate",
+      "english": "by plane",
+      "before": "kwa ",
+      "after": "",
+      "options": [
+        {
+          "text": "ndege",
+          "correct": true
+        },
+        {
+          "text": "meli",
+          "correct": false
+        },
+        {
+          "text": "miguu",
+          "correct": false,
+          "feedback": "miguu = legs / feet (one: mguu)"
+        }
+      ],
+      "explanation": "ndege = plane, meli = ship, kwa miguu = on foot.",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "1e184811-6d91-5d70-9e5a-71cdc5b06d95",
+      "mode": "translate",
+      "english": "airport",
+      "before": "uwanja wa ",
+      "after": "",
+      "options": [
+        {
+          "text": "ndege",
+          "correct": true
+        },
+        {
+          "text": "mpira",
+          "correct": false,
+          "feedback": "mpira = ball / football (plural mipira)"
+        },
+        {
+          "text": "meli",
+          "correct": false
+        }
+      ],
+      "explanation": "uwanja wa ndege = airport, uwanja wa mpira = stadium.",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "fc50a993-9b39-599d-b48c-2f36fc0cb9a5",
+      "mode": "translate",
+      "english": "passport",
+      "before": "",
+      "after": "",
+      "options": [
+        {
+          "text": "pasipoti",
+          "correct": true
+        },
+        {
+          "text": "tiketi",
+          "correct": false,
+          "feedback": "tiketi = ticket"
+        },
+        {
+          "text": "viza",
+          "correct": false
+        }
+      ],
+      "explanation": "tiketi = ticket, viza = visa."
+    },
+    {
+      "id": "8fdd92c3-c00e-5cab-9aa3-9e5e0c8bdef2",
+      "mode": "translate",
+      "english": "I'll stay one more year.",
+      "before": "",
+      "after": " mwaka mmoja zaidi.",
+      "options": [
+        {
+          "text": "Nitakaa",
+          "correct": true
+        },
+        {
+          "text": "Nilikaa",
+          "correct": false,
+          "feedback": "Nilikaa = I stayed"
+        },
+        {
+          "text": "Nimekaa",
+          "correct": false,
+          "feedback": "Nimekaa = I have stayed"
+        }
+      ],
+      "explanation": "-kaa = stay.",
+      "grammar": [
+        "future-ta"
+      ]
+    },
+    {
+      "id": "879998e5-f4dc-5c82-b979-635d2d95b1e4",
+      "mode": "complete",
+      "english": "How did you come? — By plane.",
+      "before": "Ulikuja aje? — Kwa ",
+      "after": ".",
+      "options": [
+        {
+          "text": "ndege",
+          "correct": true
+        },
+        {
+          "text": "lini",
+          "correct": false,
+          "feedback": "lini = when?"
+        },
+        {
+          "text": "nani",
+          "correct": false,
+          "feedback": "nani = who?"
+        }
+      ],
+      "explanation": "ndege: bird / plane — n/n noun (same word for one & many)",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    }
+  ]
+}

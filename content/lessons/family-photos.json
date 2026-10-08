@@ -3,9 +3,9 @@
   "uuid": "54c750e2-e6aa-54ec-9eaa-e99e98865b34",
   "title": "Who's in the Photo? Talking Family",
   "category": "people",
-  "difficulty": "beginner",
-  "level": 2,
-  "order": 202,
+  "difficulty": "medium",
+  "level": 5,
+  "order": 502,
   "theme": "people",
   "culturalNote": "Kenyans ask about family early and warmly — \"Una familia?\" isn't nosy, it's friendly. Family words are flexible: dada and kaka (sister, brother) are also how you politely address any young woman or man, and cousins are often just called brothers and sisters. People (m/wa nouns) take their own agreement: mtoto mmoja (one child), watoto wawili (two children), mke wangu (my wife) — but everyday family words like mama, dada, nyanya take yangu: mama yangu, dada yangu.",
   "startingPoint": "Lunch break at the office. Your colleague Achieng spots the photo on your phone's lock screen.",
@@ -188,7 +188,7 @@
           "correct": true
         },
         {
-          "swahili": "Ndiyo. Nina mke na watoto mbili.",
+          "swahili": "Ndiyo. Una mke na watoto wawili.",
           "correct": false
         },
         {
@@ -399,11 +399,11 @@
           "correct": true
         },
         {
-          "swahili": "Ndiyo, hii hapa. Huyu ni mke yangu, Sarah.",
+          "swahili": "Ndiyo, hii hapa. Huyu ni mke wako, Sarah.",
           "correct": false
         },
         {
-          "swahili": "Ndiyo, hii hapa. Hawa ni mke wangu, Sarah.",
+          "swahili": "Ndiyo, hii hapa. Huyu ni mama yangu, Sarah.",
           "correct": false
         }
       ]
@@ -591,7 +591,7 @@
           "correct": true
         },
         {
-          "swahili": "Ndiyo. Hii ni David, na ile mdogo ni Grace.",
+          "swahili": "Ndiyo. Mimi ni David, na yule mdogo ni Grace.",
           "correct": false
         },
         {
@@ -1180,7 +1180,7 @@
           "correct": true
         },
         {
-          "swahili": "Wee! Familia wako ni kubwa!",
+          "swahili": "Wee! Familia yangu ni kubwa!",
           "correct": false
         },
         {
@@ -1339,9 +1339,9 @@
           "correct": true
         },
         {
-          "text": "mbili",
+          "text": "watatu",
           "correct": false,
-          "feedback": "mbili = 2 (n/n form"
+          "feedback": "watatu = three (m/wa)"
         },
         {
           "text": "wanne",
@@ -1349,7 +1349,7 @@
           "feedback": "wanne = four (m/wa)"
         }
       ],
-      "explanation": "People (m/wa) take wa- numbers: mtoto mmoja, watoto wawili, watatu, wanne. Things use the plain form: nyumba mbili.",
+      "explanation": "People take wa- numbers: wawili (2), watatu (3), wanne (4).",
       "grammar": [
         "numbers-money"
       ]
@@ -1366,17 +1366,17 @@
           "correct": true
         },
         {
-          "text": "wawili",
+          "text": "tatu",
           "correct": false,
-          "feedback": "wawili = two (m/wa: watu wawili)"
+          "feedback": "tatu = 3 (n/n form"
         },
         {
-          "text": "mmoja",
+          "text": "nne",
           "correct": false,
-          "feedback": "mmoja = one (m/wa: mtu mmoja)"
+          "feedback": "nne = 4 (n/n form"
         }
       ],
-      "explanation": "nyumba is n/n, so the plain number: mbili.",
+      "explanation": "Things take the plain numbers: mbili (2), tatu (3), nne (4).",
       "grammar": [
         "numbers-money"
       ]
@@ -1385,27 +1385,27 @@
       "id": "ca123948-7c1a-5f2e-86b0-c45462f4ea08",
       "mode": "translate",
       "english": "one brother",
-      "before": "kaka ",
-      "after": "",
+      "before": "",
+      "after": " mmoja",
       "options": [
         {
-          "text": "mmoja",
+          "text": "kaka",
           "correct": true
         },
         {
-          "text": "moja",
+          "text": "dada",
           "correct": false,
-          "feedback": "moja = 1 (n/n form"
+          "feedback": "dada = sister / polite \"miss\""
         },
         {
-          "text": "wawili",
+          "text": "mama",
           "correct": false,
-          "feedback": "wawili = two (m/wa: watu wawili)"
+          "feedback": "mama = mother / respectful \"madam\""
         }
       ],
-      "explanation": "People: mmoja (one), wawili (two).",
+      "explanation": "kaka = brother, dada = sister.",
       "grammar": [
-        "numbers-money"
+        "noun-classes-mwa-nn"
       ]
     },
     {
@@ -1420,9 +1420,9 @@
           "correct": true
         },
         {
-          "text": "tatu",
+          "text": "wawili",
           "correct": false,
-          "feedback": "tatu = 3 (n/n form"
+          "feedback": "wawili = two (m/wa: watu wawili)"
         },
         {
           "text": "wanne",
@@ -1430,7 +1430,7 @@
           "feedback": "wanne = four (m/wa)"
         }
       ],
-      "explanation": "watatu = three (people). wanne = four (people).",
+      "explanation": "watatu = three (people), wawili = two, wanne = four.",
       "grammar": [
         "numbers-money"
       ]
@@ -1439,27 +1439,27 @@
       "id": "03342989-a3a0-5d35-8d93-6974461c6c31",
       "mode": "translate",
       "english": "This is my wife.",
-      "before": "Huyu ni mke ",
-      "after": ".",
+      "before": "Huyu ni ",
+      "after": " wangu.",
       "options": [
         {
-          "text": "wangu",
+          "text": "mke",
           "correct": true
         },
         {
-          "text": "yangu",
+          "text": "mume",
           "correct": false,
-          "feedback": "yangu = my"
+          "feedback": "mume = husband"
         },
         {
-          "text": "zangu",
+          "text": "mtoto",
           "correct": false,
-          "feedback": "zangu = my"
+          "feedback": "mtoto = child"
         }
       ],
-      "explanation": "mke is m/wa, so wangu.",
+      "explanation": "mke = wife, mume = husband, mtoto = child.",
       "grammar": [
-        "possessives"
+        "noun-classes-mwa-nn"
       ]
     },
     {
@@ -1479,12 +1479,12 @@
           "feedback": "Huyu = this (person)"
         },
         {
-          "text": "Hizi",
+          "text": "Wale",
           "correct": false,
-          "feedback": "Hizi = these"
+          "feedback": "Wale = those (people) over there"
         }
       ],
-      "explanation": "hawa = these (people). Huyu = this person; hizi = these things.",
+      "explanation": "hawa = these (people), huyu = this person, wale = those people over there.",
       "grammar": [
         "demonstratives"
       ]
@@ -1493,27 +1493,27 @@
       "id": "c7ace73a-16d3-52d7-bb70-d40d1d0c1ceb",
       "mode": "translate",
       "english": "That one (person) over there is little.",
-      "before": "",
-      "after": " ni mdogo.",
+      "before": "Yule ni ",
+      "after": ".",
       "options": [
         {
-          "text": "Yule",
+          "text": "mdogo",
           "correct": true
         },
         {
-          "text": "Huyu",
+          "text": "mkubwa",
           "correct": false,
-          "feedback": "Huyu = this (person)"
+          "feedback": "mkubwa = big"
         },
         {
-          "text": "Hawa",
+          "text": "mzee",
           "correct": false,
-          "feedback": "Hawa = these (people)"
+          "feedback": "mzee = old man / elder (respectful \"sir\")"
         }
       ],
-      "explanation": "yule = that person over there.",
+      "explanation": "mdogo = small / young, mkubwa = big / older, mzee = old.",
       "grammar": [
-        "demonstratives"
+        "adjective-agreement"
       ]
     },
     {
@@ -1528,17 +1528,17 @@
           "correct": true
         },
         {
-          "text": "wako",
+          "text": "yangu",
           "correct": false,
-          "feedback": "wako = They are (at / doing)"
+          "feedback": "yangu = my"
         },
         {
-          "text": "zako",
+          "text": "yao",
           "correct": false,
-          "feedback": "zako = your"
+          "feedback": "yao = their"
         }
       ],
-      "explanation": "familia is n/n singular, so yako.",
+      "explanation": "yako = your, yangu = my, yao = their.",
       "grammar": [
         "possessives"
       ]
@@ -1555,17 +1555,17 @@
           "correct": true
         },
         {
-          "text": "wao",
+          "text": "yako",
           "correct": false,
-          "feedback": "wao = they / them"
+          "feedback": "yako = your"
         },
         {
-          "text": "zao",
+          "text": "yetu",
           "correct": false,
-          "feedback": "zao = their"
+          "feedback": "yetu = our"
         }
       ],
-      "explanation": "Family words (mama, baba, dada, nyanya) take the n/n form: mama yangu, nyanya yao.",
+      "explanation": "yao = their, yako = your, yetu = our.",
       "grammar": [
         "possessives"
       ]
@@ -1574,27 +1574,27 @@
       "id": "f7b0fc72-ff98-5762-b97c-ee8ac601e8b7",
       "mode": "translate",
       "english": "my sister",
-      "before": "dada ",
-      "after": "",
+      "before": "",
+      "after": " yangu",
       "options": [
         {
-          "text": "yangu",
+          "text": "dada",
           "correct": true
         },
         {
-          "text": "wangu",
+          "text": "kaka",
           "correct": false,
-          "feedback": "wangu = my"
+          "feedback": "kaka = brother / polite \"bro\""
         },
         {
-          "text": "zangu",
+          "text": "nyanya",
           "correct": false,
-          "feedback": "zangu = my"
+          "feedback": "nyanya = grandmother (also: tomato!)"
         }
       ],
-      "explanation": "yangu = \"my\" — n/n singular agreement (nyumba yangu). In Kenyan speech also used for family words and most things (jina yangu, gari yangu).",
+      "explanation": "dada = sister, kaka = brother, nyanya = grandmother.",
       "grammar": [
-        "possessives"
+        "noun-classes-mwa-nn"
       ]
     },
     {
@@ -1609,17 +1609,17 @@
           "correct": true
         },
         {
-          "text": "yako",
+          "text": "wangu",
           "correct": false,
-          "feedback": "yako = your"
+          "feedback": "wangu = my"
         },
         {
-          "text": "zako",
+          "text": "wake",
           "correct": false,
-          "feedback": "zako = your"
+          "feedback": "wake = his/her"
         }
       ],
-      "explanation": "mtoto is m/wa: mtoto wako.",
+      "explanation": "wako = your, wangu = my, wake = his / her.",
       "grammar": [
         "ko-location"
       ]

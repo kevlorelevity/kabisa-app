@@ -1,0 +1,1884 @@
+{
+  "id": "home-chores",
+  "uuid": "a787b99b-b95c-5146-828c-510faa299d8c",
+  "title": "Saturday Chores: Kazi za Nyumbani",
+  "category": "home",
+  "difficulty": "beginner",
+  "level": 2,
+  "order": 201,
+  "theme": "home",
+  "culturalNote": "Saturday morning is \"kazi za nyumbani\" time in most Kenyan homes: sweeping, mopping (\"kupiga deki\" — from the English \"deck\"), washing clothes by hand in a basin, and hanging them in the sun. Kenyans use different verbs for different kinds of washing: kuosha for dishes, cars and hands, kufua only for clothes. You share a flat in Kilimani with your friend Otieno.",
+  "startingPoint": "Saturday, 9 a.m. Otieno bangs on your door with a broom in his hand.",
+  "grammarFocus": [
+    "present-na",
+    "infinitive-ku",
+    "adjective-agreement",
+    "possessives"
+  ],
+  "grammar": [
+    "present-na",
+    "infinitive-ku",
+    "adjective-agreement",
+    "possessives",
+    "greetings",
+    "noun-classes-mwa-nn",
+    "ni-copula",
+    "subject-prefixes",
+    "locative-ni",
+    "ko-location",
+    "question-words",
+    "sanifu-noun-classes"
+  ],
+  "turns": [
+    {
+      "id": "289e0598-31e6-5269-bc1e-bd70c0c71b18",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Niaje, John! Leo ni Jumamosi — siku ya kazi za nyumbani!",
+      "english": "Hey, John! Today is Saturday — chores day!",
+      "words": [
+        {
+          "text": "Niaje",
+          "gloss": "what's up? — from \"ni aje?\" (how is it?), said fast with stress on the first syllable",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "John",
+          "gloss": "John (name)"
+        },
+        {
+          "text": "Leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Jumamosi",
+          "gloss": "Saturday"
+        },
+        {
+          "text": "siku",
+          "gloss": "day — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ya",
+          "gloss": "\"of\" — n/n singular agreement (nyumba ya Kamau); Kenyans use ya with most nouns",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "kazi za nyumbani",
+          "gloss": "\"housework, chores\" — lit. \"work of the home\""
+        }
+      ]
+    },
+    {
+      "id": "780f3f3c-79cb-5ebb-b3d6-065b729897ae",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Poa, Otieno. Mimi ninaosha vyombo jikoni.",
+      "english": "Okay, Otieno. I'm washing the dishes in the kitchen.",
+      "words": [
+        {
+          "text": "Poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Otieno",
+          "gloss": "Otieno (a Luo name)"
+        },
+        {
+          "text": "Mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ninaosha",
+          "gloss": "\"I am washing\" — ni- (subject: I) + na- (present) + -osha (wash). From kuosha. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuosha (to wash)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaosha"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaosha"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaosha"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaosha"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaosha"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaosha"
+              }
+            ]
+          }
+        },
+        {
+          "text": "vyombo",
+          "gloss": "dishes",
+          "sanifu": "Sanifu: chombo / vyombo (ki/vi class)"
+        },
+        {
+          "text": "jikoni",
+          "gloss": "\"at / in / to the stove\" — jiko + -ni (place suffix).",
+          "grammar": [
+            "locative-ni"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Poa, Otieno. Mimi ninaosha vyombo jikoni.",
+          "correct": true
+        },
+        {
+          "swahili": "Poa, Otieno. Mimi ninafua vyombo jikoni.",
+          "correct": false
+        },
+        {
+          "swahili": "Poa, Otieno. Wewe ninaosha vyombo jikoni.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "bd714a02-533a-59c7-8ec0-81018a9ed100",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Sawa. Mimi ninafagia sakafu na kupiga deki.",
+      "english": "Okay. I'm sweeping the floor and mopping.",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ninafagia",
+          "gloss": "\"I am sweeping\" — ni- (subject: I) + na- (present) + -fagia (sweep). From kufagia. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kufagia (to sweep)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninafagia"
+              },
+              {
+                "pronoun": "you",
+                "form": "unafagia"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anafagia"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunafagia"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnafagia"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanafagia"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sakafu",
+          "gloss": "floor"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "kupiga deki",
+          "gloss": "\"to mop\" — deki from English \"deck\""
+        }
+      ]
+    },
+    {
+      "id": "7cd75a3b-0711-5ba9-855a-09bc08ef9d61",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Poa. Sabuni iko wapi?",
+      "english": "Cool. Where's the soap?",
+      "words": [
+        {
+          "text": "Poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Sabuni",
+          "gloss": "soap"
+        },
+        {
+          "text": "iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "wapi",
+          "gloss": "where?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Poa. Sabuni iko wapi?",
+          "correct": true
+        },
+        {
+          "swahili": "Poa. Sabuni iko nani?",
+          "correct": false
+        },
+        {
+          "swahili": "Poa. Sabuni ni ngapi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "044f4b52-042e-5c83-a2e5-36382075d712",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Iko kwa kabati, karibu na ndoo.",
+      "english": "It's in the cupboard, next to the bucket.",
+      "words": [
+        {
+          "text": "Iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "kabati",
+          "gloss": "cupboard"
+        },
+        {
+          "text": "karibu na",
+          "gloss": "close to / near",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "ndoo",
+          "gloss": "bucket"
+        }
+      ],
+      "sanifu": "Iko kabatini, karibu na ndoo."
+    },
+    {
+      "id": "9ce813ef-a84c-5aff-a514-3d8ad88620eb",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Asante. Maji ni moto au baridi?",
+      "english": "Thanks. Is the water hot or cold?",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Maji",
+          "gloss": "water — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — maji yangu, maji haya (ma- plural of the ji/ma class)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "moto",
+          "gloss": "fire / hot — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: m/mi class — moto mkubwa"
+        },
+        {
+          "text": "au",
+          "gloss": "or"
+        },
+        {
+          "text": "baridi",
+          "gloss": "cold — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante. Maji ni moto au baridi?",
+          "correct": true
+        },
+        {
+          "swahili": "Asante. Maji ni wapi au baridi?",
+          "correct": false
+        },
+        {
+          "swahili": "Asante. Sabuni ni moto au baridi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "9b3d977b-b116-56ff-bcbc-f3ea1d5951ef",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Maji ni baridi. Stima iko, lakini hita ni mbovu.",
+      "english": "The water is cold. There's power, but the heater is broken.",
+      "words": [
+        {
+          "text": "Maji",
+          "gloss": "water — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — maji yangu, maji haya (ma- plural of the ji/ma class)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "baridi",
+          "gloss": "cold — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Stima",
+          "gloss": "electricity / power (everyday Kenyan)"
+        },
+        {
+          "text": "iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "hita",
+          "gloss": "(water) heater"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mbovu",
+          "gloss": "broken / rotten"
+        }
+      ]
+    },
+    {
+      "id": "f24a63cc-7d2d-5816-a129-e94074307f75",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Sawa, hata maji baridi ni sawa.",
+      "english": "Okay, even cold water is fine.",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "hata",
+          "gloss": "even"
+        },
+        {
+          "text": "maji",
+          "gloss": "water — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — maji yangu, maji haya (ma- plural of the ji/ma class)"
+        },
+        {
+          "text": "baridi",
+          "gloss": "cold — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Sawa, hata maji baridi ni sawa.",
+          "correct": true
+        },
+        {
+          "swahili": "Sawa, hata maji baridi ni chafu.",
+          "correct": false
+        },
+        {
+          "swahili": "Sawa, hata maji moto ni baridi.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "131a9802-3625-5761-b873-ff08e2cb8b2c",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Na nguo? Nani anafua nguo leo?",
+      "english": "And the clothes? Who's washing the clothes today?",
+      "words": [
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "nguo",
+          "gloss": "clothes / a piece of clothing — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Nani",
+          "gloss": "who?",
+          "grammar": [
+            "question-words"
+          ]
+        },
+        {
+          "text": "anafua",
+          "gloss": "\"He/she is doing laundry\" — a- (subject: he/she) + na- (present) + -fua (do laundry). From kufua.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kufua (to do laundry)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninafua"
+              },
+              {
+                "pronoun": "you",
+                "form": "unafua"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anafua"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunafua"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnafua"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanafua"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nguo",
+          "gloss": "clothes / a piece of clothing — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4e2f125c-2698-5d18-afda-7057d98c1817",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Mimi ninafua nguo zangu, na wewe unafua zako.",
+      "english": "I'm washing my clothes, and you're washing yours.",
+      "words": [
+        {
+          "text": "Mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ninafua",
+          "gloss": "\"I am doing laundry\" — ni- (subject: I) + na- (present) + -fua (do laundry). From kufua. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kufua (to do laundry)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninafua"
+              },
+              {
+                "pronoun": "you",
+                "form": "unafua"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anafua"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunafua"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnafua"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanafua"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nguo",
+          "gloss": "clothes / a piece of clothing — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "zangu",
+          "gloss": "\"my\" — n/n plural agreement (nyumba zangu, nguo zangu).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (n/n plural)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "zangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "zako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "zake"
+              },
+              {
+                "pronoun": "our",
+                "form": "zetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "zenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "zao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "unafua",
+          "gloss": "\"You are doing laundry\" — u- (subject: you) + na- (present) + -fua (do laundry). From kufua.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kufua (to do laundry)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninafua"
+              },
+              {
+                "pronoun": "you",
+                "form": "unafua"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anafua"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunafua"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnafua"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanafua"
+              }
+            ]
+          }
+        },
+        {
+          "text": "zako",
+          "gloss": "\"your\" — n/n plural agreement (nyumba zako, nguo zako).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (n/n plural)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "zangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "zako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "zake"
+              },
+              {
+                "pronoun": "our",
+                "form": "zetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "zenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "zao"
+              }
+            ]
+          }
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Mimi ninafua nguo zangu, na wewe unafua zako.",
+          "correct": true
+        },
+        {
+          "swahili": "Mimi ninapika nguo zangu, na wewe unapika zako.",
+          "correct": false
+        },
+        {
+          "swahili": "Mimi unafua nguo zangu, na wewe ninafua zako.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "63c42048-df89-564d-bbca-12ad53e27262",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Haha, poa! Na chumba yako? Ni safi?",
+      "english": "Ha, fine! And your room? Is it clean?",
+      "words": [
+        {
+          "text": "Haha",
+          "gloss": "haha"
+        },
+        {
+          "text": "poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "chumba",
+          "gloss": "room (plural vyumba) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — chumba changu, vyumba"
+        },
+        {
+          "text": "yako",
+          "gloss": "\"your\" — n/n singular agreement (nyumba yako). In Kenyan speech also used for family words and most things (jina yako, gari yako).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (n/n singular)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "yangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "yako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "yake"
+              },
+              {
+                "pronoun": "our",
+                "form": "yetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "yenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "yao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "safi",
+          "gloss": "clean / great / sorted"
+        }
+      ],
+      "sanifu": "Haha, poa! Na chumba chako? Ni kisafi?"
+    },
+    {
+      "id": "08be9272-d159-5f67-883e-561227a56f82",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Hapana, chumba yangu ni chafu sana! Ninatandika kitanda sasa.",
+      "english": "No, my room is really dirty! I'm making the bed now.",
+      "words": [
+        {
+          "text": "Hapana",
+          "gloss": "no"
+        },
+        {
+          "text": "chumba yangu",
+          "gloss": "\"my room\" — Kenyan agreement.",
+          "sanifu": "Sanifu: chumba changu (ki/vi class)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "chafu",
+          "gloss": "dirty"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Ninatandika",
+          "gloss": "\"I am making (the bed)\" — ni- (subject: I) + na- (present) + -tandika (make (the bed)). From kutandika. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kutandika (to make (the bed))",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninatandika"
+              },
+              {
+                "pronoun": "you",
+                "form": "unatandika"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anatandika"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunatandika"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnatandika"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanatandika"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kitanda",
+          "gloss": "bed",
+          "sanifu": "Sanifu: kitanda / vitanda (ki/vi class)"
+        },
+        {
+          "text": "sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        }
+      ],
+      "sanifu": "Hapana, chumba changu ni kichafu sana! Ninatandika kitanda sasa.",
+      "options": [
+        {
+          "swahili": "Hapana, chumba yangu ni chafu sana! Ninatandika kitanda sasa.",
+          "correct": true
+        },
+        {
+          "swahili": "Hapana, chumba yangu ni safi sana! Ninatandika kitanda sasa.",
+          "correct": false
+        },
+        {
+          "swahili": "Hapana, chumba yangu ni chafu sana! Ninakula kitanda sasa.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "15bd52cb-0194-5406-abf4-66a989e41e79",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Sawa. Mimi ninatoa taka, halafu ninapika chakula cha mchana.",
+      "english": "Okay. I'm taking out the rubbish, then I'm cooking lunch.",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ninatoa",
+          "gloss": "\"I am taking out\" — ni- (subject: I) + na- (present) + -toa (take out). From kutoa. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kutoa (to take out)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninatoa"
+              },
+              {
+                "pronoun": "you",
+                "form": "unatoa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anatoa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunatoa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnatoa"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanatoa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "taka",
+          "gloss": "rubbish"
+        },
+        {
+          "text": "halafu",
+          "gloss": "then / and then"
+        },
+        {
+          "text": "ninapika",
+          "gloss": "\"I am cooking\" — ni- (subject: I) + na- (present) + -pika (cook). From kupika. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kupika (to cook)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninapika"
+              },
+              {
+                "pronoun": "you",
+                "form": "unapika"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anapika"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunapika"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnapika"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanapika"
+              }
+            ]
+          }
+        },
+        {
+          "text": "chakula cha mchana",
+          "gloss": "lunch (lit. \"food of midday\")"
+        }
+      ]
+    },
+    {
+      "id": "db2d715a-ff08-5e42-872f-7ef76ce9e6cf",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Safi! Unapika nini?",
+      "english": "Great! What are you cooking?",
+      "words": [
+        {
+          "text": "Safi",
+          "gloss": "clean / great / sorted"
+        },
+        {
+          "text": "Unapika",
+          "gloss": "\"You are cooking\" — u- (subject: you) + na- (present) + -pika (cook). From kupika.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kupika (to cook)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninapika"
+              },
+              {
+                "pronoun": "you",
+                "form": "unapika"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anapika"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunapika"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnapika"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanapika"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nini",
+          "gloss": "what?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Safi! Unapika nini?",
+          "correct": true
+        },
+        {
+          "swahili": "Safi! Ninapika nini?",
+          "correct": false
+        },
+        {
+          "swahili": "Safi! Unapika wapi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "9d78de34-79df-576a-9cae-5897a526258b",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Ugali na sukuma. Ni rahisi na tamu!",
+      "english": "Ugali and sukuma. It's easy and tasty!",
+      "words": [
+        {
+          "text": "Ugali",
+          "gloss": "ugali — stiff maize-meal staple (u-class in Sanifu, used like n/n) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "sukuma",
+          "gloss": "short for sukuma wiki — collard greens / kale — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "rahisi",
+          "gloss": "easy / cheap"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "tamu",
+          "gloss": "sweet / tasty"
+        }
+      ]
+    },
+    {
+      "id": "b6709df3-f0f8-5621-b194-23c769ecf145",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Poa sana. Kazi za nyumbani ni nyingi, lakini tuko pamoja!",
+      "english": "Very cool. There's a lot of housework, but we're in it together!",
+      "words": [
+        {
+          "text": "Poa sana",
+          "gloss": "very cool / really good",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Kazi za nyumbani",
+          "gloss": "\"housework, chores\" — lit. \"work of the home\""
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "nyingi",
+          "gloss": "many / a lot (n/n plural)"
+        },
+        {
+          "text": "lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "tuko pamoja",
+          "gloss": "\"we're together\" — we're in this together"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Poa sana. Kazi za nyumbani ni nyingi, lakini tuko pamoja!",
+          "correct": true
+        },
+        {
+          "swahili": "Poa sana. Kazi za nyumbani ni nyingi, lakini niko pamoja!",
+          "correct": false
+        },
+        {
+          "swahili": "Poa sana. Kazi za nyumbani ni tamu, lakini tuko pamoja!",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "6cbf9830-b3f9-5f7e-8a31-804bdeb951d2",
+      "swahili": "kazi za nyumbani",
+      "english": "housework / chores",
+      "exampleContext": "lit. \"work of the home\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "e1908d5c-44e2-53c5-8b7c-e6775a90f93f",
+      "swahili": "kuosha",
+      "english": "to wash (dishes, car, hands)",
+      "exampleContext": "Ninaosha vyombo.",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "604e43d7-2d0a-5533-bbf3-b614d5ac92cf",
+      "swahili": "kufua",
+      "english": "to wash (clothes)",
+      "exampleContext": "Ninafua nguo.",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "29cc60c1-21c2-5bc9-a179-cb8cc6a4ddf9",
+      "swahili": "kufagia",
+      "english": "to sweep",
+      "exampleContext": "Ninafagia sakafu.",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "784d90e8-0f8f-5477-ae7c-c8ca0b1ad71d",
+      "swahili": "kupiga deki",
+      "english": "to mop",
+      "exampleContext": "kupiga pasi = to iron",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "9fc1f280-4837-597d-b268-55b18cf54dd6",
+      "swahili": "kutandika kitanda",
+      "english": "to make the bed",
+      "exampleContext": "kitanda = bed",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "455283ab-c9e5-5d7b-93c1-0a3f5fdfd1de",
+      "swahili": "kutoa taka",
+      "english": "to take out the rubbish",
+      "exampleContext": "taka = rubbish",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "e780aeb2-3b5e-5c06-8a5b-ad554372fea2",
+      "swahili": "vyombo",
+      "english": "dishes",
+      "exampleContext": "Kenyans: vyombo hizi",
+      "sanifu": "vyombo hivi",
+      "sanifuNote": "Sanifu: ki/vi class (chombo / vyombo)"
+    },
+    {
+      "id": "24ee4be6-61bd-5354-a655-11fcf4b21f85",
+      "swahili": "sakafu",
+      "english": "floor",
+      "exampleContext": "n/n noun"
+    },
+    {
+      "id": "a2114c9b-4aaa-58e8-8908-ab2023c81883",
+      "swahili": "sabuni",
+      "english": "soap",
+      "exampleContext": "n/n noun"
+    },
+    {
+      "id": "d21dae16-f876-5184-9566-be5250a9d648",
+      "swahili": "chafu / safi",
+      "english": "dirty / clean",
+      "exampleContext": "Chumba yangu ni chafu.",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "dbbc2176-3358-5ac3-b405-80db44ab1669",
+      "swahili": "baridi / moto",
+      "english": "cold / hot",
+      "exampleContext": "maji baridi = cold water",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "aa182157-3d27-5e4c-94e7-295a031ecb0c",
+      "swahili": "nyingi",
+      "english": "many / a lot",
+      "exampleContext": "Kazi ni nyingi."
+    }
+  ],
+  "practice": [
+    {
+      "id": "15f96437-5c4a-5fe8-8cdd-62cd13a584d2",
+      "mode": "translate",
+      "english": "I'm washing the dishes.",
+      "before": "",
+      "after": " vyombo.",
+      "options": [
+        {
+          "text": "Ninaosha",
+          "correct": true
+        },
+        {
+          "text": "Ninafua",
+          "correct": false,
+          "feedback": "Ninafua = I am doing laundry"
+        },
+        {
+          "text": "Ninafagia",
+          "correct": false,
+          "feedback": "Ninafagia = I am sweeping"
+        }
+      ],
+      "explanation": "-osha = wash (dishes, cars, hands), -fua = wash (clothes), -fagia = sweep.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "f38e6d42-6ec4-5655-833b-131fe3085af8",
+      "mode": "translate",
+      "english": "He's sweeping the floor.",
+      "before": "",
+      "after": " sakafu.",
+      "options": [
+        {
+          "text": "Anafagia",
+          "correct": true
+        },
+        {
+          "text": "Anaosha",
+          "correct": false,
+          "feedback": "Anaosha = He/she is washing"
+        },
+        {
+          "text": "Anapika",
+          "correct": false,
+          "feedback": "Anapika = He/she is cooking"
+        }
+      ],
+      "explanation": "Anafagia = \"He/she is sweeping\" — a- (subject: he/she) + na- (present) + -fagia (sweep). From kufagia.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "e28dbf46-389e-5801-8dc7-a5b0063b9dfb",
+      "mode": "translate",
+      "english": "We're washing our clothes.",
+      "before": "",
+      "after": " nguo zetu.",
+      "options": [
+        {
+          "text": "Tunafua",
+          "correct": true
+        },
+        {
+          "text": "Tunapika",
+          "correct": false,
+          "feedback": "Tunapika = We are cooking"
+        },
+        {
+          "text": "Tunafagia",
+          "correct": false,
+          "feedback": "Tunafagia = We are sweeping"
+        }
+      ],
+      "explanation": "Tunafua = \"We are doing laundry\" — tu- (subject: we) + na- (present) + -fua (do laundry). From kufua.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "ac01a104-8edc-5fe6-b564-88ca4672e8ae",
+      "mode": "translate",
+      "english": "I'm mopping.",
+      "before": "Ninapiga ",
+      "after": ".",
+      "options": [
+        {
+          "text": "deki",
+          "correct": true
+        },
+        {
+          "text": "pasi",
+          "correct": false,
+          "feedback": "pasi = iron (for clothes)"
+        },
+        {
+          "text": "simu",
+          "correct": false,
+          "feedback": "simu = phone / call"
+        }
+      ],
+      "explanation": "kupiga deki = to mop, kupiga pasi = to iron, kupiga simu = to phone."
+    },
+    {
+      "id": "893a18d1-56a2-5267-b25a-fb0b2a6eb0d4",
+      "mode": "translate",
+      "english": "She's ironing the clothes.",
+      "before": "Anapiga ",
+      "after": " nguo.",
+      "options": [
+        {
+          "text": "pasi",
+          "correct": true
+        },
+        {
+          "text": "deki",
+          "correct": false
+        },
+        {
+          "text": "simu",
+          "correct": false,
+          "feedback": "simu = phone / call"
+        }
+      ],
+      "explanation": "pasi: iron (for clothes) — kupiga pasi = to iron"
+    },
+    {
+      "id": "96d85914-caaa-53b9-a28c-fe3c736a43c1",
+      "mode": "translate",
+      "english": "Where's the soap?",
+      "before": "",
+      "after": " iko wapi?",
+      "options": [
+        {
+          "text": "Sabuni",
+          "correct": true
+        },
+        {
+          "text": "Fagio",
+          "correct": false,
+          "feedback": "Fagio = broom"
+        },
+        {
+          "text": "Ndoo",
+          "correct": false,
+          "feedback": "Ndoo = bucket"
+        }
+      ],
+      "explanation": "sabuni = soap, fagio = broom, ndoo = bucket."
+    },
+    {
+      "id": "34d4531e-a9b4-539d-96ed-1f2643aecd3b",
+      "mode": "translate",
+      "english": "It's in the cupboard.",
+      "before": "Iko kwa ",
+      "after": ".",
+      "options": [
+        {
+          "text": "kabati",
+          "correct": true
+        },
+        {
+          "text": "kitanda",
+          "correct": false,
+          "feedback": "kitanda = bed"
+        },
+        {
+          "text": "sakafu",
+          "correct": false,
+          "feedback": "sakafu = floor"
+        }
+      ],
+      "explanation": "kabati = cupboard, kitanda = bed, sakafu = floor."
+    },
+    {
+      "id": "8bc94dfc-c3c5-53bd-8b53-52126c4e7aee",
+      "mode": "translate",
+      "english": "The water is cold.",
+      "before": "Maji ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "baridi",
+          "correct": true
+        },
+        {
+          "text": "moto",
+          "correct": false,
+          "feedback": "moto = fire / hot"
+        },
+        {
+          "text": "safi",
+          "correct": false,
+          "feedback": "safi = clean / great / sorted"
+        }
+      ],
+      "explanation": "baridi = cold, moto = hot, safi = clean.",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "f8dd7252-60ae-5dc5-932c-04af511d452b",
+      "mode": "translate",
+      "english": "My room is dirty.",
+      "before": "Chumba yangu ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "chafu",
+          "correct": true
+        },
+        {
+          "text": "safi",
+          "correct": false,
+          "feedback": "safi = clean / great / sorted"
+        },
+        {
+          "text": "kubwa",
+          "correct": false,
+          "feedback": "kubwa = big"
+        }
+      ],
+      "explanation": "chafu = dirty, safi = clean, kubwa = big."
+    },
+    {
+      "id": "bd17d52b-e5b0-5615-81a5-17f299afa01a",
+      "mode": "translate",
+      "english": "I'm making the bed.",
+      "before": "",
+      "after": " kitanda.",
+      "options": [
+        {
+          "text": "Ninatandika",
+          "correct": true
+        },
+        {
+          "text": "Ninafagia",
+          "correct": false,
+          "feedback": "Ninafagia = I am sweeping"
+        },
+        {
+          "text": "Ninaosha",
+          "correct": false,
+          "feedback": "Ninaosha = I am washing"
+        }
+      ],
+      "explanation": "kutandika kitanda = to make the bed.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "480561fc-65bf-5246-b1bf-ce47592c0b1a",
+      "mode": "translate",
+      "english": "I'm taking out the rubbish.",
+      "before": "Ninatoa ",
+      "after": ".",
+      "options": [
+        {
+          "text": "taka",
+          "correct": true
+        },
+        {
+          "text": "maji",
+          "correct": false,
+          "feedback": "maji = water"
+        },
+        {
+          "text": "nguo",
+          "correct": false,
+          "feedback": "nguo = clothes / a piece of clothing"
+        }
+      ],
+      "explanation": "taka = rubbish, maji = water, nguo = clothes."
+    },
+    {
+      "id": "84f82554-84d4-5c2d-a460-fffc783ba95a",
+      "mode": "translate",
+      "english": "Who's cooking today?",
+      "before": "",
+      "after": " anapika leo?",
+      "options": [
+        {
+          "text": "Nani",
+          "correct": true
+        },
+        {
+          "text": "Nini",
+          "correct": false,
+          "feedback": "Nini = what?"
+        },
+        {
+          "text": "Wapi",
+          "correct": false,
+          "feedback": "Wapi = where?"
+        }
+      ],
+      "explanation": "Nani: who?",
+      "grammar": [
+        "question-words"
+      ]
+    },
+    {
+      "id": "20d44fa5-6f45-5365-aab5-b1eca01944b1",
+      "mode": "translate",
+      "english": "They're cooking ugali.",
+      "before": "",
+      "after": " ugali.",
+      "options": [
+        {
+          "text": "Wanapika",
+          "correct": true
+        },
+        {
+          "text": "Anapika",
+          "correct": false,
+          "feedback": "Anapika = He/she is cooking"
+        },
+        {
+          "text": "Mnapika",
+          "correct": false,
+          "feedback": "Mnapika = You all are cooking"
+        }
+      ],
+      "explanation": "wa- = they, a- = he / she, m- = you (plural).",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "03cf3a1b-d430-5f64-a674-444c5b5aed82",
+      "mode": "translate",
+      "english": "my clothes and your clothes",
+      "before": "nguo ",
+      "after": " na nguo zako",
+      "options": [
+        {
+          "text": "zangu",
+          "correct": true
+        },
+        {
+          "text": "zako",
+          "correct": false,
+          "feedback": "zako = your"
+        },
+        {
+          "text": "zake",
+          "correct": false,
+          "feedback": "zake = his/her"
+        }
+      ],
+      "explanation": "zangu = my, zako = your, zake = his / her.",
+      "grammar": [
+        "possessives"
+      ]
+    },
+    {
+      "id": "b2277301-2f40-5dff-87f1-500fa5dd6fb1",
+      "mode": "translate",
+      "english": "There's a lot of housework.",
+      "before": "Kazi za nyumbani ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "nyingi",
+          "correct": true
+        },
+        {
+          "text": "safi",
+          "correct": false,
+          "feedback": "safi = clean / great / sorted"
+        },
+        {
+          "text": "baridi",
+          "correct": false,
+          "feedback": "baridi = cold"
+        }
+      ],
+      "explanation": "nyingi = a lot / many."
+    },
+    {
+      "id": "569c2c92-6bf8-5dc6-998f-346fb1b578ab",
+      "mode": "translate",
+      "english": "to wash clothes",
+      "before": "",
+      "after": " nguo",
+      "options": [
+        {
+          "text": "kufua",
+          "correct": true
+        },
+        {
+          "text": "kufagia",
+          "correct": false,
+          "feedback": "kufagia = To sweep"
+        },
+        {
+          "text": "kupika",
+          "correct": false,
+          "feedback": "kupika = To cook"
+        }
+      ],
+      "explanation": "The dictionary form of a verb starts with ku-: kufua = to wash (clothes).",
+      "grammar": [
+        "infinitive-ku"
+      ]
+    },
+    {
+      "id": "a21109a6-400b-52f3-844f-82ea1638431a",
+      "mode": "complete",
+      "english": "Is the water hot? — No, it's cold.",
+      "before": "Maji ni moto? — Hapana, ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "baridi",
+          "correct": true
+        },
+        {
+          "text": "safi",
+          "correct": false,
+          "feedback": "safi = clean / great / sorted"
+        },
+        {
+          "text": "chafu",
+          "correct": false,
+          "feedback": "chafu = dirty"
+        }
+      ],
+      "explanation": "baridi: cold — n/n noun (same word for one & many)",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1734 @@
+{
+  "id": "kitchen-ugali",
+  "uuid": "f74a7e29-fc9f-5f1b-ac56-0c6aaf5e9950",
+  "title": "In the Kitchen: Ugali and Sukuma",
+  "category": "food-drink",
+  "difficulty": "beginner",
+  "level": 2,
+  "order": 202,
+  "theme": "kitchen",
+  "culturalNote": "Ugali — stiff maize porridge eaten with your right hand — is Kenya's national dish, and sukuma wiki (collard greens, lit. \"push the week\") is its faithful partner because it's cheap enough to stretch the money to the end of the week. Making ugali has its own verb: kusonga, to stir and press the flour into the boiling water with a wooden mwiko. Kenyans say \"ninasikia njaa\" — lit. \"I hear hunger\" — for \"I'm hungry\".",
+  "startingPoint": "Your neighbour Mama Njeri has invited you into her kitchen to learn the most important Kenyan recipe.",
+  "grammarFocus": [
+    "infinitive-ku",
+    "present-na",
+    "adjective-agreement"
+  ],
+  "grammar": [
+    "infinitive-ku",
+    "present-na",
+    "adjective-agreement",
+    "locative-ni",
+    "noun-classes-mwa-nn",
+    "question-words",
+    "greetings",
+    "sanifu-noun-classes",
+    "numbers-money",
+    "ni-copula",
+    "discourse-particles",
+    "ko-location",
+    "subject-prefixes"
+  ],
+  "turns": [
+    {
+      "id": "1bcf25ea-3c1a-5f71-aaf4-fe5e62d22308",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Karibu jikoni, John! Leo unajifunza kupika ugali.",
+      "english": "Welcome to the kitchen, John! Today you're learning to cook ugali.",
+      "words": [
+        {
+          "text": "Karibu",
+          "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "jikoni",
+          "gloss": "\"in the kitchen\" — jiko (kitchen / stove) + -ni.",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "John",
+          "gloss": "John (name)"
+        },
+        {
+          "text": "Leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "unajifunza",
+          "gloss": "\"You are learning\" — u- (subject: you) + na- (present) + -jifunza (learn). From kujifunza.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kujifunza (to learn)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninajifunza"
+              },
+              {
+                "pronoun": "you",
+                "form": "unajifunza"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anajifunza"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunajifunza"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnajifunza"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanajifunza"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kupika",
+          "gloss": "\"To cook\" — ku- (infinitive \"to\") + -pika (cook). From kupika.",
+          "grammar": [
+            "infinitive-ku"
+          ]
+        },
+        {
+          "text": "ugali",
+          "gloss": "ugali — stiff maize-meal staple (u-class in Sanifu, used like n/n) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "40766b23-e94f-572d-8a58-d7e8e94c9d88",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Asante, mama! Ninapenda ugali sana. Tunaanza aje?",
+      "english": "Thanks, mama! I love ugali. How do we start?",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "mama",
+          "gloss": "mother / respectful \"madam\" — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Ninapenda",
+          "gloss": "\"I like\" — ni- (subject: I) + na- (present) + -penda (like). From kupenda. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kupenda (to like)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninapenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unapenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anapenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunapenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnapenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanapenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "ugali",
+          "gloss": "ugali — stiff maize-meal staple (u-class in Sanifu, used like n/n) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Tunaanza",
+          "gloss": "\"We are starting\" — tu- (subject: we) + na- (present) + -anza (start). From kuanza.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuanza (to start)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaanza"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaanza"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaanza"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaanza"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaanza"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaanza"
+              }
+            ]
+          }
+        },
+        {
+          "text": "aje",
+          "gloss": "how? (Kenyan) — \"Uko aje?\" = how are you?",
+          "grammar": [
+            "question-words",
+            "greetings"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante, mama! Ninapenda ugali sana. Tunaanza aje?",
+          "correct": true
+        },
+        {
+          "swahili": "Asante, mama! Ninapenda ugali sana. Tunamaliza aje?",
+          "correct": false
+        },
+        {
+          "swahili": "Asante, mama! Unapenda ugali sana. Tunaanza aje?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "b0ca7a99-76bc-5486-bfa2-c4f92166b97f",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Kwanza, unaweka maji kwa sufuria, halafu unawasha jiko.",
+      "english": "First, you put water in the pot, then you light the stove.",
+      "words": [
+        {
+          "text": "Kwanza",
+          "gloss": "\"first\""
+        },
+        {
+          "text": "unaweka",
+          "gloss": "\"You are putting\" — u- (subject: you) + na- (present) + -weka (put). From kuweka.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuweka (to put)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaweka"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaweka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaweka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaweka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaweka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaweka"
+              }
+            ]
+          }
+        },
+        {
+          "text": "maji",
+          "gloss": "water — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — maji yangu, maji haya (ma- plural of the ji/ma class)"
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "sufuria",
+          "gloss": "cooking pot (sufuria)"
+        },
+        {
+          "text": "halafu",
+          "gloss": "then / and then"
+        },
+        {
+          "text": "unawasha",
+          "gloss": "\"You are switching on\" — u- (subject: you) + na- (present) + -washa (switch on). From kuwasha.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuwasha (to switch on)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninawasha"
+              },
+              {
+                "pronoun": "you",
+                "form": "unawasha"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anawasha"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunawasha"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnawasha"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanawasha"
+              }
+            ]
+          }
+        },
+        {
+          "text": "jiko",
+          "gloss": "stove / cooker"
+        }
+      ],
+      "sanifu": "Kwanza, unaweka maji kwenye sufuria, halafu unawasha jiko."
+    },
+    {
+      "id": "2c1529e4-805c-54a9-bfeb-48b37449455e",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Sawa. Ninaweka maji ngapi?",
+      "english": "Okay. How much water do I put in?",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Ninaweka",
+          "gloss": "\"I am putting\" — ni- (subject: I) + na- (present) + -weka (put). From kuweka. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuweka (to put)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaweka"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaweka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaweka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaweka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaweka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaweka"
+              }
+            ]
+          }
+        },
+        {
+          "text": "maji",
+          "gloss": "water — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — maji yangu, maji haya (ma- plural of the ji/ma class)"
+        },
+        {
+          "text": "ngapi",
+          "gloss": "how many? / how much?",
+          "grammar": [
+            "question-words",
+            "numbers-money"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Sawa. Ninaweka maji ngapi?",
+          "correct": true
+        },
+        {
+          "swahili": "Sawa. Ninakula maji ngapi?",
+          "correct": false
+        },
+        {
+          "swahili": "Sawa. Ninaweka maji wapi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "d453c79c-8862-5063-b510-d4d628c8ea75",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Vikombe tatu. Maji inachemka, halafu unaweka unga kidogo kidogo.",
+      "english": "Three cups. The water boils, then you add the flour little by little.",
+      "words": [
+        {
+          "text": "Vikombe tatu",
+          "gloss": "\"three cups\" — Kenyan.",
+          "sanifu": "Sanifu: vikombe vitatu (ki/vi class)"
+        },
+        {
+          "text": "Maji",
+          "gloss": "water — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — maji yangu, maji haya (ma- plural of the ji/ma class)"
+        },
+        {
+          "text": "inachemka",
+          "gloss": "\"is boiling\" — -chemka = boil.",
+          "sanifu": "Sanifu: maji yanachemka"
+        },
+        {
+          "text": "halafu",
+          "gloss": "then / and then"
+        },
+        {
+          "text": "unaweka",
+          "gloss": "\"You are putting\" — u- (subject: you) + na- (present) + -weka (put). From kuweka.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuweka (to put)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaweka"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaweka"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaweka"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaweka"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaweka"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaweka"
+              }
+            ]
+          }
+        },
+        {
+          "text": "unga",
+          "gloss": "flour"
+        },
+        {
+          "text": "kidogo kidogo",
+          "gloss": "\"little by little\""
+        }
+      ],
+      "sanifu": "Vikombe vitatu. Maji yanachemka, halafu unaweka unga kidogo kidogo."
+    },
+    {
+      "id": "125efbf7-39e2-5201-b10a-6169f1de91ad",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ni unga ya mahindi?",
+      "english": "Is it maize flour?",
+      "words": [
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "unga ya mahindi",
+          "gloss": "\"maize flour\"",
+          "sanifu": "Sanifu: unga wa mahindi"
+        }
+      ],
+      "sanifu": "Ni unga wa mahindi?",
+      "options": [
+        {
+          "swahili": "Ni unga ya mahindi?",
+          "correct": true
+        },
+        {
+          "swahili": "Ni maji ya mahindi?",
+          "correct": false
+        },
+        {
+          "swahili": "Ni unga ya wapi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "29c96afe-55b5-5b0a-be03-e46ca894007c",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Ndiyo, unga ya mahindi. Sasa unasonga — unakoroga na mwiko kwa nguvu!",
+      "english": "Yes, maize flour. Now you \"songa\" — you stir hard with the wooden stick!",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "unga ya mahindi",
+          "gloss": "\"maize flour\"",
+          "sanifu": "Sanifu: unga wa mahindi"
+        },
+        {
+          "text": "Sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "unasonga",
+          "gloss": "\"you stir (the ugali)\" — kusonga is the special verb for making ugali"
+        },
+        {
+          "text": "unakoroga",
+          "gloss": "\"You are stiring\" — u- (subject: you) + na- (present) + -koroga (stir). From kukoroga.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kukoroga (to stir)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninakoroga"
+              },
+              {
+                "pronoun": "you",
+                "form": "unakoroga"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anakoroga"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunakoroga"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnakoroga"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanakoroga"
+              }
+            ]
+          }
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "mwiko",
+          "gloss": "wooden cooking stick"
+        },
+        {
+          "text": "kwa nguvu",
+          "gloss": "\"hard, with strength\""
+        }
+      ]
+    },
+    {
+      "id": "ef676022-38ec-5be7-bb2d-82cf848233f0",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Wee, ni kazi ngumu! Mkono yangu inauma.",
+      "english": "Wow, it's hard work! My arm hurts.",
+      "words": [
+        {
+          "text": "Wee",
+          "gloss": "hey you! (surprise / emphasis)",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "kazi",
+          "gloss": "work / job — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ngumu",
+          "gloss": "hard / difficult"
+        },
+        {
+          "text": "Mkono yangu",
+          "gloss": "\"my arm / hand\" — Kenyan.",
+          "sanifu": "Sanifu: mkono wangu (m/mi class)"
+        },
+        {
+          "text": "inauma",
+          "gloss": "\"it hurts\" — Kenyan.",
+          "sanifu": "Sanifu: unauma / unaniuma"
+        }
+      ],
+      "sanifu": "Wee, ni kazi ngumu! Mkono wangu unauma.",
+      "options": [
+        {
+          "swahili": "Wee, ni kazi ngumu! Mkono yangu inauma.",
+          "correct": true
+        },
+        {
+          "swahili": "Wee, ni kazi rahisi! Mkono yangu inauma.",
+          "correct": false
+        },
+        {
+          "swahili": "Wee, ni kazi ngumu! Mkono yangu inanukia.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "6976ec7f-90dd-5deb-905c-7d8284d0d7ea",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Haha! Pole. Ugali iko tayari. Na sukuma — unakata vitunguu na nyanya.",
+      "english": "Ha! Sorry. The ugali is ready. And for the sukuma — you chop onions and tomatoes.",
+      "words": [
+        {
+          "text": "Haha",
+          "gloss": "haha"
+        },
+        {
+          "text": "Pole",
+          "gloss": "sorry (sympathy)"
+        },
+        {
+          "text": "Ugali",
+          "gloss": "ugali — stiff maize-meal staple (u-class in Sanifu, used like n/n) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "tayari",
+          "gloss": "ready"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "sukuma",
+          "gloss": "short for sukuma wiki — collard greens / kale — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "unakata",
+          "gloss": "\"You are cutting\" — u- (subject: you) + na- (present) + -kata (cut). From kukata.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kukata (to cut)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninakata"
+              },
+              {
+                "pronoun": "you",
+                "form": "unakata"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anakata"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunakata"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnakata"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanakata"
+              }
+            ]
+          }
+        },
+        {
+          "text": "vitunguu",
+          "gloss": "onions (ki/vi) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "nyanya",
+          "gloss": "grandmother (also: tomato!) — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d93b88d5-ca38-527e-b8ea-47462607ff1d",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ninakata vitunguu sasa. Macho yangu inawasha!",
+      "english": "I'm chopping the onions now. My eyes are stinging!",
+      "words": [
+        {
+          "text": "Ninakata",
+          "gloss": "\"I am cutting\" — ni- (subject: I) + na- (present) + -kata (cut). From kukata. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kukata (to cut)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninakata"
+              },
+              {
+                "pronoun": "you",
+                "form": "unakata"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anakata"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunakata"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnakata"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanakata"
+              }
+            ]
+          }
+        },
+        {
+          "text": "vitunguu",
+          "gloss": "onions (ki/vi) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "Macho yangu",
+          "gloss": "\"my eyes\""
+        },
+        {
+          "text": "inawasha",
+          "gloss": "\"it stings / itches\" — Kenyan.",
+          "sanifu": "Sanifu: yanawasha"
+        }
+      ],
+      "sanifu": "Ninakata vitunguu sasa. Macho yangu yanawasha!",
+      "options": [
+        {
+          "swahili": "Ninakata vitunguu sasa. Macho yangu inawasha!",
+          "correct": true
+        },
+        {
+          "swahili": "Ninakunywa vitunguu sasa. Macho yangu inawasha!",
+          "correct": false
+        },
+        {
+          "swahili": "Anakata vitunguu sasa. Macho yangu inawasha!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "16f000cf-fa07-572f-8e1c-9bbf95a9b88c",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Ni kawaida! Sasa unakaanga vitunguu kwa mafuta, halafu nyanya na sukuma.",
+      "english": "That's normal! Now you fry the onions in oil, then the tomatoes and sukuma.",
+      "words": [
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "kawaida",
+          "gloss": "normal"
+        },
+        {
+          "text": "Sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "unakaanga",
+          "gloss": "\"you fry\" — -kaanga = fry"
+        },
+        {
+          "text": "vitunguu",
+          "gloss": "onions (ki/vi) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "kwa",
+          "gloss": "by / with / at / for / to (very flexible — see explainer)",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "mafuta",
+          "gloss": "(cooking) oil"
+        },
+        {
+          "text": "halafu",
+          "gloss": "then / and then"
+        },
+        {
+          "text": "nyanya",
+          "gloss": "grandmother (also: tomato!) — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "sukuma",
+          "gloss": "short for sukuma wiki — collard greens / kale — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6ccf3f48-dc63-5c22-b431-abcbf42f66f0",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Inanukia vizuri sana! Ninasikia njaa.",
+      "english": "It smells really good! I'm hungry.",
+      "words": [
+        {
+          "text": "Inanukia",
+          "gloss": "\"it smells good\" — -nukia = give off a (nice) smell"
+        },
+        {
+          "text": "vizuri",
+          "gloss": "well / nicely"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Ninasikia njaa",
+          "gloss": "\"I'm hungry\" — lit. \"I hear hunger\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Inanukia vizuri sana! Ninasikia njaa.",
+          "correct": true
+        },
+        {
+          "swahili": "Inanukia vizuri sana! Ninasikia baridi.",
+          "correct": false
+        },
+        {
+          "swahili": "Inanukia vizuri sana! Unasikia njaa.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "94c90d75-ec6a-5453-bd47-1ff8ed118845",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Chumvi kidogo… na chakula iko tayari! Unaonaje?",
+      "english": "A little salt… and the food is ready! What do you think?",
+      "words": [
+        {
+          "text": "Chumvi",
+          "gloss": "salt"
+        },
+        {
+          "text": "kidogo",
+          "gloss": "a little / a bit — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — kidogo (adverb, no agreement)"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "chakula",
+          "gloss": "food (plural vyakula) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — chakula changu, chakula hiki"
+        },
+        {
+          "text": "iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "tayari",
+          "gloss": "ready"
+        },
+        {
+          "text": "Unaonaje",
+          "gloss": "\"What do you think?\" — lit. \"how do you see (it)?\""
+        }
+      ]
+    },
+    {
+      "id": "c6b5d076-c50d-56cf-b490-e4043e64746b",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ni tamu sana, mama! Asante sana kwa somo.",
+      "english": "It's delicious, mama! Thank you so much for the lesson.",
+      "words": [
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "tamu",
+          "gloss": "\"sweet / delicious\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-tamu (sweet / delicious)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mtamu"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "watamu"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "tamu"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "mama",
+          "gloss": "mother / respectful \"madam\" — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Asante sana",
+          "gloss": "thank you very much"
+        },
+        {
+          "text": "kwa somo",
+          "gloss": "\"for the lesson\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ni tamu sana, mama! Asante sana kwa somo.",
+          "correct": true
+        },
+        {
+          "swahili": "Ni chafu sana, mama! Asante sana kwa somo.",
+          "correct": false
+        },
+        {
+          "swahili": "Ni tamu sana, mama! Pole sana kwa somo.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "bff0f2dc-6278-5deb-9541-c6f1ca0ba744",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Karibu! Sasa wewe ni mpishi!",
+      "english": "You're welcome! Now you're a cook!",
+      "words": [
+        {
+          "text": "Karibu",
+          "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "Sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mpishi",
+          "gloss": "cook / chef"
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "a44b3120-7016-594c-9849-1cd309aa7a5c",
+      "swahili": "jikoni",
+      "english": "in the kitchen",
+      "exampleContext": "jiko = stove / kitchen; + -ni = in"
+    },
+    {
+      "id": "f01087ce-9a9e-50e7-aba4-dffac71323ed",
+      "swahili": "kupika",
+      "english": "to cook",
+      "exampleContext": "Ninapika ugali.",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "f868e609-b8a2-529a-96fd-1f2cc53067e0",
+      "swahili": "sufuria",
+      "english": "cooking pot",
+      "exampleContext": "n/n noun"
+    },
+    {
+      "id": "8fe5a3aa-9e50-5d51-8c85-d834ed34e1c7",
+      "swahili": "unga ya mahindi",
+      "english": "maize flour",
+      "exampleContext": "Everyday Kenyan form.",
+      "partOfSpeech": "phrase",
+      "sanifu": "unga wa mahindi",
+      "sanifuNote": "Sanifu: u- class agreement"
+    },
+    {
+      "id": "9b2e8471-1881-53d6-a605-3bd160ab9f01",
+      "swahili": "kusonga ugali",
+      "english": "to make ugali",
+      "exampleContext": "The special verb just for ugali: stirring and pressing.",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "821173dd-ffde-5f55-8d74-3d3bad9b3ef9",
+      "swahili": "mwiko",
+      "english": "wooden cooking stick |",
+      "exampleContext": ""
+    },
+    {
+      "id": "a08be271-ee6d-581d-a0bf-488231b65137",
+      "swahili": "kukata",
+      "english": "to cut / chop",
+      "exampleContext": "Ninakata vitunguu.",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "14916a68-5d4a-54ea-9cee-7d0645f8b880",
+      "swahili": "kukaanga",
+      "english": "to fry",
+      "exampleContext": "Ninakaanga vitunguu kwa mafuta.",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "c277d8e7-661e-5528-b10b-32f66961d626",
+      "swahili": "mafuta",
+      "english": "(cooking) oil",
+      "exampleContext": "Also: fat, fuel"
+    },
+    {
+      "id": "c2dde9cf-1c01-5cde-b0d7-c1d79cfbc94b",
+      "swahili": "chumvi",
+      "english": "salt",
+      "exampleContext": "chumvi kidogo = a little salt"
+    },
+    {
+      "id": "bf45697b-7520-5873-94f5-0eca0801c1a6",
+      "swahili": "Inanukia vizuri!",
+      "english": "It smells good!",
+      "exampleContext": "-nukia = give off a nice smell",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "38c3fd78-5af6-53bd-8c8c-85cc82a8d2e8",
+      "swahili": "Ninasikia njaa",
+      "english": "I'm hungry",
+      "exampleContext": "lit. \"I hear hunger\". Also: ninasikia kiu (thirsty), baridi (cold).",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "a9777829-b4b5-55e3-aaa1-157c246f61b0",
+      "swahili": "tamu",
+      "english": "sweet / tasty",
+      "exampleContext": "Chakula ni tamu!"
+    }
+  ],
+  "practice": [
+    {
+      "id": "1f60f685-42f6-52a1-af7d-2a1f8449df6b",
+      "mode": "translate",
+      "english": "I'm cooking ugali.",
+      "before": "",
+      "after": " ugali.",
+      "options": [
+        {
+          "text": "Ninapika",
+          "correct": true
+        },
+        {
+          "text": "Ninakata",
+          "correct": false,
+          "feedback": "Ninakata = I am cutting"
+        },
+        {
+          "text": "Ninaosha",
+          "correct": false,
+          "feedback": "Ninaosha = I am washing"
+        }
+      ],
+      "explanation": "-pika = cook, -kata = cut, -osha = wash.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "c00ba203-059f-52dd-808b-0a8506cde4e8",
+      "mode": "translate",
+      "english": "You put water in the pot.",
+      "before": "Unaweka maji kwa ",
+      "after": ".",
+      "options": [
+        {
+          "text": "sufuria",
+          "correct": true
+        },
+        {
+          "text": "kikombe",
+          "correct": false,
+          "feedback": "kikombe = cup (plural vikombe)"
+        },
+        {
+          "text": "jiko",
+          "correct": false,
+          "feedback": "jiko = stove / cooker"
+        }
+      ],
+      "explanation": "sufuria = cooking pot, kikombe = cup, jiko = stove."
+    },
+    {
+      "id": "ec0ea06d-8741-571e-98ec-aa1d11bd658f",
+      "mode": "translate",
+      "english": "The water is boiling.",
+      "before": "Maji ",
+      "after": ".",
+      "options": [
+        {
+          "text": "inachemka",
+          "correct": true
+        },
+        {
+          "text": "inakaanga",
+          "correct": false,
+          "feedback": "inakaanga = It is frying"
+        },
+        {
+          "text": "inanukia",
+          "correct": false,
+          "feedback": "inanukia = it smells good"
+        }
+      ],
+      "explanation": "-chemka = boil, -kaanga = fry, -nukia = smell good. Sanifu: maji yanachemka."
+    },
+    {
+      "id": "05a812cc-b8be-532f-834b-9396f24ca94d",
+      "mode": "translate",
+      "english": "maize flour",
+      "before": "unga ya ",
+      "after": "",
+      "options": [
+        {
+          "text": "mahindi",
+          "correct": true
+        },
+        {
+          "text": "ngano",
+          "correct": false,
+          "feedback": "ngano = wheat"
+        },
+        {
+          "text": "mchele",
+          "correct": false,
+          "feedback": "mchele = (uncooked) rice"
+        }
+      ],
+      "explanation": "mahindi = maize, ngano = wheat, mchele = (uncooked) rice."
+    },
+    {
+      "id": "f696e77d-b3b6-507c-83a1-5a242c34f506",
+      "mode": "translate",
+      "english": "I'm chopping onions.",
+      "before": "Ninakata ",
+      "after": ".",
+      "options": [
+        {
+          "text": "vitunguu",
+          "correct": true
+        },
+        {
+          "text": "maji",
+          "correct": false,
+          "feedback": "maji = water"
+        },
+        {
+          "text": "chumvi",
+          "correct": false,
+          "feedback": "chumvi = salt"
+        }
+      ],
+      "explanation": "vitunguu = onions, maji = water, chumvi = salt.",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "ea375b7f-bb50-5b45-97b1-aee9a7598fa9",
+      "mode": "translate",
+      "english": "She's frying the onions.",
+      "before": "",
+      "after": " vitunguu.",
+      "options": [
+        {
+          "text": "Anakaanga",
+          "correct": true
+        },
+        {
+          "text": "Anachemka",
+          "correct": false
+        },
+        {
+          "text": "Anakunywa",
+          "correct": false,
+          "feedback": "Anakunywa = He/she is drinking"
+        }
+      ],
+      "explanation": "-kaanga = fry.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "e30d9320-729d-545a-8bfd-3b8cc34d58be",
+      "mode": "translate",
+      "english": "It smells good!",
+      "before": "Inanukia ",
+      "after": "!",
+      "options": [
+        {
+          "text": "vizuri",
+          "correct": true
+        },
+        {
+          "text": "vibaya",
+          "correct": false
+        },
+        {
+          "text": "kidogo",
+          "correct": false,
+          "feedback": "kidogo = a little / a bit"
+        }
+      ],
+      "explanation": "vizuri = well / good, vibaya = bad."
+    },
+    {
+      "id": "298a1b17-b2e5-5e0f-82af-5204f445eee4",
+      "mode": "translate",
+      "english": "It's delicious.",
+      "before": "Ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "tamu",
+          "correct": true
+        },
+        {
+          "text": "chungu",
+          "correct": false,
+          "feedback": "chungu = bitter"
+        },
+        {
+          "text": "ngumu",
+          "correct": false,
+          "feedback": "ngumu = hard / difficult"
+        }
+      ],
+      "explanation": "tamu = sweet / tasty, chungu = bitter, ngumu = hard.",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "6744b123-5047-5a84-9ff7-8a4fb61067d7",
+      "mode": "translate",
+      "english": "I'm hungry.",
+      "before": "Ninasikia ",
+      "after": ".",
+      "options": [
+        {
+          "text": "njaa",
+          "correct": true
+        },
+        {
+          "text": "baridi",
+          "correct": false,
+          "feedback": "baridi = cold"
+        },
+        {
+          "text": "kiu",
+          "correct": false,
+          "feedback": "kiu = thirst"
+        }
+      ],
+      "explanation": "njaa = hunger, baridi = cold, kiu = thirst."
+    },
+    {
+      "id": "3ae8aaac-9c7b-53e8-a6c5-6badb6165003",
+      "mode": "translate",
+      "english": "I'm thirsty.",
+      "before": "Ninasikia ",
+      "after": ".",
+      "options": [
+        {
+          "text": "kiu",
+          "correct": true
+        },
+        {
+          "text": "njaa",
+          "correct": false,
+          "feedback": "njaa = hunger"
+        },
+        {
+          "text": "joto",
+          "correct": false,
+          "feedback": "joto = heat / warmth"
+        }
+      ],
+      "explanation": "kiu = thirst, joto = heat."
+    },
+    {
+      "id": "4d97ef49-1302-5c8f-bfaf-c62fbc608af1",
+      "mode": "translate",
+      "english": "My arm hurts.",
+      "before": "",
+      "after": " yangu inauma.",
+      "options": [
+        {
+          "text": "Mkono",
+          "correct": true
+        },
+        {
+          "text": "Mguu",
+          "correct": false,
+          "feedback": "Mguu = leg / foot (plural miguu)"
+        },
+        {
+          "text": "Kichwa",
+          "correct": false,
+          "feedback": "Kichwa = head (plural vichwa)"
+        }
+      ],
+      "explanation": "mkono = arm / hand, mguu = leg / foot, kichwa = head.",
+      "grammar": [
+        "sanifu-noun-classes"
+      ]
+    },
+    {
+      "id": "8d831c1f-ec44-5461-989c-532b218d4e84",
+      "mode": "translate",
+      "english": "My eyes are stinging.",
+      "before": "",
+      "after": " yangu inawasha.",
+      "options": [
+        {
+          "text": "Macho",
+          "correct": true
+        },
+        {
+          "text": "Masikio",
+          "correct": false,
+          "feedback": "Masikio = ears (one: sikio)"
+        },
+        {
+          "text": "Mikono",
+          "correct": false,
+          "feedback": "Mikono = arms / hands (one: mkono)"
+        }
+      ],
+      "explanation": "macho = eyes, masikio = ears, mikono = hands."
+    },
+    {
+      "id": "4d970da1-6792-52a0-a9ec-3280483ce912",
+      "mode": "translate",
+      "english": "a little salt",
+      "before": "chumvi ",
+      "after": "",
+      "options": [
+        {
+          "text": "kidogo",
+          "correct": true
+        },
+        {
+          "text": "nyingi",
+          "correct": false,
+          "feedback": "nyingi = many / a lot"
+        },
+        {
+          "text": "tamu",
+          "correct": false,
+          "feedback": "tamu = sweet / delicious"
+        }
+      ],
+      "explanation": "kidogo = a little, nyingi = a lot.",
+      "grammar": [
+        "sanifu-noun-classes"
+      ]
+    },
+    {
+      "id": "f98c91dc-fb45-5840-ae2a-92c5339b5648",
+      "mode": "translate",
+      "english": "three cups",
+      "before": "vikombe ",
+      "after": "",
+      "options": [
+        {
+          "text": "tatu",
+          "correct": true
+        },
+        {
+          "text": "tano",
+          "correct": false,
+          "feedback": "tano = 5 (n/n form"
+        },
+        {
+          "text": "kumi",
+          "correct": false,
+          "feedback": "kumi = 10 (n/n form"
+        }
+      ],
+      "explanation": "Kenyan: vikombe tatu. Sanifu: vikombe vitatu.",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "4ddcc809-90bc-5d47-94f2-5c2eb1e0f351",
+      "mode": "translate",
+      "english": "Today you're learning to cook.",
+      "before": "Leo ",
+      "after": " kupika.",
+      "options": [
+        {
+          "text": "unajifunza",
+          "correct": true
+        },
+        {
+          "text": "unafundisha",
+          "correct": false,
+          "feedback": "unafundisha = You are teaching"
+        },
+        {
+          "text": "unakula",
+          "correct": false,
+          "feedback": "unakula = You are eating"
+        }
+      ],
+      "explanation": "unajifunza = \"You are learning\" — u- (subject: you) + na- (present) + -jifunza (learn). From kujifunza.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "0605fd6e-7b9d-50f0-b534-801e80bec491",
+      "mode": "translate",
+      "english": "It's hard work!",
+      "before": "Ni kazi ",
+      "after": "!",
+      "options": [
+        {
+          "text": "ngumu",
+          "correct": true
+        },
+        {
+          "text": "rahisi",
+          "correct": false,
+          "feedback": "rahisi = easy / cheap"
+        },
+        {
+          "text": "tamu",
+          "correct": false,
+          "feedback": "tamu = sweet / delicious"
+        }
+      ],
+      "explanation": "ngumu = hard, rahisi = easy."
+    },
+    {
+      "id": "9e1b2034-4474-59bb-8888-1e2d115009a8",
+      "mode": "complete",
+      "english": "What do you think? — It's delicious!",
+      "before": "Unaonaje? — Ni ",
+      "after": " sana!",
+      "options": [
+        {
+          "text": "tamu",
+          "correct": true
+        },
+        {
+          "text": "baridi",
+          "correct": false,
+          "feedback": "baridi = cold"
+        },
+        {
+          "text": "safi",
+          "correct": false,
+          "feedback": "safi = clean / great / sorted"
+        }
+      ],
+      "explanation": "tamu = \"sweet / delicious\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    }
+  ]
+}

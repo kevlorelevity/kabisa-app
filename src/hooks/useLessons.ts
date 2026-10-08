@@ -23,6 +23,7 @@ registerContentScopes({
   lesson: (id) => lessons.find((l) => l.id === id),
   grammar: (slug) => getGrammarTopic(slug),
   level: (n) => LEVELS.find((l) => String(l.level) === n),
+  allLessons: () => lessons,
 });
 
 /** All lessons, unpersonalised (the scripts' default "John from Uganda"). */

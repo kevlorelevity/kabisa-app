@@ -355,7 +355,7 @@
           "correct": true
         },
         {
-          "swahili": "Njeri ni msichana ambayo amepita mtihani vizuri sana, na sasa anaenda shule ya upili.",
+          "swahili": "Njeri ni msichana ambaye atapita mtihani vizuri sana, na sasa anaenda shule ya upili.",
           "correct": false
         },
         {
@@ -1578,17 +1578,17 @@
           "correct": true
         },
         {
-          "text": "ndogo",
+          "text": "mkubwa",
           "correct": false,
-          "feedback": "ndogo = small / young"
+          "feedback": "mkubwa = big"
         },
         {
-          "text": "wadogo",
+          "text": "mbaya",
           "correct": false,
-          "feedback": "wadogo = small / young"
+          "feedback": "mbaya = bad"
         }
       ],
-      "explanation": "mchango is m/mi: mdogo.",
+      "explanation": "mdogo = small, mkubwa = big, mbaya = bad.",
       "grammar": [
         "adjective-agreement"
       ]

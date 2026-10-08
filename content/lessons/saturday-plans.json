@@ -3,9 +3,9 @@
   "uuid": "17b748ae-2983-579f-b090-a52f7fc6d56e",
   "title": "Plans for Saturday (and Swahili Time)",
   "category": "time",
-  "difficulty": "beginner",
-  "level": 3,
-  "order": 303,
+  "difficulty": "medium",
+  "level": 5,
+  "order": 506,
   "theme": "friends",
   "culturalNote": "Swahili time starts at sunrise, not midnight. 7 a.m. is saa moja (\"the first hour\"), 8 a.m. is saa mbili, noon is saa sita, and 6 p.m. is saa kumi na mbili. The trick: add or subtract six from the clock time. Kenyans switch between Swahili time and English time (\"seven\") all day — when it matters, check which one someone means! A day trip to Lake Naivasha (90 km away) is a classic weekend plan.",
   "startingPoint": "Your friend Otieno calls you on Wednesday evening.",
@@ -450,8 +450,8 @@
       "id": "07a3c79d-ffa3-5832-9df7-784baa5445dc",
       "speaker": "John",
       "role": "user",
-      "swahili": "Saa moja? Mapema sana! Saa moja ni seven, sivyo?",
-      "english": "Saa moja? Very early! Saa moja is seven, right?",
+      "swahili": "Saa moja? Mapema sana! Saa moja ni seven a.m., si ndiyo?",
+      "english": "Saa moja? Very early! Saa moja is seven a.m., right?",
       "words": [
         {
           "text": "Saa moja",
@@ -487,8 +487,16 @@
           "gloss": "\"seven\" — English time. Kenyans mix English and Swahili time all the time."
         },
         {
-          "text": "sivyo",
-          "gloss": "isn't it? / right? (question tag)",
+          "text": "a",
+          "gloss": "a (as in \"a.m.\")"
+        },
+        {
+          "text": "m",
+          "gloss": "M (medium size)"
+        },
+        {
+          "text": "si ndiyo",
+          "gloss": "isn't that so? / right?",
           "grammar": [
             "discourse-particles"
           ]
@@ -496,7 +504,7 @@
       ],
       "options": [
         {
-          "swahili": "Saa moja? Mapema sana! Saa moja ni seven, sivyo?",
+          "swahili": "Saa moja? Mapema sana! Saa moja ni seven a.m., si ndiyo?",
           "correct": true
         },
         {
@@ -703,12 +711,12 @@
       "id": "d48c0f31-d012-5f45-95ee-8d6a9411a88d",
       "speaker": "Otieno",
       "role": "auto",
-      "swahili": "Lete maji na kofia. Jua ni kali sana huko.",
+      "swahili": "Leta maji na kofia. Jua ni kali sana huko.",
       "english": "Bring water and a hat. The sun is really strong there.",
       "words": [
         {
-          "text": "Lete",
-          "gloss": "\"Bring!\" — imperative of kuleta (also heard: leta).",
+          "text": "Leta",
+          "gloss": "\"Bring!\" — imperative of kuleta (Kenyan; Sanifu lete).",
           "grammar": [
             "imperatives"
           ]
@@ -1402,7 +1410,7 @@
       "after": " maji.",
       "options": [
         {
-          "text": "Lete",
+          "text": "Leta",
           "correct": true
         },
         {
@@ -1416,7 +1424,7 @@
           "feedback": "Uza = Sell!"
         }
       ],
-      "explanation": "Lete = \"Bring!\" — imperative of kuleta (also heard: leta).",
+      "explanation": "Leta = \"Bring!\" — imperative of kuleta (Kenyan; Sanifu lete).",
       "grammar": [
         "imperatives"
       ]

@@ -1,0 +1,1372 @@
+{
+  "id": "daily-routine",
+  "uuid": "e1281aa6-d89c-5541-a25b-81f3d919b3b6",
+  "title": "A Day in My Life: Swahili Time",
+  "category": "time",
+  "difficulty": "beginner",
+  "level": 3,
+  "order": 303,
+  "theme": "routine",
+  "culturalNote": "Swahili time starts at sunrise, not midnight: 7 a.m. is \"saa moja asubuhi\" (the first hour of the morning), and 6 a.m. is \"saa kumi na mbili\" (the twelfth hour). The trick is to add or subtract six. Kenyans also talk about \"Kenyan time\" — a meeting at \"saa tatu\" may start closer to ten. Days of the week are counted from Saturday: Jumamosi (Sat), Jumapili (Sun), Jumatatu (Mon), Jumanne (Tue), Jumatano (Wed), Alhamisi (Thu), Ijumaa (Fri).",
+  "startingPoint": "Tea break at the office. Your colleague Achieng wants to know how you manage to be first in every morning.",
+  "grammarFocus": [
+    "time-swahili",
+    "present-na",
+    "question-words"
+  ],
+  "grammar": [
+    "time-swahili",
+    "present-na",
+    "question-words",
+    "noun-classes-mwa-nn",
+    "locative-ni",
+    "discourse-particles",
+    "subject-prefixes",
+    "ni-copula",
+    "greetings",
+    "possessives",
+    "numbers-money"
+  ],
+  "turns": [
+    {
+      "id": "7f52ff67-3511-5552-996d-4366b6fc5efe",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "John, unaamka saa ngapi kila siku?",
+      "english": "John, what time do you wake up every day?",
+      "words": [
+        {
+          "text": "John",
+          "gloss": "John (name)"
+        },
+        {
+          "text": "unaamka",
+          "gloss": "\"you wake up\" — -amka = wake up"
+        },
+        {
+          "text": "saa ngapi",
+          "gloss": "\"what time\" (lit. \"which hour?\")"
+        },
+        {
+          "text": "kila siku",
+          "gloss": "\"every day\""
+        }
+      ]
+    },
+    {
+      "id": "8e114601-b190-5020-9693-4d962cb5e114",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ninaamka saa kumi na mbili asubuhi.",
+      "english": "I wake up at 6 a.m.",
+      "words": [
+        {
+          "text": "Ninaamka",
+          "gloss": "\"I wake up\" — -amka = wake up"
+        },
+        {
+          "text": "saa kumi na mbili",
+          "gloss": "6 o'clock",
+          "grammar": [
+            "time-swahili"
+          ]
+        },
+        {
+          "text": "asubuhi",
+          "gloss": "morning — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ninaamka saa kumi na mbili asubuhi.",
+          "correct": true
+        },
+        {
+          "swahili": "Ninalala saa kumi na mbili asubuhi.",
+          "correct": false
+        },
+        {
+          "swahili": "Unaamka saa kumi na mbili asubuhi.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "efaf4183-275c-5eb0-8a11-4283c42a0a47",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Mapema sana! Halafu unafanya nini?",
+      "english": "Very early! Then what do you do?",
+      "words": [
+        {
+          "text": "Mapema",
+          "gloss": "early"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Halafu",
+          "gloss": "then / and then"
+        },
+        {
+          "text": "unafanya",
+          "gloss": "\"You are doing\" — u- (subject: you) + na- (present) + -fanya (do). From kufanya.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kufanya (to do)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninafanya"
+              },
+              {
+                "pronoun": "you",
+                "form": "unafanya"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anafanya"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunafanya"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnafanya"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanafanya"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nini",
+          "gloss": "what?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "abac2c96-624d-5de5-a70b-f03a93230d52",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ninaoga, ninakunywa chai, halafu ninaenda kazini saa moja na nusu.",
+      "english": "I shower, I drink tea, then I go to work at 7:30.",
+      "words": [
+        {
+          "text": "Ninaoga",
+          "gloss": "\"I shower / bathe\" — -oga = bathe"
+        },
+        {
+          "text": "ninakunywa",
+          "gloss": "\"I drink\" — -nywa = drink"
+        },
+        {
+          "text": "chai",
+          "gloss": "tea (also slang for a small bribe) — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "halafu",
+          "gloss": "then / and then"
+        },
+        {
+          "text": "ninaenda",
+          "gloss": "\"I am going\" — ni- (subject: I) + na- (present) + -enda (go). From kuenda. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuenda (to go)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kazini",
+          "gloss": "\"at / in / to the work\" — kazi + -ni (place suffix).",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "saa moja na nusu",
+          "gloss": "7:30 (lit. \"the first hour and a half\")"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ninaoga, ninakunywa chai, halafu ninaenda kazini saa moja na nusu.",
+          "correct": true
+        },
+        {
+          "swahili": "Ninaoga, ninakunywa chai, halafu ninalala kazini saa moja na nusu.",
+          "correct": false
+        },
+        {
+          "swahili": "Ninaoga, unakunywa chai, halafu unaenda kazini saa moja na nusu.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "634ed5d2-4b49-57ff-a407-b2e18082b1fe",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Na unafika kazini saa ngapi?",
+      "english": "And what time do you get to work?",
+      "words": [
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "unafika",
+          "gloss": "\"you arrive\" — -fika = arrive"
+        },
+        {
+          "text": "kazini",
+          "gloss": "\"at / in / to the work\" — kazi + -ni (place suffix).",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "saa ngapi",
+          "gloss": "\"what time\" (lit. \"which hour?\")"
+        }
+      ]
+    },
+    {
+      "id": "25a2c5da-20fe-549b-aa65-e7b706ed8886",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ninafika saa mbili kamili.",
+      "english": "I arrive at 8 sharp.",
+      "words": [
+        {
+          "text": "Ninafika",
+          "gloss": "\"I arrive\" — -fika = arrive"
+        },
+        {
+          "text": "saa mbili kamili",
+          "gloss": "8 o'clock sharp"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ninafika saa mbili kamili.",
+          "correct": true
+        },
+        {
+          "swahili": "Ninafika saa mbili wapi.",
+          "correct": false
+        },
+        {
+          "swahili": "Unafika saa mbili kamili.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "a26070cb-ea15-5f72-b4f8-6860ec6a573b",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Wee, wewe ni mzungu kweli — kwa wakati! Mimi ninafika saa tatu.",
+      "english": "Wow, you really are a mzungu — on time! I get in at nine.",
+      "words": [
+        {
+          "text": "Wee",
+          "gloss": "hey you! (surprise / emphasis)",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mzungu",
+          "gloss": "foreigner (usually white)"
+        },
+        {
+          "text": "kweli",
+          "gloss": "true / really",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "kwa wakati",
+          "gloss": "\"on time\""
+        },
+        {
+          "text": "Mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ninafika",
+          "gloss": "\"I arrive\" — -fika = arrive"
+        },
+        {
+          "text": "saa tatu",
+          "gloss": "9 o'clock"
+        }
+      ]
+    },
+    {
+      "id": "665d6709-af4f-50c7-8956-0f11c51bc655",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Haha! Na wewe unarudi nyumbani saa ngapi?",
+      "english": "Ha! And you, what time do you go home?",
+      "words": [
+        {
+          "text": "Haha",
+          "gloss": "haha"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "unarudi",
+          "gloss": "\"you go back / return\" — -rudi = return"
+        },
+        {
+          "text": "nyumbani",
+          "gloss": "\"at / in / to the house\" — nyumba + -ni (place suffix).",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "saa ngapi",
+          "gloss": "\"what time\" (lit. \"which hour?\")"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Haha! Na wewe unarudi nyumbani saa ngapi?",
+          "correct": true
+        },
+        {
+          "swahili": "Haha! Na wewe unarudi nyumbani saa nani?",
+          "correct": false
+        },
+        {
+          "swahili": "Haha! Na wewe ninarudi nyumbani saa ngapi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "9c9d5054-954e-5950-a264-0f74b86ac0f9",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Ninarudi saa kumi na moja jioni. Jioni ninapika na ninatazama TV.",
+      "english": "I go home at 5 p.m. In the evening I cook and watch TV.",
+      "words": [
+        {
+          "text": "Ninarudi",
+          "gloss": "\"I go back / return\" — -rudi = return"
+        },
+        {
+          "text": "saa kumi na moja",
+          "gloss": "5 o'clock",
+          "grammar": [
+            "time-swahili"
+          ]
+        },
+        {
+          "text": "jioni",
+          "gloss": "\"in the evening\""
+        },
+        {
+          "text": "Jioni",
+          "gloss": "\"in the evening\""
+        },
+        {
+          "text": "ninapika",
+          "gloss": "\"I am cooking\" — ni- (subject: I) + na- (present) + -pika (cook). From kupika. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kupika (to cook)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninapika"
+              },
+              {
+                "pronoun": "you",
+                "form": "unapika"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anapika"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunapika"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnapika"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanapika"
+              }
+            ]
+          }
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "ninatazama",
+          "gloss": "\"I watch\" — -tazama = watch, look at"
+        },
+        {
+          "text": "TV",
+          "gloss": "TV"
+        }
+      ]
+    },
+    {
+      "id": "b02cf194-f68e-5e92-bf0d-7e8a97651fac",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Mimi ninaenda gym Jumatatu na Jumatano jioni.",
+      "english": "I go to the gym on Monday and Wednesday evenings.",
+      "words": [
+        {
+          "text": "Mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ninaenda",
+          "gloss": "\"I am going\" — ni- (subject: I) + na- (present) + -enda (go). From kuenda. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuenda (to go)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "gym",
+          "gloss": "gym (English)"
+        },
+        {
+          "text": "Jumatatu",
+          "gloss": "Monday"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "Jumatano",
+          "gloss": "Wednesday"
+        },
+        {
+          "text": "jioni",
+          "gloss": "\"in the evening\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Mimi ninaenda gym Jumatatu na Jumatano jioni.",
+          "correct": true
+        },
+        {
+          "swahili": "Mimi ninaenda gym Jumatatu na Jumatano asubuhi jioni.",
+          "correct": false
+        },
+        {
+          "swahili": "Mimi anaenda gym Jumatatu na Jumatano jioni.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "b6c3b86b-6526-57a9-b51c-e1d68ce3aaff",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Poa! Na Jumamosi na Jumapili?",
+      "english": "Cool! And on Saturday and Sunday?",
+      "words": [
+        {
+          "text": "Poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "Jumamosi",
+          "gloss": "Saturday"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "Jumapili",
+          "gloss": "Sunday"
+        }
+      ]
+    },
+    {
+      "id": "ba33b480-9828-5878-8a13-4d9a66415a54",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Jumamosi ninafanya kazi za nyumbani, na Jumapili ninalala sana!",
+      "english": "On Saturday I do housework, and on Sunday I sleep a lot!",
+      "words": [
+        {
+          "text": "Jumamosi",
+          "gloss": "Saturday"
+        },
+        {
+          "text": "ninafanya",
+          "gloss": "\"I am doing\" — ni- (subject: I) + na- (present) + -fanya (do). From kufanya. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kufanya (to do)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninafanya"
+              },
+              {
+                "pronoun": "you",
+                "form": "unafanya"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anafanya"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunafanya"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnafanya"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanafanya"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kazi",
+          "gloss": "work / job — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "za",
+          "gloss": "\"of\" — n/n plural agreement (nyumba za Kamau, habari za asubuhi)",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "nyumbani",
+          "gloss": "\"at / in / to the house\" — nyumba + -ni (place suffix).",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "Jumapili",
+          "gloss": "Sunday"
+        },
+        {
+          "text": "ninalala",
+          "gloss": "\"I sleep\" — -lala = sleep"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Jumamosi ninafanya kazi za nyumbani, na Jumapili ninalala sana!",
+          "correct": true
+        },
+        {
+          "swahili": "Jumamosi ninafanya kazi za nyumbani, na Jumapili ninaamka sana!",
+          "correct": false
+        },
+        {
+          "swahili": "Jumamosi unafanya kazi za nyumbani, na Jumapili unalala sana!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "20f34d17-62cb-52ad-ac0f-f20a2bcd36c6",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Haha, kama mimi! Unalala saa ngapi usiku?",
+      "english": "Ha, like me! What time do you go to sleep at night?",
+      "words": [
+        {
+          "text": "Haha",
+          "gloss": "haha"
+        },
+        {
+          "text": "kama",
+          "gloss": "like / as / if"
+        },
+        {
+          "text": "mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "Unalala",
+          "gloss": "\"You are sleeping\" — u- (subject: you) + na- (present) + -lala (sleep). From kulala.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kulala (to sleep)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninalala"
+              },
+              {
+                "pronoun": "you",
+                "form": "unalala"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "analala"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunalala"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnalala"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanalala"
+              }
+            ]
+          }
+        },
+        {
+          "text": "saa ngapi",
+          "gloss": "\"what time\" (lit. \"which hour?\")"
+        },
+        {
+          "text": "usiku",
+          "gloss": "night"
+        }
+      ]
+    },
+    {
+      "id": "225af692-1915-5da6-83c6-0a9b12704418",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ninalala saa nne usiku.",
+      "english": "I go to sleep at 10 p.m.",
+      "words": [
+        {
+          "text": "Ninalala",
+          "gloss": "\"I sleep\" — -lala = sleep"
+        },
+        {
+          "text": "saa nne usiku",
+          "gloss": "10 p.m. (lit. \"the 4th hour of the night\")"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ninalala saa nne usiku.",
+          "correct": true
+        },
+        {
+          "swahili": "Ninalala saa nne asubuhi.",
+          "correct": false
+        },
+        {
+          "swahili": "Ninaamka saa nne usiku.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "575d3096-5b06-5b4a-9479-d46ea10ccfc0",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Sawa, mzungu! Tuonane kesho saa mbili kamili!",
+      "english": "Okay, mzungu! See you tomorrow at 8 sharp!",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "mzungu",
+          "gloss": "foreigner (usually white)"
+        },
+        {
+          "text": "Tuonane",
+          "gloss": "\"see you\" — set phrase (lit. \"let's see each other\")"
+        },
+        {
+          "text": "kesho",
+          "gloss": "tomorrow — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "saa mbili kamili",
+          "gloss": "8 o'clock sharp"
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "362f8098-457d-5490-aaf4-de04e919b0f4",
+      "swahili": "Ni saa ngapi?",
+      "english": "What time is it?",
+      "exampleContext": "lit. \"it's which hour?\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "9b365325-f454-5c89-b25d-bf2eb69f5f0a",
+      "swahili": "saa moja asubuhi",
+      "english": "7 a.m.",
+      "exampleContext": "Swahili time = clock time minus six",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "3d2745b7-bfc8-5fc4-91cb-aebcd376757c",
+      "swahili": "saa kumi na mbili",
+      "english": "6 o'clock",
+      "exampleContext": "The 12th hour (a.m. or p.m.)",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "1f76ca8c-60f6-5591-b05f-716fb7411aca",
+      "swahili": "nusu / robo",
+      "english": "half / quarter",
+      "exampleContext": "saa moja na nusu = 7:30",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "9b9f41d4-9b75-51a7-a04f-5d39f04f8c5a",
+      "swahili": "kamili",
+      "english": "exactly, sharp",
+      "exampleContext": "saa mbili kamili = 8 sharp"
+    },
+    {
+      "id": "4ec00fbf-08aa-540f-88bc-a28289840d66",
+      "swahili": "asubuhi / mchana / jioni / usiku",
+      "english": "morning / afternoon / evening / night |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "9d09313d-b654-5a37-97a5-089db4f4033e",
+      "swahili": "-amka",
+      "english": "wake up",
+      "exampleContext": "Ninaamka mapema."
+    },
+    {
+      "id": "3d2d832f-5fc3-5425-b71e-dcdbda4baf87",
+      "swahili": "-lala",
+      "english": "sleep",
+      "exampleContext": "Ninalala saa nne usiku."
+    },
+    {
+      "id": "d289c88e-f949-50fc-bf36-bf4ed8e0cdfd",
+      "swahili": "-oga",
+      "english": "shower / bathe",
+      "exampleContext": "Ninaoga asubuhi."
+    },
+    {
+      "id": "3d2aafc1-5b9b-5af8-9e3e-8c0debc49d90",
+      "swahili": "-fika",
+      "english": "arrive",
+      "exampleContext": "Ninafika kazini saa mbili."
+    },
+    {
+      "id": "80713490-1bea-59df-a5a6-17ecfe56e2d2",
+      "swahili": "-rudi",
+      "english": "go back / return",
+      "exampleContext": "Ninarudi nyumbani jioni."
+    },
+    {
+      "id": "e6ee002a-84cf-568e-a8b3-cd310e88e169",
+      "swahili": "Jumatatu … Jumapili",
+      "english": "Monday … Sunday",
+      "exampleContext": "Jumamosi = Sat, Jumapili = Sun",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "63b6b7bc-32df-572a-b2dc-9424a1f4b90e",
+      "swahili": "kila siku",
+      "english": "every day |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "fc9058e7-1cde-59cf-a8c2-8b29e9bd401b",
+      "mode": "translate",
+      "english": "I wake up at 6 a.m.",
+      "before": "",
+      "after": " saa kumi na mbili asubuhi.",
+      "options": [
+        {
+          "text": "Ninaamka",
+          "correct": true
+        },
+        {
+          "text": "Ninalala",
+          "correct": false,
+          "feedback": "Ninalala = I sleep"
+        },
+        {
+          "text": "Ninarudi",
+          "correct": false,
+          "feedback": "Ninarudi = I go back / return"
+        }
+      ],
+      "explanation": "-amka = wake up, -lala = sleep, -rudi = go back."
+    },
+    {
+      "id": "f03d1e05-0d07-5f88-9098-5b802d97686b",
+      "mode": "translate",
+      "english": "6 a.m.",
+      "before": "saa ",
+      "after": " asubuhi",
+      "options": [
+        {
+          "text": "kumi na mbili",
+          "correct": true
+        },
+        {
+          "text": "sita",
+          "correct": false,
+          "feedback": "sita = 6 (n/n form"
+        },
+        {
+          "text": "mbili",
+          "correct": false,
+          "feedback": "mbili = 2 (n/n form"
+        }
+      ],
+      "explanation": "Swahili time: subtract six. 6 − 6 = 0 → the 12th hour.",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "e99bf44c-23ba-5195-ac3c-635d4de6341a",
+      "mode": "translate",
+      "english": "7 a.m.",
+      "before": "saa ",
+      "after": " asubuhi",
+      "options": [
+        {
+          "text": "moja",
+          "correct": true
+        },
+        {
+          "text": "saba",
+          "correct": false,
+          "feedback": "saba = 7 (n/n form"
+        },
+        {
+          "text": "tano",
+          "correct": false,
+          "feedback": "tano = 5 (n/n form"
+        }
+      ],
+      "explanation": "7 − 6 = 1 → saa moja.",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "6f8f3f7a-850d-5e78-b36b-b6029816fb96",
+      "mode": "translate",
+      "english": "8 o'clock sharp",
+      "before": "saa ",
+      "after": " kamili",
+      "options": [
+        {
+          "text": "mbili",
+          "correct": true
+        },
+        {
+          "text": "nane",
+          "correct": false,
+          "feedback": "nane = 8 (n/n form"
+        },
+        {
+          "text": "nne",
+          "correct": false,
+          "feedback": "nne = 4 (n/n form"
+        }
+      ],
+      "explanation": "8 − 6 = 2 → saa mbili.",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "a4e8d39a-00cd-578e-a7b6-64701b6d6abb",
+      "mode": "translate",
+      "english": "9 o'clock",
+      "before": "saa ",
+      "after": "",
+      "options": [
+        {
+          "text": "tatu",
+          "correct": true
+        },
+        {
+          "text": "tisa",
+          "correct": false,
+          "feedback": "tisa = 9 (n/n form"
+        },
+        {
+          "text": "sita",
+          "correct": false,
+          "feedback": "sita = 6 (n/n form"
+        }
+      ],
+      "explanation": "9 − 6 = 3 → saa tatu.",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "d07e27e3-ad6c-55da-a783-caec916a7867",
+      "mode": "translate",
+      "english": "7:30",
+      "before": "saa moja na ",
+      "after": "",
+      "options": [
+        {
+          "text": "nusu",
+          "correct": true
+        },
+        {
+          "text": "robo",
+          "correct": false,
+          "feedback": "robo = quarter"
+        },
+        {
+          "text": "kamili",
+          "correct": false,
+          "feedback": "kamili = exactly / sharp"
+        }
+      ],
+      "explanation": "nusu = half, robo = quarter, kamili = exactly.",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "7b13880c-cce6-58cf-9d8e-a3cd49c38efe",
+      "mode": "translate",
+      "english": "5 p.m.",
+      "before": "saa kumi na moja ",
+      "after": "",
+      "options": [
+        {
+          "text": "jioni",
+          "correct": true
+        },
+        {
+          "text": "asubuhi",
+          "correct": false,
+          "feedback": "asubuhi = morning"
+        },
+        {
+          "text": "usiku",
+          "correct": false,
+          "feedback": "usiku = night"
+        }
+      ],
+      "explanation": "5 + 6 = 11 → saa kumi na moja jioni."
+    },
+    {
+      "id": "7e857162-473b-59c9-aad2-2112fdb4d080",
+      "mode": "translate",
+      "english": "10 p.m.",
+      "before": "saa nne ",
+      "after": "",
+      "options": [
+        {
+          "text": "usiku",
+          "correct": true
+        },
+        {
+          "text": "asubuhi",
+          "correct": false,
+          "feedback": "asubuhi = morning"
+        },
+        {
+          "text": "mchana",
+          "correct": false,
+          "feedback": "mchana = afternoon / daytime"
+        }
+      ],
+      "explanation": "10 − 6 = 4 → saa nne usiku."
+    },
+    {
+      "id": "3d2593eb-b124-5ab6-826c-82e171706c28",
+      "mode": "translate",
+      "english": "I shower and drink tea.",
+      "before": "Ninaoga na ",
+      "after": " chai.",
+      "options": [
+        {
+          "text": "ninakunywa",
+          "correct": true
+        },
+        {
+          "text": "ninakula",
+          "correct": false,
+          "feedback": "ninakula = I am eating"
+        },
+        {
+          "text": "ninalala",
+          "correct": false,
+          "feedback": "ninalala = I sleep"
+        }
+      ],
+      "explanation": "-nywa = drink, -la = eat, -lala = sleep."
+    },
+    {
+      "id": "42685eb6-9586-50c0-beb5-ccd23655cae5",
+      "mode": "translate",
+      "english": "What time do you arrive?",
+      "before": "",
+      "after": " saa ngapi?",
+      "options": [
+        {
+          "text": "Unafika",
+          "correct": true
+        },
+        {
+          "text": "Ninafika",
+          "correct": false,
+          "feedback": "Ninafika = I arrive"
+        },
+        {
+          "text": "Anafika",
+          "correct": false,
+          "feedback": "Anafika = He/she is arriving"
+        }
+      ],
+      "explanation": "Unafika = \"you arrive\" — -fika = arrive"
+    },
+    {
+      "id": "19028930-9b05-5aac-abdd-29b2a7af7d23",
+      "mode": "translate",
+      "english": "She goes home at five.",
+      "before": "",
+      "after": " nyumbani saa kumi na moja.",
+      "options": [
+        {
+          "text": "Anarudi",
+          "correct": true
+        },
+        {
+          "text": "Ninarudi",
+          "correct": false,
+          "feedback": "Ninarudi = I go back / return"
+        },
+        {
+          "text": "Wanarudi",
+          "correct": false,
+          "feedback": "Wanarudi = They are coming back"
+        }
+      ],
+      "explanation": "Anarudi = \"He/she is coming back\" — a- (subject: he/she) + na- (present) + -rudi (come back). From kurudi.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "d987001b-a712-5197-a940-250aa16a3e5d",
+      "mode": "translate",
+      "english": "In the evening I watch TV.",
+      "before": "Jioni ",
+      "after": " TV.",
+      "options": [
+        {
+          "text": "ninatazama",
+          "correct": true
+        },
+        {
+          "text": "ninaoga",
+          "correct": false,
+          "feedback": "ninaoga = I shower / bathe"
+        },
+        {
+          "text": "ninaamka",
+          "correct": false,
+          "feedback": "ninaamka = I wake up"
+        }
+      ],
+      "explanation": "-tazama = watch."
+    },
+    {
+      "id": "4cd91d03-7ee8-55b6-9acd-652e3a88f731",
+      "mode": "translate",
+      "english": "Monday",
+      "before": "",
+      "after": "",
+      "options": [
+        {
+          "text": "Jumatatu",
+          "correct": true
+        },
+        {
+          "text": "Jumanne",
+          "correct": false,
+          "feedback": "Jumanne = Tuesday"
+        },
+        {
+          "text": "Jumatano",
+          "correct": false,
+          "feedback": "Jumatano = Wednesday"
+        }
+      ],
+      "explanation": "Jumatatu = Mon, Jumanne = Tue, Jumatano = Wed."
+    },
+    {
+      "id": "8ec372d1-881f-5c10-9625-b48e5cc78e5b",
+      "mode": "translate",
+      "english": "Saturday",
+      "before": "",
+      "after": "",
+      "options": [
+        {
+          "text": "Jumamosi",
+          "correct": true
+        },
+        {
+          "text": "Jumapili",
+          "correct": false,
+          "feedback": "Jumapili = Sunday"
+        },
+        {
+          "text": "Ijumaa",
+          "correct": false,
+          "feedback": "Ijumaa = Friday"
+        }
+      ],
+      "explanation": "Jumamosi = Sat, Jumapili = Sun, Ijumaa = Fri."
+    },
+    {
+      "id": "f6b80fcf-6c6c-5646-85f1-75477253445d",
+      "mode": "translate",
+      "english": "Thursday",
+      "before": "",
+      "after": "",
+      "options": [
+        {
+          "text": "Alhamisi",
+          "correct": true
+        },
+        {
+          "text": "Jumanne",
+          "correct": false,
+          "feedback": "Jumanne = Tuesday"
+        },
+        {
+          "text": "Ijumaa",
+          "correct": false,
+          "feedback": "Ijumaa = Friday"
+        }
+      ],
+      "explanation": "Alhamisi: Thursday"
+    },
+    {
+      "id": "44cdb07c-a7fa-51ec-a887-6504d4f75a0c",
+      "mode": "translate",
+      "english": "On Sunday I sleep a lot.",
+      "before": "Jumapili ",
+      "after": " sana.",
+      "options": [
+        {
+          "text": "ninalala",
+          "correct": true
+        },
+        {
+          "text": "ninaamka",
+          "correct": false,
+          "feedback": "ninaamka = I wake up"
+        },
+        {
+          "text": "ninafika",
+          "correct": false,
+          "feedback": "ninafika = I arrive"
+        }
+      ],
+      "explanation": "ninalala = \"I sleep\" — -lala = sleep"
+    },
+    {
+      "id": "34b3b163-3c75-584d-b7a5-6c394cbe0d07",
+      "mode": "complete",
+      "english": "What time is it? — It's seven.",
+      "before": "Ni saa ngapi? — Ni saa ",
+      "after": ".",
+      "options": [
+        {
+          "text": "moja",
+          "correct": true
+        },
+        {
+          "text": "saba",
+          "correct": false,
+          "feedback": "saba = 7 (n/n form"
+        },
+        {
+          "text": "wapi",
+          "correct": false,
+          "feedback": "wapi = where?"
+        }
+      ],
+      "explanation": "moja: 1 (n/n form — used for counting, money, things)",
+      "grammar": [
+        "numbers-money"
+      ]
+    }
+  ]
+}

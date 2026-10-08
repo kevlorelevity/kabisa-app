@@ -1,0 +1,1514 @@
+{
+  "id": "clothes-colours",
+  "uuid": "edb2e351-c9fa-5aa1-952a-fec556cc7dab",
+  "title": "Shirts, Shoes and Colours at Toi Market",
+  "category": "commerce",
+  "difficulty": "beginner",
+  "level": 2,
+  "order": 204,
+  "theme": "market",
+  "culturalNote": "Toi Market and Gikomba are where Nairobi buys its clothes — much of it \"mitumba\", second-hand clothing sold from huge bales. Sellers call out to every passer-by, the first price is always high, and \"bei ya mwisho\" (last price) is part of the game, not the end of it. Colour words for things are mostly n/n: shati nyeupe (white shirt), viatu nyeusi (black shoes). Bluu, kijani and njano never change.",
+  "startingPoint": "Saturday at Toi Market. A seller waves a shirt at you from his stall.",
+  "grammarFocus": [
+    "adjective-agreement",
+    "numbers-money",
+    "present-na",
+    "ko-location"
+  ],
+  "grammar": [
+    "adjective-agreement",
+    "numbers-money",
+    "present-na",
+    "ko-location",
+    "noun-classes-mwa-nn",
+    "question-words",
+    "possessives",
+    "ni-copula",
+    "greetings",
+    "discourse-particles"
+  ],
+  "turns": [
+    {
+      "id": "db678ca9-752b-5a82-8105-e145bb7251a5",
+      "speaker": "Muuzaji",
+      "role": "auto",
+      "swahili": "Karibu, boss! Unatafuta nini leo?",
+      "english": "Welcome, boss! What are you looking for today?",
+      "words": [
+        {
+          "text": "Karibu",
+          "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "boss",
+          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Unatafuta",
+          "gloss": "\"you're looking for\" — -tafuta = look for"
+        },
+        {
+          "text": "nini",
+          "gloss": "what?",
+          "grammar": [
+            "question-words"
+          ]
+        },
+        {
+          "text": "leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0c1a5e51-862e-5994-8a85-30b4aedd4e8d",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ninatafuta shati na suruali.",
+      "english": "I'm looking for a shirt and trousers.",
+      "words": [
+        {
+          "text": "Ninatafuta",
+          "gloss": "\"I'm looking for\" — -tafuta = look for"
+        },
+        {
+          "text": "shati",
+          "gloss": "shirt",
+          "sanifu": "Sanifu: ji/ma class (shati jeupe)"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "suruali",
+          "gloss": "trousers"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ninatafuta shati na suruali.",
+          "correct": true
+        },
+        {
+          "swahili": "Unatafuta shati na suruali.",
+          "correct": false
+        },
+        {
+          "swahili": "Ninauza shati na suruali.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "3c223604-3fd0-5cb8-a290-ad558049cece",
+      "speaker": "Muuzaji",
+      "role": "auto",
+      "swahili": "Sawa! Unapenda rangi gani?",
+      "english": "Okay! What colour do you like?",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Unapenda",
+          "gloss": "\"You like\" — u- (subject: you) + na- (present) + -penda (like). From kupenda.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kupenda (to like)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninapenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unapenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anapenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunapenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnapenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanapenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "rangi",
+          "gloss": "colour"
+        },
+        {
+          "text": "gani",
+          "gloss": "which? / what kind?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "02fba68e-eb0d-5bc5-bb63-f366e56d0a30",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ninapenda bluu au nyeupe.",
+      "english": "I like blue or white.",
+      "words": [
+        {
+          "text": "Ninapenda",
+          "gloss": "\"I like\" — ni- (subject: I) + na- (present) + -penda (like). From kupenda. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kupenda (to like)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninapenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unapenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anapenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunapenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnapenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanapenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "bluu",
+          "gloss": "blue"
+        },
+        {
+          "text": "au",
+          "gloss": "or"
+        },
+        {
+          "text": "nyeupe",
+          "gloss": "white (n/n)"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ninapenda bluu au nyeupe.",
+          "correct": true
+        },
+        {
+          "swahili": "Ninapenda saizi au nyeupe.",
+          "correct": false
+        },
+        {
+          "swahili": "Anapenda bluu au nyeupe.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "272da08b-a987-5fec-93ef-5548e0b38793",
+      "speaker": "Muuzaji",
+      "role": "auto",
+      "swahili": "Shati ya bluu iko hapa — ni mpya kabisa!",
+      "english": "The blue shirt is here — it's brand new!",
+      "words": [
+        {
+          "text": "Shati",
+          "gloss": "shirt",
+          "sanifu": "Sanifu: ji/ma class (shati jeupe)"
+        },
+        {
+          "text": "ya",
+          "gloss": "\"of\" — n/n singular agreement (nyumba ya Kamau); Kenyans use ya with most nouns",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "bluu",
+          "gloss": "blue"
+        },
+        {
+          "text": "iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mpya kabisa",
+          "gloss": "\"brand new\""
+        }
+      ]
+    },
+    {
+      "id": "a346a9a2-55d9-52fe-bd18-e8fa14679a48",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ni nzuri! Ni saizi gani?",
+      "english": "It's nice! What size is it?",
+      "words": [
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "nzuri",
+          "gloss": "good / fine — the standard answer to habari",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "saizi",
+          "gloss": "size"
+        },
+        {
+          "text": "gani",
+          "gloss": "which? / what kind?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ni nzuri! Ni saizi gani?",
+          "correct": true
+        },
+        {
+          "swahili": "Ni nzuri! Ni saizi wapi?",
+          "correct": false
+        },
+        {
+          "swahili": "Ni nzuri! Ni rangi saizi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "c00c3934-1938-5028-86af-7225bae94016",
+      "speaker": "Muuzaji",
+      "role": "auto",
+      "swahili": "Ni saizi kubwa, XL. Na suruali ni nyeusi, saizi ya kati.",
+      "english": "It's a large, XL. And the trousers are black, medium size.",
+      "words": [
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "saizi",
+          "gloss": "size"
+        },
+        {
+          "text": "kubwa",
+          "gloss": "\"big\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-kubwa (big)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mkubwa"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wakubwa"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "kubwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "XL",
+          "gloss": "XL (extra large)"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "suruali",
+          "gloss": "trousers"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "nyeusi",
+          "gloss": "black (n/n)"
+        },
+        {
+          "text": "saizi",
+          "gloss": "size"
+        },
+        {
+          "text": "ya kati",
+          "gloss": "\"medium\" (lit. \"of the middle\")"
+        }
+      ]
+    },
+    {
+      "id": "8aceee1d-2a35-560b-b018-80941fa5194b",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Shati ni kubwa sana kwa mimi. Uko na saizi ndogo?",
+      "english": "The shirt is too big for me. Do you have a smaller size?",
+      "words": [
+        {
+          "text": "Shati",
+          "gloss": "shirt",
+          "sanifu": "Sanifu: ji/ma class (shati jeupe)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "kubwa",
+          "gloss": "\"big\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-kubwa (big)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mkubwa"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wakubwa"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "kubwa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "kwa mimi",
+          "gloss": "\"for me\" — Kenyan.",
+          "sanifu": "Sanifu: kwangu"
+        },
+        {
+          "text": "Uko na",
+          "gloss": "\"do you have\" — Kenyan form of \"una\".",
+          "grammar": [
+            "ko-location"
+          ]
+        },
+        {
+          "text": "saizi",
+          "gloss": "size"
+        },
+        {
+          "text": "ndogo",
+          "gloss": "\"small / young\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-dogo (small / young)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mdogo"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wadogo"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "ndogo"
+              }
+            ]
+          }
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Shati ni kubwa sana kwa mimi. Uko na saizi ndogo?",
+          "correct": true
+        },
+        {
+          "swahili": "Shati ni kubwa sana kwa mimi. Uko na saizi kubwa?",
+          "correct": false
+        },
+        {
+          "swahili": "Shati ni ndogo sana kwa mimi. Uko na saizi ndogo?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "a5fee505-9173-5a28-aecc-aa16565607f9",
+      "speaker": "Muuzaji",
+      "role": "auto",
+      "swahili": "Ndiyo, niko na M hapa. Na viatu? Viatu ni muhimu!",
+      "english": "Yes, I have an M here. And shoes? Shoes are important!",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "niko na",
+          "gloss": "\"I have\" — Kenyan form of \"nina\".",
+          "grammar": [
+            "ko-location"
+          ]
+        },
+        {
+          "text": "M",
+          "gloss": "M (medium size)"
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "viatu",
+          "gloss": "shoes",
+          "sanifu": "Sanifu: kiatu / viatu (ki/vi class)"
+        },
+        {
+          "text": "Viatu",
+          "gloss": "shoes",
+          "sanifu": "Sanifu: kiatu / viatu (ki/vi class)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "muhimu",
+          "gloss": "important"
+        }
+      ]
+    },
+    {
+      "id": "dbee9b83-65d6-562e-b66e-85d234d5907f",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Haha, leo ninanunua shati na suruali tu. Ni pesa ngapi?",
+      "english": "Ha, today I'm only buying a shirt and trousers. How much?",
+      "words": [
+        {
+          "text": "Haha",
+          "gloss": "haha"
+        },
+        {
+          "text": "leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ninanunua",
+          "gloss": "\"I am buying\" — ni- (subject: I) + na- (present) + -nunua (buy). From kununua. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kununua (to buy)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninanunua"
+              },
+              {
+                "pronoun": "you",
+                "form": "unanunua"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ananunua"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunanunua"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnanunua"
+              },
+              {
+                "pronoun": "they",
+                "form": "wananunua"
+              }
+            ]
+          }
+        },
+        {
+          "text": "shati",
+          "gloss": "shirt",
+          "sanifu": "Sanifu: ji/ma class (shati jeupe)"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "suruali",
+          "gloss": "trousers"
+        },
+        {
+          "text": "tu",
+          "gloss": "only"
+        },
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "pesa ngapi",
+          "gloss": "how much money?",
+          "grammar": [
+            "question-words",
+            "numbers-money"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Haha, leo ninanunua shati na suruali tu. Ni pesa ngapi?",
+          "correct": true
+        },
+        {
+          "swahili": "Haha, leo ninauza shati na suruali tu. Ni pesa ngapi?",
+          "correct": false
+        },
+        {
+          "swahili": "Haha, leo ninanunua shati na suruali tu. Ni pesa wapi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "a8e8a4a2-dcf7-5f84-80ce-a59413bd42af",
+      "speaker": "Muuzaji",
+      "role": "auto",
+      "swahili": "Shati ni mia nane, suruali ni elfu moja. Jumla ni elfu moja, mia nane.",
+      "english": "The shirt is 800, the trousers 1,000. Total: 1,800.",
+      "words": [
+        {
+          "text": "Shati",
+          "gloss": "shirt",
+          "sanifu": "Sanifu: ji/ma class (shati jeupe)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mia nane",
+          "gloss": "800",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "suruali",
+          "gloss": "trousers"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "elfu moja",
+          "gloss": "1,000 — a.k.a. \"thao\"",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "Jumla",
+          "gloss": "total"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "elfu moja",
+          "gloss": "1,000 — a.k.a. \"thao\"",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "mia nane",
+          "gloss": "800",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "84a074de-54a4-5460-8c27-c1acaa04e563",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Wee, ni ghali sana! Elfu moja, mia mbili je?",
+      "english": "Wow, that's very expensive! What about 1,200?",
+      "words": [
+        {
+          "text": "Wee",
+          "gloss": "hey you! (surprise / emphasis)",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "ghali sana",
+          "gloss": "very expensive",
+          "grammar": [
+            "adjective-agreement"
+          ]
+        },
+        {
+          "text": "Elfu moja",
+          "gloss": "1,000 — a.k.a. \"thao\"",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "mia mbili",
+          "gloss": "200",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "je",
+          "gloss": "\"what about…?\" (question word)"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Wee, ni ghali sana! Elfu moja, mia mbili je?",
+          "correct": true
+        },
+        {
+          "swahili": "Wee, ni rahisi sana! Elfu moja, mia mbili je?",
+          "correct": false
+        },
+        {
+          "swahili": "Wee, ni ghali sana! Elfu tano, mia mbili je?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "c400f562-2c35-59a4-921e-c846c5576f49",
+      "speaker": "Muuzaji",
+      "role": "auto",
+      "swahili": "Aiii, boss! Elfu moja, mia tano. Bei ya mwisho.",
+      "english": "Oh come on, boss! 1,500. Last price.",
+      "words": [
+        {
+          "text": "Aiii",
+          "gloss": "(protest) \"Oh come on!\""
+        },
+        {
+          "text": "boss",
+          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Elfu moja",
+          "gloss": "1,000 — a.k.a. \"thao\"",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "mia tano",
+          "gloss": "500 — a.k.a. \"punch\"",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "Bei ya mwisho",
+          "gloss": "\"last price\""
+        }
+      ]
+    },
+    {
+      "id": "e151e220-2c6a-5af7-9dc9-4010d449d4cd",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Sawa, poa. Ninalipa na M-Pesa.",
+      "english": "Okay, fine. I'm paying with M-Pesa.",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Ninalipa",
+          "gloss": "\"I'm paying\" — -lipa = pay"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "M-Pesa",
+          "gloss": "M-Pesa — mobile money — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Sawa, poa. Ninalipa na M-Pesa.",
+          "correct": true
+        },
+        {
+          "swahili": "Sawa, poa. Unalipa na M-Pesa.",
+          "correct": false
+        },
+        {
+          "swahili": "Sawa, poa. Ninauza na M-Pesa.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "a4a1aecf-f2c3-56e2-83b1-b41fce3c538b",
+      "speaker": "Muuzaji",
+      "role": "auto",
+      "swahili": "Asante sana! Bluu ni rangi yako!",
+      "english": "Thanks a lot! Blue is your colour!",
+      "words": [
+        {
+          "text": "Asante sana",
+          "gloss": "thank you very much"
+        },
+        {
+          "text": "Bluu",
+          "gloss": "blue"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "rangi",
+          "gloss": "colour"
+        },
+        {
+          "text": "yako",
+          "gloss": "\"your\" — n/n singular agreement (nyumba yako). In Kenyan speech also used for family words and most things (jina yako, gari yako).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (n/n singular)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "yangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "yako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "yake"
+              },
+              {
+                "pronoun": "our",
+                "form": "yetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "yenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "yao"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "e5b34ffc-8fe4-5aef-97fa-5642d2cdd22b",
+      "swahili": "nguo",
+      "english": "clothes",
+      "exampleContext": "n/n noun. Also mavazi (more formal)."
+    },
+    {
+      "id": "243eac89-bb1a-546b-a32f-24758969655d",
+      "swahili": "shati",
+      "english": "shirt",
+      "exampleContext": "Kenyan: shati nyeupe",
+      "sanifu": "shati jeupe",
+      "sanifuNote": "Sanifu: ji/ma class"
+    },
+    {
+      "id": "d3e4cc4e-8b8e-577a-9750-caaaf8368a7b",
+      "swahili": "suruali",
+      "english": "trousers",
+      "exampleContext": "n/n noun"
+    },
+    {
+      "id": "18f3f38c-029c-5080-8a23-cf9667cbcf0c",
+      "swahili": "viatu",
+      "english": "shoes",
+      "exampleContext": "Kenyans: viatu hizi",
+      "sanifu": "viatu hivi",
+      "sanifuNote": "Sanifu: ki/vi class (kiatu / viatu)"
+    },
+    {
+      "id": "f7308e51-9d01-56bd-9ee7-965c78904921",
+      "swahili": "rangi",
+      "english": "colour",
+      "exampleContext": "Rangi gani? = What colour?"
+    },
+    {
+      "id": "87d537e2-0e6a-5f45-bbc3-8de30ce5e931",
+      "swahili": "nyeupe / nyeusi / nyekundu",
+      "english": "white / black / red",
+      "exampleContext": "n/n forms",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "4ab016f9-2c3f-5c5f-97f2-a34bf61ec517",
+      "swahili": "bluu / kijani / njano",
+      "english": "blue / green / yellow",
+      "exampleContext": "Never change.",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "14768a76-7819-5cc7-aa16-e0458439466e",
+      "swahili": "saizi",
+      "english": "size",
+      "exampleContext": "saizi kubwa / ndogo / ya kati"
+    },
+    {
+      "id": "2faa8c26-f129-5846-b006-7dc8cfffd26a",
+      "swahili": "-tafuta",
+      "english": "look for",
+      "exampleContext": "Ninatafuta shati."
+    },
+    {
+      "id": "86a28dab-8ba4-558f-aaee-5cd1cc9f58a7",
+      "swahili": "-nunua / -uza",
+      "english": "buy / sell",
+      "exampleContext": "Ninanunua; anauza.",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "cff18609-4a05-50e9-8f6d-8472e38cf17b",
+      "swahili": "ghali / rahisi",
+      "english": "expensive / cheap",
+      "exampleContext": "Ni ghali sana!",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "37eb0a28-2276-5827-9f95-5507ed4f5ca1",
+      "swahili": "Uko na…?",
+      "english": "Do you have…?",
+      "exampleContext": "Kenyan everyday form of \"Una…?\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "c2363ac1-0562-5c84-bc7a-b06c11485201",
+      "swahili": "bei ya mwisho",
+      "english": "last price",
+      "exampleContext": "The seller's \"final\" offer",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "c4d18b67-7462-5dbe-9666-36aedd364aed",
+      "mode": "translate",
+      "english": "I'm looking for a shirt.",
+      "before": "Ninatafuta ",
+      "after": ".",
+      "options": [
+        {
+          "text": "shati",
+          "correct": true
+        },
+        {
+          "text": "suruali",
+          "correct": false,
+          "feedback": "suruali = trousers"
+        },
+        {
+          "text": "viatu",
+          "correct": false,
+          "feedback": "viatu = shoes"
+        }
+      ],
+      "explanation": "shati = shirt, suruali = trousers, viatu = shoes."
+    },
+    {
+      "id": "b0c337d7-1324-5e13-8969-016dde9b48e8",
+      "mode": "translate",
+      "english": "She's looking for shoes.",
+      "before": "Anatafuta ",
+      "after": ".",
+      "options": [
+        {
+          "text": "viatu",
+          "correct": true
+        },
+        {
+          "text": "soksi",
+          "correct": false,
+          "feedback": "soksi = socks"
+        },
+        {
+          "text": "kofia",
+          "correct": false,
+          "feedback": "kofia = hat / cap"
+        }
+      ],
+      "explanation": "soksi = socks, kofia = hat / cap."
+    },
+    {
+      "id": "e43ad973-fc2b-5e60-aa2a-dfd0ffa76e36",
+      "mode": "translate",
+      "english": "What colour?",
+      "before": "Rangi ",
+      "after": "?",
+      "options": [
+        {
+          "text": "gani",
+          "correct": true
+        },
+        {
+          "text": "wapi",
+          "correct": false,
+          "feedback": "wapi = where?"
+        },
+        {
+          "text": "ngapi",
+          "correct": false,
+          "feedback": "ngapi = how many? / how much?"
+        }
+      ],
+      "explanation": "gani = which / what kind.",
+      "grammar": [
+        "question-words"
+      ]
+    },
+    {
+      "id": "4d2953aa-bfe0-5b41-87c5-c0a29301e0e6",
+      "mode": "translate",
+      "english": "a white shirt",
+      "before": "shati ",
+      "after": "",
+      "options": [
+        {
+          "text": "nyeupe",
+          "correct": true
+        },
+        {
+          "text": "nyeusi",
+          "correct": false,
+          "feedback": "nyeusi = black (n/n)"
+        },
+        {
+          "text": "nyekundu",
+          "correct": false,
+          "feedback": "nyekundu = red"
+        }
+      ],
+      "explanation": "nyeupe = white, nyeusi = black, nyekundu = red."
+    },
+    {
+      "id": "13f0515a-f813-51cf-92ff-b5b886f2dd3b",
+      "mode": "translate",
+      "english": "green trousers",
+      "before": "suruali ya ",
+      "after": "",
+      "options": [
+        {
+          "text": "kijani",
+          "correct": true
+        },
+        {
+          "text": "bluu",
+          "correct": false,
+          "feedback": "bluu = blue"
+        },
+        {
+          "text": "njano",
+          "correct": false,
+          "feedback": "njano = yellow"
+        }
+      ],
+      "explanation": "kijani = green, bluu = blue, njano = yellow."
+    },
+    {
+      "id": "ea6e74cf-03c8-5d79-be73-08329bdd32de",
+      "mode": "translate",
+      "english": "It's too big.",
+      "before": "Ni ",
+      "after": " sana.",
+      "options": [
+        {
+          "text": "kubwa",
+          "correct": true
+        },
+        {
+          "text": "ndogo",
+          "correct": false,
+          "feedback": "ndogo = small / young"
+        },
+        {
+          "text": "ndefu",
+          "correct": false,
+          "feedback": "ndefu = tall / long"
+        }
+      ],
+      "explanation": "kubwa = big, ndogo = small, ndefu = long.",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "97db59a7-3246-5c86-abab-8653a333f0d3",
+      "mode": "translate",
+      "english": "Do you have a small size?",
+      "before": "Uko na saizi ",
+      "after": "?",
+      "options": [
+        {
+          "text": "ndogo",
+          "correct": true
+        },
+        {
+          "text": "kubwa",
+          "correct": false,
+          "feedback": "kubwa = big"
+        },
+        {
+          "text": "ya kati",
+          "correct": false,
+          "feedback": "ya kati = medium"
+        }
+      ],
+      "explanation": "ya kati = medium.",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "2770459a-e329-55a3-82d9-e9c65f3968e6",
+      "mode": "translate",
+      "english": "I have size M.",
+      "before": "",
+      "after": " na saizi M.",
+      "options": [
+        {
+          "text": "Niko",
+          "correct": true
+        },
+        {
+          "text": "Uko",
+          "correct": false,
+          "feedback": "Uko = You are (at / doing)"
+        },
+        {
+          "text": "Yuko",
+          "correct": false,
+          "feedback": "Yuko = He/she is (at / doing)"
+        }
+      ],
+      "explanation": "Kenyan \"have\": niko na = I have, uko na = you have.",
+      "grammar": [
+        "ko-location"
+      ]
+    },
+    {
+      "id": "d5d8212d-9bba-53a7-9e91-cb3af0b90a30",
+      "mode": "translate",
+      "english": "I'm buying a shirt.",
+      "before": "",
+      "after": " shati.",
+      "options": [
+        {
+          "text": "Ninanunua",
+          "correct": true
+        },
+        {
+          "text": "Ninauza",
+          "correct": false,
+          "feedback": "Ninauza = I am selling"
+        },
+        {
+          "text": "Ninalipa",
+          "correct": false,
+          "feedback": "Ninalipa = I'm paying"
+        }
+      ],
+      "explanation": "-nunua = buy, -uza = sell, -lipa = pay.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "515a07fb-8d42-5767-9964-4aab42e70321",
+      "mode": "translate",
+      "english": "He sells clothes.",
+      "before": "",
+      "after": " nguo.",
+      "options": [
+        {
+          "text": "Anauza",
+          "correct": true
+        },
+        {
+          "text": "Ananunua",
+          "correct": false,
+          "feedback": "Ananunua = He/she is buying"
+        },
+        {
+          "text": "Anafua",
+          "correct": false,
+          "feedback": "Anafua = He/she is doing laundry"
+        }
+      ],
+      "explanation": "Anauza = \"He/she is selling\" — a- (subject: he/she) + na- (present) + -uza (sell). From kuuza.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "a46ca376-2830-5842-ba87-acc2b322ab37",
+      "mode": "translate",
+      "english": "It's very expensive!",
+      "before": "Ni ",
+      "after": " sana!",
+      "options": [
+        {
+          "text": "ghali",
+          "correct": true
+        },
+        {
+          "text": "rahisi",
+          "correct": false,
+          "feedback": "rahisi = cheap / easy"
+        },
+        {
+          "text": "mpya",
+          "correct": false,
+          "feedback": "mpya = new"
+        }
+      ],
+      "explanation": "ghali = expensive, rahisi = cheap."
+    },
+    {
+      "id": "18fb54ba-b951-568d-9efc-e5a563008887",
+      "mode": "translate",
+      "english": "1,500",
+      "before": "elfu moja, mia ",
+      "after": "",
+      "options": [
+        {
+          "text": "tano",
+          "correct": true
+        },
+        {
+          "text": "tatu",
+          "correct": false,
+          "feedback": "tatu = 3 (n/n form"
+        },
+        {
+          "text": "nane",
+          "correct": false,
+          "feedback": "nane = 8 (n/n form"
+        }
+      ],
+      "explanation": "tano = 5, tatu = 3, nane = 8.",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "0ffa9612-2a0c-5209-8283-2c5cf09ee7e2",
+      "mode": "translate",
+      "english": "800",
+      "before": "mia ",
+      "after": "",
+      "options": [
+        {
+          "text": "nane",
+          "correct": true
+        },
+        {
+          "text": "sita",
+          "correct": false,
+          "feedback": "sita = 6 (n/n form"
+        },
+        {
+          "text": "tisa",
+          "correct": false,
+          "feedback": "tisa = 9 (n/n form"
+        }
+      ],
+      "explanation": "nane = 8, sita = 6, tisa = 9.",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "3ab325a7-6858-5696-ad30-94a52adb36bf",
+      "mode": "translate",
+      "english": "We're paying with M-Pesa.",
+      "before": "",
+      "after": " na M-Pesa.",
+      "options": [
+        {
+          "text": "Tunalipa",
+          "correct": true
+        },
+        {
+          "text": "Ninalipa",
+          "correct": false,
+          "feedback": "Ninalipa = I'm paying"
+        },
+        {
+          "text": "Wanalipa",
+          "correct": false,
+          "feedback": "Wanalipa = They are paying"
+        }
+      ],
+      "explanation": "tu- = we.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "5d8a7537-207c-555f-a81a-b088994b7ff6",
+      "mode": "translate",
+      "english": "new clothes",
+      "before": "nguo ",
+      "after": "",
+      "options": [
+        {
+          "text": "mpya",
+          "correct": true
+        },
+        {
+          "text": "safi",
+          "correct": false,
+          "feedback": "safi = clean / great / sorted"
+        },
+        {
+          "text": "chafu",
+          "correct": false,
+          "feedback": "chafu = dirty"
+        }
+      ],
+      "explanation": "mpya = new, safi = clean, chafu = dirty.",
+      "grammar": [
+        "adjective-agreement"
+      ]
+    },
+    {
+      "id": "909129d8-1fd8-50a0-87cf-51b04d315b77",
+      "mode": "complete",
+      "english": "What size is it? — Medium.",
+      "before": "Ni saizi gani? — Ni saizi ya ",
+      "after": ".",
+      "options": [
+        {
+          "text": "kati",
+          "correct": true
+        },
+        {
+          "text": "bluu",
+          "correct": false,
+          "feedback": "bluu = blue"
+        },
+        {
+          "text": "bei",
+          "correct": false,
+          "feedback": "bei = price"
+        }
+      ],
+      "explanation": "kati: middle — ya kati = medium"
+    }
+  ]
+}

@@ -4,8 +4,8 @@
   "title": "Bargaining at the Maasai Market",
   "category": "commerce",
   "difficulty": "medium",
-  "level": 5,
-  "order": 501,
+  "level": 6,
+  "order": 604,
   "theme": "market",
   "culturalNote": "The Maasai Market moves around Nairobi through the week — rows of baskets (vikapu), beaded jewellery, kikoi cloths and carvings. The first price is for tourists; bargaining is expected and friendly. The rhythm: show interest, compare (\"this one is nicer than that one\"), name a price, and settle with \"Tumepatana!\" (we've agreed). The -me- tense is everywhere in a deal: \"nimeona\" (I've seen), \"umepunguza\" (you've lowered it), \"nimeamua\" (I've decided).",
   "startingPoint": "Saturday afternoon at the Maasai Market. A seller waves you over to her baskets.",
@@ -743,7 +743,7 @@
           "correct": true
         },
         {
-          "swahili": "Sawa. Na kama nitanunua vikapu wawili?",
+          "swahili": "Sawa. Na kama nitanunua vikapu vitatu?",
           "correct": false
         },
         {
@@ -1509,17 +1509,16 @@
           "correct": true
         },
         {
-          "text": "mbili",
+          "text": "vitatu",
           "correct": false,
-          "feedback": "mbili = 2 (n/n form"
+          "feedback": "vitatu = three"
         },
         {
-          "text": "wawili",
-          "correct": false,
-          "feedback": "wawili = two (m/wa: watu wawili)"
+          "text": "vinne",
+          "correct": false
         }
       ],
-      "explanation": "ki/vi nouns take vi- numbers.",
+      "explanation": "viwili = 2, vitatu = 3, vinne = 4. Kenyans also say vikapu mbili.",
       "grammar": [
         "sanifu-noun-classes"
       ]
@@ -1536,17 +1535,17 @@
           "correct": true
         },
         {
-          "text": "mwekundu",
+          "text": "nyeusi",
           "correct": false,
-          "feedback": "mwekundu = red"
+          "feedback": "nyeusi = black"
         },
         {
-          "text": "wekundu",
+          "text": "nyeupe",
           "correct": false,
-          "feedback": "wekundu = red"
+          "feedback": "nyeupe = white"
         }
       ],
-      "explanation": "n/n agreement: nyekundu. (Mwekundu is m/wa.)",
+      "explanation": "nyekundu = red, nyeusi = black, nyeupe = white.",
       "grammar": [
         "adjective-agreement"
       ]
@@ -1563,17 +1562,17 @@
           "correct": true
         },
         {
-          "text": "mzuri",
+          "text": "mbaya",
           "correct": false,
-          "feedback": "mzuri = good / nice / beautiful"
+          "feedback": "mbaya = bad"
         },
         {
-          "text": "wazuri",
+          "text": "ghali",
           "correct": false,
-          "feedback": "wazuri = good / nice / beautiful"
+          "feedback": "ghali = expensive"
         }
       ],
-      "explanation": "Kenyans use the n/n form for things: nzuri.",
+      "explanation": "nzuri = good, mbaya = bad, ghali = expensive.",
       "grammar": [
         "greetings"
       ]
@@ -1590,17 +1589,17 @@
           "correct": true
         },
         {
-          "text": "nzuri",
+          "text": "mbaya",
           "correct": false,
-          "feedback": "nzuri = good / fine"
+          "feedback": "mbaya = bad"
         },
         {
-          "text": "wazuri",
+          "text": "mzee",
           "correct": false,
-          "feedback": "wazuri = good / nice / beautiful"
+          "feedback": "mzee = old man / elder (respectful \"sir\")"
         }
       ],
-      "explanation": "People take m/wa: mzuri (one), wazuri (several).",
+      "explanation": "mzuri = good, mbaya = bad, mzee = old.",
       "grammar": [
         "adjective-agreement"
       ]

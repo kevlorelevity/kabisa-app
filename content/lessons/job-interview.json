@@ -1136,17 +1136,17 @@
           "correct": true
         },
         {
-          "text": "ilikuwa",
+          "text": "utakuwa",
           "correct": false,
-          "feedback": "ilikuwa = It was"
+          "feedback": "utakuwa = You will be"
         },
         {
-          "text": "walikuwa",
+          "text": "umekuwa",
           "correct": false,
-          "feedback": "walikuwa = They were"
+          "feedback": "umekuwa = You have been"
         }
       ],
-      "explanation": "mradi is m/mi in Sanifu: u- agreement. Kenyans often say \"project ilikuwa ikichelewa\".",
+      "explanation": "ulikuwa = was, utakuwa = will be, umekuwa = has been. Kenyans often say \"project ilikuwa ikichelewa\".",
       "grammar": [
         "past-li"
       ]

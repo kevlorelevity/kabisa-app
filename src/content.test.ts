@@ -9,11 +9,23 @@ const lessons = Object.values(lessonFiles).map((f) => f.default);
 const slugs = new Set(getGrammarTopics().map((t) => t.slug));
 
 describe('lesson content', () => {
-  it('has 30 lessons across 10 levels, 3 per level', () => {
-    expect(lessons).toHaveLength(30);
+  it('every level has at least 3 lessons; levels 5–7 (where new grammar arrives) have at least 6', () => {
     for (const lvl of LEVELS) {
-      expect(lessons.filter((l) => l.level === lvl.level), `level ${lvl.level}`).toHaveLength(3);
+      const n = lessons.filter((l) => l.level === lvl.level).length;
+      expect(n, `level ${lvl.level}`).toBeGreaterThanOrEqual(lvl.level >= 5 && lvl.level <= 7 ? 6 : 3);
     }
+  });
+
+  it.each(lessons.map((l) => [l.id, l] as const))('%s: uses no grammar from a later level', (_id, lesson) => {
+    const topicLevel = new Map(getGrammarTopics().map((t) => [t.slug, t.level]));
+    const used = new Set<string>();
+    for (const t of lesson.turns) for (const w of t.words) for (const g of w.grammar ?? []) used.add(g);
+    for (const p of lesson.practice ?? []) for (const g of p.grammar ?? []) used.add(g);
+    for (const g of lesson.grammarFocus ?? []) used.add(g);
+    // Levels 1–4 are strict (level-1 grammar only); later levels may preview one level ahead in fixed phrases.
+    const slack = lesson.level <= 4 ? 0 : 3;
+    const late = [...used].filter((g) => (topicLevel.get(g) ?? 0) > lesson.level + slack);
+    expect(late).toEqual([]);
   });
 
   it('uses unique ids and orders', () => {

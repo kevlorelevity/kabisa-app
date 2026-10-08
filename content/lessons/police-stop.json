@@ -5,7 +5,7 @@
   "category": "work-admin",
   "difficulty": "medium",
   "level": 7,
-  "order": 701,
+  "order": 704,
   "theme": "police",
   "culturalNote": "Traffic police stops are routine on Kenyan roads: the officer (address them as \"afande\") checks your licence, insurance sticker and the car's lights and tyres. Stay calm, polite and patient. You may hear a hint about \"kitu kidogo\" (something small) — a bribe; the safe, legal answer is to politely accept the official process (a fine or court date) and never offer money. Verb extensions run through every line: simamisha (make stop), nimesimamishwa (I've been stopped), umefanyiwa ukaguzi (you've had an inspection done on you).",
   "startingPoint": "A traffic officer waves you to the side of the road near Westlands. You're driving.",
@@ -242,7 +242,7 @@
           "correct": false
         },
         {
-          "swahili": "Hawa hapa, afande.",
+          "swahili": "Sina, afande.",
           "correct": false
         }
       ]
@@ -1382,12 +1382,12 @@
           "feedback": "Hii hapa = here it is"
         },
         {
-          "text": "Huyu hapa",
+          "text": "Ziko nyumbani",
           "correct": false,
-          "feedback": "Huyu hapa = this (person) + here"
+          "feedback": "Ziko nyumbani = They (n/n) are (at / doing) + at / in / to the house"
         }
       ],
-      "explanation": "Leseni na bima = two things: hizi."
+      "explanation": "Leseni na bima = two things: hizi (these). Hii = this one. Ziko nyumbani = they're at home."
     },
     {
       "id": "b20acf79-41e1-5390-bbd8-745b587ca02e",

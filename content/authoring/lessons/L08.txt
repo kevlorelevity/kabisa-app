@@ -1,8 +1,9 @@
-# Level 8 — conditionals (-nge-, -ngali-, kama), -ki- (if/when), -po- (when), -ka- (and then), relatives (amba-, -ye-/-o-, mwenye), habitual hu- and Kenyan -nga
+# Level 8 — conditionals, -ki-/-po-/-ka-, relatives, habits.
 
 @lesson market-marikiti-regular
 title: A Regular at Marikiti Market
 level: 8
+index: 1
 theme: market
 category: commerce
 culture: Marikiti is Nairobi's huge wholesale fruit and vegetable market. Become a regular and the sellers start to know you — and the prices get better. Habits are where Kenyan Swahili gets colourful: Sanifu uses hu- ("mimi hununua hapa" = I usually buy here), while Kenyans love adding -nga, borrowed from Luhya: "ninanunuanga hapa", "huwa nanunuanga". Deals are made with -ki- (if): "ukinunua kilo tatu, nitakupunguzia" (if you buy three kilos, I'll knock the price down for you).
@@ -90,6 +91,7 @@ zilizoiva / mbichi | ripe / unripe | kuiva = to ripen / be cooked
 @lesson landlord-leak
 title: The Landlord and the Leaking Roof
 level: 8
+index: 2
 theme: home
 category: home
 culture: Most Nairobians rent (kupanga nyumba), and the long rains (March–May) are when roofs, gutters and landlords get tested. Complaints in Kenya are made politely but firmly — and conditionals are your best tool: "Kama ungalimleta fundi mapema…" (if you had brought a fundi earlier…). In everyday speech Kenyans use -nge- for both present and past conditions ("Ungemleta fundi, hii haingetokea"), while Sanifu keeps -ngali- for the past. Rent is kodi.
@@ -180,6 +182,7 @@ Nakuahidi | I promise you | kuahidi = to promise
 @lesson hospital-visit
 title: At the Hospital
 level: 8
+index: 3
 theme: health
 category: health
 culture: For anything beyond the chemist, Kenyans head to a hospital or clinic: you register at reception, see a nurse for "vitals", then the doctor. Doctors ask about habits ("huwa unakunywa maji ya kutosha?" — do you usually drink enough water?) and give if/when instructions with -ki-: "ukiona homa inapanda, rudi" (if you see the fever rising, come back). Relatives describe what happened: "dawa ambayo nilipewa" (the medicine that I was given).
@@ -266,3 +269,111 @@ Ukimaliza… | When you finish… |
 Nile nini? | What should I eat? | Subjunctive of kula
 Usile… | Don't eat… |
 Ukiona homa inapanda, rudi | If the fever rises, come back |
+
+@lesson thomson-falls
+title: Day Trip to Thomson's Falls
+level: 8
+index: 4
+theme: travel
+category: social
+culture: Thomson's Falls (Maporomoko ya Thomson) plunge 74 metres off the Aberdare range at Nyahururu, one of Kenya's highest towns, surrounded by tea and potato farms. Guides here switch between Kikuyu, Swahili and English all day. Upcountry farmers typically "hulima" (grow) potatoes and maize and "hufuga" (keep) cattle — the habitual hu- is perfect for talking about how people live. Locals love visitors who try their Swahili.
+start: Nyahururu, late morning. Your tour guide, Njoroge, meets you at the hotel gate.
+grammar: relatives, ki-po-ka, conditional-nge, habitual-hu-nga
+gl: Njoroge = Njoroge (a Kikuyu name)
+gl: Nyahururu = Nyahururu, a highland town near Thomson's Falls
+gl: imekuwaje = "how has it been?"
+gl: hadi hapa = "up to now, so far"
+gl: Imekuwa = "it has been"
+gl: Mandhari = scenery
+gl: ya kuvutia = "attractive, stunning" — lit. "of pulling (the eye)"
+gl: milima = hills, mountains
+gl: mashamba ya chai = "tea farms"
+gl: Nafurahi kusikia hivyo = "I'm glad to hear that"
+gl: maporomoko ya Thomson = Thomson's Falls
+gl: kivutio kikubwa = "a big attraction" || Kenyans also: kivutio kubwa
+gl: Nimesikia habari zake = "I've heard about it"
+gl: huko = "there"
+gl: chakula cha mchana = lunch
+gl: kupiga picha = "to take photos"
+gl: salama = safe
+gl: kwa kutembea = "for walking"
+gl: ataanguka = "will fall" — -anguka = fall
+gl: mawe = rocks, stones
+gl: mengi = many, a lot
+gl: viatu vya kutembea = "walking shoes"
+gl: geti = gate
+gl: wenyeji = locals
+gl: Wengi wao = "most of them"
+gl: wakulima = farmers
+gl: viazi = potatoes
+gl: mahindi = maize
+gl: ng'ombe = cow(s), cattle
+gl: Inavutia = "it's interesting / attractive"
+gl: maisha ya mashambani = "country life"
+gl: kijiji = village || Sanifu: kijiji / vijiji (ki/vi class)
+gl: utamaduni = culture
+gl: nafasi = chance, opportunity
+gl: nao = "with them"
+gl: wakarimu = hospitable (people)
+gl: mambo mengi mapya = "lots of new things"
+
+> Njoroge: Karibu sana Nyahururu! Safari yako imekuwaje hadi hapa? | Welcome to Nyahururu! How has your trip been so far?
+< John: Imekuwa nzuri sana! Mandhari ni ya kuvutia — milima na mashamba ya chai. | It's been great! The scenery is stunning — hills and tea farms.
+  x: Imekuwa mbaya sana! Mandhari ni ya kuvutia — milima na mashamba ya chai. ; Itakuwa nzuri sana jana! Mandhari ni ya kuvutia — milima na mashamba ya chai.
+> Njoroge: Nafurahi kusikia hivyo. Hapa tuko karibu na maporomoko ya Thomson, ambayo ni kivutio kikubwa hapa. | Glad to hear that. Here we're close to Thomson's Falls, which is a big attraction around here.
+< John: Nimesikia habari zake! Tutaenda huko leo? | I've heard about it! Are we going there today?
+  x: Nimesikia habari zake! Tulienda huko kesho? ; Umesikia habari zake! Tutaenda huko leo?
+> Njoroge: Ndiyo, baada ya chakula cha mchana. Tukifika huko, tutatembea kidogo na kupiga picha. | Yes, after lunch. When we get there, we'll walk a bit and take photos.
+< John: Safi! Njia ni salama kwa kutembea? | Great! Is the path safe for walking?
+  x: Safi! Njia ni salama kwa kula? ; Safi! Njia ni salama kwa kutembea jana?
+> Njoroge: Ndiyo, ni salama. Lakini mtu ambaye hana viatu vizuri ataanguka — kuna mawe mengi! | Yes, it's safe. But anyone who doesn't have good shoes will fall — there are lots of rocks!
+< John: Sawa. Ningejua mapema, ningeleta viatu vya kutembea! | Okay. If I'd known earlier, I'd have brought walking shoes!
+  x: Sawa. Nikijua mapema, ningeleta viatu vya kutembea! ; Sawa. Ningejua mapema, nitaleta viatu vya kutembea!
+> Njoroge: Usijali — kuna duka ambayo inauza viatu karibu na geti. | Don't worry — there's a shop that sells shoes near the gate.
+  s: Usijali — kuna duka ambalo linauza viatu karibu na geti.
+< John: Asante. Na wenyeji wanafanya kazi gani hapa? | Thanks. And what work do the locals do here?
+  x: Asante. Na wenyeji walifanya kazi gani kesho? ; Asante. Na wenyeji wanafanya kazi nani hapa?
+> Njoroge: Wengi wao ni wakulima. Hulima viazi na mahindi, na hufuga ng'ombe. | Most of them are farmers. They grow potatoes and maize, and keep cattle.
+< John: Inavutia sana! Mimi hupenda kuona maisha ya mashambani. | That's really interesting! I love seeing country life.
+  x: Inavutia sana! Mimi hupendi kuona maisha ya mashambani. ; Inachosha sana! Mimi hupenda kuona maisha ya mashambani.
+> Njoroge: Kesho tutatembelea kijiji ambayo iko karibu, na utajifunza kuhusu utamaduni wao. | Tomorrow we'll visit a village close by, and you'll learn about their culture.
+  s: Kesho tutatembelea kijiji ambacho kiko karibu, na utajifunza kuhusu utamaduni wao.
+< John: Ningependa sana! Nikipata nafasi, nitazungumza nao. | I'd love that! If I get the chance, I'll talk with them.
+  x: Ningependa sana! Nikipata nafasi, nilizungumza nao. ; Ningependa sana! Ningepata nafasi, nitazungumza nao.
+> Njoroge: Watafurahi! Wenyeji wa hapa ni wakarimu, na hupenda wageni ambao hujaribu Kiswahili. | They'll be delighted! The locals here are hospitable, and they love visitors who try Swahili.
+< John: Asante sana. Safari hii inanifundisha mambo mengi mapya! | Thank you so much. This trip is teaching me lots of new things!
+  x: Asante sana. Safari hii inakufundisha mambo mengi mapya! ; Asante sana. Safari hii ilinifundisha mambo mengi mapya kesho!
+
+@practice
+t: anyone who doesn't have good shoes | mtu ambaye [hana|ana|anakula] viatu vizuri || hana = doesn't have, ana = has.
+t: a shop that sells shoes | duka ambayo [inauza|inanunua|inalala] viatu || -uza = sell, -nunua = buy.
+t: When we get there, we'll walk. | [Tukifika|Tulifika|Tumefika] huko, tutatembea. || -ki- = if / when (about the future).
+t: If I get the chance, I'll talk to them. | [Nikipata|Nilipata|Ningepata] nafasi, nitazungumza nao. || -ki- + future = a real possibility.
+t: If I'd known earlier, I'd have brought shoes. | [Ningejua|Nikijua|Nilijua] mapema, ningeleta viatu. || -nge- … -nge- = if … would.
+t: I'd love that! | [Ningependa|Nitapenda|Ninapenda] sana! || ninge- = I would.
+t: They (usually) grow potatoes. | [Hulima|Walilima|Watalima] viazi. || hu- = usually, habitually.
+t: They keep cattle. | Hufuga [ng'ombe|viazi|mahindi]. || -fuga = keep (animals), ng'ombe = cattle.
+t: I love seeing country life. | Mimi [hupenda|nitapenda|ningependa] kuona maisha ya mashambani. || hu- = as a habit, always.
+t: visitors who try Swahili | wageni ambao [hujaribu|hulala|hula] Kiswahili || -jaribu = try.
+t: a village close by | kijiji ambayo iko [karibu|mbali|juu] || karibu = near, mbali = far.
+t: The scenery is stunning. | Mandhari ni ya [kuvutia|kulala|kuanguka]. || kuvutia = attractive (lit. to pull).
+t: farmers | [wakulima|wafugaji|wavuvi] || wakulima = farmers, wafugaji = herders, wavuvi = fishermen.
+t: There are lots of rocks. | Kuna [mawe|viatu|picha] mengi. || mawe = rocks, stones.
+t: We'll take photos. | Tutapiga [picha|simu|pasi]. || kupiga picha = to take photos.
+t: Anyone who doesn't have shoes will fall. | Mtu ambaye hana viatu [ataanguka|alianguka|ameanguka]. || -ta- = will.
+c: Is the path safe? — Yes, it's safe. | Njia ni salama? — Ndiyo, ni [salama|hatari|ngumu].
+
+@vocab
+mandhari | scenery |
+maporomoko ya maji | waterfall | lit. "a tumbling of water"
+kivutio | attraction | kivutio kikubwa = a big attraction
+mtalii / watalii | tourist / tourists |
+kiongozi | guide, leader | kiongozi wa watalii = tour guide
+salama | safe |
+mtu ambaye… | a person who… | mtu ambaye hana viatu = anyone without shoes
+Tukifika… | When we get there… | -ki- = if / when
+Ningejua… ningeleta… | If I'd known… I'd have brought… | -nge- … -nge-
+hulima / hufuga | (they) grow crops / keep animals | hu- = habitually
+ng'ombe | cow(s), cattle |
+utamaduni | culture |
+Ningependa sana! | I'd love that! |

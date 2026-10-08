@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 import { useProfile } from '../hooks/profileContext';
 import { loadIsAdmin, submitSuggestion, type SuggestionKind } from '../lib/admin';
-import { addOverrides, resolveOverride, scopeContent, type ScopeType } from '../lib/contentOverrides';
+import { addOverrides, countPropagation, resolveOverride, scopeContent, type ScopeType } from '../lib/contentOverrides';
 import { AdminContext, type SuggestTarget } from './adminContext';
 import { setRoamAllowed } from '../lib/roam';
 
@@ -46,6 +46,16 @@ function SuggestModal({ target, onClose }: { target: SuggestTarget; onClose: () 
     return type && id && content ? { type, id, content } : null;
   }, [target, lessonId]);
 
+  // Same Swahili wording elsewhere in the app (other lines, chips, flashcards…).
+  const [everywhere, setEverywhere] = useState(true);
+  const itemIdForOverride =
+    target.targetType.startsWith('grammar') || target.targetType === 'level' ? undefined : target.itemId;
+  const pending = useMemo(
+    () => (textChanged ? resolveOverride(scope, itemIdForOverride, target.currentText.trim(), proposed.trim(), persona) : null),
+    [textChanged, scope, itemIdForOverride, target.currentText, proposed, persona],
+  );
+  const others = useMemo(() => (pending && scope ? countPropagation(scope.content, pending) : 0), [pending, scope]);
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose();
     document.addEventListener('keydown', onKey);
@@ -56,8 +66,7 @@ function SuggestModal({ target, onClose }: { target: SuggestTarget; onClose: () 
     if (!canSave) return;
     setStatus('saving');
     setError(null);
-    const itemId = target.targetType.startsWith('grammar') || target.targetType === 'level' ? undefined : target.itemId;
-    const override = textChanged ? resolveOverride(scope, itemId, target.currentText.trim(), proposed.trim(), persona) : null;
+    const override = pending ? { ...pending, propagate: everywhere && others > 0 } : null;
     const res = await submitSuggestion({
       ...target,
       lessonId,
@@ -162,6 +171,20 @@ function SuggestModal({ target, onClose }: { target: SuggestTarget; onClose: () 
                 className="mt-1 w-full rounded-xl border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-100"
               />
             </label>
+            {pending && others > 0 && (
+              <label className="flex items-start gap-2 text-sm text-gray-700">
+                <input
+                  type="checkbox"
+                  checked={everywhere}
+                  onChange={(e) => setEverywhere(e.target.checked)}
+                  className="mt-0.5 accent-amber-500"
+                />
+                <span>
+                  Also change this wording in the {others} other {others === 1 ? 'place' : 'places'} it appears
+                  <span className="text-gray-400"> (dialogues, answer choices, practice, flashcards — all lessons)</span>
+                </span>
+              </label>
+            )}
             {status === 'failed' && (
               <p className="text-sm text-red-600">
                 Couldn’t save ({error}).{' '}

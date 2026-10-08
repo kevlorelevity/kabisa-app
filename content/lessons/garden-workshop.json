@@ -1,0 +1,1753 @@
+{
+  "id": "garden-workshop",
+  "uuid": "515ed913-c61e-5cff-8a70-7bcb34449233",
+  "title": "Weeds, Hammers and Nails: Garden and Workshop",
+  "category": "home",
+  "difficulty": "medium",
+  "level": 4,
+  "order": 401,
+  "theme": "home",
+  "culturalNote": "Many Nairobi homes have a small garden — a \"bustani\" for flowers, or a \"shamba\" for vegetables like sukuma and spinach — and an older gardener who knows every plant by name. Address an older man respectfully as \"mzee\". Kupanda means both \"to plant\" and \"to climb / get on\" (a matatu); context tells you which. A \"fundi\" is anyone skilled with their hands, and calling someone \"fundi kweli\" (a real fundi) is high praise.",
+  "startingPoint": "Saturday morning. Mzee Ochieng, who looks after the garden of your block, is already at work with a hoe.",
+  "grammarFocus": [
+    "present-na",
+    "ko-location",
+    "adjective-agreement",
+    "possessives"
+  ],
+  "grammar": [
+    "present-na",
+    "ko-location",
+    "adjective-agreement",
+    "possessives",
+    "greetings",
+    "noun-classes-mwa-nn",
+    "question-words",
+    "locative-ni",
+    "ni-copula",
+    "subject-prefixes",
+    "sanifu-noun-classes",
+    "discourse-particles"
+  ],
+  "turns": [
+    {
+      "id": "f34eade7-0030-53d8-9d54-df4aad5481c8",
+      "speaker": "Mzee Ochieng",
+      "role": "auto",
+      "swahili": "Habari ya asubuhi, John! Leo ninakata nyasi na ninapanda maua.",
+      "english": "Good morning, John! Today I'm cutting the grass and planting flowers.",
+      "words": [
+        {
+          "text": "Habari ya asubuhi",
+          "gloss": "good morning (lit. \"news of the morning?\")",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "John",
+          "gloss": "John (name)"
+        },
+        {
+          "text": "Leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ninakata",
+          "gloss": "\"I am cutting\" — ni- (subject: I) + na- (present) + -kata (cut). From kukata. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kukata (to cut)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninakata"
+              },
+              {
+                "pronoun": "you",
+                "form": "unakata"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anakata"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunakata"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnakata"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanakata"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nyasi",
+          "gloss": "grass"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "ninapanda",
+          "gloss": "\"I am climbing\" — ni- (subject: I) + na- (present) + -panda (climb). From kupanda. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kupanda (to climb)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninapanda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unapanda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anapanda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunapanda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnapanda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanapanda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "maua",
+          "gloss": "flowers",
+          "sanifu": "Sanifu: ua / maua (ji/ma class)"
+        }
+      ]
+    },
+    {
+      "id": "bd5b163c-4d4b-52b8-859a-1c7017eadd27",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Nzuri, mzee! Unapanda maua gani?",
+      "english": "Good, sir! Which flowers are you planting?",
+      "words": [
+        {
+          "text": "Nzuri",
+          "gloss": "good / fine — the standard answer to habari",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "mzee",
+          "gloss": "\"sir\" — respectful address for an older man"
+        },
+        {
+          "text": "Unapanda",
+          "gloss": "\"You are climbing\" — u- (subject: you) + na- (present) + -panda (climb). From kupanda.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kupanda (to climb)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninapanda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unapanda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anapanda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunapanda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnapanda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanapanda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "maua",
+          "gloss": "flowers",
+          "sanifu": "Sanifu: ua / maua (ji/ma class)"
+        },
+        {
+          "text": "gani",
+          "gloss": "which? / what kind?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Nzuri, mzee! Unapanda maua gani?",
+          "correct": true
+        },
+        {
+          "swahili": "Nzuri, mzee! Unakula maua gani?",
+          "correct": false
+        },
+        {
+          "swahili": "Nzuri, mzee! Ninapanda maua gani?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "90217435-78a5-5cbf-a249-21a361bce38b",
+      "speaker": "Mzee Ochieng",
+      "role": "auto",
+      "swahili": "Maua nyekundu na njano, karibu na mlango.",
+      "english": "Red and yellow flowers, near the door.",
+      "words": [
+        {
+          "text": "Maua",
+          "gloss": "flowers",
+          "sanifu": "Sanifu: ua / maua (ji/ma class)"
+        },
+        {
+          "text": "nyekundu",
+          "gloss": "\"red\" — n/n agreement (things; Kenyans use it for most non-people nouns).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-ekundu (red)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mwekundu"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wekundu"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "nyekundu"
+              }
+            ]
+          }
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "njano",
+          "gloss": "yellow"
+        },
+        {
+          "text": "karibu na",
+          "gloss": "close to / near",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "mlango",
+          "gloss": "door"
+        }
+      ]
+    },
+    {
+      "id": "d7687430-8e17-52a2-8239-17ebfa802063",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Safi! Na mboga? Tunapanda sukuma pia?",
+      "english": "Great! And vegetables? Are we planting sukuma too?",
+      "words": [
+        {
+          "text": "Safi",
+          "gloss": "clean / great / sorted"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "mboga",
+          "gloss": "vegetables"
+        },
+        {
+          "text": "Tunapanda",
+          "gloss": "\"We are climbing\" — tu- (subject: we) + na- (present) + -panda (climb). From kupanda.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kupanda (to climb)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninapanda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unapanda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anapanda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunapanda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnapanda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanapanda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sukuma",
+          "gloss": "short for sukuma wiki — collard greens / kale — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "pia",
+          "gloss": "also / too"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Safi! Na mboga? Tunapanda sukuma pia?",
+          "correct": true
+        },
+        {
+          "swahili": "Safi! Na mboga? Tunakunywa sukuma pia?",
+          "correct": false
+        },
+        {
+          "swahili": "Safi! Na mboga? Unapanda sukuma wapi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "397d3d20-87ae-5816-bb01-9d1e31718356",
+      "speaker": "Mzee Ochieng",
+      "role": "auto",
+      "swahili": "Ndiyo. Mvua inanyesha sasa, na udongo ni mzuri.",
+      "english": "Yes. The rain is falling now, and the soil is good.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "Mvua",
+          "gloss": "rain — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "inanyesha",
+          "gloss": "\"It is raining\" — i- (subject: it (n/n)) + na- (present) + -nyesha (rain). From kunyesha.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kunyesha (to rain)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninanyesha"
+              },
+              {
+                "pronoun": "you",
+                "form": "unanyesha"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ananyesha"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunanyesha"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnanyesha"
+              },
+              {
+                "pronoun": "they",
+                "form": "wananyesha"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "inanyesha"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zinanyesha"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "udongo",
+          "gloss": "soil"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mzuri",
+          "gloss": "\"good / nice / beautiful\" — m/wa singular agreement (one person / animal).",
+          "grammar": [
+            "adjective-agreement"
+          ],
+          "conjugation": {
+            "verb": "-zuri (good / nice / beautiful)",
+            "tense": "Agreement",
+            "rows": [
+              {
+                "pronoun": "m/wa one",
+                "form": "mzuri"
+              },
+              {
+                "pronoun": "m/wa many",
+                "form": "wazuri"
+              },
+              {
+                "pronoun": "n/n",
+                "form": "nzuri"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fdb1dd00-cf9c-56c1-a051-1eea67604032",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Mimi ninafanya nini? Niko na jembe hapa.",
+      "english": "What do I do? I've got a hoe here.",
+      "words": [
+        {
+          "text": "Mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ninafanya",
+          "gloss": "\"I am doing\" — ni- (subject: I) + na- (present) + -fanya (do). From kufanya. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kufanya (to do)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninafanya"
+              },
+              {
+                "pronoun": "you",
+                "form": "unafanya"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anafanya"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunafanya"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnafanya"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanafanya"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nini",
+          "gloss": "what?",
+          "grammar": [
+            "question-words"
+          ]
+        },
+        {
+          "text": "Niko na",
+          "gloss": "\"I have (it on me)\" — Kenyan: -ko na instead of -na",
+          "grammar": [
+            "ko-location"
+          ],
+          "sanifu": "Sanifu: nina"
+        },
+        {
+          "text": "jembe",
+          "gloss": "hoe",
+          "sanifu": "Sanifu: jembe / majembe (ji/ma class)"
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Mimi ninafanya nini? Niko na jembe hapa.",
+          "correct": true
+        },
+        {
+          "swahili": "Mimi ninakula nini? Niko na jembe hapa.",
+          "correct": false
+        },
+        {
+          "swahili": "Mimi ninafanya nini? Uko na jembe hapa.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "dca49e6b-25cc-5b0c-be66-c9fb56b7e98b",
+      "speaker": "Mzee Ochieng",
+      "role": "auto",
+      "swahili": "Wewe unang'oa magugu, na mimi ninamwagilia maji maua.",
+      "english": "You pull out the weeds, and I water the flowers.",
+      "words": [
+        {
+          "text": "Wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "unang'oa",
+          "gloss": "\"you pull out\" — -ng'oa = pull out, uproot"
+        },
+        {
+          "text": "magugu",
+          "gloss": "weeds"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ninamwagilia maji",
+          "gloss": "\"I'm watering\" — -mwagilia maji = water (plants)"
+        },
+        {
+          "text": "maua",
+          "gloss": "flowers",
+          "sanifu": "Sanifu: ua / maua (ji/ma class)"
+        }
+      ]
+    },
+    {
+      "id": "7cd39f5f-ba64-5707-ab1c-dea211260834",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Sawa. Magugu ni mingi sana!",
+      "english": "Okay. There are so many weeds!",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Magugu",
+          "gloss": "weeds"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mingi",
+          "gloss": "\"many, a lot\" — Kenyan.",
+          "sanifu": "Sanifu: mengi"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ],
+      "sanifu": "Sawa. Magugu ni mengi sana!",
+      "options": [
+        {
+          "swahili": "Sawa. Magugu ni mingi sana!",
+          "correct": true
+        },
+        {
+          "swahili": "Sawa. Magugu ni tamu sana!",
+          "correct": false
+        },
+        {
+          "swahili": "Sawa. Magugu niko mingi sana!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "63b64cec-5ef4-5195-a151-032c68850583",
+      "speaker": "Mzee Ochieng",
+      "role": "auto",
+      "swahili": "Ndiyo, ni kazi ya kila wiki. Na kiti ya jikoni — iko sawa?",
+      "english": "Yes, it's a weekly job. And the kitchen chair — is it okay?",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "kazi",
+          "gloss": "work / job — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ya",
+          "gloss": "\"of\" — n/n singular agreement (nyumba ya Kamau); Kenyans use ya with most nouns",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "kila wiki",
+          "gloss": "\"every week\""
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "kiti",
+          "gloss": "chair",
+          "sanifu": "Sanifu: kiti / viti (ki/vi class)"
+        },
+        {
+          "text": "ya",
+          "gloss": "\"of\" — n/n singular agreement (nyumba ya Kamau); Kenyans use ya with most nouns",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "jikoni",
+          "gloss": "\"at / in / to the stove\" — jiko + -ni (place suffix).",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        }
+      ],
+      "sanifu": "Ndiyo, ni kazi ya kila wiki. Na kiti cha jikoni — kiko sawa?"
+    },
+    {
+      "id": "2249909f-e121-5bc4-be06-9cb8680c4bb3",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Hapana, kiti ni mbovu. Mguu yake ni mbovu.",
+      "english": "No, the chair is broken. Its leg is broken.",
+      "words": [
+        {
+          "text": "Hapana",
+          "gloss": "no"
+        },
+        {
+          "text": "kiti",
+          "gloss": "chair",
+          "sanifu": "Sanifu: kiti / viti (ki/vi class)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mbovu",
+          "gloss": "broken / rotten"
+        },
+        {
+          "text": "Mguu yake",
+          "gloss": "\"its leg\" — Kenyan.",
+          "sanifu": "Sanifu: mguu wake"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mbovu",
+          "gloss": "broken / rotten"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Hapana, kiti ni mbovu. Mguu yake ni mbovu.",
+          "correct": true
+        },
+        {
+          "swahili": "Hapana, kiti ni safi. Mguu yake ni mbovu.",
+          "correct": false
+        },
+        {
+          "swahili": "Hapana, kiti ni mbovu. Mguu yangu ni mbovu.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "97679619-709c-5f26-92c1-166d630b29e9",
+      "speaker": "Mzee Ochieng",
+      "role": "auto",
+      "swahili": "Sawa, ninaenda karakana. Niko na nyundo na misumari.",
+      "english": "Okay, I'm going to the workshop. I've got a hammer and nails.",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "ninaenda",
+          "gloss": "\"I am going\" — ni- (subject: I) + na- (present) + -enda (go). From kuenda. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuenda (to go)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "unaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anaenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanaenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "karakana",
+          "gloss": "workshop"
+        },
+        {
+          "text": "Niko na",
+          "gloss": "\"I have (it on me)\" — Kenyan: -ko na instead of -na",
+          "grammar": [
+            "ko-location"
+          ],
+          "sanifu": "Sanifu: nina"
+        },
+        {
+          "text": "nyundo",
+          "gloss": "hammer"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "misumari",
+          "gloss": "nails (one: msumari)"
+        }
+      ]
+    },
+    {
+      "id": "750dea92-e005-5ade-8e19-5772c853596f",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Mimi niko na msumeno hapa pia.",
+      "english": "I've got a saw here too.",
+      "words": [
+        {
+          "text": "Mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "niko na",
+          "gloss": "\"I have (it on me)\" — Kenyan: -ko na instead of -na",
+          "grammar": [
+            "ko-location"
+          ],
+          "sanifu": "Sanifu: nina"
+        },
+        {
+          "text": "msumeno",
+          "gloss": "saw"
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "pia",
+          "gloss": "also / too"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Mimi niko na msumeno hapa pia.",
+          "correct": true
+        },
+        {
+          "swahili": "Mimi niko na mboga hapa pia.",
+          "correct": false
+        },
+        {
+          "swahili": "Wewe uko na msumeno hapa pia.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "886886c0-048e-524c-9ccc-9fbbf863ffc4",
+      "speaker": "Mzee Ochieng",
+      "role": "auto",
+      "swahili": "Poa! Ninakata mbao kidogo na msumeno, halafu ninagonga misumari na nyundo.",
+      "english": "Great! I cut a bit of wood with the saw, then I hammer in the nails.",
+      "words": [
+        {
+          "text": "Poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Ninakata",
+          "gloss": "\"I am cutting\" — ni- (subject: I) + na- (present) + -kata (cut). From kukata. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kukata (to cut)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninakata"
+              },
+              {
+                "pronoun": "you",
+                "form": "unakata"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anakata"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunakata"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnakata"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanakata"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mbao",
+          "gloss": "wood, planks"
+        },
+        {
+          "text": "kidogo",
+          "gloss": "a little / a bit — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — kidogo (adverb, no agreement)"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "msumeno",
+          "gloss": "saw"
+        },
+        {
+          "text": "halafu",
+          "gloss": "then / and then"
+        },
+        {
+          "text": "ninagonga",
+          "gloss": "\"I knock / hammer in\" — -gonga = knock, hit"
+        },
+        {
+          "text": "misumari",
+          "gloss": "nails (one: msumari)"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "nyundo",
+          "gloss": "hammer"
+        }
+      ]
+    },
+    {
+      "id": "78b85a57-8328-5171-909d-e33b031220f8",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Wee, wewe ni fundi kweli!",
+      "english": "Wow, you're a real fundi!",
+      "words": [
+        {
+          "text": "Wee",
+          "gloss": "hey you! (surprise / emphasis)",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "fundi",
+          "gloss": "skilled worker, craftsman"
+        },
+        {
+          "text": "kweli",
+          "gloss": "true / really",
+          "grammar": [
+            "discourse-particles"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Wee, wewe ni fundi kweli!",
+          "correct": true
+        },
+        {
+          "swahili": "Wee, mimi ni fundi kweli!",
+          "correct": false
+        },
+        {
+          "swahili": "Wee, wewe ni magugu kweli!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "6d6cd3c0-0abe-5f59-b343-d8184666dcf5",
+      "speaker": "Mzee Ochieng",
+      "role": "auto",
+      "swahili": "Haha! Kiti iko sawa sasa. Na bustani ni safi!",
+      "english": "Ha! The chair is fine now. And the garden is neat!",
+      "words": [
+        {
+          "text": "Haha",
+          "gloss": "haha"
+        },
+        {
+          "text": "Kiti",
+          "gloss": "chair",
+          "sanifu": "Sanifu: kiti / viti (ki/vi class)"
+        },
+        {
+          "text": "iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "bustani",
+          "gloss": "garden"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "safi",
+          "gloss": "clean / great / sorted"
+        }
+      ]
+    },
+    {
+      "id": "c464a63c-9240-5124-95d2-e704b5a54f2f",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Asante sana, mzee. Kazi ni nzuri sana!",
+      "english": "Thank you so much, sir. That's really good work!",
+      "words": [
+        {
+          "text": "Asante sana",
+          "gloss": "thank you very much"
+        },
+        {
+          "text": "mzee",
+          "gloss": "\"sir\" — respectful address for an older man"
+        },
+        {
+          "text": "Kazi",
+          "gloss": "work / job — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "nzuri sana",
+          "gloss": "very good",
+          "grammar": [
+            "greetings"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante sana, mzee. Kazi ni nzuri sana!",
+          "correct": true
+        },
+        {
+          "swahili": "Pole sana, mzee. Kazi ni nzuri sana!",
+          "correct": false
+        },
+        {
+          "swahili": "Asante sana, mzee. Kazi ni chafu sana!",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "de71c537-9c89-5167-b3bb-da4d8ab94e6e",
+      "swahili": "bustani",
+      "english": "garden (flowers)",
+      "exampleContext": "shamba = (vegetable) garden, farm"
+    },
+    {
+      "id": "220c47dc-6cbb-5c01-bbe1-1f4cdc90c82e",
+      "swahili": "nyasi",
+      "english": "grass",
+      "exampleContext": "Ninakata nyasi."
+    },
+    {
+      "id": "85c106b3-cefe-5a1c-9149-6465869bc5c4",
+      "swahili": "maua",
+      "english": "flowers",
+      "exampleContext": "Kenyans: maua nyekundu",
+      "sanifu": "maua mekundu",
+      "sanifuNote": "Sanifu: ji/ma class (ua / maua)"
+    },
+    {
+      "id": "aa3fae75-ec11-5c50-8bb8-47194c32414b",
+      "swahili": "magugu",
+      "english": "weeds",
+      "exampleContext": "kung'oa magugu = to pull out weeds"
+    },
+    {
+      "id": "c85d50fa-33db-512a-9921-78b056193cb9",
+      "swahili": "kupanda",
+      "english": "to plant",
+      "exampleContext": "Also: to climb, to get on (a matatu)",
+      "partOfSpeech": "verb"
+    },
+    {
+      "id": "3ad27f14-a42c-56c4-b376-c5afd62b013f",
+      "swahili": "kumwagilia maji",
+      "english": "to water (plants) |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "b29749c1-5e9a-5d15-a945-aaa0909d2ce3",
+      "swahili": "jembe",
+      "english": "hoe |",
+      "exampleContext": ""
+    },
+    {
+      "id": "ee0a8ea6-c8ac-51d1-b6a8-6a27a56138f0",
+      "swahili": "nyundo",
+      "english": "hammer |",
+      "exampleContext": ""
+    },
+    {
+      "id": "ac045c68-1bbe-57e7-b61b-2b53ccb7e1d8",
+      "swahili": "msumeno",
+      "english": "saw |",
+      "exampleContext": ""
+    },
+    {
+      "id": "76afecfe-a6e5-5dda-ad3c-0b0e18088454",
+      "swahili": "msumari / misumari",
+      "english": "nail / nails |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "f90f23d4-38dd-5d7f-a6b6-e6250bbe0825",
+      "swahili": "mbovu",
+      "english": "broken / rotten",
+      "exampleContext": "Kiti ni mbovu."
+    },
+    {
+      "id": "63e294c4-7007-5b1b-ad7d-173fb4d10d41",
+      "swahili": "fundi",
+      "english": "skilled worker, craftsman",
+      "exampleContext": "Wewe ni fundi kweli! = You're a real pro!"
+    },
+    {
+      "id": "872d7bff-5856-526e-a6c7-bb49e52d364e",
+      "swahili": "karakana",
+      "english": "workshop |",
+      "exampleContext": ""
+    }
+  ],
+  "practice": [
+    {
+      "id": "1890501d-e518-597a-9991-c741add8e97f",
+      "mode": "translate",
+      "english": "I'm cutting the grass.",
+      "before": "Ninakata ",
+      "after": ".",
+      "options": [
+        {
+          "text": "nyasi",
+          "correct": true
+        },
+        {
+          "text": "maua",
+          "correct": false,
+          "feedback": "maua = flowers"
+        },
+        {
+          "text": "maji",
+          "correct": false,
+          "feedback": "maji = water"
+        }
+      ],
+      "explanation": "nyasi = grass, maua = flowers, maji = water."
+    },
+    {
+      "id": "408c06c5-eb28-57fe-b7ac-fa9d6dd296a2",
+      "mode": "translate",
+      "english": "He's planting flowers.",
+      "before": "",
+      "after": " maua.",
+      "options": [
+        {
+          "text": "Anapanda",
+          "correct": true
+        },
+        {
+          "text": "Anakata",
+          "correct": false,
+          "feedback": "Anakata = He/she is cutting"
+        },
+        {
+          "text": "Anagonga",
+          "correct": false,
+          "feedback": "Anagonga = He/she is knocking"
+        }
+      ],
+      "explanation": "-panda = plant (also: climb, get on).",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "5626611e-faaa-5bbb-96f1-495e40c45d5f",
+      "mode": "translate",
+      "english": "We're planting sukuma.",
+      "before": "",
+      "after": " sukuma.",
+      "options": [
+        {
+          "text": "Tunapanda",
+          "correct": true
+        },
+        {
+          "text": "Tunakunywa",
+          "correct": false,
+          "feedback": "Tunakunywa = We are drinking"
+        },
+        {
+          "text": "Tunafua",
+          "correct": false,
+          "feedback": "Tunafua = We are doing laundry"
+        }
+      ],
+      "explanation": "Tunapanda = \"We are climbing\" — tu- (subject: we) + na- (present) + -panda (climb). From kupanda.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "f96fb16e-52ed-5253-9ca2-bf3ac425bf79",
+      "mode": "translate",
+      "english": "You pull out the weeds.",
+      "before": "Unang'oa ",
+      "after": ".",
+      "options": [
+        {
+          "text": "magugu",
+          "correct": true
+        },
+        {
+          "text": "maua",
+          "correct": false,
+          "feedback": "maua = flowers"
+        },
+        {
+          "text": "mboga",
+          "correct": false,
+          "feedback": "mboga = vegetables"
+        }
+      ],
+      "explanation": "magugu = weeds, mboga = vegetables."
+    },
+    {
+      "id": "615204cb-4cfe-5ff2-8ac5-38aec0218c24",
+      "mode": "translate",
+      "english": "I'm watering the flowers.",
+      "before": "",
+      "after": " maua maji.",
+      "options": [
+        {
+          "text": "Ninamwagilia",
+          "correct": true
+        },
+        {
+          "text": "Ninakata",
+          "correct": false,
+          "feedback": "Ninakata = I am cutting"
+        },
+        {
+          "text": "Ninapika",
+          "correct": false,
+          "feedback": "Ninapika = I am cooking"
+        }
+      ],
+      "explanation": "-mwagilia maji = water (plants)."
+    },
+    {
+      "id": "46c45a22-bb98-51f7-8f50-af2982621c18",
+      "mode": "translate",
+      "english": "red and yellow flowers",
+      "before": "maua nyekundu na ",
+      "after": "",
+      "options": [
+        {
+          "text": "njano",
+          "correct": true
+        },
+        {
+          "text": "bluu",
+          "correct": false,
+          "feedback": "bluu = blue"
+        },
+        {
+          "text": "nyeusi",
+          "correct": false,
+          "feedback": "nyeusi = black"
+        }
+      ],
+      "explanation": "njano = yellow, bluu = blue, nyeusi = black."
+    },
+    {
+      "id": "256afb54-5c09-5a6e-bf9f-4ad9713bc3bd",
+      "mode": "translate",
+      "english": "The soil is good.",
+      "before": "",
+      "after": " ni mzuri.",
+      "options": [
+        {
+          "text": "Udongo",
+          "correct": true
+        },
+        {
+          "text": "Nyasi",
+          "correct": false,
+          "feedback": "Nyasi = grass"
+        },
+        {
+          "text": "Mbao",
+          "correct": false,
+          "feedback": "Mbao = wood, planks"
+        }
+      ],
+      "explanation": "udongo = soil, mbao = wood."
+    },
+    {
+      "id": "38657b88-fbfd-5bd9-9ca8-6c64ae5e2d8c",
+      "mode": "translate",
+      "english": "I've got a hoe.",
+      "before": "Niko na ",
+      "after": ".",
+      "options": [
+        {
+          "text": "jembe",
+          "correct": true
+        },
+        {
+          "text": "nyundo",
+          "correct": false,
+          "feedback": "nyundo = hammer"
+        },
+        {
+          "text": "msumeno",
+          "correct": false,
+          "feedback": "msumeno = saw"
+        }
+      ],
+      "explanation": "jembe = hoe, nyundo = hammer, msumeno = saw."
+    },
+    {
+      "id": "daf83429-3662-595d-a8d3-4aa09941f20c",
+      "mode": "translate",
+      "english": "a hammer and nails",
+      "before": "nyundo na ",
+      "after": "",
+      "options": [
+        {
+          "text": "misumari",
+          "correct": true
+        },
+        {
+          "text": "mbao",
+          "correct": false,
+          "feedback": "mbao = wood, planks"
+        },
+        {
+          "text": "maua",
+          "correct": false,
+          "feedback": "maua = flowers"
+        }
+      ],
+      "explanation": "msumari = one nail, misumari = nails."
+    },
+    {
+      "id": "5f6876f5-c71e-5f67-9435-7a98091c657e",
+      "mode": "translate",
+      "english": "nails (more than one)",
+      "before": "",
+      "after": "",
+      "options": [
+        {
+          "text": "misumari",
+          "correct": true
+        },
+        {
+          "text": "msumari",
+          "correct": false
+        },
+        {
+          "text": "nyundo",
+          "correct": false,
+          "feedback": "nyundo = hammer"
+        }
+      ],
+      "explanation": "misumari: nails (one: msumari)"
+    },
+    {
+      "id": "1ccd690a-1b7a-50f9-a0a5-45824de258a3",
+      "mode": "translate",
+      "english": "The chair is broken.",
+      "before": "Kiti ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "mbovu",
+          "correct": true
+        },
+        {
+          "text": "safi",
+          "correct": false,
+          "feedback": "safi = clean / great / sorted"
+        },
+        {
+          "text": "mpya",
+          "correct": false,
+          "feedback": "mpya = new"
+        }
+      ],
+      "explanation": "mbovu = broken, safi = clean, mpya = new."
+    },
+    {
+      "id": "6a84c60f-8e62-52e9-96aa-b9ddd5516bb8",
+      "mode": "translate",
+      "english": "I'm cutting wood with the saw.",
+      "before": "Ninakata mbao na ",
+      "after": ".",
+      "options": [
+        {
+          "text": "msumeno",
+          "correct": true
+        },
+        {
+          "text": "nyundo",
+          "correct": false,
+          "feedback": "nyundo = hammer"
+        },
+        {
+          "text": "jembe",
+          "correct": false,
+          "feedback": "jembe = hoe"
+        }
+      ],
+      "explanation": "msumeno: saw"
+    },
+    {
+      "id": "c22ad70a-6a41-5285-9366-fc83885a0729",
+      "mode": "translate",
+      "english": "I'm hammering in the nails.",
+      "before": "",
+      "after": " misumari.",
+      "options": [
+        {
+          "text": "Ninagonga",
+          "correct": true
+        },
+        {
+          "text": "Ninapanda",
+          "correct": false,
+          "feedback": "Ninapanda = I am climbing"
+        },
+        {
+          "text": "Ninang'oa",
+          "correct": false
+        }
+      ],
+      "explanation": "-gonga = knock, hit."
+    },
+    {
+      "id": "54b5b09f-c62e-580c-acf3-d70383747ad9",
+      "mode": "translate",
+      "english": "You're a real fundi!",
+      "before": "Wewe ni ",
+      "after": " kweli!",
+      "options": [
+        {
+          "text": "fundi",
+          "correct": true
+        },
+        {
+          "text": "mgonjwa",
+          "correct": false,
+          "feedback": "mgonjwa = sick person / patient"
+        },
+        {
+          "text": "mgeni",
+          "correct": false,
+          "feedback": "mgeni = guest / stranger / newcomer"
+        }
+      ],
+      "explanation": "fundi = skilled worker, craftsman."
+    },
+    {
+      "id": "ebb15e8f-5342-5418-8b3b-db85b0875499",
+      "mode": "translate",
+      "english": "The garden is neat.",
+      "before": "",
+      "after": " ni safi.",
+      "options": [
+        {
+          "text": "Bustani",
+          "correct": true
+        },
+        {
+          "text": "Karakana",
+          "correct": false,
+          "feedback": "Karakana = workshop"
+        },
+        {
+          "text": "Jikoni",
+          "correct": false,
+          "feedback": "Jikoni = at / in / to the stove"
+        }
+      ],
+      "explanation": "bustani = garden, karakana = workshop."
+    },
+    {
+      "id": "99becb84-21fe-5352-8c01-28383830082e",
+      "mode": "translate",
+      "english": "There are lots of weeds.",
+      "before": "Magugu ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "mingi",
+          "correct": true
+        },
+        {
+          "text": "safi",
+          "correct": false,
+          "feedback": "safi = clean / great / sorted"
+        },
+        {
+          "text": "tamu",
+          "correct": false,
+          "feedback": "tamu = sweet / delicious"
+        }
+      ],
+      "explanation": "Kenyan: mingi. Sanifu: mengi."
+    },
+    {
+      "id": "2c8a87fa-7afd-5b76-9446-ad3115519065",
+      "mode": "complete",
+      "english": "What are you planting? — Flowers.",
+      "before": "Unapanda nini? — ",
+      "after": ".",
+      "options": [
+        {
+          "text": "Maua",
+          "correct": true
+        },
+        {
+          "text": "Nyundo",
+          "correct": false,
+          "feedback": "Nyundo = hammer"
+        },
+        {
+          "text": "Misumari",
+          "correct": false,
+          "feedback": "Misumari = nails (one: msumari)"
+        }
+      ],
+      "explanation": "Maua: flowers"
+    }
+  ]
+}

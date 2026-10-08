@@ -4,8 +4,8 @@
   "title": "Car Trouble on Mombasa Road",
   "category": "transport",
   "difficulty": "medium",
-  "level": 6,
-  "order": 602,
+  "level": 7,
+  "order": 702,
   "theme": "car",
   "culturalNote": "Breaking down is a shared Kenyan experience — strangers stop, someone knows a mechanic (fundi), and a tow truck appears faster than you'd expect. Kenyans treat gari (car) as n/n: \"gari yangu imeharibika\" (my car has broken down), where Sanifu says \"gari langu limeharibika\". The subjunctive shows up whenever you ask, suggest or arrange: \"nimpigie fundi?\" (shall I call a mechanic?), \"tungoje hapa\" (let's wait here).",
   "startingPoint": "Your car stalls on the shoulder of Mombasa Road. A passing motorist, Mwangi, pulls over.",
@@ -583,7 +583,7 @@
       "id": "1ef3ee94-2c12-57c7-929a-7f6aff4196d4",
       "speaker": "Wewe",
       "role": "user",
-      "swahili": "Thelathini? Tusubiri hapa, au twende kwenye kivuli?",
+      "swahili": "Thelathini? Tungoje hapa, au twende kwenye kivuli?",
       "english": "Thirty? Should we wait here, or go into the shade?",
       "words": [
         {
@@ -594,8 +594,8 @@
           ]
         },
         {
-          "text": "Tusubiri",
-          "gloss": "\"Let's wait\" — tu- + -subiri (non -a verbs don't change)",
+          "text": "Tungoje",
+          "gloss": "\"Let's wait\" — tu- + -ngoj- + -e (the final -a becomes -e)",
           "grammar": [
             "subjunctive"
           ]
@@ -659,15 +659,15 @@
       ],
       "options": [
         {
-          "swahili": "Thelathini? Tusubiri hapa, au twende kwenye kivuli?",
+          "swahili": "Thelathini? Tungoje hapa, au twende kwenye kivuli?",
           "correct": true
         },
         {
-          "swahili": "Thelathini? Tunasubiri hapa, au twende kwenye kivuli?",
+          "swahili": "Thelathini? Tunangoja hapa, au twende kwenye kivuli?",
           "correct": false
         },
         {
-          "swahili": "Thelathini? Tusubiri hapa, au tuende kwenye maji?",
+          "swahili": "Thelathini? Tungoje hapa, au tuende kwenye maji?",
           "correct": false
         }
       ]
@@ -1364,9 +1364,9 @@
     },
     {
       "id": "4bf42c27-ba07-58a0-bdda-4595992da304",
-      "swahili": "Tusubiri",
+      "swahili": "Tungoje",
       "english": "Let's wait",
-      "exampleContext": "subiri keeps its -i"
+      "exampleContext": "ngoja → tungoje: the final -a becomes -e"
     },
     {
       "id": "2f0246a9-ebf5-509e-9fdb-b829ea2f8779",
@@ -1533,21 +1533,21 @@
       "after": " hapa.",
       "options": [
         {
-          "text": "Tusubiri",
+          "text": "Tungoje",
           "correct": true
         },
         {
-          "text": "Tunasubiri",
+          "text": "Tunangoja",
           "correct": false,
-          "feedback": "Tunasubiri = We are waiting"
+          "feedback": "Tunangoja = We are waiting"
         },
         {
-          "text": "Tulisubiri",
+          "text": "Tulingoja",
           "correct": false,
-          "feedback": "Tulisubiri = We waited"
+          "feedback": "Tulingoja = We waited"
         }
       ],
-      "explanation": "subiri doesn't end in -a, so its subjunctive looks the same: tusubiri.",
+      "explanation": "ngoja → tungoje: the final -a becomes -e.",
       "grammar": [
         "subjunctive"
       ]

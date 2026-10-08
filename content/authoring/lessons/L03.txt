@@ -1,224 +1,371 @@
-# Level 3 — future -ta-, imperatives, polite "niletee", helper verbs (weza, lazima), Swahili time, -ni / kwa
+# Level 3 — getting around & daily life. Level-1 grammar only + Swahili time.
 
-@lesson matatu-to-town
-title: Matatu to Town
+@lesson directions-village
+title: Which Way to the Hospital? Directions Upcountry
 level: 3
-theme: transport
-category: transport
-culture: Matatus are Nairobi's privately run minibuses — loud music, graffiti art, and a makanga (conductor) hanging out of the door shouting the route. Fares aren't fixed: they rise at rush hour and when it rains, so it's normal to ask "Nauli ni ngapi?" before you get in. You get off by shouting where you want to stop. Imperatives are the plain verb: Panda! (get in), Shuka! (get off), Simama! (stop).
-start: You're at the stage in Kilimani. A makanga is shouting for passengers to town.
-grammar: future-ta, imperatives, numbers-money
-gl: Kencom = Kencom — the big matatu stop in the CBD
-gl: Tao = "Town!" — the makanga's call: this matatu goes to the CBD.
-gl: kiti ya mbele = "the front seat" — Kenyan agreement. || Sanifu: kiti cha mbele (kiti is ki/vi) #sanifu-noun-classes
-gl: iko na mtu = "is taken" — lit. "is with someone". Kenyan -ko na for "have". || Sanifu: kina mtu #na-have
-gl: kawaida = "normally / usually"
-gl: Nashuka = "I'm getting off" — short for ninashuka. #present-na
-gl: Haya = "Alright!"
-gl: benki = bank
-gl: rush hour = rush hour (English)
-gl: inapanda = "is going up" — kupanda = to climb / go up #present-na
+index: 1
+theme: directions
+category: directions
+culture: Outside the big cities, directions are given by landmarks — the shop, the wooden bridge, the primary school, the small hill — and almost never by street names. Kenyans describe a route in the present tense, step by step: "unaenda moja kwa moja, halafu unageuka kushoto" (you go straight, then you turn left). Locals are generous with directions; a greeting first ("Habari yako, kaka?") makes all the difference.
+start: You're visiting a small town near Nyahururu and need the district hospital. A young man is standing outside a shop.
+grammar: ko-location, present-na, locative-ni, question-words
+gl: kaka = "brother" — polite way to address a young man
+gl: hospitali ya wilaya = "the district hospital"
+gl: Si mbali = "it's not far". #ni-copula
+gl: hadi = "up to, until"
+gl: dukani = "at the shop" — duka + -ni. #locative-ni
+gl: Dukani = "at the shop" — duka + -ni. #locative-ni
+gl: Halafu = "then, after that"
+gl: halafu = "then, after that"
+gl: daraja = bridge || Sanifu: daraja / madaraja (ji/ma class)
+gl: daraja ndogo ya mbao = "a small wooden bridge" || Sanifu: daraja dogo la mbao (ji/ma class)
+gl: Upande wa kulia = "on the right(-hand side)"
+gl: upande wa kushoto = "on the left(-hand side)"
+gl: shule ya msingi = "primary school"
+gl: shuleni = "at school" — shule + -ni. #locative-ni
+gl: Baada ya = "after"
+gl: kilima = hill || Sanifu: kilima / vilima (ki/vi class)
+gl: stage ya basi = "the bus stop"
+gl: sokoni = "at the market" — soko + -ni. #locative-ni
+gl: mbele ya = "in front of"
+gl: Kutoka = "from"
+gl: barabara kuu = "the main road"
+gl: taa za barabarani = "traffic lights" — lit. "lights of the road"
+gl: pembeni ya = "beside, at the side of"
+gl: jengo ya kaunti = "the county building" || Sanifu: jengo la kaunti (ji/ma class)
+gl: posta = post office
+gl: njia = way, route
+gl: Safari njema = "have a good trip"
 
-> Makanga: Tao! Tao! Kencom! Panda, boss! | Town! Town! Kencom! Get in, boss!
-< Mgeni: Matatu hii inaenda Kencom? | Does this matatu go to Kencom?
-  x: Matatu hii anaenda Kencom? ; Matatu hizi inaenda Kencom?
-> Makanga: Ndiyo, moja kwa moja. Panda haraka, tunaondoka! | Yes, straight there. Get in quickly, we're leaving!
-< Mgeni: Nauli ni ngapi? | How much is the fare?
-  x: Nauli ni wapi? ; Nauli ni nani?
-> Makanga: Ni mia moja. | It's a hundred.
-< Mgeni: Mia moja? Kawaida ni sabini! | A hundred? Normally it's seventy!
-  x: Mia moja? Kawaida ni sabini tu, asante! ; Mia moja? Sitaki sabini!
-> Makanga: Saa hii ni rush hour, boss. Bei inapanda. | Right now it's rush hour, boss. The price goes up.
-< Mgeni: Sawa. Nitalipa mia moja, lakini nipe kiti ya mbele. | Okay. I'll pay a hundred, but give me the front seat.
-  s: Sawa. Nitalipa mia moja, lakini nipe kiti cha mbele.
-> Makanga: Kiti ya mbele iko na mtu. Kaa hapa nyuma, kuna nafasi. | The front seat is taken. Sit here at the back, there's space.
-  s: Kiti cha mbele kina mtu. Kaa hapa nyuma, kuna nafasi.
-< Mgeni: Haya. Nitashuka Kencom. Utaniambia? | Alright. I'll get off at Kencom. Will you tell me?
-  x: Haya. Utashuka Kencom. Nitakuambia? ; Haya. Nitashuka Kencom. Nitakuambia?
-> Makanga: Sawa, nitakuambia. | Okay, I'll tell you.
-> Makanga: Kencom! Kencom! Nani anashuka? | Kencom! Kencom! Who's getting off?
-< Mgeni: Mimi! Simama hapa, nashuka! | Me! Stop here, I'm getting off!
-  x: Mimi! Panda hapa, nashuka! ; Mimi! Simama hapa, anashuka!
-> Makanga: Dereva, simama! Shuka haraka, boss. | Driver, stop! Get off quickly, boss.
-< Mgeni: Asante! Matatu ya kurudi Kilimani iko wapi? | Thanks! Where's the matatu back to Kilimani?
-  x: Asante! Matatu ya kurudi Kilimani ziko wapi? ; Asante! Matatu ya kurudi Kilimani yuko wapi?
-> Makanga: Iko pale, karibu na benki. Uliza tu! | It's over there, near the bank. Just ask!
+< John: Habari yako, kaka? Samahani, hospitali ya wilaya iko wapi? | Hello, brother. Excuse me, where is the district hospital?
+  x: Habari yako, kaka? Samahani, hospitali ya wilaya iko lini? ; Habari yako, kaka? Samahani, hospitali ya wilaya ni nani?
+> Kijana: Salama! Si mbali. Unaenda mbele kidogo hadi dukani, halafu unageuka kushoto. | Fine! It's not far. You go on a little to the shop, then you turn left.
+< John: Sawa. Dukani ninageuka kushoto. Halafu? | Okay. At the shop I turn left. Then?
+  x: Sawa. Dukani ninageuka kulia. Halafu? ; Sawa. Dukani unageuka kushoto. Halafu?
+> Kijana: Unateremka barabara hadi daraja ndogo ya mbao. Upande wa kulia, unaona shule ya msingi. | You go down the road to a small wooden bridge. On the right, you see a primary school.
+< John: Hospitali iko karibu na shule? | Is the hospital near the school?
+  x: Hospitali iko karibu na shule wapi? ; Hospitali niko karibu na shule?
+> Kijana: Iko mbali kidogo. Baada ya shule, unapanda kilima kidogo, na hospitali iko upande wa kushoto. | It's a bit further. After the school, you climb a small hill, and the hospital is on the left.
+< John: Asante. Na stage ya basi iko wapi? | Thanks. And where's the bus stop?
+  x: Asante. Na stage ya basi iko nani? ; Asante. Na stage ya basi tuko wapi?
+> Kijana: Iko sokoni, mbele ya benki. Unarudi nyuma, unaenda moja kwa moja hadi sokoni. | It's at the market, in front of the bank. You go back, you go straight on to the market.
+< John: Moja kwa moja hadi sokoni. Na posta je? | Straight on to the market. And the post office?
+  x: Kushoto hadi sokoni. Na posta je? ; Moja kwa moja hadi shuleni. Na posta je?
+> Kijana: Kutoka sokoni, unafuata barabara kuu, unavuka taa za barabarani, na posta iko pembeni ya jengo ya kaunti. | From the market, you follow the main road, you cross at the traffic lights, and the post office is beside the county building.
+< John: Asante sana, kaka! Sasa ninajua njia. | Thanks so much, brother! Now I know the way.
+  x: Asante sana, kaka! Sasa unajua njia. ; Pole sana, kaka! Sasa ninajua njia.
+> Kijana: Karibu! Safari njema! | You're welcome! Have a good trip!
 
 @practice
-t: I'll pay a hundred. | [Nitalipa|Utalipa|Tutalipa] mia moja. || Future: ni- (I) + -ta- (future) + -lipa (pay).
-t: I'll get off at Kencom. | [Nitashuka|Utashuka|Atashuka] Kencom.
-t: We will leave now. | [Tutaondoka|Wataondoka|Nitaondoka] sasa. || tu- (we) + -ta- + -ondoka.
-t: Will you tell me? | [Utaniambia|Nitakuambia|Ataniambia]? || u- (you) + -ta- + -ni- (me) + -ambia (tell).
-c: Okay, I'll tell you. | Sawa, [nitakuambia|utaniambia|nitamwambia]. || -ku- = you, -mw- = him/her.
-t: Get in! | [Panda|Shuka|Simama]! || The imperative is just the verb stem: panda (get in / climb).
-t: Get off quickly! | [Shuka|Panda|Kaa] haraka!
-t: Stop here! | [Simama|Shuka|Ondoka] hapa!
-t: Sit at the back. | Kaa hapa [nyuma|mbele|juu]. || nyuma = behind / at the back; mbele = in front.
-t: Get in, you all! | [Pandeni|Panda|Shukeni]! || Talking to several people, add -eni: panda → pandeni.
-t: Just ask! | [Uliza|Jibu|Lipa] tu!
-t: Does this matatu go to Kencom? | Matatu hii [inaenda|unaenda|anaenda] Kencom? || matatu is n/n, so its verb takes i-.
-t: The price goes up. | Bei [inapanda|inashuka|zinapanda]. || inapanda = goes up; inashuka = goes down.
-t: Who is getting off? | Nani [anashuka|wanashuka|unashuka]? || nani takes the he/she form.
-t: Tomorrow I'll come back. | Kesho [nitarudi|utarudi|ninarudi].
-c: There's space. | Kuna [nafasi|nauli|kona]. || kuna = there is.
-t: Drive slowly! | Endesha [pole pole|haraka|moja kwa moja]!
+t: Where is the hospital? | [Hospitali|Shule|Benki] iko wapi? || hospitali = hospital, shule = school, benki = bank.
+t: It's not far. | [Si|Ni|Iko] mbali. || si = is not, ni = is.
+t: You go straight on. | Unaenda [moja kwa moja|kushoto|nyuma]. || moja kwa moja = straight on, kushoto = left, nyuma = back.
+t: You turn left. | Unageuka [kushoto|kulia|mbele]. || kushoto = left, kulia = right, mbele = ahead.
+t: At the shop I turn right. | Dukani ninageuka [kulia|kushoto|nyuma].
+t: You go down the road. | [Unateremka|Unapanda|Unavuka] barabara. || -teremka = go down, -panda = go up / climb, -vuka = cross.
+t: You climb a small hill. | Unapanda [kilima|daraja|soko] kidogo. || kilima = hill, daraja = bridge, soko = market.
+t: You cross the road. | [Unavuka|Unateremka|Unageuka] barabara.
+t: on the right | upande wa [kulia|kushoto|mbele]
+t: near the school | [karibu na|mbali na|ndani ya] shule || karibu na = near, mbali na = far from, ndani ya = inside.
+t: in front of the bank | [mbele ya|nyuma ya|karibu na] benki || mbele ya = in front of, nyuma ya = behind.
+t: at the market | [sokoni|shuleni|dukani] || soko + -ni = at the market.
+t: You go back. | Unarudi [nyuma|mbele|kushoto].
+t: You follow the main road. | [Unafuata|Unavuka|Unapanda] barabara kuu. || -fuata = follow.
+t: Now I know the way. | Sasa [ninajua|unajua|anajua] njia.
+t: They live near the bridge. | [Wanaishi|Anaishi|Tunaishi] karibu na daraja.
+c: Where's the bus stop? — At the market. | Stage ya basi iko wapi? — Iko [sokoni|lini|nani].
 
 @vocab
-Panda! | Get in! / Get on! | kupanda = to climb, to board
-Shuka! | Get off! | Nashuka hapa = I'm getting off here
-Simama hapa! | Stop here! | kusimama = to stop / to stand
-Nauli ni ngapi? | How much is the fare? | nauli = fare
-tao | town (the CBD) | Matatu touts shout "Tao! Tao!"
-makanga | matatu conductor | Collects fares, shouts the route
-Nitalipa | I will pay | ni- + -ta- (future) + -lipa
-Nitashuka… | I'll get off at… |
-Utaniambia? | Will you tell me? | -ni- = me
-kiti ya mbele | the front seat | Kenyan agreement. | kiti cha mbele | Sanifu: kiti is ki/vi class
-Kuna nafasi | There's space | kuna = there is
-haraka | quickly / hurry | Shuka haraka = get off quickly
-Uliza tu | Just ask |
+Iko wapi? | Where is it? | Hospitali iko wapi?
+moja kwa moja | straight on | lit. "one by one"
+kushoto / kulia | left / right | upande wa kushoto = on the left
+-geuka | turn | Unageuka kulia.
+-panda / -teremka | go up / go down | Unapanda kilima.
+-vuka | cross | Unavuka barabara.
+-fuata | follow | Unafuata barabara kuu.
+karibu na / mbali na | near / far from | Si mbali = it's not far.
+mbele ya / nyuma ya | in front of / behind | mbele ya benki
+daraja | bridge | Kenyans: daraja ndogo | daraja dogo | Sanifu: ji/ma class
+kilima | hill | Sanifu: ki/vi class (kilima / vilima)
+taa za barabarani | traffic lights | lit. "lights of the road"
+njia | way / route | Sasa ninajua njia.
 
-@lesson kibanda-lunch
-title: Lunch at the Kibanda
+@lesson weather-seasons
+title: Rain, Sun and Cold July: Talking Weather
 level: 3
-theme: food
-category: food-drink
-culture: A kibanda (or "kibanda cha chakula") is a roadside food stall: plastic chairs, a hot plate, and the best-value lunch in Nairobi — chapati, beans (maharagwe), ugali with meat or sukuma. Tea comes already sweetened unless you say otherwise. To order, Kenyans usually say "Niletee…" (bring me…) or the softer "Naweza kupata…?" (can I get…?). "Karibu chakula" is the polite thing to say when food arrives — lit. "welcome to the food".
-start: Lunchtime. You sit down at a kibanda near the office.
-grammar: future-ta, imperatives, helper-verbs
-gl: Mnapika = "you (all) are cooking" — m- (you all) + -na- + -pika. Asking the staff as a group. #present-na
-gl: Karibu chakula = "Enjoy your meal" — lit. "welcome to the food"
-gl: kitu ingine = "anything else" — Kenyan all-purpose ingine. || Sanifu: kitu kingine (ki/vi class) #sanifu-noun-classes
-gl: kwa ukuta = "on the wall" — Kenyan use of kwa. || Sanifu: ukutani #locative-ni
-gl: Chakula itakuja = "The food will come" — Kenyan n/n agreement on chakula. || Sanifu: Chakula kitakuja (ki/vi) #future-ta
+index: 2
+theme: weather
+category: weather
+culture: Kenya sits on the equator, so there's no winter or summer — there are rains. The long rains (masika) fall from March to May, the short rains (vuli) from October to December, and the dry season (kiangazi) comes in between. Nairobi is high up, so July is surprisingly cold and grey; Kenyans in jackets and scarves will tell you "ni baridi sana!". Weather is the safest small talk there is.
+start: A grey July morning. You meet your neighbour Mama Njeri at the gate, wrapped in a shawl.
+grammar: ni-copula, present-na, time-swahili
+gl: Mama Njeri = "Njeri's mum" — your neighbour
+gl: mwezi wa saba = "the seventh month" — July
+gl: Julai = July
+gl: kila mwaka = "every year"
+gl: mwaka mzima = "the whole year"
+gl: anga = sky
+gl: nyeusi = dark / black
+gl: inakuja = "is coming" — -ja = come
+gl: msimu wa mvua = "the rainy season"
+gl: Mvua kubwa = "the big (long) rains"
+gl: masika = the long rains (March–May)
+gl: vuli = the short rains (October–December)
+gl: mwezi wa tatu = March
+gl: mwezi wa tano = May
+gl: mwezi wa kumi = October
+gl: mwezi wa kumi na mbili = December
+gl: Mvua ndogo = "the small (short) rains"
+gl: kiangazi = the dry season || Sanifu: ki/vi class
+gl: inanyesha = "is falling (rain)" — -nyesha = rain
+gl: mwavuli = umbrella
+gl: koti = jacket / coat
+gl: Upepo = wind
+gl: mkali = strong / fierce
+gl: Siku njema = "have a good day"
 
-> Mhudumu: Karibu! Kaa hapa. Utakula nini? | Welcome! Sit here. What will you eat?
-< Mteja: Asante. Mnapika nini leo? | Thanks. What are you cooking today?
-  x: Asante. Ninapika nini leo? ; Asante. Mnapika wapi leo?
-> Mhudumu: Tuna chapati, maharagwe, ugali na nyama, na sukuma. | We have chapati, beans, ugali with meat, and sukuma.
-< Mteja: Naweza kupata chapati mbili na maharagwe? | Can I get two chapatis and beans?
-  x: Unaweza kupata chapati mbili na maharagwe? ; Naweza kupata chapati wawili na maharagwe?
-> Mhudumu: Ndiyo. Utakunywa chai au soda? | Yes. Will you drink tea or soda?
-< Mteja: Niletee chai, tafadhali. Lakini sitaki sukari nyingi. | Bring me tea, please. But I don't want a lot of sugar.
-  x: Mletee chai, tafadhali. Lakini sitaki sukari nyingi. ; Niletee chai, tafadhali. Lakini nataka sukari nyingi.
-> Mhudumu: Chai hapa inakuja na sukari tayari. | Tea here comes with sugar already.
-< Mteja: Aah, sawa. Lete tu. | Ah, okay. Just bring it.
-  x: Aah, sawa. Kula tu. ; Aah, sawa. Lipa tu.
-> Mhudumu: Haya. Chakula itakuja baada ya dakika tano. | Alright. The food will come in five minutes.
-  s: Haya. Chakula kitakuja baada ya dakika tano.
-> Mhudumu: Hii hapa. Karibu chakula! | Here it is. Enjoy your meal!
-< Mteja: Asante! Inanukia vizuri sana. | Thanks! It smells really good.
-  x: Asante! Ninanukia vizuri sana. ; Asante! Inanukia vibaya sana.
-> Mhudumu: Utahitaji kitu ingine? | Will you need anything else?
-  s: Utahitaji kitu kingine?
-< Mteja: Hapana, asante. Nitalipa sasa. Ni pesa ngapi? | No, thanks. I'll pay now. How much is it?
-  x: Hapana, asante. Utalipa sasa. Ni pesa ngapi? ; Hapana, asante. Nitalipa sasa. Ni pesa wapi?
-> Mhudumu: Ni mia mbili na hamsini. Lipa kwa M-Pesa, till iko kwa ukuta. | It's 250. Pay with M-Pesa — the till number is on the wall.
-< Mteja: Sawa. Chakula ni tamu sana! Nitarudi kesho. | Okay. The food is really tasty! I'll come back tomorrow.
-  x: Sawa. Chakula ni tamu sana! Nilirudi kesho. ; Sawa. Chakula ni tamu sana! Utarudi kesho.
+> Mama Njeri: Habari ya asubuhi, John! Leo ni baridi sana! | Good morning, John! It's very cold today!
+< John: Nzuri, mama. Ndiyo, ni baridi sana! Kwa nini? | Good, ma'am. Yes, it's very cold! Why?
+  x: Nzuri, mama. Ndiyo, ni joto sana! Kwa nini? ; Nzuri, mama. Ndiyo, ni baridi sana! Kwa nani?
+> Mama Njeri: Ni mwezi wa saba — Julai ni baridi kila mwaka hapa Nairobi. | It's the seventh month — July is cold every year here in Nairobi.
+< John: Kweli? Kampala ni joto mwaka mzima! | Really? Kampala is warm all year round!
+  x: Kweli? Kampala ni baridi mwaka mzima! ; Kweli? Kampala ni joto mwaka wapi!
+> Mama Njeri: Haha! Na anga ni nyeusi — mvua inakuja. | Ha! And the sky is dark — the rain is coming.
+< John: Ni msimu wa mvua sasa? | Is it the rainy season now?
+  x: Ni msimu wa mvua wapi? ; Ni mwavuli wa mvua sasa?
+> Mama Njeri: Hapana. Mvua kubwa — masika — ni mwezi wa tatu hadi wa tano. Mvua ndogo — vuli — ni mwezi wa kumi hadi wa kumi na mbili. | No. The long rains — masika — are March to May. The short rains — vuli — are October to December.
+< John: Na sasa, mwezi wa saba, ni kiangazi? | And now, in July, it's the dry season?
+  x: Na sasa, mwezi wa saba, ni masika? ; Na sasa, mwezi wa kumi, ni kiangazi?
+> Mama Njeri: Ndiyo, ni kiangazi na ni baridi. Lakini leo mvua kidogo inanyesha. | Yes, it's the dry season and it's cold. But today a little rain is falling.
+< John: Poa. Ninachukua mwavuli na koti. | Okay. I'm taking an umbrella and a jacket.
+  x: Poa. Unachukua mwavuli na koti. ; Poa. Ninakula mwavuli na koti.
+> Mama Njeri: Ni vizuri. Upepo pia ni mkali leo. | Good. The wind is strong today too.
+< John: Asante, mama. Siku njema! | Thank you, ma'am. Have a good day!
+  x: Asante, mama. Usiku mwema! ; Pole, mama. Siku njema!
+> Mama Njeri: Na wewe pia. Kwa heri! | You too. Bye!
 
 @practice
-t: What will you eat? | [Utakula|Nitakula|Atakula] nini? || kula keeps its ku- in the future: u- + -ta- + -kula.
-t: I will drink tea. | [Nitakunywa|Utakunywa|Tutakunywa] chai. || kunywa also keeps ku-: nitakunywa.
-t: Can I get beans? | [Naweza|Unaweza|Anaweza] kupata maharagwe? || naweza = I can (short for ninaweza) + an infinitive: kupata (to get).
-t: Can you help me? | [Unaweza|Naweza|Wanaweza] kunisaidia? || -weza (can) is followed by a ku- verb.
-t: Bring me tea, please. | [Niletee|Mletee|Waletee] chai, tafadhali. || Niletee = bring ME: ni- (me) + -letee (bring for). Mletee = bring him/her; waletee = bring them.
-t: Just bring it. | [Lete|Kula|Lipa] tu.
-t: Pay with M-Pesa. | [Lipa|Lete|Pika] kwa M-Pesa.
-t: Sit here. | [Kaa|Kula|Kunywa] hapa.
-t: I don't want a lot of sugar. | Sitaki sukari [nyingi|wengi|mengi]. || nyingi = a lot (n/n). Wengi is for people.
-t: The food will come in five minutes. | Chakula [itakuja|inakuja|itarudi] baada ya dakika tano. || Kenyans say chakula itakuja; Sanifu: chakula kitakuja.
-t: It smells really good. | [Inanukia|Ninanukia|Unanukia] vizuri sana.
-t: Will you need anything else? | [Utahitaji|Nitahitaji|Watahitaji] kitu ingine?
-t: I'll pay now. | [Nitalipa|Utalipa|Tutalipa] sasa.
-t: We have chapati. | [Tuna|Mna|Wana] chapati.
-t: I'll come back tomorrow. | [Nitarudi|Nitaondoka|Nitashuka] kesho.
-t: tea or soda? | chai [au|na|lakini] soda? || au = or, na = and, lakini = but.
-t: two chapatis | chapati [mbili|wawili|pili] || chapati is n/n: mbili. (Wawili is for people; pili means "second".)
+t: It's very cold today. | Leo ni [baridi|joto|mvua] sana. || baridi = cold, joto = warm / hot.
+t: Kampala is warm all year round. | Kampala ni [joto|baridi|kiangazi] mwaka mzima.
+t: The rain is coming. | [Mvua|Jua|Upepo] inakuja. || mvua = rain, jua = sun, upepo = wind.
+t: It's raining. | Mvua [inanyesha|inakuja|inaenda]. || -nyesha = (of rain) fall.
+t: The sun is very strong. | [Jua|Mvua|Anga] ni kali sana. || jua = sun, anga = sky.
+t: The sky is dark. | Anga ni [nyeusi|nyeupe|bluu]. || nyeusi = dark / black, nyeupe = white.
+t: the long rains (March–May) | [masika|vuli|kiangazi] || masika = long rains, vuli = short rains, kiangazi = dry season.
+t: the short rains (Oct–Dec) | [vuli|masika|kiangazi]
+t: the dry season | [kiangazi|masika|vuli]
+t: July (the seventh month) | mwezi wa [saba|tano|tisa] || Months are numbered: mwezi wa kwanza = January … mwezi wa saba = July.
+t: December | mwezi wa [kumi na mbili|kumi|mbili] || December = the twelfth month.
+t: I'm taking an umbrella. | Ninachukua [mwavuli|miwani|kofia]. || mwavuli = umbrella, miwani = glasses, kofia = hat.
+t: She's taking a jacket. | [Anachukua|Ninachukua|Wanachukua] koti.
+t: every year | kila [mwaka|mwezi|siku] || mwaka = year, mwezi = month, siku = day.
+t: The wind is strong. | [Upepo|Mvua|Jua] ni mkali. || upepo = wind.
+c: How's the weather? — It's cold. | Hali ya hewa iko aje? — Ni [baridi|njaa|kazi].
 
 @vocab
-Utakula nini? | What will you eat? | u- + -ta- + kula (kula keeps its ku-)
-Naweza kupata…? | Can I get…? | Polite ordering. naweza = I can
-Niletee… | Bring me… | ni- (me) + -letee (bring for)
-Lete tu | Just bring it | lete = bring!
-maharagwe | beans | Chapati na maharagwe = a classic kibanda lunch
-chapati | chapati | Kenyan flatbread; n/n: chapati mbili
-Karibu chakula! | Enjoy your meal! | Lit. "welcome to the food"
-Inanukia vizuri | It smells good |
-kitu ingine | anything else | Kenyan. | kitu kingine | Sanifu: kitu is ki/vi class
-Ni pesa ngapi? | How much is it? |
-baada ya dakika tano | in five minutes | Lit. "after five minutes"
-tamu | tasty / sweet | Chakula ni tamu = the food is tasty
-Nitarudi kesho | I'll come back tomorrow |
+hali ya hewa | weather | lit. "the state of the air"
+baridi / joto | cold / warm, hot | Leo ni baridi.
+mvua | rain | Mvua inanyesha = it's raining.
+jua | sun | Jua ni kali = the sun is strong.
+upepo | wind |
+anga | sky |
+msimu | season | Plural: misimu
+masika / vuli | long rains / short rains | March–May / October–December
+kiangazi | dry season | Sanifu: ki/vi class
+mwezi wa saba | July | Months are numbered: mwezi wa kwanza … wa kumi na mbili
+mwaka | year | kila mwaka = every year
+mwavuli | umbrella |
+koti | jacket / coat |
 
-@lesson saturday-plans
-title: Plans for Saturday (and Swahili Time)
+@lesson daily-routine
+title: A Day in My Life: Swahili Time
 level: 3
-theme: friends
+index: 3
+theme: routine
 category: time
-culture: Swahili time starts at sunrise, not midnight. 7 a.m. is saa moja ("the first hour"), 8 a.m. is saa mbili, noon is saa sita, and 6 p.m. is saa kumi na mbili. The trick: add or subtract six from the clock time. Kenyans switch between Swahili time and English time ("seven") all day — when it matters, check which one someone means! A day trip to Lake Naivasha (90 km away) is a classic weekend plan.
-start: Your friend Otieno calls you on Wednesday evening.
-grammar: future-ta, time-swahili, helper-verbs, locative-ni
-gl: Sema = "Talk to me!" — casual phone hello (lit. "say!")
-gl: seven = "seven" — English time. Kenyans mix English and Swahili time all the time.
-gl: ziwani = "at the lake" — ziwa + -ni (place suffix). #locative-ni
-gl: Safi sana = "Excellent!" — lit. "very clean"
-gl: marafiki = friends (plural of rafiki)
-gl: tuondoke = "(that) we leave" — subjunctive after lazima: tu- + -ondok- + -e. #subjunctive
-gl: kali = "fierce / strong / sharp" — jua ni kali = the sun is strong
-gl: huko = "there" — that place (Naivasha)
+culture: Swahili time starts at sunrise, not midnight: 7 a.m. is "saa moja asubuhi" (the first hour of the morning), and 6 a.m. is "saa kumi na mbili" (the twelfth hour). The trick is to add or subtract six. Kenyans also talk about "Kenyan time" — a meeting at "saa tatu" may start closer to ten. Days of the week are counted from Saturday: Jumamosi (Sat), Jumapili (Sun), Jumatatu (Mon), Jumanne (Tue), Jumatano (Wed), Alhamisi (Thu), Ijumaa (Fri).
+start: Tea break at the office. Your colleague Achieng wants to know how you manage to be first in every morning.
+grammar: time-swahili, present-na, question-words
+gl: Achieng = Achieng (a Luo name)
+gl: unaamka = "you wake up" — -amka = wake up
+gl: Ninaamka = "I wake up" — -amka = wake up
+gl: saa ngapi = "what time" (lit. "which hour?")
+gl: saa kumi na mbili asubuhi = 6 a.m. (lit. "the 12th hour of the morning")
+gl: saa kumi na mbili jioni = 6 p.m. (lit. "the 12th hour of the evening")
+gl: kila siku = "every day"
+gl: Mapema = early
+gl: Ninaoga = "I shower / bathe" — -oga = bathe
+gl: ninakunywa = "I drink" — -nywa = drink
+gl: saa moja na nusu = 7:30 (lit. "the first hour and a half")
+gl: Unafika = "you arrive" — -fika = arrive
+gl: Ninafika = "I arrive" — -fika = arrive
+gl: saa mbili kamili = 8 o'clock sharp
+gl: mzungu = foreigner (usually white)
+gl: kwa wakati = "on time"
+gl: saa tatu = 9 o'clock
+gl: unarudi = "you go back / return" — -rudi = return
+gl: Ninarudi = "I go back / return" — -rudi = return
+gl: saa kumi na moja jioni = 5 p.m.
+gl: Jioni = "in the evening"
+gl: ninatazama = "I watch" — -tazama = watch, look at
+gl: gym = gym (English)
+gl: Jumatatu = Monday
+gl: Jumatano = Wednesday
+gl: Jumamosi = Saturday
+gl: Jumapili = Sunday
+gl: ninalala = "I sleep" — -lala = sleep
+gl: saa nne usiku = 10 p.m. (lit. "the 4th hour of the night")
+gl: usiku = night
+gl: Tuonane = "see you" — set phrase (lit. "let's see each other")
 
-> Otieno: Sema, John! Utafanya nini Jumamosi? | Hey, John! What will you do on Saturday?
-< John: Sijui bado. Kwa nini? | I don't know yet. Why?
-  x: Najua bado. Kwa nini? ; Sijui bado. Kwa wapi?
-> Otieno: Tutaenda Naivasha na marafiki. Utakuja? | We're going to Naivasha with friends. Will you come?
-< John: Ndiyo, nitakuja! Mtaondoka saa ngapi? | Yes, I'll come! What time will you leave?
-  x: Ndiyo, utakuja! Mtaondoka saa ngapi? ; Ndiyo, nitakuja! Mtaondoka saa gani?
-> Otieno: Saa moja asubuhi. Lazima tuondoke mapema, kuna magari mingi. | At seven in the morning. We have to leave early, there's traffic.
-< John: Saa moja? Mapema sana! Saa moja ni seven, sivyo? | Saa moja? Very early! Saa moja is seven, right?
-  x: Saa moja? Mapema sana! Saa moja ni one, sivyo? ; Saa moja? Mapema sana! Saa moja ni six, sivyo?
-> Otieno: Ndiyo, seven. Tutapita kwako saa kumi na mbili na nusu. | Yes, seven. We'll pass by your place at six thirty.
-< John: Sawa. Nitakuwa tayari. Nitaleta nini? | Okay. I'll be ready. What should I bring?
-  x: Sawa. Utakuwa tayari. Nitaleta nini? ; Sawa. Nitakuwa tayari. Nitaleta wapi?
-> Otieno: Lete maji na kofia. Jua ni kali sana huko. | Bring water and a hat. The sun is really strong there.
-< John: Poa. Na chakula? | Cool. And food?
-  x: Poa. Na chakula wapi? ; Pole. Na chakula?
-> Otieno: Tutakula nyama choma pale ziwani. | We'll eat nyama choma there at the lake.
-< John: Safi sana! Tutaonana Jumamosi. | Excellent! See you on Saturday.
-  x: Safi sana! Tutaonana Jumapili. ; Safi sana! Tulionana Jumamosi.
-> Otieno: Poa. Usisahau, saa kumi na mbili na nusu! | Cool. Don't forget — six thirty!
+> Achieng: John, unaamka saa ngapi kila siku? | John, what time do you wake up every day?
+< John: Ninaamka saa kumi na mbili asubuhi. | I wake up at 6 a.m.
+  x: Ninalala saa kumi na mbili asubuhi. ; Unaamka saa kumi na mbili asubuhi.
+> Achieng: Mapema sana! Halafu unafanya nini? | Very early! Then what do you do?
+< John: Ninaoga, ninakunywa chai, halafu ninaenda kazini saa moja na nusu. | I shower, I drink tea, then I go to work at 7:30.
+  x: Ninaoga, ninakunywa chai, halafu ninalala kazini saa moja na nusu. ; Ninaoga, unakunywa chai, halafu unaenda kazini saa moja na nusu.
+> Achieng: Na unafika kazini saa ngapi? | And what time do you get to work?
+< John: Ninafika saa mbili kamili. | I arrive at 8 sharp.
+  x: Ninafika saa mbili wapi. ; Unafika saa mbili kamili.
+> Achieng: Wee, wewe ni mzungu kweli — kwa wakati! Mimi ninafika saa tatu. | Wow, you really are a mzungu — on time! I get in at nine.
+< John: Haha! Na wewe unarudi nyumbani saa ngapi? | Ha! And you, what time do you go home?
+  x: Haha! Na wewe unarudi nyumbani saa nani? ; Haha! Na wewe ninarudi nyumbani saa ngapi?
+> Achieng: Ninarudi saa kumi na moja jioni. Jioni ninapika na ninatazama TV. | I go home at 5 p.m. In the evening I cook and watch TV.
+< John: Mimi ninaenda gym Jumatatu na Jumatano jioni. | I go to the gym on Monday and Wednesday evenings.
+  x: Mimi ninaenda gym Jumatatu na Jumatano asubuhi jioni. ; Mimi anaenda gym Jumatatu na Jumatano jioni.
+> Achieng: Poa! Na Jumamosi na Jumapili? | Cool! And on Saturday and Sunday?
+< John: Jumamosi ninafanya kazi za nyumbani, na Jumapili ninalala sana! | On Saturday I do housework, and on Sunday I sleep a lot!
+  x: Jumamosi ninafanya kazi za nyumbani, na Jumapili ninaamka sana! ; Jumamosi unafanya kazi za nyumbani, na Jumapili unalala sana!
+> Achieng: Haha, kama mimi! Unalala saa ngapi usiku? | Ha, like me! What time do you go to sleep at night?
+< John: Ninalala saa nne usiku. | I go to sleep at 10 p.m.
+  x: Ninalala saa nne asubuhi. ; Ninaamka saa nne usiku.
+> Achieng: Sawa, mzungu! Tuonane kesho saa mbili kamili! | Okay, mzungu! See you tomorrow at 8 sharp!
 
 @practice
-t: What will you do on Saturday? | [Utafanya|Nitafanya|Atafanya] nini Jumamosi?
-t: I will come. | [Nitakuja|Utakuja|Watakuja]. || kuja keeps ku- in the future: nitakuja.
-t: We will go to Naivasha. | [Tutaenda|Mtaenda|Wataenda] Naivasha.
-t: What time will you (all) leave? | [Mtaondoka|Tutaondoka|Wataondoka] saa ngapi? || m- = you all.
-t: What time? | Saa [ngapi|gani|wapi]? || Saa ngapi? = "how many hours?" = what time?
-c: 7:00 a.m. | Saa [moja|saba|kumi] asubuhi. || Swahili hours start at sunrise: 7 a.m. is the first hour, saa moja.
-c: 1:00 p.m. | Saa [saba|moja|nne] mchana. || 1 p.m. = 7th hour since sunrise: saa saba.
-c: 10:00 a.m. | Saa [nne|kumi|mbili] asubuhi. || Subtract six: 10 − 6 = 4 → saa nne.
-c: 6:30 a.m. | Saa kumi na mbili na [nusu|robo|kamili] asubuhi. || na nusu = and a half; na robo = and a quarter; kamili = exactly.
-c: 8:15 a.m. | Saa mbili na [robo|nusu|kamili] asubuhi.
-t: We have to leave early. | Lazima [tuondoke|tunaondoka|tutaondoka] mapema. || After lazima (must), use the subjunctive: tu- + -ondok- + -e.
-t: I'll be ready. | [Nitakuwa|Utakuwa|Tutakuwa] tayari. || Future of kuwa (to be): nitakuwa.
-t: Bring water. | [Lete|Kunywa|Uza] maji.
-t: The sun is very strong. | Jua ni [kali|baridi|ndogo] sana.
-t: We'll pass by your place. | Tutapita [kwako|kwangu|kwake]. || kwako = your place; kwangu = my place; kwake = his/her place.
-t: Come to my place. | Njoo [kwangu|kwako|kwao]. || Njoo = come! (irregular imperative of kuja).
-t: See you on Saturday. | [Tutaonana|Tutakula|Tutaenda] Jumamosi.
+t: I wake up at 6 a.m. | [Ninaamka|Ninalala|Ninarudi] saa kumi na mbili asubuhi. || -amka = wake up, -lala = sleep, -rudi = go back.
+t: 6 a.m. | saa [kumi na mbili|sita|mbili] asubuhi || Swahili time: subtract six. 6 − 6 = 0 → the 12th hour.
+t: 7 a.m. | saa [moja|saba|tano] asubuhi || 7 − 6 = 1 → saa moja.
+t: 8 o'clock sharp | saa [mbili|nane|nne] kamili || 8 − 6 = 2 → saa mbili.
+t: 9 o'clock | saa [tatu|tisa|sita] || 9 − 6 = 3 → saa tatu.
+t: 7:30 | saa moja na [nusu|robo|kamili] || nusu = half, robo = quarter, kamili = exactly.
+t: 5 p.m. | saa kumi na moja [jioni|asubuhi|usiku] || 5 + 6 = 11 → saa kumi na moja jioni.
+t: 10 p.m. | saa nne [usiku|asubuhi|mchana] || 10 − 6 = 4 → saa nne usiku.
+t: I shower and drink tea. | Ninaoga na [ninakunywa|ninakula|ninalala] chai. || -nywa = drink, -la = eat, -lala = sleep.
+t: What time do you arrive? | [Unafika|Ninafika|Anafika] saa ngapi?
+t: She goes home at five. | [Anarudi|Ninarudi|Wanarudi] nyumbani saa kumi na moja.
+t: In the evening I watch TV. | Jioni [ninatazama|ninaoga|ninaamka] TV. || -tazama = watch.
+t: Monday | [Jumatatu|Jumanne|Jumatano] || Jumatatu = Mon, Jumanne = Tue, Jumatano = Wed.
+t: Saturday | [Jumamosi|Jumapili|Ijumaa] || Jumamosi = Sat, Jumapili = Sun, Ijumaa = Fri.
+t: Thursday | [Alhamisi|Jumanne|Ijumaa]
+t: On Sunday I sleep a lot. | Jumapili [ninalala|ninaamka|ninafika] sana.
+c: What time is it? — It's seven. | Ni saa ngapi? — Ni saa [moja|saba|wapi].
 
 @vocab
-Utafanya nini? | What will you do? | u- + -ta- (future) + -fanya
-Nitakuja | I'll come | kuja keeps ku- in the future
-Saa ngapi? | What time? | Lit. "how many hours?"
-saa moja asubuhi | 7 a.m. | Swahili time counts from sunrise: 7 a.m. = the 1st hour
-saa kumi na mbili | 6 o'clock | The 12th hour: 6 a.m. or 6 p.m.
-na nusu | half past | saa mbili na nusu = 8:30
-na robo | quarter past | saa tatu na robo = 9:15
-Lazima tuondoke | We have to leave | lazima + subjunctive
-mapema | early |
-kwako / kwangu | your place / my place |
-tayari | ready / already | Nitakuwa tayari = I'll be ready
-Jua ni kali | The sun is strong | kali = fierce / sharp / strong
-Tutaonana | See you | Lit. "we'll see each other"
-Usisahau! | Don't forget! | u- + -si- (not) + -sahau
+Ni saa ngapi? | What time is it? | lit. "it's which hour?"
+saa moja asubuhi | 7 a.m. | Swahili time = clock time minus six
+saa kumi na mbili | 6 o'clock | The 12th hour (a.m. or p.m.)
+nusu / robo | half / quarter | saa moja na nusu = 7:30
+kamili | exactly, sharp | saa mbili kamili = 8 sharp
+asubuhi / mchana / jioni / usiku | morning / afternoon / evening / night |
+-amka | wake up | Ninaamka mapema.
+-lala | sleep | Ninalala saa nne usiku.
+-oga | shower / bathe | Ninaoga asubuhi.
+-fika | arrive | Ninafika kazini saa mbili.
+-rudi | go back / return | Ninarudi nyumbani jioni.
+Jumatatu … Jumapili | Monday … Sunday | Jumamosi = Sat, Jumapili = Sun
+kila siku | every day |
+
+@lesson feeling-unwell
+title: Feeling Unwell: Head, Stomach and a Fever
+level: 3
+index: 4
+theme: health
+category: health
+culture: "Pole!" (sorry) is the first thing any Kenyan says when you're unwell — and they'll say it again and again. Body parts are a great example of singular and plural pairs: mkono / mikono (arm / arms), mguu / miguu (leg / legs), jicho / macho (eye / eyes). In everyday Kenyan speech "-inauma" (it hurts) works for every body part: kichwa inauma, tumbo inauma. Clinics are everywhere, and "kliniki" is the word people use.
+start: 10 a.m. at the office. Achieng notices you've had your head on your desk for a while.
+grammar: ko-location, present-na, time-swahili
+gl: Achieng = Achieng (a Luo name)
+gl: mgonjwa = "sick (person)" — plural: wagonjwa
+gl: Kichwa = head || Sanifu: kichwa / vichwa (ki/vi class)
+gl: kichwa = head || Sanifu: kichwa / vichwa (ki/vi class)
+gl: inauma = "hurts" — Kenyan; Sanifu: kinauma (ki/vi), linauma (ji/ma)
+gl: tumbo = stomach || Sanifu: tumbo / matumbo (ji/ma class)
+gl: Uko na homa = "do you have a fever?" — Kenyan. #ko-location
+gl: homa = fever
+gl: Ninasikia = "I feel" — lit. "I hear"
+gl: na joto = "and hot"
+gl: Mwili yangu = "my body" — Kenyan. || Sanifu: mwili wangu (m/mi class)
+gl: Labda = maybe
+gl: iko na = "has" — Kenyan (lit. "is with"). #ko-location
+gl: yote = "whole, all"
+gl: Unakunywa = "are you drinking" — -nywa = drink
+gl: maji mingi = "a lot of water" — Kenyan. || Sanifu: maji mengi
+gl: Unaenda = "are you going"
+gl: kliniki = clinic
+gl: saa nane = 2 o'clock (p.m.)
+gl: saa nane mchana = 2 p.m. (lit. "the 8th hour of the afternoon")
+gl: daktari = doctor
+gl: mzuri = good (person)
+gl: Ninaenda nyumbani = "I'm going home"
+gl: kupumzika = "to rest"
+gl: Pole sana = "I'm so sorry (you're unwell)"
+gl: Ugua pole = "get well soon" — set phrase (lit. "be sick gently")
+
+> Achieng: John, uko sawa? Uko mgonjwa? | John, are you okay? Are you sick?
+< John: Ndiyo, niko mgonjwa kidogo. Kichwa inauma sana. | Yes, I'm a bit sick. My head hurts a lot.
+  x: Ndiyo, uko mgonjwa kidogo. Kichwa inauma sana. ; Ndiyo, niko mgonjwa kidogo. Kichwa inakula sana.
+> Achieng: Pole sana! Na tumbo? | So sorry! And your stomach?
+< John: Ndiyo, tumbo pia inauma kidogo. | Yes, my stomach hurts a little too.
+  x: Ndiyo, tumbo pia inanukia kidogo. ; Ndiyo, tumbo pia ni mrefu kidogo.
+> Achieng: Wee! Uko na homa? | Oh no! Do you have a fever?
+< John: Labda… ninasikia baridi na joto. | Maybe… I feel cold and hot.
+  x: Labda… unasikia baridi na joto. ; Labda… ninasikia njaa na joto.
+> Achieng: Ni homa! Mwili yako inauma? | That's a fever! Does your body ache?
+< John: Ndiyo, mwili yangu yote inauma. | Yes, my whole body aches.
+  s: Ndiyo, mwili wangu wote unauma.
+  x: Ndiyo, mwili yako yote inauma. ; Ndiyo, mwili yangu yote inacheza.
+> Achieng: Pole. Unakunywa maji mingi? | Sorry. Are you drinking a lot of water?
+  s: Pole. Unakunywa maji mengi?
+< John: Ndiyo, ninakunywa maji na chai. | Yes, I'm drinking water and tea.
+  x: Ndiyo, ninakula maji na chai. ; Ndiyo, anakunywa maji na chai.
+> Achieng: Poa. Unaenda kliniki leo? | Good. Are you going to the clinic today?
+< John: Ndiyo, ninaenda kliniki saa nane mchana. | Yes, I'm going to the clinic at 2 p.m.
+  x: Ndiyo, ninaenda kliniki saa nane usiku. ; Ndiyo, unaenda kliniki saa nane mchana.
+> Achieng: Sawa. Kliniki ya Kilimani iko na daktari mzuri. | Okay. The Kilimani clinic has a good doctor.
+< John: Asante, Achieng. Sasa ninaenda nyumbani kupumzika. | Thanks, Achieng. I'm going home to rest now.
+  x: Asante, Achieng. Sasa ninaenda nyumbani kucheza. ; Asante, Achieng. Sasa unaenda nyumbani kupumzika.
+> Achieng: Sawa. Ugua pole, John! | Okay. Get well soon, John!
+
+@practice
+t: My head hurts. | [Kichwa|Tumbo|Mguu] inauma. || kichwa = head, tumbo = stomach, mguu = leg / foot.
+t: My stomach hurts. | [Tumbo|Kichwa|Mkono] inauma. || mkono = arm / hand.
+t: My leg hurts. | [Mguu|Mkono|Jicho] inauma. || jicho = eye.
+t: legs (more than one) | [miguu|mguu|mikono] || mguu = one leg, miguu = legs, mikono = arms / hands.
+t: eyes | [macho|jicho|masikio] || jicho = one eye, macho = eyes, masikio = ears.
+t: arms / hands | [mikono|mkono|miguu]
+t: I'm sick. | [Niko|Uko|Yuko] mgonjwa. || Kenyan: niko mgonjwa. Sanifu: mimi ni mgonjwa / ninaumwa.
+t: She's sick. | [Yuko|Niko|Wako] mgonjwa.
+t: The sick people are at the clinic. | [Wagonjwa|Mgonjwa|Madaktari] wako kliniki. || mgonjwa = one sick person, wagonjwa = sick people.
+t: Do you have a fever? | Uko na [homa|njaa|kiu]? || homa = fever, njaa = hunger, kiu = thirst.
+t: I feel cold. | [Ninasikia|Ninakunywa|Ninaenda] baridi. || Ninasikia baridi = I feel cold (lit. "I hear cold").
+t: I'm drinking water. | [Ninakunywa|Ninakula|Ninaoga] maji.
+t: I'm going to the clinic at 2 p.m. | Ninaenda kliniki saa [nane|mbili|kumi] mchana. || 2 p.m.: 2 + 6 = 8 → saa nane.
+t: I'm going home to rest. | Ninaenda nyumbani [kupumzika|kupika|kucheza]. || kupumzika = to rest.
+t: a good doctor | daktari [mzuri|mgonjwa|mdogo] || mzuri = good.
+c: Are you okay? — I'm a bit sick. | Uko sawa? — Niko [mgonjwa|mzuri|mrefu] kidogo.
+t: Get well soon! | Ugua [pole|sana|kidogo]! || Ugua pole = get well soon (lit. "be ill gently").
+
+@vocab
+Pole! | Sorry! (sympathy) | Pole sana = I'm so sorry. Answer: Asante.
+Niko mgonjwa | I'm sick | mgonjwa / wagonjwa = sick person / people
+-inauma | it hurts | Kichwa inauma. Tumbo inauma.
+kichwa | head | Sanifu: ki/vi class (kichwa / vichwa)
+tumbo | stomach | Sanifu: ji/ma class
+mkono / mikono | arm, hand / arms, hands |
+mguu / miguu | leg, foot / legs, feet |
+jicho / macho | eye / eyes |
+homa | fever | Uko na homa? = Do you have a fever?
+Ninasikia baridi | I feel cold | -sikia = hear, feel
+mwili | body | Kenyans: mwili yangu | mwili wangu | Sanifu: m/mi class
+kliniki | clinic |
+Ugua pole! | Get well soon! | lit. "be ill gently"

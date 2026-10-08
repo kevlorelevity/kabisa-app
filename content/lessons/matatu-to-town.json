@@ -3,9 +3,9 @@
   "uuid": "9185b20d-663c-51f5-a788-8032dd41f1ed",
   "title": "Matatu to Town",
   "category": "transport",
-  "difficulty": "beginner",
-  "level": 3,
-  "order": 301,
+  "difficulty": "medium",
+  "level": 5,
+  "order": 504,
   "theme": "transport",
   "culturalNote": "Matatus are Nairobi's privately run minibuses — loud music, graffiti art, and a makanga (conductor) hanging out of the door shouting the route. Fares aren't fixed: they rise at rush hour and when it rains, so it's normal to ask \"Nauli ni ngapi?\" before you get in. You get off by shouting where you want to stop. Imperatives are the plain verb: Panda! (get in), Shuka! (get off), Simama! (stop).",
   "startingPoint": "You're at the stage in Kilimani. A makanga is shouting for passengers to town.",
@@ -36,8 +36,8 @@
       "id": "98cf8a63-8882-5a2a-9606-8f701108feaf",
       "speaker": "Makanga",
       "role": "auto",
-      "swahili": "Tao! Tao! Kencom! Panda, boss!",
-      "english": "Town! Town! Kencom! Get in, boss!",
+      "swahili": "Tao! Tao! Kencom! Panda, bwana!",
+      "english": "Town! Town! Kencom! Get in, sir!",
       "words": [
         {
           "text": "Tao",
@@ -59,11 +59,8 @@
           ]
         },
         {
-          "text": "boss",
-          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
-          "grammar": [
-            "noun-classes-mwa-nn"
-          ]
+          "text": "bwana",
+          "gloss": "sir / mister — friendly or respectful way to address a man"
         }
       ]
     },
@@ -144,11 +141,11 @@
           "correct": true
         },
         {
-          "swahili": "Matatu hii anaenda Kencom?",
+          "swahili": "Matatu hii inaenda wapi?",
           "correct": false
         },
         {
-          "swahili": "Matatu hizi inaenda Kencom?",
+          "swahili": "Matatu hii inatoka Kencom?",
           "correct": false
         }
       ]
@@ -932,11 +929,11 @@
           "correct": true
         },
         {
-          "swahili": "Asante! Matatu ya kurudi Kilimani ziko wapi?",
+          "swahili": "Asante! Matatu ya kutoka Kilimani iko wapi?",
           "correct": false
         },
         {
-          "swahili": "Asante! Matatu ya kurudi Kilimani yuko wapi?",
+          "swahili": "Asante! Matatu ya kurudi Kilimani ni bei gani?",
           "correct": false
         }
       ]
@@ -1422,17 +1419,17 @@
           "correct": true
         },
         {
-          "text": "unaenda",
+          "text": "inatoka",
           "correct": false,
-          "feedback": "unaenda = You are going"
+          "feedback": "inatoka = It is leaving / come from"
         },
         {
-          "text": "anaenda",
+          "text": "inarudi",
           "correct": false,
-          "feedback": "anaenda = He/she is going"
+          "feedback": "inarudi = It is coming back"
         }
       ],
-      "explanation": "matatu is n/n, so its verb takes i-.",
+      "explanation": "inaenda = goes to, inatoka = comes from, inarudi = goes back to.",
       "grammar": [
         "present-na"
       ]

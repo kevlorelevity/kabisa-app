@@ -1,8 +1,9 @@
-# Level 10 — idioms & proverbs (methali), Kenyan expressions, everything combined
+# Level 10 — methali, idioms and everything at once.
 
 @lesson uber-nairobi-5
 title: Taking an Uber, Part 5: The Long Ride Home
 level: 10
+index: 1
 theme: uber
 category: transport
 culture: The last ride with Kamau — and by now you can banter like a local. Kenyan conversation is seasoned with methali (proverbs) and idioms. "Haraka haraka haina baraka" (hurry hurry has no blessing) when someone's rushing; "Kawia ufike" (delay, but arrive) when you're late; "Umeniwacha kwa mataa" (you left me at the traffic lights) when someone stood you up. Using one at the right moment earns instant respect — and a laugh.
@@ -101,6 +102,7 @@ Usiku mwema | Good night | Lala salama = sleep well
 @lesson harambee-speech
 title: Mgeni Rasmi: Your Harambee Speech
 level: 10
+index: 2
 theme: community
 category: social
 culture: "Harambee!" (let's all pull together) is Kenya's national motto and a living tradition: communities raise money together for school fees, medical bills, weddings and funerals. A respected guest — the mgeni rasmi (guest of honour) — gives a short speech, and good speeches are stitched together with methali: "Kidole kimoja hakivunji chawa" (one finger can't crush a louse), "Haba na haba hujaza kibaba" (little by little fills the measure). Today, that guest is you.
@@ -154,7 +156,7 @@ gl: asante sana kwa wote = thank you all very much
   x: Harambee! Asanteni sana. Unashukuru kwa kunialika siku ya leo. ; Harambee! Asanteni sana. Ninashukuru kwa kukualika siku ya leo.
 > MC: Karibu! Tunakusikiliza. | Welcome! We're listening.
 < Mgeni Rasmi: Njeri ni msichana ambaye amepita mtihani vizuri sana, na sasa anaenda shule ya upili. | Njeri is a girl who has passed her exam very well, and now she's going to secondary school.
-  x: Njeri ni msichana ambayo amepita mtihani vizuri sana, na sasa anaenda shule ya upili. ; Njeri ni msichana ambaye amefeli mtihani vizuri sana, na sasa anaenda shule ya upili.
+  x: Njeri ni msichana ambaye atapita mtihani vizuri sana, na sasa anaenda shule ya upili. ; Njeri ni msichana ambaye amefeli mtihani vizuri sana, na sasa anaenda shule ya upili.
 > Mama Njeri: Asante! Ndiyo, tunajivunia sana. | Thank you! Yes, we're very proud.
 < Mgeni Rasmi: Lakini karo ni nyingi. Na tunajua kwamba kidole kimoja hakivunji chawa. | But the fees are a lot. And we know that one finger can't crush a louse.
   x: Lakini karo ni nyingi. Na tunajua ingawa kidole kimoja hakivunji chawa. ; Lakini karo ni chache. Na tunajua kwamba kidole kimoja hakivunji chawa.
@@ -187,7 +189,7 @@ t: so that she can study | ili [aweze|anaweza|ataweza] kusoma || ili + subjuncti
 t: Let's contribute for Njeri. | [Tumchangie|Tunamchangia|Mmchangie] Njeri. || tu- + -m- (her) + -changi- + -e.
 t: May God bless you all! | Mungu [awabariki|anawabariki|atawabariki]! || A blessing uses the subjunctive.
 t: I'm grateful for being invited. | Ninashukuru kwa [kunialika|kukualika|kumwalika]. || kunialika = to invite me.
-t: There's no such thing as a small contribution. | Hakuna mchango [mdogo|ndogo|wadogo]. || mchango is m/mi: mdogo.
+t: There's no such thing as a small contribution. | Hakuna mchango [mdogo|mkubwa|mbaya]. || mdogo = small, mkubwa = big, mbaya = bad.
 
 @vocab
 Harambee! | Let's all pull together! | Kenya's motto and fundraising tradition
@@ -207,6 +209,7 @@ Mungu awabariki | May God bless you all |
 @lesson football-banter
 title: Mashemeji Derby: Banter at the Local
 level: 10
+index: 3
 theme: sports
 category: social
 culture: Gor Mahia vs AFC Leopards — the "Mashemeji Derby" (the brothers-in-law derby) — is Kenya's biggest football rivalry. The nickname comes from the many marriages between Luo and Luhya families, the clubs' traditional fan bases. Watching at a local bar or kibanda is a festival of trash talk, proverbs and idioms: "Akose achekwe!" (of course he'll score — he'd never live it down), "Maji yakimwagika hayazoleki" (spilled water can't be gathered — what's done is done), "Asiyekubali kushindwa si mshindani" (a sore loser is no real competitor).
@@ -259,7 +262,7 @@ gl: atanunua = will buy
   x: Leo atafunga. Akose afurahi! ; Jana atafunga. Akose achekwe!
 > Wafula: Goooli! Ingwe wamefunga! Unaona? | Goooal! Ingwe have scored! You see?
 < Wewe: Aiii! Refa ni kipofu — huyo mchezaji alikuwa offside! | Aiii! The referee is blind — that player was offside!
-  x: Aiii! Refa ni mzuri — huyo mchezaji alikuwa offside! ; Aiii! Refa ni kipofu — hawa mchezaji alikuwa offside!
+  x: Aiii! Refa ni mzuri — huyo mchezaji alikuwa offside! ; Aiii! Refa ni kipofu — huyo mchezaji atakuwa offside!
 > Wafula: Haha! Kulalamika hapa ni bure. Fimbo ya mbali haiui nyoka! | Haha! Complaining from here is pointless. A distant stick doesn't kill a snake!
 < Wewe: Sawa, sawa. Maji yakimwagika hayazoleki. Lakini mchezo haujaisha bado! | Fine, fine. What's done is done. But the game isn't over yet!
   x: Sawa, sawa. Maji yakimwagika yanazoleka. Lakini mchezo haujaisha bado! ; Sawa, sawa. Maji yakimwagika hayazoleki. Lakini mchezo umeisha bado!
@@ -282,7 +285,7 @@ c: Whoever doesn't accept defeat is no competitor. | [Asiyekubali|Anayekubali|Al
 t: He hasn't scored even one goal this season. | [Hajafunga|Amefunga|Hakufunga] hata goli moja msimu huu. || ha- + -ja- = hasn't (yet).
 t: Today he'll score. | Leo [atafunga|alifunga|amefunga]. || kufunga goli = to score a goal (lit. "to close a goal").
 t: The game isn't over yet! | Mchezo [haujaisha|umeisha|haukuisha] bado! || mchezo (m/mi) → u- agreement: haujaisha.
-t: Only five minutes are left. | Dakika tano tu [zimebaki|imebaki|wamebaki]. || dakika (n/n plural) → zi-.
+t: Only five minutes are left. | Dakika tano tu [zimebaki|zimepita|zitabaki]. || zimebaki = are left, zimepita = have passed, zitabaki = will be left.
 t: We've equalised! | [Tumesawazisha|Tumeshindwa|Tumesawa]! || sawa (equal) → sawazisha (make equal).
 t: If I'd known, I'd have stayed home! | Ningalijua, [ningalibaki|nitabaki|nilibaki] nyumbani!
 t: The referee helped you (all)! | Refa [amewasaidia|amekusaidia|amemsaidia]! || -wa- = them / you all.

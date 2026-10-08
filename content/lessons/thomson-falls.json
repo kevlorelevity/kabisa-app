@@ -1,0 +1,2075 @@
+{
+  "id": "thomson-falls",
+  "uuid": "3a8142e6-efa5-5301-bf86-40acbdf33ef8",
+  "title": "Day Trip to Thomson's Falls",
+  "category": "social",
+  "difficulty": "advanced",
+  "level": 8,
+  "order": 804,
+  "theme": "travel",
+  "culturalNote": "Thomson's Falls (Maporomoko ya Thomson) plunge 74 metres off the Aberdare range at Nyahururu, one of Kenya's highest towns, surrounded by tea and potato farms. Guides here switch between Kikuyu, Swahili and English all day. Upcountry farmers typically \"hulima\" (grow) potatoes and maize and \"hufuga\" (keep) cattle — the habitual hu- is perfect for talking about how people live. Locals love visitors who try their Swahili.",
+  "startingPoint": "Nyahururu, late morning. Your tour guide, Njoroge, meets you at the hotel gate.",
+  "grammarFocus": [
+    "relatives",
+    "ki-po-ka",
+    "conditional-nge",
+    "habitual-hu-nga"
+  ],
+  "grammar": [
+    "relatives",
+    "ki-po-ka",
+    "conditional-nge",
+    "habitual-hu-nga",
+    "noun-classes-mwa-nn",
+    "possessives",
+    "greetings",
+    "ni-copula",
+    "ko-location",
+    "locative-ni",
+    "future-ta",
+    "sanifu-noun-classes",
+    "na-have",
+    "negative-present",
+    "subjunctive",
+    "present-na",
+    "question-words",
+    "subject-prefixes",
+    "infinitive-ku",
+    "verb-extensions",
+    "demonstratives",
+    "object-infixes"
+  ],
+  "turns": [
+    {
+      "id": "3c8f0ec4-5c5a-54e3-a29f-fac012528ffc",
+      "speaker": "Njoroge",
+      "role": "auto",
+      "swahili": "Karibu sana Nyahururu! Safari yako imekuwaje hadi hapa?",
+      "english": "Welcome to Nyahururu! How has your trip been so far?",
+      "words": [
+        {
+          "text": "Karibu",
+          "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Nyahururu",
+          "gloss": "Nyahururu, a highland town near Thomson's Falls"
+        },
+        {
+          "text": "Safari",
+          "gloss": "journey / trip — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "yako",
+          "gloss": "\"your\" — n/n singular agreement (nyumba yako). In Kenyan speech also used for family words and most things (jina yako, gari yako).",
+          "grammar": [
+            "possessives"
+          ],
+          "conjugation": {
+            "verb": "possessive (n/n singular)",
+            "tense": "my · your · his/her · our · your (pl.) · their",
+            "rows": [
+              {
+                "pronoun": "my",
+                "form": "yangu"
+              },
+              {
+                "pronoun": "your",
+                "form": "yako"
+              },
+              {
+                "pronoun": "his/her",
+                "form": "yake"
+              },
+              {
+                "pronoun": "our",
+                "form": "yetu"
+              },
+              {
+                "pronoun": "your (pl.)",
+                "form": "yenu"
+              },
+              {
+                "pronoun": "their",
+                "form": "yao"
+              }
+            ]
+          }
+        },
+        {
+          "text": "imekuwaje",
+          "gloss": "\"how has it been?\""
+        },
+        {
+          "text": "hadi hapa",
+          "gloss": "\"up to now, so far\""
+        }
+      ]
+    },
+    {
+      "id": "ef83a0cb-2a55-55c3-b18b-ee5942773669",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Imekuwa nzuri sana! Mandhari ni ya kuvutia — milima na mashamba ya chai.",
+      "english": "It's been great! The scenery is stunning — hills and tea farms.",
+      "words": [
+        {
+          "text": "Imekuwa",
+          "gloss": "\"it has been\""
+        },
+        {
+          "text": "nzuri sana",
+          "gloss": "very good",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Mandhari",
+          "gloss": "scenery"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "ya kuvutia",
+          "gloss": "\"attractive, stunning\" — lit. \"of pulling (the eye)\""
+        },
+        {
+          "text": "milima",
+          "gloss": "hills, mountains"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "mashamba ya chai",
+          "gloss": "\"tea farms\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Imekuwa nzuri sana! Mandhari ni ya kuvutia — milima na mashamba ya chai.",
+          "correct": true
+        },
+        {
+          "swahili": "Imekuwa mbaya sana! Mandhari ni ya kuvutia — milima na mashamba ya chai.",
+          "correct": false
+        },
+        {
+          "swahili": "Itakuwa nzuri sana jana! Mandhari ni ya kuvutia — milima na mashamba ya chai.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "a07fe2a2-46ae-53bb-bc5f-b24c25c351cf",
+      "speaker": "Njoroge",
+      "role": "auto",
+      "swahili": "Nafurahi kusikia hivyo. Hapa tuko karibu na maporomoko ya Thomson, ambayo ni kivutio kikubwa hapa.",
+      "english": "Glad to hear that. Here we're close to Thomson's Falls, which is a big attraction around here.",
+      "words": [
+        {
+          "text": "Nafurahi kusikia hivyo",
+          "gloss": "\"I'm glad to hear that\""
+        },
+        {
+          "text": "Hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "tuko",
+          "gloss": "\"We are (at / doing)\" — tu- + -ko (be at a place, or how you're doing). \"Tuko poa\" = we are fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "karibu na",
+          "gloss": "close to / near",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "maporomoko ya Thomson",
+          "gloss": "Thomson's Falls"
+        },
+        {
+          "text": "ambayo",
+          "gloss": "which / that — n/n singular (Kenyans also use it for most things)",
+          "grammar": [
+            "relatives"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "kivutio kikubwa",
+          "gloss": "\"a big attraction\"",
+          "sanifu": "Kenyans also: kivutio kubwa"
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        }
+      ]
+    },
+    {
+      "id": "f331b53d-29d8-5f01-b911-24274bff6516",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Nimesikia habari zake! Tutaenda huko leo?",
+      "english": "I've heard about it! Are we going there today?",
+      "words": [
+        {
+          "text": "Nimesikia habari zake",
+          "gloss": "\"I've heard about it\""
+        },
+        {
+          "text": "Tutaenda",
+          "gloss": "\"We will go\" — tu- (subject: we) + ta- (future) + -enda (go). From kuenda.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kuenda (to go)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitaenda"
+              },
+              {
+                "pronoun": "you",
+                "form": "utaenda"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ataenda"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutaenda"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtaenda"
+              },
+              {
+                "pronoun": "they",
+                "form": "wataenda"
+              }
+            ]
+          }
+        },
+        {
+          "text": "huko",
+          "gloss": "\"there\""
+        },
+        {
+          "text": "leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Nimesikia habari zake! Tutaenda huko leo?",
+          "correct": true
+        },
+        {
+          "swahili": "Nimesikia habari zake! Tulienda huko kesho?",
+          "correct": false
+        },
+        {
+          "swahili": "Umesikia habari zake! Tutaenda huko leo?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "7a77c09a-9fed-5f9e-9d57-82f346e48118",
+      "speaker": "Njoroge",
+      "role": "auto",
+      "swahili": "Ndiyo, baada ya chakula cha mchana. Tukifika huko, tutatembea kidogo na kupiga picha.",
+      "english": "Yes, after lunch. When we get there, we'll walk a bit and take photos.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "baada ya",
+          "gloss": "after"
+        },
+        {
+          "text": "chakula cha mchana",
+          "gloss": "lunch"
+        },
+        {
+          "text": "Tukifika",
+          "gloss": "\"If/when we arrive\" — tu- (subject: we) + ki- (if / when · or \"-ing\" after kuwa) + -fika (arrive). From kufika. After a past kuwa (nilikuwa …) the -ki- form means \"…-ing\".",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "huko",
+          "gloss": "\"there\""
+        },
+        {
+          "text": "tutatembea",
+          "gloss": "\"We will walk\" — tu- (subject: we) + ta- (future) + -tembea (walk). From kutembea.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kutembea (to walk)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitatembea"
+              },
+              {
+                "pronoun": "you",
+                "form": "utatembea"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atatembea"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutatembea"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtatembea"
+              },
+              {
+                "pronoun": "they",
+                "form": "watatembea"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kidogo",
+          "gloss": "a little / a bit — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — kidogo (adverb, no agreement)"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "kupiga picha",
+          "gloss": "\"to take photos\""
+        }
+      ]
+    },
+    {
+      "id": "868c9141-acab-523f-a5c7-87a5495845a9",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Safi! Njia ni salama kwa kutembea?",
+      "english": "Great! Is the path safe for walking?",
+      "words": [
+        {
+          "text": "Safi",
+          "gloss": "clean / great / sorted"
+        },
+        {
+          "text": "Njia",
+          "gloss": "way / path / route — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "salama",
+          "gloss": "safe"
+        },
+        {
+          "text": "kwa kutembea",
+          "gloss": "\"for walking\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Safi! Njia ni salama kwa kutembea?",
+          "correct": true
+        },
+        {
+          "swahili": "Safi! Njia ni salama kwa kula?",
+          "correct": false
+        },
+        {
+          "swahili": "Safi! Njia ni salama kwa kutembea jana?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "9734e85a-f6d5-58e4-836d-137024dbe7cd",
+      "speaker": "Njoroge",
+      "role": "auto",
+      "swahili": "Ndiyo, ni salama. Lakini mtu ambaye hana viatu vizuri ataanguka — kuna mawe mengi!",
+      "english": "Yes, it's safe. But anyone who doesn't have good shoes will fall — there are lots of rocks!",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "salama",
+          "gloss": "safe"
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "mtu",
+          "gloss": "person — m/wa noun (people & animals; plural watu)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ambaye",
+          "gloss": "who — relative for one person (m/wa)",
+          "grammar": [
+            "relatives"
+          ]
+        },
+        {
+          "text": "hana",
+          "gloss": "\"He/she doesn't have\" — negative of -na.",
+          "grammar": [
+            "na-have",
+            "negative-present"
+          ],
+          "conjugation": {
+            "verb": "-na (have)",
+            "tense": "Present, negative",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "sina"
+              },
+              {
+                "pronoun": "you",
+                "form": "huna"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "hana"
+              },
+              {
+                "pronoun": "we",
+                "form": "hatuna"
+              },
+              {
+                "pronoun": "you all",
+                "form": "hamna"
+              },
+              {
+                "pronoun": "they",
+                "form": "hawana"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "haina"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "hazina"
+              }
+            ]
+          }
+        },
+        {
+          "text": "viatu",
+          "gloss": "shoes — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — viatu vyangu, viatu hivi"
+        },
+        {
+          "text": "vizuri",
+          "gloss": "well / nicely"
+        },
+        {
+          "text": "ataanguka",
+          "gloss": "\"will fall\" — -anguka = fall"
+        },
+        {
+          "text": "kuna",
+          "gloss": "\"There is / there are\" — ku- (place) + -na (have): \"the place has…\"",
+          "grammar": [
+            "na-have"
+          ]
+        },
+        {
+          "text": "mawe",
+          "gloss": "rocks, stones"
+        },
+        {
+          "text": "mengi",
+          "gloss": "many, a lot"
+        }
+      ]
+    },
+    {
+      "id": "f0877257-548f-5bd6-bb33-9b846e29c130",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Sawa. Ningejua mapema, ningeleta viatu vya kutembea!",
+      "english": "Okay. If I'd known earlier, I'd have brought walking shoes!",
+      "words": [
+        {
+          "text": "Sawa",
+          "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Ningejua",
+          "gloss": "\"I would know\" — ni- (subject: I) + nge- (\"would\") + -jua (know). From kujua.",
+          "grammar": [
+            "conditional-nge"
+          ],
+          "conjugation": {
+            "verb": "kujua (to know)",
+            "tense": "Conditional (-nge-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ningejua"
+              },
+              {
+                "pronoun": "you",
+                "form": "ungejua"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "angejua"
+              },
+              {
+                "pronoun": "we",
+                "form": "tungejua"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mngejua"
+              },
+              {
+                "pronoun": "they",
+                "form": "wangejua"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mapema",
+          "gloss": "early"
+        },
+        {
+          "text": "ningeleta",
+          "gloss": "\"I would bring\" — ni- (subject: I) + nge- (\"would\") + -leta (bring). From kuleta.",
+          "grammar": [
+            "conditional-nge"
+          ],
+          "conjugation": {
+            "verb": "kuleta (to bring)",
+            "tense": "Conditional (-nge-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ningeleta"
+              },
+              {
+                "pronoun": "you",
+                "form": "ungeleta"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "angeleta"
+              },
+              {
+                "pronoun": "we",
+                "form": "tungeleta"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mngeleta"
+              },
+              {
+                "pronoun": "they",
+                "form": "wangeleta"
+              }
+            ]
+          }
+        },
+        {
+          "text": "viatu vya kutembea",
+          "gloss": "\"walking shoes\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Sawa. Ningejua mapema, ningeleta viatu vya kutembea!",
+          "correct": true
+        },
+        {
+          "swahili": "Sawa. Nikijua mapema, ningeleta viatu vya kutembea!",
+          "correct": false
+        },
+        {
+          "swahili": "Sawa. Ningejua mapema, nitaleta viatu vya kutembea!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "d2380a1d-0165-55e5-9adf-864a56c112bf",
+      "speaker": "Njoroge",
+      "role": "auto",
+      "swahili": "Usijali — kuna duka ambayo inauza viatu karibu na geti.",
+      "english": "Don't worry — there's a shop that sells shoes near the gate.",
+      "words": [
+        {
+          "text": "Usijali",
+          "gloss": "\"Don't worry\" — u- + -si- + -jali (care, mind)",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "kuna",
+          "gloss": "\"There is / there are\" — ku- (place) + -na (have): \"the place has…\"",
+          "grammar": [
+            "na-have"
+          ]
+        },
+        {
+          "text": "duka",
+          "gloss": "shop (plural maduka) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ji/ma class — duka langu, duka hili, maduka"
+        },
+        {
+          "text": "ambayo",
+          "gloss": "which / that — n/n singular (Kenyans also use it for most things)",
+          "grammar": [
+            "relatives"
+          ]
+        },
+        {
+          "text": "inauza",
+          "gloss": "\"It is selling\" — i- (subject: it (n/n)) + na- (present) + -uza (sell). From kuuza.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuuza (to sell)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninauza"
+              },
+              {
+                "pronoun": "you",
+                "form": "unauza"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anauza"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunauza"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnauza"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanauza"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "inauza"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zinauza"
+              }
+            ]
+          }
+        },
+        {
+          "text": "viatu",
+          "gloss": "shoes — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — viatu vyangu, viatu hivi"
+        },
+        {
+          "text": "karibu na",
+          "gloss": "close to / near",
+          "grammar": [
+            "locative-ni"
+          ]
+        },
+        {
+          "text": "geti",
+          "gloss": "gate"
+        }
+      ],
+      "sanifu": "Usijali — kuna duka ambalo linauza viatu karibu na geti."
+    },
+    {
+      "id": "bba2fc87-db26-5878-a6ff-e8784dea1bcf",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Asante. Na wenyeji wanafanya kazi gani hapa?",
+      "english": "Thanks. And what work do the locals do here?",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "wenyeji",
+          "gloss": "locals"
+        },
+        {
+          "text": "wanafanya",
+          "gloss": "\"They are doing\" — wa- (subject: they) + na- (present) + -fanya (do). From kufanya.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kufanya (to do)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninafanya"
+              },
+              {
+                "pronoun": "you",
+                "form": "unafanya"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anafanya"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunafanya"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnafanya"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanafanya"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kazi",
+          "gloss": "work / job — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "gani",
+          "gloss": "which? / what kind?",
+          "grammar": [
+            "question-words"
+          ]
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante. Na wenyeji wanafanya kazi gani hapa?",
+          "correct": true
+        },
+        {
+          "swahili": "Asante. Na wenyeji walifanya kazi gani kesho?",
+          "correct": false
+        },
+        {
+          "swahili": "Asante. Na wenyeji wanafanya kazi nani hapa?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "a4167327-cc4e-5d1d-b44c-cf8557ea720e",
+      "speaker": "Njoroge",
+      "role": "auto",
+      "swahili": "Wengi wao ni wakulima. Hulima viazi na mahindi, na hufuga ng'ombe.",
+      "english": "Most of them are farmers. They grow potatoes and maize, and keep cattle.",
+      "words": [
+        {
+          "text": "Wengi wao",
+          "gloss": "\"most of them\""
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "wakulima",
+          "gloss": "farmers"
+        },
+        {
+          "text": "Hulima",
+          "gloss": "\"Usually farm (habit, any person)\" — hu- (habitual: usually / regularly) + -lima (farm). From kulima.",
+          "grammar": [
+            "habitual-hu-nga"
+          ]
+        },
+        {
+          "text": "viazi",
+          "gloss": "potatoes"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "mahindi",
+          "gloss": "maize"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "hufuga",
+          "gloss": "\"Usually keep (animals) (habit, any person)\" — hu- (habitual: usually / regularly) + -fuga (keep (animals)). From kufuga.",
+          "grammar": [
+            "habitual-hu-nga"
+          ]
+        },
+        {
+          "text": "ng'ombe",
+          "gloss": "cow(s), cattle"
+        }
+      ]
+    },
+    {
+      "id": "d27f3676-439e-53c8-ac86-ca0572540c61",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Inavutia sana! Mimi hupenda kuona maisha ya mashambani.",
+      "english": "That's really interesting! I love seeing country life.",
+      "words": [
+        {
+          "text": "Inavutia",
+          "gloss": "\"it's interesting / attractive\""
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "hupenda",
+          "gloss": "\"Usually like (habit, any person)\" — hu- (habitual: usually / regularly) + -penda (like). From kupenda.",
+          "grammar": [
+            "habitual-hu-nga"
+          ]
+        },
+        {
+          "text": "kuona",
+          "gloss": "\"To see\" — ku- (infinitive \"to\") + -ona (see). From kuona.",
+          "grammar": [
+            "infinitive-ku"
+          ]
+        },
+        {
+          "text": "maisha ya mashambani",
+          "gloss": "\"country life\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Inavutia sana! Mimi hupenda kuona maisha ya mashambani.",
+          "correct": true
+        },
+        {
+          "swahili": "Inavutia sana! Mimi hupendi kuona maisha ya mashambani.",
+          "correct": false
+        },
+        {
+          "swahili": "Inachosha sana! Mimi hupenda kuona maisha ya mashambani.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "142d4fb8-8372-5076-8fec-abb1d11929c6",
+      "speaker": "Njoroge",
+      "role": "auto",
+      "swahili": "Kesho tutatembelea kijiji ambayo iko karibu, na utajifunza kuhusu utamaduni wao.",
+      "english": "Tomorrow we'll visit a village close by, and you'll learn about their culture.",
+      "words": [
+        {
+          "text": "Kesho",
+          "gloss": "tomorrow — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "tutatembelea",
+          "gloss": "\"We will visit\" — tu- (subject: we) + ta- (future) + -tembelea (visit). From kutembelea. Extension: prepositional (-ia/-ea: \"for / to / at\").",
+          "grammar": [
+            "future-ta",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kutembelea (to visit)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitatembelea"
+              },
+              {
+                "pronoun": "you",
+                "form": "utatembelea"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atatembelea"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutatembelea"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtatembelea"
+              },
+              {
+                "pronoun": "they",
+                "form": "watatembelea"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kijiji",
+          "gloss": "village",
+          "sanifu": "Sanifu: kijiji / vijiji (ki/vi class)"
+        },
+        {
+          "text": "ambayo",
+          "gloss": "which / that — n/n singular (Kenyans also use it for most things)",
+          "grammar": [
+            "relatives"
+          ]
+        },
+        {
+          "text": "iko",
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
+          "grammar": [
+            "ko-location"
+          ],
+          "conjugation": {
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "niko"
+              },
+              {
+                "pronoun": "you",
+                "form": "uko"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "yuko"
+              },
+              {
+                "pronoun": "we",
+                "form": "tuko"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mko"
+              },
+              {
+                "pronoun": "they",
+                "form": "wako"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "iko"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "ziko"
+              }
+            ]
+          }
+        },
+        {
+          "text": "karibu",
+          "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "utajifunza",
+          "gloss": "\"You will learn\" — u- (subject: you) + ta- (future) + -jifunza (learn). From kujifunza.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kujifunza (to learn)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitajifunza"
+              },
+              {
+                "pronoun": "you",
+                "form": "utajifunza"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atajifunza"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutajifunza"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtajifunza"
+              },
+              {
+                "pronoun": "they",
+                "form": "watajifunza"
+              }
+            ]
+          }
+        },
+        {
+          "text": "kuhusu",
+          "gloss": "about / concerning"
+        },
+        {
+          "text": "utamaduni",
+          "gloss": "culture"
+        },
+        {
+          "text": "wao",
+          "gloss": "they / them",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        }
+      ],
+      "sanifu": "Kesho tutatembelea kijiji ambacho kiko karibu, na utajifunza kuhusu utamaduni wao."
+    },
+    {
+      "id": "425ea770-259c-587e-b419-7aa495d63283",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ningependa sana! Nikipata nafasi, nitazungumza nao.",
+      "english": "I'd love that! If I get the chance, I'll talk with them.",
+      "words": [
+        {
+          "text": "Ningependa",
+          "gloss": "\"I would like\" — ni- (subject: I) + nge- (\"would\") + -penda (like). From kupenda.",
+          "grammar": [
+            "conditional-nge"
+          ],
+          "conjugation": {
+            "verb": "kupenda (to like)",
+            "tense": "Conditional (-nge-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ningependa"
+              },
+              {
+                "pronoun": "you",
+                "form": "ungependa"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "angependa"
+              },
+              {
+                "pronoun": "we",
+                "form": "tungependa"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mngependa"
+              },
+              {
+                "pronoun": "they",
+                "form": "wangependa"
+              }
+            ]
+          }
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Nikipata",
+          "gloss": "\"If/when I get\" — ni- (subject: I) + ki- (if / when · or \"-ing\" after kuwa) + -pata (get). From kupata. After a past kuwa (nilikuwa …) the -ki- form means \"…-ing\".",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "nafasi",
+          "gloss": "chance, opportunity"
+        },
+        {
+          "text": "nitazungumza",
+          "gloss": "\"I will chat\" — ni- (subject: I) + ta- (future) + -zungumza (chat). From kuzungumza.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kuzungumza (to chat)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitazungumza"
+              },
+              {
+                "pronoun": "you",
+                "form": "utazungumza"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atazungumza"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutazungumza"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtazungumza"
+              },
+              {
+                "pronoun": "they",
+                "form": "watazungumza"
+              }
+            ]
+          }
+        },
+        {
+          "text": "nao",
+          "gloss": "\"with them\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ningependa sana! Nikipata nafasi, nitazungumza nao.",
+          "correct": true
+        },
+        {
+          "swahili": "Ningependa sana! Nikipata nafasi, nilizungumza nao.",
+          "correct": false
+        },
+        {
+          "swahili": "Ningependa sana! Ningepata nafasi, nitazungumza nao.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "1b4e7630-9d5d-59b9-babc-4b99b5ff0888",
+      "speaker": "Njoroge",
+      "role": "auto",
+      "swahili": "Watafurahi! Wenyeji wa hapa ni wakarimu, na hupenda wageni ambao hujaribu Kiswahili.",
+      "english": "They'll be delighted! The locals here are hospitable, and they love visitors who try Swahili.",
+      "words": [
+        {
+          "text": "Watafurahi",
+          "gloss": "\"They will be happy\" — wa- (subject: they) + ta- (future) + -furahi (be happy). From kufurahi.",
+          "grammar": [
+            "future-ta"
+          ],
+          "conjugation": {
+            "verb": "kufurahi (to be happy)",
+            "tense": "Future (-ta-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nitafurahi"
+              },
+              {
+                "pronoun": "you",
+                "form": "utafurahi"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "atafurahi"
+              },
+              {
+                "pronoun": "we",
+                "form": "tutafurahi"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mtafurahi"
+              },
+              {
+                "pronoun": "they",
+                "form": "watafurahi"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Wenyeji",
+          "gloss": "locals"
+        },
+        {
+          "text": "wa",
+          "gloss": "\"of\" — m/wa agreement (mtoto wa Kamau, watu wa Nairobi)",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "wakarimu",
+          "gloss": "hospitable (people)"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "hupenda",
+          "gloss": "\"Usually like (habit, any person)\" — hu- (habitual: usually / regularly) + -penda (like). From kupenda.",
+          "grammar": [
+            "habitual-hu-nga"
+          ]
+        },
+        {
+          "text": "wageni",
+          "gloss": "guests / visitors — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ambao",
+          "gloss": "who — relative for several people (m/wa)",
+          "grammar": [
+            "relatives"
+          ]
+        },
+        {
+          "text": "hujaribu",
+          "gloss": "\"You are not trying\" — hu- (negative subject: not you) + -jaribu (try, negative ends in -i). From kujaribu.",
+          "grammar": [
+            "negative-present"
+          ],
+          "conjugation": {
+            "verb": "kujaribu (to try)",
+            "tense": "Present, negative",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "sijaribu"
+              },
+              {
+                "pronoun": "you",
+                "form": "hujaribu"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "hajaribu"
+              },
+              {
+                "pronoun": "we",
+                "form": "hatujaribu"
+              },
+              {
+                "pronoun": "you all",
+                "form": "hamjaribu"
+              },
+              {
+                "pronoun": "they",
+                "form": "hawajaribu"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Kiswahili",
+          "gloss": "Swahili (the language) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — Kiswahili changu"
+        }
+      ]
+    },
+    {
+      "id": "9427ed54-4a17-504d-bc25-6fd6281ed1ec",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Asante sana. Safari hii inanifundisha mambo mengi mapya!",
+      "english": "Thank you so much. This trip is teaching me lots of new things!",
+      "words": [
+        {
+          "text": "Asante sana",
+          "gloss": "thank you very much"
+        },
+        {
+          "text": "Safari",
+          "gloss": "journey / trip — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "hii",
+          "gloss": "this — n/n singular (and Kenyans' all-purpose \"this\")",
+          "grammar": [
+            "demonstratives"
+          ]
+        },
+        {
+          "text": "inanifundisha",
+          "gloss": "\"It is teaching me\" — i- (subject: it (n/n)) + na- (present) + ni- (object: me) + -fundisha (teach). From kufundisha. Extension: causative (-isha/-esha/-za: \"make / cause\").",
+          "grammar": [
+            "present-na",
+            "object-infixes",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kufundisha (to teach)",
+            "tense": "Present (-na-) + object -ni-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninanifundisha"
+              },
+              {
+                "pronoun": "you",
+                "form": "unanifundisha"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "ananifundisha"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunanifundisha"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnanifundisha"
+              },
+              {
+                "pronoun": "they",
+                "form": "wananifundisha"
+              },
+              {
+                "pronoun": "it (n/n)",
+                "form": "inanifundisha"
+              },
+              {
+                "pronoun": "they (n/n)",
+                "form": "zinanifundisha"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mambo mengi mapya",
+          "gloss": "\"lots of new things\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante sana. Safari hii inanifundisha mambo mengi mapya!",
+          "correct": true
+        },
+        {
+          "swahili": "Asante sana. Safari hii inakufundisha mambo mengi mapya!",
+          "correct": false
+        },
+        {
+          "swahili": "Asante sana. Safari hii ilinifundisha mambo mengi mapya kesho!",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "3079968f-6948-5af8-96b6-b8d49355047b",
+      "swahili": "mandhari",
+      "english": "scenery |",
+      "exampleContext": ""
+    },
+    {
+      "id": "4e646225-dcd5-5de6-93bb-8071e64fb78f",
+      "swahili": "maporomoko ya maji",
+      "english": "waterfall",
+      "exampleContext": "lit. \"a tumbling of water\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "9d8cb555-a4eb-580f-92f2-95e8f07157fc",
+      "swahili": "kivutio",
+      "english": "attraction",
+      "exampleContext": "kivutio kikubwa = a big attraction"
+    },
+    {
+      "id": "aad2edab-450d-5652-a7bd-226972b3750e",
+      "swahili": "mtalii / watalii",
+      "english": "tourist / tourists |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "719beb01-f5e5-5c45-8efa-0683fd0738a8",
+      "swahili": "kiongozi",
+      "english": "guide, leader",
+      "exampleContext": "kiongozi wa watalii = tour guide"
+    },
+    {
+      "id": "e4381a83-c28d-588f-9ba0-5ef33ae60082",
+      "swahili": "salama",
+      "english": "safe |",
+      "exampleContext": ""
+    },
+    {
+      "id": "e7e9eea9-9029-5134-9eb4-4527972802c3",
+      "swahili": "mtu ambaye…",
+      "english": "a person who…",
+      "exampleContext": "mtu ambaye hana viatu = anyone without shoes",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "b5ad9435-6991-5fee-bbaa-8838dacb0ab2",
+      "swahili": "Tukifika…",
+      "english": "When we get there…",
+      "exampleContext": "-ki- = if / when",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "f9ceb205-a7b9-5cec-88c9-0f532b5607a4",
+      "swahili": "Ningejua… ningeleta…",
+      "english": "If I'd known… I'd have brought…",
+      "exampleContext": "-nge- … -nge-",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "a8f1bd9e-dd7f-5878-850f-6b4a0503afb8",
+      "swahili": "hulima / hufuga",
+      "english": "(they) grow crops / keep animals",
+      "exampleContext": "hu- = habitually",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "5a0503c1-b0fd-53dd-98b1-9f21175c13c2",
+      "swahili": "ng'ombe",
+      "english": "cow(s), cattle |",
+      "exampleContext": ""
+    },
+    {
+      "id": "71c430b7-3b85-5b62-9345-36e3764b5847",
+      "swahili": "utamaduni",
+      "english": "culture |",
+      "exampleContext": ""
+    },
+    {
+      "id": "4a665816-1b1a-5151-a1a8-967ab3bf04e8",
+      "swahili": "Ningependa sana!",
+      "english": "I'd love that! |",
+      "exampleContext": "",
+      "partOfSpeech": "phrase"
+    }
+  ],
+  "practice": [
+    {
+      "id": "e7d839e1-4f0d-5449-a319-d1475f50b741",
+      "mode": "translate",
+      "english": "anyone who doesn't have good shoes",
+      "before": "mtu ambaye ",
+      "after": " viatu vizuri",
+      "options": [
+        {
+          "text": "hana",
+          "correct": true
+        },
+        {
+          "text": "ana",
+          "correct": false,
+          "feedback": "ana = He/she has"
+        },
+        {
+          "text": "anakula",
+          "correct": false,
+          "feedback": "anakula = He/she is eating"
+        }
+      ],
+      "explanation": "hana = doesn't have, ana = has.",
+      "grammar": [
+        "na-have",
+        "negative-present"
+      ]
+    },
+    {
+      "id": "e68d4cd6-687b-5209-8e17-30f18ff6fc54",
+      "mode": "translate",
+      "english": "a shop that sells shoes",
+      "before": "duka ambayo ",
+      "after": " viatu",
+      "options": [
+        {
+          "text": "inauza",
+          "correct": true
+        },
+        {
+          "text": "inanunua",
+          "correct": false,
+          "feedback": "inanunua = It is buying"
+        },
+        {
+          "text": "inalala",
+          "correct": false,
+          "feedback": "inalala = It is sleeping"
+        }
+      ],
+      "explanation": "-uza = sell, -nunua = buy.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "67e879b1-91f1-53c8-9f98-a4e30a330918",
+      "mode": "translate",
+      "english": "When we get there, we'll walk.",
+      "before": "",
+      "after": " huko, tutatembea.",
+      "options": [
+        {
+          "text": "Tukifika",
+          "correct": true
+        },
+        {
+          "text": "Tulifika",
+          "correct": false,
+          "feedback": "Tulifika = We arrived"
+        },
+        {
+          "text": "Tumefika",
+          "correct": false,
+          "feedback": "Tumefika = We have arrived"
+        }
+      ],
+      "explanation": "-ki- = if / when (about the future).",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "6efdf1af-f537-57e3-be3c-f74fd7da9838",
+      "mode": "translate",
+      "english": "If I get the chance, I'll talk to them.",
+      "before": "",
+      "after": " nafasi, nitazungumza nao.",
+      "options": [
+        {
+          "text": "Nikipata",
+          "correct": true
+        },
+        {
+          "text": "Nilipata",
+          "correct": false,
+          "feedback": "Nilipata = I got"
+        },
+        {
+          "text": "Ningepata",
+          "correct": false,
+          "feedback": "Ningepata = I would get"
+        }
+      ],
+      "explanation": "-ki- + future = a real possibility.",
+      "grammar": [
+        "ki-po-ka"
+      ]
+    },
+    {
+      "id": "0515a12e-2072-5b9d-b57d-8b2ad2bf3671",
+      "mode": "translate",
+      "english": "If I'd known earlier, I'd have brought shoes.",
+      "before": "",
+      "after": " mapema, ningeleta viatu.",
+      "options": [
+        {
+          "text": "Ningejua",
+          "correct": true
+        },
+        {
+          "text": "Nikijua",
+          "correct": false,
+          "feedback": "Nikijua = If/when I know"
+        },
+        {
+          "text": "Nilijua",
+          "correct": false,
+          "feedback": "Nilijua = I knew"
+        }
+      ],
+      "explanation": "-nge- … -nge- = if … would.",
+      "grammar": [
+        "conditional-nge"
+      ]
+    },
+    {
+      "id": "3ce454f8-8b0a-5730-a485-d2d0a07b1af6",
+      "mode": "translate",
+      "english": "I'd love that!",
+      "before": "",
+      "after": " sana!",
+      "options": [
+        {
+          "text": "Ningependa",
+          "correct": true
+        },
+        {
+          "text": "Nitapenda",
+          "correct": false,
+          "feedback": "Nitapenda = I will like"
+        },
+        {
+          "text": "Ninapenda",
+          "correct": false,
+          "feedback": "Ninapenda = I like"
+        }
+      ],
+      "explanation": "ninge- = I would.",
+      "grammar": [
+        "conditional-nge"
+      ]
+    },
+    {
+      "id": "2538573b-9b05-5542-8d78-efd751704427",
+      "mode": "translate",
+      "english": "They (usually) grow potatoes.",
+      "before": "",
+      "after": " viazi.",
+      "options": [
+        {
+          "text": "Hulima",
+          "correct": true
+        },
+        {
+          "text": "Walilima",
+          "correct": false,
+          "feedback": "Walilima = They farmed"
+        },
+        {
+          "text": "Watalima",
+          "correct": false,
+          "feedback": "Watalima = They will farm"
+        }
+      ],
+      "explanation": "hu- = usually, habitually.",
+      "grammar": [
+        "habitual-hu-nga"
+      ]
+    },
+    {
+      "id": "de944230-478f-5985-a323-2d8a056d9066",
+      "mode": "translate",
+      "english": "They keep cattle.",
+      "before": "Hufuga ",
+      "after": ".",
+      "options": [
+        {
+          "text": "ng'ombe",
+          "correct": true
+        },
+        {
+          "text": "viazi",
+          "correct": false,
+          "feedback": "viazi = potatoes"
+        },
+        {
+          "text": "mahindi",
+          "correct": false,
+          "feedback": "mahindi = maize"
+        }
+      ],
+      "explanation": "-fuga = keep (animals), ng'ombe = cattle."
+    },
+    {
+      "id": "ef3b62d1-d1b4-5150-a0f9-452ead832391",
+      "mode": "translate",
+      "english": "I love seeing country life.",
+      "before": "Mimi ",
+      "after": " kuona maisha ya mashambani.",
+      "options": [
+        {
+          "text": "hupenda",
+          "correct": true
+        },
+        {
+          "text": "nitapenda",
+          "correct": false,
+          "feedback": "nitapenda = I will like"
+        },
+        {
+          "text": "ningependa",
+          "correct": false,
+          "feedback": "ningependa = I would like"
+        }
+      ],
+      "explanation": "hu- = as a habit, always.",
+      "grammar": [
+        "habitual-hu-nga"
+      ]
+    },
+    {
+      "id": "93ea85fe-e103-54bd-9c15-1f1a56754de4",
+      "mode": "translate",
+      "english": "visitors who try Swahili",
+      "before": "wageni ambao ",
+      "after": " Kiswahili",
+      "options": [
+        {
+          "text": "hujaribu",
+          "correct": true
+        },
+        {
+          "text": "hulala",
+          "correct": false,
+          "feedback": "hulala = Usually sleep (habit, any person)"
+        },
+        {
+          "text": "hula",
+          "correct": false
+        }
+      ],
+      "explanation": "-jaribu = try.",
+      "grammar": [
+        "negative-present"
+      ]
+    },
+    {
+      "id": "074f094d-a224-5a90-aa01-2ce106424b6a",
+      "mode": "translate",
+      "english": "a village close by",
+      "before": "kijiji ambayo iko ",
+      "after": "",
+      "options": [
+        {
+          "text": "karibu",
+          "correct": true
+        },
+        {
+          "text": "mbali",
+          "correct": false,
+          "feedback": "mbali = far"
+        },
+        {
+          "text": "juu",
+          "correct": false,
+          "feedback": "juu = up / on top"
+        }
+      ],
+      "explanation": "karibu = near, mbali = far."
+    },
+    {
+      "id": "1c599521-5ef7-5ab8-ba0b-8d677ae98b4a",
+      "mode": "translate",
+      "english": "The scenery is stunning.",
+      "before": "Mandhari ni ya ",
+      "after": ".",
+      "options": [
+        {
+          "text": "kuvutia",
+          "correct": true
+        },
+        {
+          "text": "kulala",
+          "correct": false,
+          "feedback": "kulala = To sleep"
+        },
+        {
+          "text": "kuanguka",
+          "correct": false,
+          "feedback": "kuanguka = To fall"
+        }
+      ],
+      "explanation": "kuvutia = attractive (lit. to pull).",
+      "grammar": [
+        "infinitive-ku",
+        "verb-extensions"
+      ]
+    },
+    {
+      "id": "6fb188b7-98e1-569f-80c6-5dca1062c1ba",
+      "mode": "translate",
+      "english": "farmers",
+      "before": "",
+      "after": "",
+      "options": [
+        {
+          "text": "wakulima",
+          "correct": true
+        },
+        {
+          "text": "wafugaji",
+          "correct": false
+        },
+        {
+          "text": "wavuvi",
+          "correct": false
+        }
+      ],
+      "explanation": "wakulima = farmers, wafugaji = herders, wavuvi = fishermen."
+    },
+    {
+      "id": "248678e6-64c3-5c11-8d2f-fbc7b0eef8da",
+      "mode": "translate",
+      "english": "There are lots of rocks.",
+      "before": "Kuna ",
+      "after": " mengi.",
+      "options": [
+        {
+          "text": "mawe",
+          "correct": true
+        },
+        {
+          "text": "viatu",
+          "correct": false,
+          "feedback": "viatu = shoes"
+        },
+        {
+          "text": "picha",
+          "correct": false,
+          "feedback": "picha = photo / picture"
+        }
+      ],
+      "explanation": "mawe = rocks, stones."
+    },
+    {
+      "id": "1193feed-a274-5286-9170-8abad39f9ac3",
+      "mode": "translate",
+      "english": "We'll take photos.",
+      "before": "Tutapiga ",
+      "after": ".",
+      "options": [
+        {
+          "text": "picha",
+          "correct": true
+        },
+        {
+          "text": "simu",
+          "correct": false,
+          "feedback": "simu = phone / call"
+        },
+        {
+          "text": "pasi",
+          "correct": false,
+          "feedback": "pasi = iron (for clothes)"
+        }
+      ],
+      "explanation": "kupiga picha = to take photos.",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "3e1b3010-a98e-559b-a32e-8e724fb66cb7",
+      "mode": "translate",
+      "english": "Anyone who doesn't have shoes will fall.",
+      "before": "Mtu ambaye hana viatu ",
+      "after": ".",
+      "options": [
+        {
+          "text": "ataanguka",
+          "correct": true
+        },
+        {
+          "text": "alianguka",
+          "correct": false,
+          "feedback": "alianguka = He/she fell"
+        },
+        {
+          "text": "ameanguka",
+          "correct": false,
+          "feedback": "ameanguka = He/she has fallen"
+        }
+      ],
+      "explanation": "-ta- = will."
+    },
+    {
+      "id": "c05105ec-6a5a-50c1-8bf4-6884381d8658",
+      "mode": "complete",
+      "english": "Is the path safe? — Yes, it's safe.",
+      "before": "Njia ni salama? — Ndiyo, ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "salama",
+          "correct": true
+        },
+        {
+          "text": "hatari",
+          "correct": false,
+          "feedback": "hatari = danger / dangerous"
+        },
+        {
+          "text": "ngumu",
+          "correct": false,
+          "feedback": "ngumu = hard / difficult"
+        }
+      ],
+      "explanation": "salama: safe"
+    }
+  ]
+}

@@ -1,0 +1,1235 @@
+{
+  "id": "weather-seasons",
+  "uuid": "fc6db509-1ecf-5687-ab40-d24f50367225",
+  "title": "Rain, Sun and Cold July: Talking Weather",
+  "category": "weather",
+  "difficulty": "beginner",
+  "level": 3,
+  "order": 302,
+  "theme": "weather",
+  "culturalNote": "Kenya sits on the equator, so there's no winter or summer — there are rains. The long rains (masika) fall from March to May, the short rains (vuli) from October to December, and the dry season (kiangazi) comes in between. Nairobi is high up, so July is surprisingly cold and grey; Kenyans in jackets and scarves will tell you \"ni baridi sana!\". Weather is the safest small talk there is.",
+  "startingPoint": "A grey July morning. You meet your neighbour Mama Njeri at the gate, wrapped in a shawl.",
+  "grammarFocus": [
+    "ni-copula",
+    "present-na",
+    "time-swahili"
+  ],
+  "grammar": [
+    "ni-copula",
+    "present-na",
+    "time-swahili",
+    "greetings",
+    "noun-classes-mwa-nn",
+    "question-words",
+    "discourse-particles",
+    "possessives",
+    "numbers-money",
+    "sanifu-noun-classes",
+    "subject-prefixes"
+  ],
+  "turns": [
+    {
+      "id": "bb99dbd0-8e95-5e65-b3e2-8b4672f5d1ef",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Habari ya asubuhi, John! Leo ni baridi sana!",
+      "english": "Good morning, John! It's very cold today!",
+      "words": [
+        {
+          "text": "Habari ya asubuhi",
+          "gloss": "good morning (lit. \"news of the morning?\")",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "John",
+          "gloss": "John (name)"
+        },
+        {
+          "text": "Leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "baridi",
+          "gloss": "cold — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        }
+      ]
+    },
+    {
+      "id": "967ef8b0-ae57-5618-88d0-eea174e222ea",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Nzuri, mama. Ndiyo, ni baridi sana! Kwa nini?",
+      "english": "Good, ma'am. Yes, it's very cold! Why?",
+      "words": [
+        {
+          "text": "Nzuri",
+          "gloss": "good / fine — the standard answer to habari",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "mama",
+          "gloss": "mother / respectful \"madam\" — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "baridi",
+          "gloss": "cold — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "sana",
+          "gloss": "very / a lot"
+        },
+        {
+          "text": "Kwa nini",
+          "gloss": "why?",
+          "grammar": [
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Nzuri, mama. Ndiyo, ni baridi sana! Kwa nini?",
+          "correct": true
+        },
+        {
+          "swahili": "Nzuri, mama. Ndiyo, ni joto sana! Kwa nini?",
+          "correct": false
+        },
+        {
+          "swahili": "Nzuri, mama. Ndiyo, ni baridi sana! Kwa nani?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "8d02f7f2-5269-5569-8480-6b1fa5a6f4d4",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Ni mwezi wa saba — Julai ni baridi kila mwaka hapa Nairobi.",
+      "english": "It's the seventh month — July is cold every year here in Nairobi.",
+      "words": [
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mwezi wa saba",
+          "gloss": "\"the seventh month\" — July"
+        },
+        {
+          "text": "Julai",
+          "gloss": "July"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "baridi",
+          "gloss": "cold — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "kila mwaka",
+          "gloss": "\"every year\""
+        },
+        {
+          "text": "hapa",
+          "gloss": "here"
+        },
+        {
+          "text": "Nairobi",
+          "gloss": "Nairobi"
+        }
+      ]
+    },
+    {
+      "id": "68a75f4a-cd41-5a1b-bb86-64295e5f057d",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Kweli? Kampala ni joto mwaka mzima!",
+      "english": "Really? Kampala is warm all year round!",
+      "words": [
+        {
+          "text": "Kweli",
+          "gloss": "true / really",
+          "grammar": [
+            "discourse-particles"
+          ]
+        },
+        {
+          "text": "Kampala",
+          "gloss": "Kampala — capital of Uganda"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "joto",
+          "gloss": "heat / warmth — ni joto = it's warm"
+        },
+        {
+          "text": "mwaka mzima",
+          "gloss": "\"the whole year\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Kweli? Kampala ni joto mwaka mzima!",
+          "correct": true
+        },
+        {
+          "swahili": "Kweli? Kampala ni baridi mwaka mzima!",
+          "correct": false
+        },
+        {
+          "swahili": "Kweli? Kampala ni joto mwaka wapi!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "36776f8d-a2b5-5509-9942-1b7e989b1e31",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Haha! Na anga ni nyeusi — mvua inakuja.",
+      "english": "Ha! And the sky is dark — the rain is coming.",
+      "words": [
+        {
+          "text": "Haha",
+          "gloss": "haha"
+        },
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "anga",
+          "gloss": "sky"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "nyeusi",
+          "gloss": "dark / black"
+        },
+        {
+          "text": "mvua",
+          "gloss": "rain — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "inakuja",
+          "gloss": "\"is coming\" — -ja = come"
+        }
+      ]
+    },
+    {
+      "id": "4e6cdf6e-ed6a-5247-b7b3-a5211b236772",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ni msimu wa mvua sasa?",
+      "english": "Is it the rainy season now?",
+      "words": [
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "msimu wa mvua",
+          "gloss": "\"the rainy season\""
+        },
+        {
+          "text": "sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ni msimu wa mvua sasa?",
+          "correct": true
+        },
+        {
+          "swahili": "Ni msimu wa mvua wapi?",
+          "correct": false
+        },
+        {
+          "swahili": "Ni mwavuli wa mvua sasa?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "c0c57d5d-8a4b-58c3-91d1-59c26e0e92d9",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Hapana. Mvua kubwa — masika — ni mwezi wa tatu hadi wa tano. Mvua ndogo — vuli — ni mwezi wa kumi hadi wa kumi na mbili.",
+      "english": "No. The long rains — masika — are March to May. The short rains — vuli — are October to December.",
+      "words": [
+        {
+          "text": "Hapana",
+          "gloss": "no"
+        },
+        {
+          "text": "Mvua kubwa",
+          "gloss": "\"the big (long) rains\""
+        },
+        {
+          "text": "masika",
+          "gloss": "the long rains (March–May)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mwezi wa tatu",
+          "gloss": "March"
+        },
+        {
+          "text": "hadi",
+          "gloss": "until / up to"
+        },
+        {
+          "text": "wa",
+          "gloss": "\"of\" — m/wa agreement (mtoto wa Kamau, watu wa Nairobi)",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "tano",
+          "gloss": "5 (n/n form — used for counting, money, things)",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "Mvua ndogo",
+          "gloss": "\"the small (short) rains\""
+        },
+        {
+          "text": "vuli",
+          "gloss": "the short rains (October–December)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mwezi wa kumi",
+          "gloss": "October"
+        },
+        {
+          "text": "hadi",
+          "gloss": "until / up to"
+        },
+        {
+          "text": "wa",
+          "gloss": "\"of\" — m/wa agreement (mtoto wa Kamau, watu wa Nairobi)",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "kumi",
+          "gloss": "10 (n/n form — used for counting, money, things)",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "mbili",
+          "gloss": "2 (n/n form — used for counting, money, things)",
+          "grammar": [
+            "numbers-money"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c8c6521d-ac34-5ea7-a1c6-56056980b9a5",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Na sasa, mwezi wa saba, ni kiangazi?",
+      "english": "And now, in July, it's the dry season?",
+      "words": [
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "sasa",
+          "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
+        },
+        {
+          "text": "mwezi wa saba",
+          "gloss": "\"the seventh month\" — July"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "kiangazi",
+          "gloss": "the dry season",
+          "sanifu": "Sanifu: ki/vi class"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Na sasa, mwezi wa saba, ni kiangazi?",
+          "correct": true
+        },
+        {
+          "swahili": "Na sasa, mwezi wa saba, ni masika?",
+          "correct": false
+        },
+        {
+          "swahili": "Na sasa, mwezi wa kumi, ni kiangazi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "204f359a-eca2-511b-8490-c5458422873e",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Ndiyo, ni kiangazi na ni baridi. Lakini leo mvua kidogo inanyesha.",
+      "english": "Yes, it's the dry season and it's cold. But today a little rain is falling.",
+      "words": [
+        {
+          "text": "Ndiyo",
+          "gloss": "yes / it's (that)",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "kiangazi",
+          "gloss": "the dry season",
+          "sanifu": "Sanifu: ki/vi class"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "baridi",
+          "gloss": "cold — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "mvua",
+          "gloss": "rain — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "kidogo",
+          "gloss": "a little / a bit — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: ki/vi class — kidogo (adverb, no agreement)"
+        },
+        {
+          "text": "inanyesha",
+          "gloss": "\"is falling (rain)\" — -nyesha = rain"
+        }
+      ]
+    },
+    {
+      "id": "2a3c26ef-32ee-5378-8ea3-c5a98ff9306f",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Poa. Ninachukua mwavuli na koti.",
+      "english": "Okay. I'm taking an umbrella and a jacket.",
+      "words": [
+        {
+          "text": "Poa",
+          "gloss": "cool / fine — from kupoa, \"to cool down\"",
+          "grammar": [
+            "greetings"
+          ]
+        },
+        {
+          "text": "Ninachukua",
+          "gloss": "\"I am taking\" — ni- (subject: I) + na- (present) + -chukua (take). From kuchukua. Colloquially often shortened: ni-na- → na-.",
+          "grammar": [
+            "present-na"
+          ],
+          "conjugation": {
+            "verb": "kuchukua (to take)",
+            "tense": "Present (-na-)",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "ninachukua"
+              },
+              {
+                "pronoun": "you",
+                "form": "unachukua"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "anachukua"
+              },
+              {
+                "pronoun": "we",
+                "form": "tunachukua"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mnachukua"
+              },
+              {
+                "pronoun": "they",
+                "form": "wanachukua"
+              }
+            ]
+          }
+        },
+        {
+          "text": "mwavuli",
+          "gloss": "umbrella"
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "koti",
+          "gloss": "jacket / coat"
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Poa. Ninachukua mwavuli na koti.",
+          "correct": true
+        },
+        {
+          "swahili": "Poa. Unachukua mwavuli na koti.",
+          "correct": false
+        },
+        {
+          "swahili": "Poa. Ninakula mwavuli na koti.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "601fbe3e-b0c7-5dc8-baa4-51f06147e83e",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Ni vizuri. Upepo pia ni mkali leo.",
+      "english": "Good. The wind is strong today too.",
+      "words": [
+        {
+          "text": "Ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "vizuri",
+          "gloss": "well / nicely"
+        },
+        {
+          "text": "Upepo",
+          "gloss": "wind"
+        },
+        {
+          "text": "pia",
+          "gloss": "also / too"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mkali",
+          "gloss": "strong / fierce"
+        },
+        {
+          "text": "leo",
+          "gloss": "today — n/n noun (same word for one & many)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5f50096d-8196-539e-930d-7adc7e25d48d",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Asante, mama. Siku njema!",
+      "english": "Thank you, ma'am. Have a good day!",
+      "words": [
+        {
+          "text": "Asante",
+          "gloss": "thank you"
+        },
+        {
+          "text": "mama",
+          "gloss": "mother / respectful \"madam\" — m/wa noun (people & animals)",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "Siku njema",
+          "gloss": "\"have a good day\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante, mama. Siku njema!",
+          "correct": true
+        },
+        {
+          "swahili": "Asante, mama. Usiku mwema!",
+          "correct": false
+        },
+        {
+          "swahili": "Pole, mama. Siku njema!",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "45378a96-2006-549f-931b-ce4b504207ac",
+      "speaker": "Mama Njeri",
+      "role": "auto",
+      "swahili": "Na wewe pia. Kwa heri!",
+      "english": "You too. Bye!",
+      "words": [
+        {
+          "text": "Na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "wewe",
+          "gloss": "you (one person)",
+          "grammar": [
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "pia",
+          "gloss": "also / too"
+        },
+        {
+          "text": "Kwa heri",
+          "gloss": "goodbye",
+          "grammar": [
+            "greetings"
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "e6718d7c-1663-543e-86ab-675f45302bed",
+      "swahili": "hali ya hewa",
+      "english": "weather",
+      "exampleContext": "lit. \"the state of the air\"",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "422c877a-9cc0-5c22-b917-ebcb3884ec26",
+      "swahili": "baridi / joto",
+      "english": "cold / warm, hot",
+      "exampleContext": "Leo ni baridi.",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "8b5a6a88-1fdc-50c1-a44c-35739cf335aa",
+      "swahili": "mvua",
+      "english": "rain",
+      "exampleContext": "Mvua inanyesha = it's raining."
+    },
+    {
+      "id": "c039ac87-33fc-51df-8e0a-d925f698b8d2",
+      "swahili": "jua",
+      "english": "sun",
+      "exampleContext": "Jua ni kali = the sun is strong."
+    },
+    {
+      "id": "ce4fd476-4855-5c56-9e33-670b5fef5a9f",
+      "swahili": "upepo",
+      "english": "wind |",
+      "exampleContext": ""
+    },
+    {
+      "id": "8f1943b0-faa5-571f-9643-bf7fb299dfc5",
+      "swahili": "anga",
+      "english": "sky |",
+      "exampleContext": ""
+    },
+    {
+      "id": "6de2065d-5980-5622-b900-087defc0c6b5",
+      "swahili": "msimu",
+      "english": "season",
+      "exampleContext": "Plural: misimu"
+    },
+    {
+      "id": "f9c2b2f7-444b-5e02-9a9a-0cbe868daf6a",
+      "swahili": "masika / vuli",
+      "english": "long rains / short rains",
+      "exampleContext": "March–May / October–December",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "950324a3-e38a-5b36-be69-6958cc56d2b4",
+      "swahili": "kiangazi",
+      "english": "dry season",
+      "exampleContext": "Sanifu: ki/vi class"
+    },
+    {
+      "id": "78abb57c-4d69-5d7e-ad12-cb7c32e11350",
+      "swahili": "mwezi wa saba",
+      "english": "July",
+      "exampleContext": "Months are numbered: mwezi wa kwanza … wa kumi na mbili",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "e9afc51e-f7c2-50a4-bfe4-abfbba20c276",
+      "swahili": "mwaka",
+      "english": "year",
+      "exampleContext": "kila mwaka = every year"
+    },
+    {
+      "id": "e6d3e64a-a261-5bf2-b097-2f8bfdf73429",
+      "swahili": "mwavuli",
+      "english": "umbrella |",
+      "exampleContext": ""
+    },
+    {
+      "id": "75d9960c-aa11-5379-9b2f-effea9de5fc6",
+      "swahili": "koti",
+      "english": "jacket / coat |",
+      "exampleContext": ""
+    }
+  ],
+  "practice": [
+    {
+      "id": "6f2c4398-aa9b-5ccc-8031-1d50757c8c14",
+      "mode": "translate",
+      "english": "It's very cold today.",
+      "before": "Leo ni ",
+      "after": " sana.",
+      "options": [
+        {
+          "text": "baridi",
+          "correct": true
+        },
+        {
+          "text": "joto",
+          "correct": false,
+          "feedback": "joto = heat / warmth"
+        },
+        {
+          "text": "mvua",
+          "correct": false,
+          "feedback": "mvua = rain"
+        }
+      ],
+      "explanation": "baridi = cold, joto = warm / hot.",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "dba7eb26-705d-5153-afdc-86c20701a34e",
+      "mode": "translate",
+      "english": "Kampala is warm all year round.",
+      "before": "Kampala ni ",
+      "after": " mwaka mzima.",
+      "options": [
+        {
+          "text": "joto",
+          "correct": true
+        },
+        {
+          "text": "baridi",
+          "correct": false,
+          "feedback": "baridi = cold"
+        },
+        {
+          "text": "kiangazi",
+          "correct": false,
+          "feedback": "kiangazi = the dry season"
+        }
+      ],
+      "explanation": "joto: heat / warmth — ni joto = it's warm"
+    },
+    {
+      "id": "4cd63f6e-22b7-56ce-b106-dc8424cfd267",
+      "mode": "translate",
+      "english": "The rain is coming.",
+      "before": "",
+      "after": " inakuja.",
+      "options": [
+        {
+          "text": "Mvua",
+          "correct": true
+        },
+        {
+          "text": "Jua",
+          "correct": false,
+          "feedback": "Jua = sun"
+        },
+        {
+          "text": "Upepo",
+          "correct": false,
+          "feedback": "Upepo = wind"
+        }
+      ],
+      "explanation": "mvua = rain, jua = sun, upepo = wind.",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "dc9453a5-93ea-5df9-a469-acdf66a4996c",
+      "mode": "translate",
+      "english": "It's raining.",
+      "before": "Mvua ",
+      "after": ".",
+      "options": [
+        {
+          "text": "inanyesha",
+          "correct": true
+        },
+        {
+          "text": "inakuja",
+          "correct": false,
+          "feedback": "inakuja = is coming"
+        },
+        {
+          "text": "inaenda",
+          "correct": false,
+          "feedback": "inaenda = It is going"
+        }
+      ],
+      "explanation": "-nyesha = (of rain) fall."
+    },
+    {
+      "id": "4288dcb7-a25a-5a28-914a-9852f042df2b",
+      "mode": "translate",
+      "english": "The sun is very strong.",
+      "before": "",
+      "after": " ni kali sana.",
+      "options": [
+        {
+          "text": "Jua",
+          "correct": true
+        },
+        {
+          "text": "Mvua",
+          "correct": false,
+          "feedback": "Mvua = rain"
+        },
+        {
+          "text": "Anga",
+          "correct": false,
+          "feedback": "Anga = sky"
+        }
+      ],
+      "explanation": "jua = sun, anga = sky.",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    },
+    {
+      "id": "26c28da2-2f34-5b08-84d6-771fc1731005",
+      "mode": "translate",
+      "english": "The sky is dark.",
+      "before": "Anga ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "nyeusi",
+          "correct": true
+        },
+        {
+          "text": "nyeupe",
+          "correct": false,
+          "feedback": "nyeupe = white"
+        },
+        {
+          "text": "bluu",
+          "correct": false,
+          "feedback": "bluu = blue"
+        }
+      ],
+      "explanation": "nyeusi = dark / black, nyeupe = white."
+    },
+    {
+      "id": "080c6ac7-0a98-5cd2-8cf6-9dad0959042d",
+      "mode": "translate",
+      "english": "the long rains (March–May)",
+      "before": "",
+      "after": "",
+      "options": [
+        {
+          "text": "masika",
+          "correct": true
+        },
+        {
+          "text": "vuli",
+          "correct": false,
+          "feedback": "vuli = the short rains (October–December)"
+        },
+        {
+          "text": "kiangazi",
+          "correct": false,
+          "feedback": "kiangazi = the dry season"
+        }
+      ],
+      "explanation": "masika = long rains, vuli = short rains, kiangazi = dry season."
+    },
+    {
+      "id": "05d5d0f1-48c6-5bcd-b99e-cda33fe91bcf",
+      "mode": "translate",
+      "english": "the short rains (Oct–Dec)",
+      "before": "",
+      "after": "",
+      "options": [
+        {
+          "text": "vuli",
+          "correct": true
+        },
+        {
+          "text": "masika",
+          "correct": false,
+          "feedback": "masika = the long rains (March–May)"
+        },
+        {
+          "text": "kiangazi",
+          "correct": false,
+          "feedback": "kiangazi = the dry season"
+        }
+      ],
+      "explanation": "vuli: the short rains (October–December)"
+    },
+    {
+      "id": "c54a3392-b818-5f7b-85d2-d3860c72b27c",
+      "mode": "translate",
+      "english": "the dry season",
+      "before": "",
+      "after": "",
+      "options": [
+        {
+          "text": "kiangazi",
+          "correct": true
+        },
+        {
+          "text": "masika",
+          "correct": false,
+          "feedback": "masika = the long rains (March–May)"
+        },
+        {
+          "text": "vuli",
+          "correct": false,
+          "feedback": "vuli = the short rains (October–December)"
+        }
+      ],
+      "explanation": "kiangazi: the dry season"
+    },
+    {
+      "id": "62798f9e-3d9a-55b1-9e21-4d8ea77cb4c3",
+      "mode": "translate",
+      "english": "July (the seventh month)",
+      "before": "mwezi wa ",
+      "after": "",
+      "options": [
+        {
+          "text": "saba",
+          "correct": true
+        },
+        {
+          "text": "tano",
+          "correct": false,
+          "feedback": "tano = 5 (n/n form"
+        },
+        {
+          "text": "tisa",
+          "correct": false,
+          "feedback": "tisa = 9 (n/n form"
+        }
+      ],
+      "explanation": "Months are numbered: mwezi wa kwanza = January … mwezi wa saba = July.",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "b2435253-1ca1-55aa-9069-235ab492e617",
+      "mode": "translate",
+      "english": "December",
+      "before": "mwezi wa ",
+      "after": "",
+      "options": [
+        {
+          "text": "kumi na mbili",
+          "correct": true
+        },
+        {
+          "text": "kumi",
+          "correct": false,
+          "feedback": "kumi = 10 (n/n form"
+        },
+        {
+          "text": "mbili",
+          "correct": false,
+          "feedback": "mbili = 2 (n/n form"
+        }
+      ],
+      "explanation": "December = the twelfth month.",
+      "grammar": [
+        "numbers-money"
+      ]
+    },
+    {
+      "id": "3be788a7-3ffe-5292-b2e4-b76ce43dff63",
+      "mode": "translate",
+      "english": "I'm taking an umbrella.",
+      "before": "Ninachukua ",
+      "after": ".",
+      "options": [
+        {
+          "text": "mwavuli",
+          "correct": true
+        },
+        {
+          "text": "miwani",
+          "correct": false,
+          "feedback": "miwani = glasses / sunglasses"
+        },
+        {
+          "text": "kofia",
+          "correct": false,
+          "feedback": "kofia = hat / cap"
+        }
+      ],
+      "explanation": "mwavuli = umbrella, miwani = glasses, kofia = hat."
+    },
+    {
+      "id": "4ba25432-63d2-507a-a00e-4c1a655df7c8",
+      "mode": "translate",
+      "english": "She's taking a jacket.",
+      "before": "",
+      "after": " koti.",
+      "options": [
+        {
+          "text": "Anachukua",
+          "correct": true
+        },
+        {
+          "text": "Ninachukua",
+          "correct": false,
+          "feedback": "Ninachukua = I am taking"
+        },
+        {
+          "text": "Wanachukua",
+          "correct": false,
+          "feedback": "Wanachukua = They are taking"
+        }
+      ],
+      "explanation": "Anachukua = \"He/she is taking\" — a- (subject: he/she) + na- (present) + -chukua (take). From kuchukua.",
+      "grammar": [
+        "present-na"
+      ]
+    },
+    {
+      "id": "b376c7bf-1b32-5a43-a05b-9d0a5b491dfc",
+      "mode": "translate",
+      "english": "every year",
+      "before": "kila ",
+      "after": "",
+      "options": [
+        {
+          "text": "mwaka",
+          "correct": true
+        },
+        {
+          "text": "mwezi",
+          "correct": false,
+          "feedback": "mwezi = month / moon (plural miezi)"
+        },
+        {
+          "text": "siku",
+          "correct": false,
+          "feedback": "siku = day"
+        }
+      ],
+      "explanation": "mwaka = year, mwezi = month, siku = day.",
+      "grammar": [
+        "sanifu-noun-classes"
+      ]
+    },
+    {
+      "id": "6fc124c7-723c-535d-9e41-42f7180295b5",
+      "mode": "translate",
+      "english": "The wind is strong.",
+      "before": "",
+      "after": " ni mkali.",
+      "options": [
+        {
+          "text": "Upepo",
+          "correct": true
+        },
+        {
+          "text": "Mvua",
+          "correct": false,
+          "feedback": "Mvua = rain"
+        },
+        {
+          "text": "Jua",
+          "correct": false,
+          "feedback": "Jua = sun"
+        }
+      ],
+      "explanation": "upepo = wind."
+    },
+    {
+      "id": "b4f9a362-ce39-5d77-ba3a-6b6501cf75fb",
+      "mode": "complete",
+      "english": "How's the weather? — It's cold.",
+      "before": "Hali ya hewa iko aje? — Ni ",
+      "after": ".",
+      "options": [
+        {
+          "text": "baridi",
+          "correct": true
+        },
+        {
+          "text": "njaa",
+          "correct": false,
+          "feedback": "njaa = hunger"
+        },
+        {
+          "text": "kazi",
+          "correct": false,
+          "feedback": "kazi = work / job"
+        }
+      ],
+      "explanation": "baridi: cold — n/n noun (same word for one & many)",
+      "grammar": [
+        "noun-classes-mwa-nn"
+      ]
+    }
+  ]
+}

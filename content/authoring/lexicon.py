@@ -590,10 +590,10 @@ add('alikuwa na', '"He/she had" — past of ana', grammar=['na-have', 'past-li']
 add('tulikuwa na', '"We had"', grammar=['na-have', 'past-li'])
 add('nitakuwa na', '"I will have"', grammar=['na-have', 'future-ta'])
 add('ningekuwa na', '"If I had / I would have"', grammar=['na-have', 'conditional-nge'])
-add('uko na', '"You have" — Kenyan: -ko na instead of -na ("uko na pesa?")', sanifu='Sanifu: una (una pesa?)', grammar=['na-have', 'ko-location'])
-add('niko na', '"I have (it on me)" — Kenyan: -ko na instead of -na', sanifu='Sanifu: nina', grammar=['na-have', 'ko-location'])
-add('iko na', '"It has" — Kenyan for ina', sanifu='Sanifu: ina', grammar=['na-have', 'ko-location'])
-add('ako na', '"He/she has" — Kenyan for ana ("ako na gari")', sanifu='Sanifu: ana; yuko na', grammar=['na-have', 'ko-location'])
+add('uko na', '"You have" — Kenyan: -ko na instead of -na ("uko na pesa?")', sanifu='Sanifu: una (una pesa?)', grammar=['ko-location'])
+add('niko na', '"I have (it on me)" — Kenyan: -ko na instead of -na', sanifu='Sanifu: nina', grammar=['ko-location'])
+add('iko na', '"It has" — Kenyan for ina', sanifu='Sanifu: ina', grammar=['ko-location'])
+add('ako na', '"He/she has" — Kenyan for ana ("ako na gari")', sanifu='Sanifu: ana; yuko na', grammar=['ko-location'])
 add('ako', '"He/she is (at)" — Kenyan short for yuko', sanifu='Sanifu: yuko', grammar=['ko-location'])
 
 # ---------- possessives ----------
@@ -855,3 +855,20 @@ for w, g in [('mwezi uliopita', 'last month (lit. "the month which passed")'), (
              ('wakati ulitupa kisogo', '"time was up" — lit. "time turned the back of its head (on us)"'),
              ('wakati umetupa kisogo', '"time\'s up" — lit. "time has turned the back of its head (on us)"')]:
     add(w, g, grammar=['idioms-proverbs'] if 'kisogo' in w else ['relatives'])
+
+# ---------- Oct 8: vocabulary for the level 1–4 everyday lessons ----------
+for w, g in [('sabuni', 'soap'), ('sakafu', 'floor'), ('unga', 'flour'), ('pasi', 'iron (for clothes) — kupiga pasi = to iron'),
+             ('kati', 'middle — ya kati = medium'), ('M', 'M (medium size)'), ('XL', 'XL (extra large)'), ('fagio', 'broom'),
+             ('kofia', 'hat / cap'), ('njano', 'yellow'), ('ngano', 'wheat'), ('mchele', '(uncooked) rice'), ('kiu', 'thirst'),
+             ('joto', 'heat / warmth — ni joto = it\'s warm'), ('chungu', 'bitter'), ('soko', 'market'), ('kanisa', 'church')]:
+    add(w, g)
+for w, g in [('mwili', 'body (Sanifu m/mi: mwili wangu; Kenyans: mwili yangu)'), ('TV', 'TV'), ('mikono', 'arms / hands (one: mkono)'),
+             ('miguu', 'legs / feet (one: mguu)'), ('masikio', 'ears (one: sikio)'), ('miwani', 'glasses / sunglasses'), ('benki', 'bank'),
+             ('shule', 'school'), ('hospitali', 'hospital')]:
+    add(w, g)
+for w, g in [('wanafunzi', 'students, pupils (one: mwanafunzi)'), ('macho', 'eyes (one: jicho)'), ('walimu', 'teachers (one: mwalimu)'),
+             ('wangapi', 'how many (people)? — wa- agrees with people'), ('jicho', 'eye (plural: macho)')]:
+    add(w, g)
+add('bwana', 'sir / mister — friendly or respectful way to address a man')
+add('a.m.', 'a.m. (morning)')
+add('a', 'a (as in "a.m.")')

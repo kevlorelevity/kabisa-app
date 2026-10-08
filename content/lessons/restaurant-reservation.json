@@ -4,8 +4,8 @@
   "title": "The Lost Reservation",
   "category": "food-drink",
   "difficulty": "medium",
-  "level": 5,
-  "order": 502,
+  "level": 6,
+  "order": 605,
   "theme": "food",
   "culturalNote": "Booking a table (kuweka meza / reservation) is common for dinners out in Nairobi. When something goes wrong, Kenyan service staff will smooth it over with \"Pole kwa usumbufu\" (sorry for the trouble) and a bit of patience on both sides. The -me- and -ja- tenses carry this whole scene: \"nimefika\" (I've arrived), \"sijaona jina lako\" (I haven't seen your name yet), \"imeisha\" (it's finished — sold out).",
   "startingPoint": "You arrive at a restaurant in Westlands for dinner. You booked a table yesterday — or did you?",
@@ -480,11 +480,11 @@
           "correct": true
         },
         {
-          "swahili": "Hakuna shida. Meza ziko tayari?",
+          "swahili": "Hakuna shida. Meza iko wapi?",
           "correct": false
         },
         {
-          "swahili": "Hakuna shida. Meza yuko tayari?",
+          "swahili": "Hakuna shida. Meza ilikuwa tayari?",
           "correct": false
         }
       ]
@@ -1505,28 +1505,25 @@
       "id": "b9e2389c-2303-585f-af8b-98a85535eb01",
       "mode": "translate",
       "english": "Is the table ready?",
-      "before": "Meza ",
-      "after": " tayari?",
+      "before": "Meza iko ",
+      "after": "?",
       "options": [
         {
-          "text": "iko",
+          "text": "tayari",
           "correct": true
         },
         {
-          "text": "ziko",
+          "text": "mbali",
           "correct": false,
-          "feedback": "ziko = They (n/n) are (at / doing)"
+          "feedback": "mbali = far"
         },
         {
-          "text": "yuko",
+          "text": "safi",
           "correct": false,
-          "feedback": "yuko = He/she is (at / doing)"
+          "feedback": "safi = clean / great / sorted"
         }
       ],
-      "explanation": "iko = \"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
-      "grammar": [
-        "ko-location"
-      ]
+      "explanation": "tayari = ready, mbali = far, safi = clean."
     },
     {
       "id": "872abb68-63ed-5250-8c40-d00bf8b0686f",

@@ -118,6 +118,12 @@ export const THEME_LABELS: Record<string, { label: string; emoji: string }> = {
   news: { label: 'News & chat', emoji: '📰' },
   community: { label: 'Community', emoji: '🤝' },
   sports: { label: 'Football', emoji: '⚽' },
+  kitchen: { label: 'Kitchen & cooking', emoji: '🍲' },
+  weather: { label: 'Weather', emoji: '🌦️' },
+  routine: { label: 'Daily routine', emoji: '⏰' },
+  safari: { label: 'Animals & safari', emoji: '🦒' },
+  school: { label: 'School', emoji: '🏫' },
+  travel: { label: 'Travel', emoji: '🧳' },
 };
 
 function readSeen(): number[] {

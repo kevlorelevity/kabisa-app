@@ -3,9 +3,9 @@
   "uuid": "a1a4b2b8-44eb-5e4b-91c0-bbef774cf019",
   "title": "Mama Mboga's Kibanda",
   "category": "food-drink",
-  "difficulty": "beginner",
-  "level": 2,
-  "order": 201,
+  "difficulty": "medium",
+  "level": 5,
+  "order": 501,
   "theme": "market",
   "culturalNote": "Every Nairobi estate has a mama mboga — the \"vegetable lady\" with a wooden stall (kibanda) by the road, selling tomatoes, onions and sukuma wiki in small bundles. Prices are quoted per heap (\"tatu kwa mia\" = three for a hundred) rather than per kilo, and almost everyone pays with M-Pesa. Nouns like nyanya (tomato) are n/n: the same word for one or many, so \"this tomato\" is nyanya hii and \"these tomatoes\" is nyanya hizi.",
   "startingPoint": "It's evening. You stop at the mama mboga's stall on your way home from work.",
@@ -1288,27 +1288,27 @@
       "id": "2740efb0-6f55-5427-a27d-727f241338fd",
       "mode": "translate",
       "english": "These tomatoes are sweet.",
-      "before": "Nyanya ",
-      "after": " ni tamu.",
+      "before": "Nyanya hizi ni ",
+      "after": ".",
       "options": [
         {
-          "text": "hizi",
+          "text": "tamu",
           "correct": true
         },
         {
-          "text": "hii",
+          "text": "chungu",
           "correct": false,
-          "feedback": "hii = this"
+          "feedback": "chungu = bitter"
         },
         {
-          "text": "huyu",
+          "text": "ghali",
           "correct": false,
-          "feedback": "huyu = this (person)"
+          "feedback": "ghali = expensive"
         }
       ],
-      "explanation": "nyanya is n/n: hii = this one, hizi = these. Huyu is only for people.",
+      "explanation": "tamu = sweet, chungu = bitter, ghali = expensive.",
       "grammar": [
-        "demonstratives"
+        "adjective-agreement"
       ]
     },
     {
@@ -1328,12 +1328,12 @@
           "feedback": "hizi = these"
         },
         {
-          "text": "hawa",
+          "text": "ile",
           "correct": false,
-          "feedback": "hawa = these (people)"
+          "feedback": "ile = that (over there)"
         }
       ],
-      "explanation": "hii: this — n/n singular (and Kenyans' all-purpose \"this\")",
+      "explanation": "hii = this one, hizi = these, ile = that one over there.",
       "grammar": [
         "demonstratives"
       ]

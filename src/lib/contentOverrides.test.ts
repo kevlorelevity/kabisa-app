@@ -54,3 +54,30 @@ describe('contentOverrides', () => {
     expect(resolveOverride(null, 't1', 'Sawa.', 'Poa.', DEFAULT_PERSONA)).toBeNull();
   });
 });
+
+import { changedSpan, propagateSpan, swahiliSpans } from './contentOverrides';
+
+describe('app-wide propagation', () => {
+  it('finds the smallest changed run of words', () => {
+    expect(changedSpan('Aah, sawa. Lete tu.', 'Aah, sawa. Leta tu.')).toEqual({ from: 'Lete', to: 'Leta' });
+    expect(changedSpan('Utakunywa chai au soda?', 'Utakunywa chai ama soda?')).toEqual({ from: 'au', to: 'ama' });
+    expect(changedSpan('Sawa.', 'Sawa!')).toBeNull();
+  });
+
+  it('only Swahili edits propagate, as whole words, in Swahili fields', () => {
+    const other = {
+      turns: [{ id: 'a', swahili: 'Lete chai. Mletee.', english: 'Bring tea.', options: [{ swahili: 'Lete chai.', correct: true }] }],
+      practice: [{ id: 'p', before: '', after: ' tu.', options: [{ text: 'Lete', correct: true }], english: 'Lete it' }],
+      vocabulary: [{ id: 'v', swahili: 'Lete tu', english: 'Just bring it', exampleContext: 'lete = bring!' }],
+    };
+    const scope = { turns: [{ id: 't', swahili: 'Aah, sawa. Lete tu.', english: 'Ah, fine. Just bring it.' }] };
+    const spans = swahiliSpans(scope, { find_text: 'Aah, sawa. Lete tu.', replace_text: 'Aah, sawa. Leta tu.' });
+    expect(spans).toEqual([{ from: 'Lete', to: 'Leta' }]);
+    expect(propagateSpan(other, spans[0])).toBe(5);
+    expect(other.turns[0].swahili).toBe('Leta chai. Mletee.'); // Mletee untouched (not a whole-word match)
+    expect(other.practice[0].options[0].text).toBe('Leta');
+    expect(other.practice[0].english).toBe('Lete it'); // English stays
+    expect(other.vocabulary[0].exampleContext).toBe('leta = bring!');
+    expect(swahiliSpans(scope, { find_text: 'Ah, fine. Just bring it.', replace_text: 'Ah, fine. Bring it.' })).toEqual([]);
+  });
+});

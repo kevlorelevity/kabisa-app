@@ -1,4 +1,4 @@
-# Level 1 — Jambo Tourist. (Uber Parts 1 & 2 are the hand-authored lessons 1 and 2 of this level.)
+# Level 1 — Jambo Tourist. Greetings & introductions. Grammar: the level-1 toolkit (see levels.json). Uber Parts 1 & 2 are the hand-authored lessons 1 and 2.
 
 @lesson neighbours-greetings
 title: Mambo, Neighbour! Greetings at the Gate
@@ -12,6 +12,8 @@ grammar: greetings, ko-location, present-na
 gl: Mama Njeri = "Njeri's mum" — Kenyan women are often called by their first child's name. Mama alone is a respectful way to address any older woman.
 gl: namba tano = number five
 gl: kazi njema = "have a good day at work" (lit. "good work")
+gl: Tuonane baadaye = "see you later" — a set phrase (lit. "let's see each other later").
+gl: Tuonane = "let's see each other" — set phrase used in goodbyes.
 gl: kazini = "at / to work" — kazi + -ni (place suffix). #locative-ni
 
 > Mama Njeri: Habari ya asubuhi? | Good morning? (lit. "News of the morning?")
@@ -23,7 +25,7 @@ gl: kazini = "at / to work" — kazi + -ni (place suffix). #locative-ni
   s: Karibu sana! Jina lako ni nani?
 < Mgeni: Jina yangu ni John. Na wewe? | My name is John. And you?
   s: Jina langu ni John. Na wewe?
-> Mama Njeri: Mimi ni Mama Njeri. Huyu ni Baraka, mtoto wangu. | I'm Mama Njeri. This is Baraka, my son.
+> Mama Njeri: Mimi ni Mama Njeri. Na Baraka ni mtoto wangu. | I'm Mama Njeri. And Baraka is my son.
 > Baraka: Mambo? | What's up?
 < Mgeni: Poa sana! Uko aje? | Very cool! How are you?
   x: Nzuri sana, mama. Habari yako? ; Poa sana! Niko aje?
@@ -49,7 +51,7 @@ t: I'm from Uganda. | [Ninatoka|Unatoka|Tunatoka] Uganda.
 t: I live in Kilimani. | [Ninaishi|Unaishi|Wanaishi] Kilimani.
 t: My name is John. | [Jina yangu|Jina yako|Habari yako] ni John. || Jina yangu = my name. You'll hear "jina langu" in Sanifu (jina is a ji/ma noun) — both are understood everywhere.
 t: What's your name? | Jina yako ni [nani|wapi|gani]? || Literally "your name is WHO?" — Swahili asks for names with nani (who).
-t: This is my child. | Huyu ni mtoto [wangu|wako|wake]. || wangu = my (m/wa agreement, used for people).
+t: Baraka is my child. | Baraka ni mtoto [wangu|wako|wake]. || wangu = my, wako = your, wake = his / her.
 t: Are you new here? | Wewe ni [mgeni|mwenyeji|dereva] hapa? || mgeni = guest, stranger, newcomer. Mwenyeji is the opposite: a local.
 t: I'm going to work. | [Ninaenda|Unaenda|Anaenda] kazini.
 t: Are you going to work now? | [Unaenda|Ninaenda|Tunaenda] kazini sasa?
@@ -71,3 +73,89 @@ kazini | at / to work | kazi + -ni (the place suffix)
 Kazi njema! | Have a good day at work! | Lit. "good work!"
 Tuonane baadaye | See you later | Lit. "let's see each other later"
 Kwa heri | Goodbye | To several people: Kwaherini.
+
+@lesson intro-where-from
+title: Nice to Meet You! Where Are You From?
+level: 1
+index: 4
+theme: greetings
+category: social
+culture: At any Nairobi party or office, the first three questions are always the same: your name, where you're from, and what you do. Kenyans are curious about wazungu and other foreigners — why you came, how long you're staying, whether you like the food — and they're delighted by any attempt at Swahili. "Tuko pamoja" (we're together) is a warm Kenyan way of saying "I'm with you" — and also a casual goodbye.
+start: Saturday evening at a friend's house party in Kileleshwa. A woman with a plate of samosas comes over to say hi.
+grammar: question-words, present-na, ko-location, possessives
+gl: Wanjiru = Wanjiru (a Kikuyu name)
+gl: Yaya Centre = Yaya Centre — a shopping mall in Kilimani
+gl: Kiingereza = English (the language)
+gl: Kiswahili = Swahili (the language)
+gl: Ninajifunza = "I'm learning" — ni- + -na- + -jifunza (learn).
+gl: Unajifunza = "you're learning" — u- + -na- + -jifunza (learn).
+gl: Ninafundisha = "I teach" — ni- + -na- + -fundisha (teach).
+gl: pole pole = "slowly, little by little"
+gl: Wakenya = Kenyans (one Kenyan = Mkenya)
+gl: hali ya hewa = "the weather" — lit. "the state of the air"
+gl: Tuko pamoja = "we're together" — Kenyan for "I'm with you"; also a friendly goodbye.
+gl: kwa kazi = "for work"
+gl: pamoja = together
+gl: Hata mimi = "me too" — lit. "even me"
+
+> Wanjiru: Mambo! Mimi ni Wanjiru. Wewe ni nani? | Hi! I'm Wanjiru. Who are you?
+< John: Poa! Mimi ni John. | Cool! I'm John.
+  x: Poa! Wewe ni John. ; Poa! Mimi ni Wanjiru.
+> Wanjiru: Karibu, John. Unatoka wapi? | Welcome, John. Where are you from?
+< John: Ninatoka Uganda, lakini ninaishi hapa Nairobi. | I'm from Uganda, but I live here in Nairobi.
+  x: Unatoka Uganda, lakini unaishi hapa Nairobi. ; Ninaenda Uganda, lakini ninaishi hapa Nairobi.
+> Wanjiru: Aah, poa! Unaishi wapi hapa Nairobi? | Oh, cool! Where in Nairobi do you live?
+< John: Ninaishi Kilimani, karibu na Yaya Centre. | I live in Kilimani, near Yaya Centre.
+  x: Anaishi Kilimani, karibu na Yaya Centre. ; Ninaishi Kilimani, karibu na Wanjiru.
+> Wanjiru: Na unafanya kazi gani? | And what work do you do?
+< John: Mimi ni mwalimu. Ninafundisha Kiingereza. | I'm a teacher. I teach English.
+  x: Mimi ni mwalimu. Ninakula Kiingereza. ; Wewe ni mwalimu. Unafundisha Kiingereza.
+> Wanjiru: Safi sana! Na Kiswahili je? Unajifunza Kiswahili? | Great! And Swahili? Are you learning Swahili?
+< John: Ndiyo, ninajifunza pole pole. | Yes, I'm learning little by little.
+  x: Ndiyo, unajifunza pole pole. ; Ndiyo, ninafundisha pole pole.
+> Wanjiru: Unaongea vizuri! Uko Kenya kwa kazi? | You speak well! Are you in Kenya for work?
+< John: Ndiyo, kwa kazi. Na pia ninapenda Kenya sana. | Yes, for work. And I also like Kenya a lot.
+  x: Ndiyo, kwa kazi. Na pia unapenda Kenya sana. ; Ndiyo, kwa kazi. Na pia ninaenda Kenya sana.
+> Wanjiru: Asante! Wakenya wanapenda wageni. Unapenda nini hapa? | Thank you! Kenyans love guests. What do you like here?
+< John: Ninapenda watu, chakula na hali ya hewa. | I like the people, the food and the weather.
+  x: Wanapenda watu, chakula na hali ya hewa. ; Ninapenda wapi, chakula na hali ya hewa.
+> Wanjiru: Hata mimi! Na familia yako iko wapi? | Me too! And where is your family?
+< John: Familia yangu iko Kampala. Mke wangu ni mwalimu pia. | My family is in Kampala. My wife is a teacher too.
+  x: Familia yako iko Kampala. Mke wako ni mwalimu pia. ; Familia yangu ni Kampala. Mke wangu ni mwalimu pia.
+> Wanjiru: Poa sana. Karibu Kenya, John! | Very cool. Welcome to Kenya, John!
+< John: Asante sana, Wanjiru. Tuko pamoja! | Thanks a lot, Wanjiru. I'm with you!
+  x: Karibu sana, Wanjiru. Tuko pamoja! ; Asante sana, Wanjiru. Niko wapi!
+
+@practice
+t: I'm from Uganda. | [Ninatoka|Unatoka|Anatoka] Uganda. || ni- = I, u- = you, a- = he / she.
+t: Where are you from? | Unatoka [wapi|nani|nini]? || wapi = where, nani = who, nini = what.
+t: I live in Kilimani. | [Ninaishi|Ninafanya|Ninatoka] Kilimani. || -ishi = live, -fanya = do, -toka = come from.
+t: She lives near Yaya Centre. | [Anaishi|Ninaishi|Wanaishi] karibu na Yaya Centre.
+t: I'm a teacher. | Mimi ni [mwalimu|daktari|dereva]. || mwalimu = teacher, daktari = doctor, dereva = driver.
+t: I teach English. | [Ninafundisha|Ninajifunza|Ninaongea] Kiingereza. || -fundisha = teach, -jifunza = learn, -ongea = speak.
+t: I'm learning Swahili. | [Ninajifunza|Ninafundisha|Ninapenda] Kiswahili.
+t: You speak well! | [Unaongea|Ninaongea|Wanaongea] vizuri!
+t: What work do you do? | Unafanya kazi [gani|wapi|lini]? || gani = which / what kind, wapi = where, lini = when.
+t: Kenyans love guests. | Wakenya [wanapenda|anapenda|tunapenda] wageni. || wa- = they.
+t: teachers (more than one) | [walimu|mwalimu|wanafunzi] || mwalimu = one teacher, walimu = teachers, wanafunzi = students.
+t: My family is in Kampala. | Familia [yangu|yako|yake] iko Kampala. || yangu = my, yako = your, yake = his / her.
+t: My wife is a teacher too. | Mke wangu ni mwalimu [pia|sana|tu]. || pia = too / also, sana = very, tu = only.
+c: Where do you live? — I live in Kilimani. | Unaishi wapi? — [Ninaishi|Unaishi|Anaishi] Kilimani.
+t: I like the food. | [Ninapenda|Ninaishi|Ninatoka] chakula.
+t: We're together! | [Tuko|Niko|Wako] pamoja! || Tuko pamoja = "we're in this together" — a Kenyan favourite.
+t: Welcome to Kenya! | [Karibu|Asante|Pole] Kenya!
+
+@vocab
+Wewe ni nani? | Who are you? | Friendlier: Jina yako ni nani?
+Mimi ni… | I am… | Mimi ni John. Mimi ni mwalimu.
+Unatoka wapi? | Where are you from? | -toka = come from
+Ninaishi… | I live… | -ishi = live. Ninaishi Kilimani.
+karibu na | near | Opposite: mbali na (far from)
+Unafanya kazi gani? | What work do you do? | gani = what kind / which
+mwalimu / walimu | teacher / teachers | m/wa noun: one teacher, many teachers
+-fundisha | teach | Ninafundisha Kiingereza.
+-jifunza | learn | Ninajifunza Kiswahili.
+Unaongea vizuri! | You speak well! | -ongea = speak, chat
+hali ya hewa | the weather | lit. "the state of the air"
+pia | too / also | Mimi pia! = Me too!
+Tuko pamoja | We're together / I'm with you | Also a friendly goodbye.

@@ -3,9 +3,9 @@
   "uuid": "fbb6b846-f752-5b60-80ef-aa6b048b033a",
   "title": "Where's the Stage? Asking the Way",
   "category": "directions",
-  "difficulty": "beginner",
-  "level": 2,
-  "order": 203,
+  "difficulty": "medium",
+  "level": 5,
+  "order": 503,
   "theme": "directions",
   "culturalNote": "Kenyans give directions by landmarks, not street names: the big supermarket, the petrol station, \"the tree near the church\". The askari (security guard) at any building gate is the best person to ask — they know every shop and matatu stage nearby. \"Si mbali\" (it's not far) can mean anything from two minutes to twenty, so ask \"Ni dakika ngapi?\" (how many minutes?).",
   "startingPoint": "You're on foot in Kilimani and need the matatu stage to town. You ask the askari at a gate.",
@@ -129,11 +129,11 @@
           "correct": true
         },
         {
-          "swahili": "Samahani, boss. Stage ya matatu ziko wapi?",
+          "swahili": "Samahani, boss. Stage ya matatu iko lini?",
           "correct": false
         },
         {
-          "swahili": "Samahani, boss. Stage ya matatu yuko wapi?",
+          "swahili": "Samahani, boss. Stage ya matatu ni nani?",
           "correct": false
         }
       ]
@@ -1068,27 +1068,27 @@
       "id": "c0bb863d-c321-58ce-b47b-370c0fae2fab",
       "mode": "translate",
       "english": "Where is the stage?",
-      "before": "Stage ",
-      "after": " wapi?",
+      "before": "Stage iko ",
+      "after": "?",
       "options": [
         {
-          "text": "iko",
+          "text": "wapi",
           "correct": true
         },
         {
-          "text": "ziko",
+          "text": "lini",
           "correct": false,
-          "feedback": "ziko = They (n/n) are (at / doing)"
+          "feedback": "lini = when?"
         },
         {
-          "text": "yuko",
+          "text": "nini",
           "correct": false,
-          "feedback": "yuko = He/she is (at / doing)"
+          "feedback": "nini = what?"
         }
       ],
-      "explanation": "iko = it is (at): i- for an n/n singular subject + -ko (be at).",
+      "explanation": "wapi = where, lini = when, nini = what.",
       "grammar": [
-        "ko-location"
+        "question-words"
       ]
     },
     {
@@ -1108,12 +1108,12 @@
           "feedback": "iko = It (n/n) is (at / doing)"
         },
         {
-          "text": "wako",
+          "text": "zinaenda",
           "correct": false,
-          "feedback": "wako = They are (at / doing)"
+          "feedback": "zinaenda = They are going"
         }
       ],
-      "explanation": "Plural n/n subject → zi-: ziko.",
+      "explanation": "ziko = they are (at), iko = it is (at), zinaenda = they are going.",
       "grammar": [
         "ko-location"
       ]
@@ -1130,17 +1130,17 @@
           "correct": true
         },
         {
-          "text": "iko",
+          "text": "uko",
           "correct": false,
-          "feedback": "iko = It (n/n) is (at / doing)"
+          "feedback": "uko = You are (at / doing)"
         },
         {
-          "text": "ziko",
+          "text": "wako",
           "correct": false,
-          "feedback": "ziko = They (n/n) are (at / doing)"
+          "feedback": "wako = They are (at / doing)"
         }
       ],
-      "explanation": "People take yuko (he/she is at).",
+      "explanation": "yuko = he / she is, uko = you are, wako = they are.",
       "grammar": [
         "ko-location"
       ]

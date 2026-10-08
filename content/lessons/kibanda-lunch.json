@@ -3,9 +3,9 @@
   "uuid": "f69e4cbe-5a64-55a2-9599-39ac6f115d59",
   "title": "Lunch at the Kibanda",
   "category": "food-drink",
-  "difficulty": "beginner",
-  "level": 3,
-  "order": 302,
+  "difficulty": "medium",
+  "level": 5,
+  "order": 505,
   "theme": "food",
   "culturalNote": "A kibanda (or \"kibanda cha chakula\") is a roadside food stall: plastic chairs, a hot plate, and the best-value lunch in Nairobi — chapati, beans (maharagwe), ugali with meat or sukuma. Tea comes already sweetened unless you say otherwise. To order, Kenyans usually say \"Niletee…\" (bring me…) or the softer \"Naweza kupata…?\" (can I get…?). \"Karibu chakula\" is the polite thing to say when food arrives — lit. \"welcome to the food\".",
   "startingPoint": "Lunchtime. You sit down at a kibanda near the office.",
@@ -337,7 +337,7 @@
           "correct": false
         },
         {
-          "swahili": "Naweza kupata chapati wawili na maharagwe?",
+          "swahili": "Naweza kupika chapati mbili na maharagwe?",
           "correct": false
         }
       ]
@@ -346,7 +346,7 @@
       "id": "89c120bd-d37e-54d2-b3cf-c39ca82fbde5",
       "speaker": "Mhudumu",
       "role": "auto",
-      "swahili": "Ndiyo. Utakunywa chai au soda?",
+      "swahili": "Ndiyo. Utakunywa chai ama soda?",
       "english": "Yes. Will you drink tea or soda?",
       "words": [
         {
@@ -401,8 +401,8 @@
           ]
         },
         {
-          "text": "au",
-          "gloss": "or"
+          "text": "ama",
+          "gloss": "or (Kenyan, also \"otherwise\")"
         },
         {
           "text": "soda",
@@ -613,7 +613,7 @@
       "id": "55b9073a-ce00-5a5d-bc44-da51e2a24668",
       "speaker": "Mteja",
       "role": "user",
-      "swahili": "Aah, sawa. Lete tu.",
+      "swahili": "Aah, sawa. Leta tu.",
       "english": "Ah, okay. Just bring it.",
       "words": [
         {
@@ -628,8 +628,8 @@
           "gloss": "okay / alright (lit. \"equal\")"
         },
         {
-          "text": "Lete",
-          "gloss": "\"Bring!\" — imperative of kuleta (also heard: leta).",
+          "text": "Leta",
+          "gloss": "\"Bring!\" — imperative of kuleta (Kenyan; Sanifu lete).",
           "grammar": [
             "imperatives"
           ]
@@ -641,7 +641,7 @@
       ],
       "options": [
         {
-          "swahili": "Aah, sawa. Lete tu.",
+          "swahili": "Aah, sawa. Leta tu.",
           "correct": true
         },
         {
@@ -1185,9 +1185,9 @@
     },
     {
       "id": "0e91afd0-733f-516f-b124-3335e83c0af1",
-      "swahili": "Lete tu",
+      "swahili": "Leta tu",
       "english": "Just bring it",
-      "exampleContext": "lete = bring!",
+      "exampleContext": "leta = bring!",
       "partOfSpeech": "phrase"
     },
     {
@@ -1401,7 +1401,7 @@
       "after": " tu.",
       "options": [
         {
-          "text": "Lete",
+          "text": "Leta",
           "correct": true
         },
         {
@@ -1415,7 +1415,7 @@
           "feedback": "Lipa = Pay!"
         }
       ],
-      "explanation": "Lete = \"Bring!\" — imperative of kuleta (also heard: leta).",
+      "explanation": "Leta = \"Bring!\" — imperative of kuleta (Kenyan; Sanifu lete).",
       "grammar": [
         "imperatives"
       ]
@@ -1432,9 +1432,9 @@
           "correct": true
         },
         {
-          "text": "Lete",
+          "text": "Leta",
           "correct": false,
-          "feedback": "Lete = Bring!"
+          "feedback": "Leta = Bring!"
         },
         {
           "text": "Pika",
@@ -1532,28 +1532,24 @@
       "id": "87230284-7195-5f93-967c-b0a8ea5e08a5",
       "mode": "translate",
       "english": "It smells really good.",
-      "before": "",
-      "after": " vizuri sana.",
+      "before": "Inanukia ",
+      "after": " sana.",
       "options": [
         {
-          "text": "Inanukia",
+          "text": "vizuri",
           "correct": true
         },
         {
-          "text": "Ninanukia",
-          "correct": false,
-          "feedback": "Ninanukia = I smell good"
+          "text": "vibaya",
+          "correct": false
         },
         {
-          "text": "Unanukia",
+          "text": "kidogo",
           "correct": false,
-          "feedback": "Unanukia = You smell good"
+          "feedback": "kidogo = a little / a bit"
         }
       ],
-      "explanation": "Inanukia = \"It smells good\" — i- (subject: it (n/n)) + na- (present) + -nukia (smell good). From kunukia.",
-      "grammar": [
-        "present-na"
-      ]
+      "explanation": "vizuri = good / well, vibaya = bad / badly, kidogo = a little."
     },
     {
       "id": "4281a93d-164d-5865-bbac-5e30bfe64af9",
@@ -1699,17 +1695,17 @@
           "correct": true
         },
         {
-          "text": "wawili",
+          "text": "tatu",
           "correct": false,
-          "feedback": "wawili = two (m/wa: watu wawili)"
+          "feedback": "tatu = 3 (n/n form"
         },
         {
-          "text": "pili",
+          "text": "nne",
           "correct": false,
-          "feedback": "pili = second"
+          "feedback": "nne = 4 (n/n form"
         }
       ],
-      "explanation": "chapati is n/n: mbili. (Wawili is for people; pili means \"second\".)",
+      "explanation": "mbili = 2, tatu = 3, nne = 4.",
       "grammar": [
         "numbers-money"
       ]

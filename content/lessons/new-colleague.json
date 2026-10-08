@@ -4,8 +4,8 @@
   "title": "The New Colleague",
   "category": "people",
   "difficulty": "medium",
-  "level": 5,
-  "order": 503,
+  "level": 6,
+  "order": 606,
   "theme": "people",
   "culturalNote": "Describing people is where Swahili agreement really shows: adjectives take the class of the person, so \"tall\" is mrefu for one person and warefu for several — while for things Kenyans reach for the n/n form (ndefu, nzuri). It's also where Kenyan small talk lives: who's new, who has arrived, who has ever worked where. \"-wahi\" turns any verb into \"ever / never\": amewahi kufanya kazi Kampala? (has she ever worked in Kampala?).",
   "startingPoint": "Your team is getting a new member today. Your colleague Juma stops by your desk.",
@@ -467,11 +467,11 @@
           "correct": true
         },
         {
-          "swahili": "Wee! Wewe ni ndefu sana, Juma!",
+          "swahili": "Wee! Yeye ni mfupi sana, Juma!",
           "correct": false
         },
         {
-          "swahili": "Wee! Wewe ni warefu sana, Juma!",
+          "swahili": "Wee! Wao ni warefu sana, Juma!",
           "correct": false
         }
       ]
@@ -795,11 +795,11 @@
           "correct": true
         },
         {
-          "swahili": "Safi. Wafanyakazi wengi hapa ni mpya, sivyo?",
+          "swahili": "Safi. Wafanyakazi wengi hapa ni wazee, sivyo?",
           "correct": false
         },
         {
-          "swahili": "Safi. Wafanyakazi mengi hapa ni wapya, sivyo?",
+          "swahili": "Safi. Mfanyakazi mmoja hapa ni mpya, sivyo?",
           "correct": false
         }
       ]
@@ -1046,7 +1046,7 @@
           "correct": false
         },
         {
-          "swahili": "Nitaenda kumsalimia sasa. Iko wapi?",
+          "swahili": "Nilienda kumsalimia jana. Yuko wapi?",
           "correct": false
         }
       ]
@@ -1383,17 +1383,17 @@
           "correct": true
         },
         {
-          "text": "warefu",
+          "text": "mfupi",
           "correct": false,
-          "feedback": "warefu = tall / long"
+          "feedback": "mfupi = short"
         },
         {
-          "text": "ndefu",
+          "text": "mnene",
           "correct": false,
-          "feedback": "ndefu = tall / long"
+          "feedback": "mnene = fat / thick"
         }
       ],
-      "explanation": "One person: mrefu. People: warefu. Things (n/n): ndefu.",
+      "explanation": "mrefu = tall, mfupi = short, mnene = big / fat.",
       "grammar": [
         "adjective-agreement"
       ]
@@ -1410,17 +1410,17 @@
           "correct": true
         },
         {
-          "text": "mrefu",
+          "text": "wafupi",
           "correct": false,
-          "feedback": "mrefu = tall"
+          "feedback": "wafupi = short"
         },
         {
-          "text": "ndefu",
+          "text": "wanene",
           "correct": false,
-          "feedback": "ndefu = tall / long"
+          "feedback": "wanene = fat / thick"
         }
       ],
-      "explanation": "warefu = \"tall / long\" — m/wa plural agreement (people / animals).",
+      "explanation": "Plural people: warefu (tall), wafupi (short), wanene (big).",
       "grammar": [
         "adjective-agreement"
       ]
@@ -1491,17 +1491,17 @@
           "correct": true
         },
         {
-          "text": "wakarimu",
+          "text": "mkali",
           "correct": false,
-          "feedback": "wakarimu = generous / hospitable"
+          "feedback": "mkali = fierce / sharp / strict / spicy"
         },
         {
-          "text": "karimu",
+          "text": "mvivu",
           "correct": false,
-          "feedback": "karimu = generous / hospitable"
+          "feedback": "mvivu = lazy"
         }
       ],
-      "explanation": "mkarimu (m/wa singular).",
+      "explanation": "mkarimu = kind / generous, mkali = strict, mvivu = lazy.",
       "grammar": [
         "adjective-agreement"
       ]
@@ -1518,17 +1518,17 @@
           "correct": true
         },
         {
-          "text": "mpya",
-          "correct": false,
-          "feedback": "mpya = new"
-        },
-        {
           "text": "wazee",
           "correct": false,
           "feedback": "wazee = elders / old people"
+        },
+        {
+          "text": "wadogo",
+          "correct": false,
+          "feedback": "wadogo = small / young"
         }
       ],
-      "explanation": "m/wa plural: wapya.",
+      "explanation": "wapya = new, wazee = old, wadogo = young / junior.",
       "grammar": [
         "adjective-agreement"
       ]
@@ -1545,16 +1545,17 @@
           "correct": true
         },
         {
-          "text": "wapya",
+          "text": "kubwa",
           "correct": false,
-          "feedback": "wapya = new"
+          "feedback": "kubwa = big"
         },
         {
-          "text": "mipya",
-          "correct": false
+          "text": "ndogo",
+          "correct": false,
+          "feedback": "ndogo = small / young"
         }
       ],
-      "explanation": "n/n: mpya.",
+      "explanation": "mpya = new, kubwa = big, ndogo = small.",
       "grammar": [
         "adjective-agreement"
       ]
@@ -1707,17 +1708,17 @@
           "correct": true
         },
         {
-          "text": "mweupe",
+          "text": "nyeusi",
           "correct": false,
-          "feedback": "mweupe = white"
+          "feedback": "nyeusi = black"
         },
         {
-          "text": "weupe",
+          "text": "nyekundu",
           "correct": false,
-          "feedback": "weupe = white"
+          "feedback": "nyekundu = red"
         }
       ],
-      "explanation": "nguo is n/n: nyeupe.",
+      "explanation": "nyeupe = white, nyeusi = black, nyekundu = red.",
       "grammar": [
         "adjective-agreement"
       ]
