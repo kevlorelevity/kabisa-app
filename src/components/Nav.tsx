@@ -101,7 +101,7 @@ function AdminMenu({ onSignOut }: { onSignOut: () => void }) {
             }}
             className="w-full text-left px-4 py-2.5 hover:bg-gray-50"
           >
-            <span className="block text-sm font-medium text-gray-900">Activity & team notes</span>
+            <span className="block text-sm font-medium text-gray-900">Activity & team rules</span>
             <span className="block text-xs text-gray-500">
               {busy > 0 ? `${busy} saving / working…` : activity.failed ? `${activity.failed} need attention` : 'AI edits, saves, style guide'}
             </span>

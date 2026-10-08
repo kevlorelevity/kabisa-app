@@ -8,6 +8,7 @@ import {
   loadIsAdmin,
   retireGuidance,
   saveGuidance,
+  saveNotePatch,
   submitAiEdit,
   submitSuggestion,
   undoAiJob,
@@ -19,9 +20,11 @@ import {
   addOverrides,
   addPatches,
   countPropagation,
+  countWordPlaces,
   resolveOverride,
   scopeContent,
   type ContentPatch,
+  type PatchScope,
   type ScopeType,
 } from '../lib/contentOverrides';
 import { getSupabase } from '../lib/supabase';
@@ -96,7 +99,7 @@ const primary = 'w-full rounded-full bg-amber-500 px-4 py-2.5 text-sm font-semib
 function SuggestModal({ target, onClose, enqueue, startAi }: { target: SuggestTarget; onClose: () => void; enqueue: Enqueue; startAi: StartAi }) {
   const { pathname } = useLocation();
   const { profile, persona } = useProfile();
-  const [mode, setMode] = useState<'edit' | 'ai' | 'note'>('edit');
+  const [mode, setMode] = useState<'edit' | 'ai' | 'learner' | 'note'>('edit');
   const [kind, setKind] = useState<SuggestionKind>('phrasing');
   const [why, setWhy] = useState('');
   const [proposed, setProposed] = useState(target.currentText);
@@ -123,16 +126,36 @@ function SuggestModal({ target, onClose, enqueue, startAi }: { target: SuggestTa
     return type && id && content ? { type, id, content } : null;
   }, [target, lessonId]);
 
-  // The dialogue turn / practice item an AI instruction would rewrite.
+  // The word / dialogue turn / practice item / flashcard an AI instruction or a note applies to.
   const aiTarget = useMemo(() => {
     if (scope?.type !== 'lesson' || !target.itemId) return null;
     const lesson = scope.content as Lesson;
     const turn = lesson.turns.find((t) => t.id === target.itemId);
-    if (turn) return { lesson, kind: 'turn' as const, current: turn };
+    if (turn && target.wordIndex !== undefined) {
+      const word = turn.words?.[target.wordIndex];
+      if (!word) return null;
+      return {
+        lesson,
+        kind: 'word' as const,
+        current: { word, line: { speaker: turn.speaker, swahili: turn.swahili, english: turn.english } },
+        note: word.note ?? '',
+        sanifu: word.sanifu ?? '',
+        word,
+      };
+    }
+    if (turn) return { lesson, kind: 'turn' as const, current: turn, note: turn.note ?? '', sanifu: turn.sanifu ?? '' };
     const item = lesson.practice?.find((p) => p.id === target.itemId);
-    if (item) return { lesson, kind: 'practice' as const, current: item };
+    if (item) return { lesson, kind: 'practice' as const, current: item, note: '', sanifu: '' };
+    const card = lesson.vocabulary?.find((v) => v.id === target.itemId);
+    if (card) return { lesson, kind: 'vocab' as const, current: card, note: card.note ?? '', sanifu: card.sanifu ?? '' };
     return null;
-  }, [scope, target.itemId]);
+  }, [scope, target.itemId, target.wordIndex]);
+  const wordText = aiTarget?.kind === 'word' ? aiTarget.word.text : '';
+  const wordPlaces = useMemo(() => (wordText ? countWordPlaces(wordText) : 0), [wordText]);
+  const [wordEverywhere, setWordEverywhere] = useState(true);
+  const [learnerNote, setLearnerNote] = useState(aiTarget?.note ?? '');
+  const [learnerSanifu, setLearnerSanifu] = useState(aiTarget?.sanifu ?? '');
+  const canNote = Boolean(aiTarget && lessonId && aiTarget.kind !== 'practice');
 
   const [everywhere, setEverywhere] = useState(true);
   const itemIdForOverride = target.targetType.startsWith('grammar') || target.targetType === 'level' ? undefined : target.itemId;
@@ -175,13 +198,30 @@ function SuggestModal({ target, onClose, enqueue, startAi }: { target: SuggestTa
       instruction: instruction.trim(),
       lesson: lessonContext(aiTarget.lesson),
       current: aiTarget.current,
+      ...(aiTarget.kind === 'word' ? { wordIndex: target.wordIndex, everywhere: wordEverywhere && wordPlaces > 1 } : {}),
     });
+    onClose();
+  }
+
+  function saveLearnerNote() {
+    if (!aiTarget || !lessonId || !target.itemId || aiTarget.kind === 'practice') return;
+    const note = learnerNote.trim();
+    const sanifu = learnerSanifu.trim();
+    const scope: PatchScope = aiTarget.kind === 'word' ? 'word' : 'fields';
+    const value =
+      aiTarget.kind === 'word'
+        ? { text: aiTarget.word.text, wordIndex: target.wordIndex, note, sanifu, everywhere: wordEverywhere && wordPlaces > 1 }
+        : { note, sanifu, ...(aiTarget.kind === 'vocab' && !sanifu ? { sanifuNote: '' } : {}) };
+    const row = { lesson_id: lessonId, scope, item_id: target.itemId, value };
+    // Show it right away; the server stores it in the background.
+    addPatches([{ id: `local-${uid()}`, created_at: new Date().toISOString(), ...row }]);
+    enqueue(`💡 Note · ${target.label}`, () => saveNotePatch(row));
     onClose();
   }
 
   function saveNote() {
     const text = note.trim();
-    enqueue(`Team note · ${target.label}`, async () => ({
+    enqueue(`Team rule · ${target.label}`, async () => ({
       ok: await saveGuidance({ text, lessonId, itemId: target.itemId, targetLabel: target.label }),
     }));
     onClose();
@@ -205,9 +245,10 @@ function SuggestModal({ target, onClose, enqueue, startAi }: { target: SuggestTa
         {target.currentText || <span className="text-gray-400">(no text)</span>}
       </blockquote>
       <div role="tablist" className="flex gap-1 rounded-full border border-gray-200 p-1">
-        {tab('edit', 'Edit text')}
+        {tab('edit', 'Edit')}
         {tab('ai', '✨ Ask AI')}
-        {tab('note', 'Team note')}
+        {tab('learner', '💡 Note')}
+        {tab('note', 'Team rule')}
       </div>
 
       {mode === 'edit' && (
@@ -229,7 +270,7 @@ function SuggestModal({ target, onClose, enqueue, startAi }: { target: SuggestTa
           )}
           <label className="block">
             <span className="text-sm font-semibold text-gray-800">
-              Why? <span className="font-normal text-gray-400">(optional — saved as a team note the AI follows from now on)</span>
+              Why? <span className="font-normal text-gray-400">(optional — saved as a team rule the AI follows from now on)</span>
             </span>
             <textarea
               value={why}
@@ -272,14 +313,34 @@ function SuggestModal({ target, onClose, enqueue, startAi }: { target: SuggestTa
                   onChange={(e) => setInstruction(e.target.value)}
                   rows={4}
                   autoFocus
-                  placeholder={`e.g. Add a Sanifu footnote · Make the wrong answers about verbs, not names · Use "ama" instead of "au" · Make this line more casual`}
+                  placeholder={
+                    aiTarget.kind === 'word' || aiTarget.kind === 'vocab'
+                      ? 'e.g. Add a note on its other meanings · Explain how Kenyans use it in Sheng · Add the Sanifu form'
+                      : `e.g. Add a Sanifu footnote · Add a note on how people really say this · Make the wrong answers about verbs, not names`
+                  }
                   className={field}
                 />
               </label>
+              {aiTarget.kind === 'word' && wordPlaces > 1 && (
+                <label className="flex items-start gap-2 text-sm text-gray-700">
+                  <input type="checkbox" checked={wordEverywhere} onChange={(e) => setWordEverywhere(e.target.checked)} className="mt-0.5 accent-amber-500" />
+                  <span>
+                    Show the new note / Sanifu wherever “{wordText}” appears
+                    <span className="text-gray-400"> ({wordPlaces} places — dialogues and flashcards, all lessons)</span>
+                  </span>
+                </label>
+              )}
               <p className="text-xs text-gray-500">
-                Claude rewrites this {aiTarget.kind === 'turn' ? 'line (answer choices and word glosses included)' : 'practice item'} in the
-                background — usually a minute or two — following the house rules and the team notes. It goes live by itself; you can
-                undo it under Admin → Activity.
+                Claude rewrites this{' '}
+                {aiTarget.kind === 'word'
+                  ? 'word’s explanation, Sanifu and note'
+                  : aiTarget.kind === 'turn'
+                  ? 'line (answer choices, word glosses and notes included)'
+                  : aiTarget.kind === 'vocab'
+                  ? 'flashcard (and its note)'
+                  : 'practice item'}{' '}
+                in the background — usually a minute or two — following the house rules and the team rules. It goes live by itself; you
+                can undo it under Admin → Activity.
               </p>
               <button onClick={saveAi} disabled={!instruction.trim()} className={primary}>
                 ✨ Send to AI
@@ -287,8 +348,57 @@ function SuggestModal({ target, onClose, enqueue, startAi }: { target: SuggestTa
             </>
           ) : (
             <p className="text-sm text-gray-600">
-              AI edits work on conversation lines and practice items. For broader changes use{' '}
+              AI edits work on words, conversation lines, practice items and flashcards. For broader changes use{' '}
               <span className="font-semibold">✨ Direct this conversation / practice</span> at the top of the lesson.
+            </p>
+          )}
+        </>
+      )}
+
+      {mode === 'learner' && (
+        <>
+          {canNote && aiTarget ? (
+            <>
+              <label className="block">
+                <span className="text-sm font-semibold text-gray-800">
+                  Note <span className="font-normal text-gray-400">— learners see it {aiTarget.kind === 'word' ? 'when they tap the word' : aiTarget.kind === 'turn' ? 'under the line (💡 Note)' : 'on the flashcard'}</span>
+                </span>
+                <textarea
+                  value={learnerNote}
+                  onChange={(e) => setLearnerNote(e.target.value)}
+                  rows={3}
+                  autoFocus
+                  placeholder="e.g. Also means “to want”. In Nairobi you’ll often hear the short form “nataka”."
+                  className={field}
+                />
+              </label>
+              <label className="block">
+                <span className="text-sm font-semibold text-gray-800">
+                  Sanifu <span className="font-normal text-gray-400">(optional — the standard form, if Kenyans say it differently)</span>
+                </span>
+                <input value={learnerSanifu} onChange={(e) => setLearnerSanifu(e.target.value)} className={field} />
+              </label>
+              {aiTarget.kind === 'word' && wordPlaces > 1 && (
+                <label className="flex items-start gap-2 text-sm text-gray-700">
+                  <input type="checkbox" checked={wordEverywhere} onChange={(e) => setWordEverywhere(e.target.checked)} className="mt-0.5 accent-amber-500" />
+                  <span>
+                    Show it wherever “{wordText}” appears
+                    <span className="text-gray-400"> ({wordPlaces} places — dialogues and flashcards, all lessons)</span>
+                  </span>
+                </label>
+              )}
+              <p className="text-xs text-gray-500">Leave a field empty to remove it. Prefer AI to write it? Use ✨ Ask AI → “add a note on …”.</p>
+              <button
+                onClick={saveLearnerNote}
+                disabled={learnerNote.trim() === aiTarget.note.trim() && learnerSanifu.trim() === aiTarget.sanifu.trim()}
+                className={primary}
+              >
+                Save & publish
+              </button>
+            </>
+          ) : (
+            <p className="text-sm text-gray-600">
+              Notes can be attached to words, conversation lines and flashcards. For practice items, edit the explanation with Edit.
             </p>
           )}
         </>
@@ -307,9 +417,9 @@ function SuggestModal({ target, onClose, enqueue, startAi }: { target: SuggestTa
               className={field}
             />
           </label>
-          <p className="text-xs text-gray-500">Team notes build up the app's style guide. Every AI edit reads them.</p>
+          <p className="text-xs text-gray-500">Team rules build up the app's style guide (learners don't see them). Every AI edit reads them.</p>
           <button onClick={saveNote} disabled={!note.trim()} className={primary}>
-            Save note
+            Save rule
           </button>
         </>
       )}
@@ -366,7 +476,7 @@ function DirectModal({ lessonId, scope, onClose, startAi }: { lessonId: string; 
   );
 }
 
-// ---------- Activity & team notes ----------
+// ---------- Activity & team rules ----------
 
 const STATUS: Record<AiJob['status'], { label: string; cls: string }> = {
   working: { label: 'Working…', cls: 'bg-amber-100 text-amber-800' },
@@ -448,9 +558,9 @@ function ActivityModal({
         ))}
       </section>
       <section className="space-y-2">
-        <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400">Team notes (the AI's style guide)</h3>
+        <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400">Team rules (the AI's style guide)</h3>
         {notes === null && <p className="text-sm text-gray-400">Loading…</p>}
-        {notes?.length === 0 && <p className="text-sm text-gray-400">No notes yet. Add one with ✎ → Team note.</p>}
+        {notes?.length === 0 && <p className="text-sm text-gray-400">No rules yet. Add one with ✎ → Team rule.</p>}
         {notes?.map((n) => (
           <div key={n.id} className="flex items-start justify-between gap-2 text-sm">
             <p className="text-gray-700">

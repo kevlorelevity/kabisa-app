@@ -259,6 +259,7 @@ function OptionsReview({ turn }: { turn: DialogueTurn }) {
 function TurnBubble({ turn, tappable }: { turn: DialogueTurn; tappable: boolean }) {
   const isUser = turn.role === 'user';
   const [showSanifu, setShowSanifu] = useState(false);
+  const [showNote, setShowNote] = useState(false);
   return (
     <div className={`flex ${isUser ? 'justify-end' : 'justify-start'}`}>
       <div className="max-w-[80%]">
@@ -283,6 +284,7 @@ function TurnBubble({ turn, tappable }: { turn: DialogueTurn; tappable: boolean 
               enabled={tappable}
               className="font-medium flex-1"
               variant={isUser ? 'dark' : 'light'}
+              turnId={turn.id}
             />
             <AudioButton text={turn.swahili} variant={isUser ? 'dark' : 'light'} className="-mr-2 -my-0.5" />
           </div>
@@ -302,10 +304,24 @@ function TurnBubble({ turn, tappable }: { turn: DialogueTurn; tappable: boolean 
               {showSanifu ? 'Sanifu ↑' : 'Sanifu →'}
             </button>
           )}
+          {turn.note && (
+            <button
+              type="button"
+              onClick={() => setShowNote((v) => !v)}
+              className="ml-2 text-amber-700 hover:underline"
+            >
+              {showNote ? 'Note ↑' : '💡 Note'}
+            </button>
+          )}
         </p>
         {showSanifu && turn.sanifu && (
           <p className={`text-xs text-sky-800 mt-0.5 ${isUser ? 'text-right' : ''}`}>
             <span className="font-semibold">Sanifu:</span> {turn.sanifu}
+          </p>
+        )}
+        {showNote && turn.note && (
+          <p className={`text-xs text-amber-900 mt-0.5 ${isUser ? 'text-right' : ''}`}>
+            <span className="font-semibold">Note:</span> {turn.note}
           </p>
         )}
       </div>

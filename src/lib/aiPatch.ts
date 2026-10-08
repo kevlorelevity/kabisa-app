@@ -7,7 +7,13 @@
 // stored as a content_patch and goes live.
 
 export type AiScope = 'item' | 'dialogue' | 'practice';
-export type ItemKind = 'turn' | 'practice';
+export type ItemKind = 'turn' | 'practice' | 'word' | 'vocab';
+
+/** Which content_patch scope an AI result is stored as. */
+export function patchScopeFor(scope: AiScope, kind: ItemKind | null): 'item' | 'dialogue' | 'practice' | 'word' | 'fields' {
+  if (scope !== 'item') return scope;
+  return kind === 'word' ? 'word' : kind === 'vocab' ? 'fields' : 'item';
+}
 
 export interface AiLessonContext {
   id: string;
@@ -31,7 +37,7 @@ const str = { type: 'string' } as const;
 
 const wordSchema = {
   type: 'object',
-  properties: { text: str, gloss: str, sanifu: str },
+  properties: { text: str, gloss: str, sanifu: str, note: str },
   required: ['text', 'gloss'],
   additionalProperties: false,
 };
@@ -45,6 +51,7 @@ const turnSchema = {
     swahili: str,
     english: str,
     sanifu: str,
+    note: str,
     options: {
       type: 'array',
       items: {
@@ -83,9 +90,20 @@ const practiceSchema = {
   additionalProperties: false,
 };
 
+const vocabSchema = {
+  type: 'object',
+  properties: { swahili: str, english: str, exampleContext: str, sanifu: str, sanifuNote: str, note: str },
+  required: ['swahili', 'english', 'exampleContext'],
+  additionalProperties: false,
+};
+
 export function outputSchema(scope: AiScope, kind: ItemKind | null): Obj {
   const field =
-    scope === 'dialogue'
+    scope === 'item' && kind === 'word'
+      ? { word: wordSchema }
+      : scope === 'item' && kind === 'vocab'
+      ? { card: vocabSchema }
+      : scope === 'dialogue'
       ? { turns: { type: 'array', items: turnSchema } }
       : scope === 'practice'
       ? { practice: { type: 'array', items: practiceSchema } }
@@ -112,7 +130,8 @@ House rules — follow all of them:
 7. Practice items: "translate" (English prompt, learner fills the Swahili gap) or "complete" (Swahili only). before + correct option + after must form the full Swahili sentence (put the spaces inside before/after). Exactly 3 options, one correct; wrong options test meaning, person or tense — not noun class. "explanation" is one short line.
 8. Keep the "id" of every item you keep. Omit "id" for new items. Change only what the instruction asks for; keep everything else exactly as it is.
 9. Natural, everyday sentences beat grammatically loaded ones. Keep lines short.
-10. "summary": one short sentence saying what you changed.`;
+10. Notes: besides Sanifu, a word, a line or a flashcard can carry a "note" — a short learner-facing remark (1–2 sentences) on other meanings, how Kenyans actually use it, register (polite / street / Sheng), or a common mix-up. Add or change a note only when the instruction asks for one or it clearly helps; write it in English, quoting Swahili in its Kenyan form. To remove a note or Sanifu, return an empty string for it.
+11. "summary": one short sentence saying what you changed.`;
 
 export function buildPrompt(args: {
   scope: AiScope;
@@ -134,7 +153,11 @@ export function buildPrompt(args: {
         .join('\n')
     : '- (none yet)';
   const what =
-    args.scope === 'dialogue'
+    args.scope === 'item' && args.kind === 'word'
+      ? `one word or expression inside a dialogue line (${args.targetLabel ?? 'word'}) — return it in "word" with the same "text"; the line is context only`
+      : args.scope === 'item' && args.kind === 'vocab'
+      ? `one vocabulary flashcard (${args.targetLabel ?? 'flashcard'}) — return it in "card"`
+      : args.scope === 'dialogue'
       ? 'the WHOLE conversation (return every turn, in order, in "turns")'
       : args.scope === 'practice'
       ? 'the WHOLE practice session (return every item, in order, in "practice")'
@@ -189,13 +212,20 @@ function normTurn(raw: Obj, prev: Map<string, Obj>, known: Set<string>, used: Se
   const id = forceId ?? idFor(raw.id, known, used);
   const old = prev.get(id);
   let words = (Array.isArray(raw.words) ? (raw.words as Obj[]) : [])
-    .map((w) => ({ text: s(w.text), gloss: s(w.gloss), ...(s(w.sanifu) ? { sanifu: s(w.sanifu) } : {}) }))
+    .map((w) => ({
+      text: s(w.text),
+      gloss: s(w.gloss),
+      ...(s(w.sanifu) ? { sanifu: s(w.sanifu) } : {}),
+      ...(s(w.note) ? { note: s(w.note) } : {}),
+    }))
     .filter((w, i, all) => w.text && w.gloss && swahili.includes(w.text) && all.findIndex((x) => x.text === w.text) === i);
   // Same line as before: keep the richer compiled glosses (conjugation tables, grammar links).
   if (old && s(old.swahili) === swahili && Array.isArray(old.words)) words = old.words as typeof words;
   const turn: Obj = { id, speaker, role, swahili, english, words };
   const sanifu = s(raw.sanifu);
   if (sanifu && sanifu !== swahili) turn.sanifu = sanifu;
+  const note = s(raw.note);
+  if (note) turn.note = note;
   if (role === 'user') {
     const wrong = (Array.isArray(raw.options) ? (raw.options as Obj[]) : [])
       .map((o) => s(o.swahili))
@@ -269,6 +299,32 @@ export function normalizeResult(
     return { summary, value: items };
   }
   if (!itemId) throw new Error('Missing item id.');
+  if (kind === 'word') {
+    const cur = ((current as Obj | null)?.word ?? {}) as Obj;
+    const w = (r.word ?? {}) as Obj;
+    const text = s(cur.text) || s(w.text);
+    if (!text) throw new Error('Missing the word being edited.');
+    // Fields always present: an empty string clears it when the patch is applied.
+    return { summary, value: { text, gloss: s(w.gloss) || s(cur.gloss) || text, sanifu: s(w.sanifu), note: s(w.note) } };
+  }
+  if (kind === 'vocab') {
+    const cur = (current ?? {}) as Obj;
+    const c = (r.card ?? {}) as Obj;
+    const swahili = s(c.swahili) || s(cur.swahili);
+    const english = s(c.english) || s(cur.english);
+    if (!swahili || !english) throw new Error('The flashcard is missing its Swahili or English.');
+    return {
+      summary,
+      value: {
+        swahili,
+        english,
+        exampleContext: s(c.exampleContext) || s(cur.exampleContext),
+        sanifu: s(c.sanifu),
+        sanifuNote: s(c.sanifu) ? s(c.sanifuNote) : '',
+        note: s(c.note),
+      },
+    };
+  }
   const prev = new Map<string, Obj>([[itemId, (current ?? {}) as Obj]]);
   const value =
     kind === 'turn'

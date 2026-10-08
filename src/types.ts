@@ -64,6 +64,8 @@ export interface VocabEntry {
   sanifu?: string;
   /** Short note explaining the divergence. */
   sanifuNote?: string;
+  /** General learner note: other meanings, how people really use it, etc. */
+  note?: string;
   /** Part of speech. Drives tap-to-explain panel behavior. */
   partOfSpeech?: PartOfSpeech;
   /** Noun class — required for nouns. V1 only surfaces m_wa and n_n. */
@@ -150,6 +152,8 @@ export interface WordGloss {
   grammar?: string[];
   /** Sanifu look-up: the standard form / noun class when Kenyan usage differs. */
   sanifu?: string;
+  /** General learner note: other meanings, how people use it in context, etc. */
+  note?: string;
 }
 
 export interface DialogueOption {
@@ -159,7 +163,7 @@ export interface DialogueOption {
 
 export interface DialogueTurn {
   id: string;
-  /** Display name, e.g. "Mteja" or "Dereva". */
+  /** Display name, e.g. "Abiria" or "Dereva". */
   speaker: string;
   /** 'auto' turns render immediately; 'user' turns are answered via MCQ. */
   role: 'auto' | 'user';
@@ -171,6 +175,8 @@ export interface DialogueTurn {
   options?: DialogueOption[];
   /** The whole line in Sanifu, when it differs from the Kenyan line. */
   sanifu?: string;
+  /** General learner note about the line or expression (usage, other meanings…). */
+  note?: string;
 }
 
 /** One chip in a practice fill-in-the-blank. */

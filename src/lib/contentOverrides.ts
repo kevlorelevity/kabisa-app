@@ -162,7 +162,7 @@ export function resolveOverride(
 /** Fields that hold Swahili. */
 const SW_KEYS = new Set(['swahili', 'sanifu', 'before', 'after', 'text']);
 /** Mixed English notes that quote Swahili words. Only longer spans propagate here. */
-const NOTE_KEYS = new Set(['exampleContext', 'explanation', 'feedback', 'sanifuNote', 'gloss']);
+const NOTE_KEYS = new Set(['exampleContext', 'explanation', 'feedback', 'sanifuNote', 'gloss', 'note']);
 const WORD = /[\p{L}\p{N}'’-]+/gu;
 
 export interface Span {
@@ -273,18 +273,80 @@ export function countPropagation(scope: unknown, o: Pick<ContentOverride, 'find_
   return Math.max(0, n - spans.length);
 }
 
-// ---- AI patches (content_patch rows) ----
+// ---- AI patches & notes (content_patch rows) ----
 //
-// An AI edit replaces one dialogue turn / practice item (scope 'item'), or a
-// lesson's whole conversation ('dialogue') or practice session ('practice').
+// 'item'      replaces one dialogue turn / practice item (AI edit).
+// 'dialogue'  replaces a lesson's whole conversation; 'practice' its practice session.
+// 'fields'    merges fields into one turn / practice item / vocabulary card (notes, Sanifu…).
+// 'word'      updates one glossed word in a turn (gloss, Sanifu, note); with
+//             `everywhere`, its note and Sanifu also show wherever that word is
+//             glossed and on flashcards for it, in every lesson.
+// In merged values an empty string removes the field.
+
+export type PatchScope = 'item' | 'dialogue' | 'practice' | 'fields' | 'word';
 
 export interface ContentPatch {
   id: string;
   created_at: string;
   lesson_id: string;
-  scope: 'item' | 'dialogue' | 'practice';
+  scope: PatchScope;
   item_id: string | null;
   value: unknown;
+}
+
+export interface WordPatchValue {
+  /** The glossed text as written in the lesson (raw, unpersonalised). */
+  text: string;
+  /** Position in the turn's `words` array (falls back to matching `text`). */
+  wordIndex?: number;
+  gloss?: string;
+  sanifu?: string;
+  note?: string;
+  everywhere?: boolean;
+}
+
+type Rec = Record<string, unknown>;
+
+function mergeFields(target: Rec, fields: Rec, keys?: string[]): void {
+  for (const [k, v] of Object.entries(fields)) {
+    if (k === 'id' || (keys && !keys.includes(k))) continue;
+    if (v === '' || v === null) delete target[k];
+    else if (v !== undefined) target[k] = structuredClone(v);
+  }
+}
+
+const norm = (s: string) => s.trim().toLowerCase();
+
+function findItemIn(lesson: Lesson, id: string): Rec | undefined {
+  return (lesson.turns.find((t) => t.id === id) ??
+    lesson.practice?.find((x) => x.id === id) ??
+    lesson.vocabulary?.find((v) => v.id === id)) as Rec | undefined;
+}
+
+/** Note + Sanifu of a word, on every gloss of that word and every flashcard for it. */
+export function applyWordEverywhere(lessons: Lesson[], v: WordPatchValue): number {
+  const key = norm(v.text);
+  const fields: Rec = {};
+  if (v.note !== undefined) fields.note = v.note;
+  if (v.sanifu !== undefined) fields.sanifu = v.sanifu;
+  let n = 0;
+  for (const lesson of lessons) {
+    for (const turn of lesson.turns) {
+      for (const w of turn.words ?? []) {
+        if (norm(w.text) === key) {
+          mergeFields(w as unknown as Rec, fields);
+          n++;
+        }
+      }
+    }
+    for (const card of lesson.vocabulary ?? []) {
+      if (norm(card.swahili) === key) {
+        mergeFields(card as unknown as Rec, fields);
+        n++;
+      }
+    }
+  }
+  return n;
 }
 
 export function applyPatchTo(lesson: Lesson, p: Pick<ContentPatch, 'scope' | 'item_id' | 'value'>): boolean {
@@ -308,6 +370,23 @@ export function applyPatchTo(lesson: Lesson, p: Pick<ContentPatch, 'scope' | 'it
       lesson.practice[pi] = v as NonNullable<Lesson['practice']>[number];
       return true;
     }
+  }
+  if (p.scope === 'fields' && p.item_id && v && typeof v === 'object') {
+    const item = findItemIn(lesson, p.item_id);
+    if (!item) return false;
+    mergeFields(item, v as Rec);
+    return true;
+  }
+  if (p.scope === 'word' && p.item_id && v && typeof v === 'object') {
+    const wv = v as WordPatchValue;
+    const turn = lesson.turns.find((t) => t.id === p.item_id);
+    if (!turn || !wv.text) return false;
+    const byIndex = wv.wordIndex !== undefined ? turn.words?.[wv.wordIndex] : undefined;
+    const word = byIndex && norm(byIndex.text) === norm(wv.text) ? byIndex : turn.words?.find((w) => norm(w.text) === norm(wv.text));
+    if (!word) return false;
+    mergeFields(word as unknown as Rec, wv as unknown as Rec, ['gloss', 'sanifu', 'note']);
+    if (word.gloss === undefined) word.gloss = wv.text;
+    return true;
   }
   return false;
 }
@@ -354,6 +433,9 @@ let appliedPatches: ContentPatch[] = [];
 function applyPatchNow(p: ContentPatch): void {
   const lesson = scopes?.lesson(p.lesson_id);
   if (lesson) applyPatchTo(lesson, p);
+  if (p.scope === 'word' && scopes && (p.value as WordPatchValue | null)?.everywhere) {
+    applyWordEverywhere(scopes.allLessons(), p.value as WordPatchValue);
+  }
 }
 
 /** Adds AI patches (from the DB, or one that just went live) and re-renders content views. */
@@ -424,4 +506,16 @@ export function useOverridesVersion(): number {
     },
     () => version,
   );
+}
+
+/** How many glosses / flashcards across all lessons show this word (for the "everywhere" checkbox). */
+export function countWordPlaces(text: string): number {
+  if (!scopes || !text.trim()) return 0;
+  const key = norm(text);
+  let n = 0;
+  for (const lesson of scopes.allLessons()) {
+    for (const turn of lesson.turns) for (const w of turn.words ?? []) if (norm(w.text) === key) n++;
+    for (const card of lesson.vocabulary ?? []) if (norm(card.swahili) === key) n++;
+  }
+  return n;
 }

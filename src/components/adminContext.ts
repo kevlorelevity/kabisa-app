@@ -11,6 +11,8 @@ export interface SuggestTarget {
   lessonId?: string;
   /** Stable id of the item (turn / practice / vocab uuid, grammar slug…). */
   itemId?: string;
+  /** For a glossed word: its position in the turn's `words` (itemId is then the turn id). */
+  wordIndex?: number;
 }
 
 export interface AdminActivity {

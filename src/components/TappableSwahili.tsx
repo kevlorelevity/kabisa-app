@@ -16,6 +16,8 @@ interface TappableSwahiliProps {
   className?: string;
   /** 'dark' for use on a dark chat-bubble background (e.g. the learner's own bubble). */
   variant?: 'light' | 'dark';
+  /** The dialogue turn these words belong to — lets admins edit / annotate a single word. */
+  turnId?: string;
 }
 
 interface Segment {
@@ -24,13 +26,16 @@ interface Segment {
   conjugation?: ConjugationTable;
   grammar?: string[];
   sanifu?: string;
+  note?: string;
+  /** Index of the gloss in the turn's `words` array. */
+  index?: number;
 }
 
 /** Splits `swahili` into plain-text and glossed segments, in order. */
 function buildSegments(swahili: string, words: WordGloss[]): Segment[] {
   const segments: Segment[] = [];
   let cursor = 0;
-  for (const word of words) {
+  for (const [index, word] of words.entries()) {
     const idx = swahili.indexOf(word.text, cursor);
     if (idx === -1) continue; // content mismatch — skip rather than crash
     if (idx > cursor) {
@@ -42,6 +47,8 @@ function buildSegments(swahili: string, words: WordGloss[]): Segment[] {
       conjugation: word.conjugation,
       grammar: word.grammar,
       sanifu: word.sanifu,
+      note: word.note,
+      index,
     });
     cursor = idx + word.text.length;
   }
@@ -56,7 +63,7 @@ function buildSegments(swahili: string, words: WordGloss[]): Segment[] {
  * tappable and show a small popover with the English meaning. Plain text
  * (punctuation, untagged words) renders inert.
  */
-export function TappableSwahili({ swahili, words, enabled, className, variant = 'light' }: TappableSwahiliProps) {
+export function TappableSwahili({ swahili, words, enabled, className, variant = 'light', turnId }: TappableSwahiliProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const segments = buildSegments(swahili, words);
 
@@ -96,18 +103,30 @@ export function TappableSwahili({ swahili, words, enabled, className, variant = 
                   // grow the popover inward so it never runs off a phone screen.
                   variant === 'dark' ? 'right-0' : 'left-0'
                 } top-full mt-1 z-20 w-max rounded-md bg-gray-900 text-white text-xs leading-snug px-2.5 py-1.5 shadow-lg text-left font-normal ${
-                  seg.conjugation || seg.grammar?.length ? 'max-w-[16rem]' : 'max-w-[14rem]'
+                  seg.conjugation || seg.grammar?.length || seg.note ? 'max-w-[16rem]' : 'max-w-[14rem]'
                 }`}
               >
                 {seg.gloss}{' '}
                 <EditPencil
                   tone="dark"
-                  target={{ targetType: 'word.gloss', label: `Word explanation · “${seg.text}”`, currentText: `${seg.text} — ${seg.gloss}` }}
+                  target={{
+                    targetType: 'word.gloss',
+                    label: `Word · “${seg.text}”`,
+                    currentText: `${seg.text} — ${seg.gloss}`,
+                    itemId: turnId,
+                    wordIndex: turnId ? seg.index : undefined,
+                  }}
                 />
                 {seg.sanifu && (
                   <span className="block mt-1.5 text-sky-200">
                     <span className="font-semibold">Sanifu · </span>
                     {seg.sanifu}
+                  </span>
+                )}
+                {seg.note && (
+                  <span className="block mt-1.5 text-amber-200">
+                    <span className="font-semibold">Note · </span>
+                    {seg.note}
                   </span>
                 )}
                 {seg.conjugation && (

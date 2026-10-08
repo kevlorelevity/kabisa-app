@@ -1,6 +1,6 @@
 // Vercel serverless function: POST /api/ai-edit   (admins only)
 //
-// Takes an admin's instruction for one dialogue turn / practice item, or for a
+// Takes an admin's instruction for one word, dialogue turn, practice item or flashcard, or for a
 // lesson's whole conversation / practice session, records it as an ai_job and
 // answers immediately (202) — the admin keeps working. In the background
 // (waitUntil) it asks Claude for the revision (structured JSON output), validates
@@ -18,6 +18,7 @@ import {
   normalizeResult,
   outputSchema,
   parseClaudeJson,
+  patchScopeFor,
   type AiLessonContext,
   type AiScope,
   type GrammarRef,
@@ -59,7 +60,9 @@ export async function POST(request: Request): Promise<Response> {
     return json(400, { error: 'bad_json' });
   }
   const scope = String(b.scope) as AiScope;
-  const kind = (b.kind === 'turn' || b.kind === 'practice' ? b.kind : null) as ItemKind | null;
+  const kind = (['turn', 'practice', 'word', 'vocab'].includes(String(b.kind)) ? b.kind : null) as ItemKind | null;
+  const wordIndex = typeof b.wordIndex === 'number' ? b.wordIndex : undefined;
+  const everywhere = b.everywhere === true;
   const lesson = b.lesson as AiLessonContext | undefined;
   const instruction = typeof b.instruction === 'string' ? b.instruction.trim().slice(0, 4000) : '';
   const itemId = typeof b.itemId === 'string' ? b.itemId : undefined;
@@ -128,10 +131,12 @@ export async function POST(request: Request): Promise<Response> {
       });
       const body = await ai.json().catch(() => null);
       if (!ai.ok) throw new Error(`AI request failed (${ai.status}): ${JSON.stringify(body).slice(0, 300)}`);
-      const { summary, value } = normalizeResult(scope, kind, parseClaudeJson(body), b.current, itemId);
+      const result = normalizeResult(scope, kind, parseClaudeJson(body), b.current, itemId);
+      const summary = result.summary;
+      const value = kind === 'word' ? { ...(result.value as object), wordIndex, everywhere } : result.value;
       const pRes = await rest('content_patch', {
         method: 'POST',
-        body: JSON.stringify({ job_id: job.id, lesson_id: lesson.id, scope, item_id: itemId ?? null, value }),
+        body: JSON.stringify({ job_id: job.id, lesson_id: lesson.id, scope: patchScopeFor(scope, kind), item_id: itemId ?? null, value }),
       });
       if (!pRes.ok) throw new Error(`Saving the change failed: ${(await pRes.text().catch(() => '')).slice(0, 200)}`);
       const patch = ((await pRes.json()) as Array<{ id: string }>)[0];

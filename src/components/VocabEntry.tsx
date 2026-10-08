@@ -23,11 +23,17 @@ export function VocabEntry({ entry }: VocabEntryProps) {
             target={{
               targetType: 'vocab',
               label: 'Vocabulary / flashcard',
-              currentText: [entry.swahili, entry.english, entry.exampleContext, entry.sanifu, entry.sanifuNote].filter(Boolean).join(' | '),
+              currentText: [entry.swahili, entry.english, entry.exampleContext, entry.sanifu, entry.sanifuNote, entry.note].filter(Boolean).join(' | '),
               itemId: entry.id,
             }}
           />
           <p className="text-xs text-gray-400 mt-0.5 italic">{entry.exampleContext}</p>
+          {entry.note && (
+            <p className="text-xs text-amber-900 mt-1">
+              <span className="font-semibold">💡 Note · </span>
+              {entry.note}
+            </p>
+          )}
         </div>
         {hasSanifu && (
           <button

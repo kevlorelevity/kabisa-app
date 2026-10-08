@@ -1,6 +1,6 @@
 import { getSupabase } from './supabase';
 import type { SuggestTarget } from '../components/adminContext';
-import type { ContentOverride } from './contentOverrides';
+import type { ContentOverride, ContentPatch } from './contentOverrides';
 
 export type SuggestionKind = 'phrasing' | 'translation' | 'grammar' | 'layout' | 'other';
 
@@ -71,8 +71,11 @@ export type AiScope = 'item' | 'dialogue' | 'practice';
 export interface AiEditInput {
   lessonId: string;
   scope: AiScope;
-  kind?: 'turn' | 'practice';
+  kind?: 'turn' | 'practice' | 'word' | 'vocab';
   itemId?: string;
+  /** Word edits: which glossed word of the turn, and whether its note/Sanifu apply everywhere. */
+  wordIndex?: number;
+  everywhere?: boolean;
   targetLabel?: string;
   instruction: string;
   /** Lesson context for the AI (title, level, notes, vocabulary). */
@@ -172,4 +175,12 @@ export async function retireGuidance(id: string): Promise<boolean> {
   if (!supa) return false;
   const { error } = await supa.from('admin_guidance').update({ active: false }).eq('id', id);
   return !error;
+}
+
+/** Stores a hand-written note / Sanifu (a 'fields' or 'word' content_patch). Live for everyone on their next load. */
+export async function saveNotePatch(p: Pick<ContentPatch, 'lesson_id' | 'scope' | 'item_id' | 'value'>): Promise<{ ok: boolean; id?: string; error?: string }> {
+  const supa = getSupabase();
+  if (!supa) return { ok: false, error: 'offline' };
+  const { data, error } = await supa.from('content_patch').insert(p).select('id').single();
+  return error ? { ok: false, error: error.message } : { ok: true, id: (data as { id: string }).id };
 }

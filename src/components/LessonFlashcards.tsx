@@ -57,6 +57,12 @@ export function LessonFlashcards({ entries }: LessonFlashcardsProps) {
                 {entry.sanifuNote && <> · {entry.sanifuNote}</>}
               </p>
             )}
+            {entry.note && (
+              <p className="text-xs text-amber-900 bg-amber-50 rounded-lg px-2.5 py-1.5">
+                <span className="font-semibold">💡 Note · </span>
+                {entry.note}
+              </p>
+            )}
           </div>
         )}
         {side < lastSide && <p className="text-xs text-gray-400 mt-3">Tap to reveal</p>}
@@ -65,7 +71,7 @@ export function LessonFlashcards({ entries }: LessonFlashcardsProps) {
             target={{
               targetType: 'vocab',
               label: 'Flashcard',
-              currentText: [entry.swahili, entry.english, entry.exampleContext, entry.sanifu, entry.sanifuNote].filter(Boolean).join(' | '),
+              currentText: [entry.swahili, entry.english, entry.exampleContext, entry.sanifu, entry.sanifuNote, entry.note].filter(Boolean).join(' | '),
               itemId: entry.id,
             }}
           />
