@@ -7,7 +7,7 @@
   "level": 7,
   "order": 705,
   "theme": "uber",
-  "culturalNote": "Kamau again! This time you left your laptop bag in his car. Nairobi's Uber drivers often keep regular customers' numbers and do favours — returning lost items, waiting, running small errands. The prepositional extension (-ia/-ea) is how you talk about favours: \"nimekuletea\" (I've brought it to you), \"nikuwekee\" (shall I keep it for you), \"ulinisubiria\" (you waited for me).",
+  "culturalNote": "Kamau again! This time you left your laptop bag in his car. Nairobi's Uber drivers often keep regular passengers' numbers and do favours — returning lost items, waiting, running small errands. The prepositional extension (-ia/-ea) is how you talk about favours: \"nimekuletea\" (I've brought it to you), \"nikuwekee\" (shall I keep it for you), \"ulinisubiria\" (you waited for me).",
   "startingPoint": "Evening. You realise your laptop bag is missing — you must have left it in Kamau's car this morning. You call him.",
   "grammarFocus": [
     "verb-extensions",
@@ -42,7 +42,7 @@
   "turns": [
     {
       "id": "c4989580-d234-54e0-b0fe-e865ac6ad0a6",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Kamau, habari? Nadhani nimesahau mfuko yangu kwa gari yako asubuhi.",
       "english": "Kamau, how are you? I think I forgot my bag in your car this morning.",
@@ -323,7 +323,7 @@
     },
     {
       "id": "28e23549-ad53-58b6-88e3-8e1f26effea8",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Mungu ni mwema! Asante sana kwa kuniwekea.",
       "english": "Thank God! Thanks so much for keeping it for me.",
@@ -397,7 +397,7 @@
     },
     {
       "id": "8f076f11-bcc7-5ed9-a94f-c30af6cd5677",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Ndiyo, tafadhali uniletee. Nitakulipia mafuta.",
       "english": "Yes, please bring it to me. I'll pay for your fuel.",
@@ -451,8 +451,8 @@
       "id": "94ba4735-fe2e-5687-842d-cfd230f6982c",
       "speaker": "Dereva",
       "role": "auto",
-      "swahili": "Aah, si lazima. Yaani, wewe ni mteja wangu! Uko wapi?",
-      "english": "Ah, it's not necessary. I mean, you're my customer! Where are you?",
+      "swahili": "Aah, si lazima. Yaani, wewe ni abiria wangu! Uko wapi?",
+      "english": "Ah, it's not necessary. I mean, you're my passenger! Where are you?",
       "words": [
         {
           "text": "Aah",
@@ -497,8 +497,8 @@
           ]
         },
         {
-          "text": "mteja",
-          "gloss": "customer / client — m/wa noun (people & animals; plural wateja)",
+          "text": "abiria",
+          "gloss": "passenger — m/wa noun (people & animals)",
           "grammar": [
             "noun-classes-mwa-nn"
           ]
@@ -596,7 +596,7 @@
     },
     {
       "id": "03ee75ed-f356-597d-82dd-8b2be90dafeb",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Niko kazini, Westlands. Si tukutane kwa geti ya kampuni?",
       "english": "I'm at work, Westlands. Why don't we meet at the company gate?",
@@ -921,7 +921,7 @@
     },
     {
       "id": "b495ec3e-2a80-5ee9-b530-43cd49390c76",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Asante sana! Na asubuhi ulinisubiria pia. Wewe ni mtu mzuri sana!",
       "english": "Thanks a lot! And this morning you waited for me too. You're a really good person!",
@@ -1069,7 +1069,7 @@
     },
     {
       "id": "a4cf75bd-8793-5842-a659-e338ffbc68ac",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Poa kabisa. Na kesho asubuhi, unaweza kunipeleka kazini?",
       "english": "Totally cool. And tomorrow morning, can you take me to work?",
@@ -1606,9 +1606,9 @@
     {
       "id": "ee047581-bc80-5225-a579-731cb3018191",
       "mode": "complete",
-      "english": "I mean, you're my customer!",
+      "english": "I mean, you're my passenger!",
       "before": "",
-      "after": ", wewe ni mteja wangu!",
+      "after": ", wewe ni abiria wangu!",
       "options": [
         {
           "text": "Yaani",

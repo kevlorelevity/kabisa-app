@@ -111,7 +111,13 @@ export async function POST(request: Request): Promise<Response> {
       });
       const ai = await fetch('https://api.anthropic.com/v1/messages', {
         method: 'POST',
-        headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
+        headers: {
+          'x-api-key': apiKey,
+          'anthropic-version': '2023-06-01',
+          'content-type': 'application/json',
+          // Org-level keys (not tied to a workspace) must name the workspace to bill.
+          ...(process.env.ANTHROPIC_WORKSPACE_ID ? { 'anthropic-workspace-id': process.env.ANTHROPIC_WORKSPACE_ID.trim() } : {}),
+        },
         body: JSON.stringify({
           model: process.env.ANTHROPIC_MODEL || 'claude-opus-5-5',
           max_tokens: 32000,

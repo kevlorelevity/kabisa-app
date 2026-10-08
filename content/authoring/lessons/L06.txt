@@ -20,26 +20,26 @@ gl: ilizima = "(it) switched off / died" — i- (it, n/n) + -li- (past) + -zima.
 gl: kasoro = "minus / to" — saa mbili kasoro dakika tano = 7:55 #time-swahili
 
 > Dereva: Aah, John! Ni wewe tena! Habari ya wikendi? | Ah, John! It's you again! How was the weekend?
-< Mteja: Kamau! Nzuri sana. Nilienda Naivasha na marafiki. | Kamau! Very good. I went to Naivasha with friends.
+< Abiria: Kamau! Nzuri sana. Nilienda Naivasha na marafiki. | Kamau! Very good. I went to Naivasha with friends.
   x: Kamau! Nzuri sana. Nitaenda Naivasha na marafiki. ; Kamau! Nzuri sana. Ulienda Naivasha na marafiki.
 > Dereva: Safi! Mlifanya nini huko? | Great! What did you do there?
-< Mteja: Tuliona viboko, na tulikula nyama choma. | We saw hippos, and we ate nyama choma.
+< Abiria: Tuliona viboko, na tulikula nyama choma. | We saw hippos, and we ate nyama choma.
   x: Tutaona viboko, na tutakula nyama choma. ; Tuliona viboko, na tulila nyama choma.
 > Dereva: Wee! Mimi sikuenda popote. Nilifanya kazi wikendi yote. | Wow! I didn't go anywhere. I worked the whole weekend.
-< Mteja: Pole sana. Leo kuna magari mingi sana! | So sorry. Today there's so much traffic!
+< Abiria: Pole sana. Leo kuna magari mingi sana! | So sorry. Today there's so much traffic!
   x: Asante sana. Leo kuna magari mingi sana! ; Pole sana. Leo kuna magari machache sana!
 > Dereva: Ndiyo. Kulikuwa na ajali kwa Waiyaki Way asubuhi. | Yes. There was an accident on Waiyaki Way this morning.
-< Mteja: Kweli? Sikuona habari. Watu waliumia? | Really? I didn't see the news. Did people get hurt?
+< Abiria: Kweli? Sikuona habari. Watu waliumia? | Really? I didn't see the news. Did people get hurt?
   x: Kweli? Sioni habari. Watu waliumia? ; Kweli? Sikuona habari. Watu wanaumia?
 > Dereva: Hapana, hakuna mtu aliumia. Lakini gari mbili ziliharibika. | No, nobody got hurt. But two cars were damaged.
   s: Hapana, hakuna mtu aliumia. Lakini magari mawili yaliharibika.
-< Mteja: Tutachelewa? Nilimwambia boss nitafika saa mbili. | Will we be late? I told the boss I'd arrive at eight.
+< Abiria: Tutachelewa? Nilimwambia boss nitafika saa mbili. | Will we be late? I told the boss I'd arrive at eight.
   x: Tutachelewa? Nilikuambia boss nitafika saa mbili. ; Tutachelewa? Nilimwambia boss nilifika saa mbili.
 > Dereva: Usijali. Nitapita njia ya mkato, kupitia Lavington. | Don't worry. I'll take a shortcut, through Lavington.
-< Mteja: Poa! Jana nilikupigia simu, lakini hukuchukua. | Cool! Yesterday I called you, but you didn't pick up.
+< Abiria: Poa! Jana nilikupigia simu, lakini hukuchukua. | Cool! Yesterday I called you, but you didn't pick up.
   x: Poa! Jana ulinipigia simu, lakini hukuchukua. ; Poa! Jana nilikupigia simu, lakini sikuchukua.
 > Dereva: Aah, pole! Simu yangu ilizima — batari iliisha. | Ah, sorry! My phone died — the battery ran out.
-< Mteja: Hakuna shida. Nitakupigia tena kesho asubuhi. | No problem. I'll call you again tomorrow morning.
+< Abiria: Hakuna shida. Nitakupigia tena kesho asubuhi. | No problem. I'll call you again tomorrow morning.
   x: Hakuna shida. Nilikupigia tena kesho asubuhi. ; Hakuna shida. Nitampigia tena kesho asubuhi.
 > Dereva: Sawa. Na hii ndiyo ofisi yako. Saa mbili kasoro dakika tano! | Okay. And this is your office. Five to eight!
 

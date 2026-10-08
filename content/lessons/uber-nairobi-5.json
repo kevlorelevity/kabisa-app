@@ -44,7 +44,7 @@
   "turns": [
     {
       "id": "5b386170-87c3-5c60-9e3d-766add3c6bf6",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Kamau! Umeniwacha kwa mataa! Nimekuwa nikikungoja kwa dakika arobaini!",
       "english": "Kamau! You left me hanging! I've been waiting for you for forty minutes!",
@@ -184,7 +184,7 @@
     },
     {
       "id": "9ba8ce9b-aee8-5ba4-8f7c-68da6daa0fec",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Haha! Sawa, kawia ufike. Lakini sasa usiendeshe kwa kasi — haraka haraka haina baraka.",
       "english": "Haha! Fine, better late than never. But now don't drive fast — hurry hurry has no blessing.",
@@ -365,7 +365,7 @@
     },
     {
       "id": "66add84c-a1bb-54cf-8537-29bd32953bd2",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Unatia chumvi! Bado ninajifunza. Lakini mambo ni mengi, muda ni mchache.",
       "english": "You're exaggerating! I'm still learning. But so much to do, so little time.",
@@ -510,7 +510,7 @@
     },
     {
       "id": "2da94faa-ef78-5150-ac41-e93d12bf7a88",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Ilikuwa poa, lakini saa nne wakati ulitupa kisogo — kila mtu alikuwa amechoka.",
       "english": "It was cool, but at ten time was up — everyone was tired.",
@@ -801,7 +801,7 @@
     },
     {
       "id": "a6314c06-8858-5934-980e-51f422b303aa",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Ni safari ndefu! Lakini pole pole ndio mwendo. Nikikuhitaji, nitakupigia.",
       "english": "It's a long trip! But slow and steady is the way. If I need you, I'll call you.",
@@ -923,8 +923,8 @@
       "id": "152ca9a6-1efb-57ad-9437-ac0abc138854",
       "speaker": "Dereva",
       "role": "auto",
-      "swahili": "Poa. Wewe ni mteja wangu wa kwanza kila wakati. Nipe nikupe!",
-      "english": "Cool. You're always my number-one customer. You scratch my back, I'll scratch yours!",
+      "swahili": "Poa. Wewe ni abiria wangu wa kwanza kila wakati. Nipe nikupe!",
+      "english": "Cool. You're always my number-one passenger. You scratch my back, I'll scratch yours!",
       "words": [
         {
           "text": "Poa",
@@ -948,8 +948,8 @@
           ]
         },
         {
-          "text": "mteja",
-          "gloss": "customer / client — m/wa noun (people & animals; plural wateja)",
+          "text": "abiria",
+          "gloss": "passenger — m/wa noun (people & animals)",
           "grammar": [
             "noun-classes-mwa-nn"
           ]
@@ -1017,7 +1017,7 @@
     },
     {
       "id": "0541c20c-bc6a-508f-9b9b-492fc3499099",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Kabisa! Tangu siku ya kwanza ulipokuwa ukiniuliza \"unaenda wapi?\", umekuwa rafiki wa kweli.",
       "english": "Absolutely! Since the first day, when you were asking me \"where are you going?\", you've been a true friend.",
@@ -1242,7 +1242,7 @@
     },
     {
       "id": "fce4a1ad-8965-5bdf-adf6-761626b4b6d6",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Haha! Asante, Kamau. Usiku mwema, na lala salama!",
       "english": "Haha! Thanks, Kamau. Good night, and sleep well!",

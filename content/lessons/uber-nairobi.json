@@ -7,8 +7,8 @@
   "level": 1,
   "order": 101,
   "theme": "uber",
-  "culturalNote": "Ordering a ride and chatting with the driver is one of the most common everyday exchanges a visitor to Nairobi will have. The passenger (mteja) usually opens with a casual greeting, and the driver (dereva) confirms the destination before setting off. This lesson has you play the mteja — pick what you'd say, then see how the dereva responds.",
-  "startingPoint": "The customer (mteja) gets in the car and starts the conversation.",
+  "culturalNote": "Ordering a ride and chatting with the driver is one of the most common everyday exchanges a visitor to Nairobi will have. The passenger (abiria) usually opens with a casual greeting, and the driver (dereva) confirms the destination before setting off. This lesson has you play the abiria — pick what you'd say, then see how the dereva responds.",
+  "startingPoint": "The passenger (abiria) gets in the car and starts the conversation.",
   "grammarFocus": [
     "kenyan-vs-sanifu",
     "present-na",
@@ -31,7 +31,7 @@
   "turns": [
     {
       "id": "ef6c870c-d478-4cea-b26e-25d5347c809b",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Niaje boss?",
       "english": "What's up, boss?",
@@ -133,7 +133,7 @@
     },
     {
       "id": "976a55ab-682a-4bce-bd4f-6f15851d0d1e",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Niko poa, asante.",
       "english": "I'm good, thanks.",
@@ -257,7 +257,7 @@
     },
     {
       "id": "ed747c60-5229-4b37-a39a-6c7f5b8b4ca9",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Ninaenda Westie, karibu na Mall.",
       "english": "I'm going to Westie, close by the Mall.",
@@ -397,7 +397,7 @@
     },
     {
       "id": "de94276e-aa25-4e6d-8232-4ab30bd40854",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Labda Westlands roundabout.",
       "english": "Maybe Westlands roundabout.",

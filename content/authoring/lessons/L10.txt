@@ -43,25 +43,25 @@ gl: sherehe = party
 gl: mwenye = "who" — Kenyan relative (mtu mwenye…) #relatives
 gl: nimekuwa nikikungoja = "I've been waiting for you" #continuous-tenses
 
-< Mteja: Kamau! Umeniwacha kwa mataa! Nimekuwa nikikungoja kwa dakika arobaini! | Kamau! You left me hanging! I've been waiting for you for forty minutes!
+< Abiria: Kamau! Umeniwacha kwa mataa! Nimekuwa nikikungoja kwa dakika arobaini! | Kamau! You left me hanging! I've been waiting for you for forty minutes!
   x: Kamau! Umeniwacha kwa mataa! Nitakuwa nikikungoja kwa dakika arobaini! ; Kamau! Nimekuwacha kwa mataa! Nimekuwa nikikungoja kwa dakika arobaini!
 > Dereva: Pole sana, boss! Msongamano wa magari Westlands ni mbaya. Lakini, kawia ufike, sivyo? | So sorry, boss! The Westlands jam is terrible. But better late than never, right?
-< Mteja: Haha! Sawa, kawia ufike. Lakini sasa usiendeshe kwa kasi — haraka haraka haina baraka. | Haha! Fine, better late than never. But now don't drive fast — hurry hurry has no blessing.
+< Abiria: Haha! Sawa, kawia ufike. Lakini sasa usiendeshe kwa kasi — haraka haraka haina baraka. | Haha! Fine, better late than never. But now don't drive fast — hurry hurry has no blessing.
   x: Haha! Sawa, kawia ufike. Lakini sasa endesha kwa kasi — haraka haraka haina baraka. ; Haha! Sawa, kawia ufike. Lakini sasa usiendeshe kwa kasi — pole pole haina baraka.
 > Dereva: Wee! Kumbe sasa unaongea kama Mkenya halisi! Umenivunja mbavu! | Whoa! Oh, so now you talk like a real Kenyan! You've cracked me up!
-< Mteja: Unatia chumvi! Bado ninajifunza. Lakini mambo ni mengi, muda ni mchache. | You're exaggerating! I'm still learning. But so much to do, so little time.
+< Abiria: Unatia chumvi! Bado ninajifunza. Lakini mambo ni mengi, muda ni mchache. | You're exaggerating! I'm still learning. But so much to do, so little time.
   x: Unatia sukari! Bado ninajifunza. Lakini mambo ni mengi, muda ni mchache. ; Unatia chumvi! Bado ninajifunza. Lakini mambo ni machache, muda ni mwingi.
 > Dereva: Ukweli! Sherehe ilikuwaje? | True! How was the party?
-< Mteja: Ilikuwa poa, lakini saa nne wakati ulitupa kisogo — kila mtu alikuwa amechoka. | It was cool, but at ten time was up — everyone was tired.
+< Abiria: Ilikuwa poa, lakini saa nne wakati ulitupa kisogo — kila mtu alikuwa amechoka. | It was cool, but at ten time was up — everyone was tired.
   x: Ilikuwa poa, lakini saa nne wakati ulitupa mkono — kila mtu alikuwa amechoka. ; Itakuwa poa, lakini saa nne wakati ulitupa kisogo — kila mtu alikuwa amechoka.
 > Dereva: Haha! Na wiki ijayo, unaenda Mombasa? Ningekuwa najua mapema, ningekupeleka mimi! | Haha! And next week, are you going to Mombasa? If I'd known earlier, I would have driven you myself!
-< Mteja: Ni safari ndefu! Lakini pole pole ndio mwendo. Nikikuhitaji, nitakupigia. | It's a long trip! But slow and steady is the way. If I need you, I'll call you.
+< Abiria: Ni safari ndefu! Lakini pole pole ndio mwendo. Nikikuhitaji, nitakupigia. | It's a long trip! But slow and steady is the way. If I need you, I'll call you.
   x: Ni safari fupi! Lakini pole pole ndio mwendo. Nikikuhitaji, nitakupigia. ; Ni safari ndefu! Lakini pole pole ndio mwendo. Ningekuhitaji, nilikupigia.
-> Dereva: Poa. Wewe ni mteja wangu wa kwanza kila wakati. Nipe nikupe! | Cool. You're always my number-one customer. You scratch my back, I'll scratch yours!
-< Mteja: Kabisa! Tangu siku ya kwanza ulipokuwa ukiniuliza "unaenda wapi?", umekuwa rafiki wa kweli. | Absolutely! Since the first day, when you were asking me "where are you going?", you've been a true friend.
+> Dereva: Poa. Wewe ni abiria wangu wa kwanza kila wakati. Nipe nikupe! | Cool. You're always my number-one passenger. You scratch my back, I'll scratch yours!
+< Abiria: Kabisa! Tangu siku ya kwanza ulipokuwa ukiniuliza "unaenda wapi?", umekuwa rafiki wa kweli. | Absolutely! Since the first day, when you were asking me "where are you going?", you've been a true friend.
   x: Kabisa! Tangu siku ya kwanza utakapokuwa ukiniuliza "unaenda wapi?", umekuwa rafiki wa kweli. ; Kabisa! Tangu siku ya kwanza ulipokuwa ukiniuliza "unaenda wapi?", umekuwa adui wa kweli.
 > Dereva: Asante, boss. Mvumilivu hula mbivu — ulinivumilia kila nilipochelewa! Tumefika. | Thanks, boss. Good things come to the patient — you put up with me every time I was late! We've arrived.
-< Mteja: Haha! Asante, Kamau. Usiku mwema, na lala salama! | Haha! Thanks, Kamau. Good night, and sleep well!
+< Abiria: Haha! Asante, Kamau. Usiku mwema, na lala salama! | Haha! Thanks, Kamau. Good night, and sleep well!
   x: Haha! Asante, Kamau. Habari ya asubuhi, na lala salama! ; Haha! Pole, Kamau. Usiku mwema, na lala salama!
 > Dereva: Na wewe pia. Tutaonana! | You too. See you!
 

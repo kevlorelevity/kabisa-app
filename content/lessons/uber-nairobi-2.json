@@ -7,7 +7,7 @@
   "level": 1,
   "order": 102,
   "theme": "uber",
-  "culturalNote": "Nairobi drivers love a chat. Once the destination is sorted, expect small talk: your name, where you're from, what you do. Answering in Swahili — even a few words — goes a long way. The ride ends the way most do: agree the price, say kwa heri. You're the mteja again; this time the conversation goes further.",
+  "culturalNote": "Nairobi drivers love a chat. Once the destination is sorted, expect small talk: your name, where you're from, what you do. Answering in Swahili — even a few words — goes a long way. The ride ends the way most do: agree the price, say kwa heri. You're the abiria again; this time the conversation goes further.",
   "startingPoint": "Picking up where Part 1 left off — the driver asks which side of Westlands you want.",
   "grammarFocus": [
     "present-na",
@@ -96,7 +96,7 @@
     },
     {
       "id": "dc1c1985-9cb1-48cf-a3ed-4aeaa49b7d4e",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Labda Westlands roundabout.",
       "english": "Maybe Westlands roundabout.",
@@ -140,7 +140,7 @@
     },
     {
       "id": "08b51da1-718d-4c79-a4d2-9d252ae94f7f",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Jina yako ni nani boss?",
       "english": "What's your name, boss?",
@@ -298,7 +298,7 @@
     },
     {
       "id": "89f9db50-d72c-441d-acff-58641c6171b5",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Mimi ni John.",
       "english": "I'm John.",
@@ -388,7 +388,7 @@
     },
     {
       "id": "6cc4d284-674e-4994-b976-f1fae438af18",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Ninatoka Uganda, asante.",
       "english": "I'm from Uganda, thanks.",
@@ -525,7 +525,7 @@
     },
     {
       "id": "cb08335b-b48c-4045-8298-872e5e5da71f",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Ndiyo, ninafanya kazi Safaricom.",
       "english": "Yes, I work at Safaricom.",
@@ -665,7 +665,7 @@
     },
     {
       "id": "8c8ce61e-5db0-4988-8159-95fd6c85e966",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Poa.",
       "english": "Cool.",
@@ -695,7 +695,7 @@
     },
     {
       "id": "084e4f70-c19a-4d6f-a528-6542b7e7bf25",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Ni pesa ngapi?",
       "english": "How much is it?",
@@ -767,7 +767,7 @@
     },
     {
       "id": "2d80d9a5-e574-452a-8aac-05991314bf5d",
-      "speaker": "Mteja",
+      "speaker": "Abiria",
       "role": "user",
       "swahili": "Sawa. Kwa heri.",
       "english": "Okay. Goodbye.",

@@ -470,7 +470,7 @@ topic('discourse-particles', 1, 'Talking Like a Kenyan: Kumbe, Basi, Yaani, Si�
       'Small words that make you sound natural: surprise, rephrasing, wrapping up, and gentle suggestions.',
       [('table', 'Particles', ['Word', 'Use', 'Example'],
         [['Kumbe!', 'surprise: "oh, so…!" (what you assumed wasn\'t true)', 'Kumbe unajua Kiswahili! — Oh, so you speak Swahili!'],
-         ['Basi', 'well then / so / that\'s it', 'Basi, twende. — Well then, let\'s go.'], ['Yaani', 'I mean / in other words', 'Yaani, wewe ni mteja wangu!'],
+         ['Basi', 'well then / so / that\'s it', 'Basi, twende. — Well then, let\'s go.'], ['Yaani', 'I mean / in other words', 'Yaani, wewe ni abiria wangu!'],
          ['Si …?', 'why don\'t…? / isn\'t it…?', 'Si tukutane kesho? — Why don\'t we meet tomorrow?'],
          ['…, sivyo?', 'right? / isn\'t it?', 'Saa moja ni seven, sivyo?'], ['Ebu / Hebu', 'come on / let me', 'Ebu nione.'],
          ['Haya', 'alright / okay then', 'Haya, sawa.'], ['Aisee', 'wow / man!', 'Aisee, mvua inanyesha!'],
