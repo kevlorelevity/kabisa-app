@@ -1,9 +1,9 @@
 // -------- Voiceover --------
 //
 // Every Swahili phrase can be played aloud. Primary source is /api/tts — a
-// Vercel function that synthesizes the phrase with Azure's Kenyan Swahili
-// neural voice (sw-KE) and lets the CDN cache it forever. If that isn't
-// available (local `npm run dev`, no Azure key configured), we fall back to
+// Vercel function that synthesizes the phrase with ElevenLabs (or Azure's
+// sw-KE voices as a fallback) and lets the CDN cache it forever. If that isn't
+// available (local `npm run dev`, no key configured), we fall back to
 // the device's own speech engine when it has a Swahili voice, and otherwise
 // report "unavailable" so the button can say so.
 
@@ -26,7 +26,7 @@ export function normalizeTtsText(text: string): string {
 }
 
 export function ttsUrl(text: string, v: Voice = voice): string {
-  return `${API}?v=1&voice=${v}&text=${encodeURIComponent(normalizeTtsText(text))}`;
+  return `${API}?v=2&voice=${v}&text=${encodeURIComponent(normalizeTtsText(text))}`;
 }
 
 export function stopSpeaking(): void {

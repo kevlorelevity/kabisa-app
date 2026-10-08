@@ -1,12 +1,17 @@
 // Vercel serverless function: GET /api/tts?text=...&voice=male|female
 //
-// Synthesizes a Kenyan Swahili phrase with Azure AI Speech (neural voices
-// sw-KE-RafikiNeural / sw-KE-ZuriNeural) and returns MP3. Responses are
-// cached at Vercel's CDN for a year, so each phrase is synthesized once.
+// Synthesizes a Kenyan Swahili phrase and returns MP3. Responses are cached
+// at Vercel's CDN for a year, so each phrase is synthesized (and paid for) once.
 //
-// Required env vars (Vercel → Project → Settings → Environment Variables):
-//   AZURE_SPEECH_KEY     — key from an Azure "Speech service" resource
-//   AZURE_SPEECH_REGION  — that resource's region, e.g. "eastus"
+// Provider 1 — ElevenLabs (preferred). Env vars (Vercel → Project → Settings →
+// Environment Variables):
+//   ELEVENLABS_API_KEY          — API key (elevenlabs.io → Developers → API keys)
+//   ELEVENLABS_VOICE_ID         — voice used for every line, or per voice:
+//   ELEVENLABS_VOICE_ID_MALE / ELEVENLABS_VOICE_ID_FEMALE
+//   ELEVENLABS_MODEL (optional) — defaults to eleven_v3, the first ElevenLabs
+//                                  model that supports Swahili
+// Provider 2 — Azure AI Speech (fallback, sw-KE neural voices):
+//   AZURE_SPEECH_KEY, AZURE_SPEECH_REGION
 //
 // Abuse guard: only text that appears in the bundled lesson content
 // (content/lessons/*.json) can be synthesized, so the endpoint can't be used
@@ -108,6 +113,33 @@ function json(status: number, body: unknown): Response {
   });
 }
 
+function mp3(body: ArrayBuffer): Response {
+  return new Response(body, {
+    status: 200,
+    headers: {
+      'content-type': 'audio/mpeg',
+      'cache-control': 'public, max-age=31536000, s-maxage=31536000, immutable',
+    },
+  });
+}
+
+async function elevenLabs(text: string, apiKey: string, voiceId: string): Promise<Response> {
+  const model = process.env.ELEVENLABS_MODEL || 'eleven_v3';
+  const res = await fetch(
+    `https://api.elevenlabs.io/v1/text-to-speech/${encodeURIComponent(voiceId)}?output_format=mp3_44100_64`,
+    {
+      method: 'POST',
+      headers: { 'xi-api-key': apiKey, 'content-type': 'application/json', accept: 'audio/mpeg' },
+      body: JSON.stringify({ text, model_id: model }),
+    },
+  );
+  if (!res.ok) {
+    console.error('[tts] ElevenLabs error', res.status, await res.text().catch(() => ''));
+    return json(502, { error: 'tts_upstream', provider: 'elevenlabs', status: res.status });
+  }
+  return mp3(await res.arrayBuffer());
+}
+
 export async function GET(request: Request): Promise<Response> {
   const url = new URL(request.url);
   const text = (url.searchParams.get('text') ?? '').trim().replace(/\s+/g, ' ');
@@ -115,6 +147,13 @@ export async function GET(request: Request): Promise<Response> {
 
   if (!text || text.length > MAX_CHARS) return json(400, { error: 'bad_text' });
   if (!isAllowed(text)) return json(403, { error: 'not_in_lessons' });
+
+  const which = url.searchParams.get('voice') === 'female' ? 'female' : 'male';
+  const elKey = process.env.ELEVENLABS_API_KEY;
+  const elVoice =
+    (which === 'female' ? process.env.ELEVENLABS_VOICE_ID_FEMALE : process.env.ELEVENLABS_VOICE_ID_MALE) ??
+    process.env.ELEVENLABS_VOICE_ID;
+  if (elKey && elVoice) return elevenLabs(text, elKey, elVoice);
 
   const key = process.env.AZURE_SPEECH_KEY;
   const region = process.env.AZURE_SPEECH_REGION;
@@ -140,11 +179,5 @@ export async function GET(request: Request): Promise<Response> {
     return json(502, { error: 'tts_upstream', status: res.status });
   }
 
-  return new Response(await res.arrayBuffer(), {
-    status: 200,
-    headers: {
-      'content-type': 'audio/mpeg',
-      'cache-control': 'public, max-age=31536000, s-maxage=31536000, immutable',
-    },
-  });
+  return mp3(await res.arrayBuffer());
 }

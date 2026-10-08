@@ -15,3 +15,24 @@ describe('api/tts allow-list', () => {
     expect((await call('Hii ni sentensi ya bure kabisa ambayo haipo')).status).toBe(403);
   });
 });
+
+describe('api/tts ElevenLabs', () => {
+  it('uses ElevenLabs (eleven_v3) when a key and voice are configured', async () => {
+    const { vi } = await import('vitest');
+    vi.stubEnv('ELEVENLABS_API_KEY', 'k');
+    vi.stubEnv('ELEVENLABS_VOICE_ID', 'voice123');
+    const fetchMock = vi.fn(async () => new Response(new Uint8Array([1, 2, 3]), { status: 200 }));
+    vi.stubGlobal('fetch', fetchMock);
+    try {
+      const res = await call('Ninatoka Uganda, asante.');
+      expect(res.status).toBe(200);
+      expect(res.headers.get('content-type')).toBe('audio/mpeg');
+      const [url, init] = fetchMock.mock.calls[0] as unknown as [string, RequestInit];
+      expect(url).toContain('/v1/text-to-speech/voice123');
+      expect(JSON.parse(String(init.body))).toMatchObject({ text: 'Ninatoka Uganda, asante.', model_id: 'eleven_v3' });
+    } finally {
+      vi.unstubAllEnvs();
+      vi.unstubAllGlobals();
+    }
+  });
+});
