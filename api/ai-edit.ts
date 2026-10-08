@@ -22,7 +22,7 @@ import {
   type AiScope,
   type GrammarRef,
   type ItemKind,
-} from '../src/lib/aiPatch';
+} from '../src/lib/aiPatch.js';
 
 function json(status: number, body: unknown): Response {
   return new Response(JSON.stringify(body), {
