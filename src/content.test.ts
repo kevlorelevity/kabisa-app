@@ -86,3 +86,15 @@ describe('grammar explainers', () => {
     expect(other?.title).toMatch(/Sanifu/);
   });
 });
+
+describe('noun singular / plural on vocabulary', () => {
+  it('every lesson shows forms for its nouns', async () => {
+    const files = import.meta.glob('../content/lessons/*.json', { eager: true }) as Record<string, { default: { vocabulary: Array<{ swahili: string; nounForms?: { one: string | null; many: string | null } }> } }>;
+    const all = Object.values(files).flatMap((m) => m.default.vocabulary);
+    const find = (sw: string) => all.find((v) => v.swahili === sw)?.nounForms;
+    expect(find('mwaka')).toEqual({ one: 'mwaka', many: 'miaka' });
+    expect(find('viatu')).toEqual({ one: 'kiatu', many: 'viatu' });
+    expect(find('shule')).toEqual({ one: 'shule', many: 'shule' });
+    expect(all.filter((v) => v.nounForms).length).toBeGreaterThan(140);
+  });
+});

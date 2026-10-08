@@ -1480,7 +1480,11 @@
       "swahili": "njia ya mkato",
       "english": "shortcut",
       "exampleContext": "from kukata (to cut)",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "njia ya mkato",
+        "many": "njia za mkato"
+      }
     },
     {
       "id": "2c3707ff-c987-5649-a783-825a233dd27e",

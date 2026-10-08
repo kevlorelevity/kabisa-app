@@ -1076,7 +1076,11 @@
       "id": "4ce798da-eaa4-5259-bdf2-2bd1dc2f29fd",
       "swahili": "shemeji",
       "english": "brother/sister-in-law",
-      "exampleContext": "Also a friendly nickname for a rival fan"
+      "exampleContext": "Also a friendly nickname for a rival fan",
+      "nounForms": {
+        "one": "shemeji",
+        "many": "mashemeji"
+      }
     },
     {
       "id": "07ecd71f-6571-5b4b-9874-d6bfdff1230c",
@@ -1137,7 +1141,11 @@
       "id": "8d122695-c399-5084-a834-c83c6b627317",
       "swahili": "refa",
       "english": "referee |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "refa",
+        "many": "marefa"
+      }
     },
     {
       "id": "16220675-942f-5039-ac0a-1281b300c001",

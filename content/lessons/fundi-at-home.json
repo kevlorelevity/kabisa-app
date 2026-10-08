@@ -1166,7 +1166,11 @@
       "swahili": "fundi wa maji",
       "english": "plumber",
       "exampleContext": "fundi wa stima = electrician; fundi wa mbao = carpenter",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "fundi wa maji",
+        "many": "mafundi wa maji"
+      }
     },
     {
       "id": "86447eaa-275e-59eb-835a-6188342bbcb7",
@@ -1214,7 +1218,11 @@
       "english": "electricity / power",
       "exampleContext": "Everyday Kenyan.",
       "sanifu": "umeme",
-      "sanifuNote": "Sanifu word for electricity"
+      "sanifuNote": "Sanifu word for electricity",
+      "nounForms": {
+        "one": "stima",
+        "many": null
+      }
     },
     {
       "id": "08492484-cd95-517a-b61f-f6afa950a089",

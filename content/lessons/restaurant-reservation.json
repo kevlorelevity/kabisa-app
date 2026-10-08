@@ -1274,7 +1274,11 @@
       "id": "4ed56f98-f8ac-57e2-8657-37091c9488e6",
       "swahili": "menyu",
       "english": "menu |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "menyu",
+        "many": "menyu"
+      }
     },
     {
       "id": "fd905e4c-5dd0-534a-bf62-b7efa755f061",

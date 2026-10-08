@@ -1197,7 +1197,11 @@
       "swahili": "mfanyikazi mpya",
       "english": "new colleague",
       "exampleContext": "Plural: wafanyikazi wapya",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "mfanyikazi mpya",
+        "many": "wafanyikazi wapya"
+      }
     },
     {
       "id": "a51d4e19-ae6b-5f7a-965b-4c833253843d",
@@ -1250,7 +1254,11 @@
       "id": "3657d79a-e82c-5c64-920a-54651a5ccd0b",
       "swahili": "uzoefu",
       "english": "experience |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "uzoefu",
+        "many": null
+      }
     },
     {
       "id": "259754cd-58fd-5e9c-b963-013fc5587f3e",

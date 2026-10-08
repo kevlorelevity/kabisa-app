@@ -1263,68 +1263,112 @@
       "swahili": "mbuga ya wanyama",
       "english": "game park",
       "exampleContext": "wanyama = animals",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "mbuga ya wanyama",
+        "many": "mbuga za wanyama"
+      }
     },
     {
       "id": "3cd3daa4-cbdf-5e0d-a3a8-321d147dbd77",
       "swahili": "simba",
       "english": "lion(s)",
-      "exampleContext": "simba jike = lioness"
+      "exampleContext": "simba jike = lioness",
+      "nounForms": {
+        "one": "simba",
+        "many": "simba"
+      }
     },
     {
       "id": "59394cfc-99ee-5483-8564-2c0a8a753acb",
       "swahili": "twiga",
       "english": "giraffe(s)",
-      "exampleContext": "Twiga ni mrefu."
+      "exampleContext": "Twiga ni mrefu.",
+      "nounForms": {
+        "one": "twiga",
+        "many": "twiga"
+      }
     },
     {
       "id": "3de69163-e876-5407-b3d2-92e16edb83c2",
       "swahili": "tembo",
       "english": "elephant(s)",
-      "exampleContext": "Also: ndovu"
+      "exampleContext": "Also: ndovu",
+      "nounForms": {
+        "one": "tembo",
+        "many": "tembo"
+      }
     },
     {
       "id": "f1cea356-14bb-570a-89a3-f11ba03119e8",
       "swahili": "kiboko",
       "english": "hippo",
-      "exampleContext": "Animals agree like people: kiboko yuko, viboko wako"
+      "exampleContext": "Animals agree like people: kiboko yuko, viboko wako",
+      "nounForms": {
+        "one": "kiboko",
+        "many": "viboko"
+      }
     },
     {
       "id": "04567c8f-3ebf-5a75-8f9c-11fc7c4eccc1",
       "swahili": "chui",
       "english": "leopard |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "chui",
+        "many": "chui"
+      }
     },
     {
       "id": "226d8892-d1d8-5e37-afc1-e26fe5b88ebf",
       "swahili": "pundamilia",
       "english": "zebra",
-      "exampleContext": "lit. \"striped donkey\""
+      "exampleContext": "lit. \"striped donkey\"",
+      "nounForms": {
+        "one": "pundamilia",
+        "many": "pundamilia"
+      }
     },
     {
       "id": "241d0279-ab5d-5fc3-9a99-56d810aab293",
       "swahili": "nyumbu",
       "english": "wildebeest |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "nyumbu",
+        "many": "nyumbu"
+      }
     },
     {
       "id": "6baf111c-cb0e-5c7b-8904-ac24ad0ffaa4",
       "swahili": "ndege",
       "english": "bird(s)",
-      "exampleContext": "Also: aeroplane"
+      "exampleContext": "Also: aeroplane",
+      "nounForms": {
+        "one": "ndege",
+        "many": "ndege"
+      }
     },
     {
       "id": "0103e70f-06bd-5655-a904-8de288e7cbeb",
       "swahili": "mto",
       "english": "river",
-      "exampleContext": "mtoni = at the river"
+      "exampleContext": "mtoni = at the river",
+      "nounForms": {
+        "one": "mto",
+        "many": "mito"
+      }
     },
     {
       "id": "c815647f-14ab-54ea-ab67-2181d7f69b5c",
       "swahili": "mti / miti",
       "english": "tree / trees |",
       "exampleContext": "",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "mti",
+        "many": "miti"
+      }
     },
     {
       "id": "55e74b2e-16de-5ab9-9b49-f63b3f73ffbd",
@@ -1336,7 +1380,11 @@
       "id": "fca0f5f6-a49c-528a-8ba4-5395f0cc02a7",
       "swahili": "hatari",
       "english": "danger / dangerous",
-      "exampleContext": "Ni hatari!"
+      "exampleContext": "Ni hatari!",
+      "nounForms": {
+        "one": "hatari",
+        "many": "hatari"
+      }
     }
   ],
   "practice": [

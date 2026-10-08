@@ -2,6 +2,7 @@ import { useState } from 'react';
 import type { VocabEntry } from '../types';
 import { AudioButton } from './AudioButton';
 import { EditPencil } from './EditPencil';
+import { NounForms } from './NounForms';
 
 interface LessonFlashcardsProps {
   entries: VocabEntry[];
@@ -43,9 +44,12 @@ export function LessonFlashcards({ entries }: LessonFlashcardsProps) {
         </p>
         {side === 0 && <p className="text-xl text-gray-700 font-medium">{entry.english}</p>}
         {side === 1 && (
-          <div className="flex items-center gap-2">
-            <p className="text-2xl font-bold text-gray-900">{entry.swahili}</p>
-            <AudioButton text={entry.swahili} size="md" />
+          <div className="flex flex-col items-center gap-2">
+            <div className="flex items-center gap-2">
+              <p className="text-2xl font-bold text-gray-900">{entry.swahili}</p>
+              <AudioButton text={entry.swahili} size="md" />
+            </div>
+            <NounForms forms={entry.nounForms} className="text-xs" />
           </div>
         )}
         {side === 2 && (

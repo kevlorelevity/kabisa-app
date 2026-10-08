@@ -1256,13 +1256,21 @@
       "id": "de71c537-9c89-5167-b3bb-da4d8ab94e6e",
       "swahili": "bustani",
       "english": "garden (flowers)",
-      "exampleContext": "shamba = (vegetable) garden, farm"
+      "exampleContext": "shamba = (vegetable) garden, farm",
+      "nounForms": {
+        "one": "bustani",
+        "many": "bustani"
+      }
     },
     {
       "id": "220c47dc-6cbb-5c01-bbe1-1f4cdc90c82e",
       "swahili": "nyasi",
       "english": "grass",
-      "exampleContext": "Ninakata nyasi."
+      "exampleContext": "Ninakata nyasi.",
+      "nounForms": {
+        "one": "nyasi",
+        "many": "nyasi"
+      }
     },
     {
       "id": "85c106b3-cefe-5a1c-9149-6465869bc5c4",
@@ -1270,13 +1278,21 @@
       "english": "flowers",
       "exampleContext": "Kenyans: maua nyekundu",
       "sanifu": "maua mekundu",
-      "sanifuNote": "Sanifu: ji/ma class (ua / maua)"
+      "sanifuNote": "Sanifu: ji/ma class (ua / maua)",
+      "nounForms": {
+        "one": "ua",
+        "many": "maua"
+      }
     },
     {
       "id": "aa3fae75-ec11-5c50-8bb8-47194c32414b",
       "swahili": "magugu",
       "english": "weeds",
-      "exampleContext": "kung'oa magugu = to pull out weeds"
+      "exampleContext": "kung'oa magugu = to pull out weeds",
+      "nounForms": {
+        "one": "gugu",
+        "many": "magugu"
+      }
     },
     {
       "id": "c85d50fa-33db-512a-9921-78b056193cb9",
@@ -1296,26 +1312,42 @@
       "id": "b29749c1-5e9a-5d15-a945-aaa0909d2ce3",
       "swahili": "jembe",
       "english": "hoe |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "jembe",
+        "many": "majembe"
+      }
     },
     {
       "id": "ee0a8ea6-c8ac-51d1-b6a8-6a27a56138f0",
       "swahili": "nyundo",
       "english": "hammer |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "nyundo",
+        "many": "nyundo"
+      }
     },
     {
       "id": "ac045c68-1bbe-57e7-b61b-2b53ccb7e1d8",
       "swahili": "msumeno",
       "english": "saw |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "msumeno",
+        "many": "misumeno"
+      }
     },
     {
       "id": "76afecfe-a6e5-5dda-ad3c-0b0e18088454",
       "swahili": "msumari / misumari",
       "english": "nail / nails |",
       "exampleContext": "",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "msumari",
+        "many": "misumari"
+      }
     },
     {
       "id": "f90f23d4-38dd-5d7f-a6b6-e6250bbe0825",
@@ -1327,13 +1359,21 @@
       "id": "63e294c4-7007-5b1b-ad7d-173fb4d10d41",
       "swahili": "fundi",
       "english": "skilled worker, craftsman",
-      "exampleContext": "Wewe ni fundi kweli! = You're a real pro!"
+      "exampleContext": "Wewe ni fundi kweli! = You're a real pro!",
+      "nounForms": {
+        "one": "fundi",
+        "many": "mafundi"
+      }
     },
     {
       "id": "872d7bff-5856-526e-a6c7-bb49e52d364e",
       "swahili": "karakana",
       "english": "workshop |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "karakana",
+        "many": "karakana"
+      }
     }
   ],
   "practice": [

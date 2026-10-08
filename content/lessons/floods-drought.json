@@ -1266,13 +1266,21 @@
       "id": "ea708084-2ae1-55df-b35b-06b52716f283",
       "swahili": "mafuriko",
       "english": "floods",
-      "exampleContext": "-furika = overflow, flood"
+      "exampleContext": "-furika = overflow, flood",
+      "nounForms": {
+        "one": null,
+        "many": "mafuriko"
+      }
     },
     {
       "id": "ed91fc45-88ce-5e9a-8c08-a31a0fbfa3c1",
       "swahili": "ukame",
       "english": "drought |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "ukame",
+        "many": null
+      }
     },
     {
       "id": "f0852094-c842-52c6-807e-09412b11c178",
@@ -1285,25 +1293,41 @@
       "swahili": "mfugaji / wafugaji",
       "english": "herder / herders |",
       "exampleContext": "",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "mfugaji",
+        "many": "wafugaji"
+      }
     },
     {
       "id": "fd47cfd3-2e3a-5d60-9dbf-dc9f00ddebcf",
       "swahili": "mifugo",
       "english": "livestock |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": null,
+        "many": "mifugo"
+      }
     },
     {
       "id": "cdd208cd-ef5e-59c9-87e5-337f4419c0dd",
       "swahili": "mahema",
       "english": "tents",
-      "exampleContext": "one: hema"
+      "exampleContext": "one: hema",
+      "nounForms": {
+        "one": "hema",
+        "many": "mahema"
+      }
     },
     {
       "id": "94a9faf5-022c-535c-89ea-de5d5c50d013",
       "swahili": "serikali",
       "english": "the government |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "serikali",
+        "many": "serikali"
+      }
     },
     {
       "id": "bd735db1-db28-5ea6-bbb0-0ed5c5541448",

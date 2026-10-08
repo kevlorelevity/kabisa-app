@@ -1134,7 +1134,11 @@
       "swahili": "pasipoti / viza / tiketi",
       "english": "passport / visa / ticket |",
       "exampleContext": "",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "pasipoti / viza / tiketi",
+        "many": "pasipoti / viza / tiketi"
+      }
     },
     {
       "id": "e7503e9e-52bf-539c-85ba-03e7219d9d0b",
@@ -1168,7 +1172,11 @@
       "id": "4a34504a-76fd-583c-a7ff-742648e822f5",
       "swahili": "pwani",
       "english": "the coast |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "pwani",
+        "many": "pwani"
+      }
     },
     {
       "id": "713f391e-dfb9-5f12-b2e4-b2c4c07b4d8d",
@@ -1187,7 +1195,11 @@
       "swahili": "Mkenya / Wakenya",
       "english": "a Kenyan / Kenyans |",
       "exampleContext": "",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "Mkenya",
+        "many": "Wakenya"
+      }
     }
   ],
   "practice": [

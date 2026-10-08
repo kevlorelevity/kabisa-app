@@ -1010,7 +1010,11 @@
       "id": "e5b34ffc-8fe4-5aef-97fa-5642d2cdd22b",
       "swahili": "nguo",
       "english": "clothes",
-      "exampleContext": "n/n noun. Also mavazi (more formal)."
+      "exampleContext": "n/n noun. Also mavazi (more formal).",
+      "nounForms": {
+        "one": "nguo",
+        "many": "nguo"
+      }
     },
     {
       "id": "243eac89-bb1a-546b-a32f-24758969655d",
@@ -1018,13 +1022,21 @@
       "english": "shirt",
       "exampleContext": "Kenyan: shati nyeupe",
       "sanifu": "shati jeupe",
-      "sanifuNote": "Sanifu: ji/ma class"
+      "sanifuNote": "Sanifu: ji/ma class",
+      "nounForms": {
+        "one": "shati",
+        "many": "mashati"
+      }
     },
     {
       "id": "d3e4cc4e-8b8e-577a-9750-caaaf8368a7b",
       "swahili": "suruali",
       "english": "trousers",
-      "exampleContext": "n/n noun"
+      "exampleContext": "n/n noun",
+      "nounForms": {
+        "one": "suruali",
+        "many": "suruali"
+      }
     },
     {
       "id": "18f3f38c-029c-5080-8a23-cf9667cbcf0c",
@@ -1032,13 +1044,21 @@
       "english": "shoes",
       "exampleContext": "Kenyans: viatu hizi",
       "sanifu": "viatu hivi",
-      "sanifuNote": "Sanifu: ki/vi class (kiatu / viatu)"
+      "sanifuNote": "Sanifu: ki/vi class (kiatu / viatu)",
+      "nounForms": {
+        "one": "kiatu",
+        "many": "viatu"
+      }
     },
     {
       "id": "f7308e51-9d01-56bd-9ee7-965c78904921",
       "swahili": "rangi",
       "english": "colour",
-      "exampleContext": "Rangi gani? = What colour?"
+      "exampleContext": "Rangi gani? = What colour?",
+      "nounForms": {
+        "one": "rangi",
+        "many": "rangi"
+      }
     },
     {
       "id": "87d537e2-0e6a-5f45-bbc3-8de30ce5e931",
@@ -1058,7 +1078,11 @@
       "id": "14768a76-7819-5cc7-aa16-e0458439466e",
       "swahili": "saizi",
       "english": "size",
-      "exampleContext": "saizi kubwa / ndogo / ya kati"
+      "exampleContext": "saizi kubwa / ndogo / ya kati",
+      "nounForms": {
+        "one": "saizi",
+        "many": "saizi"
+      }
     },
     {
       "id": "2faa8c26-f129-5846-b006-7dc8cfffd26a",

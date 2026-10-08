@@ -917,7 +917,11 @@
       "id": "c452501f-656c-508e-a232-d05f78b6c4bb",
       "swahili": "kinyozi",
       "english": "barber / barber shop |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "kinyozi",
+        "many": "vinyozi"
+      }
     },
     {
       "id": "20a1f8fa-3b96-51a8-ae96-4482a4c43d51",
@@ -937,7 +941,11 @@
       "id": "a5468a4f-a276-5634-b3b1-3ff7fbd193c1",
       "swahili": "mafuriko",
       "english": "floods |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": null,
+        "many": "mafuriko"
+      }
     },
     {
       "id": "1793a458-8341-5f0d-8360-3f7f03bed2e5",
@@ -963,7 +971,11 @@
       "id": "2d499cfd-d512-5f4b-8974-638260983d54",
       "swahili": "mheshimiwa",
       "english": "the honourable (MP) |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "mheshimiwa",
+        "many": "waheshimiwa"
+      }
     },
     {
       "id": "4388a272-1465-525d-a27f-5eb027aa255b",

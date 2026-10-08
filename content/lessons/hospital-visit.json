@@ -1116,7 +1116,11 @@
       "id": "d68cc912-0a63-52da-9764-46f87b0aee06",
       "swahili": "matokeo",
       "english": "results",
-      "exampleContext": "Matokeo yatakuja lini?"
+      "exampleContext": "Matokeo yatakuja lini?",
+      "nounForms": {
+        "one": null,
+        "many": "matokeo"
+      }
     },
     {
       "id": "004be11d-3645-5de4-8797-ea42d8062555",

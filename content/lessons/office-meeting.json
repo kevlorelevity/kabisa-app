@@ -1303,7 +1303,11 @@
       "swahili": "barua pepe",
       "english": "email",
       "exampleContext": "Lit. \"wind letter\"",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "barua pepe",
+        "many": "barua pepe"
+      }
     }
   ],
   "practice": [

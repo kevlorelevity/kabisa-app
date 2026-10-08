@@ -2,6 +2,7 @@ import { useState } from 'react';
 import type { VocabEntry as VocabEntryType } from '../types';
 import { AudioButton } from './AudioButton';
 import { EditPencil } from './EditPencil';
+import { NounForms } from './NounForms';
 
 interface VocabEntryProps {
   entry: VocabEntryType;
@@ -27,6 +28,11 @@ export function VocabEntry({ entry }: VocabEntryProps) {
               itemId: entry.id,
             }}
           />
+          {entry.nounForms && (
+            <p className="mt-1">
+              <NounForms forms={entry.nounForms} />
+            </p>
+          )}
           <p className="text-xs text-gray-400 mt-0.5 italic">{entry.exampleContext}</p>
           {entry.note && (
             <p className="text-xs text-amber-900 mt-1">

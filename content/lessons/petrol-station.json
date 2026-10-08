@@ -1067,19 +1067,31 @@
       "id": "dbb63d40-b544-5f69-9bc6-6ee3212e75c2",
       "swahili": "upepo",
       "english": "air (in tyres) / wind |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "upepo",
+        "many": "pepo"
+      }
     },
     {
       "id": "2f13404d-8985-5144-8954-1fea437d4abf",
       "swahili": "kioo",
       "english": "windscreen / mirror / glass |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "kioo",
+        "many": "vioo"
+      }
     },
     {
       "id": "796de9fd-de3a-511e-9118-e8e0007a3c0d",
       "swahili": "risiti",
       "english": "receipt |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "risiti",
+        "many": "risiti"
+      }
     }
   ],
   "practice": [

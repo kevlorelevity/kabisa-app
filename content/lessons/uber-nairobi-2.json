@@ -893,7 +893,11 @@
       "swahili": "Kazi",
       "english": "Work / job",
       "exampleContext": "Unafanya kazi wapi? = where do you work?",
-      "partOfSpeech": "noun"
+      "partOfSpeech": "noun",
+      "nounForms": {
+        "one": "Kazi",
+        "many": "Kazi"
+      }
     },
     {
       "id": "becb625f-1ed7-494e-9c6c-bb73cab6b683",

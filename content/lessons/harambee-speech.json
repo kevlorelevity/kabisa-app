@@ -1115,7 +1115,11 @@
       "swahili": "mgeni rasmi",
       "english": "guest of honour |",
       "exampleContext": "",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "mgeni rasmi",
+        "many": "wageni rasmi"
+      }
     },
     {
       "id": "9fa63973-b28c-5b59-80d4-b6acc0432d37",
@@ -1135,7 +1139,11 @@
       "id": "5b1ce223-4366-5838-b756-220bf126430f",
       "swahili": "karo",
       "english": "school fees |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "karo",
+        "many": "karo"
+      }
     },
     {
       "id": "083e52a0-9e75-5cba-bd7c-1887c32f0a69",

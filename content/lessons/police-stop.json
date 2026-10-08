@@ -958,20 +958,32 @@
       "id": "66e0e1d2-3559-54d8-aec5-0911f589e05e",
       "swahili": "afande",
       "english": "officer",
-      "exampleContext": "Respectful address for police"
+      "exampleContext": "Respectful address for police",
+      "nounForms": {
+        "one": "afande",
+        "many": "maafande"
+      }
     },
     {
       "id": "f668a233-ae44-5e9b-b72a-1acaab681cf8",
       "swahili": "leseni ya kuendesha",
       "english": "driving licence",
       "exampleContext": "kuendesha = to drive (causative of kuenda!)",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "leseni ya kuendesha",
+        "many": "leseni za kuendesha"
+      }
     },
     {
       "id": "92fd8f4d-3627-51cd-9908-26adefea2051",
       "swahili": "bima",
       "english": "insurance |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "bima",
+        "many": "bima"
+      }
     },
     {
       "id": "e3e3dc79-f715-5b72-9eaa-71dfa61e35b7",
@@ -996,7 +1008,11 @@
       "id": "47a0e1a6-f744-59d1-acf1-b64d1d4061f3",
       "swahili": "ukaguzi",
       "english": "inspection",
-      "exampleContext": "kukagua = to inspect"
+      "exampleContext": "kukagua = to inspect",
+      "nounForms": {
+        "one": "ukaguzi",
+        "many": null
+      }
     },
     {
       "id": "a2ff54bb-c690-5148-a9f5-58396180e0d9",

@@ -1402,7 +1402,11 @@
       "swahili": "rafiki wa kweli",
       "english": "a true friend |",
       "exampleContext": "",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "rafiki wa kweli",
+        "many": "marafiki wa kweli"
+      }
     },
     {
       "id": "9c38353c-92fc-524d-bdb4-32b81806f4e2",

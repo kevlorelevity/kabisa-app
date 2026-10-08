@@ -1436,7 +1436,11 @@
       "swahili": "mwalimu / walimu",
       "english": "teacher / teachers",
       "exampleContext": "m/wa noun: one teacher, many teachers",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "mwalimu",
+        "many": "walimu"
+      }
     },
     {
       "id": "c4af0a2d-3dbd-51c5-b015-032493fe4fca",
@@ -1462,7 +1466,11 @@
       "swahili": "hali ya hewa",
       "english": "the weather",
       "exampleContext": "lit. \"the state of the air\"",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "hali ya hewa",
+        "many": null
+      }
     },
     {
       "id": "2c04a924-2b48-591a-9817-a47673081fc6",

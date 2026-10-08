@@ -1548,33 +1548,53 @@
       "id": "3079968f-6948-5af8-96b6-b8d49355047b",
       "swahili": "mandhari",
       "english": "scenery |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "mandhari",
+        "many": "mandhari"
+      }
     },
     {
       "id": "4e646225-dcd5-5de6-93bb-8071e64fb78f",
       "swahili": "maporomoko ya maji",
       "english": "waterfall",
       "exampleContext": "lit. \"a tumbling of water\"",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": null,
+        "many": "maporomoko ya maji"
+      }
     },
     {
       "id": "9d8cb555-a4eb-580f-92f2-95e8f07157fc",
       "swahili": "kivutio",
       "english": "attraction",
-      "exampleContext": "kivutio kikubwa = a big attraction"
+      "exampleContext": "kivutio kikubwa = a big attraction",
+      "nounForms": {
+        "one": "kivutio",
+        "many": "vivutio"
+      }
     },
     {
       "id": "aad2edab-450d-5652-a7bd-226972b3750e",
       "swahili": "mtalii / watalii",
       "english": "tourist / tourists |",
       "exampleContext": "",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "mtalii",
+        "many": "watalii"
+      }
     },
     {
       "id": "719beb01-f5e5-5c45-8efa-0683fd0738a8",
       "swahili": "kiongozi",
       "english": "guide, leader",
-      "exampleContext": "kiongozi wa watalii = tour guide"
+      "exampleContext": "kiongozi wa watalii = tour guide",
+      "nounForms": {
+        "one": "kiongozi",
+        "many": "viongozi"
+      }
     },
     {
       "id": "e4381a83-c28d-588f-9ba0-5ef33ae60082",
@@ -1614,13 +1634,21 @@
       "id": "5a0503c1-b0fd-53dd-98b1-9f21175c13c2",
       "swahili": "ng'ombe",
       "english": "cow(s), cattle |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "ng'ombe",
+        "many": "ng'ombe"
+      }
     },
     {
       "id": "71c430b7-3b85-5b62-9345-36e3764b5847",
       "swahili": "utamaduni",
       "english": "culture |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "utamaduni",
+        "many": null
+      }
     },
     {
       "id": "4a665816-1b1a-5151-a1a8-967ab3bf04e8",

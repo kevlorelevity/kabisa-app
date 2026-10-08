@@ -1400,19 +1400,31 @@
       "english": "dishes",
       "exampleContext": "Kenyans: vyombo hizi",
       "sanifu": "vyombo hivi",
-      "sanifuNote": "Sanifu: ki/vi class (chombo / vyombo)"
+      "sanifuNote": "Sanifu: ki/vi class (chombo / vyombo)",
+      "nounForms": {
+        "one": "chombo",
+        "many": "vyombo"
+      }
     },
     {
       "id": "24ee4be6-61bd-5354-a655-11fcf4b21f85",
       "swahili": "sakafu",
       "english": "floor",
-      "exampleContext": "n/n noun"
+      "exampleContext": "n/n noun",
+      "nounForms": {
+        "one": "sakafu",
+        "many": "sakafu"
+      }
     },
     {
       "id": "a2114c9b-4aaa-58e8-8908-ab2023c81883",
       "swahili": "sabuni",
       "english": "soap",
-      "exampleContext": "n/n noun"
+      "exampleContext": "n/n noun",
+      "nounForms": {
+        "one": "sabuni",
+        "many": "sabuni"
+      }
     },
     {
       "id": "d21dae16-f876-5184-9566-be5250a9d648",

@@ -1006,7 +1006,11 @@
       "id": "366eab89-86c1-5446-adae-982b7ef1e596",
       "swahili": "nyanya",
       "english": "tomato(es)",
-      "exampleContext": "n/n noun: nyanya hii (this one), nyanya hizi (these). Also means grandma!"
+      "exampleContext": "n/n noun: nyanya hii (this one), nyanya hizi (these). Also means grandma!",
+      "nounForms": {
+        "one": "nyanya",
+        "many": "nyanya"
+      }
     },
     {
       "id": "512c02a6-0dcd-5ae7-a18e-5ef933a5e8cc",
@@ -1014,7 +1018,11 @@
       "english": "onions",
       "exampleContext": "Kenyans say \"vitunguu hizi\"",
       "sanifu": "vitunguu hivi",
-      "sanifuNote": "Sanifu: ki/vi class (kitunguu / vitunguu)"
+      "sanifuNote": "Sanifu: ki/vi class (kitunguu / vitunguu)",
+      "nounForms": {
+        "one": "kitunguu",
+        "many": "vitunguu"
+      }
     },
     {
       "id": "52bac4d4-babc-58f3-ab31-c8cb40f7b792",

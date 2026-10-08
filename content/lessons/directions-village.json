@@ -1342,26 +1342,42 @@
       "english": "bridge",
       "exampleContext": "Kenyans: daraja ndogo",
       "sanifu": "daraja dogo",
-      "sanifuNote": "Sanifu: ji/ma class"
+      "sanifuNote": "Sanifu: ji/ma class",
+      "nounForms": {
+        "one": "daraja",
+        "many": "madaraja"
+      }
     },
     {
       "id": "4ec31a71-1670-58b1-ac2e-fbb074f38330",
       "swahili": "kilima",
       "english": "hill",
-      "exampleContext": "Sanifu: ki/vi class (kilima / vilima)"
+      "exampleContext": "Sanifu: ki/vi class (kilima / vilima)",
+      "nounForms": {
+        "one": "kilima",
+        "many": "vilima"
+      }
     },
     {
       "id": "34d75e9b-b3fa-57a8-9b8e-e769a7be3cb3",
       "swahili": "taa za barabarani",
       "english": "traffic lights",
       "exampleContext": "lit. \"lights of the road\"",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "taa ya barabarani",
+        "many": "taa za barabarani"
+      }
     },
     {
       "id": "96e737a3-3c4a-5be5-b3d8-91f3a58b59f7",
       "swahili": "njia",
       "english": "way / route",
-      "exampleContext": "Sasa ninajua njia."
+      "exampleContext": "Sasa ninajua njia.",
+      "nounForms": {
+        "one": "njia",
+        "many": "njia"
+      }
     }
   ],
   "practice": [

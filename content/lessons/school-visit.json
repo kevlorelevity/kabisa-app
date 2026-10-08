@@ -942,21 +942,33 @@
       "id": "15a26d44-5ae6-52be-a477-9d1657631718",
       "swahili": "shule",
       "english": "school",
-      "exampleContext": "shuleni = at school"
+      "exampleContext": "shuleni = at school",
+      "nounForms": {
+        "one": "shule",
+        "many": "shule"
+      }
     },
     {
       "id": "d992564c-3605-5444-808e-07ef4cf5a889",
       "swahili": "mwalimu mkuu",
       "english": "head teacher |",
       "exampleContext": "",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "mwalimu mkuu",
+        "many": "walimu wakuu"
+      }
     },
     {
       "id": "29cd122b-9aff-58cc-b76b-08c99cc9f310",
       "swahili": "mwanafunzi / wanafunzi",
       "english": "pupil, student / pupils, students |",
       "exampleContext": "",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "mwanafunzi",
+        "many": "wanafunzi"
+      }
     },
     {
       "id": "694206d6-00e4-5455-a233-90d4af7659f7",
@@ -964,14 +976,22 @@
       "english": "class, classroom",
       "exampleContext": "Kenyans: darasa ya nne",
       "sanifu": "darasa la nne",
-      "sanifuNote": "Sanifu: ji/ma class"
+      "sanifuNote": "Sanifu: ji/ma class",
+      "nounForms": {
+        "one": "darasa",
+        "many": "madarasa"
+      }
     },
     {
       "id": "6eac4857-0376-5e64-b14e-be1efdab2f6a",
       "swahili": "somo / masomo",
       "english": "subject, lesson / subjects |",
       "exampleContext": "",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "somo",
+        "many": "masomo"
+      }
     },
     {
       "id": "388d58ec-bdb5-5c97-8963-54a613d34d6d",
@@ -996,32 +1016,52 @@
       "id": "0896c49d-ab74-562d-8651-59848e1e9285",
       "swahili": "mtihani",
       "english": "test, exam |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "mtihani",
+        "many": "mitihani"
+      }
     },
     {
       "id": "93522161-fee9-56e5-b7cd-1f15a2f352f6",
       "swahili": "kitabu / vitabu",
       "english": "book / books",
       "exampleContext": "Sanifu: ki/vi class",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "kitabu",
+        "many": "vitabu"
+      }
     },
     {
       "id": "5ea26e0f-593e-50ec-8545-ee5ecdf2e645",
       "swahili": "kalamu",
       "english": "pen |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "kalamu",
+        "many": "kalamu"
+      }
     },
     {
       "id": "5d02781c-5082-5a6b-a9ad-3f71f3e67a9e",
       "swahili": "sare",
       "english": "uniform |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "sare",
+        "many": "sare"
+      }
     },
     {
       "id": "6577e070-e848-5f89-9b94-41e7021851fa",
       "swahili": "mapumziko",
       "english": "break time |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": null,
+        "many": "mapumziko"
+      }
     }
   ],
   "practice": [

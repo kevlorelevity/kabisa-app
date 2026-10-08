@@ -1309,7 +1309,11 @@
       "swahili": "dada / kaka",
       "english": "sister / brother",
       "exampleContext": "Also a polite way to address any young woman or man",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "dada / kaka",
+        "many": "dada / kaka"
+      }
     },
     {
       "id": "7ba49499-a514-57b1-85e4-582fff6dea77",

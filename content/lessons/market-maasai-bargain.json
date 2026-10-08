@@ -1139,7 +1139,11 @@
       "exampleContext": "Kenyans: kikapu hii.",
       "partOfSpeech": "phrase",
       "sanifu": "kikapu hiki",
-      "sanifuNote": "Sanifu: ki/vi class"
+      "sanifuNote": "Sanifu: ki/vi class",
+      "nounForms": {
+        "one": "kikapu",
+        "many": "vikapu"
+      }
     },
     {
       "id": "64e5b515-e321-53b7-9800-79557622d6da",

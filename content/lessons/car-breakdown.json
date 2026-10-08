@@ -1360,7 +1360,11 @@
       "id": "31271396-c7ba-538e-bf36-a512c99aa9b6",
       "swahili": "fundi",
       "english": "mechanic / repairman",
-      "exampleContext": "fundi wa magari = car mechanic"
+      "exampleContext": "fundi wa magari = car mechanic",
+      "nounForms": {
+        "one": "fundi",
+        "many": "mafundi"
+      }
     },
     {
       "id": "4bf42c27-ba07-58a0-bdda-4595992da304",
@@ -1378,7 +1382,11 @@
       "id": "ed71e63c-0e2a-5f39-9e43-c313044b2279",
       "swahili": "kivuli",
       "english": "shade |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "kivuli",
+        "many": "vivuli"
+      }
     },
     {
       "id": "17b56cca-8c0b-526b-8d23-9f6d399080be",
@@ -1398,7 +1406,11 @@
       "id": "f76c7adb-19b1-55b8-91fe-cc965ca4fe6d",
       "swahili": "mekanika",
       "english": "mechanic",
-      "exampleContext": "Nitapeleka gari kwa mekanika."
+      "exampleContext": "Nitapeleka gari kwa mekanika.",
+      "nounForms": {
+        "one": "mekanika",
+        "many": "mekanika"
+      }
     },
     {
       "id": "d24add56-d003-5646-b5c7-5f2c02d2e4e8",

@@ -66,6 +66,8 @@ export interface VocabEntry {
   sanifuNote?: string;
   /** General learner note: other meanings, how people really use it, etc. */
   note?: string;
+  /** Nouns: singular and plural (null = none: uncountable / plural-only). Same string = same word for one & many. */
+  nounForms?: { one: string | null; many: string | null };
   /** Part of speech. Drives tap-to-explain panel behavior. */
   partOfSpeech?: PartOfSpeech;
   /** Noun class — required for nouns. V1 only surfaces m_wa and n_n. */

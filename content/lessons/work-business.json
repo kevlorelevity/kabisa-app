@@ -1419,39 +1419,63 @@
       "id": "815390d0-9860-50c4-b539-e76077ed63e8",
       "swahili": "biashara",
       "english": "business",
-      "exampleContext": "Biashara iko aje? = How's business?"
+      "exampleContext": "Biashara iko aje? = How's business?",
+      "nounForms": {
+        "one": "biashara",
+        "many": "biashara"
+      }
     },
     {
       "id": "788c24ee-f88c-5637-a64d-aa77da41f705",
       "swahili": "kampuni",
       "english": "company |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "kampuni",
+        "many": "kampuni"
+      }
     },
     {
       "id": "20f735f1-1e0c-572b-b60a-3476a8ceda5b",
       "swahili": "ofisi",
       "english": "office",
-      "exampleContext": "ofisini = at the office"
+      "exampleContext": "ofisini = at the office",
+      "nounForms": {
+        "one": "ofisi",
+        "many": "ofisi"
+      }
     },
     {
       "id": "6ef8e255-5f75-503c-8d0e-a41839f40c96",
       "swahili": "mfanyakazi / wafanyakazi",
       "english": "employee / employees",
       "exampleContext": "lit. \"doer of work\"",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "mfanyakazi",
+        "many": "wafanyakazi"
+      }
     },
     {
       "id": "231e10a9-da05-502b-92a5-7d0412225350",
       "swahili": "mfanyabiashara",
       "english": "business person",
-      "exampleContext": "lit. \"doer of business\""
+      "exampleContext": "lit. \"doer of business\"",
+      "nounForms": {
+        "one": "mfanyabiashara",
+        "many": "wafanyabiashara"
+      }
     },
     {
       "id": "c3d39c47-0870-57da-bc44-999d11cb84c1",
       "swahili": "mteja / wateja",
       "english": "customer / customers |",
       "exampleContext": "",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "mteja",
+        "many": "wateja"
+      }
     },
     {
       "id": "f290a839-80d6-5da0-a998-56ea69b2e6a2",
@@ -1464,7 +1488,11 @@
       "id": "7c6bca58-41ce-544e-9598-86c3653e085e",
       "swahili": "mauzo",
       "english": "sales |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": null,
+        "many": "mauzo"
+      }
     },
     {
       "id": "aff5634d-b984-565f-a173-2d940324f70b",

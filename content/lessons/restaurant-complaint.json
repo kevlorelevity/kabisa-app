@@ -1045,7 +1045,11 @@
       "id": "0f5c9f1a-d98d-5021-b802-51ded846dc91",
       "swahili": "uvumilivu",
       "english": "patience",
-      "exampleContext": "from kuvumilia (to endure)"
+      "exampleContext": "from kuvumilia (to endure)",
+      "nounForms": {
+        "one": "uvumilivu",
+        "many": null
+      }
     }
   ],
   "practice": [

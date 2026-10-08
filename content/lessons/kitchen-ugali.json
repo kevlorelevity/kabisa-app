@@ -1225,7 +1225,11 @@
       "id": "f868e609-b8a2-529a-96fd-1f2cc53067e0",
       "swahili": "sufuria",
       "english": "cooking pot",
-      "exampleContext": "n/n noun"
+      "exampleContext": "n/n noun",
+      "nounForms": {
+        "one": "sufuria",
+        "many": "sufuria"
+      }
     },
     {
       "id": "8fe5a3aa-9e50-5d51-8c85-d834ed34e1c7",
@@ -1234,7 +1238,11 @@
       "exampleContext": "Everyday Kenyan form.",
       "partOfSpeech": "phrase",
       "sanifu": "unga wa mahindi",
-      "sanifuNote": "Sanifu: u- class agreement"
+      "sanifuNote": "Sanifu: u- class agreement",
+      "nounForms": {
+        "one": "unga ya mahindi",
+        "many": null
+      }
     },
     {
       "id": "9b2e8471-1881-53d6-a605-3bd160ab9f01",
@@ -1247,7 +1255,11 @@
       "id": "821173dd-ffde-5f55-8d74-3d3bad9b3ef9",
       "swahili": "mwiko",
       "english": "wooden cooking stick |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "mwiko",
+        "many": "miiko"
+      }
     },
     {
       "id": "a08be271-ee6d-581d-a0bf-488231b65137",
@@ -1267,13 +1279,21 @@
       "id": "c277d8e7-661e-5528-b10b-32f66961d626",
       "swahili": "mafuta",
       "english": "(cooking) oil",
-      "exampleContext": "Also: fat, fuel"
+      "exampleContext": "Also: fat, fuel",
+      "nounForms": {
+        "one": null,
+        "many": "mafuta"
+      }
     },
     {
       "id": "c2dde9cf-1c01-5cde-b0d7-c1d79cfbc94b",
       "swahili": "chumvi",
       "english": "salt",
-      "exampleContext": "chumvi kidogo = a little salt"
+      "exampleContext": "chumvi kidogo = a little salt",
+      "nounForms": {
+        "one": "chumvi",
+        "many": null
+      }
     },
     {
       "id": "bf45697b-7520-5873-94f5-0eca0801c1a6",

@@ -1052,13 +1052,21 @@
       "id": "358f187b-86ef-5b7f-8329-7c7aede8b0fd",
       "swahili": "tao",
       "english": "town (the CBD)",
-      "exampleContext": "Matatu touts shout \"Tao! Tao!\""
+      "exampleContext": "Matatu touts shout \"Tao! Tao!\"",
+      "nounForms": {
+        "one": "tao",
+        "many": null
+      }
     },
     {
       "id": "5b623887-d245-5508-929f-05d9f8fb695b",
       "swahili": "makanga",
       "english": "matatu conductor",
-      "exampleContext": "Collects fares, shouts the route"
+      "exampleContext": "Collects fares, shouts the route",
+      "nounForms": {
+        "one": "makanga",
+        "many": "makanga"
+      }
     },
     {
       "id": "120ded4a-2e48-55a8-8ca0-a20ea6396d9d",
@@ -1087,7 +1095,11 @@
       "exampleContext": "Kenyan agreement.",
       "partOfSpeech": "phrase",
       "sanifu": "kiti cha mbele",
-      "sanifuNote": "Sanifu: kiti is ki/vi class"
+      "sanifuNote": "Sanifu: kiti is ki/vi class",
+      "nounForms": {
+        "one": "kiti ya mbele",
+        "many": "viti za mbele"
+      }
     },
     {
       "id": "957fdcb4-6ea0-5a85-a067-b527138762d1",

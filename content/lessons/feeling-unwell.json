@@ -834,40 +834,64 @@
       "id": "6c01a287-712b-5639-a770-c4b4c3c6dfa7",
       "swahili": "kichwa",
       "english": "head",
-      "exampleContext": "Sanifu: ki/vi class (kichwa / vichwa)"
+      "exampleContext": "Sanifu: ki/vi class (kichwa / vichwa)",
+      "nounForms": {
+        "one": "kichwa",
+        "many": "vichwa"
+      }
     },
     {
       "id": "94b13e7b-6883-586d-bff1-2b1a1d5be444",
       "swahili": "tumbo",
       "english": "stomach",
-      "exampleContext": "Sanifu: ji/ma class"
+      "exampleContext": "Sanifu: ji/ma class",
+      "nounForms": {
+        "one": "tumbo",
+        "many": "matumbo"
+      }
     },
     {
       "id": "38e4c753-acbf-5b91-bc7f-f6e8d8a5286c",
       "swahili": "mkono / mikono",
       "english": "arm, hand / arms, hands |",
       "exampleContext": "",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "mkono",
+        "many": "mikono"
+      }
     },
     {
       "id": "715def91-b14b-53fb-baee-b30326dcefc5",
       "swahili": "mguu / miguu",
       "english": "leg, foot / legs, feet |",
       "exampleContext": "",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "mguu",
+        "many": "miguu"
+      }
     },
     {
       "id": "72bd7da3-7a91-56f7-839d-e0119e9bd153",
       "swahili": "jicho / macho",
       "english": "eye / eyes |",
       "exampleContext": "",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "jicho",
+        "many": "macho"
+      }
     },
     {
       "id": "5d548392-49d4-56db-891b-30f8654ea8f0",
       "swahili": "homa",
       "english": "fever",
-      "exampleContext": "Uko na homa? = Do you have a fever?"
+      "exampleContext": "Uko na homa? = Do you have a fever?",
+      "nounForms": {
+        "one": "homa",
+        "many": null
+      }
     },
     {
       "id": "97638b6b-4dcc-581d-8f94-06cbb6f5edce",
@@ -882,13 +906,21 @@
       "english": "body",
       "exampleContext": "Kenyans: mwili yangu",
       "sanifu": "mwili wangu",
-      "sanifuNote": "Sanifu: m/mi class"
+      "sanifuNote": "Sanifu: m/mi class",
+      "nounForms": {
+        "one": "mwili",
+        "many": "miili"
+      }
     },
     {
       "id": "a8461237-efb0-5814-bda4-62d6ad2e1fd2",
       "swahili": "kliniki",
       "english": "clinic |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "kliniki",
+        "many": "kliniki"
+      }
     },
     {
       "id": "6592f0f5-68a7-5816-a9b7-2b5d7c7fde17",

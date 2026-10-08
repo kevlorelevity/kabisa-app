@@ -752,7 +752,11 @@
       "swahili": "hali ya hewa",
       "english": "weather",
       "exampleContext": "lit. \"the state of the air\"",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "hali ya hewa",
+        "many": null
+      }
     },
     {
       "id": "422c877a-9cc0-5c22-b917-ebcb3884ec26",
@@ -765,31 +769,51 @@
       "id": "8b5a6a88-1fdc-50c1-a44c-35739cf335aa",
       "swahili": "mvua",
       "english": "rain",
-      "exampleContext": "Mvua inanyesha = it's raining."
+      "exampleContext": "Mvua inanyesha = it's raining.",
+      "nounForms": {
+        "one": "mvua",
+        "many": "mvua"
+      }
     },
     {
       "id": "c039ac87-33fc-51df-8e0a-d925f698b8d2",
       "swahili": "jua",
       "english": "sun",
-      "exampleContext": "Jua ni kali = the sun is strong."
+      "exampleContext": "Jua ni kali = the sun is strong.",
+      "nounForms": {
+        "one": "jua",
+        "many": null
+      }
     },
     {
       "id": "ce4fd476-4855-5c56-9e33-670b5fef5a9f",
       "swahili": "upepo",
       "english": "wind |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "upepo",
+        "many": "pepo"
+      }
     },
     {
       "id": "8f1943b0-faa5-571f-9643-bf7fb299dfc5",
       "swahili": "anga",
       "english": "sky |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "anga",
+        "many": null
+      }
     },
     {
       "id": "6de2065d-5980-5622-b900-087defc0c6b5",
       "swahili": "msimu",
       "english": "season",
-      "exampleContext": "Plural: misimu"
+      "exampleContext": "Plural: misimu",
+      "nounForms": {
+        "one": "msimu",
+        "many": "misimu"
+      }
     },
     {
       "id": "f9c2b2f7-444b-5e02-9a9a-0cbe868daf6a",
@@ -802,7 +826,11 @@
       "id": "950324a3-e38a-5b36-be69-6958cc56d2b4",
       "swahili": "kiangazi",
       "english": "dry season",
-      "exampleContext": "Sanifu: ki/vi class"
+      "exampleContext": "Sanifu: ki/vi class",
+      "nounForms": {
+        "one": "kiangazi",
+        "many": null
+      }
     },
     {
       "id": "78abb57c-4d69-5d7e-ad12-cb7c32e11350",
@@ -815,19 +843,31 @@
       "id": "e9afc51e-f7c2-50a4-bfe4-abfbba20c276",
       "swahili": "mwaka",
       "english": "year",
-      "exampleContext": "kila mwaka = every year"
+      "exampleContext": "kila mwaka = every year",
+      "nounForms": {
+        "one": "mwaka",
+        "many": "miaka"
+      }
     },
     {
       "id": "e6d3e64a-a261-5bf2-b097-2f8bfdf73429",
       "swahili": "mwavuli",
       "english": "umbrella |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "mwavuli",
+        "many": "miavuli"
+      }
     },
     {
       "id": "75d9960c-aa11-5379-9b2f-effea9de5fc6",
       "swahili": "koti",
       "english": "jacket / coat |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "koti",
+        "many": "makoti"
+      }
     }
   ],
   "practice": [

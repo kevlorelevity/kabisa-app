@@ -1017,13 +1017,21 @@
       "swahili": "mwenye nyumba",
       "english": "landlord",
       "exampleContext": "Lit. \"owner of the house\"",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "mwenye nyumba",
+        "many": "wenye nyumba"
+      }
     },
     {
       "id": "b0e5c554-e99c-500a-be9d-95c14295a025",
       "swahili": "kodi",
       "english": "rent",
-      "exampleContext": "kulipa kodi = to pay rent"
+      "exampleContext": "kulipa kodi = to pay rent",
+      "nounForms": {
+        "one": "kodi",
+        "many": "kodi"
+      }
     },
     {
       "id": "2704bca8-5fc1-586d-82ad-72483fe8ca91",

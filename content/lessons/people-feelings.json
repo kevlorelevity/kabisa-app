@@ -1017,7 +1017,11 @@
       "id": "eb76d7e2-68a6-560b-b30f-8f60159613b4",
       "swahili": "kimya",
       "english": "quiet, silence |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "kimya",
+        "many": null
+      }
     },
     {
       "id": "5f408625-1426-57b4-9f44-cc7726398349",

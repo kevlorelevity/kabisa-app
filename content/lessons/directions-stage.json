@@ -1060,7 +1060,11 @@
       "id": "f45c3260-7b59-5418-b81f-75071402672d",
       "swahili": "tao",
       "english": "town",
-      "exampleContext": "Kenyan word for the CBD"
+      "exampleContext": "Kenyan word for the CBD",
+      "nounForms": {
+        "one": "tao",
+        "many": null
+      }
     }
   ],
   "practice": [

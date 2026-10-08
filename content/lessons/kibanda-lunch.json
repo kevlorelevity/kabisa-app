@@ -1194,13 +1194,21 @@
       "id": "a01ad64b-8fa5-5dd7-a4fc-87f9cd554ec5",
       "swahili": "maharagwe",
       "english": "beans",
-      "exampleContext": "Chapati na maharagwe = a classic kibanda lunch"
+      "exampleContext": "Chapati na maharagwe = a classic kibanda lunch",
+      "nounForms": {
+        "one": "haragwe",
+        "many": "maharagwe"
+      }
     },
     {
       "id": "878fb618-d21c-5998-97fe-fad17ef85a5b",
       "swahili": "chapati",
       "english": "chapati",
-      "exampleContext": "Kenyan flatbread; n/n: chapati mbili"
+      "exampleContext": "Kenyan flatbread; n/n: chapati mbili",
+      "nounForms": {
+        "one": "chapati",
+        "many": "chapati"
+      }
     },
     {
       "id": "51866799-0a06-5308-a15f-96e4c7465007",

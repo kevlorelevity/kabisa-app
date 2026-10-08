@@ -1464,7 +1464,11 @@
       "id": "3376884b-fb3b-59dc-96f6-0deb875372bb",
       "swahili": "familia",
       "english": "family",
-      "exampleContext": "n/n noun"
+      "exampleContext": "n/n noun",
+      "nounForms": {
+        "one": "familia",
+        "many": "familia"
+      }
     },
     {
       "id": "56103080-04d1-5441-bb69-7fe0d3051a08",
@@ -1477,7 +1481,11 @@
       "swahili": "kaka / dada",
       "english": "brother / sister",
       "exampleContext": "dada zangu = my sisters",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "kaka / dada",
+        "many": "kaka / dada"
+      }
     },
     {
       "id": "80db89ca-477c-5fc3-a6f4-d6a97db3aeba",
@@ -1505,7 +1513,11 @@
       "swahili": "mzee / wazee",
       "english": "old person / elders",
       "exampleContext": "Also a respectful \"sir\".",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "mzee",
+        "many": "wazee"
+      }
     },
     {
       "id": "dfac109a-198d-51d7-a368-af4b2b2c84be",
@@ -1530,13 +1542,21 @@
       "id": "d4b286e1-6b60-52bb-aa7a-0eb35f82b87d",
       "swahili": "mbwa",
       "english": "dog",
-      "exampleContext": "Animals take m/wa agreement: mbwa wawili."
+      "exampleContext": "Animals take m/wa agreement: mbwa wawili.",
+      "nounForms": {
+        "one": "mbwa",
+        "many": "mbwa"
+      }
     },
     {
       "id": "9da8c386-5479-588b-8224-6390cc289f6e",
       "swahili": "shamba",
       "english": "farm / garden |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "shamba",
+        "many": "mashamba"
+      }
     },
     {
       "id": "e662190b-a3d3-5adf-afc7-fa8d53fda973",

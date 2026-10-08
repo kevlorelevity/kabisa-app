@@ -972,14 +972,22 @@
       "swahili": "chuo kikuu",
       "english": "university",
       "exampleContext": "ki/vi class",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "chuo kikuu",
+        "many": "vyuo vikuu"
+      }
     },
     {
       "id": "0da72e85-de04-5690-8e5f-c987198b7607",
       "swahili": "kazi ya muda",
       "english": "part-time job",
       "exampleContext": "Lit. \"work of (some) time\"",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "nounForms": {
+        "one": "kazi ya muda",
+        "many": "kazi za muda"
+      }
     },
     {
       "id": "50b68e2f-c2e7-5ed4-893b-806b0bd9951f",
@@ -1006,7 +1014,11 @@
       "id": "286648ee-8818-5f5d-9677-f90f0a570a11",
       "swahili": "changamoto",
       "english": "challenge |",
-      "exampleContext": ""
+      "exampleContext": "",
+      "nounForms": {
+        "one": "changamoto",
+        "many": "changamoto"
+      }
     },
     {
       "id": "979ad93c-7cf3-5a14-8df1-a42f83889123",
@@ -1032,7 +1044,11 @@
       "id": "21b04903-baa4-5d0f-9dfa-06ce6d445547",
       "swahili": "uamuzi",
       "english": "decision",
-      "exampleContext": "from kuamua (to decide)"
+      "exampleContext": "from kuamua (to decide)",
+      "nounForms": {
+        "one": "uamuzi",
+        "many": "maamuzi"
+      }
     },
     {
       "id": "44f01b30-51b3-5332-aa11-000aeb64b895",

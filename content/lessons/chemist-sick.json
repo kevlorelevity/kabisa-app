@@ -1071,7 +1071,11 @@
       "id": "193d22f4-a434-5908-9ab0-b798d74f19e9",
       "swahili": "homa",
       "english": "fever / flu",
-      "exampleContext": "Una homa? = do you have a fever?"
+      "exampleContext": "Una homa? = do you have a fever?",
+      "nounForms": {
+        "one": "homa",
+        "many": null
+      }
     },
     {
       "id": "cf811744-c5e2-5f6f-a603-0f3cc91044c4",
@@ -1126,7 +1130,11 @@
       "id": "8fa2c38a-aa81-56ad-b4e4-8e1b51ff1756",
       "swahili": "chemist",
       "english": "pharmacy",
-      "exampleContext": "Kenyans say \"chemist\""
+      "exampleContext": "Kenyans say \"chemist\"",
+      "nounForms": {
+        "one": "chemist",
+        "many": "machemist"
+      }
     }
   ],
   "practice": [

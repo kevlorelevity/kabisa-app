@@ -393,6 +393,8 @@ def main():
     for b in built:
         (out_dir / f'{b["id"]}.json').write_text(json.dumps(b, ensure_ascii=False, indent=2) + '\n')
     print(f'compiled {len(built)} lessons')
+    import nouns  # singular / plural for noun vocabulary (also covers the hand-authored lessons)
+    print(f'{nouns.apply(out_dir)} vocabulary nouns have singular / plural forms')
     if UNKNOWN:
         print(f'{len(UNKNOWN)} unglossed words:')
         for w, ctx in sorted(UNKNOWN.items()):
