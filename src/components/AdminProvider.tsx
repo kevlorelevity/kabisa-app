@@ -30,6 +30,7 @@ import {
 import { getSupabase } from '../lib/supabase';
 import { AdminContext, type SuggestTarget } from './adminContext';
 import { setRoamAllowed } from '../lib/roam';
+import { reglossInstruction } from '../lib/aiPatch';
 import type { Lesson } from '../types';
 
 const KINDS: Array<{ id: SuggestionKind; label: string }> = [
@@ -169,6 +170,23 @@ function SuggestModal({ target, onClose, enqueue, startAi }: { target: SuggestTa
     const override = pending ? { ...pending, propagate: everywhere && others > 0 } : null;
     // Show the new text right away; the server catches up in the background.
     if (override) addOverrides([{ id: `local-${uid()}`, created_at: new Date().toISOString(), ...override }]);
+    // A dialogue line's Swahili changed: the underlines were re-aligned right away; now have the AI
+    // redo the tooltips (and the English, if the meaning changed) for the new wording.
+    const lesson = scope?.type === 'lesson' ? (scope.content as Lesson) : undefined;
+    const editedTurn = override && lesson && target.itemId ? lesson.turns.find((t) => t.id === target.itemId) : undefined;
+    if (override && lesson && editedTurn && lessonId && editedTurn.swahili.includes(override.replace_text.trim().slice(0, 40))) {
+      startAi({
+        lessonId,
+        scope: 'item',
+        kind: 'turn',
+        itemId: editedTurn.id,
+        targetLabel: `Tooltips · ${target.label}`,
+        instruction: reglossInstruction(override.find_text, override.replace_text),
+        lesson: lessonContext(lesson),
+        current: structuredClone(editedTurn),
+        regloss: true,
+      });
+    }
     const reason = why.trim();
     enqueue(textChanged ? `Edit · ${target.label}` : `Suggestion · ${target.label}`, async () => {
       const res = await submitSuggestion({

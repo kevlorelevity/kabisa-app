@@ -22,7 +22,7 @@ gl: hata = even
 gl: Chumba yangu = "my room" — Kenyan agreement. || Sanifu: chumba changu (ki/vi class)
 gl: chafu = dirty
 gl: kitanda = bed || Sanifu: kitanda / vitanda (ki/vi class)
-gl: taka = rubbish
+gl: taka taka = rubbish / garbage — Kenyans double it || Sanifu: taka
 gl: chakula cha mchana = lunch (lit. "food of midday")
 gl: rahisi = easy / cheap
 gl: tamu = sweet / tasty
@@ -33,7 +33,7 @@ gl: Tuko pamoja = "we're together" — we're in this together
 > Otieno: Niaje, John! Leo ni Jumamosi — siku ya kazi za nyumbani! | Hey, John! Today is Saturday — chores day!
 < John: Poa, Otieno. Mimi ninaosha vyombo jikoni. | Okay, Otieno. I'm washing the dishes in the kitchen.
   x: Poa, Otieno. Mimi ninafua vyombo jikoni. ; Poa, Otieno. Wewe ninaosha vyombo jikoni.
-> Otieno: Sawa. Mimi ninafagia sakafu na kupiga deki. | Okay. I'm sweeping the floor and mopping.
+> Otieno: Sawa. Mimi ninafagia sakafu. | Okay. I'm sweeping the floor.
 < John: Poa. Sabuni iko wapi? | Cool. Where's the soap?
   x: Poa. Sabuni iko nani? ; Poa. Sabuni ni ngapi?
 > Otieno: Iko kwa kabati, karibu na ndoo. | It's in the cupboard, next to the bucket.
@@ -51,7 +51,7 @@ gl: Tuko pamoja = "we're together" — we're in this together
 < John: Hapana, chumba yangu ni chafu sana! Ninatandika kitanda sasa. | No, my room is really dirty! I'm making the bed now.
   s: Hapana, chumba changu ni kichafu sana! Ninatandika kitanda sasa.
   x: Hapana, chumba yangu ni safi sana! Ninatandika kitanda sasa. ; Hapana, chumba yangu ni chafu sana! Ninakula kitanda sasa.
-> Otieno: Sawa. Mimi ninatoa taka, halafu ninapika chakula cha mchana. | Okay. I'm taking out the rubbish, then I'm cooking lunch.
+> Otieno: Sawa. Mimi ninatoa taka taka, halafu ninapika chakula cha mchana. | Okay. I'm taking out the rubbish, then I'm cooking lunch.
 < John: Safi! Unapika nini? | Great! What are you cooking?
   x: Safi! Ninapika nini? ; Safi! Unapika wapi?
 > Otieno: Ugali na sukuma. Ni rahisi na tamu! | Ugali and sukuma. It's easy and tasty!
@@ -69,7 +69,7 @@ t: It's in the cupboard. | Iko kwa [kabati|kitanda|sakafu]. || kabati = cupboard
 t: The water is cold. | Maji ni [baridi|moto|safi]. || baridi = cold, moto = hot, safi = clean.
 t: My room is dirty. | Chumba yangu ni [chafu|safi|kubwa]. || chafu = dirty, safi = clean, kubwa = big.
 t: I'm making the bed. | [Ninatandika|Ninafagia|Ninaosha] kitanda. || kutandika kitanda = to make the bed.
-t: I'm taking out the rubbish. | Ninatoa [taka|maji|nguo]. || taka = rubbish, maji = water, nguo = clothes.
+t: I'm taking out the rubbish. | Ninatoa [taka taka|maji|nguo]. || taka taka = rubbish, maji = water, nguo = clothes.
 t: Who's cooking today? | [Nani|Nini|Wapi] anapika leo?
 t: They're cooking ugali. | [Wanapika|Anapika|Mnapika] ugali. || wa- = they, a- = he / she, m- = you (plural).
 t: my clothes and your clothes | nguo [zangu|zako|zake] na nguo zako || zangu = my, zako = your, zake = his / her.
@@ -84,7 +84,7 @@ kufua | to wash (clothes) | Ninafua nguo.
 kufagia | to sweep | Ninafagia sakafu.
 kupiga deki | to mop | kupiga pasi = to iron
 kutandika kitanda | to make the bed | kitanda = bed
-kutoa taka | to take out the rubbish | taka = rubbish
+kutoa taka taka | to take out the rubbish | taka taka = rubbish — Kenyans double the word (Sanifu: taka)
 vyombo | dishes | Kenyans: vyombo hizi | vyombo hivi | Sanifu: ki/vi class (chombo / vyombo)
 sakafu | floor | n/n noun
 sabuni | soap | n/n noun

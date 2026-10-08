@@ -76,6 +76,8 @@ export interface AiEditInput {
   /** Word edits: which glossed word of the turn, and whether its note/Sanifu apply everywhere. */
   wordIndex?: number;
   everywhere?: boolean;
+  /** Automatic tooltip refresh after an admin edited the line's Swahili (line + choices stay as edited). */
+  regloss?: boolean;
   targetLabel?: string;
   instruction: string;
   /** Lesson context for the AI (title, level, notes, vocabulary). */

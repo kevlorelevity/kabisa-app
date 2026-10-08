@@ -419,8 +419,79 @@ function applyNow(o: ContentOverride): void {
   if (!target) return;
   // Spans are read from the scope BEFORE the edit (the old wording must still be there).
   const spans = o.propagate === false || !scopes ? [] : swahiliSpans(target, o);
+  const lessons = scopes ? (spans.length ? scopes.allLessons() : o.scope_type === 'lesson' ? [target as Lesson] : []) : [];
+  const before = snapshotLines(lessons);
   applyOverrideTo(target, o);
   if (scopes) for (const span of spans) propagateSpan(scopes.allLessons(), span);
+  realignChanged(before);
+}
+
+// ---- keeping the underlined words (tap-to-explain) in step with edited lines ----
+
+function snapshotLines(lessons: Lesson[]): Map<Lesson['turns'][number], string> {
+  const m = new Map<Lesson['turns'][number], string>();
+  for (const l of lessons) for (const turn of l.turns ?? []) m.set(turn, turn.swahili);
+  return m;
+}
+
+function realignChanged(before: Map<Lesson['turns'][number], string>): void {
+  for (const [turn, old] of before) if (turn.swahili !== old) realignWords(turn, old);
+}
+
+const isWordChar = (c: string | undefined) => !!c && /[\p{L}\p{N}'’-]/u.test(c);
+
+/**
+ * After a line's Swahili changed from `oldLine`, moves each glossed word to its
+ * new place, drops glosses whose words are gone, and stretches a gloss over
+ * words inserted right next to it ("taka" + " taka" → "taka taka"). The AI
+ * re-gloss that follows an admin edit then refines the explanations.
+ */
+export function realignWords(turn: { swahili: string; words?: Array<{ text: string }> }, oldLine: string): void {
+  const now = turn.swahili;
+  if (!turn.words?.length || now === oldLine) return;
+  let p = 0;
+  while (p < oldLine.length && p < now.length && oldLine[p] === now[p]) p++;
+  let sfx = 0;
+  while (sfx < oldLine.length - p && sfx < now.length - p && oldLine[oldLine.length - 1 - sfx] === now[now.length - 1 - sfx]) sfx++;
+  const oldEnd = oldLine.length - sfx;
+  const newEnd = now.length - sfx;
+  const delta = now.length - oldLine.length;
+  const inserted = now.slice(p, newEnd).trim();
+  const smallInsert = inserted.length > 0 && inserted.split(/\s+/).length <= 3 && !/[.,;:!?]/.test(inserted);
+
+  const kept: typeof turn.words = [];
+  let cursor = 0;
+  let stretched = false;
+  for (const w of turn.words) {
+    const s = oldLine.indexOf(w.text, cursor);
+    if (s === -1) {
+      // Wasn't placed in the old line either: keep it only if it now fits.
+      if (now.includes(w.text)) kept.push(w);
+      continue;
+    }
+    cursor = s + w.text.length;
+    const e = s + w.text.length;
+    let ns: number;
+    let ne: number;
+    if (e <= p) [ns, ne] = [s, e];
+    else if (s >= oldEnd) [ns, ne] = [s + delta, e + delta];
+    else continue; // the edit cut through this word — its gloss no longer applies
+    if (smallInsert && !stretched && (e === p || s === oldEnd)) {
+      stretched = true;
+      // Words typed right against this gloss become part of it.
+      let a = Math.min(ns, p);
+      let b = Math.max(ne, newEnd);
+      while (a > 0 && isWordChar(now[a - 1])) a--;
+      while (b < now.length && isWordChar(now[b])) b++;
+      ns = a;
+      ne = b;
+      while (ns < ne && !isWordChar(now[ns])) ns++;
+      while (ne > ns && !isWordChar(now[ne - 1])) ne--;
+    }
+    const text = now.slice(ns, ne);
+    if (text) kept.push({ ...w, text });
+  }
+  turn.words = kept;
 }
 
 function bump(): void {

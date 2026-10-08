@@ -134,3 +134,85 @@ describe('AI edits that leave answer choices out', () => {
     expect(v.options.filter((o) => o.correct)).toHaveLength(1);
   });
 });
+
+import { realignWords } from './contentOverrides';
+
+describe('realigning underlined words after an edit', () => {
+  const line = 'Sawa. Mimi ninatoa taka, halafu ninapika chakula cha mchana.';
+  const words = () => [
+    { text: 'Sawa', gloss: 'okay' },
+    { text: 'ninatoa', gloss: 'I take out' },
+    { text: 'taka', gloss: 'rubbish' },
+    { text: 'halafu', gloss: 'then' },
+    { text: 'chakula cha mchana', gloss: 'lunch' },
+  ];
+
+  it('stretches a gloss over a word typed right next to it', () => {
+    const turn = { swahili: 'Sawa. Mimi ninatoa taka taka, halafu ninapika chakula cha mchana.', words: words() };
+    realignWords(turn, line);
+    expect(turn.words.map((w) => w.text)).toEqual(['Sawa', 'ninatoa', 'taka taka', 'halafu', 'chakula cha mchana']);
+  });
+
+  it('drops glosses for removed words and keeps the rest in place', () => {
+    const turn = {
+      swahili: 'Sawa. Mimi ninafagia sakafu.',
+      words: [
+        { text: 'Sawa', gloss: 'okay' },
+        { text: 'ninafagia', gloss: 'I sweep' },
+        { text: 'sakafu', gloss: 'floor' },
+        { text: 'kupiga deki', gloss: 'to mop' },
+      ],
+    };
+    realignWords(turn, 'Sawa. Mimi ninafagia sakafu na kupiga deki.');
+    expect(turn.words.map((w) => w.text)).toEqual(['Sawa', 'ninafagia', 'sakafu']);
+  });
+
+  it('drops a gloss when its word was replaced', () => {
+    const turn = { swahili: 'Sawa. Mimi ninatoa nguo, halafu ninapika chakula cha mchana.', words: words() };
+    realignWords(turn, line);
+    expect(turn.words.map((w) => w.text)).toEqual(['Sawa', 'ninatoa', 'halafu', 'chakula cha mchana']);
+  });
+});
+
+describe('AI re-gloss after an admin edit', () => {
+  it('keeps the edited line and choices, takes the fresh glosses', () => {
+    const current = {
+      id: 't1',
+      speaker: 'Otieno',
+      role: 'user',
+      swahili: 'Ninatoa taka taka.',
+      english: 'I take out the rubbish.',
+      words: [{ text: 'Ninatoa', gloss: 'I take out', grammar: ['present-na'] }, { text: 'taka taka', gloss: 'rubbish' }],
+      options: [
+        { swahili: 'Ninatoa taka taka.', correct: true },
+        { swahili: 'Ninapika taka taka.', correct: false },
+      ],
+    };
+    const r = normalizeResult(
+      'item',
+      'turn',
+      {
+        summary: 'Reglossed',
+        turn: {
+          speaker: 'X',
+          role: 'auto',
+          swahili: 'Changed!',
+          english: 'I take out the garbage.',
+          words: [
+            { text: 'Ninatoa', gloss: 'I am taking out' },
+            { text: 'taka taka', gloss: 'rubbish / garbage (Kenyans double it)', sanifu: 'taka' },
+          ],
+        },
+      },
+      current,
+      't1',
+      { regloss: true },
+    );
+    const v = r.value as typeof current & { words: Array<Record<string, unknown>> };
+    expect(v.swahili).toBe('Ninatoa taka taka.');
+    expect(v.role).toBe('user');
+    expect(v.options[1].swahili).toBe('Ninapika taka taka.');
+    expect(v.words[1]).toMatchObject({ text: 'taka taka', sanifu: 'taka' });
+    expect(v.words[0]).toMatchObject({ gloss: 'I am taking out', grammar: ['present-na'] });
+  });
+});

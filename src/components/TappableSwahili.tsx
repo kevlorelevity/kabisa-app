@@ -120,7 +120,7 @@ export function TappableSwahili({ swahili, words, enabled, className, variant = 
                 {seg.sanifu && (
                   <span className="block mt-1.5 text-sky-200">
                     <span className="font-semibold">Sanifu · </span>
-                    {seg.sanifu}
+                    {seg.sanifu.replace(/^Sanifu:\s*/i, '')}
                   </span>
                 )}
                 {seg.note && (

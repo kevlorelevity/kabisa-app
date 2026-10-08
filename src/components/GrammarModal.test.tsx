@@ -31,7 +31,7 @@ describe('grammar explainer modal', () => {
       />,
     );
     await user.click(screen.getByRole('button', { name: 'Jina yangu' }));
-    expect(screen.getByText('Sanifu: jina langu')).toBeInTheDocument();
+    expect(screen.getByText('jina langu')).toBeInTheDocument();
     await user.click(screen.getByRole('button', { name: /Possessives/ }));
     expect(screen.getByRole('dialog')).toHaveTextContent('Possessives');
     await user.click(screen.getByRole('button', { name: 'Got it' }));

@@ -180,8 +180,8 @@
       "id": "bd714a02-533a-59c7-8ec0-81018a9ed100",
       "speaker": "Otieno",
       "role": "auto",
-      "swahili": "Sawa. Mimi ninafagia sakafu na kupiga deki.",
-      "english": "Okay. I'm sweeping the floor and mopping.",
+      "swahili": "Sawa. Mimi ninafagia sakafu.",
+      "english": "Okay. I'm sweeping the floor.",
       "words": [
         {
           "text": "Sawa",
@@ -234,14 +234,6 @@
         {
           "text": "sakafu",
           "gloss": "floor"
-        },
-        {
-          "text": "na",
-          "gloss": "and / with"
-        },
-        {
-          "text": "kupiga deki",
-          "gloss": "\"to mop\" — deki from English \"deck\""
         }
       ]
     },
@@ -1078,7 +1070,7 @@
       "id": "15bd52cb-0194-5406-abf4-66a989e41e79",
       "speaker": "Otieno",
       "role": "auto",
-      "swahili": "Sawa. Mimi ninatoa taka, halafu ninapika chakula cha mchana.",
+      "swahili": "Sawa. Mimi ninatoa taka taka, halafu ninapika chakula cha mchana.",
       "english": "Okay. I'm taking out the rubbish, then I'm cooking lunch.",
       "words": [
         {
@@ -1130,8 +1122,9 @@
           }
         },
         {
-          "text": "taka",
-          "gloss": "rubbish"
+          "text": "taka taka",
+          "gloss": "rubbish / garbage — Kenyans double it",
+          "sanifu": "Sanifu: taka"
         },
         {
           "text": "halafu",
@@ -1396,9 +1389,9 @@
     },
     {
       "id": "455283ab-c9e5-5d7b-93c1-0a3f5fdfd1de",
-      "swahili": "kutoa taka",
+      "swahili": "kutoa taka taka",
       "english": "to take out the rubbish",
-      "exampleContext": "taka = rubbish",
+      "exampleContext": "taka taka = rubbish — Kenyans double the word (Sanifu: taka)",
       "partOfSpeech": "phrase"
     },
     {
@@ -1705,7 +1698,7 @@
       "after": ".",
       "options": [
         {
-          "text": "taka",
+          "text": "taka taka",
           "correct": true
         },
         {
@@ -1719,7 +1712,7 @@
           "feedback": "nguo = clothes / a piece of clothing"
         }
       ],
-      "explanation": "taka = rubbish, maji = water, nguo = clothes."
+      "explanation": "taka taka = rubbish, maji = water, nguo = clothes."
     },
     {
       "id": "84f82554-84d4-5c2d-a460-fffc783ba95a",

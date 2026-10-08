@@ -203,7 +203,17 @@ function idFor(raw: unknown, known: Set<string>, used: Set<string>): string {
   return fresh;
 }
 
-function normTurn(raw: Obj, prev: Map<string, Obj>, known: Set<string>, used: Set<string>, forceId?: string): Obj {
+function normTurn(
+  raw: Obj,
+  prev: Map<string, Obj>,
+  known: Set<string>,
+  used: Set<string>,
+  forceId?: string,
+  regloss = false,
+): Obj {
+  const before = forceId ? prev.get(forceId) : undefined;
+  // Re-gloss after an admin edit: the line, speaker, role and answer choices stay exactly as edited.
+  if (regloss && before) raw = { ...raw, swahili: before.swahili, speaker: before.speaker, role: before.role, options: before.options };
   const role = s(raw.role) === 'user' ? 'user' : 'auto';
   const swahili = s(raw.swahili);
   const english = s(raw.english);
@@ -219,8 +229,18 @@ function normTurn(raw: Obj, prev: Map<string, Obj>, known: Set<string>, used: Se
       ...(s(w.note) ? { note: s(w.note) } : {}),
     }))
     .filter((w, i, all) => w.text && w.gloss && swahili.includes(w.text) && all.findIndex((x) => x.text === w.text) === i);
-  // Same line as before: keep the richer compiled glosses (conjugation tables, grammar links).
-  if (old && s(old.swahili) === swahili && Array.isArray(old.words)) words = old.words as typeof words;
+  const oldWords = old && Array.isArray(old.words) ? (old.words as Obj[]) : [];
+  if (regloss) {
+    // Fresh glosses, but keep conjugation tables / grammar links of words that didn't change.
+    words = words.map((w) => {
+      const o = oldWords.find((x) => s(x.text) === w.text);
+      return o ? { ...w, ...(o.conjugation ? { conjugation: o.conjugation } : {}), ...(o.grammar ? { grammar: o.grammar } : {}) } : w;
+    }) as typeof words;
+    if (!words.length) words = oldWords as typeof words;
+  } else if (old && s(old.swahili) === swahili && oldWords.length) {
+    // Same line as before: keep the richer compiled glosses (conjugation tables, grammar links).
+    words = oldWords as typeof words;
+  }
   const turn: Obj = { id, speaker, role, swahili, english, words };
   const sanifu = s(raw.sanifu);
   if (sanifu && sanifu !== swahili) turn.sanifu = sanifu;
@@ -294,6 +314,7 @@ export function normalizeResult(
   raw: unknown,
   current: unknown,
   itemId?: string,
+  opts: { regloss?: boolean } = {},
 ): { summary: string; value: unknown } {
   if (!raw || typeof raw !== 'object') throw new Error('The AI returned no usable content.');
   const r = raw as Obj;
@@ -343,7 +364,7 @@ export function normalizeResult(
   const prev = new Map<string, Obj>([[itemId, (current ?? {}) as Obj]]);
   const value =
     kind === 'turn'
-      ? normTurn((r.turn ?? {}) as Obj, prev, new Set([itemId]), new Set(), itemId)
+      ? normTurn((r.turn ?? {}) as Obj, prev, new Set([itemId]), new Set(), itemId, opts.regloss)
       : normPractice((r.item ?? {}) as Obj, prev, new Set([itemId]), new Set(), itemId);
   return { summary, value };
 }
@@ -362,4 +383,9 @@ export function parseClaudeJson(body: unknown): unknown {
     if (m) return JSON.parse(m[0]);
     throw new Error('The AI returned invalid JSON.');
   }
+}
+
+/** The instruction sent with the automatic re-gloss after an admin edits a line's Swahili. */
+export function reglossInstruction(oldLine: string, newLine: string): string {
+  return `An editor changed this line from "${oldLine}" to "${newLine}". Redo the word glosses ("words") for the NEW line: every meaningful word or set phrase gets one gloss, each "text" an exact substring of the line; a doubled word or multi-word expression (e.g. "taka taka", "pole pole") is ONE gloss. Fix the English translation only if the meaning changed, and the Sanifu / note only if they no longer fit. Keep the Swahili line and the answer choices exactly as they are.`;
 }
