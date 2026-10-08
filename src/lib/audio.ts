@@ -26,7 +26,7 @@ export function normalizeTtsText(text: string): string {
 }
 
 export function ttsUrl(text: string, v: Voice = voice): string {
-  return `${API}?v=2&voice=${v}&text=${encodeURIComponent(normalizeTtsText(text))}`;
+  return `${API}?v=3&voice=${v}&text=${encodeURIComponent(normalizeTtsText(text))}`;
 }
 
 export function stopSpeaking(): void {

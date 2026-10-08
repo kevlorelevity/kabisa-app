@@ -10,6 +10,10 @@
 //   ELEVENLABS_VOICE_ID_MALE / ELEVENLABS_VOICE_ID_FEMALE
 //   ELEVENLABS_MODEL (optional) — defaults to eleven_v3, the first ElevenLabs
 //                                  model that supports Swahili
+//   ELEVENLABS_SPEED (optional) — speaking rate, default 0.8 (20% slower, for
+//                                  learners). If the model rejects it, the audio is
+//                                  made at normal speed and the response says so
+//                                  (x-kabisa-slowed: 0) so the player slows it down.
 // Provider 2 — Azure AI Speech (fallback, sw-KE neural voices):
 //   AZURE_SPEECH_KEY, AZURE_SPEECH_REGION
 //
@@ -113,31 +117,38 @@ function json(status: number, body: unknown): Response {
   });
 }
 
-function mp3(body: ArrayBuffer): Response {
+function mp3(body: ArrayBuffer, slowed = true): Response {
   return new Response(body, {
     status: 200,
     headers: {
       'content-type': 'audio/mpeg',
       'cache-control': 'public, max-age=31536000, s-maxage=31536000, immutable',
+      'x-kabisa-slowed': slowed ? '1' : '0',
     },
   });
 }
 
 async function elevenLabs(text: string, apiKey: string, voiceId: string): Promise<Response> {
   const model = process.env.ELEVENLABS_MODEL || 'eleven_v3';
-  const res = await fetch(
-    `https://api.elevenlabs.io/v1/text-to-speech/${encodeURIComponent(voiceId)}?output_format=mp3_44100_64`,
-    {
+  const speed = Number(process.env.ELEVENLABS_SPEED || '0.8');
+  const call = (withSpeed: boolean) =>
+    fetch(`https://api.elevenlabs.io/v1/text-to-speech/${encodeURIComponent(voiceId)}?output_format=mp3_44100_64`, {
       method: 'POST',
       headers: { 'xi-api-key': apiKey, 'content-type': 'application/json', accept: 'audio/mpeg' },
-      body: JSON.stringify({ text, model_id: model }),
-    },
-  );
+      body: JSON.stringify({ text, model_id: model, ...(withSpeed ? { voice_settings: { speed } } : {}) }),
+    });
+  let slowed = speed !== 1;
+  let res = await call(slowed);
+  if (!res.ok && slowed && (res.status === 400 || res.status === 422)) {
+    console.warn('[tts] ElevenLabs rejected speed setting, retrying at normal speed', await res.text().catch(() => ''));
+    slowed = false;
+    res = await call(false);
+  }
   if (!res.ok) {
     console.error('[tts] ElevenLabs error', res.status, await res.text().catch(() => ''));
     return json(502, { error: 'tts_upstream', provider: 'elevenlabs', status: res.status });
   }
-  return mp3(await res.arrayBuffer());
+  return mp3(await res.arrayBuffer(), slowed);
 }
 
 export async function GET(request: Request): Promise<Response> {
