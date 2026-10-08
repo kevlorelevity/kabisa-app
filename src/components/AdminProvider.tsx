@@ -155,6 +155,7 @@ function SuggestModal({ target, onClose, enqueue, startAi }: { target: SuggestTa
   const wordText = aiTarget?.kind === 'word' ? aiTarget.word.text : '';
   const wordPlaces = useMemo(() => (wordText ? countWordPlaces(wordText) : 0), [wordText]);
   const [wordEverywhere, setWordEverywhere] = useState(true);
+  const [swapEverywhere, setSwapEverywhere] = useState(true);
   const [learnerNote, setLearnerNote] = useState(aiTarget?.note ?? '');
   const [learnerSanifu, setLearnerSanifu] = useState(aiTarget?.sanifu ?? '');
   const canNote = Boolean(aiTarget && lessonId && aiTarget.kind !== 'practice');
@@ -251,6 +252,7 @@ function SuggestModal({ target, onClose, enqueue, startAi }: { target: SuggestTa
       lesson: lessonContext(aiTarget.lesson),
       current: aiTarget.current,
       ...(aiTarget.kind === 'word' ? { wordIndex: target.wordIndex, everywhere: wordEverywhere && wordPlaces > 1 } : {}),
+      ...(aiTarget.kind === 'turn' || aiTarget.kind === 'practice' ? { propagate: swapEverywhere } : {}),
     });
     onClose();
   }
@@ -382,6 +384,15 @@ function SuggestModal({ target, onClose, enqueue, startAi }: { target: SuggestTa
                   className={field}
                 />
               </label>
+              {(aiTarget.kind === 'turn' || aiTarget.kind === 'practice') && (
+                <label className="flex items-start gap-2 text-sm text-gray-700">
+                  <input type="checkbox" checked={swapEverywhere} onChange={(e) => setSwapEverywhere(e.target.checked)} className="mt-0.5 accent-amber-500" />
+                  <span>
+                    If the AI swaps a word (e.g. hadi → mpaka), change it everywhere it appears
+                    <span className="text-gray-400"> (dialogues, answer choices, practice, flashcards — all lessons)</span>
+                  </span>
+                </label>
+              )}
               {aiTarget.kind === 'word' && wordPlaces > 1 && (
                 <label className="flex items-start gap-2 text-sm text-gray-700">
                   <input type="checkbox" checked={wordEverywhere} onChange={(e) => setWordEverywhere(e.target.checked)} className="mt-0.5 accent-amber-500" />
@@ -693,7 +704,7 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
     if (supa && fresh.length) {
       const { data } = await supa
         .from('content_patch')
-        .select('id,created_at,lesson_id,scope,item_id,value')
+        .select('id,created_at,lesson_id,scope,item_id,value,swaps')
         .in('id', fresh.map((j) => j.patch_id as string));
       if (data?.length) addPatches(data as ContentPatch[]);
     }

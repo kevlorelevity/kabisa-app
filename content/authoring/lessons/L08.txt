@@ -282,7 +282,7 @@ grammar: relatives, ki-po-ka, conditional-nge, habitual-hu-nga
 gl: Njoroge = Njoroge (a Kikuyu name)
 gl: Nyahururu = Nyahururu, a highland town near Thomson's Falls
 gl: imekuwaje = "how has it been?"
-gl: hadi hapa = "up to now, so far"
+gl: mpaka hapa = "up to now, so far"
 gl: Imekuwa = "it has been"
 gl: Mandhari = scenery
 gl: ya kuvutia = "attractive, stunning" — lit. "of pulling (the eye)"
@@ -317,7 +317,7 @@ gl: nao = "with them"
 gl: wakarimu = hospitable (people)
 gl: mambo mengi mapya = "lots of new things"
 
-> Njoroge: Karibu sana Nyahururu! Safari yako imekuwaje hadi hapa? | Welcome to Nyahururu! How has your trip been so far?
+> Njoroge: Karibu sana Nyahururu! Safari yako imekuwaje mpaka hapa? | Welcome to Nyahururu! How has your trip been so far?
 < John: Imekuwa nzuri sana! Mandhari ni ya kuvutia — milima na mashamba ya chai. | It's been great! The scenery is stunning — hills and tea farms.
   x: Imekuwa mbaya sana! Mandhari ni ya kuvutia — milima na mashamba ya chai. ; Itakuwa nzuri sana jana! Mandhari ni ya kuvutia — milima na mashamba ya chai.
 > Njoroge: Nafurahi kusikia hivyo. Hapa tuko karibu na maporomoko ya Thomson, ambayo ni kivutio kikubwa hapa. | Glad to hear that. Here we're close to Thomson's Falls, which is a big attraction around here.

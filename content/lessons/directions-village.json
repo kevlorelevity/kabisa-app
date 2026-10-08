@@ -126,7 +126,7 @@
       "id": "eff699c1-f3be-5b69-9b0a-8fbb3f71d38b",
       "speaker": "Kijana",
       "role": "auto",
-      "swahili": "Salama! Si mbali. Unaenda mbele kidogo hadi dukani, halafu unageuka kushoto.",
+      "swahili": "Salama! Si mbali. Unaenda mbele kidogo mpaka dukani, halafu unageuka kushoto.",
       "english": "Fine! It's not far. You go on a little to the shop, then you turn left.",
       "words": [
         {
@@ -193,8 +193,8 @@
           "sanifu": "Sanifu: ki/vi class — kidogo (adverb, no agreement)"
         },
         {
-          "text": "hadi",
-          "gloss": "\"up to, until\""
+          "text": "mpaka",
+          "gloss": "\"up to, until\" — Kenyans say mpaka; \"hadi\" is the formal word"
         },
         {
           "text": "dukani",
@@ -333,7 +333,7 @@
       "id": "f3f0246c-ca77-53f1-ac4d-46c454dde763",
       "speaker": "Kijana",
       "role": "auto",
-      "swahili": "Unateremka barabara hadi daraja ndogo ya mbao. Upande wa kulia, unaona shule ya msingi.",
+      "swahili": "Unateremka barabara mpaka daraja ndogo ya mbao. Upande wa kulia, unaona shule ya msingi.",
       "english": "You go down the road to a small wooden bridge. On the right, you see a primary school.",
       "words": [
         {
@@ -381,8 +381,8 @@
           ]
         },
         {
-          "text": "hadi",
-          "gloss": "\"up to, until\""
+          "text": "mpaka",
+          "gloss": "\"up to, until\" — Kenyans say mpaka; \"hadi\" is the formal word"
         },
         {
           "text": "daraja ndogo ya mbao",
@@ -803,7 +803,7 @@
       "id": "23c93312-2a96-5d6d-af18-d7803296d2e3",
       "speaker": "Kijana",
       "role": "auto",
-      "swahili": "Iko sokoni, mbele ya benki. Unarudi nyuma, unaenda moja kwa moja hadi sokoni.",
+      "swahili": "Iko sokoni, mbele ya benki. Unarudi nyuma, unaenda moja kwa moja mpaka sokoni.",
       "english": "It's at the market, in front of the bank. You go back, you go straight on to the market.",
       "words": [
         {
@@ -952,8 +952,8 @@
           "gloss": "straight on / directly"
         },
         {
-          "text": "hadi",
-          "gloss": "\"up to, until\""
+          "text": "mpaka",
+          "gloss": "\"up to, until\" — Kenyans say mpaka; \"hadi\" is the formal word"
         },
         {
           "text": "sokoni",
@@ -968,7 +968,7 @@
       "id": "3f080a0d-9402-5444-ac80-9f480d8c86ef",
       "speaker": "John",
       "role": "user",
-      "swahili": "Moja kwa moja hadi sokoni. Na posta je?",
+      "swahili": "Moja kwa moja mpaka sokoni. Na posta je?",
       "english": "Straight on to the market. And the post office?",
       "words": [
         {
@@ -976,8 +976,8 @@
           "gloss": "straight on / directly"
         },
         {
-          "text": "hadi",
-          "gloss": "\"up to, until\""
+          "text": "mpaka",
+          "gloss": "\"up to, until\" — Kenyans say mpaka; \"hadi\" is the formal word"
         },
         {
           "text": "sokoni",
@@ -1004,15 +1004,15 @@
       ],
       "options": [
         {
-          "swahili": "Moja kwa moja hadi sokoni. Na posta je?",
+          "swahili": "Moja kwa moja mpaka sokoni. Na posta je?",
           "correct": true
         },
         {
-          "swahili": "Kushoto hadi sokoni. Na posta je?",
+          "swahili": "Kushoto mpaka sokoni. Na posta je?",
           "correct": false
         },
         {
-          "swahili": "Moja kwa moja hadi shuleni. Na posta je?",
+          "swahili": "Moja kwa moja mpaka shuleni. Na posta je?",
           "correct": false
         }
       ]

@@ -267,3 +267,40 @@ describe('notes the AI puts on a word inside a line', () => {
     expect('wordsFresh' in lesson.turns[0]).toBe(false);
   });
 });
+
+import { wordSwaps, swahiliOf } from './aiPatch';
+
+describe('word swaps from AI edits', () => {
+  it('finds single-word swaps', () => {
+    expect(wordSwaps('Unaenda mbele kidogo hadi dukani.', 'Unaenda mbele kidogo mpaka dukani.')).toEqual([{ from: 'hadi', to: 'mpaka' }]);
+  });
+  it('finds several swaps but ignores pure deletions', () => {
+    expect(wordSwaps('Samahani, hospitali ya wilaya iko wapi?', 'Pole, hospitali iko wapi?')).toEqual([{ from: 'Samahani', to: 'Pole' }]);
+  });
+  it('ignores the learner placeholders and big rewrites', () => {
+    expect(wordSwaps('Ninatoka Uganda.', 'Ninatoka Germany.')).toEqual([]);
+    expect(wordSwaps('A b c d e.', 'V w x y z.')).toEqual([]);
+  });
+  it('reads practice items', () => {
+    expect(swahiliOf({ before: 'Ninaenda ', after: ' sokoni.', options: [{ text: 'hadi', correct: true }] })).toBe('Ninaenda hadi sokoni.');
+  });
+});
+
+import { propagateSpan } from './contentOverrides';
+
+describe('swaps leave explanatory notes alone', () => {
+  it('replaces in Swahili but not in a note that already names the new word', () => {
+    const l = {
+      turns: [
+        {
+          swahili: 'Unaenda hadi sokoni.',
+          words: [{ text: 'hadi', gloss: 'up to, until', note: 'Kenyans say mpaka far more often than hadi.' }],
+        },
+      ],
+    };
+    propagateSpan(l, { from: 'hadi', to: 'mpaka' });
+    expect(l.turns[0].swahili).toBe('Unaenda mpaka sokoni.');
+    expect(l.turns[0].words[0].text).toBe('mpaka');
+    expect(l.turns[0].words[0].note).toBe('Kenyans say mpaka far more often than hadi.');
+  });
+});

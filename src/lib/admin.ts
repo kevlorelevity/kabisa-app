@@ -80,6 +80,8 @@ export interface AiEditInput {
   regloss?: boolean;
   /** With regloss: the admin set the English in the same edit — the AI must keep it. */
   keepEnglish?: boolean;
+  /** Apply the AI's word swaps to every lesson. */
+  propagate?: boolean;
   targetLabel?: string;
   instruction: string;
   /** Lesson context for the AI (title, level, notes, vocabulary). */

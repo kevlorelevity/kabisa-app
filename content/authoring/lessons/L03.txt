@@ -12,7 +12,7 @@ grammar: ko-location, present-na, locative-ni, question-words
 gl: kaka = "brother" — polite way to address a young man
 gl: hospitali ya wilaya = "the district hospital"
 gl: Si mbali = "it's not far". #ni-copula
-gl: hadi = "up to, until"
+gl: mpaka = "up to, until" — Kenyans say mpaka; "hadi" is the formal word
 gl: dukani = "at the shop" — duka + -ni. #locative-ni
 gl: Dukani = "at the shop" — duka + -ni. #locative-ni
 gl: Halafu = "then, after that"
@@ -39,18 +39,18 @@ gl: Safari njema = "have a good trip"
 
 < John: Habari yako, kaka? Samahani, hospitali ya wilaya iko wapi? | Hello, brother. Excuse me, where is the district hospital?
   x: Habari yako, kaka? Samahani, hospitali ya wilaya iko lini? ; Habari yako, kaka? Samahani, hospitali ya wilaya ni nani?
-> Kijana: Salama! Si mbali. Unaenda mbele kidogo hadi dukani, halafu unageuka kushoto. | Fine! It's not far. You go on a little to the shop, then you turn left.
+> Kijana: Salama! Si mbali. Unaenda mbele kidogo mpaka dukani, halafu unageuka kushoto. | Fine! It's not far. You go on a little to the shop, then you turn left.
 < John: Sawa. Dukani ninageuka kushoto. Halafu? | Okay. At the shop I turn left. Then?
   x: Sawa. Dukani ninageuka kulia. Halafu? ; Sawa. Dukani unageuka kushoto. Halafu?
-> Kijana: Unateremka barabara hadi daraja ndogo ya mbao. Upande wa kulia, unaona shule ya msingi. | You go down the road to a small wooden bridge. On the right, you see a primary school.
+> Kijana: Unateremka barabara mpaka daraja ndogo ya mbao. Upande wa kulia, unaona shule ya msingi. | You go down the road to a small wooden bridge. On the right, you see a primary school.
 < John: Hospitali iko karibu na shule? | Is the hospital near the school?
   x: Hospitali iko karibu na shule wapi? ; Hospitali niko karibu na shule?
 > Kijana: Iko mbali kidogo. Baada ya shule, unapanda kilima kidogo, na hospitali iko upande wa kushoto. | It's a bit further. After the school, you climb a small hill, and the hospital is on the left.
 < John: Asante. Na stage ya basi iko wapi? | Thanks. And where's the bus stop?
   x: Asante. Na stage ya basi iko nani? ; Asante. Na stage ya basi tuko wapi?
-> Kijana: Iko sokoni, mbele ya benki. Unarudi nyuma, unaenda moja kwa moja hadi sokoni. | It's at the market, in front of the bank. You go back, you go straight on to the market.
-< John: Moja kwa moja hadi sokoni. Na posta je? | Straight on to the market. And the post office?
-  x: Kushoto hadi sokoni. Na posta je? ; Moja kwa moja hadi shuleni. Na posta je?
+> Kijana: Iko sokoni, mbele ya benki. Unarudi nyuma, unaenda moja kwa moja mpaka sokoni. | It's at the market, in front of the bank. You go back, you go straight on to the market.
+< John: Moja kwa moja mpaka sokoni. Na posta je? | Straight on to the market. And the post office?
+  x: Kushoto mpaka sokoni. Na posta je? ; Moja kwa moja mpaka shuleni. Na posta je?
 > Kijana: Kutoka sokoni, unafuata barabara kuu, unavuka taa za barabarani, na posta iko pembeni ya jengo ya kaunti. | From the market, you follow the main road, you cross at the traffic lights, and the post office is beside the county building.
 < John: Asante sana, kaka! Sasa ninajua njia. | Thanks so much, brother! Now I know the way.
   x: Asante sana, kaka! Sasa unajua njia. ; Pole sana, kaka! Sasa ninajua njia.
@@ -133,7 +133,7 @@ gl: Siku njema = "have a good day"
 > Mama Njeri: Haha! Na anga ni nyeusi — mvua inakuja. | Ha! And the sky is dark — the rain is coming.
 < John: Ni msimu wa mvua sasa? | Is it the rainy season now?
   x: Ni msimu wa mvua wapi? ; Ni mwavuli wa mvua sasa?
-> Mama Njeri: Hapana. Mvua kubwa — masika — ni mwezi wa tatu hadi wa tano. Mvua ndogo — vuli — ni mwezi wa kumi hadi wa kumi na mbili. | No. The long rains — masika — are March to May. The short rains — vuli — are October to December.
+> Mama Njeri: Hapana. Mvua kubwa — masika — ni mwezi wa tatu mpaka wa tano. Mvua ndogo — vuli — ni mwezi wa kumi mpaka wa kumi na mbili. | No. The long rains — masika — are March to May. The short rains — vuli — are October to December.
 < John: Na sasa, mwezi wa saba, ni kiangazi? | And now, in July, it's the dry season?
   x: Na sasa, mwezi wa saba, ni masika? ; Na sasa, mwezi wa kumi, ni kiangazi?
 > Mama Njeri: Ndiyo, ni kiangazi na ni baridi. Lakini leo mvua kidogo inanyesha. | Yes, it's the dry season and it's cold. But today a little rain is falling.

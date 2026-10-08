@@ -19,6 +19,8 @@ import {
   outputSchema,
   parseClaudeJson,
   patchScopeFor,
+  swahiliOf,
+  wordSwaps,
   type AiLessonContext,
   type AiScope,
   type GrammarRef,
@@ -65,6 +67,7 @@ export async function POST(request: Request): Promise<Response> {
   const everywhere = b.everywhere === true;
   const regloss = b.regloss === true && kind === 'turn';
   const keepEnglish = regloss && b.keepEnglish === true;
+  const propagate = b.propagate === true && scope === 'item' && (kind === 'turn' || kind === 'practice') && !regloss;
   const lesson = b.lesson as AiLessonContext | undefined;
   const instruction = typeof b.instruction === 'string' ? b.instruction.trim().slice(0, 4000) : '';
   const itemId = typeof b.itemId === 'string' ? b.itemId : undefined;
@@ -136,13 +139,22 @@ export async function POST(request: Request): Promise<Response> {
       const result = normalizeResult(scope, kind, parseClaudeJson(body), b.current, itemId, { regloss, keepEnglish });
       const summary = result.summary;
       const value = kind === 'word' ? { ...(result.value as object), wordIndex, everywhere } : result.value;
+      const swaps = propagate ? wordSwaps(swahiliOf(b.current), swahiliOf(value)) : [];
       const pRes = await rest('content_patch', {
         method: 'POST',
-        body: JSON.stringify({ job_id: job.id, lesson_id: lesson.id, scope: patchScopeFor(scope, kind), item_id: itemId ?? null, value }),
+        body: JSON.stringify({
+          job_id: job.id,
+          lesson_id: lesson.id,
+          scope: patchScopeFor(scope, kind),
+          item_id: itemId ?? null,
+          value,
+          ...(swaps.length ? { swaps } : {}),
+        }),
       });
       if (!pRes.ok) throw new Error(`Saving the change failed: ${(await pRes.text().catch(() => '')).slice(0, 200)}`);
       const patch = ((await pRes.json()) as Array<{ id: string }>)[0];
-      await finish({ status: 'live', summary, patch_id: patch.id });
+      const swapNote = swaps.length ? ` Changed everywhere: ${swaps.map((x) => `${x.from} → ${x.to}`).join(', ')}.` : '';
+      await finish({ status: 'live', summary: summary + swapNote, patch_id: patch.id });
     } catch (e) {
       console.error('[ai-edit]', e);
       await finish({ status: 'failed', error: e instanceof Error ? e.message.slice(0, 500) : 'unknown error' });

@@ -44,7 +44,7 @@
       "id": "3c8f0ec4-5c5a-54e3-a29f-fac012528ffc",
       "speaker": "Njoroge",
       "role": "auto",
-      "swahili": "Karibu sana Nyahururu! Safari yako imekuwaje hadi hapa?",
+      "swahili": "Karibu sana Nyahururu! Safari yako imekuwaje mpaka hapa?",
       "english": "Welcome to Nyahururu! How has your trip been so far?",
       "words": [
         {
@@ -108,7 +108,7 @@
           "gloss": "\"how has it been?\""
         },
         {
-          "text": "hadi hapa",
+          "text": "mpaka hapa",
           "gloss": "\"up to now, so far\""
         }
       ]

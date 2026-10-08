@@ -237,6 +237,7 @@ export function propagateSpan(node: unknown, span: Span, count = false): number 
     to: v.to,
   }));
   const notesToo = span.from.length >= 4;
+  const toRe = new RegExp(`(?<![\\p{L}\\p{N}'’-])${esc(span.to)}(?![\\p{L}\\p{N}'’-])`, 'iu');
   let n = 0;
   const walk = (obj: unknown) => {
     if (!obj || typeof obj !== 'object') return;
@@ -245,7 +246,9 @@ export function propagateSpan(node: unknown, span: Span, count = false): number 
       : Object.entries(obj as Record<string, unknown>);
     for (const [k, v] of entries) {
       if (typeof k === 'string' && SKIP_KEYS.has(k)) continue;
-      if (typeof v === 'string' && typeof k === 'string' && (SW_KEYS.has(k) || (notesToo && NOTE_KEYS.has(k)))) {
+      // An English note that already names the new word is explaining the swap ("mpaka, not hadi"): leave it.
+      const explainsSwap = typeof k === 'string' && NOTE_KEYS.has(k) && typeof v === 'string' && toRe.test(v);
+      if (typeof v === 'string' && typeof k === 'string' && !explainsSwap && (SW_KEYS.has(k) || (notesToo && NOTE_KEYS.has(k)))) {
         let out = v;
         for (const r of res) {
           out = out.replace(r.re, () => {
@@ -292,6 +295,8 @@ export interface ContentPatch {
   scope: PatchScope;
   item_id: string | null;
   value: unknown;
+  /** Word swaps the AI made in this item, applied to every lesson ("hadi" → "mpaka"). */
+  swaps?: Span[] | null;
 }
 
 export interface WordPatchValue {
@@ -519,6 +524,12 @@ function applyPatchNow(p: ContentPatch): void {
   if (p.scope === 'word' && scopes && (p.value as WordPatchValue | null)?.everywhere) {
     applyWordEverywhere(scopes.allLessons(), p.value as WordPatchValue);
   }
+  if (p.swaps?.length && scopes) {
+    const all = scopes.allLessons();
+    const before = snapshotLines(all);
+    for (const swap of p.swaps) propagateSpan(all, swap);
+    realignChanged(before);
+  }
 }
 
 /** Adds AI patches (from the DB, or one that just went live) and re-renders content views. */
@@ -556,7 +567,7 @@ export function loadOverrides(): Promise<void> {
         .order('created_at', { ascending: true }),
       supa
         .from('content_patch')
-        .select('id,created_at,lesson_id,scope,item_id,value')
+        .select('id,created_at,lesson_id,scope,item_id,value,swaps')
         .eq('active', true)
         .order('created_at', { ascending: true }),
     ]);

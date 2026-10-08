@@ -398,3 +398,55 @@ export function parseClaudeJson(body: unknown): unknown {
 export function reglossInstruction(oldLine: string, newLine: string, englishSetByEditor = false): string {
   return `An editor changed this line from "${oldLine}" to "${newLine}".${englishSetByEditor ? ' The editor also set the English translation — keep it exactly.' : ''} Redo the word glosses ("words") for the NEW line: every meaningful word or set phrase gets one gloss, each "text" an exact substring of the line; a doubled word or multi-word expression (e.g. "taka taka", "pole pole") is ONE gloss. Fix the English translation only if the meaning changed, and the Sanifu / note only if they no longer fit. Keep the Swahili line and the answer choices exactly as they are.`;
 }
+
+// ---------- word swaps (so an AI edit like "hadi → mpaka" reaches every lesson) ----------
+
+const TOKEN = /[\p{L}\p{N}'’-]+/gu;
+const PLACEHOLDERS = /\b(John|Uganda|Kampala)\b/;
+
+/**
+ * Word-level substitutions between two versions of a Swahili line: runs of 1–3
+ * words replaced by 1–3 other words ("hadi" → "mpaka", "Samahani" → "Pole").
+ * Pure insertions / deletions are not swaps and are left out.
+ */
+export function wordSwaps(a: string, b: string): Array<{ from: string; to: string }> {
+  const x = a.match(TOKEN) ?? [];
+  const y = b.match(TOKEN) ?? [];
+  const eq = (p: string, q: string) => p.toLowerCase() === q.toLowerCase();
+  // LCS table
+  const L = Array.from({ length: x.length + 1 }, () => new Array<number>(y.length + 1).fill(0));
+  for (let i = x.length - 1; i >= 0; i--)
+    for (let j = y.length - 1; j >= 0; j--) L[i][j] = eq(x[i], y[j]) ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+  const out: Array<{ from: string; to: string }> = [];
+  let i = 0;
+  let j = 0;
+  let del: string[] = [];
+  let ins: string[] = [];
+  const flush = () => {
+    if (del.length && ins.length && del.length <= 3 && ins.length <= 3) {
+      const from = del.join(' ');
+      const to = ins.join(' ');
+      if (!eq(from, to) && !PLACEHOLDERS.test(from) && !PLACEHOLDERS.test(to) && !out.some((s) => eq(s.from, from))) out.push({ from, to });
+    }
+    del = [];
+    ins = [];
+  };
+  while (i < x.length || j < y.length) {
+    if (i < x.length && j < y.length && eq(x[i], y[j])) {
+      flush();
+      i++;
+      j++;
+    } else if (j < y.length && (i >= x.length || L[i][j + 1] >= L[i + 1][j])) ins.push(y[j++]);
+    else del.push(x[i++]);
+  }
+  flush();
+  return out;
+}
+
+/** The Swahili text of a dialogue turn or practice item (for comparing versions). */
+export function swahiliOf(item: unknown): string {
+  const o = (item ?? {}) as Obj;
+  if (typeof o.swahili === 'string') return o.swahili;
+  const right = Array.isArray(o.options) ? (o.options as Obj[]).find((x) => x.correct === true) : undefined;
+  return `${s(o.before)} ${s(right?.text)} ${s(o.after)}`.trim();
+}

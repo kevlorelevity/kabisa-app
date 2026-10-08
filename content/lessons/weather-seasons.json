@@ -22,9 +22,9 @@
     "noun-classes-mwa-nn",
     "question-words",
     "discourse-particles",
+    "sanifu-noun-classes",
     "possessives",
     "numbers-money",
-    "sanifu-noun-classes",
     "subject-prefixes"
   ],
   "turns": [
@@ -326,7 +326,7 @@
       "id": "c0c57d5d-8a4b-58c3-91d1-59c26e0e92d9",
       "speaker": "Mama Njeri",
       "role": "auto",
-      "swahili": "Hapana. Mvua kubwa — masika — ni mwezi wa tatu hadi wa tano. Mvua ndogo — vuli — ni mwezi wa kumi hadi wa kumi na mbili.",
+      "swahili": "Hapana. Mvua kubwa — masika — ni mwezi wa tatu mpaka wa tano. Mvua ndogo — vuli — ni mwezi wa kumi mpaka wa kumi na mbili.",
       "english": "No. The long rains — masika — are March to May. The short rains — vuli — are October to December.",
       "words": [
         {
@@ -353,8 +353,12 @@
           "gloss": "March"
         },
         {
-          "text": "hadi",
-          "gloss": "until / up to"
+          "text": "mpaka",
+          "gloss": "border / boundary (also: until) (plural mipaka) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: m/mi class — mpaka wa shamba"
         },
         {
           "text": "wa",
@@ -390,8 +394,12 @@
           "gloss": "October"
         },
         {
-          "text": "hadi",
-          "gloss": "until / up to"
+          "text": "mpaka",
+          "gloss": "border / boundary (also: until) (plural mipaka) — Kenyans give it n/n agreement",
+          "grammar": [
+            "sanifu-noun-classes"
+          ],
+          "sanifu": "Sanifu: m/mi class — mpaka wa shamba"
         },
         {
           "text": "wa",
