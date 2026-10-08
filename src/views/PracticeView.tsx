@@ -16,10 +16,13 @@ import {
   type AttemptResult,
 } from '../lib/lessonScores';
 import { useRoam } from '../lib/roam';
+import { typingModeFor } from '../lib/typing';
+import { useAdmin } from '../components/adminContext';
 
 export function PracticeView() {
   const { id } = useParams<{ id: string }>();
   const roaming = useRoam();
+  const { isAdmin, openDirect } = useAdmin();
   const { lessons, lesson, previous, next } = useLessonWithNeighbors(id ?? '');
   const [rec, setRec] = useState(() => getLessonScores(id ?? ''));
   const [result, setResult] = useState<AttemptResult | null>(null);
@@ -103,7 +106,18 @@ export function PracticeView() {
           </div>
         </details>
       </div>
-      <PracticeSession key={String(roaming)} items={lesson.practice} onFinish={handleFinish} resultSlot={resultSlot} review={roaming} />
+      {isAdmin && (
+        <div className="flex justify-end">
+          <button
+            type="button"
+            onClick={() => openDirect(lesson.id, 'practice')}
+            className="text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-200 rounded-full px-3 py-1 hover:bg-amber-100"
+          >
+            ✨ Direct this practice
+          </button>
+        </div>
+      )}
+      <PracticeSession key={String(roaming)} items={lesson.practice} onFinish={handleFinish} resultSlot={resultSlot} review={roaming} typing={typingModeFor(lesson.level)} />
     </div>
   );
 }

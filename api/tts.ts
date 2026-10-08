@@ -98,12 +98,55 @@ function spanMatches(q: string[], line: string[]): boolean {
   return false;
 }
 
-function isAllowed(text: string): boolean {
+function collectSwahili(v: unknown, out: string[], key = ''): void {
+  if (typeof v === 'string') {
+    if (['swahili', 'sanifu', 'text', 'form', 'before', 'after'].includes(key)) out.push(v);
+    return;
+  }
+  if (Array.isArray(v)) v.forEach((x) => collectSwahili(x, out, key));
+  else if (v && typeof v === 'object') {
+    const obj = v as Record<string, unknown>;
+    if (Array.isArray(obj.options) && typeof obj.before === 'string') {
+      const right = (obj.options as Array<{ text?: string; correct?: boolean }>).find((o) => o.correct);
+      if (right?.text) out.push(`${obj.before}${right.text}${obj.after ?? ''}`);
+    }
+    for (const [k, x] of Object.entries(obj)) collectSwahili(x, out, k);
+  }
+}
+
+// Lines written by AI admin edits live in public.content_patch, not the bundle.
+let patchCorpus: { at: number; lines: string[] } | null = null;
+async function loadPatchCorpus(): Promise<string[]> {
+  if (patchCorpus && Date.now() - patchCorpus.at < 120_000) return patchCorpus.lines;
+  const url = process.env.VITE_SUPABASE_URL ?? process.env.SUPABASE_URL;
+  const anon = process.env.VITE_SUPABASE_ANON_KEY ?? process.env.SUPABASE_ANON_KEY;
+  const lines: string[] = [];
+  if (url && anon) {
+    try {
+      const res = await fetch(`${url}/rest/v1/content_patch?select=value&active=eq.true`, {
+        headers: { apikey: anon, authorization: `Bearer ${anon}` },
+      });
+      if (res.ok) for (const row of (await res.json()) as Array<{ value: unknown }>) collectSwahili(row.value, lines);
+    } catch {
+      /* fall back to the bundled lessons only */
+    }
+  }
+  patchCorpus = { at: Date.now(), lines: lines.map(canon).filter(Boolean) };
+  return patchCorpus.lines;
+}
+
+function inLines(t: string, lines: string[]): boolean {
+  return lines.some((line) => line === t || ` ${line} `.includes(` ${t} `));
+}
+
+async function isAllowed(text: string): Promise<boolean> {
   const t = canon(text);
   if (!t) return false;
-  if (loadCorpus().some((line) => line === t || ` ${line} `.includes(` ${t} `))) return true;
+  if (inLines(t, loadCorpus())) return true;
   const q = t.split(' ');
-  return loadTemplates().some((line) => spanMatches(q, line));
+  if (loadTemplates().some((line) => spanMatches(q, line))) return true;
+  const patched = await loadPatchCorpus();
+  return inLines(t, patched) || patched.some((line) => spanMatches(q, line.split(' ')));
 }
 
 function escapeXml(s: string): string {
@@ -157,7 +200,7 @@ export async function GET(request: Request): Promise<Response> {
   const voice = VOICES[url.searchParams.get('voice') ?? 'male'] ?? VOICES.male;
 
   if (!text || text.length > MAX_CHARS) return json(400, { error: 'bad_text' });
-  if (!isAllowed(text)) return json(403, { error: 'not_in_lessons' });
+  if (!(await isAllowed(text))) return json(403, { error: 'not_in_lessons' });
 
   const which = url.searchParams.get('voice') === 'female' ? 'female' : 'male';
   const elKey = process.env.ELEVENLABS_API_KEY;

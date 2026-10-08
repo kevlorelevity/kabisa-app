@@ -273,6 +273,45 @@ export function countPropagation(scope: unknown, o: Pick<ContentOverride, 'find_
   return Math.max(0, n - spans.length);
 }
 
+// ---- AI patches (content_patch rows) ----
+//
+// An AI edit replaces one dialogue turn / practice item (scope 'item'), or a
+// lesson's whole conversation ('dialogue') or practice session ('practice').
+
+export interface ContentPatch {
+  id: string;
+  created_at: string;
+  lesson_id: string;
+  scope: 'item' | 'dialogue' | 'practice';
+  item_id: string | null;
+  value: unknown;
+}
+
+export function applyPatchTo(lesson: Lesson, p: Pick<ContentPatch, 'scope' | 'item_id' | 'value'>): boolean {
+  const v = structuredClone(p.value);
+  if (p.scope === 'dialogue' && Array.isArray(v)) {
+    lesson.turns = v as Lesson['turns'];
+    return true;
+  }
+  if (p.scope === 'practice' && Array.isArray(v)) {
+    lesson.practice = v as NonNullable<Lesson['practice']>;
+    return true;
+  }
+  if (p.scope === 'item' && p.item_id && v && typeof v === 'object') {
+    const ti = lesson.turns.findIndex((t) => t.id === p.item_id);
+    if (ti >= 0) {
+      lesson.turns[ti] = v as Lesson['turns'][number];
+      return true;
+    }
+    const pi = (lesson.practice ?? []).findIndex((x) => x.id === p.item_id);
+    if (pi >= 0 && lesson.practice) {
+      lesson.practice[pi] = v as NonNullable<Lesson['practice']>[number];
+      return true;
+    }
+  }
+  return false;
+}
+
 // ---- runtime store ----
 
 let applied: ContentOverride[] = [];
@@ -310,6 +349,23 @@ function bump(): void {
   listeners.forEach((l) => l());
 }
 
+let appliedPatches: ContentPatch[] = [];
+
+function applyPatchNow(p: ContentPatch): void {
+  const lesson = scopes?.lesson(p.lesson_id);
+  if (lesson) applyPatchTo(lesson, p);
+}
+
+/** Adds AI patches (from the DB, or one that just went live) and re-renders content views. */
+export function addPatches(rows: ContentPatch[]): void {
+  const seen = new Set(appliedPatches.map((p) => p.id));
+  const fresh = rows.filter((p) => !seen.has(p.id));
+  if (!fresh.length) return;
+  fresh.forEach(applyPatchNow);
+  appliedPatches = [...appliedPatches, ...fresh];
+  bump();
+}
+
 /** Adds overrides (from the DB, or one just saved) and re-renders content views. */
 export function addOverrides(rows: ContentOverride[]): void {
   const seen = new Set(applied.map((o) => o.id));
@@ -327,16 +383,34 @@ export function loadOverrides(): Promise<void> {
   loading = (async () => {
     const supa = getSupabase();
     if (!supa) return;
-    const { data, error } = await supa
-      .from('content_override')
-      .select('id,created_at,scope_type,scope_id,item_id,find_text,replace_text,propagate')
-      .eq('active', true)
-      .order('created_at', { ascending: true });
-    if (error) {
-      console.error('[overrides] load failed', error);
-      return;
+    const [ov, pt] = await Promise.all([
+      supa
+        .from('content_override')
+        .select('id,created_at,scope_type,scope_id,item_id,find_text,replace_text,propagate')
+        .eq('active', true)
+        .order('created_at', { ascending: true }),
+      supa
+        .from('content_patch')
+        .select('id,created_at,lesson_id,scope,item_id,value')
+        .eq('active', true)
+        .order('created_at', { ascending: true }),
+    ]);
+    if (ov.error) console.error('[overrides] load failed', ov.error);
+    if (pt.error) console.error('[patches] load failed', pt.error);
+    // Apply both kinds in the order they were made, so later edits win.
+    const overrides = ((ov.data ?? []) as ContentOverride[]).map((o) => ({ at: o.created_at ?? '', o }));
+    const patches = ((pt.data ?? []) as ContentPatch[]).map((p) => ({ at: p.created_at, p }));
+    const all = [...overrides, ...patches].sort((a, b) => a.at.localeCompare(b.at));
+    let batch: ContentOverride[] = [];
+    for (const x of all) {
+      if ('o' in x) batch.push(x.o);
+      else {
+        if (batch.length) addOverrides(batch);
+        batch = [];
+        addPatches([x.p]);
+      }
     }
-    addOverrides((data ?? []) as ContentOverride[]);
+    if (batch.length) addOverrides(batch);
   })();
   return loading;
 }

@@ -12,6 +12,8 @@ import { setRoaming, useRoam } from '../lib/roam';
 /** Admins get an "Admin" menu (Roam on/off + Sign out) in place of the plain Sign out button. */
 function AdminMenu({ onSignOut }: { onSignOut: () => void }) {
   const roaming = useRoam();
+  const { activity, openActivity } = useAdmin();
+  const busy = activity.saving + activity.working;
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -44,7 +46,17 @@ function AdminMenu({ onSignOut }: { onSignOut: () => void }) {
             : 'border-gray-200 text-gray-600 hover:text-green-700 hover:border-green-300'
         }`}
       >
-        Admin{roaming && <span className="ml-1 text-xs font-semibold">· Roam</span>} <span aria-hidden="true">▾</span>
+        Admin{roaming && <span className="ml-1 text-xs font-semibold">· Roam</span>}
+        {busy > 0 && (
+          <span className="ml-1 inline-flex items-center gap-0.5 text-xs text-amber-700" title="Saving in the background">
+            <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" aria-hidden="true" />
+            {busy}
+          </span>
+        )}
+        {activity.failed > 0 && busy === 0 && (
+          <span className="ml-1 text-xs font-bold text-red-600" title="Something failed — open Activity">!</span>
+        )}{' '}
+        <span aria-hidden="true">▾</span>
       </button>
       {open && (
         <div
@@ -78,6 +90,20 @@ function AdminMenu({ onSignOut }: { onSignOut: () => void }) {
                   roaming ? 'left-[18px]' : 'left-0.5'
                 }`}
               />
+            </span>
+          </button>
+          <button
+            type="button"
+            role="menuitem"
+            onClick={() => {
+              setOpen(false);
+              openActivity();
+            }}
+            className="w-full text-left px-4 py-2.5 hover:bg-gray-50"
+          >
+            <span className="block text-sm font-medium text-gray-900">Activity & team notes</span>
+            <span className="block text-xs text-gray-500">
+              {busy > 0 ? `${busy} saving / working…` : activity.failed ? `${activity.failed} need attention` : 'AI edits, saves, style guide'}
             </span>
           </button>
           <div className="border-t border-gray-100 my-1" />

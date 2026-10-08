@@ -109,3 +109,10 @@ Full rationale and enforcement details in `docs/schema.md` §1 and `IMPLEMENTATI
 ## Contributing
 
 This is an internal project. If you're reading this and you're not Kevin or Lillian, ping Kevin first.
+
+## Release notes (required for user-facing changes)
+
+Every deploy that changes something a learner can see or feel gets a short, upbeat entry at the **top** of
+`public/release-notes.json` (`id`, `date`, an emoji `title`, 1–4 one-line `items`). Learners who already have
+the app open get a pop-up with the notes and a **Refresh now** button; returning learners see what's new once.
+Admin-only and invisible changes don't need an entry.

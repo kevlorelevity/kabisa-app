@@ -20,10 +20,13 @@ import {
   type AttemptResult,
 } from '../lib/lessonScores';
 import { useRoam } from '../lib/roam';
+import { typingModeFor } from '../lib/typing';
+import { useAdmin } from '../components/adminContext';
 
 export function LessonView() {
   const { id } = useParams<{ id: string }>();
   const roaming = useRoam();
+  const { isAdmin, openDirect } = useAdmin();
   const { lessons, lesson, previous, next } = useLessonWithNeighbors(id ?? '');
   // Only reflects THIS playthrough — the persisted scores drive the gate.
   const [result, setResult] = useState<AttemptResult | null>(null);
@@ -147,11 +150,20 @@ export function LessonView() {
       )}
 
       <section>
-        <h2 className="text-xs uppercase tracking-wide text-gray-400 font-semibold mb-4">
-          Conversation
-        </h2>
+        <div className="flex items-center justify-between gap-2 mb-4">
+          <h2 className="text-xs uppercase tracking-wide text-gray-400 font-semibold">Conversation</h2>
+          {isAdmin && (
+            <button
+              type="button"
+              onClick={() => openDirect(lesson.id, 'dialogue')}
+              className="text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-200 rounded-full px-3 py-1 hover:bg-amber-100"
+            >
+              ✨ Direct this conversation
+            </button>
+          )}
+        </div>
         <div className="bg-gray-50 rounded-lg p-4">
-          <DialoguePlayer key={`${attempt}-${roaming}`} turns={lesson.turns} onComplete={handleComplete} review={roaming} />
+          <DialoguePlayer key={`${attempt}-${roaming}`} turns={lesson.turns} onComplete={handleComplete} review={roaming} typing={typingModeFor(lesson.level)} />
         </div>
       </section>
 

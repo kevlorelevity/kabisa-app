@@ -1,8 +1,17 @@
 {
   "functions": {
-    "api/tts.ts": { "includeFiles": "content/lessons/**" }
+    "api/tts.ts": {
+      "includeFiles": "content/lessons/**"
+    },
+    "api/ai-edit.ts": {
+      "includeFiles": "content/grammar/**",
+      "maxDuration": 300
+    }
   },
   "rewrites": [
-    { "source": "/((?!api/).*)", "destination": "/index.html" }
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
   ]
 }

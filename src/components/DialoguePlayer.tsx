@@ -4,6 +4,8 @@ import type { AttemptResult } from '../lib/lessonScores';
 import { TappableSwahili } from './TappableSwahili';
 import { AudioButton } from './AudioButton';
 import { EditPencil } from './EditPencil';
+import { TypedAnswer } from './TypedAnswer';
+import { pickKeyWord, type TypingMode } from '../lib/typing';
 
 interface DialoguePlayerProps {
   turns: DialogueTurn[];
@@ -11,6 +13,8 @@ interface DialoguePlayerProps {
   onComplete: (result: AttemptResult) => void;
   /** Admin Roam: the whole conversation is shown with every answer filled in; nothing is scored. */
   review?: boolean;
+  /** Levels 5+: the learner types (a key word, or the whole line) instead of picking. */
+  typing?: TypingMode;
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -22,7 +26,7 @@ const AUTO_TURN_DELAY_MS = 500;
 /** How long a correct pick stays highlighted green before the transcript advances. */
 const CORRECT_ADVANCE_DELAY_MS = 600;
 
-export function DialoguePlayer({ turns, onComplete, review = false }: DialoguePlayerProps) {
+export function DialoguePlayer({ turns, onComplete, review = false, typing }: DialoguePlayerProps) {
   const [revealedCount, setRevealedCount] = useState(review ? turns.length : 0);
   const [wrongPick, setWrongPick] = useState<string | null>(null);
   const [correctPick, setCorrectPick] = useState<string | null>(null);
@@ -58,6 +62,20 @@ export function DialoguePlayer({ turns, onComplete, review = false }: DialoguePl
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [done]);
+
+  function markMissed() {
+    const id = current?.id;
+    if (id) setMissed((m) => (m.includes(id) ? m : [...m, id]));
+  }
+
+  function typedSolved() {
+    setRevealedCount((n) => n + 1);
+  }
+
+  const keyWord = useMemo(
+    () => (current?.role === 'user' && typing === 'partial' ? pickKeyWord(current) : null),
+    [current, typing],
+  );
 
   function pick(swahili: string, correct: boolean) {
     if (correctPick) return; // already advancing
@@ -116,7 +134,34 @@ export function DialoguePlayer({ turns, onComplete, review = false }: DialoguePl
         )}
       </div>
 
-      {current?.role === 'user' && (
+      {current?.role === 'user' && typing && (
+        <div
+          data-testid="answer-tray"
+          className="sticky bottom-0 z-20 -mx-4 px-4 pt-3 pb-[calc(env(safe-area-inset-bottom)+0.75rem)] bg-white/95 backdrop-blur border-t border-gray-200 shadow-[0_-6px_16px_-10px_rgba(0,0,0,0.25)] sm:mx-0 sm:px-0 sm:pt-1 sm:pb-0 sm:bg-transparent sm:backdrop-blur-none sm:border-0 sm:shadow-none sm:static space-y-2"
+        >
+          <p className="text-xs uppercase tracking-wide text-gray-400 font-semibold">
+            Your turn as {current.speaker} — {typing === 'complete' ? 'type the whole line' : 'type the missing word'}
+          </p>
+          <p className="text-sm text-gray-600">“{current.english}”</p>
+          {typing === 'partial' && keyWord && (
+            <p className="text-base font-medium text-gray-900" data-testid="typing-line">
+              {current.swahili.slice(0, keyWord.start)}
+              <span className="inline-block min-w-16 px-2 mx-0.5 rounded-md bg-gray-100 text-gray-400 text-center tracking-widest">…</span>
+              {current.swahili.slice(keyWord.start + keyWord.text.length)}
+            </p>
+          )}
+          <TypedAnswer
+            key={current.id}
+            wide={typing === 'complete' || !keyWord}
+            accepted={typing === 'partial' && keyWord ? [keyWord.text] : [current.swahili, current.sanifu]}
+            placeholder={typing === 'partial' && keyWord ? 'Missing word…' : 'Type the line in Swahili…'}
+            onMiss={markMissed}
+            onSolved={typedSolved}
+          />
+        </div>
+      )}
+
+      {current?.role === 'user' && !typing && (
         <div
           data-testid="answer-tray"
           className="sticky bottom-0 z-20 -mx-4 px-4 pt-3 pb-[calc(env(safe-area-inset-bottom)+0.75rem)] bg-white/95 backdrop-blur border-t border-gray-200 shadow-[0_-6px_16px_-10px_rgba(0,0,0,0.25)] sm:mx-0 sm:px-0 sm:pt-1 sm:pb-0 sm:bg-transparent sm:backdrop-blur-none sm:border-0 sm:shadow-none sm:static"

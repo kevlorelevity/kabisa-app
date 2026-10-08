@@ -87,3 +87,28 @@ describe('PracticeSession — Roam review', () => {
     expect(onFinish).not.toHaveBeenCalled();
   });
 });
+
+describe('PracticeSession — typed answers (levels 5+)', () => {
+  it('partial: type the gap; a wrong try then the right answer is not first-try', async () => {
+    const user = userEvent.setup();
+    const onFinish = vi.fn();
+    render(<PracticeSession items={[items[0]]} onFinish={onFinish} typing="partial" />);
+    const box = screen.getByLabelText('Your answer');
+    await user.type(box, 'Unaenda{Enter}');
+    expect(screen.getByText(/Not quite/)).toBeTruthy();
+    await user.clear(box);
+    await user.type(box, 'ninaenda{Enter}');
+    await user.click(screen.getByRole('button', { name: 'See results' }));
+    expect(onFinish).toHaveBeenCalledWith(expect.objectContaining({ firstTryCorrect: 0, total: 1, missedIds: ['a'] }));
+  });
+
+  it('complete: type the whole sentence from the English', async () => {
+    const user = userEvent.setup();
+    const onFinish = vi.fn();
+    render(<PracticeSession items={[items[1]]} onFinish={onFinish} typing="complete" />);
+    expect(screen.getByTestId('practice-english').textContent).toContain('Where are you going?');
+    await user.type(screen.getByLabelText('Your answer'), 'unaenda wapi{Enter}');
+    await user.click(screen.getByRole('button', { name: 'See results' }));
+    expect(onFinish).toHaveBeenCalledWith(expect.objectContaining({ firstTryCorrect: 1, total: 1 }));
+  });
+});

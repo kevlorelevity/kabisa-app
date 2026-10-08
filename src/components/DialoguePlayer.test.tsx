@@ -20,3 +20,15 @@ describe('DialoguePlayer — Roam review', () => {
     expect(onComplete).not.toHaveBeenCalled();
   });
 });
+
+describe('DialoguePlayer — typed answers', () => {
+  it('partial: blanks a word of the learner line and accepts it typed', async () => {
+    const { default: userEvent } = await import('@testing-library/user-event');
+    const user = userEvent.setup();
+    const onComplete = vi.fn();
+    render(<DialoguePlayer turns={turns} onComplete={onComplete} typing="partial" />);
+    expect(screen.getByText('“How are you?”')).toBeTruthy();
+    await user.type(screen.getByLabelText('Your answer'), 'habari{Enter}');
+    expect(await screen.findByText('Nzuri sana.', {}, { timeout: 2000 })).toBeTruthy();
+  });
+});

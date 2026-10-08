@@ -13,12 +13,31 @@ export interface SuggestTarget {
   itemId?: string;
 }
 
+export interface AdminActivity {
+  /** Edits / notes still being saved in the background. */
+  saving: number;
+  /** AI edits still being worked on. */
+  working: number;
+  /** Saves or AI edits that failed (open the activity panel to retry / read why). */
+  failed: number;
+}
+
 export interface AdminContextValue {
   isAdmin: boolean;
   openSuggest: (t: SuggestTarget) => void;
+  /** Prompt the AI to change a lesson's whole conversation or practice session. */
+  openDirect: (lessonId: string, scope: 'dialogue' | 'practice') => void;
+  openActivity: () => void;
+  activity: AdminActivity;
 }
 
-export const AdminContext = createContext<AdminContextValue>({ isAdmin: false, openSuggest: () => {} });
+export const AdminContext = createContext<AdminContextValue>({
+  isAdmin: false,
+  openSuggest: () => {},
+  openDirect: () => {},
+  openActivity: () => {},
+  activity: { saving: 0, working: 0, failed: 0 },
+});
 
 export function useAdmin(): AdminContextValue {
   return useContext(AdminContext);

@@ -4,6 +4,8 @@ import type { AttemptResult } from '../lib/lessonScores';
 import { AudioButton } from './AudioButton';
 import { GrammarChips } from './GrammarChips';
 import { EditPencil } from './EditPencil';
+import { TypedAnswer } from './TypedAnswer';
+import type { TypingMode } from '../lib/typing';
 
 interface PracticeSessionProps {
   items: PracticeItem[];
@@ -13,6 +15,8 @@ interface PracticeSessionProps {
   resultSlot?: ReactNode;
   /** Admin Roam: every item arrives already answered (in authored order); nothing is scored. */
   review?: boolean;
+  /** Levels 5+: type the gap ('partial') or the whole sentence ('complete') instead of tapping chips. */
+  typing?: TypingMode;
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -24,7 +28,7 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-export function PracticeSession({ items, onFinish, resultSlot, review = false }: PracticeSessionProps) {
+export function PracticeSession({ items, onFinish, resultSlot, review = false, typing }: PracticeSessionProps) {
   // Bumping `round` reshuffles item order and chip order for "Practice again".
   const [round, setRound] = useState(0);
   const order = useMemo(() => (review ? items : shuffle(items)), [items, round, review]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -115,6 +119,16 @@ export function PracticeSession({ items, onFinish, resultSlot, review = false }:
     }
   }
 
+  function typedMiss() {
+    setWrongPicks((w) => (w.length ? w : ['(typed)']));
+    setMissed((m) => (m.includes(item.id) ? m : [...m, item.id]));
+  }
+
+  function typedSolved() {
+    if (wrongPicks.length === 0) setFirstTry((n) => n + 1);
+    setSolved(true);
+  }
+
   function next() {
     if (index + 1 >= order.length) {
       setFinished(true);
@@ -155,11 +169,14 @@ export function PracticeSession({ items, onFinish, resultSlot, review = false }:
       </div>
 
       <div className="rounded-xl border border-gray-200 bg-white p-5 space-y-3">
-        {item.mode === 'translate' && (
+        {(item.mode === 'translate' || (typing === 'complete' && !solved)) && (
           <p className="text-gray-700" data-testid="practice-english">
             {item.english}
           </p>
         )}
+        {typing === 'complete' && !solved ? (
+          <p className="text-sm text-gray-400" data-testid="practice-sentence">Type the whole sentence in Swahili.</p>
+        ) : (
         <p className="text-xl font-semibold text-gray-900" data-testid="practice-sentence">
           {item.before}
           {solved ? (
@@ -176,6 +193,7 @@ export function PracticeSession({ items, onFinish, resultSlot, review = false }:
           )}
           {item.after}
         </p>
+        )}
         <div className="flex gap-1">
           <EditPencil
             hint="EN"
@@ -251,6 +269,15 @@ export function PracticeSession({ items, onFinish, resultSlot, review = false }:
             {index + 1 >= order.length ? (review ? 'Finish' : 'See results') : 'Next →'}
           </button>
           </div>
+        ) : typing ? (
+          <TypedAnswer
+            key={`${round}-${item.id}`}
+            wide={typing === 'complete'}
+            accepted={typing === 'complete' ? [`${item.before}${answer.text}${item.after}`] : [answer.text]}
+            placeholder={typing === 'complete' ? 'Type the sentence…' : 'Type the missing word…'}
+            onMiss={typedMiss}
+            onSolved={typedSolved}
+          />
         ) : (
           <div className="space-y-2">
               <div className="flex flex-wrap gap-2">
