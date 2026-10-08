@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import { PracticeSession } from './PracticeSession';
 import type { PracticeItem } from '../types';
 
@@ -71,5 +71,19 @@ describe('PracticeSession', () => {
     await answer(user, false);
     await user.click(screen.getByRole('button', { name: /see results/i }));
     expect(screen.getByText('1 / 2')).toBeInTheDocument();
+  });
+});
+
+describe('PracticeSession — Roam review', () => {
+  it('shows every item already answered, in order, and never scores', async () => {
+    const user = userEvent.setup();
+    const onFinish = vi.fn();
+    render(<PracticeSession items={items} onFinish={onFinish} review />);
+    expect(screen.getByTestId('practice-sentence').textContent).toBe('Ninaenda Westlands.');
+    await user.click(screen.getByRole('button', { name: 'Next →' }));
+    expect(screen.getByTestId('practice-sentence').textContent).toBe('Unaenda wapi?');
+    await user.click(screen.getByRole('button', { name: 'Finish' }));
+    expect(screen.getByText(/Roam · end of practice/)).toBeTruthy();
+    expect(onFinish).not.toHaveBeenCalled();
   });
 });

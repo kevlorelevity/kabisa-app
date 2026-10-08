@@ -23,7 +23,7 @@ import { useRoam } from '../lib/roam';
 
 export function LessonView() {
   const { id } = useParams<{ id: string }>();
-  useRoam(); // re-render when an admin toggles Roam
+  const roaming = useRoam();
   const { lessons, lesson, previous, next } = useLessonWithNeighbors(id ?? '');
   // Only reflects THIS playthrough — the persisted scores drive the gate.
   const [result, setResult] = useState<AttemptResult | null>(null);
@@ -151,12 +151,13 @@ export function LessonView() {
           Conversation
         </h2>
         <div className="bg-gray-50 rounded-lg p-4">
-          <DialoguePlayer key={attempt} turns={lesson.turns} onComplete={handleComplete} />
+          <DialoguePlayer key={`${attempt}-${roaming}`} turns={lesson.turns} onComplete={handleComplete} review={roaming} />
         </div>
       </section>
 
-      {result && (
+      {(result || roaming) && (
         <section className="pb-16 space-y-4">
+          {result && !roaming && (
           <div
             className={`rounded-xl border p-4 ${
               passedThisRun ? 'border-green-200 bg-green-50' : 'border-amber-200 bg-amber-50'
@@ -179,8 +180,9 @@ export function LessonView() {
               Play the conversation again
             </button>
           </div>
+          )}
 
-          <DrillPrompt lesson={lesson} rec={rec} />
+          {!roaming && <DrillPrompt lesson={lesson} rec={rec} />}
 
           {lesson.practice?.length ? (
             <Link
@@ -194,7 +196,7 @@ export function LessonView() {
             </Link>
           ) : null}
 
-          {lessonPassed && next && (
+          {(lessonPassed || roaming) && next && (
             <Link
               to={`/lesson/${next.id}`}
               className="block rounded-xl border border-green-300 bg-white p-4 hover:border-green-500 transition-colors"

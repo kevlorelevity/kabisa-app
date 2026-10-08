@@ -19,7 +19,7 @@ import { useRoam } from '../lib/roam';
 
 export function PracticeView() {
   const { id } = useParams<{ id: string }>();
-  useRoam(); // re-render when an admin toggles Roam
+  const roaming = useRoam();
   const { lessons, lesson, previous, next } = useLessonWithNeighbors(id ?? '');
   const [rec, setRec] = useState(() => getLessonScores(id ?? ''));
   const [result, setResult] = useState<AttemptResult | null>(null);
@@ -103,7 +103,7 @@ export function PracticeView() {
           </div>
         </details>
       </div>
-      <PracticeSession items={lesson.practice} onFinish={handleFinish} resultSlot={resultSlot} />
+      <PracticeSession key={String(roaming)} items={lesson.practice} onFinish={handleFinish} resultSlot={resultSlot} review={roaming} />
     </div>
   );
 }

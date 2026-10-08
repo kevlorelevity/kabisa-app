@@ -16,6 +16,7 @@ import { AuthProvider } from './hooks/AuthProvider';
 import { SignInGate } from './components/SignInGate';
 import { useEffect } from 'react';
 import { loadOverrides } from './lib/contentOverrides';
+import { ProgressSync } from './components/ProgressSync';
 
 function AppLayout() {
   // Admin live edits (content_override) on top of the bundled lesson JSON.
@@ -25,6 +26,7 @@ function AppLayout() {
   return (
     <>
       <UpdateBanner />
+      <ProgressSync />
       <Nav />
       <main>
         <Routes>

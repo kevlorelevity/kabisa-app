@@ -154,3 +154,13 @@ export function isStruggling(rec: LessonScoreRecord): boolean {
 export function pct(ratio: number): string {
   return `${Math.round(ratio * 100)}%`;
 }
+
+/** Every lesson's record on this device (for syncing to Supabase). */
+export function getAllLessonScores(): Record<string, LessonScoreRecord> {
+  return read();
+}
+
+/** Replaces this device's scores wholesale (after merging with Supabase). */
+export function replaceAllLessonScores(store: Record<string, LessonScoreRecord>): void {
+  write(store);
+}

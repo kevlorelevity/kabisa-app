@@ -11,6 +11,8 @@ interface PracticeSessionProps {
   onFinish?: (result: AttemptResult) => void;
   /** Extra content (pass/fail, next steps) shown on the results card. */
   resultSlot?: ReactNode;
+  /** Admin Roam: every item arrives already answered (in authored order); nothing is scored. */
+  review?: boolean;
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -22,13 +24,13 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-export function PracticeSession({ items, onFinish, resultSlot }: PracticeSessionProps) {
+export function PracticeSession({ items, onFinish, resultSlot, review = false }: PracticeSessionProps) {
   // Bumping `round` reshuffles item order and chip order for "Practice again".
   const [round, setRound] = useState(0);
-  const order = useMemo(() => shuffle(items), [items, round]); // eslint-disable-line react-hooks/exhaustive-deps
+  const order = useMemo(() => (review ? items : shuffle(items)), [items, round, review]); // eslint-disable-line react-hooks/exhaustive-deps
   const [index, setIndex] = useState(0);
   const [wrongPicks, setWrongPicks] = useState<string[]>([]);
-  const [solved, setSolved] = useState(false);
+  const [solved, setSolved] = useState(review);
   const [firstTry, setFirstTry] = useState(0);
   const [missed, setMissed] = useState<string[]>([]);
   const [finished, setFinished] = useState(false);
@@ -52,6 +54,27 @@ export function PracticeSession({ items, onFinish, resultSlot }: PracticeSession
 
   if (items.length === 0) return null;
 
+  if (finished && review) {
+    return (
+      <div className="rounded-xl border border-amber-200 bg-amber-50 p-6 text-center space-y-3">
+        <p className="text-xs uppercase tracking-wide text-amber-700 font-semibold">Roam · end of practice</p>
+        <p className="text-sm text-amber-900">
+          You've seen all {items.length} lines with their answers. Nothing was scored.
+        </p>
+        <button
+          onClick={() => {
+            setIndex(0);
+            setSolved(true);
+            setFinished(false);
+          }}
+          className="mt-2 px-4 py-2 rounded-full bg-amber-500 text-white text-sm font-medium hover:bg-amber-600"
+        >
+          Back to the first line
+        </button>
+      </div>
+    );
+  }
+
   if (finished) {
     return (
       <div className="rounded-xl border border-gray-200 bg-white p-6 text-center space-y-3">
@@ -68,7 +91,7 @@ export function PracticeSession({ items, onFinish, resultSlot }: PracticeSession
             setRound((r) => r + 1);
             setIndex(0);
             setWrongPicks([]);
-            setSolved(false);
+            setSolved(review);
             setFirstTry(0);
             setMissed([]);
             setFinished(false);
@@ -95,6 +118,7 @@ export function PracticeSession({ items, onFinish, resultSlot }: PracticeSession
   function next() {
     if (index + 1 >= order.length) {
       setFinished(true);
+      if (review) return;
       onFinish?.({
         firstTryCorrect: firstTry,
         total: order.length,
@@ -105,7 +129,7 @@ export function PracticeSession({ items, onFinish, resultSlot }: PracticeSession
     }
     setIndex((i) => i + 1);
     setWrongPicks([]);
-    setSolved(false);
+    setSolved(review);
   }
 
   const answer = item.options.find((o) => o.correct)!;
@@ -187,6 +211,20 @@ export function PracticeSession({ items, onFinish, resultSlot }: PracticeSession
             />
           </p>
           {item.grammar?.length ? <GrammarChips slugs={item.grammar.slice(0, 3)} size="xs" /> : null}
+          {review && (
+            <p className="text-xs text-gray-500 pt-1" aria-label="Answer choices">
+              Choices:{' '}
+              {item.options.map((o, i) => (
+                <span key={o.text}>
+                  {i > 0 && ' · '}
+                  <span className={o.correct ? 'text-green-800 font-semibold' : 'line-through text-gray-400'}>
+                    {o.correct ? '✓ ' : ''}
+                    {o.text}
+                  </span>
+                </span>
+              ))}
+            </p>
+          )}
         </div>
       )}
 
@@ -197,12 +235,22 @@ export function PracticeSession({ items, onFinish, resultSlot }: PracticeSession
         className="sticky bottom-0 z-20 -mx-4 px-4 pt-3 pb-[calc(env(safe-area-inset-bottom)+0.75rem)] bg-white/95 backdrop-blur border-t border-gray-200 shadow-[0_-6px_16px_-10px_rgba(0,0,0,0.25)] sm:static sm:mx-0 sm:px-0 sm:pt-0 sm:pb-0 sm:bg-transparent sm:backdrop-blur-none sm:border-0 sm:shadow-none"
       >
         {solved ? (
+          <div className="flex gap-2">
+          {review && index > 0 && (
+            <button
+              onClick={() => setIndex((i) => i - 1)}
+              className="px-5 py-3 sm:py-2 rounded-full border border-gray-300 text-gray-700 text-base sm:text-sm font-medium hover:bg-gray-50"
+            >
+              ← Back
+            </button>
+          )}
           <button
             onClick={next}
             className="w-full sm:w-auto px-5 py-3 sm:py-2 rounded-full bg-green-700 text-white text-base sm:text-sm font-semibold sm:font-medium hover:bg-green-800"
           >
-            {index + 1 >= order.length ? 'See results' : 'Next →'}
+            {index + 1 >= order.length ? (review ? 'Finish' : 'See results') : 'Next →'}
           </button>
+          </div>
         ) : (
           <div className="space-y-2">
               <div className="flex flex-wrap gap-2">

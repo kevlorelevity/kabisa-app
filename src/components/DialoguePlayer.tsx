@@ -9,6 +9,8 @@ interface DialoguePlayerProps {
   turns: DialogueTurn[];
   /** Fires once at the end with the learner's first-try score on their own lines. */
   onComplete: (result: AttemptResult) => void;
+  /** Admin Roam: the whole conversation is shown with every answer filled in; nothing is scored. */
+  review?: boolean;
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -20,8 +22,8 @@ const AUTO_TURN_DELAY_MS = 500;
 /** How long a correct pick stays highlighted green before the transcript advances. */
 const CORRECT_ADVANCE_DELAY_MS = 600;
 
-export function DialoguePlayer({ turns, onComplete }: DialoguePlayerProps) {
-  const [revealedCount, setRevealedCount] = useState(0);
+export function DialoguePlayer({ turns, onComplete, review = false }: DialoguePlayerProps) {
+  const [revealedCount, setRevealedCount] = useState(review ? turns.length : 0);
   const [wrongPick, setWrongPick] = useState<string | null>(null);
   const [correctPick, setCorrectPick] = useState<string | null>(null);
   // User turns where the first pick was wrong — drives the score and the drill.
@@ -46,7 +48,7 @@ export function DialoguePlayer({ turns, onComplete }: DialoguePlayerProps) {
   }, [current]);
 
   useEffect(() => {
-    if (!done) return;
+    if (!done || review) return;
     const userTurns = turns.filter((t) => t.role === 'user').map((t) => t.id);
     onComplete({
       firstTryCorrect: userTurns.length - missed.length,
@@ -79,9 +81,9 @@ export function DialoguePlayer({ turns, onComplete }: DialoguePlayerProps) {
 
   // Keep the newest line and the answer options in view as the chat grows.
   useEffect(() => {
-    if (revealedCount === 0) return;
+    if (revealedCount === 0 || review) return;
     endRef.current?.scrollIntoView?.({ block: 'nearest', behavior: 'smooth' });
-  }, [revealedCount, answering]);
+  }, [revealedCount, answering, review]);
 
   // While the answer tray is pinned to the bottom, tell the page so the
   // floating Feedback button moves out of its way on phones.
@@ -95,7 +97,10 @@ export function DialoguePlayer({ turns, onComplete }: DialoguePlayerProps) {
     <div className="space-y-4">
       <div className="space-y-3">
         {settled.map((turn) => (
-          <TurnBubble key={turn.id} turn={turn} tappable />
+          <div key={turn.id}>
+            <TurnBubble turn={turn} tappable />
+            {review && turn.role === 'user' && turn.options?.length ? <OptionsReview turn={turn} /> : null}
+          </div>
         ))}
 
         {current?.role === 'auto' && (
@@ -160,11 +165,48 @@ export function DialoguePlayer({ turns, onComplete }: DialoguePlayerProps) {
 
       <div ref={endRef} aria-hidden="true" />
 
-      {done && (
+      {done && review && (
+        <p className="text-amber-800 text-sm font-medium pt-1">
+          Roam — every line is filled in for review. Nothing here is scored.
+        </p>
+      )}
+      {done && !review && (
         <p className="text-green-700 text-sm font-medium pt-1">
           Conversation complete! Tap any word above to review what it means.
         </p>
       )}
+    </div>
+  );
+}
+
+/** Roam: the answer choices the learner would see on this turn, correct one marked. */
+function OptionsReview({ turn }: { turn: DialogueTurn }) {
+  return (
+    <div className="flex justify-end mt-1.5">
+      <ul className="max-w-[80%] space-y-1 text-xs" aria-label={`Answer choices for ${turn.speaker}`}>
+        {turn.options!.map((opt) => (
+          <li key={opt.swahili} className="flex items-center justify-end gap-1.5">
+            <span
+              className={`px-2.5 py-1 rounded-full border ${
+                opt.correct
+                  ? 'border-green-300 bg-green-50 text-green-800 font-medium'
+                  : 'border-gray-200 bg-white text-gray-400 line-through'
+              }`}
+            >
+              {opt.correct ? '✓ ' : ''}
+              {opt.swahili}
+            </span>
+            <EditPencil
+              target={{
+                targetType: opt.correct ? 'turn.option.correct' : 'turn.option.distractor',
+                label: `${opt.correct ? 'Correct answer' : 'Wrong option'} · ${turn.speaker}'s turn`,
+                currentText: opt.swahili,
+                itemId: turn.id,
+              }}
+            />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
