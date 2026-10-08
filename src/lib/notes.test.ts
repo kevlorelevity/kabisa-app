@@ -105,3 +105,32 @@ describe('AI on words and flashcards', () => {
     expect(system).toContain('"note"');
   });
 });
+
+describe('AI edits that leave answer choices out', () => {
+  it('keeps the existing wrong options of a learner line', () => {
+    const current = {
+      id: 't9',
+      speaker: 'Mgeni',
+      role: 'user',
+      swahili: 'Ndiyo. Ninaishi hapa, nyumba namba tano.',
+      english: 'Yes. I live here, house number five.',
+      words: [],
+      options: [
+        { swahili: 'Ndiyo. Ninaishi hapa, nyumba namba tano.', correct: true },
+        { swahili: 'Ndiyo. Ninakula hapa, nyumba namba tano.', correct: false },
+        { swahili: 'Ndiyo. Ninaishi Kampala.', correct: false },
+      ],
+    };
+    const r = normalizeResult(
+      'item',
+      'turn',
+      { summary: 'Added Sanifu', turn: { speaker: 'Mgeni', role: 'user', swahili: current.swahili, english: current.english, words: [], sanifu: 'Ndiyo. Ninaishi hapa, nyumba nambari tano.' } },
+      current,
+      't9',
+    );
+    const v = r.value as { options: Array<{ swahili: string; correct: boolean }>; sanifu: string };
+    expect(v.sanifu).toContain('nambari');
+    expect(v.options).toHaveLength(3);
+    expect(v.options.filter((o) => o.correct)).toHaveLength(1);
+  });
+});

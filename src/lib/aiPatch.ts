@@ -128,7 +128,7 @@ House rules — follow all of them:
 5. Dialogue turns: role "user" is the learner, role "auto" is the other speaker. Every user turn has exactly 3 options: one correct option identical to the line, and two wrong options that are wrong IN CONTEXT — a different word meaning, person or tense that does not fit the conversation. Never make wrong options differ only in noun-class agreement (wangu/yangu, hii/huyu). The learner sees no English while choosing.
 6. "words": gloss each meaningful word or set phrase of the line. Each "text" must be an exact substring of the line; "gloss" is short English (e.g. "Ninaenda = I'm going").
 7. Practice items: "translate" (English prompt, learner fills the Swahili gap) or "complete" (Swahili only). before + correct option + after must form the full Swahili sentence (put the spaces inside before/after). Exactly 3 options, one correct; wrong options test meaning, person or tense — not noun class. "explanation" is one short line.
-8. Keep the "id" of every item you keep. Omit "id" for new items. Change only what the instruction asks for; keep everything else exactly as it is.
+8. Always return the complete item: for a learner turn that means all 3 "options" even if you didn't change them. Keep the "id" of every item you keep. Omit "id" for new items. Change only what the instruction asks for; keep everything else exactly as it is.
 9. Natural, everyday sentences beat grammatically loaded ones. Keep lines short.
 10. Notes: besides Sanifu, a word, a line or a flashcard can carry a "note" — a short learner-facing remark (1–2 sentences) on other meanings, how Kenyans actually use it, register (polite / street / Sheng), or a common mix-up. Add or change a note only when the instruction asks for one or it clearly helps; write it in English, quoting Swahili in its Kenyan form. To remove a note or Sanifu, return an empty string for it.
 11. "summary": one short sentence saying what you changed.`;
@@ -231,6 +231,14 @@ function normTurn(raw: Obj, prev: Map<string, Obj>, known: Set<string>, used: Se
       .map((o) => s(o.swahili))
       .filter((o, i, all) => o && o !== swahili && all.indexOf(o) === i)
       .slice(0, 2);
+    // The AI often leaves the answer choices out when the instruction is about something
+    // else (a note, Sanifu…): keep the existing wrong options then.
+    if (wrong.length < 1 && old && Array.isArray(old.options)) {
+      for (const o of old.options as Obj[]) {
+        const w = s(o.swahili);
+        if (o.correct !== true && w && w !== swahili && !wrong.includes(w)) wrong.push(w);
+      }
+    }
     if (wrong.length < 1) throw new Error(`The learner line "${swahili}" needs at least one wrong option.`);
     turn.options = [{ swahili, correct: true }, ...wrong.map((w) => ({ swahili: w, correct: false }))];
   }
@@ -250,6 +258,13 @@ function normPractice(raw: Obj, prev: Map<string, Obj>, known: Set<string>, used
   const right = opts.find((o) => o.correct && o.text);
   if (!english || !right) throw new Error('A practice item is missing its English prompt or correct answer.');
   const wrong = opts.filter((o, i) => !o.correct && o.text && o.text !== right.text && opts.findIndex((x) => x.text === o.text) === i).slice(0, 2);
+  const prevItem = prev.get(s(raw.id)) ?? (forceId ? prev.get(forceId) : undefined);
+  if (!wrong.length && prevItem && Array.isArray(prevItem.options)) {
+    for (const o of prevItem.options as Obj[]) {
+      const w = s(o.text);
+      if (o.correct !== true && w && w !== right.text) wrong.push({ text: w, correct: false, feedback: s(o.feedback) });
+    }
+  }
   if (!wrong.length) throw new Error(`The practice item "${english}" needs at least one wrong option.`);
   const id = forceId ?? idFor(raw.id, known, used);
   const item: Obj = {
