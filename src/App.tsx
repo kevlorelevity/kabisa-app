@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { Nav } from './components/Nav';
 import { UpdateBanner } from './components/UpdateBanner';
 import { LessonsView } from './views/LessonsView';
@@ -18,6 +18,15 @@ import { useEffect } from 'react';
 import { loadOverrides } from './lib/contentOverrides';
 import { ProgressSync } from './components/ProgressSync';
 
+/** A new page (e.g. the next lesson) opens at its top, with the lesson introduction in view. */
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
+
 function AppLayout() {
   // Admin live edits (content_override) on top of the bundled lesson JSON.
   useEffect(() => {
@@ -27,6 +36,7 @@ function AppLayout() {
     <>
       <UpdateBanner />
       <ProgressSync />
+      <ScrollToTop />
       <Nav />
       <main>
         <Routes>

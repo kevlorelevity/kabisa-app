@@ -80,6 +80,7 @@ export function DialoguePlayer({ turns, onComplete, review = false, typing }: Di
 
   function pick(swahili: string, correct: boolean) {
     if (correctPick) return; // already advancing
+    interacted.current = true;
     if (correct) {
       setWrongPick(null);
       setCorrectPick(swahili);
@@ -96,11 +97,13 @@ export function DialoguePlayer({ turns, onComplete, review = false, typing }: Di
 
   const settled = turns.slice(0, revealedCount);
   const endRef = useRef<HTMLDivElement>(null);
+  const interacted = useRef(false);
   const answering = current?.role === 'user';
 
-  // Keep the newest line and the answer options in view as the chat grows.
+  // Keep the newest line and the answer options in view as the chat grows — but only once the
+  // learner has started answering, so the lesson's introduction stays readable on arrival.
   useEffect(() => {
-    if (revealedCount === 0 || review) return;
+    if (revealedCount === 0 || review || !interacted.current) return;
     endRef.current?.scrollIntoView?.({ block: 'nearest', behavior: 'smooth' });
   }, [revealedCount, answering, review]);
 

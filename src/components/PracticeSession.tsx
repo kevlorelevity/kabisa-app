@@ -52,8 +52,13 @@ export function PracticeSession({ items, onFinish, resultSlot, review = false, t
     return () => document.body.classList.remove('ksa-answer-tray');
   }, [finished, items.length]);
 
-  // Bring the explanation (and the next item) into view.
+  // Bring the explanation (and the next item) into view — not on arrival, so the intro stays readable.
+  const started = useRef(false);
   useEffect(() => {
+    if (!started.current) {
+      started.current = true;
+      return;
+    }
     endRef.current?.scrollIntoView?.({ block: 'nearest', behavior: 'smooth' });
   }, [solved, index]);
 
