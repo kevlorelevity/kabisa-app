@@ -1440,6 +1440,10 @@
       "nounForms": {
         "one": "mwalimu",
         "many": "walimu"
+      },
+      "englishForms": {
+        "one": "teacher",
+        "many": "teachers"
       }
     },
     {
@@ -1469,6 +1473,10 @@
       "partOfSpeech": "phrase",
       "nounForms": {
         "one": "hali ya hewa",
+        "many": null
+      },
+      "englishForms": {
+        "one": "weather",
         "many": null
       }
     },

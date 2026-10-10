@@ -97,4 +97,11 @@ describe('noun singular / plural on vocabulary', () => {
     expect(find('shule')).toEqual({ one: 'shule', many: 'shule' });
     expect(all.filter((v) => v.nounForms).length).toBeGreaterThan(140);
   });
+  it('every noun also has its English singular / plural, and no English ends in a stray "|"', async () => {
+    const files = import.meta.glob('../content/lessons/*.json', { eager: true }) as Record<string, { default: { vocabulary: Array<{ swahili: string; english: string; nounForms?: unknown; englishForms?: { one: string | null; many: string | null } }> } }>;
+    const all = Object.values(files).flatMap((m) => m.default.vocabulary);
+    expect(all.filter((v) => v.nounForms && !v.englishForms)).toEqual([]);
+    expect(all.find((v) => v.swahili === 'viatu')?.englishForms).toEqual({ one: 'shoe', many: 'shoes' });
+    expect(all.filter((v) => /\|\s*$/.test(v.english))).toEqual([]);
+  });
 });

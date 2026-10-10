@@ -889,7 +889,7 @@
     {
       "id": "4ec00fbf-08aa-540f-88bc-a28289840d66",
       "swahili": "asubuhi / mchana / jioni / usiku",
-      "english": "morning / afternoon / evening / night |",
+      "english": "morning / afternoon / evening / night",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -933,7 +933,7 @@
     {
       "id": "63b6b7bc-32df-572a-b2dc-9424a1f4b90e",
       "swahili": "kila siku",
-      "english": "every day |",
+      "english": "every day",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     }

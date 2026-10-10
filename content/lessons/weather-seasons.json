@@ -756,6 +756,10 @@
       "nounForms": {
         "one": "hali ya hewa",
         "many": null
+      },
+      "englishForms": {
+        "one": "weather",
+        "many": null
       }
     },
     {
@@ -773,6 +777,10 @@
       "nounForms": {
         "one": "mvua",
         "many": "mvua"
+      },
+      "englishForms": {
+        "one": "rain",
+        "many": "rains"
       }
     },
     {
@@ -783,25 +791,37 @@
       "nounForms": {
         "one": "jua",
         "many": null
+      },
+      "englishForms": {
+        "one": "sun",
+        "many": null
       }
     },
     {
       "id": "ce4fd476-4855-5c56-9e33-670b5fef5a9f",
       "swahili": "upepo",
-      "english": "wind |",
+      "english": "wind",
       "exampleContext": "",
       "nounForms": {
         "one": "upepo",
         "many": "pepo"
+      },
+      "englishForms": {
+        "one": "wind",
+        "many": "winds"
       }
     },
     {
       "id": "8f1943b0-faa5-571f-9643-bf7fb299dfc5",
       "swahili": "anga",
-      "english": "sky |",
+      "english": "sky",
       "exampleContext": "",
       "nounForms": {
         "one": "anga",
+        "many": null
+      },
+      "englishForms": {
+        "one": "sky",
         "many": null
       }
     },
@@ -813,6 +833,10 @@
       "nounForms": {
         "one": "msimu",
         "many": "misimu"
+      },
+      "englishForms": {
+        "one": "season",
+        "many": "seasons"
       }
     },
     {
@@ -829,6 +853,10 @@
       "exampleContext": "Sanifu: ki/vi class",
       "nounForms": {
         "one": "kiangazi",
+        "many": null
+      },
+      "englishForms": {
+        "one": "dry season",
         "many": null
       }
     },
@@ -847,26 +875,38 @@
       "nounForms": {
         "one": "mwaka",
         "many": "miaka"
+      },
+      "englishForms": {
+        "one": "year",
+        "many": "years"
       }
     },
     {
       "id": "e6d3e64a-a261-5bf2-b097-2f8bfdf73429",
       "swahili": "mwavuli",
-      "english": "umbrella |",
+      "english": "umbrella",
       "exampleContext": "",
       "nounForms": {
         "one": "mwavuli",
         "many": "miavuli"
+      },
+      "englishForms": {
+        "one": "umbrella",
+        "many": "umbrellas"
       }
     },
     {
       "id": "75d9960c-aa11-5379-9b2f-effea9de5fc6",
       "swahili": "koti",
-      "english": "jacket / coat |",
+      "english": "jacket / coat",
       "exampleContext": "",
       "nounForms": {
         "one": "koti",
         "many": "makoti"
+      },
+      "englishForms": {
+        "one": "jacket, coat",
+        "many": "jackets, coats"
       }
     }
   ],

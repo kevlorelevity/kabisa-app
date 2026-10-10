@@ -1267,6 +1267,10 @@
       "nounForms": {
         "one": "mbuga ya wanyama",
         "many": "mbuga za wanyama"
+      },
+      "englishForms": {
+        "one": "game park",
+        "many": "game parks"
       }
     },
     {
@@ -1277,6 +1281,10 @@
       "nounForms": {
         "one": "simba",
         "many": "simba"
+      },
+      "englishForms": {
+        "one": "lion",
+        "many": "lions"
       }
     },
     {
@@ -1287,6 +1295,10 @@
       "nounForms": {
         "one": "twiga",
         "many": "twiga"
+      },
+      "englishForms": {
+        "one": "giraffe",
+        "many": "giraffes"
       }
     },
     {
@@ -1297,6 +1309,10 @@
       "nounForms": {
         "one": "tembo",
         "many": "tembo"
+      },
+      "englishForms": {
+        "one": "elephant",
+        "many": "elephants"
       }
     },
     {
@@ -1307,16 +1323,24 @@
       "nounForms": {
         "one": "kiboko",
         "many": "viboko"
+      },
+      "englishForms": {
+        "one": "hippo",
+        "many": "hippos"
       }
     },
     {
       "id": "04567c8f-3ebf-5a75-8f9c-11fc7c4eccc1",
       "swahili": "chui",
-      "english": "leopard |",
+      "english": "leopard",
       "exampleContext": "",
       "nounForms": {
         "one": "chui",
         "many": "chui"
+      },
+      "englishForms": {
+        "one": "leopard",
+        "many": "leopards"
       }
     },
     {
@@ -1327,16 +1351,24 @@
       "nounForms": {
         "one": "pundamilia",
         "many": "pundamilia"
+      },
+      "englishForms": {
+        "one": "zebra",
+        "many": "zebras"
       }
     },
     {
       "id": "241d0279-ab5d-5fc3-9a99-56d810aab293",
       "swahili": "nyumbu",
-      "english": "wildebeest |",
+      "english": "wildebeest",
       "exampleContext": "",
       "nounForms": {
         "one": "nyumbu",
         "many": "nyumbu"
+      },
+      "englishForms": {
+        "one": "wildebeest",
+        "many": "wildebeest"
       }
     },
     {
@@ -1347,6 +1379,10 @@
       "nounForms": {
         "one": "ndege",
         "many": "ndege"
+      },
+      "englishForms": {
+        "one": "bird",
+        "many": "birds"
       }
     },
     {
@@ -1357,17 +1393,25 @@
       "nounForms": {
         "one": "mto",
         "many": "mito"
+      },
+      "englishForms": {
+        "one": "river",
+        "many": "rivers"
       }
     },
     {
       "id": "c815647f-14ab-54ea-ab67-2181d7f69b5c",
       "swahili": "mti / miti",
-      "english": "tree / trees |",
+      "english": "tree / trees",
       "exampleContext": "",
       "partOfSpeech": "phrase",
       "nounForms": {
         "one": "mti",
         "many": "miti"
+      },
+      "englishForms": {
+        "one": "tree",
+        "many": "trees"
       }
     },
     {
@@ -1384,6 +1428,10 @@
       "nounForms": {
         "one": "hatari",
         "many": "hatari"
+      },
+      "englishForms": {
+        "one": "danger",
+        "many": "dangers"
       }
     }
   ],

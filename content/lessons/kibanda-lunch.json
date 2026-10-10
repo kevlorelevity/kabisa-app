@@ -1198,6 +1198,10 @@
       "nounForms": {
         "one": "haragwe",
         "many": "maharagwe"
+      },
+      "englishForms": {
+        "one": "bean",
+        "many": "beans"
       }
     },
     {
@@ -1208,6 +1212,10 @@
       "nounForms": {
         "one": "chapati",
         "many": "chapati"
+      },
+      "englishForms": {
+        "one": "chapati",
+        "many": "chapatis"
       }
     },
     {
@@ -1220,7 +1228,7 @@
     {
       "id": "5430ab26-e941-5f23-9f3f-6a35e867fe8d",
       "swahili": "Inanukia vizuri",
-      "english": "It smells good |",
+      "english": "It smells good",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1236,7 +1244,7 @@
     {
       "id": "59ac3c09-fd85-5654-ba9f-2fc3c21acc6e",
       "swahili": "Ni pesa ngapi?",
-      "english": "How much is it? |",
+      "english": "How much is it?",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1256,7 +1264,7 @@
     {
       "id": "d008b2fa-48ae-500a-9f7b-6eb375429ba0",
       "swahili": "Nitarudi kesho",
-      "english": "I'll come back tomorrow |",
+      "english": "I'll come back tomorrow",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     }

@@ -1346,6 +1346,10 @@
       "nounForms": {
         "one": "daraja",
         "many": "madaraja"
+      },
+      "englishForms": {
+        "one": "bridge",
+        "many": "bridges"
       }
     },
     {
@@ -1356,6 +1360,10 @@
       "nounForms": {
         "one": "kilima",
         "many": "vilima"
+      },
+      "englishForms": {
+        "one": "hill",
+        "many": "hills"
       }
     },
     {
@@ -1367,6 +1375,10 @@
       "nounForms": {
         "one": "taa ya barabarani",
         "many": "taa za barabarani"
+      },
+      "englishForms": {
+        "one": "traffic light",
+        "many": "traffic lights"
       }
     },
     {
@@ -1377,6 +1389,10 @@
       "nounForms": {
         "one": "njia",
         "many": "njia"
+      },
+      "englishForms": {
+        "one": "way, route",
+        "many": "ways, routes"
       }
     }
   ],

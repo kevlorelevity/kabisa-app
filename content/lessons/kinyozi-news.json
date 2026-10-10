@@ -916,41 +916,49 @@
     {
       "id": "c452501f-656c-508e-a232-d05f78b6c4bb",
       "swahili": "kinyozi",
-      "english": "barber / barber shop |",
+      "english": "barber / barber shop",
       "exampleContext": "",
       "nounForms": {
         "one": "kinyozi",
         "many": "vinyozi"
+      },
+      "englishForms": {
+        "one": "barber, barber shop",
+        "many": "barbers, barber shops"
       }
     },
     {
       "id": "20a1f8fa-3b96-51a8-ae96-4482a4c43d51",
       "swahili": "Kama kawaida",
-      "english": "As usual |",
+      "english": "As usual",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "f38900b9-9dbd-55ee-b50f-eae9dc0224ad",
       "swahili": "imekuwa ikinyesha",
-      "english": "it's been raining |",
+      "english": "it's been raining",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "a5468a4f-a276-5634-b3b1-3ff7fbd193c1",
       "swahili": "mafuriko",
-      "english": "floods |",
+      "english": "floods",
       "exampleContext": "",
       "nounForms": {
         "one": null,
         "many": "mafuriko"
+      },
+      "englishForms": {
+        "one": null,
+        "many": "floods"
       }
     },
     {
       "id": "1793a458-8341-5f0d-8360-3f7f03bed2e5",
       "swahili": "mtaa wetu",
-      "english": "our neighbourhood |",
+      "english": "our neighbourhood",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -970,11 +978,15 @@
     {
       "id": "2d499cfd-d512-5f4b-8974-638260983d54",
       "swahili": "mheshimiwa",
-      "english": "the honourable (MP) |",
+      "english": "the honourable (MP)",
       "exampleContext": "",
       "nounForms": {
         "one": "mheshimiwa",
         "many": "waheshimiwa"
+      },
+      "englishForms": {
+        "one": "the honourable (MP)",
+        "many": "the honourables (MPs)"
       }
     },
     {
@@ -986,21 +998,21 @@
     {
       "id": "d97ae371-ee33-52ff-bd2b-002ab56a5ff5",
       "swahili": "kama angetimiza ahadi…",
-      "english": "if he had kept his promise… |",
+      "english": "if he had kept his promise…",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "61a8c1bc-0844-57e2-b321-8bd46d2d004e",
       "swahili": "Huenda…",
-      "english": "Maybe… / It might… |",
+      "english": "Maybe… / It might…",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "50ff7658-4531-55b3-9f43-1e397b415bd6",
       "swahili": "haitabiriki",
-      "english": "it can't be predicted |",
+      "english": "it can't be predicted",
       "exampleContext": ""
     },
     {
@@ -1013,7 +1025,7 @@
     {
       "id": "3928e71d-b7b0-5912-817b-d1ff1a2dc498",
       "swahili": "Umependeza!",
-      "english": "You look sharp! |",
+      "english": "You look sharp!",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     }

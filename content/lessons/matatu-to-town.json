@@ -1056,6 +1056,10 @@
       "nounForms": {
         "one": "tao",
         "many": null
+      },
+      "englishForms": {
+        "one": "town (the CBD)",
+        "many": null
       }
     },
     {
@@ -1066,6 +1070,10 @@
       "nounForms": {
         "one": "makanga",
         "many": "makanga"
+      },
+      "englishForms": {
+        "one": "matatu conductor",
+        "many": "matatu conductors"
       }
     },
     {
@@ -1077,7 +1085,7 @@
     {
       "id": "7b3d6c53-98ba-506e-9fea-80be0bb26d85",
       "swahili": "Nitashuka…",
-      "english": "I'll get off at… |",
+      "english": "I'll get off at…",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1099,6 +1107,10 @@
       "nounForms": {
         "one": "kiti ya mbele",
         "many": "viti za mbele"
+      },
+      "englishForms": {
+        "one": "front seat",
+        "many": "front seats"
       }
     },
     {
@@ -1117,7 +1129,7 @@
     {
       "id": "069a99b6-cb9c-56d3-b8a3-08554a1c8333",
       "swahili": "Uliza tu",
-      "english": "Just ask |",
+      "english": "Just ask",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     }

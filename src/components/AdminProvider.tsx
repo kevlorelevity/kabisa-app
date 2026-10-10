@@ -9,38 +9,37 @@ import {
   retireGuidance,
   saveGuidance,
   saveNotePatch,
+  answerQuestion,
+  clearPendingSwaps,
+  loadJobPatches,
   submitAiEdit,
+  submitFollowup,
   submitSuggestion,
   undoAiJob,
   type AiJob,
   type GuidanceNote,
-  type SuggestionKind,
 } from '../lib/admin';
 import {
   addOverrides,
   addPatches,
-  countPropagation,
+  allLessons,
+  changedSpan,
   countWordPlaces,
   resolveOverride,
   scopeContent,
-  type ContentPatch,
+  swahiliSpans,
+  type ContentOverride,
   type PatchScope,
   type ScopeType,
+  type Span,
 } from '../lib/contentOverrides';
-import { getSupabase } from '../lib/supabase';
-import { AdminContext, type SuggestTarget } from './adminContext';
+import { findCandidates, type EditedKind, type FollowupInput, type FollowupQuestion } from '../lib/aiFollowup';
+import { AdminContext, type EditField, type SuggestTarget } from './adminContext';
+import { defaultFields } from './adminTargets';
 import { setRoamAllowed } from '../lib/roam';
 import { reglossInstruction } from '../lib/aiPatch';
-import { personalizeText } from '../lib/personalize';
 import type { Lesson } from '../types';
 
-const KINDS: Array<{ id: SuggestionKind; label: string }> = [
-  { id: 'phrasing', label: 'Phrasing' },
-  { id: 'translation', label: 'Translation' },
-  { id: 'grammar', label: 'Grammar' },
-  { id: 'layout', label: 'Layout' },
-  { id: 'other', label: 'Other' },
-];
 
 // ---------- background operations ----------
 
@@ -54,6 +53,15 @@ interface Op {
 
 type Enqueue = (label: string, run: Op['run']) => void;
 type StartAi = (input: Parameters<typeof submitAiEdit>[0]) => void;
+/** Context-aware follow-up of an edit; with `regloss`, the line's tooltips are redone first. */
+type StartFollowup = (input: FollowupInput, regloss?: Parameters<typeof submitAiEdit>[0]) => void;
+
+/** A dialogue turn, practice item or flashcard of a lesson, by id (as it is now). */
+function scopeItem(lesson: Lesson, id?: string): unknown {
+  if (!id) return undefined;
+  const hit = lesson.turns.find((t) => t.id === id) ?? lesson.practice?.find((p) => p.id === id) ?? lesson.vocabulary?.find((v) => v.id === id);
+  return hit ? structuredClone(hit) : undefined;
+}
 
 const uid = () => globalThis.crypto?.randomUUID?.() ?? `op-${Date.now()}-${Math.random().toString(36).slice(2)}`;
 
@@ -98,17 +106,29 @@ const primary = 'w-full rounded-full bg-amber-500 px-4 py-2.5 text-sm font-semib
 
 // ---------- the ✎ modal: edit text · ask the AI · leave a note ----------
 
-function SuggestModal({ target, onClose, enqueue, startAi }: { target: SuggestTarget; onClose: () => void; enqueue: Enqueue; startAi: StartAi }) {
+function SuggestModal({
+  target,
+  onClose,
+  enqueue,
+  startAi,
+  startFollowup,
+}: {
+  target: SuggestTarget;
+  onClose: () => void;
+  enqueue: Enqueue;
+  startAi: StartAi;
+  startFollowup: StartFollowup;
+}) {
   const { pathname } = useLocation();
   const { profile, persona } = useProfile();
   const [mode, setMode] = useState<'edit' | 'ai' | 'learner' | 'note'>('edit');
-  const [kind, setKind] = useState<SuggestionKind>('phrasing');
-  const [why, setWhy] = useState('');
-  const [proposed, setProposed] = useState(target.currentText);
+  const fields = useMemo(() => defaultFields(target), [target]);
+  const [values, setValues] = useState<Record<string, string>>(() => Object.fromEntries(fields.map((f) => [f.key, f.text])));
+  const [context, setContext] = useState('');
+  const [checkOthers, setCheckOthers] = useState(true);
   const [instruction, setInstruction] = useState('');
   const [note, setNote] = useState('');
   const lessonId = target.lessonId ?? pathname.match(/^\/lesson\/([^/]+)/)?.[1];
-  const textChanged = proposed.trim() !== '' && proposed.trim() !== target.currentText.trim();
 
   // Which bundled content this element lives in (for live edits).
   const scope = useMemo(() => {
@@ -160,83 +180,165 @@ function SuggestModal({ target, onClose, enqueue, startAi }: { target: SuggestTa
   const [learnerSanifu, setLearnerSanifu] = useState(aiTarget?.sanifu ?? '');
   const canNote = Boolean(aiTarget && lessonId && aiTarget.kind !== 'practice');
 
-  const [everywhere, setEverywhere] = useState(true);
   const itemIdForOverride = target.targetType.startsWith('grammar') || target.targetType === 'level' ? undefined : target.itemId;
-  const pending = useMemo(
-    () => (textChanged ? resolveOverride(scope, itemIdForOverride, target.currentText.trim(), proposed.trim(), persona) : null),
-    [textChanged, scope, itemIdForOverride, target.currentText, proposed, persona],
-  );
-  const others = useMemo(() => (pending && scope ? countPropagation(scope.content, pending) : 0), [pending, scope]);
 
-  // Editing a dialogue line: its English subtitle is edited in the same place.
-  const lineTurn = target.targetType === 'turn.swahili' && aiTarget?.kind === 'turn' ? aiTarget.current : undefined;
-  const shownEnglish = lineTurn ? personalizeText(lineTurn.english, persona, false) : '';
-  const [english, setEnglish] = useState(shownEnglish);
-  const englishChanged = Boolean(lineTurn) && english.trim() !== '' && english.trim() !== shownEnglish.trim();
-  const englishPending = useMemo(
-    () => (englishChanged ? resolveOverride(scope, target.itemId, shownEnglish.trim(), english.trim(), persona) : null),
-    [englishChanged, scope, target.itemId, shownEnglish, english, persona],
+  // What the admin changed, field by field, and how each change is stored.
+  const plan = useMemo(() => {
+    const overrides: Array<{ field: EditField; override: Omit<ContentOverride, 'id'> }> = [];
+    const merges: Array<{ field: EditField; next: string }> = [];
+    const unplaced: Array<{ field: EditField; next: string }> = [];
+    const spans: Span[] = [];
+    // A word edit that changes both the word and its meaning: the line is rewritten and the new
+    // word is underlined with the admin's meaning (a 'word' patch) — no automatic re-gloss.
+    const wf = fields.find((f) => f.inLine);
+    const gf = fields.find((f) => f.key === 'en' && target.targetType === 'word.gloss');
+    const wordGloss =
+      wf && gf && (values[wf.key] ?? '').trim() && (values[wf.key] ?? '').trim() !== wf.text.trim() && (values[gf.key] ?? '').trim() !== gf.text.trim()
+        ? { text: (values[wf.key] ?? '').trim(), gloss: (values[gf.key] ?? '').trim(), field: gf }
+        : null;
+    for (const f of fields) {
+      const next = (values[f.key] ?? '').trim();
+      if (next === f.text.trim()) continue;
+      if (f.merge) {
+        merges.push({ field: f, next });
+        const sp = f.lang === 'sw' && f.text.trim() && next ? changedSpan(f.text.trim(), next) : null;
+        if (sp && !spans.some((x) => x.from === sp.from)) spans.push(sp);
+        continue;
+      }
+      if (!next) continue;
+      if (wordGloss && f.key === 'en') continue; // stored with the word below
+      const cur = (f.inLine ?? f.text).trim();
+      const nxt = (f.inLine ? f.inLine.replace(f.text, next) : next).trim();
+      const o = resolveOverride(scope, itemIdForOverride, cur, nxt, persona);
+      if (!o) {
+        unplaced.push({ field: f, next });
+        continue;
+      }
+      overrides.push({ field: f, override: { ...o, propagate: false } });
+      if (f.lang === 'sw' && scope) for (const sp of swahiliSpans(scope.content, o)) if (!spans.some((x) => x.from === sp.from)) spans.push(sp);
+    }
+    return { overrides, merges, unplaced, spans, wordGloss, changed: overrides.length + merges.length + unplaced.length + (wordGloss ? 1 : 0) > 0 };
+  }, [fields, values, scope, itemIdForOverride, persona, target.targetType]);
+  const spanKey = plan.spans.map((x) => `${x.from}→${x.to}`).join('|');
+  // Other dialogue lines, practice items and flashcards (all lessons) that use the old wording.
+  const others = useMemo(
+    () => (spanKey && scope?.type === 'lesson' ? findCandidates(allLessons(), plan.spans, target.itemId).length : 0),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [spanKey, scope, target.itemId],
   );
 
   function saveEdit() {
-    const override = pending ? { ...pending, propagate: everywhere && others > 0 } : null;
-    const englishOverride = englishPending ? { ...englishPending, propagate: false } : null;
-    // Show the new text right away; the server catches up in the background.
-    if (override) addOverrides([{ id: `local-${uid()}`, created_at: new Date().toISOString(), ...override }]);
-    if (englishOverride) {
-      addOverrides([{ id: `local-${uid()}`, created_at: new Date().toISOString(), ...englishOverride }]);
-      enqueue(`Edit · English · ${target.label}`, async () => {
+    const ctx = context.trim();
+    const lesson = scope?.type === 'lesson' ? (scope.content as Lesson) : undefined;
+    const now = () => new Date().toISOString();
+    // 1. Show the new text right away (only here — other places are checked by the AI below).
+    if (plan.overrides.length) addOverrides(plan.overrides.map((x) => ({ id: `local-${uid()}`, created_at: now(), ...x.override })));
+    // Stored only after the line edit, so it applies in the right order on everyone's next load.
+    let wordRow: Parameters<typeof saveNotePatch>[0] | null = null;
+    if (plan.wordGloss && lessonId && target.itemId) {
+      const row = { lesson_id: lessonId, scope: 'word' as PatchScope, item_id: target.itemId, value: { text: plan.wordGloss.text, gloss: plan.wordGloss.gloss } };
+      addPatches([{ id: `local-${uid()}`, created_at: now(), ...row }]);
+      wordRow = row;
+    }
+    let mergeRow: { lesson_id: string; scope: PatchScope; item_id: string; value: Record<string, unknown> } | null = null;
+    if (plan.merges.length && lessonId && target.itemId) {
+      const value: Record<string, unknown> = {};
+      for (const { field, next } of plan.merges) {
+        const m = field.merge!;
+        const base = (value[m.key] as typeof m.base | undefined) ?? { ...m.base };
+        value[m.key] = { ...base, [m.sub]: next || null };
+        if (m.also && next) value[m.also] = next;
+      }
+      mergeRow = { lesson_id: lessonId, scope: 'fields', item_id: target.itemId, value };
+      addPatches([{ id: `local-${uid()}`, created_at: now(), ...mergeRow }]);
+      const row = mergeRow;
+      enqueue(`Edit · ${target.label}`, () => saveNotePatch(row));
+    }
+
+    // 2. Store each change (and the review trail) in the background.
+    const swChanged = fields.some((f) => f.lang === 'sw' && (values[f.key] ?? '').trim() !== f.text.trim());
+    const records = [
+      ...plan.overrides.map((x) => ({ field: x.field, override: x.override as Omit<ContentOverride, 'id'> | undefined, next: x.override.replace_text })),
+      ...[...plan.merges, ...plan.unplaced].map((x) => ({ field: x.field, override: undefined, next: x.next })),
+      ...(plan.wordGloss ? [{ field: plan.wordGloss.field, override: undefined, next: plan.wordGloss.gloss }] : []),
+    ];
+    records.forEach((r, i) => {
+      enqueue(`Edit · ${r.field.label} · ${target.label}`, async () => {
         const res = await submitSuggestion({
           ...target,
-          targetType: 'turn.english',
-          currentText: shownEnglish,
           lessonId,
-          kind: 'translation',
-          proposedText: english.trim(),
-          override: englishOverride,
+          kind: r.field.lang === 'sw' ? 'phrasing' : 'translation',
+          currentText: r.field.text,
+          suggestion: i === 0 && ctx ? ctx : undefined,
+          proposedText: r.next || '(removed)',
+          override: r.override,
           page: window.location.href,
           reviewerName: profile?.displayName,
         });
+        if (res.ok && wordRow && r.field.inLine) return saveNotePatch(wordRow);
+        return { ok: res.ok, error: res.error };
+      });
+    });
+    if (!records.length && ctx) {
+      enqueue(`Suggestion · ${target.label}`, async () => {
+        const res = await submitSuggestion({ ...target, lessonId, kind: 'other', suggestion: ctx, page: window.location.href, reviewerName: profile?.displayName });
         return { ok: res.ok, error: res.error };
       });
     }
-    // A dialogue line's Swahili changed: the underlines were re-aligned right away; now have the AI
-    // redo the tooltips (and the English, if the meaning changed) for the new wording.
-    const lesson = scope?.type === 'lesson' ? (scope.content as Lesson) : undefined;
-    const editedTurn = override && lesson && target.itemId ? lesson.turns.find((t) => t.id === target.itemId) : undefined;
-    if (override && lesson && editedTurn && lessonId && editedTurn.swahili.includes(override.replace_text.trim().slice(0, 40))) {
-      startAi({
-        lessonId,
-        scope: 'item',
-        kind: 'turn',
-        itemId: editedTurn.id,
-        targetLabel: `Tooltips · ${target.label}`,
-        instruction: reglossInstruction(override.find_text, override.replace_text, Boolean(englishOverride)),
-        lesson: lessonContext(lesson),
-        current: structuredClone(editedTurn),
-        regloss: true,
-        keepEnglish: Boolean(englishOverride),
-      });
-    }
-    const reason = why.trim();
-    if (!textChanged && !reason) {
-      onClose();
-      return;
-    }
-    enqueue(textChanged ? `Edit · ${target.label}` : `Suggestion · ${target.label}`, async () => {
-      const res = await submitSuggestion({
-        ...target,
-        lessonId,
-        kind,
-        suggestion: reason || undefined,
-        proposedText: textChanged ? proposed.trim() : undefined,
-        override: override ?? undefined,
-        page: window.location.href,
-        reviewerName: profile?.displayName,
-      });
-      if (res.ok && reason) await saveGuidance({ text: reason, lessonId, itemId: target.itemId, targetLabel: target.label });
-      return { ok: res.ok, error: res.error };
-    });
+    // The context becomes a team rule every AI edit reads from now on.
+    if (ctx) enqueue(`Team rule · ${target.label}`, async () => ({ ok: await saveGuidance({ text: ctx, lessonId, itemId: target.itemId, targetLabel: target.label }) }));
+
+    // 3. A dialogue line's Swahili changed: the underlines were re-aligned right away; the AI redoes the tooltips.
+    const lineOverride = plan.overrides.find((x) => x.field.lang === 'sw' && (target.targetType === 'turn.swahili' || x.field.inLine))?.override;
+    const editedTurn = lineOverride && lesson && target.itemId ? lesson.turns.find((t) => t.id === target.itemId) : undefined;
+    const englishSet = plan.overrides.some((x) => x.field.lang === 'en' && target.targetType === 'turn.swahili');
+    // A word edit that also set the word's meaning keeps that meaning: no automatic re-gloss then.
+    const glossSet = Boolean(plan.wordGloss);
+    const regloss =
+      lineOverride && !glossSet && lesson && editedTurn && lessonId && editedTurn.swahili.includes(lineOverride.replace_text.trim().slice(0, 40))
+        ? {
+            lessonId,
+            scope: 'item' as const,
+            kind: 'turn' as const,
+            itemId: editedTurn.id,
+            targetLabel: `Tooltips · ${target.label}`,
+            instruction: reglossInstruction(lineOverride.find_text, lineOverride.replace_text, englishSet),
+            lesson: lessonContext(lesson),
+            current: structuredClone(editedTurn),
+            regloss: true,
+            keepEnglish: englishSet,
+          }
+        : undefined;
+
+    // 4. Carry the change to the other places it belongs (by meaning, using the context) and add a learner note.
+    const kind: EditedKind | null = aiTarget?.kind ?? null;
+    const candidates = checkOthers && plan.spans.length ? findCandidates(allLessons(), plan.spans, target.itemId) : [];
+    const makeNote = Boolean(lesson && kind && plan.changed && (ctx || swChanged));
+    if (lesson && lessonId && plan.changed && (candidates.length || makeNote)) {
+      const fresh = aiTarget ? scopeItem(lesson, target.itemId) : undefined;
+      const wordField = kind === 'word' ? fields.find((f) => f.key === 'sw') : undefined;
+      const wordText = wordField ? ((values[wordField.key] ?? '').trim() || wordField.text) : undefined;
+      startFollowup(
+        {
+          lessonId,
+          lessonTitle: lesson.title,
+          itemId: target.itemId,
+          itemKind: kind,
+          wordIndex: target.wordIndex,
+          wordText,
+          targetLabel: target.label,
+          changes: records.map((r) => ({ label: r.field.label, lang: r.field.lang, before: r.field.text, after: r.next })),
+          context: ctx || undefined,
+          spans: plan.spans,
+          edited: fresh,
+          currentNote: aiTarget?.note || undefined,
+          makeNote,
+          candidates,
+          source: 'edit',
+        },
+        regloss,
+      );
+    } else if (regloss) startAi(regloss);
     onClose();
   }
 
@@ -295,9 +397,11 @@ function SuggestModal({ target, onClose, enqueue, startAi }: { target: SuggestTa
 
   return (
     <Sheet title="✎ Admin" subtitle={`${target.label}${lessonId ? ` · ${lessonId}` : ''}`} onClose={onClose}>
-      <blockquote className="rounded-lg border-l-4 border-amber-300 bg-amber-50 px-3 py-2 text-sm text-gray-800 whitespace-pre-wrap">
-        {target.currentText || <span className="text-gray-400">(no text)</span>}
-      </blockquote>
+      {mode !== 'edit' && (
+        <blockquote className="rounded-lg border-l-4 border-amber-300 bg-amber-50 px-3 py-2 text-sm text-gray-800 whitespace-pre-wrap">
+          {target.currentText || <span className="text-gray-400">(no text)</span>}
+        </blockquote>
+      )}
       <div role="tablist" className="flex gap-1 rounded-full border border-gray-200 p-1">
         {tab('edit', 'Edit')}
         {tab('ai', '✨ Ask AI')}
@@ -307,60 +411,67 @@ function SuggestModal({ target, onClose, enqueue, startAi }: { target: SuggestTa
 
       {mode === 'edit' && (
         <>
-          <label className="block">
-            <span className="text-sm font-semibold text-gray-800">
-              New text <span className="font-normal text-gray-400">{scope ? '— goes live as soon as you save' : '(optional)'}</span>
-            </span>
-            <textarea value={proposed} onChange={(e) => setProposed(e.target.value)} rows={3} autoFocus className={field} />
-          </label>
-          {lineTurn && (
-            <label className="block">
-              <span className="text-sm font-semibold text-gray-800">English subtitle</span>
-              <textarea value={english} onChange={(e) => setEnglish(e.target.value)} rows={2} className={field} />
-              {textChanged && !englishChanged && (
-                <span className="block mt-1 text-xs text-gray-400">Leave it as is and the AI updates it if the meaning changed.</span>
+          {fields.map((f, idx) => (
+            <label key={f.key} className="block">
+              <span className="text-sm font-semibold text-gray-800">
+                {f.label}
+                {idx === 0 && <span className="font-normal text-gray-400">{scope ? ' — goes live as soon as you save' : ' (optional)'}</span>}
+              </span>
+              {f.multiline ? (
+                <textarea
+                  value={values[f.key] ?? ''}
+                  onChange={(e) => setValues((v) => ({ ...v, [f.key]: e.target.value }))}
+                  rows={f.lang === 'sw' && f.key === 'text' ? 3 : 2}
+                  autoFocus={idx === 0}
+                  placeholder={f.placeholder}
+                  lang={f.lang === 'sw' ? 'sw' : 'en'}
+                  className={field}
+                />
+              ) : (
+                <input
+                  value={values[f.key] ?? ''}
+                  onChange={(e) => setValues((v) => ({ ...v, [f.key]: e.target.value }))}
+                  autoFocus={idx === 0}
+                  placeholder={f.placeholder}
+                  lang={f.lang === 'sw' ? 'sw' : 'en'}
+                  className={field}
+                />
               )}
             </label>
-          )}
-          {pending && others > 0 && (
+          ))}
+          <label className="block">
+            <span className="text-sm font-semibold text-gray-800">
+              Context <span className="font-normal text-gray-400">(optional, but it helps)</span>
+            </span>
+            <textarea
+              value={context}
+              onChange={(e) => setContext(e.target.value)}
+              rows={3}
+              placeholder="e.g. Kenyans say “saa moja” for 7 o'clock (Swahili time) and “lisaa limoja” for a duration of one hour — keep them apart."
+              className={field}
+            />
+            <span className="block mt-1 text-xs text-gray-500">
+              The AI uses it to carry this change only to the places where it fits, to write a 💡 note for learners when it’s worth
+              knowing, and keeps it as a team rule for future edits.
+            </span>
+          </label>
+          {others > 0 && (
             <label className="flex items-start gap-2 text-sm text-gray-700">
-              <input type="checkbox" checked={everywhere} onChange={(e) => setEverywhere(e.target.checked)} className="mt-0.5 accent-amber-500" />
+              <input type="checkbox" checked={checkOthers} onChange={(e) => setCheckOthers(e.target.checked)} className="mt-0.5 accent-amber-500" />
               <span>
-                Also change this wording in the {others} other {others === 1 ? 'place' : 'places'} it appears
-                <span className="text-gray-400"> (dialogues, answer choices, practice, flashcards — all lessons)</span>
+                Check the {others} other {others === 1 ? 'place' : 'places'} with “{plan.spans.map((x) => x.from).join('”, “')}”
+                <span className="text-gray-400">
+                  {' '}
+                  — the AI changes only those with the same meaning and asks you (Admin → Activity) when it isn’t sure
+                </span>
               </span>
             </label>
           )}
-          <label className="block">
-            <span className="text-sm font-semibold text-gray-800">
-              Why? <span className="font-normal text-gray-400">(optional — saved as a team rule the AI follows from now on)</span>
-            </span>
-            <textarea
-              value={why}
-              onChange={(e) => setWhy(e.target.value)}
-              rows={2}
-              placeholder="e.g. Nobody in Nairobi says this — people say … / Kenyans use 'ama', not 'au'"
-              className={field}
-            />
-          </label>
-          <div className="flex flex-wrap gap-1.5" role="radiogroup" aria-label="Type of change">
-            {KINDS.map((k) => (
-              <button
-                key={k.id}
-                type="button"
-                role="radio"
-                aria-checked={kind === k.id}
-                onClick={() => setKind(k.id)}
-                className={`px-3 py-1 rounded-full text-xs font-medium border ${
-                  kind === k.id ? 'bg-amber-500 border-amber-500 text-white' : 'border-gray-200 text-gray-600 hover:border-amber-400'
-                }`}
-              >
-                {k.label}
-              </button>
-            ))}
-          </div>
-          <button onClick={saveEdit} disabled={!textChanged && !englishChanged && !why.trim()} className={primary}>
-            {(textChanged || englishChanged) && scope ? 'Save & publish' : 'Save suggestion'}
+          {plan.unplaced.length > 0 && (
+            <p className="text-xs text-amber-800">This text couldn’t be located in the content — it’s saved as a suggestion for review.</p>
+          )}
+          <button onClick={saveEdit} disabled={!plan.changed && !context.trim()} className={primary}>
+            {plan.changed && scope ? 'Save & publish' : 'Save suggestion'}
           </button>
         </>
       )}
@@ -553,21 +664,59 @@ function DirectModal({ lessonId, scope, onClose, startAi }: { lessonId: string; 
 const STATUS: Record<AiJob['status'], { label: string; cls: string }> = {
   working: { label: 'Working…', cls: 'bg-amber-100 text-amber-800' },
   live: { label: 'Live', cls: 'bg-green-100 text-green-800' },
+  review: { label: 'Your call', cls: 'bg-sky-100 text-sky-800' },
   failed: { label: 'Failed', cls: 'bg-red-100 text-red-700' },
   undone: { label: 'Undone', cls: 'bg-gray-100 text-gray-500' },
 };
+
+/** One place the AI wasn't sure about: before → after, its question, and the admin's yes / no. */
+function QuestionCard({ q, onAnswer }: { q: FollowupQuestion; onAnswer: (yes: boolean) => Promise<void> }) {
+  const [busy, setBusy] = useState(false);
+  const answer = (yes: boolean) => {
+    setBusy(true);
+    void onAnswer(yes).finally(() => setBusy(false));
+  };
+  return (
+    <div className="rounded-lg bg-sky-50 border border-sky-100 p-2.5 space-y-1.5">
+      <p className="text-[11px] text-gray-500">
+        {q.lessonTitle} · {q.kind === 'turn' ? 'dialogue line' : q.kind === 'practice' ? 'practice' : 'flashcard'}
+      </p>
+      <p className="text-sm text-gray-500 line-through decoration-gray-300">{q.before}</p>
+      <p className="text-sm text-gray-900 font-medium">{q.after}</p>
+      {q.reason && <p className="text-xs text-sky-900">❓ {q.reason}</p>}
+      <div className="flex gap-2 pt-0.5">
+        <button
+          disabled={busy}
+          onClick={() => answer(true)}
+          className="rounded-full bg-amber-500 px-3 py-1 text-xs font-semibold text-white hover:bg-amber-600 disabled:opacity-40"
+        >
+          Change it
+        </button>
+        <button
+          disabled={busy}
+          onClick={() => answer(false)}
+          className="rounded-full border border-gray-300 px-3 py-1 text-xs font-semibold text-gray-700 hover:bg-white disabled:opacity-40"
+        >
+          Leave it
+        </button>
+      </div>
+    </div>
+  );
+}
 
 function ActivityModal({
   ops,
   jobs,
   onRetry,
   onUndo,
+  onAnswer,
   onClose,
 }: {
   ops: Op[];
   jobs: AiJob[];
   onRetry: (op: Op) => void;
   onUndo: (job: AiJob) => Promise<void>;
+  onAnswer: (job: AiJob, q: FollowupQuestion, yes: boolean) => Promise<void>;
   onClose: () => void;
 }) {
   const [notes, setNotes] = useState<GuidanceNote[] | null>(null);
@@ -575,6 +724,7 @@ function ActivityModal({
   useEffect(() => {
     void listGuidance().then(setNotes);
   }, []);
+  const review = jobs.filter((j) => j.status === 'review' && j.questions?.length);
   return (
     <Sheet title="Admin activity" onClose={onClose}>
       {undone && (
@@ -584,6 +734,19 @@ function ActivityModal({
             Reload
           </button>
         </div>
+      )}
+      {review.length > 0 && (
+        <section className="space-y-2">
+          <h3 className="text-xs font-semibold uppercase tracking-wide text-sky-700">❓ The AI needs your call</h3>
+          {review.map((j) => (
+            <div key={j.id} className="rounded-xl border border-sky-200 p-3 space-y-2">
+              <p className="text-xs text-gray-500">{j.instruction}</p>
+              {j.questions!.map((q) => (
+                <QuestionCard key={q.ref} q={q} onAnswer={(yes) => onAnswer(j, q, yes)} />
+              ))}
+            </div>
+          ))}
+        </section>
       )}
       {ops.length > 0 && (
         <section className="space-y-2">
@@ -611,14 +774,15 @@ function ActivityModal({
           <div key={j.id} className="rounded-xl border border-gray-200 p-3 space-y-1">
             <div className="flex items-center justify-between gap-2">
               <span className="text-xs text-gray-500 truncate">
-                {j.lesson_id} · {j.target_label ?? j.scope}
+                {j.lesson_id} · {j.scope === 'followup' ? 'Follow-up' : j.target_label ?? j.scope}
+                {j.scope === 'followup' && j.target_label ? ` · ${j.target_label}` : ''}
               </span>
               <span className={`shrink-0 text-[11px] font-semibold px-2 py-0.5 rounded-full ${STATUS[j.status].cls}`}>{STATUS[j.status].label}</span>
             </div>
             <p className="text-sm text-gray-800">“{j.instruction}”</p>
             {j.summary && <p className="text-xs text-green-800">{j.summary}</p>}
             {j.error && <p className="text-xs text-red-600">{j.error}</p>}
-            {j.status === 'live' && (
+            {(j.status === 'live' || j.status === 'review') && (
               <button
                 onClick={() => void onUndo(j).then(() => setUndone(true))}
                 className="text-xs font-semibold text-gray-500 underline hover:text-gray-800"
@@ -632,7 +796,7 @@ function ActivityModal({
       <section className="space-y-2">
         <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400">Team rules (the AI's style guide)</h3>
         {notes === null && <p className="text-sm text-gray-400">Loading…</p>}
-        {notes?.length === 0 && <p className="text-sm text-gray-400">No rules yet. Add one with ✎ → Team rule.</p>}
+        {notes?.length === 0 && <p className="text-sm text-gray-400">No rules yet. Add context when you edit, or ✎ → Team rule.</p>}
         {notes?.map((n) => (
           <div key={n.id} className="flex items-start justify-between gap-2 text-sm">
             <p className="text-gray-700">
@@ -670,6 +834,7 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
   const [jobs, setJobs] = useState<AiJob[]>([]);
   const [toast, setToast] = useState<string | null>(null);
   const liveSeen = useRef(new Set<string>());
+  const swapsHandled = useRef(new Set<string>());
   const [ackFailed, setAckFailed] = useState<string[]>([]);
 
   useEffect(() => {
@@ -694,31 +859,65 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
 
   const enqueue = useCallback<Enqueue>((label, run) => runOp({ id: uid(), label, status: 'saving', run }), [runOp]);
 
+  const aiError = (e?: string) => (e === 'ai_not_configured' ? 'AI is not set up yet (missing ANTHROPIC_API_KEY on Vercel).' : e);
+
+  const startFollowupRef = useRef<StartFollowup>(() => {});
+
+  // An ✨ AI edit that swapped words ("hadi → mpaka"): check the other places by meaning, once.
+  const handOverSwaps = useCallback(
+    (list: AiJob[]) => {
+      for (const j of list) {
+        if (j.status !== 'live' || !j.pending_swaps?.length || swapsHandled.current.has(j.id)) continue;
+        if (j.created_by && userId && j.created_by !== userId) continue;
+        swapsHandled.current.add(j.id);
+        const lesson = scopeContent('lesson', j.lesson_id) as Lesson | undefined;
+        const spans = j.pending_swaps;
+        void clearPendingSwaps(j.id).then((ok) => {
+          if (!ok || !lesson) return;
+          const candidates = findCandidates(allLessons(), spans, j.item_id ?? undefined);
+          if (!candidates.length) return;
+          startFollowupRef.current({
+            lessonId: j.lesson_id,
+            lessonTitle: lesson.title,
+            itemId: j.item_id ?? undefined,
+            itemKind: null,
+            targetLabel: j.target_label ?? undefined,
+            changes: spans.map((x) => ({ label: 'Word', lang: 'sw' as const, before: x.from, after: x.to })),
+            context: j.instruction,
+            spans,
+            makeNote: false,
+            candidates,
+            source: 'ai',
+          });
+        });
+      }
+    },
+    [userId],
+  );
+
   const refreshJobs = useCallback(async () => {
     const list = await listAiJobs();
     setJobs(list);
-    // Newly live AI edits: load their patch so the change shows without a reload.
-    const fresh = list.filter((j) => j.status === 'live' && j.patch_id && !liveSeen.current.has(j.id));
-    for (const j of list) if (j.status === 'live') liveSeen.current.add(j.id);
-    const supa = getSupabase();
-    if (supa && fresh.length) {
-      const { data } = await supa
-        .from('content_patch')
-        .select('id,created_at,lesson_id,scope,item_id,value,swaps')
-        .in('id', fresh.map((j) => j.patch_id as string));
-      if (data?.length) addPatches(data as ContentPatch[]);
+    // Newly finished AI edits / follow-ups: load what they wrote so it shows without a reload.
+    const fresh = list.filter((j) => (j.status === 'live' || j.status === 'review') && !liveSeen.current.has(j.id));
+    for (const j of list) if (j.status === 'live' || j.status === 'review') liveSeen.current.add(j.id);
+    if (fresh.length) {
+      const rows = await loadJobPatches(fresh.map((j) => j.id));
+      if (rows.length) addPatches(rows);
     }
+    handOverSwaps(list);
     return { list, fresh };
-  }, []);
+  }, [handOverSwaps]);
 
-  // First load: remember which jobs were already live (their patches load with the content).
+  // First load: remember which jobs were already done (their patches load with the content).
   useEffect(() => {
     if (!effectiveAdmin) return;
     void listAiJobs().then((list) => {
-      for (const j of list) if (j.status === 'live') liveSeen.current.add(j.id);
+      for (const j of list) if (j.status === 'live' || j.status === 'review') liveSeen.current.add(j.id);
       setJobs(list);
+      handOverSwaps(list);
     });
-  }, [effectiveAdmin]);
+  }, [effectiveAdmin, handOverSwaps]);
 
   // Poll while any AI edit is still working.
   const working = jobs.filter((j) => j.status === 'working').length;
@@ -726,7 +925,9 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
     if (!working) return;
     const t = setInterval(() => {
       void refreshJobs().then(({ fresh }) => {
-        if (fresh.length) setToast(`✨ Live: ${fresh[0].summary ?? 'AI edit published'}`);
+        const asks = fresh.reduce((n, j) => n + (j.status === 'review' ? j.questions?.length ?? 0 : 0), 0);
+        if (asks) setToast(`❓ The AI needs your call on ${asks} ${asks === 1 ? 'place' : 'places'} — tap to answer`);
+        else if (fresh.length) setToast(`✨ Live: ${fresh[0].summary ?? 'AI edit published'}`);
       });
     }, 8000);
     return () => clearInterval(t);
@@ -734,7 +935,7 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
 
   useEffect(() => {
     if (!toast) return;
-    const t = setTimeout(() => setToast(null), 7000);
+    const t = setTimeout(() => setToast(null), toast.startsWith('❓') ? 15000 : 7000);
     return () => clearTimeout(t);
   }, [toast]);
 
@@ -743,13 +944,42 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
       enqueue(`✨ AI · ${input.targetLabel ?? input.scope}`, async () => {
         const res = await submitAiEdit(input);
         if (res.ok) await refreshJobs();
-        return {
-          ok: res.ok,
-          error: res.error === 'ai_not_configured' ? 'AI is not set up yet (missing ANTHROPIC_API_KEY on Vercel).' : res.error,
-        };
+        return { ok: res.ok, error: aiError(res.error) };
       });
     },
     [enqueue, refreshJobs],
+  );
+
+  const startFollowup = useCallback<StartFollowup>(
+    (input, regloss) => {
+      const label = input.candidates.length
+        ? `✨ AI · checking ${input.candidates.length} other ${input.candidates.length === 1 ? 'place' : 'places'}`
+        : '✨ AI · learner note';
+      enqueue(regloss ? `✨ AI · tooltips + ${label.replace('✨ AI · ', '')}` : label, async () => {
+        let afterJobId: string | undefined;
+        if (regloss) {
+          const r = await submitAiEdit(regloss);
+          if (!r.ok) return { ok: false, error: aiError(r.error) };
+          afterJobId = r.jobId;
+        }
+        const res = await submitFollowup({ ...input, afterJobId });
+        await refreshJobs();
+        return { ok: res.ok, error: aiError(res.error) };
+      });
+    },
+    [enqueue, refreshJobs],
+  );
+  useEffect(() => {
+    startFollowupRef.current = startFollowup;
+  }, [startFollowup]);
+
+  const onAnswer = useCallback(
+    async (job: AiJob, q: FollowupQuestion, yes: boolean) => {
+      const res = await answerQuestion(job, q, yes);
+      if (res.patch) addPatches([res.patch]);
+      await refreshJobs();
+    },
+    [refreshJobs],
   );
 
   const openSuggest = useCallback((t: SuggestTarget) => setTarget(t), []);
@@ -760,6 +990,7 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
       saving: ops.filter((o) => o.status === 'saving').length,
       working,
       failed: ops.filter((o) => o.status === 'failed').length + jobs.filter((j) => j.status === 'failed' && !ackFailed.includes(j.id)).length,
+      questions: jobs.reduce((n, j) => n + (j.status === 'review' ? j.questions?.length ?? 0 : 0), 0),
     }),
     [ops, working, jobs, ackFailed],
   );
@@ -771,7 +1002,9 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
   return (
     <AdminContext.Provider value={value}>
       {children}
-      {target && <SuggestModal target={target} onClose={() => setTarget(null)} enqueue={enqueue} startAi={startAi} />}
+      {target && (
+        <SuggestModal target={target} onClose={() => setTarget(null)} enqueue={enqueue} startAi={startAi} startFollowup={startFollowup} />
+      )}
       {direct && <DirectModal lessonId={direct.lessonId} scope={direct.scope} onClose={() => setDirect(null)} startAi={startAi} />}
       {showActivity && (
         <ActivityModal
@@ -782,6 +1015,7 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
             await undoAiJob(j);
             await refreshJobs();
           }}
+          onAnswer={onAnswer}
           onClose={() => {
             setAckFailed(jobs.filter((j) => j.status === 'failed').map((j) => j.id));
             setShowActivity(false);

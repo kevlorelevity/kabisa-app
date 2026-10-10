@@ -1426,7 +1426,7 @@
     {
       "id": "ecb50d9c-0187-58e5-beea-e671e27560f5",
       "swahili": "Tuliona…",
-      "english": "We saw… |",
+      "english": "We saw…",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1439,13 +1439,13 @@
     {
       "id": "99c708e4-4761-570a-89c1-bed7cb43941c",
       "swahili": "Sikuona",
-      "english": "I didn't see |",
+      "english": "I didn't see",
       "exampleContext": ""
     },
     {
       "id": "08112ce4-5b2a-50e1-9f3c-3cc38c7b3647",
       "swahili": "Kulikuwa na ajali",
-      "english": "There was an accident |",
+      "english": "There was an accident",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1484,6 +1484,10 @@
       "nounForms": {
         "one": "njia ya mkato",
         "many": "njia za mkato"
+      },
+      "englishForms": {
+        "one": "shortcut",
+        "many": "shortcuts"
       }
     },
     {

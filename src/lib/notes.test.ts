@@ -304,3 +304,17 @@ describe('swaps leave explanatory notes alone', () => {
     expect(l.turns[0].words[0].note).toBe('Kenyans say mpaka far more often than hadi.');
   });
 });
+
+describe('a word typed into a line with its meaning', () => {
+  it('is underlined in its place', async () => {
+    const { applyPatchTo } = await import('./contentOverrides');
+    const lesson = {
+      id: 'l',
+      title: 'L',
+      turns: [{ id: 't1', speaker: 'Fundi', role: 'auto', swahili: 'Nitamaliza baada ya lisaa limoja.', english: '', words: [{ text: 'Nitamaliza', gloss: 'I will finish' }, { text: 'baada ya', gloss: 'after' }] }],
+      vocabulary: [],
+    } as never;
+    expect(applyPatchTo(lesson, { scope: 'word', item_id: 't1', value: { text: 'lisaa limoja', gloss: 'one hour' } })).toBe(true);
+    expect((lesson as { turns: Array<{ words: Array<{ text: string }> }> }).turns[0].words.map((w) => w.text)).toEqual(['Nitamaliza', 'baada ya', 'lisaa limoja']);
+  });
+});

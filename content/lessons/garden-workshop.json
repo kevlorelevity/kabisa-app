@@ -1260,6 +1260,10 @@
       "nounForms": {
         "one": "bustani",
         "many": "bustani"
+      },
+      "englishForms": {
+        "one": "(flower) garden",
+        "many": "(flower) gardens"
       }
     },
     {
@@ -1270,6 +1274,10 @@
       "nounForms": {
         "one": "nyasi",
         "many": "nyasi"
+      },
+      "englishForms": {
+        "one": "blade of grass",
+        "many": "grass"
       }
     },
     {
@@ -1282,6 +1290,10 @@
       "nounForms": {
         "one": "ua",
         "many": "maua"
+      },
+      "englishForms": {
+        "one": "flower",
+        "many": "flowers"
       }
     },
     {
@@ -1292,6 +1304,10 @@
       "nounForms": {
         "one": "gugu",
         "many": "magugu"
+      },
+      "englishForms": {
+        "one": "weed",
+        "many": "weeds"
       }
     },
     {
@@ -1304,49 +1320,65 @@
     {
       "id": "3ad27f14-a42c-56c4-b376-c5afd62b013f",
       "swahili": "kumwagilia maji",
-      "english": "to water (plants) |",
+      "english": "to water (plants)",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "b29749c1-5e9a-5d15-a945-aaa0909d2ce3",
       "swahili": "jembe",
-      "english": "hoe |",
+      "english": "hoe",
       "exampleContext": "",
       "nounForms": {
         "one": "jembe",
         "many": "majembe"
+      },
+      "englishForms": {
+        "one": "hoe",
+        "many": "hoes"
       }
     },
     {
       "id": "ee0a8ea6-c8ac-51d1-b6a8-6a27a56138f0",
       "swahili": "nyundo",
-      "english": "hammer |",
+      "english": "hammer",
       "exampleContext": "",
       "nounForms": {
         "one": "nyundo",
         "many": "nyundo"
+      },
+      "englishForms": {
+        "one": "hammer",
+        "many": "hammers"
       }
     },
     {
       "id": "ac045c68-1bbe-57e7-b61b-2b53ccb7e1d8",
       "swahili": "msumeno",
-      "english": "saw |",
+      "english": "saw",
       "exampleContext": "",
       "nounForms": {
         "one": "msumeno",
         "many": "misumeno"
+      },
+      "englishForms": {
+        "one": "saw",
+        "many": "saws"
       }
     },
     {
       "id": "76afecfe-a6e5-5dda-ad3c-0b0e18088454",
       "swahili": "msumari / misumari",
-      "english": "nail / nails |",
+      "english": "nail / nails",
       "exampleContext": "",
       "partOfSpeech": "phrase",
       "nounForms": {
         "one": "msumari",
         "many": "misumari"
+      },
+      "englishForms": {
+        "one": "nail",
+        "many": "nails"
       }
     },
     {
@@ -1363,16 +1395,24 @@
       "nounForms": {
         "one": "fundi",
         "many": "mafundi"
+      },
+      "englishForms": {
+        "one": "skilled worker, craftsman",
+        "many": "skilled workers, craftsmen"
       }
     },
     {
       "id": "872d7bff-5856-526e-a6c7-bb49e52d364e",
       "swahili": "karakana",
-      "english": "workshop |",
+      "english": "workshop",
       "exampleContext": "",
       "nounForms": {
         "one": "karakana",
         "many": "karakana"
+      },
+      "englishForms": {
+        "one": "workshop",
+        "many": "workshops"
       }
     }
   ],

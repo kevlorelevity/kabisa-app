@@ -632,7 +632,7 @@
       "id": "f27703cf-f4fc-5cd0-9dc3-68526142ca2c",
       "speaker": "Daktari",
       "role": "auto",
-      "swahili": "Baada ya saa moja. Ukimaliza, kaa nje. Mwuguzi ambaye atakuita ni Mercy.",
+      "swahili": "Baada ya lisaa limoja. Ukimaliza, kaa nje. Mwuguzi ambaye atakuita ni Mercy.",
       "english": "In an hour. When you're done, sit outside. The nurse who will call you is Mercy.",
       "words": [
         {
@@ -640,11 +640,8 @@
           "gloss": "after"
         },
         {
-          "text": "saa moja",
-          "gloss": "7 o'clock (1st hour of daylight) / one hour",
-          "grammar": [
-            "time-swahili"
-          ]
+          "text": "lisaa limoja",
+          "gloss": "one hour (a duration) — Kenyans say lisaa limoja so it isn't confused with saa moja (7 o'clock, Swahili time)"
         },
         {
           "text": "Ukimaliza",
@@ -727,7 +724,8 @@
           "text": "Mercy",
           "gloss": "Mercy (name)"
         }
-      ]
+      ],
+      "note": "Kenyans keep time and duration apart: saa moja = 7 o'clock (Swahili time) · lisaa limoja = one hour. For more hours: masaa mawili, masaa matatu…"
     },
     {
       "id": "aa29b6b0-19a5-544a-8688-480b1ce7a572",
@@ -1060,7 +1058,7 @@
     {
       "id": "24fcaa27-e567-5ca7-b115-a89f736676b9",
       "swahili": "Ilianza lini?",
-      "english": "When did it start? |",
+      "english": "When did it start?",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1081,14 +1079,14 @@
     {
       "id": "d76df807-3fa8-5fcd-ad78-5836516148d4",
       "swahili": "dawa ambayo nilipewa",
-      "english": "the medicine I was given |",
+      "english": "the medicine I was given",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "e9d449fd-be9c-5c64-a0b8-ec902145935c",
       "swahili": "Haikusaidia",
-      "english": "It didn't help |",
+      "english": "It didn't help",
       "exampleContext": ""
     },
     {
@@ -1101,7 +1099,7 @@
     {
       "id": "0f41a764-56f4-50bb-ab56-97315e003c97",
       "swahili": "Ningejua, ningekuja mapema",
-      "english": "If I'd known, I'd have come earlier |",
+      "english": "If I'd known, I'd have come earlier",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1120,12 +1118,16 @@
       "nounForms": {
         "one": null,
         "many": "matokeo"
+      },
+      "englishForms": {
+        "one": null,
+        "many": "results"
       }
     },
     {
       "id": "004be11d-3645-5de4-8797-ea42d8062555",
       "swahili": "Ukimaliza…",
-      "english": "When you finish… |",
+      "english": "When you finish…",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1139,14 +1141,14 @@
     {
       "id": "b424aa30-6646-572b-b5bb-d9f7ed01dc5b",
       "swahili": "Usile…",
-      "english": "Don't eat… |",
+      "english": "Don't eat…",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "5ad35b55-6270-54e4-96c6-f80a2ca2f2d9",
       "swahili": "Ukiona homa inapanda, rudi",
-      "english": "If the fever rises, come back |",
+      "english": "If the fever rises, come back",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     }

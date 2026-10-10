@@ -1,6 +1,7 @@
 import { getSupabase } from './supabase';
 import type { SuggestTarget } from '../components/adminContext';
-import type { ContentOverride, ContentPatch } from './contentOverrides';
+import type { ContentOverride, ContentPatch, Span } from './contentOverrides';
+import type { FollowupInput, FollowupQuestion } from './aiFollowup';
 
 export type SuggestionKind = 'phrasing' | 'translation' | 'grammar' | 'layout' | 'other';
 
@@ -66,7 +67,7 @@ export async function submitSuggestion(input: SuggestionInput): Promise<SubmitRe
 
 // ---------- AI edits, background jobs & team guidance ----------
 
-export type AiScope = 'item' | 'dialogue' | 'practice';
+export type AiScope = 'item' | 'dialogue' | 'practice' | 'followup';
 
 export interface AiEditInput {
   lessonId: string;
@@ -116,10 +117,15 @@ export interface AiJob {
   item_id: string | null;
   target_label: string | null;
   instruction: string;
-  status: 'working' | 'live' | 'failed' | 'undone';
+  status: 'working' | 'live' | 'failed' | 'undone' | 'review';
   summary: string | null;
   error: string | null;
   patch_id: string | null;
+  created_by: string | null;
+  /** status 'review': places the AI wants an admin's call on. */
+  questions: FollowupQuestion[] | null;
+  /** Word swaps from an ✨ AI edit, still to be checked across the app. */
+  pending_swaps: Span[] | null;
 }
 
 export async function listAiJobs(limit = 25): Promise<AiJob[]> {
@@ -127,7 +133,7 @@ export async function listAiJobs(limit = 25): Promise<AiJob[]> {
   if (!supa) return [];
   const { data } = await supa
     .from('ai_job')
-    .select('id,created_at,lesson_id,scope,item_id,target_label,instruction,status,summary,error,patch_id')
+    .select('id,created_at,lesson_id,scope,item_id,target_label,instruction,status,summary,error,patch_id,created_by,questions,pending_swaps')
     .order('created_at', { ascending: false })
     .limit(limit);
   return (data ?? []) as AiJob[];
@@ -136,10 +142,10 @@ export async function listAiJobs(limit = 25): Promise<AiJob[]> {
 export async function undoAiJob(job: AiJob): Promise<boolean> {
   const supa = getSupabase();
   if (!supa) return false;
-  if (job.patch_id) {
-    const { error } = await supa.from('content_patch').update({ active: false }).eq('id', job.patch_id);
-    if (error) return false;
-  }
+  // Every patch the job wrote (an AI edit's item, a follow-up's places and learner note).
+  const { error: e1 } = await supa.from('content_patch').update({ active: false }).eq('job_id', job.id);
+  if (e1) return false;
+  if (job.patch_id) await supa.from('content_patch').update({ active: false }).eq('id', job.patch_id);
   const { error } = await supa.from('ai_job').update({ status: 'undone', updated_at: new Date().toISOString() }).eq('id', job.id);
   return !error;
 }
@@ -189,4 +195,69 @@ export async function saveNotePatch(p: Pick<ContentPatch, 'lesson_id' | 'scope' 
   if (!supa) return { ok: false, error: 'offline' };
   const { data, error } = await supa.from('content_patch').insert(p).select('id').single();
   return error ? { ok: false, error: error.message } : { ok: true, id: (data as { id: string }).id };
+}
+
+/** Starts the context-aware follow-up of an edit (other places + learner note). Runs in the background. */
+export async function submitFollowup(input: FollowupInput): Promise<{ ok: boolean; jobId?: string; error?: string }> {
+  const supa = getSupabase();
+  const token = supa ? (await supa.auth.getSession()).data.session?.access_token : undefined;
+  if (!token) return { ok: false, error: 'not_signed_in' };
+  try {
+    const res = await fetch('/api/ai-followup', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json', authorization: `Bearer ${token}` },
+      body: JSON.stringify(input),
+    });
+    const body = (await res.json().catch(() => ({}))) as { jobId?: string; error?: string };
+    if (!res.ok) return { ok: false, error: body.error ?? `http_${res.status}` };
+    return { ok: true, jobId: body.jobId };
+  } catch (e) {
+    return { ok: false, error: e instanceof Error ? e.message : 'network_error' };
+  }
+}
+
+/** All patches a job wrote (to show them without a reload). */
+export async function loadJobPatches(jobIds: string[]): Promise<ContentPatch[]> {
+  const supa = getSupabase();
+  if (!supa || !jobIds.length) return [];
+  const { data } = await supa
+    .from('content_patch')
+    .select('id,created_at,lesson_id,scope,item_id,value,swaps')
+    .in('job_id', jobIds)
+    .eq('active', true)
+    .order('created_at', { ascending: true });
+  return (data ?? []) as ContentPatch[];
+}
+
+/**
+ * An admin's answer to one of the AI's questions. "yes" stores the proposed version of that
+ * place (live for everyone); either way the question is removed, and the job is done once none are left.
+ */
+export async function answerQuestion(job: AiJob, q: FollowupQuestion, yes: boolean): Promise<{ ok: boolean; patch?: ContentPatch }> {
+  const supa = getSupabase();
+  if (!supa) return { ok: false };
+  let patch: ContentPatch | undefined;
+  if (yes) {
+    const { data, error } = await supa
+      .from('content_patch')
+      .insert({ job_id: job.id, lesson_id: q.lessonId, scope: 'item', item_id: q.itemId, value: q.value })
+      .select('id,created_at,lesson_id,scope,item_id,value,swaps')
+      .single();
+    if (error) return { ok: false };
+    patch = data as ContentPatch;
+  }
+  const rest = (job.questions ?? []).filter((x) => x.ref !== q.ref);
+  const { error } = await supa
+    .from('ai_job')
+    .update({ questions: rest.length ? rest : null, status: rest.length ? 'review' : 'live', updated_at: new Date().toISOString() })
+    .eq('id', job.id);
+  return { ok: !error, patch };
+}
+
+/** Marks an AI edit's word swaps as handed over to the follow-up check. */
+export async function clearPendingSwaps(jobId: string): Promise<boolean> {
+  const supa = getSupabase();
+  if (!supa) return false;
+  const { error } = await supa.from('ai_job').update({ pending_swaps: null }).eq('id', jobId);
+  return !error;
 }

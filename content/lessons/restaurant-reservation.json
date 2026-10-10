@@ -1227,7 +1227,7 @@
     {
       "id": "4dbe4981-74a2-5256-a9ca-b2961c981ec1",
       "swahili": "Pole kwa usumbufu",
-      "english": "Sorry for the trouble |",
+      "english": "Sorry for the trouble",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1266,24 +1266,28 @@
     {
       "id": "e3cfa583-eb99-5096-b05f-ee397b3df6a2",
       "swahili": "badala yake",
-      "english": "instead (of it) |",
+      "english": "instead (of it)",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "4ed56f98-f8ac-57e2-8657-37091c9488e6",
       "swahili": "menyu",
-      "english": "menu |",
+      "english": "menu",
       "exampleContext": "",
       "nounForms": {
         "one": "menyu",
         "many": "menyu"
+      },
+      "englishForms": {
+        "one": "menu",
+        "many": "menus"
       }
     },
     {
       "id": "fd905e4c-5dd0-534a-bf62-b7efa755f061",
       "swahili": "hivi karibuni",
-      "english": "soon |",
+      "english": "soon",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     }

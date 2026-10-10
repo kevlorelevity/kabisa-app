@@ -1075,6 +1075,10 @@
       "nounForms": {
         "one": "homa",
         "many": null
+      },
+      "englishForms": {
+        "one": "fever, flu",
+        "many": null
       }
     },
     {
@@ -1087,7 +1091,7 @@
     {
       "id": "ca7ff499-2d7c-5624-9e9e-3e2e425e2dbe",
       "swahili": "Ulikula nini?",
-      "english": "What did you eat? |",
+      "english": "What did you eat?",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1101,7 +1105,7 @@
     {
       "id": "df189384-dee1-5b24-a712-96237ff7edf4",
       "swahili": "mara tatu kwa siku",
-      "english": "three times a day |",
+      "english": "three times a day",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1134,6 +1138,10 @@
       "nounForms": {
         "one": "chemist",
         "many": "machemist"
+      },
+      "englishForms": {
+        "one": "pharmacy",
+        "many": "pharmacies"
       }
     }
   ],

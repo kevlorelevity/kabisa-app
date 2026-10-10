@@ -1270,43 +1270,59 @@
       "nounForms": {
         "one": null,
         "many": "mafuriko"
+      },
+      "englishForms": {
+        "one": null,
+        "many": "floods"
       }
     },
     {
       "id": "ed91fc45-88ce-5e9a-8c08-a31a0fbfa3c1",
       "swahili": "ukame",
-      "english": "drought |",
+      "english": "drought",
       "exampleContext": "",
       "nounForms": {
         "one": "ukame",
+        "many": null
+      },
+      "englishForms": {
+        "one": "drought",
         "many": null
       }
     },
     {
       "id": "f0852094-c842-52c6-807e-09412b11c178",
       "swahili": "-kauka",
-      "english": "dry up |",
+      "english": "dry up",
       "exampleContext": ""
     },
     {
       "id": "fd435ba4-96dd-5a09-984a-08c155f28193",
       "swahili": "mfugaji / wafugaji",
-      "english": "herder / herders |",
+      "english": "herder / herders",
       "exampleContext": "",
       "partOfSpeech": "phrase",
       "nounForms": {
         "one": "mfugaji",
         "many": "wafugaji"
+      },
+      "englishForms": {
+        "one": "herder",
+        "many": "herders"
       }
     },
     {
       "id": "fd47cfd3-2e3a-5d60-9dbf-dc9f00ddebcf",
       "swahili": "mifugo",
-      "english": "livestock |",
+      "english": "livestock",
       "exampleContext": "",
       "nounForms": {
         "one": null,
         "many": "mifugo"
+      },
+      "englishForms": {
+        "one": null,
+        "many": "livestock"
       }
     },
     {
@@ -1317,16 +1333,24 @@
       "nounForms": {
         "one": "hema",
         "many": "mahema"
+      },
+      "englishForms": {
+        "one": "tent",
+        "many": "tents"
       }
     },
     {
       "id": "94a9faf5-022c-535c-89ea-de5d5c50d013",
       "swahili": "serikali",
-      "english": "the government |",
+      "english": "the government",
       "exampleContext": "",
       "nounForms": {
         "one": "serikali",
         "many": "serikali"
+      },
+      "englishForms": {
+        "one": "government",
+        "many": "governments"
       }
     },
     {
@@ -1346,7 +1370,7 @@
     {
       "id": "63b4508a-4461-5a67-9667-658af4fda1a8",
       "swahili": "Nadhani kwamba…",
-      "english": "I think that… |",
+      "english": "I think that…",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },

@@ -999,7 +999,7 @@
       "id": "96f4d80f-aca4-50be-8ca9-37047d9ac409",
       "speaker": "Fundi",
       "role": "auto",
-      "swahili": "Hakuna shida. Nitamaliza baada ya saa moja.",
+      "swahili": "Hakuna shida. Nitamaliza baada ya lisaa limoja.",
       "english": "No problem. I'll finish in an hour.",
       "words": [
         {
@@ -1051,13 +1051,11 @@
           "gloss": "after"
         },
         {
-          "text": "saa moja",
-          "gloss": "7 o'clock (1st hour of daylight) / one hour",
-          "grammar": [
-            "time-swahili"
-          ]
+          "text": "lisaa limoja",
+          "gloss": "one hour (a duration) — Kenyans say lisaa limoja so it isn't confused with saa moja (7 o'clock, Swahili time)"
         }
-      ]
+      ],
+      "note": "Kenyans keep time and duration apart: saa moja = 7 o'clock (Swahili time) · lisaa limoja = one hour. For more hours: masaa mawili, masaa matatu…"
     },
     {
       "id": "28a4a301-0bc5-56b9-9e80-bec9d92c0cf7",
@@ -1170,12 +1168,16 @@
       "nounForms": {
         "one": "fundi wa maji",
         "many": "mafundi wa maji"
+      },
+      "englishForms": {
+        "one": "plumber",
+        "many": "plumbers"
       }
     },
     {
       "id": "86447eaa-275e-59eb-835a-6188342bbcb7",
       "swahili": "Shida iko wapi?",
-      "english": "Where's the problem? |",
+      "english": "Where's the problem?",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1222,32 +1224,36 @@
       "nounForms": {
         "one": "stima",
         "many": null
+      },
+      "englishForms": {
+        "one": "electricity, power",
+        "many": null
       }
     },
     {
       "id": "08492484-cd95-517a-b61f-f6afa950a089",
       "swahili": "Nizime?",
-      "english": "Shall I switch off? |",
+      "english": "Shall I switch off?",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "6a61f947-3da1-53af-96b0-bbcbea56f8bb",
       "swahili": "ili tusiwe na shida",
-      "english": "so we don't have trouble |",
+      "english": "so we don't have trouble",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "fd87e673-6671-5fc3-ba66-ec2f27db9b33",
       "swahili": "isichafuke",
-      "english": "so it doesn't get dirty |",
+      "english": "so it doesn't get dirty",
       "exampleContext": ""
     },
     {
       "id": "615ac61b-8fcf-552a-823e-383b00ac7434",
       "swahili": "Uniambie",
-      "english": "Tell me (please) |",
+      "english": "Tell me (please)",
       "exampleContext": ""
     },
     {
@@ -1616,7 +1622,7 @@
       "mode": "translate",
       "english": "I'll finish in an hour.",
       "before": "",
-      "after": " baada ya saa moja.",
+      "after": " baada ya lisaa limoja.",
       "options": [
         {
           "text": "Nitamaliza",
@@ -1633,7 +1639,7 @@
           "feedback": "Ninamaliza = I am finishing"
         }
       ],
-      "explanation": "saa moja here = one hour (not 7 o'clock!).",
+      "explanation": "lisaa limoja = one hour (a duration). saa moja would mean 7 o'clock.",
       "grammar": [
         "future-ta"
       ]

@@ -1229,6 +1229,10 @@
       "nounForms": {
         "one": "sufuria",
         "many": "sufuria"
+      },
+      "englishForms": {
+        "one": "cooking pot",
+        "many": "cooking pots"
       }
     },
     {
@@ -1242,6 +1246,10 @@
       "nounForms": {
         "one": "unga ya mahindi",
         "many": null
+      },
+      "englishForms": {
+        "one": "maize flour",
+        "many": null
       }
     },
     {
@@ -1254,11 +1262,15 @@
     {
       "id": "821173dd-ffde-5f55-8d74-3d3bad9b3ef9",
       "swahili": "mwiko",
-      "english": "wooden cooking stick |",
+      "english": "wooden cooking stick",
       "exampleContext": "",
       "nounForms": {
         "one": "mwiko",
         "many": "miiko"
+      },
+      "englishForms": {
+        "one": "wooden cooking stick",
+        "many": "wooden cooking sticks"
       }
     },
     {
@@ -1283,6 +1295,10 @@
       "nounForms": {
         "one": null,
         "many": "mafuta"
+      },
+      "englishForms": {
+        "one": null,
+        "many": "(cooking) oil"
       }
     },
     {
@@ -1292,6 +1308,10 @@
       "exampleContext": "chumvi kidogo = a little salt",
       "nounForms": {
         "one": "chumvi",
+        "many": null
+      },
+      "englishForms": {
+        "one": "salt",
         "many": null
       }
     },

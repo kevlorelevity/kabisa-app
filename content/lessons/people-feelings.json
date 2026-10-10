@@ -971,20 +971,20 @@
     {
       "id": "a9a48bf5-c8a5-50f0-86f3-7ed8015e0f05",
       "swahili": "mchangamfu",
-      "english": "cheerful, lively |",
+      "english": "cheerful, lively",
       "exampleContext": ""
     },
     {
       "id": "1b70ef66-d180-52a6-a0b8-5d13a2e2ee58",
       "swahili": "mcheshi / wacheshi",
-      "english": "funny (person / people) |",
+      "english": "funny (person / people)",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "ee425f61-982d-5464-a076-f0ca2e8c6bcb",
       "swahili": "mkarimu",
-      "english": "kind, generous |",
+      "english": "kind, generous",
       "exampleContext": ""
     },
     {
@@ -1002,31 +1002,35 @@
     {
       "id": "d344192c-324f-5caf-a5ab-8811d4cb11b5",
       "swahili": "mvivu / wavivu",
-      "english": "lazy (person / people) |",
+      "english": "lazy (person / people)",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "5cb63aa2-ecbe-58a1-82f5-347d4de2f326",
       "swahili": "mwerevu / werevu",
-      "english": "clever (person / people) |",
+      "english": "clever (person / people)",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "eb76d7e2-68a6-560b-b30f-8f60159613b4",
       "swahili": "kimya",
-      "english": "quiet, silence |",
+      "english": "quiet, silence",
       "exampleContext": "",
       "nounForms": {
         "one": "kimya",
+        "many": null
+      },
+      "englishForms": {
+        "one": "quiet, silence",
         "many": null
       }
     },
     {
       "id": "5f408625-1426-57b4-9f44-cc7726398349",
       "swahili": "polepole",
-      "english": "slowly |",
+      "english": "slowly",
       "exampleContext": ""
     },
     {

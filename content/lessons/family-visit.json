@@ -1468,6 +1468,10 @@
       "nounForms": {
         "one": "familia",
         "many": "familia"
+      },
+      "englishForms": {
+        "one": "family",
+        "many": "families"
       }
     },
     {
@@ -1485,6 +1489,10 @@
       "nounForms": {
         "one": "kaka / dada",
         "many": "kaka / dada"
+      },
+      "englishForms": {
+        "one": "brother, sister",
+        "many": "brothers, sisters"
       }
     },
     {
@@ -1497,14 +1505,14 @@
     {
       "id": "e7bf10e7-cc10-5a14-997b-9622ea8a4b76",
       "swahili": "mrefu / warefu",
-      "english": "tall (one person / people) |",
+      "english": "tall (one person / people)",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "ee8746e0-f538-5925-bcdb-da4d199a51e0",
       "swahili": "mfupi / wafupi",
-      "english": "short (one person / people) |",
+      "english": "short (one person / people)",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1517,6 +1525,10 @@
       "nounForms": {
         "one": "mzee",
         "many": "wazee"
+      },
+      "englishForms": {
+        "one": "old person, elder",
+        "many": "old people, elders"
       }
     },
     {
@@ -1534,7 +1546,7 @@
     {
       "id": "cd0c16be-570a-5be8-bbfe-855a5b717503",
       "swahili": "nje / ndani",
-      "english": "outside / inside |",
+      "english": "outside / inside",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1546,16 +1558,24 @@
       "nounForms": {
         "one": "mbwa",
         "many": "mbwa"
+      },
+      "englishForms": {
+        "one": "dog",
+        "many": "dogs"
       }
     },
     {
       "id": "9da8c386-5479-588b-8224-6390cc289f6e",
       "swahili": "shamba",
-      "english": "farm / garden |",
+      "english": "farm / garden",
       "exampleContext": "",
       "nounForms": {
         "one": "shamba",
         "many": "mashamba"
+      },
+      "englishForms": {
+        "one": "farm, garden",
+        "many": "farms, gardens"
       }
     },
     {

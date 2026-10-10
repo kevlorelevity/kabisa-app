@@ -1080,6 +1080,10 @@
       "nounForms": {
         "one": "shemeji",
         "many": "mashemeji"
+      },
+      "englishForms": {
+        "one": "brother-/sister-in-law",
+        "many": "brothers-/sisters-in-law"
       }
     },
     {
@@ -1106,7 +1110,7 @@
     {
       "id": "5b848965-fbcd-5e2c-a545-729378a4652d",
       "swahili": "Asiyekubali kushindwa si mshindani",
-      "english": "A sore loser is no competitor |",
+      "english": "A sore loser is no competitor",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1120,13 +1124,13 @@
     {
       "id": "194ed4bf-7bc2-5a23-8ccd-65c72c475830",
       "swahili": "Hajafunga",
-      "english": "He hasn't scored |",
+      "english": "He hasn't scored",
       "exampleContext": ""
     },
     {
       "id": "45e78814-92f3-5b47-b654-51a05aa3e243",
       "swahili": "Mchezo haujaisha",
-      "english": "The game isn't over |",
+      "english": "The game isn't over",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1140,17 +1144,21 @@
     {
       "id": "8d122695-c399-5084-a834-c83c6b627317",
       "swahili": "refa",
-      "english": "referee |",
+      "english": "referee",
       "exampleContext": "",
       "nounForms": {
         "one": "refa",
         "many": "marefa"
+      },
+      "englishForms": {
+        "one": "referee",
+        "many": "referees"
       }
     },
     {
       "id": "16220675-942f-5039-ac0a-1281b300c001",
       "swahili": "Ndoto tu!",
-      "english": "Dream on! |",
+      "english": "Dream on!",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },

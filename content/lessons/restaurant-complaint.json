@@ -989,7 +989,7 @@
     {
       "id": "1d6f86a7-f9f0-531b-a90f-e23b7af404d2",
       "swahili": "hata hivyo",
-      "english": "even so / however |",
+      "english": "even so / however",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1016,7 +1016,7 @@
     {
       "id": "388159c9-f102-514b-bfcb-3116e8e37aab",
       "swahili": "haraka iwezekanavyo",
-      "english": "as fast as possible |",
+      "english": "as fast as possible",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1048,6 +1048,10 @@
       "exampleContext": "from kuvumilia (to endure)",
       "nounForms": {
         "one": "uvumilivu",
+        "many": null
+      },
+      "englishForms": {
+        "one": "patience",
         "many": null
       }
     }

@@ -1339,7 +1339,7 @@
     {
       "id": "f312da6b-64ab-52f4-baf3-4b6064c76487",
       "swahili": "ghafla",
-      "english": "suddenly |",
+      "english": "suddenly",
       "exampleContext": ""
     },
     {
@@ -1352,7 +1352,7 @@
     {
       "id": "a984ba9a-d25f-5b35-a033-0301f79c7403",
       "swahili": "Mpigie!",
-      "english": "Call him/her! |",
+      "english": "Call him/her!",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1364,6 +1364,10 @@
       "nounForms": {
         "one": "fundi",
         "many": "mafundi"
+      },
+      "englishForms": {
+        "one": "mechanic, repairman",
+        "many": "mechanics, repairmen"
       }
     },
     {
@@ -1381,11 +1385,15 @@
     {
       "id": "ed71e63c-0e2a-5f39-9e43-c313044b2279",
       "swahili": "kivuli",
-      "english": "shade |",
+      "english": "shade",
       "exampleContext": "",
       "nounForms": {
         "one": "kivuli",
         "many": "vivuli"
+      },
+      "englishForms": {
+        "one": "shade",
+        "many": "shades"
       }
     },
     {
@@ -1410,12 +1418,16 @@
       "nounForms": {
         "one": "mekanika",
         "many": "mekanika"
+      },
+      "englishForms": {
+        "one": "mechanic",
+        "many": "mechanics"
       }
     },
     {
       "id": "d24add56-d003-5646-b5c7-5f2c02d2e4e8",
       "swahili": "Usinilipe!",
-      "english": "Don't pay me! |",
+      "english": "Don't pay me!",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },

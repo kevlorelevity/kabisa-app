@@ -1111,7 +1111,7 @@
     {
       "id": "a7ded469-6e81-5417-b3b1-14b7a7d2eda2",
       "swahili": "kusafiri",
-      "english": "to travel |",
+      "english": "to travel",
       "exampleContext": "",
       "partOfSpeech": "verb"
     },
@@ -1132,12 +1132,16 @@
     {
       "id": "126646e1-9ffd-521c-81e3-f8b2b0c9a240",
       "swahili": "pasipoti / viza / tiketi",
-      "english": "passport / visa / ticket |",
+      "english": "passport / visa / ticket",
       "exampleContext": "",
       "partOfSpeech": "phrase",
       "nounForms": {
         "one": "pasipoti / viza / tiketi",
         "many": "pasipoti / viza / tiketi"
+      },
+      "englishForms": {
+        "one": "passport, visa, ticket",
+        "many": "passports, visas, tickets"
       }
     },
     {
@@ -1157,7 +1161,7 @@
     {
       "id": "4a82c509-c17a-57f1-86b9-8235944d2ba4",
       "swahili": "Bado sijaenda",
-      "english": "I haven't gone yet |",
+      "english": "I haven't gone yet",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1171,11 +1175,15 @@
     {
       "id": "4a34504a-76fd-583c-a7ff-742648e822f5",
       "swahili": "pwani",
-      "english": "the coast |",
+      "english": "the coast",
       "exampleContext": "",
       "nounForms": {
         "one": "pwani",
         "many": "pwani"
+      },
+      "englishForms": {
+        "one": "coast",
+        "many": "coasts"
       }
     },
     {
@@ -1193,12 +1201,16 @@
     {
       "id": "34a91e36-cb8f-5d33-97b4-56c73330a7a2",
       "swahili": "Mkenya / Wakenya",
-      "english": "a Kenyan / Kenyans |",
+      "english": "a Kenyan / Kenyans",
       "exampleContext": "",
       "partOfSpeech": "phrase",
       "nounForms": {
         "one": "Mkenya",
         "many": "Wakenya"
+      },
+      "englishForms": {
+        "one": "Kenyan",
+        "many": "Kenyans"
       }
     }
   ],

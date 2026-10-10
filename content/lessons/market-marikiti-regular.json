@@ -1308,7 +1308,7 @@
     {
       "id": "d8f8fc0b-717d-56ee-9a2b-9bb0e3075ab8",
       "swahili": "ambayo / ambazo",
-      "english": "which (n/n one / several) |",
+      "english": "which (n/n one / several)",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1328,7 +1328,7 @@
     {
       "id": "3f9c760d-246c-556e-9851-3d5e2fd8d8fd",
       "swahili": "nitakupunguzia bei",
-      "english": "I'll lower the price for you |",
+      "english": "I'll lower the price for you",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1342,7 +1342,7 @@
     {
       "id": "0d4640d7-9cbf-5df4-b387-ba4551d8421a",
       "swahili": "ningenunua",
-      "english": "I would buy |",
+      "english": "I would buy",
       "exampleContext": ""
     },
     {
@@ -1354,7 +1354,7 @@
     {
       "id": "f7d039df-9ddf-5c37-a945-1c6a2590f343",
       "swahili": "Ndiyo maana…",
-      "english": "That's why… |",
+      "english": "That's why…",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },

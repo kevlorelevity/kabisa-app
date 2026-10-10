@@ -838,6 +838,10 @@
       "nounForms": {
         "one": "kichwa",
         "many": "vichwa"
+      },
+      "englishForms": {
+        "one": "head",
+        "many": "heads"
       }
     },
     {
@@ -848,39 +852,55 @@
       "nounForms": {
         "one": "tumbo",
         "many": "matumbo"
+      },
+      "englishForms": {
+        "one": "stomach",
+        "many": "stomachs"
       }
     },
     {
       "id": "38e4c753-acbf-5b91-bc7f-f6e8d8a5286c",
       "swahili": "mkono / mikono",
-      "english": "arm, hand / arms, hands |",
+      "english": "arm, hand / arms, hands",
       "exampleContext": "",
       "partOfSpeech": "phrase",
       "nounForms": {
         "one": "mkono",
         "many": "mikono"
+      },
+      "englishForms": {
+        "one": "arm, hand",
+        "many": "arms, hands"
       }
     },
     {
       "id": "715def91-b14b-53fb-baee-b30326dcefc5",
       "swahili": "mguu / miguu",
-      "english": "leg, foot / legs, feet |",
+      "english": "leg, foot / legs, feet",
       "exampleContext": "",
       "partOfSpeech": "phrase",
       "nounForms": {
         "one": "mguu",
         "many": "miguu"
+      },
+      "englishForms": {
+        "one": "leg, foot",
+        "many": "legs, feet"
       }
     },
     {
       "id": "72bd7da3-7a91-56f7-839d-e0119e9bd153",
       "swahili": "jicho / macho",
-      "english": "eye / eyes |",
+      "english": "eye / eyes",
       "exampleContext": "",
       "partOfSpeech": "phrase",
       "nounForms": {
         "one": "jicho",
         "many": "macho"
+      },
+      "englishForms": {
+        "one": "eye",
+        "many": "eyes"
       }
     },
     {
@@ -890,6 +910,10 @@
       "exampleContext": "Uko na homa? = Do you have a fever?",
       "nounForms": {
         "one": "homa",
+        "many": null
+      },
+      "englishForms": {
+        "one": "fever",
         "many": null
       }
     },
@@ -910,16 +934,24 @@
       "nounForms": {
         "one": "mwili",
         "many": "miili"
+      },
+      "englishForms": {
+        "one": "body",
+        "many": "bodies"
       }
     },
     {
       "id": "a8461237-efb0-5814-bda4-62d6ad2e1fd2",
       "swahili": "kliniki",
-      "english": "clinic |",
+      "english": "clinic",
       "exampleContext": "",
       "nounForms": {
         "one": "kliniki",
         "many": "kliniki"
+      },
+      "englishForms": {
+        "one": "clinic",
+        "many": "clinics"
       }
     },
     {

@@ -4,6 +4,7 @@ import type { AttemptResult } from '../lib/lessonScores';
 import { TappableSwahili } from './TappableSwahili';
 import { AudioButton } from './AudioButton';
 import { EditPencil } from './EditPencil';
+import { lineTarget } from './adminTargets';
 import { TypedAnswer } from './TypedAnswer';
 import { pickKeyWord, type TypingMode } from '../lib/typing';
 
@@ -290,8 +291,7 @@ function TurnBubble({ turn, tappable }: { turn: DialogueTurn; tappable: boolean 
           </div>
         </div>
         <div className={`flex gap-1 mt-1 ${isUser ? 'justify-end' : ''}`}>
-          <EditPencil hint="SW" target={{ targetType: 'turn.swahili', label: `Line · ${turn.speaker}`, currentText: turn.swahili, itemId: turn.id }} />
-          <EditPencil hint="EN" target={{ targetType: 'turn.english', label: `English translation · ${turn.speaker}`, currentText: turn.english, itemId: turn.id }} />
+          <EditPencil target={lineTarget(turn)} />
         </div>
         <p className={`text-xs text-gray-400 mt-1 ${isUser ? 'text-right' : ''}`}>
           {turn.english}

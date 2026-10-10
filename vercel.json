@@ -6,6 +6,9 @@
     "api/ai-edit.ts": {
       "includeFiles": "content/grammar/**",
       "maxDuration": 300
+    },
+    "api/ai-followup.ts": {
+      "maxDuration": 300
     }
   },
   "rewrites": [

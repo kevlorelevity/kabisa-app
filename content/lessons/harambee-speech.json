@@ -1113,36 +1113,44 @@
     {
       "id": "222a20ef-e1d2-5202-8c62-feda92a309ad",
       "swahili": "mgeni rasmi",
-      "english": "guest of honour |",
+      "english": "guest of honour",
       "exampleContext": "",
       "partOfSpeech": "phrase",
       "nounForms": {
         "one": "mgeni rasmi",
         "many": "wageni rasmi"
+      },
+      "englishForms": {
+        "one": "guest of honour",
+        "many": "guests of honour"
       }
     },
     {
       "id": "9fa63973-b28c-5b59-80d4-b6acc0432d37",
       "swahili": "mabibi na mabwana",
-      "english": "ladies and gentlemen |",
+      "english": "ladies and gentlemen",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "cc62626b-eb79-591d-8bd4-bafe89a07767",
       "swahili": "Ninashukuru kwa kunialika",
-      "english": "I'm grateful for the invitation |",
+      "english": "I'm grateful for the invitation",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "5b1ce223-4366-5838-b756-220bf126430f",
       "swahili": "karo",
-      "english": "school fees |",
+      "english": "school fees",
       "exampleContext": "",
       "nounForms": {
         "one": "karo",
         "many": "karo"
+      },
+      "englishForms": {
+        "one": "school fee",
+        "many": "school fees"
       }
     },
     {
@@ -1155,7 +1163,7 @@
     {
       "id": "889a18f8-3032-54ea-a29e-e5e392f713bb",
       "swahili": "Umoja ni nguvu, utengano ni udhaifu",
-      "english": "Unity is strength, division is weakness |",
+      "english": "Unity is strength, division is weakness",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1197,7 +1205,7 @@
     {
       "id": "aec1f210-1571-50a5-aa7c-a955b2cd9816",
       "swahili": "Mungu awabariki",
-      "english": "May God bless you all |",
+      "english": "May God bless you all",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     }

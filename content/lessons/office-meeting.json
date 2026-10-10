@@ -1281,20 +1281,20 @@
     {
       "id": "9e2b2243-ed2d-5b95-841a-01806beeab61",
       "swahili": "Kumbe!",
-      "english": "Oh, so…! |",
+      "english": "Oh, so…!",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "6a949fa4-024a-5f4c-94cb-89bb915ade58",
       "swahili": "Yaani",
-      "english": "I mean / in other words |",
+      "english": "I mean / in other words",
       "exampleContext": ""
     },
     {
       "id": "b189f2bb-e1ef-5d83-85e8-c5335d1bdfcd",
       "swahili": "Si tukanywe chai?",
-      "english": "Why don't we go have tea? |",
+      "english": "Why don't we go have tea?",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1307,6 +1307,10 @@
       "nounForms": {
         "one": "barua pepe",
         "many": "barua pepe"
+      },
+      "englishForms": {
+        "one": "email",
+        "many": "emails"
       }
     }
   ],

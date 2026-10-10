@@ -3,6 +3,9 @@ import type { GrammarTopic, LevelInfo, Lesson } from '../types';
 import { getSupabase } from './supabase';
 import type { Persona } from './personalize';
 import { personalizeText, DEFAULT_PERSONA } from './personalize';
+import { SKIP_KEYS, SW_KEYS, changedSpan, propagateSpan, realignWords, type Span } from './textSpans';
+
+export { changedSpan, propagateSpan, realignWords, type Span } from './textSpans';
 
 // -------- Live content edits ("edit in place" from the admin pencils) --------
 //
@@ -32,7 +35,6 @@ export interface ContentOverride {
 
 /** Separators used when a pencil shows several fields joined together (vocab, tables, examples…). */
 const SEGMENT_SPLIT = /\n| \| | — |\[|\]|✓/;
-const SKIP_KEYS = new Set(['id', 'uuid', 'slug', 'grammar', 'grammarFocus', 'category', 'difficulty', 'theme', 'related', 'type', 'level', 'order', 'emoji']);
 
 // ---- pure helpers (unit-tested) ----
 
@@ -159,38 +161,6 @@ export function resolveOverride(
 // vocabulary/flashcards, Sanifu forms) and to explanatory notes. English edits
 // stay where they were made.
 
-/** Fields that hold Swahili. */
-const SW_KEYS = new Set(['swahili', 'sanifu', 'before', 'after', 'text']);
-/** Mixed English notes that quote Swahili words. Only longer spans propagate here. */
-const NOTE_KEYS = new Set(['exampleContext', 'explanation', 'feedback', 'sanifuNote', 'gloss', 'note']);
-const WORD = /[\p{L}\p{N}'’-]+/gu;
-
-export interface Span {
-  from: string;
-  to: string;
-}
-
-/** The smallest run of whole words that differs between a and b ("Lete tu." → "Leta tu." gives Lete → Leta). */
-export function changedSpan(a: string, b: string): Span | null {
-  const wa = [...a.matchAll(WORD)];
-  const wb = [...b.matchAll(WORD)];
-  if (!wa.length || !wb.length) return null;
-  let i = 0;
-  while (i < wa.length && i < wb.length && wa[i][0] === wb[i][0]) i++;
-  let ja = wa.length - 1;
-  let jb = wb.length - 1;
-  while (ja >= i && jb >= i && wa[ja][0] === wb[jb][0]) {
-    ja--;
-    jb--;
-  }
-  if (i > ja && i > jb) return null; // only punctuation changed
-  if (i > ja) return null; // pure insertion — nothing to find elsewhere
-  const from = a.slice(wa[i].index, wa[ja].index! + wa[ja][0].length);
-  const to = i > jb ? '' : b.slice(wb[i].index, wb[jb].index! + wb[jb][0].length);
-  if (!from.trim() || !to.trim() || from === to) return null;
-  return { from, to };
-}
-
 function leafKeys(node: unknown, text: string, out: Set<string>, key?: string): Set<string> {
   if (typeof node === 'string') {
     if (key && node.includes(text)) out.add(key);
@@ -217,51 +187,6 @@ export function swahiliSpans(scope: unknown, o: Pick<ContentOverride, 'find_text
     if (span && !spans.some((x) => x.from === span.from)) spans.push(span);
   }
   return spans;
-}
-
-const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
-const low = (s: string) => s.charAt(0).toLowerCase() + s.slice(1);
-
-function variants(span: Span): Span[] {
-  const v = [span];
-  if (cap(span.from) !== span.from) v.push({ from: cap(span.from), to: cap(span.to) });
-  if (low(span.from) !== span.from) v.push({ from: low(span.from), to: low(span.to) });
-  return v;
-}
-
-/** Whole-word replacement of a span in every Swahili field (and notes, for longer spans). Returns the count. */
-export function propagateSpan(node: unknown, span: Span, count = false): number {
-  const res = variants(span).map((v) => ({
-    re: new RegExp(`(?<![\\p{L}\\p{N}'’-])${esc(v.from)}(?![\\p{L}\\p{N}'’-])`, 'gu'),
-    to: v.to,
-  }));
-  const notesToo = span.from.length >= 4;
-  const toRe = new RegExp(`(?<![\\p{L}\\p{N}'’-])${esc(span.to)}(?![\\p{L}\\p{N}'’-])`, 'iu');
-  let n = 0;
-  const walk = (obj: unknown) => {
-    if (!obj || typeof obj !== 'object') return;
-    const entries: Array<[string | number, unknown]> = Array.isArray(obj)
-      ? obj.map((v, i) => [i, v])
-      : Object.entries(obj as Record<string, unknown>);
-    for (const [k, v] of entries) {
-      if (typeof k === 'string' && SKIP_KEYS.has(k)) continue;
-      // An English note that already names the new word is explaining the swap ("mpaka, not hadi"): leave it.
-      const explainsSwap = typeof k === 'string' && NOTE_KEYS.has(k) && typeof v === 'string' && toRe.test(v);
-      if (typeof v === 'string' && typeof k === 'string' && !explainsSwap && (SW_KEYS.has(k) || (notesToo && NOTE_KEYS.has(k)))) {
-        let out = v;
-        for (const r of res) {
-          out = out.replace(r.re, () => {
-            n++;
-            return r.to;
-          });
-        }
-        if (!count && out !== v) (obj as Record<string, unknown>)[k] = out;
-      } else if (v && typeof v === 'object') walk(v);
-    }
-  };
-  walk(node);
-  return n;
 }
 
 /** How many OTHER places a pending edit would also change (for the admin modal). */
@@ -387,6 +312,11 @@ export function applyPatchTo(lesson: Lesson, p: Pick<ContentPatch, 'scope' | 'it
       lesson.practice[pi] = v as NonNullable<Lesson['practice']>[number];
       return true;
     }
+    const vi = (lesson.vocabulary ?? []).findIndex((x) => x.id === p.item_id);
+    if (vi >= 0) {
+      lesson.vocabulary[vi] = v as Lesson['vocabulary'][number];
+      return true;
+    }
   }
   if (p.scope === 'fields' && p.item_id && v && typeof v === 'object') {
     const item = findItemIn(lesson, p.item_id);
@@ -400,7 +330,24 @@ export function applyPatchTo(lesson: Lesson, p: Pick<ContentPatch, 'scope' | 'it
     if (!turn || !wv.text) return false;
     const byIndex = wv.wordIndex !== undefined ? turn.words?.[wv.wordIndex] : undefined;
     const word = byIndex && norm(byIndex.text) === norm(wv.text) ? byIndex : turn.words?.find((w) => norm(w.text) === norm(wv.text));
-    if (!word) return false;
+    if (!word) {
+      // A word an admin just typed into the line (with its meaning): underline it in its place.
+      const at = turn.swahili.indexOf(wv.text);
+      if (at === -1 || !wv.gloss) return false;
+      const fresh = { text: wv.text, gloss: wv.gloss, ...(wv.sanifu ? { sanifu: wv.sanifu } : {}), ...(wv.note ? { note: wv.note } : {}) };
+      const list = turn.words ?? [];
+      let pos = 0;
+      let cursor = 0;
+      for (const w of list) {
+        const i = turn.swahili.indexOf(w.text, cursor);
+        if (i === -1 || i > at) break;
+        cursor = i + w.text.length;
+        pos++;
+      }
+      list.splice(pos, 0, fresh);
+      turn.words = list;
+      return true;
+    }
     mergeFields(word as unknown as Rec, wv as unknown as Rec, ['gloss', 'sanifu', 'note']);
     if (word.gloss === undefined) word.gloss = wv.text;
     return true;
@@ -424,6 +371,11 @@ let scopes: {
 export function registerContentScopes(s: NonNullable<typeof scopes>): void {
   scopes = s;
   if (applied.length) for (const o of applied) applyNow(o);
+}
+
+/** Every lesson as it is now (raw, with live edits applied). */
+export function allLessons(): Lesson[] {
+  return scopes?.allLessons() ?? [];
 }
 
 export function scopeContent(type: ScopeType, id: string): unknown {
@@ -453,62 +405,6 @@ function snapshotLines(lessons: Lesson[]): Map<Lesson['turns'][number], string> 
 
 function realignChanged(before: Map<Lesson['turns'][number], string>): void {
   for (const [turn, old] of before) if (turn.swahili !== old) realignWords(turn, old);
-}
-
-const isWordChar = (c: string | undefined) => !!c && /[\p{L}\p{N}'’-]/u.test(c);
-
-/**
- * After a line's Swahili changed from `oldLine`, moves each glossed word to its
- * new place, drops glosses whose words are gone, and stretches a gloss over
- * words inserted right next to it ("taka" + " taka" → "taka taka"). The AI
- * re-gloss that follows an admin edit then refines the explanations.
- */
-export function realignWords(turn: { swahili: string; words?: Array<{ text: string }> }, oldLine: string): void {
-  const now = turn.swahili;
-  if (!turn.words?.length || now === oldLine) return;
-  let p = 0;
-  while (p < oldLine.length && p < now.length && oldLine[p] === now[p]) p++;
-  let sfx = 0;
-  while (sfx < oldLine.length - p && sfx < now.length - p && oldLine[oldLine.length - 1 - sfx] === now[now.length - 1 - sfx]) sfx++;
-  const oldEnd = oldLine.length - sfx;
-  const newEnd = now.length - sfx;
-  const delta = now.length - oldLine.length;
-  const inserted = now.slice(p, newEnd).trim();
-  const smallInsert = inserted.length > 0 && inserted.split(/\s+/).length <= 3 && !/[.,;:!?]/.test(inserted);
-
-  const kept: typeof turn.words = [];
-  let cursor = 0;
-  let stretched = false;
-  for (const w of turn.words) {
-    const s = oldLine.indexOf(w.text, cursor);
-    if (s === -1) {
-      // Wasn't placed in the old line either: keep it only if it now fits.
-      if (now.includes(w.text)) kept.push(w);
-      continue;
-    }
-    cursor = s + w.text.length;
-    const e = s + w.text.length;
-    let ns: number;
-    let ne: number;
-    if (e <= p) [ns, ne] = [s, e];
-    else if (s >= oldEnd) [ns, ne] = [s + delta, e + delta];
-    else continue; // the edit cut through this word — its gloss no longer applies
-    if (smallInsert && !stretched && (e === p || s === oldEnd)) {
-      stretched = true;
-      // Words typed right against this gloss become part of it.
-      let a = Math.min(ns, p);
-      let b = Math.max(ne, newEnd);
-      while (a > 0 && isWordChar(now[a - 1])) a--;
-      while (b < now.length && isWordChar(now[b])) b++;
-      ns = a;
-      ne = b;
-      while (ns < ne && !isWordChar(now[ns])) ns++;
-      while (ne > ns && !isWordChar(now[ne - 1])) ne--;
-    }
-    const text = now.slice(ns, ne);
-    if (text) kept.push({ ...w, text });
-  }
-  turn.words = kept;
 }
 
 function bump(): void {

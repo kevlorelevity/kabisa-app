@@ -1404,6 +1404,10 @@
       "nounForms": {
         "one": "chombo",
         "many": "vyombo"
+      },
+      "englishForms": {
+        "one": "dish, utensil",
+        "many": "dishes, utensils"
       }
     },
     {
@@ -1414,6 +1418,10 @@
       "nounForms": {
         "one": "sakafu",
         "many": "sakafu"
+      },
+      "englishForms": {
+        "one": "floor",
+        "many": "floors"
       }
     },
     {
@@ -1424,6 +1432,10 @@
       "nounForms": {
         "one": "sabuni",
         "many": "sabuni"
+      },
+      "englishForms": {
+        "one": "soap",
+        "many": "soaps"
       }
     },
     {

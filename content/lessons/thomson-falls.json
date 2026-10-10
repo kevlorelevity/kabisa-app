@@ -1547,11 +1547,15 @@
     {
       "id": "3079968f-6948-5af8-96b6-b8d49355047b",
       "swahili": "mandhari",
-      "english": "scenery |",
+      "english": "scenery",
       "exampleContext": "",
       "nounForms": {
         "one": "mandhari",
         "many": "mandhari"
+      },
+      "englishForms": {
+        "one": "view",
+        "many": "scenery"
       }
     },
     {
@@ -1563,6 +1567,10 @@
       "nounForms": {
         "one": null,
         "many": "maporomoko ya maji"
+      },
+      "englishForms": {
+        "one": null,
+        "many": "waterfall(s)"
       }
     },
     {
@@ -1573,17 +1581,25 @@
       "nounForms": {
         "one": "kivutio",
         "many": "vivutio"
+      },
+      "englishForms": {
+        "one": "attraction",
+        "many": "attractions"
       }
     },
     {
       "id": "aad2edab-450d-5652-a7bd-226972b3750e",
       "swahili": "mtalii / watalii",
-      "english": "tourist / tourists |",
+      "english": "tourist / tourists",
       "exampleContext": "",
       "partOfSpeech": "phrase",
       "nounForms": {
         "one": "mtalii",
         "many": "watalii"
+      },
+      "englishForms": {
+        "one": "tourist",
+        "many": "tourists"
       }
     },
     {
@@ -1594,12 +1610,16 @@
       "nounForms": {
         "one": "kiongozi",
         "many": "viongozi"
+      },
+      "englishForms": {
+        "one": "guide, leader",
+        "many": "guides, leaders"
       }
     },
     {
       "id": "e4381a83-c28d-588f-9ba0-5ef33ae60082",
       "swahili": "salama",
-      "english": "safe |",
+      "english": "safe",
       "exampleContext": ""
     },
     {
@@ -1633,27 +1653,35 @@
     {
       "id": "5a0503c1-b0fd-53dd-98b1-9f21175c13c2",
       "swahili": "ng'ombe",
-      "english": "cow(s), cattle |",
+      "english": "cow(s), cattle",
       "exampleContext": "",
       "nounForms": {
         "one": "ng'ombe",
         "many": "ng'ombe"
+      },
+      "englishForms": {
+        "one": "cow",
+        "many": "cows, cattle"
       }
     },
     {
       "id": "71c430b7-3b85-5b62-9345-36e3764b5847",
       "swahili": "utamaduni",
-      "english": "culture |",
+      "english": "culture",
       "exampleContext": "",
       "nounForms": {
         "one": "utamaduni",
+        "many": null
+      },
+      "englishForms": {
+        "one": "culture",
         "many": null
       }
     },
     {
       "id": "4a665816-1b1a-5151-a1a8-967ab3bf04e8",
       "swahili": "Ningependa sana!",
-      "english": "I'd love that! |",
+      "english": "I'd love that!",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     }

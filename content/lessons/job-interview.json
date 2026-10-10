@@ -956,14 +956,14 @@
     {
       "id": "743c663b-b869-5293-a757-f6c14af29cdf",
       "swahili": "Nimekuwa nikifanya kazi…",
-      "english": "I've been working… |",
+      "english": "I've been working…",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "201d10a3-196a-5caa-aab9-70bfcff88ab5",
       "swahili": "Nilipokuwa nikisoma…",
-      "english": "When I was studying… |",
+      "english": "When I was studying…",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -976,6 +976,10 @@
       "nounForms": {
         "one": "chuo kikuu",
         "many": "vyuo vikuu"
+      },
+      "englishForms": {
+        "one": "university",
+        "many": "universities"
       }
     },
     {
@@ -987,19 +991,23 @@
       "nounForms": {
         "one": "kazi ya muda",
         "many": "kazi za muda"
+      },
+      "englishForms": {
+        "one": "part-time job",
+        "many": "part-time jobs"
       }
     },
     {
       "id": "50b68e2f-c2e7-5ed4-893b-806b0bd9951f",
       "swahili": "Ningependa…",
-      "english": "I would like… |",
+      "english": "I would like…",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "cfab6f2a-5307-50fe-9ca1-ea3cee142f4c",
       "swahili": "Nimesikia kwamba…",
-      "english": "I've heard that… |",
+      "english": "I've heard that…",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1013,11 +1021,15 @@
     {
       "id": "286648ee-8818-5f5d-9677-f90f0a570a11",
       "swahili": "changamoto",
-      "english": "challenge |",
+      "english": "challenge",
       "exampleContext": "",
       "nounForms": {
         "one": "changamoto",
         "many": "changamoto"
+      },
+      "englishForms": {
+        "one": "challenge",
+        "many": "challenges"
       }
     },
     {
@@ -1048,6 +1060,10 @@
       "nounForms": {
         "one": "uamuzi",
         "many": "maamuzi"
+      },
+      "englishForms": {
+        "one": "decision",
+        "many": "decisions"
       }
     },
     {

@@ -1423,16 +1423,24 @@
       "nounForms": {
         "one": "biashara",
         "many": "biashara"
+      },
+      "englishForms": {
+        "one": "business",
+        "many": "businesses"
       }
     },
     {
       "id": "788c24ee-f88c-5637-a64d-aa77da41f705",
       "swahili": "kampuni",
-      "english": "company |",
+      "english": "company",
       "exampleContext": "",
       "nounForms": {
         "one": "kampuni",
         "many": "kampuni"
+      },
+      "englishForms": {
+        "one": "company",
+        "many": "companies"
       }
     },
     {
@@ -1443,6 +1451,10 @@
       "nounForms": {
         "one": "ofisi",
         "many": "ofisi"
+      },
+      "englishForms": {
+        "one": "office",
+        "many": "offices"
       }
     },
     {
@@ -1454,6 +1466,10 @@
       "nounForms": {
         "one": "mfanyakazi",
         "many": "wafanyakazi"
+      },
+      "englishForms": {
+        "one": "employee",
+        "many": "employees"
       }
     },
     {
@@ -1464,17 +1480,25 @@
       "nounForms": {
         "one": "mfanyabiashara",
         "many": "wafanyabiashara"
+      },
+      "englishForms": {
+        "one": "business person",
+        "many": "business people"
       }
     },
     {
       "id": "c3d39c47-0870-57da-bc44-999d11cb84c1",
       "swahili": "mteja / wateja",
-      "english": "customer / customers |",
+      "english": "customer / customers",
       "exampleContext": "",
       "partOfSpeech": "phrase",
       "nounForms": {
         "one": "mteja",
         "many": "wateja"
+      },
+      "englishForms": {
+        "one": "customer",
+        "many": "customers"
       }
     },
     {
@@ -1487,11 +1511,15 @@
     {
       "id": "7c6bca58-41ce-544e-9598-86c3653e085e",
       "swahili": "mauzo",
-      "english": "sales |",
+      "english": "sales",
       "exampleContext": "",
       "nounForms": {
         "one": null,
         "many": "mauzo"
+      },
+      "englishForms": {
+        "one": null,
+        "many": "sales"
       }
     },
     {
@@ -1524,7 +1552,7 @@
     {
       "id": "43c87c3c-0ad9-5b6f-8f9b-ed429272dff3",
       "swahili": "Biashara njema!",
-      "english": "Good luck with the business! |",
+      "english": "Good luck with the business!",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     }

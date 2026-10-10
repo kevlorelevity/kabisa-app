@@ -946,28 +946,40 @@
       "nounForms": {
         "one": "shule",
         "many": "shule"
+      },
+      "englishForms": {
+        "one": "school",
+        "many": "schools"
       }
     },
     {
       "id": "d992564c-3605-5444-808e-07ef4cf5a889",
       "swahili": "mwalimu mkuu",
-      "english": "head teacher |",
+      "english": "head teacher",
       "exampleContext": "",
       "partOfSpeech": "phrase",
       "nounForms": {
         "one": "mwalimu mkuu",
         "many": "walimu wakuu"
+      },
+      "englishForms": {
+        "one": "head teacher",
+        "many": "head teachers"
       }
     },
     {
       "id": "29cd122b-9aff-58cc-b76b-08c99cc9f310",
       "swahili": "mwanafunzi / wanafunzi",
-      "english": "pupil, student / pupils, students |",
+      "english": "pupil, student / pupils, students",
       "exampleContext": "",
       "partOfSpeech": "phrase",
       "nounForms": {
         "one": "mwanafunzi",
         "many": "wanafunzi"
+      },
+      "englishForms": {
+        "one": "pupil, student",
+        "many": "pupils, students"
       }
     },
     {
@@ -980,23 +992,31 @@
       "nounForms": {
         "one": "darasa",
         "many": "madarasa"
+      },
+      "englishForms": {
+        "one": "class, classroom",
+        "many": "classes, classrooms"
       }
     },
     {
       "id": "6eac4857-0376-5e64-b14e-be1efdab2f6a",
       "swahili": "somo / masomo",
-      "english": "subject, lesson / subjects |",
+      "english": "subject, lesson / subjects",
       "exampleContext": "",
       "partOfSpeech": "phrase",
       "nounForms": {
         "one": "somo",
         "many": "masomo"
+      },
+      "englishForms": {
+        "one": "subject, lesson",
+        "many": "subjects, lessons"
       }
     },
     {
       "id": "388d58ec-bdb5-5c97-8963-54a613d34d6d",
       "swahili": "hesabu / sayansi",
-      "english": "maths / science |",
+      "english": "maths / science",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1015,11 +1035,15 @@
     {
       "id": "0896c49d-ab74-562d-8651-59848e1e9285",
       "swahili": "mtihani",
-      "english": "test, exam |",
+      "english": "test, exam",
       "exampleContext": "",
       "nounForms": {
         "one": "mtihani",
         "many": "mitihani"
+      },
+      "englishForms": {
+        "one": "test, exam",
+        "many": "tests, exams"
       }
     },
     {
@@ -1031,36 +1055,52 @@
       "nounForms": {
         "one": "kitabu",
         "many": "vitabu"
+      },
+      "englishForms": {
+        "one": "book",
+        "many": "books"
       }
     },
     {
       "id": "5ea26e0f-593e-50ec-8545-ee5ecdf2e645",
       "swahili": "kalamu",
-      "english": "pen |",
+      "english": "pen",
       "exampleContext": "",
       "nounForms": {
         "one": "kalamu",
         "many": "kalamu"
+      },
+      "englishForms": {
+        "one": "pen",
+        "many": "pens"
       }
     },
     {
       "id": "5d02781c-5082-5a6b-a9ad-3f71f3e67a9e",
       "swahili": "sare",
-      "english": "uniform |",
+      "english": "uniform",
       "exampleContext": "",
       "nounForms": {
         "one": "sare",
         "many": "sare"
+      },
+      "englishForms": {
+        "one": "uniform",
+        "many": "uniforms"
       }
     },
     {
       "id": "6577e070-e848-5f89-9b94-41e7021851fa",
       "swahili": "mapumziko",
-      "english": "break time |",
+      "english": "break time",
       "exampleContext": "",
       "nounForms": {
         "one": null,
         "many": "mapumziko"
+      },
+      "englishForms": {
+        "one": null,
+        "many": "break time"
       }
     }
   ],

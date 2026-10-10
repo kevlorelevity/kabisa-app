@@ -148,13 +148,14 @@ export async function POST(request: Request): Promise<Response> {
           scope: patchScopeFor(scope, kind),
           item_id: itemId ?? null,
           value,
-          ...(swaps.length ? { swaps } : {}),
         }),
       });
       if (!pRes.ok) throw new Error(`Saving the change failed: ${(await pRes.text().catch(() => '')).slice(0, 200)}`);
       const patch = ((await pRes.json()) as Array<{ id: string }>)[0];
-      const swapNote = swaps.length ? ` Changed everywhere: ${swaps.map((x) => `${x.from} → ${x.to}`).join(', ')}.` : '';
-      await finish({ status: 'live', summary: summary + swapNote, patch_id: patch.id });
+      // Word swaps are NOT applied blindly across the app: the admin's app hands them to
+      // /api/ai-followup, which checks every other place by meaning (and asks when unsure).
+      const swapNote = swaps.length ? ` Checking the other places for: ${swaps.map((x) => `${x.from} → ${x.to}`).join(', ')}.` : '';
+      await finish({ status: 'live', summary: summary + swapNote, patch_id: patch.id, ...(swaps.length ? { pending_swaps: swaps } : {}) });
     } catch (e) {
       console.error('[ai-edit]', e);
       await finish({ status: 'failed', error: e instanceof Error ? e.message.slice(0, 500) : 'unknown error' });

@@ -53,6 +53,11 @@ function AdminMenu({ onSignOut }: { onSignOut: () => void }) {
             {busy}
           </span>
         )}
+        {activity.questions > 0 && (
+          <span className="ml-1 inline-flex h-4 min-w-4 items-center justify-center rounded-full bg-sky-600 px-1 text-[10px] font-bold text-white" title="The AI needs your call — open Activity">
+            {activity.questions}?
+          </span>
+        )}
         {activity.failed > 0 && busy === 0 && (
           <span className="ml-1 text-xs font-bold text-red-600" title="Something failed — open Activity">!</span>
         )}{' '}
@@ -103,7 +108,13 @@ function AdminMenu({ onSignOut }: { onSignOut: () => void }) {
           >
             <span className="block text-sm font-medium text-gray-900">Activity & team rules</span>
             <span className="block text-xs text-gray-500">
-              {busy > 0 ? `${busy} saving / working…` : activity.failed ? `${activity.failed} need attention` : 'AI edits, saves, style guide'}
+              {activity.questions
+                ? `${activity.questions} question${activity.questions === 1 ? '' : 's'} from the AI`
+                : busy > 0
+                ? `${busy} saving / working…`
+                : activity.failed
+                ? `${activity.failed} need attention`
+                : 'AI edits, saves, style guide'}
             </span>
           </button>
           <div className="border-t border-gray-100 my-1" />

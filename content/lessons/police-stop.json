@@ -962,6 +962,10 @@
       "nounForms": {
         "one": "afande",
         "many": "maafande"
+      },
+      "englishForms": {
+        "one": "officer",
+        "many": "officers"
       }
     },
     {
@@ -973,35 +977,43 @@
       "nounForms": {
         "one": "leseni ya kuendesha",
         "many": "leseni za kuendesha"
+      },
+      "englishForms": {
+        "one": "driving licence",
+        "many": "driving licences"
       }
     },
     {
       "id": "92fd8f4d-3627-51cd-9908-26adefea2051",
       "swahili": "bima",
-      "english": "insurance |",
+      "english": "insurance",
       "exampleContext": "",
       "nounForms": {
         "one": "bima",
         "many": "bima"
+      },
+      "englishForms": {
+        "one": "insurance",
+        "many": "insurances"
       }
     },
     {
       "id": "e3e3dc79-f715-5b72-9eaa-71dfa61e35b7",
       "swahili": "Nimekusimamisha",
-      "english": "I've stopped you |",
+      "english": "I've stopped you",
       "exampleContext": ""
     },
     {
       "id": "4a05026a-b079-517a-94c7-b029f9415ba9",
       "swahili": "kwa kasi",
-      "english": "fast / at speed |",
+      "english": "fast / at speed",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "16f61ef2-4ab3-59b7-97cf-2747ef14cf48",
       "swahili": "Sikujua",
-      "english": "I didn't know |",
+      "english": "I didn't know",
       "exampleContext": ""
     },
     {
@@ -1011,6 +1023,10 @@
       "exampleContext": "kukagua = to inspect",
       "nounForms": {
         "one": "ukaguzi",
+        "many": null
+      },
+      "englishForms": {
+        "one": "inspection",
         "many": null
       }
     },
@@ -1045,14 +1061,14 @@
     {
       "id": "14f06e5c-9e2c-5185-b5c7-8a85a7977722",
       "swahili": "Nitazingatia sheria",
-      "english": "I'll obey the law |",
+      "english": "I'll obey the law",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "5c97b7fe-1d12-5faf-bbf7-74053e7adc4e",
       "swahili": "Ufunge mkanda",
-      "english": "Fasten your seatbelt |",
+      "english": "Fasten your seatbelt",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     }

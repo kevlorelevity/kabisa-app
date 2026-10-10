@@ -1014,6 +1014,10 @@
       "nounForms": {
         "one": "nguo",
         "many": "nguo"
+      },
+      "englishForms": {
+        "one": "piece of clothing",
+        "many": "clothes"
       }
     },
     {
@@ -1026,6 +1030,10 @@
       "nounForms": {
         "one": "shati",
         "many": "mashati"
+      },
+      "englishForms": {
+        "one": "shirt",
+        "many": "shirts"
       }
     },
     {
@@ -1036,6 +1044,10 @@
       "nounForms": {
         "one": "suruali",
         "many": "suruali"
+      },
+      "englishForms": {
+        "one": "pair of trousers",
+        "many": "trousers"
       }
     },
     {
@@ -1048,6 +1060,10 @@
       "nounForms": {
         "one": "kiatu",
         "many": "viatu"
+      },
+      "englishForms": {
+        "one": "shoe",
+        "many": "shoes"
       }
     },
     {
@@ -1058,6 +1074,10 @@
       "nounForms": {
         "one": "rangi",
         "many": "rangi"
+      },
+      "englishForms": {
+        "one": "colour",
+        "many": "colours"
       }
     },
     {
@@ -1082,6 +1102,10 @@
       "nounForms": {
         "one": "saizi",
         "many": "saizi"
+      },
+      "englishForms": {
+        "one": "size",
+        "many": "sizes"
       }
     },
     {

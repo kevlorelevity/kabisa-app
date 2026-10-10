@@ -1021,6 +1021,10 @@
       "nounForms": {
         "one": "mwenye nyumba",
         "many": "wenye nyumba"
+      },
+      "englishForms": {
+        "one": "landlord",
+        "many": "landlords"
       }
     },
     {
@@ -1031,6 +1035,10 @@
       "nounForms": {
         "one": "kodi",
         "many": "kodi"
+      },
+      "englishForms": {
+        "one": "rent",
+        "many": "rents"
       }
     },
     {
@@ -1073,7 +1081,7 @@
     {
       "id": "3065f0df-e403-5e2b-846e-385e2f3ba23c",
       "swahili": "haingetokea",
-      "english": "it wouldn't have happened |",
+      "english": "it wouldn't have happened",
       "exampleContext": ""
     },
     {
@@ -1086,7 +1094,7 @@
     {
       "id": "15cf3196-714e-56d8-b641-ef00c33c1eff",
       "swahili": "Nikilipa kodi…",
-      "english": "If I pay the rent… |",
+      "english": "If I pay the rent…",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },

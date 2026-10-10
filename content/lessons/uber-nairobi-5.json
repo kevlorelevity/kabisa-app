@@ -1344,7 +1344,7 @@
     {
       "id": "af583b71-7897-51bd-ad41-0faee2d9df81",
       "swahili": "Pole pole ndio mwendo",
-      "english": "Slow and steady is the way |",
+      "english": "Slow and steady is the way",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1365,7 +1365,7 @@
     {
       "id": "345dc149-f055-55c8-8037-2fa517cace1e",
       "swahili": "Mambo ni mengi, muda ni mchache",
-      "english": "So much to do, so little time |",
+      "english": "So much to do, so little time",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1400,12 +1400,16 @@
     {
       "id": "929ac952-9c18-5b71-a957-35a6a0aed829",
       "swahili": "rafiki wa kweli",
-      "english": "a true friend |",
+      "english": "a true friend",
       "exampleContext": "",
       "partOfSpeech": "phrase",
       "nounForms": {
         "one": "rafiki wa kweli",
         "many": "marafiki wa kweli"
+      },
+      "englishForms": {
+        "one": "true friend",
+        "many": "true friends"
       }
     },
     {

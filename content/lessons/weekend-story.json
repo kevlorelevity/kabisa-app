@@ -1237,14 +1237,14 @@
     {
       "id": "035c6009-f310-5b7c-9714-406e8f3df17b",
       "swahili": "Nilienda…",
-      "english": "I went… |",
+      "english": "I went…",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "b48a0d66-1048-5ec7-a4dc-07ea4ee8ce43",
       "swahili": "Watu wengi walikuja",
-      "english": "Lots of people came |",
+      "english": "Lots of people came",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
@@ -1290,21 +1290,21 @@
     {
       "id": "ee0b51ab-da95-5b52-9195-e9206be32244",
       "swahili": "Nililala tu",
-      "english": "I just slept |",
+      "english": "I just slept",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "31dc3f29-141e-5351-8a26-1d706e34c806",
       "swahili": "Sikutoka nyumbani",
-      "english": "I didn't leave the house |",
+      "english": "I didn't leave the house",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     },
     {
       "id": "b60ab8c0-23a3-5bfd-bc2e-5e3589fcf612",
       "swahili": "shughuli nyingi",
-      "english": "lots to do / busy |",
+      "english": "lots to do / busy",
       "exampleContext": "",
       "partOfSpeech": "phrase"
     }

@@ -2,7 +2,8 @@ import { useState } from 'react';
 import type { VocabEntry as VocabEntryType } from '../types';
 import { AudioButton } from './AudioButton';
 import { EditPencil } from './EditPencil';
-import { NounForms } from './NounForms';
+import { vocabTarget } from './adminTargets';
+import { vocabLabels } from './NounForms';
 
 interface VocabEntryProps {
   entry: VocabEntryType;
@@ -11,29 +12,18 @@ interface VocabEntryProps {
 export function VocabEntry({ entry }: VocabEntryProps) {
   const [showSanifu, setShowSanifu] = useState(false);
   const hasSanifu = Boolean(entry.sanifu);
+  const { sw, en } = vocabLabels(entry);
 
   return (
     <div className="py-3 border-b border-gray-100 last:border-0">
       <div className="flex items-start justify-between gap-4">
         <div>
           <AudioButton text={entry.swahili} className="align-middle -ml-1.5 mr-0.5" />
-          <span className="font-semibold text-gray-900">{entry.swahili}</span>
-          <span className="text-gray-500 mx-2">—</span>
-          <span className="text-gray-700">{entry.english}</span>{' '}
-          <EditPencil
-            target={{
-              targetType: 'vocab',
-              label: 'Vocabulary / flashcard',
-              currentText: [entry.swahili, entry.english, entry.exampleContext, entry.sanifu, entry.sanifuNote, entry.note].filter(Boolean).join(' | '),
-              itemId: entry.id,
-            }}
-          />
-          {entry.nounForms && (
-            <p className="mt-1">
-              <NounForms forms={entry.nounForms} />
-            </p>
-          )}
-          <p className="text-xs text-gray-400 mt-0.5 italic">{entry.exampleContext}</p>
+          <span className="font-semibold text-gray-900">{sw}</span>
+          <span className="text-gray-400 mx-2">–</span>
+          <span className="text-gray-700">{en}</span>{' '}
+          <EditPencil target={vocabTarget(entry, 'Vocabulary / flashcard')} />
+          {entry.exampleContext && <p className="text-xs text-gray-400 mt-0.5 italic">{entry.exampleContext}</p>}
           {entry.note && (
             <p className="text-xs text-amber-900 mt-1">
               <span className="font-semibold">💡 Note · </span>

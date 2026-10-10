@@ -1010,6 +1010,10 @@
       "nounForms": {
         "one": "nyanya",
         "many": "nyanya"
+      },
+      "englishForms": {
+        "one": "tomato",
+        "many": "tomatoes"
       }
     },
     {
@@ -1022,6 +1026,10 @@
       "nounForms": {
         "one": "kitunguu",
         "many": "vitunguu"
+      },
+      "englishForms": {
+        "one": "onion",
+        "many": "onions"
       }
     },
     {

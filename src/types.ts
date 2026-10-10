@@ -68,6 +68,8 @@ export interface VocabEntry {
   note?: string;
   /** Nouns: singular and plural (null = none: uncountable / plural-only). Same string = same word for one & many. */
   nounForms?: { one: string | null; many: string | null };
+  /** Nouns: the English singular and plural, shown as "kiatu / viatu – shoe / shoes". */
+  englishForms?: { one: string | null; many: string | null };
   /** Part of speech. Drives tap-to-explain panel behavior. */
   partOfSpeech?: PartOfSpeech;
   /** Noun class — required for nouns. V1 only surfaces m_wa and n_n. */
@@ -208,6 +210,8 @@ export interface PracticeItem {
   explanation: string;
   /** Grammar explainer slugs for the tested form. */
   grammar?: string[];
+  /** Learner note (💡) shown with the explanation. */
+  note?: string;
 }
 
 export interface Lesson {
