@@ -211,6 +211,7 @@ function normTurn(
   forceId?: string,
   regloss = false,
   keepEnglish = false,
+  lenient = false,
 ): Obj {
   const before = forceId ? prev.get(forceId) : undefined;
   // Re-gloss after an admin edit: the line, speaker, role and answer choices stay exactly as edited.
@@ -270,13 +271,19 @@ function normTurn(
         if (o.correct !== true && w && w !== swahili && !wrong.includes(w)) wrong.push(w);
       }
     }
+    // In a whole conversation, a line the AI left without wrong options borrows them from the
+    // learner's other lines afterwards (fillWrongOptions) instead of failing the whole rewrite.
+    if (wrong.length < 1 && lenient) {
+      turn.options = [{ swahili, correct: true }];
+      return turn;
+    }
     if (wrong.length < 1) throw new Error(`The learner line "${swahili}" needs at least one wrong option.`);
     turn.options = [{ swahili, correct: true }, ...wrong.map((w) => ({ swahili: w, correct: false }))];
   }
   return turn;
 }
 
-function normPractice(raw: Obj, prev: Map<string, Obj>, known: Set<string>, used: Set<string>, forceId?: string): Obj {
+function normPractice(raw: Obj, prev: Map<string, Obj>, known: Set<string>, used: Set<string>, forceId?: string, lenient = false): Obj {
   const mode = s(raw.mode) === 'complete' ? 'complete' : 'translate';
   const english = s(raw.english);
   const before = typeof raw.before === 'string' ? raw.before : '';
@@ -296,7 +303,7 @@ function normPractice(raw: Obj, prev: Map<string, Obj>, known: Set<string>, used
       if (o.correct !== true && w && w !== right.text) wrong.push({ text: w, correct: false, feedback: s(o.feedback) });
     }
   }
-  if (!wrong.length) throw new Error(`The practice item "${english}" needs at least one wrong option.`);
+  if (!wrong.length && !lenient) throw new Error(`The practice item "${english}" needs at least one wrong option.`);
   const id = forceId ?? idFor(raw.id, known, used);
   const item: Obj = {
     id,
@@ -318,6 +325,47 @@ function indexById(list: unknown): Map<string, Obj> {
   return m;
 }
 
+/**
+ * Learner lines the AI left with only the right answer get wrong options borrowed from the
+ * learner's other lines in the same conversation (nearest first) — a turn-taking trick the
+ * lessons already use. Throws only if there is nothing to borrow.
+ */
+export function fillWrongOptions(turns: Obj[]): void {
+  const userLines = turns.filter((t) => t.role === 'user').map((t) => s(t.swahili));
+  turns.forEach((t, i) => {
+    const opts = t.options as Array<{ swahili: string; correct: boolean }> | undefined;
+    if (t.role !== 'user' || !opts || opts.length > 1) return;
+    const line = s(t.swahili);
+    const others = turns
+      .map((x, j) => ({ x, d: Math.abs(j - i) }))
+      .filter(({ x }) => x.role === 'user' && s(x.swahili) !== line)
+      .sort((a, b) => a.d - b.d)
+      .map(({ x }) => s(x.swahili))
+      .filter((w, k, all) => all.indexOf(w) === k)
+      .slice(0, 2);
+    if (!others.length || userLines.length < 2) throw new Error(`The learner line "${line}" needs at least one wrong option.`);
+    t.options = [{ swahili: line, correct: true }, ...others.map((w) => ({ swahili: w, correct: false }))];
+  });
+}
+
+/** Practice items left with only the right chip borrow wrong chips from the other items' answers. */
+export function fillWrongChips(items: Obj[]): void {
+  items.forEach((it, i) => {
+    const opts = it.options as Array<{ text: string; correct: boolean }>;
+    if (opts.length > 1) return;
+    const right = opts[0].text;
+    const others = items
+      .map((x, j) => ({ t: (x.options as Array<{ text: string; correct: boolean }>).find((o) => o.correct)?.text ?? '', d: Math.abs(j - i) }))
+      .filter(({ t }) => t && t !== right)
+      .sort((a, b) => a.d - b.d)
+      .map(({ t }) => t)
+      .filter((w, k, all) => all.indexOf(w) === k)
+      .slice(0, 2);
+    if (!others.length) throw new Error(`The practice item "${s(it.english)}" needs at least one wrong option.`);
+    it.options = [opts[0], ...others.map((t) => ({ text: t, correct: false }))];
+  });
+}
+
 /** Validates Claude's JSON and returns { summary, value } ready to store as a content_patch. */
 export function normalizeResult(
   scope: AiScope,
@@ -333,7 +381,8 @@ export function normalizeResult(
   if (scope === 'dialogue') {
     const prev = indexById(current);
     const used = new Set<string>();
-    const turns = (Array.isArray(r.turns) ? (r.turns as Obj[]) : []).map((t) => normTurn(t, prev, new Set(prev.keys()), used));
+    const turns = (Array.isArray(r.turns) ? (r.turns as Obj[]) : []).map((t) => normTurn(t, prev, new Set(prev.keys()), used, undefined, false, false, true));
+    fillWrongOptions(turns);
     if (turns.length < 2) throw new Error('The rewritten conversation is too short.');
     if (!turns.some((t) => t.role === 'user')) throw new Error('The rewritten conversation has no learner lines.');
     return { summary, value: turns };
@@ -341,7 +390,8 @@ export function normalizeResult(
   if (scope === 'practice') {
     const prev = indexById(current);
     const used = new Set<string>();
-    const items = (Array.isArray(r.practice) ? (r.practice as Obj[]) : []).map((p) => normPractice(p, prev, new Set(prev.keys()), used));
+    const items = (Array.isArray(r.practice) ? (r.practice as Obj[]) : []).map((p) => normPractice(p, prev, new Set(prev.keys()), used, undefined, true));
+    fillWrongChips(items);
     if (items.length < 3) throw new Error('The rewritten practice session is too short.');
     return { summary, value: items };
   }

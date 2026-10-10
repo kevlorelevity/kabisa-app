@@ -79,3 +79,27 @@ describe('AI edit validation', () => {
     expect(lesson.practice?.[0].id).toBe('p9');
   });
 });
+
+describe('whole-conversation rewrites with a learner line missing its wrong options', () => {
+  it('borrows wrong options from the learner’s other lines instead of failing', async () => {
+    const { normalizeResult } = await import('./aiPatch');
+    const turns = [
+      { speaker: 'Wewe', role: 'user', swahili: 'Mimi ni mfanyabiashara.', english: 'I am a business person.', words: [], options: [{ swahili: 'Mimi ni mfanyabiashara.', correct: true }, { swahili: 'Mimi ni mwalimu.', correct: false }] },
+      { speaker: 'Amina', role: 'auto', swahili: 'Sawa!', english: 'OK!', words: [] },
+      { speaker: 'Wewe', role: 'user', swahili: 'Na taa moja ni pesa ngapi?', english: 'And how much is one lamp?', words: [] },
+      { speaker: 'Amina', role: 'auto', swahili: 'Mia mbili.', english: '200.', words: [] },
+      { speaker: 'Wewe', role: 'user', swahili: 'Faida ni kidogo.', english: 'The profit is small.', words: [], options: [{ swahili: 'Faida ni kidogo.', correct: true }, { swahili: 'Faida ni kubwa.', correct: false }] },
+    ];
+    const { value } = normalizeResult('dialogue', null, { summary: 's', turns }, []);
+    const t = (value as Array<{ swahili: string; options?: Array<{ swahili: string; correct: boolean }> }>)[2];
+    expect(t.options?.[0]).toEqual({ swahili: 'Na taa moja ni pesa ngapi?', correct: true });
+    expect(t.options?.slice(1).map((o) => o.swahili).sort()).toEqual(['Faida ni kidogo.', 'Mimi ni mfanyabiashara.']);
+  });
+
+  it('does the same for practice items', async () => {
+    const { normalizeResult } = await import('./aiPatch');
+    const item = (t: string, wrong?: string) => ({ mode: 'translate', english: t, before: '', after: '.', options: [{ text: t, correct: true }, ...(wrong ? [{ text: wrong, correct: false }] : [])], explanation: '' });
+    const { value } = normalizeResult('practice', null, { summary: 's', practice: [item('Ninauza', 'Unauza'), item('Faida'), item('Gharama', 'Bei')] }, []);
+    expect((value as Array<{ options: Array<{ text: string }> }>)[1].options.map((o) => o.text)).toEqual(['Faida', 'Ninauza', 'Gharama']);
+  });
+});
