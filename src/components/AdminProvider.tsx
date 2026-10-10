@@ -629,7 +629,7 @@ function DirectModal({ lessonId, scope, onClose, startAi }: { lessonId: string; 
       </label>
       <p className="text-xs text-gray-500">
         Claude rewrites the {what} in the background (a few minutes) following the house rules, the lesson's level and the style
-        guide. It goes live by itself; undo any time under Admin → Activity.
+        guide.{scope === 'dialogue' ? ' Then it reviews the key vocabulary, flashcards and practice so they match the new conversation.' : ''} It goes live by itself; undo any time under Admin → Activity.
       </p>
       <button
         disabled={!instruction.trim() || !lesson}
@@ -642,6 +642,7 @@ function DirectModal({ lessonId, scope, onClose, startAi }: { lessonId: string; 
             instruction: instruction.trim(),
             lesson: lessonContext(lesson),
             current: scope === 'dialogue' ? lesson.turns : lesson.practice ?? [],
+            ...(scope === 'dialogue' ? { companion: { vocabulary: lesson.vocabulary ?? [], practice: lesson.practice ?? [] } } : {}),
           });
           onClose();
         }}

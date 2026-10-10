@@ -68,7 +68,7 @@ export async function submitSuggestion(input: SuggestionInput): Promise<SubmitRe
 
 // ---------- AI edits, background jobs & team guidance ----------
 
-export type AiScope = 'item' | 'dialogue' | 'practice' | 'followup' | 'lesson';
+export type AiScope = 'item' | 'dialogue' | 'practice' | 'followup' | 'lesson' | 'sync';
 
 export interface AiEditInput {
   lessonId: string;
@@ -90,6 +90,8 @@ export interface AiEditInput {
   lesson: Record<string, unknown>;
   /** The current raw content being revised. */
   current: unknown;
+  /** Whole-conversation rewrites: the lesson's key vocabulary and practice, reviewed afterwards to match. */
+  companion?: { vocabulary: unknown[]; practice: unknown[] };
 }
 
 export async function submitAiEdit(input: AiEditInput): Promise<{ ok: boolean; jobId?: string; error?: string }> {

@@ -27,6 +27,24 @@ const POS = ['noun', 'verb', 'adjective', 'possessive', 'phrase', 'other'];
 const str = { type: 'string' } as const;
 const forms = { type: 'object', properties: { one: str, many: str }, required: ['one', 'many'], additionalProperties: false };
 
+export const vocabItemSchema = {
+  type: 'object',
+  properties: {
+    id: str,
+    swahili: str,
+    english: str,
+    exampleContext: str,
+    partOfSpeech: { type: 'string', enum: ['noun', 'verb', 'adjective', 'possessive', 'phrase', 'other'] },
+    nounForms: forms,
+    englishForms: forms,
+    sanifu: str,
+    sanifuNote: str,
+    note: str,
+  },
+  required: ['swahili', 'english', 'exampleContext', 'partOfSpeech'],
+  additionalProperties: false,
+};
+
 export function lessonSchema(): Obj {
   return {
     type: 'object',
@@ -40,24 +58,7 @@ export function lessonSchema(): Obj {
       grammarFocus: { type: 'array', items: str },
       turns: { type: 'array', items: turnSchema },
       practice: { type: 'array', items: practiceSchema },
-      vocabulary: {
-        type: 'array',
-        items: {
-          type: 'object',
-          properties: {
-            swahili: str,
-            english: str,
-            exampleContext: str,
-            partOfSpeech: { type: 'string', enum: POS },
-            nounForms: forms,
-            englishForms: forms,
-            sanifu: str,
-            note: str,
-          },
-          required: ['swahili', 'english', 'exampleContext', 'partOfSpeech'],
-          additionalProperties: false,
-        },
-      },
+      vocabulary: { type: 'array', items: vocabItemSchema },
     },
     required: ['summary', 'title', 'theme', 'category', 'culturalNote', 'startingPoint', 'grammarFocus', 'turns', 'practice', 'vocabulary'],
     additionalProperties: false,
@@ -122,6 +123,40 @@ function normForms(v: unknown): { one: string | null; many: string | null } | un
   return one || many ? { one, many } : undefined;
 }
 
+/**
+ * Key vocabulary (= the flashcards) from Claude. Entries whose "id" matches a current card keep
+ * that id (so learners' flashcard progress stays attached); new ones get a fresh id. Only nouns
+ * carry singular / plural forms.
+ */
+export function normVocabulary(list: unknown, current: Obj[] = []): Obj[] {
+  const known = new Map(current.filter((c) => typeof c.id === 'string').map((c) => [c.id as string, c]));
+  const used = new Set<string>();
+  return (Array.isArray(list) ? (list as Obj[]) : [])
+    .map((v) => {
+      const swahili = s(v.swahili);
+      const english = s(v.english);
+      if (!swahili || !english) return null;
+      const pos = POS.includes(s(v.partOfSpeech)) ? s(v.partOfSpeech) : 'phrase';
+      const nounForms = pos === 'noun' ? normForms(v.nounForms) : undefined;
+      const englishForms = nounForms ? normForms(v.englishForms) : undefined;
+      const keep = known.has(s(v.id)) && !used.has(s(v.id)) ? s(v.id) : '';
+      if (keep) used.add(keep);
+      return {
+        id: keep || uuid(),
+        swahili,
+        english,
+        exampleContext: s(v.exampleContext),
+        partOfSpeech: pos,
+        ...(nounForms ? { nounForms } : {}),
+        ...(englishForms ? { englishForms } : {}),
+        ...(s(v.sanifu) && s(v.sanifu) !== swahili ? { sanifu: s(v.sanifu) } : {}),
+        ...(s(v.sanifu) && s(v.sanifuNote) ? { sanifuNote: s(v.sanifuNote) } : {}),
+        ...(s(v.note) ? { note: s(v.note) } : {}),
+      } as Obj;
+    })
+    .filter((v): v is Obj => Boolean(v));
+}
+
 /** Validates Claude's lesson and returns it ready to store (same shape as content/lessons/*.json). */
 export function normalizeLesson(raw: unknown, input: NewLessonInput, grammarSlugs: Set<string>, id?: string): { summary: string; lesson: Obj } {
   if (!raw || typeof raw !== 'object') throw new Error('The AI returned no lesson.');
@@ -131,27 +166,7 @@ export function normalizeLesson(raw: unknown, input: NewLessonInput, grammarSlug
   const turns = normalizeResult('dialogue', null, { summary: 'x', turns: r.turns }, []).value as Obj[];
   if (turns.length < 6) throw new Error('The new conversation is too short.');
   const practice = normalizeResult('practice', null, { summary: 'x', practice: r.practice }, []).value as Obj[];
-  const vocabulary = (Array.isArray(r.vocabulary) ? (r.vocabulary as Obj[]) : [])
-    .map((v) => {
-      const swahili = s(v.swahili);
-      const english = s(v.english);
-      if (!swahili || !english) return null;
-      const pos = POS.includes(s(v.partOfSpeech)) ? s(v.partOfSpeech) : 'phrase';
-      const nounForms = pos === 'noun' ? normForms(v.nounForms) : undefined;
-      const englishForms = nounForms ? normForms(v.englishForms) : undefined;
-      return {
-        id: uuid(),
-        swahili,
-        english,
-        exampleContext: s(v.exampleContext),
-        partOfSpeech: pos,
-        ...(nounForms ? { nounForms } : {}),
-        ...(englishForms ? { englishForms } : {}),
-        ...(s(v.sanifu) && s(v.sanifu) !== swahili ? { sanifu: s(v.sanifu) } : {}),
-        ...(s(v.note) ? { note: s(v.note) } : {}),
-      };
-    })
-    .filter(Boolean);
+  const vocabulary = normVocabulary(r.vocabulary);
   if (vocabulary.length < 4) throw new Error('The new lesson needs more key vocabulary.');
   const grammarFocus = (Array.isArray(r.grammarFocus) ? (r.grammarFocus as unknown[]) : []).map(s).filter((g) => grammarSlugs.has(g)).slice(0, 3);
   const lesson: Obj = {

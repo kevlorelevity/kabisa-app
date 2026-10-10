@@ -13,6 +13,10 @@
     "api/style-guide.ts": {
       "maxDuration": 300
     },
+    "api/ai-sync.ts": {
+      "includeFiles": "content/grammar/**",
+      "maxDuration": 300
+    },
     "api/ai-lesson.ts": {
       "includeFiles": "content/grammar/**",
       "maxDuration": 300

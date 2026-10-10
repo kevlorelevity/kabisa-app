@@ -156,6 +156,17 @@ export async function POST(request: Request): Promise<Response> {
       // Word swaps are NOT applied blindly across the app: the admin's app hands them to
       // /api/ai-followup, which checks every other place by meaning (and asks when unsure).
       const swapNote = swaps.length ? ` Checking the other places for: ${swaps.map((x) => `${x.from} → ${x.to}`).join(', ')}.` : '';
+      // A rewritten conversation: review the key vocabulary, flashcards and practice to match it.
+      if (scope === 'dialogue') {
+        const companion = (b.companion ?? {}) as { vocabulary?: unknown[]; practice?: unknown[] };
+        const sync = await fetch(new URL('/api/ai-sync', request.url), {
+          method: 'POST',
+          headers: { 'content-type': 'application/json', authorization: `Bearer ${token}` },
+          body: JSON.stringify({ lesson, instruction, turns: value, vocabulary: companion.vocabulary ?? [], practice: companion.practice ?? [] }),
+        }).catch((e: unknown) => e);
+        if (!(sync instanceof Response) || !sync.ok) console.error('[ai-edit] could not start the vocabulary/practice review', sync instanceof Response ? sync.status : sync);
+      }
+      // Marked live after the review job exists, so the admin's app keeps polling until it's done too.
       await finish({ status: 'live', summary: summary + swapNote, patch_id: patch.id, ...(swaps.length ? { pending_swaps: swaps } : {}) });
     } catch (e) {
       console.error('[ai-edit]', e);

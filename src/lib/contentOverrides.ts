@@ -204,14 +204,15 @@ export function countPropagation(scope: unknown, o: Pick<ContentOverride, 'find_
 // ---- AI patches & notes (content_patch rows) ----
 //
 // 'item'      replaces one dialogue turn / practice item (AI edit).
-// 'dialogue'  replaces a lesson's whole conversation; 'practice' its practice session.
+// 'dialogue'  replaces a lesson's whole conversation; 'practice' its practice session;
+// 'vocabulary' its key vocabulary (= flashcards).
 // 'fields'    merges fields into one turn / practice item / vocabulary card (notes, Sanifu…).
 // 'word'      updates one glossed word in a turn (gloss, Sanifu, note); with
 //             `everywhere`, its note and Sanifu also show wherever that word is
 //             glossed and on flashcards for it, in every lesson.
 // In merged values an empty string removes the field.
 
-export type PatchScope = 'item' | 'dialogue' | 'practice' | 'fields' | 'word';
+export type PatchScope = 'item' | 'dialogue' | 'practice' | 'fields' | 'word' | 'vocabulary';
 
 export interface ContentPatch {
   id: string;
@@ -287,6 +288,10 @@ export function applyPatchTo(lesson: Lesson, p: Pick<ContentPatch, 'scope' | 'it
   }
   if (p.scope === 'practice' && Array.isArray(v)) {
     lesson.practice = v as NonNullable<Lesson['practice']>;
+    return true;
+  }
+  if (p.scope === 'vocabulary' && Array.isArray(v)) {
+    lesson.vocabulary = v as Lesson['vocabulary'];
     return true;
   }
   if (p.scope === 'item' && p.item_id && v && typeof v === 'object') {
