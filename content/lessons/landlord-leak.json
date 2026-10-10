@@ -292,7 +292,7 @@
       "id": "2f9ccb15-ace1-5ce1-96ad-b107610ff2a9",
       "speaker": "Otieno",
       "role": "auto",
-      "swahili": "Tena? Lakini fundi alikuja mwezi uliopita!",
+      "swahili": "Tena? Lakini fundi alikuja mwezi iliyopita!",
       "english": "Again? But the fundi came last month!",
       "words": [
         {
@@ -305,7 +305,7 @@
         },
         {
           "text": "fundi",
-          "gloss": "skilled worker / repairman (fundi wa bomba = plumber) — m/wa noun (people & animals; plural mafundi)",
+          "gloss": "skilled worker / repairman (fundi wa mfereji = plumber) — m/wa noun (people & animals; plural mafundi)",
           "grammar": [
             "noun-classes-mwa-nn"
           ]
@@ -348,13 +348,14 @@
           }
         },
         {
-          "text": "mwezi uliopita",
+          "text": "mwezi iliyopita",
           "gloss": "last month (lit. \"the month which passed\")",
           "grammar": [
             "relatives"
           ]
         }
-      ]
+      ],
+      "sanifu": "Tena? Lakini fundi alikuja mwezi uliopita!"
     },
     {
       "id": "9812f903-b5a4-5e55-85a6-adcf1b44db35",
@@ -754,7 +755,7 @@
       "id": "985f0633-59b5-53ff-aa38-4e541d7ddf8e",
       "speaker": "Otieno",
       "role": "auto",
-      "swahili": "Sawa. Na kodi ya mwezi huu?",
+      "swahili": "Sawa. Na kodi ya mwezi hii?",
       "english": "Okay. And this month's rent?",
       "words": [
         {
@@ -785,13 +786,11 @@
           "sanifu": "Sanifu: m/mi class — mwezi huu, miezi miwili"
         },
         {
-          "text": "huu",
-          "gloss": "this — m/mi or u (Sanifu: mti huu)",
-          "grammar": [
-            "demonstratives"
-          ]
+          "text": "hii",
+          "gloss": "this — n/n: mwezi hii (Sanifu: mwezi huu)."
         }
-      ]
+      ],
+      "sanifu": "Sawa. Na kodi ya mwezi huu?"
     },
     {
       "id": "59278498-bd8b-50dd-9bbe-d83a85353e27",

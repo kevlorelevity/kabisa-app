@@ -454,7 +454,7 @@
       "id": "2a677bc1-6558-5347-8f0f-8a9eb53b2f6f",
       "speaker": "Mgonjwa",
       "role": "user",
-      "swahili": "Hapana, huwa sinywi maji mengi. Ningejua, ningekuja mapema.",
+      "swahili": "Hapana, huwa sinywi maji mingi. Ningejua, ningekuja mapema.",
       "english": "No, I usually don't drink much water. If I'd known, I would have come earlier.",
       "words": [
         {
@@ -514,11 +514,8 @@
           "sanifu": "Sanifu: ji/ma class — maji yangu, maji haya (ma- plural of the ji/ma class)"
         },
         {
-          "text": "mengi",
-          "gloss": "\"many / a lot\" — ji/ma agreement (mambo mengi, magari mengi)",
-          "grammar": [
-            "sanifu-noun-classes"
-          ],
+          "text": "mingi",
+          "gloss": "a lot of / much — the everyday Kenyan form (Sanifu: maji mengi).",
           "sanifu": "ji/ma class"
         },
         {
@@ -542,18 +539,19 @@
       ],
       "options": [
         {
-          "swahili": "Hapana, huwa sinywi maji mengi. Ningejua, ningekuja mapema.",
+          "swahili": "Hapana, huwa sinywi maji mingi. Ningejua, ningekuja mapema.",
           "correct": true
         },
         {
-          "swahili": "Hapana, huwa sinywi maji mengi. Nikijua, nitakuja mapema.",
+          "swahili": "Hapana, huwa sinywi maji mingi. Nikijua, nitakuja mapema.",
           "correct": false
         },
         {
-          "swahili": "Ndiyo, huwa sinywi maji mengi. Ningejua, ningekuja mapema.",
+          "swahili": "Ndiyo, huwa sinywi maji mingi. Ningejua, ningekuja mapema.",
           "correct": false
         }
-      ]
+      ],
+      "sanifu": "Hapana, huwa sinywi maji mengi. Ningejua, ningekuja mapema."
     },
     {
       "id": "12a240c1-fa57-580b-8fb9-d0fec39b3d88",
@@ -590,7 +588,7 @@
       "id": "7b8980c0-00bd-5e81-a839-2640847a1e05",
       "speaker": "Mgonjwa",
       "role": "user",
-      "swahili": "Matokeo yatakuja lini?",
+      "swahili": "Matokeo itakuja lini?",
       "english": "When will the results come?",
       "words": [
         {
@@ -598,11 +596,8 @@
           "gloss": "results"
         },
         {
-          "text": "yatakuja",
-          "gloss": "\"they will come\" — ya- agreement (matokeo yatakuja).",
-          "grammar": [
-            "sanifu-noun-classes"
-          ],
+          "text": "itakuja",
+          "gloss": "it will come — i- (n/n) + -ta- + kuja (Sanifu: matokeo yatakuja).",
           "sanifu": "ji/ma plural agreement (ma- nouns). Kenyans keep it for nouns that start with ma-, but say \"zi-/-nyingi\" for most others."
         },
         {
@@ -615,18 +610,19 @@
       ],
       "options": [
         {
-          "swahili": "Matokeo yatakuja lini?",
+          "swahili": "Matokeo itakuja lini?",
           "correct": true
         },
         {
-          "swahili": "Matokeo yalikuja lini?",
+          "swahili": "Matokeo ilikuja lini?",
           "correct": false
         },
         {
-          "swahili": "Matokeo yatakuja wapi?",
+          "swahili": "Matokeo itakuja wapi?",
           "correct": false
         }
-      ]
+      ],
+      "sanifu": "Matokeo yatakuja lini?"
     },
     {
       "id": "f27703cf-f4fc-5cd0-9dc3-68526142ca2c",
@@ -820,7 +816,7 @@
       "id": "f0d37159-feef-54c2-8cc7-61dd3d2675c4",
       "speaker": "Daktari",
       "role": "auto",
-      "swahili": "Kula uji, wali na ndizi. Usile chakula chenye mafuta mengi.",
+      "swahili": "Kula uji, wali na ndizi. Usile chakula yenye mafuta mingi.",
       "english": "Eat porridge, rice and bananas. Don't eat oily food.",
       "words": [
         {
@@ -894,19 +890,17 @@
           }
         },
         {
-          "text": "chakula chenye mafuta",
-          "gloss": "oily food — ki/vi agreement chenye",
+          "text": "chakula yenye mafuta",
+          "gloss": "oily food (lit. food having oil) — n/n yenye (Sanifu: chakula chenye mafuta).",
           "sanifu": "Kenyans also say \"chakula yenye mafuta\""
         },
         {
-          "text": "mengi",
-          "gloss": "\"many / a lot\" — ji/ma agreement (mambo mengi, magari mengi)",
-          "grammar": [
-            "sanifu-noun-classes"
-          ],
+          "text": "mingi",
+          "gloss": "a lot of / much — the everyday Kenyan form (Sanifu: maji mengi).",
           "sanifu": "ji/ma class"
         }
-      ]
+      ],
+      "sanifu": "Kula uji, wali na ndizi. Usile chakula chenye mafuta mengi."
     },
     {
       "id": "b173d941-7090-5bf2-b548-427c05e55c36",
@@ -1114,7 +1108,7 @@
       "id": "d68cc912-0a63-52da-9764-46f87b0aee06",
       "swahili": "matokeo",
       "english": "results",
-      "exampleContext": "Matokeo yatakuja lini?",
+      "exampleContext": "Matokeo itakuja lini?",
       "nounForms": {
         "one": null,
         "many": "matokeo"
@@ -1319,7 +1313,7 @@
       "mode": "translate",
       "english": "I usually don't drink much water.",
       "before": "Huwa ",
-      "after": " maji mengi.",
+      "after": " maji mingi.",
       "options": [
         {
           "text": "sinywi",
@@ -1454,7 +1448,7 @@
       "mode": "translate",
       "english": "Don't eat oily food.",
       "before": "",
-      "after": " chakula chenye mafuta.",
+      "after": " chakula yenye mafuta.",
       "options": [
         {
           "text": "Usile",
@@ -1510,20 +1504,20 @@
       "after": " lini?",
       "options": [
         {
-          "text": "yatakuja",
+          "text": "itakuja",
           "correct": true
         },
         {
-          "text": "yalikuja",
+          "text": "ilikuja",
           "correct": false
         },
         {
-          "text": "yanakuja",
+          "text": "inakuja",
           "correct": false,
-          "feedback": "yanakuja = they are coming"
+          "feedback": "inakuja = they are coming"
         }
       ],
-      "explanation": "matokeo is ma- (ji/ma plural) → ya-. A Sanifu agreement Kenyans keep for this word.",
+      "explanation": "Kenyans give matokeo the n/n i- agreement: matokeo itakuja. (Sanifu, ji/ma: matokeo yatakuja.)",
       "grammar": [
         "sanifu-noun-classes"
       ]

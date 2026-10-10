@@ -42,10 +42,7 @@
   "turns": [
     {
       "id": "e1b1fab3-9c41-51a7-b4c1-02d5bb183f72",
-      "speaker": "John",
       "role": "user",
-      "swahili": "Wanjiku, mkutano uko wapi? Hakuna mtu hapa!",
-      "english": "Wanjiku, where's the meeting? There's nobody here!",
       "words": [
         {
           "text": "Wanjiku",
@@ -53,52 +50,13 @@
         },
         {
           "text": "mkutano",
-          "gloss": "meeting (m/mi class in Sanifu)"
+          "gloss": "meeting"
         },
         {
-          "text": "uko",
-          "gloss": "\"You are (at / doing)\" — u- + -ko (be at a place, or how you're doing). \"Uko poa\" = you are fine.",
-          "grammar": [
-            "ko-location"
-          ],
-          "conjugation": {
-            "verb": "-ko (be at / be doing)",
-            "tense": "Present",
-            "rows": [
-              {
-                "pronoun": "I",
-                "form": "niko"
-              },
-              {
-                "pronoun": "you",
-                "form": "uko"
-              },
-              {
-                "pronoun": "he/she",
-                "form": "yuko"
-              },
-              {
-                "pronoun": "we",
-                "form": "tuko"
-              },
-              {
-                "pronoun": "you all",
-                "form": "mko"
-              },
-              {
-                "pronoun": "they",
-                "form": "wako"
-              },
-              {
-                "pronoun": "it (n/n)",
-                "form": "iko"
-              },
-              {
-                "pronoun": "they (n/n)",
-                "form": "ziko"
-              }
-            ]
-          }
+          "note": "Kenyans use \"iko\" for most things, whatever the noun. Sanifu matches the noun's class, so \"mkutano uko\".",
+          "text": "iko",
+          "gloss": "is (at a place)",
+          "sanifu": "uko"
         },
         {
           "text": "wapi",
@@ -109,7 +67,7 @@
         },
         {
           "text": "Hakuna",
-          "gloss": "\"There isn't / there's no…\"",
+          "gloss": "there's no… / there isn't",
           "grammar": [
             "na-have",
             "negative-present"
@@ -117,7 +75,7 @@
         },
         {
           "text": "mtu",
-          "gloss": "person — m/wa noun (people & animals; plural watu)",
+          "gloss": "person (plural: watu)",
           "grammar": [
             "noun-classes-mwa-nn"
           ]
@@ -127,20 +85,24 @@
           "gloss": "here"
         }
       ],
+      "english": "Wanjiku, where's the meeting? There's nobody here!",
       "options": [
         {
-          "swahili": "Wanjiku, mkutano uko wapi? Hakuna mtu hapa!",
-          "correct": true
+          "correct": true,
+          "swahili": "Wanjiku, mkutano iko wapi? Hakuna mtu hapa!"
         },
         {
-          "swahili": "Wanjiku, mkutano iko wapi? Kuna watu wengi hapa!",
-          "correct": false
+          "correct": false,
+          "swahili": "Wanjiku, mkutano iko wapi? Kuna watu wengi hapa!"
         },
         {
-          "swahili": "Wanjiku, mkutano uko lini? Hakuna mtu hapa!",
-          "correct": false
+          "correct": false,
+          "swahili": "Wanjiku, mkutano iko lini? Hakuna mtu hapa!"
         }
-      ]
+      ],
+      "speaker": "John",
+      "swahili": "Wanjiku, mkutano iko wapi? Hakuna mtu hapa!",
+      "note": "For things, Nairobians usually say \"iko\" whatever the noun class: \"mkutano iko wapi?\" (standard: \"mkutano uko wapi?\"). Don't mix it up with \"uko\" meaning \"you are\", as in \"uko wapi?\" (where are you?)."
     },
     {
       "id": "38438dfc-e029-55a1-8a69-9a922078e909",
@@ -222,7 +184,7 @@
       "id": "f7fd9ff6-2f35-576f-8f28-8eaa1b21093a",
       "speaker": "John",
       "role": "user",
-      "swahili": "Kweli? Sikuambiwa! Nani aliuahirisha?",
+      "swahili": "Kweli? Sikuambiwa! Nani aliiahirisha?",
       "english": "Really? I wasn't told! Who postponed it?",
       "words": [
         {
@@ -278,39 +240,39 @@
           ]
         },
         {
-          "text": "aliuahirisha",
-          "gloss": "\"He/she postponed it\" — a- (subject: he/she) + li- (past) + u- (object: it) + -ahirisha (postpone). From kuahirisha.",
+          "text": "aliiahirisha",
+          "gloss": "\"He/she postponed it\" — a- (subject: he/she) + li- (past) + i- (object: it — Kenyans use i- for mkutano; Sanifu: -u-) + -ahirisha (postpone). From kuahirisha.",
           "grammar": [
             "past-li",
             "object-infixes"
           ],
           "conjugation": {
             "verb": "kuahirisha (to postpone)",
-            "tense": "Past (-li-) + object -u-",
+            "tense": "Past (-li-) + object -i-",
             "rows": [
               {
                 "pronoun": "I",
-                "form": "niliuahirisha"
+                "form": "niliiahirisha"
               },
               {
                 "pronoun": "you",
-                "form": "uliuahirisha"
+                "form": "uliiahirisha"
               },
               {
                 "pronoun": "he/she",
-                "form": "aliuahirisha"
+                "form": "aliiahirisha"
               },
               {
                 "pronoun": "we",
-                "form": "tuliuahirisha"
+                "form": "tuliiahirisha"
               },
               {
                 "pronoun": "you all",
-                "form": "mliuahirisha"
+                "form": "mliiahirisha"
               },
               {
                 "pronoun": "they",
-                "form": "waliuahirisha"
+                "form": "waliiahirisha"
               }
             ]
           }
@@ -318,24 +280,25 @@
       ],
       "options": [
         {
-          "swahili": "Kweli? Sikuambiwa! Nani aliuahirisha?",
+          "swahili": "Kweli? Sikuambiwa! Nani aliiahirisha?",
           "correct": true
         },
         {
-          "swahili": "Kweli? Sikuambia! Nani aliuahirisha?",
+          "swahili": "Kweli? Sikuambia! Nani aliiahirisha?",
           "correct": false
         },
         {
-          "swahili": "Kweli? Nimeambiwa! Nani aliuahirisha?",
+          "swahili": "Kweli? Nimeambiwa! Nani aliiahirisha?",
           "correct": false
         }
-      ]
+      ],
+      "sanifu": "Kweli? Sikuambiwa! Nani aliuahirisha?"
     },
     {
       "id": "f7bb8308-16d7-5bd3-a337-c756217a73f2",
       "speaker": "Wanjiku",
       "role": "auto",
-      "swahili": "Meneja. Ujumbe ulitumwa kwenye group jana usiku.",
+      "swahili": "Meneja. Ujumbe ilitumwa kwenye group jana usiku.",
       "english": "The manager. A message was sent in the group last night.",
       "words": [
         {
@@ -347,11 +310,8 @@
           "gloss": "message"
         },
         {
-          "text": "ulitumwa",
-          "gloss": "\"was sent\"",
-          "grammar": [
-            "verb-extensions"
-          ]
+          "text": "ilitumwa",
+          "gloss": "\"was sent\" — i- (it) + -li- (past) + -tumwa (be sent). Kenyans use i- for ujumbe (Sanifu: ulitumwa)."
         },
         {
           "text": "kwenye group",
@@ -371,13 +331,14 @@
             "noun-classes-mwa-nn"
           ]
         }
-      ]
+      ],
+      "sanifu": "Meneja. Ujumbe ulitumwa kwenye group jana usiku."
     },
     {
       "id": "337bf0fd-e2fd-5f2f-afb6-76e7ab4fa43b",
       "speaker": "John",
       "role": "user",
-      "swahili": "Aah, sikuuona. Simu yangu ilikuwa imezima.",
+      "swahili": "Aah, sikuiona. Simu yangu ilikuwa imezima.",
       "english": "Ah, I didn't see it. My phone was off.",
       "words": [
         {
@@ -388,39 +349,39 @@
           ]
         },
         {
-          "text": "sikuuona",
-          "gloss": "\"I didn't see it\" — si- (negative subject: not I) + ku- (past (negative)) + u- (object: it) + -ona (see). From kuona.",
+          "text": "sikuiona",
+          "gloss": "\"I didn't see it\" — si- (negative subject: not I) + ku- (past (negative)) + i- (object: it — Kenyans use i- for mkutano; Sanifu: -u-) + -ona (see). From kuona.",
           "grammar": [
             "negative-past",
             "object-infixes"
           ],
           "conjugation": {
             "verb": "kuona (to see)",
-            "tense": "Past, negative (-ku-) + object -u-",
+            "tense": "Past, negative (-ku-) + object -i-",
             "rows": [
               {
                 "pronoun": "I",
-                "form": "sikuuona"
+                "form": "sikuiona"
               },
               {
                 "pronoun": "you",
-                "form": "hukuuona"
+                "form": "hukuiona"
               },
               {
                 "pronoun": "he/she",
-                "form": "hakuuona"
+                "form": "hakuiona"
               },
               {
                 "pronoun": "we",
-                "form": "hatukuuona"
+                "form": "hatukuiona"
               },
               {
                 "pronoun": "you all",
-                "form": "hamkuuona"
+                "form": "hamkuiona"
               },
               {
                 "pronoun": "they",
-                "form": "hawakuuona"
+                "form": "hawakuiona"
               }
             ]
           }
@@ -564,18 +525,19 @@
       ],
       "options": [
         {
-          "swahili": "Aah, sikuuona. Simu yangu ilikuwa imezima.",
+          "swahili": "Aah, sikuiona. Simu yangu ilikuwa imezima.",
           "correct": true
         },
         {
-          "swahili": "Aah, niliuona. Simu yangu ilikuwa imezima.",
+          "swahili": "Aah, niliiona. Simu yangu ilikuwa imezima.",
           "correct": false
         },
         {
-          "swahili": "Aah, sikuuona. Simu yangu itakuwa imezima.",
+          "swahili": "Aah, sikuiona. Simu yangu itakuwa imezima.",
           "correct": false
         }
-      ]
+      ],
+      "sanifu": "Aah, sikuuona. Simu yangu ilikuwa imezima."
     },
     {
       "id": "f97e1ed5-143d-5e21-974c-c24047bd76b5",
@@ -1236,10 +1198,11 @@
     },
     {
       "id": "4924dfd4-04e8-5044-9a53-63a9bf0ddf77",
-      "swahili": "Ujumbe ulitumwa",
+      "swahili": "Ujumbe ilitumwa",
       "english": "A message was sent",
       "exampleContext": "tuma → tumwa",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "sanifu": "Ujumbe ulitumwa"
     },
     {
       "id": "28eb4f89-edfd-5f9c-bf76-c25edb0af964",
@@ -1318,29 +1281,29 @@
     {
       "id": "9c2074ff-0255-5180-929f-a2a15d72ffe0",
       "mode": "translate",
-      "english": "The meeting has been postponed.",
-      "before": "Mkutano ",
       "after": ".",
+      "before": "Mkutano ",
+      "english": "The meeting has been postponed.",
+      "grammar": [
+        "verb-extensions"
+      ],
       "options": [
         {
-          "text": "umeahirishwa",
+          "text": "imeahirishwa",
           "correct": true
         },
         {
-          "text": "umeahirisha",
+          "text": "imeahirisha",
           "correct": false,
-          "feedback": "umeahirisha = You have postponed"
+          "feedback": "imeahirisha = You have postponed"
         },
         {
-          "text": "utaahirisha",
+          "text": "itaahirisha",
           "correct": false,
-          "feedback": "utaahirisha = You will postpone"
+          "feedback": "itaahirisha = You will postpone"
         }
       ],
-      "explanation": "Passive: add -w- before the final -a: ahirisha → ahirishwa.",
-      "grammar": [
-        "verb-extensions"
-      ]
+      "explanation": "Passive: add -w- before the final -a: ahirisha → ahirishwa."
     },
     {
       "id": "74153e81-ba07-5c47-b549-aaa900ef1fd7",
@@ -1350,7 +1313,7 @@
       "after": "?",
       "options": [
         {
-          "text": "aliuahirisha",
+          "text": "aliiahirisha",
           "correct": true
         },
         {
@@ -1364,7 +1327,7 @@
           "feedback": "ataahirisha = He/she will postpone"
         }
       ],
-      "explanation": "Active: someone postponed it (-u- = it, for mkutano).",
+      "explanation": "Active: someone postponed it. -i- = it — Kenyans use i- for mkutano (Sanifu: aliuahirisha).",
       "grammar": [
         "past-li",
         "object-infixes"
@@ -1433,21 +1396,21 @@
       "after": ".",
       "options": [
         {
-          "text": "ulitumwa",
+          "text": "ilitumwa",
           "correct": true
         },
         {
-          "text": "ulituma",
+          "text": "ilituma",
           "correct": false,
-          "feedback": "ulituma = You sent"
+          "feedback": "ilituma = You sent"
         },
         {
-          "text": "utatumwa",
+          "text": "itatumwa",
           "correct": false,
-          "feedback": "utatumwa = You will be sent"
+          "feedback": "itatumwa = You will be sent"
         }
       ],
-      "explanation": "tuma (send) → tumwa (be sent).",
+      "explanation": "tuma (send) → tumwa (be sent). Kenyans give ujumbe the i- agreement (Sanifu: ujumbe ulitumwa).",
       "grammar": [
         "verb-extensions"
       ]

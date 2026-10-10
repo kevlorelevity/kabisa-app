@@ -178,7 +178,7 @@
       "id": "a07fe2a2-46ae-53bb-bc5f-b24c25c351cf",
       "speaker": "Njoroge",
       "role": "auto",
-      "swahili": "Nafurahi kusikia hivyo. Hapa tuko karibu na maporomoko ya Thomson, ambayo ni kivutio kikubwa hapa.",
+      "swahili": "Nafurahi kusikia hivyo. Hapa tuko karibu na maporomoko ya Thomson, ambayo ni kivutio kubwa hapa.",
       "english": "Glad to hear that. Here we're close to Thomson's Falls, which is a big attraction around here.",
       "words": [
         {
@@ -260,7 +260,7 @@
           ]
         },
         {
-          "text": "kivutio kikubwa",
+          "text": "kivutio kubwa",
           "gloss": "\"a big attraction\"",
           "sanifu": "Kenyans also: kivutio kubwa"
         },
@@ -268,7 +268,8 @@
           "text": "hapa",
           "gloss": "here"
         }
-      ]
+      ],
+      "sanifu": "Nafurahi kusikia hivyo. Hapa tuko karibu na maporomoko ya Thomson, ambayo ni kivutio kikubwa hapa."
     },
     {
       "id": "f331b53d-29d8-5f01-b911-24274bff6516",
@@ -486,7 +487,7 @@
       "id": "9734e85a-f6d5-58e4-836d-137024dbe7cd",
       "speaker": "Njoroge",
       "role": "auto",
-      "swahili": "Ndiyo, ni salama. Lakini mtu ambaye hana viatu vizuri ataanguka — kuna mawe mengi!",
+      "swahili": "Ndiyo, ni salama. Lakini mtu ambaye hana viatu nzuri ataanguka — kuna mawe mingi!",
       "english": "Yes, it's safe. But anyone who doesn't have good shoes will fall — there are lots of rocks!",
       "words": [
         {
@@ -580,8 +581,8 @@
           "sanifu": "Sanifu: ki/vi class — viatu vyangu, viatu hivi"
         },
         {
-          "text": "vizuri",
-          "gloss": "well / nicely"
+          "text": "nzuri",
+          "gloss": "good — n/n form (Sanifu: viatu vizuri)."
         },
         {
           "text": "ataanguka",
@@ -599,16 +600,17 @@
           "gloss": "rocks, stones"
         },
         {
-          "text": "mengi",
-          "gloss": "many, a lot"
+          "text": "mingi",
+          "gloss": "lots of / many — the everyday Kenyan form (Sanifu: mawe mengi)."
         }
-      ]
+      ],
+      "sanifu": "Ndiyo, ni salama. Lakini mtu ambaye hana viatu vizuri ataanguka — kuna mawe mengi!"
     },
     {
       "id": "f0877257-548f-5bd6-bb33-9b846e29c130",
       "speaker": "John",
       "role": "user",
-      "swahili": "Sawa. Ningejua mapema, ningeleta viatu vya kutembea!",
+      "swahili": "Sawa. Ningejua mapema, ningeleta viatu za kutembea!",
       "english": "Okay. If I'd known earlier, I'd have brought walking shoes!",
       "words": [
         {
@@ -694,24 +696,25 @@
           }
         },
         {
-          "text": "viatu vya kutembea",
+          "text": "viatu za kutembea",
           "gloss": "\"walking shoes\""
         }
       ],
       "options": [
         {
-          "swahili": "Sawa. Ningejua mapema, ningeleta viatu vya kutembea!",
+          "swahili": "Sawa. Ningejua mapema, ningeleta viatu za kutembea!",
           "correct": true
         },
         {
-          "swahili": "Sawa. Nikijua mapema, ningeleta viatu vya kutembea!",
+          "swahili": "Sawa. Nikijua mapema, ningeleta viatu za kutembea!",
           "correct": false
         },
         {
-          "swahili": "Sawa. Ningejua mapema, nitaleta viatu vya kutembea!",
+          "swahili": "Sawa. Ningejua mapema, nitaleta viatu za kutembea!",
           "correct": false
         }
-      ]
+      ],
+      "sanifu": "Sawa. Ningejua mapema, ningeleta viatu vya kutembea!"
     },
     {
       "id": "d2380a1d-0165-55e5-9adf-864a56c112bf",
@@ -1454,7 +1457,7 @@
       "id": "9427ed54-4a17-504d-bc25-6fd6281ed1ec",
       "speaker": "John",
       "role": "user",
-      "swahili": "Asante sana. Safari hii inanifundisha mambo mengi mapya!",
+      "swahili": "Asante sana. Safari hii inanifundisha mambo mingi mpya!",
       "english": "Thank you so much. This trip is teaching me lots of new things!",
       "words": [
         {
@@ -1523,24 +1526,25 @@
           }
         },
         {
-          "text": "mambo mengi mapya",
+          "text": "mambo mingi mpya",
           "gloss": "\"lots of new things\""
         }
       ],
       "options": [
         {
-          "swahili": "Asante sana. Safari hii inanifundisha mambo mengi mapya!",
+          "swahili": "Asante sana. Safari hii inanifundisha mambo mingi mpya!",
           "correct": true
         },
         {
-          "swahili": "Asante sana. Safari hii inakufundisha mambo mengi mapya!",
+          "swahili": "Asante sana. Safari hii inakufundisha mambo mingi mpya!",
           "correct": false
         },
         {
-          "swahili": "Asante sana. Safari hii ilinifundisha mambo mengi mapya kesho!",
+          "swahili": "Asante sana. Safari hii ilinifundisha mambo mingi mpya kesho!",
           "correct": false
         }
-      ]
+      ],
+      "sanifu": "Asante sana. Safari hii inanifundisha mambo mengi mapya!"
     }
   ],
   "vocabulary": [
@@ -1577,7 +1581,7 @@
       "id": "9d8cb555-a4eb-580f-92f2-95e8f07157fc",
       "swahili": "kivutio",
       "english": "attraction",
-      "exampleContext": "kivutio kikubwa = a big attraction",
+      "exampleContext": "kivutio kubwa = a big attraction (Sanifu: kivutio kikubwa)",
       "nounForms": {
         "one": "kivutio",
         "many": "vivutio"
@@ -1692,7 +1696,7 @@
       "mode": "translate",
       "english": "anyone who doesn't have good shoes",
       "before": "mtu ambaye ",
-      "after": " viatu vizuri",
+      "after": " viatu nzuri",
       "options": [
         {
           "text": "hana",
@@ -2033,7 +2037,7 @@
       "mode": "translate",
       "english": "There are lots of rocks.",
       "before": "Kuna ",
-      "after": " mengi.",
+      "after": " mingi.",
       "options": [
         {
           "text": "mawe",

@@ -105,3 +105,20 @@ describe('noun singular / plural on vocabulary', () => {
     expect(all.filter((v) => /\|\s*$/.test(v.english))).toEqual([]);
   });
 });
+
+describe('levels 7–10 keep to m/wa + n/n agreement', () => {
+  it('has no ki/vi, ji/ma, m/mi or u agreement in lines, choices or practice (fixed proverbs aside)', () => {
+    const files = import.meta.glob('../content/lessons/*.json', { eager: true }) as Record<string, { default: { id: string; level: number; turns: Array<{ swahili: string; options?: Array<{ swahili: string }> }>; practice?: Array<{ before: string; after: string; options: Array<{ text: string }> }> } }>;
+    const proverbs = /(hayazoleki|hakivunji|mambo ni mengi)/i;
+    const bad: string[] = [];
+    for (const { default: l } of Object.values(files)) {
+      if (l.level < 7) continue;
+      const texts = [
+        ...l.turns.flatMap((t) => [t.swahili, ...(t.options ?? []).map((o) => o.swahili)]),
+        ...(l.practice ?? []).flatMap((p) => p.options.map((o) => `${p.before}${o.text}${p.after}`)),
+      ];
+      for (const t of texts) if (!proverbs.test(t) && /(kizuri|kikubwa|chenye|chenu|kiko |kimefika|kingekuja|mengi|mengine|mazuri|mabichi|yalikuwa|yatakuja|yamefika|umefurika|haujaisha|ulitumwa|uliopita|mitano|mdogo|anachoweza|goli la)/.test(t)) bad.push(`${l.id}: ${t}`);
+    }
+    expect(bad).toEqual([]);
+  });
+});

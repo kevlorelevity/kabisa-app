@@ -124,7 +124,7 @@
       "id": "652d6107-732e-5ee0-86e5-0d78c7d247da",
       "speaker": "Kinyozi",
       "role": "auto",
-      "swahili": "Wee! Mafuriko yamefika mtaa wetu. Barabara yetu imeharibika kabisa.",
+      "swahili": "Wee! Mafuriko imefika mtaa yetu. Barabara yetu imeharibika kabisa.",
       "english": "Wow! The floods have reached our neighbourhood. Our road is completely ruined.",
       "words": [
         {
@@ -139,12 +139,12 @@
           "gloss": "floods"
         },
         {
-          "text": "yamefika",
-          "gloss": "\"have reached\" — ya- agreement for mafuriko (ma- plural)"
+          "text": "imefika",
+          "gloss": "have arrived — i- (n/n) + -me- + -fika (Sanifu: mafuriko yamefika)."
         },
         {
-          "text": "mtaa wetu",
-          "gloss": "our neighbourhood"
+          "text": "mtaa yetu",
+          "gloss": "our neighbourhood — n/n yetu (Sanifu: mtaa wetu)."
         },
         {
           "text": "Barabara yetu",
@@ -161,13 +161,14 @@
           "text": "kabisa",
           "gloss": "totally / completely — \"Kabisa!\" = \"Absolutely!\""
         }
-      ]
+      ],
+      "sanifu": "Wee! Mafuriko yamefika mtaa wetu. Barabara yetu imeharibika kabisa."
     },
     {
       "id": "b8d2c3d6-fa66-53ba-a663-191749ed2d96",
       "speaker": "Mteja",
       "role": "user",
-      "swahili": "Ndiyo. Wanasema kwamba serikali itaijenga upya mwaka huu.",
+      "swahili": "Ndiyo. Wanasema kwamba serikali itaijenga upya mwaka hii.",
       "english": "Yes. They say that the government will rebuild it this year.",
       "words": [
         {
@@ -239,30 +240,31 @@
           "gloss": "anew"
         },
         {
-          "text": "mwaka huu",
+          "text": "mwaka hii",
           "gloss": "this year"
         }
       ],
       "options": [
         {
-          "swahili": "Ndiyo. Wanasema kwamba serikali itaijenga upya mwaka huu.",
+          "swahili": "Ndiyo. Wanasema kwamba serikali itaijenga upya mwaka hii.",
           "correct": true
         },
         {
-          "swahili": "Ndiyo. Wanasema ingawa serikali itaijenga upya mwaka huu.",
+          "swahili": "Ndiyo. Wanasema ingawa serikali itaijenga upya mwaka hii.",
           "correct": false
         },
         {
-          "swahili": "Ndiyo. Wanasema kwamba serikali iliijenga upya mwaka huu.",
+          "swahili": "Ndiyo. Wanasema kwamba serikali iliijenga upya mwaka hii.",
           "correct": false
         }
-      ]
+      ],
+      "sanifu": "Ndiyo. Wanasema kwamba serikali itaijenga upya mwaka huu."
     },
     {
       "id": "0b87cf34-08e0-53ab-8cea-56e64353eb06",
       "speaker": "Kinyozi",
       "role": "auto",
-      "swahili": "Haha! Mheshimiwa aliahidi hivyo tangu uchaguzi uliopita!",
+      "swahili": "Haha! Mheshimiwa aliahidi hivyo tangu uchaguzi iliyopita!",
       "english": "Haha! The MP has promised that since the last election!",
       "words": [
         {
@@ -292,13 +294,14 @@
           "gloss": "since"
         },
         {
-          "text": "uchaguzi uliopita",
+          "text": "uchaguzi iliyopita",
           "gloss": "the last election",
           "grammar": [
             "relatives"
           ]
         }
-      ]
+      ],
+      "sanifu": "Haha! Mheshimiwa aliahidi hivyo tangu uchaguzi uliopita!"
     },
     {
       "id": "7e98322a-d703-5887-b54a-76f70a6de340",
@@ -613,7 +616,7 @@
       "id": "51b6e3d7-f6d2-5a2a-b9fd-13956c2d72af",
       "speaker": "Mteja",
       "role": "user",
-      "swahili": "Ebu tuongee kuhusu kitu kizuri. Gor Mahia walishinda jana!",
+      "swahili": "Ebu tuongee kuhusu kitu nzuri. Gor Mahia walishinda jana!",
       "english": "Come on, let's talk about something good. Gor Mahia won yesterday!",
       "words": [
         {
@@ -643,11 +646,8 @@
           "sanifu": "Sanifu: ki/vi class — kitu changu, vitu vyangu"
         },
         {
-          "text": "kizuri",
-          "gloss": "\"good\" — ki/vi agreement (kitu kizuri).",
-          "grammar": [
-            "sanifu-noun-classes"
-          ],
+          "text": "nzuri",
+          "gloss": "good — n/n form (Sanifu: kitu kizuri).",
           "sanifu": "ki/vi class; Kenyans often say \"kitu nzuri\""
         },
         {
@@ -665,18 +665,19 @@
       ],
       "options": [
         {
-          "swahili": "Ebu tuongee kuhusu kitu kizuri. Gor Mahia walishinda jana!",
+          "swahili": "Ebu tuongee kuhusu kitu nzuri. Gor Mahia walishinda jana!",
           "correct": true
         },
         {
-          "swahili": "Ebu tuongee kuhusu kitu kibaya. Gor Mahia walishinda jana!",
+          "swahili": "Ebu tuongee kuhusu kitu mbaya. Gor Mahia walishinda jana!",
           "correct": false
         },
         {
-          "swahili": "Ebu tuongee kuhusu kitu kizuri. Gor Mahia walishindwa jana!",
+          "swahili": "Ebu tuongee kuhusu kitu nzuri. Gor Mahia walishindwa jana!",
           "correct": false
         }
-      ]
+      ],
+      "sanifu": "Ebu tuongee kuhusu kitu kizuri. Gor Mahia walishinda jana!"
     },
     {
       "id": "da996e7d-1fe9-540d-9011-f3eb6110f843",
@@ -957,10 +958,11 @@
     },
     {
       "id": "1793a458-8341-5f0d-8360-3f7f03bed2e5",
-      "swahili": "mtaa wetu",
+      "swahili": "mtaa yetu",
       "english": "our neighbourhood",
       "exampleContext": "",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "sanifu": "mtaa wetu"
     },
     {
       "id": "3d451266-9214-5bcd-b439-cc880a9825dc",
@@ -1330,7 +1332,7 @@
       "mode": "translate",
       "english": "Let's talk about something good.",
       "before": "",
-      "after": " kuhusu kitu kizuri.",
+      "after": " kuhusu kitu nzuri.",
       "options": [
         {
           "text": "Tuongee",
@@ -1441,21 +1443,21 @@
       "after": "",
       "options": [
         {
-          "text": "wetu",
+          "text": "yetu",
           "correct": true
         },
         {
-          "text": "wenu",
+          "text": "yenu",
           "correct": false,
-          "feedback": "wenu = your (pl.)"
+          "feedback": "yenu = your (pl.)"
         },
         {
-          "text": "wao",
+          "text": "yao",
           "correct": false,
-          "feedback": "wao = they / them"
+          "feedback": "yao = they / them"
         }
       ],
-      "explanation": "wetu = our, wenu = your (plural), wao = their. Kenyans also say \"mtaa yetu\".",
+      "explanation": "yetu = our, yenu = your (plural), yao = their. For things Kenyans use the n/n forms: mtaa yetu. (Sanifu, m/mi: mtaa wetu.)",
       "grammar": [
         "possessives"
       ]

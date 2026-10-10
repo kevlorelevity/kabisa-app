@@ -568,7 +568,7 @@
       "id": "561d035d-8767-5d1e-beb5-33add1225981",
       "speaker": "Mgeni Rasmi",
       "role": "user",
-      "swahili": "Umoja ni nguvu, utengano ni udhaifu. Kila mtu achangie kile anachoweza.",
+      "swahili": "Umoja ni nguvu, utengano ni udhaifu. Kila mtu achangie vile anaweza.",
       "english": "Unity is strength, division is weakness. Let everyone contribute what they can.",
       "words": [
         {
@@ -628,37 +628,31 @@
           }
         },
         {
-          "text": "kile",
-          "gloss": "\"that (thing)\" — ki/vi demonstrative; also \"what\" in \"kile anachoweza\" (what he can).",
-          "grammar": [
-            "demonstratives",
-            "sanifu-noun-classes"
-          ],
+          "text": "vile",
+          "gloss": "the way / as (much as) — vile + an ordinary verb is the everyday way to say it.",
           "sanifu": "ki/vi class"
         },
         {
-          "text": "anachoweza",
-          "gloss": "\"what he/she can\" — a- + -na- + -cho- (which, ki/vi) + -weza.",
-          "grammar": [
-            "relatives"
-          ],
+          "text": "anaweza",
+          "gloss": "he/she can — a- + -na- + -weza.",
           "sanifu": "ki/vi relative -cho-"
         }
       ],
       "options": [
         {
-          "swahili": "Umoja ni nguvu, utengano ni udhaifu. Kila mtu achangie kile anachoweza.",
+          "swahili": "Umoja ni nguvu, utengano ni udhaifu. Kila mtu achangie vile anaweza.",
           "correct": true
         },
         {
-          "swahili": "Umoja ni udhaifu, utengano ni nguvu. Kila mtu achangie kile anachoweza.",
+          "swahili": "Umoja ni udhaifu, utengano ni nguvu. Kila mtu achangie vile anaweza.",
           "correct": false
         },
         {
-          "swahili": "Umoja ni nguvu, utengano ni udhaifu. Kila mtu anachangia kile anachoweza.",
+          "swahili": "Umoja ni nguvu, utengano ni udhaifu. Kila mtu anachangia vile anaweza.",
           "correct": false
         }
-      ]
+      ],
+      "sanifu": "Umoja ni nguvu, utengano ni udhaifu. Kila mtu achangie kile anachoweza."
     },
     {
       "id": "c7225996-874a-57c1-a6af-df17886edaed",
@@ -694,7 +688,7 @@
       "id": "8ed30018-724b-54fd-aefb-ea3b515f06c3",
       "speaker": "Mgeni Rasmi",
       "role": "user",
-      "swahili": "Ndiyo! Haba na haba hujaza kibaba. Hakuna mchango mdogo.",
+      "swahili": "Ndiyo! Haba na haba hujaza kibaba. Hakuna mchango ndogo.",
       "english": "Yes! Little by little fills the measure. There's no such thing as a small contribution.",
       "words": [
         {
@@ -740,11 +734,8 @@
           "gloss": "contribution (m/mi; plural michango)"
         },
         {
-          "text": "mdogo",
-          "gloss": "\"small / young\" — m/wa singular agreement (one person / animal).",
-          "grammar": [
-            "adjective-agreement"
-          ],
+          "text": "ndogo",
+          "gloss": "small — n/n form for things (Sanifu: mchango mdogo).",
           "conjugation": {
             "verb": "-dogo (small / young)",
             "tense": "Agreement",
@@ -767,18 +758,19 @@
       ],
       "options": [
         {
-          "swahili": "Ndiyo! Haba na haba hujaza kibaba. Hakuna mchango mdogo.",
+          "swahili": "Ndiyo! Haba na haba hujaza kibaba. Hakuna mchango ndogo.",
           "correct": true
         },
         {
-          "swahili": "Ndiyo! Haba na haba hujaza ndoo. Hakuna mchango mdogo.",
+          "swahili": "Ndiyo! Haba na haba hujaza ndoo. Hakuna mchango ndogo.",
           "correct": false
         },
         {
-          "swahili": "Hapana! Haba na haba hujaza kibaba. Hakuna mchango mdogo.",
+          "swahili": "Hapana! Haba na haba hujaza kibaba. Hakuna mchango ndogo.",
           "correct": false
         }
-      ]
+      ],
+      "sanifu": "Ndiyo! Haba na haba hujaza kibaba. Hakuna mchango mdogo."
     },
     {
       "id": "6f3e00ad-3f11-5c95-8088-6928ac63896a",
@@ -1231,7 +1223,7 @@
           "correct": false
         }
       ],
-      "explanation": "We need each other. Ki/vi agreement: kidole → hakivunji."
+      "explanation": "A fixed proverb, quoted in its classic form (ki/vi: kidole → hakivunji). In your own sentences use n/n agreement for things."
     },
     {
       "id": "068ed837-1999-5b1a-9018-a0afbed92a5c",
@@ -1424,7 +1416,7 @@
       "mode": "translate",
       "english": "Let everyone contribute what they can.",
       "before": "Kila mtu ",
-      "after": " kile anachoweza.",
+      "after": " vile anaweza.",
       "options": [
         {
           "text": "achangie",
@@ -1590,13 +1582,13 @@
       "after": ".",
       "options": [
         {
-          "text": "mdogo",
+          "text": "ndogo",
           "correct": true
         },
         {
-          "text": "mkubwa",
+          "text": "kubwa",
           "correct": false,
-          "feedback": "mkubwa = big"
+          "feedback": "kubwa = big"
         },
         {
           "text": "mbaya",
@@ -1604,7 +1596,7 @@
           "feedback": "mbaya = bad"
         }
       ],
-      "explanation": "mdogo = small, mkubwa = big, mbaya = bad.",
+      "explanation": "ndogo = small, kubwa = big, mbaya = bad — n/n forms for things (Sanifu, m/mi: mchango mdogo).",
       "grammar": [
         "adjective-agreement"
       ]

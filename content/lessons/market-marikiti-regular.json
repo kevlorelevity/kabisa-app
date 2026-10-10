@@ -506,7 +506,7 @@
       "id": "0997573b-f834-50fd-805d-28e375ffc500",
       "speaker": "Mteja",
       "role": "user",
-      "swahili": "Hapana! Maembe ambayo nilinunua yalikuwa ghali, na mengine yalikuwa mabichi.",
+      "swahili": "Hapana! Maembe ambazo nilinunua zilikuwa ghali, na zingine zilikuwa mbichi.",
       "english": "No! The mangoes I bought were expensive, and some were unripe.",
       "words": [
         {
@@ -518,11 +518,8 @@
           "gloss": "mangoes"
         },
         {
-          "text": "ambayo",
-          "gloss": "\"which / that\" — relative for an n/n singular noun",
-          "grammar": [
-            "relatives"
-          ]
+          "text": "ambazo",
+          "gloss": "which — n/n plural: Kenyans treat maembe as n/n (Sanifu: ambayo)."
         },
         {
           "text": "nilinunua",
@@ -562,11 +559,8 @@
           }
         },
         {
-          "text": "yalikuwa",
-          "gloss": "\"they were\" — ya- agreement for ma- plurals (maembe, matokeo).",
-          "grammar": [
-            "sanifu-noun-classes"
-          ],
+          "text": "zilikuwa",
+          "gloss": "they were — zi- (n/n plural) + -li- + -kuwa (Sanifu: yalikuwa).",
           "sanifu": "ji/ma plural agreement (ma- nouns). Kenyans keep it for nouns that start with ma-, but say \"zi-/-nyingi\" for most others."
         },
         {
@@ -599,42 +593,33 @@
           "gloss": "and / with"
         },
         {
-          "text": "mengine",
-          "gloss": "\"others / some\" — ma- plural agreement (maembe mengine).",
-          "grammar": [
-            "sanifu-noun-classes"
-          ],
+          "text": "zingine",
+          "gloss": "others / some — n/n plural (Sanifu: mengine).",
           "sanifu": "ji/ma plural agreement (ma- nouns). Kenyans keep it for nouns that start with ma-, but say \"zi-/-nyingi\" for most others."
         },
         {
-          "text": "yalikuwa",
-          "gloss": "\"they were\" — ya- agreement for ma- plurals (maembe, matokeo).",
-          "grammar": [
-            "sanifu-noun-classes"
-          ],
+          "text": "zilikuwa",
+          "gloss": "they were — zi- (n/n plural) + -li- + -kuwa (Sanifu: yalikuwa).",
           "sanifu": "ji/ma plural agreement (ma- nouns). Kenyans keep it for nouns that start with ma-, but say \"zi-/-nyingi\" for most others."
         },
         {
-          "text": "mabichi",
-          "gloss": "\"unripe / raw\" — ma- plural agreement (maembe mabichi).",
-          "grammar": [
-            "sanifu-noun-classes"
-          ],
+          "text": "mbichi",
+          "gloss": "unripe — n/n form (Sanifu: mabichi).",
           "sanifu": "ji/ma plural agreement (ma- nouns). Kenyans keep it for nouns that start with ma-, but say \"zi-/-nyingi\" for most others."
         }
       ],
       "sanifu": "Hapana! Maembe ambayo nilinunua yalikuwa ghali, na mengine yalikuwa mabichi.",
       "options": [
         {
-          "swahili": "Hapana! Maembe ambayo nilinunua yalikuwa ghali, na mengine yalikuwa mabichi.",
+          "swahili": "Hapana! Maembe ambazo nilinunua zilikuwa ghali, na zingine zilikuwa mbichi.",
           "correct": true
         },
         {
-          "swahili": "Hapana! Maembe ambayo nitanunua yalikuwa ghali, na mengine yalikuwa mabichi.",
+          "swahili": "Hapana! Maembe ambazo nitanunua zilikuwa ghali, na zingine zilikuwa mbichi.",
           "correct": false
         },
         {
-          "swahili": "Ndiyo! Maembe ambayo nilinunua yalikuwa ghali, na mengine yalikuwa mabichi.",
+          "swahili": "Ndiyo! Maembe ambazo nilinunua zilikuwa ghali, na zingine zilikuwa mbichi.",
           "correct": false
         }
       ]
@@ -643,7 +628,7 @@
       "id": "fad9e880-822c-5b8e-b43b-5b337a810d97",
       "speaker": "Mama Wanjiru",
       "role": "auto",
-      "swahili": "Pole sana! Ukinunua kwangu, utapata matunda mazuri kila wakati.",
+      "swahili": "Pole sana! Ukinunua kwangu, utapata matunda nzuri kila wakati.",
       "english": "So sorry! If you buy from me, you'll always get good fruit.",
       "words": [
         {
@@ -706,11 +691,8 @@
           "gloss": "fruit"
         },
         {
-          "text": "mazuri",
-          "gloss": "\"good\" — ma- plural agreement (matunda mazuri).",
-          "grammar": [
-            "sanifu-noun-classes"
-          ],
+          "text": "nzuri",
+          "gloss": "good — n/n form (Sanifu: matunda mazuri).",
           "sanifu": "ji/ma plural agreement (ma- nouns). Kenyans keep it for nouns that start with ma-, but say \"zi-/-nyingi\" for most others."
         },
         {
@@ -721,7 +703,8 @@
           "text": "wakati",
           "gloss": "time / when / while"
         }
-      ]
+      ],
+      "sanifu": "Pole sana! Ukinunua kwangu, utapata matunda mazuri kila wakati."
     },
     {
       "id": "bc1395f6-bfda-570a-b01f-28dfec5884a9",
@@ -1114,7 +1097,7 @@
       "id": "058f5a7d-7034-5057-9c4b-c136c2c207e4",
       "speaker": "Mteja",
       "role": "user",
-      "swahili": "Asante! Nikija wiki ijayo, utaniwekea maembe yenye sukari zaidi?",
+      "swahili": "Asante! Nikija wiki ijayo, utaniwekea maembe zenye sukari zaidi?",
       "english": "Thanks! If I come next week, will you keep me the sweetest mangoes?",
       "words": [
         {
@@ -1176,11 +1159,8 @@
           "gloss": "mangoes"
         },
         {
-          "text": "yenye",
-          "gloss": "\"which has / with\" (n/n)",
-          "grammar": [
-            "relatives"
-          ]
+          "text": "zenye",
+          "gloss": "with / having — n/n plural: maembe zenye sukari (Sanifu: maembe yenye)."
         },
         {
           "text": "sukari",
@@ -1196,18 +1176,19 @@
       ],
       "options": [
         {
-          "swahili": "Asante! Nikija wiki ijayo, utaniwekea maembe yenye sukari zaidi?",
+          "swahili": "Asante! Nikija wiki ijayo, utaniwekea maembe zenye sukari zaidi?",
           "correct": true
         },
         {
-          "swahili": "Asante! Nilikuja wiki ijayo, utaniwekea maembe yenye sukari zaidi?",
+          "swahili": "Asante! Nilikuja wiki ijayo, utaniwekea maembe zenye sukari zaidi?",
           "correct": false
         },
         {
-          "swahili": "Asante! Nikija wiki ijayo, nitakuwekea maembe yenye sukari zaidi?",
+          "swahili": "Asante! Nikija wiki ijayo, nitakuwekea maembe zenye sukari zaidi?",
           "correct": false
         }
-      ]
+      ],
+      "sanifu": "Asante! Nikija wiki ijayo, utaniwekea maembe yenye sukari zaidi?"
     },
     {
       "id": "2f6d4f43-9c5c-5c74-9c23-6c15790280a7",
@@ -1347,9 +1328,10 @@
     },
     {
       "id": "270997bc-41b9-509e-8c6f-66fabb11a92b",
-      "swahili": "yenye",
-      "english": "which has / with (n/n)",
-      "exampleContext": "maembe yenye sukari = mangoes with sugar"
+      "swahili": "yenye / zenye",
+      "english": "with / having (n/n one / several)",
+      "exampleContext": "maembe zenye sukari = mangoes with sugar",
+      "sanifu": "yenye"
     },
     {
       "id": "f7d039df-9ddf-5c37-a945-1c6a2590f343",
@@ -1510,7 +1492,7 @@
       "after": " nilinunua",
       "options": [
         {
-          "text": "ambayo",
+          "text": "ambazo",
           "correct": true
         },
         {
@@ -1524,7 +1506,7 @@
           "feedback": "ambao = who"
         }
       ],
-      "explanation": "ambayo for things in the plural of ji/ma — and for n/n singular.",
+      "explanation": "Kenyans treat maembe as n/n plural: ambazo. (Sanifu, ji/ma: maembe ambayo.)",
       "grammar": [
         "relatives"
       ]
@@ -1725,7 +1707,7 @@
       "after": " sukari zaidi",
       "options": [
         {
-          "text": "yenye",
+          "text": "zenye",
           "correct": true
         },
         {
@@ -1739,7 +1721,7 @@
           "feedback": "mwenye = the one with / who has"
         }
       ],
-      "explanation": "-enye = having / with; agrees with the noun.",
+      "explanation": "-enye = having / with. For things, Kenyans use the n/n forms: yenye (one), zenye (several). Sanifu: maembe yenye.",
       "grammar": [
         "relatives"
       ]

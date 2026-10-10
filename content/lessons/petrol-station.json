@@ -349,7 +349,7 @@
       "id": "8c828631-b587-5ea6-b4af-3064df82049d",
       "speaker": "Mhudumu",
       "role": "auto",
-      "swahili": "Haina upepo wa kutosha. Nitaongeza.",
+      "swahili": "Haina upepo ya kutosha. Nitaongeza.",
       "english": "It doesn't have enough air. I'll add some.",
       "words": [
         {
@@ -403,11 +403,8 @@
           "gloss": "\"air\" (lit. \"wind\") — tyres are pumped with upepo"
         },
         {
-          "text": "wa",
-          "gloss": "\"of\" — m/wa agreement (mtoto wa Kamau, watu wa Nairobi)",
-          "grammar": [
-            "possessives"
-          ]
+          "text": "ya",
+          "gloss": "of — n/n ya: upepo ya kutosha = enough air (Sanifu: upepo wa kutosha)."
         },
         {
           "text": "kutosha",
@@ -453,7 +450,8 @@
             ]
           }
         }
-      ]
+      ],
+      "sanifu": "Haina upepo wa kutosha. Nitaongeza."
     },
     {
       "id": "0dffaab5-97e9-5182-8c6e-a664cadede73",
@@ -1490,7 +1488,7 @@
       "mode": "translate",
       "english": "It doesn't have enough air.",
       "before": "",
-      "after": " upepo wa kutosha.",
+      "after": " upepo ya kutosha.",
       "options": [
         {
           "text": "Haina",

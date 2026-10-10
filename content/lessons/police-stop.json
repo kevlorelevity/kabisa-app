@@ -528,7 +528,7 @@
       "id": "06b9ef41-0f6b-5450-9df7-fd04f26ea90b",
       "speaker": "Dereva",
       "role": "user",
-      "swahili": "Ndiyo, ilifanyiwa ukaguzi mwezi uliopita.",
+      "swahili": "Ndiyo, ilifanyiwa ukaguzi mwezi iliyopita.",
       "english": "Yes, it was inspected last month.",
       "words": [
         {
@@ -589,22 +589,22 @@
           "gloss": "inspection"
         },
         {
-          "text": "mwezi uliopita",
+          "text": "mwezi iliyopita",
           "gloss": "last month"
         }
       ],
       "sanifu": "Ndiyo, lilifanyiwa ukaguzi mwezi uliopita.",
       "options": [
         {
-          "swahili": "Ndiyo, ilifanyiwa ukaguzi mwezi uliopita.",
+          "swahili": "Ndiyo, ilifanyiwa ukaguzi mwezi iliyopita.",
           "correct": true
         },
         {
-          "swahili": "Ndiyo, itafanyiwa ukaguzi mwezi uliopita.",
+          "swahili": "Ndiyo, itafanyiwa ukaguzi mwezi iliyopita.",
           "correct": false
         },
         {
-          "swahili": "Ndiyo, ilifanya ukaguzi mwezi uliopita.",
+          "swahili": "Ndiyo, ilifanya ukaguzi mwezi iliyopita.",
           "correct": false
         }
       ]
@@ -1188,7 +1188,7 @@
       "mode": "translate",
       "english": "The car was inspected last month.",
       "before": "Gari ",
-      "after": " ukaguzi mwezi uliopita.",
+      "after": " ukaguzi mwezi iliyopita.",
       "options": [
         {
           "text": "ilifanyiwa",

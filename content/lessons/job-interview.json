@@ -121,7 +121,7 @@
       "id": "5cabefe5-7769-5c21-a7ed-9c8d6aa62ce7",
       "speaker": "Mgombea",
       "role": "user",
-      "swahili": "Asante. Kwa miaka mitano, nimekuwa nikifanya kazi kama meneja kwa kampuni ya teknolojia.",
+      "swahili": "Asante. Kwa miaka tano, nimekuwa nikifanya kazi kama meneja kwa kampuni ya teknolojia.",
       "english": "Thank you. For five years, I've been working as a manager at a technology company.",
       "words": [
         {
@@ -144,11 +144,8 @@
           "sanifu": "Sanifu: m/mi class — miaka mitatu"
         },
         {
-          "text": "mitano",
-          "gloss": "\"five\" — m/mi agreement (miaka mitano).",
-          "grammar": [
-            "sanifu-noun-classes"
-          ],
+          "text": "tano",
+          "gloss": "five — the plain n/n number: miaka tano (Sanifu: miaka mitano).",
           "sanifu": "m/mi class numbers: mmoja, miwili, mitatu, mitano"
         },
         {
@@ -176,18 +173,19 @@
       ],
       "options": [
         {
-          "swahili": "Asante. Kwa miaka mitano, nimekuwa nikifanya kazi kama meneja kwa kampuni ya teknolojia.",
+          "swahili": "Asante. Kwa miaka tano, nimekuwa nikifanya kazi kama meneja kwa kampuni ya teknolojia.",
           "correct": true
         },
         {
-          "swahili": "Asante. Kwa miaka mitano, nitakuwa nikifanya kazi kama meneja kwa kampuni ya teknolojia.",
+          "swahili": "Asante. Kwa miaka tano, nitakuwa nikifanya kazi kama meneja kwa kampuni ya teknolojia.",
           "correct": false
         },
         {
-          "swahili": "Asante. Kwa miaka mitano, nimekuwa nikisoma kazi kama meneja kwa kampuni ya teknolojia.",
+          "swahili": "Asante. Kwa miaka tano, nimekuwa nikisoma kazi kama meneja kwa kampuni ya teknolojia.",
           "correct": false
         }
-      ]
+      ],
+      "sanifu": "Asante. Kwa miaka mitano, nimekuwa nikifanya kazi kama meneja kwa kampuni ya teknolojia."
     },
     {
       "id": "9b4b88cf-fcd7-53b0-9de2-065df3e1424f",
@@ -502,11 +500,11 @@
       "id": "fc1d4c78-8962-5b08-9e5e-ad10f740cc5e",
       "speaker": "Mgombea",
       "role": "user",
-      "swahili": "Wakati mmoja, mradi wetu ulikuwa ukichelewa sana.",
+      "swahili": "Wakati moja, mradi yetu ilikuwa ikichelewa sana.",
       "english": "At one point, our project was running very late.",
       "words": [
         {
-          "text": "Wakati mmoja",
+          "text": "Wakati moja",
           "gloss": "once / at one point"
         },
         {
@@ -514,11 +512,8 @@
           "gloss": "project"
         },
         {
-          "text": "wetu",
-          "gloss": "\"our\" — m/wa agreement (for people: mtoto wetu, watoto wetu).",
-          "grammar": [
-            "possessives"
-          ],
+          "text": "yetu",
+          "gloss": "our — n/n form for things (Sanifu: mradi wetu).",
           "conjugation": {
             "verb": "possessive (m/wa: people)",
             "tense": "my · your · his/her · our · your (pl.) · their",
@@ -551,11 +546,8 @@
           }
         },
         {
-          "text": "ulikuwa ukichelewa",
-          "gloss": "\"was running late\" — u- agreement for mradi (m/mi)",
-          "grammar": [
-            "continuous-tenses"
-          ]
+          "text": "ilikuwa ikichelewa",
+          "gloss": "was running late — i- (it) + -li- + kuwa, then i- + -ki- + -chelewa (Sanifu: ulikuwa ukichelewa)."
         },
         {
           "text": "sana",
@@ -564,18 +556,19 @@
       ],
       "options": [
         {
-          "swahili": "Wakati mmoja, mradi wetu ulikuwa ukichelewa sana.",
+          "swahili": "Wakati moja, mradi yetu ilikuwa ikichelewa sana.",
           "correct": true
         },
         {
-          "swahili": "Wakati mmoja, mradi wetu utakuwa ukichelewa sana.",
+          "swahili": "Wakati moja, mradi yetu itakuwa ikichelewa sana.",
           "correct": false
         },
         {
-          "swahili": "Wakati mmoja, mradi wetu ulikuwa ukiwahi sana.",
+          "swahili": "Wakati moja, mradi yetu ilikuwa ikiwahi sana.",
           "correct": false
         }
-      ]
+      ],
+      "sanifu": "Wakati mmoja, mradi wetu ulikuwa ukichelewa sana."
     },
     {
       "id": "2cf54a31-d433-5031-ba08-81052bb60b08",
@@ -634,7 +627,7 @@
       "id": "54f87b65-e1ed-5a55-9f1e-f3a63554f06d",
       "speaker": "Mgombea",
       "role": "user",
-      "swahili": "Tulikaa pamoja kama timu, tukapanga kazi upya, na ukamalizika kwa wakati.",
+      "swahili": "Tulikaa pamoja kama timu, tukapanga kazi upya, na ikamalizika kwa wakati.",
       "english": "We sat down together as a team, re-planned the work, and it got finished on time.",
       "words": [
         {
@@ -675,11 +668,8 @@
           "gloss": "and / with"
         },
         {
-          "text": "ukamalizika",
-          "gloss": "\"and it got finished\" — m/mi agreement u-",
-          "grammar": [
-            "ki-po-ka"
-          ]
+          "text": "ikamalizika",
+          "gloss": "and then it got finished — i- (it) + -ka- + -malizika (Sanifu: ukamalizika)."
         },
         {
           "text": "kwa wakati",
@@ -688,18 +678,19 @@
       ],
       "options": [
         {
-          "swahili": "Tulikaa pamoja kama timu, tukapanga kazi upya, na ukamalizika kwa wakati.",
+          "swahili": "Tulikaa pamoja kama timu, tukapanga kazi upya, na ikamalizika kwa wakati.",
           "correct": true
         },
         {
-          "swahili": "Tutakaa pamoja kama timu, tukapanga kazi upya, na ukamalizika kwa wakati.",
+          "swahili": "Tutakaa pamoja kama timu, tukapanga kazi upya, na ikamalizika kwa wakati.",
           "correct": false
         },
         {
-          "swahili": "Tulikaa pamoja kama timu, tunapanga kazi upya, na ukamalizika kwa wakati.",
+          "swahili": "Tulikaa pamoja kama timu, tunapanga kazi upya, na ikamalizika kwa wakati.",
           "correct": false
         }
-      ]
+      ],
+      "sanifu": "Tulikaa pamoja kama timu, tukapanga kazi upya, na ukamalizika kwa wakati."
     },
     {
       "id": "48451f39-25cc-5bf6-b076-12c424d0342a",
@@ -811,7 +802,7 @@
       "id": "55e09d42-2b52-5a7f-b421-d6323cfd6ad1",
       "speaker": "Bi. Kamau",
       "role": "auto",
-      "swahili": "Jibu zuri sana. Tutakujulisha uamuzi wetu wiki ijayo.",
+      "swahili": "Jibu nzuri sana. Tutakujulisha uamuzi wetu wiki ijayo.",
       "english": "A very good answer. We'll let you know our decision next week.",
       "words": [
         {
@@ -823,11 +814,8 @@
           "sanifu": "Sanifu: ji/ma class — jibu lako, majibu"
         },
         {
-          "text": "zuri",
-          "gloss": "\"good\" — ji/ma singular agreement (jibu zuri, wazo zuri).",
-          "grammar": [
-            "sanifu-noun-classes"
-          ],
+          "text": "nzuri",
+          "gloss": "good — n/n form: jibu nzuri (Sanifu: jibu zuri).",
           "sanifu": "ji/ma class"
         },
         {
@@ -886,7 +874,8 @@
           "text": "wiki ijayo",
           "gloss": "next week"
         }
-      ]
+      ],
+      "sanifu": "Jibu zuri sana. Tutakujulisha uamuzi wetu wiki ijayo."
     },
     {
       "id": "c705c1e9-0139-531d-85bd-53340eb028e6",
@@ -1161,24 +1150,24 @@
       "mode": "translate",
       "english": "The project was running late.",
       "before": "Mradi ",
-      "after": " ukichelewa.",
+      "after": " ikichelewa.",
       "options": [
         {
-          "text": "ulikuwa",
+          "text": "ilikuwa",
           "correct": true
         },
         {
-          "text": "utakuwa",
+          "text": "itakuwa",
           "correct": false,
-          "feedback": "utakuwa = You will be"
+          "feedback": "itakuwa = You will be"
         },
         {
-          "text": "umekuwa",
+          "text": "imekuwa",
           "correct": false,
-          "feedback": "umekuwa = You have been"
+          "feedback": "imekuwa = You have been"
         }
       ],
-      "explanation": "ulikuwa = was, utakuwa = will be, umekuwa = has been. Kenyans often say \"project ilikuwa ikichelewa\".",
+      "explanation": "ilikuwa = was, itakuwa = will be, imekuwa = has been. Kenyans give mradi the n/n i- agreement (Sanifu, m/mi: mradi ulikuwa ukichelewa).",
       "grammar": [
         "past-li"
       ]

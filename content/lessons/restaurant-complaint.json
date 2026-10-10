@@ -90,7 +90,7 @@
       "id": "2d423cf2-1b19-5b35-8086-6ee10a606288",
       "speaker": "Mhudumu",
       "role": "auto",
-      "swahili": "Pole sana! Chakula chenu kiko karibu tayari.",
+      "swahili": "Pole sana! Chakula yenu iko karibu tayari.",
       "english": "Very sorry! Your food is almost ready.",
       "words": [
         {
@@ -106,20 +106,13 @@
           "sanifu": "Sanifu: ki/vi class — chakula changu, chakula hiki"
         },
         {
-          "text": "chenu",
-          "gloss": "\"your (pl.)\" — ki/vi agreement (Sanifu).",
-          "grammar": [
-            "sanifu-noun-classes"
-          ],
+          "text": "yenu",
+          "gloss": "your (you all) — n/n form (Sanifu: chakula chenu).",
           "sanifu": "ki/vi class (kitabu chenu); Kenyans often just say yenu"
         },
         {
-          "text": "kiko",
-          "gloss": "\"it is (at)\" — ki/vi agreement (chakula kiko tayari).",
-          "grammar": [
-            "sanifu-noun-classes",
-            "ko-location"
-          ],
+          "text": "iko",
+          "gloss": "it is (here / nearly) — n/n i- (Sanifu: kiko).",
           "sanifu": "ki/vi subject ki-; Kenyans often say \"iko\""
         },
         {
@@ -137,7 +130,7 @@
       "id": "af17cad4-8db6-5490-9d34-e4e368a10c2f",
       "speaker": "Mteja",
       "role": "user",
-      "swahili": "Mliniambia kwamba chakula kingekuja baada ya dakika ishirini.",
+      "swahili": "Mliniambia kwamba chakula ingekuja baada ya dakika ishirini.",
       "english": "You told me that the food would come in twenty minutes.",
       "words": [
         {
@@ -163,8 +156,8 @@
           "sanifu": "Sanifu: ki/vi class — chakula changu, chakula hiki"
         },
         {
-          "text": "kingekuja",
-          "gloss": "\"it would come\" — ki/vi agreement for chakula",
+          "text": "ingekuja",
+          "gloss": "would come — i- + -nge- + kuja (Sanifu: chakula kingekuja).",
           "sanifu": "Kenyans also say \"ingekuja\" #conditional-nge"
         },
         {
@@ -188,18 +181,19 @@
       ],
       "options": [
         {
-          "swahili": "Mliniambia kwamba chakula kingekuja baada ya dakika ishirini.",
+          "swahili": "Mliniambia kwamba chakula ingekuja baada ya dakika ishirini.",
           "correct": true
         },
         {
-          "swahili": "Nilikuambia kwamba chakula kingekuja baada ya dakika ishirini.",
+          "swahili": "Nilikuambia kwamba chakula ingekuja baada ya dakika ishirini.",
           "correct": false
         },
         {
-          "swahili": "Mliniambia ingawa chakula kingekuja baada ya dakika ishirini.",
+          "swahili": "Mliniambia ingawa chakula ingekuja baada ya dakika ishirini.",
           "correct": false
         }
-      ]
+      ],
+      "sanifu": "Mliniambia kwamba chakula kingekuja baada ya dakika ishirini."
     },
     {
       "id": "b67330eb-2bf7-5e7f-962d-c1fcaa548c4f",
@@ -383,7 +377,7 @@
       "id": "770c0bc3-b7f0-50a3-8847-5412a80bf928",
       "speaker": "Mhudumu",
       "role": "auto",
-      "swahili": "Chakula kimefika sasa. Hiki hapa!",
+      "swahili": "Chakula imefika sasa. Hii hapa!",
       "english": "The food has arrived now. Here it is!",
       "words": [
         {
@@ -395,12 +389,8 @@
           "sanifu": "Sanifu: ki/vi class — chakula changu, chakula hiki"
         },
         {
-          "text": "kimefika",
-          "gloss": "\"it has arrived\" — ki/vi agreement (chakula kimefika).",
-          "grammar": [
-            "sanifu-noun-classes",
-            "perfect-me"
-          ],
+          "text": "imefika",
+          "gloss": "has arrived — i- (n/n) + -me- + -fika (Sanifu: chakula kimefika).",
           "sanifu": "ki/vi subject ki-; Kenyans often say \"imefika\""
         },
         {
@@ -408,17 +398,15 @@
           "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
         },
         {
-          "text": "Hiki",
-          "gloss": "this — ki/vi (Sanifu: kitu hiki)",
-          "grammar": [
-            "demonstratives"
-          ]
+          "text": "Hii",
+          "gloss": "this (one) — n/n: Hii hapa! = here it is (Sanifu: Hiki hapa!)."
         },
         {
           "text": "hapa",
           "gloss": "here"
         }
-      ]
+      ],
+      "sanifu": "Chakula kimefika sasa. Hiki hapa!"
     },
     {
       "id": "0d9cc31c-bd84-5daf-86f9-0528d5ec1a0b",
@@ -892,7 +880,7 @@
       "id": "67258da0-b720-569d-85e1-1d83c169854c",
       "speaker": "Mhudumu",
       "role": "auto",
-      "swahili": "Haha, kweli kabisa. Tunathamini uvumilivu wenu.",
+      "swahili": "Haha, kweli kabisa. Tunathamini uvumilivu yenu.",
       "english": "Haha, absolutely true. We appreciate your patience.",
       "words": [
         {
@@ -919,11 +907,8 @@
           "gloss": "patience"
         },
         {
-          "text": "wenu",
-          "gloss": "\"your (pl.)\" — m/wa agreement (for people: mtoto wenu, watoto wenu).",
-          "grammar": [
-            "possessives"
-          ],
+          "text": "yenu",
+          "gloss": "your (you all) — n/n form for things (Sanifu: uvumilivu wenu).",
           "conjugation": {
             "verb": "possessive (m/wa: people)",
             "tense": "my · your · his/her · our · your (pl.) · their",
@@ -955,7 +940,8 @@
             ]
           }
         }
-      ]
+      ],
+      "sanifu": "Haha, kweli kabisa. Tunathamini uvumilivu wenu."
     }
   ],
   "vocabulary": [
@@ -1170,7 +1156,7 @@
       "mode": "translate",
       "english": "You told me that the food would come…",
       "before": "Mliniambia ",
-      "after": " chakula kingekuja…",
+      "after": " chakula ingekuja…",
       "options": [
         {
           "text": "kwamba",
@@ -1463,7 +1449,7 @@
       "mode": "translate",
       "english": "We appreciate your patience.",
       "before": "Tunathamini ",
-      "after": " wenu.",
+      "after": " yenu.",
       "options": [
         {
           "text": "uvumilivu",

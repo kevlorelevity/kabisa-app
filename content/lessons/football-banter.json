@@ -232,7 +232,7 @@
       "id": "a0f6c54d-4cb5-599e-b200-e4e1011dd0ca",
       "speaker": "Wafula",
       "role": "auto",
-      "swahili": "Yule? Hajafunga hata goli moja msimu huu!",
+      "swahili": "Yule? Hajafunga hata goli moja msimu hii!",
       "english": "Him? He hasn't scored even one goal this season!",
       "words": [
         {
@@ -269,16 +269,14 @@
         },
         {
           "text": "msimu",
-          "gloss": "season (m/mi)"
+          "gloss": "season — Kenyans give it n/n agreement (Sanifu m/mi: msimu huu)."
         },
         {
-          "text": "huu",
-          "gloss": "this — m/mi or u (Sanifu: mti huu)",
-          "grammar": [
-            "demonstratives"
-          ]
+          "text": "hii",
+          "gloss": "this — n/n: msimu hii (Sanifu: msimu huu)."
         }
-      ]
+      ],
+      "sanifu": "Yule? Hajafunga hata goli moja msimu huu!"
     },
     {
       "id": "b1e33e34-5179-58eb-bd42-769fbf6d8102",
@@ -542,7 +540,7 @@
       "id": "f5e74aaa-e651-5a51-8d37-3987b1acef22",
       "speaker": "Wewe",
       "role": "user",
-      "swahili": "Sawa, sawa. Maji yakimwagika hayazoleki. Lakini mchezo haujaisha bado!",
+      "swahili": "Sawa, sawa. Maji yakimwagika hayazoleki. Lakini mchezo haijaisha bado!",
       "english": "Fine, fine. What's done is done. But the game isn't over yet!",
       "words": [
         {
@@ -569,11 +567,8 @@
           "gloss": "the match"
         },
         {
-          "text": "haujaisha",
-          "gloss": "\"isn't over yet\" — m/mi agreement for mchezo",
-          "grammar": [
-            "perfect-negative-ja"
-          ]
+          "text": "haijaisha",
+          "gloss": "isn't over yet — hai- (not it) + -ja- (not yet) + -isha (Sanifu: haujaisha)."
         },
         {
           "text": "bado",
@@ -585,18 +580,19 @@
       ],
       "options": [
         {
-          "swahili": "Sawa, sawa. Maji yakimwagika hayazoleki. Lakini mchezo haujaisha bado!",
+          "swahili": "Sawa, sawa. Maji yakimwagika hayazoleki. Lakini mchezo haijaisha bado!",
           "correct": true
         },
         {
-          "swahili": "Sawa, sawa. Maji yakimwagika yanazoleka. Lakini mchezo haujaisha bado!",
+          "swahili": "Sawa, sawa. Maji yakimwagika yanazoleka. Lakini mchezo haijaisha bado!",
           "correct": false
         },
         {
-          "swahili": "Sawa, sawa. Maji yakimwagika hayazoleki. Lakini mchezo umeisha bado!",
+          "swahili": "Sawa, sawa. Maji yakimwagika hayazoleki. Lakini mchezo imeisha bado!",
           "correct": false
         }
-      ]
+      ],
+      "sanifu": "Sawa, sawa. Maji yakimwagika hayazoleki. Lakini mchezo haujaisha bado!"
     },
     {
       "id": "15e67cd8-fd85-5f41-a773-244927394b8a",
@@ -678,7 +674,7 @@
       "id": "85de9fdd-40a0-5348-8179-bb5be8f5995f",
       "speaker": "Wewe",
       "role": "user",
-      "swahili": "Goooli! Tumesawazisha! Na sasa… goli la pili! Mbili kwa moja!",
+      "swahili": "Goooli! Tumesawazisha! Na sasa… goli ya pili! Mbili kwa moja!",
       "english": "Goooal! We've equalised! And now… a second goal! Two–one!",
       "words": [
         {
@@ -736,11 +732,8 @@
           "gloss": "goal"
         },
         {
-          "text": "la",
-          "gloss": "\"of\" — ji/ma agreement (gari la Kamau)",
-          "grammar": [
-            "sanifu-noun-classes"
-          ],
+          "text": "ya",
+          "gloss": "of — n/n ya: goli ya pili = the second goal (Sanifu: goli la pili).",
           "sanifu": "ji/ma class"
         },
         {
@@ -755,15 +748,15 @@
       "sanifu": "Goli! Tumesawazisha! Na sasa… goli la pili! Mbili kwa moja!",
       "options": [
         {
-          "swahili": "Goooli! Tumesawazisha! Na sasa… goli la pili! Mbili kwa moja!",
+          "swahili": "Goooli! Tumesawazisha! Na sasa… goli ya pili! Mbili kwa moja!",
           "correct": true
         },
         {
-          "swahili": "Goooli! Tumeshindwa! Na sasa… goli la pili! Mbili kwa moja!",
+          "swahili": "Goooli! Tumeshindwa! Na sasa… goli ya pili! Mbili kwa moja!",
           "correct": false
         },
         {
-          "swahili": "Goooli! Tumesawazisha! Na sasa… goli la kwanza! Mbili kwa moja!",
+          "swahili": "Goooli! Tumesawazisha! Na sasa… goli ya kwanza! Mbili kwa moja!",
           "correct": false
         }
       ]
@@ -1129,10 +1122,11 @@
     },
     {
       "id": "45e78814-92f3-5b47-b654-51a05aa3e243",
-      "swahili": "Mchezo haujaisha",
+      "swahili": "Mchezo haijaisha",
       "english": "The game isn't over",
       "exampleContext": "",
-      "partOfSpeech": "phrase"
+      "partOfSpeech": "phrase",
+      "sanifu": "Mchezo haujaisha"
     },
     {
       "id": "c0677e64-133e-5866-afc9-8b8165ae7f3b",
@@ -1273,7 +1267,7 @@
       "mode": "translate",
       "english": "He hasn't scored even one goal this season.",
       "before": "",
-      "after": " hata goli moja msimu huu.",
+      "after": " hata goli moja msimu hii.",
       "options": [
         {
           "text": "Hajafunga",
@@ -1330,20 +1324,20 @@
       "after": " bado!",
       "options": [
         {
-          "text": "haujaisha",
+          "text": "haijaisha",
           "correct": true
         },
         {
-          "text": "umeisha",
+          "text": "imeisha",
           "correct": false,
-          "feedback": "umeisha = You are finished"
+          "feedback": "imeisha = You are finished"
         },
         {
-          "text": "haukuisha",
+          "text": "haikuisha",
           "correct": false
         }
       ],
-      "explanation": "mchezo (m/mi) → u- agreement: haujaisha.",
+      "explanation": "Kenyans give mchezo the n/n i- agreement: haijaisha. (Sanifu, m/mi: mchezo haujaisha.)",
       "grammar": [
         "perfect-negative-ja"
       ]

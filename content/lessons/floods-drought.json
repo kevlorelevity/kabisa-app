@@ -129,7 +129,7 @@
       "id": "f177318c-c9b8-5e79-a92d-8b9ccb0cf3de",
       "speaker": "John",
       "role": "user",
-      "swahili": "Ndiyo, nimesikia kwamba mto Nzoia umefurika huko Budalang'i.",
+      "swahili": "Ndiyo, nimesikia kwamba mto Nzoia imefurika huko Budalang'i.",
       "english": "Yes, I've heard that the Nzoia River has flooded in Budalang'i.",
       "words": [
         {
@@ -188,8 +188,8 @@
           "gloss": "the Nzoia River"
         },
         {
-          "text": "umefurika",
-          "gloss": "\"has flooded\" — -furika = overflow, flood"
+          "text": "imefurika",
+          "gloss": "has flooded — i- (n/n) + -me- + -furika (Sanifu: mto umefurika)."
         },
         {
           "text": "huko",
@@ -202,18 +202,19 @@
       ],
       "options": [
         {
-          "swahili": "Ndiyo, nimesikia kwamba mto Nzoia umefurika huko Budalang'i.",
+          "swahili": "Ndiyo, nimesikia kwamba mto Nzoia imefurika huko Budalang'i.",
           "correct": true
         },
         {
-          "swahili": "Ndiyo, umesikia kwamba mto Nzoia umefurika huko Budalang'i.",
+          "swahili": "Ndiyo, umesikia kwamba mto Nzoia imefurika huko Budalang'i.",
           "correct": false
         },
         {
-          "swahili": "Ndiyo, nimesikia kwamba mto Nzoia utafurika jana huko Budalang'i.",
+          "swahili": "Ndiyo, nimesikia kwamba mto Nzoia itafurika jana huko Budalang'i.",
           "correct": false
         }
-      ]
+      ],
+      "sanifu": "Ndiyo, nimesikia kwamba mto Nzoia umefurika huko Budalang'i."
     },
     {
       "id": "e4bb928f-4572-5b71-8773-f75c38c9f52a",
@@ -1486,7 +1487,7 @@
       "mode": "translate",
       "english": "I've heard that the river has flooded.",
       "before": "Nimesikia ",
-      "after": " mto umefurika.",
+      "after": " mto imefurika.",
       "options": [
         {
           "text": "kwamba",
@@ -1671,21 +1672,21 @@
       "after": ".",
       "options": [
         {
-          "text": "umefurika",
+          "text": "imefurika",
           "correct": true
         },
         {
-          "text": "umekauka",
+          "text": "imekauka",
           "correct": false,
-          "feedback": "umekauka = You are dry"
+          "feedback": "imekauka = You are dry"
         },
         {
-          "text": "umesimama",
+          "text": "imesimama",
           "correct": false,
-          "feedback": "umesimama = You are standing"
+          "feedback": "imesimama = You are standing"
         }
       ],
-      "explanation": "-furika = flood, -kauka = dry up."
+      "explanation": "-furika = flood, -kauka = dry up. Kenyans give mto the n/n i- agreement (Sanifu, m/mi: mto umefurika)."
     },
     {
       "id": "53b0a974-14e7-5ad8-bb57-baee29267ea1",
