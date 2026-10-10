@@ -134,15 +134,81 @@ export function isLessonPassed(lesson: Lesson, rec = getLessonScores(lesson.id))
   return sectionPassed(rec.dialogue) && practiceOk;
 }
 
+// ---- lessons added to a level later (✨ new lessons from admins) ----
+//
+// A level keeps its total XP when a lesson is added to it. Learners who had already cleared the
+// level aren't sent back: for them the new lesson is optional (open, never blocking). Everyone
+// who reaches the level after the lesson was added does it like any other lesson.
+
+const CLEARED_KEY = 'ksa_levels_cleared';
+const SEEN_KEY = 'ksa_levelups_seen';
+
+/** When each level was cleared on this device (ISO time). Celebrated level-ups count as cleared long ago. */
+export function getLevelClears(): Record<string, string> {
+  const out: Record<string, string> = {};
+  try {
+    for (const lvl of JSON.parse(localStorage.getItem(SEEN_KEY) ?? '[]') as number[]) out[String(lvl)] = '2000-01-01T00:00:00.000Z';
+    Object.assign(out, JSON.parse(localStorage.getItem(CLEARED_KEY) ?? '{}') as Record<string, string>);
+  } catch {
+    /* storage unavailable */
+  }
+  return out;
+}
+
+/** Remembers the first time each level had every lesson done. Call when scores change. */
+export function recordLevelClears(lessons: Lesson[]): void {
+  const clears = getLevelClears();
+  let changed = false;
+  for (const level of new Set(lessons.map((l) => l.level))) {
+    if (clears[String(level)]) continue;
+    const ls = lessons.filter((l) => l.level === level);
+    if (ls.length && ls.every((l) => isLessonDone(lessons, l))) {
+      clears[String(level)] = new Date().toISOString();
+      changed = true;
+    }
+  }
+  if (!changed) return;
+  try {
+    localStorage.setItem(CLEARED_KEY, JSON.stringify(clears));
+  } catch {
+    /* storage unavailable */
+  }
+}
+
+const attempts = (id: string) => {
+  const r = getLessonScores(id);
+  return (r.dialogue?.attempts ?? 0) + (r.practice?.attempts ?? 0);
+};
+
 /**
- * The first lesson is always open; every later one needs the previous lesson passed.
+ * A lesson added after this learner had cleared its level: optional for them. They had cleared it
+ * if every lesson that was there before is done AND they either already played a higher level
+ * (gating proves they got through) or this device saw the level cleared before the lesson came.
+ */
+export function isLessonOptional(lessons: Lesson[], lesson: Lesson): boolean {
+  const added = lesson.addedAt;
+  if (!added || isRoaming() || isLessonPassed(lesson)) return false;
+  const before = lessons.filter((l) => l.level === lesson.level && l.id !== lesson.id && !(l.addedAt && l.addedAt >= added));
+  if (!before.every((l) => isLessonDone(lessons, l))) return false;
+  if (lessons.some((l) => l.level > lesson.level && attempts(l.id) > 0)) return true;
+  const cleared = getLevelClears()[String(lesson.level)];
+  return Boolean(cleared && cleared < added);
+}
+
+/** Passed, or optional for this learner — either way it doesn't hold them back. */
+export function isLessonDone(lessons: Lesson[], lesson: Lesson): boolean {
+  return isLessonPassed(lesson) || isLessonOptional(lessons, lesson);
+}
+
+/**
+ * The first lesson is always open; every later one needs the previous lesson done.
  * Admins in Roam mode get every lesson open.
  */
 export function isLessonUnlocked(lessons: Lesson[], lessonId: string): boolean {
   if (isRoaming()) return true;
   const idx = lessons.findIndex((l) => l.id === lessonId);
   if (idx <= 0) return true;
-  return isLessonPassed(lessons[idx - 1]);
+  return isLessonDone(lessons, lessons[idx - 1]);
 }
 
 /** Has the learner fallen below the bar repeatedly on either section? */

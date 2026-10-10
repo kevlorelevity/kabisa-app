@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLessons } from '../hooks/useLessons';
-import { SCORES_CHANGED_EVENT } from '../lib/lessonScores';
+import { SCORES_CHANGED_EVENT, recordLevelClears } from '../lib/lessonScores';
 import { useOverridesVersion } from '../lib/contentOverrides';
 import { MAX_LEVEL, courseComplete, currentLevel, levelInfo, levelXp, totalXp } from '../lib/levels';
 
@@ -23,8 +23,12 @@ function useScoresVersion(): number {
 /** Always-visible strip under the nav: current level and XP towards the next one. */
 export function LevelBar() {
   const lessons = useLessons();
-  useScoresVersion();
+  const scoresV = useScoresVersion();
   useOverridesVersion(); // re-render on admin live edits
+  // Remember when each level was cleared, so a lesson added to it later doesn't send this learner back.
+  useEffect(() => {
+    if (lessons.length) recordLevelClears(lessons);
+  }, [lessons, scoresV]);
   if (lessons.length === 0) return null;
 
   const lvl = currentLevel(lessons);

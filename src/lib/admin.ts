@@ -1,6 +1,7 @@
 import { getSupabase } from './supabase';
 import type { SuggestTarget } from '../components/adminContext';
-import type { ContentOverride, ContentPatch, Span } from './contentOverrides';
+import type { AiLessonRow, ContentOverride, ContentPatch, Span } from './contentOverrides';
+import type { NewLessonInput } from './aiLesson';
 import type { FollowupInput, FollowupQuestion } from './aiFollowup';
 
 export type SuggestionKind = 'phrasing' | 'translation' | 'grammar' | 'layout' | 'other';
@@ -67,7 +68,7 @@ export async function submitSuggestion(input: SuggestionInput): Promise<SubmitRe
 
 // ---------- AI edits, background jobs & team guidance ----------
 
-export type AiScope = 'item' | 'dialogue' | 'practice' | 'followup';
+export type AiScope = 'item' | 'dialogue' | 'practice' | 'followup' | 'lesson';
 
 export interface AiEditInput {
   lessonId: string;
@@ -145,6 +146,7 @@ export async function undoAiJob(job: AiJob): Promise<boolean> {
   // Every patch the job wrote (an AI edit's item, a follow-up's places and learner note).
   const { error: e1 } = await supa.from('content_patch').update({ active: false }).eq('job_id', job.id);
   if (e1) return false;
+  if (job.scope === 'lesson') await supa.from('ai_lesson').update({ active: false }).eq('job_id', job.id);
   if (job.patch_id) await supa.from('content_patch').update({ active: false }).eq('id', job.patch_id);
   const { error } = await supa.from('ai_job').update({ status: 'undone', updated_at: new Date().toISOString() }).eq('id', job.id);
   return !error;
@@ -289,4 +291,33 @@ export async function loadStyleGuide(): Promise<{ text: string; created_at: stri
   if (!supa) return null;
   const { data } = await supa.from('style_guide').select('text,created_at,entries').order('created_at', { ascending: false }).limit(1).maybeSingle();
   return (data as { text: string; created_at: string; entries: number } | null) ?? null;
+}
+
+// ---------- ✨ new lessons ----------
+
+/** Asks the AI to write a new lesson for a level (runs in the background, see api/ai-lesson.ts). */
+export async function submitAiLesson(input: NewLessonInput): Promise<{ ok: boolean; jobId?: string; error?: string }> {
+  const supa = getSupabase();
+  const token = supa ? (await supa.auth.getSession()).data.session?.access_token : undefined;
+  if (!token) return { ok: false, error: 'not_signed_in' };
+  try {
+    const res = await fetch('/api/ai-lesson', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json', authorization: `Bearer ${token}` },
+      body: JSON.stringify(input),
+    });
+    const body = (await res.json().catch(() => ({}))) as { jobId?: string; error?: string };
+    if (!res.ok) return { ok: false, error: body.error ?? `http_${res.status}` };
+    return { ok: true, jobId: body.jobId };
+  } catch (e) {
+    return { ok: false, error: e instanceof Error ? e.message : 'network_error' };
+  }
+}
+
+/** The lessons these jobs wrote (to show them without a reload). */
+export async function loadJobLessons(jobIds: string[]): Promise<AiLessonRow[]> {
+  const supa = getSupabase();
+  if (!supa || !jobIds.length) return [];
+  const { data } = await supa.from('ai_lesson').select('id,created_at,value').in('job_id', jobIds).eq('active', true);
+  return (data ?? []) as AiLessonRow[];
 }

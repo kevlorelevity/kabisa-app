@@ -13,6 +13,8 @@ import {
   saveNotePatch,
   answerQuestion,
   clearPendingSwaps,
+  loadJobLessons,
+  submitAiLesson,
   loadJobPatches,
   submitAiEdit,
   submitFollowup,
@@ -22,6 +24,7 @@ import {
   type GuidanceNote,
 } from '../lib/admin';
 import {
+  addAiLessons,
   addOverrides,
   addPatches,
   allLessons,
@@ -38,6 +41,7 @@ import {
 import { findCandidates, type EditedKind, type FollowupInput, type FollowupQuestion } from '../lib/aiFollowup';
 import { AdminContext, type EditField, type SuggestTarget } from './adminContext';
 import { defaultFields } from './adminTargets';
+import { levelInfo } from '../lib/levels';
 import { contextObservation, noteObservation, sanifuObservation } from '../lib/styleGuide';
 import { setRoamAllowed } from '../lib/roam';
 import { reglossInstruction } from '../lib/aiPatch';
@@ -649,7 +653,48 @@ function DirectModal({ lessonId, scope, onClose, startAi }: { lessonId: string; 
   );
 }
 
+// ---------- ✨ New lesson for a level ----------
+
+function NewLessonModal({ level, onClose, onSubmit }: { level: number; onClose: () => void; onSubmit: (prompt: string) => void }) {
+  const [prompt, setPrompt] = useState('');
+  const info = levelInfo(level);
+  const count = allLessons().filter((l) => l.level === level).length;
+  const total = info.xp ?? 0;
+  return (
+    <Sheet title={`✨ New lesson · Level ${level}`} subtitle={`${info.emoji} ${info.name} — ${info.focus}`} onClose={onClose}>
+      <label className="block">
+        <span className="text-sm font-semibold text-gray-800">What should the lesson be about?</span>
+        <textarea
+          value={prompt}
+          onChange={(e) => setPrompt(e.target.value)}
+          rows={6}
+          autoFocus
+          placeholder="e.g. Buying airtime and data bundles at an M-Pesa kiosk: the learner asks for 100 bob of Safaricom credit, the attendant asks for the number, they talk about the price of a bundle and pay with M-Pesa."
+          className={field}
+        />
+      </label>
+      <ul className="text-xs text-gray-500 space-y-1 list-disc pl-4">
+        <li>
+          Claude writes the whole lesson in the background (a few minutes) — conversation, practice and key vocabulary — at
+          this level’s grammar, following the style guide. It goes live by itself at the end of the level; undo any time
+          under Admin → Activity.
+        </li>
+        <li>
+          The level stays worth {total ? `${total} XP` : 'the same XP'}: with {count + 1} lessons each one is worth a bit less.
+        </li>
+        <li>Learners who already cleared this level aren’t sent back — for them it shows as ✨ New · optional.</li>
+      </ul>
+      <button onClick={() => onSubmit(prompt.trim())} disabled={!prompt.trim()} className={primary}>
+        ✨ Write the lesson
+      </button>
+    </Sheet>
+  );
+}
+
 // ---------- Activity & style guide ----------
+
+/** A job still "working" after 8 minutes has died with its server function (timeout): stop waiting for it. */
+const isStale = (j: AiJob) => j.status === 'working' && Date.now() - new Date(j.created_at).getTime() > 8 * 60 * 1000;
 
 const STATUS: Record<AiJob['status'], { label: string; cls: string }> = {
   working: { label: 'Working…', cls: 'bg-amber-100 text-amber-800' },
@@ -768,10 +813,13 @@ function ActivityModal({
           <div key={j.id} className="rounded-xl border border-gray-200 p-3 space-y-1">
             <div className="flex items-center justify-between gap-2">
               <span className="text-xs text-gray-500 truncate">
-                {j.lesson_id} · {j.scope === 'followup' ? 'Follow-up' : j.target_label ?? j.scope}
+                {j.scope === 'lesson' ? '' : `${j.lesson_id} · `}
+                {j.scope === 'followup' ? 'Follow-up' : j.target_label ?? j.scope}
                 {j.scope === 'followup' && j.target_label ? ` · ${j.target_label}` : ''}
               </span>
-              <span className={`shrink-0 text-[11px] font-semibold px-2 py-0.5 rounded-full ${STATUS[j.status].cls}`}>{STATUS[j.status].label}</span>
+              <span className={`shrink-0 text-[11px] font-semibold px-2 py-0.5 rounded-full ${isStale(j) ? STATUS.failed.cls : STATUS[j.status].cls}`}>
+                {isStale(j) ? 'Timed out' : STATUS[j.status].label}
+              </span>
             </div>
             <p className="text-sm text-gray-800">“{j.instruction}”</p>
             {j.summary && <p className="text-xs text-green-800">{j.summary}</p>}
@@ -843,6 +891,7 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
   const [isAdmin, setIsAdmin] = useState(false);
   const [target, setTarget] = useState<SuggestTarget | null>(null);
   const [direct, setDirect] = useState<{ lessonId: string; scope: 'dialogue' | 'practice' } | null>(null);
+  const [newLessonLevel, setNewLessonLevel] = useState<number | null>(null);
   const [showActivity, setShowActivity] = useState(false);
   const [ops, setOps] = useState<Op[]>([]);
   const [jobs, setJobs] = useState<AiJob[]>([]);
@@ -939,6 +988,8 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
     const fresh = list.filter((j) => (j.status === 'live' || j.status === 'review') && !liveSeen.current.has(j.id));
     for (const j of list) if (j.status === 'live' || j.status === 'review') liveSeen.current.add(j.id);
     if (fresh.length) {
+      const lessonJobs = fresh.filter((j) => j.scope === 'lesson').map((j) => j.id);
+      if (lessonJobs.length) addAiLessons(await loadJobLessons(lessonJobs));
       const rows = await loadJobPatches(fresh.map((j) => j.id));
       if (rows.length) addPatches(rows);
     }
@@ -957,7 +1008,7 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
   }, [effectiveAdmin, handOverSwaps]);
 
   // Poll while any AI edit is still working.
-  const working = jobs.filter((j) => j.status === 'working').length;
+  const working = jobs.filter((j) => j.status === 'working' && !isStale(j)).length;
   useEffect(() => {
     if (!working) return;
     const t = setInterval(() => {
@@ -1019,7 +1070,29 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
     [refreshJobs],
   );
 
+  const writeLesson = useCallback(
+    (level: number, prompt: string) => {
+      const info = levelInfo(level);
+      const inLevel = allLessons().filter((l) => l.level === level);
+      const order = Math.max(level * 100, ...inLevel.map((l) => l.order ?? 0)) + 1;
+      enqueue(`✨ AI · new lesson · Level ${level}`, async () => {
+        const res = await submitAiLesson({
+          level,
+          levelName: info.name,
+          levelFocus: info.focus,
+          order,
+          prompt,
+          existing: inLevel.map((l) => ({ title: l.title, theme: l.theme, vocabulary: l.vocabulary.map((v) => v.swahili) })),
+        });
+        if (res.ok) await refreshJobs();
+        return { ok: res.ok, error: aiError(res.error) };
+      });
+    },
+    [enqueue, refreshJobs],
+  );
+
   const openSuggest = useCallback((t: SuggestTarget) => setTarget(t), []);
+  const openNewLesson = useCallback((level: number) => setNewLessonLevel(level), []);
   const openDirect = useCallback((lessonId: string, scope: 'dialogue' | 'practice') => setDirect({ lessonId, scope }), []);
   const openActivity = useCallback(() => setShowActivity(true), []);
   const activity = useMemo(
@@ -1032,8 +1105,8 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
     [ops, working, jobs, ackFailed],
   );
   const value = useMemo(
-    () => ({ isAdmin: effectiveAdmin, openSuggest, openDirect, openActivity, activity }),
-    [effectiveAdmin, openSuggest, openDirect, openActivity, activity],
+    () => ({ isAdmin: effectiveAdmin, openSuggest, openDirect, openActivity, openNewLesson, activity }),
+    [effectiveAdmin, openSuggest, openDirect, openActivity, openNewLesson, activity],
   );
 
   return (
@@ -1047,6 +1120,16 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
           startAi={startAi}
           startFollowup={startFollowup}
           observe={observe}
+        />
+      )}
+      {newLessonLevel !== null && (
+        <NewLessonModal
+          level={newLessonLevel}
+          onClose={() => setNewLessonLevel(null)}
+          onSubmit={(prompt) => {
+            writeLesson(newLessonLevel, prompt);
+            setNewLessonLevel(null);
+          }}
         />
       )}
       {direct && <DirectModal lessonId={direct.lessonId} scope={direct.scope} onClose={() => setDirect(null)} startAi={startAi} />}

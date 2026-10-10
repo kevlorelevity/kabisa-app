@@ -58,6 +58,8 @@ export interface AdminContextValue {
   /** Prompt the AI to change a lesson's whole conversation or practice session. */
   openDirect: (lessonId: string, scope: 'dialogue' | 'practice') => void;
   openActivity: () => void;
+  /** ✨ Have the AI write a new lesson for this level. */
+  openNewLesson: (level: number) => void;
   activity: AdminActivity;
 }
 
@@ -66,6 +68,7 @@ export const AdminContext = createContext<AdminContextValue>({
   openSuggest: () => {},
   openDirect: () => {},
   openActivity: () => {},
+  openNewLesson: () => {},
   activity: { saving: 0, working: 0, failed: 0, questions: 0 },
 });
 

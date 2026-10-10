@@ -238,6 +238,8 @@ export interface Lesson {
   vocabulary: VocabEntry[];
   /** Optional follow-on practice session (fill-the-gap fragments). */
   practice?: PracticeItem[];
+  /** Set on lessons an admin added later (✨ new lesson): when it went live (ISO time). */
+  addedAt?: string;
 }
 
 // -------- Grammar explainers (content/grammar/topics.json) --------
@@ -266,6 +268,8 @@ export interface GrammarTopic {
 /** Gamification level (content/levels.json). */
 export interface LevelInfo {
   level: number;
+  /** XP the whole level is worth. Fixed: adding a lesson shares it out more thinly. */
+  xp?: number;
   name: string;
   emoji: string;
   tagline: string;

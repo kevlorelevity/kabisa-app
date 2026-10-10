@@ -24,6 +24,10 @@ registerContentScopes({
   grammar: (slug) => getGrammarTopic(slug),
   level: (n) => LEVELS.find((l) => String(l.level) === n),
   allLessons: () => lessons,
+  addLessons: (ls) => {
+    lessons.push(...ls);
+    lessons.sort((a, b) => (a.order ?? Infinity) - (b.order ?? Infinity));
+  },
 });
 
 /** All lessons, unpersonalised (the scripts' default "John from Uganda"). */

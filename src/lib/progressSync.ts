@@ -3,7 +3,9 @@ import { getSupabase } from './supabase';
 import {
   SCORES_CHANGED_EVENT,
   getAllLessonScores,
+  isLessonDone,
   isLessonPassed,
+  recordLevelClears,
   replaceAllLessonScores,
   type LessonScoreRecord,
   type SectionScore,
@@ -85,7 +87,7 @@ const same = (a: unknown, b: unknown) => JSON.stringify(a) === JSON.stringify(b)
 /** The summary row for learner_progress, from this device's (merged) scores. */
 export function progressSummary(lessons: Lesson[], store: Store) {
   const level = currentLevel(lessons);
-  const passed = lessons.filter((l) => isLessonPassed(l)).length;
+  const passed = lessons.filter((l) => isLessonDone(lessons, l)).length;
   const started = lessons.filter((l) => attemptsOf(store[l.id]) > 0).length;
   return {
     level,
@@ -94,7 +96,7 @@ export function progressSummary(lessons: Lesson[], store: Store) {
     lessons_passed: passed,
     lessons_started: started,
     lessons_total: lessons.length,
-    next_lesson_id: lessons.find((l) => !isLessonPassed(l))?.id ?? null,
+    next_lesson_id: lessons.find((l) => !isLessonDone(lessons, l))?.id ?? null,
     course_complete: courseComplete(lessons),
   };
 }
@@ -138,6 +140,7 @@ export function startProgressSync(userId: string, getLessons: () => Lesson[]): (
       if (error) console.error('[progressSync] lesson_score upsert failed:', error);
       else for (const r of rows) serverCopy[r.lesson_id] = r.record;
     }
+    recordLevelClears(lessons);
     const summary = progressSummary(lessons, store);
     if (!same(summary, serverSummary)) {
       const { error } = await supa

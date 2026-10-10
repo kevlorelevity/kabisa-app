@@ -42,7 +42,7 @@ const wordSchema = {
   additionalProperties: false,
 };
 
-const turnSchema = {
+export const turnSchema = {
   type: 'object',
   properties: {
     id: str,
@@ -67,7 +67,7 @@ const turnSchema = {
   additionalProperties: false,
 };
 
-const practiceSchema = {
+export const practiceSchema = {
   type: 'object',
   properties: {
     id: str,

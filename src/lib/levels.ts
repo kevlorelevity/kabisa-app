@@ -1,6 +1,6 @@
 import type { Lesson, LevelInfo } from '../types';
 import levelsJson from '../../content/levels.json';
-import { PASS_THRESHOLD, getLessonScores, isLessonPassed, type LessonScoreRecord } from './lessonScores';
+import { PASS_THRESHOLD, getLessonScores, isLessonDone, isLessonPassed, type LessonScoreRecord } from './lessonScores';
 
 // -------- Levels & XP (gamification) --------
 //
@@ -52,15 +52,46 @@ export interface LevelXp {
   required: number;
 }
 
+/**
+ * What a level is worth in total. Fixed (content/levels.json): when a lesson is added to a
+ * level, each lesson's share of it gets smaller instead of the level getting bigger.
+ */
+export function levelTotalXp(lessons: Lesson[], level: number): number {
+  return levelInfo(level).xp ?? lessonsInLevel(lessons, level).length * lessonPassXp();
+}
+
+/** How much one lesson's raw XP counts in its level (1 when the level has its original lesson count). */
+function lessonScale(lessons: Lesson[], level: number): number {
+  const n = lessonsInLevel(lessons, level).length;
+  return n ? levelTotalXp(lessons, level) / (n * lessonPassXp()) : 1;
+}
+
+/** A lesson's XP and its maximum, in its level's share (for the lesson card). */
+export function lessonPoints(lessons: Lesson[], lesson: Lesson): { xp: number; max: number } {
+  const k = lessonScale(lessons, lesson.level);
+  return { xp: Math.round(lessonXp(lesson) * k), max: Math.round(maxLessonXp() * k) };
+}
+
 export function levelXp(lessons: Lesson[], level: number): LevelXp {
   const ls = lessonsInLevel(lessons, level);
   const cap = lessonPassXp();
-  const earned = ls.reduce((sum, l) => sum + Math.min(lessonXp(l), cap), 0);
-  return { level, earned, required: ls.length * cap };
+  const required = levelTotalXp(lessons, level);
+  // A cleared level (every lesson passed, or a later-added one optional for this learner) is full.
+  if (ls.length && ls.every((l) => isLessonDone(lessons, l))) return { level, earned: required, required };
+  const k = lessonScale(lessons, level);
+  const earned = Math.round(ls.reduce((sum, l) => sum + Math.min(lessonXp(l), cap), 0) * k);
+  return { level, earned: Math.min(earned, required), required };
 }
 
 export function totalXp(lessons: Lesson[]): number {
-  return lessons.reduce((sum, l) => sum + lessonXp(l), 0);
+  let sum = 0;
+  for (const level of new Set(lessons.map((l) => l.level))) {
+    const ls = lessonsInLevel(lessons, level);
+    const raw = Math.round(ls.reduce((n, l) => n + lessonXp(l), 0) * lessonScale(lessons, level));
+    const cleared = ls.every((l) => isLessonDone(lessons, l));
+    sum += cleared ? Math.max(raw, levelTotalXp(lessons, level)) : raw;
+  }
+  return sum;
 }
 
 export function lessonsInLevel(lessons: Lesson[], level: number): Lesson[] {
@@ -76,7 +107,7 @@ export interface LevelProgress {
 
 export function levelProgress(lessons: Lesson[], level: number): LevelProgress {
   const ls = lessonsInLevel(lessons, level);
-  const passed = ls.filter((l) => isLessonPassed(l)).length;
+  const passed = ls.filter((l) => isLessonDone(lessons, l)).length;
   return { level, passed, total: ls.length, complete: ls.length > 0 && passed === ls.length };
 }
 
@@ -85,13 +116,13 @@ export function levelProgress(lessons: Lesson[], level: number): LevelProgress {
  * lesson (lessons unlock in order). Once everything is passed, the top level.
  */
 export function currentLevel(lessons: Lesson[]): number {
-  const next = lessons.find((l) => !isLessonPassed(l));
+  const next = lessons.find((l) => !isLessonDone(lessons, l));
   return next ? next.level : (lessons[lessons.length - 1]?.level ?? 1);
 }
 
 /** True when every lesson in the course has been passed. */
 export function courseComplete(lessons: Lesson[]): boolean {
-  return lessons.length > 0 && lessons.every((l) => isLessonPassed(l));
+  return lessons.length > 0 && lessons.every((l) => isLessonDone(lessons, l));
 }
 
 /** How many times this lesson's theme has come up so far (1 = first visit). */

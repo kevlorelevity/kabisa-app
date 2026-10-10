@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import type { Lesson } from '../types';
 import { PASS_THRESHOLD, pct } from '../lib/lessonScores';
-import { THEME_LABELS, maxLessonXp } from '../lib/levels';
+import { THEME_LABELS } from '../lib/levels';
 import { EditPencil } from './EditPencil';
 
 const CATEGORY_LABELS: Record<string, string> = {
@@ -26,13 +26,16 @@ interface LessonCardProps {
   locked: boolean;
   /** Title of the lesson that must be passed first (for the locked message). */
   previousTitle?: string;
-  /** XP earned so far on this lesson. */
+  /** XP earned so far on this lesson, and the most it can earn (its share of the level). */
   xp?: number;
+  maxXp?: number;
+  /** Added to a level this learner had already cleared: open, never required. */
+  optional?: boolean;
   /** 1 for a theme's first appearance, 2+ when it comes back at a higher level. */
   themeVisit?: number;
 }
 
-export function LessonCard({ lesson, passed, locked, previousTitle, xp = 0, themeVisit = 1 }: LessonCardProps) {
+export function LessonCard({ lesson, passed, locked, previousTitle, xp = 0, maxXp = 150, optional = false, themeVisit = 1 }: LessonCardProps) {
   const theme = lesson.theme ? THEME_LABELS[lesson.theme] : undefined;
   const body = (
     <>
@@ -62,9 +65,12 @@ export function LessonCard({ lesson, passed, locked, previousTitle, xp = 0, them
             {CATEGORY_LABELS[lesson.category] ?? lesson.category}
           </span>
         )}
+        {lesson.addedAt && !passed && (
+          <span className="text-xs px-2 py-0.5 rounded-full bg-sky-50 text-sky-800">✨ New{optional ? ' · optional' : ''}</span>
+        )}
         {!locked && xp > 0 && (
           <span className="text-xs px-2 py-0.5 rounded-full bg-amber-50 text-amber-800">
-            ⚡ {xp}/{maxLessonXp()} XP
+            ⚡ {xp}/{maxXp} XP
           </span>
         )}
       </div>

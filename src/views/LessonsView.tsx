@@ -2,14 +2,14 @@ import { EditPencil } from '../components/EditPencil';
 import { Link } from 'react-router-dom';
 import { useLessons } from '../hooks/useLessons';
 import { LessonCard } from '../components/LessonCard';
-import { isLessonPassed, isLessonUnlocked } from '../lib/lessonScores';
+import { isLessonDone, isLessonOptional, isLessonPassed, isLessonUnlocked } from '../lib/lessonScores';
 import { useOverridesVersion } from '../lib/contentOverrides';
 import {
   LEVELS,
   MAX_LEVEL,
   courseComplete,
   currentLevel,
-  lessonXp,
+  lessonPoints,
   lessonsInLevel,
   levelInfo,
   levelProgress,
@@ -17,6 +17,7 @@ import {
   totalXp,
 } from '../lib/levels';
 import { useRoam } from '../lib/roam';
+import { useAdmin } from '../components/adminContext';
 
 function RankCard() {
   const lessons = useLessons();
@@ -25,7 +26,7 @@ function RankCard() {
   const prog = levelProgress(lessons, lvl);
   const xp = totalXp(lessons);
   const done = courseComplete(lessons);
-  const nextLesson = lessons.find((l) => !isLessonPassed(l));
+  const nextLesson = lessons.find((l) => !isLessonDone(lessons, l));
   const nextLevel = lvl < MAX_LEVEL ? levelInfo(lvl + 1) : null;
   const pctDone = prog.total ? Math.round((prog.passed / prog.total) * 100) : 0;
 
@@ -83,6 +84,7 @@ export function LessonsView() {
   const roaming = useRoam(); // re-render when an admin toggles Roam
   const lessons = useLessons();
   const working = currentLevel(lessons);
+  const { isAdmin, openNewLesson } = useAdmin();
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 space-y-8">
@@ -119,6 +121,15 @@ export function LessonsView() {
                     <EditPencil target={{ targetType: 'level', label: `Level ${lvl.level} name & focus`, currentText: `${lvl.name} — ${lvl.tagline} — ${lvl.focus}`, itemId: `level-${lvl.level}` }} />
                   </h2>
                   <p className="text-xs text-gray-500 truncate">{lvl.focus}</p>
+                  {isAdmin && (
+                    <button
+                      type="button"
+                      onClick={() => openNewLesson(lvl.level)}
+                      className="mt-1 text-xs font-semibold text-amber-700 hover:text-amber-900"
+                    >
+                      ✨ Add a lesson
+                    </button>
+                  )}
                 </div>
                 <span
                   className={`text-xs whitespace-nowrap px-2 py-0.5 rounded-full ${
@@ -138,7 +149,9 @@ export function LessonsView() {
                       passed={isLessonPassed(l)}
                       locked={!isLessonUnlocked(lessons, l.id)}
                       previousTitle={lessons[i - 1]?.title}
-                      xp={lessonXp(l)}
+                      xp={lessonPoints(lessons, l).xp}
+                      maxXp={lessonPoints(lessons, l).max}
+                      optional={isLessonOptional(lessons, l)}
                       themeVisit={themeVisit(lessons, l)}
                     />
                   );

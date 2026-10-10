@@ -365,6 +365,8 @@ let scopes: {
   grammar: (slug: string) => GrammarTopic | undefined;
   level: (n: string) => LevelInfo | undefined;
   allLessons: () => Lesson[];
+  /** Adds lessons written by the AI (ai_lesson rows) to the course. */
+  addLessons: (ls: Lesson[]) => void;
 } | null = null;
 
 /** Called once by the content modules so this file doesn't import them (no cycles). */
@@ -455,7 +457,7 @@ export function loadOverrides(): Promise<void> {
   loading = (async () => {
     const supa = getSupabase();
     if (!supa) return;
-    const [ov, pt] = await Promise.all([
+    const [ov, pt, al] = await Promise.all([
       supa
         .from('content_override')
         .select('id,created_at,scope_type,scope_id,item_id,find_text,replace_text,propagate')
@@ -466,7 +468,11 @@ export function loadOverrides(): Promise<void> {
         .select('id,created_at,lesson_id,scope,item_id,value,swaps')
         .eq('active', true)
         .order('created_at', { ascending: true }),
+      supa.from('ai_lesson').select('id,created_at,value').eq('active', true).order('created_at', { ascending: true }),
     ]);
+    if (al.error) console.error('[ai lessons] load failed', al.error);
+    // New lessons first, so edits made to them afterwards find them.
+    addAiLessons((al.data ?? []) as AiLessonRow[]);
     if (ov.error) console.error('[overrides] load failed', ov.error);
     if (pt.error) console.error('[patches] load failed', pt.error);
     // Apply both kinds in the order they were made, so later edits win.
@@ -485,6 +491,22 @@ export function loadOverrides(): Promise<void> {
     if (batch.length) addOverrides(batch);
   })();
   return loading;
+}
+
+export interface AiLessonRow {
+  id: string;
+  created_at: string;
+  value: Lesson;
+}
+
+/** Adds lessons the AI wrote (they carry addedAt = when they went live) and re-renders. */
+export function addAiLessons(rows: AiLessonRow[]): void {
+  if (!scopes || !rows.length) return;
+  const have = new Set(scopes.allLessons().map((l) => l.id));
+  const fresh = rows.filter((r) => r.value && !have.has(r.id)).map((r) => ({ ...r.value, id: r.id, addedAt: r.created_at }));
+  if (!fresh.length) return;
+  scopes.addLessons(fresh);
+  bump();
 }
 
 /** Re-render when live edits arrive. Returns a number that changes with each batch. */
