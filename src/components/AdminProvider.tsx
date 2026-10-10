@@ -6,6 +6,8 @@ import {
   listAiJobs,
   listGuidance,
   loadIsAdmin,
+  loadStyleGuide,
+  rebuildStyleGuide,
   retireGuidance,
   saveGuidance,
   saveNotePatch,
@@ -36,6 +38,7 @@ import {
 import { findCandidates, type EditedKind, type FollowupInput, type FollowupQuestion } from '../lib/aiFollowup';
 import { AdminContext, type EditField, type SuggestTarget } from './adminContext';
 import { defaultFields } from './adminTargets';
+import { contextObservation, noteObservation, sanifuObservation } from '../lib/styleGuide';
 import { setRoamAllowed } from '../lib/roam';
 import { reglossInstruction } from '../lib/aiPatch';
 import type { Lesson } from '../types';
@@ -54,6 +57,8 @@ interface Op {
 type Enqueue = (label: string, run: Op['run']) => void;
 type StartAi = (input: Parameters<typeof submitAiEdit>[0]) => void;
 /** Context-aware follow-up of an edit; with `regloss`, the line's tooltips are redone first. */
+/** Keeps something an editor said (context, note, Sanifu) for the style guide. */
+type Observe = (o: Parameters<typeof saveGuidance>[0]) => void;
 type StartFollowup = (input: FollowupInput, regloss?: Parameters<typeof submitAiEdit>[0]) => void;
 
 /** A dialogue turn, practice item or flashcard of a lesson, by id (as it is now). */
@@ -112,22 +117,23 @@ function SuggestModal({
   enqueue,
   startAi,
   startFollowup,
+  observe,
 }: {
   target: SuggestTarget;
   onClose: () => void;
   enqueue: Enqueue;
   startAi: StartAi;
   startFollowup: StartFollowup;
+  observe: Observe;
 }) {
   const { pathname } = useLocation();
   const { profile, persona } = useProfile();
-  const [mode, setMode] = useState<'edit' | 'ai' | 'learner' | 'note'>('edit');
+  const [mode, setMode] = useState<'edit' | 'ai' | 'learner'>('edit');
   const fields = useMemo(() => defaultFields(target), [target]);
   const [values, setValues] = useState<Record<string, string>>(() => Object.fromEntries(fields.map((f) => [f.key, f.text])));
   const [context, setContext] = useState('');
   const [checkOthers, setCheckOthers] = useState(true);
   const [instruction, setInstruction] = useState('');
-  const [note, setNote] = useState('');
   const lessonId = target.lessonId ?? pathname.match(/^\/lesson\/([^/]+)/)?.[1];
 
   // Which bundled content this element lives in (for live edits).
@@ -285,8 +291,15 @@ function SuggestModal({
         return { ok: res.ok, error: res.error };
       });
     }
-    // The context becomes a team rule every AI edit reads from now on.
-    if (ctx) enqueue(`Team rule · ${target.label}`, async () => ({ ok: await saveGuidance({ text: ctx, lessonId, itemId: target.itemId, targetLabel: target.label }) }));
+    // The context feeds the style guide every AI edit reads (rebuilt in the background).
+    if (ctx)
+      observe({
+        kind: 'context',
+        text: contextObservation(ctx, records.map((r) => ({ before: r.field.text, after: r.next }))),
+        lessonId,
+        itemId: target.itemId,
+        targetLabel: target.label,
+      });
 
     // 3. A dialogue line's Swahili changed: the underlines were re-aligned right away; the AI redoes the tooltips.
     const lineOverride = plan.overrides.find((x) => x.field.lang === 'sw' && (target.targetType === 'turn.swahili' || x.field.inLine))?.override;
@@ -372,14 +385,11 @@ function SuggestModal({
     // Show it right away; the server stores it in the background.
     addPatches([{ id: `local-${uid()}`, created_at: new Date().toISOString(), ...row }]);
     enqueue(`💡 Note · ${target.label}`, () => saveNotePatch(row));
-    onClose();
-  }
-
-  function saveNote() {
-    const text = note.trim();
-    enqueue(`Team rule · ${target.label}`, async () => ({
-      ok: await saveGuidance({ text, lessonId, itemId: target.itemId, targetLabel: target.label }),
-    }));
+    // Notes and Sanifu forms feed the style guide too.
+    const subject = aiTarget.kind === 'word' ? aiTarget.word.text : aiTarget.kind === 'vocab' ? aiTarget.current.swahili : aiTarget.current.swahili;
+    const where = { lessonId, itemId: target.itemId, targetLabel: target.label };
+    if (note && note !== aiTarget.note.trim()) observe({ kind: 'note', text: noteObservation(subject, note), ...where });
+    if (sanifu && sanifu !== aiTarget.sanifu.trim()) observe({ kind: 'sanifu', text: sanifuObservation(subject, sanifu), ...where });
     onClose();
   }
 
@@ -406,7 +416,6 @@ function SuggestModal({
         {tab('edit', 'Edit')}
         {tab('ai', '✨ Ask AI')}
         {tab('learner', '💡 Note')}
-        {tab('note', 'Team rule')}
       </div>
 
       {mode === 'edit' && (
@@ -452,7 +461,7 @@ function SuggestModal({
             />
             <span className="block mt-1 text-xs text-gray-500">
               The AI uses it to carry this change only to the places where it fits, to write a 💡 note for learners when it’s worth
-              knowing, and keeps it as a team rule for future edits.
+              knowing, and adds it to the style guide the AI follows from now on.
             </span>
           </label>
           {others > 0 && (
@@ -522,7 +531,7 @@ function SuggestModal({
                   : aiTarget.kind === 'vocab'
                   ? 'flashcard (and its note)'
                   : 'practice item'}{' '}
-                in the background — usually a minute or two — following the house rules and the team rules. It goes live by itself; you
+                in the background — usually a minute or two — following the house rules and the style guide. It goes live by itself; you
                 can undo it under Admin → Activity.
               </p>
               <button onClick={saveAi} disabled={!instruction.trim()} className={primary}>
@@ -587,25 +596,6 @@ function SuggestModal({
         </>
       )}
 
-      {mode === 'note' && (
-        <>
-          <label className="block">
-            <span className="text-sm font-semibold text-gray-800">A rule or insight to remember</span>
-            <textarea
-              value={note}
-              onChange={(e) => setNote(e.target.value)}
-              rows={4}
-              autoFocus
-              placeholder="e.g. In Nairobi 'kuna foleni' is rarer than 'kuna jam' — prefer jam in casual speech."
-              className={field}
-            />
-          </label>
-          <p className="text-xs text-gray-500">Team rules build up the app's style guide (learners don't see them). Every AI edit reads them.</p>
-          <button onClick={saveNote} disabled={!note.trim()} className={primary}>
-            Save rule
-          </button>
-        </>
-      )}
     </Sheet>
   );
 }
@@ -634,8 +624,8 @@ function DirectModal({ lessonId, scope, onClose, startAi }: { lessonId: string; 
         />
       </label>
       <p className="text-xs text-gray-500">
-        Claude rewrites the {what} in the background (a few minutes) following the house rules, the lesson's level and the team
-        notes. It goes live by itself; undo any time under Admin → Activity.
+        Claude rewrites the {what} in the background (a few minutes) following the house rules, the lesson's level and the style
+        guide. It goes live by itself; undo any time under Admin → Activity.
       </p>
       <button
         disabled={!instruction.trim() || !lesson}
@@ -659,7 +649,7 @@ function DirectModal({ lessonId, scope, onClose, startAi }: { lessonId: string; 
   );
 }
 
-// ---------- Activity & team rules ----------
+// ---------- Activity & style guide ----------
 
 const STATUS: Record<AiJob['status'], { label: string; cls: string }> = {
   working: { label: 'Working…', cls: 'bg-amber-100 text-amber-800' },
@@ -710,6 +700,7 @@ function ActivityModal({
   onRetry,
   onUndo,
   onAnswer,
+  onGuideChanged,
   onClose,
 }: {
   ops: Op[];
@@ -717,12 +708,15 @@ function ActivityModal({
   onRetry: (op: Op) => void;
   onUndo: (job: AiJob) => Promise<void>;
   onAnswer: (job: AiJob, q: FollowupQuestion, yes: boolean) => Promise<void>;
+  onGuideChanged: () => void;
   onClose: () => void;
 }) {
   const [notes, setNotes] = useState<GuidanceNote[] | null>(null);
+  const [guide, setGuide] = useState<{ text: string; created_at: string } | null>(null);
   const [undone, setUndone] = useState(false);
   useEffect(() => {
     void listGuidance().then(setNotes);
+    void loadStyleGuide().then(setGuide);
   }, []);
   const review = jobs.filter((j) => j.status === 'review' && j.questions?.length);
   return (
@@ -794,27 +788,47 @@ function ActivityModal({
         ))}
       </section>
       <section className="space-y-2">
-        <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400">Team rules (the AI's style guide)</h3>
-        {notes === null && <p className="text-sm text-gray-400">Loading…</p>}
-        {notes?.length === 0 && <p className="text-sm text-gray-400">No rules yet. Add context when you edit, or ✎ → Team rule.</p>}
-        {notes?.map((n) => (
-          <div key={n.id} className="flex items-start justify-between gap-2 text-sm">
-            <p className="text-gray-700">
-              {n.text}
-              {(n.lesson_id || n.target_label) && (
-                <span className="block text-xs text-gray-400">{[n.lesson_id, n.target_label].filter(Boolean).join(' · ')}</span>
-              )}
-            </p>
-            <button
-              aria-label="Retire this note"
-              title="Retire this note"
-              onClick={() => void retireGuidance(n.id).then((ok) => ok && setNotes((all) => all?.filter((x) => x.id !== n.id) ?? null))}
-              className="shrink-0 text-gray-300 hover:text-gray-600"
-            >
-              ✕
-            </button>
+        <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400">Style guide (the AI follows it)</h3>
+        <p className="text-xs text-gray-500">
+          Built automatically in the background from your Context notes, 💡 notes and Sanifu forms. Learners don’t see it.
+        </p>
+        {guide ? (
+          <details className="rounded-xl border border-gray-200 p-3">
+            <summary className="cursor-pointer text-sm font-medium text-gray-800">
+              Read the guide <span className="text-xs font-normal text-gray-400">· updated {new Date(guide.created_at).toLocaleString()}</span>
+            </summary>
+            <div className="mt-2 text-xs text-gray-700 whitespace-pre-wrap leading-relaxed">{guide.text}</div>
+          </details>
+        ) : (
+          <p className="text-sm text-gray-400">Not built yet — it appears after your next Context, note or Sanifu.</p>
+        )}
+        <details>
+          <summary className="cursor-pointer text-xs font-semibold text-gray-500">What it’s built from ({notes?.length ?? '…'})</summary>
+          <div className="mt-2 space-y-2">
+            {notes?.map((n) => (
+              <div key={n.id} className="flex items-start justify-between gap-2 text-sm">
+                <p className="text-gray-700">
+                  {n.text}
+                  <span className="block text-xs text-gray-400">{[n.kind, n.lesson_id, n.target_label].filter(Boolean).join(' · ')}</span>
+                </p>
+                <button
+                  aria-label="Remove from the style guide"
+                  title="Remove from the style guide"
+                  onClick={() =>
+                    void retireGuidance(n.id).then((ok) => {
+                      if (!ok) return;
+                      setNotes((all) => all?.filter((x) => x.id !== n.id) ?? null);
+                      onGuideChanged();
+                    })
+                  }
+                  className="shrink-0 text-gray-300 hover:text-gray-600"
+                >
+                  ✕
+                </button>
+              </div>
+            ))}
           </div>
-        ))}
+        </details>
       </section>
     </Sheet>
   );
@@ -862,6 +876,29 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
   const aiError = (e?: string) => (e === 'ai_not_configured' ? 'AI is not set up yet (missing ANTHROPIC_API_KEY on Vercel).' : e);
 
   const startFollowupRef = useRef<StartFollowup>(() => {});
+
+  // The style guide is rewritten in the background a little after the last thing an editor said.
+  const guideTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const scheduleGuide = useCallback(() => {
+    if (guideTimer.current) clearTimeout(guideTimer.current);
+    guideTimer.current = setTimeout(() => {
+      guideTimer.current = null;
+      enqueue('Style guide · updating', async () => {
+        const r = await rebuildStyleGuide();
+        return { ok: r.ok, error: aiError(r.error) };
+      });
+    }, 20000);
+  }, [enqueue]);
+  const observe = useCallback<Observe>(
+    (o) => {
+      enqueue(`Style guide · ${o.kind ?? 'note'} · ${o.targetLabel ?? ''}`, async () => {
+        const ok = await saveGuidance(o);
+        if (ok) scheduleGuide();
+        return { ok };
+      });
+    },
+    [enqueue, scheduleGuide],
+  );
 
   // An ✨ AI edit that swapped words ("hadi → mpaka"): check the other places by meaning, once.
   const handOverSwaps = useCallback(
@@ -1003,7 +1040,14 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
     <AdminContext.Provider value={value}>
       {children}
       {target && (
-        <SuggestModal target={target} onClose={() => setTarget(null)} enqueue={enqueue} startAi={startAi} startFollowup={startFollowup} />
+        <SuggestModal
+          target={target}
+          onClose={() => setTarget(null)}
+          enqueue={enqueue}
+          startAi={startAi}
+          startFollowup={startFollowup}
+          observe={observe}
+        />
       )}
       {direct && <DirectModal lessonId={direct.lessonId} scope={direct.scope} onClose={() => setDirect(null)} startAi={startAi} />}
       {showActivity && (
@@ -1016,6 +1060,7 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
             await refreshJobs();
           }}
           onAnswer={onAnswer}
+          onGuideChanged={scheduleGuide}
           onClose={() => {
             setAckFailed(jobs.filter((j) => j.status === 'failed').map((j) => j.id));
             setShowActivity(false);

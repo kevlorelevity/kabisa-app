@@ -6,10 +6,15 @@
 
 export const SKIP_KEYS = new Set(['id', 'uuid', 'slug', 'grammar', 'grammarFocus', 'category', 'difficulty', 'theme', 'related', 'type', 'level', 'order', 'emoji', 'englishForms']);
 
-/** Fields that hold Swahili ('one' / 'many' are a noun's singular and plural). */
-export const SW_KEYS = new Set(['swahili', 'sanifu', 'before', 'after', 'text', 'one', 'many']);
+/** Fields that hold (Kenyan) Swahili ('one' / 'many' are a noun's singular and plural). */
+export const SW_KEYS = new Set(['swahili', 'before', 'after', 'text', 'one', 'many']);
+/**
+ * Sanifu and learner notes are edited on their own (✎ → 💡 Note) and never change along with
+ * the line: a Kenyan wording fix ("hadi" → "mpaka") must not rewrite the standard form.
+ */
+export const OWN_KEYS = new Set(['sanifu', 'sanifuNote', 'note']);
 /** Mixed English notes that quote Swahili words. Only longer spans propagate here. */
-export const NOTE_KEYS = new Set(['exampleContext', 'explanation', 'feedback', 'sanifuNote', 'gloss', 'note']);
+export const NOTE_KEYS = new Set(['exampleContext', 'explanation', 'feedback', 'gloss']);
 const WORD = /[\p{L}\p{N}'’-]+/gu;
 
 export interface Span {

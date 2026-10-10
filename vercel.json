@@ -9,6 +9,9 @@
     },
     "api/ai-followup.ts": {
       "maxDuration": 300
+    },
+    "api/style-guide.ts": {
+      "maxDuration": 300
     }
   },
   "rewrites": [

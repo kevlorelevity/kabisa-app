@@ -164,7 +164,7 @@ export function buildPrompt(args: {
       : args.kind === 'turn'
       ? `one dialogue turn (${args.targetLabel ?? 'turn'}) — return it in "turn"`
       : `one practice item (${args.targetLabel ?? 'item'}) — return it in "item"`;
-  const system = `${HOUSE_RULES}\n\nGrammar allowed in this lesson (level ${args.lesson.level}):\n${allowed}\n\nTeam guidance notes from the Kabisa editors (follow these too; newer notes win):\n${notes}`;
+  const system = `${HOUSE_RULES}\n\nGrammar allowed in this lesson (level ${args.lesson.level}):\n${allowed}\n\nStyle guide and notes from the Kabisa editors (follow these too; newer notes win):\n${notes}`;
   const user = [
     `Lesson: "${args.lesson.title}" (id ${args.lesson.id}, level ${args.lesson.level}).`,
     args.lesson.culturalNote ? `Context: ${args.lesson.culturalNote}` : '',
@@ -214,7 +214,9 @@ function normTurn(
 ): Obj {
   const before = forceId ? prev.get(forceId) : undefined;
   // Re-gloss after an admin edit: the line, speaker, role and answer choices stay exactly as edited.
-  if (regloss && before) raw = { ...raw, swahili: before.swahili, speaker: before.speaker, role: before.role, options: before.options };
+  // Sanifu and the learner note are the editors' own fields: a re-gloss never touches them.
+  if (regloss && before)
+    raw = { ...raw, swahili: before.swahili, speaker: before.speaker, role: before.role, options: before.options, sanifu: before.sanifu ?? '', note: before.note ?? '' };
   if (regloss && before && keepEnglish) raw = { ...raw, english: before.english };
   const role = s(raw.role) === 'user' ? 'user' : 'auto';
   const swahili = s(raw.swahili);
@@ -396,7 +398,7 @@ export function parseClaudeJson(body: unknown): unknown {
 
 /** The instruction sent with the automatic re-gloss after an admin edits a line's Swahili. */
 export function reglossInstruction(oldLine: string, newLine: string, englishSetByEditor = false): string {
-  return `An editor changed this line from "${oldLine}" to "${newLine}".${englishSetByEditor ? ' The editor also set the English translation — keep it exactly.' : ''} Redo the word glosses ("words") for the NEW line: every meaningful word or set phrase gets one gloss, each "text" an exact substring of the line; a doubled word or multi-word expression (e.g. "taka taka", "pole pole") is ONE gloss. Fix the English translation only if the meaning changed, and the Sanifu / note only if they no longer fit. Keep the Swahili line and the answer choices exactly as they are.`;
+  return `An editor changed this line from "${oldLine}" to "${newLine}".${englishSetByEditor ? ' The editor also set the English translation — keep it exactly.' : ''} Redo the word glosses ("words") for the NEW line: every meaningful word or set phrase gets one gloss, each "text" an exact substring of the line; a doubled word or multi-word expression (e.g. "taka taka", "pole pole") is ONE gloss. Fix the English translation only if the meaning changed. Keep the Swahili line, the answer choices, the Sanifu and the note exactly as they are.`;
 }
 
 // ---------- word swaps (so an AI edit like "hadi → mpaka" reaches every lesson) ----------

@@ -318,3 +318,17 @@ describe('a word typed into a line with its meaning', () => {
     expect((lesson as { turns: Array<{ words: Array<{ text: string }> }> }).turns[0].words.map((w) => w.text)).toEqual(['Nitamaliza', 'baada ya', 'lisaa limoja']);
   });
 });
+
+describe('Sanifu and the line are edited separately', () => {
+  it('a line edit never rewrites the Sanifu, even when they were the same text', async () => {
+    const { applyOverrideTo, propagateSpan } = await import('./contentOverrides');
+    const turn = { id: 't1', swahili: 'Sikula chakula kingi.', sanifu: 'Sikula chakula kingi.', note: 'x', options: [{ swahili: 'Sikula chakula kingi.', correct: true }] };
+    applyOverrideTo(turn, { item_id: 't1', find_text: 'Sikula chakula kingi.', replace_text: 'Sikukula chakula mingi.' });
+    expect(turn.swahili).toBe('Sikukula chakula mingi.');
+    expect(turn.options[0].swahili).toBe('Sikukula chakula mingi.');
+    expect(turn.sanifu).toBe('Sikula chakula kingi.');
+    const other = { swahili: 'Twende hadi Westlands.', sanifu: 'Twende hadi Westlands.' };
+    propagateSpan(other, { from: 'hadi', to: 'mpaka' });
+    expect(other).toEqual({ swahili: 'Twende mpaka Westlands.', sanifu: 'Twende hadi Westlands.' });
+  });
+});

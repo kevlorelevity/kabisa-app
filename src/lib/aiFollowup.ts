@@ -209,7 +209,7 @@ export function buildFollowupPrompt(
   guidance: Array<{ text: string }>,
 ): { system: string; user: string } {
   const rules = guidance.length ? guidance.map((g) => `- ${g.text}`).join('\n') : '- (none yet)';
-  const system = `${FOLLOWUP_RULES}${withNote ? `\n\n${NOTE_RULES}` : ''}\n\nTeam style rules from the Kabisa editors (newer win):\n${rules}`;
+  const system = `${FOLLOWUP_RULES}${withNote ? `\n\n${NOTE_RULES}` : ''}\n\nStyle guide and notes from the Kabisa editors (newer win):\n${rules}`;
   const changes = input.changes.map((c) => `- ${c.label} (${c.lang === 'sw' ? 'Swahili' : 'English'}): "${c.before}" → "${c.after}"`).join('\n');
   const user = [
     `Lesson: "${input.lessonTitle}" (${input.lessonId})${input.targetLabel ? ` · ${input.targetLabel}` : ''}`,

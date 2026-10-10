@@ -13,6 +13,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { waitUntil } from '@vercel/functions';
+import { loadGuidance } from '../src/lib/styleGuide.js';
 import {
   buildPrompt,
   normalizeResult,
@@ -105,8 +106,8 @@ export async function POST(request: Request): Promise<Response> {
 
   const work = async () => {
     try {
-      const gRes = await rest('admin_guidance?select=text,target_label,lesson_id&active=eq.true&order=created_at.desc&limit=80');
-      const guidance = gRes.ok ? ((await gRes.json()) as Array<{ text: string; target_label: string | null; lesson_id: string | null }>) : [];
+      // The condensed style guide + observations editors made since it was last rebuilt.
+      const guidance = await loadGuidance(rest);
       const { system, user: prompt } = buildPrompt({
         scope,
         kind,
@@ -115,7 +116,7 @@ export async function POST(request: Request): Promise<Response> {
         lesson,
         current: b.current,
         grammar: grammarTopics(),
-        guidance: guidance.reverse(),
+        guidance,
       });
       const ai = await fetch('https://api.anthropic.com/v1/messages', {
         method: 'POST',

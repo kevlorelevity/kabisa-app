@@ -29,15 +29,24 @@ describe('VocabEntry', () => {
 
   it('shows sanifu content when toggle is clicked', async () => {
     render(<VocabEntry entry={entry} />);
-    await userEvent.click(screen.getByText('Sanifu →'));
+    await userEvent.click(screen.getByText('💡 Note'));
     expect(screen.getByText('Ninashuka hapa')).toBeInTheDocument();
-    expect(screen.getByText(entry.sanifuNote!)).toBeInTheDocument();
+    expect(screen.getByText(entry.sanifuNote!, { exact: false })).toBeInTheDocument();
+  });
+
+  it('puts Sanifu and the learner note behind one 💡, shown separately', async () => {
+    render(<VocabEntry entry={{ ...entry, note: 'Also heard: nashukia hapa.' }} />);
+    expect(screen.getAllByText(/💡 Note/)).toHaveLength(1);
+    expect(screen.queryByText('Also heard: nashukia hapa.')).not.toBeInTheDocument();
+    await userEvent.click(screen.getByText('💡 Note'));
+    expect(screen.getByText('Ninashuka hapa')).toBeInTheDocument();
+    expect(screen.getByText('Also heard: nashukia hapa.')).toBeInTheDocument();
   });
 
   it('hides sanifu content when toggle is clicked again', async () => {
     render(<VocabEntry entry={entry} />);
-    await userEvent.click(screen.getByText('Sanifu →'));
-    await userEvent.click(screen.getByText('Sanifu ↑'));
+    await userEvent.click(screen.getByText('💡 Note'));
+    await userEvent.click(screen.getByText('💡 Note ↑'));
     expect(screen.queryByText('Ninashuka hapa')).not.toBeInTheDocument();
   });
 

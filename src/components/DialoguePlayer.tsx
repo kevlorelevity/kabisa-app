@@ -259,7 +259,6 @@ function OptionsReview({ turn }: { turn: DialogueTurn }) {
 
 function TurnBubble({ turn, tappable }: { turn: DialogueTurn; tappable: boolean }) {
   const isUser = turn.role === 'user';
-  const [showSanifu, setShowSanifu] = useState(false);
   const [showNote, setShowNote] = useState(false);
   return (
     <div className={`flex ${isUser ? 'justify-end' : 'justify-start'}`}>
@@ -295,34 +294,30 @@ function TurnBubble({ turn, tappable }: { turn: DialogueTurn; tappable: boolean 
         </div>
         <p className={`text-xs text-gray-400 mt-1 ${isUser ? 'text-right' : ''}`}>
           {turn.english}
-          {turn.sanifu && (
-            <button
-              type="button"
-              onClick={() => setShowSanifu((v) => !v)}
-              className="ml-2 text-sky-700 hover:underline"
-            >
-              {showSanifu ? 'Sanifu ↑' : 'Sanifu →'}
-            </button>
-          )}
-          {turn.note && (
+          {(turn.sanifu || turn.note) && (
             <button
               type="button"
               onClick={() => setShowNote((v) => !v)}
+              aria-expanded={showNote}
               className="ml-2 text-amber-700 hover:underline"
             >
-              {showNote ? 'Note ↑' : '💡 Note'}
+              {showNote ? '💡 Note ↑' : '💡 Note'}
             </button>
           )}
         </p>
-        {showSanifu && turn.sanifu && (
-          <p className={`text-xs text-sky-800 mt-0.5 ${isUser ? 'text-right' : ''}`}>
-            <span className="font-semibold">Sanifu:</span> {turn.sanifu}
-          </p>
-        )}
-        {showNote && turn.note && (
-          <p className={`text-xs text-amber-900 mt-0.5 ${isUser ? 'text-right' : ''}`}>
-            <span className="font-semibold">Note:</span> {turn.note}
-          </p>
+        {showNote && (turn.sanifu || turn.note) && (
+          <div className={`mt-1 space-y-0.5 text-xs ${isUser ? 'text-right' : ''}`}>
+            {turn.sanifu && (
+              <p className="text-sky-800">
+                <span className="font-semibold">Sanifu:</span> {turn.sanifu}
+              </p>
+            )}
+            {turn.note && (
+              <p className="text-amber-900">
+                <span className="font-semibold">Note:</span> {turn.note}
+              </p>
+            )}
+          </div>
         )}
       </div>
     </div>

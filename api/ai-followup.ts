@@ -10,6 +10,7 @@
 // Env vars: ANTHROPIC_API_KEY, ANTHROPIC_MODEL (default claude-opus-5-5), VITE_SUPABASE_URL, VITE_SUPABASE_ANON_KEY.
 
 import { waitUntil } from '@vercel/functions';
+import { loadGuidance } from '../src/lib/styleGuide.js';
 import {
   CHUNK,
   MAX_CANDIDATES,
@@ -128,8 +129,8 @@ export async function POST(request: Request): Promise<Response> {
           await sleep(4000);
         }
       }
-      const gRes = await rest('admin_guidance?select=text&active=eq.true&order=created_at.desc&limit=80');
-      const guidance = gRes.ok ? ((await gRes.json()) as Array<{ text: string }>).reverse() : [];
+      // The condensed style guide + observations editors made since it was last rebuilt.
+      const guidance = await loadGuidance(rest);
 
       const applied: Array<{ c: FollowupCandidate; value: Record<string, unknown> }> = [];
       const questions: FollowupQuestion[] = [];

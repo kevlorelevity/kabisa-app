@@ -3,7 +3,7 @@ import type { GrammarTopic, LevelInfo, Lesson } from '../types';
 import { getSupabase } from './supabase';
 import type { Persona } from './personalize';
 import { personalizeText, DEFAULT_PERSONA } from './personalize';
-import { SKIP_KEYS, SW_KEYS, changedSpan, propagateSpan, realignWords, type Span } from './textSpans';
+import { OWN_KEYS, SKIP_KEYS, SW_KEYS, changedSpan, propagateSpan, realignWords, type Span } from './textSpans';
 
 export { changedSpan, propagateSpan, realignWords, type Span } from './textSpans';
 
@@ -46,7 +46,7 @@ export function replaceLeaves(node: unknown, find: string, replace: string): num
     ? node.map((v, i) => [i, v])
     : Object.entries(node as Record<string, unknown>);
   for (const [k, v] of entries) {
-    if (typeof k === 'string' && SKIP_KEYS.has(k)) continue;
+    if (typeof k === 'string' && (SKIP_KEYS.has(k) || OWN_KEYS.has(k))) continue;
     if (typeof v === 'string') {
       if (v === find) {
         (node as Record<string | number, unknown>)[k] = replace;

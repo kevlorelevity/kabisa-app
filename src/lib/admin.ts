@@ -154,15 +154,23 @@ export interface GuidanceNote {
   id: string;
   created_at: string;
   text: string;
+  kind: string;
   lesson_id: string | null;
   target_label: string | null;
 }
 
-export async function saveGuidance(note: { text: string; lessonId?: string; itemId?: string; targetLabel?: string }): Promise<boolean> {
+export async function saveGuidance(note: {
+  text: string;
+  kind?: 'context' | 'note' | 'sanifu' | 'rule';
+  lessonId?: string;
+  itemId?: string;
+  targetLabel?: string;
+}): Promise<boolean> {
   const supa = getSupabase();
   if (!supa) return false;
   const { error } = await supa.from('admin_guidance').insert({
-    text: note.text,
+    text: note.text.slice(0, 4000),
+    kind: note.kind ?? 'rule',
     lesson_id: note.lessonId ?? null,
     item_id: note.itemId ?? null,
     target_label: note.targetLabel ?? null,
@@ -175,7 +183,7 @@ export async function listGuidance(): Promise<GuidanceNote[]> {
   if (!supa) return [];
   const { data } = await supa
     .from('admin_guidance')
-    .select('id,created_at,text,lesson_id,target_label')
+    .select('id,created_at,text,kind,lesson_id,target_label')
     .eq('active', true)
     .order('created_at', { ascending: false })
     .limit(200);
@@ -260,4 +268,25 @@ export async function clearPendingSwaps(jobId: string): Promise<boolean> {
   if (!supa) return false;
   const { error } = await supa.from('ai_job').update({ pending_swaps: null }).eq('id', jobId);
   return !error;
+}
+
+/** Asks the server to rewrite the style guide from all observations (runs in the background). */
+export async function rebuildStyleGuide(): Promise<{ ok: boolean; error?: string }> {
+  const supa = getSupabase();
+  const token = supa ? (await supa.auth.getSession()).data.session?.access_token : undefined;
+  if (!token) return { ok: false, error: 'not_signed_in' };
+  try {
+    const res = await fetch('/api/style-guide', { method: 'POST', headers: { authorization: `Bearer ${token}` } });
+    const body = (await res.json().catch(() => ({}))) as { error?: string };
+    return res.ok ? { ok: true } : { ok: false, error: body.error ?? `http_${res.status}` };
+  } catch (e) {
+    return { ok: false, error: e instanceof Error ? e.message : 'network_error' };
+  }
+}
+
+export async function loadStyleGuide(): Promise<{ text: string; created_at: string; entries: number } | null> {
+  const supa = getSupabase();
+  if (!supa) return null;
+  const { data } = await supa.from('style_guide').select('text,created_at,entries').order('created_at', { ascending: false }).limit(1).maybeSingle();
+  return (data as { text: string; created_at: string; entries: number } | null) ?? null;
 }
