@@ -2,10 +2,11 @@ import type { VocabEntry } from '../types';
 
 type Forms = { one: string | null; many: string | null } | undefined;
 
-/** "kiatu / viatu" · "homa (no plural)" · "mafuriko (plural only)". */
+/** "kiatu / viatu" · "nguo" (same for one & many) · "homa (no plural)" · "mafuriko (plural only)". */
 export function formsText(f: Forms, lang: 'sw' | 'en'): string {
   if (!f) return '';
-  if (f.one && f.many) return `${f.one} / ${f.many}`;
+  // Same word for one and many (n/n nouns: nguo, shule; English: sheep) — show it once.
+  if (f.one && f.many) return f.one === f.many ? f.one : `${f.one} / ${f.many}`;
   if (f.one) return lang === 'sw' ? `${f.one} (no plural)` : f.one;
   if (f.many) return lang === 'sw' ? `${f.many} (plural only)` : f.many;
   return '';
