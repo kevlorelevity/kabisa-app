@@ -73,7 +73,13 @@ const TOKEN = /[\p{L}\p{N}'’-]+/gu;
  * conjugation table), then any word linked to a grammar topic, then the
  * longest word. Returns its exact text and position in the line.
  */
-export function pickKeyWord(turn: Pick<DialogueTurn, 'swahili' | 'words'>): { text: string; start: number } | null {
+export function pickKeyWord(turn: Pick<DialogueTurn, 'swahili' | 'words' | 'typeWord'>): { text: string; start: number } | null {
+  // An admin's choice wins when it is (still) in the line.
+  const chosen = turn.typeWord?.trim();
+  if (chosen) {
+    const at = turn.swahili.indexOf(chosen);
+    if (at !== -1) return { text: chosen, start: at };
+  }
   const tokens = [...turn.swahili.matchAll(TOKEN)].map((m) => ({ text: m[0], start: m.index ?? 0 }));
   if (!tokens.length) return null;
   const glossFor = (w: string): WordGloss | undefined =>

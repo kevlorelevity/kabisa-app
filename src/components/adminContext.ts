@@ -22,6 +22,10 @@ export interface EditField {
   };
   /** A glossed word: the displayed line it sits in. Changing the word rewrites the line. */
   inLine?: string;
+  /** Stored as a plain field on the item (a 'fields' patch), e.g. the word learners type. */
+  set?: 'typeWord' | 'literal';
+  /** Small grey help text under the field. */
+  help?: string;
 }
 
 /** What a pencil icon points at — enough to find and change it later. */
@@ -60,6 +64,12 @@ export interface AdminContextValue {
   openActivity: () => void;
   /** ✨ Have the AI write a new lesson for this level. */
   openNewLesson: (level: number) => void;
+  /** Rename the dialogue's speakers and set their voices. */
+  openCast: (lessonId: string) => void;
+  /** Add a practice line to a lesson. */
+  openAddPractice: (lessonId: string) => void;
+  /** Delete a practice line or flashcard (live for everyone). */
+  removeItem: (lessonId: string, itemId: string, label: string) => void;
   activity: AdminActivity;
 }
 
@@ -69,6 +79,9 @@ export const AdminContext = createContext<AdminContextValue>({
   openDirect: () => {},
   openActivity: () => {},
   openNewLesson: () => {},
+  openCast: () => {},
+  openAddPractice: () => {},
+  removeItem: () => {},
   activity: { saving: 0, working: 0, failed: 0, questions: 0 },
 });
 

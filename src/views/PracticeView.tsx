@@ -22,7 +22,7 @@ import { useAdmin } from '../components/adminContext';
 export function PracticeView() {
   const { id } = useParams<{ id: string }>();
   const roaming = useRoam();
-  const { isAdmin, openDirect } = useAdmin();
+  const { isAdmin, openDirect, openAddPractice } = useAdmin();
   const { lessons, lesson, previous, next } = useLessonWithNeighbors(id ?? '');
   const [rec, setRec] = useState(() => getLessonScores(id ?? ''));
   const [result, setResult] = useState<AttemptResult | null>(null);
@@ -107,7 +107,14 @@ export function PracticeView() {
         </details>
       </div>
       {isAdmin && (
-        <div className="flex justify-end">
+        <div className="flex justify-end gap-1.5">
+          <button
+            type="button"
+            onClick={() => openAddPractice(lesson.id)}
+            className="text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-200 rounded-full px-3 py-1 hover:bg-amber-100"
+          >
+            ＋ Add a practice line
+          </button>
           <button
             type="button"
             onClick={() => openDirect(lesson.id, 'practice')}
@@ -117,7 +124,7 @@ export function PracticeView() {
           </button>
         </div>
       )}
-      <PracticeSession key={String(roaming)} items={lesson.practice} onFinish={handleFinish} resultSlot={resultSlot} review={roaming} typing={typingModeFor(lesson.level)} />
+      <PracticeSession key={String(roaming)} lessonId={lesson.id} items={lesson.practice} onFinish={handleFinish} resultSlot={resultSlot} review={roaming} typing={typingModeFor(lesson.level)} />
     </div>
   );
 }

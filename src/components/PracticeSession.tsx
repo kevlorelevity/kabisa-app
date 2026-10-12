@@ -3,7 +3,7 @@ import type { PracticeItem, PracticeOption } from '../types';
 import type { AttemptResult } from '../lib/lessonScores';
 import { AudioButton } from './AudioButton';
 import { GrammarChips } from './GrammarChips';
-import { EditPencil } from './EditPencil';
+import { DeleteItem, EditPencil } from './EditPencil';
 import { practiceTarget } from './adminTargets';
 import { TypedAnswer } from './TypedAnswer';
 import type { TypingMode } from '../lib/typing';
@@ -18,6 +18,8 @@ interface PracticeSessionProps {
   review?: boolean;
   /** Levels 5+: type the gap ('partial') or the whole sentence ('complete') instead of tapping chips. */
   typing?: TypingMode;
+  /** For admin tools (delete a line). */
+  lessonId?: string;
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -29,7 +31,7 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-export function PracticeSession({ items, onFinish, resultSlot, review = false, typing }: PracticeSessionProps) {
+export function PracticeSession({ items, onFinish, resultSlot, review = false, typing, lessonId }: PracticeSessionProps) {
   // Bumping `round` reshuffles item order and chip order for "Practice again".
   const [round, setRound] = useState(0);
   const order = useMemo(() => (review ? items : shuffle(items)), [items, round, review]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -38,6 +40,7 @@ export function PracticeSession({ items, onFinish, resultSlot, review = false, t
   const [solved, setSolved] = useState(review);
   const [firstTry, setFirstTry] = useState(0);
   const [missed, setMissed] = useState<string[]>([]);
+  const [hint, setHint] = useState(false);
   const [finished, setFinished] = useState(false);
 
   const item = order[index];
@@ -150,6 +153,7 @@ export function PracticeSession({ items, onFinish, resultSlot, review = false, t
     setIndex((i) => i + 1);
     setWrongPicks([]);
     setSolved(review);
+    setHint(false);
   }
 
   const answer = item.options.find((o) => o.correct)!;
@@ -178,7 +182,19 @@ export function PracticeSession({ items, onFinish, resultSlot, review = false, t
         {(item.mode === 'translate' || (typing === 'complete' && !solved)) && (
           <p className="text-gray-700" data-testid="practice-english">
             {item.english}
+            {item.literal && <span className="block text-xs text-gray-400 italic">Literally: “{item.literal}”</span>}
           </p>
+        )}
+        {item.mode === 'complete' && typing !== 'complete' && !solved && item.english && (
+          hint ? (
+            <p className="text-sm text-gray-500 italic" data-testid="practice-hint">
+              {item.english}
+            </p>
+          ) : (
+            <button type="button" onClick={() => setHint(true)} className="text-xs font-semibold text-amber-700 hover:text-amber-900">
+              💡 Hint: show the English
+            </button>
+          )
         )}
         {typing === 'complete' && !solved ? (
           <p className="text-sm text-gray-400" data-testid="practice-sentence">Type the whole sentence in Swahili.</p>
@@ -202,6 +218,7 @@ export function PracticeSession({ items, onFinish, resultSlot, review = false, t
         )}
         <div className="flex gap-1">
           <EditPencil target={practiceTarget(item)} />
+          {lessonId && <DeleteItem lessonId={lessonId} itemId={item.id} label="Practice line" />}
         </div>
         {item.mode === 'complete' && solved && (
           <p className="text-sm text-gray-500">{item.english}</p>
@@ -277,6 +294,7 @@ export function PracticeSession({ items, onFinish, resultSlot, review = false, t
             placeholder={typing === 'complete' ? 'Type the sentence…' : 'Type the missing word…'}
             onMiss={typedMiss}
             onSolved={typedSolved}
+            autoFocus={index > 0 || round > 0}
           />
         ) : (
           <div className="space-y-2">

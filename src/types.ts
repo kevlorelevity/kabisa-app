@@ -181,6 +181,10 @@ export interface DialogueTurn {
   sanifu?: string;
   /** General learner note about the line or expression (usage, other meanings…). */
   note?: string;
+  /** Typing levels 5–7: the word the learner types (chosen by an admin; else picked automatically). */
+  typeWord?: string;
+  /** When the English isn't word-for-word: the literal translation, shown as "Literally: …". */
+  literal?: string;
 }
 
 /** One chip in a practice fill-in-the-blank. */
@@ -212,6 +216,8 @@ export interface PracticeItem {
   grammar?: string[];
   /** Learner note (💡) shown with the explanation. */
   note?: string;
+  /** When the English prompt isn't word-for-word: the literal translation ("Literally: …"). */
+  literal?: string;
 }
 
 export interface Lesson {
@@ -240,6 +246,8 @@ export interface Lesson {
   practice?: PracticeItem[];
   /** Set on lessons an admin added later (✨ new lesson): when it went live (ISO time). */
   addedAt?: string;
+  /** Voice per speaker name for the read-aloud (admins can set it); otherwise guessed from the name. */
+  voices?: Record<string, 'female' | 'male'>;
 }
 
 // -------- Grammar explainers (content/grammar/topics.json) --------

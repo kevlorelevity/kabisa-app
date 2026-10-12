@@ -66,13 +66,13 @@ function speakOnDevice(text: string, onEnd: () => void): boolean {
  * Plays `text`. Resolves true once playback starts, false if no voice is
  * available. `onEnd` fires when playback finishes (or is interrupted).
  */
-export async function speak(text: string, onEnd: () => void = () => {}): Promise<boolean> {
+export async function speak(text: string, onEnd: () => void = () => {}, v: Voice = voice): Promise<boolean> {
   stopSpeaking();
   const clean = normalizeTtsText(text);
   if (!clean) return false;
 
   if (Date.now() >= apiDownUntil && typeof Audio !== 'undefined') {
-    const audio = new Audio(ttsUrl(clean));
+    const audio = new Audio(ttsUrl(clean, v));
     current = audio;
     audio.onended = () => {
       if (current === audio) current = null;
@@ -89,4 +89,15 @@ export async function speak(text: string, onEnd: () => void = () => {}): Promise
     }
   }
   return speakOnDevice(clean, onEnd);
+}
+
+const FEMALE = /^(mama|bi\.?|bibi|dada|shosho|cucu|madam|mrs|ms|miss|achieng|akinyi|amina|atieno|faith|grace|halima|jane|joy|mary|mercy|njeri|nyambura|wairimu|wambui|wanjiku|wanjiru|wangari|zawadi|zainabu|zuhura|aisha|esther|lucy|nancy|rose|sarah|wanjiru)\b/i;
+
+/**
+ * The voice for a dialogue speaker: what an admin set for this lesson, else a guess from the
+ * name (Mama Mboga, Bi. Kamau, Wanjiku… → female), else male.
+ */
+export function voiceForSpeaker(name: string | undefined, voices?: Record<string, Voice>): Voice {
+  if (name && voices?.[name]) return voices[name];
+  return name && FEMALE.test(name.trim()) ? 'female' : 'male';
 }

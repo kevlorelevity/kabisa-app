@@ -11,10 +11,15 @@ interface TypedAnswerProps {
   onMiss: () => void;
   /** Fires when the answer is accepted (or revealed and acknowledged). */
   onSolved: (answer: string) => void;
+  /**
+   * Focus the box when it appears. Off for the first answer on a page: on phones focusing opens
+   * the keyboard and scrolls the page down, away from the lesson introduction.
+   */
+  autoFocus?: boolean;
 }
 
 /** A text box with Check / Show answer, forgiving small typos. */
-export function TypedAnswer({ accepted, placeholder, wide, onMiss, onSolved }: TypedAnswerProps) {
+export function TypedAnswer({ accepted, placeholder, wide, onMiss, onSolved, autoFocus = true }: TypedAnswerProps) {
   const [value, setValue] = useState('');
   const [state, setState] = useState<'idle' | 'wrong' | 'close' | 'revealed'>('idle');
   const [missed, setMissed] = useState(false);
@@ -22,7 +27,8 @@ export function TypedAnswer({ accepted, placeholder, wide, onMiss, onSolved }: T
   const expected = accepted.find(Boolean) ?? '';
 
   useEffect(() => {
-    inputRef.current?.focus({ preventScroll: true });
+    if (autoFocus) inputRef.current?.focus({ preventScroll: true });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function miss() {

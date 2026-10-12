@@ -32,7 +32,33 @@ export function vocabTarget(entry: VocabEntry, label: string): SuggestTarget {
   };
 }
 
-export function lineTarget(turn: Pick<DialogueTurn, 'id' | 'speaker' | 'swahili' | 'english'>): SuggestTarget {
+const literalField = (text?: string): EditField => ({
+  key: 'literal',
+  label: 'English · literally (optional)',
+  lang: 'en',
+  text: text ?? '',
+  set: 'literal',
+  help: 'Fill in when the English above isn\'t word-for-word — learners who type the answer see "Literally: …". Leave empty when it already is.',
+});
+
+export function lineTarget(
+  turn: Pick<DialogueTurn, 'id' | 'speaker' | 'swahili' | 'english'> & Partial<Pick<DialogueTurn, 'role' | 'typeWord' | 'words' | 'literal'>>,
+  /** The word learners type for this line at partial-typing levels (5–7), if any. */
+  typedWord?: string,
+): SuggestTarget {
+  const typeField: EditField[] =
+    turn.role === 'user' && typedWord !== undefined
+      ? [
+          {
+            key: 'type',
+            label: 'Word learners type (levels 5–7)',
+            lang: 'sw',
+            text: turn.typeWord ?? typedWord,
+            set: 'typeWord',
+            help: 'Must appear exactly in the Swahili line. Leave as is to keep the automatic choice.',
+          },
+        ]
+      : [];
   return {
     targetType: 'turn.swahili',
     label: `Line · ${turn.speaker}`,
@@ -41,6 +67,8 @@ export function lineTarget(turn: Pick<DialogueTurn, 'id' | 'speaker' | 'swahili'
     fields: [
       { key: 'sw', label: 'Swahili', lang: 'sw', text: turn.swahili, multiline: true },
       { key: 'en', label: 'English', lang: 'en', text: turn.english, multiline: true },
+      ...(turn.role === 'user' ? [literalField(turn.literal)] : []),
+      ...typeField,
     ],
   };
 }
@@ -55,6 +83,7 @@ export function practiceTarget(item: PracticeItem): SuggestTarget {
     fields: [
       { key: 'sw', label: 'Swahili sentence · [✓right | wrong | wrong] marks the gap', lang: 'sw', text: sentence, multiline: true },
       { key: 'en', label: 'English prompt', lang: 'en', text: item.english, multiline: true },
+      literalField(item.literal),
     ],
   };
 }
@@ -79,3 +108,17 @@ export function defaultFields(t: SuggestTarget): EditField[] {
   const sw = /^(turn\.option|turn\.swahili|practice\.sentence)/.test(t.targetType);
   return [{ key: 'text', label: sw ? 'Swahili' : 'Text', lang: sw ? 'sw' : 'en', text: t.currentText, multiline: true }];
 }
+
+/** "Ninaenda [✓Westlands | Kilimani | tao]." → before, options, after. */
+export function parsePracticeSentence(text: string): { before: string; after: string; options: Array<{ text: string; correct: boolean }> } | null {
+  const m = text.match(/^([\s\S]*?)\[([\s\S]+)\]([\s\S]*)$/);
+  if (!m) return null;
+  const options = m[2]
+    .split('|')
+    .map((o) => o.trim())
+    .filter(Boolean)
+    .map((o) => ({ text: o.replace(/^[✓*]\s*/, ''), correct: /^[✓*]/.test(o) }));
+  if (options.length < 2 || options.filter((o) => o.correct).length !== 1) return null;
+  return { before: m[1], after: m[3], options };
+}
+

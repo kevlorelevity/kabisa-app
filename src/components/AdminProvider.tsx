@@ -40,8 +40,9 @@ import {
 } from '../lib/contentOverrides';
 import { findCandidates, type EditedKind, type FollowupInput, type FollowupQuestion } from '../lib/aiFollowup';
 import { AdminContext, type EditField, type SuggestTarget } from './adminContext';
-import { defaultFields } from './adminTargets';
+import { defaultFields, parsePracticeSentence } from './adminTargets';
 import { levelInfo } from '../lib/levels';
+import { voiceForSpeaker, type Voice } from '../lib/audio';
 import { contextObservation, noteObservation, sanifuObservation } from '../lib/styleGuide';
 import { setRoamAllowed } from '../lib/roam';
 import { reglossInstruction } from '../lib/aiPatch';
@@ -209,6 +210,10 @@ function SuggestModal({
     for (const f of fields) {
       const next = (values[f.key] ?? '').trim();
       if (next === f.text.trim()) continue;
+      if (f.set) {
+        merges.push({ field: f, next });
+        continue;
+      }
       if (f.merge) {
         merges.push({ field: f, next });
         const sp = f.lang === 'sw' && f.text.trim() && next ? changedSpan(f.text.trim(), next) : null;
@@ -254,6 +259,10 @@ function SuggestModal({
     if (plan.merges.length && lessonId && target.itemId) {
       const value: Record<string, unknown> = {};
       for (const { field, next } of plan.merges) {
+        if (field.set) {
+          value[field.set] = next; // '' removes it
+          continue;
+        }
         const m = field.merge!;
         const base = (value[m.key] as typeof m.base | undefined) ?? { ...m.base };
         value[m.key] = { ...base, [m.sub]: next || null };
@@ -266,7 +275,7 @@ function SuggestModal({
     }
 
     // 2. Store each change (and the review trail) in the background.
-    const swChanged = fields.some((f) => f.lang === 'sw' && (values[f.key] ?? '').trim() !== f.text.trim());
+    const swChanged = fields.some((f) => f.lang === 'sw' && !f.set && (values[f.key] ?? '').trim() !== f.text.trim());
     const records = [
       ...plan.overrides.map((x) => ({ field: x.field, override: x.override as Omit<ContentOverride, 'id'> | undefined, next: x.override.replace_text })),
       ...[...plan.merges, ...plan.unplaced].map((x) => ({ field: x.field, override: undefined, next: x.next })),
@@ -450,6 +459,7 @@ function SuggestModal({
                   className={field}
                 />
               )}
+              {f.help && <span className="block mt-1 text-xs text-gray-400">{f.help}</span>}
             </label>
           ))}
           <label className="block">
@@ -649,6 +659,127 @@ function DirectModal({ lessonId, scope, onClose, startAi }: { lessonId: string; 
         className={primary}
       >
         ✨ Send to AI
+      </button>
+    </Sheet>
+  );
+}
+
+// ---------- Names & voices of a dialogue's speakers ----------
+
+function CastModal({ lessonId, onClose, onSave }: { lessonId: string; onClose: () => void; onSave: (rows: Array<Record<string, unknown>>) => void }) {
+  const lesson = scopeContent('lesson', lessonId) as Lesson | undefined;
+  const speakers = useMemo(() => {
+    const seen: Array<{ name: string; role: 'auto' | 'user' }> = [];
+    for (const t of lesson?.turns ?? []) if (!seen.some((x) => x.name === t.speaker)) seen.push({ name: t.speaker, role: t.role });
+    return seen.filter((x) => x.role === 'auto');
+  }, [lesson]);
+  const [rows, setRows] = useState(() => speakers.map((sp) => ({ from: sp.name, name: sp.name, voice: voiceForSpeaker(sp.name, lesson?.voices) })));
+  const changed = rows.some((r, i) => r.name.trim() !== speakers[i].name || r.voice !== voiceForSpeaker(speakers[i].name, lesson?.voices));
+  return (
+    <Sheet title="✎ Names & voices" subtitle={lesson?.title} onClose={onClose}>
+      {rows.length === 0 && <p className="text-sm text-gray-500">This conversation has no other speaker.</p>}
+      {rows.map((r, i) => (
+        <div key={r.from} className="flex items-end gap-2">
+          <label className="block flex-1">
+            <span className="text-sm font-semibold text-gray-800">Name</span>
+            <input value={r.name} onChange={(e) => setRows((all) => all.map((x, j) => (j === i ? { ...x, name: e.target.value } : x)))} className={field} />
+          </label>
+          <label className="block">
+            <span className="text-sm font-semibold text-gray-800">Voice</span>
+            <select
+              value={r.voice}
+              onChange={(e) => setRows((all) => all.map((x, j) => (j === i ? { ...x, voice: e.target.value as Voice } : x)))}
+              className={field}
+            >
+              <option value="female">Female (Achieng)</option>
+              <option value="male">Male (Baraka)</option>
+            </select>
+          </label>
+        </div>
+      ))}
+      <p className="text-xs text-gray-500">
+        A new name replaces the speaker label and every mention of the name in this lesson’s lines and practice. Goes live as soon
+        as you save.
+      </p>
+      <button
+        disabled={!changed}
+        className={primary}
+        onClick={() => {
+          const out: Array<Record<string, unknown>> = [];
+          const voices: Record<string, Voice> = {};
+          rows.forEach((r, i) => {
+            const to = r.name.trim();
+            if (to && to !== speakers[i].name) out.push({ rename: { from: speakers[i].name, to } });
+            voices[to || speakers[i].name] = r.voice;
+          });
+          out.push({ voices });
+          onSave(out);
+          onClose();
+        }}
+      >
+        Save & publish
+      </button>
+    </Sheet>
+  );
+}
+
+// ---------- ＋ Add a practice line ----------
+
+function AddPracticeModal({ lessonId, onClose, onSave }: { lessonId: string; onClose: () => void; onSave: (item: Record<string, unknown>) => void }) {
+  const lesson = scopeContent('lesson', lessonId) as Lesson | undefined;
+  const [mode, setMode] = useState<'translate' | 'complete'>('translate');
+  const [english, setEnglish] = useState('');
+  const [sentence, setSentence] = useState('');
+  const [explanation, setExplanation] = useState('');
+  const parsed = parsePracticeSentence(sentence);
+  return (
+    <Sheet title="＋ Add a practice line" subtitle={lesson?.title} onClose={onClose}>
+      <div className="flex gap-1 rounded-full border border-gray-200 p-1" role="radiogroup" aria-label="Kind">
+        {(['translate', 'complete'] as const).map((m) => (
+          <button
+            key={m}
+            type="button"
+            role="radio"
+            aria-checked={mode === m}
+            onClick={() => setMode(m)}
+            className={`flex-1 px-3 py-1.5 rounded-full text-xs font-semibold ${mode === m ? 'bg-amber-500 text-white' : 'text-gray-600 hover:bg-amber-50'}`}
+          >
+            {m === 'translate' ? 'English → Swahili' : 'Swahili only (English as hint)'}
+          </button>
+        ))}
+      </div>
+      <label className="block">
+        <span className="text-sm font-semibold text-gray-800">English</span>
+        <input value={english} onChange={(e) => setEnglish(e.target.value)} placeholder="I'm going to Westlands." className={field} autoFocus />
+      </label>
+      <label className="block">
+        <span className="text-sm font-semibold text-gray-800">Swahili · [✓right | wrong | wrong] marks the gap</span>
+        <input value={sentence} onChange={(e) => setSentence(e.target.value)} placeholder="[✓Ninaenda | Unaenda | Anaenda] Westlands." lang="sw" className={field} />
+        {sentence && !parsed && (
+          <span className="block mt-1 text-xs text-red-600">Put the choices in [ ], separated by |, with ✓ before the one right answer.</span>
+        )}
+        {parsed && (
+          <span className="block mt-1 text-xs text-gray-500">
+            {parsed.before}
+            <b className="text-green-700">{parsed.options.find((o) => o.correct)?.text}</b>
+            {parsed.after}
+          </span>
+        )}
+      </label>
+      <label className="block">
+        <span className="text-sm font-semibold text-gray-800">Explanation (shown after the answer)</span>
+        <input value={explanation} onChange={(e) => setExplanation(e.target.value)} placeholder="ni- (I) + -na- (now) + -enda (go)" className={field} />
+      </label>
+      <button
+        disabled={!parsed || !english.trim()}
+        className={primary}
+        onClick={() => {
+          if (!parsed) return;
+          onSave({ id: uid(), mode, english: english.trim(), ...parsed, explanation: explanation.trim() || `${parsed.options.find((o) => o.correct)?.text}.` });
+          onClose();
+        }}
+      >
+        Add & publish
       </button>
     </Sheet>
   );
@@ -893,6 +1024,8 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
   const [target, setTarget] = useState<SuggestTarget | null>(null);
   const [direct, setDirect] = useState<{ lessonId: string; scope: 'dialogue' | 'practice' } | null>(null);
   const [newLessonLevel, setNewLessonLevel] = useState<number | null>(null);
+  const [castLesson, setCastLesson] = useState<string | null>(null);
+  const [addPracticeLesson, setAddPracticeLesson] = useState<string | null>(null);
   const [showActivity, setShowActivity] = useState(false);
   const [ops, setOps] = useState<Op[]>([]);
   const [jobs, setJobs] = useState<AiJob[]>([]);
@@ -1094,6 +1227,27 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
 
   const openSuggest = useCallback((t: SuggestTarget) => setTarget(t), []);
   const openNewLesson = useCallback((level: number) => setNewLessonLevel(level), []);
+  const openCast = useCallback((lessonId: string) => setCastLesson(lessonId), []);
+  const openAddPractice = useCallback((lessonId: string) => setAddPracticeLesson(lessonId), []);
+
+  /** Stores structural changes (add / remove / lesson settings) as content_patch rows, shown right away. */
+  const savePatches = useCallback(
+    (label: string, rows: Array<{ lesson_id: string; scope: PatchScope; item_id: string | null; value: unknown }>) => {
+      addPatches(rows.map((r) => ({ id: `local-${uid()}`, created_at: new Date().toISOString(), ...r })));
+      enqueue(label, async () => {
+        for (const r of rows) {
+          const res = await saveNotePatch(r);
+          if (!res.ok) return res;
+        }
+        return { ok: true };
+      });
+    },
+    [enqueue],
+  );
+  const removeItem = useCallback(
+    (lessonId: string, itemId: string, label: string) => savePatches(`Delete · ${label}`, [{ lesson_id: lessonId, scope: 'remove', item_id: itemId, value: {} }]),
+    [savePatches],
+  );
   const openDirect = useCallback((lessonId: string, scope: 'dialogue' | 'practice') => setDirect({ lessonId, scope }), []);
   const openActivity = useCallback(() => setShowActivity(true), []);
   const activity = useMemo(
@@ -1106,8 +1260,8 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
     [ops, working, jobs, ackFailed],
   );
   const value = useMemo(
-    () => ({ isAdmin: effectiveAdmin, openSuggest, openDirect, openActivity, openNewLesson, activity }),
-    [effectiveAdmin, openSuggest, openDirect, openActivity, openNewLesson, activity],
+    () => ({ isAdmin: effectiveAdmin, openSuggest, openDirect, openActivity, openNewLesson, openCast, openAddPractice, removeItem, activity }),
+    [effectiveAdmin, openSuggest, openDirect, openActivity, openNewLesson, openCast, openAddPractice, removeItem, activity],
   );
 
   return (
@@ -1121,6 +1275,20 @@ export function AdminProvider({ children, forceAdmin }: { children: ReactNode; f
           startAi={startAi}
           startFollowup={startFollowup}
           observe={observe}
+        />
+      )}
+      {castLesson && (
+        <CastModal
+          lessonId={castLesson}
+          onClose={() => setCastLesson(null)}
+          onSave={(values) => savePatches('Names & voices', values.map((value) => ({ lesson_id: castLesson, scope: 'lesson' as PatchScope, item_id: null, value })))}
+        />
+      )}
+      {addPracticeLesson && (
+        <AddPracticeModal
+          lessonId={addPracticeLesson}
+          onClose={() => setAddPracticeLesson(null)}
+          onSave={(item) => savePatches('＋ Practice line', [{ lesson_id: addPracticeLesson, scope: 'add', item_id: String(item.id), value: item }])}
         />
       )}
       {newLessonLevel !== null && (

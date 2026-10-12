@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { speak, stopSpeaking } from '../lib/audio';
+import { speak, stopSpeaking, type Voice } from '../lib/audio';
 
 interface AudioButtonProps {
   /** The Swahili phrase to pronounce. */
@@ -8,12 +8,14 @@ interface AudioButtonProps {
   variant?: 'light' | 'dark';
   size?: 'sm' | 'md';
   className?: string;
+  /** Who speaks it (a dialogue speaker's voice); the default voice otherwise. */
+  voice?: Voice;
 }
 
 type State = 'idle' | 'loading' | 'playing' | 'unavailable';
 
 /** Speaker icon that plays the phrase in a Kenyan Swahili voice. */
-export function AudioButton({ text, variant = 'light', size = 'sm', className = '' }: AudioButtonProps) {
+export function AudioButton({ text, variant = 'light', size = 'sm', className = '', voice }: AudioButtonProps) {
   const [state, setState] = useState<State>('idle');
   const mounted = useRef(true);
 
@@ -32,9 +34,13 @@ export function AudioButton({ text, variant = 'light', size = 'sm', className = 
       return;
     }
     setState('loading');
-    const ok = await speak(text, () => {
-      if (mounted.current) setState('idle');
-    });
+    const ok = await speak(
+      text,
+      () => {
+        if (mounted.current) setState('idle');
+      },
+      voice,
+    );
     if (!mounted.current) return;
     setState(ok ? 'playing' : 'unavailable');
     if (!ok) setTimeout(() => mounted.current && setState('idle'), 2500);

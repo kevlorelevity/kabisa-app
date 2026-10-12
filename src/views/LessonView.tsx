@@ -1,5 +1,5 @@
 import { EditPencil } from '../components/EditPencil';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useLessonWithNeighbors } from '../hooks/useLessons';
 import { DialoguePlayer } from '../components/DialoguePlayer';
@@ -26,7 +26,7 @@ import { useAdmin } from '../components/adminContext';
 export function LessonView() {
   const { id } = useParams<{ id: string }>();
   const roaming = useRoam();
-  const { isAdmin, openDirect } = useAdmin();
+  const { isAdmin, openDirect, openCast } = useAdmin();
   const { lessons, lesson, previous, next } = useLessonWithNeighbors(id ?? '');
   // Only reflects THIS playthrough — the persisted scores drive the gate.
   const [result, setResult] = useState<AttemptResult | null>(null);
@@ -35,6 +35,10 @@ export function LessonView() {
   const [attempt, setAttempt] = useState(0);
   const [levelUp, setLevelUp] = useState<number | null>(null);
   const [showAllGrammar, setShowAllGrammar] = useState(false);
+  // Typing levels play the conversation twice: round 1 with answer choices, round 2 typed (scored).
+  const [round, setRound] = useState<1 | 2>(1);
+  const [round1, setRound1] = useState<AttemptResult | null>(null);
+  const convoRef = useRef<HTMLElement>(null);
 
   if (!lesson) {
     return (
@@ -58,12 +62,23 @@ export function LessonView() {
     setLevelUp(claimLevelUp(lessons, lesson!.level));
   }
 
-  function replay() {
+  function replay(from: 1 | 2 = 1) {
     setResult(null);
+    if (from === 1) setRound1(null);
+    setRound(from);
     setAttempt((n) => n + 1);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (from === 1) window.scrollTo({ top: 0, behavior: 'smooth' });
+    else convoRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
+  function startRound2() {
+    setRound(2);
+    setAttempt((n) => n + 1);
+    convoRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  const typingMode = typingModeFor(lesson.level);
+  const twoRounds = Boolean(typingMode) && !roaming;
   const ratio = result ? (result.total ? result.firstTryCorrect / result.total : 1) : 0;
   const passedThisRun = result ? ratio >= PASS_THRESHOLD : false;
   const lessonPassed = isLessonPassed(lesson, rec);
@@ -149,22 +164,56 @@ export function LessonView() {
         </section>
       )}
 
-      <section>
+      <section ref={convoRef} className="scroll-mt-20">
         <div className="flex items-center justify-between gap-2 mb-4">
           <h2 className="text-xs uppercase tracking-wide text-gray-400 font-semibold">Conversation</h2>
           {isAdmin && (
-            <button
-              type="button"
-              onClick={() => openDirect(lesson.id, 'dialogue')}
-              className="text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-200 rounded-full px-3 py-1 hover:bg-amber-100"
-            >
-              ✨ Direct this conversation
-            </button>
+            <div className="flex flex-wrap justify-end gap-1.5">
+              <button
+                type="button"
+                onClick={() => openCast(lesson.id)}
+                className="text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-200 rounded-full px-3 py-1 hover:bg-amber-100"
+              >
+                ✎ Names & voices
+              </button>
+              <button
+                type="button"
+                onClick={() => openDirect(lesson.id, 'dialogue')}
+                className="text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-200 rounded-full px-3 py-1 hover:bg-amber-100"
+              >
+                ✨ Direct this conversation
+              </button>
+            </div>
           )}
         </div>
+        {twoRounds && <RoundSteps round={round} round1Done={Boolean(round1)} round2Done={Boolean(result)} />}
         <div className="bg-gray-50 rounded-lg p-4">
-          <DialoguePlayer key={`${attempt}-${roaming}`} turns={lesson.turns} onComplete={handleComplete} review={roaming} typing={typingModeFor(lesson.level)} />
+          <DialoguePlayer
+            key={`${attempt}-${roaming}-${round}`}
+            turns={lesson.turns}
+            voices={lesson.voices}
+            onComplete={twoRounds && round === 1 ? (r) => setRound1(r) : handleComplete}
+            review={roaming}
+            typing={twoRounds && round === 1 ? undefined : typingMode}
+            roundLabel={twoRounds ? (round === 1 ? 'Round 1 of 2' : 'Round 2 of 2') : undefined}
+          />
         </div>
+        {twoRounds && round === 1 && round1 && (
+          <div className="mt-4 rounded-xl border border-green-200 bg-green-50 p-4" data-testid="round1-done">
+            <p className="font-semibold text-green-800">
+              ✓ Round 1 of 2 done — {round1.firstTryCorrect} / {round1.total} right on the first try
+            </p>
+            <p className="text-sm text-green-700/90 mt-0.5">
+              Next up, round 2: the same conversation, but now you type your lines. Round 2 is the one that counts.
+            </p>
+            <button
+              onClick={startRound2}
+              className="mt-3 px-4 py-2 rounded-full bg-green-700 text-white text-sm font-semibold hover:bg-green-800"
+            >
+              Start round 2 — type it →
+            </button>
+          </div>
+        )}
       </section>
 
       {(result || roaming) && (
@@ -185,12 +234,22 @@ export function LessonView() {
                   : 'Conversation passed.'
                 : `You need ${pct(PASS_THRESHOLD)} to pass. Drill the lines you missed, then play it again.`}
             </p>
-            <button
-              onClick={replay}
-              className="mt-3 px-4 py-1.5 rounded-full border border-current text-sm font-medium text-gray-700 hover:bg-white"
-            >
-              Play the conversation again
-            </button>
+            <div className="mt-3 flex flex-wrap gap-2">
+              <button
+                onClick={() => replay(1)}
+                className="px-4 py-1.5 rounded-full border border-current text-sm font-medium text-gray-700 hover:bg-white"
+              >
+                Play the conversation again
+              </button>
+              {twoRounds && (
+                <button
+                  onClick={() => replay(2)}
+                  className="px-4 py-1.5 rounded-full border border-current text-sm font-medium text-gray-700 hover:bg-white"
+                >
+                  Type it again (round 2)
+                </button>
+              )}
+            </div>
           </div>
           )}
 
@@ -236,5 +295,34 @@ export function LessonView() {
         </section>
       )}
     </div>
+  );
+}
+
+/** "1 · Choose → 2 · Type": where the learner is in a typing-level conversation. */
+function RoundSteps({ round, round1Done, round2Done }: { round: 1 | 2; round1Done: boolean; round2Done: boolean }) {
+  const step = (n: 1 | 2, label: string, done: boolean) => {
+    const current = round === n && !done;
+    return (
+      <li
+        className={`flex-1 rounded-full px-3 py-1.5 text-xs font-semibold text-center border ${
+          done
+            ? 'bg-green-100 border-green-300 text-green-800'
+            : current
+            ? 'bg-white border-green-600 text-green-800 ring-2 ring-green-100'
+            : 'bg-white border-gray-200 text-gray-400'
+        }`}
+        aria-current={current ? 'step' : undefined}
+      >
+        {done ? '✓ ' : `${n} · `}
+        {label}
+      </li>
+    );
+  };
+  return (
+    <ol className="flex items-center gap-2 mb-3" aria-label="Rounds" data-testid="round-steps">
+      {step(1, 'Choose the line', round1Done || round === 2)}
+      <span aria-hidden="true" className="text-gray-300">→</span>
+      {step(2, 'Type it', round2Done)}
+    </ol>
   );
 }

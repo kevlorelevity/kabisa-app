@@ -206,13 +206,15 @@ export function countPropagation(scope: unknown, o: Pick<ContentOverride, 'find_
 // 'item'      replaces one dialogue turn / practice item (AI edit).
 // 'dialogue'  replaces a lesson's whole conversation; 'practice' its practice session;
 // 'vocabulary' its key vocabulary (= flashcards).
+// 'add'       appends a new practice item / flashcard (value = the item); 'remove' deletes one (item_id).
+// 'lesson'    lesson-level settings: { rename: { from, to }, voices: { speaker: 'female' | 'male' } }.
 // 'fields'    merges fields into one turn / practice item / vocabulary card (notes, Sanifu…).
 // 'word'      updates one glossed word in a turn (gloss, Sanifu, note); with
 //             `everywhere`, its note and Sanifu also show wherever that word is
 //             glossed and on flashcards for it, in every lesson.
 // In merged values an empty string removes the field.
 
-export type PatchScope = 'item' | 'dialogue' | 'practice' | 'fields' | 'word' | 'vocabulary';
+export type PatchScope = 'item' | 'dialogue' | 'practice' | 'fields' | 'word' | 'vocabulary' | 'add' | 'remove' | 'lesson';
 
 export interface ContentPatch {
   id: string;
@@ -322,6 +324,50 @@ export function applyPatchTo(lesson: Lesson, p: Pick<ContentPatch, 'scope' | 'it
       lesson.vocabulary[vi] = v as Lesson['vocabulary'][number];
       return true;
     }
+  }
+  if (p.scope === 'add' && v && typeof v === 'object') {
+    const item = v as Rec;
+    const id = String(item.id ?? p.item_id ?? '');
+    if (!id) return false;
+    const list = ('before' in item ? (lesson.practice ??= []) : lesson.vocabulary) as unknown as Rec[];
+    if (list.some((x) => x.id === id)) return false;
+    list.push({ ...item, id });
+    return true;
+  }
+  if (p.scope === 'remove' && p.item_id) {
+    const before = (lesson.practice?.length ?? 0) + lesson.vocabulary.length;
+    if (lesson.practice) lesson.practice = lesson.practice.filter((x) => x.id !== p.item_id);
+    lesson.vocabulary = lesson.vocabulary.filter((x) => x.id !== p.item_id);
+    return (lesson.practice?.length ?? 0) + lesson.vocabulary.length < before;
+  }
+  if (p.scope === 'lesson' && v && typeof v === 'object') {
+    const lv = v as { rename?: { from: string; to: string }; voices?: Record<string, 'female' | 'male'> };
+    if (lv.rename?.from && lv.rename.to && lv.rename.from !== lv.rename.to) {
+      const { from, to } = lv.rename;
+      // The speaker label, and the name wherever the lines mention it ("Kamau, habari?").
+      const re = new RegExp(`(?<![\\p{L}\\p{N}])${from.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![\\p{L}\\p{N}])`, 'gu');
+      const walk = (node: unknown): unknown => {
+        if (typeof node === 'string') return node.replace(re, to);
+        if (Array.isArray(node)) return node.map(walk);
+        if (node && typeof node === 'object') {
+          const out: Rec = {};
+          for (const [k, val] of Object.entries(node as Rec)) out[k] = k === 'id' || k === 'uuid' || k === 'grammar' ? val : walk(val);
+          return out;
+        }
+        return node;
+      };
+      lesson.turns = walk(lesson.turns) as Lesson['turns'];
+      if (lesson.practice) lesson.practice = walk(lesson.practice) as NonNullable<Lesson['practice']>;
+      lesson.culturalNote = walk(lesson.culturalNote) as string;
+      lesson.startingPoint = walk(lesson.startingPoint) as string;
+      const voices = lesson.voices;
+      if (voices && voices[from] && !voices[to]) {
+        voices[to] = voices[from];
+        delete voices[from];
+      }
+    }
+    if (lv.voices) lesson.voices = { ...(lesson.voices ?? {}), ...lv.voices };
+    return true;
   }
   if (p.scope === 'fields' && p.item_id && v && typeof v === 'object') {
     const item = findItemIn(lesson, p.item_id);

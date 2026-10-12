@@ -6,6 +6,7 @@ import { AudioButton } from './AudioButton';
 import { EditPencil } from './EditPencil';
 import { lineTarget } from './adminTargets';
 import { TypedAnswer } from './TypedAnswer';
+import { voiceForSpeaker, type Voice } from '../lib/audio';
 import { pickKeyWord, type TypingMode } from '../lib/typing';
 
 interface DialoguePlayerProps {
@@ -16,6 +17,10 @@ interface DialoguePlayerProps {
   review?: boolean;
   /** Levels 5+: the learner types (a key word, or the whole line) instead of picking. */
   typing?: TypingMode;
+  /** Voice per speaker (lesson setting); otherwise guessed from the name. */
+  voices?: Record<string, Voice>;
+  /** "Round 1 of 2" — shown with the learner's prompt at typing levels. */
+  roundLabel?: string;
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -27,7 +32,7 @@ const AUTO_TURN_DELAY_MS = 500;
 /** How long a correct pick stays highlighted green before the transcript advances. */
 const CORRECT_ADVANCE_DELAY_MS = 600;
 
-export function DialoguePlayer({ turns, onComplete, review = false, typing }: DialoguePlayerProps) {
+export function DialoguePlayer({ turns, onComplete, review = false, typing, voices, roundLabel }: DialoguePlayerProps) {
   const [revealedCount, setRevealedCount] = useState(review ? turns.length : 0);
   const [wrongPick, setWrongPick] = useState<string | null>(null);
   const [correctPick, setCorrectPick] = useState<string | null>(null);
@@ -65,11 +70,13 @@ export function DialoguePlayer({ turns, onComplete, review = false, typing }: Di
   }, [done]);
 
   function markMissed() {
+    interacted.current = true;
     const id = current?.id;
     if (id) setMissed((m) => (m.includes(id) ? m : [...m, id]));
   }
 
   function typedSolved() {
+    interacted.current = true;
     setRevealedCount((n) => n + 1);
   }
 
@@ -120,7 +127,7 @@ export function DialoguePlayer({ turns, onComplete, review = false, typing }: Di
       <div className="space-y-3">
         {settled.map((turn) => (
           <div key={turn.id}>
-            <TurnBubble turn={turn} tappable />
+            <TurnBubble turn={turn} tappable typing={typing} voices={voices} />
             {review && turn.role === 'user' && turn.options?.length ? <OptionsReview turn={turn} /> : null}
           </div>
         ))}
@@ -144,9 +151,13 @@ export function DialoguePlayer({ turns, onComplete, review = false, typing }: Di
           className="sticky bottom-0 z-20 -mx-4 px-4 pt-3 pb-[calc(env(safe-area-inset-bottom)+0.75rem)] bg-white/95 backdrop-blur border-t border-gray-200 shadow-[0_-6px_16px_-10px_rgba(0,0,0,0.25)] sm:mx-0 sm:px-0 sm:pt-1 sm:pb-0 sm:bg-transparent sm:backdrop-blur-none sm:border-0 sm:shadow-none sm:static space-y-2"
         >
           <p className="text-xs uppercase tracking-wide text-gray-400 font-semibold">
+            {roundLabel && <span className="text-green-700">{roundLabel} · </span>}
             Your turn as {current.speaker} — {typing === 'complete' ? 'type the whole line' : 'type the missing word'}
           </p>
-          <p className="text-sm text-gray-600">“{current.english}”</p>
+          <p className="text-sm text-gray-600">
+            “{current.english}”
+            {current.literal && <span className="block text-xs text-gray-400 italic">Literally: “{current.literal}”</span>}
+          </p>
           {typing === 'partial' && keyWord && (
             <p className="text-base font-medium text-gray-900" data-testid="typing-line">
               {current.swahili.slice(0, keyWord.start)}
@@ -161,6 +172,7 @@ export function DialoguePlayer({ turns, onComplete, review = false, typing }: Di
             placeholder={typing === 'partial' && keyWord ? 'Missing word…' : 'Type the line in Swahili…'}
             onMiss={markMissed}
             onSolved={typedSolved}
+            autoFocus={interacted.current}
           />
         </div>
       )}
@@ -171,6 +183,7 @@ export function DialoguePlayer({ turns, onComplete, review = false, typing }: Di
           className="sticky bottom-0 z-20 -mx-4 px-4 pt-3 pb-[calc(env(safe-area-inset-bottom)+0.75rem)] bg-white/95 backdrop-blur border-t border-gray-200 shadow-[0_-6px_16px_-10px_rgba(0,0,0,0.25)] sm:mx-0 sm:px-0 sm:pt-1 sm:pb-0 sm:bg-transparent sm:backdrop-blur-none sm:border-0 sm:shadow-none sm:static"
         >
           <p className="text-xs uppercase tracking-wide text-gray-400 font-semibold mb-1.5 sm:mb-2">
+            {roundLabel && <span className="text-green-700">{roundLabel} · </span>}
             Your turn as {current.speaker} — what do you say?
           </p>
           <div className="flex flex-col gap-1.5 sm:gap-2">
@@ -260,7 +273,7 @@ function OptionsReview({ turn }: { turn: DialogueTurn }) {
   );
 }
 
-function TurnBubble({ turn, tappable }: { turn: DialogueTurn; tappable: boolean }) {
+function TurnBubble({ turn, tappable, typing, voices }: { turn: DialogueTurn; tappable: boolean; typing?: TypingMode; voices?: Record<string, Voice> }) {
   const isUser = turn.role === 'user';
   const [showNote, setShowNote] = useState(false);
   return (
@@ -289,11 +302,16 @@ function TurnBubble({ turn, tappable }: { turn: DialogueTurn; tappable: boolean 
               variant={isUser ? 'dark' : 'light'}
               turnId={turn.id}
             />
-            <AudioButton text={turn.swahili} variant={isUser ? 'dark' : 'light'} className="-mr-2 -my-0.5" />
+            <AudioButton
+              text={turn.swahili}
+              variant={isUser ? 'dark' : 'light'}
+              className="-mr-2 -my-0.5"
+              voice={isUser ? undefined : voiceForSpeaker(turn.speaker, voices)}
+            />
           </div>
         </div>
         <div className={`flex gap-1 mt-1 ${isUser ? 'justify-end' : ''}`}>
-          <EditPencil target={lineTarget(turn)} />
+          <EditPencil target={lineTarget(turn, typing === 'partial' ? pickKeyWord(turn)?.text ?? '' : undefined)} />
         </div>
         <p className={`text-xs text-gray-400 mt-1 ${isUser ? 'text-right' : ''}`}>
           {turn.english}
