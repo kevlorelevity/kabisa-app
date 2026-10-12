@@ -480,8 +480,8 @@
       "id": "f16eae91-8a8c-5493-be0a-f2bc8383be03",
       "speaker": "Juma",
       "role": "auto",
-      "swahili": "Haha, ndiyo. Na amewahi kufanya kazi Kampala.",
-      "english": "Haha, yes. And she has worked in Kampala before.",
+      "swahili": "Haha, ndiyo — mimi si mfupi! Na amewahi kufanya kazi Kampala.",
+      "english": "Haha, yes — I'm not short! And she has worked in Kampala before.",
       "words": [
         {
           "text": "Haha",
@@ -492,6 +492,13 @@
           "gloss": "yes / it's (that)",
           "grammar": [
             "ni-copula"
+          ]
+        },
+        {
+          "text": "si mfupi",
+          "gloss": "\"Not short\" — mfupi for one person, wafupi for several.",
+          "grammar": [
+            "adjective-agreement"
           ]
         },
         {
@@ -707,10 +714,7 @@
     },
     {
       "id": "156d488a-aab6-59dc-a9a9-0393ddd2c1ba",
-      "speaker": "John",
       "role": "user",
-      "swahili": "Safi. Wafanyakazi wengi hapa ni wapya, sivyo?",
-      "english": "Great. A lot of the staff here are new, aren't they?",
       "words": [
         {
           "text": "Safi",
@@ -727,22 +731,22 @@
             "adjective-agreement"
           ],
           "conjugation": {
-            "verb": "-ingi (many / a lot)",
-            "tense": "Agreement",
             "rows": [
               {
-                "pronoun": "m/wa one",
-                "form": "mwingi"
+                "form": "mwingi",
+                "pronoun": "m/wa one"
               },
               {
-                "pronoun": "m/wa many",
-                "form": "wengi"
+                "form": "wengi",
+                "pronoun": "m/wa many"
               },
               {
-                "pronoun": "n/n",
-                "form": "nyingi"
+                "form": "nyingi",
+                "pronoun": "n/n"
               }
-            ]
+            ],
+            "verb": "-ingi (many / a lot)",
+            "tense": "Agreement"
           }
         },
         {
@@ -763,46 +767,50 @@
             "adjective-agreement"
           ],
           "conjugation": {
-            "verb": "-pya (new)",
-            "tense": "Agreement",
             "rows": [
               {
-                "pronoun": "m/wa one",
-                "form": "mpya"
+                "form": "mpya",
+                "pronoun": "m/wa one"
               },
               {
-                "pronoun": "m/wa many",
-                "form": "wapya"
+                "form": "wapya",
+                "pronoun": "m/wa many"
               },
               {
-                "pronoun": "n/n",
-                "form": "mpya"
+                "form": "mpya",
+                "pronoun": "n/n"
               }
-            ]
+            ],
+            "verb": "-pya (new)",
+            "tense": "Agreement"
           }
         },
         {
-          "text": "sivyo",
-          "gloss": "isn't it? / right? (question tag)",
+          "text": "si ndiyo",
+          "gloss": "si ndiyo = isn't it? / right? (question tag)",
           "grammar": [
             "discourse-particles"
           ]
         }
       ],
+      "english": "Great. A lot of the staff here are new, aren't they?",
       "options": [
         {
-          "swahili": "Safi. Wafanyakazi wengi hapa ni wapya, sivyo?",
-          "correct": true
+          "correct": true,
+          "swahili": "Safi. Wafanyakazi wengi hapa ni wapya, si ndiyo?"
         },
         {
-          "swahili": "Safi. Wafanyakazi wengi hapa ni wazee, sivyo?",
-          "correct": false
+          "correct": false,
+          "swahili": "Safi. Wafanyakazi wengi hapa ni wazee, si ndiyo?"
         },
         {
-          "swahili": "Safi. Mfanyakazi mmoja hapa ni mpya, sivyo?",
-          "correct": false
+          "correct": false,
+          "swahili": "Safi. Mfanyakazi mmoja hapa ni mpya, si ndiyo?"
         }
-      ]
+      ],
+      "speaker": "John",
+      "swahili": "Safi. Wafanyakazi wengi hapa ni wapya, si ndiyo?",
+      "literal": "Clean. Many workers here are new, isn't it yes?"
     },
     {
       "id": "667e52c2-474f-5724-afee-5f9188706093",
@@ -928,10 +936,7 @@
     },
     {
       "id": "f5f7725c-932c-542b-8283-8dc2aa6666ea",
-      "speaker": "John",
       "role": "user",
-      "swahili": "Nitaenda kumsalimia sasa. Yuko wapi?",
-      "english": "I'll go and greet her now. Where is she?",
       "words": [
         {
           "text": "Nitaenda",
@@ -940,34 +945,34 @@
             "future-ta"
           ],
           "conjugation": {
-            "verb": "kuenda (to go)",
-            "tense": "Future (-ta-)",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "nitaenda"
+                "form": "nitaenda",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "utaenda"
+                "form": "utaenda",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "ataenda"
+                "form": "ataenda",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tutaenda"
+                "form": "tutaenda",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mtaenda"
+                "form": "mtaenda",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wataenda"
+                "form": "wataenda",
+                "pronoun": "they"
               }
-            ]
+            ],
+            "verb": "kuenda (to go)",
+            "tense": "Future (-ta-)"
           }
         },
         {
@@ -984,48 +989,48 @@
           "gloss": "now — also a greeting: \"Sasa?\" = \"What's up now?\""
         },
         {
-          "text": "Yuko",
-          "gloss": "\"He/she is (at / doing)\" — yu- + -ko (be at a place, or how you're doing). \"Yuko poa\" = he/she is fine.",
+          "text": "Ako",
+          "gloss": "he/she is (at) — Kenyan for yuko",
           "grammar": [
             "ko-location"
           ],
           "conjugation": {
-            "verb": "-ko (be at / be doing)",
-            "tense": "Present",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "niko"
+                "form": "niko",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "uko"
+                "form": "uko",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "yuko"
+                "form": "yuko",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tuko"
+                "form": "tuko",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mko"
+                "form": "mko",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wako"
+                "form": "wako",
+                "pronoun": "they"
               },
               {
-                "pronoun": "it (n/n)",
-                "form": "iko"
+                "form": "iko",
+                "pronoun": "it (n/n)"
               },
               {
-                "pronoun": "they (n/n)",
-                "form": "ziko"
+                "form": "ziko",
+                "pronoun": "they (n/n)"
               }
-            ]
+            ],
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present"
           }
         },
         {
@@ -1036,71 +1041,71 @@
           ]
         }
       ],
+      "english": "I'll go and greet her now. Where is she?",
       "options": [
         {
-          "swahili": "Nitaenda kumsalimia sasa. Yuko wapi?",
-          "correct": true
+          "correct": true,
+          "swahili": "Nitaenda kumsalimia sasa. Ako wapi?"
         },
         {
-          "swahili": "Nitaenda kukusalimia sasa. Yuko wapi?",
-          "correct": false
+          "correct": false,
+          "swahili": "Nitaenda kukusalimia sasa. Ako wapi?"
         },
         {
-          "swahili": "Nilienda kumsalimia jana. Yuko wapi?",
-          "correct": false
+          "correct": false,
+          "swahili": "Nilienda kumsalimia jana. Ako wapi?"
         }
-      ]
+      ],
+      "speaker": "John",
+      "swahili": "Nitaenda kumsalimia sasa. Ako wapi?"
     },
     {
       "id": "fcf44a54-a8bb-5c48-a7e7-4f5d11690e52",
-      "speaker": "Juma",
       "role": "auto",
-      "swahili": "Yuko pale, karibu na dirisha. Yule mwenye nguo nyeupe.",
-      "english": "She's over there, by the window. The one in white clothes.",
       "words": [
         {
-          "text": "Yuko",
-          "gloss": "\"He/she is (at / doing)\" — yu- + -ko (be at a place, or how you're doing). \"Yuko poa\" = he/she is fine.",
+          "text": "Ako",
+          "gloss": "he/she is (at) — Kenyan for yuko",
           "grammar": [
             "ko-location"
           ],
           "conjugation": {
-            "verb": "-ko (be at / be doing)",
-            "tense": "Present",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "niko"
+                "form": "niko",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "uko"
+                "form": "uko",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "yuko"
+                "form": "yuko",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tuko"
+                "form": "tuko",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mko"
+                "form": "mko",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wako"
+                "form": "wako",
+                "pronoun": "they"
               },
               {
-                "pronoun": "it (n/n)",
-                "form": "iko"
+                "form": "iko",
+                "pronoun": "it (n/n)"
               },
               {
-                "pronoun": "they (n/n)",
-                "form": "ziko"
+                "form": "ziko",
+                "pronoun": "they (n/n)"
               }
-            ]
+            ],
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present"
           }
         },
         {
@@ -1117,10 +1122,10 @@
         {
           "text": "dirisha",
           "gloss": "window (plural madirisha) — Kenyans give it n/n agreement",
+          "sanifu": "Sanifu: ji/ma class — dirisha hili, madirisha",
           "grammar": [
             "sanifu-noun-classes"
-          ],
-          "sanifu": "Sanifu: ji/ma class — dirisha hili, madirisha"
+          ]
         },
         {
           "text": "Yule",
@@ -1150,25 +1155,28 @@
             "adjective-agreement"
           ],
           "conjugation": {
-            "verb": "-eupe (white)",
-            "tense": "Agreement",
             "rows": [
               {
-                "pronoun": "m/wa one",
-                "form": "mweupe"
+                "form": "mweupe",
+                "pronoun": "m/wa one"
               },
               {
-                "pronoun": "m/wa many",
-                "form": "weupe"
+                "form": "weupe",
+                "pronoun": "m/wa many"
               },
               {
-                "pronoun": "n/n",
-                "form": "nyeupe"
+                "form": "nyeupe",
+                "pronoun": "n/n"
               }
-            ]
+            ],
+            "verb": "-eupe (white)",
+            "tense": "Agreement"
           }
         }
-      ]
+      ],
+      "english": "She's over there, by the window. The one in white clothes.",
+      "speaker": "Juma",
+      "swahili": "Ako pale, karibu na dirisha. Yule mwenye nguo nyeupe."
     }
   ],
   "vocabulary": [
@@ -1442,33 +1450,6 @@
       ]
     },
     {
-      "id": "10bc23bf-0bdf-5b83-82b8-7302d9596756",
-      "mode": "translate",
-      "english": "The road is long.",
-      "before": "Barabara ni ",
-      "after": ".",
-      "options": [
-        {
-          "text": "ndefu",
-          "correct": true
-        },
-        {
-          "text": "mrefu",
-          "correct": false,
-          "feedback": "mrefu = tall"
-        },
-        {
-          "text": "warefu",
-          "correct": false,
-          "feedback": "warefu = tall / long"
-        }
-      ],
-      "explanation": "barabara is n/n: ndefu.",
-      "grammar": [
-        "adjective-agreement"
-      ]
-    },
-    {
       "id": "4f7fc3a5-d6c2-5bca-b7f0-65baae7f21fd",
       "mode": "translate",
       "english": "She is taller than me.",
@@ -1552,8 +1533,8 @@
     {
       "id": "9d2407c9-8d32-5df5-aa81-cbb7965267f7",
       "mode": "translate",
-      "english": "a new house",
-      "before": "nyumba ",
+      "english": "a new colleague",
+      "before": "mfanyikazi ",
       "after": "",
       "options": [
         {
@@ -1561,17 +1542,15 @@
           "correct": true
         },
         {
-          "text": "kubwa",
-          "correct": false,
-          "feedback": "kubwa = big"
+          "text": "wapya",
+          "correct": false
         },
         {
-          "text": "ndogo",
-          "correct": false,
-          "feedback": "ndogo = small / young"
+          "text": "mrefu",
+          "correct": false
         }
       ],
-      "explanation": "mpya = new, kubwa = big, ndogo = small.",
+      "explanation": "mpya = new. One person: mfanyikazi mpya; several: wafanyakazi wapya.",
       "grammar": [
         "adjective-agreement"
       ]
@@ -1683,7 +1662,8 @@
       "grammar": [
         "future-ta",
         "verb-extensions"
-      ]
+      ],
+      "literal": "You will understand each other."
     },
     {
       "id": "37c81ca3-eb96-5fac-be81-64fc55fbd8ba",

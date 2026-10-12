@@ -10,11 +10,13 @@
   "culturalNote": "Kenyan petrol stations are full-service: an attendant fills the tank, checks the tyres, and washes the windscreen while you stay in the car. You ask for fuel by amount, not litres (\"weka ya elfu tatu\" = put in three thousand's worth). Polite requests use the subjunctive: \"uweke\" (would you put), \"uangalie\" (would you check), \"nikulipe\" (shall I pay you). \"Naomba\" (I'd like / may I have) is the classic polite opener.",
   "startingPoint": "You pull into a petrol station on Ngong Road. An attendant walks up to your window.",
   "grammarFocus": [
+    "hortative-commands",
     "subjunctive",
     "polite-requests",
     "object-infixes"
   ],
   "grammar": [
+    "hortative-commands",
     "subjunctive",
     "polite-requests",
     "object-infixes",
@@ -41,8 +43,8 @@
       "id": "8d39c8ec-25b2-5cb5-9cc4-ccb5d985755c",
       "speaker": "Mhudumu",
       "role": "auto",
-      "swahili": "Karibu, boss! Weka ya ngapi?",
-      "english": "Welcome, boss! How much shall I put in?",
+      "swahili": "Karibu, boss! Nijaze tanki, ama niweke ya ngapi?",
+      "english": "Welcome, boss! Shall I fill the tank, or how much shall I put in?",
       "words": [
         {
           "text": "Karibu",
@@ -56,8 +58,28 @@
           ]
         },
         {
-          "text": "Weka",
-          "gloss": "\"Put (in)!\" — imperative of kuweka"
+          "text": "Nijaze",
+          "gloss": "\"Shall I fill (it) up?\" — ni- (I) + -jaz- + -e. The subjunctive used as an offer. From kujaza (to fill).",
+          "grammar": [
+            "hortative-commands",
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "tanki",
+          "gloss": "\"(Fuel) tank.\""
+        },
+        {
+          "text": "ama",
+          "gloss": "\"Or.\""
+        },
+        {
+          "text": "niweke",
+          "gloss": "\"Shall I put (in)?\" — ni- + -wek- + -e. Offer form of kuweka.",
+          "grammar": [
+            "hortative-commands",
+            "subjunctive"
+          ]
         },
         {
           "text": "ya",
@@ -94,6 +116,7 @@
           "text": "uweke",
           "gloss": "\"(could you) put\" — u- + -wek- + -e: subjunctive = polite request.",
           "grammar": [
+            "hortative-commands",
             "subjunctive"
           ]
         },
@@ -119,13 +142,14 @@
           "swahili": "Naomba uweke ya elfu tatu, asante sana.",
           "correct": false
         }
-      ]
+      ],
+      "literal": "I ask that you put (fuel) of three thousand, please."
     },
     {
       "id": "629c6928-29a9-5f07-a7eb-d35288848d32",
       "speaker": "Mhudumu",
       "role": "auto",
-      "swahili": "Sawa. Petroli au dizeli?",
+      "swahili": "Sawa. Petroli ama dizeli?",
       "english": "Okay. Petrol or diesel?",
       "words": [
         {
@@ -140,7 +164,7 @@
           ]
         },
         {
-          "text": "au",
+          "text": "ama",
           "gloss": "or"
         },
         {
@@ -210,7 +234,8 @@
           "swahili": "Petroli. Na uangalia upepo kwa matairi pia.",
           "correct": false
         }
-      ]
+      ],
+      "literal": "Petrol. And (could) you check the wind in the tyres too."
     },
     {
       "id": "ce56837b-e457-53fc-b45f-83ee98d6c5cc",
@@ -230,6 +255,7 @@
           "text": "Usiwashe",
           "gloss": "\"Don't switch on\" — u- + -si- + -wash- + -e: negative command",
           "grammar": [
+            "hortative-commands",
             "subjunctive"
           ]
         },
@@ -454,6 +480,111 @@
       "sanifu": "Haina upepo wa kutosha. Nitaongeza."
     },
     {
+      "id": "672aa8d6-0b61-4230-b57c-9384f7a8df76",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Na mbele iko sawa? Nifungue boneti, niangalie oil na maji?",
+      "english": "And is everything okay up front? Shall I open the bonnet and check the oil and water?",
+      "words": [
+        {
+          "text": "mbele iko sawa",
+          "gloss": "\"Is the front okay?\" — what attendants ask when they offer to look under the bonnet (oil, water, brake fluid)."
+        },
+        {
+          "text": "Nifungue",
+          "gloss": "\"Shall I open?\" — ni- + -fungu- + -e. From kufungua.",
+          "grammar": [
+            "hortative-commands",
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "boneti",
+          "gloss": "\"Bonnet\" (of a car)."
+        },
+        {
+          "text": "niangalie",
+          "gloss": "\"(and) check\" — ni- + -angali- + -e. Still the offer form: shall I check?",
+          "grammar": [
+            "hortative-commands",
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "oil",
+          "gloss": "\"Engine oil\" — Kenyans just say oil."
+        },
+        {
+          "text": "maji",
+          "gloss": "\"Water\" — here the radiator water."
+        }
+      ],
+      "literal": "And the front, is it fine? Shall I open the bonnet, shall I check oil and water?"
+    },
+    {
+      "id": "9fae12cd-19e3-42c4-a50d-fbfb400c211c",
+      "speaker": "Dereva",
+      "role": "user",
+      "swahili": "Ndiyo, uangalie oil na maji, tafadhali.",
+      "english": "Yes, please check the oil and water.",
+      "words": [
+        {
+          "text": "uangalie",
+          "gloss": "\"(Could you) check\" — u- + -angali- + -e: the polite u- form.",
+          "grammar": [
+            "hortative-commands",
+            "polite-requests"
+          ]
+        },
+        {
+          "text": "oil na maji",
+          "gloss": "\"Oil and water.\""
+        },
+        {
+          "text": "tafadhali",
+          "gloss": "\"Please.\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo, uangalie oil na maji, tafadhali.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, niangalie oil na maji, tafadhali.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, angalia oil na maji, asante.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "6a744def-c7d9-4122-b974-18748ab7f088",
+      "speaker": "Mhudumu",
+      "role": "auto",
+      "swahili": "Oil iko sawa, lakini maji ni kidogo. Nitajaza.",
+      "english": "The oil's fine, but the water is low. I'll top it up.",
+      "words": [
+        {
+          "text": "iko sawa",
+          "gloss": "\"Is fine.\""
+        },
+        {
+          "text": "maji ni kidogo",
+          "gloss": "\"The water is low\" — lit. \"the water is little\"."
+        },
+        {
+          "text": "Nitajaza",
+          "gloss": "\"I'll fill it (up)\" — ni- + -ta- + -jaza.",
+          "grammar": [
+            "future-ta"
+          ]
+        }
+      ]
+    },
+    {
       "id": "0dffaab5-97e9-5182-8c6e-a664cadede73",
       "speaker": "Dereva",
       "role": "user",
@@ -468,6 +599,7 @@
           "text": "Ufute",
           "gloss": "\"(please) wipe\" — u- (subject: you) + -fute (wipe, subjunctive -e). From kufuta.",
           "grammar": [
+            "hortative-commands",
             "subjunctive"
           ],
           "conjugation": {
@@ -607,7 +739,7 @@
       "id": "37ee9862-416f-590f-901a-e85aa2afd825",
       "speaker": "Dereva",
       "role": "user",
-      "swahili": "Ndiyo, mvua ilinyesha jana. Nikulipe kwa M-Pesa au kadi?",
+      "swahili": "Ndiyo, mvua ilinyesha jana. Nikulipe kwa M-Pesa ama kadi?",
       "english": "Yes, it rained yesterday. Shall I pay you by M-Pesa or card?",
       "words": [
         {
@@ -680,6 +812,7 @@
           "text": "Nikulipe",
           "gloss": "\"shall I pay you?\" — ni- + -ku- (you) + -lip- + -e",
           "grammar": [
+            "hortative-commands",
             "subjunctive"
           ]
         },
@@ -698,7 +831,7 @@
           ]
         },
         {
-          "text": "au",
+          "text": "ama",
           "gloss": "or"
         },
         {
@@ -708,15 +841,15 @@
       ],
       "options": [
         {
-          "swahili": "Ndiyo, mvua ilinyesha jana. Nikulipe kwa M-Pesa au kadi?",
+          "swahili": "Ndiyo, mvua ilinyesha jana. Nikulipe kwa M-Pesa ama kadi?",
           "correct": true
         },
         {
-          "swahili": "Ndiyo, mvua ilinyesha jana. Unilipe kwa M-Pesa au kadi?",
+          "swahili": "Ndiyo, mvua ilinyesha jana. Unilipe kwa M-Pesa ama kadi?",
           "correct": false
         },
         {
-          "swahili": "Ndiyo, mvua inanyesha jana. Nikulipe kwa M-Pesa au kadi?",
+          "swahili": "Ndiyo, mvua inanyesha jana. Nikulipe kwa M-Pesa ama kadi?",
           "correct": false
         }
       ]
@@ -750,6 +883,7 @@
           "text": "uchukue",
           "gloss": "\"(please) take\" — u- (subject: you) + -chukue (take, subjunctive -e). From kuchukua.",
           "grammar": [
+            "hortative-commands",
             "subjunctive"
           ],
           "conjugation": {
@@ -989,6 +1123,58 @@
           "gloss": "have a good trip"
         }
       ]
+    },
+    {
+      "id": "aa74da1e-e84a-4e8a-9462-f370c1e908be",
+      "speaker": "Dereva",
+      "role": "user",
+      "swahili": "Asante! Sasa inabidi niende — nimechelewa kazini.",
+      "english": "Thanks! Now I have to go — I'm late for work.",
+      "words": [
+        {
+          "text": "inabidi",
+          "gloss": "\"It's necessary\" — always followed by the subjunctive.",
+          "grammar": [
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "niende",
+          "gloss": "\"(that) I go\" — ni- + -end- + -e. From kuenda. Inabidi niende = I have to go.",
+          "grammar": [
+            "subjunctive",
+            "hortative-commands"
+          ]
+        },
+        {
+          "text": "nimechelewa",
+          "gloss": "\"I'm late\" — lit. \"I have been late\". ni- + -me- + -chelewa.",
+          "grammar": [
+            "perfect-me"
+          ]
+        },
+        {
+          "text": "kazini",
+          "gloss": "\"At / to work.\"",
+          "grammar": [
+            "locative-ni"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Asante! Sasa inabidi niende — nimechelewa kazini.",
+          "correct": true
+        },
+        {
+          "swahili": "Asante! Sasa inabidi uende — nimechelewa kazini.",
+          "correct": false
+        },
+        {
+          "swahili": "Asante! Sasa inabidi niende — umechelewa kazini.",
+          "correct": false
+        }
+      ]
     }
   ],
   "vocabulary": [
@@ -1007,10 +1193,24 @@
       "partOfSpeech": "phrase"
     },
     {
+      "id": "2d453a59-4c9b-45cf-89d0-d6d5272eccfb",
+      "swahili": "kujaza",
+      "english": "to fill (up)",
+      "exampleContext": "Nijaze tanki? = Shall I fill the tank? · Nitajaza = I'll top it up",
+      "partOfSpeech": "verb"
+    },
+    {
       "id": "6ee1fab7-41e1-5d6a-a80a-9838827f2d57",
       "swahili": "Uangalie…",
       "english": "Could you check…",
       "exampleContext": "Subjunctive = polite request",
+      "partOfSpeech": "phrase"
+    },
+    {
+      "id": "8b9e8d3f-2fa4-44f0-9de8-db2721dece7c",
+      "swahili": "Mbele iko sawa?",
+      "english": "Is everything okay up front?",
+      "exampleContext": "The attendant offering to open the bonnet and check oil and water",
       "partOfSpeech": "phrase"
     },
     {
@@ -1043,9 +1243,9 @@
     },
     {
       "id": "445e340f-236c-5ea8-a9b1-4b7c5419d25a",
-      "swahili": "Inabidi twende",
-      "english": "We have to go",
-      "exampleContext": "inabidi = it's necessary",
+      "swahili": "Inabidi niende",
+      "english": "I have to go",
+      "exampleContext": "inabidi + subjunctive (Inabidi twende = we have to go)",
       "partOfSpeech": "phrase"
     },
     {
@@ -1101,6 +1301,20 @@
       "englishForms": {
         "one": "receipt",
         "many": "receipts"
+      }
+    },
+    {
+      "id": "68d8b014-793d-47cb-b3a8-20325aa95b67",
+      "swahili": "boneti",
+      "english": "bonnet",
+      "exampleContext": "Nifungue boneti? = Shall I open the bonnet?",
+      "nounForms": {
+        "one": "boneti",
+        "many": "boneti"
+      },
+      "englishForms": {
+        "one": "bonnet",
+        "many": "bonnets"
       }
     }
   ],
@@ -1270,26 +1484,24 @@
     {
       "id": "cf948459-823b-5f42-8483-3b26994c0899",
       "mode": "translate",
-      "english": "so that we clean it",
+      "english": "so that I can see the road well",
       "before": "ili ",
-      "after": "",
+      "after": " barabara vizuri",
       "options": [
         {
-          "text": "tusafishe",
+          "text": "nione",
           "correct": true
         },
         {
-          "text": "tunasafisha",
-          "correct": false,
-          "feedback": "tunasafisha = We are cleaning"
+          "text": "ninaona",
+          "correct": false
         },
         {
-          "text": "tulisafisha",
-          "correct": false,
-          "feedback": "tulisafisha = We cleaned"
+          "text": "nitaona",
+          "correct": false
         }
       ],
-      "explanation": "tusafishe = \"(so that) we clean\" — tu- + -safish- + -e",
+      "explanation": "ili (so that) is followed by the subjunctive: ni- + -on- + -e → nione.",
       "grammar": [
         "subjunctive"
       ]
@@ -1324,26 +1536,24 @@
     {
       "id": "b4f0fc6f-3e73-551d-a417-41a58321b9d4",
       "mode": "translate",
-      "english": "It's necessary that we go.",
+      "english": "I have to go now.",
       "before": "Inabidi ",
-      "after": ".",
+      "after": " sasa.",
       "options": [
         {
-          "text": "twende",
+          "text": "niende",
           "correct": true
         },
         {
-          "text": "tunaenda",
-          "correct": false,
-          "feedback": "tunaenda = We are going"
+          "text": "ninaenda",
+          "correct": false
         },
         {
-          "text": "tutaenda",
-          "correct": false,
-          "feedback": "tutaenda = We will go"
+          "text": "nitaenda",
+          "correct": false
         }
       ],
-      "explanation": "inabidi = it's necessary; also + subjunctive. tu- + -ende → twende.",
+      "explanation": "inabidi (it's necessary) takes the subjunctive: ni- + -end- + -e → niende. Inabidi twende = we have to go.",
       "grammar": [
         "subjunctive"
       ]
@@ -1539,6 +1749,91 @@
         "object-infixes",
         "verb-extensions"
       ]
+    },
+    {
+      "id": "991c728c-9e0c-4ba0-b853-6b74c347324a",
+      "mode": "translate",
+      "english": "Shall I fill the tank?",
+      "before": "",
+      "after": " tanki?",
+      "options": [
+        {
+          "text": "Nijaze",
+          "correct": true
+        },
+        {
+          "text": "Ninajaza",
+          "correct": false
+        },
+        {
+          "text": "Nitajaza",
+          "correct": false
+        }
+      ],
+      "explanation": "Nijaze = shall I fill? ni- + -jaz- + -e: the subjunctive as an offer. Ninajaza = I'm filling, nitajaza = I'll fill.",
+      "grammar": [
+        "hortative-commands",
+        "subjunctive"
+      ]
+    },
+    {
+      "id": "56ca83de-855b-4003-a3a3-573404b31921",
+      "mode": "complete",
+      "english": "Is everything okay up front? (Shall I check the oil and water?)",
+      "before": "Mbele iko ",
+      "after": "?",
+      "options": [
+        {
+          "text": "sawa",
+          "correct": true
+        },
+        {
+          "text": "wapi",
+          "correct": false
+        },
+        {
+          "text": "ngapi",
+          "correct": false
+        }
+      ],
+      "explanation": "Mbele iko sawa? — the attendant offering to open the bonnet. Answer Ndiyo, uangalie (yes, check) or Hapana, iko sawa (no, it's fine).",
+      "grammar": [
+        "ko-location"
+      ]
+    },
+    {
+      "id": "5a29b687-4a80-48de-b5c3-0d9c0a418806",
+      "mode": "translate",
+      "english": "Please check the oil and water.",
+      "before": "Naomba ",
+      "after": " oil na maji.",
+      "options": [
+        {
+          "text": "uangalie",
+          "correct": true
+        },
+        {
+          "text": "angalia",
+          "correct": false,
+          "feedback": "Angalia! is a bare command — after Naomba use the u- form."
+        },
+        {
+          "text": "niangalie",
+          "correct": false,
+          "feedback": "niangalie? = shall I check?"
+        }
+      ],
+      "explanation": "After Naomba use the polite u- form: u- + -angali- + -e → uangalie.",
+      "grammar": [
+        "hortative-commands",
+        "polite-requests"
+      ]
     }
-  ]
+  ],
+  "primer": {
+    "text": "This conversation is full of requests and offers that look alike. Weka! = put! (a plain command) · uweke = (could you) put — the polite u- form, needed after Naomba · niweke? = shall I put? Read the guide first, then listen for each one.",
+    "grammar": [
+      "hortative-commands"
+    ]
+  }
 }

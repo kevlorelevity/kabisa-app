@@ -46,8 +46,8 @@
       "id": "a7519874-5371-5dda-82f8-0abcd07ae4a2",
       "speaker": "Wafula",
       "role": "auto",
-      "swahili": "Leo ni leo! Ingwe watawanyorosha K'Ogalo!",
-      "english": "Today's the day! Ingwe will flatten K'Ogalo!",
+      "swahili": "Leo ni leo — Mashemeji Derby! Ingwe watawanyorosha K'Ogalo!",
+      "english": "Today's the day — the Mashemeji Derby! Ingwe will flatten K'Ogalo!",
       "words": [
         {
           "text": "Leo",
@@ -69,6 +69,10 @@
           "grammar": [
             "noun-classes-mwa-nn"
           ]
+        },
+        {
+          "text": "Mashemeji Derby",
+          "gloss": "Gor Mahia (K'Ogalo) vs AFC Leopards (Ingwe) — \"the in-laws' derby\"."
         },
         {
           "text": "Ingwe",
@@ -226,7 +230,8 @@
           "swahili": "Wee, ndoto tu! Mtaona — mshambuliaji wetu mpya ni baridi sana.",
           "correct": false
         }
-      ]
+      ],
+      "literal": "Wow, only a dream! You will see — our new striker is very hot."
     },
     {
       "id": "a0f6c54d-4cb5-599e-b200-e4e1011dd0ca",
@@ -320,7 +325,8 @@
           "swahili": "Jana atafunga. Akose achekwe!",
           "correct": false
         }
-      ]
+      ],
+      "literal": "Today he will score. Let him miss and be laughed at!"
     },
     {
       "id": "cb9b54ee-4d5f-5e88-acb3-1f593e9abb1c",
@@ -592,7 +598,8 @@
           "correct": false
         }
       ],
-      "sanifu": "Sawa, sawa. Maji yakimwagika hayazoleki. Lakini mchezo haujaisha bado!"
+      "sanifu": "Sawa, sawa. Maji yakimwagika hayazoleki. Lakini mchezo haujaisha bado!",
+      "literal": "Okay, okay. When water is spilled, it can't be scooped up. But the game isn't finished yet!"
     },
     {
       "id": "15e67cd8-fd85-5f41-a773-244927394b8a",
@@ -1189,7 +1196,8 @@
       "explanation": "Lit. \"let him miss, (and) be laughed at\". cheka → chekwa (passive).",
       "grammar": [
         "verb-extensions"
-      ]
+      ],
+      "literal": "Let him miss and be laughed at!"
     },
     {
       "id": "cf9ccb43-6ba5-588e-b92e-000fca1172af",
@@ -1233,7 +1241,8 @@
           "correct": false
         }
       ],
-      "explanation": "What's done is done."
+      "explanation": "What's done is done.",
+      "literal": "When water is spilled, it can't be scooped up."
     },
     {
       "id": "bed9470c-9c59-5e18-a4e9-447e99f6a607",

@@ -931,7 +931,8 @@
           "swahili": "Asante sana kwa nafasi hii. Nilisubiri kwa hamu!",
           "correct": false
         }
-      ]
+      ],
+      "literal": "Thank you very much for this chance. I will wait with eagerness!"
     }
   ],
   "vocabulary": [
@@ -1410,7 +1411,8 @@
           "feedback": "Ninasubiri = I am waiting"
         }
       ],
-      "explanation": "Nitasubiri: I'll wait"
+      "explanation": "Nitasubiri: I'll wait",
+      "literal": "I will wait with eagerness."
     },
     {
       "id": "b737ec0b-1657-5c94-93aa-f30221c46ac2",

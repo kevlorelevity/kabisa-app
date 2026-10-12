@@ -134,6 +134,73 @@
       ]
     },
     {
+      "id": "5c1cb0ae-332c-4f5c-9a30-1e16c61a21e8",
+      "speaker": "Wambui",
+      "role": "auto",
+      "swahili": "Kusafiri kwa ndege ni rahisi?",
+      "english": "Is travelling by plane easy?",
+      "words": [
+        {
+          "text": "Kusafiri",
+          "gloss": "\"To travel / travelling\" — the ku- form works as a noun.",
+          "grammar": [
+            "infinitive-ku"
+          ]
+        },
+        {
+          "text": "kwa ndege",
+          "gloss": "\"By plane.\""
+        },
+        {
+          "text": "rahisi",
+          "gloss": "\"Easy / cheap.\""
+        }
+      ]
+    },
+    {
+      "id": "ea8495e2-6a9b-43aa-a311-7bf0eee152d0",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ndiyo, lakini kwa uwanja wa ndege ni pasipoti, viza, tiketi… kila kitu!",
+      "english": "Yes, but at the airport it's passport, visa, ticket… everything!",
+      "words": [
+        {
+          "text": "uwanja wa ndege",
+          "gloss": "\"Airport\" — lit. \"field of planes\"."
+        },
+        {
+          "text": "pasipoti",
+          "gloss": "\"Passport.\""
+        },
+        {
+          "text": "viza",
+          "gloss": "\"Visa.\""
+        },
+        {
+          "text": "tiketi",
+          "gloss": "\"Ticket.\""
+        },
+        {
+          "text": "kila kitu",
+          "gloss": "\"Everything\" — lit. \"every thing\"."
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo, lakini kwa uwanja wa ndege ni pasipoti, viza, tiketi… kila kitu!",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, lakini kwa uwanja wa mpira ni pasipoti, viza, tiketi… kila kitu!",
+          "correct": false
+        },
+        {
+          "swahili": "Hapana, lakini kwa uwanja wa ndege ni pasipoti, viza, tiketi… kila kitu!",
+          "correct": false
+        }
+      ]
+    },
+    {
       "id": "82cd9cc0-0e46-5f94-8cee-b9646b203107",
       "speaker": "Wambui",
       "role": "auto",
@@ -252,7 +319,8 @@
           "swahili": "Ulifika mwaka jana, mwezi wa tisa.",
           "correct": false
         }
-      ]
+      ],
+      "literal": "I arrived last year, the ninth month."
     },
     {
       "id": "94476b4e-b3ec-5f3f-af63-7cbd4650648c",

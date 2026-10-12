@@ -31,6 +31,20 @@ describe('AI edit validation', () => {
     ]);
   });
 
+  it('keeps a line\'s literal English and typed word through a rewrite that leaves the line alone', () => {
+    const cur = [
+      { id: 'u1', speaker: 'John', role: 'user', swahili: 'Unatia chumvi!', english: "You're exaggerating!", literal: "You're adding salt!", typeWord: 'chumvi', words: [], options: [{ swahili: 'Unatia chumvi!', correct: true }, { swahili: 'Unatia sukari!', correct: false }] },
+    ];
+    const raw = { summary: 'x', turn: { speaker: 'John', role: 'user', swahili: 'Unatia chumvi!', english: "You're exaggerating!", words: [], options: [] } };
+    const t = normalizeResult('item', 'turn', raw, cur[0], 'u1').value as Record<string, unknown>;
+    expect(t.literal).toBe("You're adding salt!");
+    expect(t.typeWord).toBe('chumvi');
+    const raw2 = { summary: 'x', turn: { speaker: 'John', role: 'user', swahili: 'Unaongeza chumvi!', english: "You're exaggerating!", literal: "You're adding salt!", words: [], options: [{ swahili: 'Unaongeza sukari!', correct: false }] } };
+    const t2 = normalizeResult('item', 'turn', raw2, cur[0], 'u1').value as Record<string, unknown>;
+    expect(t2.literal).toBe("You're adding salt!"); // the AI's own literal
+    expect(t2.typeWord).toBeUndefined(); // the line changed: the admin's typed word no longer applies
+  });
+
   it('rejects output a learner could not use', () => {
     expect(() => normalizeResult('dialogue', null, { summary: 'x', turns: [] }, current)).toThrow();
     expect(() =>

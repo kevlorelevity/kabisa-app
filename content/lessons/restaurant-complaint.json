@@ -874,7 +874,8 @@
           "swahili": "Pole. Afadhali kuchelewa kuliko kukosa kabisa!",
           "correct": false
         }
-      ]
+      ],
+      "literal": "Thanks. Better to be late than to miss completely!"
     },
     {
       "id": "67258da0-b720-569d-85e1-1d83c169854c",
@@ -1073,9 +1074,9 @@
     {
       "id": "56cff1d1-6f69-5a01-bd40-bf06becd0165",
       "mode": "translate",
-      "english": "I was waiting for my friend.",
+      "english": "I was waiting for the food.",
       "before": "",
-      "after": " nikimsubiri rafiki yangu.",
+      "after": " nikisubiri chakula.",
       "options": [
         {
           "text": "Nilikuwa",
@@ -1083,17 +1084,16 @@
         },
         {
           "text": "Nimekuwa",
-          "correct": false,
-          "feedback": "Nimekuwa = I have been"
+          "correct": false
         },
         {
           "text": "Nitakuwa",
-          "correct": false,
-          "feedback": "Nitakuwa = I will be"
+          "correct": false
         }
       ],
-      "explanation": "\"was …-ing\" = nilikuwa + -ki- verb. Kenyans also say nilikuwa namsubiri.",
+      "explanation": "\"was …-ing\" = nilikuwa + a -ki- verb. Kenyans also say nilikuwa nasubiri.",
       "grammar": [
+        "continuous-tenses",
         "past-li"
       ]
     },
@@ -1127,27 +1127,26 @@
     {
       "id": "d5c66f10-7af7-57d0-a8af-ff8beb35c24d",
       "mode": "translate",
-      "english": "I'll be working tomorrow.",
-      "before": "Kesho ",
-      "after": " nikifanya kazi.",
+      "english": "We'll be waiting here.",
+      "before": "",
+      "after": " tukisubiri hapa.",
       "options": [
         {
-          "text": "nitakuwa",
+          "text": "Tutakuwa",
           "correct": true
         },
         {
-          "text": "nilikuwa",
-          "correct": false,
-          "feedback": "nilikuwa = I was"
+          "text": "Tulikuwa",
+          "correct": false
         },
         {
-          "text": "nimekuwa",
-          "correct": false,
-          "feedback": "nimekuwa = I have been"
+          "text": "Tumekuwa",
+          "correct": false
         }
       ],
-      "explanation": "\"will be …-ing\" = nitakuwa + -ki- verb.",
+      "explanation": "\"will be …-ing\" = tutakuwa + a -ki- verb.",
       "grammar": [
+        "continuous-tenses",
         "future-ta"
       ]
     },
@@ -1316,29 +1315,26 @@
     {
       "id": "4e1da276-e042-5e30-a431-7c0d0e484b3a",
       "mode": "translate",
-      "english": "Do the work as best you can.",
-      "before": "Fanya kazi ",
+      "english": "Sit wherever you like.",
+      "before": "Kaa popote ",
       "after": ".",
       "options": [
         {
-          "text": "unavyoweza",
+          "text": "unavyotaka",
           "correct": true
         },
         {
-          "text": "unaweza",
-          "correct": false,
-          "feedback": "unaweza = You can"
+          "text": "unataka",
+          "correct": false
         },
         {
-          "text": "utaweza",
-          "correct": false,
-          "feedback": "utaweza = You will be able"
+          "text": "utataka",
+          "correct": false
         }
       ],
-      "explanation": "unavyoweza = the way you can.",
+      "explanation": "unavyotaka = the way / as you want: u- + -na- + -vyo- + -taka.",
       "grammar": [
-        "ki-po-ka",
-        "helper-verbs"
+        "vyo-manner"
       ]
     },
     {
@@ -1418,7 +1414,8 @@
       "explanation": "afadhali… kuliko… = better… than…",
       "grammar": [
         "comparatives"
-      ]
+      ],
+      "literal": "Better to be late than to miss completely!"
     },
     {
       "id": "e545ba8a-3fb6-5d46-9d90-6271ad115dac",

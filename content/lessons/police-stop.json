@@ -40,7 +40,7 @@
       "id": "34c90e77-0460-53b7-b7ca-d4eef144ac55",
       "speaker": "Polisi",
       "role": "auto",
-      "swahili": "Habari za mchana. Simamisha gari pembeni, tafadhali.",
+      "swahili": "Habari za mchana. Simamisha gari kwa kona, tafadhali.",
       "english": "Good afternoon. Pull the car over to the side, please.",
       "words": [
         {
@@ -80,14 +80,16 @@
           "sanifu": "Sanifu: ji/ma class — gari langu, gari hili, magari mawili"
         },
         {
-          "text": "pembeni",
-          "gloss": "at the side"
+          "text": "kwa kona",
+          "gloss": "at the corner",
+          "sanifu": "pembeni"
         },
         {
           "text": "tafadhali",
           "gloss": "please"
         }
-      ]
+      ],
+      "sanifu": "Habari za mchana. Simamisha gari pembeni, tafadhali."
     },
     {
       "id": "25ceef4a-d64f-5c5c-ba6d-7cbf7069bc35",
@@ -613,8 +615,8 @@
       "id": "9f588b14-51a3-5654-be18-4e216d98e713",
       "speaker": "Polisi",
       "role": "auto",
-      "swahili": "Kwa hivyo… unaweza kujitetea?",
-      "english": "So… can you defend yourself?",
+      "swahili": "Kwa hivyo… tunaweza kuelewana? Labda kitu kidogo?",
+      "english": "So… can we come to an understanding? Maybe something small?",
       "words": [
         {
           "text": "Kwa hivyo",
@@ -624,13 +626,23 @@
           ]
         },
         {
-          "text": "unaweza kujitetea",
-          "gloss": "\"Can you defend yourself?\" — a well-known hint at a bribe.",
+          "text": "tunaweza kuelewana",
+          "gloss": "\"Can we understand each other?\" — a hint that a \"deal\" is possible.",
           "grammar": [
-            "helper-verbs"
+            "helper-verbs",
+            "verb-extensions"
           ]
+        },
+        {
+          "text": "Labda",
+          "gloss": "\"Maybe.\""
+        },
+        {
+          "text": "kitu kidogo",
+          "gloss": "\"Something small\" — the everyday euphemism for a bribe. Don't offer one: ask for the official fine and a receipt."
         }
-      ]
+      ],
+      "literal": "So… can we understand each other? Maybe a small thing?"
     },
     {
       "id": "9b18dd2a-e611-5e1e-aaf9-96229dfd4a7d",
@@ -878,7 +890,8 @@
           "swahili": "Asante sana, afande. Utazingatia sheria za barabarani.",
           "correct": false
         }
-      ]
+      ],
+      "literal": "Thank you very much, officer. I will observe the laws of the road."
     },
     {
       "id": "6aacceab-a9c1-51f5-a248-6b340de8b3bb",
@@ -1448,9 +1461,9 @@
     {
       "id": "0f9d4e22-cfdd-5697-bde4-eaf7a395527e",
       "mode": "translate",
-      "english": "The police officer is checking the tyres.",
+      "english": "The police officer is inspecting the car.",
       "before": "Polisi ",
-      "after": " matairi.",
+      "after": " gari.",
       "options": [
         {
           "text": "anakagua",
@@ -1458,16 +1471,14 @@
         },
         {
           "text": "anakaguliwa",
-          "correct": false,
-          "feedback": "anakaguliwa = He/she is inspected"
+          "correct": false
         },
         {
           "text": "wanakagua",
-          "correct": false,
-          "feedback": "wanakagua = They are inspecting"
+          "correct": false
         }
       ],
-      "explanation": "kukagua = to inspect; kukaguliwa = to be inspected.",
+      "explanation": "kukagua = to inspect (ukaguzi = an inspection); kukaguliwa = to be inspected.",
       "grammar": [
         "present-na"
       ]

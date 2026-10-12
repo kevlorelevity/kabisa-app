@@ -335,7 +335,7 @@
       "speaker": "Dereva",
       "role": "auto",
       "swahili": "Sawa. Tunaenda upande gani?",
-      "english": "Okay. Which side are we going?",
+      "english": "Okay. What route do you want to take?",
       "words": [
         {
           "text": "Sawa",
@@ -436,6 +436,82 @@
         {
           "text": "Sawa",
           "gloss": "\"Okay.\""
+        }
+      ]
+    },
+    {
+      "id": "8eab052f-4ae0-4d06-b2c4-9d9977ada360",
+      "speaker": "Abiria",
+      "role": "user",
+      "swahili": "Na bei ni ngapi?",
+      "english": "And how much is the fare?",
+      "words": [
+        {
+          "text": "Na",
+          "gloss": "\"And.\""
+        },
+        {
+          "text": "bei",
+          "gloss": "\"Price / fare\" — n/n noun, same word for one and many.",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ni",
+          "gloss": "\"Is.\"",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "ngapi",
+          "gloss": "\"How much? / how many?\" Bei ni ngapi? = what's the price?",
+          "grammar": [
+            "question-words",
+            "numbers-money"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Na bei ni ngapi?",
+          "correct": true
+        },
+        {
+          "swahili": "Na bei ni wapi?",
+          "correct": false
+        },
+        {
+          "swahili": "Na bei ni sana?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "5665d965-fd05-4a3f-8da4-bd7119764079",
+      "speaker": "Dereva",
+      "role": "auto",
+      "swahili": "Ni mia tano, boss.",
+      "english": "It's five hundred, boss.",
+      "words": [
+        {
+          "text": "Ni",
+          "gloss": "\"It is.\"",
+          "grammar": [
+            "ni-copula"
+          ]
+        },
+        {
+          "text": "mia tano",
+          "gloss": "\"Five hundred\" — mia = hundred, tano = five.",
+          "grammar": [
+            "numbers-money"
+          ]
+        },
+        {
+          "text": "boss",
+          "gloss": "A friendly, informal way to address someone."
         }
       ]
     }
@@ -1048,12 +1124,15 @@
     {
       "id": "11e1e36b-6ab0-48bf-9d2c-3c334c6cc6e3",
       "mode": "translate",
-      "english": "She is fine.",
-      "before": "",
       "after": " poa.",
+      "before": "",
+      "english": "She is fine.",
+      "grammar": [
+        "ko-location"
+      ],
       "options": [
         {
-          "text": "Yuko",
+          "text": "Ako",
           "correct": true
         },
         {
@@ -1067,10 +1146,7 @@
           "feedback": "niko = I am (at)."
         }
       ],
-      "explanation": "Yuko = he/she is (at). Note the y- — it's the one irregular form of -ko.",
-      "grammar": [
-        "ko-location"
-      ]
+      "explanation": "Ako = he/she is (at). Note the y- — it's the one irregular form of -ko."
     },
     {
       "id": "27dde3a8-8fc0-4594-8a28-971f4d335276",

@@ -106,79 +106,79 @@
     },
     {
       "id": "38438dfc-e029-55a1-8a69-9a922078e909",
-      "speaker": "Wanjiku",
       "role": "auto",
-      "swahili": "Kumbe hujui? Mkutano umeahirishwa mpaka Jumatano.",
-      "english": "Oh, you don't know? The meeting has been postponed to Wednesday.",
       "words": [
         {
           "text": "Kumbe",
-          "gloss": "\"oh, so…!\"",
+          "gloss": "oh, so…!",
           "grammar": [
             "discourse-particles"
           ]
         },
         {
           "text": "hujui",
-          "gloss": "\"You don't know\" — hu- (negative subject: not you) + -jui (know, negative ends in -i). From kujua.",
+          "gloss": "you don't know",
           "grammar": [
             "negative-present"
           ],
           "conjugation": {
-            "verb": "kujua (to know)",
-            "tense": "Present, negative",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "sijui"
+                "form": "sijui",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "hujui"
+                "form": "hujui",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "hajui"
+                "form": "hajui",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "hatujui"
+                "form": "hatujui",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "hamjui"
+                "form": "hamjui",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "hawajui"
+                "form": "hawajui",
+                "pronoun": "they"
               }
-            ]
+            ],
+            "verb": "kujua (to know)",
+            "tense": "Present, negative"
           }
         },
         {
           "text": "Mkutano",
-          "gloss": "meeting (m/mi class in Sanifu)"
+          "gloss": "meeting"
         },
         {
-          "text": "umeahirishwa",
-          "gloss": "\"has been postponed\" — ahirisha + -w- (passive). Sanifu agreement with mkutano (m/mi).",
-          "grammar": [
-            "verb-extensions"
-          ]
+          "note": "Kenyans give 'mkutano' n/n agreement (i-). Sanifu uses u- because mkutano is m/mi class.",
+          "text": "imeahirishwa",
+          "gloss": "has been postponed",
+          "sanifu": "umeahirishwa"
         },
         {
           "text": "mpaka",
-          "gloss": "border / boundary (also: until) (plural mipaka) — Kenyans give it n/n agreement",
+          "gloss": "until / up to",
+          "sanifu": "hadi",
           "grammar": [
             "sanifu-noun-classes"
-          ],
-          "sanifu": "Sanifu: m/mi class — mpaka wa shamba"
+          ]
         },
         {
           "text": "Jumatano",
           "gloss": "Wednesday"
         }
-      ]
+      ],
+      "english": "Oh, you don't know? The meeting has been postponed to Wednesday.",
+      "speaker": "Wanjiku",
+      "swahili": "Kumbe hujui? Mkutano imeahirishwa mpaka Jumatano.",
+      "note": "In Nairobi you'll often hear \"Mkutano imeahirishwa\" instead of the standard \"Mkutano umeahirishwa\". Kenyans often give m/mi nouns like \"mkutano\" the i- verb agreement."
     },
     {
       "id": "f7fd9ff6-2f35-576f-8f28-8eaa1b21093a",
@@ -1103,7 +1103,8 @@
           "swahili": "Basi. Sasa, ni tukanywe chai?",
           "correct": false
         }
-      ]
+      ],
+      "literal": "Enough. Now, isn't it (that) we go and drink tea?"
     },
     {
       "id": "b7e09115-6b66-5b7b-8daf-14daa1eca48f",
@@ -1184,10 +1185,10 @@
   "vocabulary": [
     {
       "id": "77124e12-5cf6-583a-bea7-d75c2209939a",
-      "swahili": "Mkutano umeahirishwa",
       "english": "The meeting has been postponed",
-      "exampleContext": "ahirisha → ahirishwa (passive)",
-      "partOfSpeech": "phrase"
+      "swahili": "Mkutano imeahirishwa",
+      "partOfSpeech": "phrase",
+      "exampleContext": "ahirisha → ahirishwa (passive)"
     },
     {
       "id": "b6da93c4-0dc0-5dec-b0cc-a7fbe0d6ce4a",
@@ -1655,7 +1656,8 @@
       "explanation": "si + subjunctive; -ka- here means \"go and…\".",
       "grammar": [
         "subjunctive"
-      ]
+      ],
+      "literal": "Isn't it (that) we go and drink tea?"
     },
     {
       "id": "4e87d5af-c3cc-5597-980b-1e580d8d6969",

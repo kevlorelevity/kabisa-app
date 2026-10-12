@@ -7,7 +7,7 @@
   "level": 3,
   "order": 303,
   "theme": "routine",
-  "culturalNote": "Swahili time starts at sunrise, not midnight: 7 a.m. is \"saa moja asubuhi\" (the first hour of the morning), and 6 a.m. is \"saa kumi na mbili\" (the twelfth hour). The trick is to add or subtract six. Kenyans also talk about \"Kenyan time\" — a meeting at \"saa tatu\" may start closer to ten. Days of the week are counted from Saturday: Jumamosi (Sat), Jumapili (Sun), Jumatatu (Mon), Jumanne (Tue), Jumatano (Wed), Alhamisi (Thu), Ijumaa (Fri).",
+  "culturalNote": "Swahili time starts at sunrise, not midnight: 7 a.m. is \"saa moja asubuhi\" (the first hour of the morning), and 6 a.m. is \"saa kumi na mbili\" (the twelfth hour). The trick is to add or subtract six. Kenyans also talk about \"Kenyan time\" — a meeting at \"saa tatu\" may start closer to ten. Days of the week are counted from Saturday: Jumamosi (Sat), Jumapili (Sun), Jumatatu (Mon), Jumanne (Tue), Jumatano (Wed), Alhamisi (Thu), Ijumaa (Fri). However, most urban Kenyans have stopped using the Swahili week day names and simply say Monday, Tuesday, Wednesday, etc.",
   "startingPoint": "Tea break at the office. Your colleague Achieng wants to know how you manage to be first in every morning.",
   "grammarFocus": [
     "time-swahili",
@@ -495,6 +495,78 @@
         {
           "text": "TV",
           "gloss": "TV"
+        }
+      ]
+    },
+    {
+      "id": "af1e3191-2c53-43d4-961e-aa0541b8c620",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Na unakula chakula cha mchana saa ngapi?",
+      "english": "And what time do you eat lunch?",
+      "words": [
+        {
+          "text": "unakula",
+          "gloss": "\"You eat\" — u- + -na- + -la (kula).",
+          "grammar": [
+            "present-na"
+          ]
+        },
+        {
+          "text": "chakula cha mchana",
+          "gloss": "\"Lunch\" — lit. \"food of the afternoon\"."
+        },
+        {
+          "text": "saa ngapi",
+          "gloss": "\"What time?\" — lit. \"hour how many?\"",
+          "grammar": [
+            "time-swahili",
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Na unakula chakula cha mchana saa ngapi?",
+          "correct": true
+        },
+        {
+          "swahili": "Na unakula chakula cha mchana wapi?",
+          "correct": false
+        },
+        {
+          "swahili": "Na unapika chakula cha mchana saa ngapi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "5bf64ad6-fa27-44be-a7f3-347c93da9add",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Saa saba na robo mchana.",
+      "english": "At quarter past one in the afternoon.",
+      "words": [
+        {
+          "text": "Saa saba",
+          "gloss": "\"1 o'clock\" — the 7th hour after sunrise (6 a.m.).",
+          "grammar": [
+            "time-swahili"
+          ]
+        },
+        {
+          "text": "na robo",
+          "gloss": "\"And a quarter\" — quarter past.",
+          "grammar": [
+            "time-swahili"
+          ]
+        },
+        {
+          "text": "mchana",
+          "gloss": "\"Afternoon / midday\" — roughly 12 to 4 p.m.",
+          "grammar": [
+            "time-swahili"
+          ]
         }
       ]
     },
@@ -1296,26 +1368,27 @@
     {
       "id": "f6b80fcf-6c6c-5646-85f1-75477253445d",
       "mode": "translate",
-      "english": "Thursday",
+      "english": "Wednesday",
       "before": "",
       "after": "",
       "options": [
         {
-          "text": "Alhamisi",
+          "text": "Jumatano",
           "correct": true
         },
         {
-          "text": "Jumanne",
-          "correct": false,
-          "feedback": "Jumanne = Tuesday"
+          "text": "Jumatatu",
+          "correct": false
         },
         {
-          "text": "Ijumaa",
-          "correct": false,
-          "feedback": "Ijumaa = Friday"
+          "text": "Jumamosi",
+          "correct": false
         }
       ],
-      "explanation": "Alhamisi: Thursday"
+      "explanation": "Jumatano = Wednesday, Jumatatu = Monday, Jumamosi = Saturday.",
+      "grammar": [
+        "time-swahili"
+      ]
     },
     {
       "id": "44cdb07c-a7fa-51ec-a887-6504d4f75a0c",

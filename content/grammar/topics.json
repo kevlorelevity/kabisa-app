@@ -2158,6 +2158,7 @@
       }
     ],
     "related": [
+      "hortative-commands",
       "subjunctive",
       "polite-requests",
       "object-infixes"
@@ -3061,6 +3062,7 @@
       }
     ],
     "related": [
+      "hortative-commands",
       "polite-requests",
       "imperatives",
       "helper-verbs"
@@ -3135,11 +3137,158 @@
       }
     ],
     "related": [
+      "hortative-commands",
       "subjunctive",
       "imperatives"
     ],
     "tags": [
       "phrases"
+    ]
+  },
+  {
+    "slug": "hortative-commands",
+    "level": 7,
+    "title": "Mwambie or Umwambie? Commands, Requests and \"Let's\"",
+    "swahiliTitle": "Amri na maombi",
+    "summary": "Mwambie! (tell him!), umwambie (could you tell him), nimwambie? (shall I tell him?) and tumwambie (let's tell him) look alike. Learn them side by side.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Swahili has several ways to get something done, and they differ by one or two letters. The ending is the same (**-e**); what changes is the **front** of the word."
+      },
+      {
+        "type": "table",
+        "caption": "kuambia (to tell) + -m- (him / her)",
+        "headers": [
+          "Form",
+          "Built from",
+          "Meaning",
+          "Use it for"
+        ],
+        "rows": [
+          [
+            "Mwambie!",
+            "m- (him) + -ambi- + -e",
+            "Tell him!",
+            "A direct command to one person"
+          ],
+          [
+            "Umwambie",
+            "u- (you) + m- + -ambi- + -e",
+            "(Could you) tell him",
+            "A polite request — always after Naomba"
+          ],
+          [
+            "Mwambieni!",
+            "m- + -ambi- + -e + -ni",
+            "Tell him! (you all)",
+            "A command to several people"
+          ],
+          [
+            "Nimwambie?",
+            "ni- (I) + m- + -ambi- + -e",
+            "Shall I tell him?",
+            "Offering"
+          ],
+          [
+            "Tumwambie",
+            "tu- (we) + m- + -ambi- + -e",
+            "Let's tell him",
+            "Suggesting"
+          ],
+          [
+            "Amwambie",
+            "a- (he/she) + m- + -ambi- + -e",
+            "He/she should tell him",
+            "Passing on a request"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "**Rule 1 — a plain command keeps -a; add a person and it ends in -e.** *Weka!* (put!), *Panda!* (get in!) — but *Nipe!* (give me!), *Niletee chai!* (bring me tea!), *Mpigie!* (call him!)."
+      },
+      {
+        "type": "p",
+        "text": "**Rule 2 — put u- in front to make it polite.** *Mpigie!* (call him!) → *Naomba umpigie* (could you please call him). After **Naomba** you always need the u- form: *Naomba uweke ya elfu tatu.*"
+      },
+      {
+        "type": "table",
+        "caption": "Same pattern, other verbs",
+        "headers": [
+          "Command",
+          "Polite request",
+          "Offer / Let's"
+        ],
+        "rows": [
+          [
+            "Weka! (put)",
+            "uweke",
+            "niweke? (shall I put?)"
+          ],
+          [
+            "Mpigie! (call him)",
+            "umpigie",
+            "nimpigie? · tumpigie"
+          ],
+          [
+            "Niletee! (bring me)",
+            "uniletee",
+            "nikuletee? (shall I bring you?)"
+          ],
+          [
+            "Nipe! (give me)",
+            "unipe",
+            "nikupe? (shall I give you?)"
+          ],
+          [
+            "Niambie! (tell me)",
+            "uniambie",
+            "nikuambie? (shall I tell you?)"
+          ],
+          [
+            "Angalia! (check)",
+            "uangalie",
+            "niangalie? (shall I check?)"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "text": "Negative: add -si- and keep -e — *Usimwambie!* (don't tell him), *Tusimwambie* (let's not tell him), *Usijali* (don't worry)."
+      }
+    ],
+    "examples": [
+      {
+        "swahili": "Mpigie!",
+        "english": "Call him!"
+      },
+      {
+        "swahili": "Naomba umwambie anipigie simu.",
+        "english": "Please tell him to call me."
+      },
+      {
+        "swahili": "Nimpigie fundi?",
+        "english": "Shall I call a mechanic?"
+      },
+      {
+        "swahili": "Basi inabidi tumwambie.",
+        "english": "Then we'll have to tell him."
+      },
+      {
+        "swahili": "Nijaze tanki?",
+        "english": "Shall I fill the tank?"
+      }
+    ],
+    "related": [
+      "subjunctive",
+      "imperatives",
+      "polite-requests",
+      "object-infixes"
+    ],
+    "tags": [
+      "verbs",
+      "moods"
     ]
   },
   {

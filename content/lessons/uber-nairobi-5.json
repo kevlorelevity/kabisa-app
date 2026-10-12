@@ -102,14 +102,12 @@
           "swahili": "Kamau! Nimekuwacha kwa mataa! Nimekuwa nikikungoja kwa dakika arobaini!",
           "correct": false
         }
-      ]
+      ],
+      "literal": "Kamau! You've left me at the traffic lights! I've been waiting for you for forty minutes!"
     },
     {
       "id": "d87be8e6-b3f7-5adb-b164-51018d387d1f",
-      "speaker": "Dereva",
       "role": "auto",
-      "swahili": "Pole sana, boss! Msongamano wa magari Westlands ni mbaya. Lakini, kawia ufike, sivyo?",
-      "english": "So sorry, boss! The Westlands jam is terrible. But better late than never, right?",
       "words": [
         {
           "text": "Pole sana",
@@ -144,22 +142,22 @@
             "adjective-agreement"
           ],
           "conjugation": {
-            "verb": "-baya (bad)",
-            "tense": "Agreement",
             "rows": [
               {
-                "pronoun": "m/wa one",
-                "form": "mbaya"
+                "form": "mbaya",
+                "pronoun": "m/wa one"
               },
               {
-                "pronoun": "m/wa many",
-                "form": "wabaya"
+                "form": "wabaya",
+                "pronoun": "m/wa many"
               },
               {
-                "pronoun": "n/n",
-                "form": "mbaya"
+                "form": "mbaya",
+                "pronoun": "n/n"
               }
-            ]
+            ],
+            "verb": "-baya (bad)",
+            "tense": "Agreement"
           }
         },
         {
@@ -174,13 +172,16 @@
           ]
         },
         {
-          "text": "sivyo",
-          "gloss": "isn't it? / right? (question tag)",
+          "text": "si ndiyo",
+          "gloss": "si ndiyo = isn't it? / right? (question tag)",
           "grammar": [
             "discourse-particles"
           ]
         }
-      ]
+      ],
+      "english": "So sorry, boss! The Westlands jam is terrible. But better late than never, right?",
+      "speaker": "Dereva",
+      "swahili": "Pole sana, boss! Msongamano wa magari Westlands ni mbaya. Lakini, kawia ufike, si ndiyo?"
     },
     {
       "id": "9ba8ce9b-aee8-5ba4-8f7c-68da6daa0fec",
@@ -275,7 +276,8 @@
           "swahili": "Haha! Sawa, kawia ufike. Lakini sasa usiendeshe kwa kasi — pole pole haina baraka.",
           "correct": false
         }
-      ]
+      ],
+      "literal": "Haha! Okay, be late but arrive. But now don't drive with speed — hurry hurry has no blessing."
     },
     {
       "id": "9a7dc1a3-9139-538b-9628-67693e3f55a2",
@@ -477,7 +479,8 @@
           "swahili": "Unatia chumvi! Bado ninajifunza. Lakini mambo ni machache, muda ni mwingi.",
           "correct": false
         }
-      ]
+      ],
+      "literal": "You're adding salt! I'm still learning. But things are many, time is little."
     },
     {
       "id": "c22e6151-e4fd-5bf5-a2bd-398963feb45f",
@@ -679,7 +682,8 @@
           "swahili": "Itakuwa poa, lakini saa nne wakati ulitupa kisogo — kila mtu alikuwa amechoka.",
           "correct": false
         }
-      ]
+      ],
+      "literal": "It was cool, but at (hour) four time turned the back of its head on us — everyone was tired."
     },
     {
       "id": "c33662f6-be7d-5d51-bf72-14f7a523ebf4",
@@ -917,7 +921,8 @@
           "swahili": "Ni safari ndefu! Lakini pole pole ndio mwendo. Ningekuhitaji, nilikupigia.",
           "correct": false
         }
-      ]
+      ],
+      "literal": "It's a long journey! But slowly slowly is the pace. If I need you, I'll call you."
     },
     {
       "id": "152ca9a6-1efb-57ad-9437-ac0abc138854",
@@ -1469,7 +1474,8 @@
       "explanation": "A methali (proverb): \"delay, but arrive\". ufike = subjunctive.",
       "grammar": [
         "subjunctive"
-      ]
+      ],
+      "literal": "Be late, but arrive."
     },
     {
       "id": "7bcc18b9-d028-53f3-869d-47b43eb705dd",
@@ -1517,7 +1523,8 @@
           "feedback": "mbavu = ribs"
         }
       ],
-      "explanation": "mwendo: pace / speed"
+      "explanation": "mwendo: pace / speed",
+      "literal": "Slowly slowly is the pace."
     },
     {
       "id": "9ec8f8b3-605f-5ae7-b72b-daac814cf1f9",
@@ -1591,7 +1598,8 @@
           "feedback": "mrefu = tall / long"
         }
       ],
-      "explanation": "A favourite Kenyan saying."
+      "explanation": "A favourite Kenyan saying.",
+      "literal": "Things are many, time is little."
     },
     {
       "id": "d58266d0-9718-524e-a2d5-3ca2cede5458",
@@ -1642,7 +1650,8 @@
       "explanation": "Lit. \"give me, (so that) I give you\".",
       "grammar": [
         "subjunctive"
-      ]
+      ],
+      "literal": "Give me, I give you!"
     },
     {
       "id": "b6ffd8eb-74a4-5e77-acea-29f1cd2209ac",
@@ -1660,12 +1669,13 @@
           "correct": false
         },
         {
-          "text": "mbovu",
+          "text": "mbaya",
           "correct": false,
-          "feedback": "mbovu = rotten / broken / bad"
+          "feedback": "mbaya = rotten / broken / bad"
         }
       ],
-      "explanation": "Lit. \"the patient one eats ripe (fruit)\"."
+      "explanation": "Lit. \"the patient one eats ripe (fruit)\".",
+      "literal": "The patient one eats the ripe (fruit)."
     },
     {
       "id": "a6724a7a-6304-5508-a32b-2c84418dc5f9",

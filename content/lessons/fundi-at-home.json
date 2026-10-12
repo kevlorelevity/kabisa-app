@@ -16,6 +16,7 @@
     "object-infixes"
   ],
   "grammar": [
+    "hortative-commands",
     "subjunctive",
     "polite-requests",
     "perfect-me",
@@ -146,7 +147,7 @@
       "id": "8b8f3a23-845e-51ea-8759-2b1b4a223a85",
       "speaker": "Wewe",
       "role": "user",
-      "swahili": "Karibu. Iko kwa bafu. Bomba inavuja, na maji inatoka kwa dari.",
+      "swahili": "Karibu. Iko kwa bafu. Mfereji inavuja, na maji inatoka kwa paa.",
       "english": "Welcome. It's in the bathroom. A pipe is leaking, and water is coming out of the ceiling.",
       "words": [
         {
@@ -210,7 +211,7 @@
           "gloss": "bathroom"
         },
         {
-          "text": "Bomba",
+          "text": "Mfereji",
           "gloss": "pipe / tap"
         },
         {
@@ -285,22 +286,22 @@
           ]
         },
         {
-          "text": "dari",
+          "text": "paa",
           "gloss": "ceiling"
         }
       ],
       "sanifu": "Karibu. Iko bafuni. Bomba linavuja, na maji yanatoka darini.",
       "options": [
         {
-          "swahili": "Karibu. Iko kwa bafu. Bomba inavuja, na maji inatoka kwa dari.",
+          "swahili": "Karibu. Iko kwa bafu. Mfereji inavuja, na maji inatoka kwa paa.",
           "correct": true
         },
         {
-          "swahili": "Karibu. Iko kwa bafu. Bomba inavuja, na maji inaingia kwa dari.",
+          "swahili": "Karibu. Iko kwa bafu. Mfereji inavuja, na maji inaingia kwa paa.",
           "correct": false
         },
         {
-          "swahili": "Karibu. Iko kwa bafu. Bomba haivuji, na maji inatoka kwa dari.",
+          "swahili": "Karibu. Iko kwa bafu. Mfereji haivuji, na maji inatoka kwa paa.",
           "correct": false
         }
       ]
@@ -309,7 +310,7 @@
       "id": "d163d881-e107-50c2-aba8-f7d0ba23caa2",
       "speaker": "Fundi",
       "role": "auto",
-      "swahili": "Ebu nione. Aah, bomba imevunjika. Inabidi niibadilishe.",
+      "swahili": "Ebu nione. Aah, mfereji imevunjika. Inabidi niibadilishe.",
       "english": "Let me see. Ah, the pipe is broken. I'll have to replace it.",
       "words": [
         {
@@ -365,7 +366,7 @@
           ]
         },
         {
-          "text": "bomba",
+          "text": "mfereji",
           "gloss": "pipe / tap"
         },
         {
@@ -508,7 +509,7 @@
       "id": "14d62600-51d6-5a77-82bf-bf1843f45706",
       "speaker": "Fundi",
       "role": "auto",
-      "swahili": "Kazi ni elfu moja na mia tano, pamoja na bomba mpya.",
+      "swahili": "Kazi ni elfu moja na mia tano, pamoja na mfereji mpya.",
       "english": "The job is one thousand five hundred, including the new pipe.",
       "words": [
         {
@@ -548,7 +549,7 @@
           "gloss": "together with"
         },
         {
-          "text": "bomba",
+          "text": "mfereji",
           "gloss": "pipe / tap"
         },
         {
@@ -1082,6 +1083,7 @@
           "text": "uniambie",
           "gloss": "\"(please) tell me\" — u- + -ni- + -ambi- + -e",
           "grammar": [
+            "hortative-commands",
             "subjunctive"
           ]
         },
@@ -1089,6 +1091,7 @@
           "text": "Nikupe",
           "gloss": "\"Shall I give you\" — ni- + -ku- + -p- + -e",
           "grammar": [
+            "hortative-commands",
             "subjunctive"
           ]
         },
@@ -1269,7 +1272,7 @@
       "id": "58433aba-1c44-53df-a91b-34c325c4830f",
       "mode": "translate",
       "english": "The pipe is leaking.",
-      "before": "Bomba ",
+      "before": "Mfereji ",
       "after": ".",
       "options": [
         {
@@ -1287,7 +1290,7 @@
           "feedback": "haivuji = It is not leaking"
         }
       ],
-      "explanation": "Kenyan n/n agreement on bomba. Sanifu: bomba linavuja.",
+      "explanation": "Kenyan n/n agreement on mfereji. Sanifu: mfereji linavuja.",
       "grammar": [
         "present-na"
       ]
@@ -1296,7 +1299,7 @@
       "id": "8d4a64d0-470e-50c9-9017-362dec2a0802",
       "mode": "translate",
       "english": "The pipe is broken.",
-      "before": "Bomba ",
+      "before": "Mfereji ",
       "after": ".",
       "options": [
         {
@@ -1585,6 +1588,7 @@
       ],
       "explanation": "Nikupe = \"Shall I give you\" — ni- + -ku- + -p- + -e",
       "grammar": [
+        "hortative-commands",
         "subjunctive"
       ]
     },

@@ -7,7 +7,7 @@
   "level": 3,
   "order": 304,
   "theme": "health",
-  "culturalNote": "\"Pole!\" (sorry) is the first thing any Kenyan says when you're unwell — and they'll say it again and again. Body parts are a great example of singular and plural pairs: mkono / mikono (arm / arms), mguu / miguu (leg / legs), jicho / macho (eye / eyes). In everyday Kenyan speech \"-inauma\" (it hurts) works for every body part: kichwa inauma, tumbo inauma. Clinics are everywhere, and \"kliniki\" is the word people use.",
+  "culturalNote": "\"Pole!\" (sorry) is the first thing any Kenyan says when you're unwell — and they'll say it again and again. Body parts are a great example of singular and plural pairs: mkono / mikono (arm / arms), mguu / miguu (leg / legs), jicho / macho (eye / eyes). In everyday Kenyan speech \"-inauma\" (it hurts) works for every body part: kichwa inauma, tumbo inauma.",
   "startingPoint": "10 a.m. at the office. Achieng notices you've had your head on your desk for a while.",
   "grammarFocus": [
     "ko-location",
@@ -339,7 +339,7 @@
       "id": "17af42d8-d043-5712-b919-95312da9ce1c",
       "speaker": "John",
       "role": "user",
-      "swahili": "Labda… ninasikia baridi na joto.",
+      "swahili": "Labda… nahisi baridi na joto.",
       "english": "Maybe… I feel cold and hot.",
       "words": [
         {
@@ -347,7 +347,7 @@
           "gloss": "maybe"
         },
         {
-          "text": "ninasikia",
+          "text": "nahisi",
           "gloss": "\"I feel\" — lit. \"I hear\""
         },
         {
@@ -364,7 +364,7 @@
       ],
       "options": [
         {
-          "swahili": "Labda… ninasikia baridi na joto.",
+          "swahili": "Labda… nahisi baridi na joto.",
           "correct": true
         },
         {
@@ -372,7 +372,7 @@
           "correct": false
         },
         {
-          "swahili": "Labda… ninasikia njaa na joto.",
+          "swahili": "Labda… nahisi njaa na joto.",
           "correct": false
         }
       ]
@@ -482,6 +482,99 @@
         },
         {
           "swahili": "Ndiyo, mwili yangu yote inacheza.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "a838aa6c-903b-46bd-b493-10028ccc2821",
+      "speaker": "Achieng",
+      "role": "auto",
+      "swahili": "Pole sana. Na mikono na miguu?",
+      "english": "So sorry. And your arms and legs?",
+      "words": [
+        {
+          "text": "Pole sana",
+          "gloss": "\"So sorry\" — sympathy."
+        },
+        {
+          "text": "mikono",
+          "gloss": "\"Arms / hands\" — plural of mkono.",
+          "grammar": [
+            "sanifu-noun-classes"
+          ]
+        },
+        {
+          "text": "miguu",
+          "gloss": "\"Legs / feet\" — plural of mguu.",
+          "grammar": [
+            "sanifu-noun-classes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bd172628-4304-4881-beb6-a2b0eeb3564a",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Mikono iko sawa, lakini miguu inauma, na macho pia.",
+      "english": "My arms are fine, but my legs hurt, and my eyes too.",
+      "words": [
+        {
+          "text": "Mikono",
+          "gloss": "\"Arms / hands\" (one: mkono).",
+          "grammar": [
+            "sanifu-noun-classes"
+          ]
+        },
+        {
+          "text": "iko sawa",
+          "gloss": "\"Is fine\" — Kenyans give body parts the n/n i- agreement: mikono iko sawa.",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "lakini",
+          "gloss": "\"But.\""
+        },
+        {
+          "text": "miguu",
+          "gloss": "\"Legs / feet\" (one: mguu).",
+          "grammar": [
+            "sanifu-noun-classes"
+          ]
+        },
+        {
+          "text": "inauma",
+          "gloss": "\"Hurt(s)\" — i- + -na- + -uma.",
+          "grammar": [
+            "present-na"
+          ]
+        },
+        {
+          "text": "macho",
+          "gloss": "\"Eyes\" (one: jicho).",
+          "grammar": [
+            "sanifu-noun-classes"
+          ]
+        },
+        {
+          "text": "pia",
+          "gloss": "\"Too / also.\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Mikono iko sawa, lakini miguu inauma, na macho pia.",
+          "correct": true
+        },
+        {
+          "swahili": "Mikono inauma, lakini miguu iko sawa, na macho pia.",
+          "correct": false
+        },
+        {
+          "swahili": "Mikono iko sawa, lakini kichwa inauma, na tumbo pia.",
           "correct": false
         }
       ]
@@ -919,7 +1012,7 @@
     },
     {
       "id": "97638b6b-4dcc-581d-8f94-06cbb6f5edce",
-      "swahili": "Ninasikia baridi",
+      "swahili": "Nahisi baridi",
       "english": "I feel cold",
       "exampleContext": "-sikia = hear, feel",
       "partOfSpeech": "phrase"
@@ -1140,12 +1233,15 @@
     {
       "id": "c64e050e-9e6e-5708-aaf9-baff915310d5",
       "mode": "translate",
-      "english": "She's sick.",
-      "before": "",
       "after": " mgonjwa.",
+      "before": "",
+      "english": "She's sick.",
+      "grammar": [
+        "ko-location"
+      ],
       "options": [
         {
-          "text": "Yuko",
+          "text": "Ako",
           "correct": true
         },
         {
@@ -1159,10 +1255,7 @@
           "feedback": "Wako = They are (at / doing)"
         }
       ],
-      "explanation": "Yuko = \"He/she is (at / doing)\" — yu- + -ko (be at a place, or how you're doing). \"Yuko poa\" = he/she is fine.",
-      "grammar": [
-        "ko-location"
-      ]
+      "explanation": "Ako = \"He/she is (at / doing)\" — yu- + -ko (be at a place, or how you're doing). \"Ako poa\" = he/she is fine."
     },
     {
       "id": "b872f6ba-23d0-5a85-8d6f-447a967b194d",
@@ -1222,7 +1315,7 @@
       "after": " baridi.",
       "options": [
         {
-          "text": "Ninasikia",
+          "text": "Nahisi",
           "correct": true
         },
         {
@@ -1236,7 +1329,7 @@
           "feedback": "Ninaenda = I am going"
         }
       ],
-      "explanation": "Ninasikia baridi = I feel cold (lit. \"I hear cold\")."
+      "explanation": "Nahisi baridi = I feel cold (lit. \"I hear cold\")."
     },
     {
       "id": "c9de530a-0f80-5abc-9520-728ac1a2e385",

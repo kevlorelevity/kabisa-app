@@ -220,8 +220,8 @@
       "id": "e4bb928f-4572-5b71-8773-f75c38c9f52a",
       "speaker": "Mzee Kipchoge",
       "role": "auto",
-      "swahili": "Ni kweli. Watu walikuwa wakilala nje kwa sababu nyumba zao zimejaa maji.",
-      "english": "It's true. People were sleeping outside because their houses are full of water.",
+      "swahili": "Ni kweli. Kwa sababu ya mafuriko, watu walikuwa wakilala nje — nyumba zao zimejaa maji.",
+      "english": "It's true. Because of the floods, people were sleeping outside — their houses are full of water.",
       "words": [
         {
           "text": "Ni kweli",
@@ -231,7 +231,18 @@
           ]
         },
         {
-          "text": "Watu",
+          "text": "Kwa sababu ya",
+          "gloss": "\"Because of.\"",
+          "grammar": [
+            "conjunctions-kwamba"
+          ]
+        },
+        {
+          "text": "mafuriko",
+          "gloss": "\"Floods.\""
+        },
+        {
+          "text": "watu",
           "gloss": "people — m/wa noun (people & animals)",
           "grammar": [
             "noun-classes-mwa-nn"
@@ -286,13 +297,6 @@
         {
           "text": "nje",
           "gloss": "outside"
-        },
-        {
-          "text": "kwa sababu",
-          "gloss": "because",
-          "grammar": [
-            "conjunctions-kwamba"
-          ]
         },
         {
           "text": "nyumba",
@@ -672,18 +676,15 @@
     },
     {
       "id": "3179ee0e-9ba6-5ca7-83e5-daa69af31cc1",
-      "speaker": "John",
       "role": "user",
-      "swahili": "Inasikitisha. Nadhani kwamba bei ya chakula itapanda pia.",
-      "english": "That's sad. I think food prices will go up too.",
       "words": [
         {
           "text": "Inasikitisha",
           "gloss": "\"it's sad\" (lit. \"it saddens\")"
         },
         {
-          "text": "Nadhani",
-          "gloss": "\"I think\""
+          "text": "Nafikiri",
+          "gloss": "\"I think\" — na- (I, present) + -fikiri (think). From kufikiri."
         },
         {
           "text": "kwamba",
@@ -709,10 +710,10 @@
         {
           "text": "chakula",
           "gloss": "food (plural vyakula) — Kenyans give it n/n agreement",
+          "sanifu": "Sanifu: ki/vi class — chakula changu, chakula hiki",
           "grammar": [
             "sanifu-noun-classes"
-          ],
-          "sanifu": "Sanifu: ki/vi class — chakula changu, chakula hiki"
+          ]
         },
         {
           "text": "itapanda",
@@ -721,42 +722,42 @@
             "future-ta"
           ],
           "conjugation": {
-            "verb": "kupanda (to climb)",
-            "tense": "Future (-ta-)",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "nitapanda"
+                "form": "nitapanda",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "utapanda"
+                "form": "utapanda",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "atapanda"
+                "form": "atapanda",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tutapanda"
+                "form": "tutapanda",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mtapanda"
+                "form": "mtapanda",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "watapanda"
+                "form": "watapanda",
+                "pronoun": "they"
               },
               {
-                "pronoun": "it (n/n)",
-                "form": "itapanda"
+                "form": "itapanda",
+                "pronoun": "it (n/n)"
               },
               {
-                "pronoun": "they (n/n)",
-                "form": "zitapanda"
+                "form": "zitapanda",
+                "pronoun": "they (n/n)"
               }
-            ]
+            ],
+            "verb": "kupanda (to climb)",
+            "tense": "Future (-ta-)"
           }
         },
         {
@@ -764,20 +765,23 @@
           "gloss": "also / too"
         }
       ],
+      "english": "That's sad. I think food prices will go up too.",
       "options": [
         {
-          "swahili": "Inasikitisha. Nadhani kwamba bei ya chakula itapanda pia.",
-          "correct": true
+          "correct": true,
+          "swahili": "Inasikitisha. Nafikiri kwamba bei ya chakula itapanda pia."
         },
         {
-          "swahili": "Inafurahisha. Nadhani kwamba bei ya chakula itapanda pia.",
-          "correct": false
+          "correct": false,
+          "swahili": "Inafurahisha. Nafikiri kwamba bei ya chakula itapanda pia."
         },
         {
-          "swahili": "Inasikitisha. Nadhani kwamba bei ya chakula ilipanda kesho pia.",
-          "correct": false
+          "correct": false,
+          "swahili": "Inasikitisha. Nafikiri kwamba bei ya chakula ilipanda kesho pia."
         }
-      ]
+      ],
+      "speaker": "John",
+      "swahili": "Inasikitisha. Nafikiri kwamba bei ya chakula itapanda pia."
     },
     {
       "id": "192f32a0-7c3c-5d2c-8d80-8c2f9e70ddb5",
@@ -1224,7 +1228,8 @@
           "swahili": "Nitakuja Jumapili. Nitachangia jinsi unavyoweza.",
           "correct": false
         }
-      ]
+      ],
+      "literal": "I will come on Sunday. I will contribute the way I am able."
     },
     {
       "id": "5e3bb69a-e1c0-5c91-b80c-00a41638a1bb",
@@ -1370,10 +1375,10 @@
     },
     {
       "id": "63b4508a-4461-5a67-9667-658af4fda1a8",
-      "swahili": "Nadhani kwamba…",
       "english": "I think that…",
-      "exampleContext": "",
-      "partOfSpeech": "phrase"
+      "swahili": "Nafikiri kwamba…",
+      "partOfSpeech": "phrase",
+      "exampleContext": ""
     },
     {
       "id": "967e0c75-1c11-5a1e-9d8d-d019259493b0",
@@ -1535,9 +1540,12 @@
     {
       "id": "ee3ebc97-25e2-54b1-a69b-ad001cb27298",
       "mode": "translate",
-      "english": "I think that food prices will go up.",
-      "before": "Nadhani kwamba bei ya chakula ",
       "after": ".",
+      "before": "Nafikiri kwamba bei ya chakula ",
+      "english": "I think that food prices will go up.",
+      "grammar": [
+        "future-ta"
+      ],
       "options": [
         {
           "text": "itapanda",
@@ -1554,10 +1562,7 @@
           "feedback": "imepanda = It has climbed"
         }
       ],
-      "explanation": "itapanda = \"It will climb\" — i- (subject: it (n/n)) + ta- (future) + -panda (climb). From kupanda.",
-      "grammar": [
-        "future-ta"
-      ]
+      "explanation": "itapanda = \"It will climb\" — i- (subject: it (n/n)) + ta- (future) + -panda (climb). From kupanda."
     },
     {
       "id": "759692de-6a60-531c-8ce9-288e153e4345",
@@ -1612,7 +1617,8 @@
       "grammar": [
         "ki-po-ka",
         "helper-verbs"
-      ]
+      ],
+      "literal": "the way I am able"
     },
     {
       "id": "ab51255d-814c-5f7f-87d7-f9fcf8de07ba",
@@ -1789,7 +1795,8 @@
       "grammar": [
         "ki-po-ka",
         "helper-verbs"
-      ]
+      ],
+      "literal": "Everyone will contribute as much as they are able."
     },
     {
       "id": "68118bd5-abad-50ea-9276-97fdfe413de6",
@@ -1808,9 +1815,9 @@
           "feedback": "nitasikia = I will hear"
         },
         {
-          "text": "ninasikia",
+          "text": "nahisi",
           "correct": false,
-          "feedback": "ninasikia = I hear"
+          "feedback": "nahisi = I hear"
         }
       ],
       "explanation": "nimesikia = \"I have heard\" — ni- (subject: I) + me- (perfect (done / now-state)) + -sikia (hear). From kusikia.",

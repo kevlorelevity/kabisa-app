@@ -32,8 +32,8 @@
       "id": "bb99dbd0-8e95-5e65-b3e2-8b4672f5d1ef",
       "speaker": "Mama Njeri",
       "role": "auto",
-      "swahili": "Habari ya asubuhi, John! Leo ni baridi sana!",
-      "english": "Good morning, John! It's very cold today!",
+      "swahili": "Habari ya asubuhi, John! Hali ya hewa leo ni baridi sana!",
+      "english": "Good morning, John! The weather today is very cold!",
       "words": [
         {
           "text": "Habari ya asubuhi",
@@ -47,7 +47,11 @@
           "gloss": "John (name)"
         },
         {
-          "text": "Leo",
+          "text": "Hali ya hewa",
+          "gloss": "\"The weather\" — lit. \"the state of the air\"."
+        },
+        {
+          "text": "leo",
           "gloss": "today — n/n noun (same word for one & many)",
           "grammar": [
             "noun-classes-mwa-nn"
@@ -634,8 +638,8 @@
       "id": "601fbe3e-b0c7-5dc8-baa4-51f06147e83e",
       "speaker": "Mama Njeri",
       "role": "auto",
-      "swahili": "Ni vizuri. Upepo pia ni mkali leo.",
-      "english": "Good. The wind is strong today too.",
+      "swahili": "Ni vizuri. Upepo pia ni mkali leo, na hakuna jua.",
+      "english": "Good. The wind is strong today too, and there's no sun.",
       "words": [
         {
           "text": "Ni",
@@ -673,6 +677,14 @@
           "grammar": [
             "noun-classes-mwa-nn"
           ]
+        },
+        {
+          "text": "hakuna",
+          "gloss": "\"There isn't / there's no.\""
+        },
+        {
+          "text": "jua",
+          "gloss": "\"Sun\" — Jua ni kali = the sun is strong."
         }
       ]
     },

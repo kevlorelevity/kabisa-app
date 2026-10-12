@@ -132,7 +132,8 @@
                 "form": "wamepotea"
               }
             ]
-          }
+          },
+          "note": "Kenyans say this jokingly when they haven't seen someone for a long time.  As if that person literally got lost somewhere."
         }
       ]
     },
@@ -1095,21 +1096,17 @@
     },
     {
       "id": "058f5a7d-7034-5057-9c4b-c136c2c207e4",
-      "speaker": "Mteja",
       "role": "user",
-      "swahili": "Asante! Nikija wiki ijayo, utaniwekea maembe zenye sukari zaidi?",
-      "english": "Thanks! If I come next week, will you keep me the sweetest mangoes?",
       "words": [
         {
           "text": "Asante",
           "gloss": "thank you"
         },
         {
-          "text": "Nikija",
-          "gloss": "\"If/when I come\" — ni- (subject: I) + ki- (if / when · or \"-ing\" after kuwa) + -ja (come). From kuja. After a past kuwa (nilikuwa …) the -ki- form means \"…-ing\".",
-          "grammar": [
-            "ki-po-ka"
-          ]
+          "note": "With short verbs like \"kuja\" (come), Kenyans usually keep the ku- after -ki-: \"Nikikuja\" (if I come). The standard form drops it: \"Nikija\".",
+          "text": "Nikikuja",
+          "gloss": "If I come (ni- I + -ki- if + kuja)",
+          "sanifu": "Nikija"
         },
         {
           "text": "wiki ijayo",
@@ -1117,41 +1114,41 @@
         },
         {
           "text": "utaniwekea",
-          "gloss": "\"You will keep (something) for me\" — u- (subject: you) + ta- (future) + ni- (object: me) + -wekea (keep (something) for). From kuwekea. Extension: prepositional (-ia/-ea: \"for / to / at\").",
+          "gloss": "you will keep (it) for me (u- you + -ta- future + -ni- me + -wekea keep for)",
           "grammar": [
             "future-ta",
             "object-infixes",
             "verb-extensions"
           ],
           "conjugation": {
-            "verb": "kuwekea (to keep (something) for)",
-            "tense": "Future (-ta-) + object -ni-",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "nitaniwekea"
+                "form": "nitaniwekea",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "utaniwekea"
+                "form": "utaniwekea",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "ataniwekea"
+                "form": "ataniwekea",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tutaniwekea"
+                "form": "tutaniwekea",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mtaniwekea"
+                "form": "mtaniwekea",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wataniwekea"
+                "form": "wataniwekea",
+                "pronoun": "they"
               }
-            ]
+            ],
+            "verb": "kuwekea (to keep (something) for)",
+            "tense": "Future (-ta-) + object -ni-"
           }
         },
         {
@@ -1160,11 +1157,12 @@
         },
         {
           "text": "zenye",
-          "gloss": "with / having — n/n plural: maembe zenye sukari (Sanifu: maembe yenye)."
+          "gloss": "with / having (n/n plural)",
+          "sanifu": "yenye"
         },
         {
           "text": "sukari",
-          "gloss": "sugar — n/n noun (same word for one & many)",
+          "gloss": "sugar",
           "grammar": [
             "noun-classes-mwa-nn"
           ]
@@ -1174,21 +1172,25 @@
           "gloss": "more"
         }
       ],
+      "sanifu": "Asante! Nikija wiki ijayo, utaniwekea maembe yenye sukari zaidi?",
+      "english": "Thanks! If I come next week, will you keep me the sweetest mangoes?",
       "options": [
         {
-          "swahili": "Asante! Nikija wiki ijayo, utaniwekea maembe zenye sukari zaidi?",
-          "correct": true
+          "correct": true,
+          "swahili": "Asante! Nikikuja wiki ijayo, utaniwekea maembe zenye sukari zaidi?"
         },
         {
-          "swahili": "Asante! Nilikuja wiki ijayo, utaniwekea maembe zenye sukari zaidi?",
-          "correct": false
+          "correct": false,
+          "swahili": "Asante! Nilikuja wiki ijayo, utaniwekea maembe zenye sukari zaidi?"
         },
         {
-          "swahili": "Asante! Nikija wiki ijayo, nitakuwekea maembe zenye sukari zaidi?",
-          "correct": false
+          "correct": false,
+          "swahili": "Asante! Nikija wiki ijayo, nitakuwekea maembe zenye sukari zaidi?"
         }
       ],
-      "sanifu": "Asante! Nikija wiki ijayo, utaniwekea maembe yenye sukari zaidi?"
+      "speaker": "Mteja",
+      "swahili": "Asante! Nikikuja wiki ijayo, utaniwekea maembe zenye sukari zaidi?",
+      "literal": "Thanks! If I come next week, will you keep for me mangoes having more sugar?"
     },
     {
       "id": "2f6d4f43-9c5c-5c74-9c23-6c15790280a7",
@@ -1514,8 +1516,8 @@
     {
       "id": "aa57e86d-3a00-5df1-87c6-4d0f54216855",
       "mode": "translate",
-      "english": "the tomatoes which I bought",
-      "before": "nyanya ",
+      "english": "the bananas which I bought",
+      "before": "ndizi ",
       "after": " nilinunua",
       "options": [
         {
@@ -1524,16 +1526,14 @@
         },
         {
           "text": "ambaye",
-          "correct": false,
-          "feedback": "ambaye = who"
+          "correct": false
         },
         {
           "text": "ambao",
-          "correct": false,
-          "feedback": "ambao = who"
+          "correct": false
         }
       ],
-      "explanation": "ambazo = which (n/n plural).",
+      "explanation": "ambazo = which (n/n plural). ambaye = who (one person), ambao = who (several people).",
       "grammar": [
         "relatives"
       ]
@@ -1648,12 +1648,15 @@
     {
       "id": "d9243aa4-8df4-5d59-b543-8d7707f87d46",
       "mode": "translate",
-      "english": "If I come next week…",
-      "before": "",
       "after": " wiki ijayo…",
+      "before": "",
+      "english": "If I come next week…",
+      "grammar": [
+        "ki-po-ka"
+      ],
       "options": [
         {
-          "text": "Nikija",
+          "text": "Nikikuja",
           "correct": true
         },
         {
@@ -1667,10 +1670,7 @@
           "feedback": "Ningekuja = I would come"
         }
       ],
-      "explanation": "ni- + -ki- + kuja (kuja keeps ku-).",
-      "grammar": [
-        "ki-po-ka"
-      ]
+      "explanation": "ni- + -ki- + kuja (kuja keeps ku-)."
     },
     {
       "id": "061c2a94-a0f1-5756-a1c7-5323d954a9b8",
@@ -1724,7 +1724,8 @@
       "explanation": "-enye = having / with. For things, Kenyans use the n/n forms: yenye (one), zenye (several). Sanifu: maembe yenye.",
       "grammar": [
         "relatives"
-      ]
+      ],
+      "literal": "mangoes having more sugar"
     },
     {
       "id": "e31712c3-0d7e-5081-a7d2-1c20a4b09cf0",
@@ -1766,12 +1767,12 @@
           "feedback": "mbichi = unripe / raw (n/n)"
         },
         {
-          "text": "mbovu",
+          "text": "mbaya",
           "correct": false,
-          "feedback": "mbovu = rotten / broken / bad"
+          "feedback": "mbaya = rotten / broken / bad"
         }
       ],
-      "explanation": "zilizoiva = ripe (have ripened); mbichi = unripe / raw; mbovu = rotten.",
+      "explanation": "zilizoiva = ripe (have ripened); mbichi = unripe / raw; mbaya = rotten.",
       "grammar": [
         "relatives"
       ]

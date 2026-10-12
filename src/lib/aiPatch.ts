@@ -52,6 +52,7 @@ export const turnSchema = {
     english: str,
     sanifu: str,
     note: str,
+    literal: str,
     options: {
       type: 'array',
       items: {
@@ -85,6 +86,7 @@ export const practiceSchema = {
       },
     },
     explanation: str,
+    literal: str,
   },
   required: ['mode', 'english', 'before', 'after', 'options', 'explanation'],
   additionalProperties: false,
@@ -131,7 +133,9 @@ House rules — follow all of them:
 8. Always return the complete item: for a learner turn that means all 3 "options" even if you didn't change them. Keep the "id" of every item you keep. Omit "id" for new items. Change only what the instruction asks for; keep everything else exactly as it is.
 9. Natural, everyday sentences beat grammatically loaded ones. Keep lines short.
 10. Notes: besides Sanifu, a word, a line or a flashcard can carry a "note" — a short learner-facing remark (1–2 sentences) on other meanings, how Kenyans actually use it, register (polite / street / Sheng), or a common mix-up. Add or change a note only when the instruction asks for one or it clearly helps; write it in English, quoting Swahili in its Kenyan form. To remove a note or Sanifu, return an empty string for it.
-11. "summary": one short sentence saying what you changed.`;
+11. Vocabulary and practice come from the conversation: key vocabulary, flashcards and practice items may only use words that appear in the lesson's conversation (other persons, tenses and the singular / plural of its words are fine). If a word is important enough to teach, add or extend lines of the conversation so it appears there first — never introduce it only in the vocabulary or the practice.
+12. English is word-for-word where natural English allows, because learners type the Swahili from it. When a learner line or a translate practice item can't be 1:1 (idioms, slang, proverbs), give the natural meaning in "english" and the word-for-word version in "literal"; otherwise leave "literal" out.
+13. "summary": one short sentence saying what you changed.`;
 
 export function buildPrompt(args: {
   scope: AiScope;
@@ -258,6 +262,13 @@ function normTurn(
   if (sanifu && sanifu !== swahili) turn.sanifu = sanifu;
   const note = s(raw.note);
   if (note) turn.note = note;
+  // "literal" (word-for-word English) and the admin-chosen typed word belong to the line:
+  // an AI rewrite may set a new literal; otherwise both survive while the line is unchanged.
+  const lineKept = (regloss && before) || (old && s(old.swahili) === swahili) ? (before ?? old) : undefined;
+  const literal = typeof raw.literal === 'string' ? s(raw.literal) : lineKept ? s(lineKept.literal) : '';
+  if (literal && literal !== english) turn.literal = literal;
+  const typeWord = lineKept ? s(lineKept.typeWord) : '';
+  if (typeWord && swahili.includes(typeWord)) turn.typeWord = typeWord;
   if (role === 'user') {
     const wrong = (Array.isArray(raw.options) ? (raw.options as Obj[]) : [])
       .map((o) => s(o.swahili))
@@ -316,6 +327,9 @@ function normPractice(raw: Obj, prev: Map<string, Obj>, known: Set<string>, used
   };
   const old = prev.get(id);
   if (old && Array.isArray(old.grammar)) item.grammar = old.grammar;
+  const literal = typeof raw.literal === 'string' ? s(raw.literal) : old && s(old.english) === english ? s(old.literal) : '';
+  if (literal && literal !== english) item.literal = literal;
+  if (old && s(old.note)) item.note = old.note;
   return item;
 }
 

@@ -10,12 +10,14 @@
   "culturalNote": "Breaking down is a shared Kenyan experience — strangers stop, someone knows a mechanic (fundi), and a tow truck appears faster than you'd expect. Kenyans treat gari (car) as n/n: \"gari yangu imeharibika\" (my car has broken down), where Sanifu says \"gari langu limeharibika\". The subjunctive shows up whenever you ask, suggest or arrange: \"nimpigie fundi?\" (shall I call a mechanic?), \"tungoje hapa\" (let's wait here).",
   "startingPoint": "Your car stalls on the shoulder of Mombasa Road. A passing motorist, Mwangi, pulls over.",
   "grammarFocus": [
+    "hortative-commands",
     "subjunctive",
     "polite-requests",
     "perfect-me",
     "helper-verbs"
   ],
   "grammar": [
+    "hortative-commands",
     "subjunctive",
     "polite-requests",
     "perfect-me",
@@ -333,6 +335,7 @@
           "text": "Nimpigie",
           "gloss": "\"Shall I call him?\" — ni- + -m- (him) + -pigi- + -e",
           "grammar": [
+            "hortative-commands",
             "subjunctive"
           ]
         },
@@ -401,6 +404,7 @@
           "text": "Mpigie",
           "gloss": "\"Call him/her!\" — m- (object: him/her) + -pigie (call, subjunctive -e: polite command). From kupigia. Extension: prepositional (-ia/-ea: \"for / to / at\").",
           "grammar": [
+            "hortative-commands",
             "imperatives",
             "object-infixes",
             "verb-extensions"
@@ -583,7 +587,7 @@
       "id": "1ef3ee94-2c12-57c7-929a-7f6aff4196d4",
       "speaker": "Wewe",
       "role": "user",
-      "swahili": "Thelathini? Tungoje hapa, au twende kwenye kivuli?",
+      "swahili": "Thelathini? Tungoje hapa, ama twende kwenye kivuli?",
       "english": "Thirty? Should we wait here, or go into the shade?",
       "words": [
         {
@@ -597,6 +601,7 @@
           "text": "Tungoje",
           "gloss": "\"Let's wait\" — tu- + -ngoj- + -e (the final -a becomes -e)",
           "grammar": [
+            "hortative-commands",
             "subjunctive"
           ]
         },
@@ -605,7 +610,7 @@
           "gloss": "here"
         },
         {
-          "text": "au",
+          "text": "ama",
           "gloss": "or"
         },
         {
@@ -659,15 +664,15 @@
       ],
       "options": [
         {
-          "swahili": "Thelathini? Tungoje hapa, au twende kwenye kivuli?",
+          "swahili": "Thelathini? Tungoje hapa, ama twende kwenye kivuli?",
           "correct": true
         },
         {
-          "swahili": "Thelathini? Tunangoja hapa, au twende kwenye kivuli?",
+          "swahili": "Thelathini? Tunangoja hapa, ama twende kwenye kivuli?",
           "correct": false
         },
         {
-          "swahili": "Thelathini? Tungoje hapa, au tuende kwenye maji?",
+          "swahili": "Thelathini? Tungoje hapa, ama tuende kwenye maji?",
           "correct": false
         }
       ]
@@ -917,6 +922,7 @@
           "text": "tumwambie",
           "gloss": "\"Let's tell him/her\" — tu- (subject: we) + mw- (object: him/her) + -ambie (tell, subjunctive -e). From kuambia.",
           "grammar": [
+            "hortative-commands",
             "subjunctive",
             "object-infixes"
           ],
@@ -1031,6 +1037,7 @@
           "text": "umwambie",
           "gloss": "\"(please) tell him/her\" — u- (subject: you) + mw- (object: him/her) + -ambie (tell, subjunctive -e). From kuambia.",
           "grammar": [
+            "hortative-commands",
             "subjunctive",
             "object-infixes"
           ],
@@ -1069,6 +1076,7 @@
           "text": "anipigie",
           "gloss": "\"He/she should call me\" — a- (subject: he/she) + ni- (object: me) + -pigie (call, subjunctive -e). From kupigia. Extension: prepositional (-ia/-ea: \"for / to / at\").",
           "grammar": [
+            "hortative-commands",
             "subjunctive",
             "object-infixes",
             "verb-extensions"
@@ -1261,7 +1269,8 @@
           "swahili": "Unanishukuru sana kwa kunisaidia. Nikulipe kitu?",
           "correct": false
         }
-      ]
+      ],
+      "literal": "I thank you very much for helping me. Shall I pay you something?"
     },
     {
       "id": "01130613-c485-5f85-ba41-0bc6dc14d477",
@@ -1488,6 +1497,7 @@
       ],
       "explanation": "ni- (I) + -m- (him) + -pigi- + -e.",
       "grammar": [
+        "hortative-commands",
         "subjunctive"
       ]
     },
@@ -1515,6 +1525,7 @@
       ],
       "explanation": "m- (him/her) + -pigie: call him/her.",
       "grammar": [
+        "hortative-commands",
         "imperatives",
         "object-infixes",
         "verb-extensions"
@@ -1681,9 +1692,11 @@
       ],
       "explanation": "inabidi + subjunctive: tu- + -mw- + -ambi- + -e.",
       "grammar": [
+        "hortative-commands",
         "subjunctive",
         "object-infixes"
-      ]
+      ],
+      "literal": "It's necessary that we tell him."
     },
     {
       "id": "1ac9b2c2-eff1-5a2d-b8a3-7e7f6438e17e",
@@ -1709,6 +1722,7 @@
       ],
       "explanation": "Second verb in subjunctive: a- + -ni- + -pigi- + -e = (that) he call me.",
       "grammar": [
+        "hortative-commands",
         "subjunctive",
         "object-infixes",
         "verb-extensions"
@@ -1738,6 +1752,7 @@
       ],
       "explanation": "u- (you) + -mw- (him) + -ambi- + -e.",
       "grammar": [
+        "hortative-commands",
         "subjunctive",
         "object-infixes"
       ]
@@ -1794,7 +1809,8 @@
       "grammar": [
         "subjunctive",
         "object-infixes"
-      ]
+      ],
+      "literal": "Shall I pay you something?"
     },
     {
       "id": "c0e32b23-f9c2-5e1b-849d-47d081ec8e65",
@@ -1905,5 +1921,11 @@
         "noun-classes-mwa-nn"
       ]
     }
-  ]
+  ],
+  "primer": {
+    "text": "You'll hear four look-alike forms here. Mpigie! = call him! (a command) · umwambie = (could you) tell him (polite, after Naomba) · tumwambie = let's tell him · nimpigie? = shall I call him? See them side by side before you start.",
+    "grammar": [
+      "hortative-commands"
+    ]
+  }
 }

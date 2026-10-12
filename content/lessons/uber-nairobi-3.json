@@ -520,7 +520,8 @@
           "swahili": "Pole sana. Leo kuna magari machache sana!",
           "correct": false
         }
-      ]
+      ],
+      "literal": "Very sorry. Today there are very many cars!"
     },
     {
       "id": "37e44b24-28bc-505d-add4-ace02f2a198e",
@@ -968,7 +969,8 @@
           "text": "Lavington",
           "gloss": "Lavington — leafy Nairobi suburb with back roads"
         }
-      ]
+      ],
+      "note": "Most Nairobians would use the English word \"shortcut\" though."
     },
     {
       "id": "288bd589-4f4f-5303-8166-6379f5c1ae37",
@@ -1092,7 +1094,8 @@
           "swahili": "Poa! Jana nilikupigia simu, lakini sikuchukua.",
           "correct": false
         }
-      ]
+      ],
+      "literal": "Cool! Yesterday I called you, but you didn't take (it)."
     },
     {
       "id": "9b323580-0fea-5063-b19e-36b1216a0ab9",
@@ -1718,7 +1721,8 @@
       "explanation": "hu- (not you) + -ku- (past) + -chukua.",
       "grammar": [
         "negative-past"
-      ]
+      ],
+      "literal": "You didn't take (it)."
     },
     {
       "id": "480e9c76-1d24-5e9f-837d-f6815377f634",
@@ -1969,7 +1973,8 @@
       "explanation": "kasoro = minus: 8 o'clock (saa mbili) minus five minutes.",
       "grammar": [
         "time-swahili"
-      ]
+      ],
+      "literal": "Hour two minus five minutes."
     }
   ]
 }

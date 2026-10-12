@@ -40,22 +40,15 @@
   "turns": [
     {
       "id": "d982c02f-289b-5fed-b4c3-f78c12c8558a",
-      "speaker": "Muuzaji",
       "role": "auto",
-      "swahili": "Karibu, sister! Angalia vikapu hivi. Ni vizuri sana.",
-      "english": "Welcome, sister! Look at these baskets. They're very good.",
       "words": [
         {
           "text": "Karibu",
-          "gloss": "near / welcome / almost"
-        },
-        {
-          "text": "sister",
-          "gloss": "sister — sellers' friendly English address for a woman"
+          "gloss": "Welcome!"
         },
         {
           "text": "Angalia",
-          "gloss": "\"Look at!\" — -angalia (look at). From kuangalia.",
+          "gloss": "Look at! (command, from kuangalia)",
           "grammar": [
             "imperatives"
           ]
@@ -65,29 +58,33 @@
           "gloss": "baskets (plural of kikapu)"
         },
         {
+          "note": "This is the textbook agreement for vikapu; in Nairobi you'll also hear the n/n form \"vikapu hizi\".",
           "text": "hivi",
-          "gloss": "like this / about (with numbers)",
+          "gloss": "these (agrees with vikapu)",
           "grammar": [
             "discourse-particles"
           ]
         },
         {
           "text": "Ni",
-          "gloss": "is / am / are",
+          "gloss": "they are / it is",
           "grammar": [
             "ni-copula"
           ]
         },
         {
+          "note": "On its own \"vizuri\" also means \"well / fine\", as in \"Niko vizuri\".",
           "text": "vizuri",
-          "gloss": "well / nicely"
+          "gloss": "good (agrees with vikapu)"
         },
         {
           "text": "sana",
           "gloss": "very / a lot"
         }
       ],
-      "sanifu": "Karibu, dada! Angalia vikapu hivi. Ni vizuri sana."
+      "english": "Welcome! Look at these baskets. They're very good.",
+      "speaker": "Muuzaji",
+      "swahili": "Karibu! Angalia vikapu hivi. Ni vizuri sana."
     },
     {
       "id": "ddfd5cc6-e033-5c34-accd-101d3d9d0610",
@@ -312,7 +309,8 @@
           "swahili": "Asante! Elfu mbili? Hiyo ni bei ya mzungu!",
           "correct": false
         }
-      ]
+      ],
+      "literal": "Wow! Two thousand? That's the white person's price!"
     },
     {
       "id": "114b8c80-c222-577d-9d0a-ac91e0f11331",
@@ -670,102 +668,98 @@
     },
     {
       "id": "e9c27682-20d1-5748-b7d9-4ace594247b7",
-      "speaker": "Mteja",
       "role": "user",
-      "swahili": "Sawa. Na kama nitanunua vikapu viwili?",
-      "english": "Okay. And if I buy two baskets?",
       "words": [
         {
           "text": "Sawa",
-          "gloss": "okay / alright (lit. \"equal\")"
+          "gloss": "okay / alright"
         },
         {
           "text": "Na",
-          "gloss": "and / with"
+          "gloss": "and"
         },
         {
           "text": "kama",
-          "gloss": "like / as / if"
+          "gloss": "if"
         },
         {
           "text": "nitanunua",
-          "gloss": "\"I will buy\" — ni- (subject: I) + ta- (future) + -nunua (buy). From kununua.",
+          "gloss": "I will buy (ni- + -ta- + nunua)",
           "grammar": [
             "future-ta"
           ],
           "conjugation": {
-            "verb": "kununua (to buy)",
-            "tense": "Future (-ta-)",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "nitanunua"
+                "form": "nitanunua",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "utanunua"
+                "form": "utanunua",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "atanunua"
+                "form": "atanunua",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tutanunua"
+                "form": "tutanunua",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mtanunua"
+                "form": "mtanunua",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "watanunua"
+                "form": "watanunua",
+                "pronoun": "they"
               }
-            ]
+            ],
+            "verb": "kununua (to buy)",
+            "tense": "Future (-ta-)"
           }
         },
         {
           "text": "vikapu",
-          "gloss": "baskets (plural of kikapu)"
+          "gloss": "baskets (singular: kikapu)"
         },
         {
-          "text": "viwili",
-          "gloss": "\"two\" — ki/vi agreement (vidonge viwili, viti viwili).",
-          "grammar": [
-            "sanifu-noun-classes"
-          ],
-          "sanifu": "ki/vi class numbers: kimoja, viwili, vitatu"
+          "text": "mbili",
+          "gloss": "two",
+          "sanifu": "viwili"
         }
       ],
+      "sanifu": "Sawa. Na kama nitanunua vikapu viwili?",
+      "english": "Okay. And if I buy two baskets?",
       "options": [
         {
-          "swahili": "Sawa. Na kama nitanunua vikapu viwili?",
-          "correct": true
+          "correct": true,
+          "swahili": "Sawa. Na kama nitanunua vikapu mbili?"
         },
         {
-          "swahili": "Sawa. Na kama nitanunua vikapu vitatu?",
-          "correct": false
+          "correct": false,
+          "swahili": "Sawa. Na kama nitanunua vikapu vitatu?"
         },
         {
-          "swahili": "Sawa. Na kama nilinunua vikapu viwili?",
-          "correct": false
+          "correct": false,
+          "swahili": "Sawa. Na kama nilinunua vikapu viwili?"
         }
-      ]
+      ],
+      "speaker": "Mteja",
+      "swahili": "Sawa. Na kama nitanunua vikapu mbili?",
+      "note": "In Nairobi, people often say numbers in their plain form whatever the noun is: 'vikapu mbili' rather than the textbook 'vikapu viwili'. Both are understood, but the plain form sounds more natural in everyday talk."
     },
     {
       "id": "810643dc-8351-5c58-af7a-04f800e88f4e",
-      "speaker": "Muuzaji",
       "role": "auto",
-      "swahili": "Viwili? Basi, elfu mbili kwa vyote. Hiyo ni bei nzuri kuliko zote!",
-      "english": "Two? Then two thousand for both. That's the best price of all!",
       "words": [
         {
-          "text": "Viwili",
-          "gloss": "\"two\" — ki/vi agreement (vidonge viwili, viti viwili).",
+          "text": "Mbili",
+          "gloss": "two — in everyday Kenyan speech 'mbili' is used with any noun (Sanifu: 'viwili' for ki/vi nouns)",
+          "sanifu": "ki/vi class numbers: kimoja, viwili, vitatu",
           "grammar": [
             "sanifu-noun-classes"
-          ],
-          "sanifu": "ki/vi class numbers: kimoja, viwili, vitatu"
+          ]
         },
         {
           "text": "Basi",
@@ -776,7 +770,7 @@
         },
         {
           "text": "elfu mbili",
-          "gloss": "\"two thousand\""
+          "gloss": "two — in everyday Kenyan speech 'mbili' is used with any noun (Sanifu: 'viwili' for ki/vi nouns)"
         },
         {
           "text": "kwa",
@@ -788,10 +782,10 @@
         {
           "text": "vyote",
           "gloss": "\"all (of them)\" — ki/vi agreement (vikapu vyote).",
+          "sanifu": "ki/vi class; Kenyans often say \"zote\"",
           "grammar": [
             "sanifu-noun-classes"
-          ],
-          "sanifu": "ki/vi class; Kenyans often say \"zote\""
+          ]
         },
         {
           "text": "Hiyo",
@@ -835,7 +829,10 @@
             "adjective-agreement"
           ]
         }
-      ]
+      ],
+      "english": "Two? Then two thousand for both. That's the best price of all!",
+      "speaker": "Muuzaji",
+      "swahili": "Mbili? Basi, elfu mbili kwa vyote. Hiyo ni bei nzuri kuliko zote!"
     },
     {
       "id": "f8827e5f-f5ed-5e59-a350-4c93386fcd70",
@@ -993,58 +990,52 @@
           "swahili": "Tumepatana! Sijaamua — nitachukua hii nyekundu na ile ya kijani.",
           "correct": false
         }
-      ]
+      ],
+      "literal": "We've agreed! I've decided — I'll take this red (one) and that (one) of green."
     },
     {
       "id": "92393bcc-caa4-50f8-a7cc-874186a5c6ea",
-      "speaker": "Muuzaji",
       "role": "auto",
-      "swahili": "Asante sana, sister! Umechagua vizuri. Karibu tena!",
-      "english": "Thank you so much, sister! You've chosen well. Come again!",
       "words": [
         {
           "text": "Asante sana",
           "gloss": "thank you very much"
         },
         {
-          "text": "sister",
-          "gloss": "sister — sellers' friendly English address for a woman"
-        },
-        {
           "text": "Umechagua",
-          "gloss": "\"You have chosen\" — u- (subject: you) + me- (perfect (done / now-state)) + -chagua (choose). From kuchagua.",
+          "gloss": "you've chosen (u- you + -me- + chagua, from kuchagua)",
           "grammar": [
             "perfect-me"
           ],
           "conjugation": {
-            "verb": "kuchagua (to choose)",
-            "tense": "Perfect (-me-)",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "nimechagua"
+                "form": "nimechagua",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "umechagua"
+                "form": "umechagua",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "amechagua"
+                "form": "amechagua",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tumechagua"
+                "form": "tumechagua",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mmechagua"
+                "form": "mmechagua",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wamechagua"
+                "form": "wamechagua",
+                "pronoun": "they"
               }
-            ]
+            ],
+            "verb": "kuchagua (to choose)",
+            "tense": "Perfect (-me-)"
           }
         },
         {
@@ -1053,9 +1044,12 @@
         },
         {
           "text": "Karibu tena",
-          "gloss": "welcome again / come again"
+          "gloss": "come again (lit. welcome again)"
         }
-      ]
+      ],
+      "english": "Thank you so much! You've chosen well. Come again!",
+      "speaker": "Muuzaji",
+      "swahili": "Asante sana! Umechagua vizuri. Karibu tena!"
     }
   ],
   "vocabulary": [
@@ -1513,23 +1507,23 @@
       "after": "",
       "options": [
         {
-          "text": "viwili",
+          "text": "mbili",
           "correct": true
         },
         {
-          "text": "vitatu",
-          "correct": false,
-          "feedback": "vitatu = three"
+          "text": "tatu",
+          "correct": false
         },
         {
-          "text": "vinne",
+          "text": "nne",
           "correct": false
         }
       ],
-      "explanation": "viwili = 2, vitatu = 3, vinne = 4. Kenyans also say vikapu mbili.",
+      "explanation": "Kenyans count things with the plain numbers: vikapu mbili.",
       "grammar": [
-        "sanifu-noun-classes"
-      ]
+        "numbers-money"
+      ],
+      "note": "Sanifu: vikapu viwili (ki/vi agreement)."
     },
     {
       "id": "6637cc7d-4743-56c9-85b4-7dca48fba464",

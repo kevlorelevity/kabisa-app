@@ -110,12 +110,48 @@
       "id": "3c223604-3fd0-5cb8-a290-ad558049cece",
       "speaker": "Muuzaji",
       "role": "auto",
-      "swahili": "Sawa! Unapenda rangi gani?",
-      "english": "Okay! What colour do you like?",
+      "swahili": "Sawa! Ninauza nguo za rangi zote — nyekundu, kijani, njano… Unapenda rangi gani?",
+      "english": "Okay! I sell clothes in every colour — red, green, yellow… Which colour do you like?",
       "words": [
         {
           "text": "Sawa",
           "gloss": "okay / alright (lit. \"equal\")"
+        },
+        {
+          "text": "Ninauza",
+          "gloss": "\"I sell\" — ni- + -na- + -uza. From kuuza (to sell); the opposite is kununua (to buy).",
+          "grammar": [
+            "present-na"
+          ]
+        },
+        {
+          "text": "nguo",
+          "gloss": "\"Clothes\" — n/n noun, the same word for one item and many.",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "za rangi zote",
+          "gloss": "\"Of all colours\" — za and zote are the n/n plural forms.",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
+          "text": "nyekundu",
+          "gloss": "\"Red.\"",
+          "grammar": [
+            "adjective-agreement"
+          ]
+        },
+        {
+          "text": "kijani",
+          "gloss": "\"Green\" — never changes."
+        },
+        {
+          "text": "njano",
+          "gloss": "\"Yellow\" — never changes."
         },
         {
           "text": "Unapenda",
@@ -171,7 +207,7 @@
       "id": "02fba68e-eb0d-5bc5-bb63-f366e56d0a30",
       "speaker": "John",
       "role": "user",
-      "swahili": "Ninapenda bluu au nyeupe.",
+      "swahili": "Ninapenda bluu ama nyeupe.",
       "english": "I like blue or white.",
       "words": [
         {
@@ -216,7 +252,7 @@
           "gloss": "blue"
         },
         {
-          "text": "au",
+          "text": "ama",
           "gloss": "or"
         },
         {
@@ -226,15 +262,15 @@
       ],
       "options": [
         {
-          "swahili": "Ninapenda bluu au nyeupe.",
+          "swahili": "Ninapenda bluu ama nyeupe.",
           "correct": true
         },
         {
-          "swahili": "Ninapenda saizi au nyeupe.",
+          "swahili": "Ninapenda saizi ama nyeupe.",
           "correct": false
         },
         {
-          "swahili": "Anapenda bluu au nyeupe.",
+          "swahili": "Anapenda bluu ama nyeupe.",
           "correct": false
         }
       ]
@@ -856,8 +892,8 @@
       "id": "c400f562-2c35-59a4-921e-c846c5576f49",
       "speaker": "Muuzaji",
       "role": "auto",
-      "swahili": "Aiii, boss! Elfu moja, mia tano. Bei ya mwisho.",
-      "english": "Oh come on, boss! 1,500. Last price.",
+      "swahili": "Aiii, boss! Elfu moja, mia tano — ni rahisi sana! Bei ya mwisho.",
+      "english": "Oh come on, boss! 1,500 — that's really cheap! Last price.",
       "words": [
         {
           "text": "Aiii",
@@ -883,6 +919,10 @@
           "grammar": [
             "numbers-money"
           ]
+        },
+        {
+          "text": "ni rahisi sana",
+          "gloss": "\"It's very cheap\" — rahisi = cheap / easy, the opposite of ghali (expensive)."
         },
         {
           "text": "Bei ya mwisho",

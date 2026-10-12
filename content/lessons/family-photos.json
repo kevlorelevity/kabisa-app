@@ -195,7 +195,8 @@
           "swahili": "Ndiyo. Sina mke na watoto wawili.",
           "correct": false
         }
-      ]
+      ],
+      "note": "In Nairobi people say \"bibi\" for wife - not \"mke\"."
     },
     {
       "id": "1c171f94-c6fe-5c5b-948c-3add67ba7095",
@@ -835,13 +836,17 @@
           "gloss": "\"Do you miss them?\" — lit. \"do you remember them?\": u- + -na- + -wa- (them) + -kumbuka.",
           "grammar": [
             "object-infixes"
-          ]
+          ],
+          "note": "Nairobians just use the word \"kumiss\" taking \"to miss\" from English",
+          "sanifu": "Unawakumbuka?"
         },
         {
           "text": "sana",
           "gloss": "very / a lot"
         }
-      ]
+      ],
+      "note": "Most Kenyans tend to say \"unawamiss\" from \"to miss\"",
+      "sanifu": "Pole! Unawakumbuka sana?"
     },
     {
       "id": "9a868e10-609d-5635-89bb-87b5bc1d054f",
@@ -1365,8 +1370,8 @@
     {
       "id": "0125cb1b-3f87-56f4-9a69-4e6986643712",
       "mode": "translate",
-      "english": "I have two houses.",
-      "before": "Nina nyumba ",
+      "english": "I have two photos.",
+      "before": "Nina picha ",
       "after": ".",
       "options": [
         {
@@ -1374,17 +1379,15 @@
           "correct": true
         },
         {
-          "text": "tatu",
-          "correct": false,
-          "feedback": "tatu = 3 (n/n form"
+          "text": "wawili",
+          "correct": false
         },
         {
-          "text": "nne",
-          "correct": false,
-          "feedback": "nne = 4 (n/n form"
+          "text": "tatu",
+          "correct": false
         }
       ],
-      "explanation": "Things take the plain numbers: mbili (2), tatu (3), nne (4).",
+      "explanation": "Things take the plain numbers: picha mbili. People take wa-: watoto wawili.",
       "grammar": [
         "numbers-money"
       ]
@@ -1771,28 +1774,27 @@
     {
       "id": "e563f791-ada4-58b7-b877-d6a5a9e137d0",
       "mode": "translate",
-      "english": "We don't know.",
+      "english": "We don't have children.",
       "before": "",
-      "after": ".",
+      "after": " watoto.",
       "options": [
         {
-          "text": "Hatujui",
+          "text": "Hatuna",
           "correct": true
         },
         {
-          "text": "Sijui",
-          "correct": false,
-          "feedback": "Sijui = I don't know"
+          "text": "Sina",
+          "correct": false
         },
         {
-          "text": "Hawajui",
-          "correct": false,
-          "feedback": "Hawajui = They don't know"
+          "text": "Hawana",
+          "correct": false
         }
       ],
-      "explanation": "hatu- = not we.",
+      "explanation": "hatu- = not we: hatuna = we don't have. Sina = I don't have, hawana = they don't have.",
       "grammar": [
-        "negative-present"
+        "negative-present",
+        "na-have"
       ]
     }
   ]

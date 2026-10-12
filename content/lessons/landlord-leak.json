@@ -443,7 +443,7 @@
         },
         {
           "text": "fundi",
-          "gloss": "skilled worker / repairman (fundi wa bomba = plumber) — m/wa noun (people & animals; plural mafundi)",
+          "gloss": "skilled worker / repairman (fundi wa mfereji = plumber) — m/wa noun (people & animals; plural mafundi)",
           "grammar": [
             "noun-classes-mwa-nn"
           ]
@@ -468,7 +468,7 @@
         },
         {
           "text": "fundi",
-          "gloss": "skilled worker / repairman (fundi wa bomba = plumber) — m/wa noun (people & animals; plural mafundi)",
+          "gloss": "skilled worker / repairman (fundi wa mfereji = plumber) — m/wa noun (people & animals; plural mafundi)",
           "grammar": [
             "noun-classes-mwa-nn"
           ]
@@ -537,8 +537,8 @@
       "id": "ef8f011d-472f-51ed-890d-05508018061f",
       "speaker": "Otieno",
       "role": "auto",
-      "swahili": "Uko sawa. Pole sana. Nitamtuma fundi mwingine leo.",
-      "english": "You're right. I'm very sorry. I'll send another fundi today.",
+      "swahili": "Uko sawa. Pole sana — mimi ni mwenye nyumba, ni kazi yangu. Nitamtuma fundi mwingine leo.",
+      "english": "You're right. I'm very sorry — I'm the landlord, it's my job. I'll send another fundi today.",
       "words": [
         {
           "text": "Uko",
@@ -594,6 +594,17 @@
           "gloss": "so sorry / take heart"
         },
         {
+          "text": "mwenye nyumba",
+          "gloss": "\"Landlord\" — lit. \"owner of the house\"."
+        },
+        {
+          "text": "kazi yangu",
+          "gloss": "\"My job / my responsibility.\"",
+          "grammar": [
+            "possessives"
+          ]
+        },
+        {
           "text": "Nitamtuma",
           "gloss": "\"I will send him/her\" — ni- (subject: I) + ta- (future) + m- (object: him/her) + -tuma (send). From kutuma.",
           "grammar": [
@@ -633,7 +644,7 @@
         },
         {
           "text": "fundi",
-          "gloss": "skilled worker / repairman (fundi wa bomba = plumber) — m/wa noun (people & animals; plural mafundi)",
+          "gloss": "skilled worker / repairman (fundi wa mfereji = plumber) — m/wa noun (people & animals; plural mafundi)",
           "grammar": [
             "noun-classes-mwa-nn"
           ]

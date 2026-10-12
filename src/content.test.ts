@@ -28,6 +28,11 @@ describe('lesson content', () => {
     expect(late).toEqual([]);
   });
 
+  it.each(lessons.filter((l) => l.primer).map((l) => [l.id, l] as const))('%s: "read this first" points to real grammar topics', (_id, lesson) => {
+    expect(lesson.primer!.text.length).toBeGreaterThan(20);
+    for (const g of lesson.primer!.grammar) expect(slugs.has(g), g).toBe(true);
+  });
+
   it('uses unique ids and orders', () => {
     expect(new Set(lessons.map((l) => l.id)).size).toBe(lessons.length);
     expect(new Set(lessons.map((l) => l.order)).size).toBe(lessons.length);

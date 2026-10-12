@@ -993,10 +993,7 @@
     },
     {
       "id": "1362de1c-95fb-5059-a1b7-82f11e83cdef",
-      "speaker": "John",
       "role": "user",
-      "swahili": "Kiboko yuko wapi? Ninaona ndege tu.",
-      "english": "Where's the hippo? I can only see birds.",
       "words": [
         {
           "text": "Kiboko",
@@ -1004,48 +1001,48 @@
           "sanifu": "Sanifu: kiboko / viboko (ki/vi class — but animals agree like people)"
         },
         {
-          "text": "yuko",
-          "gloss": "\"He/she is (at / doing)\" — yu- + -ko (be at a place, or how you're doing). \"Yuko poa\" = he/she is fine.",
+          "text": "ako",
+          "gloss": "he/she/it is (at) — Kenyan for yuko",
           "grammar": [
             "ko-location"
           ],
           "conjugation": {
-            "verb": "-ko (be at / be doing)",
-            "tense": "Present",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "niko"
+                "form": "niko",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "uko"
+                "form": "uko",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "yuko"
+                "form": "yuko",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tuko"
+                "form": "tuko",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mko"
+                "form": "mko",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wako"
+                "form": "wako",
+                "pronoun": "they"
               },
               {
-                "pronoun": "it (n/n)",
-                "form": "iko"
+                "form": "iko",
+                "pronoun": "it (n/n)"
               },
               {
-                "pronoun": "they (n/n)",
-                "form": "ziko"
+                "form": "ziko",
+                "pronoun": "they (n/n)"
               }
-            ]
+            ],
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present"
           }
         },
         {
@@ -1068,27 +1065,27 @@
           "gloss": "just / only"
         }
       ],
+      "english": "Where's the hippo? I can only see birds.",
       "options": [
         {
-          "swahili": "Kiboko yuko wapi? Ninaona ndege tu.",
-          "correct": true
+          "correct": true,
+          "swahili": "Kiboko ako wapi? Ninaona ndege tu."
         },
         {
-          "swahili": "Kiboko yuko wapi? Ninakula ndege tu.",
-          "correct": false
+          "correct": false,
+          "swahili": "Kiboko ako wapi? Ninakula ndege tu."
         },
         {
-          "swahili": "Kiboko wako wapi? Ninaona ndege tu.",
-          "correct": false
+          "correct": false,
+          "swahili": "Kiboko wako wapi? Ninaona ndege tu."
         }
-      ]
+      ],
+      "speaker": "John",
+      "swahili": "Kiboko ako wapi? Ninaona ndege tu."
     },
     {
       "id": "0a6d2247-ae1c-53ef-8bd0-2527abcda24f",
-      "speaker": "Saitoti",
       "role": "auto",
-      "swahili": "Kiboko yuko ndani ya maji — macho tu ni juu!",
-      "english": "The hippo is in the water — only its eyes are on top!",
       "words": [
         {
           "text": "Kiboko",
@@ -1096,48 +1093,48 @@
           "sanifu": "Sanifu: kiboko / viboko (ki/vi class — but animals agree like people)"
         },
         {
-          "text": "yuko",
-          "gloss": "\"He/she is (at / doing)\" — yu- + -ko (be at a place, or how you're doing). \"Yuko poa\" = he/she is fine.",
+          "text": "ako",
+          "gloss": "he/she/it is (at) — Kenyan for yuko",
           "grammar": [
             "ko-location"
           ],
           "conjugation": {
-            "verb": "-ko (be at / be doing)",
-            "tense": "Present",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "niko"
+                "form": "niko",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "uko"
+                "form": "uko",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "yuko"
+                "form": "yuko",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tuko"
+                "form": "tuko",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mko"
+                "form": "mko",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wako"
+                "form": "wako",
+                "pronoun": "they"
               },
               {
-                "pronoun": "it (n/n)",
-                "form": "iko"
+                "form": "iko",
+                "pronoun": "it (n/n)"
               },
               {
-                "pronoun": "they (n/n)",
-                "form": "ziko"
+                "form": "ziko",
+                "pronoun": "they (n/n)"
               }
-            ]
+            ],
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present"
           }
         },
         {
@@ -1147,10 +1144,10 @@
         {
           "text": "maji",
           "gloss": "water — Kenyans give it n/n agreement",
+          "sanifu": "Sanifu: ji/ma class — maji yangu, maji haya (ma- plural of the ji/ma class)",
           "grammar": [
             "sanifu-noun-classes"
-          ],
-          "sanifu": "Sanifu: ji/ma class — maji yangu, maji haya (ma- plural of the ji/ma class)"
+          ]
         },
         {
           "text": "macho",
@@ -1171,7 +1168,10 @@
           "text": "juu",
           "gloss": "\"on top, above\""
         }
-      ]
+      ],
+      "english": "The hippo is in the water — only its eyes are on top!",
+      "speaker": "Saitoti",
+      "swahili": "Kiboko ako ndani ya maji — macho tu ni juu!"
     },
     {
       "id": "68c375c1-4de6-5e7f-8f64-d74d4f2baee8",
@@ -1253,6 +1253,72 @@
         {
           "text": "chui",
           "gloss": "leopard"
+        }
+      ]
+    },
+    {
+      "id": "11a3b1a5-d2b7-4de5-8ec0-547d8cb0e16b",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Na wanyama wale ni pundamilia na nyumbu?",
+      "english": "And those animals — are they zebras and wildebeest?",
+      "words": [
+        {
+          "text": "wanyama",
+          "gloss": "\"Animals\" — plural of mnyama.",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "wale",
+          "gloss": "\"Those\" (people / animals, over there)."
+        },
+        {
+          "text": "pundamilia",
+          "gloss": "\"Zebra(s)\" — same word for one and many."
+        },
+        {
+          "text": "nyumbu",
+          "gloss": "\"Wildebeest\" — same word for one and many."
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Na wanyama wale ni pundamilia na nyumbu?",
+          "correct": true
+        },
+        {
+          "swahili": "Na wanyama wale ni simba na chui?",
+          "correct": false
+        },
+        {
+          "swahili": "Na wanyama wale ni twiga na tembo?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "ff0befc7-0aaf-4596-a812-a876e2016381",
+      "speaker": "Saitoti",
+      "role": "auto",
+      "swahili": "Ndiyo! Maasai Mara ni mbuga ya wanyama — na kuna nyumbu wengi sana!",
+      "english": "Yes! The Maasai Mara is a game park — and there are lots of wildebeest!",
+      "words": [
+        {
+          "text": "mbuga ya wanyama",
+          "gloss": "\"Game park / reserve\" — lit. \"plain of animals\"."
+        },
+        {
+          "text": "kuna",
+          "gloss": "\"There is / there are.\""
+        },
+        {
+          "text": "nyumbu wengi",
+          "gloss": "\"Many wildebeest\" — animals take m/wa agreement: wengi.",
+          "grammar": [
+            "adjective-agreement"
+          ]
         }
       ]
     }
@@ -1673,9 +1739,9 @@
     {
       "id": "fb78ad2a-3e7c-5520-9d15-4094e424dbc0",
       "mode": "translate",
-      "english": "The hippo is in the water.",
+      "after": " ako ndani ya maji.",
       "before": "",
-      "after": " yuko ndani ya maji.",
+      "english": "The hippo is in the water.",
       "options": [
         {
           "text": "Kiboko",

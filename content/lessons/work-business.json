@@ -33,10 +33,7 @@
   "turns": [
     {
       "id": "814718c4-fb16-54de-9b3b-2d9a8bde22d0",
-      "speaker": "Mwangi",
       "role": "auto",
-      "swahili": "Habari, John! Unafanya kazi wapi siku hizi?",
-      "english": "Hi, John! Where do you work these days?",
       "words": [
         {
           "text": "Habari",
@@ -56,34 +53,34 @@
             "present-na"
           ],
           "conjugation": {
-            "verb": "kufanya (to do)",
-            "tense": "Present (-na-)",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "ninafanya"
+                "form": "ninafanya",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "unafanya"
+                "form": "unafanya",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "anafanya"
+                "form": "anafanya",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tunafanya"
+                "form": "tunafanya",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mnafanya"
+                "form": "mnafanya",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wanafanya"
+                "form": "wanafanya",
+                "pronoun": "they"
               }
-            ]
+            ],
+            "verb": "kufanya (to do)",
+            "tense": "Present (-na-)"
           }
         },
         {
@@ -104,14 +101,14 @@
           "text": "siku hizi",
           "gloss": "\"these days\""
         }
-      ]
+      ],
+      "english": "Hi, John! Where do you work these days?",
+      "speaker": "Mwangi",
+      "swahili": "Habari, John! Unafanya kazi wapi siku hizi?"
     },
     {
       "id": "48189ded-1bee-5762-a081-a60f63c5254e",
-      "speaker": "John",
       "role": "user",
-      "swahili": "Ninafanya kazi shuleni, Kilimani. Ninafundisha Kiingereza. Na wewe?",
-      "english": "I work at a school in Kilimani. I teach English. And you?",
       "words": [
         {
           "text": "Ninafanya",
@@ -120,34 +117,34 @@
             "present-na"
           ],
           "conjugation": {
-            "verb": "kufanya (to do)",
-            "tense": "Present (-na-)",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "ninafanya"
+                "form": "ninafanya",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "unafanya"
+                "form": "unafanya",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "anafanya"
+                "form": "anafanya",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tunafanya"
+                "form": "tunafanya",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mnafanya"
+                "form": "mnafanya",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wanafanya"
+                "form": "wanafanya",
+                "pronoun": "they"
               }
-            ]
+            ],
+            "verb": "kufanya (to do)",
+            "tense": "Present (-na-)"
           }
         },
         {
@@ -175,10 +172,10 @@
         {
           "text": "Kiingereza",
           "gloss": "English (the language) — Kenyans give it n/n agreement",
+          "sanifu": "Sanifu: ki/vi class — Kiingereza chake",
           "grammar": [
             "sanifu-noun-classes"
-          ],
-          "sanifu": "Sanifu: ki/vi class — Kiingereza chake"
+          ]
         },
         {
           "text": "Na",
@@ -192,27 +189,27 @@
           ]
         }
       ],
+      "english": "I work at a school in Kilimani. I teach English. And you?",
       "options": [
         {
-          "swahili": "Ninafanya kazi shuleni, Kilimani. Ninafundisha Kiingereza. Na wewe?",
-          "correct": true
+          "correct": true,
+          "swahili": "Ninafanya kazi shuleni, Kilimani. Ninafundisha Kiingereza. Na wewe?"
         },
         {
-          "swahili": "Unafanya kazi shuleni, Kilimani. Unafundisha Kiingereza. Na wewe?",
-          "correct": false
+          "correct": false,
+          "swahili": "Unafanya kazi shuleni, Kilimani. Unafundisha Kiingereza. Na wewe?"
         },
         {
-          "swahili": "Ninafanya kazi shuleni, Kilimani. Ninanunua Kiingereza. Na wewe?",
-          "correct": false
+          "correct": false,
+          "swahili": "Ninafanya kazi shuleni, Kilimani. Ninanunua Kiingereza. Na wewe?"
         }
-      ]
+      ],
+      "speaker": "John",
+      "swahili": "Ninafanya kazi shuleni, Kilimani. Ninafundisha Kiingereza. Na wewe?"
     },
     {
       "id": "c5d230a2-9ca5-5356-8b2c-ec7b68f7f63d",
-      "speaker": "Mwangi",
       "role": "auto",
-      "swahili": "Mimi niko na biashara yangu — ninauza taa za sola.",
-      "english": "I've got my own business — I sell solar lamps.",
       "words": [
         {
           "text": "Mimi",
@@ -239,34 +236,34 @@
             "possessives"
           ],
           "conjugation": {
-            "verb": "possessive (n/n singular)",
-            "tense": "my · your · his/her · our · your (pl.) · their",
             "rows": [
               {
-                "pronoun": "my",
-                "form": "yangu"
+                "form": "yangu",
+                "pronoun": "my"
               },
               {
-                "pronoun": "your",
-                "form": "yako"
+                "form": "yako",
+                "pronoun": "your"
               },
               {
-                "pronoun": "his/her",
-                "form": "yake"
+                "form": "yake",
+                "pronoun": "his/her"
               },
               {
-                "pronoun": "our",
-                "form": "yetu"
+                "form": "yetu",
+                "pronoun": "our"
               },
               {
-                "pronoun": "your (pl.)",
-                "form": "yenu"
+                "form": "yenu",
+                "pronoun": "your (pl.)"
               },
               {
-                "pronoun": "their",
-                "form": "yao"
+                "form": "yao",
+                "pronoun": "their"
               }
-            ]
+            ],
+            "verb": "possessive (n/n singular)",
+            "tense": "my · your · his/her · our · your (pl.) · their"
           }
         },
         {
@@ -276,48 +273,48 @@
             "present-na"
           ],
           "conjugation": {
-            "verb": "kuuza (to sell)",
-            "tense": "Present (-na-)",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "ninauza"
+                "form": "ninauza",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "unauza"
+                "form": "unauza",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "anauza"
+                "form": "anauza",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tunauza"
+                "form": "tunauza",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mnauza"
+                "form": "mnauza",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wanauza"
+                "form": "wanauza",
+                "pronoun": "they"
               }
-            ]
+            ],
+            "verb": "kuuza (to sell)",
+            "tense": "Present (-na-)"
           }
         },
         {
           "text": "taa za sola",
           "gloss": "\"solar lamps\""
         }
-      ]
+      ],
+      "english": "I've got my own business — I sell solar lamps.",
+      "speaker": "Mwangi",
+      "swahili": "Mimi niko na biashara yangu — ninauza taa za sola."
     },
     {
       "id": "da89551d-c3be-5833-912b-a2b9191da45f",
-      "speaker": "John",
       "role": "user",
-      "swahili": "Safi! Wateja wako ni nani?",
-      "english": "Great! Who are your customers?",
       "words": [
         {
           "text": "Safi",
@@ -334,42 +331,42 @@
             "ko-location"
           ],
           "conjugation": {
-            "verb": "-ko (be at / be doing)",
-            "tense": "Present",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "niko"
+                "form": "niko",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "uko"
+                "form": "uko",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "yuko"
+                "form": "yuko",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tuko"
+                "form": "tuko",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mko"
+                "form": "mko",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wako"
+                "form": "wako",
+                "pronoun": "they"
               },
               {
-                "pronoun": "it (n/n)",
-                "form": "iko"
+                "form": "iko",
+                "pronoun": "it (n/n)"
               },
               {
-                "pronoun": "they (n/n)",
-                "form": "ziko"
+                "form": "ziko",
+                "pronoun": "they (n/n)"
               }
-            ]
+            ],
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present"
           }
         },
         {
@@ -387,27 +384,27 @@
           ]
         }
       ],
+      "english": "Great! Who are your customers?",
       "options": [
         {
-          "swahili": "Safi! Wateja wako ni nani?",
-          "correct": true
+          "correct": true,
+          "swahili": "Safi! Wateja wako ni nani?"
         },
         {
-          "swahili": "Safi! Wateja wako ni ngapi?",
-          "correct": false
+          "correct": false,
+          "swahili": "Safi! Wateja wako ni ngapi?"
         },
         {
-          "swahili": "Safi! Wateja wangu ni nani?",
-          "correct": false
+          "correct": false,
+          "swahili": "Safi! Wateja wangu ni nani?"
         }
-      ]
+      ],
+      "speaker": "John",
+      "swahili": "Safi! Wateja wako ni nani?"
     },
     {
       "id": "7444b304-6fe2-5eef-8876-9bce8c60ce60",
-      "speaker": "Mwangi",
       "role": "auto",
-      "swahili": "Wateja wangu ni wakulima na familia mashambani. Wanalipa kidogo kidogo na M-Pesa.",
-      "english": "My customers are farmers and families in the countryside. They pay little by little with M-Pesa.",
       "words": [
         {
           "text": "Wateja",
@@ -420,34 +417,34 @@
             "possessives"
           ],
           "conjugation": {
-            "verb": "possessive (m/wa: people)",
-            "tense": "my · your · his/her · our · your (pl.) · their",
             "rows": [
               {
-                "pronoun": "my",
-                "form": "wangu"
+                "form": "wangu",
+                "pronoun": "my"
               },
               {
-                "pronoun": "your",
-                "form": "wako"
+                "form": "wako",
+                "pronoun": "your"
               },
               {
-                "pronoun": "his/her",
-                "form": "wake"
+                "form": "wake",
+                "pronoun": "his/her"
               },
               {
-                "pronoun": "our",
-                "form": "wetu"
+                "form": "wetu",
+                "pronoun": "our"
               },
               {
-                "pronoun": "your (pl.)",
-                "form": "wenu"
+                "form": "wenu",
+                "pronoun": "your (pl.)"
               },
               {
-                "pronoun": "their",
-                "form": "wao"
+                "form": "wao",
+                "pronoun": "their"
               }
-            ]
+            ],
+            "verb": "possessive (m/wa: people)",
+            "tense": "my · your · his/her · our · your (pl.) · their"
           }
         },
         {
@@ -480,49 +477,60 @@
           ]
         },
         {
-          "text": "Wanalipa",
+          "text": "Wananunua",
+          "gloss": "\"They buy\" — wa- + -na- + -nunua. The opposite is -uza (sell).",
+          "grammar": [
+            "present-na"
+          ]
+        },
+        {
+          "text": "taa",
+          "gloss": "\"Lamp(s)\" — n/n."
+        },
+        {
+          "text": "na",
+          "gloss": "and / with"
+        },
+        {
+          "text": "wanalipa",
           "gloss": "\"They are paying\" — wa- (subject: they) + na- (present) + -lipa (pay). From kulipa.",
           "grammar": [
             "present-na"
           ],
           "conjugation": {
-            "verb": "kulipa (to pay)",
-            "tense": "Present (-na-)",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "ninalipa"
+                "form": "ninalipa",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "unalipa"
+                "form": "unalipa",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "analipa"
+                "form": "analipa",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tunalipa"
+                "form": "tunalipa",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mnalipa"
+                "form": "mnalipa",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wanalipa"
+                "form": "wanalipa",
+                "pronoun": "they"
               }
-            ]
+            ],
+            "verb": "kulipa (to pay)",
+            "tense": "Present (-na-)"
           }
         },
         {
           "text": "kidogo kidogo",
           "gloss": "\"little by little\""
-        },
-        {
-          "text": "na",
-          "gloss": "and / with"
         },
         {
           "text": "M-Pesa",
@@ -531,14 +539,14 @@
             "noun-classes-mwa-nn"
           ]
         }
-      ]
+      ],
+      "english": "My customers are farmers and families in the countryside. They buy the lamps and pay little by little with M-Pesa.",
+      "speaker": "Mwangi",
+      "swahili": "Wateja wangu ni wakulima na familia mashambani. Wananunua taa na wanalipa kidogo kidogo na M-Pesa."
     },
     {
       "id": "9bf99cec-2fb8-5416-9492-d839a20d3172",
-      "speaker": "John",
       "role": "user",
-      "swahili": "Biashara iko aje? Ni nzuri?",
-      "english": "How's business? Is it good?",
       "words": [
         {
           "text": "Biashara",
@@ -551,42 +559,42 @@
             "ko-location"
           ],
           "conjugation": {
-            "verb": "-ko (be at / be doing)",
-            "tense": "Present",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "niko"
+                "form": "niko",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "uko"
+                "form": "uko",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "yuko"
+                "form": "yuko",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tuko"
+                "form": "tuko",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mko"
+                "form": "mko",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wako"
+                "form": "wako",
+                "pronoun": "they"
               },
               {
-                "pronoun": "it (n/n)",
-                "form": "iko"
+                "form": "iko",
+                "pronoun": "it (n/n)"
               },
               {
-                "pronoun": "they (n/n)",
-                "form": "ziko"
+                "form": "ziko",
+                "pronoun": "they (n/n)"
               }
-            ]
+            ],
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present"
           }
         },
         {
@@ -612,27 +620,27 @@
           ]
         }
       ],
+      "english": "How's business? Is it good?",
       "options": [
         {
-          "swahili": "Biashara iko aje? Ni nzuri?",
-          "correct": true
+          "correct": true,
+          "swahili": "Biashara iko aje? Ni nzuri?"
         },
         {
-          "swahili": "Biashara iko wapi? Ni nzuri?",
-          "correct": false
+          "correct": false,
+          "swahili": "Biashara iko wapi? Ni nzuri?"
         },
         {
-          "swahili": "Biashara iko lini? Ni nzuri?",
-          "correct": false
+          "correct": false,
+          "swahili": "Biashara iko lini? Ni nzuri?"
         }
-      ]
+      ],
+      "speaker": "John",
+      "swahili": "Biashara iko aje? Ni nzuri?"
     },
     {
       "id": "49caad48-5399-5db6-8c83-a19f52749d69",
-      "speaker": "Mwangi",
       "role": "auto",
-      "swahili": "Ni nzuri sana! Mauzo inapanda kila mwezi. Lakini kazi ni nyingi.",
-      "english": "It's very good! Sales go up every month. But there's a lot of work.",
       "words": [
         {
           "text": "Ni",
@@ -685,33 +693,33 @@
             "adjective-agreement"
           ],
           "conjugation": {
-            "verb": "-ingi (many / a lot)",
-            "tense": "Agreement",
             "rows": [
               {
-                "pronoun": "m/wa one",
-                "form": "mwingi"
+                "form": "mwingi",
+                "pronoun": "m/wa one"
               },
               {
-                "pronoun": "m/wa many",
-                "form": "wengi"
+                "form": "wengi",
+                "pronoun": "m/wa many"
               },
               {
-                "pronoun": "n/n",
-                "form": "nyingi"
+                "form": "nyingi",
+                "pronoun": "n/n"
               }
-            ]
+            ],
+            "verb": "-ingi (many / a lot)",
+            "tense": "Agreement"
           }
         }
       ],
-      "sanifu": "Ni nzuri sana! Mauzo yanapanda kila mwezi. Lakini kazi ni nyingi."
+      "sanifu": "Ni nzuri sana! Mauzo yanapanda kila mwezi. Lakini kazi ni nyingi.",
+      "english": "It's very good! Sales go up every month. But there's a lot of work.",
+      "speaker": "Mwangi",
+      "swahili": "Ni nzuri sana! Mauzo inapanda kila mwezi. Lakini kazi ni nyingi."
     },
     {
       "id": "e3715959-96db-5df1-8cca-2b6e6136892c",
-      "speaker": "John",
       "role": "user",
-      "swahili": "Uko na wafanyakazi wangapi?",
-      "english": "How many employees do you have?",
       "words": [
         {
           "text": "Uko na",
@@ -729,27 +737,27 @@
           "gloss": "how many (people)? — wa- agrees with people"
         }
       ],
+      "english": "How many employees do you have?",
       "options": [
         {
-          "swahili": "Uko na wafanyakazi wangapi?",
-          "correct": true
+          "correct": true,
+          "swahili": "Uko na wafanyakazi wangapi?"
         },
         {
-          "swahili": "Uko na wafanyakazi wapi?",
-          "correct": false
+          "correct": false,
+          "swahili": "Uko na wafanyakazi wapi?"
         },
         {
-          "swahili": "Niko na wafanyakazi wangapi?",
-          "correct": false
+          "correct": false,
+          "swahili": "Niko na wafanyakazi wangapi?"
         }
-      ]
+      ],
+      "speaker": "John",
+      "swahili": "Uko na wafanyakazi wangapi?"
     },
     {
       "id": "f7fee37e-895e-58d5-a110-b9531f360319",
-      "speaker": "Mwangi",
       "role": "auto",
-      "swahili": "Niko na wafanyakazi kumi — wauzaji sita na mafundi wanne.",
-      "english": "I have ten employees — six salespeople and four technicians.",
       "words": [
         {
           "text": "Niko na",
@@ -795,14 +803,14 @@
             "numbers-money"
           ]
         }
-      ]
+      ],
+      "english": "I have ten employees — six salespeople and four technicians.",
+      "speaker": "Mwangi",
+      "swahili": "Niko na wafanyakazi kumi — wauzaji sita na mafundi wanne."
     },
     {
       "id": "73347acd-ac2b-5cce-9970-7f78cfaa7a54",
-      "speaker": "John",
       "role": "user",
-      "swahili": "Wee, kampuni yako ni kubwa! Ofisi yako iko wapi?",
-      "english": "Wow, your company is big! Where's your office?",
       "words": [
         {
           "text": "Wee",
@@ -822,34 +830,34 @@
             "possessives"
           ],
           "conjugation": {
-            "verb": "possessive (n/n singular)",
-            "tense": "my · your · his/her · our · your (pl.) · their",
             "rows": [
               {
-                "pronoun": "my",
-                "form": "yangu"
+                "form": "yangu",
+                "pronoun": "my"
               },
               {
-                "pronoun": "your",
-                "form": "yako"
+                "form": "yako",
+                "pronoun": "your"
               },
               {
-                "pronoun": "his/her",
-                "form": "yake"
+                "form": "yake",
+                "pronoun": "his/her"
               },
               {
-                "pronoun": "our",
-                "form": "yetu"
+                "form": "yetu",
+                "pronoun": "our"
               },
               {
-                "pronoun": "your (pl.)",
-                "form": "yenu"
+                "form": "yenu",
+                "pronoun": "your (pl.)"
               },
               {
-                "pronoun": "their",
-                "form": "yao"
+                "form": "yao",
+                "pronoun": "their"
               }
-            ]
+            ],
+            "verb": "possessive (n/n singular)",
+            "tense": "my · your · his/her · our · your (pl.) · their"
           }
         },
         {
@@ -866,22 +874,22 @@
             "adjective-agreement"
           ],
           "conjugation": {
-            "verb": "-kubwa (big)",
-            "tense": "Agreement",
             "rows": [
               {
-                "pronoun": "m/wa one",
-                "form": "mkubwa"
+                "form": "mkubwa",
+                "pronoun": "m/wa one"
               },
               {
-                "pronoun": "m/wa many",
-                "form": "wakubwa"
+                "form": "wakubwa",
+                "pronoun": "m/wa many"
               },
               {
-                "pronoun": "n/n",
-                "form": "kubwa"
+                "form": "kubwa",
+                "pronoun": "n/n"
               }
-            ]
+            ],
+            "verb": "-kubwa (big)",
+            "tense": "Agreement"
           }
         },
         {
@@ -895,34 +903,34 @@
             "possessives"
           ],
           "conjugation": {
-            "verb": "possessive (n/n singular)",
-            "tense": "my · your · his/her · our · your (pl.) · their",
             "rows": [
               {
-                "pronoun": "my",
-                "form": "yangu"
+                "form": "yangu",
+                "pronoun": "my"
               },
               {
-                "pronoun": "your",
-                "form": "yako"
+                "form": "yako",
+                "pronoun": "your"
               },
               {
-                "pronoun": "his/her",
-                "form": "yake"
+                "form": "yake",
+                "pronoun": "his/her"
               },
               {
-                "pronoun": "our",
-                "form": "yetu"
+                "form": "yetu",
+                "pronoun": "our"
               },
               {
-                "pronoun": "your (pl.)",
-                "form": "yenu"
+                "form": "yenu",
+                "pronoun": "your (pl.)"
               },
               {
-                "pronoun": "their",
-                "form": "yao"
+                "form": "yao",
+                "pronoun": "their"
               }
-            ]
+            ],
+            "verb": "possessive (n/n singular)",
+            "tense": "my · your · his/her · our · your (pl.) · their"
           }
         },
         {
@@ -932,42 +940,42 @@
             "ko-location"
           ],
           "conjugation": {
-            "verb": "-ko (be at / be doing)",
-            "tense": "Present",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "niko"
+                "form": "niko",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "uko"
+                "form": "uko",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "yuko"
+                "form": "yuko",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tuko"
+                "form": "tuko",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mko"
+                "form": "mko",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wako"
+                "form": "wako",
+                "pronoun": "they"
               },
               {
-                "pronoun": "it (n/n)",
-                "form": "iko"
+                "form": "iko",
+                "pronoun": "it (n/n)"
               },
               {
-                "pronoun": "they (n/n)",
-                "form": "ziko"
+                "form": "ziko",
+                "pronoun": "they (n/n)"
               }
-            ]
+            ],
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present"
           }
         },
         {
@@ -978,27 +986,27 @@
           ]
         }
       ],
+      "english": "Wow, your company is big! Where's your office?",
       "options": [
         {
-          "swahili": "Wee, kampuni yako ni kubwa! Ofisi yako iko wapi?",
-          "correct": true
+          "correct": true,
+          "swahili": "Wee, kampuni yako ni kubwa! Ofisi yako iko wapi?"
         },
         {
-          "swahili": "Wee, kampuni yangu ni kubwa! Ofisi yako iko wapi?",
-          "correct": false
+          "correct": false,
+          "swahili": "Wee, kampuni yangu ni kubwa! Ofisi yako iko wapi?"
         },
         {
-          "swahili": "Wee, kampuni yako ni kubwa! Ofisi yako iko nani?",
-          "correct": false
+          "correct": false,
+          "swahili": "Wee, kampuni yako ni kubwa! Ofisi yako iko nani?"
         }
-      ]
+      ],
+      "speaker": "John",
+      "swahili": "Wee, kampuni yako ni kubwa! Ofisi yako iko wapi?"
     },
     {
       "id": "39eb0394-d220-577c-bdab-e1b69527160a",
-      "speaker": "Mwangi",
       "role": "auto",
-      "swahili": "Ofisi iko Industrial Area, karibu na Enterprise Road.",
-      "english": "The office is in Industrial Area, near Enterprise Road.",
       "words": [
         {
           "text": "Ofisi",
@@ -1011,42 +1019,42 @@
             "ko-location"
           ],
           "conjugation": {
-            "verb": "-ko (be at / be doing)",
-            "tense": "Present",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "niko"
+                "form": "niko",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "uko"
+                "form": "uko",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "yuko"
+                "form": "yuko",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tuko"
+                "form": "tuko",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mko"
+                "form": "mko",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wako"
+                "form": "wako",
+                "pronoun": "they"
               },
               {
-                "pronoun": "it (n/n)",
-                "form": "iko"
+                "form": "iko",
+                "pronoun": "it (n/n)"
               },
               {
-                "pronoun": "they (n/n)",
-                "form": "ziko"
+                "form": "ziko",
+                "pronoun": "they (n/n)"
               }
-            ]
+            ],
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present"
           }
         },
         {
@@ -1064,14 +1072,270 @@
           "text": "Enterprise Road",
           "gloss": "Enterprise Road"
         }
-      ]
+      ],
+      "english": "The office is in Industrial Area, near Enterprise Road.",
+      "speaker": "Mwangi",
+      "swahili": "Ofisi iko Industrial Area, karibu na Enterprise Road."
+    },
+    {
+      "id": "298f8838-c392-48bf-9242-588a16dc89a1",
+      "role": "user",
+      "words": [
+        {
+          "text": "Na",
+          "gloss": "and"
+        },
+        {
+          "text": "gharama",
+          "gloss": "cost(s) / expenses — n/n noun (same word for one & many)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are"
+        },
+        {
+          "text": "ngapi",
+          "gloss": "how much? / how many? (things, money)"
+        },
+        {
+          "text": "kila mwezi",
+          "gloss": "every month"
+        }
+      ],
+      "english": "And how much are the costs every month?",
+      "options": [
+        {
+          "correct": true,
+          "swahili": "Na gharama ni ngapi kila mwezi?"
+        },
+        {
+          "correct": false,
+          "swahili": "Wee, kampuni yako ni kubwa! Ofisi yako iko wapi?"
+        },
+        {
+          "correct": false,
+          "swahili": "Wee! Na faida iko aje?"
+        }
+      ],
+      "speaker": "John",
+      "swahili": "Na gharama ni ngapi kila mwezi?"
+    },
+    {
+      "id": "18e09bbc-eb27-4e5d-a0fe-f1b740b433e7",
+      "role": "auto",
+      "words": [
+        {
+          "text": "Kama",
+          "gloss": "about / around (with numbers); also \"like\" or \"if\""
+        },
+        {
+          "text": "shilingi",
+          "gloss": "shillings"
+        },
+        {
+          "note": "Big numbers are often said as \"elfu\" plus a count: \"elfu mia tano\" = 500 thousands. You'll also hear \"laki tano\" (laki = 100,000).",
+          "text": "elfu mia tano",
+          "gloss": "500,000 (lit. \"thousand five hundred\")"
+        },
+        {
+          "text": "kodi ya ofisi",
+          "gloss": "office rent"
+        },
+        {
+          "text": "mishahara",
+          "gloss": "salaries (one: mshahara)"
+        },
+        {
+          "text": "na",
+          "gloss": "and"
+        },
+        {
+          "text": "usafiri",
+          "gloss": "transport"
+        }
+      ],
+      "english": "About 500,000 shillings — office rent, salaries and transport.",
+      "speaker": "Mwangi",
+      "swahili": "Kama shilingi elfu mia tano — kodi ya ofisi, mishahara na usafiri.",
+      "note": "For hundreds of thousands, Nairobians often count in thousands: 'elfu mia tano' (literally 'five hundred thousand') = 500,000. You'll also hear 'laki tano', which means the same thing."
+    },
+    {
+      "id": "6c013230-f2f4-413f-88ca-37cf40774984",
+      "role": "user",
+      "words": [
+        {
+          "text": "Wee",
+          "gloss": "wow! (surprise)"
+        },
+        {
+          "text": "Na",
+          "gloss": "and"
+        },
+        {
+          "text": "faida",
+          "gloss": "profit; also \"benefit\""
+        },
+        {
+          "text": "iko aje",
+          "gloss": "how is it? (Kenyan)"
+        }
+      ],
+      "english": "Wow! And how's the profit?",
+      "options": [
+        {
+          "correct": true,
+          "swahili": "Wee! Na faida iko aje?"
+        },
+        {
+          "correct": false,
+          "swahili": "Na gharama ni ngapi kila mwezi?"
+        },
+        {
+          "correct": false,
+          "swahili": "Mshirika wako ni nani?"
+        }
+      ],
+      "speaker": "John",
+      "swahili": "Wee! Na faida iko aje?"
+    },
+    {
+      "id": "2e08b2ed-889b-4ce0-92a9-949c47439947",
+      "role": "auto",
+      "words": [
+        {
+          "text": "Faida",
+          "gloss": "profit"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are"
+        },
+        {
+          "text": "kama",
+          "gloss": "about / around"
+        },
+        {
+          "text": "elfu mia moja",
+          "gloss": "100,000 (literally 'a hundred thousand')"
+        },
+        {
+          "text": "kila mwezi",
+          "gloss": "every month"
+        },
+        {
+          "text": "Lakini",
+          "gloss": "but"
+        },
+        {
+          "text": "tunagawana",
+          "gloss": "we share (it) out: tu- (we) + -na- (present) + -gawana (share between each other)"
+        },
+        {
+          "text": "na",
+          "gloss": "with"
+        },
+        {
+          "note": "\"Mshirika\" means a partner or associate, but in Nairobi business talk people usually just say \"partner\" (\"partner wangu\"). \"Mbia\" is the formal word you'll see in documents.",
+          "text": "mshirika",
+          "gloss": "(business) partner"
+        },
+        {
+          "text": "wangu",
+          "gloss": "my (m/wa agreement, for people)"
+        }
+      ],
+      "english": "Profit is about 100,000 a month. But I share it with my partner.",
+      "speaker": "Mwangi",
+      "swahili": "Faida ni kama elfu mia moja kila mwezi. Lakini tunagawana na mshirika wangu."
+    },
+    {
+      "id": "b5cf5732-3aeb-4976-bc79-3d4103fe158e",
+      "role": "user",
+      "words": [
+        {
+          "text": "Mshirika",
+          "gloss": "mshirika = partner (business partner, associate)",
+          "sanifu": "mbia"
+        },
+        {
+          "text": "wako",
+          "gloss": "\"your\" — m/wa agreement (for people)"
+        },
+        {
+          "text": "ni",
+          "gloss": "is / am / are"
+        },
+        {
+          "text": "nani",
+          "gloss": "who?"
+        }
+      ],
+      "english": "Who's your partner?",
+      "options": [
+        {
+          "correct": true,
+          "swahili": "Mshirika wako ni nani?"
+        },
+        {
+          "correct": false,
+          "swahili": "Wee! Na faida iko aje?"
+        },
+        {
+          "correct": false,
+          "swahili": "Poa. Mimi ninapenda biashara. Ninasoma kuhusu biashara kila siku!"
+        }
+      ],
+      "speaker": "John",
+      "swahili": "Mshirika wako ni nani?"
+    },
+    {
+      "id": "95ca8b51-30f2-474a-8544-f7a51c3556b1",
+      "role": "auto",
+      "words": [
+        {
+          "text": "Ni",
+          "gloss": "it is"
+        },
+        {
+          "text": "dada yangu",
+          "gloss": "my sister"
+        },
+        {
+          "text": "Wanjiru",
+          "gloss": "Wanjiru (a Kikuyu woman's name)"
+        },
+        {
+          "text": "Yeye",
+          "gloss": "he / she"
+        },
+        {
+          "text": "anaangalia",
+          "gloss": "\"she looks after\" — a- (he/she) + na- (present) + -angalia (look at / look after)"
+        },
+        {
+          "text": "pesa",
+          "gloss": "money"
+        },
+        {
+          "text": "mimi",
+          "gloss": "I / me"
+        },
+        {
+          "text": "ninaangalia",
+          "gloss": "\"I look after\""
+        },
+        {
+          "text": "wateja",
+          "gloss": "customers (one: mteja)"
+        }
+      ],
+      "english": "It's my sister, Wanjiru. She looks after the money, I look after the customers.",
+      "speaker": "Mwangi",
+      "swahili": "Ni dada yangu, Wanjiru. Yeye anaangalia pesa, mimi ninaangalia wateja."
     },
     {
       "id": "2bcaf589-8bb8-5246-8bdf-4ddff9318163",
-      "speaker": "John",
       "role": "user",
-      "swahili": "Poa. Mimi ninapenda biashara. Ninasoma kuhusu biashara kila siku!",
-      "english": "Cool. I love business. I read about business every day!",
       "words": [
         {
           "text": "Poa",
@@ -1094,34 +1358,34 @@
             "present-na"
           ],
           "conjugation": {
-            "verb": "kupenda (to like)",
-            "tense": "Present (-na-)",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "ninapenda"
+                "form": "ninapenda",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "unapenda"
+                "form": "unapenda",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "anapenda"
+                "form": "anapenda",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tunapenda"
+                "form": "tunapenda",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mnapenda"
+                "form": "mnapenda",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wanapenda"
+                "form": "wanapenda",
+                "pronoun": "they"
               }
-            ]
+            ],
+            "verb": "kupenda (to like)",
+            "tense": "Present (-na-)"
           }
         },
         {
@@ -1135,34 +1399,34 @@
             "present-na"
           ],
           "conjugation": {
-            "verb": "kusoma (to read)",
-            "tense": "Present (-na-)",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "ninasoma"
+                "form": "ninasoma",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "unasoma"
+                "form": "unasoma",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "anasoma"
+                "form": "anasoma",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tunasoma"
+                "form": "tunasoma",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mnasoma"
+                "form": "mnasoma",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wanasoma"
+                "form": "wanasoma",
+                "pronoun": "they"
               }
-            ]
+            ],
+            "verb": "kusoma (to read)",
+            "tense": "Present (-na-)"
           }
         },
         {
@@ -1178,27 +1442,27 @@
           "gloss": "every day"
         }
       ],
+      "english": "Cool. I love business. I read about business every day!",
       "options": [
         {
-          "swahili": "Poa. Mimi ninapenda biashara. Ninasoma kuhusu biashara kila siku!",
-          "correct": true
+          "correct": true,
+          "swahili": "Poa. Mimi ninapenda biashara. Ninasoma kuhusu biashara kila siku!"
         },
         {
-          "swahili": "Poa. Mimi ninapenda biashara. Ninalala kuhusu biashara kila siku!",
-          "correct": false
+          "correct": false,
+          "swahili": "Poa. Mimi ninapenda biashara. Ninalala kuhusu biashara kila siku!"
         },
         {
-          "swahili": "Poa. Wewe unapenda biashara. Ninasoma kuhusu biashara kila siku!",
-          "correct": false
+          "correct": false,
+          "swahili": "Poa. Wewe unapenda biashara. Ninasoma kuhusu biashara kila siku!"
         }
-      ]
+      ],
+      "speaker": "John",
+      "swahili": "Poa. Mimi ninapenda biashara. Ninasoma kuhusu biashara kila siku!"
     },
     {
       "id": "fbbe4a1c-0c3a-53dd-9f3e-6566129ceaa9",
-      "speaker": "Mwangi",
       "role": "auto",
-      "swahili": "Haha! Wewe ni mwalimu na mfanyabiashara pia! Kadi yangu iko hapa — tuko pamoja!",
-      "english": "Ha! You're a teacher and a business person too! Here's my card — let's keep in touch!",
       "words": [
         {
           "text": "Haha",
@@ -1248,34 +1512,34 @@
             "possessives"
           ],
           "conjugation": {
-            "verb": "possessive (n/n singular)",
-            "tense": "my · your · his/her · our · your (pl.) · their",
             "rows": [
               {
-                "pronoun": "my",
-                "form": "yangu"
+                "form": "yangu",
+                "pronoun": "my"
               },
               {
-                "pronoun": "your",
-                "form": "yako"
+                "form": "yako",
+                "pronoun": "your"
               },
               {
-                "pronoun": "his/her",
-                "form": "yake"
+                "form": "yake",
+                "pronoun": "his/her"
               },
               {
-                "pronoun": "our",
-                "form": "yetu"
+                "form": "yetu",
+                "pronoun": "our"
               },
               {
-                "pronoun": "your (pl.)",
-                "form": "yenu"
+                "form": "yenu",
+                "pronoun": "your (pl.)"
               },
               {
-                "pronoun": "their",
-                "form": "yao"
+                "form": "yao",
+                "pronoun": "their"
               }
-            ]
+            ],
+            "verb": "possessive (n/n singular)",
+            "tense": "my · your · his/her · our · your (pl.) · their"
           }
         },
         {
@@ -1285,42 +1549,42 @@
             "ko-location"
           ],
           "conjugation": {
-            "verb": "-ko (be at / be doing)",
-            "tense": "Present",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "niko"
+                "form": "niko",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "uko"
+                "form": "uko",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "yuko"
+                "form": "yuko",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tuko"
+                "form": "tuko",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mko"
+                "form": "mko",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wako"
+                "form": "wako",
+                "pronoun": "they"
               },
               {
-                "pronoun": "it (n/n)",
-                "form": "iko"
+                "form": "iko",
+                "pronoun": "it (n/n)"
               },
               {
-                "pronoun": "they (n/n)",
-                "form": "ziko"
+                "form": "ziko",
+                "pronoun": "they (n/n)"
               }
-            ]
+            ],
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present"
           }
         },
         {
@@ -1334,56 +1598,56 @@
             "ko-location"
           ],
           "conjugation": {
-            "verb": "-ko (be at / be doing)",
-            "tense": "Present",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "niko"
+                "form": "niko",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "uko"
+                "form": "uko",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "yuko"
+                "form": "yuko",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tuko"
+                "form": "tuko",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mko"
+                "form": "mko",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wako"
+                "form": "wako",
+                "pronoun": "they"
               },
               {
-                "pronoun": "it (n/n)",
-                "form": "iko"
+                "form": "iko",
+                "pronoun": "it (n/n)"
               },
               {
-                "pronoun": "they (n/n)",
-                "form": "ziko"
+                "form": "ziko",
+                "pronoun": "they (n/n)"
               }
-            ]
+            ],
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present"
           }
         },
         {
           "text": "pamoja",
           "gloss": "together"
         }
-      ]
+      ],
+      "english": "Ha! You're a teacher and a business person too! Here's my card — let's keep in touch!",
+      "speaker": "Mwangi",
+      "swahili": "Haha! Wewe ni mwalimu na mfanyabiashara pia! Kadi yangu iko hapa — tuko pamoja!"
     },
     {
       "id": "6d6c136d-607f-58ed-b5d1-f60f2a1f2794",
-      "speaker": "John",
       "role": "user",
-      "swahili": "Asante sana, Mwangi. Biashara njema!",
-      "english": "Thanks a lot, Mwangi. Good luck with the business!",
       "words": [
         {
           "text": "Asante sana",
@@ -1398,20 +1662,23 @@
           "gloss": "\"good luck with the business\" (lit. \"good business\")"
         }
       ],
+      "english": "Thanks a lot, Mwangi. Good luck with the business!",
       "options": [
         {
-          "swahili": "Asante sana, Mwangi. Biashara njema!",
-          "correct": true
+          "correct": true,
+          "swahili": "Asante sana, Mwangi. Biashara njema!"
         },
         {
-          "swahili": "Pole sana, Mwangi. Biashara njema!",
-          "correct": false
+          "correct": false,
+          "swahili": "Pole sana, Mwangi. Biashara njema!"
         },
         {
-          "swahili": "Asante sana, Mwangi. Biashara chafu!",
-          "correct": false
+          "correct": false,
+          "swahili": "Asante sana, Mwangi. Biashara chafu!"
         }
-      ]
+      ],
+      "speaker": "John",
+      "swahili": "Asante sana, Mwangi. Biashara njema!"
     }
   ],
   "vocabulary": [

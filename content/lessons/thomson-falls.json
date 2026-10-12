@@ -44,8 +44,8 @@
       "id": "3c8f0ec4-5c5a-54e3-a29f-fac012528ffc",
       "speaker": "Njoroge",
       "role": "auto",
-      "swahili": "Karibu sana Nyahururu! Safari yako imekuwaje mpaka hapa?",
-      "english": "Welcome to Nyahururu! How has your trip been so far?",
+      "swahili": "Karibu sana Nyahururu! Mimi ni Njoroge, kiongozi wako. Safari yako imekuwaje mpaka hapa?",
+      "english": "Welcome to Nyahururu! I'm Njoroge, your guide. How has your trip been so far?",
       "words": [
         {
           "text": "Karibu",
@@ -58,6 +58,13 @@
         {
           "text": "Nyahururu",
           "gloss": "Nyahururu, a highland town near Thomson's Falls"
+        },
+        {
+          "text": "kiongozi wako",
+          "gloss": "\"Your guide\" — kiongozi = guide / leader (plural: viongozi).",
+          "grammar": [
+            "possessives"
+          ]
         },
         {
           "text": "Safari",
@@ -172,14 +179,15 @@
           "swahili": "Itakuwa nzuri sana jana! Mandhari ni ya kuvutia — milima na mashamba ya chai.",
           "correct": false
         }
-      ]
+      ],
+      "literal": "It has been very good! The scenery is of attracting — hills and farms of tea."
     },
     {
       "id": "a07fe2a2-46ae-53bb-bc5f-b24c25c351cf",
       "speaker": "Njoroge",
       "role": "auto",
-      "swahili": "Nafurahi kusikia hivyo. Hapa tuko karibu na maporomoko ya Thomson, ambayo ni kivutio kubwa hapa.",
-      "english": "Glad to hear that. Here we're close to Thomson's Falls, which is a big attraction around here.",
+      "swahili": "Nafurahi kusikia hivyo. Hapa tuko karibu na maporomoko ya Thomson, ambayo ni kivutio kubwa kwa watalii.",
+      "english": "Glad to hear that. Here we're close to Thomson's Falls, which is a big attraction for tourists.",
       "words": [
         {
           "text": "Nafurahi kusikia hivyo",
@@ -265,8 +273,11 @@
           "sanifu": "Kenyans also: kivutio kubwa"
         },
         {
-          "text": "hapa",
-          "gloss": "here"
+          "text": "watalii",
+          "gloss": "\"Tourists\" — plural of mtalii.",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
         }
       ],
       "sanifu": "Nafurahi kusikia hivyo. Hapa tuko karibu na maporomoko ya Thomson, ambayo ni kivutio kikubwa hapa."
@@ -1021,7 +1032,8 @@
           "swahili": "Inachosha sana! Mimi hupenda kuona maisha ya mashambani.",
           "correct": false
         }
-      ]
+      ],
+      "literal": "It attracts a lot! I usually love to see the life of the countryside."
     },
     {
       "id": "142d4fb8-8372-5076-8fec-abb1d11929c6",
@@ -2008,7 +2020,8 @@
       "grammar": [
         "infinitive-ku",
         "verb-extensions"
-      ]
+      ],
+      "literal": "The scenery is of attracting."
     },
     {
       "id": "6fb188b7-98e1-569f-80c6-5dca1062c1ba",

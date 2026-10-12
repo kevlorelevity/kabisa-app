@@ -112,63 +112,21 @@
           "swahili": "Habari, daktari. Hujisikii vizuri.",
           "correct": false
         }
-      ]
+      ],
+      "literal": "Hello, doctor. I don't feel myself well."
     },
     {
       "id": "b79209fe-0f93-569f-8e76-b86fa7b2d9ef",
-      "speaker": "Daktari",
       "role": "auto",
-      "swahili": "Pole sana. Ulianza kuumwa lini?",
-      "english": "So sorry. When did you start feeling sick?",
       "words": [
         {
           "text": "Pole sana",
           "gloss": "so sorry / take heart"
         },
         {
-          "text": "Ulianza",
-          "gloss": "\"You started\" — u- (subject: you) + li- (past) + -anza (start). From kuanza.",
-          "grammar": [
-            "past-li"
-          ],
-          "conjugation": {
-            "verb": "kuanza (to start)",
-            "tense": "Past (-li-)",
-            "rows": [
-              {
-                "pronoun": "I",
-                "form": "nilianza"
-              },
-              {
-                "pronoun": "you",
-                "form": "ulianza"
-              },
-              {
-                "pronoun": "he/she",
-                "form": "alianza"
-              },
-              {
-                "pronoun": "we",
-                "form": "tulianza"
-              },
-              {
-                "pronoun": "you all",
-                "form": "mlianza"
-              },
-              {
-                "pronoun": "they",
-                "form": "walianza"
-              }
-            ]
-          }
-        },
-        {
-          "text": "kuumwa",
-          "gloss": "\"To be in pain\" — ku- (infinitive \"to\") + -umwa (be in pain). From kuumwa. Extension: passive (-wa: \"be ...-ed\").",
-          "grammar": [
-            "infinitive-ku",
-            "verb-extensions"
-          ]
+          "note": "i- = \"it\" (the illness or symptoms) + -li- (past) + anza (start).",
+          "text": "Ilianza",
+          "gloss": "it started"
         },
         {
           "text": "lini",
@@ -177,186 +135,124 @@
             "question-words"
           ]
         }
-      ]
+      ],
+      "english": "So sorry. When did it start?",
+      "speaker": "Daktari",
+      "swahili": "Pole sana. Ilianza lini?"
     },
     {
       "id": "8e26e0da-eaa3-551c-ae36-775ddc9d35d8",
-      "speaker": "Mteja",
       "role": "user",
-      "swahili": "Nilianza jana usiku. Kichwa inauma sana.",
-      "english": "I started last night. My head hurts a lot.",
       "words": [
         {
-          "text": "Nilianza",
-          "gloss": "\"I started\" — ni- (subject: I) + li- (past) + -anza (start). From kuanza.",
-          "grammar": [
-            "past-li"
-          ],
-          "conjugation": {
-            "verb": "kuanza (to start)",
-            "tense": "Past (-li-)",
-            "rows": [
-              {
-                "pronoun": "I",
-                "form": "nilianza"
-              },
-              {
-                "pronoun": "you",
-                "form": "ulianza"
-              },
-              {
-                "pronoun": "he/she",
-                "form": "alianza"
-              },
-              {
-                "pronoun": "we",
-                "form": "tulianza"
-              },
-              {
-                "pronoun": "you all",
-                "form": "mlianza"
-              },
-              {
-                "pronoun": "they",
-                "form": "walianza"
-              }
-            ]
-          }
+          "text": "Ilianza",
+          "gloss": "it started"
         },
         {
-          "text": "jana",
-          "gloss": "yesterday — n/n noun (same word for one & many)",
-          "grammar": [
-            "noun-classes-mwa-nn"
-          ]
+          "text": "jana usiku",
+          "gloss": "last night"
         },
         {
-          "text": "usiku",
-          "gloss": "night (u-class, used like n/n) — n/n noun (same word for one & many)",
-          "grammar": [
-            "noun-classes-mwa-nn"
-          ]
+          "text": "Kichwa",
+          "gloss": "head"
         },
         {
-          "text": "Kichwa inauma",
-          "gloss": "\"My head hurts\" — Kenyan n/n agreement.",
-          "sanifu": "Sanifu: Kichwa kinauma (kichwa is ki/vi) #sanifu-noun-classes"
+          "text": "yangu",
+          "gloss": "my",
+          "sanifu": "changu"
+        },
+        {
+          "text": "inauma",
+          "gloss": "hurts",
+          "sanifu": "kinauma"
         },
         {
           "text": "sana",
           "gloss": "very / a lot"
         }
       ],
-      "sanifu": "Nilianza jana usiku. Kichwa kinauma sana.",
+      "sanifu": "Ilianza jana usiku. Kichwa changu kinauma sana.",
+      "english": "It started last night. My head hurts a lot.",
       "options": [
         {
-          "swahili": "Nilianza jana usiku. Kichwa inauma sana.",
-          "correct": true
+          "correct": true,
+          "swahili": "Ilianza jana usiku. Kichwa yangu inauma sana."
         },
         {
-          "swahili": "Nitaanza jana usiku. Kichwa inauma sana.",
-          "correct": false
+          "correct": false,
+          "swahili": "Nitaanza jana usiku. Kichwa inauma sana."
         },
         {
-          "swahili": "Nilianza jana usiku. Kichwa inaumwa sana.",
-          "correct": false
+          "correct": false,
+          "swahili": "Nilianza jana usiku. Kichwa inaumwa sana."
         }
-      ]
+      ],
+      "speaker": "Mteja",
+      "swahili": "Ilianza jana usiku. Kichwa yangu inauma sana."
     },
     {
       "id": "5b0175bd-8840-54cc-96d5-568a49db1482",
-      "speaker": "Daktari",
       "role": "auto",
-      "swahili": "Una homa? Ulikohoa?",
-      "english": "Do you have a fever? Did you cough?",
       "words": [
         {
           "text": "Una",
-          "gloss": "\"You have\" — u- + -na (with). Swahili \"have\" is literally \"be with\".",
+          "gloss": "Una = you have (u- + -na, literally \"you are with\")",
           "grammar": [
             "na-have"
           ],
           "conjugation": {
+            "rows": [
+              {
+                "form": "nina",
+                "pronoun": "I"
+              },
+              {
+                "form": "una",
+                "pronoun": "you"
+              },
+              {
+                "form": "ana",
+                "pronoun": "he/she"
+              },
+              {
+                "form": "tuna",
+                "pronoun": "we"
+              },
+              {
+                "form": "mna",
+                "pronoun": "you all"
+              },
+              {
+                "form": "wana",
+                "pronoun": "they"
+              },
+              {
+                "form": "ina",
+                "pronoun": "it (n/n)"
+              },
+              {
+                "form": "zina",
+                "pronoun": "they (n/n)"
+              }
+            ],
             "verb": "-na (have)",
-            "tense": "Present",
-            "rows": [
-              {
-                "pronoun": "I",
-                "form": "nina"
-              },
-              {
-                "pronoun": "you",
-                "form": "una"
-              },
-              {
-                "pronoun": "he/she",
-                "form": "ana"
-              },
-              {
-                "pronoun": "we",
-                "form": "tuna"
-              },
-              {
-                "pronoun": "you all",
-                "form": "mna"
-              },
-              {
-                "pronoun": "they",
-                "form": "wana"
-              },
-              {
-                "pronoun": "it (n/n)",
-                "form": "ina"
-              },
-              {
-                "pronoun": "they (n/n)",
-                "form": "zina"
-              }
-            ]
+            "tense": "Present"
           }
         },
         {
+          "note": "Kenyans also use \"homa\" loosely for a bad cold.",
           "text": "homa",
-          "gloss": "\"fever / flu\" — Kenyans also use it for a bad cold"
+          "gloss": "homa = fever / flu"
         },
         {
-          "text": "Ulikohoa",
-          "gloss": "\"You coughed\" — u- (subject: you) + li- (past) + -kohoa (cough). From kukohoa.",
-          "grammar": [
-            "past-li"
-          ],
-          "conjugation": {
-            "verb": "kukohoa (to cough)",
-            "tense": "Past (-li-)",
-            "rows": [
-              {
-                "pronoun": "I",
-                "form": "nilikohoa"
-              },
-              {
-                "pronoun": "you",
-                "form": "ulikohoa"
-              },
-              {
-                "pronoun": "he/she",
-                "form": "alikohoa"
-              },
-              {
-                "pronoun": "we",
-                "form": "tulikohoa"
-              },
-              {
-                "pronoun": "you all",
-                "form": "mlikohoa"
-              },
-              {
-                "pronoun": "they",
-                "form": "walikohoa"
-              }
-            ]
-          }
+          "note": "From \"kukohoa\" (to cough). In everyday Kenyan speech it takes n/n agreement (\"kikohozi inaniuma\"); Sanifu treats it as ki/vi.",
+          "text": "kikohozi",
+          "gloss": "kikohozi = a cough"
         }
-      ]
+      ],
+      "english": "Do you have a fever? Do you have a cough?",
+      "speaker": "Daktari",
+      "swahili": "Una homa? Una kikohozi?"
     },
     {
       "id": "7492c73f-9cd6-5133-8263-d580be4d86ec",
@@ -544,128 +440,91 @@
     },
     {
       "id": "dd4a03ec-0a2e-5a68-ae1b-03512cea831d",
-      "speaker": "Mteja",
+      "note": "Kenyans say \"sikukula\" although \"sikula\" would be correct as \"kula is a short verb\".",
       "role": "user",
-      "swahili": "Nilikula chapati tu. Sikula chakula kingi.",
-      "english": "I only ate chapati. I didn't eat much food.",
       "words": [
         {
           "text": "Nilikula",
-          "gloss": "\"I ate\" — ni- (subject: I) + li- (past) + -la (eat). From kula.",
+          "gloss": "Nilikula = I ate (ni- I + -li- past + kula)",
           "grammar": [
             "past-li"
           ],
           "conjugation": {
-            "verb": "kula (to eat)",
-            "tense": "Past (-li-)",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "nilikula"
+                "form": "nilikula",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "ulikula"
+                "form": "ulikula",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "alikula"
+                "form": "alikula",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tulikula"
+                "form": "tulikula",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mlikula"
+                "form": "mlikula",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "walikula"
+                "form": "walikula",
+                "pronoun": "they"
               }
-            ]
+            ],
+            "verb": "kula (to eat)",
+            "tense": "Past (-li-)"
           }
         },
         {
           "text": "chapati",
-          "gloss": "chapati — Kenyan flatbread — n/n noun (same word for one & many)",
+          "gloss": "chapati = Kenyan flatbread",
           "grammar": [
             "noun-classes-mwa-nn"
           ]
         },
         {
           "text": "tu",
-          "gloss": "just / only"
+          "gloss": "tu = just / only"
         },
         {
-          "text": "Sikula",
-          "gloss": "\"I didn't eat\" — si- (negative subject: not I) + ku- (past (negative)) + -la (eat). From kula.",
-          "grammar": [
-            "negative-past"
-          ],
-          "conjugation": {
-            "verb": "kula (to eat)",
-            "tense": "Past, negative (-ku-)",
-            "rows": [
-              {
-                "pronoun": "I",
-                "form": "sikula"
-              },
-              {
-                "pronoun": "you",
-                "form": "hukula"
-              },
-              {
-                "pronoun": "he/she",
-                "form": "hakula"
-              },
-              {
-                "pronoun": "we",
-                "form": "hatukula"
-              },
-              {
-                "pronoun": "you all",
-                "form": "hamkula"
-              },
-              {
-                "pronoun": "they",
-                "form": "hawakula"
-              }
-            ]
-          }
+          "text": "Sikukula",
+          "gloss": "Sikukula = I didn't eat (si- not I + -ku- past negative + kula)",
+          "sanifu": "Sikula"
         },
         {
           "text": "chakula",
-          "gloss": "food (plural vyakula) — Kenyans give it n/n agreement",
-          "grammar": [
-            "sanifu-noun-classes"
-          ],
-          "sanifu": "Sanifu: ki/vi class — chakula changu, chakula hiki"
+          "gloss": "chakula = food"
         },
         {
-          "text": "kingi",
-          "gloss": "\"much / a lot\" — ki/vi agreement (chakula kingi).",
-          "grammar": [
-            "sanifu-noun-classes"
-          ],
-          "sanifu": "ki/vi class; Kenyans often say \"chakula mingi\""
+          "note": "Chakula is a ki/vi noun in Sanifu, so it takes \"kingi\". Kenyans often say \"mingi\" instead.",
+          "text": "mingi",
+          "gloss": "mingi = much / a lot",
+          "sanifu": "kingi"
         }
       ],
       "sanifu": "Nilikula chapati tu. Sikula chakula kingi.",
+      "english": "I only ate chapati. I didn't eat much food.",
       "options": [
         {
-          "swahili": "Nilikula chapati tu. Sikula chakula kingi.",
-          "correct": true
+          "correct": true,
+          "swahili": "Nilikula chapati tu. Sikukula chakula mingi."
         },
         {
-          "swahili": "Ninakula chapati tu. Sikula chakula kingi.",
-          "correct": false
+          "correct": false,
+          "swahili": "Ninakula chapati tu. Sikukula chakula mingi."
         },
         {
-          "swahili": "Nilikula chapati tu. Sili chakula kingi.",
-          "correct": false
+          "correct": false,
+          "swahili": "Nilikula chapati tu. Sili chakula kingi."
         }
-      ]
+      ],
+      "speaker": "Mteja",
+      "swahili": "Nilikula chapati tu. Sikukula chakula mingi."
     },
     {
       "id": "be7eee99-bd4c-5a2d-a6dc-146278e76e74",
@@ -809,7 +668,8 @@
           "swahili": "Asante. Ninakula dawa hii wapi?",
           "correct": false
         }
-      ]
+      ],
+      "literal": "Thanks. I drink this medicine in what way?"
     },
     {
       "id": "750296b7-9545-5da4-aa19-09df9375f91c",
@@ -911,8 +771,8 @@
       "id": "c37bc0e2-60b1-5b19-8dc2-612d5cd1d351",
       "speaker": "Daktari",
       "role": "auto",
-      "swahili": "Na kunywa maji mengi. Ukipata shida, rudi kesho.",
-      "english": "And drink a lot of water. If you have trouble, come back tomorrow.",
+      "swahili": "Na kunywa maji mengi. Ukipata shida, rudi hapa kwa chemist kesho.",
+      "english": "And drink lots of water. If you have any trouble, come back here to the chemist tomorrow.",
       "words": [
         {
           "text": "Na",
@@ -949,6 +809,10 @@
           "grammar": [
             "imperatives"
           ]
+        },
+        {
+          "text": "chemist",
+          "gloss": "\"Pharmacy\" — Kenyans just say chemist."
         },
         {
           "text": "kesho",
@@ -1053,14 +917,14 @@
     },
     {
       "id": "f8d63cec-5408-5aeb-bbb7-2f8ce2a4546a",
-      "swahili": "Ulianza lini?",
-      "english": "When did you start?",
+      "swahili": "Ilianza lini?",
+      "english": "When did it start?",
       "exampleContext": "lini = when?",
       "partOfSpeech": "phrase"
     },
     {
       "id": "add3cc55-baa3-5242-843b-9d95f46fb236",
-      "swahili": "Kichwa inauma",
+      "swahili": "Kichwa yangu inauma",
       "english": "My head hurts",
       "exampleContext": "Everyday Kenyan.",
       "partOfSpeech": "phrase",
@@ -1176,12 +1040,12 @@
     {
       "id": "3a49cee6-6f55-5f37-b908-44369e997b56",
       "mode": "translate",
-      "english": "When did you start?",
+      "english": "When did it start?",
       "before": "",
       "after": " lini?",
       "options": [
         {
-          "text": "Ulianza",
+          "text": "Ilianza",
           "correct": true
         },
         {
@@ -1284,12 +1148,12 @@
     {
       "id": "2df1a744-e75e-5d32-bb68-c60cdf126efe",
       "mode": "translate",
-      "english": "Did you cough?",
+      "english": "Do you have a cough?",
       "before": "",
       "after": "?",
       "options": [
         {
-          "text": "Ulikohoa",
+          "text": "Una kikohozi",
           "correct": true
         },
         {
@@ -1303,7 +1167,7 @@
           "feedback": "Utakohoa = You will cough"
         }
       ],
-      "explanation": "Ulikohoa = \"You coughed\" — u- (subject: you) + li- (past) + -kohoa (cough). From kukohoa.",
+      "explanation": "Una kikohozi = \"You coughed\" — u- (subject: you) + li- (past) + -kohoa (cough). From kukohoa.",
       "grammar": [
         "past-li"
       ]
@@ -1320,9 +1184,9 @@
           "correct": true
         },
         {
-          "text": "inawasha",
+          "text": "zinawasha",
           "correct": false,
-          "feedback": "inawasha = It is switching on"
+          "feedback": "zinawasha = It is switching on"
         },
         {
           "text": "inazunguka",
@@ -1575,7 +1439,8 @@
       "explanation": "pona = heal / get well. Pole = sorry; poa = cool.",
       "grammar": [
         "imperatives"
-      ]
+      ],
+      "literal": "Heal quickly!"
     },
     {
       "id": "b74b7ab7-b7d3-52fe-9ecf-1713fb39ec6a",
@@ -1602,7 +1467,8 @@
       "explanation": "A fixed phrase: si- + -ji- (myself) + -sikii (feel, negative).",
       "grammar": [
         "negative-present"
-      ]
+      ],
+      "literal": "I don't feel myself well."
     }
   ]
 }

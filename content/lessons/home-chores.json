@@ -404,7 +404,7 @@
       "id": "9ce813ef-a84c-5aff-a514-3d8ad88620eb",
       "speaker": "John",
       "role": "user",
-      "swahili": "Asante. Maji ni moto au baridi?",
+      "swahili": "Asante. Maji ni moto ama baridi?",
       "english": "Thanks. Is the water hot or cold?",
       "words": [
         {
@@ -435,7 +435,7 @@
           "sanifu": "Sanifu: m/mi class — moto mkubwa"
         },
         {
-          "text": "au",
+          "text": "ama",
           "gloss": "or"
         },
         {
@@ -448,47 +448,35 @@
       ],
       "options": [
         {
-          "swahili": "Asante. Maji ni moto au baridi?",
+          "swahili": "Asante. Maji ni moto ama baridi?",
           "correct": true
         },
         {
-          "swahili": "Asante. Maji ni wapi au baridi?",
+          "swahili": "Asante. Maji ni wapi ama baridi?",
           "correct": false
         },
         {
-          "swahili": "Asante. Sabuni ni moto au baridi?",
+          "swahili": "Asante. Sabuni ni moto ama baridi?",
           "correct": false
         }
       ]
     },
     {
       "id": "9b3d977b-b116-56ff-bcbc-f3ea1d5951ef",
-      "speaker": "Otieno",
       "role": "auto",
-      "swahili": "Maji ni baridi. Stima iko, lakini hita ni mbovu.",
-      "english": "The water is cold. There's power, but the heater is broken.",
       "words": [
         {
           "text": "Maji",
           "gloss": "water — Kenyans give it n/n agreement",
-          "grammar": [
-            "sanifu-noun-classes"
-          ],
           "sanifu": "Sanifu: ji/ma class — maji yangu, maji haya (ma- plural of the ji/ma class)"
         },
         {
           "text": "ni",
-          "gloss": "is / am / are",
-          "grammar": [
-            "ni-copula"
-          ]
+          "gloss": "is / am / are"
         },
         {
           "text": "baridi",
-          "gloss": "cold — n/n noun (same word for one & many)",
-          "grammar": [
-            "noun-classes-mwa-nn"
-          ]
+          "gloss": "cold — n/n noun (same word for one & many)"
         },
         {
           "text": "Stima",
@@ -496,48 +484,7 @@
         },
         {
           "text": "iko",
-          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine.",
-          "grammar": [
-            "ko-location"
-          ],
-          "conjugation": {
-            "verb": "-ko (be at / be doing)",
-            "tense": "Present",
-            "rows": [
-              {
-                "pronoun": "I",
-                "form": "niko"
-              },
-              {
-                "pronoun": "you",
-                "form": "uko"
-              },
-              {
-                "pronoun": "he/she",
-                "form": "yuko"
-              },
-              {
-                "pronoun": "we",
-                "form": "tuko"
-              },
-              {
-                "pronoun": "you all",
-                "form": "mko"
-              },
-              {
-                "pronoun": "they",
-                "form": "wako"
-              },
-              {
-                "pronoun": "it (n/n)",
-                "form": "iko"
-              },
-              {
-                "pronoun": "they (n/n)",
-                "form": "ziko"
-              }
-            ]
-          }
+          "gloss": "\"It (n/n) is (at / doing)\" — i- + -ko (be at a place, or how you're doing). \"Iko poa\" = it (n/n) is fine."
         },
         {
           "text": "lakini",
@@ -548,24 +495,18 @@
           "gloss": "(water) heater"
         },
         {
-          "text": "ni",
-          "gloss": "is / am / are",
-          "grammar": [
-            "ni-copula"
-          ]
-        },
-        {
-          "text": "mbovu",
-          "gloss": "broken / rotten"
+          "note": "Kenyans use \"mbaya\" for anything not in good order, from a heater to the weather (\"hita ni mbaya\", \"barabara ni mbaya\"). You'll also hear \"mbovu\" (faulty, rotten) and \"imeharibika\" (it's broken down) for machines.",
+          "text": "mbaya",
+          "gloss": "bad / not working (n/n form of -baya)"
         }
-      ]
+      ],
+      "english": "The water is cold. There's power, but the heater isn't working.",
+      "speaker": "Otieno",
+      "swahili": "Maji ni baridi. Stima iko, lakini hita ni mbaya."
     },
     {
       "id": "f24a63cc-7d2d-5816-a129-e94074307f75",
-      "speaker": "John",
       "role": "user",
-      "swahili": "Sawa, hata maji baridi ni sawa.",
-      "english": "Okay, even cold water is fine.",
       "words": [
         {
           "text": "Sawa",
@@ -602,20 +543,23 @@
           "gloss": "okay / alright (lit. \"equal\")"
         }
       ],
+      "english": "Okay, even cold water is fine.",
       "options": [
         {
-          "swahili": "Sawa, hata maji baridi ni sawa.",
-          "correct": true
+          "correct": true,
+          "swahili": "Sawa, hata maji baridi ni sawa."
         },
         {
-          "swahili": "Sawa, hata maji baridi ni chafu.",
-          "correct": false
+          "correct": false,
+          "swahili": "Sawa, hata maji baridi ni chafu."
         },
         {
-          "swahili": "Sawa, hata maji moto ni baridi.",
-          "correct": false
+          "correct": false,
+          "swahili": "Sawa, hata maji moto ni baridi."
         }
-      ]
+      ],
+      "speaker": "John",
+      "swahili": "Sawa, hata maji baridi ni sawa."
     },
     {
       "id": "131a9802-3625-5761-b873-ff08e2cb8b2c",
@@ -1068,10 +1012,7 @@
     },
     {
       "id": "15bd52cb-0194-5406-abf4-66a989e41e79",
-      "speaker": "Otieno",
       "role": "auto",
-      "swahili": "Sawa. Mimi ninatoa taka taka, halafu ninapika chakula cha mchana.",
-      "english": "Okay. I'm taking out the rubbish, then I'm cooking lunch.",
       "words": [
         {
           "text": "Sawa",
@@ -1169,9 +1110,13 @@
         },
         {
           "text": "chakula cha mchana",
-          "gloss": "lunch (lit. \"food of midday\")"
+          "gloss": "lunch (lit. \"food of midday\")",
+          "note": "Kenyans often shorten it to \"chamcha\" — or simply say \"lunch\"."
         }
-      ]
+      ],
+      "english": "Okay. I'm taking out the rubbish, then I'm cooking lunch.",
+      "speaker": "Otieno",
+      "swahili": "Sawa. Mimi ninatoa taka taka, halafu ninapika chakula cha mchana."
     },
     {
       "id": "db2d715a-ff08-5e42-872f-7ef76ce9e6cf",
@@ -1374,13 +1319,6 @@
       "partOfSpeech": "verb"
     },
     {
-      "id": "784d90e8-0f8f-5477-ae7c-c8ca0b1ad71d",
-      "swahili": "kupiga deki",
-      "english": "to mop",
-      "exampleContext": "kupiga pasi = to iron",
-      "partOfSpeech": "phrase"
-    },
-    {
       "id": "9fc1f280-4837-597d-b268-55b18cf54dd6",
       "swahili": "kutandika kitanda",
       "english": "to make the bed",
@@ -1544,49 +1482,53 @@
     {
       "id": "ac01a104-8edc-5fe6-b564-88ca4672e8ae",
       "mode": "translate",
-      "english": "I'm mopping.",
-      "before": "Ninapiga ",
-      "after": ".",
+      "english": "I'm sweeping the floor.",
+      "before": "",
+      "after": " sakafu.",
       "options": [
         {
-          "text": "deki",
+          "text": "Ninafagia",
           "correct": true
         },
         {
-          "text": "pasi",
-          "correct": false,
-          "feedback": "pasi = iron (for clothes)"
+          "text": "Ninaosha",
+          "correct": false
         },
         {
-          "text": "simu",
-          "correct": false,
-          "feedback": "simu = phone / call"
+          "text": "Ninafua",
+          "correct": false
         }
       ],
-      "explanation": "kupiga deki = to mop, kupiga pasi = to iron, kupiga simu = to phone."
+      "explanation": "kufagia = to sweep, kuosha = to wash (dishes), kufua = to wash (clothes).",
+      "grammar": [
+        "present-na"
+      ]
     },
     {
       "id": "893a18d1-56a2-5267-b25a-fb0b2a6eb0d4",
       "mode": "translate",
-      "english": "She's ironing the clothes.",
-      "before": "Anapiga ",
-      "after": " nguo.",
+      "english": "He's making the bed.",
+      "before": "",
+      "after": " kitanda.",
       "options": [
         {
-          "text": "pasi",
+          "text": "Anatandika",
           "correct": true
         },
         {
-          "text": "deki",
+          "text": "Anafagia",
           "correct": false
         },
         {
-          "text": "simu",
-          "correct": false,
-          "feedback": "simu = phone / call"
+          "text": "Anafua",
+          "correct": false
         }
       ],
-      "explanation": "pasi: iron (for clothes) — kupiga pasi = to iron"
+      "explanation": "Anatandika = a- (he/she) + -na- (present) + -tandika. Kutandika kitanda = to make the bed.",
+      "grammar": [
+        "present-na",
+        "subject-prefixes"
+      ]
     },
     {
       "id": "96d85914-caaa-53b9-a28c-fe3c736a43c1",

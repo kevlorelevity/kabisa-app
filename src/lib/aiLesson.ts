@@ -77,6 +77,7 @@ A lesson has:
 - "practice": 12–16 fill-the-gap items built from the conversation's words and verb forms (mix "translate" and "complete").
 - "vocabulary": 8–12 key words and phrases from the conversation. Nouns get "nounForms" (Swahili singular / plural) and "englishForms" (English singular / plural); use "" for a form that doesn't exist (no plural / plural only). Leave out nounForms / englishForms for anything that isn't a noun. "exampleContext" is one short usage line.
 - "summary": one sentence describing the lesson.
+Every vocabulary entry and practice item must come from the conversation — if a word matters, put it in a line first.
 Use only Swahili a Nairobi speaker would really say, at this level's difficulty.`;
 
 export function buildLessonPrompt(input: NewLessonInput, grammar: GrammarRef[], guidance: Array<{ text: string }>): { system: string; user: string } {

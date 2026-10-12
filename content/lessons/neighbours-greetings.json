@@ -1132,12 +1132,15 @@
     {
       "id": "843390ee-6b13-50c1-b2e9-b14fdff8b35e",
       "mode": "translate",
-      "english": "He/she is here.",
-      "before": "",
       "after": " hapa.",
+      "before": "",
+      "english": "He/she is here.",
+      "grammar": [
+        "ko-location"
+      ],
       "options": [
         {
-          "text": "Yuko",
+          "text": "Ako",
           "correct": true
         },
         {
@@ -1151,10 +1154,7 @@
           "feedback": "Uko = You are (at / doing)"
         }
       ],
-      "explanation": "Yuko = \"He/she is (at / doing)\" — yu- + -ko (be at a place, or how you're doing). \"Yuko poa\" = he/she is fine.",
-      "grammar": [
-        "ko-location"
-      ]
+      "explanation": "Ako = \"He/she is (at / doing)\" — yu- + -ko (be at a place, or how you're doing). \"Ako poa\" = he/she is fine."
     },
     {
       "id": "7720f107-859f-5fcb-a191-633f44fea3f9",
@@ -1484,28 +1484,26 @@
     {
       "id": "86fddcbb-c9a3-53f1-88ca-05cfdaa6697a",
       "mode": "translate",
-      "english": "Good evening?",
+      "english": "Good morning?",
       "before": "Habari ya ",
       "after": "?",
       "options": [
         {
-          "text": "jioni",
+          "text": "asubuhi",
           "correct": true
         },
         {
-          "text": "asubuhi",
-          "correct": false,
-          "feedback": "asubuhi = morning"
+          "text": "jioni",
+          "correct": false
         },
         {
           "text": "mchana",
-          "correct": false,
-          "feedback": "mchana = afternoon / daytime"
+          "correct": false
         }
       ],
-      "explanation": "jioni = evening (roughly 4pm–7pm).",
+      "explanation": "asubuhi = morning. Later in the day the greeting changes: habari ya mchana (afternoon), habari ya jioni (evening).",
       "grammar": [
-        "noun-classes-mwa-nn"
+        "greetings"
       ]
     },
     {

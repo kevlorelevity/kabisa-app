@@ -489,7 +489,8 @@
           "gloss": "\"at the corner\" — Kenyan; Sanifu prefers kwenye kona.",
           "grammar": [
             "locative-ni"
-          ]
+          ],
+          "sanifu": "pembeni"
         },
         {
           "text": "ya kwanza",
@@ -508,6 +509,84 @@
         }
       ],
       "sanifu": "Nenda moja kwa moja, halafu kwenye kona ya kwanza, geuka kushoto."
+    },
+    {
+      "id": "b7f89718-0ffb-4c0d-80a3-7cf888e99b94",
+      "speaker": "Mgeni",
+      "role": "user",
+      "swahili": "Samahani, sielewi. Rudia pole pole, tafadhali.",
+      "english": "Sorry, I don't understand. Say it again slowly, please.",
+      "words": [
+        {
+          "text": "Samahani",
+          "gloss": "\"Sorry / excuse me.\""
+        },
+        {
+          "text": "sielewi",
+          "gloss": "\"I don't understand\" — si- (not I) + -elew- + -i. From kuelewa.",
+          "grammar": [
+            "negative-present"
+          ]
+        },
+        {
+          "text": "Rudia",
+          "gloss": "\"Repeat!\" — from kurudia.",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "pole pole",
+          "gloss": "\"Slowly.\""
+        },
+        {
+          "text": "tafadhali",
+          "gloss": "\"Please.\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Samahani, sielewi. Rudia pole pole, tafadhali.",
+          "correct": true
+        },
+        {
+          "swahili": "Samahani, naelewa. Rudia pole pole, tafadhali.",
+          "correct": false
+        },
+        {
+          "swahili": "Samahani, sielewi. Enda pole pole, tafadhali.",
+          "correct": false
+        }
+      ],
+      "literal": "Sorry, I don't understand. Repeat slowly, please."
+    },
+    {
+      "id": "9ef8f4fa-db3c-46f3-9334-7a57e235c0e4",
+      "speaker": "Askari",
+      "role": "auto",
+      "swahili": "Sawa. Enda… moja kwa moja. Halafu… kushoto.",
+      "english": "Okay. Go… straight. Then… left.",
+      "words": [
+        {
+          "text": "Enda",
+          "gloss": "\"Go!\"",
+          "grammar": [
+            "imperatives"
+          ]
+        },
+        {
+          "text": "moja kwa moja",
+          "gloss": "\"Straight (on).\""
+        },
+        {
+          "text": "Halafu",
+          "gloss": "\"Then.\""
+        },
+        {
+          "text": "kushoto",
+          "gloss": "\"Left.\""
+        }
+      ]
     },
     {
       "id": "87f3d8f6-1e6d-5353-9246-08e131de7849",
@@ -721,7 +800,8 @@
           "swahili": "Ni pesa ngapi kwa miguu?",
           "correct": false
         }
-      ]
+      ],
+      "literal": "It is how many minutes by feet?"
     },
     {
       "id": "9bbb1558-f47b-5185-884a-ff2fe6b5269f",
@@ -1129,26 +1209,24 @@
     {
       "id": "734ca8c2-e3f6-5b4c-bbf1-7ebadea09012",
       "mode": "translate",
-      "english": "Where is the driver?",
-      "before": "Dereva ",
+      "english": "Where is the guard?",
+      "before": "Askari ",
       "after": " wapi?",
       "options": [
         {
-          "text": "yuko",
+          "text": "ako",
           "correct": true
         },
         {
           "text": "uko",
-          "correct": false,
-          "feedback": "uko = You are (at / doing)"
+          "correct": false
         },
         {
           "text": "wako",
-          "correct": false,
-          "feedback": "wako = They are (at / doing)"
+          "correct": false
         }
       ],
-      "explanation": "yuko = he / she is, uko = you are, wako = they are.",
+      "explanation": "ako = he / she is, uko = you are, wako = they are.",
       "grammar": [
         "ko-location"
       ]

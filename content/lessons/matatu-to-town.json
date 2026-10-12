@@ -637,8 +637,8 @@
       "id": "03775d19-3a47-5bcf-b7d3-87b955f0a37d",
       "speaker": "Makanga",
       "role": "auto",
-      "swahili": "Sawa, nitakuambia.",
-      "english": "Okay, I'll tell you.",
+      "swahili": "Sawa, nitakuambia. Mimi ni makanga — ni kazi yangu!",
+      "english": "Okay, I'll tell you. I'm the conductor — it's my job!",
       "words": [
         {
           "text": "Sawa",
@@ -681,6 +681,17 @@
               }
             ]
           }
+        },
+        {
+          "text": "makanga",
+          "gloss": "\"Matatu conductor\" — collects the fares and shouts the stops."
+        },
+        {
+          "text": "kazi yangu",
+          "gloss": "\"My job.\"",
+          "grammar": [
+            "possessives"
+          ]
         }
       ]
     },
@@ -1515,26 +1526,24 @@
     {
       "id": "15098c59-452c-5615-bb56-3dc1c75f8ea2",
       "mode": "translate",
-      "english": "Tomorrow I'll come back.",
-      "before": "Kesho ",
-      "after": ".",
+      "english": "I'll go back to Kilimani.",
+      "before": "",
+      "after": " Kilimani.",
       "options": [
         {
-          "text": "nitarudi",
+          "text": "Nitarudi",
           "correct": true
         },
         {
-          "text": "utarudi",
-          "correct": false,
-          "feedback": "utarudi = You will come back"
+          "text": "Utarudi",
+          "correct": false
         },
         {
-          "text": "ninarudi",
-          "correct": false,
-          "feedback": "ninarudi = I am coming back"
+          "text": "Ninarudi",
+          "correct": false
         }
       ],
-      "explanation": "nitarudi = \"I will come back\" — ni- (subject: I) + ta- (future) + -rudi (come back). From kurudi.",
+      "explanation": "nitarudi = ni- (I) + -ta- (future) + -rudi (go back). From kurudi.",
       "grammar": [
         "future-ta"
       ]
@@ -1565,30 +1574,6 @@
       "grammar": [
         "noun-classes-mwa-nn"
       ]
-    },
-    {
-      "id": "23544671-c514-5338-b8fc-92480a900a1a",
-      "mode": "translate",
-      "english": "Drive slowly!",
-      "before": "Endesha ",
-      "after": "!",
-      "options": [
-        {
-          "text": "pole pole",
-          "correct": true
-        },
-        {
-          "text": "haraka",
-          "correct": false,
-          "feedback": "haraka = quickly / hurry"
-        },
-        {
-          "text": "moja kwa moja",
-          "correct": false,
-          "feedback": "moja kwa moja = straight on / directly"
-        }
-      ],
-      "explanation": "pole pole: slowly / gently"
     }
   ]
 }

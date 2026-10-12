@@ -1353,34 +1353,6 @@
       ]
     },
     {
-      "id": "1585e050-7d60-53e6-8521-10d45369583c",
-      "mode": "translate",
-      "english": "Can you help me?",
-      "before": "",
-      "after": " kunisaidia?",
-      "options": [
-        {
-          "text": "Unaweza",
-          "correct": true
-        },
-        {
-          "text": "Naweza",
-          "correct": false,
-          "feedback": "Naweza = I can"
-        },
-        {
-          "text": "Wanaweza",
-          "correct": false,
-          "feedback": "Wanaweza = They can"
-        }
-      ],
-      "explanation": "-weza (can) is followed by a ku- verb.",
-      "grammar": [
-        "present-na",
-        "helper-verbs"
-      ]
-    },
-    {
       "id": "e8a098ce-92bc-5ed9-9f25-f221acbbd55d",
       "mode": "translate",
       "english": "Bring me tea, please.",
@@ -1683,7 +1655,7 @@
       "after": " soda?",
       "options": [
         {
-          "text": "au",
+          "text": "ama",
           "correct": true
         },
         {

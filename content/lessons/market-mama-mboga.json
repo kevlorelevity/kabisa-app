@@ -489,7 +489,8 @@
           "swahili": "Hutaki nyingi. Nipe za hamsini tu.",
           "correct": false
         }
-      ]
+      ],
+      "literal": "I don't want many. Give me (ones) of fifty only."
     },
     {
       "id": "5e25ad3b-bce7-58fa-bfeb-72497ebe7d19",
@@ -878,7 +879,8 @@
           "swahili": "Huna pesa mkononi. Una M-Pesa?",
           "correct": false
         }
-      ]
+      ],
+      "literal": "I don't have money in hand. Do you have M-Pesa?"
     },
     {
       "id": "9bb4d3a1-a785-5fc9-83ad-88845cd5a80c",
@@ -1054,13 +1056,6 @@
       "partOfSpeech": "phrase"
     },
     {
-      "id": "04436cc4-1a99-5856-8902-043fe18829d1",
-      "swahili": "Una baki?",
-      "english": "Do you have change?",
-      "exampleContext": "baki = change, what's left over",
-      "partOfSpeech": "phrase"
-    },
-    {
       "id": "385ff9f7-e0cb-57ac-973b-f73197975dc4",
       "swahili": "mia moja",
       "english": "100",
@@ -1166,9 +1161,9 @@
     {
       "id": "16267fdc-b85f-5ef8-9177-685657a41bab",
       "mode": "translate",
-      "english": "She doesn't want sugar.",
+      "english": "She doesn't want sukuma.",
       "before": "",
-      "after": " sukari.",
+      "after": " sukuma.",
       "options": [
         {
           "text": "Hataki",
@@ -1176,16 +1171,14 @@
         },
         {
           "text": "Hutaki",
-          "correct": false,
-          "feedback": "Hutaki = You don't want"
+          "correct": false
         },
         {
           "text": "Hatutaki",
-          "correct": false,
-          "feedback": "Hatutaki = We don't want"
+          "correct": false
         }
       ],
-      "explanation": "ha- = not he/she.",
+      "explanation": "ha- = not he/she: hataki. hu- = not you (hutaki), hatu- = not we (hatutaki).",
       "grammar": [
         "negative-present"
       ]
@@ -1243,33 +1236,6 @@
       "grammar": [
         "na-have",
         "negative-present"
-      ]
-    },
-    {
-      "id": "f25ebe48-9643-5a21-b70d-99af4cc495e5",
-      "mode": "translate",
-      "english": "Do you have change?",
-      "before": "",
-      "after": " baki?",
-      "options": [
-        {
-          "text": "Una",
-          "correct": true
-        },
-        {
-          "text": "Nina",
-          "correct": false,
-          "feedback": "Nina = I have"
-        },
-        {
-          "text": "Ana",
-          "correct": false,
-          "feedback": "Ana = He/she has"
-        }
-      ],
-      "explanation": "una = you have. baki = change (lit. what is left over).",
-      "grammar": [
-        "na-have"
       ]
     },
     {
@@ -1465,82 +1431,26 @@
     {
       "id": "ba87e2c4-9836-52d9-ac00-f4363dc0e2b1",
       "mode": "complete",
-      "english": "How many do you want? — Four, please.",
+      "english": "How many do you want? — Six, please.",
       "before": "Unataka ngapi? — ",
       "after": ", tafadhali.",
       "options": [
         {
-          "text": "Nne",
+          "text": "Sita",
           "correct": true
         },
         {
           "text": "Leo",
-          "correct": false,
-          "feedback": "Leo = today"
+          "correct": false
         },
         {
           "text": "Hapa",
-          "correct": false,
-          "feedback": "Hapa = here"
+          "correct": false
         }
       ],
-      "explanation": "Nne: 4 (n/n form — used for counting, money, things)",
+      "explanation": "Sita = 6. Things take the plain numbers: nyanya sita.",
       "grammar": [
         "numbers-money"
-      ]
-    },
-    {
-      "id": "2dbbfae8-f2a4-55b9-bc6f-2bb61f8673ab",
-      "mode": "translate",
-      "english": "I don't know.",
-      "before": "",
-      "after": ".",
-      "options": [
-        {
-          "text": "Sijui",
-          "correct": true
-        },
-        {
-          "text": "Hujui",
-          "correct": false,
-          "feedback": "Hujui = You don't know"
-        },
-        {
-          "text": "Hajui",
-          "correct": false,
-          "feedback": "Hajui = He/she doesn't know"
-        }
-      ],
-      "explanation": "Sijui = \"I don't know\" — si- (negative subject: not I) + -jui (know, negative ends in -i). From kujua.",
-      "grammar": [
-        "negative-present"
-      ]
-    },
-    {
-      "id": "bb007020-5813-553f-81fe-3b65254d0dce",
-      "mode": "translate",
-      "english": "Is it 500 bob? (slang)",
-      "before": "Ni ",
-      "after": "?",
-      "options": [
-        {
-          "text": "punch",
-          "correct": true
-        },
-        {
-          "text": "thao",
-          "correct": false,
-          "feedback": "thao = thao"
-        },
-        {
-          "text": "baki",
-          "correct": false,
-          "feedback": "baki = Remain!"
-        }
-      ],
-      "explanation": "Market slang: punch = 500, thao = 1,000.",
-      "grammar": [
-        "noun-classes-mwa-nn"
       ]
     },
     {

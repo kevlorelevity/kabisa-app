@@ -436,80 +436,83 @@
     },
     {
       "id": "d453c79c-8862-5063-b510-d4d628c8ea75",
-      "speaker": "Mama Njeri",
       "role": "auto",
-      "swahili": "Vikombe tatu. Maji inachemka, halafu unaweka unga kidogo kidogo.",
-      "english": "Three cups. The water boils, then you add the flour little by little.",
       "words": [
         {
           "text": "Vikombe tatu",
-          "gloss": "\"three cups\" — Kenyan.",
-          "sanifu": "Sanifu: vikombe vitatu (ki/vi class)"
+          "gloss": "Vikombe tatu = three cups",
+          "sanifu": "Vikombe vitatu"
         },
         {
-          "text": "Maji",
-          "gloss": "water — Kenyans give it n/n agreement",
-          "grammar": [
-            "sanifu-noun-classes"
-          ],
-          "sanifu": "Sanifu: ji/ma class — maji yangu, maji haya (ma- plural of the ji/ma class)"
+          "note": "Kenyans use \"kama\" for both \"if\" and \"when\"; context tells you which.",
+          "text": "Kama",
+          "gloss": "Kama = when / once (also \"if\")",
+          "sanifu": "Kama"
+        },
+        {
+          "text": "maji",
+          "gloss": "maji = water",
+          "sanifu": "maji"
         },
         {
           "text": "inachemka",
-          "gloss": "\"is boiling\" — -chemka = boil.",
-          "sanifu": "Sanifu: maji yanachemka"
-        },
-        {
-          "text": "halafu",
-          "gloss": "then / and then"
+          "gloss": "inachemka = is boiling",
+          "sanifu": "yanachemka"
         },
         {
           "text": "unaweka",
-          "gloss": "\"You are putting\" — u- (subject: you) + na- (present) + -weka (put). From kuweka.",
+          "gloss": "unaweka = you put / add",
+          "sanifu": "unaweka",
           "grammar": [
             "present-na"
           ],
           "conjugation": {
-            "verb": "kuweka (to put)",
-            "tense": "Present (-na-)",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "ninaweka"
+                "form": "ninaweka",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "unaweka"
+                "form": "unaweka",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "anaweka"
+                "form": "anaweka",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tunaweka"
+                "form": "tunaweka",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mnaweka"
+                "form": "mnaweka",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wanaweka"
+                "form": "wanaweka",
+                "pronoun": "they"
               }
-            ]
+            ],
+            "verb": "kuweka (to put)",
+            "tense": "Present (-na-)"
           }
         },
         {
           "text": "unga",
-          "gloss": "flour"
+          "gloss": "unga = flour",
+          "sanifu": "unga"
         },
         {
           "text": "kidogo kidogo",
-          "gloss": "\"little by little\""
+          "gloss": "kidogo kidogo = little by little",
+          "sanifu": "kidogo kidogo"
         }
       ],
-      "sanifu": "Vikombe vitatu. Maji yanachemka, halafu unaweka unga kidogo kidogo."
+      "sanifu": "Vikombe vitatu. Maji yanachemka, halafu unaweka unga kidogo kidogo.",
+      "english": "Three cups. Once the water boils, you add the flour little by little.",
+      "speaker": "Mama Njeri",
+      "swahili": "Vikombe tatu. Kama maji inachemka, unaweka unga kidogo kidogo.",
+      "note": "In everyday Kenyan Swahili, \"kama\" often means \"once\" or \"when\", not only \"if\": \"Kama maji inachemka, unaweka unga\" means \"Once the water boils, you add the flour.\" You'll hear it all the time in step-by-step instructions."
     },
     {
       "id": "125efbf7-39e2-5201-b10a-6169f1de91ad",
@@ -572,44 +575,17 @@
         },
         {
           "text": "unasonga",
-          "gloss": "\"you stir (the ugali)\" — kusonga is the special verb for making ugali"
+          "gloss": "\"You make (the ugali)\" — u- + -na- + -songa. Kusonga ugali = stirring and pressing the stiff dough with a mwiko until it's cooked.",
+          "grammar": [
+            "present-na"
+          ]
         },
         {
           "text": "unakoroga",
-          "gloss": "\"You are stiring\" — u- (subject: you) + na- (present) + -koroga (stir). From kukoroga.",
+          "gloss": "\"You stir\" — u- + -na- + -koroga.",
           "grammar": [
             "present-na"
-          ],
-          "conjugation": {
-            "verb": "kukoroga (to stir)",
-            "tense": "Present (-na-)",
-            "rows": [
-              {
-                "pronoun": "I",
-                "form": "ninakoroga"
-              },
-              {
-                "pronoun": "you",
-                "form": "unakoroga"
-              },
-              {
-                "pronoun": "he/she",
-                "form": "anakoroga"
-              },
-              {
-                "pronoun": "we",
-                "form": "tunakoroga"
-              },
-              {
-                "pronoun": "you all",
-                "form": "mnakoroga"
-              },
-              {
-                "pronoun": "they",
-                "form": "wanakoroga"
-              }
-            ]
-          }
+          ]
         },
         {
           "text": "na",
@@ -827,7 +803,7 @@
       "id": "d93b88d5-ca38-527e-b8ea-47462607ff1d",
       "speaker": "John",
       "role": "user",
-      "swahili": "Ninakata vitunguu sasa. Macho yangu inawasha!",
+      "swahili": "Ninakata vitunguu sasa. Macho yangu zinawasha!",
       "english": "I'm chopping the onions now. My eyes are stinging!",
       "words": [
         {
@@ -883,7 +859,7 @@
           "gloss": "\"my eyes\""
         },
         {
-          "text": "inawasha",
+          "text": "zinawasha",
           "gloss": "\"it stings / itches\" — Kenyan.",
           "sanifu": "Sanifu: yanawasha"
         }
@@ -891,15 +867,15 @@
       "sanifu": "Ninakata vitunguu sasa. Macho yangu yanawasha!",
       "options": [
         {
-          "swahili": "Ninakata vitunguu sasa. Macho yangu inawasha!",
+          "swahili": "Ninakata vitunguu sasa. Macho yangu zinawasha!",
           "correct": true
         },
         {
-          "swahili": "Ninakunywa vitunguu sasa. Macho yangu inawasha!",
+          "swahili": "Ninakunywa vitunguu sasa. Macho yangu zinawasha!",
           "correct": false
         },
         {
-          "swahili": "Anakata vitunguu sasa. Macho yangu inawasha!",
+          "swahili": "Anakata vitunguu sasa. Macho yangu zinawasha!",
           "correct": false
         }
       ]
@@ -976,7 +952,7 @@
       "id": "6ccf3f48-dc63-5c22-b431-abcbf42f66f0",
       "speaker": "John",
       "role": "user",
-      "swahili": "Inanukia vizuri sana! Ninasikia njaa.",
+      "swahili": "Inanukia vizuri sana! Nahisi njaa.",
       "english": "It smells really good! I'm hungry.",
       "words": [
         {
@@ -992,17 +968,17 @@
           "gloss": "very / a lot"
         },
         {
-          "text": "Ninasikia njaa",
+          "text": "Nahisi njaa",
           "gloss": "\"I'm hungry\" — lit. \"I hear hunger\""
         }
       ],
       "options": [
         {
-          "swahili": "Inanukia vizuri sana! Ninasikia njaa.",
+          "swahili": "Inanukia vizuri sana! Nahisi njaa.",
           "correct": true
         },
         {
-          "swahili": "Inanukia vizuri sana! Ninasikia baridi.",
+          "swahili": "Inanukia vizuri sana! Nahisi baridi.",
           "correct": false
         },
         {
@@ -1324,9 +1300,9 @@
     },
     {
       "id": "38c3fd78-5af6-53bd-8c8c-85cc82a8d2e8",
-      "swahili": "Ninasikia njaa",
+      "swahili": "Nahisi njaa",
       "english": "I'm hungry",
-      "exampleContext": "lit. \"I hear hunger\". Also: ninasikia kiu (thirsty), baridi (cold).",
+      "exampleContext": "lit. \"I hear hunger\". Also: nahisi kiu (thirsty), baridi (cold).",
       "partOfSpeech": "phrase"
     },
     {
@@ -1543,7 +1519,7 @@
       "id": "6744b123-5047-5a84-9ff7-8a4fb61067d7",
       "mode": "translate",
       "english": "I'm hungry.",
-      "before": "Ninasikia ",
+      "before": "Nahisi ",
       "after": ".",
       "options": [
         {
@@ -1566,26 +1542,24 @@
     {
       "id": "3ae8aaac-9c7b-53e8-a6c5-6badb6165003",
       "mode": "translate",
-      "english": "I'm thirsty.",
-      "before": "Ninasikia ",
+      "english": "I'm hungry.",
+      "before": "Nahisi ",
       "after": ".",
       "options": [
         {
-          "text": "kiu",
+          "text": "njaa",
           "correct": true
         },
         {
-          "text": "njaa",
-          "correct": false,
-          "feedback": "njaa = hunger"
+          "text": "baridi",
+          "correct": false
         },
         {
           "text": "joto",
-          "correct": false,
-          "feedback": "joto = heat / warmth"
+          "correct": false
         }
       ],
-      "explanation": "kiu = thirst, joto = heat."
+      "explanation": "Nahisi = I feel. njaa = hunger, baridi = cold, joto = heat: Nahisi njaa = I'm hungry."
     },
     {
       "id": "4d97ef49-1302-5c8f-bfaf-c62fbc608af1",
@@ -1619,7 +1593,7 @@
       "mode": "translate",
       "english": "My eyes are stinging.",
       "before": "",
-      "after": " yangu inawasha.",
+      "after": " yangu zinawasha.",
       "options": [
         {
           "text": "Macho",

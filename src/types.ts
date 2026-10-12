@@ -239,6 +239,8 @@ export interface Lesson {
   culturalNote: string;
   /** One-line scene-setter shown above the dialogue, e.g. who starts and why. */
   startingPoint: string;
+  /** "Read this first": a short note + grammar chips shown before the conversation, for forms learners must tell apart before they try them. */
+  primer?: { text: string; grammar: string[] };
   turns: DialogueTurn[];
   /** Key vocabulary recap shown after the dialogue completes. */
   vocabulary: VocabEntry[];

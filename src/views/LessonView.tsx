@@ -164,6 +164,17 @@ export function LessonView() {
         </section>
       )}
 
+      {lesson.primer && (
+        <section
+          data-testid="lesson-primer"
+          className="rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 space-y-2"
+        >
+          <h2 className="text-xs uppercase tracking-wide text-amber-800 font-semibold">Read this first</h2>
+          <p className="text-sm text-amber-950 leading-relaxed">{lesson.primer.text}</p>
+          <GrammarChips slugs={lesson.primer.grammar} emphasize={lesson.primer.grammar} />
+        </section>
+      )}
+
       <section ref={convoRef} className="scroll-mt-20">
         <div className="flex items-center justify-between gap-2 mb-4">
           <h2 className="text-xs uppercase tracking-wide text-gray-400 font-semibold">Conversation</h2>

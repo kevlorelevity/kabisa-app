@@ -124,7 +124,8 @@
           "swahili": "Habari! Nimefika. Nitaweka meza jana kwa jina Omondi.",
           "correct": false
         }
-      ]
+      ],
+      "literal": "Hello! I have arrived. I put a table yesterday in the name Omondi."
     },
     {
       "id": "aa7f16ec-684d-5678-b03a-330a66ce230c",
@@ -966,8 +967,8 @@
       "id": "881f73c4-b2f9-5e25-9e06-470e2f5613a5",
       "speaker": "Mhudumu",
       "role": "auto",
-      "swahili": "Samahani, juisi ya maembe imeisha. Unataka ya nanasi badala yake?",
-      "english": "Sorry, the mango juice is finished. Do you want pineapple instead?",
+      "swahili": "Samahani, juisi ya maembe imeisha. Ya nanasi bado haijaisha — unataka badala yake?",
+      "english": "Sorry, the mango juice is finished. The pineapple hasn't run out yet — do you want that instead?",
       "words": [
         {
           "text": "Samahani",
@@ -1023,7 +1024,25 @@
           }
         },
         {
-          "text": "Unataka",
+          "text": "Ya nanasi",
+          "gloss": "pineapple (juice)"
+        },
+        {
+          "text": "bado",
+          "gloss": "\"Still / (not) yet.\"",
+          "grammar": [
+            "perfect-negative-ja"
+          ]
+        },
+        {
+          "text": "haijaisha",
+          "gloss": "\"It hasn't run out (yet)\" — hai- (not it) + -ja- (not yet) + -isha.",
+          "grammar": [
+            "perfect-negative-ja"
+          ]
+        },
+        {
+          "text": "unataka",
           "gloss": "\"You want\" — u- (subject: you) + na- (present) + -taka (want). From kutaka.",
           "grammar": [
             "present-na"
@@ -1058,10 +1077,6 @@
               }
             ]
           }
-        },
-        {
-          "text": "ya nanasi",
-          "gloss": "pineapple (juice)"
         },
         {
           "text": "badala yake",

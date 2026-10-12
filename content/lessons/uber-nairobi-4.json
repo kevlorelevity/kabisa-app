@@ -15,6 +15,7 @@
     "object-infixes"
   ],
   "grammar": [
+    "hortative-commands",
     "verb-extensions",
     "discourse-particles",
     "object-infixes",
@@ -42,10 +43,7 @@
   "turns": [
     {
       "id": "c4989580-d234-54e0-b0fe-e865ac6ad0a6",
-      "speaker": "Abiria",
       "role": "user",
-      "swahili": "Kamau, habari? Nadhani nimesahau mfuko yangu kwa gari yako asubuhi.",
-      "english": "Kamau, how are you? I think I forgot my bag in your car this morning.",
       "words": [
         {
           "text": "Kamau",
@@ -53,154 +51,129 @@
         },
         {
           "text": "habari",
-          "gloss": "news — the base of every formal greeting — n/n noun (same word for one & many)",
+          "gloss": "how are you? (lit. news)",
           "grammar": [
             "noun-classes-mwa-nn"
           ]
         },
         {
-          "text": "Nadhani",
-          "gloss": "\"I think\" — na- (short for nina-: I + present) + -dhani (think). From kudhani.",
-          "grammar": [
-            "present-na"
-          ],
-          "conjugation": {
-            "verb": "kudhani (to think)",
-            "tense": "Present (-na-)",
-            "rows": [
-              {
-                "pronoun": "I",
-                "form": "nadhani"
-              },
-              {
-                "pronoun": "you",
-                "form": "unadhani"
-              },
-              {
-                "pronoun": "he/she",
-                "form": "anadhani"
-              },
-              {
-                "pronoun": "we",
-                "form": "tunadhani"
-              },
-              {
-                "pronoun": "you all",
-                "form": "mnadhani"
-              },
-              {
-                "pronoun": "they",
-                "form": "wanadhani"
-              }
-            ]
-          }
+          "note": "Kenyans often shorten \"ninafikiri\" to \"nafikiri\"; \"nadhani\" means the same.",
+          "text": "Nafikiri",
+          "gloss": "I think",
+          "sanifu": "Ninafikiri"
         },
         {
           "text": "nimesahau",
-          "gloss": "\"I have forgotten\" — ni- (subject: I) + me- (perfect (done / now-state)) + -sahau (forget). From kusahau.",
+          "gloss": "I have forgotten (from kusahau)",
           "grammar": [
             "perfect-me"
           ],
           "conjugation": {
-            "verb": "kusahau (to forget)",
-            "tense": "Perfect (-me-)",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "nimesahau"
+                "form": "nimesahau",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "umesahau"
+                "form": "umesahau",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "amesahau"
+                "form": "amesahau",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tumesahau"
+                "form": "tumesahau",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mmesahau"
+                "form": "mmesahau",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wamesahau"
+                "form": "wamesahau",
+                "pronoun": "they"
               }
-            ]
+            ],
+            "verb": "kusahau (to forget)",
+            "tense": "Perfect (-me-)"
           }
         },
         {
           "text": "mfuko yangu",
-          "gloss": "my bag — everyday Kenyan agreement",
-          "sanifu": "Sanifu: mfuko wangu (m/mi class)"
+          "gloss": "my bag",
+          "sanifu": "mfuko wangu"
         },
         {
           "text": "kwa gari",
-          "gloss": "by car"
+          "gloss": "in the car",
+          "sanifu": "katika gari"
         },
         {
           "text": "yako",
-          "gloss": "\"your\" — n/n singular agreement (nyumba yako). In Kenyan speech also used for family words and most things (jina yako, gari yako).",
+          "gloss": "your",
+          "sanifu": "lako",
           "grammar": [
             "possessives"
           ],
           "conjugation": {
-            "verb": "possessive (n/n singular)",
-            "tense": "my · your · his/her · our · your (pl.) · their",
             "rows": [
               {
-                "pronoun": "my",
-                "form": "yangu"
+                "form": "yangu",
+                "pronoun": "my"
               },
               {
-                "pronoun": "your",
-                "form": "yako"
+                "form": "yako",
+                "pronoun": "your"
               },
               {
-                "pronoun": "his/her",
-                "form": "yake"
+                "form": "yake",
+                "pronoun": "his/her"
               },
               {
-                "pronoun": "our",
-                "form": "yetu"
+                "form": "yetu",
+                "pronoun": "our"
               },
               {
-                "pronoun": "your (pl.)",
-                "form": "yenu"
+                "form": "yenu",
+                "pronoun": "your (pl.)"
               },
               {
-                "pronoun": "their",
-                "form": "yao"
+                "form": "yao",
+                "pronoun": "their"
               }
-            ]
+            ],
+            "verb": "possessive (n/n singular)",
+            "tense": "my · your · his/her · our · your (pl.) · their"
           }
         },
         {
           "text": "asubuhi",
-          "gloss": "morning — n/n noun (same word for one & many)",
+          "gloss": "(in the) morning",
           "grammar": [
             "noun-classes-mwa-nn"
           ]
         }
       ],
       "sanifu": "Kamau, habari? Nadhani nimesahau mfuko wangu katika gari lako asubuhi.",
+      "english": "Kamau, how are you? I think I forgot my bag in your car this morning.",
       "options": [
         {
-          "swahili": "Kamau, habari? Nadhani nimesahau mfuko yangu kwa gari yako asubuhi.",
-          "correct": true
+          "correct": true,
+          "swahili": "Kamau, habari? Nafikiri nimesahau mfuko yangu kwa gari yako asubuhi."
         },
         {
-          "swahili": "Kamau, habari? Nadhani umesahau mfuko yangu kwa gari yako asubuhi.",
-          "correct": false
+          "correct": false,
+          "swahili": "Kamau, habari? Nadhani umesahau mfuko yangu kwa gari yako asubuhi."
         },
         {
-          "swahili": "Kamau, habari? Nadhani nimesahau mfuko yako kwa gari yangu asubuhi.",
-          "correct": false
+          "correct": false,
+          "swahili": "Kamau, habari? Nadhani nimesahau mfuko yako kwa gari yangu asubuhi."
         }
-      ]
+      ],
+      "speaker": "Abiria",
+      "swahili": "Kamau, habari? Nafikiri nimesahau mfuko yangu kwa gari yako asubuhi.",
+      "note": "Both \"nadhani\" and \"nafikiri\" mean \"I think\", but in everyday Nairobi speech \"nafikiri\" is more common. \"Nadhani\" sounds a bit more formal."
     },
     {
       "id": "6d2a2cc4-86fd-50e5-81d6-0d8b2ab5502a",
@@ -366,7 +339,8 @@
           "swahili": "Mungu ni mwema! Pole sana kwa kuniwekea.",
           "correct": false
         }
-      ]
+      ],
+      "literal": "God is good! Thank you very much for keeping (it) for me."
     },
     {
       "id": "f3908c32-2c88-56fa-bd33-f3ea8075e199",
@@ -386,6 +360,7 @@
           "text": "Nikuletee",
           "gloss": "\"shall I bring it to you\" — ni- + -ku- + -letee",
           "grammar": [
+            "hortative-commands",
             "verb-extensions"
           ]
         },
@@ -417,6 +392,7 @@
           "text": "uniletee",
           "gloss": "\"(please) bring me\"",
           "grammar": [
+            "hortative-commands",
             "verb-extensions"
           ]
         },
@@ -709,7 +685,8 @@
           "swahili": "Niko kazini, Westlands. Si mkutane kwa geti ya kampuni?",
           "correct": false
         }
-      ]
+      ],
+      "literal": "I'm at work, Westlands. Isn't it (that) we meet at the company gate?"
     },
     {
       "id": "20184e5e-8a67-53cd-ad54-e5f138137af3",
@@ -773,8 +750,8 @@
       "id": "7935473e-95bc-5298-a8d1-023fa8b9ac48",
       "speaker": "Dereva",
       "role": "auto",
-      "swahili": "Niko kwa geti. Nimekuletea mfuko yako.",
-      "english": "I'm at the gate. I've brought you your bag.",
+      "swahili": "Niko kwa geti. Mfuko yako ilipatikana kwa kiti ya nyuma — nimekuletea.",
+      "english": "I'm at the gate. Your bag was found on the back seat — I've brought it to you.",
       "words": [
         {
           "text": "Niko",
@@ -834,46 +811,7 @@
           "sanifu": "Sanifu: lango"
         },
         {
-          "text": "Nimekuletea",
-          "gloss": "\"I have brought you (something)\" — ni- (subject: I) + me- (perfect (done / now-state)) + ku- (object: you) + -letea (bring (something)). From kuletea. Extension: prepositional (-ia/-ea: \"for / to / at\").",
-          "grammar": [
-            "perfect-me",
-            "object-infixes",
-            "verb-extensions"
-          ],
-          "conjugation": {
-            "verb": "kuletea (to bring (something))",
-            "tense": "Perfect (-me-) + object -ku-",
-            "rows": [
-              {
-                "pronoun": "I",
-                "form": "nimekuletea"
-              },
-              {
-                "pronoun": "you",
-                "form": "umekuletea"
-              },
-              {
-                "pronoun": "he/she",
-                "form": "amekuletea"
-              },
-              {
-                "pronoun": "we",
-                "form": "tumekuletea"
-              },
-              {
-                "pronoun": "you all",
-                "form": "mmekuletea"
-              },
-              {
-                "pronoun": "they",
-                "form": "wamekuletea"
-              }
-            ]
-          }
-        },
-        {
-          "text": "mfuko",
+          "text": "Mfuko",
           "gloss": "bag (plural mifuko) — Kenyans give it n/n agreement",
           "grammar": [
             "sanifu-noun-classes"
@@ -916,6 +854,57 @@
               }
             ]
           }
+        },
+        {
+          "text": "ilipatikana",
+          "gloss": "\"It was found\" — i- (it, n/n) + -li- + -patikana (be found; from kupata, to get).",
+          "grammar": [
+            "verb-extensions",
+            "past-li"
+          ]
+        },
+        {
+          "text": "kiti ya nyuma",
+          "gloss": "\"The back seat.\""
+        },
+        {
+          "text": "nimekuletea",
+          "gloss": "\"I have brought you (something)\" — ni- (subject: I) + me- (perfect (done / now-state)) + ku- (object: you) + -letea (bring (something)). From kuletea. Extension: prepositional (-ia/-ea: \"for / to / at\").",
+          "grammar": [
+            "perfect-me",
+            "object-infixes",
+            "verb-extensions"
+          ],
+          "conjugation": {
+            "verb": "kuletea (to bring (something))",
+            "tense": "Perfect (-me-) + object -ku-",
+            "rows": [
+              {
+                "pronoun": "I",
+                "form": "nimekuletea"
+              },
+              {
+                "pronoun": "you",
+                "form": "umekuletea"
+              },
+              {
+                "pronoun": "he/she",
+                "form": "amekuletea"
+              },
+              {
+                "pronoun": "we",
+                "form": "tumekuletea"
+              },
+              {
+                "pronoun": "you all",
+                "form": "mmekuletea"
+              },
+              {
+                "pronoun": "they",
+                "form": "wamekuletea"
+              }
+            ]
+          }
         }
       ]
     },
@@ -923,7 +912,7 @@
       "id": "b495ec3e-2a80-5ee9-b530-43cd49390c76",
       "speaker": "Abiria",
       "role": "user",
-      "swahili": "Asante sana! Na asubuhi ulinisubiria pia. Wewe ni mtu mzuri sana!",
+      "swahili": "Asante sana! Na asubuhi uliningojea pia. Wewe ni mtu mzuri sana!",
       "english": "Thanks a lot! And this morning you waited for me too. You're a really good person!",
       "words": [
         {
@@ -942,11 +931,9 @@
           ]
         },
         {
-          "text": "ulinisubiria",
-          "gloss": "\"you waited for me\" — subiri + -ia (for)",
-          "grammar": [
-            "verb-extensions"
-          ]
+          "text": "uliningojea",
+          "gloss": "\"you waited for me\" — ngoja + -ea (for)",
+          "note": "\"Uliningojea\" is \"ngoja\" (wait) plus -ea (for): \"you waited for me\". Both \"ngoja\" and \"subiri\" mean wait, but \"ngoja\" is the one you'll hear all the time in Nairobi, as in \"ngoja kidogo\" (wait a bit)."
         },
         {
           "text": "pia",
@@ -1005,7 +992,7 @@
       ],
       "options": [
         {
-          "swahili": "Asante sana! Na asubuhi ulinisubiria pia. Wewe ni mtu mzuri sana!",
+          "swahili": "Asante sana! Na asubuhi uliningojea pia. Wewe ni mtu mzuri sana!",
           "correct": true
         },
         {
@@ -1060,6 +1047,7 @@
           "text": "nipigie",
           "gloss": "\"Call me!\" — ni- (object: me) + -pigie (call, subjunctive -e: polite command). From kupigia. Extension: prepositional (-ia/-ea: \"for / to / at\").",
           "grammar": [
+            "hortative-commands",
             "imperatives",
             "object-infixes",
             "verb-extensions"
@@ -1269,8 +1257,8 @@
     },
     {
       "id": "a494e20d-a29c-5efa-bfe3-0b766cd1853e",
-      "swahili": "Ulinisubiria",
       "english": "You waited for me",
+      "swahili": "Uliningojea",
       "exampleContext": "subiri → subiria"
     },
     {
@@ -1498,12 +1486,15 @@
     {
       "id": "e10d20f3-e67e-545f-b4c4-f3c3c44a6de0",
       "mode": "translate",
-      "english": "You waited for me.",
-      "before": "",
       "after": ".",
+      "before": "",
+      "english": "You waited for me.",
+      "grammar": [
+        "verb-extensions"
+      ],
       "options": [
         {
-          "text": "Ulinisubiria",
+          "text": "Uliningojea",
           "correct": true
         },
         {
@@ -1517,10 +1508,7 @@
           "feedback": "Ulisubiri = You waited"
         }
       ],
-      "explanation": "subiri (wait) + -ia = wait for someone.",
-      "grammar": [
-        "verb-extensions"
-      ]
+      "explanation": "subiri (wait) + -ia = wait for someone."
     },
     {
       "id": "4cb3907f-3186-5783-aa3f-47a4e0061257",
@@ -1547,7 +1535,8 @@
       "explanation": "elewa (understand) + -ana = understand each other.",
       "grammar": [
         "verb-extensions"
-      ]
+      ],
+      "literal": "We have understood each other."
     },
     {
       "id": "09cb3f64-9a22-5579-b1b3-b44776c62e74",
@@ -1601,7 +1590,8 @@
       "explanation": "Si + subjunctive = a friendly \"why don't we…?\".",
       "grammar": [
         "discourse-particles"
-      ]
+      ],
+      "literal": "Isn't it (that) we meet at the gate?"
     },
     {
       "id": "ee047581-bc80-5225-a579-731cb3018191",

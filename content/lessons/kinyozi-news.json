@@ -41,12 +41,16 @@
       "id": "636304d8-fa4c-576f-89a9-fabf9811560a",
       "speaker": "Kinyozi",
       "role": "auto",
-      "swahili": "Karibu, boss! Kama kawaida?",
-      "english": "Welcome, boss! The usual?",
+      "swahili": "Karibu kwa kinyozi, boss! Kama kawaida?",
+      "english": "Welcome to the barber's, boss! The usual?",
       "words": [
         {
           "text": "Karibu",
           "gloss": "near / welcome / almost"
+        },
+        {
+          "text": "kinyozi",
+          "gloss": "\"Barber / barbershop.\""
         },
         {
           "text": "boss",
@@ -1433,7 +1437,8 @@
       "explanation": "pendeza = look nice (causative of penda: \"make like\").",
       "grammar": [
         "verb-extensions"
-      ]
+      ],
+      "literal": "You have become pleasing!"
     },
     {
       "id": "5bb5125e-ba5b-513e-8aa2-0bc9bb2e75ea",

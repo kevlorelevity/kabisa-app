@@ -16,6 +16,7 @@
     "conjunctions-kwamba"
   ],
   "grammar": [
+    "hortative-commands",
     "idioms-proverbs",
     "relatives",
     "subjunctive",
@@ -951,6 +952,66 @@
       ]
     },
     {
+      "id": "4237d9f6-5121-426b-820a-2261a3a91ce9",
+      "speaker": "MC",
+      "role": "auto",
+      "swahili": "Na tusipomsaidia leo?",
+      "english": "And if we don't help her today?",
+      "words": [
+        {
+          "text": "tusipomsaidia",
+          "gloss": "\"If we don't help her\" — tu- (we) + -si- (not) + -po- (if/when) + -m- (her) + -saidia.",
+          "grammar": [
+            "ki-po-ka"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7894f34e-a58a-4f0c-bf4e-d9ed91eb72ea",
+      "speaker": "Mgeni Rasmi",
+      "role": "user",
+      "swahili": "Usipoziba ufa, utajenga ukuta! Tumsaidie leo, si kesho.",
+      "english": "A stitch in time saves nine! Let's help her today, not tomorrow.",
+      "words": [
+        {
+          "text": "Usipoziba ufa, utajenga ukuta",
+          "gloss": "Proverb: \"If you don't fill the crack, you'll build a wall\" — fix small problems before they grow.",
+          "grammar": [
+            "idioms-proverbs",
+            "ki-po-ka"
+          ]
+        },
+        {
+          "text": "Tumsaidie",
+          "gloss": "\"Let's help her\" — tu- + -m- + -saidi- + -e.",
+          "grammar": [
+            "hortative-commands",
+            "subjunctive"
+          ]
+        },
+        {
+          "text": "si kesho",
+          "gloss": "\"Not tomorrow.\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Usipoziba ufa, utajenga ukuta! Tumsaidie leo, si kesho.",
+          "correct": true
+        },
+        {
+          "swahili": "Ukiziba ufa, utajenga ukuta! Tumsaidie leo, si kesho.",
+          "correct": false
+        },
+        {
+          "swahili": "Usipoziba ufa, utajenga ukuta! Umsaidie kesho, si leo.",
+          "correct": false
+        }
+      ],
+      "literal": "If you don't fill the crack, you'll build a wall! Let's help her today, not tomorrow."
+    },
+    {
       "id": "5c0e099b-2c58-5a96-9020-8c460b9f3c9d",
       "speaker": "MC",
       "role": "auto",
@@ -1003,6 +1064,7 @@
           "text": "Tumchangie",
           "gloss": "\"let's contribute for her\"",
           "grammar": [
+            "hortative-commands",
             "subjunctive"
           ]
         },

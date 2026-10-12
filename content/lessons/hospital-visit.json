@@ -95,7 +95,8 @@
           "swahili": "Daktari, tumbo inaniuma kwa siku tatu jana.",
           "correct": false
         }
-      ]
+      ],
+      "literal": "Doctor, the stomach is hurting me for three days now."
     },
     {
       "id": "7fc9be1f-ec55-5e45-946f-40f8d80390e0",
@@ -1571,7 +1572,8 @@
       "explanation": "Pona = \"Get better!\" — -pona (get better). From kupona.",
       "grammar": [
         "imperatives"
-      ]
+      ],
+      "literal": "Heal quickly!"
     }
   ]
 }

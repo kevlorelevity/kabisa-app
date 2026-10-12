@@ -875,6 +875,95 @@
       ]
     },
     {
+      "id": "d069fd09-f393-483d-9f26-858e025d0b24",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Tutakula saa ngapi?",
+      "english": "What time will we eat?",
+      "words": [
+        {
+          "text": "Tutakula",
+          "gloss": "\"We will eat\" — tu- + -ta- + kula.",
+          "grammar": [
+            "future-ta"
+          ]
+        },
+        {
+          "text": "saa ngapi",
+          "gloss": "\"What time?\"",
+          "grammar": [
+            "time-swahili",
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Tutakula saa ngapi?",
+          "correct": true
+        },
+        {
+          "swahili": "Tulikula saa ngapi?",
+          "correct": false
+        },
+        {
+          "swahili": "Tutakula wapi?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "6c72cae9-4d29-4abd-873b-b49f27bd6b99",
+      "speaker": "Otieno",
+      "role": "auto",
+      "swahili": "Saa saba mchana. Na tutarudi saa moja na robo usiku.",
+      "english": "At one in the afternoon. And we'll come back at quarter past seven in the evening.",
+      "words": [
+        {
+          "text": "Saa saba",
+          "gloss": "\"1 o'clock\" — the 7th hour after sunrise.",
+          "grammar": [
+            "time-swahili"
+          ]
+        },
+        {
+          "text": "mchana",
+          "gloss": "\"Afternoon.\"",
+          "grammar": [
+            "time-swahili"
+          ]
+        },
+        {
+          "text": "tutarudi",
+          "gloss": "\"We will come back\" — tu- + -ta- + -rudi.",
+          "grammar": [
+            "future-ta"
+          ]
+        },
+        {
+          "text": "saa moja",
+          "gloss": "\"7 o'clock.\"",
+          "grammar": [
+            "time-swahili"
+          ]
+        },
+        {
+          "text": "na robo",
+          "gloss": "\"And a quarter\" — quarter past.",
+          "grammar": [
+            "time-swahili"
+          ]
+        },
+        {
+          "text": "usiku",
+          "gloss": "\"Night / evening after dark.\"",
+          "grammar": [
+            "time-swahili"
+          ]
+        }
+      ]
+    },
+    {
       "id": "309c2e66-f671-58a6-b8a4-7d15efff2007",
       "speaker": "John",
       "role": "user",
@@ -910,7 +999,8 @@
           "swahili": "Safi sana! Tulionana Jumamosi.",
           "correct": false
         }
-      ]
+      ],
+      "literal": "Very clean! We will see each other on Saturday."
     },
     {
       "id": "322a6f66-5dbf-51c7-a030-f68cd157d85f",
@@ -1532,7 +1622,8 @@
       "explanation": "Tutaonana: we'll see each other / see you",
       "grammar": [
         "greetings"
-      ]
+      ],
+      "literal": "We will see each other on Saturday."
     }
   ]
 }

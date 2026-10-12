@@ -41,6 +41,7 @@ export const SYNC_RULES = `The lesson's conversation was just rewritten. Review 
 - Remove entries and items about words that are no longer in the conversation.
 - Vocabulary: 8–16 entries. Nouns get "nounForms" (Swahili singular / plural) and "englishForms" (English singular / plural); "" for a form that doesn't exist. Keep any existing "sanifu", "sanifuNote" and "note" exactly as they are.
 - Practice: 12–24 items, built from the conversation's lines.
+- Only words that appear in the conversation (other persons and tenses of its verbs, singular / plural of its nouns are fine). Don't add vocabulary or practice for words the conversation doesn't use — and remove existing entries / items that do.
 - Return the COMPLETE lists. "summary": one sentence on what you changed in each.`;
 
 export function buildSyncPrompt(input: SyncInput, grammar: GrammarRef[], guidance: Array<{ text: string }>): { system: string; user: string } {

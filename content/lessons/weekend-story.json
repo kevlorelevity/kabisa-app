@@ -385,7 +385,67 @@
           "swahili": "Ilikuwa Karen. Watu wengi hawakuja, na tulicheza muziki mpaka usiku.",
           "correct": false
         }
+      ],
+      "literal": "It was (in) Karen. Many people came, and we played music until night."
+    },
+    {
+      "id": "3ae5aa4d-79eb-48e0-ae9a-b664a9f1521c",
+      "speaker": "Wanjiku",
+      "role": "auto",
+      "swahili": "Na Otieno na Achieng? Walikuja?",
+      "english": "And Otieno and Achieng? Did they come?",
+      "words": [
+        {
+          "text": "Walikuja",
+          "gloss": "\"They came\" — wa- + -li- + kuja.",
+          "grammar": [
+            "past-li"
+          ]
+        }
       ]
+    },
+    {
+      "id": "37997eb7-cb10-40af-95c0-b20d40191d27",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Ndiyo, tuliwaona! Walicheza mpaka usiku.",
+      "english": "Yes, we saw them! They danced until night.",
+      "words": [
+        {
+          "text": "tuliwaona",
+          "gloss": "\"We saw them\" — tu- (we) + -li- (past) + -wa- (them) + -ona.",
+          "grammar": [
+            "past-li",
+            "object-infixes"
+          ]
+        },
+        {
+          "text": "Walicheza",
+          "gloss": "\"They danced / played\" — wa- + -li- + -cheza.",
+          "grammar": [
+            "past-li"
+          ]
+        },
+        {
+          "text": "mpaka usiku",
+          "gloss": "\"Until night.\""
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Ndiyo, tuliwaona! Walicheza mpaka usiku.",
+          "correct": true
+        },
+        {
+          "swahili": "Ndiyo, tulimwona! Walicheza mpaka usiku.",
+          "correct": false
+        },
+        {
+          "swahili": "Ndiyo, walituona! Walicheza mpaka usiku.",
+          "correct": false
+        }
+      ],
+      "literal": "Yes, we saw them! They played until night."
     },
     {
       "id": "d190cf24-6665-5c0b-9947-57b9c1b83776",
@@ -1443,7 +1503,8 @@
       "explanation": "kucheza muziki = to dance (lit. \"play music\").",
       "grammar": [
         "past-li"
-      ]
+      ],
+      "literal": "We played music until night."
     },
     {
       "id": "eaf2e7cd-09e8-5899-866d-9e1b9bcd10b8",

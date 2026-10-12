@@ -547,6 +547,85 @@
       ]
     },
     {
+      "id": "e0df781a-9b01-432e-b89e-3d7134a9888d",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Kila mwanafunzi ako na kitabu na kalamu?",
+      "english": "Does every pupil have a book and a pen?",
+      "words": [
+        {
+          "text": "Kila",
+          "gloss": "\"Every / each.\""
+        },
+        {
+          "text": "mwanafunzi",
+          "gloss": "\"Pupil, student\" (plural: wanafunzi).",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "ako na",
+          "gloss": "\"Has\" — lit. \"is with\". The everyday Kenyan way to say ana.",
+          "grammar": [
+            "ko-location"
+          ]
+        },
+        {
+          "text": "kitabu",
+          "gloss": "\"Book\" (plural: vitabu).",
+          "grammar": [
+            "sanifu-noun-classes"
+          ]
+        },
+        {
+          "text": "kalamu",
+          "gloss": "\"Pen\" — n/n, same word for one and many."
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Kila mwanafunzi ako na kitabu na kalamu?",
+          "correct": true
+        },
+        {
+          "swahili": "Kila mwalimu ako na kitabu na kalamu?",
+          "correct": false
+        },
+        {
+          "swahili": "Kila mwanafunzi ako na vitabu na sare?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "4baa488d-1bf7-45f9-b73e-b69b6ade4926",
+      "speaker": "Akinyi",
+      "role": "auto",
+      "swahili": "Ndiyo. Vitabu na kalamu ni za shule.",
+      "english": "Yes. The books and pens belong to the school.",
+      "words": [
+        {
+          "text": "Vitabu",
+          "gloss": "\"Books\" — plural of kitabu.",
+          "grammar": [
+            "sanifu-noun-classes"
+          ]
+        },
+        {
+          "text": "kalamu",
+          "gloss": "\"Pens.\""
+        },
+        {
+          "text": "za shule",
+          "gloss": "\"The school's\" — za is the n/n plural \"of\".",
+          "grammar": [
+            "possessives"
+          ]
+        }
+      ]
+    },
+    {
       "id": "55d1951a-74e5-5fce-a3d5-c0bdaad14786",
       "speaker": "John",
       "role": "user",
@@ -795,10 +874,7 @@
     },
     {
       "id": "30e37487-b9d6-5ae6-9255-3005b53e6b5d",
-      "speaker": "Akinyi",
       "role": "auto",
-      "swahili": "Mimi ninafundisha Kiingereza. Na wewe unasoma Kiswahili, sivyo?",
-      "english": "I teach English. And you're studying Swahili, right?",
       "words": [
         {
           "text": "Mimi",
@@ -833,34 +909,34 @@
             "present-na"
           ],
           "conjugation": {
-            "verb": "kusoma (to read)",
-            "tense": "Present (-na-)",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "ninasoma"
+                "form": "ninasoma",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "unasoma"
+                "form": "unasoma",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "anasoma"
+                "form": "anasoma",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tunasoma"
+                "form": "tunasoma",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mnasoma"
+                "form": "mnasoma",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wanasoma"
+                "form": "wanasoma",
+                "pronoun": "they"
               }
-            ]
+            ],
+            "verb": "kusoma (to read)",
+            "tense": "Present (-na-)"
           }
         },
         {
@@ -868,10 +944,13 @@
           "gloss": "Swahili (the language)"
         },
         {
-          "text": "sivyo",
-          "gloss": "\"isn't it? / right?\""
+          "text": "si ndiyo",
+          "gloss": "si ndiyo = right? / isn't it? (question tag)"
         }
-      ]
+      ],
+      "english": "I teach English. And you're studying Swahili, right?",
+      "speaker": "Akinyi",
+      "swahili": "Mimi ninafundisha Kiingereza. Na wewe unasoma Kiswahili, si ndiyo?"
     },
     {
       "id": "a1d6bb5a-dcf0-5f2a-b8cd-50ebc50c3806",

@@ -390,10 +390,7 @@
     },
     {
       "id": "4ab74344-a0a9-5eb3-bf56-6dfc89a5adc0",
-      "speaker": "Mama Wanjiru",
       "role": "auto",
-      "swahili": "Asante. Baba Wanjiru yuko nje, kwa shamba.",
-      "english": "Thank you. Wanjiru's dad is outside, on the farm.",
       "words": [
         {
           "text": "Asante",
@@ -404,48 +401,48 @@
           "gloss": "\"Wanjiru's dad\""
         },
         {
-          "text": "yuko",
-          "gloss": "\"He/she is (at / doing)\" — yu- + -ko (be at a place, or how you're doing). \"Yuko poa\" = he/she is fine.",
+          "text": "ako",
+          "gloss": "he/she is (at) — Kenyan for yuko",
           "grammar": [
             "ko-location"
           ],
           "conjugation": {
-            "verb": "-ko (be at / be doing)",
-            "tense": "Present",
             "rows": [
               {
-                "pronoun": "I",
-                "form": "niko"
+                "form": "niko",
+                "pronoun": "I"
               },
               {
-                "pronoun": "you",
-                "form": "uko"
+                "form": "uko",
+                "pronoun": "you"
               },
               {
-                "pronoun": "he/she",
-                "form": "yuko"
+                "form": "yuko",
+                "pronoun": "he/she"
               },
               {
-                "pronoun": "we",
-                "form": "tuko"
+                "form": "tuko",
+                "pronoun": "we"
               },
               {
-                "pronoun": "you all",
-                "form": "mko"
+                "form": "mko",
+                "pronoun": "you all"
               },
               {
-                "pronoun": "they",
-                "form": "wako"
+                "form": "wako",
+                "pronoun": "they"
               },
               {
-                "pronoun": "it (n/n)",
-                "form": "iko"
+                "form": "iko",
+                "pronoun": "it (n/n)"
               },
               {
-                "pronoun": "they (n/n)",
-                "form": "ziko"
+                "form": "ziko",
+                "pronoun": "they (n/n)"
               }
-            ]
+            ],
+            "verb": "-ko (be at / be doing)",
+            "tense": "Present"
           }
         },
         {
@@ -457,7 +454,10 @@
           "gloss": "\"on the farm\"",
           "sanifu": "Sanifu: shambani"
         }
-      ]
+      ],
+      "english": "Thank you. Wanjiru's dad is outside, on the farm.",
+      "speaker": "Mama Wanjiru",
+      "swahili": "Asante. Baba Wanjiru ako nje, kwa shamba."
     },
     {
       "id": "46ef83ae-1dc3-50bb-b4df-ab0e6f6cd500",
@@ -1199,6 +1199,92 @@
       ]
     },
     {
+      "id": "2a970300-d418-4afa-b090-cfd7c3d2d11d",
+      "speaker": "John",
+      "role": "user",
+      "swahili": "Na babu na nyanya wako wapi?",
+      "english": "And where are your grandpa and grandma?",
+      "words": [
+        {
+          "text": "babu",
+          "gloss": "\"Grandfather.\"",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "nyanya",
+          "gloss": "\"Grandmother\" — the same word also means tomato; the context tells you which.",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "wako wapi",
+          "gloss": "\"Where are they?\" — wa- (they) + -ko (be at) + wapi.",
+          "grammar": [
+            "ko-location",
+            "question-words"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "swahili": "Na babu na nyanya wako wapi?",
+          "correct": true
+        },
+        {
+          "swahili": "Na babu na nyanya uko wapi?",
+          "correct": false
+        },
+        {
+          "swahili": "Na babu na nyanya ni nani?",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "9ab1a4b8-7594-4a96-86be-1271e249ce4e",
+      "speaker": "Wanjiru",
+      "role": "auto",
+      "swahili": "Wazee wako ndani, na mtoto mdogo wa dada yangu.",
+      "english": "The old folks are inside, with my sister's youngest child.",
+      "words": [
+        {
+          "text": "Wazee",
+          "gloss": "\"Old people / elders\" — plural of mzee, a respectful word.",
+          "grammar": [
+            "noun-classes-mwa-nn"
+          ]
+        },
+        {
+          "text": "wako",
+          "gloss": "\"They are (at).\"",
+          "grammar": [
+            "ko-location"
+          ]
+        },
+        {
+          "text": "ndani",
+          "gloss": "\"Inside\" — the opposite of nje (outside)."
+        },
+        {
+          "text": "mtoto mdogo",
+          "gloss": "\"The little / youngest child\" — mdogo = small, younger.",
+          "grammar": [
+            "adjective-agreement"
+          ]
+        },
+        {
+          "text": "wa dada yangu",
+          "gloss": "\"Of my sister.\"",
+          "grammar": [
+            "possessives"
+          ]
+        }
+      ]
+    },
+    {
       "id": "401eaea9-3d84-5d0c-86a6-75d1ed54c5de",
       "speaker": "John",
       "role": "user",
@@ -1653,9 +1739,9 @@
           "correct": true
         },
         {
-          "text": "Ninasikia",
+          "text": "Nahisi",
           "correct": false,
-          "feedback": "Ninasikia = I hear"
+          "feedback": "Nahisi = I hear"
         },
         {
           "text": "Ninacheza",
@@ -1668,9 +1754,12 @@
     {
       "id": "52b8a8f7-646c-59dc-a743-d355b4815c51",
       "mode": "translate",
-      "english": "Dad is outside, on the farm.",
-      "before": "Baba yuko nje, kwa ",
       "after": ".",
+      "before": "Baba ako nje, kwa ",
+      "english": "Dad is outside, on the farm.",
+      "grammar": [
+        "sanifu-noun-classes"
+      ],
       "options": [
         {
           "text": "shamba",
@@ -1687,10 +1776,7 @@
           "feedback": "kanisa = church"
         }
       ],
-      "explanation": "shamba = farm, soko = market, kanisa = church.",
-      "grammar": [
-        "sanifu-noun-classes"
-      ]
+      "explanation": "shamba = farm, soko = market, kanisa = church."
     },
     {
       "id": "a7711a8d-3af6-50ab-bbfa-682c8dd678fe",
