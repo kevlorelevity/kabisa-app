@@ -23,13 +23,15 @@
     "perfect-negative-ja",
     "comparatives",
     "noun-classes-mwa-nn",
-    "question-words",
-    "sanifu-noun-classes",
+    "future-ta",
     "ni-copula",
     "imperatives",
     "discourse-particles",
-    "future-ta",
-    "subject-prefixes"
+    "subject-prefixes",
+    "infinitive-ku",
+    "question-words",
+    "sanifu-noun-classes",
+    "present-na"
   ],
   "turns": [
     {
@@ -903,8 +905,8 @@
       "id": "a3733308-cf89-50e1-a3be-f85a8fed63a1",
       "speaker": "John",
       "role": "user",
-      "swahili": "Kweli? Na Nairobi ni baridi kuliko Kampala!",
-      "english": "Really? And Nairobi is colder than Kampala!",
+      "swahili": "Kweli? Lakini mimi ninapenda baridi kuliko joto!",
+      "english": "Really? But I like cool weather more than heat!",
       "words": [
         {
           "text": "Kweli",
@@ -914,53 +916,57 @@
           ]
         },
         {
-          "text": "Na",
-          "gloss": "and / with"
+          "text": "Lakini",
+          "gloss": "but"
         },
         {
-          "text": "Nairobi",
-          "gloss": "Nairobi"
-        },
-        {
-          "text": "ni",
-          "gloss": "is / am / are",
+          "text": "mimi",
+          "gloss": "I / me",
           "grammar": [
-            "ni-copula"
+            "subject-prefixes"
+          ]
+        },
+        {
+          "text": "ninapenda",
+          "gloss": "\"I like\" — ni- + -na- + -penda.",
+          "grammar": [
+            "present-na"
           ]
         },
         {
           "text": "baridi",
-          "gloss": "cold — n/n noun (same word for one & many)",
+          "gloss": "cold / cool weather",
           "grammar": [
             "noun-classes-mwa-nn"
           ]
         },
         {
           "text": "kuliko",
-          "gloss": "than (comparisons)",
+          "gloss": "than (comparisons) — ninapenda X kuliko Y = I like X more than Y",
           "grammar": [
             "comparatives"
           ]
         },
         {
-          "text": "Kampala",
-          "gloss": "Kampala — capital of Uganda"
+          "text": "joto",
+          "gloss": "heat / warmth"
         }
       ],
       "options": [
         {
-          "swahili": "Kweli? Na Nairobi ni baridi kuliko Kampala!",
+          "swahili": "Kweli? Lakini mimi ninapenda baridi kuliko joto!",
           "correct": true
         },
         {
-          "swahili": "Kweli? Na Nairobi ni baridi zaidi Kampala!",
+          "swahili": "Kweli? Lakini mimi ninapenda baridi zaidi joto!",
           "correct": false
         },
         {
-          "swahili": "Kweli? Na mimi ni baridi kuliko Kampala!",
+          "swahili": "Kweli? Lakini wewe ninapenda baridi kuliko joto!",
           "correct": false
         }
-      ]
+      ],
+      "literal": "Really? But I like cold than heat!"
     },
     {
       "id": "375b605c-b75a-57d3-818d-84eddb691aff",

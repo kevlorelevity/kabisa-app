@@ -18,17 +18,17 @@
     "past-li",
     "negative-past",
     "object-infixes",
-    "greetings",
-    "possessives",
     "noun-classes-mwa-nn",
+    "possessives",
     "discourse-particles",
     "question-words",
-    "adjective-agreement",
+    "subject-prefixes",
+    "greetings",
     "sanifu-noun-classes",
+    "ki-po-ka",
+    "adjective-agreement",
     "present-na",
     "infinitive-ku",
-    "subject-prefixes",
-    "ki-po-ka",
     "ni-copula",
     "locative-ni",
     "conjunctions-kwamba"
@@ -1395,6 +1395,12 @@
       "explanation": "-li- for past + -je for \"how?\".",
       "grammar": [
         "past-li"
+      ],
+      "accept": [
+        {
+          "text": "Wikendi ilikuwa aje?",
+          "note": "Ilikuwa aje? is the everyday Kenyan way — same meaning."
+        }
       ]
     },
     {

@@ -21,21 +21,21 @@
     "conditional-nge",
     "habitual-hu-nga",
     "noun-classes-mwa-nn",
-    "possessives",
-    "greetings",
     "ni-copula",
-    "ko-location",
-    "locative-ni",
     "future-ta",
     "sanifu-noun-classes",
     "na-have",
     "negative-present",
-    "subjunctive",
     "present-na",
-    "question-words",
+    "possessives",
+    "verb-extensions",
+    "ko-location",
+    "locative-ni",
     "subject-prefixes",
     "infinitive-ku",
-    "verb-extensions",
+    "greetings",
+    "subjunctive",
+    "question-words",
     "demonstratives",
     "object-infixes"
   ],
@@ -180,7 +180,21 @@
           "correct": false
         }
       ],
-      "literal": "It has been very good! The scenery is of attracting — hills and farms of tea."
+      "literal": "It has been very good! The scenery is of attracting — hills and farms of tea.",
+      "accept": [
+        {
+          "text": "Imekuwa safi sana! Mandhari ni ya kuvutia — milima na mashamba ya chai.",
+          "note": "Safi (great) works as well as nzuri."
+        },
+        {
+          "text": "Imekuwa nzuri sana! Mandhari inavutia — milima na mashamba ya chai.",
+          "note": "Inavutia = it's attractive — also right."
+        },
+        {
+          "text": "Imekuwa nzuri sana! Mandhari ni nzuri sana — milima na mashamba ya chai.",
+          "note": "Simpler, also right."
+        }
+      ]
     },
     {
       "id": "a07fe2a2-46ae-53bb-bc5f-b24c25c351cf",
@@ -355,6 +369,20 @@
           "swahili": "Umesikia habari zake! Tutaenda huko leo?",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Nimesikia habari zake! Tutaenda pale leo?",
+          "note": "Pale (there) works too."
+        },
+        {
+          "text": "Nimesikia kuhusu hiyo! Tutaenda huko leo?",
+          "note": "Kuhusu hiyo = about it — also right."
+        },
+        {
+          "text": "Nimesikia habari yake! Tutaenda huko leo?",
+          "note": "Habari yake is fine too."
+        }
       ]
     },
     {
@@ -491,6 +519,20 @@
         {
           "swahili": "Safi! Njia ni salama kwa kutembea jana?",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Safi! Njia iko salama kwa kutembea?",
+          "note": "Iko salama — also right."
+        },
+        {
+          "text": "Safi! Ni salama kutembea kwa njia hii?",
+          "note": "Different order, same meaning."
+        },
+        {
+          "text": "Poa! Njia ni salama kwa kutembea?",
+          "note": "Poa works as well as safi."
         }
       ]
     },
@@ -725,7 +767,21 @@
           "correct": false
         }
       ],
-      "sanifu": "Sawa. Ningejua mapema, ningeleta viatu vya kutembea!"
+      "sanifu": "Sawa. Ningejua mapema, ningeleta viatu vya kutembea!",
+      "accept": [
+        {
+          "text": "Sawa. Ningalijua mapema, ningalileta viatu za kutembea!",
+          "note": "-ngali- is the Sanifu “would have”; Kenyans mostly use -nge-."
+        },
+        {
+          "text": "Sawa. Ningejua mapema, ningeleta viatu vya kutembea!",
+          "note": "That's the Sanifu (standard) form — Kenyans say viatu za."
+        },
+        {
+          "text": "Sawa. Kama ningejua mapema, ningeleta viatu za kutembea!",
+          "note": "Kama in front is fine too."
+        }
+      ]
     },
     {
       "id": "d2380a1d-0165-55e5-9adf-864a56c112bf",
@@ -918,6 +974,20 @@
           "swahili": "Asante. Na wenyeji wanafanya kazi nani hapa?",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Asante. Na wenyeji hufanya kazi gani hapa?",
+          "note": "Hufanya = usually do — also right."
+        },
+        {
+          "text": "Asante. Na watu wa hapa wanafanya kazi gani?",
+          "note": "Watu wa hapa = the people here — also right."
+        },
+        {
+          "text": "Asante. Na wenyeji wa hapa wanafanya kazi gani?",
+          "note": "Also fine."
+        }
       ]
     },
     {
@@ -1033,7 +1103,21 @@
           "correct": false
         }
       ],
-      "literal": "It attracts a lot! I usually love to see the life of the countryside."
+      "literal": "It attracts a lot! I usually love to see the life of the countryside.",
+      "accept": [
+        {
+          "text": "Inavutia sana! Mimi ninapenda kuona maisha ya mashambani.",
+          "note": "Ninapenda (I like) — also right; hupenda adds “usually”."
+        },
+        {
+          "text": "Inavutia sana! Mimi huwa napenda kuona maisha ya mashambani.",
+          "note": "Huwa napenda — the everyday Kenyan habitual."
+        },
+        {
+          "text": "Inavutia sana! Napenda kuona maisha ya mashambani.",
+          "note": "Mimi is optional."
+        }
+      ]
     },
     {
       "id": "142d4fb8-8372-5076-8fec-abb1d11929c6",
@@ -1321,6 +1405,20 @@
           "swahili": "Ningependa sana! Ningepata nafasi, nitazungumza nao.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Ningependa sana! Nikipata nafasi, nitaongea nao.",
+          "note": "Kuongea (talk) is the everyday Kenyan word; kuzungumza is a bit more formal."
+        },
+        {
+          "text": "Ningependa sana! Kama nitapata nafasi, nitazungumza nao.",
+          "note": "Kama nitapata = if I get — also right."
+        },
+        {
+          "text": "Ningependa sana! Nikipata nafasi, nitaongea na wao.",
+          "note": "Na wao is fine too; nao is short for na wao."
+        }
       ]
     },
     {
@@ -1556,7 +1654,21 @@
           "correct": false
         }
       ],
-      "sanifu": "Asante sana. Safari hii inanifundisha mambo mengi mapya!"
+      "sanifu": "Asante sana. Safari hii inanifundisha mambo mengi mapya!",
+      "accept": [
+        {
+          "text": "Asante sana. Safari hii inanifundisha mambo mengi mapya!",
+          "note": "That's the Sanifu (standard) form — Kenyans say mambo mingi mpya."
+        },
+        {
+          "text": "Asante sana. Ninajifunza mambo mingi mpya kwa safari hii!",
+          "note": "I'm learning lots of new things on this trip — also right."
+        },
+        {
+          "text": "Asante sana. Safari hii imenifundisha mambo mingi mpya!",
+          "note": "Imenifundisha = has taught me — also right."
+        }
+      ]
     }
   ],
   "vocabulary": [
@@ -1942,6 +2054,16 @@
       "explanation": "hu- = as a habit, always.",
       "grammar": [
         "habitual-hu-nga"
+      ],
+      "accept": [
+        {
+          "text": "Mimi huwa napenda kuona maisha ya mashambani.",
+          "note": "Huwa napenda — the everyday Kenyan habitual."
+        },
+        {
+          "text": "Mimi ninapenda kuona maisha ya mashambani.",
+          "note": "Ninapenda (I like) — also right; hupenda adds “usually”."
+        }
       ]
     },
     {

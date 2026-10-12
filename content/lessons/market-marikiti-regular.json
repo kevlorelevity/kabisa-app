@@ -22,21 +22,21 @@
     "conditional-nge",
     "noun-classes-mwa-nn",
     "possessives",
-    "perfect-me",
-    "ko-location",
-    "discourse-particles",
     "past-li",
-    "sanifu-noun-classes",
+    "numbers-money",
     "locative-ni",
-    "question-words",
+    "future-ta",
+    "verb-extensions",
+    "perfect-me",
+    "sanifu-noun-classes",
     "subject-prefixes",
     "object-infixes",
+    "ko-location",
+    "discourse-particles",
+    "question-words",
     "greetings",
     "adjective-agreement",
-    "future-ta",
     "present-na",
-    "verb-extensions",
-    "numbers-money",
     "conjunctions-kwamba",
     "ni-copula",
     "subjunctive"
@@ -200,6 +200,20 @@
         {
           "swahili": "Habari, Mama Wanjiru! Nilipofika jana, nikakutafuta, lakini nilikuwepo hapa.",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Habari, Mama Wanjiru! Nilipokuja jana, nikakutafuta, lakini hukuwepo.",
+          "note": "Nilipokuja (when I came) works as well as nilipofika (when I arrived)."
+        },
+        {
+          "text": "Habari, Mama Wanjiru! Nilipofika jana, nilikutafuta, lakini hukuwepo.",
+          "note": "Nilikutafuta is fine too; nikakutafuta links it as “and then I looked for you”."
+        },
+        {
+          "text": "Habari, Mama Wanjiru! Nilipofika jana, nikakutafuta, lakini hukuwa hapa.",
+          "note": "Hukuwa hapa = you weren't here — also right."
         }
       ]
     },
@@ -418,6 +432,20 @@
           "swahili": "Kwa mama ambaye huuza karibu na geti. Lakini mimi sijawahi kununua hapa kwako.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Kwa mama ambaye anauza karibu na geti. Lakini mimi huwa ninanunua hapa kwako.",
+          "note": "Anauza / huwa ninanunua — also everyday Kenyan."
+        },
+        {
+          "text": "Kwa mama ambaye huuza karibu na geti. Lakini mimi hununua hapa kwako.",
+          "note": "Hununua is the standard habitual; Kenyans often say huwa ninanunuanga."
+        },
+        {
+          "text": "Kwa mama anayeuza karibu na geti. Lakini mimi huwa ninanunuanga hapa kwako.",
+          "note": "Anayeuza = who sells — the -ye- relative instead of ambaye."
+        }
       ]
     },
     {
@@ -623,6 +651,20 @@
           "swahili": "Ndiyo! Maembe ambazo nilinunua zilikuwa ghali, na zingine zilikuwa mbichi.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Hapana! Maembe ambayo nilinunua yalikuwa ghali, na mengine yalikuwa mabichi.",
+          "note": "That's the Sanifu (standard) form — Kenyans say maembe ambazo, zilikuwa (n/n)."
+        },
+        {
+          "text": "Hapana! Maembe nilizonunua zilikuwa ghali, na zingine zilikuwa mbichi.",
+          "note": "Nilizonunua = (which) I bought — the -zo- relative instead of ambazo."
+        },
+        {
+          "text": "Hapana! Maembe ambazo nilinunua zilikuwa ghali sana, na zingine zilikuwa mbichi.",
+          "note": "Ghali sana — also right."
+        }
       ]
     },
     {
@@ -825,6 +867,20 @@
           "swahili": "Ndiyo maana nimerudi! Leo nataka maembe na ndizi mbichi.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Ndiyo sababu nimerudi! Leo nataka maembe na ndizi zilizoiva.",
+          "note": "Ndiyo sababu = that's why — same as ndiyo maana."
+        },
+        {
+          "text": "Ndiyo maana nimekuja tena! Leo nataka maembe na ndizi zilizoiva.",
+          "note": "Nimekuja tena = I've come again — also right."
+        },
+        {
+          "text": "Ndiyo maana nimerudi! Leo nataka maembe na ndizi ambazo zimeiva.",
+          "note": "Ambazo zimeiva = which are ripe — same as zilizoiva."
+        }
       ]
     },
     {
@@ -983,6 +1039,20 @@
         {
           "swahili": "Ningekuwa na gari leo, nitanunua kilo kumi! Lakini nitachukua tatu.",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Kama ningekuwa na gari leo, ningenunua kilo kumi! Lakini nitachukua tatu.",
+          "note": "Kama (if) in front is fine too."
+        },
+        {
+          "text": "Ningekuwa na gari leo, ningenunua kilo kumi! Lakini nitanunua tatu.",
+          "note": "Nitanunua (I'll buy) works as well as nitachukua (I'll take)."
+        },
+        {
+          "text": "Ningalikuwa na gari leo, ningalinunua kilo kumi! Lakini nitachukua tatu.",
+          "note": "-ngali- is the Sanifu “would have”; Kenyans mostly use -nge-."
         }
       ]
     },
@@ -1190,7 +1260,21 @@
       ],
       "speaker": "Mteja",
       "swahili": "Asante! Nikikuja wiki ijayo, utaniwekea maembe zenye sukari zaidi?",
-      "literal": "Thanks! If I come next week, will you keep for me mangoes having more sugar?"
+      "literal": "Thanks! If I come next week, will you keep for me mangoes having more sugar?",
+      "accept": [
+        {
+          "text": "Asante! Nikija wiki ijayo, utaniwekea maembe zenye sukari zaidi?",
+          "note": "Nikija is the standard short form; Kenyans usually say nikikuja."
+        },
+        {
+          "text": "Asante! Nikikuja wiki ijayo, utaniwekea maembe yenye sukari zaidi?",
+          "note": "That's the Sanifu (standard) form — Kenyans say maembe zenye."
+        },
+        {
+          "text": "Asante! Nikirudi wiki ijayo, utaniwekea maembe zenye sukari zaidi?",
+          "note": "Nikirudi = if I come back — also right."
+        }
+      ]
     },
     {
       "id": "2f6d4f43-9c5c-5c74-9c23-6c15790280a7",
@@ -1457,6 +1541,12 @@
       "explanation": "Kenyans add -nga (from Luhya) for habits: ninanunuanga.",
       "grammar": [
         "habitual-hu-nga"
+      ],
+      "accept": [
+        {
+          "text": "Mimi huwa ninanunua hapa.",
+          "note": "Huwa ninanunua — also everyday Kenyan for “I usually buy”."
+        }
       ]
     },
     {
@@ -1511,6 +1601,12 @@
       "explanation": "Kenyans treat maembe as n/n plural: ambazo. (Sanifu, ji/ma: maembe ambayo.)",
       "grammar": [
         "relatives"
+      ],
+      "accept": [
+        {
+          "text": "maembe ambayo nilinunua",
+          "note": "That's the Sanifu (standard) form — Kenyans say maembe ambazo."
+        }
       ]
     },
     {
@@ -1563,6 +1659,12 @@
       "explanation": "-ye- tucked into the verb = who: a- + -li- + -ye- + -ku- + -uzia.",
       "grammar": [
         "relatives"
+      ],
+      "accept": [
+        {
+          "text": "mama ambaye alikuuzia",
+          "note": "Ambaye alikuuzia = who sold to you — also right."
+        }
       ]
     },
     {
@@ -1590,6 +1692,12 @@
       "explanation": "-ki- = if / when (likely): u- + -ki- + -nunua.",
       "grammar": [
         "ki-po-ka"
+      ],
+      "accept": [
+        {
+          "text": "Kama utanunua kilo tatu…",
+          "note": "Kama utanunua = if you buy — also right."
+        }
       ]
     },
     {
@@ -1670,7 +1778,13 @@
           "feedback": "Ningekuja = I would come"
         }
       ],
-      "explanation": "ni- + -ki- + kuja (kuja keeps ku-)."
+      "explanation": "ni- + -ki- + kuja (kuja keeps ku-).",
+      "accept": [
+        {
+          "text": "Nikija wiki ijayo…",
+          "note": "Nikija is the standard short form; Kenyans usually say nikikuja."
+        }
+      ]
     },
     {
       "id": "061c2a94-a0f1-5756-a1c7-5323d954a9b8",
@@ -1725,7 +1839,13 @@
       "grammar": [
         "relatives"
       ],
-      "literal": "mangoes having more sugar"
+      "literal": "mangoes having more sugar",
+      "accept": [
+        {
+          "text": "maembe yenye sukari zaidi",
+          "note": "That's the Sanifu (standard) form — Kenyans say maembe zenye."
+        }
+      ]
     },
     {
       "id": "e31712c3-0d7e-5081-a7d2-1c20a4b09cf0",
@@ -1748,7 +1868,13 @@
           "feedback": "hivyo = like that / so"
         }
       ],
-      "explanation": "Ndiyo maana = that's why."
+      "explanation": "Ndiyo maana = that's why.",
+      "accept": [
+        {
+          "text": "Ndiyo sababu nimerudi!",
+          "note": "Ndiyo sababu = that's why — same as ndiyo maana."
+        }
+      ]
     },
     {
       "id": "fb70ef4c-e637-5937-b9cc-8f157fbef126",

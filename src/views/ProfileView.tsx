@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useProfile } from '../hooks/profileContext';
 import { WelcomeForm } from '../components/WelcomeForm';
 
-/** Edit the name / nationality chosen at sign-up. */
+/** Edit the name / nationality / form of address chosen at sign-up. */
 export function ProfileView() {
   const { profile, save } = useProfile();
   const [saved, setSaved] = useState(false);
@@ -15,9 +15,10 @@ export function ProfileView() {
       <h1 className="text-2xl font-bold text-gray-900">Your profile</h1>
       <p className="text-sm text-gray-500">This is who you are in every conversation.</p>
       <WelcomeForm
-        key={`${profile?.displayName}-${profile?.nationality}`}
+        key={`${profile?.displayName}-${profile?.nationality}-${profile?.gender}`}
         initialName={profile?.displayName ?? ''}
         initialNationality={profile?.nationality ?? ''}
+        initialGender={profile?.gender}
         submitLabel="Save"
         onSave={async (p) => {
           await save(p);

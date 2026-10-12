@@ -6,7 +6,7 @@ import { GrammarChips } from './GrammarChips';
 import { DeleteItem, EditPencil } from './EditPencil';
 import { practiceTarget } from './adminTargets';
 import { TypedAnswer } from './TypedAnswer';
-import type { TypingMode } from '../lib/typing';
+import { acceptedAnswers, type TypingMode } from '../lib/typing';
 
 interface PracticeSessionProps {
   items: PracticeItem[];
@@ -41,6 +41,7 @@ export function PracticeSession({ items, onFinish, resultSlot, review = false, t
   const [firstTry, setFirstTry] = useState(0);
   const [missed, setMissed] = useState<string[]>([]);
   const [hint, setHint] = useState(false);
+  const [said, setSaid] = useState<string | null>(null);
   const [finished, setFinished] = useState(false);
 
   const item = order[index];
@@ -107,6 +108,8 @@ export function PracticeSession({ items, onFinish, resultSlot, review = false, t
             setSolved(review);
             setFirstTry(0);
             setMissed([]);
+            setSaid(null);
+            setHint(false);
             setFinished(false);
           }}
           className="mt-2 px-4 py-2 rounded-full bg-green-700 text-white text-sm font-medium hover:bg-green-800"
@@ -133,8 +136,9 @@ export function PracticeSession({ items, onFinish, resultSlot, review = false, t
     setMissed((m) => (m.includes(item.id) ? m : [...m, item.id]));
   }
 
-  function typedSolved() {
+  function typedSolved(_answer: string, feedback?: string) {
     if (wrongPicks.length === 0) setFirstTry((n) => n + 1);
+    setSaid(feedback ?? null);
     setSolved(true);
   }
 
@@ -154,9 +158,18 @@ export function PracticeSession({ items, onFinish, resultSlot, review = false, t
     setWrongPicks([]);
     setSolved(review);
     setHint(false);
+    setSaid(null);
   }
 
   const answer = item.options.find((o) => o.correct)!;
+  const typedAnswers = typing
+    ? acceptedAnswers({
+        line: `${item.before}${answer.text}${item.after}`,
+        span: { start: item.before.length, end: item.before.length + answer.text.length },
+        mode: typing,
+        alts: item.accept,
+      })
+    : [];
   const lastWrong = wrongPicks.length
     ? item.options.find((o) => o.text === wrongPicks[wrongPicks.length - 1])
     : undefined;
@@ -233,6 +246,11 @@ export function PracticeSession({ items, onFinish, resultSlot, review = false, t
 
       {solved && (
         <div className="text-sm text-gray-700 bg-green-50 border border-green-100 rounded-lg px-4 py-3 space-y-2">
+          {said && (
+            <p className="font-medium text-green-800" data-testid="typed-affirmation">
+              ✓ {said}
+            </p>
+          )}
           <p>
             {item.explanation}{' '}
             <EditPencil
@@ -290,7 +308,8 @@ export function PracticeSession({ items, onFinish, resultSlot, review = false, t
           <TypedAnswer
             key={`${round}-${item.id}`}
             wide={typing === 'complete'}
-            accepted={typing === 'complete' ? [`${item.before}${answer.text}${item.after}`] : [answer.text]}
+            accepted={typedAnswers}
+            whole={typing === 'complete'}
             placeholder={typing === 'complete' ? 'Type the sentence…' : 'Type the missing word…'}
             onMiss={typedMiss}
             onSolved={typedSolved}

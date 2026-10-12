@@ -19,20 +19,20 @@
     "perfect-negative-ja",
     "comparatives",
     "noun-classes-mwa-nn",
-    "past-li",
-    "subjunctive",
-    "locative-ni",
-    "possessives",
     "sanifu-noun-classes",
-    "discourse-particles",
-    "demonstratives",
-    "na-have",
-    "ko-location",
     "ni-copula",
     "imperatives",
+    "possessives",
+    "discourse-particles",
     "adjective-agreement",
-    "present-na",
     "future-ta",
+    "locative-ni",
+    "demonstratives",
+    "present-na",
+    "past-li",
+    "subjunctive",
+    "na-have",
+    "ko-location",
     "infinitive-ku",
     "object-infixes"
   ],
@@ -898,6 +898,12 @@
           "swahili": "Sijala tangu asubuhi. Lakini sitangoja — nipe samaki wa kuchoma.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Sijakula tangu asubuhi. Lakini nitangoja — nipe samaki wa kuchoma.",
+          "note": "Sijakula is how most Kenyans say it; sijala is the standard form."
+        }
       ]
     },
     {
@@ -1414,6 +1420,12 @@
       "explanation": "Negative perfect of kula: sijala (no ku-). Kenyans also say sijakula.",
       "grammar": [
         "perfect-negative-ja"
+      ],
+      "accept": [
+        {
+          "text": "Sijakula tangu asubuhi.",
+          "note": "Sijakula is how most Kenyans say it; sijala is the standard form."
+        }
       ]
     },
     {
@@ -1699,6 +1711,12 @@
       "explanation": "Nitangoja = \"I will wait\" — ni- (subject: I) + ta- (future) + -ngoja (wait). From kungoja.",
       "grammar": [
         "future-ta"
+      ],
+      "accept": [
+        {
+          "text": "Nitasubiri.",
+          "note": "Nitasubiri also means “I'll wait”."
+        }
       ]
     },
     {
@@ -1726,6 +1744,12 @@
       "explanation": "Ngoja = \"Wait!\" — -ngoja (wait). From kungoja.",
       "grammar": [
         "imperatives"
+      ],
+      "accept": [
+        {
+          "text": "Subiri kidogo.",
+          "note": "Subiri also means “wait”; ngoja is more common in Nairobi."
+        }
       ]
     }
   ]

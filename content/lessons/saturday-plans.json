@@ -21,19 +21,19 @@
     "helper-verbs",
     "locative-ni",
     "question-words",
-    "negative-present",
-    "perfect-negative-ja",
-    "ni-copula",
     "noun-classes-mwa-nn",
+    "ni-copula",
+    "greetings",
+    "numbers-money",
     "subjunctive",
-    "na-have",
     "sanifu-noun-classes",
-    "adjective-agreement",
-    "discourse-particles",
     "possessives",
     "imperatives",
-    "greetings",
-    "numbers-money"
+    "negative-present",
+    "perfect-negative-ja",
+    "na-have",
+    "adjective-agreement",
+    "discourse-particles"
   ],
   "turns": [
     {
@@ -1463,6 +1463,12 @@
       "explanation": "After lazima (must), use the subjunctive: tu- + -ondok- + -e.",
       "grammar": [
         "subjunctive"
+      ],
+      "accept": [
+        {
+          "text": "Lazima twende mapema.",
+          "note": "Lazima twende = we have to go — also right."
+        }
       ]
     },
     {

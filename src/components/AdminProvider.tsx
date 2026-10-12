@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { parseAccepted } from '../lib/typing';
 import { useLocation } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 import { useProfile } from '../hooks/profileContext';
@@ -259,6 +260,11 @@ function SuggestModal({
     if (plan.merges.length && lessonId && target.itemId) {
       const value: Record<string, unknown> = {};
       for (const { field, next } of plan.merges) {
+        if (field.set === 'accept') {
+          const list = parseAccepted(next);
+          value.accept = list.length ? list : ''; // '' removes it
+          continue;
+        }
         if (field.set) {
           value[field.set] = next; // '' removes it
           continue;
@@ -443,7 +449,7 @@ function SuggestModal({
                 <textarea
                   value={values[f.key] ?? ''}
                   onChange={(e) => setValues((v) => ({ ...v, [f.key]: e.target.value }))}
-                  rows={f.lang === 'sw' && f.key === 'text' ? 3 : 2}
+                  rows={f.key === 'accept' ? 4 : f.lang === 'sw' && f.key === 'text' ? 3 : 2}
                   autoFocus={idx === 0}
                   placeholder={f.placeholder}
                   lang={f.lang === 'sw' ? 'sw' : 'en'}

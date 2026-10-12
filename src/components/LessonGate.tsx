@@ -10,51 +10,108 @@ import {
   type SectionScore,
 } from '../lib/lessonScores';
 
-function Chip({ label, score, required }: { label: string; score?: SectionScore; required: boolean }) {
-  if (!required) return null;
-  const passed = sectionPassed(score);
-  return (
-    <span
-      className={`inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-full border ${
-        passed
-          ? 'border-green-200 bg-green-50 text-green-800'
-          : score
-          ? 'border-amber-200 bg-amber-50 text-amber-800'
-          : 'border-gray-200 bg-white text-gray-500'
-      }`}
-    >
-      {passed ? '✓' : score ? '•' : '○'} {label}
-      <span className="font-semibold">{score ? pct(score.best) : '—'}</span>
-    </span>
-  );
-}
-
 interface LessonGateStatusProps {
   lesson: Lesson;
   next?: Lesson;
   rec: LessonScoreRecord;
 }
 
-/** Best scores vs. the pass mark, and what that means for the next lesson. */
+function Step({ n, label, score, active }: { n: number; label: string; score?: SectionScore; active: boolean }) {
+  const passed = sectionPassed(score);
+  return (
+    <li
+      className={`flex-1 min-w-0 rounded-lg border px-2.5 py-1.5 text-xs ${
+        passed
+          ? 'border-green-200 bg-green-50 text-green-800'
+          : active
+          ? 'border-green-600 bg-white text-green-900 ring-2 ring-green-100'
+          : 'border-gray-200 bg-white text-gray-500'
+      }`}
+      aria-current={active ? 'step' : undefined}
+    >
+      <span className="font-semibold">{passed ? '✓' : `${n}.`} {label}</span>
+      <span className="block text-[11px] opacity-80">{score ? `best ${pct(score.best)}` : 'not done yet'}</span>
+    </li>
+  );
+}
+
+/** The path to the next lesson: conversation → practice → unlocked, with best scores. */
 export function LessonGateStatus({ lesson, next, rec }: LessonGateStatusProps) {
   const hasPractice = Boolean(lesson.practice?.length);
   const passed = isLessonPassed(lesson, rec);
+  const convoDone = sectionPassed(rec.dialogue);
   return (
-    <div className="space-y-2">
-      <div className="flex flex-wrap gap-2">
-        <Chip label="Conversation" score={rec.dialogue} required />
-        <Chip label="Practice" score={rec.practice} required={hasPractice} />
-      </div>
+    <div className="space-y-2" data-testid="lesson-path">
+      <ol className="flex items-stretch gap-1.5" aria-label="Your path to the next lesson">
+        <Step n={1} label="Conversation" score={rec.dialogue} active={!convoDone} />
+        {hasPractice && (
+          <>
+            <span aria-hidden="true" className="self-center text-gray-300">→</span>
+            <Step n={2} label="🔑 Practice" score={rec.practice} active={convoDone && !sectionPassed(rec.practice)} />
+          </>
+        )}
+        <span aria-hidden="true" className="self-center text-gray-300">→</span>
+        <li
+          className={`flex-1 min-w-0 rounded-lg border px-2.5 py-1.5 text-xs ${
+            passed ? 'border-green-300 bg-green-100 text-green-900' : 'border-dashed border-gray-300 bg-white text-gray-400'
+          }`}
+        >
+          <span className="font-semibold">{passed ? '🔓' : '🔒'} {next ? 'Next lesson' : 'Done'}</span>
+          <span className="block text-[11px] truncate">{next ? next.title : 'latest lesson'}</span>
+        </li>
+      </ol>
       <p className="text-xs text-gray-500">
         {passed
           ? next
             ? `Passed — “${next.title}” is unlocked.`
             : 'Passed — this is the latest lesson.'
-          : `Score ${pct(PASS_THRESHOLD)} or more on the first try in the conversation${
-              hasPractice ? ' and the practice session' : ''
-            } to ${next ? `unlock “${next.title}”` : 'pass this lesson'}.`}
+          : hasPractice
+          ? `The practice session is your key to the next lesson: score ${pct(PASS_THRESHOLD)} or more on the first try in the conversation, then in the practice.`
+          : `Score ${pct(PASS_THRESHOLD)} or more on the first try in the conversation to ${next ? `unlock “${next.title}”` : 'pass this lesson'}.`}
       </p>
     </div>
+  );
+}
+
+/** After the conversation: the practice session is the step that unlocks the next lesson. */
+export function PracticeKey({ lesson, next, rec }: { lesson: Lesson; next?: Lesson; rec: LessonScoreRecord }) {
+  if (!lesson.practice?.length) return null;
+  const done = sectionPassed(rec.practice);
+  const convoDone = sectionPassed(rec.dialogue);
+  const unlocks = next ? `unlock “${next.title}”` : 'finish this lesson';
+  return (
+    <Link
+      to={`/lesson/${lesson.id}/practice`}
+      data-testid="practice-key"
+      className={`block rounded-xl border-2 p-4 transition-colors ${
+        done ? 'border-green-200 bg-green-50 hover:border-green-400' : 'border-green-600 bg-green-50 hover:bg-green-100'
+      }`}
+    >
+      <p className="text-xs uppercase tracking-wide font-semibold text-green-700">
+        {done ? 'Practice passed' : convoDone ? 'Step 2 of 2 · your key to the next lesson' : 'Step 2 of 2'}
+      </p>
+      <p className="mt-0.5 text-lg font-bold text-green-900">{done ? 'Practice again →' : '🔑 Start the practice session →'}</p>
+      <p className="text-sm text-green-800/80 mt-0.5">
+        {done
+          ? `${lesson.practice.length} fill-the-gap lines from this conversation — best ${pct(rec.practice!.best)}.`
+          : `${lesson.practice.length} fill-the-gap lines from this conversation. Score ${pct(PASS_THRESHOLD)} on the first try to ${unlocks}.`}
+      </p>
+    </Link>
+  );
+}
+
+/** "✕ Exit": leave a session that's optional now (already passed, or a drill). */
+export function ExitButton({ onExit, label = 'Exit', hint }: { onExit: () => void; label?: string; hint?: string }) {
+  return (
+    <button
+      type="button"
+      onClick={onExit}
+      title={hint}
+      data-testid="exit-session"
+      className="shrink-0 inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-3 py-1.5 text-xs font-semibold text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+    >
+      ✕ {label}
+    </button>
   );
 }
 

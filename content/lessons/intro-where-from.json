@@ -7,7 +7,7 @@
   "level": 1,
   "order": 104,
   "theme": "greetings",
-  "culturalNote": "At any Nairobi party or office, the first three questions are always the same: your name, where you're from, and what you do. Kenyans are curious about wazungu and other foreigners — why you came, how long you're staying, whether you like the food — and they're delighted by any attempt at Swahili. \"Tuko pamoja\" (we're together) is a warm Kenyan way of saying \"I'm with you\" — and also a casual goodbye.",
+  "culturalNote": "At any Nairobi party or office, the first three questions are always the same: your name, where you're from, and what you do. Kenyans are curious about newcomers — why you came, how long you're staying, whether you like the food — and they're delighted by any attempt at Swahili. \"Tuko pamoja\" (we're together) is a warm Kenyan way of saying \"I'm with you\" — and also a casual goodbye.",
   "startingPoint": "Saturday evening at a friend's house party in Kileleshwa. A woman with a plate of samosas comes over to say hi.",
   "grammarFocus": [
     "question-words",
@@ -20,12 +20,12 @@
     "present-na",
     "ko-location",
     "possessives",
+    "noun-classes-mwa-nn",
+    "ni-copula",
     "greetings",
     "subject-prefixes",
-    "ni-copula",
     "discourse-particles",
     "locative-ni",
-    "noun-classes-mwa-nn",
     "sanifu-noun-classes"
   ],
   "turns": [

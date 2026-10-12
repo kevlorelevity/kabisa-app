@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useLessonWithNeighbors } from '../hooks/useLessons';
 import { PracticeSession } from '../components/PracticeSession';
-import { DrillPrompt, LessonGateStatus, LockedLesson } from '../components/LessonGate';
+import { DrillPrompt, ExitButton, LessonGateStatus, LockedLesson } from '../components/LessonGate';
 import { LevelUpModal } from '../components/LevelUp';
 import { claimLevelUp } from '../lib/levels';
 import {
@@ -27,6 +27,9 @@ export function PracticeView() {
   const [rec, setRec] = useState(() => getLessonScores(id ?? ''));
   const [result, setResult] = useState<AttemptResult | null>(null);
   const [levelUp, setLevelUp] = useState<number | null>(null);
+  const navigate = useNavigate();
+  // Already passed before this run: the replay is optional, so it can be left any time.
+  const [passedBefore] = useState(() => sectionPassed(getLessonScores(id ?? '').practice));
 
   if (!lesson || !lesson.practice?.length) {
     return (
@@ -86,7 +89,21 @@ export function PracticeView() {
         <Link to={`/lesson/${lesson.id}`} className="text-sm text-gray-400 hover:text-gray-600">
           ← {lesson.title}
         </Link>
-        <h1 className="text-2xl font-bold text-gray-900 mt-2">Practice session</h1>
+        <div className="flex items-center justify-between gap-2 mt-2">
+          <h1 className="text-2xl font-bold text-gray-900">Practice session</h1>
+          {passedBefore && !result && !roaming && (
+            <ExitButton
+              label="Exit — already passed"
+              hint="You've passed this practice before — leave this replay any time."
+              onExit={() => navigate(`/lesson/${lesson.id}`)}
+            />
+          )}
+        </div>
+        {!sectionPassed(rec.practice) && !roaming && (
+          <p className="mt-1 text-sm font-medium text-green-800" data-testid="practice-is-key">
+            🔑 This practice is your key to {next ? `“${next.title}”` : 'finishing the lesson'} — score {pct(PASS_THRESHOLD)} on the first try.
+          </p>
+        )}
         <details className="group mt-1" data-testid="practice-intro">
           <summary className="flex cursor-pointer list-none items-center gap-1.5 text-sm text-gray-500 hover:text-gray-700 [&::-webkit-details-marker]:hidden">
             <span className="inline-block transition-transform group-open:rotate-90" aria-hidden="true">

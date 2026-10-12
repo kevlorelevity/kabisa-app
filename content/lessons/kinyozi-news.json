@@ -19,20 +19,20 @@
     "conjunctions-kwamba",
     "conditional-nge",
     "noun-classes-mwa-nn",
+    "verb-extensions",
     "ni-copula",
     "discourse-particles",
     "perfect-me",
-    "future-ta",
-    "object-infixes",
-    "past-li",
+    "ki-po-ka",
     "relatives",
     "possessives",
-    "greetings",
-    "verb-extensions",
-    "ki-po-ka",
+    "past-li",
     "subjunctive",
-    "sanifu-noun-classes",
     "subject-prefixes",
+    "future-ta",
+    "object-infixes",
+    "greetings",
+    "sanifu-noun-classes",
     "na-have",
     "locative-ni"
   ],
@@ -121,6 +121,20 @@
         {
           "swahili": "Ndiyo, kama kawaida. Aisee, jua imekuwa ikinyesha kila siku!",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Ndiyo, kama kawaida. Aisee, mvua inanyesha kila siku!",
+          "note": "Inanyesha (is raining) — also right."
+        },
+        {
+          "text": "Ndiyo, kama kawaida. Mvua imekuwa ikinyesha kila siku!",
+          "note": "Aisee (man!) is optional."
+        },
+        {
+          "text": "Ndiyo, kama kawaida. Aisee, mvua imekuwa inanyesha kila siku!",
+          "note": "Imekuwa inanyesha — the everyday Kenyan form."
         }
       ]
     },
@@ -262,7 +276,21 @@
           "correct": false
         }
       ],
-      "sanifu": "Ndiyo. Wanasema kwamba serikali itaijenga upya mwaka huu."
+      "sanifu": "Ndiyo. Wanasema kwamba serikali itaijenga upya mwaka huu.",
+      "accept": [
+        {
+          "text": "Ndiyo. Wanasema kwamba serikali itaijenga upya mwaka huu.",
+          "note": "That's the Sanifu (standard) form — Kenyans say mwaka hii."
+        },
+        {
+          "text": "Ndiyo. Wanasema serikali itaijenga upya mwaka hii.",
+          "note": "Kwamba (that) can be left out."
+        },
+        {
+          "text": "Ndiyo. Wanasema kuwa serikali itaijenga upya mwaka hii.",
+          "note": "Kuwa (that) works like kwamba."
+        }
+      ]
     },
     {
       "id": "0b87cf34-08e0-53ab-8cea-56e64353eb06",
@@ -435,6 +463,20 @@
           "swahili": "Kama angetimiza ahadi yake, barabara itakuwa nzuri sasa.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Kama angalitimiza ahadi yake, barabara ingalikuwa nzuri sasa.",
+          "note": "-ngali- is the Sanifu “would have”; Kenyans mostly use -nge-."
+        },
+        {
+          "text": "Angetimiza ahadi yake, barabara ingekuwa nzuri sasa.",
+          "note": "Without kama — -nge- already means “if”."
+        },
+        {
+          "text": "Kama angetimiza ahadi yake, barabara ingekuwa sawa sasa.",
+          "note": "Sawa (fine) — also right."
+        }
       ]
     },
     {
@@ -533,6 +575,20 @@
         {
           "swahili": "Haha! Hata hivyo, bei ya unga imeshuka tena.",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Haha! Hata hivyo, bei ya unga imeongezeka tena.",
+          "note": "Imeongezeka (has increased) — also right."
+        },
+        {
+          "text": "Haha! Lakini bei ya unga imepanda tena.",
+          "note": "Lakini (but) — simpler, also right."
+        },
+        {
+          "text": "Hata hivyo, bei ya unga imepanda tena.",
+          "note": "Haha is optional."
         }
       ]
     },
@@ -681,7 +737,25 @@
           "correct": false
         }
       ],
-      "sanifu": "Ebu tuongee kuhusu kitu kizuri. Gor Mahia walishinda jana!"
+      "sanifu": "Ebu tuongee kuhusu kitu kizuri. Gor Mahia walishinda jana!",
+      "accept": [
+        {
+          "text": "Ebu tuzungumze kuhusu kitu nzuri. Gor Mahia walishinda jana!",
+          "note": "Tuzungumze also means “let's talk” — a bit more formal."
+        },
+        {
+          "text": "Ebu tuongee kuhusu kitu kizuri. Gor Mahia walishinda jana!",
+          "note": "That's the Sanifu (standard) form — Kenyans say kitu nzuri."
+        },
+        {
+          "text": "Ebu tuongee kuhusu jambo zuri. Gor Mahia walishinda jana!",
+          "note": "Jambo zuri = a good matter — also right."
+        },
+        {
+          "text": "Tuongee kuhusu kitu nzuri. Gor Mahia walishinda jana!",
+          "note": "Ebu (come on) is optional."
+        }
+      ]
     },
     {
       "id": "da996e7d-1fe9-540d-9011-f3eb6110f843",
@@ -838,6 +912,20 @@
         {
           "swahili": "Mimi pia! Ningekuwa na muda, nitaenda Kasarani kila wiki.",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Mimi pia! Ningekuwa na wakati, ningeenda Kasarani kila wiki.",
+          "note": "Wakati (time) works like muda."
+        },
+        {
+          "text": "Mimi pia! Kama ningekuwa na muda, ningeenda Kasarani kila wiki.",
+          "note": "Kama in front is fine too."
+        },
+        {
+          "text": "Mimi pia! Ningalikuwa na muda, ningalienda Kasarani kila wiki.",
+          "note": "-ngali- is the Sanifu “would have”; Kenyans mostly use -nge-."
         }
       ]
     },
@@ -1117,6 +1205,12 @@
       "explanation": "kwamba: that (as in \"he said that…\")",
       "grammar": [
         "conjunctions-kwamba"
+      ],
+      "accept": [
+        {
+          "text": "Wanasema kuwa serikali itaijenga upya.",
+          "note": "Kuwa (that) works like kwamba."
+        }
       ]
     },
     {
@@ -1249,7 +1343,13 @@
           "feedback": "Ingawa = although"
         }
       ],
-      "explanation": "huenda = maybe / it might be."
+      "explanation": "huenda = maybe / it might be.",
+      "accept": [
+        {
+          "text": "Labda itajengwa.",
+          "note": "Labda (maybe) — also right."
+        }
+      ]
     },
     {
       "id": "2e693517-35c4-5ecd-8934-0dfae64a2bca",
@@ -1356,6 +1456,12 @@
       "explanation": "Tuongee = \"let's talk\"",
       "grammar": [
         "subjunctive"
+      ],
+      "accept": [
+        {
+          "text": "Tuzungumze kuhusu kitu nzuri.",
+          "note": "Tuzungumze also means “let's talk” — a bit more formal."
+        }
       ]
     },
     {
@@ -1383,6 +1489,12 @@
       "explanation": "ningeenda = \"I would go\" — ni- (subject: I) + nge- (\"would\") + -enda (go). From kuenda.",
       "grammar": [
         "conditional-nge"
+      ],
+      "accept": [
+        {
+          "text": "Ningekuwa na muda, ningekwenda kila wiki.",
+          "note": "Ningekwenda — the standard form; also right."
+        }
       ]
     },
     {
@@ -1465,6 +1577,12 @@
       "explanation": "yetu = our, yenu = your (plural), yao = their. For things Kenyans use the n/n forms: mtaa yetu. (Sanifu, m/mi: mtaa wetu.)",
       "grammar": [
         "possessives"
+      ],
+      "accept": [
+        {
+          "text": "mtaa wetu",
+          "note": "That's the Sanifu (standard) form — Kenyans say mtaa yetu."
+        }
       ]
     }
   ]

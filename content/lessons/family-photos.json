@@ -22,11 +22,11 @@
     "negative-present",
     "noun-classes-mwa-nn",
     "ni-copula",
+    "adjective-agreement",
     "numbers-money",
+    "ko-location",
     "discourse-particles",
     "greetings",
-    "adjective-agreement",
-    "ko-location",
     "present-na",
     "object-infixes",
     "subject-prefixes"
@@ -1742,6 +1742,12 @@
       "explanation": "One person: mrembo. Several: warembo.",
       "grammar": [
         "adjective-agreement"
+      ],
+      "accept": [
+        {
+          "text": "Ni mzuri sana.",
+          "note": "Mzuri also works — mrembo means beautiful specifically."
+        }
       ]
     },
     {

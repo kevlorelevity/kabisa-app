@@ -23,7 +23,7 @@ export interface EditField {
   /** A glossed word: the displayed line it sits in. Changing the word rewrites the line. */
   inLine?: string;
   /** Stored as a plain field on the item (a 'fields' patch), e.g. the word learners type. */
-  set?: 'typeWord' | 'literal';
+  set?: 'typeWord' | 'literal' | 'accept';
   /** Small grey help text under the field. */
   help?: string;
 }

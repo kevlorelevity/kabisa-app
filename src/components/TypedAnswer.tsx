@@ -1,16 +1,21 @@
 import { useEffect, useRef, useState } from 'react';
-import { checkAnswer } from '../lib/typing';
+import { affirmation, checkAnswer, type AcceptedAnswer } from '../lib/typing';
 
 interface TypedAnswerProps {
-  /** Accepted answers (first one is shown when revealing). */
-  accepted: Array<string | undefined>;
+  /** Accepted answers (first one is shown when revealing); notes explain the alternatives. */
+  accepted: Array<string | AcceptedAnswer | undefined>;
+  /** The learner types a whole line (changes how alternatives are acknowledged). */
+  whole?: boolean;
   placeholder?: string;
   /** Wider box for whole sentences. */
   wide?: boolean;
   /** Fires once, the first time the learner gets it wrong or gives up. */
   onMiss: () => void;
-  /** Fires when the answer is accepted (or revealed and acknowledged). */
-  onSolved: (answer: string) => void;
+  /**
+   * Fires when the answer is accepted (or revealed and acknowledged). `feedback` acknowledges the
+   * learner's choice when more than one answer is right ("You chose “mwambie”! Good — both …").
+   */
+  onSolved: (answer: string, feedback?: string) => void;
   /**
    * Focus the box when it appears. Off for the first answer on a page: on phones focusing opens
    * the keyboard and scrolls the page down, away from the lesson introduction.
@@ -19,12 +24,15 @@ interface TypedAnswerProps {
 }
 
 /** A text box with Check / Show answer, forgiving small typos. */
-export function TypedAnswer({ accepted, placeholder, wide, onMiss, onSolved, autoFocus = true }: TypedAnswerProps) {
+export function TypedAnswer({ accepted, whole, placeholder, wide, onMiss, onSolved, autoFocus = true }: TypedAnswerProps) {
   const [value, setValue] = useState('');
   const [state, setState] = useState<'idle' | 'wrong' | 'close' | 'revealed'>('idle');
   const [missed, setMissed] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
-  const expected = accepted.find(Boolean) ?? '';
+  const answers: AcceptedAnswer[] = accepted
+    .map((a) => (typeof a === 'string' ? { text: a } : a))
+    .filter((a): a is AcceptedAnswer => Boolean(a?.text?.trim()));
+  const expected = answers[0]?.text ?? '';
 
   useEffect(() => {
     if (autoFocus) inputRef.current?.focus({ preventScroll: true });
@@ -40,13 +48,14 @@ export function TypedAnswer({ accepted, placeholder, wide, onMiss, onSolved, aut
 
   function check() {
     if (state === 'close' || state === 'revealed') return;
-    const r = checkAnswer(value, accepted);
+    const r = checkAnswer(value, answers);
     if (r.verdict === 'exact') {
-      onSolved(r.expected);
+      onSolved(r.expected, affirmation(value, answers, r.index, whole) ?? undefined);
     } else if (r.verdict === 'close') {
       setState('close');
       setValue(r.expected);
-      setTimeout(() => onSolved(r.expected), 1400);
+      const said = affirmation(r.expected, answers, r.index, whole) ?? undefined;
+      setTimeout(() => onSolved(r.expected, said), 1400);
     } else {
       setState('wrong');
       miss();

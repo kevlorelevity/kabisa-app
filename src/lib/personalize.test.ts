@@ -44,3 +44,41 @@ describe('personalizeLesson', () => {
     expect(JSON.stringify(l)).toContain('Wako Berlin na nyanya yao');
   });
 });
+
+describe('addressing a woman', () => {
+  const her = personaFor('Amani', 'DE', 'female');
+  const him = personaFor('Amani', 'DE', 'male');
+
+  it('the other speakers say mama / dada / sista instead of boss / bwana', () => {
+    const matatu = personalizeLesson(find('matatu-to-town'), her);
+    expect(matatu.turns[0].swahili).toBe('Tao! Tao! Kencom! Panda, sista!');
+    expect(matatu.turns[0].english).toBe('Town! Town! Kencom! Get in, sis!');
+    const shop = personalizeLesson(find('clothes-colours'), her);
+    expect(shop.turns[0].swahili).toBe('Karibu, mama! Unatafuta nini leo?');
+    expect(shop.turns[0].english).toBe('Welcome, madam! What are you looking for today?');
+    expect(shop.turns[0].words.find((w) => w.text === 'mama')?.gloss).toMatch(/woman/);
+    const uber = personalizeLesson(find('uber-nairobi'), her);
+    expect(uber.turns.find((t) => t.role === 'auto' && t.swahili.startsWith('Ni mia tano'))?.swahili).toBe('Ni mia tano, dada.');
+  });
+
+  it("keeps the learner's own boss (they're addressing someone else) and leaves men's lessons alone", () => {
+    const uber = personalizeLesson(find('uber-nairobi'), her);
+    expect(uber.turns[0].swahili).toBe('Niaje boss?');
+    const m = personalizeLesson(find('clothes-colours'), him);
+    expect(m.turns[0].swahili).toBe('Karibu, boss! Unatafuta nini leo?');
+  });
+
+  it('keeps glossed words in sync with their line', () => {
+    for (const lesson of raw) {
+      const l = personalizeLesson(lesson, her);
+      for (const t of l.turns) {
+        let cursor = 0;
+        for (const w of t.words) {
+          const i = t.swahili.indexOf(w.text, cursor);
+          expect(i, `${l.id}: "${w.text}" in "${t.swahili}"`).toBeGreaterThanOrEqual(0);
+          cursor = i + w.text.length;
+        }
+      }
+    }
+  });
+});

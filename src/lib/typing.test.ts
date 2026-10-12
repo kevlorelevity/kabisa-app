@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { checkAnswer, pickKeyWord, typingModeFor } from './typing';
+import { acceptedAnswers, affirmation, checkAnswer, formatAccepted, parseAccepted, pickKeyWord, typingModeFor } from './typing';
 
 describe('typed answers', () => {
   it('starts at level 5: partial for 5–7, complete from 8', () => {
@@ -26,5 +26,48 @@ describe('typed answers', () => {
       ],
     };
     expect(pickKeyWord(turn)).toEqual({ text: 'nitaenda', start: 6 });
+  });
+});
+
+describe('more than one right answer', () => {
+  const line = 'Sawa. Naomba umwambie anipigie simu akifika.';
+  const span = { start: line.indexOf('umwambie'), end: line.indexOf('umwambie') + 'umwambie'.length };
+  const alts = [{ text: 'mwambie', note: 'Mwambie is the direct command; umwambie is more polite and very common.' }];
+
+  it('word alternatives work when typing the word and when typing the whole line', () => {
+    expect(acceptedAnswers({ line, span, mode: 'partial', alts }).map((a) => a.text)).toEqual(['umwambie', 'mwambie']);
+    expect(acceptedAnswers({ line, span, mode: 'complete', alts }).map((a) => a.text)).toEqual([
+      line,
+      'Sawa. Naomba mwambie anipigie simu akifika.',
+    ]);
+  });
+
+  it('whole-line alternatives give the word that changes at the gap', () => {
+    const whole = [{ text: 'Sawa. Naomba mwambie anipigie simu akifika.' }, { text: 'Haya. Mwambie anipigie.' }];
+    expect(acceptedAnswers({ line, span, mode: 'partial', alts: whole }).map((a) => a.text)).toEqual(['umwambie', 'mwambie']);
+  });
+
+  it('says which one the learner chose and why both work', () => {
+    const answers = acceptedAnswers({ line, span, mode: 'partial', alts });
+    const r = checkAnswer('Mwambie', answers);
+    expect(r).toMatchObject({ verdict: 'exact', index: 1 });
+    expect(affirmation('Mwambie', answers, r.index)).toBe(
+      'You chose “mwambie”! Good — both “mwambie” and “umwambie” work. Mwambie is the direct command; umwambie is more polite and very common.',
+    );
+    expect(affirmation('umwambie', answers, 0)).toMatch(/^You chose “umwambie”! Good — both “umwambie” and “mwambie” work\./);
+    expect(affirmation('nitaenda', [{ text: 'nitaenda' }], 0)).toBeNull();
+  });
+
+  it('accepts everyday variants (naenda = ninaenda, ndio = ndiyo, au = ama) and explains them', () => {
+    expect(checkAnswer('Ndio, naenda tao.', ['Ndiyo, ninaenda tao.']).verdict).toBe('exact');
+    expect(checkAnswer('chai au soda', ['chai ama soda']).verdict).toBe('exact');
+    expect(affirmation('naenda', [{ text: 'ninaenda' }], 0)).toMatch(/short form of nina-/);
+    expect(checkAnswer('sina', ['Nina']).verdict).toBe('wrong');
+  });
+
+  it('admin text ⇄ list', () => {
+    const t = 'mwambie | direct command\nNaomba umwambie anipigie simu.';
+    expect(parseAccepted(t)).toEqual([{ text: 'mwambie', note: 'direct command' }, { text: 'Naomba umwambie anipigie simu.' }]);
+    expect(formatAccepted(parseAccepted(t))).toBe(t.replace('mwambie | direct', 'mwambie | direct'));
   });
 });

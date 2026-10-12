@@ -18,21 +18,18 @@
     "past-li",
     "negative-past",
     "object-infixes",
+    "imperatives",
     "noun-classes-mwa-nn",
-    "negative-present",
-    "infinitive-ku",
-    "verb-extensions",
     "question-words",
     "na-have",
     "ni-copula",
-    "sanifu-noun-classes",
+    "numbers-money",
+    "negative-present",
     "future-ta",
-    "possessives",
     "present-na",
-    "imperatives",
+    "possessives",
     "perfect-me",
     "ki-po-ka",
-    "numbers-money",
     "demonstratives"
   ],
   "turns": [
@@ -1280,6 +1277,12 @@
       "grammar": [
         "imperatives",
         "object-infixes"
+      ],
+      "accept": [
+        {
+          "text": "Unipe dawa.",
+          "note": "Unipe is the polite form — both work."
+        }
       ]
     },
     {

@@ -12,20 +12,19 @@
   "grammarFocus": [
     "ni-copula",
     "present-na",
-    "time-swahili"
+    "noun-classes-mwa-nn"
   ],
   "grammar": [
     "ni-copula",
     "present-na",
-    "time-swahili",
-    "greetings",
     "noun-classes-mwa-nn",
-    "question-words",
-    "discourse-particles",
-    "sanifu-noun-classes",
-    "possessives",
     "numbers-money",
-    "subject-prefixes"
+    "greetings",
+    "sanifu-noun-classes",
+    "subject-prefixes",
+    "possessives",
+    "question-words",
+    "discourse-particles"
   ],
   "turns": [
     {
@@ -200,8 +199,8 @@
       "id": "68a75f4a-cd41-5a1b-bb86-64295e5f057d",
       "speaker": "John",
       "role": "user",
-      "swahili": "Kweli? Kampala ni joto mwaka mzima!",
-      "english": "Really? Kampala is warm all year round!",
+      "swahili": "Kweli? Mimi ninapenda joto!",
+      "english": "Really? I love warm weather!",
       "words": [
         {
           "text": "Kweli",
@@ -211,39 +210,39 @@
           ]
         },
         {
-          "text": "Kampala",
-          "gloss": "Kampala — capital of Uganda"
+          "text": "Mimi",
+          "gloss": "I / me",
+          "grammar": [
+            "subject-prefixes"
+          ]
         },
         {
-          "text": "ni",
-          "gloss": "is / am / are",
+          "text": "ninapenda",
+          "gloss": "\"I like / love\" — ni- + -na- + -penda.",
           "grammar": [
-            "ni-copula"
+            "present-na"
           ]
         },
         {
           "text": "joto",
           "gloss": "heat / warmth — ni joto = it's warm"
-        },
-        {
-          "text": "mwaka mzima",
-          "gloss": "\"the whole year\""
         }
       ],
       "options": [
         {
-          "swahili": "Kweli? Kampala ni joto mwaka mzima!",
+          "swahili": "Kweli? Mimi ninapenda joto!",
           "correct": true
         },
         {
-          "swahili": "Kweli? Kampala ni baridi mwaka mzima!",
+          "swahili": "Kweli? Wewe ninapenda joto!",
           "correct": false
         },
         {
-          "swahili": "Kweli? Kampala ni joto mwaka wapi!",
+          "swahili": "Kweli? Mimi ninapenda joto wapi!",
           "correct": false
         }
-      ]
+      ],
+      "literal": "Really? I love warmth!"
     },
     {
       "id": "36776f8d-a2b5-5509-9942-1b7e989b1e31",
@@ -953,18 +952,18 @@
     {
       "id": "dba7eb26-705d-5153-afdc-86c20701a34e",
       "mode": "translate",
-      "english": "Kampala is warm all year round.",
-      "before": "Kampala ni ",
-      "after": " mwaka mzima.",
+      "english": "Nairobi is cold in July.",
+      "before": "Nairobi ni ",
+      "after": " mwezi wa saba.",
       "options": [
         {
-          "text": "joto",
+          "text": "baridi",
           "correct": true
         },
         {
-          "text": "baridi",
+          "text": "joto",
           "correct": false,
-          "feedback": "baridi = cold"
+          "feedback": "joto = warm / hot"
         },
         {
           "text": "kiangazi",
@@ -972,7 +971,7 @@
           "feedback": "kiangazi = the dry season"
         }
       ],
-      "explanation": "joto: heat / warmth — ni joto = it's warm"
+      "explanation": "baridi = cold. Ni baridi = it's cold; ni joto = it's warm."
     },
     {
       "id": "4cd63f6e-22b7-56ce-b106-dc8424cfd267",

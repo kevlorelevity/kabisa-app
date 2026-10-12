@@ -7,7 +7,7 @@ import { EditPencil } from './EditPencil';
 import { lineTarget } from './adminTargets';
 import { TypedAnswer } from './TypedAnswer';
 import { voiceForSpeaker, type Voice } from '../lib/audio';
-import { pickKeyWord, type TypingMode } from '../lib/typing';
+import { acceptedAnswers, pickKeyWord, type TypingMode } from '../lib/typing';
 
 interface DialoguePlayerProps {
   turns: DialogueTurn[];
@@ -21,6 +21,8 @@ interface DialoguePlayerProps {
   voices?: Record<string, Voice>;
   /** "Round 1 of 2" — shown with the learner's prompt at typing levels. */
   roundLabel?: string;
+  /** The lesson's grammar focus: at levels 5–7 the typed word is one that shows it. */
+  focus?: string[];
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -32,12 +34,14 @@ const AUTO_TURN_DELAY_MS = 500;
 /** How long a correct pick stays highlighted green before the transcript advances. */
 const CORRECT_ADVANCE_DELAY_MS = 600;
 
-export function DialoguePlayer({ turns, onComplete, review = false, typing, voices, roundLabel }: DialoguePlayerProps) {
+export function DialoguePlayer({ turns, onComplete, review = false, typing, voices, roundLabel, focus }: DialoguePlayerProps) {
   const [revealedCount, setRevealedCount] = useState(review ? turns.length : 0);
   const [wrongPick, setWrongPick] = useState<string | null>(null);
   const [correctPick, setCorrectPick] = useState<string | null>(null);
   // User turns where the first pick was wrong — drives the score and the drill.
   const [missed, setMissed] = useState<string[]>([]);
+  // Typed lines with more than one right answer: what we said about the learner's choice.
+  const [said, setSaid] = useState<Record<string, string>>({});
 
   const done = revealedCount >= turns.length;
   const current = done ? null : turns[revealedCount];
@@ -75,15 +79,28 @@ export function DialoguePlayer({ turns, onComplete, review = false, typing, voic
     if (id) setMissed((m) => (m.includes(id) ? m : [...m, id]));
   }
 
-  function typedSolved() {
+  function typedSolved(_answer: string, feedback?: string) {
     interacted.current = true;
+    const id = current?.id;
+    if (id && feedback) setSaid((m) => ({ ...m, [id]: feedback }));
     setRevealedCount((n) => n + 1);
   }
 
-  const keyWord = useMemo(
-    () => (current?.role === 'user' && typing === 'partial' ? pickKeyWord(current) : null),
-    [current, typing],
-  );
+  // The word typed at levels 5–7; at 8+ it still marks where a one-word alternative goes.
+  const keySpot = useMemo(() => (current?.role === 'user' && typing ? pickKeyWord(current, focus) : null), [current, typing, focus]);
+  const keyWord = typing === 'partial' ? keySpot : null;
+  const answers = useMemo(() => {
+    if (!current || current.role !== 'user' || !typing) return [];
+    return acceptedAnswers({
+      line: current.swahili,
+      span: keySpot ? { start: keySpot.start, end: keySpot.start + keySpot.text.length } : null,
+      mode: typing === 'partial' && keySpot ? 'partial' : 'complete',
+      alts: current.accept,
+      extraLines: current.sanifu
+        ? [{ text: current.sanifu, note: `That's the Sanifu (standard) form — in Nairobi you'll mostly hear “${current.swahili}”.` }]
+        : [],
+    });
+  }, [current, typing, keySpot]);
 
   function pick(swahili: string, correct: boolean) {
     if (correctPick) return; // already advancing
@@ -127,7 +144,12 @@ export function DialoguePlayer({ turns, onComplete, review = false, typing, voic
       <div className="space-y-3">
         {settled.map((turn) => (
           <div key={turn.id}>
-            <TurnBubble turn={turn} tappable typing={typing} voices={voices} />
+            <TurnBubble turn={turn} tappable typing={typing} voices={voices} focus={focus} />
+            {said[turn.id] && (
+              <p className="mt-1 ml-auto max-w-[85%] text-right text-xs text-green-800" data-testid="typed-affirmation">
+                ✓ {said[turn.id]}
+              </p>
+            )}
             {review && turn.role === 'user' && turn.options?.length ? <OptionsReview turn={turn} /> : null}
           </div>
         ))}
@@ -168,7 +190,8 @@ export function DialoguePlayer({ turns, onComplete, review = false, typing, voic
           <TypedAnswer
             key={current.id}
             wide={typing === 'complete' || !keyWord}
-            accepted={typing === 'partial' && keyWord ? [keyWord.text] : [current.swahili, current.sanifu]}
+            accepted={answers}
+            whole={typing === 'complete' || !keyWord}
             placeholder={typing === 'partial' && keyWord ? 'Missing word…' : 'Type the line in Swahili…'}
             onMiss={markMissed}
             onSolved={typedSolved}
@@ -273,7 +296,7 @@ function OptionsReview({ turn }: { turn: DialogueTurn }) {
   );
 }
 
-function TurnBubble({ turn, tappable, typing, voices }: { turn: DialogueTurn; tappable: boolean; typing?: TypingMode; voices?: Record<string, Voice> }) {
+function TurnBubble({ turn, tappable, typing, voices, focus }: { turn: DialogueTurn; tappable: boolean; typing?: TypingMode; voices?: Record<string, Voice>; focus?: string[] }) {
   const isUser = turn.role === 'user';
   const [showNote, setShowNote] = useState(false);
   return (
@@ -311,7 +334,7 @@ function TurnBubble({ turn, tappable, typing, voices }: { turn: DialogueTurn; ta
           </div>
         </div>
         <div className={`flex gap-1 mt-1 ${isUser ? 'justify-end' : ''}`}>
-          <EditPencil target={lineTarget(turn, typing === 'partial' ? pickKeyWord(turn)?.text ?? '' : undefined)} />
+          <EditPencil target={lineTarget(turn, typing === 'partial' ? pickKeyWord(turn, focus)?.text ?? '' : undefined)} />
         </div>
         <p className={`text-xs text-gray-400 mt-1 ${isUser ? 'text-right' : ''}`}>
           {turn.english}

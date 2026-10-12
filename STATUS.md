@@ -5,7 +5,7 @@ A snapshot of what the prototype is, what it does today, and how it's put togeth
 ---
 
 > **Update — Oct 2026: 10 levels, 30 lessons, grammar explainers.** The Lessons surface (`/`) is now a
-> 10-level course (Jambo Tourist → Simba wa Kiswahili, `content/levels.json`), 3 lessons per level. Each
+> 10-level course (Jambo Tourist → Mwenyeji Mjanja, `content/levels.json`), 3 lessons per level. Each
 > lesson keeps the conversation + practice + flashcards + drill format and the 75% gate. Themes recur at
 > higher levels (Uber at L1/L4/L7/L10, market L2/L5/L8, eating out L3/L5/L9, health L4/L8 …). XP and
 > level-ups are derived from `ksa_lesson_scores` (`src/lib/levels.ts`); celebrated level-ups are stored in

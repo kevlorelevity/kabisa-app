@@ -23,10 +23,11 @@
     "ko-location",
     "question-words",
     "greetings",
+    "numbers-money",
     "noun-classes-mwa-nn",
+    "ni-copula",
     "locative-ni",
-    "sanifu-noun-classes",
-    "numbers-money"
+    "sanifu-noun-classes"
   ],
   "turns": [
     {
@@ -40,7 +41,8 @@
           "text": "Niaje",
           "gloss": "From \"ni aje?\" (\"how is it?\"), said fast with the stress on the first syllable. The common, casual way to say \"how are you?\"",
           "grammar": [
-            "greetings"
+            "greetings",
+            "kenyan-vs-sanifu"
           ]
         },
         {
@@ -118,7 +120,8 @@
             ]
           },
           "grammar": [
-            "ko-location"
+            "ko-location",
+            "subject-prefixes"
           ]
         },
         {
@@ -126,7 +129,8 @@
           "gloss": "\"How?\" — Kenyan colloquial. The driver is asking you back, so answer with how you are.",
           "grammar": [
             "question-words",
-            "greetings"
+            "greetings",
+            "kenyan-vs-sanifu"
           ]
         }
       ]
@@ -172,7 +176,8 @@
             ]
           },
           "grammar": [
-            "ko-location"
+            "ko-location",
+            "subject-prefixes"
           ]
         },
         {
@@ -243,7 +248,8 @@
             ]
           },
           "grammar": [
-            "present-na"
+            "present-na",
+            "subject-prefixes"
           ]
         },
         {
@@ -296,7 +302,8 @@
             ]
           },
           "grammar": [
-            "present-na"
+            "present-na",
+            "subject-prefixes"
           ]
         },
         {
@@ -375,7 +382,8 @@
             ]
           },
           "grammar": [
-            "present-na"
+            "present-na",
+            "subject-prefixes"
           ]
         },
         {

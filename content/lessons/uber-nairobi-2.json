@@ -20,13 +20,12 @@
     "possessives",
     "ni-copula",
     "question-words",
-    "sanifu-noun-classes",
     "noun-classes-mwa-nn",
-    "subject-prefixes",
-    "ko-location",
-    "greetings",
     "numbers-money",
-    "comparatives"
+    "ko-location",
+    "sanifu-noun-classes",
+    "subject-prefixes",
+    "greetings"
   ],
   "turns": [
     {

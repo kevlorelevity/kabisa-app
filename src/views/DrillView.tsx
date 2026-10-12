@@ -1,14 +1,15 @@
 import { useMemo, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useLessonWithNeighbors } from '../hooks/useLessons';
 import { DrillSession } from '../components/DrillSession';
-import { LockedLesson } from '../components/LessonGate';
+import { ExitButton, LockedLesson } from '../components/LessonGate';
 import { allLearnerPhrases, collectPhrases, type DrillPhrase } from '../lib/drill';
 import { getLessonScores, isLessonUnlocked, recordDrillMastered } from '../lib/lessonScores';
 import { useRoam } from '../lib/roam';
 
 export function DrillView() {
   const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
   useRoam(); // re-render when an admin toggles Roam
   const { lessons, lesson, previous } = useLessonWithNeighbors(id ?? '');
   const [started, setStarted] = useState(false);
@@ -54,7 +55,13 @@ export function DrillView() {
         <Link to={`/lesson/${lesson.id}`} className="text-sm text-gray-400 hover:text-gray-600">
           ← {lesson.title}
         </Link>
-        <h1 className="text-2xl font-bold text-gray-900 mt-2">Focused drill</h1>
+        <div className="flex items-center justify-between gap-2 mt-2">
+          <h1 className="text-2xl font-bold text-gray-900">Focused drill</h1>
+          {started && !finished && (
+            <ExitButton label="Exit drill" hint="The drill is optional — leave any time." onExit={() => navigate(`/lesson/${lesson.id}`)} />
+          )}
+        </div>
+        <p className="text-sm text-gray-500 mt-1">Optional — it doesn’t count toward unlocking the next lesson.</p>
       </div>
 
       {!started && (

@@ -18,26 +18,25 @@
     "verb-extensions",
     "discourse-particles",
     "subjunctive",
-    "ko-location",
-    "question-words",
-    "na-have",
-    "negative-present",
     "noun-classes-mwa-nn",
-    "sanifu-noun-classes",
+    "object-infixes",
+    "ni-copula",
+    "na-have",
     "negative-past",
     "past-li",
-    "object-infixes",
     "possessives",
+    "question-words",
+    "negative-present",
+    "sanifu-noun-classes",
     "continuous-tenses",
-    "perfect-me",
     "adjective-agreement",
-    "ni-copula",
     "locative-ni",
+    "comparatives",
+    "perfect-me",
     "demonstratives",
     "greetings",
     "future-ta",
-    "conjunctions-kwamba",
-    "comparatives"
+    "conjunctions-kwamba"
   ],
   "turns": [
     {
@@ -800,6 +799,12 @@
           "swahili": "Asante. Tujadiliane baada ya Jumatano?",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Asante. Tuongee kabla ya Jumatano?",
+          "note": "Tuongee = let's talk — also fine; tujadiliane is “let's discuss it together”."
+        }
       ]
     },
     {
@@ -1104,7 +1109,13 @@
           "correct": false
         }
       ],
-      "literal": "Enough. Now, isn't it (that) we go and drink tea?"
+      "literal": "Enough. Now, isn't it (that) we go and drink tea?",
+      "accept": [
+        {
+          "text": "Basi. Sasa, si tunywe chai?",
+          "note": "Si tunywe chai? — also right; tuka- adds “go and”."
+        }
+      ]
     },
     {
       "id": "b7e09115-6b66-5b7b-8daf-14daa1eca48f",

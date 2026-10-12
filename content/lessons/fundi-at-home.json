@@ -10,35 +10,33 @@
   "culturalNote": "In Kenya you don't call \"a plumber\" or \"an electrician\" — you call a fundi: fundi wa maji (plumber), fundi wa stima (electrician), fundi wa mbao (carpenter). Agreeing on the price before work starts is essential (\"tuongee bei kwanza\"). Giving instructions politely uses the subjunctive: \"urekebishe\" (please fix), \"usiguse\" (don't touch), \"uniambie\" (tell me). The everyday Kenyan word for electricity is stima; Sanifu prefers umeme.",
   "startingPoint": "Water is dripping from the bathroom ceiling. A fundi arrives at your flat.",
   "grammarFocus": [
+    "hortative-commands",
     "subjunctive",
-    "polite-requests",
-    "perfect-me",
-    "object-infixes"
+    "polite-requests"
   ],
   "grammar": [
     "hortative-commands",
     "subjunctive",
     "polite-requests",
-    "perfect-me",
-    "object-infixes",
     "noun-classes-mwa-nn",
-    "subject-prefixes",
     "ni-copula",
-    "ko-location",
-    "question-words",
-    "locative-ni",
     "present-na",
     "sanifu-noun-classes",
-    "discourse-particles",
-    "helper-verbs",
-    "verb-extensions",
     "numbers-money",
     "adjective-agreement",
+    "ko-location",
+    "locative-ni",
+    "discourse-particles",
+    "perfect-me",
+    "object-infixes",
+    "verb-extensions",
+    "future-ta",
+    "subject-prefixes",
+    "question-words",
+    "helper-verbs",
     "possessives",
     "conjunctions-kwamba",
     "na-have",
-    "future-ta",
-    "time-swahili",
     "greetings",
     "ki-po-ka"
   ],
@@ -304,7 +302,8 @@
           "swahili": "Karibu. Iko kwa bafu. Mfereji haivuji, na maji inatoka kwa paa.",
           "correct": false
         }
-      ]
+      ],
+      "typeWord": "inavuja"
     },
     {
       "id": "d163d881-e107-50c2-aba8-f7d0ba23caa2",
@@ -502,6 +501,12 @@
         {
           "swahili": "Sawa. Lakini tuongee bei baadaye.",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Sawa. Lakini tuzungumze bei kwanza.",
+          "note": "Tuzungumze also means “let's talk” — a bit more formal."
         }
       ]
     },
@@ -994,6 +999,12 @@
           "swahili": "Sawa. Na tafadhali ufunike sakafu, ichafuke.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Sawa. Na tafadhali funika sakafu, isichafuke.",
+          "note": "Funika! is the direct command; ufunike is the polite form — both work."
+        }
       ]
     },
     {
@@ -1115,6 +1126,12 @@
         {
           "swahili": "Poa. Ukimaliza, uniambie. Unipe chai?",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Poa. Ukimaliza, niambie. Nikupe chai?",
+          "note": "Niambie! is the direct command; uniambie is the polite form — both work."
         }
       ]
     },
@@ -1347,6 +1364,12 @@
       "explanation": "Tuongee = \"let's talk\" — tu- + -onge- + -e",
       "grammar": [
         "subjunctive"
+      ],
+      "accept": [
+        {
+          "text": "Tuzungumze bei kwanza.",
+          "note": "Tuzungumze also means “let's talk” — a bit more formal."
+        }
       ]
     },
     {

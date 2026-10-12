@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest';
 import type { Lesson } from './types';
 import { getGrammarTopics } from './hooks/useGrammar';
 import { LEVELS } from './lib/levels';
+import { acceptedAnswers, pickKeyWord, typingModeFor } from './lib/typing';
 
 // Integrity checks over ALL authored content: every lesson, every grammar link.
 const lessonFiles = import.meta.glob('../content/lessons/*.json', { eager: true }) as Record<string, { default: Lesson }>;
@@ -31,6 +32,32 @@ describe('lesson content', () => {
   it.each(lessons.filter((l) => l.primer).map((l) => [l.id, l] as const))('%s: "read this first" points to real grammar topics', (_id, lesson) => {
     expect(lesson.primer!.text.length).toBeGreaterThan(20);
     for (const g of lesson.primer!.grammar) expect(slugs.has(g), g).toBe(true);
+  });
+
+  it.each(lessons.filter((l) => typingModeFor(l.level)).map((l) => [l.id, l] as const))(
+    '%s: every "also accept" answer is usable where learners type',
+    (_id, lesson) => {
+      const mode = typingModeFor(lesson.level)!;
+      for (const t of lesson.turns.filter((t) => t.accept?.length)) {
+        const k = pickKeyWord(t, lesson.grammarFocus);
+        const span = k ? { start: k.start, end: k.start + k.text.length } : null;
+        const got = acceptedAnswers({ line: t.swahili, span, mode: mode === 'partial' && k ? 'partial' : 'complete', alts: t.accept });
+        expect(got.length, `${t.swahili}`).toBe(1 + t.accept!.length);
+      }
+      for (const p of lesson.practice ?? []) {
+        if (!p.accept?.length) continue;
+        const right = p.options.find((o) => o.correct)!.text;
+        const got = acceptedAnswers({ line: p.before + right + p.after, span: { start: p.before.length, end: p.before.length + right.length }, mode, alts: p.accept });
+        expect(got.length, `${p.before}[${right}]${p.after}`).toBe(1 + p.accept.length);
+      }
+    },
+  );
+
+  it.each(lessons.map((l) => [l.id, l] as const))('%s: every grammar focus chip is used by the lesson', (_id, lesson) => {
+    const used = new Set<string>();
+    for (const t of lesson.turns) for (const w of t.words) for (const g of w.grammar ?? []) used.add(g);
+    for (const p of lesson.practice ?? []) for (const g of p.grammar ?? []) used.add(g);
+    expect((lesson.grammarFocus ?? []).filter((g) => !used.has(g))).toEqual([]);
   });
 
   it('uses unique ids and orders', () => {

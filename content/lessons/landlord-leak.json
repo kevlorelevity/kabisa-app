@@ -19,23 +19,23 @@
     "relatives",
     "ki-po-ka",
     "noun-classes-mwa-nn",
+    "object-infixes",
+    "future-ta",
     "locative-ni",
     "infinitive-ku",
-    "object-infixes",
     "na-have",
-    "question-words",
     "present-na",
     "sanifu-noun-classes",
     "past-li",
     "ni-copula",
     "negative-past",
+    "possessives",
+    "subject-prefixes",
+    "verb-extensions",
+    "question-words",
     "adjective-agreement",
     "demonstratives",
-    "ko-location",
-    "future-ta",
-    "subject-prefixes",
-    "possessives",
-    "verb-extensions"
+    "ko-location"
   ],
   "turns": [
     {
@@ -95,6 +95,20 @@
         {
           "swahili": "Habari, Bwana Otieno. Asante kwa kukusumbua asubuhi.",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Habari, Bwana Otieno. Samahani kwa kukusumbua asubuhi.",
+          "note": "Samahani (excuse me / sorry) works as well as pole."
+        },
+        {
+          "text": "Habari, Bwana Otieno. Pole kwa kukusumbua asubuhi hii.",
+          "note": "Asubuhi hii = this morning — also right."
+        },
+        {
+          "text": "Habari yako, Bwana Otieno. Pole kwa kukusumbua asubuhi.",
+          "note": "Habari yako — the fuller greeting, also fine."
         }
       ]
     },
@@ -286,6 +300,20 @@
           "swahili": "Paa haivuji tena. Ilipoanza kunyesha usiku, maji iliingia kwa chumba cha kulala.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Paa linavuja tena. Ilipoanza kunyesha usiku, maji yaliingia kwa chumba cha kulala.",
+          "note": "That's the Sanifu (standard) form — Kenyans say paa inavuja, maji iliingia."
+        },
+        {
+          "text": "Paa inavuja tena. Mvua ilipoanza usiku, maji iliingia kwa chumba cha kulala.",
+          "note": "Mvua ilipoanza = when the rain started — also right."
+        },
+        {
+          "text": "Paa inavuja tena. Ilipoanza kunyesha usiku, maji iliingia kwenye chumba cha kulala.",
+          "note": "Kwenye and kwa both work for “into”."
+        }
       ]
     },
     {
@@ -414,6 +442,20 @@
           "swahili": "Ndiyo, lakini fundi ambaye ulimleta alirekebisha vizuri.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Ndiyo, lakini fundi uliyemleta hakurekebisha vizuri.",
+          "note": "Uliyemleta = (whom) you brought — the -ye- relative instead of ambaye."
+        },
+        {
+          "text": "Ndiyo, lakini fundi ambaye ulileta hakurekebisha vizuri.",
+          "note": "Without -m- (him) it's still understood; ulimleta is more precise."
+        },
+        {
+          "text": "Ndiyo, lakini fundi ambaye ulimleta hakutengeneza vizuri.",
+          "note": "Kutengeneza (to fix) works as well as kurekebisha."
+        }
       ]
     },
     {
@@ -530,6 +572,20 @@
         {
           "swahili": "Kama ungemleta fundi mzuri mapema, hii itatokea.",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Kama ungalimleta fundi mzuri mapema, hii haingalitokea.",
+          "note": "-ngali- is the Sanifu “would have”; Kenyans mostly use -nge-."
+        },
+        {
+          "text": "Ungemleta fundi mzuri mapema, hii haingetokea.",
+          "note": "Without kama — the -nge- already means “if”."
+        },
+        {
+          "text": "Kama ungeleta fundi mzuri mapema, hii haingetokea.",
+          "note": "Ungemleta (brought him) is more precise, but ungeleta is understood."
         }
       ]
     },
@@ -760,6 +816,20 @@
           "swahili": "Asante. Ukimtuma leo, mimi nilikuwa nyumbani mchana.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Asante. Ukimtuma leo, nitakuwa nyumbani mchana.",
+          "note": "Mimi is optional — nitakuwa already says “I”."
+        },
+        {
+          "text": "Asante. Kama utamtuma leo, mimi nitakuwa nyumbani mchana.",
+          "note": "Kama utamtuma = if you send him — also right."
+        },
+        {
+          "text": "Asante. Ukimtuma leo, mimi nitakuwa nyumbani alasiri.",
+          "note": "Alasiri = afternoon — the more formal word."
+        }
       ]
     },
     {
@@ -886,6 +956,20 @@
         {
           "swahili": "Nikilipa kodi kesho, nitarekebisha paa kabisa?",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Kama nitalipa kodi kesho, utarekebisha paa kabisa?",
+          "note": "Kama nitalipa = if I pay — also right."
+        },
+        {
+          "text": "Nikilipa kodi kesho, utatengeneza paa kabisa?",
+          "note": "Kutengeneza (fix) works as well as kurekebisha."
+        },
+        {
+          "text": "Nikilipa kodi kesho, utarekebisha paa vizuri?",
+          "note": "Vizuri (properly) — close enough to kabisa (completely)."
         }
       ]
     },
@@ -1316,6 +1400,12 @@
       "explanation": "ningalimtafuta = \"I would have looked for\"",
       "grammar": [
         "conditional-nge"
+      ],
+      "accept": [
+        {
+          "text": "…ningemtafuta fundi mwingine.",
+          "note": "Ningemtafuta — the everyday Kenyan “would have looked for him”."
+        }
       ]
     },
     {
@@ -1343,6 +1433,12 @@
       "explanation": "hai- (it, negative) + -nge- + -tokea.",
       "grammar": [
         "conditional-nge"
+      ],
+      "accept": [
+        {
+          "text": "Kama ungemleta mapema, hii haingalitokea.",
+          "note": "That's the Sanifu (standard) form — Kenyans say haingetokea."
+        }
       ]
     },
     {
@@ -1371,6 +1467,12 @@
       "grammar": [
         "ki-po-ka",
         "object-infixes"
+      ],
+      "accept": [
+        {
+          "text": "Kama utamtuma leo…",
+          "note": "Kama utamtuma = if you send him — also right."
+        }
       ]
     },
     {
@@ -1398,6 +1500,12 @@
       "explanation": "Nikilipa = \"If / when I pay\"",
       "grammar": [
         "ki-po-ka"
+      ],
+      "accept": [
+        {
+          "text": "Kama nitalipa kodi kesho…",
+          "note": "Kama nitalipa = if I pay — also right."
+        }
       ]
     },
     {

@@ -21,13 +21,13 @@
     "possessives",
     "numbers-money",
     "noun-classes-mwa-nn",
-    "question-words",
-    "locative-ni",
-    "sanifu-noun-classes",
-    "subject-prefixes",
     "ni-copula",
+    "question-words",
     "greetings",
+    "subject-prefixes",
+    "locative-ni",
     "adjective-agreement",
+    "sanifu-noun-classes",
     "discourse-particles"
   ],
   "turns": [

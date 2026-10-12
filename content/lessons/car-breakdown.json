@@ -12,37 +12,35 @@
   "grammarFocus": [
     "hortative-commands",
     "subjunctive",
-    "polite-requests",
-    "perfect-me",
-    "helper-verbs"
+    "object-infixes"
   ],
   "grammar": [
     "hortative-commands",
     "subjunctive",
-    "polite-requests",
-    "perfect-me",
-    "helper-verbs",
+    "object-infixes",
     "noun-classes-mwa-nn",
     "ni-copula",
-    "continuous-tenses",
-    "past-li",
+    "verb-extensions",
+    "negative-present",
     "present-na",
     "ki-po-ka",
     "discourse-particles",
-    "negative-present",
-    "question-words",
-    "possessives",
     "imperatives",
-    "object-infixes",
-    "verb-extensions",
+    "locative-ni",
+    "helper-verbs",
+    "continuous-tenses",
     "adjective-agreement",
     "future-ta",
     "numbers-money",
-    "locative-ni",
     "infinitive-ku",
     "sanifu-noun-classes",
-    "na-have",
-    "subject-prefixes"
+    "subject-prefixes",
+    "past-li",
+    "polite-requests",
+    "question-words",
+    "possessives",
+    "perfect-me",
+    "na-have"
   ],
   "turns": [
     {
@@ -476,6 +474,12 @@
           "swahili": "Ndiyo, tafadhali. Mpigie! Najua fundi yeyote hapa.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Ndiyo, tafadhali. Umpigie! Sijui fundi yeyote hapa.",
+          "note": "Umpigie is the polite form of mpigie! — both work."
+        }
       ]
     },
     {
@@ -674,6 +678,12 @@
         {
           "swahili": "Thelathini? Tungoje hapa, ama tuende kwenye maji?",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Thelathini? Tusubiri hapa, ama twende kwenye kivuli?",
+          "note": "Tusubiri also means “let's wait” — ngoja is what you'll hear most in Nairobi."
         }
       ]
     },
@@ -1140,6 +1150,12 @@
           "swahili": "Sawa. Naomba umwambie nimpigie simu akifika.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Sawa. Naomba mwambie anipigie simu akifika.",
+          "note": "Mwambie is the direct command; umwambie is more polite and very common."
+        }
       ]
     },
     {
@@ -1270,7 +1286,14 @@
           "correct": false
         }
       ],
-      "literal": "I thank you very much for helping me. Shall I pay you something?"
+      "literal": "I thank you very much for helping me. Shall I pay you something?",
+      "accept": [
+        {
+          "text": "Ninakushukuru sana kwa kunisaidia. Nikupe kitu?",
+          "note": "Nikupe kitu? = shall I give you something — also right."
+        }
+      ],
+      "typeWord": "Nikulipe"
     },
     {
       "id": "01130613-c485-5f85-ba41-0bc6dc14d477",
@@ -1529,6 +1552,12 @@
         "imperatives",
         "object-infixes",
         "verb-extensions"
+      ],
+      "accept": [
+        {
+          "text": "Umpigie!",
+          "note": "Umpigie is the polite form — both work."
+        }
       ]
     },
     {
@@ -1558,6 +1587,12 @@
         "imperatives",
         "object-infixes",
         "verb-extensions"
+      ],
+      "accept": [
+        {
+          "text": "Unipigie simu!",
+          "note": "Unipigie is the polite form — both work."
+        }
       ]
     },
     {
@@ -1585,6 +1620,12 @@
       "explanation": "ngoja → tungoje: the final -a becomes -e.",
       "grammar": [
         "subjunctive"
+      ],
+      "accept": [
+        {
+          "text": "Tusubiri hapa.",
+          "note": "Tusubiri also means “let's wait”."
+        }
       ]
     },
     {
@@ -1755,6 +1796,12 @@
         "hortative-commands",
         "subjunctive",
         "object-infixes"
+      ],
+      "accept": [
+        {
+          "text": "Naomba mwambie.",
+          "note": "Mwambie is the direct command; umwambie is more polite and very common."
+        }
       ]
     },
     {
@@ -1810,7 +1857,13 @@
         "subjunctive",
         "object-infixes"
       ],
-      "literal": "Shall I pay you something?"
+      "literal": "Shall I pay you something?",
+      "accept": [
+        {
+          "text": "Nikupe kitu?",
+          "note": "Nikupe kitu? = shall I give you something — also right."
+        }
+      ]
     },
     {
       "id": "c0e32b23-f9c2-5e1b-849d-47d081ec8e65",

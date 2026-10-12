@@ -185,6 +185,17 @@ export interface DialogueTurn {
   typeWord?: string;
   /** When the English isn't word-for-word: the literal translation, shown as "Literally: …". */
   literal?: string;
+  /**
+   * Typing levels: other answers that are also right — whole lines, or just the typed word
+   * ("mwambie"). The note is shown when the learner types it.
+   */
+  accept?: AcceptedAnswer[];
+}
+
+/** An also-correct typed answer, with an optional note shown when the learner types it. */
+export interface AcceptedAnswer {
+  text: string;
+  note?: string;
 }
 
 /** One chip in a practice fill-in-the-blank. */
@@ -218,6 +229,8 @@ export interface PracticeItem {
   note?: string;
   /** When the English prompt isn't word-for-word: the literal translation ("Literally: …"). */
   literal?: string;
+  /** Typing levels: other right answers — whole sentences or just the gap word, with an optional note. */
+  accept?: AcceptedAnswer[];
 }
 
 export interface Lesson {

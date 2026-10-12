@@ -11,23 +11,22 @@
   "startingPoint": "Saturday, 9 a.m. Otieno bangs on your door with a broom in his hand.",
   "grammarFocus": [
     "present-na",
-    "infinitive-ku",
     "adjective-agreement",
     "possessives"
   ],
   "grammar": [
     "present-na",
-    "infinitive-ku",
     "adjective-agreement",
     "possessives",
-    "greetings",
     "noun-classes-mwa-nn",
     "ni-copula",
     "subject-prefixes",
+    "greetings",
+    "question-words",
+    "sanifu-noun-classes",
     "locative-ni",
     "ko-location",
-    "question-words",
-    "sanifu-noun-classes"
+    "infinitive-ku"
   ],
   "turns": [
     {
@@ -911,7 +910,10 @@
         },
         {
           "text": "safi",
-          "gloss": "clean / great / sorted"
+          "gloss": "clean / great / sorted",
+          "grammar": [
+            "adjective-agreement"
+          ]
         }
       ],
       "sanifu": "Haha, poa! Na chumba chako? Ni kisafi?"
@@ -941,7 +943,10 @@
         },
         {
           "text": "chafu",
-          "gloss": "dirty"
+          "gloss": "dirty",
+          "grammar": [
+            "adjective-agreement"
+          ]
         },
         {
           "text": "sana",
@@ -1262,7 +1267,10 @@
         },
         {
           "text": "nyingi",
-          "gloss": "many / a lot (n/n plural)"
+          "gloss": "many / a lot (n/n plural)",
+          "grammar": [
+            "adjective-agreement"
+          ]
         },
         {
           "text": "lakini",

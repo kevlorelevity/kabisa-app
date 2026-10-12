@@ -28,7 +28,22 @@ describe('DialoguePlayer — typed answers', () => {
     const onComplete = vi.fn();
     render(<DialoguePlayer turns={turns} onComplete={onComplete} typing="partial" />);
     expect(screen.getByText('“How are you?”')).toBeTruthy();
-    await user.type(screen.getByLabelText('Your answer'), 'habari{Enter}');
+    await user.type(screen.getByLabelText('Your answer'), 'yako{Enter}');
     expect(await screen.findByText('Nzuri sana.', {}, { timeout: 2000 })).toBeTruthy();
+  });
+  it('accepts another right answer and says why both work', async () => {
+    const { default: userEvent } = await import('@testing-library/user-event');
+    const user = userEvent.setup();
+    const t = [
+      { id: 'u1', role: 'user', speaker: 'You', swahili: 'Naomba umwambie anipigie.', english: 'Please tell him to call me.', typeWord: 'umwambie', words: [],
+        accept: [{ text: 'Naomba mwambie anipigie.', note: 'Umwambie is more polite and very common.' }],
+        options: [ { swahili: 'Naomba umwambie anipigie.', correct: true }, { swahili: 'Kwa heri', correct: false } ] },
+      { id: 'a1', role: 'auto', speaker: 'Mwangi', swahili: 'Sawa.', english: 'Okay.', words: [] },
+    ] as DialogueTurn[];
+    render(<DialoguePlayer turns={t} onComplete={vi.fn()} typing="partial" />);
+    await user.type(screen.getByLabelText('Your answer'), 'mwambie{Enter}');
+    expect(await screen.findByTestId('typed-affirmation')).toHaveTextContent(
+      'You chose “mwambie”! Good — both “mwambie” and “umwambie” work. Umwambie is more polite and very common.',
+    );
   });
 });

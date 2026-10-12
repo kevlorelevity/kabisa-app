@@ -22,20 +22,20 @@
     "perfect-negative-ja",
     "wahi-ever-never",
     "comparatives",
-    "object-infixes",
     "ni-copula",
-    "present-na",
+    "object-infixes",
     "verb-extensions",
+    "discourse-particles",
     "noun-classes-mwa-nn",
     "possessives",
     "subject-prefixes",
-    "discourse-particles",
     "infinitive-ku",
     "future-ta",
-    "na-have",
     "sanifu-noun-classes",
+    "present-na",
     "demonstratives",
     "ko-location",
+    "na-have",
     "question-words",
     "locative-ni",
     "relatives"
@@ -353,7 +353,8 @@
           "swahili": "Faith ni mtu wa aina wapi?",
           "correct": false
         }
-      ]
+      ],
+      "typeWord": "aina"
     },
     {
       "id": "3e380f8f-102f-5686-9a20-1479d45929b2",

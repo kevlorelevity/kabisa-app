@@ -1,5 +1,7 @@
 import type { DialogueTurn, PracticeItem, VocabEntry } from '../types';
 import type { EditField, SuggestTarget } from './adminContext';
+import { formatAccepted } from '../lib/typing';
+import type { AcceptedAnswer } from '../types';
 
 // Pencil targets with their Swahili and English fields, so one ✎ edits both in one modal.
 
@@ -41,8 +43,19 @@ const literalField = (text?: string): EditField => ({
   help: 'Fill in when the English above isn\'t word-for-word — learners who type the answer see "Literally: …". Leave empty when it already is.',
 });
 
+const acceptField = (list: AcceptedAnswer[] | undefined, what: string): EditField => ({
+  key: 'accept',
+  label: 'Also accept when typed (one per line · optional "| note")',
+  lang: 'sw',
+  text: formatAccepted(list),
+  multiline: true,
+  set: 'accept',
+  placeholder: 'mwambie | The direct command — fine among friends; umwambie is more polite.',
+  help: `Other right answers for learners who type (levels 5+). Write just the word that changes, or the whole ${what}. No limit. The note is shown when a learner types that answer.`,
+});
+
 export function lineTarget(
-  turn: Pick<DialogueTurn, 'id' | 'speaker' | 'swahili' | 'english'> & Partial<Pick<DialogueTurn, 'role' | 'typeWord' | 'words' | 'literal'>>,
+  turn: Pick<DialogueTurn, 'id' | 'speaker' | 'swahili' | 'english'> & Partial<Pick<DialogueTurn, 'role' | 'typeWord' | 'words' | 'literal' | 'accept'>>,
   /** The word learners type for this line at partial-typing levels (5–7), if any. */
   typedWord?: string,
 ): SuggestTarget {
@@ -69,6 +82,7 @@ export function lineTarget(
       { key: 'en', label: 'English', lang: 'en', text: turn.english, multiline: true },
       ...(turn.role === 'user' ? [literalField(turn.literal)] : []),
       ...typeField,
+      ...(turn.role === 'user' ? [acceptField(turn.accept, 'line')] : []),
     ],
   };
 }
@@ -84,6 +98,7 @@ export function practiceTarget(item: PracticeItem): SuggestTarget {
       { key: 'sw', label: 'Swahili sentence · [✓right | wrong | wrong] marks the gap', lang: 'sw', text: sentence, multiline: true },
       { key: 'en', label: 'English prompt', lang: 'en', text: item.english, multiline: true },
       literalField(item.literal),
+      acceptField(item.accept, 'sentence'),
     ],
   };
 }

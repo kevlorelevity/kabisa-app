@@ -18,18 +18,18 @@
     "future-ta",
     "imperatives",
     "helper-verbs",
-    "question-words",
-    "present-na",
     "noun-classes-mwa-nn",
-    "na-have",
-    "infinitive-ku",
     "numbers-money",
+    "present-na",
     "ni-copula",
+    "question-words",
+    "adjective-agreement",
+    "na-have",
     "object-infixes",
     "verb-extensions",
-    "negative-present",
-    "adjective-agreement",
     "discourse-particles",
+    "infinitive-ku",
+    "negative-present",
     "demonstratives",
     "locative-ni",
     "ko-location",
@@ -526,6 +526,12 @@
         {
           "swahili": "Niletee chai, tafadhali. Lakini nataka sukari nyingi.",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Uniletee chai, tafadhali. Lakini sitaki sukari nyingi.",
+          "note": "Uniletee is the extra-polite form — both work."
         }
       ]
     },
@@ -1379,6 +1385,12 @@
         "imperatives",
         "object-infixes",
         "verb-extensions"
+      ],
+      "accept": [
+        {
+          "text": "Uniletee chai, tafadhali.",
+          "note": "Uniletee is the extra-polite form — both work."
+        }
       ]
     },
     {

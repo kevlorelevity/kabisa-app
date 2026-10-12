@@ -20,24 +20,24 @@
     "conditional-nge",
     "continuous-tenses",
     "discourse-particles",
-    "locative-ni",
     "noun-classes-mwa-nn",
-    "numbers-money",
-    "ni-copula",
-    "adjective-agreement",
-    "subjunctive",
-    "verb-extensions",
-    "present-na",
-    "perfect-negative-ja",
-    "greetings",
-    "sanifu-noun-classes",
-    "past-li",
-    "question-words",
-    "time-swahili",
-    "perfect-me",
     "object-infixes",
-    "subject-prefixes",
     "ki-po-ka",
+    "ni-copula",
+    "greetings",
+    "subjunctive",
+    "present-na",
+    "past-li",
+    "numbers-money",
+    "verb-extensions",
+    "perfect-me",
+    "subject-prefixes",
+    "adjective-agreement",
+    "sanifu-noun-classes",
+    "question-words",
+    "locative-ni",
+    "perfect-negative-ja",
+    "time-swahili",
     "future-ta",
     "possessives"
   ],
@@ -103,7 +103,21 @@
           "correct": false
         }
       ],
-      "literal": "Kamau! You've left me at the traffic lights! I've been waiting for you for forty minutes!"
+      "literal": "Kamau! You've left me at the traffic lights! I've been waiting for you for forty minutes!",
+      "accept": [
+        {
+          "text": "Kamau! Umeniacha kwa mataa! Nimekuwa nikikungoja kwa dakika arobaini!",
+          "note": "Umeniacha is the standard spelling; Kenyans often say umeniwacha."
+        },
+        {
+          "text": "Kamau! Umeniwacha kwa mataa! Nimekuwa nikikusubiri kwa dakika arobaini!",
+          "note": "Nikikusubiri (waiting for you) works like nikikungoja."
+        },
+        {
+          "text": "Kamau! Umeniwacha kwa mataa! Nimekungoja kwa dakika arobaini!",
+          "note": "Nimekungoja (I've waited for you) — also right."
+        }
+      ]
     },
     {
       "id": "d87be8e6-b3f7-5adb-b164-51018d387d1f",
@@ -277,7 +291,21 @@
           "correct": false
         }
       ],
-      "literal": "Haha! Okay, be late but arrive. But now don't drive with speed — hurry hurry has no blessing."
+      "literal": "Haha! Okay, be late but arrive. But now don't drive with speed — hurry hurry has no blessing.",
+      "accept": [
+        {
+          "text": "Haha! Sawa, kawia ufike. Lakini sasa usiendeshe haraka — haraka haraka haina baraka.",
+          "note": "Haraka (fast) works like kwa kasi."
+        },
+        {
+          "text": "Haha! Sawa, kawia ufike. Lakini usiendeshe kwa kasi — haraka haraka haina baraka.",
+          "note": "Sasa is optional."
+        },
+        {
+          "text": "Sawa, kawia ufike. Lakini sasa usiendeshe kwa kasi — haraka haraka haina baraka.",
+          "note": "Haha is optional."
+        }
+      ]
     },
     {
       "id": "9a7dc1a3-9139-538b-9628-67693e3f55a2",
@@ -480,7 +508,21 @@
           "correct": false
         }
       ],
-      "literal": "You're adding salt! I'm still learning. But things are many, time is little."
+      "literal": "You're adding salt! I'm still learning. But things are many, time is little.",
+      "accept": [
+        {
+          "text": "Unaongeza chumvi! Bado ninajifunza. Lakini mambo ni mengi, muda ni mchache.",
+          "note": "Unaongeza chumvi — also heard; the set phrase is kutia chumvi."
+        },
+        {
+          "text": "Unatia chumvi! Ninajifunza bado. Lakini mambo ni mengi, muda ni mchache.",
+          "note": "Bado at the end — also right."
+        },
+        {
+          "text": "Unatia chumvi! Bado ninajifunza. Mambo ni mengi, muda ni mchache.",
+          "note": "Lakini is optional."
+        }
+      ]
     },
     {
       "id": "c22e6151-e4fd-5bf5-a2bd-398963feb45f",
@@ -683,7 +725,21 @@
           "correct": false
         }
       ],
-      "literal": "It was cool, but at (hour) four time turned the back of its head on us — everyone was tired."
+      "literal": "It was cool, but at (hour) four time turned the back of its head on us — everyone was tired.",
+      "accept": [
+        {
+          "text": "Ilikuwa safi, lakini saa nne wakati ulitupa kisogo — kila mtu alikuwa amechoka.",
+          "note": "Safi works like poa."
+        },
+        {
+          "text": "Ilikuwa poa, lakini saa nne wakati ulitupa kisogo — watu wote walikuwa wamechoka.",
+          "note": "Watu wote walikuwa wamechoka = everyone was tired — also right."
+        },
+        {
+          "text": "Ilikuwa poa, lakini saa nne wakati ulitupa kisogo — kila mtu alikuwa amechoka sana.",
+          "note": "Sana — also right."
+        }
+      ]
     },
     {
       "id": "c33662f6-be7d-5d51-bf72-14f7a523ebf4",
@@ -922,7 +978,21 @@
           "correct": false
         }
       ],
-      "literal": "It's a long journey! But slowly slowly is the pace. If I need you, I'll call you."
+      "literal": "It's a long journey! But slowly slowly is the pace. If I need you, I'll call you.",
+      "accept": [
+        {
+          "text": "Ni safari ndefu! Lakini pole pole ndio mwendo. Kama nitakuhitaji, nitakupigia.",
+          "note": "Kama nitakuhitaji = if I need you — also right."
+        },
+        {
+          "text": "Ni safari ndefu! Lakini pole pole ndio mwendo. Nikikuhitaji, nitakupigia simu.",
+          "note": "Nitakupigia simu — also right."
+        },
+        {
+          "text": "Ni safari ndefu sana! Lakini pole pole ndio mwendo. Nikikuhitaji, nitakupigia.",
+          "note": "Sana — also right."
+        }
+      ]
     },
     {
       "id": "152ca9a6-1efb-57ad-9437-ac0abc138854",
@@ -1163,6 +1233,20 @@
           "swahili": "Kabisa! Tangu siku ya kwanza ulipokuwa ukiniuliza \"unaenda wapi?\", umekuwa adui wa kweli.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Kabisa! Tangu siku ya kwanza uliponiuliza \"unaenda wapi?\", umekuwa rafiki wa kweli.",
+          "note": "Uliponiuliza (when you asked me) — also right."
+        },
+        {
+          "text": "Kabisa! Tangu siku ya kwanza ulipokuwa ukiniuliza \"unaenda wapi?\", umekuwa rafiki yangu wa kweli.",
+          "note": "Rafiki yangu wa kweli = my true friend — also right."
+        },
+        {
+          "text": "Kabisa! Tangu siku ya kwanza ulipokuwa unaniuliza \"unaenda wapi?\", umekuwa rafiki wa kweli.",
+          "note": "Unaniuliza — the everyday continuous."
+        }
       ]
     },
     {
@@ -1289,6 +1373,20 @@
         {
           "swahili": "Haha! Pole, Kamau. Usiku mwema, na lala salama!",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Haha! Asante, Kamau. Usiku mwema, lala salama!",
+          "note": "Na is optional."
+        },
+        {
+          "text": "Asante, Kamau. Usiku mwema, na lala salama!",
+          "note": "Haha is optional."
+        },
+        {
+          "text": "Haha! Asante sana, Kamau. Usiku mwema, na lala salama!",
+          "note": "Asante sana — also right."
         }
       ]
     },

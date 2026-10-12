@@ -18,27 +18,24 @@
     "continuous-tenses",
     "conjunctions-kwamba",
     "vyo-manner",
-    "locative-ni",
-    "sanifu-noun-classes",
-    "ko-location",
-    "object-infixes",
     "noun-classes-mwa-nn",
-    "numbers-money",
-    "ni-copula",
-    "past-li",
     "verb-extensions",
-    "na-have",
-    "perfect-me",
-    "demonstratives",
-    "discourse-particles",
-    "relatives",
+    "sanifu-noun-classes",
+    "past-li",
     "future-ta",
-    "possessives",
     "ki-po-ka",
-    "present-na",
     "infinitive-ku",
     "comparatives",
-    "helper-verbs"
+    "locative-ni",
+    "ni-copula",
+    "discourse-particles",
+    "object-infixes",
+    "numbers-money",
+    "na-have",
+    "relatives",
+    "possessives",
+    "perfect-me",
+    "present-na"
   ],
   "turns": [
     {
@@ -83,6 +80,20 @@
         {
           "swahili": "Samahani, tumekuwa tukisubiri kwa dakika moja.",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Samahani, tumekuwa tukingoja kwa saa nzima.",
+          "note": "Kungoja = to wait, like kusubiri."
+        },
+        {
+          "text": "Samahani, tumesubiri kwa saa nzima.",
+          "note": "Tumesubiri (we've waited) — also right."
+        },
+        {
+          "text": "Samahani, tumekuwa tukisubiri kwa lisaa limoja.",
+          "note": "Lisaa limoja = one hour — the Kenyan way to say an hour."
         }
       ]
     },
@@ -193,7 +204,21 @@
           "correct": false
         }
       ],
-      "sanifu": "Mliniambia kwamba chakula kingekuja baada ya dakika ishirini."
+      "sanifu": "Mliniambia kwamba chakula kingekuja baada ya dakika ishirini.",
+      "accept": [
+        {
+          "text": "Mliniambia kuwa chakula ingekuja baada ya dakika ishirini.",
+          "note": "Kuwa (that) works like kwamba."
+        },
+        {
+          "text": "Mliniambia chakula ingekuja baada ya dakika ishirini.",
+          "note": "Kwamba (that) can be left out."
+        },
+        {
+          "text": "Mliniambia kwamba chakula kingekuja baada ya dakika ishirini.",
+          "note": "That's the Sanifu (standard) form — Kenyans say chakula ingekuja."
+        }
+      ]
     },
     {
       "id": "b67330eb-2bf7-5e7f-962d-c1fcaa548c4f",
@@ -371,6 +396,20 @@
           "swahili": "Ingawa hatuelewi, hata hivyo tuna njaa sana!",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Ingawa tunaelewa, bado tuna njaa sana!",
+          "note": "Bado (still) — also right."
+        },
+        {
+          "text": "Tunaelewa, lakini tuna njaa sana!",
+          "note": "Simpler, same idea."
+        },
+        {
+          "text": "Ingawa tunaelewa, tuna njaa sana!",
+          "note": "Hata hivyo can be left out."
+        }
       ]
     },
     {
@@ -462,6 +501,20 @@
           "swahili": "Aah… Badala ya kuku wa kukaanga tutakayoagiza, mmeleta mbuzi choma.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Aah… Badala ya kuku wa kukaanga ambaye tuliagiza, mmeleta mbuzi choma.",
+          "note": "Ambaye tuliagiza = which we ordered — same as tuliyoagiza."
+        },
+        {
+          "text": "Aah… Badala ya kuku wa kukaanga tuliyeagiza, mmeleta mbuzi choma.",
+          "note": "Tuliyeagiza (-ye-, as kuku is an animal) — also right."
+        },
+        {
+          "text": "Aah… Tuliagiza kuku wa kukaanga, lakini mmeleta mbuzi choma.",
+          "note": "We ordered fried chicken, but you've brought roast goat — also right."
+        }
       ]
     },
     {
@@ -527,7 +580,10 @@
         },
         {
           "text": "iwezekanavyo",
-          "gloss": "as … as possible (lit. \"the way it is possible\")"
+          "gloss": "as … as possible (lit. \"the way it is possible\")",
+          "grammar": [
+            "vyo-manner"
+          ]
         }
       ]
     },
@@ -635,6 +691,20 @@
         {
           "swahili": "Sawa. Na pia, watu wa meza ile wamekuwa wakila kelele sana.",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Sawa. Na pia, watu wa meza ile wanapiga kelele sana.",
+          "note": "Wanapiga (are making) — also right."
+        },
+        {
+          "text": "Sawa. Pia, watu wa meza ile wamekuwa wakipiga kelele sana.",
+          "note": "Na is optional."
+        },
+        {
+          "text": "Sawa. Na pia, watu wa ile meza wamekuwa wakipiga kelele sana.",
+          "note": "Ile meza — either order works."
         }
       ]
     },
@@ -787,6 +857,20 @@
           "swahili": "Hapana, tafadhali. Tutakaa popote unavyotaka.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Ndiyo, tafadhali. Tutakaa mahali popote unapotaka.",
+          "note": "Mahali popote unapotaka = anywhere you want — also right."
+        },
+        {
+          "text": "Ndiyo, tafadhali. Tutakaa popote unataka.",
+          "note": "Everyday short form — understood."
+        },
+        {
+          "text": "Ndiyo, tafadhali. Tutakaa popote utakapo.",
+          "note": "Utakapo = wherever you wish — a bit formal."
+        }
       ]
     },
     {
@@ -875,7 +959,21 @@
           "correct": false
         }
       ],
-      "literal": "Thanks. Better to be late than to miss completely!"
+      "literal": "Thanks. Better to be late than to miss completely!",
+      "accept": [
+        {
+          "text": "Asante. Bora kuchelewa kuliko kukosa kabisa!",
+          "note": "Bora works like afadhali — “better”."
+        },
+        {
+          "text": "Asante. Afadhali kuchelewa kuliko kukosa!",
+          "note": "Kabisa can be left out."
+        },
+        {
+          "text": "Asante. Kawia ufike!",
+          "note": "Kawia ufike — another way to say better late than never."
+        }
+      ]
     },
     {
       "id": "67258da0-b720-569d-85e1-1d83c169854c",
@@ -1069,6 +1167,12 @@
       "explanation": "\"Have been …-ing\" = -me- of kuwa + a -ki- verb: tumekuwa tukisubiri.",
       "grammar": [
         "ki-po-ka"
+      ],
+      "accept": [
+        {
+          "text": "Tumekuwa tukingoja kwa saa nzima.",
+          "note": "Kungoja = to wait, like kusubiri."
+        }
       ]
     },
     {
@@ -1175,6 +1279,12 @@
       "explanation": "kwamba = \"that\" — reports what was said.",
       "grammar": [
         "conjunctions-kwamba"
+      ],
+      "accept": [
+        {
+          "text": "Mliniambia kuwa chakula ingekuja…",
+          "note": "Kuwa (that) works like kwamba."
+        }
       ]
     },
     {
@@ -1310,6 +1420,12 @@
       "explanation": "-vyo- = \"the way / however\": u- + -na- + -vyo- + -taka.",
       "grammar": [
         "vyo-manner"
+      ],
+      "accept": [
+        {
+          "text": "Tutakaa popote unapotaka.",
+          "note": "Unapotaka = where you want — also right here."
+        }
       ]
     },
     {
@@ -1335,6 +1451,12 @@
       "explanation": "unavyotaka = the way / as you want: u- + -na- + -vyo- + -taka.",
       "grammar": [
         "vyo-manner"
+      ],
+      "accept": [
+        {
+          "text": "Kaa popote unapotaka.",
+          "note": "Unapotaka = where you want — also right here."
+        }
       ]
     },
     {
@@ -1359,7 +1481,10 @@
           "feedback": "itawezekana = It will be possible"
         }
       ],
-      "explanation": "A set phrase: lit. \"fast, the way it is possible\"."
+      "explanation": "A set phrase: lit. \"fast, the way it is possible\".",
+      "grammar": [
+        "vyo-manner"
+      ]
     },
     {
       "id": "d74eb82e-d0cd-51eb-aa41-462929227c49",
@@ -1415,7 +1540,13 @@
       "grammar": [
         "comparatives"
       ],
-      "literal": "Better to be late than to miss completely!"
+      "literal": "Better to be late than to miss completely!",
+      "accept": [
+        {
+          "text": "Bora kuchelewa kuliko kukosa kabisa!",
+          "note": "Bora works like afadhali — “better”."
+        }
+      ]
     },
     {
       "id": "e545ba8a-3fb6-5d46-9d90-6271ad115dac",

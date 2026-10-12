@@ -42,6 +42,11 @@ const wordSchema = {
   additionalProperties: false,
 };
 
+const acceptSchema = {
+  type: 'array',
+  items: { type: 'object', properties: { text: str, note: str }, required: ['text'], additionalProperties: false },
+};
+
 export const turnSchema = {
   type: 'object',
   properties: {
@@ -53,6 +58,7 @@ export const turnSchema = {
     sanifu: str,
     note: str,
     literal: str,
+    accept: acceptSchema,
     options: {
       type: 'array',
       items: {
@@ -87,6 +93,7 @@ export const practiceSchema = {
     },
     explanation: str,
     literal: str,
+    accept: acceptSchema,
   },
   required: ['mode', 'english', 'before', 'after', 'options', 'explanation'],
   additionalProperties: false,
@@ -135,7 +142,9 @@ House rules — follow all of them:
 10. Notes: besides Sanifu, a word, a line or a flashcard can carry a "note" — a short learner-facing remark (1–2 sentences) on other meanings, how Kenyans actually use it, register (polite / street / Sheng), or a common mix-up. Add or change a note only when the instruction asks for one or it clearly helps; write it in English, quoting Swahili in its Kenyan form. To remove a note or Sanifu, return an empty string for it.
 11. Vocabulary and practice come from the conversation: key vocabulary, flashcards and practice items may only use words that appear in the lesson's conversation (other persons, tenses and the singular / plural of its words are fine). If a word is important enough to teach, add or extend lines of the conversation so it appears there first — never introduce it only in the vocabulary or the practice.
 12. English is word-for-word where natural English allows, because learners type the Swahili from it. When a learner line or a translate practice item can't be 1:1 (idioms, slang, proverbs), give the natural meaning in "english" and the word-for-word version in "literal"; otherwise leave "literal" out.
-13. "summary": one short sentence saying what you changed.`;
+13. From level 5 learners TYPE their lines and the practice answers. When there is more than one right way to say a learner line or fill a practice gap (a polite and a direct form — umwambie / mwambie, nina- / na-, Kenyan and Sanifu, a synonym), list 3–10 of them in "accept" — just the word that changes, or the whole line — each with a short "note" saying how it differs. Leave "accept" out when there is only one natural answer.
+14. The learner can be anyone from anywhere: never call them mzungu or refer to their skin colour, and don't state facts about their home country or city (its weather, food, prices…) — the app swaps in their own country. When the other speaker addresses the learner, use "boss" or "bwana" (the app turns these into mama / dada / sista for women).
+15. "summary": one short sentence saying what you changed.`;
 
 export function buildPrompt(args: {
   scope: AiScope;
@@ -269,6 +278,8 @@ function normTurn(
   if (literal && literal !== english) turn.literal = literal;
   const typeWord = lineKept ? s(lineKept.typeWord) : '';
   if (typeWord && swahili.includes(typeWord)) turn.typeWord = typeWord;
+  const accept = Array.isArray(raw.accept) ? cleanAccept(raw.accept) : lineKept ? cleanAccept(lineKept.accept) : [];
+  if (accept.length) turn.accept = accept;
   if (role === 'user') {
     const wrong = (Array.isArray(raw.options) ? (raw.options as Obj[]) : [])
       .map((o) => s(o.swahili))
@@ -330,7 +341,22 @@ function normPractice(raw: Obj, prev: Map<string, Obj>, known: Set<string>, used
   const literal = typeof raw.literal === 'string' ? s(raw.literal) : old && s(old.english) === english ? s(old.literal) : '';
   if (literal && literal !== english) item.literal = literal;
   if (old && s(old.note)) item.note = old.note;
+  const accept = Array.isArray(raw.accept) ? cleanAccept(raw.accept) : old && s(old.english) === english ? cleanAccept(old.accept) : [];
+  if (accept.length) item.accept = accept;
   return item;
+}
+
+/** Also-correct typed answers: { text, note? }, deduplicated. */
+function cleanAccept(list: unknown): Array<{ text: string; note?: string }> {
+  if (!Array.isArray(list)) return [];
+  const out: Array<{ text: string; note?: string }> = [];
+  for (const a of list as Obj[]) {
+    const text = s(a?.text);
+    if (!text || out.some((o) => o.text.toLowerCase() === text.toLowerCase())) continue;
+    const note = s(a?.note);
+    out.push({ text, ...(note ? { note } : {}) });
+  }
+  return out;
 }
 
 function indexById(list: unknown): Map<string, Obj> {

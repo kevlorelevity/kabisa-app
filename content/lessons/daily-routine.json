@@ -19,13 +19,13 @@
     "present-na",
     "question-words",
     "noun-classes-mwa-nn",
+    "subject-prefixes",
+    "numbers-money",
     "locative-ni",
     "discourse-particles",
-    "subject-prefixes",
-    "ni-copula",
+    "ko-location",
     "greetings",
-    "possessives",
-    "numbers-money"
+    "possessives"
   ],
   "turns": [
     {
@@ -312,8 +312,8 @@
       "id": "a26070cb-ea15-5f72-b4f8-6860ec6a573b",
       "speaker": "Achieng",
       "role": "auto",
-      "swahili": "Wee, wewe ni mzungu kweli — kwa wakati! Mimi ninafika saa tatu.",
-      "english": "Wow, you really are a mzungu — on time! I get in at nine.",
+      "swahili": "Wee, wewe uko kwa wakati kweli! Mimi ninafika saa tatu.",
+      "english": "Wow, you're really on time! I get in at nine.",
       "words": [
         {
           "text": "Wee",
@@ -330,15 +330,15 @@
           ]
         },
         {
-          "text": "ni",
-          "gloss": "is / am / are",
+          "text": "uko",
+          "gloss": "\"you are\" — u- (you) + -ko (be at). Uko kwa wakati = you're on time.",
           "grammar": [
-            "ni-copula"
+            "ko-location"
           ]
         },
         {
-          "text": "mzungu",
-          "gloss": "foreigner (usually white)"
+          "text": "kwa wakati",
+          "gloss": "\"on time\""
         },
         {
           "text": "kweli",
@@ -346,10 +346,6 @@
           "grammar": [
             "discourse-particles"
           ]
-        },
-        {
-          "text": "kwa wakati",
-          "gloss": "\"on time\""
         },
         {
           "text": "Mimi",
@@ -360,11 +356,17 @@
         },
         {
           "text": "ninafika",
-          "gloss": "\"I arrive\" — -fika = arrive"
+          "gloss": "\"I arrive\" — -fika = arrive",
+          "grammar": [
+            "present-na"
+          ]
         },
         {
           "text": "saa tatu",
-          "gloss": "9 o'clock"
+          "gloss": "9 o'clock",
+          "grammar": [
+            "time-swahili"
+          ]
         }
       ]
     },
@@ -894,16 +896,12 @@
       "id": "575d3096-5b06-5b4a-9479-d46ea10ccfc0",
       "speaker": "Achieng",
       "role": "auto",
-      "swahili": "Sawa, mzungu! Tuonane kesho saa mbili kamili!",
-      "english": "Okay, mzungu! See you tomorrow at 8 sharp!",
+      "swahili": "Sawa, John! Tuonane kesho saa mbili kamili!",
+      "english": "Okay, John! See you tomorrow at 8 sharp!",
       "words": [
         {
           "text": "Sawa",
           "gloss": "okay / alright (lit. \"equal\")"
-        },
-        {
-          "text": "mzungu",
-          "gloss": "foreigner (usually white)"
         },
         {
           "text": "Tuonane",
@@ -918,7 +916,10 @@
         },
         {
           "text": "saa mbili kamili",
-          "gloss": "8 o'clock sharp"
+          "gloss": "8 o'clock sharp",
+          "grammar": [
+            "time-swahili"
+          ]
         }
       ]
     }

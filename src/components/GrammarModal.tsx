@@ -39,7 +39,7 @@ export function FavoriteStar({ slug, title, className = '' }: { slug: string; ti
   );
 }
 
-function Block({ block }: { block: GrammarBlock }) {
+export function Block({ block }: { block: GrammarBlock }) {
   switch (block.type) {
     case 'p':
       return (

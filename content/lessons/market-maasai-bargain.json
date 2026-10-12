@@ -20,20 +20,20 @@
     "perfect-negative-ja",
     "comparatives",
     "adjective-agreement",
-    "imperatives",
-    "discourse-particles",
     "ni-copula",
-    "question-words",
-    "numbers-money",
     "demonstratives",
-    "verb-extensions",
     "locative-ni",
+    "discourse-particles",
+    "numbers-money",
     "greetings",
     "wahi-ever-never",
-    "infinitive-ku",
-    "subject-prefixes",
     "future-ta",
     "sanifu-noun-classes",
+    "imperatives",
+    "question-words",
+    "verb-extensions",
+    "infinitive-ku",
+    "subject-prefixes",
     "noun-classes-mwa-nn",
     "possessives"
   ],
@@ -263,8 +263,8 @@
       "id": "353fe593-8352-5d17-ae57-06ddf1c49e2e",
       "speaker": "Mteja",
       "role": "user",
-      "swahili": "Wee! Elfu mbili? Hiyo ni bei ya mzungu!",
-      "english": "Wow! Two thousand? That's the foreigner price!",
+      "swahili": "Wee! Elfu mbili? Hiyo ni bei ya watalii!",
+      "english": "Wow! Two thousand? That's the tourist price!",
       "words": [
         {
           "text": "Wee",
@@ -292,13 +292,13 @@
           ]
         },
         {
-          "text": "bei ya mzungu",
-          "gloss": "\"the foreigner price\" — said with a smile when the first price is too high."
+          "text": "bei ya watalii",
+          "gloss": "\"the tourist price\" — said with a smile when the first price is far too high. watalii = tourists (one: mtalii)."
         }
       ],
       "options": [
         {
-          "swahili": "Wee! Elfu mbili? Hiyo ni bei ya mzungu!",
+          "swahili": "Wee! Elfu mbili? Hiyo ni bei ya watalii!",
           "correct": true
         },
         {
@@ -306,11 +306,11 @@
           "correct": false
         },
         {
-          "swahili": "Asante! Elfu mbili? Hiyo ni bei ya mzungu!",
+          "swahili": "Asante! Elfu mbili? Hiyo ni bei ya watalii!",
           "correct": false
         }
       ],
-      "literal": "Wow! Two thousand? That's the white person's price!"
+      "literal": "Wow! Two thousand? That's the price of tourists!"
     },
     {
       "id": "114b8c80-c222-577d-9d0a-ac91e0f11331",

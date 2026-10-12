@@ -15,30 +15,31 @@
     "object-infixes"
   ],
   "grammar": [
-    "hortative-commands",
     "verb-extensions",
     "discourse-particles",
     "object-infixes",
     "noun-classes-mwa-nn",
-    "present-na",
-    "perfect-me",
     "possessives",
+    "locative-ni",
+    "ni-copula",
+    "infinitive-ku",
+    "subjunctive",
+    "perfect-me",
+    "hortative-commands",
+    "ko-location",
     "sanifu-noun-classes",
     "adjective-agreement",
-    "ni-copula",
-    "locative-ni",
-    "infinitive-ku",
-    "na-have",
     "helper-verbs",
     "subject-prefixes",
-    "ko-location",
+    "time-swahili",
+    "na-have",
     "question-words",
-    "subjunctive",
     "future-ta",
+    "past-li",
     "ki-po-ka",
     "imperatives",
     "greetings",
-    "time-swahili"
+    "present-na"
   ],
   "turns": [
     {
@@ -421,6 +422,12 @@
           "swahili": "Ndiyo, tafadhali uniletee. Utanilipia mafuta.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Ndiyo, tafadhali niletee. Nitakulipia mafuta.",
+          "note": "Niletee! is the direct command; uniletee is the polite form — both work."
+        }
       ]
     },
     {
@@ -686,7 +693,14 @@
           "correct": false
         }
       ],
-      "literal": "I'm at work, Westlands. Isn't it (that) we meet at the company gate?"
+      "literal": "I'm at work, Westlands. Isn't it (that) we meet at the company gate?",
+      "typeWord": "tukutane",
+      "accept": [
+        {
+          "text": "Niko kazini, Westlands. Si tuonane kwa geti ya kampuni?",
+          "note": "Si tuonane…? = why don't we see each other — also works."
+        }
+      ]
     },
     {
       "id": "20184e5e-8a67-53cd-ad54-e5f138137af3",

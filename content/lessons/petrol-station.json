@@ -21,22 +21,23 @@
     "polite-requests",
     "object-infixes",
     "noun-classes-mwa-nn",
-    "possessives",
-    "question-words",
-    "numbers-money",
     "locative-ni",
+    "future-ta",
     "na-have",
+    "ni-copula",
+    "adjective-agreement",
     "discourse-particles",
     "ko-location",
     "negative-present",
+    "verb-extensions",
+    "possessives",
+    "question-words",
+    "numbers-money",
     "infinitive-ku",
-    "future-ta",
-    "ni-copula",
-    "adjective-agreement",
     "past-li",
     "helper-verbs",
     "greetings",
-    "verb-extensions"
+    "perfect-me"
   ],
   "turns": [
     {
@@ -117,7 +118,8 @@
           "gloss": "\"(could you) put\" — u- + -wek- + -e: subjunctive = polite request.",
           "grammar": [
             "hortative-commands",
-            "subjunctive"
+            "subjunctive",
+            "polite-requests"
           ]
         },
         {
@@ -143,7 +145,14 @@
           "correct": false
         }
       ],
-      "literal": "I ask that you put (fuel) of three thousand, please."
+      "literal": "I ask that you put (fuel) of three thousand, please.",
+      "typeWord": "uweke",
+      "accept": [
+        {
+          "text": "Naomba uniwekee ya elfu tatu, tafadhali.",
+          "note": "Uniwekee = put it in for me — also polite and natural."
+        }
+      ]
     },
     {
       "id": "629c6928-29a9-5f07-a7eb-d35288848d32",
@@ -235,7 +244,13 @@
           "correct": false
         }
       ],
-      "literal": "Petrol. And (could) you check the wind in the tyres too."
+      "literal": "Petrol. And (could) you check the wind in the tyres too.",
+      "accept": [
+        {
+          "text": "Petroli. Na angalia upepo kwa matairi pia.",
+          "note": "Angalia is the direct command; uangalie is the polite form — both work."
+        }
+      ]
     },
     {
       "id": "ce56837b-e457-53fc-b45f-83ee98d6c5cc",
@@ -368,6 +383,12 @@
         {
           "swahili": "Sawa. Na tairi ya nyuma — ebu nione. Iko wapi?",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Sawa. Na tairi ya nyuma — ebu niangalie. Iko sawa?",
+          "note": "Ebu niangalie = let me check — also right."
         }
       ]
     },
@@ -558,6 +579,12 @@
           "swahili": "Ndiyo, angalia oil na maji, asante.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Ndiyo, angalia oil na maji, tafadhali.",
+          "note": "Angalia is the direct command; uangalie is the polite form — both work."
+        }
       ]
     },
     {
@@ -679,6 +706,12 @@
         {
           "swahili": "Asante. Nifute kioo pia, ili nione barabara vizuri.",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Asante. Futa kioo pia, ili nione barabara vizuri.",
+          "note": "Futa! is the direct command; ufute is the polite form — both work."
         }
       ]
     },
@@ -1052,6 +1085,12 @@
           "swahili": "Sawa. Ebu nilipa kwa M-Pesa, ni rahisi.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Sawa. Ebu nikulipe kwa M-Pesa, ni rahisi.",
+          "note": "Ebu nikulipe = let me pay you — also right."
+        }
       ]
     },
     {
@@ -1173,6 +1212,12 @@
         {
           "swahili": "Asante! Sasa inabidi niende — umechelewa kazini.",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Asante! Sasa lazima niende — nimechelewa kazini.",
+          "note": "Lazima and inabidi both mean “must” — both take niende."
         }
       ]
     }
@@ -1398,6 +1443,12 @@
       "explanation": "ni- + -on- + -e: \"let me see\".",
       "grammar": [
         "subjunctive"
+      ],
+      "accept": [
+        {
+          "text": "Ebu niangalie.",
+          "note": "Ebu niangalie = let me check — also right."
+        }
       ]
     },
     {

@@ -19,13 +19,13 @@
     "ko-location",
     "present-na",
     "noun-classes-mwa-nn",
-    "possessives",
-    "subject-prefixes",
     "ni-copula",
-    "sanifu-noun-classes",
+    "possessives",
     "question-words",
-    "discourse-particles",
-    "locative-ni"
+    "subject-prefixes",
+    "sanifu-noun-classes",
+    "locative-ni",
+    "discourse-particles"
   ],
   "turns": [
     {

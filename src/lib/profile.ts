@@ -1,15 +1,23 @@
 import { getSupabase } from './supabase';
 
-// -------- Learner profile (first name + nationality) --------
+// -------- Learner profile (first name + nationality + gender) --------
 //
 // Captured on the welcome screen after sign-up. Stored on the Supabase
 // `profile` row (migration 004) when signed in; in offline dev mode (no
 // Supabase env) it lives in localStorage so `npm run dev` still works.
 
+export type Gender = 'female' | 'male' | 'unspecified';
+
 export interface LearnerProfile {
   displayName: string;
   /** ISO 3166-1 alpha-2, e.g. 'DE'. */
   nationality: string;
+  /** How the other speakers address the learner (mama / dada for women). Missing for learners who signed up before it was asked. */
+  gender?: Gender;
+}
+
+export function isGender(v: unknown): v is Gender {
+  return v === 'female' || v === 'male' || v === 'unspecified';
 }
 
 const LOCAL_KEY = 'ksa_profile';
@@ -42,7 +50,7 @@ export async function loadProfile(userId: string | null): Promise<LearnerProfile
   if (!supa || !userId) return readLocal();
   const { data, error } = await supa
     .from('profile')
-    .select('display_name, nationality, onboarded_at')
+    .select('display_name, nationality, gender, onboarded_at')
     .eq('account_id', userId)
     .maybeSingle();
   if (error) {
@@ -50,19 +58,21 @@ export async function loadProfile(userId: string | null): Promise<LearnerProfile
     return readLocal();
   }
   if (!data?.onboarded_at || !data.display_name || !data.nationality) return null;
-  const p = { displayName: data.display_name as string, nationality: data.nationality as string };
+  const p: LearnerProfile = { displayName: data.display_name as string, nationality: data.nationality as string };
+  if (isGender(data.gender)) p.gender = data.gender;
   writeLocal(p);
   return p;
 }
 
 export async function saveProfile(userId: string | null, p: LearnerProfile): Promise<void> {
-  const clean = { displayName: cleanName(p.displayName), nationality: p.nationality };
+  const clean: LearnerProfile = { displayName: cleanName(p.displayName), nationality: p.nationality, ...(p.gender ? { gender: p.gender } : {}) };
   writeLocal(clean);
   const supa = getSupabase();
   if (!supa || !userId) return;
   const row = {
     display_name: clean.displayName,
     nationality: clean.nationality,
+    ...(clean.gender ? { gender: clean.gender } : {}),
     onboarded_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
   };

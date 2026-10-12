@@ -16,31 +16,29 @@
     "conjunctions-kwamba"
   ],
   "grammar": [
-    "hortative-commands",
     "idioms-proverbs",
     "relatives",
     "subjunctive",
     "conjunctions-kwamba",
-    "object-infixes",
     "verb-extensions",
-    "possessives",
-    "present-na",
-    "locative-ni",
-    "infinitive-ku",
     "ni-copula",
+    "present-na",
     "noun-classes-mwa-nn",
+    "object-infixes",
+    "infinitive-ku",
+    "ki-po-ka",
+    "possessives",
     "adjective-agreement",
-    "discourse-particles",
-    "demonstratives",
-    "sanifu-noun-classes",
-    "numbers-money",
     "habitual-hu-nga",
+    "hortative-commands",
+    "subject-prefixes",
+    "locative-ni",
+    "discourse-particles",
+    "numbers-money",
     "na-have",
     "negative-present",
     "perfect-me",
-    "subject-prefixes",
-    "imperatives",
-    "ki-po-ka"
+    "imperatives"
   ],
   "turns": [
     {
@@ -197,6 +195,20 @@
         {
           "swahili": "Harambee! Asanteni sana. Ninashukuru kwa kukualika siku ya leo.",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Harambee! Asanteni sana. Ninashukuru kwa kunialika leo.",
+          "note": "Leo alone — also right."
+        },
+        {
+          "text": "Harambee! Asanteni sana. Ninawashukuru kwa kunialika siku ya leo.",
+          "note": "Ninawashukuru = I thank you all — also right."
+        },
+        {
+          "text": "Harambee! Asanteni sana. Ninashukuru kwa mwaliko wa leo.",
+          "note": "Kwa mwaliko = for the invitation — also right."
         }
       ]
     },
@@ -362,6 +374,20 @@
         {
           "swahili": "Njeri ni msichana ambaye amefeli mtihani vizuri sana, na sasa anaenda shule ya upili.",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Njeri ni msichana aliyepita mtihani vizuri sana, na sasa anaenda shule ya upili.",
+          "note": "Aliyepita = who passed — the -ye- relative instead of ambaye."
+        },
+        {
+          "text": "Njeri ni msichana ambaye amefaulu mtihani vizuri sana, na sasa anaenda shule ya upili.",
+          "note": "Amefaulu (has passed / succeeded) — also right."
+        },
+        {
+          "text": "Njeri ni msichana ambaye amepita mtihani vizuri sana, na sasa anaenda sekondari.",
+          "note": "Sekondari — the everyday word for secondary school."
         }
       ]
     },
@@ -543,6 +569,20 @@
           "swahili": "Lakini karo ni chache. Na tunajua kwamba kidole kimoja hakivunji chawa.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Lakini karo ni nyingi. Na tunajua kidole kimoja hakivunji chawa.",
+          "note": "Kwamba (that) can be left out."
+        },
+        {
+          "text": "Lakini karo ni kubwa. Na tunajua kwamba kidole kimoja hakivunji chawa.",
+          "note": "Karo ni kubwa = the fees are big — also right."
+        },
+        {
+          "text": "Lakini karo ni nyingi. Na tunajua kuwa kidole kimoja hakivunji chawa.",
+          "note": "Kuwa (that) works like kwamba."
+        }
       ]
     },
     {
@@ -653,7 +693,21 @@
           "correct": false
         }
       ],
-      "sanifu": "Umoja ni nguvu, utengano ni udhaifu. Kila mtu achangie kile anachoweza."
+      "sanifu": "Umoja ni nguvu, utengano ni udhaifu. Kila mtu achangie kile anachoweza.",
+      "accept": [
+        {
+          "text": "Umoja ni nguvu, utengano ni udhaifu. Kila mtu achangie kile anachoweza.",
+          "note": "Kile anachoweza is the Sanifu form; vile anaweza is everyday Kenyan."
+        },
+        {
+          "text": "Umoja ni nguvu, utengano ni udhaifu. Kila mtu achangie kadiri anavyoweza.",
+          "note": "Kadiri anavyoweza = as much as they can — also right."
+        },
+        {
+          "text": "Umoja ni nguvu, utengano ni udhaifu. Kila mtu achangie jinsi anavyoweza.",
+          "note": "Jinsi anavyoweza — also right."
+        }
+      ]
     },
     {
       "id": "c7225996-874a-57c1-a6af-df17886edaed",
@@ -771,7 +825,21 @@
           "correct": false
         }
       ],
-      "sanifu": "Ndiyo! Haba na haba hujaza kibaba. Hakuna mchango mdogo."
+      "sanifu": "Ndiyo! Haba na haba hujaza kibaba. Hakuna mchango mdogo.",
+      "accept": [
+        {
+          "text": "Ndiyo! Haba na haba hujaza kibaba. Hakuna mchango mdogo.",
+          "note": "That's the Sanifu (standard) form — Kenyans say mchango ndogo."
+        },
+        {
+          "text": "Haba na haba hujaza kibaba. Hakuna mchango ndogo.",
+          "note": "Ndiyo is optional."
+        },
+        {
+          "text": "Ndiyo! Haba na haba hujaza kibaba. Kila mchango ni muhimu.",
+          "note": "Kila mchango ni muhimu = every contribution matters — also right."
+        }
+      ]
     },
     {
       "id": "6f3e00ad-3f11-5c95-8088-6928ac63896a",
@@ -949,6 +1017,20 @@
           "swahili": "Ndiyo, kwa sababu mtaka cha mvunguni sharti ainame! Sasa ni zamu yetu kunisaidia.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Ndiyo, kwa sababu mtaka cha mvunguni sharti ainame! Sasa ni wakati wetu kumsaidia.",
+          "note": "Wakati wetu = our time — also right."
+        },
+        {
+          "text": "Ndiyo, kwa sababu mtaka cha mvunguni sharti ainame! Sasa ni zamu yetu kumsaidia Njeri.",
+          "note": "Naming her is fine too."
+        },
+        {
+          "text": "Kwa sababu mtaka cha mvunguni sharti ainame! Sasa ni zamu yetu kumsaidia.",
+          "note": "Ndiyo is optional."
+        }
       ]
     },
     {
@@ -1009,7 +1091,21 @@
           "correct": false
         }
       ],
-      "literal": "If you don't fill the crack, you'll build a wall! Let's help her today, not tomorrow."
+      "literal": "If you don't fill the crack, you'll build a wall! Let's help her today, not tomorrow.",
+      "accept": [
+        {
+          "text": "Usipoziba ufa, utajenga ukuta! Tumsaidie leo, sio kesho.",
+          "note": "Sio and si both mean “not” here."
+        },
+        {
+          "text": "Usipoziba ufa, utajenga ukuta! Tumsaidie leo, wala si kesho.",
+          "note": "Wala si = and not — also right."
+        },
+        {
+          "text": "Usipoziba ufa, utajenga ukuta! Tumsaidie sasa, si kesho.",
+          "note": "Sasa (now) — also right."
+        }
+      ]
     },
     {
       "id": "5c0e099b-2c58-5a96-9020-8c460b9f3c9d",
@@ -1111,6 +1207,24 @@
         {
           "swahili": "Mimi nilichangia shilingi elfu kumi. Tumchangie Njeri ili aweze kusoma. Mungu awabariki!",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Mimi ninachangia elfu kumi. Tumchangie Njeri ili aweze kusoma. Mungu awabariki!",
+          "note": "Shilingi can be left out."
+        },
+        {
+          "text": "Mimi nitachangia shilingi elfu kumi. Tumchangie Njeri ili aweze kusoma. Mungu awabariki!",
+          "note": "Nitachangia (I will contribute) — also right."
+        },
+        {
+          "text": "Mimi ninatoa shilingi elfu kumi. Tumchangie Njeri ili aweze kusoma. Mungu awabariki!",
+          "note": "Ninatoa (I'm giving) — also right."
+        },
+        {
+          "text": "Ninachangia shilingi elfu kumi. Tumchangie Njeri ili aweze kusoma. Mungu awabariki!",
+          "note": "Mimi is optional."
         }
       ]
     },
@@ -1471,6 +1585,12 @@
       "explanation": "kwamba: that (as in \"he said that…\")",
       "grammar": [
         "conjunctions-kwamba"
+      ],
+      "accept": [
+        {
+          "text": "Tunajua kuwa kidole kimoja hakivunji chawa.",
+          "note": "Kuwa (that) works like kwamba."
+        }
       ]
     },
     {
@@ -1661,6 +1781,12 @@
       "explanation": "ndogo = small, kubwa = big, mbaya = bad — n/n forms for things (Sanifu, m/mi: mchango mdogo).",
       "grammar": [
         "adjective-agreement"
+      ],
+      "accept": [
+        {
+          "text": "Hakuna mchango mdogo.",
+          "note": "That's the Sanifu (standard) form — Kenyans say mchango ndogo."
+        }
       ]
     }
   ]

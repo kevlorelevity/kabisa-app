@@ -18,24 +18,24 @@
     "continuous-tenses",
     "conjunctions-kwamba",
     "vyo-manner",
+    "ki-po-ka",
     "noun-classes-mwa-nn",
     "perfect-me",
-    "ki-po-ka",
     "ni-copula",
+    "future-ta",
     "past-li",
     "possessives",
-    "sanifu-noun-classes",
-    "question-words",
-    "na-have",
-    "discourse-particles",
     "verb-extensions",
-    "future-ta",
-    "object-infixes",
+    "question-words",
+    "helper-verbs",
+    "sanifu-noun-classes",
+    "discourse-particles",
     "conditional-nge",
+    "greetings",
+    "na-have",
+    "object-infixes",
     "infinitive-ku",
     "present-na",
-    "helper-verbs",
-    "greetings",
     "subject-prefixes"
   ],
   "turns": [
@@ -214,7 +214,21 @@
           "correct": false
         }
       ],
-      "sanifu": "Ndiyo, nimesikia kwamba mto Nzoia umefurika huko Budalang'i."
+      "sanifu": "Ndiyo, nimesikia kwamba mto Nzoia umefurika huko Budalang'i.",
+      "accept": [
+        {
+          "text": "Ndiyo, nimesikia kwamba mto Nzoia umefurika huko Budalang'i.",
+          "note": "That's the Sanifu (standard) form — Kenyans say mto imefurika."
+        },
+        {
+          "text": "Ndiyo, nimesikia mto Nzoia imefurika huko Budalang'i.",
+          "note": "Kwamba (that) can be left out."
+        },
+        {
+          "text": "Ndiyo, nimesikia kuwa mto Nzoia imefurika huko Budalang'i.",
+          "note": "Kuwa (that) works like kwamba."
+        }
+      ]
     },
     {
       "id": "e4bb928f-4572-5b71-8773-f75c38c9f52a",
@@ -385,6 +399,20 @@
           "swahili": "Pole sana kwao. Serikali iliwasaidia kesho aje?",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Pole sana kwao. Serikali inawasaidia vipi?",
+          "note": "Vipi (how) works like aje — aje is more Kenyan."
+        },
+        {
+          "text": "Pole sana kwao. Serikali inawasaidia namna gani?",
+          "note": "Namna gani = in what way — also right."
+        },
+        {
+          "text": "Pole sana. Serikali inawasaidia aje?",
+          "note": "Kwao (for them) is optional."
+        }
       ]
     },
     {
@@ -426,7 +454,7 @@
           "text": "ninavyoona",
           "gloss": "\"How I see\" — ni- (subject: I) + na- (present) + vyo- (how / the way) + -ona (see). From kuona.",
           "grammar": [
-            "ki-po-ka"
+            "vyo-manner"
           ]
         },
         {
@@ -529,6 +557,20 @@
         {
           "swahili": "Na kaskazini je? Nitasoma jana kwamba kuna ukame mbaya huko.",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Na kaskazini je? Nilisoma kuwa kuna ukame mbaya huko.",
+          "note": "Kuwa (that) works like kwamba."
+        },
+        {
+          "text": "Na kaskazini je? Nilisoma kuna ukame mbaya huko.",
+          "note": "Kwamba (that) can be left out."
+        },
+        {
+          "text": "Na kaskazini? Nilisoma kwamba kuna ukame mbaya huko.",
+          "note": "Je is optional."
         }
       ]
     },
@@ -781,7 +823,21 @@
         }
       ],
       "speaker": "John",
-      "swahili": "Inasikitisha. Nafikiri kwamba bei ya chakula itapanda pia."
+      "swahili": "Inasikitisha. Nafikiri kwamba bei ya chakula itapanda pia.",
+      "accept": [
+        {
+          "text": "Inasikitisha. Nadhani bei ya chakula itapanda pia.",
+          "note": "Nadhani (I think) works like nafikiri."
+        },
+        {
+          "text": "Inasikitisha. Nafikiri bei ya chakula itapanda pia.",
+          "note": "Kwamba (that) can be left out."
+        },
+        {
+          "text": "Inasikitisha. Nafikiri kwamba bei ya chakula itaongezeka pia.",
+          "note": "Itaongezeka (will increase) — also right."
+        }
+      ]
     },
     {
       "id": "192f32a0-7c3c-5d2c-8d80-8c2f9e70ddb5",
@@ -1053,6 +1109,20 @@
           "swahili": "Wee! Ningependa kusaidia. Ninaweza kuchangia nani?",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Wee! Ningependa kusaidia. Ninaweza kuchangia aje?",
+          "note": "Aje (how) — the everyday Kenyan word."
+        },
+        {
+          "text": "Wee! Ningependa kusaidia. Nitachangia vipi?",
+          "note": "Nitachangia vipi = how will I contribute — also right."
+        },
+        {
+          "text": "Ningependa kusaidia. Ninaweza kuchangia vipi?",
+          "note": "Wee (wow) is optional."
+        }
       ]
     },
     {
@@ -1119,7 +1189,10 @@
         },
         {
           "text": "kadiri anavyoweza",
-          "gloss": "\"as much as he/she can\""
+          "gloss": "\"as much as he/she can\"",
+          "grammar": [
+            "vyo-manner"
+          ]
         }
       ],
       "sanifu": "Kanisa letu linachangisha pesa Jumapili. Kila mtu atachangia kadiri anavyoweza."
@@ -1212,7 +1285,10 @@
         },
         {
           "text": "jinsi ninavyoweza",
-          "gloss": "\"as much as I can, the way I can\""
+          "gloss": "\"as much as I can, the way I can\"",
+          "grammar": [
+            "vyo-manner"
+          ]
         }
       ],
       "options": [
@@ -1229,7 +1305,21 @@
           "correct": false
         }
       ],
-      "literal": "I will come on Sunday. I will contribute the way I am able."
+      "literal": "I will come on Sunday. I will contribute the way I am able.",
+      "accept": [
+        {
+          "text": "Nitakuja Jumapili. Nitachangia kadiri ninavyoweza.",
+          "note": "Kadiri ninavyoweza = as much as I can — same meaning."
+        },
+        {
+          "text": "Nitakuja Jumapili. Nitachangia vile ninaweza.",
+          "note": "Vile ninaweza — the everyday Kenyan way."
+        },
+        {
+          "text": "Nitakuja Jumapili, na nitachangia jinsi ninavyoweza.",
+          "note": "Also right."
+        }
+      ]
     },
     {
       "id": "5e3bb69a-e1c0-5c91-b80c-00a41638a1bb",
@@ -1512,6 +1602,12 @@
       "explanation": "kwamba = that, ili = so that.",
       "grammar": [
         "conjunctions-kwamba"
+      ],
+      "accept": [
+        {
+          "text": "Nimesikia kuwa mto imefurika.",
+          "note": "Kuwa (that) works like kwamba."
+        }
       ]
     },
     {
@@ -1588,7 +1684,7 @@
       ],
       "explanation": "-vyo- = the way, as.",
       "grammar": [
-        "ki-po-ka"
+        "vyo-manner"
       ]
     },
     {
@@ -1615,7 +1711,7 @@
       ],
       "explanation": "ninavyoweza = \"How I can\" — ni- (subject: I) + na- (present) + vyo- (how / the way) + -weza (can). From kuweza.",
       "grammar": [
-        "ki-po-ka",
+        "vyo-manner",
         "helper-verbs"
       ],
       "literal": "the way I am able"
@@ -1646,6 +1742,12 @@
       "grammar": [
         "question-words",
         "greetings"
+      ],
+      "accept": [
+        {
+          "text": "Serikali inawasaidia vipi?",
+          "note": "Vipi (how) works like aje — aje is more Kenyan."
+        }
       ]
     },
     {
@@ -1692,7 +1794,13 @@
           "feedback": "imesimama = You are standing"
         }
       ],
-      "explanation": "-furika = flood, -kauka = dry up. Kenyans give mto the n/n i- agreement (Sanifu, m/mi: mto umefurika)."
+      "explanation": "-furika = flood, -kauka = dry up. Kenyans give mto the n/n i- agreement (Sanifu, m/mi: mto umefurika).",
+      "accept": [
+        {
+          "text": "Mto umefurika.",
+          "note": "That's the Sanifu (standard) form — Kenyans say mto imefurika."
+        }
+      ]
     },
     {
       "id": "53b0a974-14e7-5ad8-bb57-baee29267ea1",
@@ -1793,7 +1901,7 @@
       ],
       "explanation": "anavyoweza = \"How he/she can\" — a- (subject: he/she) + na- (present) + vyo- (how / the way) + -weza (can). From kuweza.",
       "grammar": [
-        "ki-po-ka",
+        "vyo-manner",
         "helper-verbs"
       ],
       "literal": "Everyone will contribute as much as they are able."

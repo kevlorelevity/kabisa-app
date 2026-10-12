@@ -34,7 +34,7 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
     () => ({
       profile,
       loading: loadedFor !== userId,
-      persona: personaFor(profile?.displayName, profile?.nationality),
+      persona: personaFor(profile?.displayName, profile?.nationality, profile?.gender),
       save,
     }),
     [profile, loadedFor, userId, save],

@@ -18,20 +18,20 @@
     "continuous-tenses",
     "conjunctions-kwamba",
     "subjunctive",
-    "discourse-particles",
-    "polite-requests",
+    "noun-classes-mwa-nn",
+    "vyo-manner",
     "sanifu-noun-classes",
     "locative-ni",
     "conditional-nge",
     "verb-extensions",
-    "infinitive-ku",
-    "noun-classes-mwa-nn",
     "past-li",
+    "ki-po-ka",
     "ni-copula",
     "question-words",
     "possessives",
-    "ki-po-ka",
-    "vyo-manner",
+    "discourse-particles",
+    "polite-requests",
+    "infinitive-ku",
     "demonstratives",
     "perfect-me"
   ],
@@ -185,7 +185,21 @@
           "correct": false
         }
       ],
-      "sanifu": "Asante. Kwa miaka mitano, nimekuwa nikifanya kazi kama meneja kwa kampuni ya teknolojia."
+      "sanifu": "Asante. Kwa miaka mitano, nimekuwa nikifanya kazi kama meneja kwa kampuni ya teknolojia.",
+      "accept": [
+        {
+          "text": "Asante. Kwa miaka mitano, nimekuwa nikifanya kazi kama meneja kwa kampuni ya teknolojia.",
+          "note": "That's the Sanifu (standard) form — Kenyans say miaka tano."
+        },
+        {
+          "text": "Asante. Kwa miaka tano, nimefanya kazi kama meneja kwa kampuni ya teknolojia.",
+          "note": "Nimefanya kazi (I've worked) — also right."
+        },
+        {
+          "text": "Asante. Kwa miaka tano, nimekuwa nikifanya kazi kama meneja katika kampuni ya teknolojia.",
+          "note": "Katika (in) is the formal word for kwa here."
+        }
+      ]
     },
     {
       "id": "9b4b88cf-fcd7-53b0-9de2-065df3e1424f",
@@ -255,6 +269,20 @@
         {
           "swahili": "Nilipokuwa nikisoma chuo kikuu, nimekuwa nikifanya kazi ya muda jioni.",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Nilipokuwa chuo kikuu, nilikuwa nikifanya kazi ya muda jioni.",
+          "note": "Nilipokuwa chuo kikuu = when I was at university — also right."
+        },
+        {
+          "text": "Nilipokuwa nikisoma chuo kikuu, nilifanya kazi ya muda jioni.",
+          "note": "Nilifanya (I did) — also right."
+        },
+        {
+          "text": "Nilipokuwa nasoma chuo kikuu, nilikuwa nafanya kazi ya muda jioni.",
+          "note": "Nasoma / nafanya — the everyday Kenyan continuous."
         }
       ]
     },
@@ -422,6 +450,20 @@
           "swahili": "Nimesikia kwamba hapa mnasaidiana sana, na ningependa kufanya kazi mahali kama hapa ili ninajifunza zaidi.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Nimesikia kuwa hapa mnasaidiana sana, na ningependa kufanya kazi mahali kama hapa ili nijifunze zaidi.",
+          "note": "Kuwa (that) works like kwamba."
+        },
+        {
+          "text": "Nimesikia kwamba mnasaidiana sana hapa, na ningependa kufanya kazi mahali kama hapa ili nijifunze zaidi.",
+          "note": "Hapa can go at the end."
+        },
+        {
+          "text": "Nimesikia kwamba hapa mnasaidiana sana, na ningependa kufanya kazi mahali kama hapa nijifunze zaidi.",
+          "note": "Ili can be left out."
+        }
       ]
     },
     {
@@ -568,7 +610,21 @@
           "correct": false
         }
       ],
-      "sanifu": "Wakati mmoja, mradi wetu ulikuwa ukichelewa sana."
+      "sanifu": "Wakati mmoja, mradi wetu ulikuwa ukichelewa sana.",
+      "accept": [
+        {
+          "text": "Wakati mmoja, mradi wetu ulikuwa ukichelewa sana.",
+          "note": "That's the Sanifu (standard) form — Kenyans say mradi yetu ilikuwa."
+        },
+        {
+          "text": "Siku moja, mradi yetu ilikuwa ikichelewa sana.",
+          "note": "Siku moja = one day — also right."
+        },
+        {
+          "text": "Wakati moja, mradi yetu ilikuwa inachelewa sana.",
+          "note": "Inachelewa — the everyday continuous."
+        }
+      ]
     },
     {
       "id": "2cf54a31-d433-5031-ba08-81052bb60b08",
@@ -690,7 +746,21 @@
           "correct": false
         }
       ],
-      "sanifu": "Tulikaa pamoja kama timu, tukapanga kazi upya, na ukamalizika kwa wakati."
+      "sanifu": "Tulikaa pamoja kama timu, tukapanga kazi upya, na ukamalizika kwa wakati.",
+      "accept": [
+        {
+          "text": "Tulikaa pamoja kama timu, tukapanga kazi upya, na ikaisha kwa wakati.",
+          "note": "Ikaisha (it ended) — also right."
+        },
+        {
+          "text": "Tulikaa pamoja kama timu, tukapanga kazi upya, na tukamaliza kwa wakati.",
+          "note": "Tukamaliza = and we finished — also right."
+        },
+        {
+          "text": "Tulikaa pamoja kama timu, tukapanga kazi upya, na ukamalizika kwa wakati.",
+          "note": "That's the Sanifu (standard) form — Kenyans say ikamalizika."
+        }
+      ]
     },
     {
       "id": "48451f39-25cc-5bf6-b076-12c424d0342a",
@@ -779,7 +849,7 @@
           "text": "anavyoongea",
           "gloss": "\"How he/she talks\" — a- (subject: he/she) + na- (present) + vyo- (how / the way) + -ongea (talk). From kuongea.",
           "grammar": [
-            "ki-po-ka"
+            "vyo-manner"
           ]
         }
       ],
@@ -795,6 +865,20 @@
         {
           "swahili": "Ninavyoona, kiongozi mzuri anaongea zaidi kuliko anavyosikiliza.",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Jinsi ninavyoona, kiongozi mzuri anasikiliza watu wake zaidi kuliko anavyoongea.",
+          "note": "Jinsi ninavyoona = the way I see it — also right."
+        },
+        {
+          "text": "Kwa maoni yangu, kiongozi mzuri anasikiliza watu wake zaidi kuliko anavyoongea.",
+          "note": "Kwa maoni yangu = in my opinion — also right."
+        },
+        {
+          "text": "Ninavyoona, kiongozi mzuri husikiliza watu wake zaidi kuliko anavyoongea.",
+          "note": "Husikiliza = usually listens — also right."
         }
       ]
     },
@@ -932,7 +1016,21 @@
           "correct": false
         }
       ],
-      "literal": "Thank you very much for this chance. I will wait with eagerness!"
+      "literal": "Thank you very much for this chance. I will wait with eagerness!",
+      "accept": [
+        {
+          "text": "Asante sana kwa nafasi hii. Nitangoja kwa hamu!",
+          "note": "Nitangoja (I'll wait) works like nitasubiri."
+        },
+        {
+          "text": "Asante sana kwa fursa hii. Nitasubiri kwa hamu!",
+          "note": "Fursa = opportunity — a more formal word for nafasi."
+        },
+        {
+          "text": "Asante sana kwa nafasi hii. Nitasubiri kwa hamu kubwa!",
+          "note": "Kwa hamu kubwa — eagerly, with emphasis."
+        }
+      ]
     }
   ],
   "vocabulary": [
@@ -1333,6 +1431,12 @@
       "explanation": "ni- + -na- + -vyo- + -ona.",
       "grammar": [
         "vyo-manner"
+      ],
+      "accept": [
+        {
+          "text": "jinsi ninavyoona",
+          "note": "Jinsi ninavyoona = the way I see it — also right."
+        }
       ]
     },
     {
@@ -1359,7 +1463,7 @@
       ],
       "explanation": "-vyo- turns a verb into \"the way / how much\".",
       "grammar": [
-        "ki-po-ka"
+        "vyo-manner"
       ]
     },
     {
@@ -1412,7 +1516,13 @@
         }
       ],
       "explanation": "Nitasubiri: I'll wait",
-      "literal": "I will wait with eagerness."
+      "literal": "I will wait with eagerness.",
+      "accept": [
+        {
+          "text": "Nitangoja kwa hamu.",
+          "note": "Nitangoja (I'll wait) works like nitasubiri."
+        }
+      ]
     },
     {
       "id": "b737ec0b-1657-5c94-93aa-f30221c46ac2",

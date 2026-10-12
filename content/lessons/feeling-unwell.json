@@ -12,17 +12,16 @@
   "grammarFocus": [
     "ko-location",
     "present-na",
-    "time-swahili"
+    "sanifu-noun-classes"
   ],
   "grammar": [
     "ko-location",
     "present-na",
-    "time-swahili",
-    "ni-copula",
     "sanifu-noun-classes",
-    "discourse-particles",
+    "ni-copula",
     "noun-classes-mwa-nn",
     "possessives",
+    "discourse-particles",
     "greetings",
     "adjective-agreement",
     "numbers-money"

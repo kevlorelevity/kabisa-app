@@ -21,23 +21,22 @@
     "conditional-nge",
     "habitual-hu-nga",
     "noun-classes-mwa-nn",
+    "imperatives",
+    "subjunctive",
     "object-infixes",
     "locative-ni",
-    "past-li",
     "question-words",
-    "adjective-agreement",
-    "ni-copula",
-    "verb-extensions",
-    "negative-past",
-    "present-na",
-    "negative-present",
     "sanifu-noun-classes",
-    "na-have",
-    "numbers-money",
-    "time-swahili",
-    "imperatives",
+    "past-li",
+    "ni-copula",
+    "negative-past",
+    "negative-present",
     "future-ta",
-    "subjunctive"
+    "adjective-agreement",
+    "verb-extensions",
+    "present-na",
+    "na-have",
+    "numbers-money"
   ],
   "turns": [
     {
@@ -96,7 +95,21 @@
           "correct": false
         }
       ],
-      "literal": "Doctor, the stomach is hurting me for three days now."
+      "literal": "Doctor, the stomach is hurting me for three days now.",
+      "accept": [
+        {
+          "text": "Daktari, tumbo linaniuma kwa siku tatu sasa.",
+          "note": "That's the Sanifu (standard) form — Kenyans say tumbo inaniuma."
+        },
+        {
+          "text": "Daktari, tumbo imekuwa ikiniuma kwa siku tatu sasa.",
+          "note": "Imekuwa ikiniuma = has been hurting me — also right."
+        },
+        {
+          "text": "Daktari, tumbo inauma kwa siku tatu sasa.",
+          "note": "Inauma (it hurts) is fine; inaniuma adds “me”."
+        }
+      ]
     },
     {
       "id": "7fc9be1f-ec55-5e45-946f-40f8d80390e0",
@@ -226,6 +239,20 @@
         {
           "swahili": "Nilipokula samaki kibandani Jumatano, nitaanza kuharisha usiku.",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Nilikula samaki kibandani Jumatano, nikaanza kuharisha usiku.",
+          "note": "Nilikula (I ate) works too; nilipokula = when I ate."
+        },
+        {
+          "text": "Nilipokula samaki kwa kibanda Jumatano, nikaanza kuharisha usiku.",
+          "note": "Kwa kibanda and kibandani both mean “at the kibanda”."
+        },
+        {
+          "text": "Nilipokula samaki kibandani Jumatano, nilianza kuharisha usiku.",
+          "note": "Nilianza is fine too; nikaanza links it as “and then I started”."
         }
       ]
     },
@@ -392,6 +419,20 @@
           "swahili": "Ndiyo, dawa ambayo nilimpa chemist, lakini haikusaidia.",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Ndiyo, dawa niliyopewa na chemist, lakini haikusaidia.",
+          "note": "Niliyopewa = (which) I was given — the -yo- relative instead of ambayo."
+        },
+        {
+          "text": "Ndiyo, nilikunywa dawa ambayo nilipewa na chemist, lakini haikusaidia.",
+          "note": "Adding nilikunywa (I took) is fine."
+        },
+        {
+          "text": "Ndiyo, dawa ambayo nilipewa na chemist, lakini haikunisaidia.",
+          "note": "Haikunisaidia = it didn't help me — also right."
+        }
       ]
     },
     {
@@ -552,7 +593,21 @@
           "correct": false
         }
       ],
-      "sanifu": "Hapana, huwa sinywi maji mengi. Ningejua, ningekuja mapema."
+      "sanifu": "Hapana, huwa sinywi maji mengi. Ningejua, ningekuja mapema.",
+      "accept": [
+        {
+          "text": "Hapana, sinywi maji mingi. Ningejua, ningekuja mapema.",
+          "note": "Sinywi alone (I don't drink) is fine; huwa adds “usually”."
+        },
+        {
+          "text": "Hapana, huwa sinywi maji mingi. Ningalijua, ningalikuja mapema.",
+          "note": "-ngali- is the Sanifu “would have”; Kenyans mostly use -nge-."
+        },
+        {
+          "text": "Hapana, huwa sikunywi maji mingi. Ningejua, ningekuja mapema.",
+          "note": "Sikunywi is a common everyday form of sinywi."
+        }
+      ]
     },
     {
       "id": "12a240c1-fa57-580b-8fb9-d0fec39b3d88",
@@ -623,7 +678,21 @@
           "correct": false
         }
       ],
-      "sanifu": "Matokeo yatakuja lini?"
+      "sanifu": "Matokeo yatakuja lini?",
+      "accept": [
+        {
+          "text": "Matokeo yatakuja lini?",
+          "note": "That's the Sanifu (standard) form — Kenyans say matokeo itakuja."
+        },
+        {
+          "text": "Matokeo itatoka lini?",
+          "note": "Kutoka (come out) is also used for results."
+        },
+        {
+          "text": "Matokeo yatatoka lini?",
+          "note": "Kutoka (come out) is also used for results; yatatoka is the Sanifu agreement."
+        }
+      ]
     },
     {
       "id": "f27703cf-f4fc-5cd0-9dc3-68526142ca2c",
@@ -811,6 +880,20 @@
           "swahili": "Sawa. Na nikirudi nyumbani, ule nini?",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Sawa. Na nikifika nyumbani, nile nini?",
+          "note": "Nikifika (when I get) works as well as nikirudi (when I go back)."
+        },
+        {
+          "text": "Sawa. Na nikirudi nyumbani, nikule nini?",
+          "note": "Nikule is the everyday Kenyan form of nile."
+        },
+        {
+          "text": "Sawa. Na nikirudi nyumbani, nitakula nini?",
+          "note": "Nitakula (what will I eat) — also right; nile asks “what should I eat”."
+        }
       ]
     },
     {
@@ -983,6 +1066,20 @@
         {
           "swahili": "Na kama homa itaisha?",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Na homa ikianza?",
+          "note": "Ikianza = if it starts — the -ki- form, also right."
+        },
+        {
+          "text": "Na kama homa ikianza?",
+          "note": "Also right."
+        },
+        {
+          "text": "Na kama nitapata homa?",
+          "note": "Kama nitapata homa = if I get a fever — also right."
         }
       ]
     },
@@ -1173,6 +1270,16 @@
       "explanation": "-ni- = me: i- + -na- + -ni- + -uma. Sanifu: tumbo linaniuma.",
       "grammar": [
         "object-infixes"
+      ],
+      "accept": [
+        {
+          "text": "Tumbo linaniuma.",
+          "note": "That's the Sanifu (standard) form — Kenyans say tumbo inaniuma."
+        },
+        {
+          "text": "Tumbo inauma.",
+          "note": "Inauma (it hurts) is fine; inaniuma adds “me”."
+        }
       ]
     },
     {
@@ -1254,6 +1361,12 @@
       "explanation": "dawa is n/n singular → ambayo.",
       "grammar": [
         "relatives"
+      ],
+      "accept": [
+        {
+          "text": "dawa niliyopewa",
+          "note": "Niliyopewa = (which) I was given — the -yo- relative instead of ambayo."
+        }
       ]
     },
     {
@@ -1334,6 +1447,12 @@
       "explanation": "sinywi = \"I am not drinking\" — si- (negative subject: not I) + -nywi (drink, negative ends in -i). From kunywa.",
       "grammar": [
         "negative-present"
+      ],
+      "accept": [
+        {
+          "text": "Huwa sikunywi maji mingi.",
+          "note": "Sikunywi is a common everyday form of sinywi."
+        }
       ]
     },
     {
@@ -1442,6 +1561,12 @@
       "explanation": "nile = should I eat (subjunctive of kula — no ku-).",
       "grammar": [
         "subjunctive"
+      ],
+      "accept": [
+        {
+          "text": "Nikirudi nyumbani, nikule nini?",
+          "note": "Nikule is the everyday Kenyan form of nile."
+        }
       ]
     },
     {
@@ -1521,6 +1646,12 @@
       "explanation": "Kenyans give matokeo the n/n i- agreement: matokeo itakuja. (Sanifu, ji/ma: matokeo yatakuja.)",
       "grammar": [
         "sanifu-noun-classes"
+      ],
+      "accept": [
+        {
+          "text": "Matokeo yatakuja lini?",
+          "note": "That's the Sanifu (standard) form — Kenyans say matokeo itakuja."
+        }
       ]
     },
     {
@@ -1573,7 +1704,13 @@
       "grammar": [
         "imperatives"
       ],
-      "literal": "Heal quickly!"
+      "literal": "Heal quickly!",
+      "accept": [
+        {
+          "text": "Ugua pole!",
+          "note": "Ugua pole! — another way to say get well soon."
+        }
+      ]
     }
   ]
 }

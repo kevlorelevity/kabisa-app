@@ -20,15 +20,15 @@
     "ko-location",
     "adjective-agreement",
     "numbers-money",
-    "locative-ni",
-    "subject-prefixes",
     "ni-copula",
     "noun-classes-mwa-nn",
-    "discourse-particles",
-    "question-words",
+    "subject-prefixes",
+    "locative-ni",
     "sanifu-noun-classes",
     "possessives",
-    "greetings"
+    "question-words",
+    "greetings",
+    "discourse-particles"
   ],
   "turns": [
     {

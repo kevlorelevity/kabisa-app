@@ -21,21 +21,21 @@
     "conditional-nge",
     "discourse-particles",
     "noun-classes-mwa-nn",
+    "perfect-me",
     "ni-copula",
+    "verb-extensions",
+    "perfect-negative-ja",
     "future-ta",
     "object-infixes",
-    "verb-extensions",
     "possessives",
-    "sanifu-noun-classes",
     "demonstratives",
-    "perfect-negative-ja",
-    "conjunctions-kwamba",
     "numbers-money",
-    "perfect-me",
-    "present-na",
     "past-li",
-    "infinitive-ku",
     "locative-ni",
+    "sanifu-noun-classes",
+    "conjunctions-kwamba",
+    "present-na",
+    "infinitive-ku",
     "subject-prefixes",
     "imperatives",
     "greetings",
@@ -231,7 +231,21 @@
           "correct": false
         }
       ],
-      "literal": "Wow, only a dream! You will see — our new striker is very hot."
+      "literal": "Wow, only a dream! You will see — our new striker is very hot.",
+      "accept": [
+        {
+          "text": "Wee, ndoto tu! Mtaona — straika wetu mpya ni moto sana.",
+          "note": "Straika — what most fans actually say."
+        },
+        {
+          "text": "Ndoto tu! Mtaona — mshambuliaji wetu mpya ni moto sana.",
+          "note": "Wee is optional."
+        },
+        {
+          "text": "Wee, ni ndoto tu! Mtaona — mshambuliaji wetu mpya ni moto sana.",
+          "note": "Ni ndoto tu = it's just a dream — also right."
+        }
+      ]
     },
     {
       "id": "a0f6c54d-4cb5-599e-b200-e4e1011dd0ca",
@@ -326,7 +340,21 @@
           "correct": false
         }
       ],
-      "literal": "Today he will score. Let him miss and be laughed at!"
+      "literal": "Today he will score. Let him miss and be laughed at!",
+      "accept": [
+        {
+          "text": "Leo atafunga goli. Akose achekwe!",
+          "note": "Atafunga goli — also right."
+        },
+        {
+          "text": "Leo lazima afunge. Akose achekwe!",
+          "note": "Lazima afunge = he must score — also right."
+        },
+        {
+          "text": "Atafunga leo. Akose achekwe!",
+          "note": "Leo at the end — also right."
+        }
+      ]
     },
     {
       "id": "cb9b54ee-4d5f-5e88-acb3-1f593e9abb1c",
@@ -482,6 +510,20 @@
           "swahili": "Aiii! Refa ni kipofu — huyo mchezaji atakuwa offside!",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Aiii! Refa ni kipofu — mchezaji huyo alikuwa offside!",
+          "note": "Mchezaji huyo — either order works."
+        },
+        {
+          "text": "Aiii! Refa ni kipofu — yule mchezaji alikuwa offside!",
+          "note": "Yule (that one there) — also right."
+        },
+        {
+          "text": "Refa ni kipofu — huyo mchezaji alikuwa offside!",
+          "note": "Aiii is optional."
+        }
       ]
     },
     {
@@ -599,7 +641,21 @@
         }
       ],
       "sanifu": "Sawa, sawa. Maji yakimwagika hayazoleki. Lakini mchezo haujaisha bado!",
-      "literal": "Okay, okay. When water is spilled, it can't be scooped up. But the game isn't finished yet!"
+      "literal": "Okay, okay. When water is spilled, it can't be scooped up. But the game isn't finished yet!",
+      "accept": [
+        {
+          "text": "Sawa, sawa. Maji yakimwagika hayazoleki. Lakini mchezo haujaisha bado!",
+          "note": "That's the Sanifu (standard) form — Kenyans say mchezo haijaisha."
+        },
+        {
+          "text": "Sawa, sawa. Maji yakimwagika hayazoleki. Lakini mchezo bado haijaisha!",
+          "note": "Bado before the verb — also right."
+        },
+        {
+          "text": "Sawa. Maji yakimwagika hayazoleki. Lakini mchezo haijaisha bado!",
+          "note": "One sawa is enough."
+        }
+      ]
     },
     {
       "id": "15e67cd8-fd85-5f41-a773-244927394b8a",
@@ -766,6 +822,20 @@
           "swahili": "Goooli! Tumesawazisha! Na sasa… goli ya kwanza! Mbili kwa moja!",
           "correct": false
         }
+      ],
+      "accept": [
+        {
+          "text": "Goli! Tumesawazisha! Na sasa… goli ya pili! Mbili kwa moja!",
+          "note": "As many o's as you like!"
+        },
+        {
+          "text": "Goooli! Tumesawazisha! Na sasa… goli la pili! Mbili kwa moja!",
+          "note": "That's the Sanifu (standard) form — Kenyans say goli ya pili."
+        },
+        {
+          "text": "Goooli! Tumesawazisha! Sasa… goli ya pili! Mbili kwa moja!",
+          "note": "Na is optional."
+        }
       ]
     },
     {
@@ -875,6 +945,20 @@
         {
           "swahili": "Haha! Asiyekubali kushinda si mshindani, shemeji!",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Asiyekubali kushindwa si mshindani, shemeji!",
+          "note": "Haha is optional."
+        },
+        {
+          "text": "Haha! Asiyekubali kushindwa si mshindani, shemeji yangu!",
+          "note": "Shemeji yangu = my in-law — also right."
+        },
+        {
+          "text": "Haha! Asiyekubali kushindwa sio mshindani, shemeji!",
+          "note": "Sio and si both mean “is not” here."
         }
       ]
     },
@@ -1060,6 +1144,20 @@
         {
           "swahili": "Tusker baridi, tafadhali! Na wiki iliyopita, tutaonana tena kwa mechi nyingine!",
           "correct": false
+        }
+      ],
+      "accept": [
+        {
+          "text": "Tusker baridi, tafadhali! Na wiki ijayo, tutaonana kwa mechi nyingine!",
+          "note": "Tena is optional."
+        },
+        {
+          "text": "Nipe Tusker baridi, tafadhali! Na wiki ijayo, tutaonana tena kwa mechi nyingine!",
+          "note": "Nipe (give me) — also right."
+        },
+        {
+          "text": "Tusker baridi, tafadhali! Wiki ijayo, tutaonana tena kwa mechi nyingine!",
+          "note": "Na is optional."
         }
       ]
     }
@@ -1349,6 +1447,12 @@
       "explanation": "Kenyans give mchezo the n/n i- agreement: haijaisha. (Sanifu, m/mi: mchezo haujaisha.)",
       "grammar": [
         "perfect-negative-ja"
+      ],
+      "accept": [
+        {
+          "text": "Mchezo haujaisha bado!",
+          "note": "That's the Sanifu (standard) form — Kenyans say mchezo haijaisha."
+        }
       ]
     },
     {
