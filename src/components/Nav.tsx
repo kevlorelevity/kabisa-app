@@ -8,6 +8,7 @@ import { BetaSticker } from './BetaSticker';
 import { LevelBar } from './LevelBar';
 import { useAdmin } from './adminContext';
 import { setRoaming, useRoam } from '../lib/roam';
+import { openLeaderboard } from '../lib/leaderboard';
 
 /** Admins get an "Admin" menu (Roam on/off + Sign out) in place of the plain Sign out button. */
 function AdminMenu({ onSignOut }: { onSignOut: () => void }) {
@@ -123,12 +124,88 @@ function AdminMenu({ onSignOut }: { onSignOut: () => void }) {
             role="menuitem"
             onClick={() => {
               setOpen(false);
+              openLeaderboard();
+            }}
+            className="w-full text-left px-4 py-2.5 hover:bg-gray-50"
+          >
+            <span className="block text-sm font-medium text-gray-900">🏆 Top 10 for my level</span>
+            <span className="block text-xs text-gray-500">The leaderboard learners see</span>
+          </button>
+          <button
+            type="button"
+            role="menuitem"
+            onClick={() => {
+              setOpen(false);
               navigate('/admin/progress');
             }}
             className="w-full text-left px-4 py-2.5 hover:bg-gray-50"
           >
             <span className="block text-sm font-medium text-gray-900">Learner progress</span>
             <span className="block text-xs text-gray-500">Who's learning, where they drop off</span>
+          </button>
+          <div className="border-t border-gray-100 my-1" />
+          <button
+            type="button"
+            role="menuitem"
+            onClick={() => {
+              setOpen(false);
+              onSignOut();
+            }}
+            className="w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50"
+          >
+            Sign out
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/** Learners get a "Menu" with their level's Top 10 and Sign out. */
+function LearnerMenu({ onSignOut }: { onSignOut: () => void }) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const onDown = (e: MouseEvent | TouchEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setOpen(false);
+    document.addEventListener('mousedown', onDown);
+    document.addEventListener('touchstart', onDown);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('mousedown', onDown);
+      document.removeEventListener('touchstart', onDown);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [open]);
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        type="button"
+        aria-haspopup="menu"
+        aria-expanded={open}
+        onClick={() => setOpen((o) => !o)}
+        className="text-sm font-medium px-2.5 py-1 rounded-full border border-gray-200 text-gray-600 hover:text-green-700 hover:border-green-300 transition-colors"
+      >
+        Menu <span aria-hidden="true">▾</span>
+      </button>
+      {open && (
+        <div role="menu" className="absolute right-0 mt-2 w-56 rounded-xl border border-gray-200 bg-white shadow-lg py-1 z-20">
+          <button
+            type="button"
+            role="menuitem"
+            onClick={() => {
+              setOpen(false);
+              openLeaderboard();
+            }}
+            className="w-full text-left px-4 py-2.5 hover:bg-gray-50"
+          >
+            <span className="block text-sm font-medium text-gray-900">🏆 Top 10 for my level</span>
+            <span className="block text-xs text-gray-500">See where you stand</span>
           </button>
           <div className="border-t border-gray-100 my-1" />
           <button
@@ -201,13 +278,7 @@ export function Nav() {
               {isAdmin ? (
                 <AdminMenu onSignOut={() => void signOut()} />
               ) : (
-                <button
-                  type="button"
-                  onClick={() => void signOut()}
-                  className="text-sm text-gray-500 hover:text-green-700 transition-colors"
-                >
-                  Sign out
-                </button>
+                <LearnerMenu onSignOut={() => void signOut()} />
               )}
             </div>
           )}

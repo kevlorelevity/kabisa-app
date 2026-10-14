@@ -18,6 +18,7 @@ import { SignInGate } from './components/SignInGate';
 import { useEffect } from 'react';
 import { loadOverrides } from './lib/contentOverrides';
 import { ProgressSync } from './components/ProgressSync';
+import { LeaderboardHost } from './components/LeaderboardHost';
 
 /** A new page (e.g. the next lesson) opens at its top, with the lesson introduction in view. */
 function ScrollToTop() {
@@ -37,6 +38,7 @@ function AppLayout() {
     <>
       <UpdateBanner />
       <ProgressSync />
+      <LeaderboardHost />
       <ScrollToTop />
       <Nav />
       <main>
