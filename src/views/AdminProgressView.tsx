@@ -5,7 +5,8 @@ import { useLessons } from '../hooks/useLessons';
 import { getCountry } from '../lib/countries';
 import { levelInfo } from '../lib/levels';
 import { PASS_THRESHOLD } from '../lib/lessonScores';
-import { lessonStats, loadLearnerRows, summarize, type LearnerRow } from '../lib/learnerProgress';
+import { lessonStats, loadLearnerRows, summarize, type LearnerRow, type LessonStat } from '../lib/learnerProgress';
+import type { Lesson } from '../types';
 
 type SortKey = 'name' | 'level' | 'xp' | 'lessonsPassed' | 'avgDialogue' | 'avgPractice' | 'lastActive' | 'joined';
 
@@ -62,7 +63,7 @@ export function AdminProgressView() {
     () =>
       lessons
         .filter((l) => stats.has(l.id))
-        .map((l) => ({ lesson: l, stat: stats.get(l.id)! }))
+        .map((l): { lesson: Lesson | undefined; stat: LessonStat } => ({ lesson: l, stat: stats.get(l.id)! }))
         .concat(
           [...stats.values()]
             .filter((s) => !lessonById.has(s.lessonId))
