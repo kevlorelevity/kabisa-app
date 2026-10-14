@@ -10,6 +10,7 @@ import { GrammarProvider } from './components/GrammarProvider';
 import { ProfileProvider } from './hooks/ProfileProvider';
 import { OnboardingGate } from './components/OnboardingGate';
 import { ProfileView } from './views/ProfileView';
+import { AdminProgressView } from './views/AdminProgressView';
 import { FeedbackButton } from './components/FeedbackButton';
 import { AdminProvider } from './components/AdminProvider';
 import { AuthProvider } from './hooks/AuthProvider';
@@ -48,6 +49,7 @@ function AppLayout() {
           <Route path="/grammar" element={<GrammarView />} />
           <Route path="/grammar/:slug" element={<GrammarView />} />
           <Route path="/profile" element={<ProfileView />} />
+          <Route path="/admin/progress" element={<AdminProgressView />} />
           {/* Retired surfaces (old module catalog, SRS review) — send old links home. */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
