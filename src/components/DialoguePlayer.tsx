@@ -8,6 +8,7 @@ import { lineTarget } from './adminTargets';
 import { TypedAnswer } from './TypedAnswer';
 import { voiceForSpeaker, type Voice } from '../lib/audio';
 import { acceptedAnswers, pickKeyWord, type TypingMode } from '../lib/typing';
+import { salientForTurn } from '../lib/aiCheck';
 
 interface DialoguePlayerProps {
   turns: DialogueTurn[];
@@ -42,6 +43,8 @@ export function DialoguePlayer({ turns, onComplete, review = false, typing, voic
   const [missed, setMissed] = useState<string[]>([]);
   // Typed lines with more than one right answer: what we said about the learner's choice.
   const [said, setSaid] = useState<Record<string, string>>({});
+  // Lines typed in the learner's own words that earned only part of the point (AI check).
+  const [part, setPart] = useState<Record<string, number>>({});
 
   const done = revealedCount >= turns.length;
   const current = done ? null : turns[revealedCount];
@@ -65,10 +68,11 @@ export function DialoguePlayer({ turns, onComplete, review = false, typing, voic
     if (!done || review) return;
     const userTurns = turns.filter((t) => t.role === 'user').map((t) => t.id);
     onComplete({
-      firstTryCorrect: userTurns.length - missed.length,
+      firstTryCorrect: userTurns.reduce((sum, id) => sum + (missed.includes(id) ? 0 : part[id] ?? 1), 0),
       total: userTurns.length,
       attemptedIds: userTurns,
-      missedIds: missed,
+      // Part-point lines go to the drill too, so the lesson's own wording gets practised.
+      missedIds: [...missed, ...Object.keys(part).filter((id) => !missed.includes(id))],
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [done]);
@@ -79,10 +83,11 @@ export function DialoguePlayer({ turns, onComplete, review = false, typing, voic
     if (id) setMissed((m) => (m.includes(id) ? m : [...m, id]));
   }
 
-  function typedSolved(_answer: string, feedback?: string) {
+  function typedSolved(_answer: string, feedback?: string, credit = 1) {
     interacted.current = true;
     const id = current?.id;
     if (id && feedback) setSaid((m) => ({ ...m, [id]: feedback }));
+    if (id && credit < 1) setPart((m) => ({ ...m, [id]: credit }));
     setRevealedCount((n) => n + 1);
   }
 
@@ -101,6 +106,17 @@ export function DialoguePlayer({ turns, onComplete, review = false, typing, voic
         : [],
     });
   }, [current, typing, keySpot]);
+
+  // Whole lines: what the AI checks the learner's own wording against.
+  const aiCheck = useMemo(() => {
+    if (!current || current.role !== 'user' || typing !== 'complete') return undefined;
+    const prev = turns[revealedCount - 1];
+    return {
+      english: current.english,
+      salient: salientForTurn(current, keySpot?.text, focus),
+      context: prev ? `${prev.speaker}: ${prev.swahili}` : undefined,
+    };
+  }, [current, typing, keySpot, focus, turns, revealedCount]);
 
   function pick(swahili: string, correct: boolean) {
     if (correctPick) return; // already advancing
@@ -195,6 +211,7 @@ export function DialoguePlayer({ turns, onComplete, review = false, typing, voic
             placeholder={typing === 'partial' && keyWord ? 'Missing word…' : 'Type the line in Swahili…'}
             onMiss={markMissed}
             onSolved={typedSolved}
+            aiCheck={aiCheck}
             autoFocus={interacted.current}
           />
         </div>

@@ -24,6 +24,7 @@ import {
 } from '../lib/lessonScores';
 import { useRoam } from '../lib/roam';
 import { typingModeFor } from '../lib/typing';
+import { fmtScore } from '../lib/aiCheck';
 import { useAdmin } from '../components/adminContext';
 
 export function LessonView() {
@@ -232,7 +233,7 @@ export function LessonView() {
         {twoRounds && round === 1 && round1 && (
           <div className="mt-4 rounded-xl border border-green-200 bg-green-50 p-4" data-testid="round1-done">
             <p className="font-semibold text-green-800">
-              ✓ Round 1 of 2 done — {round1.firstTryCorrect} / {round1.total} right on the first try
+              ✓ Round 1 of 2 done — {fmtScore(round1.firstTryCorrect)} / {round1.total} right on the first try
             </p>
             <p className="text-sm text-green-700/90 mt-0.5">
               Next up, round 2: the same conversation, but now you type your lines. Round 2 is the one that counts.
@@ -258,7 +259,7 @@ export function LessonView() {
             }`}
           >
             <p className={`font-semibold ${passedThisRun ? 'text-green-800' : 'text-amber-900'}`}>
-              {result.firstTryCorrect} / {result.total} on the first try ({pct(ratio)})
+              {fmtScore(result.firstTryCorrect)} / {result.total} on the first try ({pct(ratio)})
             </p>
             <p className={`text-sm mt-0.5 ${passedThisRun ? 'text-green-700/80' : 'text-amber-800/80'}`}>
               {passedThisRun

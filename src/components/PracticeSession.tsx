@@ -7,6 +7,7 @@ import { DeleteItem, EditPencil } from './EditPencil';
 import { practiceTarget } from './adminTargets';
 import { TypedAnswer } from './TypedAnswer';
 import { acceptedAnswers, type TypingMode } from '../lib/typing';
+import { fmtScore } from '../lib/aiCheck';
 
 interface PracticeSessionProps {
   items: PracticeItem[];
@@ -96,7 +97,7 @@ export function PracticeSession({ items, onFinish, resultSlot, review = false, t
           Practice complete
         </p>
         <p className="text-3xl font-bold text-gray-900">
-          {firstTry} / {items.length}
+          {fmtScore(firstTry)} / {items.length}
         </p>
         <p className="text-sm text-gray-500">right on the first try</p>
         {resultSlot}
@@ -136,8 +137,10 @@ export function PracticeSession({ items, onFinish, resultSlot, review = false, t
     setMissed((m) => (m.includes(item.id) ? m : [...m, item.id]));
   }
 
-  function typedSolved(_answer: string, feedback?: string) {
-    if (wrongPicks.length === 0) setFirstTry((n) => n + 1);
+  function typedSolved(_answer: string, feedback?: string, credit = 1) {
+    if (wrongPicks.length === 0) setFirstTry((n) => n + credit);
+    // Part points: the drill practises the lesson's own wording.
+    if (credit < 1) setMissed((m) => (m.includes(item.id) ? m : [...m, item.id]));
     setSaid(feedback ?? null);
     setSolved(true);
   }
@@ -313,6 +316,11 @@ export function PracticeSession({ items, onFinish, resultSlot, review = false, t
             placeholder={typing === 'complete' ? 'Type the sentence…' : 'Type the missing word…'}
             onMiss={typedMiss}
             onSolved={typedSolved}
+            aiCheck={
+              typing === 'complete'
+                ? { english: item.english, salient: answer.text.trim().split(/\s+/).length <= 3 ? [answer.text] : [], context: item.literal ? `Literally: ${item.literal}` : undefined }
+                : undefined
+            }
             autoFocus={index > 0 || round > 0}
           />
         ) : (
