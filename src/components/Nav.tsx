@@ -9,6 +9,7 @@ import { LevelBar } from './LevelBar';
 import { useAdmin } from './adminContext';
 import { setRoaming, useRoam } from '../lib/roam';
 import { openLeaderboard } from '../lib/leaderboard';
+import { isStandalone, openInstallGuide } from '../lib/install';
 
 /** Admins get an "Admin" menu (Roam on/off + Sign out) in place of the plain Sign out button. */
 function AdminMenu({ onSignOut }: { onSignOut: () => void }) {
@@ -131,6 +132,20 @@ function AdminMenu({ onSignOut }: { onSignOut: () => void }) {
             <span className="block text-sm font-medium text-gray-900">🏆 Top 10 for my level</span>
             <span className="block text-xs text-gray-500">The leaderboard learners see</span>
           </button>
+          {!isStandalone() && (
+            <button
+              type="button"
+              role="menuitem"
+              onClick={() => {
+                setOpen(false);
+                openInstallGuide();
+              }}
+              className="w-full text-left px-4 py-2.5 hover:bg-gray-50"
+            >
+              <span className="block text-sm font-medium text-gray-900">📲 Add to Home Screen</span>
+              <span className="block text-xs text-gray-500">Open Kabisa like an app</span>
+            </button>
+          )}
           <button
             type="button"
             role="menuitem"
@@ -207,6 +222,20 @@ function LearnerMenu({ onSignOut }: { onSignOut: () => void }) {
             <span className="block text-sm font-medium text-gray-900">🏆 Top 10 for my level</span>
             <span className="block text-xs text-gray-500">See where you stand</span>
           </button>
+          {!isStandalone() && (
+            <button
+              type="button"
+              role="menuitem"
+              onClick={() => {
+                setOpen(false);
+                openInstallGuide();
+              }}
+              className="w-full text-left px-4 py-2.5 hover:bg-gray-50"
+            >
+              <span className="block text-sm font-medium text-gray-900">📲 Add to Home Screen</span>
+              <span className="block text-xs text-gray-500">Open Kabisa like an app</span>
+            </button>
+          )}
           <div className="border-t border-gray-100 my-1" />
           <button
             type="button"

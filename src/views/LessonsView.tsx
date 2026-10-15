@@ -19,6 +19,7 @@ import {
 import { useRoam } from '../lib/roam';
 import { useAdmin } from '../components/adminContext';
 import { GONGA_ICON, GongaButton } from '../components/GongaPoints';
+import { InstallCard } from '../components/InstallPrompt';
 
 function RankCard() {
   const lessons = useLessons();
@@ -92,6 +93,7 @@ export function LessonsView() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 space-y-8">
       <RankCard />
+      <InstallCard />
 
       <p className="text-gray-500 text-sm -mt-2">
         Play real conversations one line at a time, then lock them in with practice and flashcards. Ten levels, from

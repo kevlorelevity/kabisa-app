@@ -2,6 +2,8 @@
 // Facebook, LinkedIn, TikTok…) and its pop-up often stays blank there. Detect
 // them so we can ask the learner to open Kabisa in their real browser instead.
 
+import { isStandalone } from './install';
+
 export type InAppInfo = { inApp: boolean; app: string | null; android: boolean; ios: boolean };
 
 const APPS: Array<[RegExp, string]> = [
@@ -17,14 +19,18 @@ const APPS: Array<[RegExp, string]> = [
   [/GSA\//i, 'the Google app'],
 ];
 
-export function detectInApp(ua: string = typeof navigator !== 'undefined' ? navigator.userAgent : ''): InAppInfo {
+export function detectInApp(
+  ua: string = typeof navigator !== 'undefined' ? navigator.userAgent : '',
+  standalone: boolean = isStandalone()
+): InAppInfo {
   const android = /Android/i.test(ua);
   const ios = /iPhone|iPad|iPod/i.test(ua);
   const hit = APPS.find(([re]) => re.test(ua));
   // Generic embedded browsers: Android WebView marks itself "; wv)"; iOS
   // WKWebView lacks the "Safari/" token that Safari and Chrome/Firefox on iOS send.
   const androidWebView = android && /; wv\)/.test(ua);
-  const iosWebView = ios && !/Safari\//.test(ua);
+  // A Kabisa added to the iPhone home screen also lacks "Safari/", so it must not count.
+  const iosWebView = ios && !/Safari\//.test(ua) && !standalone;
   const inApp = Boolean(hit) || androidWebView || iosWebView;
   return { inApp, app: hit?.[1] ?? null, android, ios };
 }
