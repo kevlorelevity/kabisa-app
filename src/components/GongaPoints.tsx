@@ -16,8 +16,7 @@ interface Prize {
   fallback: string;
 }
 
-const BLEND_AND_BITE =
-  'https://www.google.com/maps/place//@-2.3948116,38.9660141,12z?entry=ttu&g_ep=EgoyMDI2MTAxMi4wIKXMDSoASAFQAw%3D%3D';
+const BLEND_AND_BITE = 'https://maps.app.goo.gl/PSEbtp1bWvgdWKZq8';
 
 const PRIZES: Prize[] = [
   {
