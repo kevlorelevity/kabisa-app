@@ -418,6 +418,9 @@ let scopes: {
   allLessons: () => Lesson[];
   /** Adds lessons written by the AI (ai_lesson rows) to the course. */
   addLessons: (ls: Lesson[]) => void;
+  /** Grammar studio: put a published section live / take one off the air. */
+  setGrammar?: (topic: GrammarTopic) => void;
+  unsetGrammar?: (slug: string) => void;
 } | null = null;
 
 /** Called once by the content modules so this file doesn't import them (no cycles). */
@@ -437,6 +440,11 @@ export function scopeContent(type: ScopeType, id: string): unknown {
 }
 
 function applyNow(o: ContentOverride): void {
+  // A section published in the grammar studio already contains the quick edits made before it.
+  if (o.scope_type === 'grammar') {
+    const since = grammarSince.get(o.scope_id);
+    if (since && (o.created_at ?? '') < since) return;
+  }
   const target = scopeContent(o.scope_type, o.scope_id);
   if (!target) return;
   // Spans are read from the scope BEFORE the edit (the old wording must still be there).
@@ -501,6 +509,46 @@ export function addOverrides(rows: ContentOverride[]): void {
   bump();
 }
 
+// ---- grammar studio: published sections ----
+
+export interface GrammarTopicRow {
+  slug: string;
+  published: GrammarTopic | null;
+  published_at: string | null;
+  draft?: GrammarTopic | null;
+  is_new?: boolean;
+  updated_at?: string;
+}
+
+const grammarSince = new Map<string, string>();
+
+/** Lessons whose grammar focus includes / should include this section (topic.lessons is the full list). */
+function linkGrammarToLessons(slug: string, lessonIds: string[] | undefined): void {
+  if (!scopes || !lessonIds) return;
+  for (const l of scopes.allLessons()) {
+    const focus = l.grammarFocus ?? [];
+    const want = lessonIds.includes(l.id);
+    if (want && !focus.includes(slug)) l.grammarFocus = [...focus, slug];
+    if (!want && focus.includes(slug)) l.grammarFocus = focus.filter((g) => g !== slug);
+  }
+}
+
+/** Puts published grammar studio sections live (or takes unpublished ones off) and re-renders. */
+export function addGrammarTopics(rows: GrammarTopicRow[]): void {
+  if (!scopes?.setGrammar) return;
+  for (const r of rows) {
+    if (r.published) {
+      scopes.setGrammar({ ...r.published, slug: r.slug });
+      if (r.published_at) grammarSince.set(r.slug, r.published_at);
+      linkGrammarToLessons(r.slug, r.published.lessons);
+    } else {
+      scopes.unsetGrammar?.(r.slug);
+      grammarSince.delete(r.slug);
+    }
+  }
+  bump();
+}
+
 let loading: Promise<void> | null = null;
 /** Loads all active overrides once per page load. */
 export function loadOverrides(): Promise<void> {
@@ -508,7 +556,7 @@ export function loadOverrides(): Promise<void> {
   loading = (async () => {
     const supa = getSupabase();
     if (!supa) return;
-    const [ov, pt, al] = await Promise.all([
+    const [ov, pt, al, gt] = await Promise.all([
       supa
         .from('content_override')
         .select('id,created_at,scope_type,scope_id,item_id,find_text,replace_text,propagate')
@@ -520,7 +568,11 @@ export function loadOverrides(): Promise<void> {
         .eq('active', true)
         .order('created_at', { ascending: true }),
       supa.from('ai_lesson').select('id,created_at,value').eq('active', true).order('created_at', { ascending: true }),
+      supa.from('grammar_topic').select('slug,published,published_at').not('published', 'is', null),
     ]);
+    // Published grammar studio sections before the quick edits, so edits made after them apply on top.
+    if (gt.error) console.error('[grammar studio] load failed', gt.error);
+    else addGrammarTopics((gt.data ?? []) as GrammarTopicRow[]);
     if (al.error) console.error('[ai lessons] load failed', al.error);
     // New lessons first, so edits made to them afterwards find them.
     addAiLessons((al.data ?? []) as AiLessonRow[]);

@@ -2,7 +2,9 @@ import { useMemo, useState } from 'react';
 import type { GrammarTopic, Lesson } from '../types';
 import { getGrammarTopic } from '../hooks/useGrammar';
 import { useOverridesVersion } from '../lib/contentOverrides';
-import { Block } from './GrammarModal';
+import { Block, StudioLink } from './GrammarModal';
+import { EditPencil } from './EditPencil';
+import { grammarBlockTarget, grammarSummaryTarget, grammarTitleTarget } from './grammarTargets';
 import { RichText } from './RichText';
 import { useGrammarModal } from './grammarContext';
 
@@ -78,7 +80,8 @@ export function GrammarPrimer({ lesson, slugs, onStart }: { lesson: Lesson; slug
       {lesson.primer && (
         <div className="rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-950 leading-relaxed" data-testid="lesson-primer">
           <span className="font-semibold">Before you start · </span>
-          {lesson.primer.text}
+          {lesson.primer.text}{' '}
+          <EditPencil target={{ targetType: 'lesson.primer', label: 'Before you start', currentText: lesson.primer.text, lessonId: lesson.id }} />
         </div>
       )}
 
@@ -108,16 +111,22 @@ export function GrammarPrimer({ lesson, slugs, onStart }: { lesson: Lesson; slug
               {topics.length > 1 ? `Page ${at + 1} of ${topics.length}` : 'Grammar'}
               {topic.swahiliTitle ? ` · ${topic.swahiliTitle}` : ''}
             </p>
-            <h3 className="mt-0.5 text-base font-bold text-gray-900">{topic.title}</h3>
+            <h3 className="mt-0.5 text-base font-bold text-gray-900">
+              {topic.title} <EditPencil target={grammarTitleTarget(topic)} />
+            </h3>
             <p className="mt-1 text-gray-700 leading-relaxed">
-              <RichText text={topic.summary} />
+              <RichText text={topic.summary} /> <EditPencil target={grammarSummaryTarget(topic)} />
             </p>
           </div>
 
           <div className="space-y-3">
             {topic.blocks.map((b, i) => (
-              <Block key={i} block={b} />
+              <div key={i}>
+                <Block block={b} />
+                <EditPencil target={grammarBlockTarget(topic, b, i)} className="mt-1" />
+              </div>
             ))}
+            <StudioLink slug={topic.slug} />
           </div>
 
           {examples.length > 0 && (

@@ -20,6 +20,10 @@
     "api/ai-lesson.ts": {
       "includeFiles": "content/grammar/**",
       "maxDuration": 300
+    },
+    "api/ai-grammar.ts": {
+      "includeFiles": "content/grammar/**",
+      "maxDuration": 300
     }
   },
   "rewrites": [

@@ -158,6 +158,18 @@ function AdminMenu({ onSignOut }: { onSignOut: () => void }) {
             <span className="block text-sm font-medium text-gray-900">Learner progress</span>
             <span className="block text-xs text-gray-500">Who's learning, where they drop off</span>
           </button>
+          <button
+            type="button"
+            role="menuitem"
+            onClick={() => {
+              setOpen(false);
+              navigate('/admin/grammar');
+            }}
+            className="w-full text-left px-4 py-2.5 hover:bg-gray-50"
+          >
+            <span className="block text-sm font-medium text-gray-900">📘 Grammar studio</span>
+            <span className="block text-xs text-gray-500">Draft, rework and publish grammar sections</span>
+          </button>
           <div className="border-t border-gray-100 my-1" />
           <button
             type="button"

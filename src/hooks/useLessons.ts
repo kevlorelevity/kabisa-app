@@ -3,7 +3,7 @@ import type { Lesson } from '../types';
 import { personalizeLesson } from '../lib/personalize';
 import { useProfile } from './profileContext';
 import { registerContentScopes, useOverridesVersion } from '../lib/contentOverrides';
-import { getGrammarTopic } from './useGrammar';
+import { getGrammarTopic, setLiveGrammar, unsetLiveGrammar } from './useGrammar';
 import { LEVELS } from '../lib/levels';
 
 // Lessons are local-JSON only for now — this content isn't seeded into
@@ -22,6 +22,8 @@ const lessons: Lesson[] = Object.values(lessonFiles)
 registerContentScopes({
   lesson: (id) => lessons.find((l) => l.id === id),
   grammar: (slug) => getGrammarTopic(slug),
+  setGrammar: setLiveGrammar,
+  unsetGrammar: unsetLiveGrammar,
   level: (n) => LEVELS.find((l) => String(l.level) === n),
   allLessons: () => lessons,
   addLessons: (ls) => {

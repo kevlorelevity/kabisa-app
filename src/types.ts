@@ -286,6 +286,11 @@ export interface GrammarTopic {
   examples: Array<{ swahili: string; english: string; note?: string }>;
   related: string[];
   tags: string[];
+  /**
+   * Grammar studio: the lessons that teach this section (it shows under "The grammar you'll
+   * learn" there). When set it's the full list — the section is taken off lessons not in it.
+   */
+  lessons?: string[];
 }
 
 /** Gamification level (content/levels.json). */
