@@ -294,7 +294,7 @@ export function AdminProgressView() {
                   <tr className="text-left text-xs border-b border-gray-200">
                     {header('name', 'Learner')}
                     {header('level', 'Level')}
-                    {header('xp', 'XP', 'text-right')}
+                    {header('xp', 'Gonga', 'text-right')}
                     {header('lessonsPassed', 'Passed', 'text-right')}
                     {header('avgDialogue', 'Conv.', 'text-right hidden sm:table-cell')}
                     {header('avgPractice', 'Practice', 'text-right hidden sm:table-cell')}

@@ -18,6 +18,7 @@ import {
 } from '../lib/levels';
 import { useRoam } from '../lib/roam';
 import { useAdmin } from '../components/adminContext';
+import { GONGA_ICON, GongaButton } from '../components/GongaPoints';
 
 function RankCard() {
   const lessons = useLessons();
@@ -43,10 +44,12 @@ function RankCard() {
           <h1 className="text-xl sm:text-2xl font-bold text-gray-900 leading-tight">{info.name}</h1>
           <p className="text-sm text-gray-600 italic mt-0.5">{info.tagline}</p>
         </div>
-        <div className="shrink-0 text-right">
-          <p className="text-lg font-bold text-amber-700">⚡ {xp.toLocaleString()}</p>
-          <p className="text-xs text-gray-400">XP</p>
-        </div>
+        <GongaButton points={xp} className="shrink-0 text-right rounded-lg px-2 py-1 -mr-2 -mt-1 hover:bg-amber-50">
+          <p className="text-lg font-bold text-amber-700">
+            {GONGA_ICON} {xp.toLocaleString()}
+          </p>
+          <p className="text-xs text-gray-400 underline decoration-dotted">Gonga points</p>
+        </GongaButton>
       </div>
 
       {!done && (

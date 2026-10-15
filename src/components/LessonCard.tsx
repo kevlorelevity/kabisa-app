@@ -26,7 +26,7 @@ interface LessonCardProps {
   locked: boolean;
   /** Title of the lesson that must be passed first (for the locked message). */
   previousTitle?: string;
-  /** XP earned so far on this lesson, and the most it can earn (its share of the level). */
+  /** Gonga points (internally XP) earned so far on this lesson, and the most it can earn (its share of the level). */
   xp?: number;
   maxXp?: number;
   /** Added to a level this learner had already cleared: open, never required. */
@@ -70,7 +70,7 @@ export function LessonCard({ lesson, passed, locked, previousTitle, xp = 0, maxX
         )}
         {!locked && xp > 0 && (
           <span className="text-xs px-2 py-0.5 rounded-full bg-amber-50 text-amber-800">
-            ⚡ {xp}/{maxXp} XP
+            🤦 {xp}/{maxXp} Gonga
           </span>
         )}
       </div>

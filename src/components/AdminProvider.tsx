@@ -818,7 +818,7 @@ function NewLessonModal({ level, onClose, onSubmit }: { level: number; onClose: 
           under Admin → Activity.
         </li>
         <li>
-          The level stays worth {total ? `${total} XP` : 'the same XP'}: with {count + 1} lessons each one is worth a bit less.
+          The level stays worth {total ? `${total.toLocaleString()} Gonga points` : 'the same Gonga points'}: with {count + 1} lessons each one is worth a bit less.
         </li>
         <li>Learners who already cleared this level aren’t sent back — for them it shows as ✨ New · optional.</li>
       </ul>
