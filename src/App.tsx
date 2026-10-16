@@ -9,6 +9,7 @@ import { GrammarView } from './views/GrammarView';
 import { GrammarProvider } from './components/GrammarProvider';
 import { ProfileProvider } from './hooks/ProfileProvider';
 import { OnboardingGate } from './components/OnboardingGate';
+import { TermsView } from './views/TermsView';
 import { ProfileView } from './views/ProfileView';
 import { AdminProgressView } from './views/AdminProgressView';
 import { AdminGrammarView } from './views/AdminGrammarView';
@@ -16,7 +17,7 @@ import { FeedbackButton } from './components/FeedbackButton';
 import { AdminProvider } from './components/AdminProvider';
 import { AuthProvider } from './hooks/AuthProvider';
 import { SignInGate } from './components/SignInGate';
-import { useEffect } from 'react';
+import { useEffect, type ReactNode } from 'react';
 import { loadOverrides } from './lib/contentOverrides';
 import { ProgressSync } from './components/ProgressSync';
 import { LeaderboardHost } from './components/LeaderboardHost';
@@ -66,21 +67,30 @@ function AppLayout() {
   );
 }
 
+/** Pages anyone can open without signing in (the Terms, linked from sign-up and the landing page). */
+function PublicPages({ children }: { children: ReactNode }) {
+  const { pathname } = useLocation();
+  if (pathname === '/terms') return <TermsView />;
+  return <>{children}</>;
+}
+
 export function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
-        <SignInGate>
-          <ProfileProvider>
-            <OnboardingGate>
-              <AdminProvider>
-                <GrammarProvider>
-                  <AppLayout />
-                </GrammarProvider>
-              </AdminProvider>
-            </OnboardingGate>
-          </ProfileProvider>
-        </SignInGate>
+        <PublicPages>
+          <SignInGate>
+            <ProfileProvider>
+                <OnboardingGate>
+                  <AdminProvider>
+                    <GrammarProvider>
+                      <AppLayout />
+                    </GrammarProvider>
+                  </AdminProvider>
+                </OnboardingGate>
+            </ProfileProvider>
+          </SignInGate>
+        </PublicPages>
       </BrowserRouter>
     </AuthProvider>
   );

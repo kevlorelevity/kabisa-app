@@ -21,7 +21,7 @@ function useScoresVersion(): number {
   return v;
 }
 
-/** Always-visible strip under the nav: current level and Gonga points towards the next one. */
+/** Always-visible strip under the nav: current level and gonga points towards the next one. */
 export function LevelBar() {
   const lessons = useLessons();
   const scoresV = useScoresVersion();
@@ -39,8 +39,8 @@ export function LevelBar() {
   const pct = done ? 100 : required ? Math.round((earned / required) * 100) : 0;
   const next = lvl < MAX_LEVEL ? lvl + 1 : null;
   const label = done
-    ? `Course complete · ${totalXp(lessons).toLocaleString()} Gonga points`
-    : `${earned} / ${required} Gonga${next ? ` to Level ${next}` : ' to finish'}`;
+    ? `Course complete · ${totalXp(lessons).toLocaleString()} gonga points`
+    : `${earned} / ${required} gonga pts${next ? ` to Level ${next}` : ' to finish'}`;
 
   return (
     <div className="border-t border-gray-100 bg-green-50/60 hover:bg-green-50">

@@ -97,7 +97,7 @@ export function WelcomeForm({ initialName = '', initialNationality = '', initial
 
 const GENDERS: Array<{ value: Gender; label: string; hint: string }> = [
   { value: 'female', label: 'Woman', hint: 'People will call you mama, dada or sista.' },
-  { value: 'male', label: 'Man', hint: 'People will call you boss or bwana.' },
+  { value: 'male', label: 'Man', hint: 'People will call you boss, bwana, mkubwa, chief…' },
   { value: 'unspecified', label: 'Prefer not to say', hint: 'People will call you boss — Kenyans use it for anyone.' },
 ];
 

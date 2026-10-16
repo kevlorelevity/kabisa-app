@@ -41,8 +41,8 @@
       "id": "636304d8-fa4c-576f-89a9-fabf9811560a",
       "speaker": "Kinyozi",
       "role": "auto",
-      "swahili": "Karibu kwa kinyozi, boss! Kama kawaida?",
-      "english": "Welcome to the barber's, boss! The usual?",
+      "swahili": "Karibu kwa kinyozi, mzitu! Kama kawaida?",
+      "english": "Welcome to the barber's, big man! The usual?",
       "words": [
         {
           "text": "Karibu",
@@ -53,10 +53,10 @@
           "gloss": "\"Barber / barbershop.\""
         },
         {
-          "text": "boss",
-          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
+          "text": "mzitu",
+          "gloss": "\"Mzitu\" — Nairobi street slang for a \"big man\" / heavyweight. A playful way to address a man — you'll hear it from matatu crews and at the kinyozi.",
           "grammar": [
-            "noun-classes-mwa-nn"
+            "greetings"
           ]
         },
         {
@@ -1122,6 +1122,14 @@
       "english": "You look sharp!",
       "exampleContext": "",
       "partOfSpeech": "phrase"
+    },
+    {
+      "id": "e473a435-9e8e-53ff-9fc5-c0016b82aa4e",
+      "swahili": "mzitu",
+      "english": "big man — form of address (street slang)",
+      "exampleContext": "Playful, very city. Matatu crews and barbers use it.",
+      "partOfSpeech": "phrase",
+      "note": "Ways to call a man \"boss\" in town: boss, mdosi, kiongozi, mzitu, mkubwa, chief. They're much less common in the countryside. For a woman: mama, dada or sista."
     }
   ],
   "practice": [
@@ -1584,6 +1592,34 @@
           "note": "That's the Sanifu (standard) form — Kenyans say mtaa yetu."
         }
       ]
+    },
+    {
+      "id": "4b2fbd7c-0ab2-5f55-ba77-5b8826d812b0",
+      "mode": "translate",
+      "english": "Welcome to the barber, big man!",
+      "before": "Karibu kwa kinyozi, ",
+      "after": "!",
+      "options": [
+        {
+          "text": "mzitu",
+          "correct": true
+        },
+        {
+          "text": "mtoto",
+          "correct": false,
+          "feedback": "mtoto = child."
+        },
+        {
+          "text": "mgeni",
+          "correct": false,
+          "feedback": "mgeni = visitor / stranger."
+        }
+      ],
+      "explanation": "Mzitu = \"big man\" — barbershop banter.",
+      "grammar": [
+        "greetings"
+      ],
+      "note": "Ways to call a man \"boss\" in town: boss, mdosi, kiongozi, mzitu, mkubwa, chief. They're much less common in the countryside. For a woman: mama, dada or sista."
     }
   ]
 }

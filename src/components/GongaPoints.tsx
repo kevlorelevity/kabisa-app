@@ -5,7 +5,7 @@ import { useEffect, useRef, useState, type ReactNode } from 'react';
 
 /** Skin-tone-neutral face palm (no Fitzpatrick modifier). */
 export const GONGA_ICON = '🤦';
-export const GONGA_LABEL = 'Gonga points';
+export const GONGA_LABEL = 'gonga points';
 
 interface Prize {
   rank: string;
@@ -18,7 +18,8 @@ interface Prize {
 
 const BLEND_AND_BITE = 'https://maps.app.goo.gl/PSEbtp1bWvgdWKZq8';
 
-const PRIZES: Prize[] = [
+// eslint-disable-next-line react-refresh/only-export-components
+export const PRIZES: Prize[] = [
   {
     rank: '🥇 Top prize',
     points: 100_000,
@@ -53,7 +54,7 @@ const PRIZES: Prize[] = [
   },
 ];
 
-function PrizeImage({ src, fallback }: { src: string; fallback: string }) {
+export function PrizeImage({ src, fallback }: { src: string; fallback: string }) {
   const [broken, setBroken] = useState(false);
   if (broken)
     return (
@@ -66,7 +67,7 @@ function PrizeImage({ src, fallback }: { src: string; fallback: string }) {
   );
 }
 
-export function GongaModal({ points, onClose }: { points: number; onClose: () => void }) {
+export function GongaModal({ points, onClose }: { points?: number; onClose: () => void }) {
   const [checkout, setCheckout] = useState<string | null>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
 
@@ -96,15 +97,15 @@ export function GongaModal({ points, onClose }: { points: number; onClose: () =>
         <div className="flex items-start gap-2 px-5 pt-4 pb-3 border-b border-gray-100">
           <div className="flex-1 min-w-0">
             <h2 id="gonga-title" className="text-lg font-bold text-gray-900">
-              {GONGA_ICON} Gonga points
+              {GONGA_ICON} gonga points
             </h2>
-            <p className="text-sm font-semibold text-amber-700 tabular-nums">You have {points.toLocaleString()}</p>
+            {points !== undefined && <p className="text-sm font-semibold text-amber-700 tabular-nums">You have {points.toLocaleString()}</p>}
           </div>
           <button
             ref={closeRef}
             type="button"
             onClick={onClose}
-            aria-label="Close Gonga points"
+            aria-label="Close gonga points"
             className="shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-gray-400 hover:text-gray-700 hover:bg-gray-100"
           >
             ✕
@@ -112,7 +113,7 @@ export function GongaModal({ points, onClose }: { points: number; onClose: () =>
         </div>
         <div className="overflow-y-auto px-5 py-4 space-y-5">
           <p className="text-gray-800">
-            With every lesson you complete you accrue valuable Gonga points. They work the same way as the point system of a
+            With every lesson you complete you accrue valuable gonga points. They work the same way as the point system of a
             somewhat known Kenyan telco in the sense that if you want to redeem them, the check out{' '}
             <strong>SIMPLY WILL NOT WORK.</strong>
           </p>
@@ -161,7 +162,7 @@ export function GongaButton({ points, className, children }: { points: number; c
           e.stopPropagation();
           setOpen(true);
         }}
-        aria-label={`${points.toLocaleString()} Gonga points — what are these?`}
+        aria-label={`${points.toLocaleString()} gonga points — what are these?`}
         className={className}
       >
         {children}

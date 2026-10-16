@@ -38,7 +38,7 @@
       "id": "4490ea6f-a3f6-5a29-be90-5a2c84c74bdb",
       "speaker": "Mgeni",
       "role": "user",
-      "swahili": "Samahani, boss. Stage ya matatu iko wapi?",
+      "swahili": "Samahani, kiongozi. Stage ya matatu iko wapi?",
       "english": "Excuse me, boss. Where's the matatu stage?",
       "words": [
         {
@@ -46,10 +46,10 @@
           "gloss": "excuse me / sorry (apology)"
         },
         {
-          "text": "boss",
-          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
+          "text": "kiongozi",
+          "gloss": "\"Kiongozi\" — literally \"leader\" (also \"guide\"). In town it's a respectful, friendly way to address a man, like \"chief\". Plural: viongozi.",
           "grammar": [
-            "noun-classes-mwa-nn"
+            "greetings"
           ]
         },
         {
@@ -125,15 +125,15 @@
       ],
       "options": [
         {
-          "swahili": "Samahani, boss. Stage ya matatu iko wapi?",
+          "swahili": "Samahani, kiongozi. Stage ya matatu iko wapi?",
           "correct": true
         },
         {
-          "swahili": "Samahani, boss. Stage ya matatu iko lini?",
+          "swahili": "Samahani, kiongozi. Stage ya matatu iko lini?",
           "correct": false
         },
         {
-          "swahili": "Samahani, boss. Stage ya matatu ni nani?",
+          "swahili": "Samahani, kiongozi. Stage ya matatu ni nani?",
           "correct": false
         }
       ]
@@ -1149,6 +1149,14 @@
         "one": "town (the CBD)",
         "many": null
       }
+    },
+    {
+      "id": "a026965c-14d0-5c10-9aff-7761bc1eaa34",
+      "swahili": "kiongozi",
+      "english": "boss, chief — form of address (literally \"leader\")",
+      "exampleContext": "\"Samahani, kiongozi.\" A respectful way to stop a man in the street.",
+      "partOfSpeech": "phrase",
+      "note": "Ways to call a man \"boss\" in town: boss, mdosi, kiongozi, mzitu, mkubwa, chief. They're much less common in the countryside. For a woman: mama, dada or sista."
     }
   ],
   "practice": [
@@ -1594,6 +1602,34 @@
       "grammar": [
         "present-na"
       ]
+    },
+    {
+      "id": "06097a53-e4be-5d58-885f-1b4cfe44f05a",
+      "mode": "translate",
+      "english": "Excuse me, boss (literally 'leader'). Where's the matatu stage?",
+      "before": "Samahani, ",
+      "after": ". Stage ya matatu iko wapi?",
+      "options": [
+        {
+          "text": "kiongozi",
+          "correct": true
+        },
+        {
+          "text": "mgeni",
+          "correct": false,
+          "feedback": "mgeni = visitor / stranger — that's you!"
+        },
+        {
+          "text": "mtoto",
+          "correct": false,
+          "feedback": "mtoto = child."
+        }
+      ],
+      "explanation": "Kiongozi = leader. In town it's a polite way to stop a man and ask for help.",
+      "grammar": [
+        "greetings"
+      ],
+      "note": "Ways to call a man \"boss\" in town: boss, mdosi, kiongozi, mzitu, mkubwa, chief. They're much less common in the countryside. For a woman: mama, dada or sista."
     }
   ]
 }

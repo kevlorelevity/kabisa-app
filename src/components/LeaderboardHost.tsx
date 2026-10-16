@@ -41,7 +41,7 @@ function EntryRow({ e }: { e: LeaderboardEntry }) {
         {e.isMe && <span className="ml-1 text-xs font-medium text-green-700">(you)</span>}
       </span>
       <span className="tabular-nums text-sm font-medium text-gray-900">
-        {e.xp.toLocaleString()} <span className="text-xs font-normal text-gray-400">Gonga</span>
+        {e.xp.toLocaleString()} <span className="text-xs font-normal text-gray-400">gonga pts</span>
       </span>
     </li>
   );

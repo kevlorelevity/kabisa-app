@@ -70,7 +70,7 @@ export function LessonCard({ lesson, passed, locked, previousTitle, xp = 0, maxX
         )}
         {!locked && xp > 0 && (
           <span className="text-xs px-2 py-0.5 rounded-full bg-amber-50 text-amber-800">
-            🤦 {xp}/{maxXp} Gonga
+            🤦 {xp}/{maxXp} gonga pts
           </span>
         )}
       </div>

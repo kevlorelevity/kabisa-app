@@ -65,7 +65,21 @@ describe('addressing a woman', () => {
     const uber = personalizeLesson(find('uber-nairobi'), her);
     expect(uber.turns[0].swahili).toBe('Niaje boss?');
     const m = personalizeLesson(find('clothes-colours'), him);
-    expect(m.turns[0].swahili).toBe('Karibu, boss! Unatafuta nini leo?');
+    expect(m.turns[0].swahili).toBe('Karibu, mkubwa! Unatafuta nini leo?');
+  });
+
+  it('the city terms (mdosi, kiongozi, mzitu, mkubwa, chief) become mama / dada / sista too', () => {
+    const matatu = personalizeLesson(find('matatu-to-town'), her);
+    expect(matatu.turns[6].swahili).toBe('Saa hii ni rush hour, sista. Bei inapanda.');
+    expect(matatu.turns[6].english).toBe("Right now it's rush hour, sis. The price goes up.");
+    const petrol = personalizeLesson(find('petrol-station'), her);
+    expect(petrol.turns[0].swahili.startsWith('Karibu, mama!')).toBe(true);
+    expect(petrol.turns[0].english.startsWith('Welcome, madam!')).toBe(true);
+  });
+
+  it('leaves mkubwa / kiongozi alone when they mean "big" / "leader"', () => {
+    const fam = personalizeLesson(find('family-visit'), her);
+    expect(JSON.stringify(fam.turns)).toContain('Kaka yangu mkubwa');
   });
 
   it('keeps glossed words in sync with their line', () => {

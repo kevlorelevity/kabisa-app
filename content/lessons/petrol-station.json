@@ -44,18 +44,18 @@
       "id": "8d39c8ec-25b2-5cb5-9cc4-ccb5d985755c",
       "speaker": "Mhudumu",
       "role": "auto",
-      "swahili": "Karibu, boss! Nijaze tanki, ama niweke ya ngapi?",
-      "english": "Welcome, boss! Shall I fill the tank, or how much shall I put in?",
+      "swahili": "Karibu, chief! Nijaze tanki, ama niweke ya ngapi?",
+      "english": "Welcome, chief! Shall I fill the tank, or how much shall I put in?",
       "words": [
         {
           "text": "Karibu",
           "gloss": "near / welcome / almost"
         },
         {
-          "text": "boss",
-          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
+          "text": "chief",
+          "gloss": "\"Chief\" — English loanword (said \"chif\"). A friendly, everyday way to address a man in town, like \"boss\".",
           "grammar": [
-            "noun-classes-mwa-nn"
+            "greetings"
           ]
         },
         {
@@ -1361,6 +1361,14 @@
         "one": "bonnet",
         "many": "bonnets"
       }
+    },
+    {
+      "id": "b4fb478d-ef76-5c76-bd57-b4e1fd14f76b",
+      "swahili": "chief",
+      "english": "chief, boss — form of address",
+      "exampleContext": "English loanword, very common in Nairobi: \"Karibu, chief!\"",
+      "partOfSpeech": "phrase",
+      "note": "Ways to call a man \"boss\" in town: boss, mdosi, kiongozi, mzitu, mkubwa, chief. They're much less common in the countryside. For a woman: mama, dada or sista."
     }
   ],
   "practice": [
@@ -1879,6 +1887,34 @@
         "hortative-commands",
         "polite-requests"
       ]
+    },
+    {
+      "id": "2b0a49df-c00f-5a02-9628-aa9a36547e4a",
+      "mode": "translate",
+      "english": "Welcome, chief!",
+      "before": "Karibu, ",
+      "after": "!",
+      "options": [
+        {
+          "text": "chief",
+          "correct": true
+        },
+        {
+          "text": "mtoto",
+          "correct": false,
+          "feedback": "mtoto = child."
+        },
+        {
+          "text": "dada",
+          "correct": false,
+          "feedback": "dada = sister — for a woman."
+        }
+      ],
+      "explanation": "Chief = a friendly \"boss\" — you'll hear it at every petrol station.",
+      "grammar": [
+        "greetings"
+      ],
+      "note": "Ways to call a man \"boss\" in town: boss, mdosi, kiongozi, mzitu, mkubwa, chief. They're much less common in the countryside. For a woman: mama, dada or sista."
     }
   ],
   "primer": {

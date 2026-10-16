@@ -500,7 +500,7 @@
       "id": "5665d965-fd05-4a3f-8da4-bd7119764079",
       "speaker": "Dereva",
       "role": "auto",
-      "swahili": "Ni mia tano, boss.",
+      "swahili": "Ni mia tano, mdosi.",
       "english": "It's five hundred, boss.",
       "words": [
         {
@@ -518,8 +518,11 @@
           ]
         },
         {
-          "text": "boss",
-          "gloss": "A friendly, informal way to address someone."
+          "text": "mdosi",
+          "gloss": "\"Mdosi\" — Sheng for \"boss\": a man with money or status. Drivers, sellers and fundis use it to flatter a customer. Plural: wadosi.",
+          "grammar": [
+            "greetings"
+          ]
         }
       ]
     }
@@ -617,6 +620,14 @@
       "english": "What's the price?",
       "exampleContext": "Ngapi = how much / how many",
       "partOfSpeech": "phrase"
+    },
+    {
+      "id": "f8c327c9-6cba-5d53-80b7-320fcd9cf1b7",
+      "swahili": "mdosi",
+      "english": "boss (a man with money) — form of address",
+      "exampleContext": "Sheng. \"Ni mia tano, mdosi.\" Drivers and sellers flatter a customer with it.",
+      "partOfSpeech": "phrase",
+      "note": "Ways to call a man \"boss\" in town: boss, mdosi, kiongozi, mzitu, mkubwa, chief. They're much less common in the countryside. For a woman: mama, dada or sista."
     }
   ],
   "practice": [
@@ -1230,6 +1241,34 @@
         }
       ],
       "explanation": "Sawa = okay. The most useful word in any matatu or Uber."
+    },
+    {
+      "id": "76e0ab0c-ffb3-562c-9073-9fcd2ab7ef73",
+      "mode": "translate",
+      "english": "It's five hundred, boss (a man with money).",
+      "before": "Ni mia tano, ",
+      "after": ".",
+      "options": [
+        {
+          "text": "mdosi",
+          "correct": true
+        },
+        {
+          "text": "mdogo",
+          "correct": false,
+          "feedback": "mdogo = small / young one — not a compliment!"
+        },
+        {
+          "text": "mama",
+          "correct": false,
+          "feedback": "mama = how you address a woman."
+        }
+      ],
+      "explanation": "Mdosi = Sheng for \"boss\", a man with money. Drivers love it.",
+      "grammar": [
+        "greetings"
+      ],
+      "note": "Ways to call a man \"boss\" in town: boss, mdosi, kiongozi, mzitu, mkubwa, chief. They're much less common in the countryside. For a woman: mama, dada or sista."
     }
   ]
 }

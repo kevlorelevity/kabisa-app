@@ -1,6 +1,9 @@
 import { SignInButton } from './SignInButton';
 import { BetaSticker } from './BetaSticker';
 import { LEVELS } from '../lib/levels';
+import { useState } from 'react';
+import { takeDeletedFlag } from '../lib/consent';
+import { GONGA_ICON, GongaModal, PRIZES, PrizeImage } from './GongaPoints';
 
 function FlagStripe() {
   return (
@@ -69,9 +72,16 @@ const FEATURES = [
 
 /** Signed-out landing page. */
 export function Landing() {
+  const [deleted] = useState(takeDeletedFlag);
+  const [prizes, setPrizes] = useState(false);
   return (
     <div className="min-h-screen bg-[#f6f4ee] text-gray-900">
       <FlagStripe />
+      {deleted && (
+        <p className="bg-gray-900 px-4 py-2 text-center text-sm text-white" role="status">
+          Your Kabisa account has been deleted. Kwaheri — you’re welcome back any time.
+        </p>
+      )}
       <header className="mx-auto flex max-w-5xl items-center px-5 py-5">
         <span className="text-xl font-extrabold tracking-tight text-green-800">Kabisa</span>
       </header>
@@ -109,6 +119,38 @@ export function Landing() {
           ))}
         </section>
 
+        <section className="mt-12 rounded-2xl border border-amber-200 bg-amber-50/60 p-6" data-testid="landing-gonga">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <h2 className="text-sm font-semibold uppercase tracking-wide text-amber-700">{GONGA_ICON} gonga points</h2>
+              <p className="mt-2 max-w-xl text-gray-700">
+                Every lesson you finish earns you valuable gonga points. Climb the leaderboard, level up — and dream about the prizes.
+                Redeeming works exactly like that other points scheme you know: the checkout <strong>simply will not work</strong>.
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={() => setPrizes(true)}
+              className="shrink-0 self-start rounded-full border border-amber-300 bg-white px-4 py-1.5 text-sm font-semibold text-amber-800 hover:bg-amber-100 sm:self-auto"
+            >
+              Try to redeem →
+            </button>
+          </div>
+          <ul className="mt-5 grid gap-4 sm:grid-cols-3">
+            {PRIZES.map((p) => (
+              <li key={p.title} className="rounded-xl border border-amber-100 bg-white p-3">
+                <PrizeImage src={p.image} fallback={p.fallback} />
+                <p className="mt-2 text-xs font-bold uppercase tracking-widest text-green-700">{p.rank}</p>
+                <p className="text-sm font-semibold tabular-nums text-amber-700">
+                  {GONGA_ICON} {p.points.toLocaleString()} gonga pts
+                </p>
+                <p className="font-semibold leading-snug text-gray-900">{p.title}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+        {prizes && <GongaModal onClose={() => setPrizes(false)} />}
+
         <section className="mt-12 rounded-2xl border border-green-200 bg-white p-6">
           <h2 className="text-sm font-semibold uppercase tracking-wide text-green-700">Your path</h2>
           <ol className="mt-4 grid grid-cols-2 gap-x-4 gap-y-3 sm:grid-cols-5">
@@ -126,11 +168,19 @@ export function Landing() {
           </ol>
         </section>
 
-        <footer className="mt-12 text-center text-xs text-gray-400">
-          Beta — lessons are still being reviewed and improved. Spot something off?{' '}
-          <a href="mailto:feedback@kabisa.app" className="underline hover:text-gray-600">
-            feedback@kabisa.app
-          </a>
+        <footer className="mt-12 text-center text-xs text-gray-400 space-y-1">
+          <p>
+            Beta — lessons are still being reviewed and improved. Spot something off?{' '}
+            <a href="mailto:feedback@kabisa.app" className="underline hover:text-gray-600">
+              feedback@kabisa.app
+            </a>
+          </p>
+          <p>
+            © Ol Doinyo Technologies Ltd, Kenya ·{' '}
+            <a href="/terms" className="underline hover:text-gray-600">
+              Terms &amp; Privacy
+            </a>
+          </p>
         </footer>
       </main>
     </div>

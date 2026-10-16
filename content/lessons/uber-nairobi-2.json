@@ -115,7 +115,7 @@
           "correct": true
         },
         {
-          "swahili": "Jina yako ni nani boss?",
+          "swahili": "Jina yako ni nani, chief?",
           "correct": false
         },
         {
@@ -141,8 +141,8 @@
       "id": "08b51da1-718d-4c79-a4d2-9d252ae94f7f",
       "speaker": "Abiria",
       "role": "user",
-      "swahili": "Jina yako ni nani boss?",
-      "english": "What's your name, boss?",
+      "swahili": "Jina yako ni nani, chief?",
+      "english": "What's your name, chief?",
       "words": [
         {
           "text": "Jina",
@@ -204,20 +204,20 @@
           ]
         },
         {
-          "text": "boss",
-          "gloss": "Friendly, informal form of address.",
+          "text": "chief",
+          "gloss": "\"Chief\" — English loanword (said \"chif\"). A friendly, everyday way to address a man in town, like \"boss\".",
           "grammar": [
-            "noun-classes-mwa-nn"
+            "greetings"
           ]
         }
       ],
       "options": [
         {
-          "swahili": "Jina yako ni nani boss?",
+          "swahili": "Jina yako ni nani, chief?",
           "correct": true
         },
         {
-          "swahili": "Jina yangu ni nani boss?",
+          "swahili": "Jina yangu ni nani, chief?",
           "correct": false
         },
         {
@@ -958,6 +958,14 @@
       "english": "Goodbye",
       "exampleContext": "Said by both sides when you part",
       "partOfSpeech": "phrase"
+    },
+    {
+      "id": "2bddb53f-d8fd-5726-9ba4-e920af95542a",
+      "swahili": "chief",
+      "english": "chief, boss — form of address",
+      "exampleContext": "English loanword, very common in Nairobi: \"Karibu, chief!\"",
+      "partOfSpeech": "phrase",
+      "note": "Ways to call a man \"boss\" in town: boss, mdosi, kiongozi, mzitu, mkubwa, chief. They're much less common in the countryside. For a woman: mama, dada or sista."
     }
   ],
   "practice": [
@@ -1756,6 +1764,34 @@
         }
       ],
       "explanation": "Hapa = here. Hapa Nairobi = here in Nairobi."
+    },
+    {
+      "id": "519d4949-2774-58ee-8d59-18c5d02fb730",
+      "mode": "translate",
+      "english": "What's your name, chief?",
+      "before": "Jina yako ni nani, ",
+      "after": "?",
+      "options": [
+        {
+          "text": "chief",
+          "correct": true
+        },
+        {
+          "text": "dada",
+          "correct": false,
+          "feedback": "dada = sister — for a woman."
+        },
+        {
+          "text": "mwalimu",
+          "correct": false,
+          "feedback": "mwalimu = teacher."
+        }
+      ],
+      "explanation": "Chief = the English word, used all over Nairobi as a friendly \"boss\".",
+      "grammar": [
+        "greetings"
+      ],
+      "note": "Ways to call a man \"boss\" in town: boss, mdosi, kiongozi, mzitu, mkubwa, chief. They're much less common in the countryside. For a woman: mama, dada or sista."
     }
   ]
 }

@@ -13,7 +13,7 @@ export interface Persona {
   countrySw: string;
   countryEn: string;
   city: string;
-  /** 'female': the other speakers call the learner mama / dada / sista instead of boss / bwana. */
+  /** 'female': the other speakers call the learner mama / dada / sista instead of boss / bwana / mdosi / chief…. */
   gender?: Gender;
 }
 
@@ -74,7 +74,8 @@ function walk<T>(value: T, p: Persona, key: string | null): T {
 
 // -------- Addressing a woman --------
 //
-// The scripts have the other speakers call the learner "boss" or "bwana". For a woman that
+// The scripts have the other speakers call the learner "boss" or "bwana" — or one of the
+// city variants mdosi, kiongozi, mzitu, mkubwa, chief. For a woman that
 // becomes mama (sellers, fundis, attendants — respectful, any age), dada (drivers, a passer-by
 // — "sister") or sista (the makanga, football banter — street-friendly). Only the other
 // speakers' lines change: when the learner says "boss" they're addressing someone else.
@@ -94,10 +95,15 @@ export function femaleAddressFor(speaker: string): FemaleAddress {
   return 'mama';
 }
 
-const SW_MALE = /\b(boss|bwana)\b/gi;
-const EN_MALE = /\b(boss|sir)\b/gi;
+// The city terms (mdosi, kiongozi, mzitu, mkubwa, chief) also have everyday meanings —
+// "kaka yangu mkubwa" (my big brother), "kiongozi mzuri" (a good leader) — so they only count
+// as a form of address right after a comma and before punctuation: "Karibu, mkubwa!".
+const CITY = 'mdosi|kiongozi|mzitu|mkubwa|chief';
+const SW_MALE = new RegExp(`\\b(boss|bwana)\\b|(?<=,\\s*)(${CITY})(?=\\s*[,.!?…])`, 'gi');
+const EN_MALE = /\b(boss|sir|chief|big man)\b/gi;
 /** Non-global twin for .test() — a global regex keeps lastIndex between calls. */
-const HAS_MALE = /\b(boss|bwana)\b/i;
+const HAS_MALE = new RegExp(SW_MALE.source, 'i');
+const SOLO_MALE = new RegExp(`^(boss|bwana|${CITY})$`, 'i');
 
 function keepCase(found: string, word: string): string {
   return found[0] === found[0].toUpperCase() ? word[0].toUpperCase() + word.slice(1) : word;
@@ -109,6 +115,8 @@ export function addressWoman(turn: DialogueTurn): DialogueTurn {
   const a = femaleAddressFor(turn.speaker);
   const sw = (s: string) => s.replace(SW_MALE, (m) => keepCase(m, a));
   const en = (s: string) => s.replace(EN_MALE, (m) => keepCase(m, ADDRESS_EN[a]));
+  // Which words this line really uses to address the learner (so "mti mkubwa" in the same line stays put).
+  const used = new Set((turn.swahili.match(SW_MALE) ?? []).map((m) => m.toLowerCase()));
   return {
     ...turn,
     swahili: sw(turn.swahili),
@@ -116,11 +124,13 @@ export function addressWoman(turn: DialogueTurn): DialogueTurn {
     ...(turn.literal ? { literal: en(turn.literal) } : {}),
     ...(turn.sanifu ? { sanifu: sw(turn.sanifu) } : {}),
     words: turn.words.map((w) => {
-      if (!HAS_MALE.test(w.text)) return w;
-      const solo = /^(boss|bwana)$/i.test(w.text);
+      const solo = SOLO_MALE.test(w.text) && used.has(w.text.toLowerCase());
+      if (!solo && !HAS_MALE.test(w.text)) return w;
       if (!solo) return { ...w, text: sw(w.text), gloss: en(w.gloss) };
+      // A lone glossed word has no comma around it, so swap it directly.
+      const swapped = keepCase(w.text, a);
       const { grammar: _drop, ...rest } = w; // eslint-disable-line @typescript-eslint/no-unused-vars
-      return { ...rest, text: sw(w.text), gloss: ADDRESS_GLOSS[a] };
+      return { ...rest, text: swapped, gloss: ADDRESS_GLOSS[a] };
     }),
   };
 }

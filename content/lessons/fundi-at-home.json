@@ -676,7 +676,7 @@
       "id": "7448895c-c81f-57f1-ac95-c3e78c7f75b8",
       "speaker": "Fundi",
       "role": "auto",
-      "swahili": "Sawa, boss. Lakini usiguse stima ya bafu wakati ninafanya kazi.",
+      "swahili": "Sawa, mdosi. Lakini usiguse stima ya bafu wakati ninafanya kazi.",
       "english": "Okay, boss. But don't touch the bathroom electricity while I'm working.",
       "words": [
         {
@@ -684,10 +684,10 @@
           "gloss": "okay / alright (lit. \"equal\")"
         },
         {
-          "text": "boss",
-          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
+          "text": "mdosi",
+          "gloss": "\"Mdosi\" — Sheng for \"boss\": a man with money or status. Drivers, sellers and fundis use it to flatter a customer. Plural: wadosi.",
           "grammar": [
-            "noun-classes-mwa-nn"
+            "greetings"
           ]
         },
         {
@@ -1139,7 +1139,7 @@
       "id": "fbd5baaa-c581-5dcc-b73a-bcf9cacefae6",
       "speaker": "Fundi",
       "role": "auto",
-      "swahili": "Asante sana, boss. Chai ni sawa kabisa!",
+      "swahili": "Asante sana, mkubwa. Chai ni sawa kabisa!",
       "english": "Thank you very much, boss. Tea is just perfect!",
       "words": [
         {
@@ -1147,10 +1147,10 @@
           "gloss": "thank you very much"
         },
         {
-          "text": "boss",
-          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
+          "text": "mkubwa",
+          "gloss": "\"Mkubwa\" — literally \"big one\" (from -kubwa, big). Calling a man mkubwa shows respect, like \"boss\" or \"sir\" — sellers use it, and it's good for someone older than you. Plural: wakubwa.",
           "grammar": [
-            "noun-classes-mwa-nn"
+            "greetings"
           ]
         },
         {
@@ -1282,6 +1282,22 @@
       "english": "Shall I give you tea?",
       "exampleContext": "Offering tea to a fundi is good manners",
       "partOfSpeech": "phrase"
+    },
+    {
+      "id": "bf5a696b-3f24-5204-83df-70a61a0830a3",
+      "swahili": "mdosi",
+      "english": "boss (a man with money) — form of address",
+      "exampleContext": "Sheng. \"Ni mia tano, mdosi.\" Drivers and sellers flatter a customer with it.",
+      "partOfSpeech": "phrase",
+      "note": "Ways to call a man \"boss\" in town: boss, mdosi, kiongozi, mzitu, mkubwa, chief. They're much less common in the countryside. For a woman: mama, dada or sista."
+    },
+    {
+      "id": "dbe5ffcb-0059-5ec8-bde3-b46e1a0fce88",
+      "swahili": "mkubwa",
+      "english": "boss, sir — form of address (literally \"big one\")",
+      "exampleContext": "Respectful — sellers use it, and it suits someone older than you.",
+      "partOfSpeech": "phrase",
+      "note": "Ways to call a man \"boss\" in town: boss, mdosi, kiongozi, mzitu, mkubwa, chief. They're much less common in the countryside. For a woman: mama, dada or sista."
     }
   ],
   "practice": [
@@ -1724,6 +1740,34 @@
       "grammar": [
         "sanifu-noun-classes"
       ]
+    },
+    {
+      "id": "54ff3c38-bb2f-55c2-9e7d-9a29c27d5be9",
+      "mode": "translate",
+      "english": "Okay, boss (a man with money).",
+      "before": "Sawa, ",
+      "after": ".",
+      "options": [
+        {
+          "text": "mdosi",
+          "correct": true
+        },
+        {
+          "text": "mwizi",
+          "correct": false,
+          "feedback": "mwizi = thief — definitely not!"
+        },
+        {
+          "text": "mtoto",
+          "correct": false,
+          "feedback": "mtoto = child."
+        }
+      ],
+      "explanation": "Mdosi = Sheng for \"boss\". A fundi says it to the customer paying the bill.",
+      "grammar": [
+        "greetings"
+      ],
+      "note": "Ways to call a man \"boss\" in town: boss, mdosi, kiongozi, mzitu, mkubwa, chief. They're much less common in the countryside. For a woman: mama, dada or sista."
     }
   ]
 }

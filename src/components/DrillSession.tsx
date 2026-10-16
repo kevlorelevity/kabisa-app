@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { shuffleChoices } from '../lib/shuffle';
 import type { Lesson } from '../types';
 import {
   advanceDrill,
@@ -18,14 +19,6 @@ interface DrillSessionProps {
   onDone: (mastered: DrillPhrase[]) => void;
 }
 
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
 
 /** Fire-and-forget playback; missing audio is fine, the text is on screen. */
 function say(text: string) {
@@ -211,7 +204,10 @@ function GapCard({
   variation: GapVariation;
   onResult: (r: 'correct' | 'wrong') => void;
 }) {
-  const chips = useMemo(() => shuffle(variation.options), [variation]);
+  const chips = useMemo(
+    () => shuffleChoices(`${phrase.sourceId}|${variation.before}|${variation.after}`, variation.options, (o) => o === variation.answer),
+    [variation], // eslint-disable-line react-hooks/exhaustive-deps
+  );
   const [wrong, setWrong] = useState<string[]>([]);
   const [solved, setSolved] = useState(false);
 

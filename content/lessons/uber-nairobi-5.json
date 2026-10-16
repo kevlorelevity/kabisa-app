@@ -1253,7 +1253,7 @@
       "id": "e1854087-44e4-57ca-9ad6-2af27ba1c8c5",
       "speaker": "Dereva",
       "role": "auto",
-      "swahili": "Asante, boss. Mvumilivu hula mbivu — ulinivumilia kila nilipochelewa! Tumefika.",
+      "swahili": "Asante, kiongozi. Mvumilivu hula mbivu — ulinivumilia kila nilipochelewa! Tumefika.",
       "english": "Thanks, boss. Good things come to the patient — you put up with me every time I was late! We've arrived.",
       "words": [
         {
@@ -1261,10 +1261,10 @@
           "gloss": "thank you"
         },
         {
-          "text": "boss",
-          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
+          "text": "kiongozi",
+          "gloss": "\"Kiongozi\" — literally \"leader\" (also \"guide\"). In town it's a respectful, friendly way to address a man, like \"chief\". Plural: viongozi.",
           "grammar": [
-            "noun-classes-mwa-nn"
+            "greetings"
           ]
         },
         {
@@ -1521,6 +1521,14 @@
       "english": "Good night",
       "exampleContext": "Lala salama = sleep well",
       "partOfSpeech": "phrase"
+    },
+    {
+      "id": "62ce0e11-0a06-5fd5-9e4e-844e36d04934",
+      "swahili": "kiongozi",
+      "english": "boss, chief — form of address (literally \"leader\")",
+      "exampleContext": "\"Samahani, kiongozi.\" A respectful way to stop a man in the street.",
+      "partOfSpeech": "phrase",
+      "note": "Ways to call a man \"boss\" in town: boss, mdosi, kiongozi, mzitu, mkubwa, chief. They're much less common in the countryside. For a woman: mama, dada or sista."
     }
   ],
   "practice": [
@@ -1966,6 +1974,34 @@
       "grammar": [
         "greetings"
       ]
+    },
+    {
+      "id": "427bf64c-810a-567a-843d-fbfd80b01cec",
+      "mode": "translate",
+      "english": "Thanks, boss (literally 'leader').",
+      "before": "Asante, ",
+      "after": ".",
+      "options": [
+        {
+          "text": "kiongozi",
+          "correct": true
+        },
+        {
+          "text": "mwizi",
+          "correct": false,
+          "feedback": "mwizi = thief."
+        },
+        {
+          "text": "mgeni",
+          "correct": false,
+          "feedback": "mgeni = visitor / stranger."
+        }
+      ],
+      "explanation": "Kiongozi = leader — a respectful \"boss\" or \"chief\".",
+      "grammar": [
+        "greetings"
+      ],
+      "note": "Ways to call a man \"boss\" in town: boss, mdosi, kiongozi, mzitu, mkubwa, chief. They're much less common in the countryside. For a woman: mama, dada or sista."
     }
   ]
 }

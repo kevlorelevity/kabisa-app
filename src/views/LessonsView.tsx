@@ -49,7 +49,7 @@ function RankCard() {
           <p className="text-lg font-bold text-amber-700">
             {GONGA_ICON} {xp.toLocaleString()}
           </p>
-          <p className="text-xs text-gray-400 underline decoration-dotted">Gonga points</p>
+          <p className="text-xs text-gray-400 underline decoration-dotted">gonga points</p>
         </GongaButton>
       </div>
 

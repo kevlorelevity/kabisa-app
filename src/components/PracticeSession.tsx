@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { shuffle, shuffleChoices } from '../lib/shuffle';
 import type { PracticeItem, PracticeOption } from '../types';
 import type { AttemptResult } from '../lib/lessonScores';
 import { AudioButton } from './AudioButton';
@@ -23,14 +24,6 @@ interface PracticeSessionProps {
   lessonId?: string;
 }
 
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
 
 export function PracticeSession({ items, onFinish, resultSlot, review = false, typing, lessonId }: PracticeSessionProps) {
   // Bumping `round` reshuffles item order and chip order for "Practice again".
@@ -46,7 +39,7 @@ export function PracticeSession({ items, onFinish, resultSlot, review = false, t
   const [finished, setFinished] = useState(false);
 
   const item = order[index];
-  const chips = useMemo(() => (item ? shuffle(item.options) : []), [item]);
+  const chips = useMemo(() => (item ? shuffleChoices(item.id, item.options, (o) => o.correct) : []), [item, round]); // eslint-disable-line react-hooks/exhaustive-deps
   const endRef = useRef<HTMLDivElement>(null);
 
   // Phones: the chips / Next button sit in a tray pinned to the bottom of the

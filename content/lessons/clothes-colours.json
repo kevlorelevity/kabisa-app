@@ -32,7 +32,7 @@
       "id": "db678ca9-752b-5a82-8105-e145bb7251a5",
       "speaker": "Muuzaji",
       "role": "auto",
-      "swahili": "Karibu, boss! Unatafuta nini leo?",
+      "swahili": "Karibu, mkubwa! Unatafuta nini leo?",
       "english": "Welcome, boss! What are you looking for today?",
       "words": [
         {
@@ -40,10 +40,10 @@
           "gloss": "near / welcome / almost"
         },
         {
-          "text": "boss",
-          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
+          "text": "mkubwa",
+          "gloss": "\"Mkubwa\" — literally \"big one\" (from -kubwa, big). Calling a man mkubwa shows respect, like \"boss\" or \"sir\" — sellers use it, and it's good for someone older than you. Plural: wakubwa.",
           "grammar": [
-            "noun-classes-mwa-nn"
+            "greetings"
           ]
         },
         {
@@ -1181,6 +1181,14 @@
       "english": "last price",
       "exampleContext": "The seller's \"final\" offer",
       "partOfSpeech": "phrase"
+    },
+    {
+      "id": "b8864b07-e7e6-5d76-aeea-e0c883e54d1b",
+      "swahili": "mkubwa",
+      "english": "boss, sir — form of address (literally \"big one\")",
+      "exampleContext": "Respectful — sellers use it, and it suits someone older than you.",
+      "partOfSpeech": "phrase",
+      "note": "Ways to call a man \"boss\" in town: boss, mdosi, kiongozi, mzitu, mkubwa, chief. They're much less common in the countryside. For a woman: mama, dada or sista."
     }
   ],
   "practice": [
@@ -1597,6 +1605,34 @@
         }
       ],
       "explanation": "kati: middle — ya kati = medium"
+    },
+    {
+      "id": "825607b8-6e64-51f8-a5e3-6201fdfbdd27",
+      "mode": "translate",
+      "english": "Welcome, boss (literally 'big one')!",
+      "before": "Karibu, ",
+      "after": "!",
+      "options": [
+        {
+          "text": "mkubwa",
+          "correct": true
+        },
+        {
+          "text": "mdogo",
+          "correct": false,
+          "feedback": "mdogo = small / young one."
+        },
+        {
+          "text": "mrefu",
+          "correct": false,
+          "feedback": "mrefu = tall one."
+        }
+      ],
+      "explanation": "Mkubwa = \"big one\" — a respectful way to call a man \"boss\".",
+      "grammar": [
+        "greetings"
+      ],
+      "note": "Ways to call a man \"boss\" in town: boss, mdosi, kiongozi, mzitu, mkubwa, chief. They're much less common in the countryside. For a woman: mama, dada or sista."
     }
   ]
 }

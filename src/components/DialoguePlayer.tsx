@@ -9,6 +9,7 @@ import { TypedAnswer } from './TypedAnswer';
 import { voiceForSpeaker, type Voice } from '../lib/audio';
 import { acceptedAnswers, pickKeyWord, type TypingMode } from '../lib/typing';
 import { salientForTurn } from '../lib/aiCheck';
+import { shuffleChoices } from '../lib/shuffle';
 
 interface DialoguePlayerProps {
   turns: DialogueTurn[];
@@ -26,9 +27,6 @@ interface DialoguePlayerProps {
   focus?: string[];
 }
 
-function shuffle<T>(arr: T[]): T[] {
-  return [...arr].sort(() => Math.random() - 0.5);
-}
 
 /** Auto turns pause briefly before appearing, so a reply reads as a reply rather than a jump-cut. */
 const AUTO_TURN_DELAY_MS = 500;
@@ -49,10 +47,13 @@ export function DialoguePlayer({ turns, onComplete, review = false, typing, voic
   const done = revealedCount >= turns.length;
   const current = done ? null : turns[revealedCount];
 
+  // Reshuffled on every attempt (the player remounts), and the right answer never sits where it
+  // was last time. Keyed on the turn and its option texts, so a re-render mid-turn keeps the order.
+  const optionsKey = current?.options ? `${current.id}|${current.options.map((o) => o.swahili).join('|')}` : '';
   const shuffledOptions = useMemo(() => {
     if (!current?.options) return [];
-    return shuffle(current.options);
-  }, [current]);
+    return shuffleChoices(current.id, current.options, (o) => o.correct);
+  }, [optionsKey]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Auto turns (the other speaker's scripted reply) advance on their own
   // after a short pause. User turns wait for a correct MCQ pick.

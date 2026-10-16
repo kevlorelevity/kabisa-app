@@ -71,3 +71,24 @@ describe('more than one right answer', () => {
     expect(formatAccepted(parseAccepted(t))).toBe(t.replace('mwambie | direct', 'mwambie | direct'));
   });
 });
+
+describe('more forgiving typing (Oct 16)', () => {
+  it('accepts interchangeable phrases from the seed spreadsheet', () => {
+    expect(checkAnswer('Tutakujulisha uamuzi wetu wiki kesho', ['Tutakujulisha uamuzi wetu wiki ijayo.']).verdict).toBe('exact');
+    expect(checkAnswer('nitakusubiri hadi saa nne', ['Nitakungoja mpaka saa nne.']).verdict).toBe('exact');
+  });
+  it('a gap inside "wiki ijayo" also takes "kesho"', () => {
+    const line = 'Tutakujulisha uamuzi wetu wiki ijayo.';
+    const start = line.indexOf('ijayo');
+    const acc = acceptedAnswers({ line, span: { start, end: start + 5 }, mode: 'partial' });
+    expect(checkAnswer('kesho', acc).verdict).toBe('exact');
+  });
+  it('forgives a slip in each word, but never in the grammar at the front', () => {
+    expect(checkAnswer('Tutakujulsha uamzi wetu', ['Tutakujulisha uamuzi wetu']).verdict).toBe('close');
+    expect(checkAnswer('pole pole', ['polepole']).verdict).toBe('close');
+    expect(checkAnswer('saana', ['sana']).verdict).toBe('close');
+    expect(checkAnswer('Nilienda tao', ['Nitaenda tao!']).verdict).toBe('wrong');
+    expect(checkAnswer('sina', ['Nina']).verdict).toBe('wrong');
+    expect(checkAnswer('Hatuendi', ['Tunaenda']).verdict).toBe('wrong');
+  });
+});

@@ -338,8 +338,8 @@
       "id": "8e9294f3-8947-5550-8a02-9170b10b7d61",
       "speaker": "Makanga",
       "role": "auto",
-      "swahili": "Saa hii ni rush hour, boss. Bei inapanda.",
-      "english": "Right now it's rush hour, boss. The price goes up.",
+      "swahili": "Saa hii ni rush hour, mzitu. Bei inapanda.",
+      "english": "Right now it's rush hour, big man. The price goes up.",
       "words": [
         {
           "text": "Saa",
@@ -367,10 +367,10 @@
           "gloss": "rush hour (English)"
         },
         {
-          "text": "boss",
-          "gloss": "boss — friendly, informal way to address a man (driver, guard, waiter) — m/wa noun (people & animals)",
+          "text": "mzitu",
+          "gloss": "\"Mzitu\" — Nairobi street slang for a \"big man\" / heavyweight. A playful way to address a man — you'll hear it from matatu crews and at the kinyozi.",
           "grammar": [
-            "noun-classes-mwa-nn"
+            "greetings"
           ]
         },
         {
@@ -1143,6 +1143,14 @@
       "english": "Just ask",
       "exampleContext": "",
       "partOfSpeech": "phrase"
+    },
+    {
+      "id": "55137b9e-9ff4-5bff-b18a-2ada3e89cb3a",
+      "swahili": "mzitu",
+      "english": "big man — form of address (street slang)",
+      "exampleContext": "Playful, very city. Matatu crews and barbers use it.",
+      "partOfSpeech": "phrase",
+      "note": "Ways to call a man \"boss\" in town: boss, mdosi, kiongozi, mzitu, mkubwa, chief. They're much less common in the countryside. For a woman: mama, dada or sista."
     }
   ],
   "practice": [
@@ -1574,6 +1582,34 @@
       "grammar": [
         "noun-classes-mwa-nn"
       ]
+    },
+    {
+      "id": "ea17c4b4-ba93-5ed9-a8d1-d26c3711f041",
+      "mode": "translate",
+      "english": "Right now it's rush hour, big man.",
+      "before": "Saa hii ni rush hour, ",
+      "after": ".",
+      "options": [
+        {
+          "text": "mzitu",
+          "correct": true
+        },
+        {
+          "text": "mtoto",
+          "correct": false,
+          "feedback": "mtoto = child."
+        },
+        {
+          "text": "dada",
+          "correct": false,
+          "feedback": "dada = sister — for a woman."
+        }
+      ],
+      "explanation": "Mzitu = street slang for \"big man\". Pure matatu talk.",
+      "grammar": [
+        "greetings"
+      ],
+      "note": "Ways to call a man \"boss\" in town: boss, mdosi, kiongozi, mzitu, mkubwa, chief. They're much less common in the countryside. For a woman: mama, dada or sista."
     }
   ]
 }

@@ -5,7 +5,8 @@ import type { AcceptedAnswer, DialogueTurn, WordGloss } from '../types';
 // From level 5 the learner types instead of picking:
 //   levels 5–7  "partial"  — one key word of the line (or the practice gap)
 //   levels 8–10 "complete" — the whole line / sentence, from the English
-// Matching forgives capitals, punctuation, apostrophe styles and a small typo,
+// Matching forgives capitals, punctuation, apostrophe styles, small typos (word by word),
+// interchangeable phrases from the seed spreadsheet (wiki kesho = wiki ijayo),
 // and accepts the Sanifu form when the lesson gives one.
 
 export type TypingMode = 'partial' | 'complete';
@@ -62,25 +63,97 @@ const RULES: Array<{ from: RegExp; to: string; note: string }> = [
   { from: /^nina([a-z']{3,})$/, to: 'na$1', note: 'Na- is the everyday short form of nina- (naenda = ninaenda) — both are right.' },
 ];
 
-/** The answer with everyday variants folded together (naenda = ninaenda, ndio = ndiyo…). */
+// Interchangeable phrases from the seed spreadsheet (and everyday Nairobi speech): either side
+// is right wherever the other is expected. The first form is the canonical one.
+const PHRASES: Array<{ forms: string[]; note: string }> = [
+  { forms: ['wiki ijayo', 'wiki kesho'], note: 'Wiki ijayo and wiki kesho both mean “next week” — Kenyans use both.' },
+  { forms: ['wiki iliyopita', 'wiki jana'], note: 'Wiki iliyopita and wiki jana both mean “last week”.' },
+  { forms: ['mwezi ujao', 'mwezi kesho'], note: 'Mwezi ujao and mwezi kesho both mean “next month”.' },
+  { forms: ['mwezi uliopita', 'mwezi jana'], note: 'Mwezi uliopita and mwezi jana both mean “last month”.' },
+  { forms: ['mwaka ujao', 'mwaka kesho'], note: 'Mwaka ujao and mwaka kesho both mean “next year”.' },
+  { forms: ['mwaka uliopita', 'mwaka jana'], note: 'Mwaka uliopita and mwaka jana both mean “last year”.' },
+  { forms: ['sasa hivi', 'hivi sasa'], note: 'Sasa hivi and hivi sasa both mean “right now”.' },
+  { forms: ['hadi', 'mpaka'], note: 'Hadi and mpaka both mean “until / up to”.' },
+  { forms: ['labda', 'pengine'], note: 'Labda and pengine both mean “maybe”.' },
+  { forms: ['halafu', 'kisha'], note: 'Halafu and kisha both mean “then / and then”.' },
+  { forms: ['kwa sababu ya', 'kwa ajili ya'], note: 'Kwa sababu ya and kwa ajili ya both work for “because of”.' },
+  { forms: ['kwa makini', 'kwa uangalifu'], note: 'Kwa makini and kwa uangalifu both mean “carefully”.' },
+  { forms: ['fanya haraka', 'harakisha'], note: 'Fanya haraka and harakisha both mean “hurry up”.' },
+  { forms: ['msaada', 'usaidizi'], note: 'Msaada and usaidizi both mean “help”.' },
+  { forms: ['afisa', 'afande'], note: 'Afisa and afande both work for a police officer — afande is what people actually say.' },
+  { forms: ['kona', 'pembe'], note: 'Kona and pembe both mean “corner”.' },
+  { forms: ['tofaa', 'tofaha'], note: 'Tofaa and tofaha are both “apple”.' },
+  { forms: ['ni upande ule', 'ni kule'], note: 'Ni kule and ni upande ule both mean “it’s that way”.' },
+];
+// Verb stems that swap freely inside any conjugated form (ninangoja = ninasubiri).
+const STEMS: Array<{ from: RegExp; to: string; note: string }> = [
+  { from: /ngojea/g, to: 'subiria', note: 'Kungojea and kusubiria both mean “to wait for”.' },
+  { from: /ngoja/g, to: 'subiri', note: 'Kungoja and kusubiri both mean “to wait”.' },
+  { from: /sikiza/g, to: 'sikiliza', note: 'Kusikiza is the everyday short form of kusikiliza (to listen).' },
+];
+const esc = (x: string) => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const PHRASE_RES = PHRASES.map((p) => ({ ...p, re: new RegExp(`(^| )(${p.forms.slice(1).map(esc).join('|')})(?= |$)`, 'g'), any: new RegExp(`(^| )(${p.forms.map(esc).join('|')})(?= |$)`) }));
+
+function foldPhrases(s: string): string {
+  let out = s;
+  for (const p of PHRASE_RES) out = out.replace(p.re, (_m, pre) => `${pre}${p.forms[0]}`);
+  for (const st of STEMS) out = out.replace(st.from, st.to);
+  return out;
+}
+
+/** The answer with everyday variants folded together (naenda = ninaenda, ndio = ndiyo, wiki kesho = wiki ijayo…). */
 export function canonicalAnswer(s: string): string {
-  return normalizeAnswer(s)
+  const words = normalizeAnswer(s)
     .split(' ')
     .map((w) => RULES.reduce((x, r) => (r.from.test(x) ? x.replace(r.from, r.to) : x), w))
     .join(' ');
+  return foldPhrases(words);
 }
 
 /** Notes for the everyday variants where `typed` differs from `answer` (e.g. naenda vs ninaenda). */
 function variantNotes(typed: string, answer: string): string[] {
-  const a = normalizeAnswer(typed).split(' ');
-  const b = normalizeAnswer(answer).split(' ');
-  if (a.length !== b.length) return [];
+  const nt = normalizeAnswer(typed);
+  const na = normalizeAnswer(answer);
   const notes: string[] = [];
+  for (const p of PHRASE_RES) {
+    const tm = nt.match(p.any)?.[2];
+    const am = na.match(p.any)?.[2];
+    if (tm && am && tm !== am && !notes.includes(p.note)) notes.push(p.note);
+  }
+  for (const st of STEMS) {
+    const hasT = new RegExp(st.from.source).test(nt);
+    const hasA = new RegExp(st.from.source).test(na);
+    if (hasT !== hasA && !notes.includes(st.note)) notes.push(st.note);
+  }
+  const a = nt.split(' ');
+  const b = na.split(' ');
+  if (a.length !== b.length) return notes;
   a.forEach((w, i) => {
     if (w === b[i]) return;
     for (const r of RULES) if ((r.from.test(w) || r.from.test(b[i])) && !notes.includes(r.note)) notes.push(r.note);
   });
   return notes;
+}
+
+/**
+ * Word-by-word typo check. Swahili carries its grammar at the front of a word (si- / ni-,
+ * u- / a-, -li- / -ta-) and in the final vowel, so a word may differ by a slip only when it
+ * starts with the same letter: 1 slip for 4–7 letters, 2 for longer words that also keep their
+ * first three letters and last letter. Doubled letters and missing / extra spaces are free.
+ */
+function wordsClose(typed: string, answer: string): boolean {
+  const squash = (x: string) => x.replace(/\s+/g, '').replace(/(\p{L})\1+/gu, '$1');
+  if (squash(typed) === squash(answer)) return true;
+  const a = typed.split(' ');
+  const b = answer.split(' ');
+  if (a.length !== b.length) return false;
+  return a.every((w, i) => {
+    const x = b[i];
+    if (w === x || squash(w) === squash(x)) return true;
+    if (w[0] !== x[0] || x.length < 4) return false;
+    const room = x.length >= 8 && w.slice(0, 3) === x.slice(0, 3) && w.at(-1) === x.at(-1) ? 2 : 1;
+    return levenshtein(w, x) <= room;
+  });
 }
 
 export interface CheckResult {
@@ -104,7 +177,8 @@ export function checkAnswer(typed: string, accepted: Array<string | AcceptedAnsw
     if (!a.trim()) continue;
     const n = normalizeAnswer(a);
     if (n === t || canonicalAnswer(a) === tc) return { verdict: 'exact', expected: a, index: i };
-    if (levenshtein(n, t) <= allowance(n.length) && best.verdict === 'wrong') best = { verdict: 'close', expected: a, index: i };
+    const close = levenshtein(n, t) <= allowance(n.length) || wordsClose(tc, canonicalAnswer(a));
+    if (close && best.verdict === 'wrong') best = { verdict: 'close', expected: a, index: i };
   }
   return best;
 }
@@ -183,7 +257,19 @@ export function acceptedAnswers(args: {
   };
   if (mode === 'partial' && span) push({ text: word });
   else push({ text: line });
-  for (const alt of [...(args.alts ?? []), ...(mode === 'complete' ? args.extraLines ?? [] : [])]) {
+  // Partial mode: a gap inside an interchangeable phrase ("wiki [ijayo]") also takes the other
+  // form's word ("kesho"). Whole lines are folded by canonicalAnswer, so they need nothing here.
+  const phraseAlts: AcceptedAnswer[] = [];
+  if (mode === 'partial' && span) {
+    const low = line.toLowerCase();
+    for (const p of PHRASES)
+      for (const f of p.forms) {
+        const at = low.search(new RegExp(`(?<![\\p{L}])${esc(f)}(?![\\p{L}])`, 'u'));
+        if (at < 0 || at > span.start || at + f.length < span.end) continue;
+        for (const g of p.forms) if (g !== f) phraseAlts.push({ text: line.slice(0, at) + g + line.slice(at + f.length), note: p.note });
+      }
+  }
+  for (const alt of [...(args.alts ?? []), ...(mode === 'complete' ? args.extraLines ?? [] : []), ...phraseAlts]) {
     const isWord = span ? wordCount(alt.text) <= wordCount(word) + 1 && wordCount(line) > wordCount(word) + 1 : false;
     if (mode === 'partial' && span) {
       if (isWord) push(alt);
@@ -207,7 +293,7 @@ const TOKEN = /[\p{L}\p{N}'’-]+/gu;
 
 /** Words never worth typing on their own: greetings, fillers, addresses, tiny linkers. */
 const NOT_KEY = new Set(
-  'aah aaah aiii ah eh haha haya wee sawa poa safi ndiyo ndio hapana asante asanteni tafadhali habari mambo karibu kweli kumbe afande boss bwana mama dada sista basi pole na ni kwa ya wa za la si tu pia sana mimi wewe yeye sisi nyinyi wao ok okay'.split(' '),
+  'aah aaah aiii ah eh haha haya wee sawa poa safi ndiyo ndio hapana asante asanteni tafadhali habari mambo karibu kweli kumbe afande boss bwana mdosi kiongozi mzitu mkubwa chief mama dada sista basi pole na ni kwa ya wa za la si tu pia sana mimi wewe yeye sisi nyinyi wao ok okay'.split(' '),
 );
 const LIGHT_GRAMMAR = new Set(['discourse-particles', 'greetings', 'subject-prefixes', 'ni-copula', 'noun-classes-mwa-nn']);
 
