@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import type { GrammarTopic, Lesson } from '../types';
 import { getGrammarTopic } from '../hooks/useGrammar';
 import { useOverridesVersion } from '../lib/contentOverrides';
@@ -59,6 +59,12 @@ export function GrammarPrimer({ lesson, slugs, onStart }: { lesson: Lesson; slug
     [slugs],
   );
   const [page, setPage] = useState(0);
+  const cardRef = useRef<HTMLDivElement>(null);
+  // Back / Next sit at the bottom of a long page: bring the new page's top into view.
+  const turnTo = (i: number) => {
+    setPage(i);
+    requestAnimationFrame(() => cardRef.current?.scrollIntoView?.({ behavior: 'smooth', block: 'start' }));
+  };
   if (!topics.length) return null;
   const at = Math.min(page, topics.length - 1);
   const topic = topics[at];
@@ -85,7 +91,7 @@ export function GrammarPrimer({ lesson, slugs, onStart }: { lesson: Lesson; slug
         </div>
       )}
 
-      <div className="rounded-xl border border-gray-200 bg-white">
+      <div ref={cardRef} className="rounded-xl border border-gray-200 bg-white scroll-mt-28">
         {topics.length > 1 && (
           <div className="flex gap-1 border-b border-gray-100 px-3 pt-3 overflow-x-auto" role="tablist" aria-label="Grammar pages">
             {topics.map((t, i) => (
@@ -160,7 +166,7 @@ export function GrammarPrimer({ lesson, slugs, onStart }: { lesson: Lesson; slug
               {at > 0 && (
                 <button
                   type="button"
-                  onClick={() => setPage(at - 1)}
+                  onClick={() => turnTo(at - 1)}
                   className="px-4 py-2 rounded-full border border-gray-300 text-sm font-medium text-gray-700 hover:bg-gray-50"
                 >
                   ← Back
@@ -169,7 +175,7 @@ export function GrammarPrimer({ lesson, slugs, onStart }: { lesson: Lesson; slug
               {!last ? (
                 <button
                   type="button"
-                  onClick={() => setPage(at + 1)}
+                  onClick={() => turnTo(at + 1)}
                   className="px-4 py-2 rounded-full bg-green-700 text-white text-sm font-semibold hover:bg-green-800"
                 >
                   Next: {shortTitle(topics[at + 1])} →
