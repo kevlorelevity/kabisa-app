@@ -172,7 +172,7 @@ function ConsentForm({ userId, existing, name, onAccepted }: { userId: string | 
       <label className="flex items-start gap-3 cursor-pointer">
         <input type="checkbox" checked={emails} onChange={(e) => setEmails(e.target.checked)} className="mt-1 h-5 w-5 accent-green-700" data-testid="email-updates" />
         <span className="text-sm text-gray-800">
-          Email me a summary of my learning, the odd nudge to keep going, and key updates to the app. <span className="text-gray-400">(optional — untick if you’d rather not)</span>
+          Email me a summary of my learning, the odd nudge to keep going, and key updates to the app — at most once a week, never more. <span className="text-gray-400">(optional — untick if you’d rather not)</span>
         </span>
       </label>
       {error && <p className="text-sm text-red-600">{error}</p>}
