@@ -108,7 +108,7 @@ Full rationale and enforcement details in `docs/schema.md` §1 and `IMPLEMENTATI
 
 ## Contributing
 
-This is an internal project. If you're reading this and you're not Kevin or Lillian, ping Kevin first.
+This is an internal project. If you're reading this and you're not Kevin (or Wanyonyi, who helps with content), ping Kevin first.
 
 ## Release notes (required for user-facing changes)
 

@@ -53,4 +53,4 @@ re-run. House rule: m/wa and n/n are the standard agreement; other noun classes 
 look-ups (`other(...)` in `lexicon.py`).
 
 All Swahili in levels 2–10 was drafted by Claude from the seed spreadsheet and needs a content review
-(Kevin / Lillian) like any authored module.
+(Kevin, with help from Wanyonyi) like any authored module.

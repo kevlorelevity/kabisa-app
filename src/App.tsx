@@ -9,6 +9,7 @@ import { GrammarView } from './views/GrammarView';
 import { GrammarProvider } from './components/GrammarProvider';
 import { ProfileProvider } from './hooks/ProfileProvider';
 import { OnboardingGate } from './components/OnboardingGate';
+import { ConsentGate } from './components/ConsentGate';
 import { TermsView } from './views/TermsView';
 import { ProfileView } from './views/ProfileView';
 import { AdminProgressView } from './views/AdminProgressView';
@@ -81,6 +82,7 @@ export function App() {
         <PublicPages>
           <SignInGate>
             <ProfileProvider>
+              <ConsentGate>
                 <OnboardingGate>
                   <AdminProvider>
                     <GrammarProvider>
@@ -88,6 +90,7 @@ export function App() {
                     </GrammarProvider>
                   </AdminProvider>
                 </OnboardingGate>
+              </ConsentGate>
             </ProfileProvider>
           </SignInGate>
         </PublicPages>
