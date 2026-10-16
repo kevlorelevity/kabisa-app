@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-10-16-refresh",
+    "date": "2026-10-16",
+    "title": "🔄 A refresh button",
+    "items": [
+      "Using Kabisa from your home screen? Tap the new ↻ button at the top to refresh — no browser needed.",
+      "Kabisa's shield logo now sits top left; tap it any time to get back to your lessons."
+    ]
+  },
+  {
     "id": "2026-10-16-invite",
     "date": "2026-10-16",
     "title": "💌 Bring a friend",

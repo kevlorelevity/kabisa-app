@@ -94,7 +94,10 @@ export function Landing() {
         </p>
       )}
       <header className="mx-auto flex max-w-5xl items-center px-5 py-5">
-        <span className="text-xl font-extrabold tracking-tight text-green-800">Kabisa</span>
+        <a href="/" className="flex items-center gap-2.5" aria-label="Kabisa — home">
+          <img src="/favicon.svg" alt="" width={40} height={40} className="h-10 w-10" />
+          <span className="text-xl font-extrabold tracking-tight text-green-800">Kabisa</span>
+        </a>
       </header>
 
       <main className="mx-auto max-w-5xl px-5 pb-16">

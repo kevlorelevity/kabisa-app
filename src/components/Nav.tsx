@@ -275,6 +275,29 @@ function LearnerMenu({ onSignOut }: { onSignOut: () => void }) {
   );
 }
 
+/** Home-screen installs (Android / iPhone) have no browser refresh button — this is it. */
+function RefreshButton() {
+  const [spinning, setSpinning] = useState(false);
+  return (
+    <button
+      type="button"
+      onClick={() => {
+        setSpinning(true);
+        window.location.reload();
+      }}
+      title="Refresh"
+      aria-label="Refresh the app"
+      className="w-8 h-8 shrink-0 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:text-green-700 hover:border-green-300 transition-colors"
+      data-testid="refresh-button"
+    >
+      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className={`w-4 h-4 ${spinning ? 'animate-spin' : ''}`} aria-hidden="true">
+        <path d="M16.5 10a6.5 6.5 0 1 1-1.9-4.6" />
+        <path d="M16.5 3.5v3.6h-3.6" />
+      </svg>
+    </button>
+  );
+}
+
 export function Nav() {
   const { pathname } = useLocation();
   const { user, signOut } = useAuth();
@@ -299,8 +322,9 @@ export function Nav() {
   return (
     <nav className="border-b border-gray-200 bg-white sticky top-0 z-10">
       <div className="max-w-4xl mx-auto px-4 h-14 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 font-bold text-green-800 tracking-tight">
-          Kabisa
+        <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="Kabisa — home" className="flex items-center gap-2 font-bold text-green-800 tracking-tight">
+          <img src="/favicon.svg" alt="" width={28} height={28} className="h-7 w-7" />
+          <span className="hidden min-[380px]:inline">Kabisa</span>
           <BetaSticker />
         </Link>
         <div className="flex gap-2 items-center">
@@ -325,6 +349,7 @@ export function Nav() {
                 {flag ? `${flag} ` : ''}
                 {displayName}
               </Link>
+              <RefreshButton />
               {isAdmin ? (
                 <AdminMenu onSignOut={() => void signOut()} />
               ) : (
