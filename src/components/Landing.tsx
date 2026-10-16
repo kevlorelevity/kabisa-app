@@ -1,8 +1,9 @@
 import { SignInButton } from './SignInButton';
 import { BetaSticker } from './BetaSticker';
 import { LEVELS } from '../lib/levels';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { takeDeletedFlag } from '../lib/consent';
+import { REFERRAL_POINTS, pendingReferral, referrerName } from '../lib/referrals';
 import { GONGA_ICON, GongaModal, PRIZES, PrizeImage } from './GongaPoints';
 
 function FlagStripe() {
@@ -74,12 +75,22 @@ const FEATURES = [
 export function Landing() {
   const [deleted] = useState(takeDeletedFlag);
   const [prizes, setPrizes] = useState(false);
+  const [inviter, setInviter] = useState<string | null>(null);
+  useEffect(() => {
+    const code = pendingReferral();
+    if (code) void referrerName(code).then(setInviter);
+  }, []);
   return (
     <div className="min-h-screen bg-[#f6f4ee] text-gray-900">
       <FlagStripe />
       {deleted && (
         <p className="bg-gray-900 px-4 py-2 text-center text-sm text-white" role="status">
           Your Kabisa account has been deleted. Kwaheri — you’re welcome back any time.
+        </p>
+      )}
+      {inviter && (
+        <p className="bg-amber-100 px-4 py-2 text-center text-sm text-amber-900" role="status" data-testid="invited-by">
+          💌 <strong>{inviter}</strong> invited you to Kabisa — sign up below and start learning together.
         </p>
       )}
       <header className="mx-auto flex max-w-5xl items-center px-5 py-5">
@@ -150,6 +161,19 @@ export function Landing() {
           </ul>
         </section>
         {prizes && <GongaModal onClose={() => setPrizes(false)} />}
+
+        <section className="mt-6 flex flex-col gap-3 rounded-2xl border border-green-200 bg-white p-6 sm:flex-row sm:items-center" data-testid="landing-invite">
+          <p className="text-4xl" aria-hidden="true">
+            💌
+          </p>
+          <div className="flex-1">
+            <h2 className="font-bold text-gray-900">Bring a friend: +{REFERRAL_POINTS} gonga pts each</h2>
+            <p className="mt-1 text-sm leading-relaxed text-gray-600">
+              Once you’re in, invite friends by email from the Menu. Every friend who signs up earns you {REFERRAL_POINTS} gonga pts —
+              and someone to practise your Swahili on.
+            </p>
+          </div>
+        </section>
 
         <section className="mt-12 rounded-2xl border border-green-200 bg-white p-6">
           <h2 className="text-sm font-semibold uppercase tracking-wide text-green-700">Your path</h2>

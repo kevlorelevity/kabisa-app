@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import type { Lesson } from '../types';
+import { referralBonus } from '../lib/referrals';
 import { MAX_LEVEL, levelInfo, lessonsInLevel, totalXp } from '../lib/levels';
 
 const CONFETTI = ['🎉', '✨', '🎊', '⭐', '🥳', '💚', '🎉', '✨', '🎊', '⭐', '🥳', '💚'];
@@ -18,7 +19,7 @@ export function LevelUpModal({ level, lessons, onClose }: LevelUpModalProps) {
   const finishedCourse = level >= MAX_LEVEL;
   const next = finishedCourse ? null : levelInfo(level + 1);
   const firstNext = next ? lessonsInLevel(lessons, next.level)[0] : undefined;
-  const xp = totalXp(lessons);
+  const xp = totalXp(lessons) + referralBonus();
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {

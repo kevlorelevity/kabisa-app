@@ -20,13 +20,15 @@ import { useRoam } from '../lib/roam';
 import { useAdmin } from '../components/adminContext';
 import { GONGA_ICON, GongaButton } from '../components/GongaPoints';
 import { InstallCard } from '../components/InstallPrompt';
+import { useReferralStats } from '../lib/referrals';
 
 function RankCard() {
   const lessons = useLessons();
   const lvl = currentLevel(lessons);
   const info = levelInfo(lvl);
   const prog = levelProgress(lessons, lvl);
-  const xp = totalXp(lessons);
+  const bonus = useReferralStats().points;
+  const xp = totalXp(lessons) + bonus;
   const done = courseComplete(lessons);
   const nextLesson = lessons.find((l) => !isLessonDone(lessons, l));
   const nextLevel = lvl < MAX_LEVEL ? levelInfo(lvl + 1) : null;

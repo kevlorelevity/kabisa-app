@@ -2,6 +2,8 @@ import { useCallback, useEffect, useState } from 'react';
 import { useAuth } from '../hooks/useAuth';
 import { getCountry } from '../lib/countries';
 import { levelInfo } from '../lib/levels';
+import { Link } from 'react-router-dom';
+import { REFERRAL_POINTS } from '../lib/referrals';
 import { OPEN_LEADERBOARD_EVENT, loadLeaderboard, type Leaderboard, type LeaderboardEntry } from '../lib/leaderboard';
 
 const MEDALS: Record<number, string> = { 1: '🥇', 2: '🥈', 3: '🥉' };
@@ -105,6 +107,21 @@ function LeaderboardModal({ board, onClose }: { board: Leaderboard; onClose: () 
             ? `${board.me.rank - 10} place${board.me.rank - 10 === 1 ? '' : 's'} to go to reach the top 10.`
             : 'Finish a conversation or practice to join the board.'}
         </p>
+
+        <Link
+          to="/invite"
+          onClick={onClose}
+          className="flex items-center gap-3 rounded-xl border border-amber-200 bg-amber-50 px-3 py-2.5 hover:bg-amber-100"
+          data-testid="leaderboard-invite"
+        >
+          <span className="text-2xl" aria-hidden="true">
+            💌
+          </span>
+          <span className="flex-1 text-sm leading-snug">
+            <span className="block font-semibold text-gray-900">Bring a friend, climb faster</span>
+            <span className="block text-amber-800">+{REFERRAL_POINTS} gonga pts for every friend who signs up →</span>
+          </span>
+        </Link>
 
         <button
           type="button"

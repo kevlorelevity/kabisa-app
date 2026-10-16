@@ -39,6 +39,7 @@ export function TermsContent() {
           <li>What you tell us: first name, country and how people should address you — to personalise the conversations.</li>
           <li>How you learn: lessons done, scores, mistakes, typed answers and feedback — to track your progress and improve the lessons.</li>
           <li>Your first name and points appear on the level leaderboard other learners see.</li>
+          <li>Invites: when you invite a friend, the email goes from your own email app — we never see or store their address. If they sign up through your link, we record that you invited them.</li>
         </ul>
         <p className="mt-2">
           To run Kabisa we use service providers who process data for us: Supabase (database and sign-in), Vercel (hosting),

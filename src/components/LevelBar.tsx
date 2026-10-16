@@ -4,6 +4,7 @@ import { GONGA_ICON, GongaButton } from './GongaPoints';
 import { useLessons } from '../hooks/useLessons';
 import { SCORES_CHANGED_EVENT, recordLevelClears } from '../lib/lessonScores';
 import { useOverridesVersion } from '../lib/contentOverrides';
+import { useReferralStats } from '../lib/referrals';
 import { MAX_LEVEL, courseComplete, currentLevel, levelInfo, levelXp, totalXp } from '../lib/levels';
 
 /** Re-render whenever lesson scores change (they live in localStorage). */
@@ -25,6 +26,7 @@ function useScoresVersion(): number {
 export function LevelBar() {
   const lessons = useLessons();
   const scoresV = useScoresVersion();
+  const bonus = useReferralStats().points;
   useOverridesVersion(); // re-render on admin live edits
   // Remember when each level was cleared, so a lesson added to it later doesn't send this learner back.
   useEffect(() => {
@@ -39,7 +41,7 @@ export function LevelBar() {
   const pct = done ? 100 : required ? Math.round((earned / required) * 100) : 0;
   const next = lvl < MAX_LEVEL ? lvl + 1 : null;
   const label = done
-    ? `Course complete · ${totalXp(lessons).toLocaleString()} gonga points`
+    ? `Course complete · ${(totalXp(lessons) + bonus).toLocaleString()} gonga points`
     : `${earned} / ${required} gonga pts${next ? ` to Level ${next}` : ' to finish'}`;
 
   return (
@@ -62,7 +64,7 @@ export function LevelBar() {
           <span className="block h-full rounded-full bg-green-600 transition-all" style={{ width: `${Math.max(pct, 2)}%` }} />
         </span>
         </Link>
-        <GongaButton points={totalXp(lessons)} className="shrink-0 font-medium text-amber-700 tabular-nums hover:underline">
+        <GongaButton points={totalXp(lessons) + bonus} className="shrink-0 font-medium text-amber-700 tabular-nums hover:underline">
           {GONGA_ICON} {label}
         </GongaButton>
       </div>

@@ -4,7 +4,9 @@ import './index.css';
 import { App } from './App';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { initInstall, registerServiceWorker } from './lib/install';
+import { captureReferralFromUrl } from './lib/referrals';
 
+captureReferralFromUrl();
 initInstall();
 registerServiceWorker();
 

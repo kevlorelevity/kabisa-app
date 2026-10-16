@@ -11,6 +11,8 @@ import { ProfileProvider } from './hooks/ProfileProvider';
 import { OnboardingGate } from './components/OnboardingGate';
 import { ConsentGate } from './components/ConsentGate';
 import { TermsView } from './views/TermsView';
+import { InviteView } from './views/InviteView';
+import { claimPendingReferral, loadReferralStats } from './lib/referrals';
 import { ProfileView } from './views/ProfileView';
 import { AdminProgressView } from './views/AdminProgressView';
 import { AdminGrammarView } from './views/AdminGrammarView';
@@ -37,6 +39,8 @@ function AppLayout() {
   // Admin live edits (content_override) on top of the bundled lesson JSON.
   useEffect(() => {
     void loadOverrides();
+    // Signed up through a friend's invite? Credit them now that sign-up is complete.
+    void claimPendingReferral().then(() => loadReferralStats(true));
   }, []);
   return (
     <>
@@ -56,6 +60,7 @@ function AppLayout() {
           <Route path="/grammar" element={<GrammarView />} />
           <Route path="/grammar/:slug" element={<GrammarView />} />
           <Route path="/profile" element={<ProfileView />} />
+          <Route path="/invite" element={<InviteView />} />
           <Route path="/admin/progress" element={<AdminProgressView />} />
           <Route path="/admin/grammar" element={<AdminGrammarView />} />
           <Route path="/admin/grammar/:slug" element={<AdminGrammarView />} />

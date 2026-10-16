@@ -10,6 +10,7 @@ import {
   type LessonScoreRecord,
   type SectionScore,
 } from './lessonScores';
+import { REFERRALS_CHANGED_EVENT, referralBonus } from './referrals';
 import { courseComplete, currentLevel, levelInfo, totalXp } from './levels';
 
 // -------- Lesson scores ⇄ Supabase --------
@@ -92,7 +93,7 @@ export function progressSummary(lessons: Lesson[], store: Store) {
   return {
     level,
     level_name: levelInfo(level).name,
-    xp: totalXp(lessons),
+    xp: totalXp(lessons) + referralBonus(),
     lessons_passed: passed,
     lessons_started: started,
     lessons_total: lessons.length,
@@ -179,11 +180,13 @@ export function startProgressSync(userId: string, getLessons: () => Lesson[]): (
 
   const onChange = () => schedule();
   window.addEventListener(SCORES_CHANGED_EVENT, onChange);
+  window.addEventListener(REFERRALS_CHANGED_EVENT, onChange); // invite bonus counts on the leaderboard too
   void init();
 
   return () => {
     stopped = true;
     if (timer) clearTimeout(timer);
     window.removeEventListener(SCORES_CHANGED_EVENT, onChange);
+    window.removeEventListener(REFERRALS_CHANGED_EVENT, onChange);
   };
 }

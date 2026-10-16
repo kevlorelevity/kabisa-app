@@ -10,6 +10,7 @@ import { useAdmin } from './adminContext';
 import { setRoaming, useRoam } from '../lib/roam';
 import { openLeaderboard } from '../lib/leaderboard';
 import { isStandalone, openInstallGuide } from '../lib/install';
+import { REFERRAL_POINTS } from '../lib/referrals';
 
 /** Admins get an "Admin" menu (Roam on/off + Sign out) in place of the plain Sign out button. */
 function AdminMenu({ onSignOut }: { onSignOut: () => void }) {
@@ -132,6 +133,10 @@ function AdminMenu({ onSignOut }: { onSignOut: () => void }) {
             <span className="block text-sm font-medium text-gray-900">🏆 Top 10 for my level</span>
             <span className="block text-xs text-gray-500">The leaderboard learners see</span>
           </button>
+          <Link to="/invite" role="menuitem" onClick={() => setOpen(false)} className="block px-4 py-2.5 hover:bg-gray-50">
+            <span className="block text-sm font-medium text-gray-900">💌 Invite a friend</span>
+            <span className="block text-xs text-gray-500">+{REFERRAL_POINTS} gonga pts for every friend who joins</span>
+          </Link>
           {!isStandalone() && (
             <button
               type="button"
@@ -234,6 +239,10 @@ function LearnerMenu({ onSignOut }: { onSignOut: () => void }) {
             <span className="block text-sm font-medium text-gray-900">🏆 Top 10 for my level</span>
             <span className="block text-xs text-gray-500">See where you stand</span>
           </button>
+          <Link to="/invite" role="menuitem" onClick={() => setOpen(false)} className="block px-4 py-2.5 hover:bg-gray-50">
+            <span className="block text-sm font-medium text-gray-900">💌 Invite a friend</span>
+            <span className="block text-xs text-gray-500">+{REFERRAL_POINTS} gonga pts for every friend who joins</span>
+          </Link>
           {!isStandalone() && (
             <button
               type="button"
