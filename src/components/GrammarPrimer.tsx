@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import type { GrammarTopic, Lesson } from '../types';
 import { getGrammarTopic } from '../hooks/useGrammar';
 import { useOverridesVersion } from '../lib/contentOverrides';
@@ -60,13 +60,23 @@ export function GrammarPrimer({ lesson, slugs, onStart }: { lesson: Lesson; slug
   );
   const [page, setPage] = useState(0);
   const cardRef = useRef<HTMLDivElement>(null);
+  const tabsRef = useRef<HTMLDivElement>(null);
   // Back / Next sit at the bottom of a long page: bring the new page's top into view.
   const turnTo = (i: number) => {
     setPage(i);
     requestAnimationFrame(() => cardRef.current?.scrollIntoView?.({ behavior: 'smooth', block: 'start' }));
   };
+  const at = Math.min(page, Math.max(topics.length - 1, 0));
+  // Slide the tab strip sideways so the selected page's tab sits at its left edge.
+  useEffect(() => {
+    const strip = tabsRef.current;
+    const tab = strip?.querySelector<HTMLElement>(`[data-tab-index="${at}"]`);
+    if (!strip || !tab) return;
+    const left = Math.max(tab.offsetLeft - 12, 0);
+    if (typeof strip.scrollTo === 'function') strip.scrollTo({ left, behavior: 'smooth' });
+    else strip.scrollLeft = left;
+  }, [at]);
   if (!topics.length) return null;
-  const at = Math.min(page, topics.length - 1);
   const topic = topics[at];
   const examples = examplesFor(lesson, topic.slug);
   const last = at === topics.length - 1;
@@ -93,13 +103,14 @@ export function GrammarPrimer({ lesson, slugs, onStart }: { lesson: Lesson; slug
 
       <div ref={cardRef} className="rounded-xl border border-gray-200 bg-white scroll-mt-28">
         {topics.length > 1 && (
-          <div className="flex gap-1 border-b border-gray-100 px-3 pt-3 overflow-x-auto" role="tablist" aria-label="Grammar pages">
+          <div ref={tabsRef} className="relative flex gap-1 border-b border-gray-100 px-3 pt-3 overflow-x-auto scroll-smooth" role="tablist" aria-label="Grammar pages">
             {topics.map((t, i) => (
               <button
                 key={t.slug}
                 type="button"
                 role="tab"
                 aria-selected={i === at}
+                data-tab-index={i}
                 onClick={() => setPage(i)}
                 className={`shrink-0 rounded-t-lg px-3 py-2 text-xs font-semibold border-b-2 -mb-px ${
                   i === at ? 'border-green-700 text-green-800' : 'border-transparent text-gray-400 hover:text-gray-600'

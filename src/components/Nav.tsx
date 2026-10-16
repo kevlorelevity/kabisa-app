@@ -4,7 +4,6 @@ import { useAuth } from '../hooks/useAuth';
 import { useGrammarFavorites } from '../lib/grammarFavorites';
 import { useProfile } from '../hooks/profileContext';
 import { getCountry } from '../lib/countries';
-import { BetaSticker } from './BetaSticker';
 import { LevelBar } from './LevelBar';
 import { useAdmin } from './adminContext';
 import { setRoaming, useRoam } from '../lib/roam';
@@ -298,20 +297,78 @@ function RefreshButton() {
   );
 }
 
-export function Nav() {
+/** One picker for the two sections (Lessons / Grammar) — saves room in the top bar. */
+function SectionPicker() {
   const { pathname } = useLocation();
-  const { user, signOut } = useAuth();
   const { favorites } = useGrammarFavorites();
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const onGrammar = pathname.startsWith('/grammar');
+
+  useEffect(() => {
+    if (!open) return;
+    const onDown = (e: MouseEvent | TouchEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setOpen(false);
+    document.addEventListener('mousedown', onDown);
+    document.addEventListener('touchstart', onDown);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('mousedown', onDown);
+      document.removeEventListener('touchstart', onDown);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [open]);
+
+  const stars = favorites.length > 0 && (
+    <span className="ml-1 text-amber-500" aria-label={`${favorites.length} favourites`}>
+      ★{favorites.length}
+    </span>
+  );
+  const item = (active: boolean) =>
+    `flex items-center justify-between px-4 py-2.5 text-sm font-medium hover:bg-gray-50 ${
+      active ? 'text-green-700' : 'text-gray-800'
+    }`;
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        type="button"
+        aria-haspopup="menu"
+        aria-expanded={open}
+        aria-label={`Section: ${onGrammar ? 'Grammar' : 'Lessons'}. Switch section`}
+        onClick={() => setOpen((o) => !o)}
+        className="px-3 py-1 rounded-full text-sm font-medium bg-green-700 text-white hover:bg-green-800 transition-colors inline-flex items-center"
+        data-testid="section-picker"
+      >
+        {onGrammar ? 'Grammar' : 'Lessons'}
+        <span aria-hidden="true" className="ml-1 text-xs">▾</span>
+      </button>
+      {open && (
+        <div role="menu" className="absolute left-0 mt-2 w-44 rounded-xl border border-gray-200 bg-white shadow-lg py-1 z-20">
+          <Link to="/" role="menuitem" onClick={() => setOpen(false)} className={item(!onGrammar)}>
+            <span>📚 Lessons</span>
+            {!onGrammar && <span aria-hidden="true">✓</span>}
+          </Link>
+          <Link to="/grammar" role="menuitem" onClick={() => setOpen(false)} className={item(onGrammar)}>
+            <span>
+              📘 Grammar
+              {stars}
+            </span>
+            {onGrammar && <span aria-hidden="true">✓</span>}
+          </Link>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export function Nav() {
+  const { user, signOut } = useAuth();
   const { profile } = useProfile();
   const flag = getCountry(profile?.nationality)?.flag;
   const { isAdmin } = useAdmin();
-
-  const linkClass = (path: string) =>
-    `px-3 py-1 rounded text-sm font-medium transition-colors ${
-      pathname === path || (path !== '/' && pathname.startsWith(path))
-        ? 'bg-green-700 text-white'
-        : 'text-gray-600 hover:text-green-700'
-    }`;
 
   const displayName =
     profile?.displayName ??
@@ -325,20 +382,9 @@ export function Nav() {
         <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="Kabisa — home" className="flex items-center gap-2 font-bold text-green-800 tracking-tight">
           <img src="/favicon.svg" alt="" width={28} height={28} className="h-7 w-7" />
           <span className="hidden min-[380px]:inline">Kabisa</span>
-          <BetaSticker />
         </Link>
         <div className="flex gap-2 items-center">
-          <Link to="/" className={linkClass('/')}>
-            Lessons
-          </Link>
-          <Link to="/grammar" className={linkClass('/grammar')}>
-            Grammar
-            {favorites.length > 0 && (
-              <span className="ml-1 text-amber-500" aria-label={`${favorites.length} favourites`}>
-                ★{favorites.length}
-              </span>
-            )}
-          </Link>
+          <SectionPicker />
           {displayName && (
             <div className="flex items-center gap-2 pl-2 ml-1 border-l border-gray-200">
               <Link

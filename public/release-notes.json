@@ -1,5 +1,14 @@
 [
   {
+    "id": "2026-10-16-picker",
+    "date": "2026-10-16",
+    "title": "🧭 A tidier top bar",
+    "items": [
+      "Lessons and Grammar now share one button at the top — tap it to switch between them.",
+      "Paging through a lesson's grammar? The page you're on now slides to the front of the tabs, so you always see where you are."
+    ]
+  },
+  {
     "id": "2026-10-16-refresh",
     "date": "2026-10-16",
     "title": "🔄 A refresh button",

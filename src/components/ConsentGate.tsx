@@ -4,7 +4,6 @@ import { useProfile } from '../hooks/profileContext';
 import { acceptTerms, deleteMyAccount, loadConsent } from '../lib/consent';
 import { signOut } from '../lib/auth';
 import { TermsContent } from './TermsContent';
-import { BetaSticker } from './BetaSticker';
 
 /**
  * Nobody uses Kabisa without accepting the Terms. New learners see this right after signing in
@@ -149,7 +148,6 @@ function ConsentForm({ userId, existing, name, onAccepted }: { userId: string | 
     <Shell>
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-extrabold text-gray-900">{existing ? `Karibu tena${name ? `, ${name}` : ''}!` : 'Karibu! One thing first.'}</h1>
-        <BetaSticker />
       </div>
       <p className="text-gray-600">
         {existing

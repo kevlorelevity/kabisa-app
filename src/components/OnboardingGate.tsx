@@ -3,7 +3,6 @@ import { useAuth } from '../hooks/useAuth';
 import { useProfile } from '../hooks/profileContext';
 import { GenderChoice, WelcomeForm } from './WelcomeForm';
 import type { Gender, LearnerProfile } from '../lib/profile';
-import { BetaSticker } from './BetaSticker';
 
 /** After sign-up: ask for first name, nationality and form of address once, before the lessons. */
 export function OnboardingGate({ children }: { children: ReactNode }) {
@@ -25,7 +24,6 @@ export function OnboardingGate({ children }: { children: ReactNode }) {
           <p className="text-4xl" aria-hidden="true">
             👋
           </p>
-          <BetaSticker />
         </div>
         <h1 className="mt-3 text-2xl font-extrabold text-gray-900">Karibu! Welcome.</h1>
         <p className="mt-1 text-gray-600">
